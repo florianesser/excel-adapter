@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated crs -->
+      <package
+            uri="http://www.opengis.net/gml/3.2"
+            class="net_opengis_gml__3.Net_opengis_gml__3Package"
+            genModel="src/model/crs.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated crs -->
+      <parser
+            type="net_opengis_gml__3"
+            class="net_opengis_gml__3.util.Net_opengis_gml__3ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated crs -->
+      <package
+            uri="http://www.w3.org/1999/xlink"
+            class="org_w3__1999_xlink.Org_w3__1999_xlinkPackage"
+            genModel="src/model/crs.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated crs -->
+      <parser
+            type="org_w3__1999_xlink"
+            class="org_w3__1999_xlink.util.Org_w3__1999_xlinkResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated crs -->
+      <package
+            uri="http://www.isotc211.org/2005/gmd"
+            class="org_isotc211__2005_gmd.Org_isotc211__2005_gmdPackage"
+            genModel="src/model/crs.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated crs -->
+      <parser
+            type="org_isotc211__2005_gmd"
+            class="org_isotc211__2005_gmd.util.Org_isotc211__2005_gmdResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated crs -->
+      <package
+            uri="http://www.isotc211.org/2005/gco"
+            class="org_isotc211__2005_gco.Org_isotc211__2005_gcoPackage"
+            genModel="src/model/crs.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated crs -->
+      <parser
+            type="org_isotc211__2005_gco"
+            class="org_isotc211__2005_gco.util.Org_isotc211__2005_gcoResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated crs -->
+      <package
+            uri="http://www.isotc211.org/2005/gss"
+            class="org_isotc211__2005_gss.Org_isotc211__2005_gssPackage"
+            genModel="src/model/crs.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated crs -->
+      <parser
+            type="org_isotc211__2005_gss"
+            class="org_isotc211__2005_gss.util.Org_isotc211__2005_gssResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated crs -->
+      <package
+            uri="http://www.isotc211.org/2005/gts"
+            class="org_isotc211__2005_gts.Org_isotc211__2005_gtsPackage"
+            genModel="src/model/crs.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated crs -->
+      <parser
+            type="org_isotc211__2005_gts"
+            class="org_isotc211__2005_gts.util.Org_isotc211__2005_gtsResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated crs -->
+      <package
+            uri="http://www.isotc211.org/2005/gsr"
+            class="org_isotc211__2005_gsr.Org_isotc211__2005_gsrPackage"
+            genModel="src/model/crs.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated crs -->
+      <parser
+            type="org_isotc211__2005_gsr"
+            class="org_isotc211__2005_gsr.util.Org_isotc211__2005_gsrResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated iso-xml -->
+      <package
+            uri="http://www.opengis.net/gml/3.2"
+            class="net.opengis.gml32.GMLPackage"
+            genModel="src/model/iso-xml.genmodel"/>
+   </extension>
+
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated iso-xml -->
+      <parser
+            type="gml"
+            class="net.opengis.gml32.util.GMLResourceFactoryImpl"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated iso-xml -->
+      <package
+            uri="http://www.w3.org/1999/xlink"
+            class="org.w3.xlink.XLinkPackage"
+            genModel="src/model/iso-xml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated iso-xml -->
+      <parser
+            type="xlink"
+            class="org.w3.xlink.util.XLinkResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated iso-xml -->
+      <package
+            uri="http://www.isotc211.org/2005/gmd"
+            class="org.isotc211.iso19139.gmd.GMDPackage"
+            genModel="src/model/iso-xml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated iso-xml -->
+      <parser
+            type="gmd"
+            class="org.isotc211.iso19139.gmd.util.GMDResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated iso-xml -->
+      <package
+            uri="http://www.isotc211.org/2005/gco"
+            class="org.isotc211.iso19139.gco.GCOPackage"
+            genModel="src/model/iso-xml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated iso-xml -->
+      <parser
+            type="gco"
+            class="org.isotc211.iso19139.gco.util.GCOResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated iso-xml -->
+      <package
+            uri="http://www.isotc211.org/2005/gss"
+            class="org.isotc211.iso19139.gss.GSSPackage"
+            genModel="src/model/iso-xml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated iso-xml -->
+      <parser
+            type="gss"
+            class="org.isotc211.iso19139.gss.util.GSSResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated iso-xml -->
+      <package
+            uri="http://www.isotc211.org/2005/gts"
+            class="org.isotc211.iso19139.gts.GTSPackage"
+            genModel="src/model/iso-xml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated iso-xml -->
+      <parser
+            type="gts"
+            class="org.isotc211.iso19139.gts.util.GTSResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated iso-xml -->
+      <package
+            uri="http://www.isotc211.org/2005/gsr"
+            class="org.isotc211.iso19139.gsr.GSRPackage"
+            genModel="src/model/iso-xml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated iso-xml -->
+      <parser
+            type="gsr"
+            class="org.isotc211.iso19139.gsr.util.GSRResourceFactoryImpl"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated excelAdapterConfiguration -->
+      <package
+            uri="http://www.bespire.de/io/excel"
+            class="de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage"
+            genModel="src/model/excelAdapterConfiguration.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated excelAdapterConfiguration -->
+      <parser
+            type="exceladapterconfiguration"
+            class="de.bespire.registry.io.excel.ExcelAdapterConfiguration.util.ExcelAdapterConfigurationResourceFactoryImpl"/>
+   </extension>
+</plugin>

@@ -6,7 +6,7 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>excelAdapterConfiguration.ecore</foreignModel>
   <genPackages prefix="ExcelAdapterConfiguration" basePackage="de.bespire.registry.io.excel"
-      resource="XML" disposableProviderFactory="true" ecorePackage="excelAdapterConfiguration.ecore#/">
+      resource="XML" disposableProviderFactory="true" fileExtensions="xlconf" ecorePackage="excelAdapterConfiguration.ecore#/">
     <genClasses ecoreClass="excelAdapterConfiguration.ecore#//ColumnConfiguration">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute excelAdapterConfiguration.ecore#//ColumnConfiguration/javaProperty"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute excelAdapterConfiguration.ecore#//ColumnConfiguration/javaPropertyExport"/>

@@ -10,11 +10,11 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationFactory;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration;
+import de.bespire.registry.io.excel.configuration.DocumentRoot;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationFactory;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.ExcelConfiguration;
+import de.bespire.registry.io.excel.configuration.SheetConfiguration;
 
 public class Test
 {

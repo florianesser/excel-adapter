@@ -1,6 +1,6 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.util;
+package de.bespire.registry.io.excel.configuration.util;
 
 import org.eclipse.emf.common.util.URI;
 
@@ -14,19 +14,17 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
  * <!-- begin-user-doc -->
  * The <b>Resource Factory</b> associated with the package.
  * <!-- end-user-doc -->
- * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.util.ExcelAdapterConfigurationResourceImpl
+ * @see de.bespire.registry.io.excel.configuration.util.ExcelAdapterConfigurationResourceImpl
  * @generated
  */
-public class ExcelAdapterConfigurationResourceFactoryImpl extends ResourceFactoryImpl
-{
+public class ExcelAdapterConfigurationResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExcelAdapterConfigurationResourceFactoryImpl()
-	{
+	public ExcelAdapterConfigurationResourceFactoryImpl() {
 		super();
 	}
 
@@ -37,8 +35,7 @@ public class ExcelAdapterConfigurationResourceFactoryImpl extends ResourceFactor
 	 * @generated
 	 */
 	@Override
-	public Resource createResource(URI uri)
-	{
+	public Resource createResource(URI uri) {
 		XMLResource result = new ExcelAdapterConfigurationResourceImpl(uri);
 		result.getDefaultSaveOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);
 		result.getDefaultLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);

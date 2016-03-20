@@ -1,13 +1,13 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl;
+package de.bespire.registry.io.excel.configuration.impl;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationFactory;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration;
+import de.bespire.registry.io.excel.configuration.ColumnConfiguration;
+import de.bespire.registry.io.excel.configuration.DocumentRoot;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationFactory;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.ExcelConfiguration;
+import de.bespire.registry.io.excel.configuration.SheetConfiguration;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implements ExcelAdapterConfigurationPackage
-{
+public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implements ExcelAdapterConfigurationPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,12 +64,11 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#eNS_URI
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private ExcelAdapterConfigurationPackageImpl()
-	{
+	private ExcelAdapterConfigurationPackageImpl() {
 		super(eNS_URI, ExcelAdapterConfigurationFactory.eINSTANCE);
 	}
 
@@ -93,8 +91,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static ExcelAdapterConfigurationPackage init()
-	{
+	public static ExcelAdapterConfigurationPackage init() {
 		if (isInited) return (ExcelAdapterConfigurationPackage)EPackage.Registry.INSTANCE.getEPackage(ExcelAdapterConfigurationPackage.eNS_URI);
 
 		// Obtain or create and register package
@@ -125,8 +122,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getColumnConfiguration()
-	{
+	public EClass getColumnConfiguration() {
 		return columnConfigurationEClass;
 	}
 
@@ -135,8 +131,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getColumnConfiguration_JavaProperty()
-	{
+	public EAttribute getColumnConfiguration_JavaProperty() {
 		return (EAttribute)columnConfigurationEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -145,8 +140,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getColumnConfiguration_JavaPropertyExport()
-	{
+	public EAttribute getColumnConfiguration_JavaPropertyExport() {
 		return (EAttribute)columnConfigurationEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -155,8 +149,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getColumnConfiguration_Multiple()
-	{
+	public EAttribute getColumnConfiguration_Multiple() {
 		return (EAttribute)columnConfigurationEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -165,8 +158,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getColumnConfiguration_References()
-	{
+	public EAttribute getColumnConfiguration_References() {
 		return (EAttribute)columnConfigurationEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -175,8 +167,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getColumnConfiguration_ColumnName()
-	{
+	public EAttribute getColumnConfiguration_ColumnName() {
 		return (EAttribute)columnConfigurationEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -185,8 +176,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getColumnConfiguration_SeparatorChar()
-	{
+	public EAttribute getColumnConfiguration_SeparatorChar() {
 		return (EAttribute)columnConfigurationEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -195,8 +185,16 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDocumentRoot()
-	{
+	public EAttribute getColumnConfiguration_ValueMapper() {
+		return (EAttribute)columnConfigurationEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDocumentRoot() {
 		return documentRootEClass;
 	}
 
@@ -205,8 +203,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Mixed()
-	{
+	public EAttribute getDocumentRoot_Mixed() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -215,8 +212,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_XMLNSPrefixMap()
-	{
+	public EReference getDocumentRoot_XMLNSPrefixMap() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -225,8 +221,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_XSISchemaLocation()
-	{
+	public EReference getDocumentRoot_XSISchemaLocation() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -235,8 +230,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_ColumnConfiguration()
-	{
+	public EReference getDocumentRoot_ColumnConfiguration() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -245,8 +239,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_ExcelConfiguration()
-	{
+	public EReference getDocumentRoot_ExcelConfiguration() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -255,8 +248,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_SheetConfiguration()
-	{
+	public EReference getDocumentRoot_SheetConfiguration() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -265,8 +257,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getExcelConfiguration()
-	{
+	public EClass getExcelConfiguration() {
 		return excelConfigurationEClass;
 	}
 
@@ -275,8 +266,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getExcelConfiguration_Sheet()
-	{
+	public EReference getExcelConfiguration_Sheet() {
 		return (EReference)excelConfigurationEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -285,8 +275,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSheetConfiguration()
-	{
+	public EClass getSheetConfiguration() {
 		return sheetConfigurationEClass;
 	}
 
@@ -295,8 +284,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSheetConfiguration_ImportType()
-	{
+	public EAttribute getSheetConfiguration_ImportType() {
 		return (EAttribute)sheetConfigurationEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -305,8 +293,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSheetConfiguration_ExportType()
-	{
+	public EAttribute getSheetConfiguration_ExportType() {
 		return (EAttribute)sheetConfigurationEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -315,8 +302,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSheetConfiguration_ItemClassName()
-	{
+	public EAttribute getSheetConfiguration_ItemClassName() {
 		return (EAttribute)sheetConfigurationEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -325,8 +311,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSheetConfiguration_Column()
-	{
+	public EReference getSheetConfiguration_Column() {
 		return (EReference)sheetConfigurationEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -335,8 +320,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSheetConfiguration_FirstDataColumn()
-	{
+	public EAttribute getSheetConfiguration_FirstDataColumn() {
 		return (EAttribute)sheetConfigurationEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -345,8 +329,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSheetConfiguration_FirstDataRow()
-	{
+	public EAttribute getSheetConfiguration_FirstDataRow() {
 		return (EAttribute)sheetConfigurationEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -355,8 +338,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSheetConfiguration_HeaderRow()
-	{
+	public EAttribute getSheetConfiguration_HeaderRow() {
 		return (EAttribute)sheetConfigurationEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -365,8 +347,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSheetConfiguration_IdColumn()
-	{
+	public EAttribute getSheetConfiguration_IdColumn() {
 		return (EAttribute)sheetConfigurationEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -375,8 +356,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSheetConfiguration_IdPrefix()
-	{
+	public EAttribute getSheetConfiguration_IdPrefix() {
 		return (EAttribute)sheetConfigurationEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -385,8 +365,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSheetConfiguration_SheetName()
-	{
+	public EAttribute getSheetConfiguration_SheetName() {
 		return (EAttribute)sheetConfigurationEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -395,8 +374,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExcelAdapterConfigurationFactory getExcelAdapterConfigurationFactory()
-	{
+	public ExcelAdapterConfigurationFactory getExcelAdapterConfigurationFactory() {
 		return (ExcelAdapterConfigurationFactory)getEFactoryInstance();
 	}
 
@@ -414,8 +392,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void createPackageContents()
-	{
+	public void createPackageContents() {
 		if (isCreated) return;
 		isCreated = true;
 
@@ -427,6 +404,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		createEAttribute(columnConfigurationEClass, COLUMN_CONFIGURATION__REFERENCES);
 		createEAttribute(columnConfigurationEClass, COLUMN_CONFIGURATION__COLUMN_NAME);
 		createEAttribute(columnConfigurationEClass, COLUMN_CONFIGURATION__SEPARATOR_CHAR);
+		createEAttribute(columnConfigurationEClass, COLUMN_CONFIGURATION__VALUE_MAPPER);
 
 		documentRootEClass = createEClass(DOCUMENT_ROOT);
 		createEAttribute(documentRootEClass, DOCUMENT_ROOT__MIXED);
@@ -466,8 +444,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void initializePackageContents()
-	{
+	public void initializePackageContents() {
 		if (isInitialized) return;
 		isInitialized = true;
 
@@ -490,9 +467,10 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		initEAttribute(getColumnConfiguration_JavaProperty(), theXMLTypePackage.getString(), "javaProperty", null, 1, 1, ColumnConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getColumnConfiguration_JavaPropertyExport(), theXMLTypePackage.getString(), "javaPropertyExport", null, 0, 1, ColumnConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getColumnConfiguration_Multiple(), theXMLTypePackage.getBoolean(), "multiple", "false", 1, 1, ColumnConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getColumnConfiguration_References(), theXMLTypePackage.getString(), "references", null, 0, 1, ColumnConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumnConfiguration_References(), theXMLTypePackage.getString(), "references", null, 0, -1, ColumnConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getColumnConfiguration_ColumnName(), theXMLTypePackage.getString(), "columnName", null, 1, 1, ColumnConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getColumnConfiguration_SeparatorChar(), theXMLTypePackage.getString(), "separatorChar", ";", 0, 1, ColumnConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumnConfiguration_ValueMapper(), theXMLTypePackage.getString(), "valueMapper", null, 0, 1, ColumnConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(documentRootEClass, DocumentRoot.class, "DocumentRoot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDocumentRoot_Mixed(), ecorePackage.getEFeatureMapEntry(), "mixed", null, 0, -1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -531,22 +509,19 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createExtendedMetaDataAnnotations()
-	{
+	protected void createExtendedMetaDataAnnotations() {
 		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
 		addAnnotation
 		  (columnConfigurationEClass, 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "name", "ColumnConfiguration",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
 		  (getColumnConfiguration_JavaProperty(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "javaProperty",
 			 "namespace", "##targetNamespace"
@@ -554,8 +529,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getColumnConfiguration_JavaPropertyExport(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "javaPropertyExport",
 			 "namespace", "##targetNamespace"
@@ -563,8 +537,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getColumnConfiguration_Multiple(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "multiple",
 			 "namespace", "##targetNamespace"
@@ -572,8 +545,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getColumnConfiguration_References(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "references",
 			 "namespace", "##targetNamespace"
@@ -581,56 +553,49 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getColumnConfiguration_ColumnName(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "columnName"
 		   });	
 		addAnnotation
 		  (getColumnConfiguration_SeparatorChar(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "separatorChar"
 		   });	
 		addAnnotation
 		  (documentRootEClass, 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "name", "",
 			 "kind", "mixed"
 		   });	
 		addAnnotation
 		  (getDocumentRoot_Mixed(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "elementWildcard",
 			 "name", ":mixed"
 		   });	
 		addAnnotation
 		  (getDocumentRoot_XMLNSPrefixMap(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "xmlns:prefix"
 		   });	
 		addAnnotation
 		  (getDocumentRoot_XSISchemaLocation(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "xsi:schemaLocation"
 		   });	
 		addAnnotation
 		  (getDocumentRoot_ColumnConfiguration(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "ColumnConfiguration",
 			 "namespace", "##targetNamespace"
@@ -638,8 +603,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getDocumentRoot_ExcelConfiguration(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "ExcelConfiguration",
 			 "namespace", "##targetNamespace"
@@ -647,8 +611,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getDocumentRoot_SheetConfiguration(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "SheetConfiguration",
 			 "namespace", "##targetNamespace"
@@ -656,16 +619,14 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (excelConfigurationEClass, 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "name", "ExcelConfiguration",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
 		  (getExcelConfiguration_Sheet(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "sheet",
 			 "namespace", "##targetNamespace"
@@ -673,16 +634,14 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (sheetConfigurationEClass, 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "name", "SheetConfiguration",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
 		  (getSheetConfiguration_ImportType(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "importType",
 			 "namespace", "##targetNamespace"
@@ -690,8 +649,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getSheetConfiguration_ExportType(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "exportType",
 			 "namespace", "##targetNamespace"
@@ -699,8 +657,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getSheetConfiguration_ItemClassName(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "itemClassName",
 			 "namespace", "##targetNamespace"
@@ -708,8 +665,7 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getSheetConfiguration_Column(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "element",
 			 "name", "column",
 			 "namespace", "##targetNamespace"
@@ -717,48 +673,42 @@ public class ExcelAdapterConfigurationPackageImpl extends EPackageImpl implement
 		addAnnotation
 		  (getSheetConfiguration_FirstDataColumn(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "firstDataColumn"
 		   });	
 		addAnnotation
 		  (getSheetConfiguration_FirstDataRow(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "firstDataRow"
 		   });	
 		addAnnotation
 		  (getSheetConfiguration_HeaderRow(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "headerRow"
 		   });	
 		addAnnotation
 		  (getSheetConfiguration_IdColumn(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "idColumn"
 		   });	
 		addAnnotation
 		  (getSheetConfiguration_IdPrefix(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "idPrefix"
 		   });	
 		addAnnotation
 		  (getSheetConfiguration_SheetName(), 
 		   source, 
-		   new String[] 
-		   {
+		   new String[] {
 			 "kind", "attribute",
 			 "name", "sheetName"
 		   });

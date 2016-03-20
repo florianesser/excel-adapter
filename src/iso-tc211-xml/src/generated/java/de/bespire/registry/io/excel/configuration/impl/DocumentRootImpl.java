@@ -1,12 +1,12 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl;
+package de.bespire.registry.io.excel.configuration.impl;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration;
+import de.bespire.registry.io.excel.configuration.ColumnConfiguration;
+import de.bespire.registry.io.excel.configuration.DocumentRoot;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.ExcelConfiguration;
+import de.bespire.registry.io.excel.configuration.SheetConfiguration;
 
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -33,18 +33,17 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getMixed <em>Mixed</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getColumnConfiguration <em>Column Configuration</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getExcelConfiguration <em>Excel Configuration</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getSheetConfiguration <em>Sheet Configuration</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getMixed <em>Mixed</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getColumnConfiguration <em>Column Configuration</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getExcelConfiguration <em>Excel Configuration</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getSheetConfiguration <em>Sheet Configuration</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class DocumentRootImpl extends MinimalEObjectImpl.Container implements DocumentRoot
-{
+public class DocumentRootImpl extends MinimalEObjectImpl.Container implements DocumentRoot {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -80,8 +79,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DocumentRootImpl()
-	{
+	protected DocumentRootImpl() {
 		super();
 	}
 
@@ -91,8 +89,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT;
 	}
 
@@ -101,10 +98,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getMixed()
-	{
-		if (mixed == null)
-		{
+	public FeatureMap getMixed() {
+		if (mixed == null) {
 			mixed = new BasicFeatureMap(this, ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__MIXED);
 		}
 		return mixed;
@@ -115,10 +110,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EMap<String, String> getXMLNSPrefixMap()
-	{
-		if (xMLNSPrefixMap == null)
-		{
+	public EMap<String, String> getXMLNSPrefixMap() {
+		if (xMLNSPrefixMap == null) {
 			xMLNSPrefixMap = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
 		}
 		return xMLNSPrefixMap;
@@ -129,10 +122,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EMap<String, String> getXSISchemaLocation()
-	{
-		if (xSISchemaLocation == null)
-		{
+	public EMap<String, String> getXSISchemaLocation() {
+		if (xSISchemaLocation == null) {
 			xSISchemaLocation = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);
 		}
 		return xSISchemaLocation;
@@ -143,8 +134,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ColumnConfiguration getColumnConfiguration()
-	{
+	public ColumnConfiguration getColumnConfiguration() {
 		return (ColumnConfiguration)getMixed().get(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__COLUMN_CONFIGURATION, true);
 	}
 
@@ -153,8 +143,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetColumnConfiguration(ColumnConfiguration newColumnConfiguration, NotificationChain msgs)
-	{
+	public NotificationChain basicSetColumnConfiguration(ColumnConfiguration newColumnConfiguration, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__COLUMN_CONFIGURATION, newColumnConfiguration, msgs);
 	}
 
@@ -163,8 +152,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setColumnConfiguration(ColumnConfiguration newColumnConfiguration)
-	{
+	public void setColumnConfiguration(ColumnConfiguration newColumnConfiguration) {
 		((FeatureMap.Internal)getMixed()).set(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__COLUMN_CONFIGURATION, newColumnConfiguration);
 	}
 
@@ -173,8 +161,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExcelConfiguration getExcelConfiguration()
-	{
+	public ExcelConfiguration getExcelConfiguration() {
 		return (ExcelConfiguration)getMixed().get(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__EXCEL_CONFIGURATION, true);
 	}
 
@@ -183,8 +170,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExcelConfiguration(ExcelConfiguration newExcelConfiguration, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExcelConfiguration(ExcelConfiguration newExcelConfiguration, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__EXCEL_CONFIGURATION, newExcelConfiguration, msgs);
 	}
 
@@ -193,8 +179,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExcelConfiguration(ExcelConfiguration newExcelConfiguration)
-	{
+	public void setExcelConfiguration(ExcelConfiguration newExcelConfiguration) {
 		((FeatureMap.Internal)getMixed()).set(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__EXCEL_CONFIGURATION, newExcelConfiguration);
 	}
 
@@ -203,8 +188,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SheetConfiguration getSheetConfiguration()
-	{
+	public SheetConfiguration getSheetConfiguration() {
 		return (SheetConfiguration)getMixed().get(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__SHEET_CONFIGURATION, true);
 	}
 
@@ -213,8 +197,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSheetConfiguration(SheetConfiguration newSheetConfiguration, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSheetConfiguration(SheetConfiguration newSheetConfiguration, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__SHEET_CONFIGURATION, newSheetConfiguration, msgs);
 	}
 
@@ -223,8 +206,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSheetConfiguration(SheetConfiguration newSheetConfiguration)
-	{
+	public void setSheetConfiguration(SheetConfiguration newSheetConfiguration) {
 		((FeatureMap.Internal)getMixed()).set(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__SHEET_CONFIGURATION, newSheetConfiguration);
 	}
 
@@ -234,10 +216,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__MIXED:
 				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
@@ -260,10 +240,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__MIXED:
 				if (coreType) return getMixed();
 				return ((FeatureMap.Internal)getMixed()).getWrapper();
@@ -289,10 +267,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__MIXED:
 				((FeatureMap.Internal)getMixed()).set(newValue);
 				return;
@@ -321,10 +297,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__MIXED:
 				getMixed().clear();
 				return;
@@ -353,10 +327,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__MIXED:
 				return mixed != null && !mixed.isEmpty();
 			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
@@ -379,8 +351,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());

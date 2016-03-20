@@ -1,8 +1,8 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.util;
+package de.bespire.registry.io.excel.configuration.util;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.*;
+import de.bespire.registry.io.excel.configuration.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -19,11 +19,10 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage
+ * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage
  * @generated
  */
-public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>
-{
+public class ExcelAdapterConfigurationSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -38,10 +37,8 @@ public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExcelAdapterConfigurationSwitch()
-	{
-		if (modelPackage == null)
-		{
+	public ExcelAdapterConfigurationSwitch() {
+		if (modelPackage == null) {
 			modelPackage = ExcelAdapterConfigurationPackage.eINSTANCE;
 		}
 	}
@@ -55,8 +52,7 @@ public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage)
-	{
+	protected boolean isSwitchFor(EPackage ePackage) {
 		return ePackage == modelPackage;
 	}
 
@@ -68,33 +64,27 @@ public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject)
-	{
-		switch (classifierID)
-		{
-			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION:
-			{
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION: {
 				ColumnConfiguration columnConfiguration = (ColumnConfiguration)theEObject;
 				T result = caseColumnConfiguration(columnConfiguration);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT:
-			{
+			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT: {
 				DocumentRoot documentRoot = (DocumentRoot)theEObject;
 				T result = caseDocumentRoot(documentRoot);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ExcelAdapterConfigurationPackage.EXCEL_CONFIGURATION:
-			{
+			case ExcelAdapterConfigurationPackage.EXCEL_CONFIGURATION: {
 				ExcelConfiguration excelConfiguration = (ExcelConfiguration)theEObject;
 				T result = caseExcelConfiguration(excelConfiguration);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION:
-			{
+			case ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION: {
 				SheetConfiguration sheetConfiguration = (SheetConfiguration)theEObject;
 				T result = caseSheetConfiguration(sheetConfiguration);
 				if (result == null) result = defaultCase(theEObject);
@@ -115,8 +105,7 @@ public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseColumnConfiguration(ColumnConfiguration object)
-	{
+	public T caseColumnConfiguration(ColumnConfiguration object) {
 		return null;
 	}
 
@@ -131,8 +120,7 @@ public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDocumentRoot(DocumentRoot object)
-	{
+	public T caseDocumentRoot(DocumentRoot object) {
 		return null;
 	}
 
@@ -147,8 +135,7 @@ public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseExcelConfiguration(ExcelConfiguration object)
-	{
+	public T caseExcelConfiguration(ExcelConfiguration object) {
 		return null;
 	}
 
@@ -163,8 +150,7 @@ public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSheetConfiguration(SheetConfiguration object)
-	{
+	public T caseSheetConfiguration(SheetConfiguration object) {
 		return null;
 	}
 
@@ -180,8 +166,7 @@ public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object)
-	{
+	public T defaultCase(EObject object) {
 		return null;
 	}
 

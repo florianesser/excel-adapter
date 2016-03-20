@@ -1,6 +1,6 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration;
+package de.bespire.registry.io.excel.configuration;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage
+ * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage
  * @generated
  */
 public interface ExcelAdapterConfigurationFactory extends EFactory
@@ -20,7 +20,7 @@ public interface ExcelAdapterConfigurationFactory extends EFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	ExcelAdapterConfigurationFactory eINSTANCE = de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationFactoryImpl.init();
+	ExcelAdapterConfigurationFactory eINSTANCE = de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Column Configuration</em>'.

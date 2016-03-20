@@ -1,8 +1,8 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.util;
+package de.bespire.registry.io.excel.configuration.util;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
 
 import java.util.Map;
 

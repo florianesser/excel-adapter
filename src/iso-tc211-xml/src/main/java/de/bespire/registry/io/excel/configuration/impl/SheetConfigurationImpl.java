@@ -1,10 +1,10 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl;
+package de.bespire.registry.io.excel.configuration.impl;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration;
+import de.bespire.registry.io.excel.configuration.ColumnConfiguration;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.SheetConfiguration;
 
 import java.util.Collection;
 
@@ -31,16 +31,16 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getImportType <em>Import Type</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getExportType <em>Export Type</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getItemClassName <em>Item Class Name</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getColumn <em>Column</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getFirstDataColumn <em>First Data Column</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getFirstDataRow <em>First Data Row</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getHeaderRow <em>Header Row</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getIdColumn <em>Id Column</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getIdPrefix <em>Id Prefix</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getSheetName <em>Sheet Name</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getImportType <em>Import Type</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getExportType <em>Export Type</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getItemClassName <em>Item Class Name</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getColumn <em>Column</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getFirstDataColumn <em>First Data Column</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getFirstDataRow <em>First Data Row</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getHeaderRow <em>Header Row</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getIdColumn <em>Id Column</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getIdPrefix <em>Id Prefix</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getSheetName <em>Sheet Name</em>}</li>
  * </ul>
  *
  * @generated

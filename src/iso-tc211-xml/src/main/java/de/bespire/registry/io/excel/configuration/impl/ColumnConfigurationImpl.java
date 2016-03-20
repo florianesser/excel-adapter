@@ -1,16 +1,22 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl;
+package de.bespire.registry.io.excel.configuration.impl;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.ColumnConfiguration;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
+
+import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,12 +26,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl#getJavaProperty <em>Java Property</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl#getJavaPropertyExport <em>Java Property Export</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl#isMultiple <em>Multiple</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl#getReferences <em>References</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl#getColumnName <em>Column Name</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl#getSeparatorChar <em>Separator Char</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl#getJavaProperty <em>Java Property</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl#getJavaPropertyExport <em>Java Property Export</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl#isMultiple <em>Multiple</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl#getReferences <em>References</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl#getColumnName <em>Column Name</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl#getSeparatorChar <em>Separator Char</em>}</li>
  * </ul>
  *
  * @generated
@@ -102,24 +108,14 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	protected boolean multipleESet;
 
 	/**
-	 * The default value of the '{@link #getReferences() <em>References</em>}' attribute.
+	 * The cached value of the '{@link #getReferences() <em>References</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getReferences()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String REFERENCES_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getReferences() <em>References</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getReferences()
-	 * @generated
-	 * @ordered
-	 */
-	protected String references = REFERENCES_EDEFAULT;
+	protected EList<String> references;
 
 	/**
 	 * The default value of the '{@link #getColumnName() <em>Column Name</em>}' attribute.
@@ -292,22 +288,13 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getReferences()
+	public EList<String> getReferences()
 	{
+		if (references == null)
+		{
+			references = new EDataTypeUniqueEList<String>(String.class, this, ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__REFERENCES);
+		}
 		return references;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setReferences(String newReferences)
-	{
-		String oldReferences = references;
-		references = newReferences;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__REFERENCES, oldReferences, references));
 	}
 
 	/**
@@ -414,6 +401,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue)
 	{
@@ -429,7 +417,8 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 				setMultiple((Boolean)newValue);
 				return;
 			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__REFERENCES:
-				setReferences((String)newValue);
+				getReferences().clear();
+				getReferences().addAll((Collection<? extends String>)newValue);
 				return;
 			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__COLUMN_NAME:
 				setColumnName((String)newValue);
@@ -461,7 +450,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 				unsetMultiple();
 				return;
 			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__REFERENCES:
-				setReferences(REFERENCES_EDEFAULT);
+				getReferences().clear();
 				return;
 			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__COLUMN_NAME:
 				setColumnName(COLUMN_NAME_EDEFAULT);
@@ -490,7 +479,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__MULTIPLE:
 				return isSetMultiple();
 			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__REFERENCES:
-				return REFERENCES_EDEFAULT == null ? references != null : !REFERENCES_EDEFAULT.equals(references);
+				return references != null && !references.isEmpty();
 			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__COLUMN_NAME:
 				return COLUMN_NAME_EDEFAULT == null ? columnName != null : !COLUMN_NAME_EDEFAULT.equals(columnName);
 			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__SEPARATOR_CHAR:

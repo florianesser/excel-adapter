@@ -1,8 +1,8 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.util;
+package de.bespire.registry.io.excel.configuration.util;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.*;
+import de.bespire.registry.io.excel.configuration.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage
+ * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage
  * @generated
  */
 public class ExcelAdapterConfigurationSwitch<T> extends Switch<T>

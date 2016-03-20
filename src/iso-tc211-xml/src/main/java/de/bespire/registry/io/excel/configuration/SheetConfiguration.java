@@ -1,6 +1,6 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration;
+package de.bespire.registry.io.excel.configuration;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -15,19 +15,19 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getImportType <em>Import Type</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getExportType <em>Export Type</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getItemClassName <em>Item Class Name</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getColumn <em>Column</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getHeaderRow <em>Header Row</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getIdColumn <em>Id Column</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getIdPrefix <em>Id Prefix</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getSheetName <em>Sheet Name</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getImportType <em>Import Type</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getExportType <em>Export Type</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getItemClassName <em>Item Class Name</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getColumn <em>Column</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getHeaderRow <em>Header Row</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getIdColumn <em>Id Column</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getIdPrefix <em>Id Prefix</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getSheetName <em>Sheet Name</em>}</li>
  * </ul>
  *
- * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration()
+ * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration()
  * @model extendedMetaData="name='SheetConfiguration' kind='elementOnly'"
  * @generated
  */
@@ -43,7 +43,7 @@ public interface SheetConfiguration extends EObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Import Type</em>' attribute.
 	 * @see #setImportType(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_ImportType()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_ImportType()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='importType' namespace='##targetNamespace'"
 	 * @generated
@@ -51,7 +51,7 @@ public interface SheetConfiguration extends EObject
 	String getImportType();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getImportType <em>Import Type</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getImportType <em>Import Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Import Type</em>' attribute.
@@ -70,7 +70,7 @@ public interface SheetConfiguration extends EObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Export Type</em>' attribute.
 	 * @see #setExportType(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_ExportType()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_ExportType()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='exportType' namespace='##targetNamespace'"
 	 * @generated
@@ -78,7 +78,7 @@ public interface SheetConfiguration extends EObject
 	String getExportType();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getExportType <em>Export Type</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getExportType <em>Export Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Export Type</em>' attribute.
@@ -97,7 +97,7 @@ public interface SheetConfiguration extends EObject
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Item Class Name</em>' attribute list.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_ItemClassName()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_ItemClassName()
 	 * @model unique="false" dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='itemClassName' namespace='##targetNamespace'"
 	 * @generated
@@ -106,7 +106,7 @@ public interface SheetConfiguration extends EObject
 
 	/**
 	 * Returns the value of the '<em><b>Column</b></em>' containment reference list.
-	 * The list contents are of type {@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration}.
+	 * The list contents are of type {@link de.bespire.registry.io.excel.configuration.ColumnConfiguration}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Column</em>' containment reference list isn't clear,
@@ -114,7 +114,7 @@ public interface SheetConfiguration extends EObject
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Column</em>' containment reference list.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_Column()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_Column()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='column' namespace='##targetNamespace'"
 	 * @generated
@@ -134,7 +134,7 @@ public interface SheetConfiguration extends EObject
 	 * @see #isSetFirstDataColumn()
 	 * @see #unsetFirstDataColumn()
 	 * @see #setFirstDataColumn(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_FirstDataColumn()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_FirstDataColumn()
 	 * @model default="B" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='attribute' name='firstDataColumn'"
 	 * @generated
@@ -142,7 +142,7 @@ public interface SheetConfiguration extends EObject
 	String getFirstDataColumn();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>First Data Column</em>' attribute.
@@ -154,7 +154,7 @@ public interface SheetConfiguration extends EObject
 	void setFirstDataColumn(String value);
 
 	/**
-	 * Unsets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}' attribute.
+	 * Unsets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #isSetFirstDataColumn()
@@ -165,7 +165,7 @@ public interface SheetConfiguration extends EObject
 	void unsetFirstDataColumn();
 
 	/**
-	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}' attribute is set.
+	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>First Data Column</em>' attribute is set.
@@ -189,7 +189,7 @@ public interface SheetConfiguration extends EObject
 	 * @see #isSetFirstDataRow()
 	 * @see #unsetFirstDataRow()
 	 * @see #setFirstDataRow(int)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_FirstDataRow()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_FirstDataRow()
 	 * @model default="2" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
 	 *        extendedMetaData="kind='attribute' name='firstDataRow'"
 	 * @generated
@@ -197,7 +197,7 @@ public interface SheetConfiguration extends EObject
 	int getFirstDataRow();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>First Data Row</em>' attribute.
@@ -209,7 +209,7 @@ public interface SheetConfiguration extends EObject
 	void setFirstDataRow(int value);
 
 	/**
-	 * Unsets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}' attribute.
+	 * Unsets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #isSetFirstDataRow()
@@ -220,7 +220,7 @@ public interface SheetConfiguration extends EObject
 	void unsetFirstDataRow();
 
 	/**
-	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}' attribute is set.
+	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>First Data Row</em>' attribute is set.
@@ -244,7 +244,7 @@ public interface SheetConfiguration extends EObject
 	 * @see #isSetHeaderRow()
 	 * @see #unsetHeaderRow()
 	 * @see #setHeaderRow(int)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_HeaderRow()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_HeaderRow()
 	 * @model default="1" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
 	 *        extendedMetaData="kind='attribute' name='headerRow'"
 	 * @generated
@@ -252,7 +252,7 @@ public interface SheetConfiguration extends EObject
 	int getHeaderRow();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getHeaderRow <em>Header Row</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getHeaderRow <em>Header Row</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Header Row</em>' attribute.
@@ -264,7 +264,7 @@ public interface SheetConfiguration extends EObject
 	void setHeaderRow(int value);
 
 	/**
-	 * Unsets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getHeaderRow <em>Header Row</em>}' attribute.
+	 * Unsets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getHeaderRow <em>Header Row</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #isSetHeaderRow()
@@ -275,7 +275,7 @@ public interface SheetConfiguration extends EObject
 	void unsetHeaderRow();
 
 	/**
-	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getHeaderRow <em>Header Row</em>}' attribute is set.
+	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getHeaderRow <em>Header Row</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Header Row</em>' attribute is set.
@@ -296,7 +296,7 @@ public interface SheetConfiguration extends EObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id Column</em>' attribute.
 	 * @see #setIdColumn(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_IdColumn()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_IdColumn()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='attribute' name='idColumn'"
 	 * @generated
@@ -304,7 +304,7 @@ public interface SheetConfiguration extends EObject
 	String getIdColumn();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getIdColumn <em>Id Column</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getIdColumn <em>Id Column</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Id Column</em>' attribute.
@@ -323,7 +323,7 @@ public interface SheetConfiguration extends EObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id Prefix</em>' attribute.
 	 * @see #setIdPrefix(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_IdPrefix()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_IdPrefix()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='attribute' name='idPrefix'"
 	 * @generated
@@ -331,7 +331,7 @@ public interface SheetConfiguration extends EObject
 	String getIdPrefix();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getIdPrefix <em>Id Prefix</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getIdPrefix <em>Id Prefix</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Id Prefix</em>' attribute.
@@ -350,7 +350,7 @@ public interface SheetConfiguration extends EObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sheet Name</em>' attribute.
 	 * @see #setSheetName(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getSheetConfiguration_SheetName()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_SheetName()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='attribute' name='sheetName'"
 	 * @generated
@@ -358,7 +358,7 @@ public interface SheetConfiguration extends EObject
 	String getSheetName();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getSheetName <em>Sheet Name</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getSheetName <em>Sheet Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Sheet Name</em>' attribute.

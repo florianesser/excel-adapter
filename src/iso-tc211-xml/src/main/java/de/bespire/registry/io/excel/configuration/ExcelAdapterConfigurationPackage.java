@@ -1,6 +1,6 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration;
+package de.bespire.registry.io.excel.configuration;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationFactory
+ * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationFactory
  * @model kind="package"
  * @generated
  */
@@ -31,7 +31,7 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "ExcelAdapterConfiguration";
+	String eNAME = "configuration";
 
 	/**
 	 * The package namespace URI.
@@ -55,14 +55,14 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	ExcelAdapterConfigurationPackage eINSTANCE = de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationPackageImpl.init();
+	ExcelAdapterConfigurationPackage eINSTANCE = de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl <em>Column Configuration</em>}' class.
+	 * The meta object id for the '{@link de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl <em>Column Configuration</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationPackageImpl#getColumnConfiguration()
+	 * @see de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl
+	 * @see de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationPackageImpl#getColumnConfiguration()
 	 * @generated
 	 */
 	int COLUMN_CONFIGURATION = 0;
@@ -95,7 +95,7 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 	int COLUMN_CONFIGURATION__MULTIPLE = 2;
 
 	/**
-	 * The feature id for the '<em><b>References</b></em>' attribute.
+	 * The feature id for the '<em><b>References</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -140,11 +140,11 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 	int COLUMN_CONFIGURATION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl <em>Document Root</em>}' class.
+	 * The meta object id for the '{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl <em>Document Root</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationPackageImpl#getDocumentRoot()
+	 * @see de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl
+	 * @see de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationPackageImpl#getDocumentRoot()
 	 * @generated
 	 */
 	int DOCUMENT_ROOT = 1;
@@ -222,11 +222,11 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 	int DOCUMENT_ROOT_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelConfigurationImpl <em>Excel Configuration</em>}' class.
+	 * The meta object id for the '{@link de.bespire.registry.io.excel.configuration.impl.ExcelConfigurationImpl <em>Excel Configuration</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelConfigurationImpl
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationPackageImpl#getExcelConfiguration()
+	 * @see de.bespire.registry.io.excel.configuration.impl.ExcelConfigurationImpl
+	 * @see de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationPackageImpl#getExcelConfiguration()
 	 * @generated
 	 */
 	int EXCEL_CONFIGURATION = 2;
@@ -259,11 +259,11 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 	int EXCEL_CONFIGURATION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl <em>Sheet Configuration</em>}' class.
+	 * The meta object id for the '{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl <em>Sheet Configuration</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationPackageImpl#getSheetConfiguration()
+	 * @see de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl
+	 * @see de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationPackageImpl#getSheetConfiguration()
 	 * @generated
 	 */
 	int SHEET_CONFIGURATION = 3;
@@ -378,293 +378,293 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 
 
 	/**
-	 * Returns the meta object for class '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration <em>Column Configuration</em>}'.
+	 * Returns the meta object for class '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration <em>Column Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Column Configuration</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration
+	 * @see de.bespire.registry.io.excel.configuration.ColumnConfiguration
 	 * @generated
 	 */
 	EClass getColumnConfiguration();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getJavaProperty <em>Java Property</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getJavaProperty <em>Java Property</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Java Property</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getJavaProperty()
+	 * @see de.bespire.registry.io.excel.configuration.ColumnConfiguration#getJavaProperty()
 	 * @see #getColumnConfiguration()
 	 * @generated
 	 */
 	EAttribute getColumnConfiguration_JavaProperty();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getJavaPropertyExport <em>Java Property Export</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getJavaPropertyExport <em>Java Property Export</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Java Property Export</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getJavaPropertyExport()
+	 * @see de.bespire.registry.io.excel.configuration.ColumnConfiguration#getJavaPropertyExport()
 	 * @see #getColumnConfiguration()
 	 * @generated
 	 */
 	EAttribute getColumnConfiguration_JavaPropertyExport();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#isMultiple <em>Multiple</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#isMultiple <em>Multiple</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Multiple</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#isMultiple()
+	 * @see de.bespire.registry.io.excel.configuration.ColumnConfiguration#isMultiple()
 	 * @see #getColumnConfiguration()
 	 * @generated
 	 */
 	EAttribute getColumnConfiguration_Multiple();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getReferences <em>References</em>}'.
+	 * Returns the meta object for the attribute list '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getReferences <em>References</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>References</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getReferences()
+	 * @return the meta object for the attribute list '<em>References</em>'.
+	 * @see de.bespire.registry.io.excel.configuration.ColumnConfiguration#getReferences()
 	 * @see #getColumnConfiguration()
 	 * @generated
 	 */
 	EAttribute getColumnConfiguration_References();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getColumnName <em>Column Name</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getColumnName <em>Column Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Column Name</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getColumnName()
+	 * @see de.bespire.registry.io.excel.configuration.ColumnConfiguration#getColumnName()
 	 * @see #getColumnConfiguration()
 	 * @generated
 	 */
 	EAttribute getColumnConfiguration_ColumnName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Separator Char</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getSeparatorChar()
+	 * @see de.bespire.registry.io.excel.configuration.ColumnConfiguration#getSeparatorChar()
 	 * @see #getColumnConfiguration()
 	 * @generated
 	 */
 	EAttribute getColumnConfiguration_SeparatorChar();
 
 	/**
-	 * Returns the meta object for class '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot <em>Document Root</em>}'.
+	 * Returns the meta object for class '{@link de.bespire.registry.io.excel.configuration.DocumentRoot <em>Document Root</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Document Root</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot
+	 * @see de.bespire.registry.io.excel.configuration.DocumentRoot
 	 * @generated
 	 */
 	EClass getDocumentRoot();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getMixed <em>Mixed</em>}'.
+	 * Returns the meta object for the attribute list '{@link de.bespire.registry.io.excel.configuration.DocumentRoot#getMixed <em>Mixed</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Mixed</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getMixed()
+	 * @see de.bespire.registry.io.excel.configuration.DocumentRoot#getMixed()
 	 * @see #getDocumentRoot()
 	 * @generated
 	 */
 	EAttribute getDocumentRoot_Mixed();
 
 	/**
-	 * Returns the meta object for the map '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}'.
+	 * Returns the meta object for the map '{@link de.bespire.registry.io.excel.configuration.DocumentRoot#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the map '<em>XMLNS Prefix Map</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getXMLNSPrefixMap()
+	 * @see de.bespire.registry.io.excel.configuration.DocumentRoot#getXMLNSPrefixMap()
 	 * @see #getDocumentRoot()
 	 * @generated
 	 */
 	EReference getDocumentRoot_XMLNSPrefixMap();
 
 	/**
-	 * Returns the meta object for the map '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getXSISchemaLocation <em>XSI Schema Location</em>}'.
+	 * Returns the meta object for the map '{@link de.bespire.registry.io.excel.configuration.DocumentRoot#getXSISchemaLocation <em>XSI Schema Location</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the map '<em>XSI Schema Location</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getXSISchemaLocation()
+	 * @see de.bespire.registry.io.excel.configuration.DocumentRoot#getXSISchemaLocation()
 	 * @see #getDocumentRoot()
 	 * @generated
 	 */
 	EReference getDocumentRoot_XSISchemaLocation();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getColumnConfiguration <em>Column Configuration</em>}'.
+	 * Returns the meta object for the containment reference '{@link de.bespire.registry.io.excel.configuration.DocumentRoot#getColumnConfiguration <em>Column Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Column Configuration</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getColumnConfiguration()
+	 * @see de.bespire.registry.io.excel.configuration.DocumentRoot#getColumnConfiguration()
 	 * @see #getDocumentRoot()
 	 * @generated
 	 */
 	EReference getDocumentRoot_ColumnConfiguration();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getExcelConfiguration <em>Excel Configuration</em>}'.
+	 * Returns the meta object for the containment reference '{@link de.bespire.registry.io.excel.configuration.DocumentRoot#getExcelConfiguration <em>Excel Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Excel Configuration</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getExcelConfiguration()
+	 * @see de.bespire.registry.io.excel.configuration.DocumentRoot#getExcelConfiguration()
 	 * @see #getDocumentRoot()
 	 * @generated
 	 */
 	EReference getDocumentRoot_ExcelConfiguration();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getSheetConfiguration <em>Sheet Configuration</em>}'.
+	 * Returns the meta object for the containment reference '{@link de.bespire.registry.io.excel.configuration.DocumentRoot#getSheetConfiguration <em>Sheet Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Sheet Configuration</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot#getSheetConfiguration()
+	 * @see de.bespire.registry.io.excel.configuration.DocumentRoot#getSheetConfiguration()
 	 * @see #getDocumentRoot()
 	 * @generated
 	 */
 	EReference getDocumentRoot_SheetConfiguration();
 
 	/**
-	 * Returns the meta object for class '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration <em>Excel Configuration</em>}'.
+	 * Returns the meta object for class '{@link de.bespire.registry.io.excel.configuration.ExcelConfiguration <em>Excel Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Excel Configuration</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration
+	 * @see de.bespire.registry.io.excel.configuration.ExcelConfiguration
 	 * @generated
 	 */
 	EClass getExcelConfiguration();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration#getSheet <em>Sheet</em>}'.
+	 * Returns the meta object for the containment reference list '{@link de.bespire.registry.io.excel.configuration.ExcelConfiguration#getSheet <em>Sheet</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Sheet</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration#getSheet()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelConfiguration#getSheet()
 	 * @see #getExcelConfiguration()
 	 * @generated
 	 */
 	EReference getExcelConfiguration_Sheet();
 
 	/**
-	 * Returns the meta object for class '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration <em>Sheet Configuration</em>}'.
+	 * Returns the meta object for class '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration <em>Sheet Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Sheet Configuration</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration
 	 * @generated
 	 */
 	EClass getSheetConfiguration();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getImportType <em>Import Type</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getImportType <em>Import Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Import Type</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getImportType()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getImportType()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
 	EAttribute getSheetConfiguration_ImportType();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getExportType <em>Export Type</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getExportType <em>Export Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Export Type</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getExportType()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getExportType()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
 	EAttribute getSheetConfiguration_ExportType();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getItemClassName <em>Item Class Name</em>}'.
+	 * Returns the meta object for the attribute list '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getItemClassName <em>Item Class Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Item Class Name</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getItemClassName()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getItemClassName()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
 	EAttribute getSheetConfiguration_ItemClassName();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getColumn <em>Column</em>}'.
+	 * Returns the meta object for the containment reference list '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getColumn <em>Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Column</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getColumn()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getColumn()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
 	EReference getSheetConfiguration_Column();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataColumn <em>First Data Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>First Data Column</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataColumn()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataColumn()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
 	EAttribute getSheetConfiguration_FirstDataColumn();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataRow <em>First Data Row</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>First Data Row</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getFirstDataRow()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getFirstDataRow()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
 	EAttribute getSheetConfiguration_FirstDataRow();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getHeaderRow <em>Header Row</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getHeaderRow <em>Header Row</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Header Row</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getHeaderRow()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getHeaderRow()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
 	EAttribute getSheetConfiguration_HeaderRow();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getIdColumn <em>Id Column</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getIdColumn <em>Id Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Id Column</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getIdColumn()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getIdColumn()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
 	EAttribute getSheetConfiguration_IdColumn();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getIdPrefix <em>Id Prefix</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getIdPrefix <em>Id Prefix</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Id Prefix</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getIdPrefix()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getIdPrefix()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
 	EAttribute getSheetConfiguration_IdPrefix();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getSheetName <em>Sheet Name</em>}'.
+	 * Returns the meta object for the attribute '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration#getSheetName <em>Sheet Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Sheet Name</em>'.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration#getSheetName()
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration#getSheetName()
 	 * @see #getSheetConfiguration()
 	 * @generated
 	 */
@@ -695,11 +695,11 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 	interface Literals
 	{
 		/**
-		 * The meta object literal for the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl <em>Column Configuration</em>}' class.
+		 * The meta object literal for the '{@link de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl <em>Column Configuration</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ColumnConfigurationImpl
-		 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationPackageImpl#getColumnConfiguration()
+		 * @see de.bespire.registry.io.excel.configuration.impl.ColumnConfigurationImpl
+		 * @see de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationPackageImpl#getColumnConfiguration()
 		 * @generated
 		 */
 		EClass COLUMN_CONFIGURATION = eINSTANCE.getColumnConfiguration();
@@ -729,7 +729,7 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 		EAttribute COLUMN_CONFIGURATION__MULTIPLE = eINSTANCE.getColumnConfiguration_Multiple();
 
 		/**
-		 * The meta object literal for the '<em><b>References</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>References</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -753,11 +753,11 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 		EAttribute COLUMN_CONFIGURATION__SEPARATOR_CHAR = eINSTANCE.getColumnConfiguration_SeparatorChar();
 
 		/**
-		 * The meta object literal for the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl <em>Document Root</em>}' class.
+		 * The meta object literal for the '{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl <em>Document Root</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl
-		 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationPackageImpl#getDocumentRoot()
+		 * @see de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl
+		 * @see de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationPackageImpl#getDocumentRoot()
 		 * @generated
 		 */
 		EClass DOCUMENT_ROOT = eINSTANCE.getDocumentRoot();
@@ -811,11 +811,11 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 		EReference DOCUMENT_ROOT__SHEET_CONFIGURATION = eINSTANCE.getDocumentRoot_SheetConfiguration();
 
 		/**
-		 * The meta object literal for the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelConfigurationImpl <em>Excel Configuration</em>}' class.
+		 * The meta object literal for the '{@link de.bespire.registry.io.excel.configuration.impl.ExcelConfigurationImpl <em>Excel Configuration</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelConfigurationImpl
-		 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationPackageImpl#getExcelConfiguration()
+		 * @see de.bespire.registry.io.excel.configuration.impl.ExcelConfigurationImpl
+		 * @see de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationPackageImpl#getExcelConfiguration()
 		 * @generated
 		 */
 		EClass EXCEL_CONFIGURATION = eINSTANCE.getExcelConfiguration();
@@ -829,11 +829,11 @@ public interface ExcelAdapterConfigurationPackage extends EPackage
 		EReference EXCEL_CONFIGURATION__SHEET = eINSTANCE.getExcelConfiguration_Sheet();
 
 		/**
-		 * The meta object literal for the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl <em>Sheet Configuration</em>}' class.
+		 * The meta object literal for the '{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl <em>Sheet Configuration</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl
-		 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelAdapterConfigurationPackageImpl#getSheetConfiguration()
+		 * @see de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl
+		 * @see de.bespire.registry.io.excel.configuration.impl.ExcelAdapterConfigurationPackageImpl#getSheetConfiguration()
 		 * @generated
 		 */
 		EClass SHEET_CONFIGURATION = eINSTANCE.getSheetConfiguration();

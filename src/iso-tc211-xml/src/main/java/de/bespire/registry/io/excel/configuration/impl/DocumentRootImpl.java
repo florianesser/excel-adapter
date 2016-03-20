@@ -1,12 +1,12 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl;
+package de.bespire.registry.io.excel.configuration.impl;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration;
+import de.bespire.registry.io.excel.configuration.ColumnConfiguration;
+import de.bespire.registry.io.excel.configuration.DocumentRoot;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.ExcelConfiguration;
+import de.bespire.registry.io.excel.configuration.SheetConfiguration;
 
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -33,12 +33,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getMixed <em>Mixed</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getColumnConfiguration <em>Column Configuration</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getExcelConfiguration <em>Excel Configuration</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.DocumentRootImpl#getSheetConfiguration <em>Sheet Configuration</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getMixed <em>Mixed</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getColumnConfiguration <em>Column Configuration</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getExcelConfiguration <em>Excel Configuration</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.DocumentRootImpl#getSheetConfiguration <em>Sheet Configuration</em>}</li>
  * </ul>
  *
  * @generated

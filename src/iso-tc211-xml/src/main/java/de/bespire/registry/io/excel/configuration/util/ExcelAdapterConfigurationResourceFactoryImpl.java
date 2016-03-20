@@ -1,6 +1,6 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.util;
+package de.bespire.registry.io.excel.configuration.util;
 
 import org.eclipse.emf.common.util.URI;
 
@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
  * <!-- begin-user-doc -->
  * The <b>Resource Factory</b> associated with the package.
  * <!-- end-user-doc -->
- * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.util.ExcelAdapterConfigurationResourceImpl
+ * @see de.bespire.registry.io.excel.configuration.util.ExcelAdapterConfigurationResourceImpl
  * @generated
  */
 public class ExcelAdapterConfigurationResourceFactoryImpl extends ResourceFactoryImpl

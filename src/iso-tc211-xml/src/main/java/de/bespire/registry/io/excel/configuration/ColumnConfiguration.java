@@ -1,6 +1,8 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration;
+package de.bespire.registry.io.excel.configuration;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,15 +15,15 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getJavaProperty <em>Java Property</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getJavaPropertyExport <em>Java Property Export</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#isMultiple <em>Multiple</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getReferences <em>References</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getColumnName <em>Column Name</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getJavaProperty <em>Java Property</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getJavaPropertyExport <em>Java Property Export</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#isMultiple <em>Multiple</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getReferences <em>References</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getColumnName <em>Column Name</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}</li>
  * </ul>
  *
- * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getColumnConfiguration()
+ * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getColumnConfiguration()
  * @model extendedMetaData="name='ColumnConfiguration' kind='elementOnly'"
  * @generated
  */
@@ -37,7 +39,7 @@ public interface ColumnConfiguration extends EObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Java Property</em>' attribute.
 	 * @see #setJavaProperty(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getColumnConfiguration_JavaProperty()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getColumnConfiguration_JavaProperty()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='javaProperty' namespace='##targetNamespace'"
 	 * @generated
@@ -45,7 +47,7 @@ public interface ColumnConfiguration extends EObject
 	String getJavaProperty();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getJavaProperty <em>Java Property</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getJavaProperty <em>Java Property</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Java Property</em>' attribute.
@@ -64,7 +66,7 @@ public interface ColumnConfiguration extends EObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Java Property Export</em>' attribute.
 	 * @see #setJavaPropertyExport(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getColumnConfiguration_JavaPropertyExport()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getColumnConfiguration_JavaPropertyExport()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='javaPropertyExport' namespace='##targetNamespace'"
 	 * @generated
@@ -72,7 +74,7 @@ public interface ColumnConfiguration extends EObject
 	String getJavaPropertyExport();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getJavaPropertyExport <em>Java Property Export</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getJavaPropertyExport <em>Java Property Export</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Java Property Export</em>' attribute.
@@ -94,7 +96,7 @@ public interface ColumnConfiguration extends EObject
 	 * @see #isSetMultiple()
 	 * @see #unsetMultiple()
 	 * @see #setMultiple(boolean)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getColumnConfiguration_Multiple()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getColumnConfiguration_Multiple()
 	 * @model default="false" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean" required="true"
 	 *        extendedMetaData="kind='element' name='multiple' namespace='##targetNamespace'"
 	 * @generated
@@ -102,7 +104,7 @@ public interface ColumnConfiguration extends EObject
 	boolean isMultiple();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#isMultiple <em>Multiple</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#isMultiple <em>Multiple</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Multiple</em>' attribute.
@@ -114,7 +116,7 @@ public interface ColumnConfiguration extends EObject
 	void setMultiple(boolean value);
 
 	/**
-	 * Unsets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#isMultiple <em>Multiple</em>}' attribute.
+	 * Unsets the value of the '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#isMultiple <em>Multiple</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #isSetMultiple()
@@ -125,7 +127,7 @@ public interface ColumnConfiguration extends EObject
 	void unsetMultiple();
 
 	/**
-	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#isMultiple <em>Multiple</em>}' attribute is set.
+	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#isMultiple <em>Multiple</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Multiple</em>' attribute is set.
@@ -137,31 +139,21 @@ public interface ColumnConfiguration extends EObject
 	boolean isSetMultiple();
 
 	/**
-	 * Returns the value of the '<em><b>References</b></em>' attribute.
+	 * Returns the value of the '<em><b>References</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>References</em>' attribute isn't clear,
+	 * If the meaning of the '<em>References</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>References</em>' attribute.
-	 * @see #setReferences(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getColumnConfiguration_References()
+	 * @return the value of the '<em>References</em>' attribute list.
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getColumnConfiguration_References()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='references' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	String getReferences();
-
-	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getReferences <em>References</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>References</em>' attribute.
-	 * @see #getReferences()
-	 * @generated
-	 */
-	void setReferences(String value);
+	EList<String> getReferences();
 
 	/**
 	 * Returns the value of the '<em><b>Column Name</b></em>' attribute.
@@ -173,7 +165,7 @@ public interface ColumnConfiguration extends EObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Column Name</em>' attribute.
 	 * @see #setColumnName(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getColumnConfiguration_ColumnName()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getColumnConfiguration_ColumnName()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='attribute' name='columnName'"
 	 * @generated
@@ -181,7 +173,7 @@ public interface ColumnConfiguration extends EObject
 	String getColumnName();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getColumnName <em>Column Name</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getColumnName <em>Column Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Column Name</em>' attribute.
@@ -203,7 +195,7 @@ public interface ColumnConfiguration extends EObject
 	 * @see #isSetSeparatorChar()
 	 * @see #unsetSeparatorChar()
 	 * @see #setSeparatorChar(String)
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage#getColumnConfiguration_SeparatorChar()
+	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getColumnConfiguration_SeparatorChar()
 	 * @model default=";" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='attribute' name='separatorChar'"
 	 * @generated
@@ -211,7 +203,7 @@ public interface ColumnConfiguration extends EObject
 	String getSeparatorChar();
 
 	/**
-	 * Sets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}' attribute.
+	 * Sets the value of the '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Separator Char</em>' attribute.
@@ -223,7 +215,7 @@ public interface ColumnConfiguration extends EObject
 	void setSeparatorChar(String value);
 
 	/**
-	 * Unsets the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}' attribute.
+	 * Unsets the value of the '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #isSetSeparatorChar()
@@ -234,7 +226,7 @@ public interface ColumnConfiguration extends EObject
 	void unsetSeparatorChar();
 
 	/**
-	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}' attribute is set.
+	 * Returns whether the value of the '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration#getSeparatorChar <em>Separator Char</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Separator Char</em>' attribute is set.

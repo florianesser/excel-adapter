@@ -1,10 +1,10 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl;
+package de.bespire.registry.io.excel.configuration.impl;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration;
+import de.bespire.registry.io.excel.configuration.ColumnConfiguration;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.SheetConfiguration;
 
 import java.util.Collection;
 
@@ -31,22 +31,21 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getImportType <em>Import Type</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getExportType <em>Export Type</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getItemClassName <em>Item Class Name</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getColumn <em>Column</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getFirstDataColumn <em>First Data Column</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getFirstDataRow <em>First Data Row</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getHeaderRow <em>Header Row</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getIdColumn <em>Id Column</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getIdPrefix <em>Id Prefix</em>}</li>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.SheetConfigurationImpl#getSheetName <em>Sheet Name</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getImportType <em>Import Type</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getExportType <em>Export Type</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getItemClassName <em>Item Class Name</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getColumn <em>Column</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getFirstDataColumn <em>First Data Column</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getFirstDataRow <em>First Data Row</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getHeaderRow <em>Header Row</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getIdColumn <em>Id Column</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getIdPrefix <em>Id Prefix</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.SheetConfigurationImpl#getSheetName <em>Sheet Name</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SheetConfigurationImpl extends MinimalEObjectImpl.Container implements SheetConfiguration
-{
+public class SheetConfigurationImpl extends MinimalEObjectImpl.Container implements SheetConfiguration {
 	/**
 	 * The default value of the '{@link #getImportType() <em>Import Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -259,8 +258,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SheetConfigurationImpl()
-	{
+	protected SheetConfigurationImpl() {
 		super();
 	}
 
@@ -270,8 +268,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return ExcelAdapterConfigurationPackage.Literals.SHEET_CONFIGURATION;
 	}
 
@@ -280,8 +277,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getImportType()
-	{
+	public String getImportType() {
 		return importType;
 	}
 
@@ -290,8 +286,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImportType(String newImportType)
-	{
+	public void setImportType(String newImportType) {
 		String oldImportType = importType;
 		importType = newImportType;
 		if (eNotificationRequired())
@@ -303,8 +298,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getExportType()
-	{
+	public String getExportType() {
 		return exportType;
 	}
 
@@ -313,8 +307,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExportType(String newExportType)
-	{
+	public void setExportType(String newExportType) {
 		String oldExportType = exportType;
 		exportType = newExportType;
 		if (eNotificationRequired())
@@ -326,10 +319,8 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getItemClassName()
-	{
-		if (itemClassName == null)
-		{
+	public EList<String> getItemClassName() {
+		if (itemClassName == null) {
 			itemClassName = new EDataTypeEList<String>(String.class, this, ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION__ITEM_CLASS_NAME);
 		}
 		return itemClassName;
@@ -340,10 +331,8 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ColumnConfiguration> getColumn()
-	{
-		if (column == null)
-		{
+	public EList<ColumnConfiguration> getColumn() {
+		if (column == null) {
 			column = new EObjectContainmentEList<ColumnConfiguration>(ColumnConfiguration.class, this, ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION__COLUMN);
 		}
 		return column;
@@ -354,8 +343,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getFirstDataColumn()
-	{
+	public String getFirstDataColumn() {
 		return firstDataColumn;
 	}
 
@@ -364,8 +352,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFirstDataColumn(String newFirstDataColumn)
-	{
+	public void setFirstDataColumn(String newFirstDataColumn) {
 		String oldFirstDataColumn = firstDataColumn;
 		firstDataColumn = newFirstDataColumn;
 		boolean oldFirstDataColumnESet = firstDataColumnESet;
@@ -379,8 +366,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetFirstDataColumn()
-	{
+	public void unsetFirstDataColumn() {
 		String oldFirstDataColumn = firstDataColumn;
 		boolean oldFirstDataColumnESet = firstDataColumnESet;
 		firstDataColumn = FIRST_DATA_COLUMN_EDEFAULT;
@@ -394,8 +380,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetFirstDataColumn()
-	{
+	public boolean isSetFirstDataColumn() {
 		return firstDataColumnESet;
 	}
 
@@ -404,8 +389,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getFirstDataRow()
-	{
+	public int getFirstDataRow() {
 		return firstDataRow;
 	}
 
@@ -414,8 +398,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFirstDataRow(int newFirstDataRow)
-	{
+	public void setFirstDataRow(int newFirstDataRow) {
 		int oldFirstDataRow = firstDataRow;
 		firstDataRow = newFirstDataRow;
 		boolean oldFirstDataRowESet = firstDataRowESet;
@@ -429,8 +412,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetFirstDataRow()
-	{
+	public void unsetFirstDataRow() {
 		int oldFirstDataRow = firstDataRow;
 		boolean oldFirstDataRowESet = firstDataRowESet;
 		firstDataRow = FIRST_DATA_ROW_EDEFAULT;
@@ -444,8 +426,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetFirstDataRow()
-	{
+	public boolean isSetFirstDataRow() {
 		return firstDataRowESet;
 	}
 
@@ -454,8 +435,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getHeaderRow()
-	{
+	public int getHeaderRow() {
 		return headerRow;
 	}
 
@@ -464,8 +444,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHeaderRow(int newHeaderRow)
-	{
+	public void setHeaderRow(int newHeaderRow) {
 		int oldHeaderRow = headerRow;
 		headerRow = newHeaderRow;
 		boolean oldHeaderRowESet = headerRowESet;
@@ -479,8 +458,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetHeaderRow()
-	{
+	public void unsetHeaderRow() {
 		int oldHeaderRow = headerRow;
 		boolean oldHeaderRowESet = headerRowESet;
 		headerRow = HEADER_ROW_EDEFAULT;
@@ -494,8 +472,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetHeaderRow()
-	{
+	public boolean isSetHeaderRow() {
 		return headerRowESet;
 	}
 
@@ -504,8 +481,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getIdColumn()
-	{
+	public String getIdColumn() {
 		return idColumn;
 	}
 
@@ -514,8 +490,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIdColumn(String newIdColumn)
-	{
+	public void setIdColumn(String newIdColumn) {
 		String oldIdColumn = idColumn;
 		idColumn = newIdColumn;
 		if (eNotificationRequired())
@@ -527,8 +502,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getIdPrefix()
-	{
+	public String getIdPrefix() {
 		return idPrefix;
 	}
 
@@ -537,8 +511,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIdPrefix(String newIdPrefix)
-	{
+	public void setIdPrefix(String newIdPrefix) {
 		String oldIdPrefix = idPrefix;
 		idPrefix = newIdPrefix;
 		if (eNotificationRequired())
@@ -550,8 +523,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getSheetName()
-	{
+	public String getSheetName() {
 		return sheetName;
 	}
 
@@ -560,8 +532,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSheetName(String newSheetName)
-	{
+	public void setSheetName(String newSheetName) {
 		String oldSheetName = sheetName;
 		sheetName = newSheetName;
 		if (eNotificationRequired())
@@ -574,10 +545,8 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION__COLUMN:
 				return ((InternalEList<?>)getColumn()).basicRemove(otherEnd, msgs);
 		}
@@ -590,10 +559,8 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION__IMPORT_TYPE:
 				return getImportType();
 			case ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION__EXPORT_TYPE:
@@ -625,10 +592,8 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION__IMPORT_TYPE:
 				setImportType((String)newValue);
 				return;
@@ -671,10 +636,8 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION__IMPORT_TYPE:
 				setImportType(IMPORT_TYPE_EDEFAULT);
 				return;
@@ -715,10 +678,8 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION__IMPORT_TYPE:
 				return IMPORT_TYPE_EDEFAULT == null ? importType != null : !IMPORT_TYPE_EDEFAULT.equals(importType);
 			case ExcelAdapterConfigurationPackage.SHEET_CONFIGURATION__EXPORT_TYPE:
@@ -749,8 +710,7 @@ public class SheetConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());

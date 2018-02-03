@@ -1,8 +1,8 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.util;
+package de.bespire.registry.io.excel.configuration.util;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.*;
+import de.bespire.registry.io.excel.configuration.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -16,11 +16,10 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage
+ * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage
  * @generated
  */
-public class ExcelAdapterConfigurationAdapterFactory extends AdapterFactoryImpl
-{
+public class ExcelAdapterConfigurationAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
@@ -35,10 +34,8 @@ public class ExcelAdapterConfigurationAdapterFactory extends AdapterFactoryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExcelAdapterConfigurationAdapterFactory()
-	{
-		if (modelPackage == null)
-		{
+	public ExcelAdapterConfigurationAdapterFactory() {
+		if (modelPackage == null) {
 			modelPackage = ExcelAdapterConfigurationPackage.eINSTANCE;
 		}
 	}
@@ -52,14 +49,11 @@ public class ExcelAdapterConfigurationAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean isFactoryForType(Object object)
-	{
-		if (object == modelPackage)
-		{
+	public boolean isFactoryForType(Object object) {
+		if (object == modelPackage) {
 			return true;
 		}
-		if (object instanceof EObject)
-		{
+		if (object instanceof EObject) {
 			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
@@ -72,31 +66,25 @@ public class ExcelAdapterConfigurationAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	protected ExcelAdapterConfigurationSwitch<Adapter> modelSwitch =
-		new ExcelAdapterConfigurationSwitch<Adapter>()
-		{
+		new ExcelAdapterConfigurationSwitch<Adapter>() {
 			@Override
-			public Adapter caseColumnConfiguration(ColumnConfiguration object)
-			{
+			public Adapter caseColumnConfiguration(ColumnConfiguration object) {
 				return createColumnConfigurationAdapter();
 			}
 			@Override
-			public Adapter caseDocumentRoot(DocumentRoot object)
-			{
+			public Adapter caseDocumentRoot(DocumentRoot object) {
 				return createDocumentRootAdapter();
 			}
 			@Override
-			public Adapter caseExcelConfiguration(ExcelConfiguration object)
-			{
+			public Adapter caseExcelConfiguration(ExcelConfiguration object) {
 				return createExcelConfigurationAdapter();
 			}
 			@Override
-			public Adapter caseSheetConfiguration(SheetConfiguration object)
-			{
+			public Adapter caseSheetConfiguration(SheetConfiguration object) {
 				return createSheetConfigurationAdapter();
 			}
 			@Override
-			public Adapter defaultCase(EObject object)
-			{
+			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
 		};
@@ -110,69 +98,64 @@ public class ExcelAdapterConfigurationAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdapter(Notifier target)
-	{
+	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration <em>Column Configuration</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.bespire.registry.io.excel.configuration.ColumnConfiguration <em>Column Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ColumnConfiguration
+	 * @see de.bespire.registry.io.excel.configuration.ColumnConfiguration
 	 * @generated
 	 */
-	public Adapter createColumnConfigurationAdapter()
-	{
+	public Adapter createColumnConfigurationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot <em>Document Root</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.bespire.registry.io.excel.configuration.DocumentRoot <em>Document Root</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.DocumentRoot
+	 * @see de.bespire.registry.io.excel.configuration.DocumentRoot
 	 * @generated
 	 */
-	public Adapter createDocumentRootAdapter()
-	{
+	public Adapter createDocumentRootAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration <em>Excel Configuration</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.bespire.registry.io.excel.configuration.ExcelConfiguration <em>Excel Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration
+	 * @see de.bespire.registry.io.excel.configuration.ExcelConfiguration
 	 * @generated
 	 */
-	public Adapter createExcelConfigurationAdapter()
-	{
+	public Adapter createExcelConfigurationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration <em>Sheet Configuration</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.bespire.registry.io.excel.configuration.SheetConfiguration <em>Sheet Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration
+	 * @see de.bespire.registry.io.excel.configuration.SheetConfiguration
 	 * @generated
 	 */
-	public Adapter createSheetConfigurationAdapter()
-	{
+	public Adapter createSheetConfigurationAdapter() {
 		return null;
 	}
 
@@ -184,8 +167,7 @@ public class ExcelAdapterConfigurationAdapterFactory extends AdapterFactoryImpl
 	 * @return the new adapter.
 	 * @generated
 	 */
-	public Adapter createEObjectAdapter()
-	{
+	public Adapter createEObjectAdapter() {
 		return null;
 	}
 

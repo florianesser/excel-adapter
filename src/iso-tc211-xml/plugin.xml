@@ -219,14 +219,14 @@
       <!-- @generated excelAdapterConfiguration -->
       <package
             uri="http://www.bespire.de/io/excel"
-            class="de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage"
+            class="de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage"
             genModel="src/model/excelAdapterConfiguration.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
       <!-- @generated excelAdapterConfiguration -->
       <parser
-            type="exceladapterconfiguration"
-            class="de.bespire.registry.io.excel.ExcelAdapterConfiguration.util.ExcelAdapterConfigurationResourceFactoryImpl"/>
+            type="xlconf"
+            class="de.bespire.registry.io.excel.configuration.util.ExcelAdapterConfigurationResourceFactoryImpl"/>
    </extension>
 </plugin>

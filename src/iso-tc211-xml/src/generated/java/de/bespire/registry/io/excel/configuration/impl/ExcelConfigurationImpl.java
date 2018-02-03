@@ -1,10 +1,10 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl;
+package de.bespire.registry.io.excel.configuration.impl;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelConfiguration;
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.SheetConfiguration;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.ExcelConfiguration;
+import de.bespire.registry.io.excel.configuration.SheetConfiguration;
 
 import java.util.Collection;
 
@@ -28,13 +28,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl.ExcelConfigurationImpl#getSheet <em>Sheet</em>}</li>
+ *   <li>{@link de.bespire.registry.io.excel.configuration.impl.ExcelConfigurationImpl#getSheet <em>Sheet</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container implements ExcelConfiguration
-{
+public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container implements ExcelConfiguration {
 	/**
 	 * The cached value of the '{@link #getSheet() <em>Sheet</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -50,8 +49,7 @@ public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ExcelConfigurationImpl()
-	{
+	protected ExcelConfigurationImpl() {
 		super();
 	}
 
@@ -61,8 +59,7 @@ public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return ExcelAdapterConfigurationPackage.Literals.EXCEL_CONFIGURATION;
 	}
 
@@ -71,10 +68,8 @@ public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SheetConfiguration> getSheet()
-	{
-		if (sheet == null)
-		{
+	public EList<SheetConfiguration> getSheet() {
+		if (sheet == null) {
 			sheet = new EObjectContainmentEList<SheetConfiguration>(SheetConfiguration.class, this, ExcelAdapterConfigurationPackage.EXCEL_CONFIGURATION__SHEET);
 		}
 		return sheet;
@@ -86,10 +81,8 @@ public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.EXCEL_CONFIGURATION__SHEET:
 				return ((InternalEList<?>)getSheet()).basicRemove(otherEnd, msgs);
 		}
@@ -102,10 +95,8 @@ public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.EXCEL_CONFIGURATION__SHEET:
 				return getSheet();
 		}
@@ -119,10 +110,8 @@ public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.EXCEL_CONFIGURATION__SHEET:
 				getSheet().clear();
 				getSheet().addAll((Collection<? extends SheetConfiguration>)newValue);
@@ -137,10 +126,8 @@ public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.EXCEL_CONFIGURATION__SHEET:
 				getSheet().clear();
 				return;
@@ -154,10 +141,8 @@ public class ExcelConfigurationImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case ExcelAdapterConfigurationPackage.EXCEL_CONFIGURATION__SHEET:
 				return sheet != null && !sheet.isEmpty();
 		}

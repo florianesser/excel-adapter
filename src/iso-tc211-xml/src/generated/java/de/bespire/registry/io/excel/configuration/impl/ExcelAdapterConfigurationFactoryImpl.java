@@ -1,8 +1,8 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.impl;
+package de.bespire.registry.io.excel.configuration.impl;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.*;
+import de.bespire.registry.io.excel.configuration.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -18,26 +18,21 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implements ExcelAdapterConfigurationFactory
-{
+public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implements ExcelAdapterConfigurationFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static ExcelAdapterConfigurationFactory init()
-	{
-		try
-		{
+	public static ExcelAdapterConfigurationFactory init() {
+		try {
 			ExcelAdapterConfigurationFactory theExcelAdapterConfigurationFactory = (ExcelAdapterConfigurationFactory)EPackage.Registry.INSTANCE.getEFactory(ExcelAdapterConfigurationPackage.eNS_URI);
-			if (theExcelAdapterConfigurationFactory != null)
-			{
+			if (theExcelAdapterConfigurationFactory != null) {
 				return theExcelAdapterConfigurationFactory;
 			}
 		}
-		catch (Exception exception)
-		{
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new ExcelAdapterConfigurationFactoryImpl();
@@ -49,8 +44,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExcelAdapterConfigurationFactoryImpl()
-	{
+	public ExcelAdapterConfigurationFactoryImpl() {
 		super();
 	}
 
@@ -60,10 +54,8 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass)
-	{
-		switch (eClass.getClassifierID())
-		{
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
 			case ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION: return createColumnConfiguration();
 			case ExcelAdapterConfigurationPackage.DOCUMENT_ROOT: return createDocumentRoot();
 			case ExcelAdapterConfigurationPackage.EXCEL_CONFIGURATION: return createExcelConfiguration();
@@ -78,8 +70,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ColumnConfiguration createColumnConfiguration()
-	{
+	public ColumnConfiguration createColumnConfiguration() {
 		ColumnConfigurationImpl columnConfiguration = new ColumnConfigurationImpl();
 		return columnConfiguration;
 	}
@@ -89,8 +80,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DocumentRoot createDocumentRoot()
-	{
+	public DocumentRoot createDocumentRoot() {
 		DocumentRootImpl documentRoot = new DocumentRootImpl();
 		return documentRoot;
 	}
@@ -100,8 +90,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExcelConfiguration createExcelConfiguration()
-	{
+	public ExcelConfiguration createExcelConfiguration() {
 		ExcelConfigurationImpl excelConfiguration = new ExcelConfigurationImpl();
 		return excelConfiguration;
 	}
@@ -111,8 +100,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SheetConfiguration createSheetConfiguration()
-	{
+	public SheetConfiguration createSheetConfiguration() {
 		SheetConfigurationImpl sheetConfiguration = new SheetConfigurationImpl();
 		return sheetConfiguration;
 	}
@@ -122,8 +110,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExcelAdapterConfigurationPackage getExcelAdapterConfigurationPackage()
-	{
+	public ExcelAdapterConfigurationPackage getExcelAdapterConfigurationPackage() {
 		return (ExcelAdapterConfigurationPackage)getEPackage();
 	}
 
@@ -134,8 +121,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * @generated
 	 */
 	@Deprecated
-	public static ExcelAdapterConfigurationPackage getPackage()
-	{
+	public static ExcelAdapterConfigurationPackage getPackage() {
 		return ExcelAdapterConfigurationPackage.eINSTANCE;
 	}
 

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/iso-xml/src/generated/java" modelPluginID="iso-xml"
-    modelName="ExcelAdapterConfiguration" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/iso-tc211-xml/src/generated/java" editDirectory="/iso-tc211-xml.edit/src"
+    editorDirectory="/iso-tc211-xml.editor/src" modelPluginID="iso-tc211-xml" modelName="ExcelAdapterConfiguration"
+    updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
-    operationReflection="true" importOrganizing="true">
+    editPluginID="iso-tc211-xml.edit" editorPluginID="iso-tc211-xml.editor" operationReflection="true"
+    importOrganizing="true">
   <foreignModel>excelAdapterConfiguration.ecore</foreignModel>
   <genPackages prefix="ExcelAdapterConfiguration" basePackage="de.bespire.registry.io.excel"
-      resource="XML" disposableProviderFactory="true" ecorePackage="excelAdapterConfiguration.ecore#/">
+      resource="XML" disposableProviderFactory="true" fileExtensions="xlconf" ecorePackage="excelAdapterConfiguration.ecore#/">
     <genClasses ecoreClass="excelAdapterConfiguration.ecore#//ColumnConfiguration">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute excelAdapterConfiguration.ecore#//ColumnConfiguration/javaProperty"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute excelAdapterConfiguration.ecore#//ColumnConfiguration/javaPropertyExport"/>

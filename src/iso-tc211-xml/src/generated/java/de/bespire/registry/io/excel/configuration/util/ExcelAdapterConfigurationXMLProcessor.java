@@ -1,8 +1,8 @@
 /**
  */
-package de.bespire.registry.io.excel.ExcelAdapterConfiguration.util;
+package de.bespire.registry.io.excel.configuration.util;
 
-import de.bespire.registry.io.excel.ExcelAdapterConfiguration.ExcelAdapterConfigurationPackage;
+import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
 
 import java.util.Map;
 
@@ -18,8 +18,7 @@ import org.eclipse.emf.ecore.xmi.util.XMLProcessor;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ExcelAdapterConfigurationXMLProcessor extends XMLProcessor
-{
+public class ExcelAdapterConfigurationXMLProcessor extends XMLProcessor {
 
 	/**
 	 * Public constructor to instantiate the helper.
@@ -27,8 +26,7 @@ public class ExcelAdapterConfigurationXMLProcessor extends XMLProcessor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExcelAdapterConfigurationXMLProcessor()
-	{
+	public ExcelAdapterConfigurationXMLProcessor() {
 		super((EPackage.Registry.INSTANCE));
 		ExcelAdapterConfigurationPackage.eINSTANCE.eClass();
 	}
@@ -40,10 +38,8 @@ public class ExcelAdapterConfigurationXMLProcessor extends XMLProcessor
 	 * @generated
 	 */
 	@Override
-	protected Map<String, Resource.Factory> getRegistrations()
-	{
-		if (registrations == null)
-		{
+	protected Map<String, Resource.Factory> getRegistrations() {
+		if (registrations == null) {
 			super.getRegistrations();
 			registrations.put(XML_EXTENSION, new ExcelAdapterConfigurationResourceFactoryImpl());
 			registrations.put(STAR_EXTENSION, new ExcelAdapterConfigurationResourceFactoryImpl());

@@ -2,7 +2,8 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: iso-tc211-xml;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: iso-tc211-xml
+Bundle-Version: 1.0.1
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
@@ -15,5 +16,26 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.edit.ui;visibility:=reexport,
  org.eclipse.ui.ide;visibility:=reexport,
  org.eclipse.emf;bundle-version="2.6.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: net.opengis.gml32,
+ net.opengis.gml32.impl,
+ net.opengis.gml32.util,
+ org.isotc211.iso19139.gco,
+ org.isotc211.iso19139.gco.impl,
+ org.isotc211.iso19139.gco.util,
+ org.isotc211.iso19139.gmd,
+ org.isotc211.iso19139.gmd.impl,
+ org.isotc211.iso19139.gmd.util,
+ org.isotc211.iso19139.gsr,
+ org.isotc211.iso19139.gsr.impl,
+ org.isotc211.iso19139.gsr.util,
+ org.isotc211.iso19139.gss,
+ org.isotc211.iso19139.gss.impl,
+ org.isotc211.iso19139.gss.util,
+ org.isotc211.iso19139.gts,
+ org.isotc211.iso19139.gts.impl,
+ org.isotc211.iso19139.gts.util,
+ org.w3.xlink,
+ org.w3.xlink.impl,
+ org.w3.xlink.util
 Bundle-ActivationPolicy: lazy

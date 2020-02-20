@@ -37,8 +37,7 @@ import org.isotc211.iso19139.gmd.MDFormatPropertyType;
  *
  * @generated
  */
-public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MDDistributionType
-{
+public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MDDistributionType {
 	/**
 	 * The cached value of the '{@link #getDistributionFormat() <em>Distribution Format</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -74,8 +73,7 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDDistributionTypeImpl()
-	{
+	protected MDDistributionTypeImpl() {
 		super();
 	}
 
@@ -85,8 +83,7 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDDistributionType();
 	}
 
@@ -95,10 +92,9 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDFormatPropertyType> getDistributionFormat()
-	{
-		if (distributionFormat == null)
-		{
+	@Override
+	public EList<MDFormatPropertyType> getDistributionFormat() {
+		if (distributionFormat == null) {
 			distributionFormat = new EObjectContainmentEList<MDFormatPropertyType>(MDFormatPropertyType.class, this, GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTION_FORMAT);
 		}
 		return distributionFormat;
@@ -109,10 +105,9 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDDistributorPropertyType> getDistributor()
-	{
-		if (distributor == null)
-		{
+	@Override
+	public EList<MDDistributorPropertyType> getDistributor() {
+		if (distributor == null) {
 			distributor = new EObjectContainmentEList<MDDistributorPropertyType>(MDDistributorPropertyType.class, this, GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTOR);
 		}
 		return distributor;
@@ -123,10 +118,9 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDDigitalTransferOptionsPropertyType> getTransferOptions()
-	{
-		if (transferOptions == null)
-		{
+	@Override
+	public EList<MDDigitalTransferOptionsPropertyType> getTransferOptions() {
+		if (transferOptions == null) {
 			transferOptions = new EObjectContainmentEList<MDDigitalTransferOptionsPropertyType>(MDDigitalTransferOptionsPropertyType.class, this, GMDPackage.MD_DISTRIBUTION_TYPE__TRANSFER_OPTIONS);
 		}
 		return transferOptions;
@@ -138,10 +132,8 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTION_FORMAT:
 				return ((InternalEList<?>)getDistributionFormat()).basicRemove(otherEnd, msgs);
 			case GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTOR:
@@ -158,10 +150,8 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTION_FORMAT:
 				return getDistributionFormat();
 			case GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTOR:
@@ -179,10 +169,8 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTION_FORMAT:
 				getDistributionFormat().clear();
 				getDistributionFormat().addAll((Collection<? extends MDFormatPropertyType>)newValue);
@@ -205,10 +193,8 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTION_FORMAT:
 				getDistributionFormat().clear();
 				return;
@@ -228,10 +214,8 @@ public class MDDistributionTypeImpl extends AbstractObjectTypeImpl implements MD
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTION_FORMAT:
 				return distributionFormat != null && !distributionFormat.isEmpty();
 			case GMDPackage.MD_DISTRIBUTION_TYPE__DISTRIBUTOR:

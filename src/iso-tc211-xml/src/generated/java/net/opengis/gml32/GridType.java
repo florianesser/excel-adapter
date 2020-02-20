@@ -27,15 +27,10 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='GridType' kind='elementOnly'"
  * @generated
  */
-public interface GridType extends AbstractGeometryType
-{
+public interface GridType extends AbstractGeometryType {
 	/**
 	 * Returns the value of the '<em><b>Limits</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Limits</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Limits</em>' containment reference.
 	 * @see #setLimits(GridLimitsType)
@@ -59,10 +54,6 @@ public interface GridType extends AbstractGeometryType
 	/**
 	 * Returns the value of the '<em><b>Axis Labels1</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Axis Labels1</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Axis Labels1</em>' attribute.
 	 * @see #setAxisLabels1(List)
@@ -87,10 +78,6 @@ public interface GridType extends AbstractGeometryType
 	 * Returns the value of the '<em><b>Axis Name</b></em>' attribute list.
 	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Axis Name</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Axis Name</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getGridType_AxisName()
@@ -103,10 +90,6 @@ public interface GridType extends AbstractGeometryType
 	/**
 	 * Returns the value of the '<em><b>Dimension</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dimension</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dimension</em>' attribute.
 	 * @see #setDimension(BigInteger)

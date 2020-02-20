@@ -20,15 +20,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='secondDefiningParameter_._type' kind='elementOnly'"
  * @generated
  */
-public interface SecondDefiningParameterType1 extends EObject
-{
+public interface SecondDefiningParameterType1 extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Second Defining Parameter</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Second Defining Parameter</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Second Defining Parameter</em>' containment reference.
 	 * @see #setSecondDefiningParameter(SecondDefiningParameterType)

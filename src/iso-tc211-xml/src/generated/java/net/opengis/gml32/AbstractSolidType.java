@@ -17,6 +17,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='AbstractSolidType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractSolidType extends AbstractGeometricPrimitiveType
-{
+public interface AbstractSolidType extends AbstractGeometricPrimitiveType {
 } // AbstractSolidType

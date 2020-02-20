@@ -21,15 +21,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='RS_Identifier_Type' kind='elementOnly'"
  * @generated
  */
-public interface RSIdentifierType extends MDIdentifierType
-{
+public interface RSIdentifierType extends MDIdentifierType {
 	/**
 	 * Returns the value of the '<em><b>Code Space</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Code Space</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Code Space</em>' containment reference.
 	 * @see #setCodeSpace(CharacterStringPropertyType)
@@ -53,10 +48,6 @@ public interface RSIdentifierType extends MDIdentifierType
 	/**
 	 * Returns the value of the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Version</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Version</em>' containment reference.
 	 * @see #setVersion(CharacterStringPropertyType)

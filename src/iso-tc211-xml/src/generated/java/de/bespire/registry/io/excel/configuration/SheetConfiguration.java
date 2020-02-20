@@ -35,10 +35,6 @@ public interface SheetConfiguration extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Import Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Import Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Import Type</em>' attribute.
 	 * @see #setImportType(String)
@@ -62,10 +58,6 @@ public interface SheetConfiguration extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Export Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Export Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Export Type</em>' attribute.
 	 * @see #setExportType(String)
@@ -90,10 +82,6 @@ public interface SheetConfiguration extends EObject {
 	 * Returns the value of the '<em><b>Item Class Name</b></em>' attribute list.
 	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Item Class Name</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Item Class Name</em>' attribute list.
 	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_ItemClassName()
@@ -107,10 +95,6 @@ public interface SheetConfiguration extends EObject {
 	 * Returns the value of the '<em><b>Column</b></em>' containment reference list.
 	 * The list contents are of type {@link de.bespire.registry.io.excel.configuration.ColumnConfiguration}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Column</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Column</em>' containment reference list.
 	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getSheetConfiguration_Column()
@@ -124,10 +108,6 @@ public interface SheetConfiguration extends EObject {
 	 * Returns the value of the '<em><b>First Data Column</b></em>' attribute.
 	 * The default value is <code>"B"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>First Data Column</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>First Data Column</em>' attribute.
 	 * @see #isSetFirstDataColumn()
@@ -179,10 +159,6 @@ public interface SheetConfiguration extends EObject {
 	 * Returns the value of the '<em><b>First Data Row</b></em>' attribute.
 	 * The default value is <code>"2"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>First Data Row</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>First Data Row</em>' attribute.
 	 * @see #isSetFirstDataRow()
@@ -234,10 +210,6 @@ public interface SheetConfiguration extends EObject {
 	 * Returns the value of the '<em><b>Header Row</b></em>' attribute.
 	 * The default value is <code>"1"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Header Row</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Header Row</em>' attribute.
 	 * @see #isSetHeaderRow()
@@ -288,10 +260,6 @@ public interface SheetConfiguration extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Id Column</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Id Column</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id Column</em>' attribute.
 	 * @see #setIdColumn(String)
@@ -315,10 +283,6 @@ public interface SheetConfiguration extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Id Prefix</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Id Prefix</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id Prefix</em>' attribute.
 	 * @see #setIdPrefix(String)
@@ -342,10 +306,6 @@ public interface SheetConfiguration extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Sheet Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sheet Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sheet Name</em>' attribute.
 	 * @see #setSheetName(String)

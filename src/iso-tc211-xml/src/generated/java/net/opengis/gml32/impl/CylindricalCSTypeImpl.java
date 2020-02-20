@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CylindricalCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements CylindricalCSType
-{
+public class CylindricalCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements CylindricalCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CylindricalCSTypeImpl()
-	{
+	protected CylindricalCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class CylindricalCSTypeImpl extends AbstractCoordinateSystemTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCylindricalCSType();
 	}
 

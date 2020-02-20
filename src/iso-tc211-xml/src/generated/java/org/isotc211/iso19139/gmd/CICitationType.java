@@ -40,15 +40,10 @@ import org.isotc211.iso19139.gco.DatePropertyType;
  * @model extendedMetaData="name='CI_Citation_Type' kind='elementOnly'"
  * @generated
  */
-public interface CICitationType extends AbstractObjectType
-{
+public interface CICitationType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' containment reference.
 	 * @see #setTitle(CharacterStringPropertyType)
@@ -73,10 +68,6 @@ public interface CICitationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Alternate Title</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Alternate Title</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Alternate Title</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getCICitationType_AlternateTitle()
@@ -90,10 +81,6 @@ public interface CICitationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Date</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIDatePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getCICitationType_Date()
@@ -106,10 +93,6 @@ public interface CICitationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Edition</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Edition</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Edition</em>' containment reference.
 	 * @see #setEdition(CharacterStringPropertyType)
@@ -133,10 +116,6 @@ public interface CICitationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Edition Date</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Edition Date</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Edition Date</em>' containment reference.
 	 * @see #setEditionDate(DatePropertyType)
@@ -161,10 +140,6 @@ public interface CICitationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Identifier</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDIdentifierPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Identifier</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Identifier</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getCICitationType_Identifier()
@@ -178,10 +153,6 @@ public interface CICitationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Cited Responsible Party</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIResponsiblePartyPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cited Responsible Party</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cited Responsible Party</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getCICitationType_CitedResponsibleParty()
@@ -195,10 +166,6 @@ public interface CICitationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Presentation Form</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIPresentationFormCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Presentation Form</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Presentation Form</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getCICitationType_PresentationForm()
@@ -211,10 +178,6 @@ public interface CICitationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Series</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Series</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Series</em>' containment reference.
 	 * @see #setSeries(CISeriesPropertyType)
@@ -238,10 +201,6 @@ public interface CICitationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Other Citation Details</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Other Citation Details</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Citation Details</em>' containment reference.
 	 * @see #setOtherCitationDetails(CharacterStringPropertyType)
@@ -265,10 +224,6 @@ public interface CICitationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Collective Title</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Collective Title</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Collective Title</em>' containment reference.
 	 * @see #setCollectiveTitle(CharacterStringPropertyType)
@@ -292,10 +247,6 @@ public interface CICitationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>ISBN</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>ISBN</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>ISBN</em>' containment reference.
 	 * @see #setISBN(CharacterStringPropertyType)
@@ -319,10 +270,6 @@ public interface CICitationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>ISSN</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>ISSN</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>ISSN</em>' containment reference.
 	 * @see #setISSN(CharacterStringPropertyType)

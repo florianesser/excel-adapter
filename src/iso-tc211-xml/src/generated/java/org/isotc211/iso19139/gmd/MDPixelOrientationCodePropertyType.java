@@ -21,16 +21,11 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='MD_PixelOrientationCode_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface MDPixelOrientationCodePropertyType extends EObject
-{
+public interface MDPixelOrientationCodePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>MD Pixel Orientation Code</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.isotc211.iso19139.gmd.MDPixelOrientationCodeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Pixel Orientation Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Pixel Orientation Code</em>' attribute.
 	 * @see org.isotc211.iso19139.gmd.MDPixelOrientationCodeType
@@ -83,10 +78,6 @@ public interface MDPixelOrientationCodePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

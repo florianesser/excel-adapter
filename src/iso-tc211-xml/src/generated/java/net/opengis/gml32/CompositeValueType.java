@@ -22,8 +22,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='CompositeValueType' kind='elementOnly'"
  * @generated
  */
-public interface CompositeValueType extends AbstractGMLType
-{
+public interface CompositeValueType extends AbstractGMLType {
 	/**
 	 * Returns the value of the '<em><b>Value Component</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.ValuePropertyType}.
@@ -70,10 +69,6 @@ public interface CompositeValueType extends AbstractGMLType
 	 * Returns the value of the '<em><b>Aggregation Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.AggregationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Type</em>' attribute.
 	 * @see net.opengis.gml32.AggregationType

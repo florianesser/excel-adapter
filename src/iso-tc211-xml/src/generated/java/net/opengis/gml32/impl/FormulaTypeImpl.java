@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements FormulaType
-{
+public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements FormulaType {
 	/**
 	 * The default value of the '{@link #getA() <em>A</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -151,8 +150,7 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FormulaTypeImpl()
-	{
+	protected FormulaTypeImpl() {
 		super();
 	}
 
@@ -162,8 +160,7 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getFormulaType();
 	}
 
@@ -172,8 +169,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getA()
-	{
+	@Override
+	public double getA() {
 		return a;
 	}
 
@@ -182,8 +179,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setA(double newA)
-	{
+	@Override
+	public void setA(double newA) {
 		double oldA = a;
 		a = newA;
 		boolean oldAESet = aESet;
@@ -197,8 +194,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetA()
-	{
+	@Override
+	public void unsetA() {
 		double oldA = a;
 		boolean oldAESet = aESet;
 		a = A_EDEFAULT;
@@ -212,8 +209,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetA()
-	{
+	@Override
+	public boolean isSetA() {
 		return aESet;
 	}
 
@@ -222,8 +219,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getB()
-	{
+	@Override
+	public double getB() {
 		return b;
 	}
 
@@ -232,8 +229,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setB(double newB)
-	{
+	@Override
+	public void setB(double newB) {
 		double oldB = b;
 		b = newB;
 		boolean oldBESet = bESet;
@@ -247,8 +244,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetB()
-	{
+	@Override
+	public void unsetB() {
 		double oldB = b;
 		boolean oldBESet = bESet;
 		b = B_EDEFAULT;
@@ -262,8 +259,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetB()
-	{
+	@Override
+	public boolean isSetB() {
 		return bESet;
 	}
 
@@ -272,8 +269,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getC()
-	{
+	@Override
+	public double getC() {
 		return c;
 	}
 
@@ -282,8 +279,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setC(double newC)
-	{
+	@Override
+	public void setC(double newC) {
 		double oldC = c;
 		c = newC;
 		boolean oldCESet = cESet;
@@ -297,8 +294,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetC()
-	{
+	@Override
+	public void unsetC() {
 		double oldC = c;
 		boolean oldCESet = cESet;
 		c = C_EDEFAULT;
@@ -312,8 +309,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetC()
-	{
+	@Override
+	public boolean isSetC() {
 		return cESet;
 	}
 
@@ -322,8 +319,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getD()
-	{
+	@Override
+	public double getD() {
 		return d;
 	}
 
@@ -332,8 +329,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setD(double newD)
-	{
+	@Override
+	public void setD(double newD) {
 		double oldD = d;
 		d = newD;
 		boolean oldDESet = dESet;
@@ -347,8 +344,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetD()
-	{
+	@Override
+	public void unsetD() {
 		double oldD = d;
 		boolean oldDESet = dESet;
 		d = D_EDEFAULT;
@@ -362,8 +359,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetD()
-	{
+	@Override
+	public boolean isSetD() {
 		return dESet;
 	}
 
@@ -373,10 +370,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.FORMULA_TYPE__A:
 				return getA();
 			case GMLPackage.FORMULA_TYPE__B:
@@ -395,10 +390,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.FORMULA_TYPE__A:
 				setA((Double)newValue);
 				return;
@@ -421,10 +414,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.FORMULA_TYPE__A:
 				unsetA();
 				return;
@@ -447,10 +438,8 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.FORMULA_TYPE__A:
 				return isSetA();
 			case GMLPackage.FORMULA_TYPE__B:
@@ -469,11 +458,10 @@ public class FormulaTypeImpl extends MinimalEObjectImpl.Container implements For
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (a: ");
 		if (aESet) result.append(a); else result.append("<unset>");
 		result.append(", b: ");

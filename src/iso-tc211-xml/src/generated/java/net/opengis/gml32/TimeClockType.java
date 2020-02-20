@@ -25,15 +25,10 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='TimeClockType' kind='elementOnly'"
  * @generated
  */
-public interface TimeClockType extends TimeReferenceSystemType
-{
+public interface TimeClockType extends TimeReferenceSystemType {
 	/**
 	 * Returns the value of the '<em><b>Reference Event</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reference Event</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference Event</em>' containment reference.
 	 * @see #setReferenceEvent(StringOrRefType)
@@ -57,10 +52,6 @@ public interface TimeClockType extends TimeReferenceSystemType
 	/**
 	 * Returns the value of the '<em><b>Reference Time</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reference Time</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference Time</em>' attribute.
 	 * @see #setReferenceTime(XMLGregorianCalendar)
@@ -84,10 +75,6 @@ public interface TimeClockType extends TimeReferenceSystemType
 	/**
 	 * Returns the value of the '<em><b>Utc Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Utc Reference</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Utc Reference</em>' attribute.
 	 * @see #setUtcReference(XMLGregorianCalendar)
@@ -112,10 +99,6 @@ public interface TimeClockType extends TimeReferenceSystemType
 	 * Returns the value of the '<em><b>Date Basis</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.TimeCalendarPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date Basis</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date Basis</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTimeClockType_DateBasis()

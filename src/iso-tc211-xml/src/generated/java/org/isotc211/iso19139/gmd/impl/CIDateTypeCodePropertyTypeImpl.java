@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements CIDateTypeCodePropertyType
-{
+public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements CIDateTypeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getCIDateTypeCode() <em>CI Date Type Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CIDateTypeCodePropertyTypeImpl()
-	{
+	protected CIDateTypeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCIDateTypeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getCIDateTypeCode()
-	{
+	@Override
+	public CodeListValueType getCIDateTypeCode() {
 		return cIDateTypeCode;
 	}
 
@@ -98,12 +95,10 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCIDateTypeCode(CodeListValueType newCIDateTypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCIDateTypeCode(CodeListValueType newCIDateTypeCode, NotificationChain msgs) {
 		CodeListValueType oldCIDateTypeCode = cIDateTypeCode;
 		cIDateTypeCode = newCIDateTypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE__CI_DATE_TYPE_CODE, oldCIDateTypeCode, newCIDateTypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCIDateTypeCode(CodeListValueType newCIDateTypeCode)
-	{
-		if (newCIDateTypeCode != cIDateTypeCode)
-		{
+	@Override
+	public void setCIDateTypeCode(CodeListValueType newCIDateTypeCode) {
+		if (newCIDateTypeCode != cIDateTypeCode) {
 			NotificationChain msgs = null;
 			if (cIDateTypeCode != null)
 				msgs = ((InternalEObject)cIDateTypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE__CI_DATE_TYPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE__CI_DATE_TYPE_CODE:
 				return basicSetCIDateTypeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE__CI_DATE_TYPE_CODE:
 				return getCIDateTypeCode();
 			case GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE__CI_DATE_TYPE_CODE:
 				setCIDateTypeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE__CI_DATE_TYPE_CODE:
 				setCIDateTypeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE__CI_DATE_TYPE_CODE:
 				return cIDateTypeCode != null;
 			case GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class CIDateTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

@@ -28,8 +28,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implements DecimalPropertyType
-{
+public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implements DecimalPropertyType {
 	/**
 	 * The default value of the '{@link #getDecimal() <em>Decimal</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DecimalPropertyTypeImpl()
-	{
+	protected DecimalPropertyTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.DECIMAL_PROPERTY_TYPE;
 	}
 
@@ -96,8 +93,8 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal getDecimal()
-	{
+	@Override
+	public BigDecimal getDecimal() {
 		return decimal;
 	}
 
@@ -106,8 +103,8 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDecimal(BigDecimal newDecimal)
-	{
+	@Override
+	public void setDecimal(BigDecimal newDecimal) {
 		BigDecimal oldDecimal = decimal;
 		decimal = newDecimal;
 		if (eNotificationRequired())
@@ -119,8 +116,8 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -129,8 +126,8 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -143,10 +140,8 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.DECIMAL_PROPERTY_TYPE__DECIMAL:
 				return getDecimal();
 			case GCOPackage.DECIMAL_PROPERTY_TYPE__NIL_REASON:
@@ -161,10 +156,8 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.DECIMAL_PROPERTY_TYPE__DECIMAL:
 				setDecimal((BigDecimal)newValue);
 				return;
@@ -181,10 +174,8 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.DECIMAL_PROPERTY_TYPE__DECIMAL:
 				setDecimal(DECIMAL_EDEFAULT);
 				return;
@@ -201,10 +192,8 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.DECIMAL_PROPERTY_TYPE__DECIMAL:
 				return DECIMAL_EDEFAULT == null ? decimal != null : !DECIMAL_EDEFAULT.equals(decimal);
 			case GCOPackage.DECIMAL_PROPERTY_TYPE__NIL_REASON:
@@ -219,11 +208,10 @@ public class DecimalPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (decimal: ");
 		result.append(decimal);
 		result.append(", nilReason: ");

@@ -25,8 +25,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImpl.Container implements AbstractMetadataPropertyType
-{
+public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImpl.Container implements AbstractMetadataPropertyType {
 	/**
 	 * The default value of the '{@link #isOwns() <em>Owns</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -61,8 +60,7 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractMetadataPropertyTypeImpl()
-	{
+	protected AbstractMetadataPropertyTypeImpl() {
 		super();
 	}
 
@@ -72,8 +70,7 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractMetadataPropertyType();
 	}
 
@@ -82,8 +79,8 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -92,8 +89,8 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -107,8 +104,8 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -122,8 +119,8 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -133,10 +130,8 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_METADATA_PROPERTY_TYPE__OWNS:
 				return isOwns();
 		}
@@ -149,10 +144,8 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_METADATA_PROPERTY_TYPE__OWNS:
 				setOwns((Boolean)newValue);
 				return;
@@ -166,10 +159,8 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_METADATA_PROPERTY_TYPE__OWNS:
 				unsetOwns();
 				return;
@@ -183,10 +174,8 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_METADATA_PROPERTY_TYPE__OWNS:
 				return isSetOwns();
 		}
@@ -199,11 +188,10 @@ public abstract class AbstractMetadataPropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (owns: ");
 		if (ownsESet) result.append(owns); else result.append("<unset>");
 		result.append(')');

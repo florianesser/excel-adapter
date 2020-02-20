@@ -26,15 +26,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class GenericMetaDataTypeImpl extends AbstractMetaDataTypeImpl implements GenericMetaDataType
-{
+public class GenericMetaDataTypeImpl extends AbstractMetaDataTypeImpl implements GenericMetaDataType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GenericMetaDataTypeImpl()
-	{
+	protected GenericMetaDataTypeImpl() {
 		super();
 	}
 
@@ -44,8 +42,7 @@ public class GenericMetaDataTypeImpl extends AbstractMetaDataTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGenericMetaDataType();
 	}
 
@@ -54,8 +51,8 @@ public class GenericMetaDataTypeImpl extends AbstractMetaDataTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAny()
-	{
+	@Override
+	public FeatureMap getAny() {
 		return (FeatureMap)getMixed().<FeatureMap.Entry>list(GMLPackage.eINSTANCE.getGenericMetaDataType_Any());
 	}
 
@@ -65,10 +62,8 @@ public class GenericMetaDataTypeImpl extends AbstractMetaDataTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GENERIC_META_DATA_TYPE__ANY:
 				return ((InternalEList<?>)getAny()).basicRemove(otherEnd, msgs);
 		}
@@ -81,10 +76,8 @@ public class GenericMetaDataTypeImpl extends AbstractMetaDataTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GENERIC_META_DATA_TYPE__ANY:
 				if (coreType) return getAny();
 				return ((FeatureMap.Internal)getAny()).getWrapper();
@@ -98,10 +91,8 @@ public class GenericMetaDataTypeImpl extends AbstractMetaDataTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GENERIC_META_DATA_TYPE__ANY:
 				((FeatureMap.Internal)getAny()).set(newValue);
 				return;
@@ -115,10 +106,8 @@ public class GenericMetaDataTypeImpl extends AbstractMetaDataTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GENERIC_META_DATA_TYPE__ANY:
 				getAny().clear();
 				return;
@@ -132,10 +121,8 @@ public class GenericMetaDataTypeImpl extends AbstractMetaDataTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GENERIC_META_DATA_TYPE__ANY:
 				return !getAny().isEmpty();
 		}

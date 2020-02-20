@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiPointType
-{
+public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiPointType {
 	/**
 	 * The cached value of the '{@link #getPointMember() <em>Point Member</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MultiPointTypeImpl()
-	{
+	protected MultiPointTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMultiPointType();
 	}
 
@@ -84,10 +81,9 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PointPropertyType> getPointMember()
-	{
-		if (pointMember == null)
-		{
+	@Override
+	public EList<PointPropertyType> getPointMember() {
+		if (pointMember == null) {
 			pointMember = new EObjectContainmentEList<PointPropertyType>(PointPropertyType.class, this, GMLPackage.MULTI_POINT_TYPE__POINT_MEMBER);
 		}
 		return pointMember;
@@ -98,8 +94,8 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointArrayPropertyType getPointMembers()
-	{
+	@Override
+	public PointArrayPropertyType getPointMembers() {
 		return pointMembers;
 	}
 
@@ -108,12 +104,10 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointMembers(PointArrayPropertyType newPointMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointMembers(PointArrayPropertyType newPointMembers, NotificationChain msgs) {
 		PointArrayPropertyType oldPointMembers = pointMembers;
 		pointMembers = newPointMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MULTI_POINT_TYPE__POINT_MEMBERS, oldPointMembers, newPointMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +119,9 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointMembers(PointArrayPropertyType newPointMembers)
-	{
-		if (newPointMembers != pointMembers)
-		{
+	@Override
+	public void setPointMembers(PointArrayPropertyType newPointMembers) {
+		if (newPointMembers != pointMembers) {
 			NotificationChain msgs = null;
 			if (pointMembers != null)
 				msgs = ((InternalEObject)pointMembers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MULTI_POINT_TYPE__POINT_MEMBERS, null, msgs);
@@ -147,10 +140,8 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.MULTI_POINT_TYPE__POINT_MEMBER:
 				return ((InternalEList<?>)getPointMember()).basicRemove(otherEnd, msgs);
 			case GMLPackage.MULTI_POINT_TYPE__POINT_MEMBERS:
@@ -165,10 +156,8 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.MULTI_POINT_TYPE__POINT_MEMBER:
 				return getPointMember();
 			case GMLPackage.MULTI_POINT_TYPE__POINT_MEMBERS:
@@ -184,10 +173,8 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.MULTI_POINT_TYPE__POINT_MEMBER:
 				getPointMember().clear();
 				getPointMember().addAll((Collection<? extends PointPropertyType>)newValue);
@@ -205,10 +192,8 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_POINT_TYPE__POINT_MEMBER:
 				getPointMember().clear();
 				return;
@@ -225,10 +210,8 @@ public class MultiPointTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_POINT_TYPE__POINT_MEMBER:
 				return pointMember != null && !pointMember.isEmpty();
 			case GMLPackage.MULTI_POINT_TYPE__POINT_MEMBERS:

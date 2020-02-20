@@ -31,15 +31,10 @@ import org.isotc211.iso19139.gss.GMPointPropertyType;
  * @model extendedMetaData="name='MD_Georectified_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDGeorectifiedType extends MDGridSpatialRepresentationType
-{
+public interface MDGeorectifiedType extends MDGridSpatialRepresentationType {
 	/**
 	 * Returns the value of the '<em><b>Check Point Availability</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Check Point Availability</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Check Point Availability</em>' containment reference.
 	 * @see #setCheckPointAvailability(BooleanPropertyType)
@@ -63,10 +58,6 @@ public interface MDGeorectifiedType extends MDGridSpatialRepresentationType
 	/**
 	 * Returns the value of the '<em><b>Check Point Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Check Point Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Check Point Description</em>' containment reference.
 	 * @see #setCheckPointDescription(CharacterStringPropertyType)
@@ -91,10 +82,6 @@ public interface MDGeorectifiedType extends MDGridSpatialRepresentationType
 	 * Returns the value of the '<em><b>Corner Points</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gss.GMPointPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Corner Points</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Corner Points</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDGeorectifiedType_CornerPoints()
@@ -107,10 +94,6 @@ public interface MDGeorectifiedType extends MDGridSpatialRepresentationType
 	/**
 	 * Returns the value of the '<em><b>Center Point</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Center Point</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Center Point</em>' containment reference.
 	 * @see #setCenterPoint(GMPointPropertyType)
@@ -134,10 +117,6 @@ public interface MDGeorectifiedType extends MDGridSpatialRepresentationType
 	/**
 	 * Returns the value of the '<em><b>Point In Pixel</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Point In Pixel</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Point In Pixel</em>' containment reference.
 	 * @see #setPointInPixel(MDPixelOrientationCodePropertyType)
@@ -161,10 +140,6 @@ public interface MDGeorectifiedType extends MDGridSpatialRepresentationType
 	/**
 	 * Returns the value of the '<em><b>Transformation Dimension Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Transformation Dimension Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Transformation Dimension Description</em>' containment reference.
 	 * @see #setTransformationDimensionDescription(CharacterStringPropertyType)
@@ -189,10 +164,6 @@ public interface MDGeorectifiedType extends MDGridSpatialRepresentationType
 	 * Returns the value of the '<em><b>Transformation Dimension Mapping</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Transformation Dimension Mapping</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Transformation Dimension Mapping</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDGeorectifiedType_TransformationDimensionMapping()

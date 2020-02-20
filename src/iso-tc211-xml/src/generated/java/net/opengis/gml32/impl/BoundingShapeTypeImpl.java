@@ -35,8 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implements BoundingShapeType
-{
+public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implements BoundingShapeType {
 	/**
 	 * The cached value of the '{@link #getEnvelopeGroup() <em>Envelope Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -92,8 +91,7 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BoundingShapeTypeImpl()
-	{
+	protected BoundingShapeTypeImpl() {
 		super();
 	}
 
@@ -103,8 +101,7 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getBoundingShapeType();
 	}
 
@@ -113,10 +110,9 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getEnvelopeGroup()
-	{
-		if (envelopeGroup == null)
-		{
+	@Override
+	public FeatureMap getEnvelopeGroup() {
+		if (envelopeGroup == null) {
 			envelopeGroup = new BasicFeatureMap(this, GMLPackage.BOUNDING_SHAPE_TYPE__ENVELOPE_GROUP);
 		}
 		return envelopeGroup;
@@ -127,8 +123,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EnvelopeType getEnvelope()
-	{
+	@Override
+	public EnvelopeType getEnvelope() {
 		return (EnvelopeType)getEnvelopeGroup().get(GMLPackage.eINSTANCE.getBoundingShapeType_Envelope(), true);
 	}
 
@@ -137,8 +133,7 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEnvelope(EnvelopeType newEnvelope, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEnvelope(EnvelopeType newEnvelope, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getEnvelopeGroup()).basicAdd(GMLPackage.eINSTANCE.getBoundingShapeType_Envelope(), newEnvelope, msgs);
 	}
 
@@ -147,8 +142,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEnvelope(EnvelopeType newEnvelope)
-	{
+	@Override
+	public void setEnvelope(EnvelopeType newEnvelope) {
 		((FeatureMap.Internal)getEnvelopeGroup()).set(GMLPackage.eINSTANCE.getBoundingShapeType_Envelope(), newEnvelope);
 	}
 
@@ -157,8 +152,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNull()
-	{
+	@Override
+	public Object getNull() {
 		return null_;
 	}
 
@@ -167,8 +162,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNull(Object newNull)
-	{
+	@Override
+	public void setNull(Object newNull) {
 		Object oldNull = null_;
 		null_ = newNull;
 		if (eNotificationRequired())
@@ -180,8 +175,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -190,8 +185,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -204,10 +199,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.BOUNDING_SHAPE_TYPE__ENVELOPE_GROUP:
 				return ((InternalEList<?>)getEnvelopeGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.BOUNDING_SHAPE_TYPE__ENVELOPE:
@@ -222,10 +215,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.BOUNDING_SHAPE_TYPE__ENVELOPE_GROUP:
 				if (coreType) return getEnvelopeGroup();
 				return ((FeatureMap.Internal)getEnvelopeGroup()).getWrapper();
@@ -245,10 +236,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.BOUNDING_SHAPE_TYPE__ENVELOPE_GROUP:
 				((FeatureMap.Internal)getEnvelopeGroup()).set(newValue);
 				return;
@@ -271,10 +260,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.BOUNDING_SHAPE_TYPE__ENVELOPE_GROUP:
 				getEnvelopeGroup().clear();
 				return;
@@ -297,10 +284,8 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.BOUNDING_SHAPE_TYPE__ENVELOPE_GROUP:
 				return envelopeGroup != null && !envelopeGroup.isEmpty();
 			case GMLPackage.BOUNDING_SHAPE_TYPE__ENVELOPE:
@@ -319,11 +304,10 @@ public class BoundingShapeTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (envelopeGroup: ");
 		result.append(envelopeGroup);
 		result.append(", null: ");

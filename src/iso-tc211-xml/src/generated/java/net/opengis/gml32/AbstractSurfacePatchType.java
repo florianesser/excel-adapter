@@ -15,6 +15,5 @@ import org.eclipse.emf.ecore.EObject;
  *        extendedMetaData="name='AbstractSurfacePatchType' kind='empty'"
  * @generated
  */
-public interface AbstractSurfacePatchType extends EObject
-{
+public interface AbstractSurfacePatchType extends EObject {
 } // AbstractSurfacePatchType

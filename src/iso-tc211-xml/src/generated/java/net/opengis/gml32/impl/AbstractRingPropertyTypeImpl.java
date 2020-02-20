@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container implements AbstractRingPropertyType
-{
+public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container implements AbstractRingPropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractRingGroup() <em>Abstract Ring Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractRingPropertyTypeImpl()
-	{
+	protected AbstractRingPropertyTypeImpl() {
 		super();
 	}
 
@@ -59,8 +57,7 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractRingPropertyType();
 	}
 
@@ -69,10 +66,9 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractRingGroup()
-	{
-		if (abstractRingGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractRingGroup() {
+		if (abstractRingGroup == null) {
 			abstractRingGroup = new BasicFeatureMap(this, GMLPackage.ABSTRACT_RING_PROPERTY_TYPE__ABSTRACT_RING_GROUP);
 		}
 		return abstractRingGroup;
@@ -83,8 +79,8 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractRingType getAbstractRing()
-	{
+	@Override
+	public AbstractRingType getAbstractRing() {
 		return (AbstractRingType)getAbstractRingGroup().get(GMLPackage.eINSTANCE.getAbstractRingPropertyType_AbstractRing(), true);
 	}
 
@@ -93,8 +89,7 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractRing(AbstractRingType newAbstractRing, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractRing(AbstractRingType newAbstractRing, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractRingGroup()).basicAdd(GMLPackage.eINSTANCE.getAbstractRingPropertyType_AbstractRing(), newAbstractRing, msgs);
 	}
 
@@ -104,10 +99,8 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE__ABSTRACT_RING_GROUP:
 				return ((InternalEList<?>)getAbstractRingGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE__ABSTRACT_RING:
@@ -122,10 +115,8 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE__ABSTRACT_RING_GROUP:
 				if (coreType) return getAbstractRingGroup();
 				return ((FeatureMap.Internal)getAbstractRingGroup()).getWrapper();
@@ -141,10 +132,8 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE__ABSTRACT_RING_GROUP:
 				((FeatureMap.Internal)getAbstractRingGroup()).set(newValue);
 				return;
@@ -158,10 +147,8 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE__ABSTRACT_RING_GROUP:
 				getAbstractRingGroup().clear();
 				return;
@@ -175,10 +162,8 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE__ABSTRACT_RING_GROUP:
 				return abstractRingGroup != null && !abstractRingGroup.isEmpty();
 			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE__ABSTRACT_RING:
@@ -193,11 +178,10 @@ public class AbstractRingPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractRingGroup: ");
 		result.append(abstractRingGroup);
 		result.append(')');

@@ -38,8 +38,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements ObservationType
-{
+public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements ObservationType {
 	/**
 	 * The cached value of the '{@link #getValidTime() <em>Valid Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -85,8 +84,7 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ObservationTypeImpl()
-	{
+	protected ObservationTypeImpl() {
 		super();
 	}
 
@@ -96,8 +94,7 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getObservationType();
 	}
 
@@ -106,8 +103,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePrimitivePropertyType getValidTime()
-	{
+	@Override
+	public TimePrimitivePropertyType getValidTime() {
 		return validTime;
 	}
 
@@ -116,12 +113,10 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValidTime(TimePrimitivePropertyType newValidTime, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValidTime(TimePrimitivePropertyType newValidTime, NotificationChain msgs) {
 		TimePrimitivePropertyType oldValidTime = validTime;
 		validTime = newValidTime;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.OBSERVATION_TYPE__VALID_TIME, oldValidTime, newValidTime);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -133,10 +128,9 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValidTime(TimePrimitivePropertyType newValidTime)
-	{
-		if (newValidTime != validTime)
-		{
+	@Override
+	public void setValidTime(TimePrimitivePropertyType newValidTime) {
+		if (newValidTime != validTime) {
 			NotificationChain msgs = null;
 			if (validTime != null)
 				msgs = ((InternalEObject)validTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.OBSERVATION_TYPE__VALID_TIME, null, msgs);
@@ -154,8 +148,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedurePropertyType getUsing()
-	{
+	@Override
+	public ProcedurePropertyType getUsing() {
 		return using;
 	}
 
@@ -164,12 +158,10 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsing(ProcedurePropertyType newUsing, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsing(ProcedurePropertyType newUsing, NotificationChain msgs) {
 		ProcedurePropertyType oldUsing = using;
 		using = newUsing;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.OBSERVATION_TYPE__USING, oldUsing, newUsing);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -181,10 +173,9 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsing(ProcedurePropertyType newUsing)
-	{
-		if (newUsing != using)
-		{
+	@Override
+	public void setUsing(ProcedurePropertyType newUsing) {
+		if (newUsing != using) {
 			NotificationChain msgs = null;
 			if (using != null)
 				msgs = ((InternalEObject)using).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.OBSERVATION_TYPE__USING, null, msgs);
@@ -202,10 +193,9 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getTargetGroup()
-	{
-		if (targetGroup == null)
-		{
+	@Override
+	public FeatureMap getTargetGroup() {
+		if (targetGroup == null) {
 			targetGroup = new BasicFeatureMap(this, GMLPackage.OBSERVATION_TYPE__TARGET_GROUP);
 		}
 		return targetGroup;
@@ -216,8 +206,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TargetPropertyType getTarget()
-	{
+	@Override
+	public TargetPropertyType getTarget() {
 		return (TargetPropertyType)getTargetGroup().get(GMLPackage.eINSTANCE.getObservationType_Target(), true);
 	}
 
@@ -226,8 +216,7 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTarget(TargetPropertyType newTarget, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTarget(TargetPropertyType newTarget, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getTargetGroup()).basicAdd(GMLPackage.eINSTANCE.getObservationType_Target(), newTarget, msgs);
 	}
 
@@ -236,8 +225,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTarget(TargetPropertyType newTarget)
-	{
+	@Override
+	public void setTarget(TargetPropertyType newTarget) {
 		((FeatureMap.Internal)getTargetGroup()).set(GMLPackage.eINSTANCE.getObservationType_Target(), newTarget);
 	}
 
@@ -246,8 +235,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResultType getResultOf()
-	{
+	@Override
+	public ResultType getResultOf() {
 		return resultOf;
 	}
 
@@ -256,12 +245,10 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetResultOf(ResultType newResultOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetResultOf(ResultType newResultOf, NotificationChain msgs) {
 		ResultType oldResultOf = resultOf;
 		resultOf = newResultOf;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.OBSERVATION_TYPE__RESULT_OF, oldResultOf, newResultOf);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -273,10 +260,9 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setResultOf(ResultType newResultOf)
-	{
-		if (newResultOf != resultOf)
-		{
+	@Override
+	public void setResultOf(ResultType newResultOf) {
+		if (newResultOf != resultOf) {
 			NotificationChain msgs = null;
 			if (resultOf != null)
 				msgs = ((InternalEObject)resultOf).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.OBSERVATION_TYPE__RESULT_OF, null, msgs);
@@ -295,10 +281,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.OBSERVATION_TYPE__VALID_TIME:
 				return basicSetValidTime(null, msgs);
 			case GMLPackage.OBSERVATION_TYPE__USING:
@@ -319,10 +303,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.OBSERVATION_TYPE__VALID_TIME:
 				return getValidTime();
 			case GMLPackage.OBSERVATION_TYPE__USING:
@@ -344,10 +326,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.OBSERVATION_TYPE__VALID_TIME:
 				setValidTime((TimePrimitivePropertyType)newValue);
 				return;
@@ -373,10 +353,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.OBSERVATION_TYPE__VALID_TIME:
 				setValidTime((TimePrimitivePropertyType)null);
 				return;
@@ -402,10 +380,8 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.OBSERVATION_TYPE__VALID_TIME:
 				return validTime != null;
 			case GMLPackage.OBSERVATION_TYPE__USING:
@@ -426,11 +402,10 @@ public class ObservationTypeImpl extends AbstractFeatureTypeImpl implements Obse
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (targetGroup: ");
 		result.append(targetGroup);
 		result.append(')');

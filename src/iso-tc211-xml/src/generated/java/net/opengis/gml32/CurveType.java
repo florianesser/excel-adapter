@@ -19,8 +19,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='CurveType' kind='elementOnly'"
  * @generated
  */
-public interface CurveType extends AbstractCurveType
-{
+public interface CurveType extends AbstractCurveType {
 	/**
 	 * Returns the value of the '<em><b>Segments</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

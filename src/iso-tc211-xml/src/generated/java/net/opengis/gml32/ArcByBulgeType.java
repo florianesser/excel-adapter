@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='ArcByBulgeType' kind='elementOnly'"
  * @generated
  */
-public interface ArcByBulgeType extends ArcStringByBulgeType
-{
+public interface ArcByBulgeType extends ArcStringByBulgeType {
 } // ArcByBulgeType

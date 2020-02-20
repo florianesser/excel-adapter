@@ -42,8 +42,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implements NodePropertyType
-{
+public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implements NodePropertyType {
 	/**
 	 * The cached value of the '{@link #getNode() <em>Node</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -295,8 +294,7 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected NodePropertyTypeImpl()
-	{
+	protected NodePropertyTypeImpl() {
 		super();
 	}
 
@@ -306,8 +304,7 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getNodePropertyType();
 	}
 
@@ -316,8 +313,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NodeType getNode()
-	{
+	@Override
+	public NodeType getNode() {
 		return node;
 	}
 
@@ -326,12 +323,10 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetNode(NodeType newNode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetNode(NodeType newNode, NotificationChain msgs) {
 		NodeType oldNode = node;
 		node = newNode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.NODE_PROPERTY_TYPE__NODE, oldNode, newNode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -343,10 +338,9 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNode(NodeType newNode)
-	{
-		if (newNode != node)
-		{
+	@Override
+	public void setNode(NodeType newNode) {
+		if (newNode != node) {
 			NotificationChain msgs = null;
 			if (node != null)
 				msgs = ((InternalEObject)node).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.NODE_PROPERTY_TYPE__NODE, null, msgs);
@@ -364,8 +358,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -374,8 +368,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -389,8 +383,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -404,8 +398,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -414,8 +408,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -424,8 +418,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -437,8 +431,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -447,8 +441,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -460,8 +454,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -470,8 +464,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -483,8 +477,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -493,8 +487,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -508,8 +502,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -523,8 +517,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -533,8 +527,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -543,8 +537,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -556,8 +550,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -566,8 +560,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -579,8 +573,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -589,8 +583,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -604,8 +598,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -619,8 +613,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -629,8 +623,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -639,8 +633,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -652,8 +646,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -662,8 +656,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -677,8 +671,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -692,8 +686,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -703,10 +697,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.NODE_PROPERTY_TYPE__NODE:
 				return basicSetNode(null, msgs);
 		}
@@ -719,10 +711,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.NODE_PROPERTY_TYPE__NODE:
 				return getNode();
 			case GMLPackage.NODE_PROPERTY_TYPE__ACTUATE:
@@ -755,10 +745,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.NODE_PROPERTY_TYPE__NODE:
 				setNode((NodeType)newValue);
 				return;
@@ -802,10 +790,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.NODE_PROPERTY_TYPE__NODE:
 				setNode((NodeType)null);
 				return;
@@ -849,10 +835,8 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.NODE_PROPERTY_TYPE__NODE:
 				return node != null;
 			case GMLPackage.NODE_PROPERTY_TYPE__ACTUATE:
@@ -885,11 +869,10 @@ public class NodePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (actuate: ");
 		if (actuateESet) result.append(actuate); else result.append("<unset>");
 		result.append(", arcrole: ");

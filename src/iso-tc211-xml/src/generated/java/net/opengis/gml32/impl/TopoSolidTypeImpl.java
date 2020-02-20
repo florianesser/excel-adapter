@@ -41,8 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements TopoSolidType
-{
+public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements TopoSolidType {
 	/**
 	 * The cached value of the '{@link #getIsolated() <em>Isolated</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -136,8 +135,7 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TopoSolidTypeImpl()
-	{
+	protected TopoSolidTypeImpl() {
 		super();
 	}
 
@@ -147,8 +145,7 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTopoSolidType();
 	}
 
@@ -157,10 +154,9 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NodeOrEdgePropertyType> getIsolated()
-	{
-		if (isolated == null)
-		{
+	@Override
+	public EList<NodeOrEdgePropertyType> getIsolated() {
+		if (isolated == null) {
 			isolated = new EObjectContainmentEList<NodeOrEdgePropertyType>(NodeOrEdgePropertyType.class, this, GMLPackage.TOPO_SOLID_TYPE__ISOLATED);
 		}
 		return isolated;
@@ -171,10 +167,9 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectedFacePropertyType> getDirectedFace()
-	{
-		if (directedFace == null)
-		{
+	@Override
+	public EList<DirectedFacePropertyType> getDirectedFace() {
+		if (directedFace == null) {
 			directedFace = new EObjectContainmentEList<DirectedFacePropertyType>(DirectedFacePropertyType.class, this, GMLPackage.TOPO_SOLID_TYPE__DIRECTED_FACE);
 		}
 		return directedFace;
@@ -185,8 +180,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidPropertyType getSolidProperty()
-	{
+	@Override
+	public SolidPropertyType getSolidProperty() {
 		return solidProperty;
 	}
 
@@ -195,12 +190,10 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSolidProperty(SolidPropertyType newSolidProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSolidProperty(SolidPropertyType newSolidProperty, NotificationChain msgs) {
 		SolidPropertyType oldSolidProperty = solidProperty;
 		solidProperty = newSolidProperty;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TOPO_SOLID_TYPE__SOLID_PROPERTY, oldSolidProperty, newSolidProperty);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -212,10 +205,9 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSolidProperty(SolidPropertyType newSolidProperty)
-	{
-		if (newSolidProperty != solidProperty)
-		{
+	@Override
+	public void setSolidProperty(SolidPropertyType newSolidProperty) {
+		if (newSolidProperty != solidProperty) {
 			NotificationChain msgs = null;
 			if (solidProperty != null)
 				msgs = ((InternalEObject)solidProperty).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TOPO_SOLID_TYPE__SOLID_PROPERTY, null, msgs);
@@ -233,8 +225,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -243,8 +235,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -258,8 +250,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -273,8 +265,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -283,8 +275,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isUniversal()
-	{
+	@Override
+	public boolean isUniversal() {
 		return universal;
 	}
 
@@ -293,8 +285,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUniversal(boolean newUniversal)
-	{
+	@Override
+	public void setUniversal(boolean newUniversal) {
 		boolean oldUniversal = universal;
 		universal = newUniversal;
 		boolean oldUniversalESet = universalESet;
@@ -308,8 +300,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetUniversal()
-	{
+	@Override
+	public void unsetUniversal() {
 		boolean oldUniversal = universal;
 		boolean oldUniversalESet = universalESet;
 		universal = UNIVERSAL_EDEFAULT;
@@ -323,8 +315,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetUniversal()
-	{
+	@Override
+	public boolean isSetUniversal() {
 		return universalESet;
 	}
 
@@ -334,10 +326,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TOPO_SOLID_TYPE__ISOLATED:
 				return ((InternalEList<?>)getIsolated()).basicRemove(otherEnd, msgs);
 			case GMLPackage.TOPO_SOLID_TYPE__DIRECTED_FACE:
@@ -354,10 +344,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TOPO_SOLID_TYPE__ISOLATED:
 				return getIsolated();
 			case GMLPackage.TOPO_SOLID_TYPE__DIRECTED_FACE:
@@ -379,10 +367,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TOPO_SOLID_TYPE__ISOLATED:
 				getIsolated().clear();
 				getIsolated().addAll((Collection<? extends NodeOrEdgePropertyType>)newValue);
@@ -410,10 +396,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_SOLID_TYPE__ISOLATED:
 				getIsolated().clear();
 				return;
@@ -439,10 +423,8 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_SOLID_TYPE__ISOLATED:
 				return isolated != null && !isolated.isEmpty();
 			case GMLPackage.TOPO_SOLID_TYPE__DIRECTED_FACE:
@@ -463,11 +445,10 @@ public class TopoSolidTypeImpl extends AbstractTopoPrimitiveTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (aggregationType: ");
 		if (aggregationTypeESet) result.append(aggregationType); else result.append("<unset>");
 		result.append(", universal: ");

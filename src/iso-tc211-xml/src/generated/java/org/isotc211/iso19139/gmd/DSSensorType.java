@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DS_Sensor_Type' kind='elementOnly'"
  * @generated
  */
-public interface DSSensorType extends DSSeriesType
-{
+public interface DSSensorType extends DSSeriesType {
 } // DSSensorType

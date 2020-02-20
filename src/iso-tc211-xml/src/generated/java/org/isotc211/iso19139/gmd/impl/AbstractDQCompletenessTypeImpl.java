@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public abstract class AbstractDQCompletenessTypeImpl extends AbstractDQElementTypeImpl implements AbstractDQCompletenessType
-{
+public abstract class AbstractDQCompletenessTypeImpl extends AbstractDQElementTypeImpl implements AbstractDQCompletenessType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractDQCompletenessTypeImpl()
-	{
+	protected AbstractDQCompletenessTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class AbstractDQCompletenessTypeImpl extends AbstractDQElementTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractDQCompletenessType();
 	}
 

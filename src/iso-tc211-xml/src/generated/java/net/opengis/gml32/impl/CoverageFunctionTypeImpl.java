@@ -32,8 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container implements CoverageFunctionType
-{
+public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container implements CoverageFunctionType {
 	/**
 	 * The cached value of the '{@link #getMappingRule() <em>Mapping Rule</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -69,8 +68,7 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CoverageFunctionTypeImpl()
-	{
+	protected CoverageFunctionTypeImpl() {
 		super();
 	}
 
@@ -80,8 +78,7 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCoverageFunctionType();
 	}
 
@@ -90,8 +87,8 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getMappingRule()
-	{
+	@Override
+	public StringOrRefType getMappingRule() {
 		return mappingRule;
 	}
 
@@ -100,12 +97,10 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMappingRule(StringOrRefType newMappingRule, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMappingRule(StringOrRefType newMappingRule, NotificationChain msgs) {
 		StringOrRefType oldMappingRule = mappingRule;
 		mappingRule = newMappingRule;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.COVERAGE_FUNCTION_TYPE__MAPPING_RULE, oldMappingRule, newMappingRule);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -117,10 +112,9 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMappingRule(StringOrRefType newMappingRule)
-	{
-		if (newMappingRule != mappingRule)
-		{
+	@Override
+	public void setMappingRule(StringOrRefType newMappingRule) {
+		if (newMappingRule != mappingRule) {
 			NotificationChain msgs = null;
 			if (mappingRule != null)
 				msgs = ((InternalEObject)mappingRule).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.COVERAGE_FUNCTION_TYPE__MAPPING_RULE, null, msgs);
@@ -138,8 +132,8 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MappingRuleType getCoverageMappingRule()
-	{
+	@Override
+	public MappingRuleType getCoverageMappingRule() {
 		return coverageMappingRule;
 	}
 
@@ -148,12 +142,10 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoverageMappingRule(MappingRuleType newCoverageMappingRule, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoverageMappingRule(MappingRuleType newCoverageMappingRule, NotificationChain msgs) {
 		MappingRuleType oldCoverageMappingRule = coverageMappingRule;
 		coverageMappingRule = newCoverageMappingRule;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.COVERAGE_FUNCTION_TYPE__COVERAGE_MAPPING_RULE, oldCoverageMappingRule, newCoverageMappingRule);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -165,10 +157,9 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoverageMappingRule(MappingRuleType newCoverageMappingRule)
-	{
-		if (newCoverageMappingRule != coverageMappingRule)
-		{
+	@Override
+	public void setCoverageMappingRule(MappingRuleType newCoverageMappingRule) {
+		if (newCoverageMappingRule != coverageMappingRule) {
 			NotificationChain msgs = null;
 			if (coverageMappingRule != null)
 				msgs = ((InternalEObject)coverageMappingRule).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.COVERAGE_FUNCTION_TYPE__COVERAGE_MAPPING_RULE, null, msgs);
@@ -186,8 +177,8 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridFunctionType getGridFunction()
-	{
+	@Override
+	public GridFunctionType getGridFunction() {
 		return gridFunction;
 	}
 
@@ -196,12 +187,10 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGridFunction(GridFunctionType newGridFunction, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGridFunction(GridFunctionType newGridFunction, NotificationChain msgs) {
 		GridFunctionType oldGridFunction = gridFunction;
 		gridFunction = newGridFunction;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.COVERAGE_FUNCTION_TYPE__GRID_FUNCTION, oldGridFunction, newGridFunction);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -213,10 +202,9 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGridFunction(GridFunctionType newGridFunction)
-	{
-		if (newGridFunction != gridFunction)
-		{
+	@Override
+	public void setGridFunction(GridFunctionType newGridFunction) {
+		if (newGridFunction != gridFunction) {
 			NotificationChain msgs = null;
 			if (gridFunction != null)
 				msgs = ((InternalEObject)gridFunction).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.COVERAGE_FUNCTION_TYPE__GRID_FUNCTION, null, msgs);
@@ -235,10 +223,8 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.COVERAGE_FUNCTION_TYPE__MAPPING_RULE:
 				return basicSetMappingRule(null, msgs);
 			case GMLPackage.COVERAGE_FUNCTION_TYPE__COVERAGE_MAPPING_RULE:
@@ -255,10 +241,8 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.COVERAGE_FUNCTION_TYPE__MAPPING_RULE:
 				return getMappingRule();
 			case GMLPackage.COVERAGE_FUNCTION_TYPE__COVERAGE_MAPPING_RULE:
@@ -275,10 +259,8 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.COVERAGE_FUNCTION_TYPE__MAPPING_RULE:
 				setMappingRule((StringOrRefType)newValue);
 				return;
@@ -298,10 +280,8 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COVERAGE_FUNCTION_TYPE__MAPPING_RULE:
 				setMappingRule((StringOrRefType)null);
 				return;
@@ -321,10 +301,8 @@ public class CoverageFunctionTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COVERAGE_FUNCTION_TYPE__MAPPING_RULE:
 				return mappingRule != null;
 			case GMLPackage.COVERAGE_FUNCTION_TYPE__COVERAGE_MAPPING_RULE:

@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='VerticalDatumType' kind='elementOnly'"
  * @generated
  */
-public interface VerticalDatumType extends AbstractDatumType
-{
+public interface VerticalDatumType extends AbstractDatumType {
 } // VerticalDatumType

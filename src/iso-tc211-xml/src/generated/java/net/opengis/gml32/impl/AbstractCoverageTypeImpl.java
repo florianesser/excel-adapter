@@ -34,8 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl implements AbstractCoverageType
-{
+public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl implements AbstractCoverageType {
 	/**
 	 * The cached value of the '{@link #getDomainSetGroup() <em>Domain Set Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -61,8 +60,7 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractCoverageTypeImpl()
-	{
+	protected AbstractCoverageTypeImpl() {
 		super();
 	}
 
@@ -72,8 +70,7 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractCoverageType();
 	}
 
@@ -82,10 +79,9 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getDomainSetGroup()
-	{
-		if (domainSetGroup == null)
-		{
+	@Override
+	public FeatureMap getDomainSetGroup() {
+		if (domainSetGroup == null) {
 			domainSetGroup = new BasicFeatureMap(this, GMLPackage.ABSTRACT_COVERAGE_TYPE__DOMAIN_SET_GROUP);
 		}
 		return domainSetGroup;
@@ -96,8 +92,8 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainSetType getDomainSet()
-	{
+	@Override
+	public DomainSetType getDomainSet() {
 		return (DomainSetType)getDomainSetGroup().get(GMLPackage.eINSTANCE.getAbstractCoverageType_DomainSet(), true);
 	}
 
@@ -106,8 +102,7 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDomainSet(DomainSetType newDomainSet, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDomainSet(DomainSetType newDomainSet, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getDomainSetGroup()).basicAdd(GMLPackage.eINSTANCE.getAbstractCoverageType_DomainSet(), newDomainSet, msgs);
 	}
 
@@ -116,8 +111,8 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDomainSet(DomainSetType newDomainSet)
-	{
+	@Override
+	public void setDomainSet(DomainSetType newDomainSet) {
 		((FeatureMap.Internal)getDomainSetGroup()).set(GMLPackage.eINSTANCE.getAbstractCoverageType_DomainSet(), newDomainSet);
 	}
 
@@ -126,8 +121,8 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RangeSetType getRangeSet()
-	{
+	@Override
+	public RangeSetType getRangeSet() {
 		return rangeSet;
 	}
 
@@ -136,12 +131,10 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRangeSet(RangeSetType newRangeSet, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRangeSet(RangeSetType newRangeSet, NotificationChain msgs) {
 		RangeSetType oldRangeSet = rangeSet;
 		rangeSet = newRangeSet;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_COVERAGE_TYPE__RANGE_SET, oldRangeSet, newRangeSet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -153,10 +146,9 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRangeSet(RangeSetType newRangeSet)
-	{
-		if (newRangeSet != rangeSet)
-		{
+	@Override
+	public void setRangeSet(RangeSetType newRangeSet) {
+		if (newRangeSet != rangeSet) {
 			NotificationChain msgs = null;
 			if (rangeSet != null)
 				msgs = ((InternalEObject)rangeSet).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_COVERAGE_TYPE__RANGE_SET, null, msgs);
@@ -175,10 +167,8 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COVERAGE_TYPE__DOMAIN_SET_GROUP:
 				return ((InternalEList<?>)getDomainSetGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.ABSTRACT_COVERAGE_TYPE__DOMAIN_SET:
@@ -195,10 +185,8 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COVERAGE_TYPE__DOMAIN_SET_GROUP:
 				if (coreType) return getDomainSetGroup();
 				return ((FeatureMap.Internal)getDomainSetGroup()).getWrapper();
@@ -216,10 +204,8 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COVERAGE_TYPE__DOMAIN_SET_GROUP:
 				((FeatureMap.Internal)getDomainSetGroup()).set(newValue);
 				return;
@@ -239,10 +225,8 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COVERAGE_TYPE__DOMAIN_SET_GROUP:
 				getDomainSetGroup().clear();
 				return;
@@ -262,10 +246,8 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COVERAGE_TYPE__DOMAIN_SET_GROUP:
 				return domainSetGroup != null && !domainSetGroup.isEmpty();
 			case GMLPackage.ABSTRACT_COVERAGE_TYPE__DOMAIN_SET:
@@ -282,11 +264,10 @@ public abstract class AbstractCoverageTypeImpl extends AbstractFeatureTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (domainSetGroup: ");
 		result.append(domainSetGroup);
 		result.append(')');

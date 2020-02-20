@@ -41,8 +41,7 @@ import org.w3.xlink.XLinkPackage;
  *
  * @generated
  */
-public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements LocatorType
-{
+public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements LocatorType {
 	/**
 	 * The cached value of the '{@link #getTitleGroup() <em>Title Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -167,8 +166,7 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LocatorTypeImpl()
-	{
+	protected LocatorTypeImpl() {
 		super();
 	}
 
@@ -178,8 +176,7 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return XLinkPackage.Literals.LOCATOR_TYPE;
 	}
 
@@ -188,10 +185,9 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getTitleGroup()
-	{
-		if (titleGroup == null)
-		{
+	@Override
+	public FeatureMap getTitleGroup() {
+		if (titleGroup == null) {
 			titleGroup = new BasicFeatureMap(this, XLinkPackage.LOCATOR_TYPE__TITLE_GROUP);
 		}
 		return titleGroup;
@@ -202,8 +198,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TitleEltType> getTitle()
-	{
+	@Override
+	public EList<TitleEltType> getTitle() {
 		return getTitleGroup().list(XLinkPackage.Literals.LOCATOR_TYPE__TITLE);
 	}
 
@@ -212,8 +208,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -222,8 +218,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -235,8 +231,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLabel()
-	{
+	@Override
+	public String getLabel() {
 		return label;
 	}
 
@@ -245,8 +241,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLabel(String newLabel)
-	{
+	@Override
+	public void setLabel(String newLabel) {
 		String oldLabel = label;
 		label = newLabel;
 		if (eNotificationRequired())
@@ -258,8 +254,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -268,8 +264,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -281,8 +277,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle1()
-	{
+	@Override
+	public String getTitle1() {
 		return title1;
 	}
 
@@ -291,8 +287,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle1(String newTitle1)
-	{
+	@Override
+	public void setTitle1(String newTitle1) {
 		String oldTitle1 = title1;
 		title1 = newTitle1;
 		if (eNotificationRequired())
@@ -304,8 +300,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -314,8 +310,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -329,8 +325,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -344,8 +340,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -355,10 +351,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case XLinkPackage.LOCATOR_TYPE__TITLE_GROUP:
 				return ((InternalEList<?>)getTitleGroup()).basicRemove(otherEnd, msgs);
 			case XLinkPackage.LOCATOR_TYPE__TITLE:
@@ -373,10 +367,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case XLinkPackage.LOCATOR_TYPE__TITLE_GROUP:
 				if (coreType) return getTitleGroup();
 				return ((FeatureMap.Internal)getTitleGroup()).getWrapper();
@@ -402,10 +394,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case XLinkPackage.LOCATOR_TYPE__TITLE_GROUP:
 				((FeatureMap.Internal)getTitleGroup()).set(newValue);
 				return;
@@ -434,10 +424,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.LOCATOR_TYPE__TITLE_GROUP:
 				getTitleGroup().clear();
 				return;
@@ -466,10 +454,8 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.LOCATOR_TYPE__TITLE_GROUP:
 				return titleGroup != null && !titleGroup.isEmpty();
 			case XLinkPackage.LOCATOR_TYPE__TITLE:
@@ -494,11 +480,10 @@ public class LocatorTypeImpl extends MinimalEObjectImpl.Container implements Loc
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (titleGroup: ");
 		result.append(titleGroup);
 		result.append(", href: ");

@@ -20,16 +20,11 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='TimeCalendarType' kind='elementOnly'"
  * @generated
  */
-public interface TimeCalendarType extends TimeReferenceSystemType
-{
+public interface TimeCalendarType extends TimeReferenceSystemType {
 	/**
 	 * Returns the value of the '<em><b>Reference Frame</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.TimeCalendarEraPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reference Frame</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference Frame</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTimeCalendarType_ReferenceFrame()

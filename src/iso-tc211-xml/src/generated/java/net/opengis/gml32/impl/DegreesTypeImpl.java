@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements DegreesType
-{
+public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements DegreesType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -85,8 +84,7 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DegreesTypeImpl()
-	{
+	protected DegreesTypeImpl() {
 		super();
 	}
 
@@ -96,8 +94,7 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDegreesType();
 	}
 
@@ -106,8 +103,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getValue()
-	{
+	@Override
+	public BigInteger getValue() {
 		return value;
 	}
 
@@ -116,8 +113,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(BigInteger newValue)
-	{
+	@Override
+	public void setValue(BigInteger newValue) {
 		BigInteger oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -129,8 +126,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionType getDirection()
-	{
+	@Override
+	public DirectionType getDirection() {
 		return direction;
 	}
 
@@ -139,8 +136,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirection(DirectionType newDirection)
-	{
+	@Override
+	public void setDirection(DirectionType newDirection) {
 		DirectionType oldDirection = direction;
 		direction = newDirection == null ? DIRECTION_EDEFAULT : newDirection;
 		boolean oldDirectionESet = directionESet;
@@ -154,8 +151,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetDirection()
-	{
+	@Override
+	public void unsetDirection() {
 		DirectionType oldDirection = direction;
 		boolean oldDirectionESet = directionESet;
 		direction = DIRECTION_EDEFAULT;
@@ -169,8 +166,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetDirection()
-	{
+	@Override
+	public boolean isSetDirection() {
 		return directionESet;
 	}
 
@@ -180,10 +177,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DEGREES_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.DEGREES_TYPE__DIRECTION:
@@ -198,10 +193,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DEGREES_TYPE__VALUE:
 				setValue((BigInteger)newValue);
 				return;
@@ -218,10 +211,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DEGREES_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -238,10 +229,8 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DEGREES_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GMLPackage.DEGREES_TYPE__DIRECTION:
@@ -256,11 +245,10 @@ public class DegreesTypeImpl extends MinimalEObjectImpl.Container implements Deg
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", direction: ");

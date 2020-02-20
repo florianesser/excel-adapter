@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implements HistoryPropertyType
-{
+public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implements HistoryPropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractTimeSliceGroup() <em>Abstract Time Slice Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -82,8 +81,7 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected HistoryPropertyTypeImpl()
-	{
+	protected HistoryPropertyTypeImpl() {
 		super();
 	}
 
@@ -93,8 +91,7 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getHistoryPropertyType();
 	}
 
@@ -103,10 +100,9 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractTimeSliceGroup()
-	{
-		if (abstractTimeSliceGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractTimeSliceGroup() {
+		if (abstractTimeSliceGroup == null) {
 			abstractTimeSliceGroup = new BasicFeatureMap(this, GMLPackage.HISTORY_PROPERTY_TYPE__ABSTRACT_TIME_SLICE_GROUP);
 		}
 		return abstractTimeSliceGroup;
@@ -117,8 +113,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractTimeSliceType> getAbstractTimeSlice()
-	{
+	@Override
+	public EList<AbstractTimeSliceType> getAbstractTimeSlice() {
 		return getAbstractTimeSliceGroup().list(GMLPackage.eINSTANCE.getHistoryPropertyType_AbstractTimeSlice());
 	}
 
@@ -127,8 +123,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -137,8 +133,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -152,8 +148,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -167,8 +163,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -178,10 +174,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.HISTORY_PROPERTY_TYPE__ABSTRACT_TIME_SLICE_GROUP:
 				return ((InternalEList<?>)getAbstractTimeSliceGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.HISTORY_PROPERTY_TYPE__ABSTRACT_TIME_SLICE:
@@ -196,10 +190,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.HISTORY_PROPERTY_TYPE__ABSTRACT_TIME_SLICE_GROUP:
 				if (coreType) return getAbstractTimeSliceGroup();
 				return ((FeatureMap.Internal)getAbstractTimeSliceGroup()).getWrapper();
@@ -217,10 +209,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.HISTORY_PROPERTY_TYPE__ABSTRACT_TIME_SLICE_GROUP:
 				((FeatureMap.Internal)getAbstractTimeSliceGroup()).set(newValue);
 				return;
@@ -237,10 +227,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.HISTORY_PROPERTY_TYPE__ABSTRACT_TIME_SLICE_GROUP:
 				getAbstractTimeSliceGroup().clear();
 				return;
@@ -257,10 +245,8 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.HISTORY_PROPERTY_TYPE__ABSTRACT_TIME_SLICE_GROUP:
 				return abstractTimeSliceGroup != null && !abstractTimeSliceGroup.isEmpty();
 			case GMLPackage.HISTORY_PROPERTY_TYPE__ABSTRACT_TIME_SLICE:
@@ -277,11 +263,10 @@ public class HistoryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractTimeSliceGroup: ");
 		result.append(abstractTimeSliceGroup);
 		result.append(", owns: ");

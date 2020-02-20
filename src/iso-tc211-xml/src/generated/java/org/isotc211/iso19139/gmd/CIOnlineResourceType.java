@@ -30,15 +30,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='CI_OnlineResource_Type' kind='elementOnly'"
  * @generated
  */
-public interface CIOnlineResourceType extends AbstractObjectType
-{
+public interface CIOnlineResourceType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Linkage</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Linkage</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Linkage</em>' containment reference.
 	 * @see #setLinkage(URLPropertyType)
@@ -62,10 +57,6 @@ public interface CIOnlineResourceType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Protocol</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Protocol</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Protocol</em>' containment reference.
 	 * @see #setProtocol(CharacterStringPropertyType)
@@ -89,10 +80,6 @@ public interface CIOnlineResourceType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Application Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Application Profile</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Application Profile</em>' containment reference.
 	 * @see #setApplicationProfile(CharacterStringPropertyType)
@@ -116,10 +103,6 @@ public interface CIOnlineResourceType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(CharacterStringPropertyType)
@@ -143,10 +126,6 @@ public interface CIOnlineResourceType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(CharacterStringPropertyType)
@@ -170,10 +149,6 @@ public interface CIOnlineResourceType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Function</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Function</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Function</em>' containment reference.
 	 * @see #setFunction(CIOnLineFunctionCodePropertyType)

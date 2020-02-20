@@ -203,8 +203,7 @@ import org.eclipse.emf.ecore.EReference;
  * @model kind="package"
  * @generated
  */
-public interface XLinkPackage extends EPackage
-{
+public interface XLinkPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -2086,8 +2085,7 @@ public interface XLinkPackage extends EPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	interface Literals
-	{
+	interface Literals {
 		/**
 		 * The meta object literal for the '{@link org.w3.xlink.impl.ArcTypeImpl <em>Arc Type</em>}' class.
 		 * <!-- begin-user-doc -->

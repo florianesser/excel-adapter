@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements EllipsoidType
-{
+public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements EllipsoidType {
 	/**
 	 * The cached value of the '{@link #getSemiMajorAxis() <em>Semi Major Axis</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -56,8 +55,7 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EllipsoidTypeImpl()
-	{
+	protected EllipsoidTypeImpl() {
 		super();
 	}
 
@@ -67,8 +65,7 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getEllipsoidType();
 	}
 
@@ -77,8 +74,8 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getSemiMajorAxis()
-	{
+	@Override
+	public MeasureType getSemiMajorAxis() {
 		return semiMajorAxis;
 	}
 
@@ -87,12 +84,10 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSemiMajorAxis(MeasureType newSemiMajorAxis, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSemiMajorAxis(MeasureType newSemiMajorAxis, NotificationChain msgs) {
 		MeasureType oldSemiMajorAxis = semiMajorAxis;
 		semiMajorAxis = newSemiMajorAxis;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ELLIPSOID_TYPE__SEMI_MAJOR_AXIS, oldSemiMajorAxis, newSemiMajorAxis);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -104,10 +99,9 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSemiMajorAxis(MeasureType newSemiMajorAxis)
-	{
-		if (newSemiMajorAxis != semiMajorAxis)
-		{
+	@Override
+	public void setSemiMajorAxis(MeasureType newSemiMajorAxis) {
+		if (newSemiMajorAxis != semiMajorAxis) {
 			NotificationChain msgs = null;
 			if (semiMajorAxis != null)
 				msgs = ((InternalEObject)semiMajorAxis).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ELLIPSOID_TYPE__SEMI_MAJOR_AXIS, null, msgs);
@@ -125,8 +119,8 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SecondDefiningParameterType1 getSecondDefiningParameter()
-	{
+	@Override
+	public SecondDefiningParameterType1 getSecondDefiningParameter() {
 		return secondDefiningParameter;
 	}
 
@@ -135,12 +129,10 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSecondDefiningParameter(SecondDefiningParameterType1 newSecondDefiningParameter, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSecondDefiningParameter(SecondDefiningParameterType1 newSecondDefiningParameter, NotificationChain msgs) {
 		SecondDefiningParameterType1 oldSecondDefiningParameter = secondDefiningParameter;
 		secondDefiningParameter = newSecondDefiningParameter;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ELLIPSOID_TYPE__SECOND_DEFINING_PARAMETER, oldSecondDefiningParameter, newSecondDefiningParameter);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -152,10 +144,9 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSecondDefiningParameter(SecondDefiningParameterType1 newSecondDefiningParameter)
-	{
-		if (newSecondDefiningParameter != secondDefiningParameter)
-		{
+	@Override
+	public void setSecondDefiningParameter(SecondDefiningParameterType1 newSecondDefiningParameter) {
+		if (newSecondDefiningParameter != secondDefiningParameter) {
 			NotificationChain msgs = null;
 			if (secondDefiningParameter != null)
 				msgs = ((InternalEObject)secondDefiningParameter).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ELLIPSOID_TYPE__SECOND_DEFINING_PARAMETER, null, msgs);
@@ -174,10 +165,8 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ELLIPSOID_TYPE__SEMI_MAJOR_AXIS:
 				return basicSetSemiMajorAxis(null, msgs);
 			case GMLPackage.ELLIPSOID_TYPE__SECOND_DEFINING_PARAMETER:
@@ -192,10 +181,8 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ELLIPSOID_TYPE__SEMI_MAJOR_AXIS:
 				return getSemiMajorAxis();
 			case GMLPackage.ELLIPSOID_TYPE__SECOND_DEFINING_PARAMETER:
@@ -210,10 +197,8 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ELLIPSOID_TYPE__SEMI_MAJOR_AXIS:
 				setSemiMajorAxis((MeasureType)newValue);
 				return;
@@ -230,10 +215,8 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ELLIPSOID_TYPE__SEMI_MAJOR_AXIS:
 				setSemiMajorAxis((MeasureType)null);
 				return;
@@ -250,10 +233,8 @@ public class EllipsoidTypeImpl extends IdentifiedObjectTypeImpl implements Ellip
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ELLIPSOID_TYPE__SEMI_MAJOR_AXIS:
 				return semiMajorAxis != null;
 			case GMLPackage.ELLIPSOID_TYPE__SECOND_DEFINING_PARAMETER:

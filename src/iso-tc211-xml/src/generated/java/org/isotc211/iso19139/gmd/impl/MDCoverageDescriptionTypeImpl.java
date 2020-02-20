@@ -39,8 +39,7 @@ import org.isotc211.iso19139.gmd.MDRangeDimensionPropertyType;
  *
  * @generated
  */
-public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationTypeImpl implements MDCoverageDescriptionType
-{
+public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationTypeImpl implements MDCoverageDescriptionType {
 	/**
 	 * The cached value of the '{@link #getAttributeDescription() <em>Attribute Description</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -76,8 +75,7 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDCoverageDescriptionTypeImpl()
-	{
+	protected MDCoverageDescriptionTypeImpl() {
 		super();
 	}
 
@@ -87,8 +85,7 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDCoverageDescriptionType();
 	}
 
@@ -97,8 +94,8 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RecordTypePropertyType getAttributeDescription()
-	{
+	@Override
+	public RecordTypePropertyType getAttributeDescription() {
 		return attributeDescription;
 	}
 
@@ -107,12 +104,10 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAttributeDescription(RecordTypePropertyType newAttributeDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAttributeDescription(RecordTypePropertyType newAttributeDescription, NotificationChain msgs) {
 		RecordTypePropertyType oldAttributeDescription = attributeDescription;
 		attributeDescription = newAttributeDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__ATTRIBUTE_DESCRIPTION, oldAttributeDescription, newAttributeDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -124,10 +119,9 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAttributeDescription(RecordTypePropertyType newAttributeDescription)
-	{
-		if (newAttributeDescription != attributeDescription)
-		{
+	@Override
+	public void setAttributeDescription(RecordTypePropertyType newAttributeDescription) {
+		if (newAttributeDescription != attributeDescription) {
 			NotificationChain msgs = null;
 			if (attributeDescription != null)
 				msgs = ((InternalEObject)attributeDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__ATTRIBUTE_DESCRIPTION, null, msgs);
@@ -145,8 +139,8 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDCoverageContentTypeCodePropertyType getContentType()
-	{
+	@Override
+	public MDCoverageContentTypeCodePropertyType getContentType() {
 		return contentType;
 	}
 
@@ -155,12 +149,10 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContentType(MDCoverageContentTypeCodePropertyType newContentType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetContentType(MDCoverageContentTypeCodePropertyType newContentType, NotificationChain msgs) {
 		MDCoverageContentTypeCodePropertyType oldContentType = contentType;
 		contentType = newContentType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__CONTENT_TYPE, oldContentType, newContentType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -172,10 +164,9 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setContentType(MDCoverageContentTypeCodePropertyType newContentType)
-	{
-		if (newContentType != contentType)
-		{
+	@Override
+	public void setContentType(MDCoverageContentTypeCodePropertyType newContentType) {
+		if (newContentType != contentType) {
 			NotificationChain msgs = null;
 			if (contentType != null)
 				msgs = ((InternalEObject)contentType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__CONTENT_TYPE, null, msgs);
@@ -193,10 +184,9 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDRangeDimensionPropertyType> getDimension()
-	{
-		if (dimension == null)
-		{
+	@Override
+	public EList<MDRangeDimensionPropertyType> getDimension() {
+		if (dimension == null) {
 			dimension = new EObjectContainmentEList<MDRangeDimensionPropertyType>(MDRangeDimensionPropertyType.class, this, GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__DIMENSION);
 		}
 		return dimension;
@@ -208,10 +198,8 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__ATTRIBUTE_DESCRIPTION:
 				return basicSetAttributeDescription(null, msgs);
 			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__CONTENT_TYPE:
@@ -228,10 +216,8 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__ATTRIBUTE_DESCRIPTION:
 				return getAttributeDescription();
 			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__CONTENT_TYPE:
@@ -249,10 +235,8 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__ATTRIBUTE_DESCRIPTION:
 				setAttributeDescription((RecordTypePropertyType)newValue);
 				return;
@@ -273,10 +257,8 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__ATTRIBUTE_DESCRIPTION:
 				setAttributeDescription((RecordTypePropertyType)null);
 				return;
@@ -296,10 +278,8 @@ public class MDCoverageDescriptionTypeImpl extends AbstractMDContentInformationT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__ATTRIBUTE_DESCRIPTION:
 				return attributeDescription != null;
 			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE__CONTENT_TYPE:

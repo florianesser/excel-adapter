@@ -29,8 +29,7 @@ import org.isotc211.iso19139.gmd.RSIdentifierPropertyType;
  *
  * @generated
  */
-public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements MDReferenceSystemType
-{
+public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements MDReferenceSystemType {
 	/**
 	 * The cached value of the '{@link #getReferenceSystemIdentifier() <em>Reference System Identifier</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -46,8 +45,7 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDReferenceSystemTypeImpl()
-	{
+	protected MDReferenceSystemTypeImpl() {
 		super();
 	}
 
@@ -57,8 +55,7 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDReferenceSystemType();
 	}
 
@@ -67,8 +64,8 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RSIdentifierPropertyType getReferenceSystemIdentifier()
-	{
+	@Override
+	public RSIdentifierPropertyType getReferenceSystemIdentifier() {
 		return referenceSystemIdentifier;
 	}
 
@@ -77,12 +74,10 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetReferenceSystemIdentifier(RSIdentifierPropertyType newReferenceSystemIdentifier, NotificationChain msgs)
-	{
+	public NotificationChain basicSetReferenceSystemIdentifier(RSIdentifierPropertyType newReferenceSystemIdentifier, NotificationChain msgs) {
 		RSIdentifierPropertyType oldReferenceSystemIdentifier = referenceSystemIdentifier;
 		referenceSystemIdentifier = newReferenceSystemIdentifier;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_REFERENCE_SYSTEM_TYPE__REFERENCE_SYSTEM_IDENTIFIER, oldReferenceSystemIdentifier, newReferenceSystemIdentifier);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -94,10 +89,9 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReferenceSystemIdentifier(RSIdentifierPropertyType newReferenceSystemIdentifier)
-	{
-		if (newReferenceSystemIdentifier != referenceSystemIdentifier)
-		{
+	@Override
+	public void setReferenceSystemIdentifier(RSIdentifierPropertyType newReferenceSystemIdentifier) {
+		if (newReferenceSystemIdentifier != referenceSystemIdentifier) {
 			NotificationChain msgs = null;
 			if (referenceSystemIdentifier != null)
 				msgs = ((InternalEObject)referenceSystemIdentifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_REFERENCE_SYSTEM_TYPE__REFERENCE_SYSTEM_IDENTIFIER, null, msgs);
@@ -116,10 +110,8 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_REFERENCE_SYSTEM_TYPE__REFERENCE_SYSTEM_IDENTIFIER:
 				return basicSetReferenceSystemIdentifier(null, msgs);
 		}
@@ -132,10 +124,8 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_REFERENCE_SYSTEM_TYPE__REFERENCE_SYSTEM_IDENTIFIER:
 				return getReferenceSystemIdentifier();
 		}
@@ -148,10 +138,8 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_REFERENCE_SYSTEM_TYPE__REFERENCE_SYSTEM_IDENTIFIER:
 				setReferenceSystemIdentifier((RSIdentifierPropertyType)newValue);
 				return;
@@ -165,10 +153,8 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_REFERENCE_SYSTEM_TYPE__REFERENCE_SYSTEM_IDENTIFIER:
 				setReferenceSystemIdentifier((RSIdentifierPropertyType)null);
 				return;
@@ -182,10 +168,8 @@ public class MDReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_REFERENCE_SYSTEM_TYPE__REFERENCE_SYSTEM_IDENTIFIER:
 				return referenceSystemIdentifier != null;
 		}

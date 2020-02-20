@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQCompletenessCommissionTypeImpl extends AbstractDQCompletenessTypeImpl implements DQCompletenessCommissionType
-{
+public class DQCompletenessCommissionTypeImpl extends AbstractDQCompletenessTypeImpl implements DQCompletenessCommissionType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQCompletenessCommissionTypeImpl()
-	{
+	protected DQCompletenessCommissionTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQCompletenessCommissionTypeImpl extends AbstractDQCompletenessType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQCompletenessCommissionType();
 	}
 

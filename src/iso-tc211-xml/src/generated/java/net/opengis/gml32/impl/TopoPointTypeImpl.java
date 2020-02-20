@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoPointType
-{
+public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoPointType {
 	/**
 	 * The cached value of the '{@link #getDirectedNode() <em>Directed Node</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TopoPointTypeImpl()
-	{
+	protected TopoPointTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTopoPointType();
 	}
 
@@ -65,8 +62,8 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedNodePropertyType getDirectedNode()
-	{
+	@Override
+	public DirectedNodePropertyType getDirectedNode() {
 		return directedNode;
 	}
 
@@ -75,12 +72,10 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectedNode(DirectedNodePropertyType newDirectedNode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectedNode(DirectedNodePropertyType newDirectedNode, NotificationChain msgs) {
 		DirectedNodePropertyType oldDirectedNode = directedNode;
 		directedNode = newDirectedNode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TOPO_POINT_TYPE__DIRECTED_NODE, oldDirectedNode, newDirectedNode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectedNode(DirectedNodePropertyType newDirectedNode)
-	{
-		if (newDirectedNode != directedNode)
-		{
+	@Override
+	public void setDirectedNode(DirectedNodePropertyType newDirectedNode) {
+		if (newDirectedNode != directedNode) {
 			NotificationChain msgs = null;
 			if (directedNode != null)
 				msgs = ((InternalEObject)directedNode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TOPO_POINT_TYPE__DIRECTED_NODE, null, msgs);
@@ -114,10 +108,8 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TOPO_POINT_TYPE__DIRECTED_NODE:
 				return basicSetDirectedNode(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TOPO_POINT_TYPE__DIRECTED_NODE:
 				return getDirectedNode();
 		}
@@ -146,10 +136,8 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TOPO_POINT_TYPE__DIRECTED_NODE:
 				setDirectedNode((DirectedNodePropertyType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_POINT_TYPE__DIRECTED_NODE:
 				setDirectedNode((DirectedNodePropertyType)null);
 				return;
@@ -180,10 +166,8 @@ public class TopoPointTypeImpl extends AbstractTopologyTypeImpl implements TopoP
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_POINT_TYPE__DIRECTED_NODE:
 				return directedNode != null;
 		}

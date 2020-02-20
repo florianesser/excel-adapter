@@ -20,8 +20,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='KnotTypesType'"
  * @generated
  */
-public enum KnotTypesType implements Enumerator
-{
+public enum KnotTypesType implements Enumerator {
 	/**
 	 * The '<em><b>Uniform</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -55,10 +54,6 @@ public enum KnotTypesType implements Enumerator
 	/**
 	 * The '<em><b>Uniform</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Uniform</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #UNIFORM
 	 * @model name="uniform"
@@ -70,10 +65,6 @@ public enum KnotTypesType implements Enumerator
 	/**
 	 * The '<em><b>Quasi Uniform</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Quasi Uniform</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #QUASI_UNIFORM
 	 * @model name="quasiUniform"
@@ -85,10 +76,6 @@ public enum KnotTypesType implements Enumerator
 	/**
 	 * The '<em><b>Piecewise Bezier</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Piecewise Bezier</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #PIECEWISE_BEZIER
 	 * @model name="piecewiseBezier"
@@ -104,8 +91,7 @@ public enum KnotTypesType implements Enumerator
 	 * @generated
 	 */
 	private static final KnotTypesType[] VALUES_ARRAY =
-		new KnotTypesType[]
-		{
+		new KnotTypesType[] {
 			UNIFORM,
 			QUASI_UNIFORM,
 			PIECEWISE_BEZIER,
@@ -127,13 +113,10 @@ public enum KnotTypesType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static KnotTypesType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static KnotTypesType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			KnotTypesType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -148,13 +131,10 @@ public enum KnotTypesType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static KnotTypesType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static KnotTypesType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			KnotTypesType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -169,10 +149,8 @@ public enum KnotTypesType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static KnotTypesType get(int value)
-	{
-		switch (value)
-		{
+	public static KnotTypesType get(int value) {
+		switch (value) {
 			case UNIFORM_VALUE: return UNIFORM;
 			case QUASI_UNIFORM_VALUE: return QUASI_UNIFORM;
 			case PIECEWISE_BEZIER_VALUE: return PIECEWISE_BEZIER;
@@ -207,8 +185,7 @@ public enum KnotTypesType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private KnotTypesType(int value, String name, String literal)
-	{
+	private KnotTypesType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -219,8 +196,8 @@ public enum KnotTypesType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -229,8 +206,8 @@ public enum KnotTypesType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -239,8 +216,8 @@ public enum KnotTypesType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -251,8 +228,7 @@ public enum KnotTypesType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

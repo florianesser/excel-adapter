@@ -20,15 +20,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='PointType' kind='elementOnly'"
  * @generated
  */
-public interface PointType extends AbstractGeometricPrimitiveType
-{
+public interface PointType extends AbstractGeometricPrimitiveType {
 	/**
 	 * Returns the value of the '<em><b>Pos</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos</em>' containment reference.
 	 * @see #setPos(DirectPositionType)
@@ -52,10 +47,6 @@ public interface PointType extends AbstractGeometricPrimitiveType
 	/**
 	 * Returns the value of the '<em><b>Coordinates</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Coordinates</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coordinates</em>' containment reference.
 	 * @see #setCoordinates(CoordinatesType)

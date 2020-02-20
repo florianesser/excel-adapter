@@ -21,15 +21,10 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='RectifiedGridType' kind='elementOnly'"
  * @generated
  */
-public interface RectifiedGridType extends GridType
-{
+public interface RectifiedGridType extends GridType {
 	/**
 	 * Returns the value of the '<em><b>Origin</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Origin</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Origin</em>' containment reference.
 	 * @see #setOrigin(PointPropertyType)
@@ -54,10 +49,6 @@ public interface RectifiedGridType extends GridType
 	 * Returns the value of the '<em><b>Offset Vector</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.VectorType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Offset Vector</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Offset Vector</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getRectifiedGridType_OffsetVector()

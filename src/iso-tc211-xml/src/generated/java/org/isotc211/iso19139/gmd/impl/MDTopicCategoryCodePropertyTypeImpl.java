@@ -27,8 +27,7 @@ import org.isotc211.iso19139.gmd.MDTopicCategoryCodeType;
  *
  * @generated
  */
-public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDTopicCategoryCodePropertyType
-{
+public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDTopicCategoryCodePropertyType {
 	/**
 	 * The default value of the '{@link #getMDTopicCategoryCode() <em>MD Topic Category Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -83,8 +82,7 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDTopicCategoryCodePropertyTypeImpl()
-	{
+	protected MDTopicCategoryCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -94,8 +92,7 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDTopicCategoryCodePropertyType();
 	}
 
@@ -104,8 +101,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDTopicCategoryCodeType getMDTopicCategoryCode()
-	{
+	@Override
+	public MDTopicCategoryCodeType getMDTopicCategoryCode() {
 		return mDTopicCategoryCode;
 	}
 
@@ -114,8 +111,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDTopicCategoryCode(MDTopicCategoryCodeType newMDTopicCategoryCode)
-	{
+	@Override
+	public void setMDTopicCategoryCode(MDTopicCategoryCodeType newMDTopicCategoryCode) {
 		MDTopicCategoryCodeType oldMDTopicCategoryCode = mDTopicCategoryCode;
 		mDTopicCategoryCode = newMDTopicCategoryCode == null ? MD_TOPIC_CATEGORY_CODE_EDEFAULT : newMDTopicCategoryCode;
 		boolean oldMDTopicCategoryCodeESet = mDTopicCategoryCodeESet;
@@ -129,8 +126,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetMDTopicCategoryCode()
-	{
+	@Override
+	public void unsetMDTopicCategoryCode() {
 		MDTopicCategoryCodeType oldMDTopicCategoryCode = mDTopicCategoryCode;
 		boolean oldMDTopicCategoryCodeESet = mDTopicCategoryCodeESet;
 		mDTopicCategoryCode = MD_TOPIC_CATEGORY_CODE_EDEFAULT;
@@ -144,8 +141,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetMDTopicCategoryCode()
-	{
+	@Override
+	public boolean isSetMDTopicCategoryCode() {
 		return mDTopicCategoryCodeESet;
 	}
 
@@ -154,8 +151,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -164,8 +161,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -178,10 +175,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_TOPIC_CATEGORY_CODE_PROPERTY_TYPE__MD_TOPIC_CATEGORY_CODE:
 				return getMDTopicCategoryCode();
 			case GMDPackage.MD_TOPIC_CATEGORY_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -196,10 +191,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_TOPIC_CATEGORY_CODE_PROPERTY_TYPE__MD_TOPIC_CATEGORY_CODE:
 				setMDTopicCategoryCode((MDTopicCategoryCodeType)newValue);
 				return;
@@ -216,10 +209,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_TOPIC_CATEGORY_CODE_PROPERTY_TYPE__MD_TOPIC_CATEGORY_CODE:
 				unsetMDTopicCategoryCode();
 				return;
@@ -236,10 +227,8 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_TOPIC_CATEGORY_CODE_PROPERTY_TYPE__MD_TOPIC_CATEGORY_CODE:
 				return isSetMDTopicCategoryCode();
 			case GMDPackage.MD_TOPIC_CATEGORY_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -254,11 +243,10 @@ public class MDTopicCategoryCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (mDTopicCategoryCode: ");
 		if (mDTopicCategoryCodeESet) result.append(mDTopicCategoryCode); else result.append("<unset>");
 		result.append(", nilReason: ");

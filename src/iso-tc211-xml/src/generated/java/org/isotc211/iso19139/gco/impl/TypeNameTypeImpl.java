@@ -27,8 +27,7 @@ import org.isotc211.iso19139.gco.TypeNameType;
  *
  * @generated
  */
-public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeNameType
-{
+public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeNameType {
 	/**
 	 * The cached value of the '{@link #getAName() <em>AName</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TypeNameTypeImpl()
-	{
+	protected TypeNameTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.TYPE_NAME_TYPE;
 	}
 
@@ -65,8 +62,8 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getAName()
-	{
+	@Override
+	public CharacterStringPropertyType getAName() {
 		return aName;
 	}
 
@@ -75,12 +72,10 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAName(CharacterStringPropertyType newAName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAName(CharacterStringPropertyType newAName, NotificationChain msgs) {
 		CharacterStringPropertyType oldAName = aName;
 		aName = newAName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.TYPE_NAME_TYPE__ANAME, oldAName, newAName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAName(CharacterStringPropertyType newAName)
-	{
-		if (newAName != aName)
-		{
+	@Override
+	public void setAName(CharacterStringPropertyType newAName) {
+		if (newAName != aName) {
 			NotificationChain msgs = null;
 			if (aName != null)
 				msgs = ((InternalEObject)aName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.TYPE_NAME_TYPE__ANAME, null, msgs);
@@ -114,10 +108,8 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.TYPE_NAME_TYPE__ANAME:
 				return basicSetAName(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.TYPE_NAME_TYPE__ANAME:
 				return getAName();
 		}
@@ -146,10 +136,8 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.TYPE_NAME_TYPE__ANAME:
 				setAName((CharacterStringPropertyType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.TYPE_NAME_TYPE__ANAME:
 				setAName((CharacterStringPropertyType)null);
 				return;
@@ -180,10 +166,8 @@ public class TypeNameTypeImpl extends AbstractObjectTypeImpl implements TypeName
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.TYPE_NAME_TYPE__ANAME:
 				return aName != null;
 		}

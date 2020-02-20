@@ -27,10 +27,6 @@ public interface ExcelConfiguration extends EObject {
 	 * Returns the value of the '<em><b>Sheet</b></em>' containment reference list.
 	 * The list contents are of type {@link de.bespire.registry.io.excel.configuration.SheetConfiguration}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sheet</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sheet</em>' containment reference list.
 	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getExcelConfiguration_Sheet()

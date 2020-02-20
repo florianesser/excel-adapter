@@ -34,8 +34,7 @@ import org.isotc211.iso19139.gmd.MDDimensionType;
  *
  * @generated
  */
-public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDimensionType
-{
+public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDimensionType {
 	/**
 	 * The cached value of the '{@link #getDimensionName() <em>Dimension Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -71,8 +70,7 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDDimensionTypeImpl()
-	{
+	protected MDDimensionTypeImpl() {
 		super();
 	}
 
@@ -82,8 +80,7 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDDimensionType();
 	}
 
@@ -92,8 +89,8 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDimensionNameTypeCodePropertyType getDimensionName()
-	{
+	@Override
+	public MDDimensionNameTypeCodePropertyType getDimensionName() {
 		return dimensionName;
 	}
 
@@ -102,12 +99,10 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDimensionName(MDDimensionNameTypeCodePropertyType newDimensionName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDimensionName(MDDimensionNameTypeCodePropertyType newDimensionName, NotificationChain msgs) {
 		MDDimensionNameTypeCodePropertyType oldDimensionName = dimensionName;
 		dimensionName = newDimensionName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DIMENSION_TYPE__DIMENSION_NAME, oldDimensionName, newDimensionName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -119,10 +114,9 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDimensionName(MDDimensionNameTypeCodePropertyType newDimensionName)
-	{
-		if (newDimensionName != dimensionName)
-		{
+	@Override
+	public void setDimensionName(MDDimensionNameTypeCodePropertyType newDimensionName) {
+		if (newDimensionName != dimensionName) {
 			NotificationChain msgs = null;
 			if (dimensionName != null)
 				msgs = ((InternalEObject)dimensionName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DIMENSION_TYPE__DIMENSION_NAME, null, msgs);
@@ -140,8 +134,8 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType getDimensionSize()
-	{
+	@Override
+	public IntegerPropertyType getDimensionSize() {
 		return dimensionSize;
 	}
 
@@ -150,12 +144,10 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDimensionSize(IntegerPropertyType newDimensionSize, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDimensionSize(IntegerPropertyType newDimensionSize, NotificationChain msgs) {
 		IntegerPropertyType oldDimensionSize = dimensionSize;
 		dimensionSize = newDimensionSize;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DIMENSION_TYPE__DIMENSION_SIZE, oldDimensionSize, newDimensionSize);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -167,10 +159,9 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDimensionSize(IntegerPropertyType newDimensionSize)
-	{
-		if (newDimensionSize != dimensionSize)
-		{
+	@Override
+	public void setDimensionSize(IntegerPropertyType newDimensionSize) {
+		if (newDimensionSize != dimensionSize) {
 			NotificationChain msgs = null;
 			if (dimensionSize != null)
 				msgs = ((InternalEObject)dimensionSize).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DIMENSION_TYPE__DIMENSION_SIZE, null, msgs);
@@ -188,8 +179,8 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasurePropertyType getResolution()
-	{
+	@Override
+	public MeasurePropertyType getResolution() {
 		return resolution;
 	}
 
@@ -198,12 +189,10 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetResolution(MeasurePropertyType newResolution, NotificationChain msgs)
-	{
+	public NotificationChain basicSetResolution(MeasurePropertyType newResolution, NotificationChain msgs) {
 		MeasurePropertyType oldResolution = resolution;
 		resolution = newResolution;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DIMENSION_TYPE__RESOLUTION, oldResolution, newResolution);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -215,10 +204,9 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setResolution(MeasurePropertyType newResolution)
-	{
-		if (newResolution != resolution)
-		{
+	@Override
+	public void setResolution(MeasurePropertyType newResolution) {
+		if (newResolution != resolution) {
 			NotificationChain msgs = null;
 			if (resolution != null)
 				msgs = ((InternalEObject)resolution).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DIMENSION_TYPE__RESOLUTION, null, msgs);
@@ -237,10 +225,8 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_TYPE__DIMENSION_NAME:
 				return basicSetDimensionName(null, msgs);
 			case GMDPackage.MD_DIMENSION_TYPE__DIMENSION_SIZE:
@@ -257,10 +243,8 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_TYPE__DIMENSION_NAME:
 				return getDimensionName();
 			case GMDPackage.MD_DIMENSION_TYPE__DIMENSION_SIZE:
@@ -277,10 +261,8 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_TYPE__DIMENSION_NAME:
 				setDimensionName((MDDimensionNameTypeCodePropertyType)newValue);
 				return;
@@ -300,10 +282,8 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_TYPE__DIMENSION_NAME:
 				setDimensionName((MDDimensionNameTypeCodePropertyType)null);
 				return;
@@ -323,10 +303,8 @@ public class MDDimensionTypeImpl extends AbstractObjectTypeImpl implements MDDim
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_TYPE__DIMENSION_NAME:
 				return dimensionName != null;
 			case GMDPackage.MD_DIMENSION_TYPE__DIMENSION_SIZE:

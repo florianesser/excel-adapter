@@ -29,8 +29,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container implements BinaryPropertyType
-{
+public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container implements BinaryPropertyType {
 	/**
 	 * The cached value of the '{@link #getBinary() <em>Binary</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -66,8 +65,7 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BinaryPropertyTypeImpl()
-	{
+	protected BinaryPropertyTypeImpl() {
 		super();
 	}
 
@@ -77,8 +75,7 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.BINARY_PROPERTY_TYPE;
 	}
 
@@ -87,8 +84,8 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BinaryType getBinary()
-	{
+	@Override
+	public BinaryType getBinary() {
 		return binary;
 	}
 
@@ -97,12 +94,10 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBinary(BinaryType newBinary, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBinary(BinaryType newBinary, NotificationChain msgs) {
 		BinaryType oldBinary = binary;
 		binary = newBinary;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.BINARY_PROPERTY_TYPE__BINARY, oldBinary, newBinary);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -114,10 +109,9 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBinary(BinaryType newBinary)
-	{
-		if (newBinary != binary)
-		{
+	@Override
+	public void setBinary(BinaryType newBinary) {
+		if (newBinary != binary) {
 			NotificationChain msgs = null;
 			if (binary != null)
 				msgs = ((InternalEObject)binary).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.BINARY_PROPERTY_TYPE__BINARY, null, msgs);
@@ -135,8 +129,8 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -145,8 +139,8 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -159,10 +153,8 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.BINARY_PROPERTY_TYPE__BINARY:
 				return basicSetBinary(null, msgs);
 		}
@@ -175,10 +167,8 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.BINARY_PROPERTY_TYPE__BINARY:
 				return getBinary();
 			case GCOPackage.BINARY_PROPERTY_TYPE__NIL_REASON:
@@ -193,10 +183,8 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.BINARY_PROPERTY_TYPE__BINARY:
 				setBinary((BinaryType)newValue);
 				return;
@@ -213,10 +201,8 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.BINARY_PROPERTY_TYPE__BINARY:
 				setBinary((BinaryType)null);
 				return;
@@ -233,10 +219,8 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.BINARY_PROPERTY_TYPE__BINARY:
 				return binary != null;
 			case GCOPackage.BINARY_PROPERTY_TYPE__NIL_REASON:
@@ -251,11 +235,10 @@ public class BinaryPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

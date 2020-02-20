@@ -20,8 +20,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='EllipsoidType' kind='elementOnly'"
  * @generated
  */
-public interface EllipsoidType extends IdentifiedObjectType
-{
+public interface EllipsoidType extends IdentifiedObjectType {
 	/**
 	 * Returns the value of the '<em><b>Semi Major Axis</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

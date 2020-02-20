@@ -15,6 +15,5 @@ import org.eclipse.emf.ecore.EObject;
  *        extendedMetaData="name='AbstractRingType' kind='empty'"
  * @generated
  */
-public interface AbstractRingType extends EObject
-{
+public interface AbstractRingType extends EObject {
 } // AbstractRingType

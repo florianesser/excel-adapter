@@ -19,6 +19,5 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  *        extendedMetaData="name='AbstractMD_SpatialRepresentation_Type' kind='empty'"
  * @generated
  */
-public interface AbstractMDSpatialRepresentationType extends AbstractObjectType
-{
+public interface AbstractMDSpatialRepresentationType extends AbstractObjectType {
 } // AbstractMDSpatialRepresentationType

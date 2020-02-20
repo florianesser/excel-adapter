@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='ScaleType' kind='simple'"
  * @generated
  */
-public interface ScaleType extends MeasureType
-{
+public interface ScaleType extends MeasureType {
 } // ScaleType

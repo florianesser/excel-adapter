@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DS_StereoMate_Type' kind='elementOnly'"
  * @generated
  */
-public interface DSStereoMateType extends DSOtherAggregateType
-{
+public interface DSStereoMateType extends DSOtherAggregateType {
 } // DSStereoMateType

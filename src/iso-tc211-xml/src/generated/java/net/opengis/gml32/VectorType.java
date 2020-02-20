@@ -17,6 +17,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='VectorType' kind='simple'"
  * @generated
  */
-public interface VectorType extends DirectPositionType
-{
+public interface VectorType extends DirectPositionType {
 } // VectorType

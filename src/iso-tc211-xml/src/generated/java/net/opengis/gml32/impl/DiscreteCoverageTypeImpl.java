@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implements DiscreteCoverageType
-{
+public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implements DiscreteCoverageType {
 	/**
 	 * The cached value of the '{@link #getCoverageFunction() <em>Coverage Function</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DiscreteCoverageTypeImpl()
-	{
+	protected DiscreteCoverageTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDiscreteCoverageType();
 	}
 
@@ -65,8 +62,8 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoverageFunctionType getCoverageFunction()
-	{
+	@Override
+	public CoverageFunctionType getCoverageFunction() {
 		return coverageFunction;
 	}
 
@@ -75,12 +72,10 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoverageFunction(CoverageFunctionType newCoverageFunction, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoverageFunction(CoverageFunctionType newCoverageFunction, NotificationChain msgs) {
 		CoverageFunctionType oldCoverageFunction = coverageFunction;
 		coverageFunction = newCoverageFunction;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DISCRETE_COVERAGE_TYPE__COVERAGE_FUNCTION, oldCoverageFunction, newCoverageFunction);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoverageFunction(CoverageFunctionType newCoverageFunction)
-	{
-		if (newCoverageFunction != coverageFunction)
-		{
+	@Override
+	public void setCoverageFunction(CoverageFunctionType newCoverageFunction) {
+		if (newCoverageFunction != coverageFunction) {
 			NotificationChain msgs = null;
 			if (coverageFunction != null)
 				msgs = ((InternalEObject)coverageFunction).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DISCRETE_COVERAGE_TYPE__COVERAGE_FUNCTION, null, msgs);
@@ -114,10 +108,8 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DISCRETE_COVERAGE_TYPE__COVERAGE_FUNCTION:
 				return basicSetCoverageFunction(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DISCRETE_COVERAGE_TYPE__COVERAGE_FUNCTION:
 				return getCoverageFunction();
 		}
@@ -146,10 +136,8 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DISCRETE_COVERAGE_TYPE__COVERAGE_FUNCTION:
 				setCoverageFunction((CoverageFunctionType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DISCRETE_COVERAGE_TYPE__COVERAGE_FUNCTION:
 				setCoverageFunction((CoverageFunctionType)null);
 				return;
@@ -180,10 +166,8 @@ public class DiscreteCoverageTypeImpl extends AbstractCoverageTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DISCRETE_COVERAGE_TYPE__COVERAGE_FUNCTION:
 				return coverageFunction != null;
 		}

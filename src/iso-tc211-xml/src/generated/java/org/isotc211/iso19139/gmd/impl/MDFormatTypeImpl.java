@@ -43,8 +43,7 @@ import org.isotc211.iso19139.gmd.MDFormatType;
  *
  * @generated
  */
-public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormatType
-{
+public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormatType {
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -110,8 +109,7 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDFormatTypeImpl()
-	{
+	protected MDFormatTypeImpl() {
 		super();
 	}
 
@@ -121,8 +119,7 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDFormatType();
 	}
 
@@ -131,8 +128,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getName()
-	{
+	@Override
+	public CharacterStringPropertyType getName() {
 		return name;
 	}
 
@@ -141,12 +138,10 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetName(CharacterStringPropertyType newName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetName(CharacterStringPropertyType newName, NotificationChain msgs) {
 		CharacterStringPropertyType oldName = name;
 		name = newName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_FORMAT_TYPE__NAME, oldName, newName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -158,10 +153,9 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(CharacterStringPropertyType newName)
-	{
-		if (newName != name)
-		{
+	@Override
+	public void setName(CharacterStringPropertyType newName) {
+		if (newName != name) {
 			NotificationChain msgs = null;
 			if (name != null)
 				msgs = ((InternalEObject)name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_FORMAT_TYPE__NAME, null, msgs);
@@ -179,8 +173,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getVersion()
-	{
+	@Override
+	public CharacterStringPropertyType getVersion() {
 		return version;
 	}
 
@@ -189,12 +183,10 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVersion(CharacterStringPropertyType newVersion, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVersion(CharacterStringPropertyType newVersion, NotificationChain msgs) {
 		CharacterStringPropertyType oldVersion = version;
 		version = newVersion;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_FORMAT_TYPE__VERSION, oldVersion, newVersion);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -206,10 +198,9 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVersion(CharacterStringPropertyType newVersion)
-	{
-		if (newVersion != version)
-		{
+	@Override
+	public void setVersion(CharacterStringPropertyType newVersion) {
+		if (newVersion != version) {
 			NotificationChain msgs = null;
 			if (version != null)
 				msgs = ((InternalEObject)version).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_FORMAT_TYPE__VERSION, null, msgs);
@@ -227,8 +218,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getAmendmentNumber()
-	{
+	@Override
+	public CharacterStringPropertyType getAmendmentNumber() {
 		return amendmentNumber;
 	}
 
@@ -237,12 +228,10 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAmendmentNumber(CharacterStringPropertyType newAmendmentNumber, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAmendmentNumber(CharacterStringPropertyType newAmendmentNumber, NotificationChain msgs) {
 		CharacterStringPropertyType oldAmendmentNumber = amendmentNumber;
 		amendmentNumber = newAmendmentNumber;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_FORMAT_TYPE__AMENDMENT_NUMBER, oldAmendmentNumber, newAmendmentNumber);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -254,10 +243,9 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAmendmentNumber(CharacterStringPropertyType newAmendmentNumber)
-	{
-		if (newAmendmentNumber != amendmentNumber)
-		{
+	@Override
+	public void setAmendmentNumber(CharacterStringPropertyType newAmendmentNumber) {
+		if (newAmendmentNumber != amendmentNumber) {
 			NotificationChain msgs = null;
 			if (amendmentNumber != null)
 				msgs = ((InternalEObject)amendmentNumber).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_FORMAT_TYPE__AMENDMENT_NUMBER, null, msgs);
@@ -275,8 +263,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getSpecification()
-	{
+	@Override
+	public CharacterStringPropertyType getSpecification() {
 		return specification;
 	}
 
@@ -285,12 +273,10 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSpecification(CharacterStringPropertyType newSpecification, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSpecification(CharacterStringPropertyType newSpecification, NotificationChain msgs) {
 		CharacterStringPropertyType oldSpecification = specification;
 		specification = newSpecification;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_FORMAT_TYPE__SPECIFICATION, oldSpecification, newSpecification);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -302,10 +288,9 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSpecification(CharacterStringPropertyType newSpecification)
-	{
-		if (newSpecification != specification)
-		{
+	@Override
+	public void setSpecification(CharacterStringPropertyType newSpecification) {
+		if (newSpecification != specification) {
 			NotificationChain msgs = null;
 			if (specification != null)
 				msgs = ((InternalEObject)specification).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_FORMAT_TYPE__SPECIFICATION, null, msgs);
@@ -323,8 +308,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getFileDecompressionTechnique()
-	{
+	@Override
+	public CharacterStringPropertyType getFileDecompressionTechnique() {
 		return fileDecompressionTechnique;
 	}
 
@@ -333,12 +318,10 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFileDecompressionTechnique(CharacterStringPropertyType newFileDecompressionTechnique, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFileDecompressionTechnique(CharacterStringPropertyType newFileDecompressionTechnique, NotificationChain msgs) {
 		CharacterStringPropertyType oldFileDecompressionTechnique = fileDecompressionTechnique;
 		fileDecompressionTechnique = newFileDecompressionTechnique;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_FORMAT_TYPE__FILE_DECOMPRESSION_TECHNIQUE, oldFileDecompressionTechnique, newFileDecompressionTechnique);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -350,10 +333,9 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFileDecompressionTechnique(CharacterStringPropertyType newFileDecompressionTechnique)
-	{
-		if (newFileDecompressionTechnique != fileDecompressionTechnique)
-		{
+	@Override
+	public void setFileDecompressionTechnique(CharacterStringPropertyType newFileDecompressionTechnique) {
+		if (newFileDecompressionTechnique != fileDecompressionTechnique) {
 			NotificationChain msgs = null;
 			if (fileDecompressionTechnique != null)
 				msgs = ((InternalEObject)fileDecompressionTechnique).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_FORMAT_TYPE__FILE_DECOMPRESSION_TECHNIQUE, null, msgs);
@@ -371,10 +353,9 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDDistributorPropertyType> getFormatDistributor()
-	{
-		if (formatDistributor == null)
-		{
+	@Override
+	public EList<MDDistributorPropertyType> getFormatDistributor() {
+		if (formatDistributor == null) {
 			formatDistributor = new EObjectContainmentEList<MDDistributorPropertyType>(MDDistributorPropertyType.class, this, GMDPackage.MD_FORMAT_TYPE__FORMAT_DISTRIBUTOR);
 		}
 		return formatDistributor;
@@ -386,10 +367,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_FORMAT_TYPE__NAME:
 				return basicSetName(null, msgs);
 			case GMDPackage.MD_FORMAT_TYPE__VERSION:
@@ -412,10 +391,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_FORMAT_TYPE__NAME:
 				return getName();
 			case GMDPackage.MD_FORMAT_TYPE__VERSION:
@@ -439,10 +416,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_FORMAT_TYPE__NAME:
 				setName((CharacterStringPropertyType)newValue);
 				return;
@@ -472,10 +447,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_FORMAT_TYPE__NAME:
 				setName((CharacterStringPropertyType)null);
 				return;
@@ -504,10 +477,8 @@ public class MDFormatTypeImpl extends AbstractObjectTypeImpl implements MDFormat
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_FORMAT_TYPE__NAME:
 				return name != null;
 			case GMDPackage.MD_FORMAT_TYPE__VERSION:

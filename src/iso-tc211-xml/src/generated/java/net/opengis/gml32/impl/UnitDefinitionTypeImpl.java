@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDefinitionType
-{
+public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDefinitionType {
 	/**
 	 * The cached value of the '{@link #getQuantityType() <em>Quantity Type</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -68,8 +67,7 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UnitDefinitionTypeImpl()
-	{
+	protected UnitDefinitionTypeImpl() {
 		super();
 	}
 
@@ -79,8 +77,7 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getUnitDefinitionType();
 	}
 
@@ -89,8 +86,8 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getQuantityType()
-	{
+	@Override
+	public StringOrRefType getQuantityType() {
 		return quantityType;
 	}
 
@@ -99,12 +96,10 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetQuantityType(StringOrRefType newQuantityType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetQuantityType(StringOrRefType newQuantityType, NotificationChain msgs) {
 		StringOrRefType oldQuantityType = quantityType;
 		quantityType = newQuantityType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE, oldQuantityType, newQuantityType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -116,10 +111,9 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQuantityType(StringOrRefType newQuantityType)
-	{
-		if (newQuantityType != quantityType)
-		{
+	@Override
+	public void setQuantityType(StringOrRefType newQuantityType) {
+		if (newQuantityType != quantityType) {
 			NotificationChain msgs = null;
 			if (quantityType != null)
 				msgs = ((InternalEObject)quantityType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE, null, msgs);
@@ -137,8 +131,8 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getQuantityTypeReference()
-	{
+	@Override
+	public ReferenceType getQuantityTypeReference() {
 		return quantityTypeReference;
 	}
 
@@ -147,12 +141,10 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetQuantityTypeReference(ReferenceType newQuantityTypeReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetQuantityTypeReference(ReferenceType newQuantityTypeReference, NotificationChain msgs) {
 		ReferenceType oldQuantityTypeReference = quantityTypeReference;
 		quantityTypeReference = newQuantityTypeReference;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE_REFERENCE, oldQuantityTypeReference, newQuantityTypeReference);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -164,10 +156,9 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQuantityTypeReference(ReferenceType newQuantityTypeReference)
-	{
-		if (newQuantityTypeReference != quantityTypeReference)
-		{
+	@Override
+	public void setQuantityTypeReference(ReferenceType newQuantityTypeReference) {
+		if (newQuantityTypeReference != quantityTypeReference) {
 			NotificationChain msgs = null;
 			if (quantityTypeReference != null)
 				msgs = ((InternalEObject)quantityTypeReference).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE_REFERENCE, null, msgs);
@@ -185,8 +176,8 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getCatalogSymbol()
-	{
+	@Override
+	public CodeType getCatalogSymbol() {
 		return catalogSymbol;
 	}
 
@@ -195,12 +186,10 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCatalogSymbol(CodeType newCatalogSymbol, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCatalogSymbol(CodeType newCatalogSymbol, NotificationChain msgs) {
 		CodeType oldCatalogSymbol = catalogSymbol;
 		catalogSymbol = newCatalogSymbol;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.UNIT_DEFINITION_TYPE__CATALOG_SYMBOL, oldCatalogSymbol, newCatalogSymbol);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -212,10 +201,9 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCatalogSymbol(CodeType newCatalogSymbol)
-	{
-		if (newCatalogSymbol != catalogSymbol)
-		{
+	@Override
+	public void setCatalogSymbol(CodeType newCatalogSymbol) {
+		if (newCatalogSymbol != catalogSymbol) {
 			NotificationChain msgs = null;
 			if (catalogSymbol != null)
 				msgs = ((InternalEObject)catalogSymbol).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.UNIT_DEFINITION_TYPE__CATALOG_SYMBOL, null, msgs);
@@ -234,10 +222,8 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE:
 				return basicSetQuantityType(null, msgs);
 			case GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE_REFERENCE:
@@ -254,10 +240,8 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE:
 				return getQuantityType();
 			case GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE_REFERENCE:
@@ -274,10 +258,8 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE:
 				setQuantityType((StringOrRefType)newValue);
 				return;
@@ -297,10 +279,8 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE:
 				setQuantityType((StringOrRefType)null);
 				return;
@@ -320,10 +300,8 @@ public class UnitDefinitionTypeImpl extends DefinitionTypeImpl implements UnitDe
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE:
 				return quantityType != null;
 			case GMLPackage.UNIT_DEFINITION_TYPE__QUANTITY_TYPE_REFERENCE:

@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='MD_PixelOrientationCode_Type'"
  * @generated
  */
-public enum MDPixelOrientationCodeType implements Enumerator
-{
+public enum MDPixelOrientationCodeType implements Enumerator {
 	/**
 	 * The '<em><b>Center</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -72,10 +71,6 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	/**
 	 * The '<em><b>Center</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Center</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CENTER
 	 * @model name="center"
@@ -87,10 +82,6 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	/**
 	 * The '<em><b>Lower Left</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Lower Left</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #LOWER_LEFT
 	 * @model name="lowerLeft"
@@ -102,10 +93,6 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	/**
 	 * The '<em><b>Lower Right</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Lower Right</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #LOWER_RIGHT
 	 * @model name="lowerRight"
@@ -117,10 +104,6 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	/**
 	 * The '<em><b>Upper Right</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Upper Right</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #UPPER_RIGHT
 	 * @model name="upperRight"
@@ -132,10 +115,6 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	/**
 	 * The '<em><b>Upper Left</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Upper Left</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #UPPER_LEFT
 	 * @model name="upperLeft"
@@ -151,8 +130,7 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	 * @generated
 	 */
 	private static final MDPixelOrientationCodeType[] VALUES_ARRAY =
-		new MDPixelOrientationCodeType[]
-		{
+		new MDPixelOrientationCodeType[] {
 			CENTER,
 			LOWER_LEFT,
 			LOWER_RIGHT,
@@ -176,13 +154,10 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static MDPixelOrientationCodeType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static MDPixelOrientationCodeType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			MDPixelOrientationCodeType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -197,13 +172,10 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static MDPixelOrientationCodeType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static MDPixelOrientationCodeType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			MDPixelOrientationCodeType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -218,10 +190,8 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static MDPixelOrientationCodeType get(int value)
-	{
-		switch (value)
-		{
+	public static MDPixelOrientationCodeType get(int value) {
+		switch (value) {
 			case CENTER_VALUE: return CENTER;
 			case LOWER_LEFT_VALUE: return LOWER_LEFT;
 			case LOWER_RIGHT_VALUE: return LOWER_RIGHT;
@@ -258,8 +228,7 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private MDPixelOrientationCodeType(int value, String name, String literal)
-	{
+	private MDPixelOrientationCodeType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -270,8 +239,8 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -280,8 +249,8 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -290,8 +259,8 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -302,8 +271,7 @@ public enum MDPixelOrientationCodeType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

@@ -32,8 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container implements InlinePropertyType
-{
+public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container implements InlinePropertyType {
 	/**
 	 * The cached value of the '{@link #getAny() <em>Any</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -78,8 +77,7 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected InlinePropertyTypeImpl()
-	{
+	protected InlinePropertyTypeImpl() {
 		super();
 	}
 
@@ -89,8 +87,7 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getInlinePropertyType();
 	}
 
@@ -99,10 +96,9 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAny()
-	{
-		if (any == null)
-		{
+	@Override
+	public FeatureMap getAny() {
+		if (any == null) {
 			any = new BasicFeatureMap(this, GMLPackage.INLINE_PROPERTY_TYPE__ANY);
 		}
 		return any;
@@ -113,8 +109,8 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -123,8 +119,8 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -138,8 +134,8 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -153,8 +149,8 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -164,10 +160,8 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.INLINE_PROPERTY_TYPE__ANY:
 				return ((InternalEList<?>)getAny()).basicRemove(otherEnd, msgs);
 		}
@@ -180,10 +174,8 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.INLINE_PROPERTY_TYPE__ANY:
 				if (coreType) return getAny();
 				return ((FeatureMap.Internal)getAny()).getWrapper();
@@ -199,10 +191,8 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.INLINE_PROPERTY_TYPE__ANY:
 				((FeatureMap.Internal)getAny()).set(newValue);
 				return;
@@ -219,10 +209,8 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.INLINE_PROPERTY_TYPE__ANY:
 				getAny().clear();
 				return;
@@ -239,10 +227,8 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.INLINE_PROPERTY_TYPE__ANY:
 				return any != null && !any.isEmpty();
 			case GMLPackage.INLINE_PROPERTY_TYPE__OWNS:
@@ -257,11 +243,10 @@ public class InlinePropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (any: ");
 		result.append(any);
 		result.append(", owns: ");

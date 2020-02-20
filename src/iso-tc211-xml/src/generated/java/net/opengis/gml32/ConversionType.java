@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='ConversionType' kind='elementOnly'"
  * @generated
  */
-public interface ConversionType extends AbstractGeneralConversionType
-{
+public interface ConversionType extends AbstractGeneralConversionType {
 	/**
 	 * Returns the value of the '<em><b>Method Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.

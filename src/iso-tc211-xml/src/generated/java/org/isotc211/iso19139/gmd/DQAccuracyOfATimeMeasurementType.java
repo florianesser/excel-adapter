@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_AccuracyOfATimeMeasurement_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQAccuracyOfATimeMeasurementType extends AbstractDQTemporalAccuracyType
-{
+public interface DQAccuracyOfATimeMeasurementType extends AbstractDQTemporalAccuracyType {
 } // DQAccuracyOfATimeMeasurementType

@@ -32,16 +32,11 @@ import org.isotc211.iso19139.gco.DateTimePropertyType;
  *        extendedMetaData="name='AbstractDQ_Element_Type' kind='elementOnly'"
  * @generated
  */
-public interface AbstractDQElementType extends AbstractObjectType
-{
+public interface AbstractDQElementType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Name Of Measure</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name Of Measure</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name Of Measure</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractDQElementType_NameOfMeasure()
@@ -54,10 +49,6 @@ public interface AbstractDQElementType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Measure Identification</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Measure Identification</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Measure Identification</em>' containment reference.
 	 * @see #setMeasureIdentification(MDIdentifierPropertyType)
@@ -81,10 +72,6 @@ public interface AbstractDQElementType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Measure Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Measure Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Measure Description</em>' containment reference.
 	 * @see #setMeasureDescription(CharacterStringPropertyType)
@@ -108,10 +95,6 @@ public interface AbstractDQElementType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Evaluation Method Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Evaluation Method Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Evaluation Method Type</em>' containment reference.
 	 * @see #setEvaluationMethodType(DQEvaluationMethodTypeCodePropertyType)
@@ -135,10 +118,6 @@ public interface AbstractDQElementType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Evaluation Method Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Evaluation Method Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Evaluation Method Description</em>' containment reference.
 	 * @see #setEvaluationMethodDescription(CharacterStringPropertyType)
@@ -162,10 +141,6 @@ public interface AbstractDQElementType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Evaluation Procedure</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Evaluation Procedure</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Evaluation Procedure</em>' containment reference.
 	 * @see #setEvaluationProcedure(CICitationPropertyType)
@@ -190,10 +165,6 @@ public interface AbstractDQElementType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Date Time</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.DateTimePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date Time</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date Time</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractDQElementType_DateTime()
@@ -207,10 +178,6 @@ public interface AbstractDQElementType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Result</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.DQResultPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Result</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Result</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractDQElementType_Result()

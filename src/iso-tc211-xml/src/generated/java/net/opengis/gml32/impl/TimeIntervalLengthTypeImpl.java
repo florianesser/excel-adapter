@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container implements TimeIntervalLengthType
-{
+public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container implements TimeIntervalLengthType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -118,8 +117,7 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeIntervalLengthTypeImpl()
-	{
+	protected TimeIntervalLengthTypeImpl() {
 		super();
 	}
 
@@ -129,8 +127,7 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeIntervalLengthType();
 	}
 
@@ -139,8 +136,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal getValue()
-	{
+	@Override
+	public BigDecimal getValue() {
 		return value;
 	}
 
@@ -149,8 +146,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(BigDecimal newValue)
-	{
+	@Override
+	public void setValue(BigDecimal newValue) {
 		BigDecimal oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -162,8 +159,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getFactor()
-	{
+	@Override
+	public BigInteger getFactor() {
 		return factor;
 	}
 
@@ -172,8 +169,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFactor(BigInteger newFactor)
-	{
+	@Override
+	public void setFactor(BigInteger newFactor) {
 		BigInteger oldFactor = factor;
 		factor = newFactor;
 		if (eNotificationRequired())
@@ -185,8 +182,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getRadix()
-	{
+	@Override
+	public BigInteger getRadix() {
 		return radix;
 	}
 
@@ -195,8 +192,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRadix(BigInteger newRadix)
-	{
+	@Override
+	public void setRadix(BigInteger newRadix) {
 		BigInteger oldRadix = radix;
 		radix = newRadix;
 		if (eNotificationRequired())
@@ -208,8 +205,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getUnit()
-	{
+	@Override
+	public Object getUnit() {
 		return unit;
 	}
 
@@ -218,8 +215,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUnit(Object newUnit)
-	{
+	@Override
+	public void setUnit(Object newUnit) {
 		Object oldUnit = unit;
 		unit = newUnit;
 		if (eNotificationRequired())
@@ -232,10 +229,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_INTERVAL_LENGTH_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.TIME_INTERVAL_LENGTH_TYPE__FACTOR:
@@ -254,10 +249,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_INTERVAL_LENGTH_TYPE__VALUE:
 				setValue((BigDecimal)newValue);
 				return;
@@ -280,10 +273,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_INTERVAL_LENGTH_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -306,10 +297,8 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_INTERVAL_LENGTH_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GMLPackage.TIME_INTERVAL_LENGTH_TYPE__FACTOR:
@@ -328,11 +317,10 @@ public class TimeIntervalLengthTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", factor: ");

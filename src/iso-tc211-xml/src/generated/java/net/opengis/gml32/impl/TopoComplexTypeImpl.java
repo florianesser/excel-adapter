@@ -43,8 +43,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements TopoComplexType
-{
+public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements TopoComplexType {
 	/**
 	 * The cached value of the '{@link #getMaximalComplex() <em>Maximal Complex</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -158,8 +157,7 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TopoComplexTypeImpl()
-	{
+	protected TopoComplexTypeImpl() {
 		super();
 	}
 
@@ -169,8 +167,7 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTopoComplexType();
 	}
 
@@ -179,8 +176,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoComplexPropertyType getMaximalComplex()
-	{
+	@Override
+	public TopoComplexPropertyType getMaximalComplex() {
 		return maximalComplex;
 	}
 
@@ -189,12 +186,10 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMaximalComplex(TopoComplexPropertyType newMaximalComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMaximalComplex(TopoComplexPropertyType newMaximalComplex, NotificationChain msgs) {
 		TopoComplexPropertyType oldMaximalComplex = maximalComplex;
 		maximalComplex = newMaximalComplex;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TOPO_COMPLEX_TYPE__MAXIMAL_COMPLEX, oldMaximalComplex, newMaximalComplex);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -206,10 +201,9 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaximalComplex(TopoComplexPropertyType newMaximalComplex)
-	{
-		if (newMaximalComplex != maximalComplex)
-		{
+	@Override
+	public void setMaximalComplex(TopoComplexPropertyType newMaximalComplex) {
+		if (newMaximalComplex != maximalComplex) {
 			NotificationChain msgs = null;
 			if (maximalComplex != null)
 				msgs = ((InternalEObject)maximalComplex).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TOPO_COMPLEX_TYPE__MAXIMAL_COMPLEX, null, msgs);
@@ -227,10 +221,9 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TopoComplexPropertyType> getSuperComplex()
-	{
-		if (superComplex == null)
-		{
+	@Override
+	public EList<TopoComplexPropertyType> getSuperComplex() {
+		if (superComplex == null) {
 			superComplex = new EObjectContainmentEList<TopoComplexPropertyType>(TopoComplexPropertyType.class, this, GMLPackage.TOPO_COMPLEX_TYPE__SUPER_COMPLEX);
 		}
 		return superComplex;
@@ -241,10 +234,9 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TopoComplexPropertyType> getSubComplex()
-	{
-		if (subComplex == null)
-		{
+	@Override
+	public EList<TopoComplexPropertyType> getSubComplex() {
+		if (subComplex == null) {
 			subComplex = new EObjectContainmentEList<TopoComplexPropertyType>(TopoComplexPropertyType.class, this, GMLPackage.TOPO_COMPLEX_TYPE__SUB_COMPLEX);
 		}
 		return subComplex;
@@ -255,10 +247,9 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TopoPrimitiveMemberType> getTopoPrimitiveMember()
-	{
-		if (topoPrimitiveMember == null)
-		{
+	@Override
+	public EList<TopoPrimitiveMemberType> getTopoPrimitiveMember() {
+		if (topoPrimitiveMember == null) {
 			topoPrimitiveMember = new EObjectContainmentEList<TopoPrimitiveMemberType>(TopoPrimitiveMemberType.class, this, GMLPackage.TOPO_COMPLEX_TYPE__TOPO_PRIMITIVE_MEMBER);
 		}
 		return topoPrimitiveMember;
@@ -269,8 +260,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoPrimitiveArrayAssociationType getTopoPrimitiveMembers()
-	{
+	@Override
+	public TopoPrimitiveArrayAssociationType getTopoPrimitiveMembers() {
 		return topoPrimitiveMembers;
 	}
 
@@ -279,12 +270,10 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoPrimitiveMembers(TopoPrimitiveArrayAssociationType newTopoPrimitiveMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoPrimitiveMembers(TopoPrimitiveArrayAssociationType newTopoPrimitiveMembers, NotificationChain msgs) {
 		TopoPrimitiveArrayAssociationType oldTopoPrimitiveMembers = topoPrimitiveMembers;
 		topoPrimitiveMembers = newTopoPrimitiveMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TOPO_COMPLEX_TYPE__TOPO_PRIMITIVE_MEMBERS, oldTopoPrimitiveMembers, newTopoPrimitiveMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -296,10 +285,9 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoPrimitiveMembers(TopoPrimitiveArrayAssociationType newTopoPrimitiveMembers)
-	{
-		if (newTopoPrimitiveMembers != topoPrimitiveMembers)
-		{
+	@Override
+	public void setTopoPrimitiveMembers(TopoPrimitiveArrayAssociationType newTopoPrimitiveMembers) {
+		if (newTopoPrimitiveMembers != topoPrimitiveMembers) {
 			NotificationChain msgs = null;
 			if (topoPrimitiveMembers != null)
 				msgs = ((InternalEObject)topoPrimitiveMembers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TOPO_COMPLEX_TYPE__TOPO_PRIMITIVE_MEMBERS, null, msgs);
@@ -317,8 +305,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -327,8 +315,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -342,8 +330,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -357,8 +345,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -367,8 +355,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isIsMaximal()
-	{
+	@Override
+	public boolean isIsMaximal() {
 		return isMaximal;
 	}
 
@@ -377,8 +365,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIsMaximal(boolean newIsMaximal)
-	{
+	@Override
+	public void setIsMaximal(boolean newIsMaximal) {
 		boolean oldIsMaximal = isMaximal;
 		isMaximal = newIsMaximal;
 		boolean oldIsMaximalESet = isMaximalESet;
@@ -392,8 +380,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetIsMaximal()
-	{
+	@Override
+	public void unsetIsMaximal() {
 		boolean oldIsMaximal = isMaximal;
 		boolean oldIsMaximalESet = isMaximalESet;
 		isMaximal = IS_MAXIMAL_EDEFAULT;
@@ -407,8 +395,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetIsMaximal()
-	{
+	@Override
+	public boolean isSetIsMaximal() {
 		return isMaximalESet;
 	}
 
@@ -418,10 +406,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TOPO_COMPLEX_TYPE__MAXIMAL_COMPLEX:
 				return basicSetMaximalComplex(null, msgs);
 			case GMLPackage.TOPO_COMPLEX_TYPE__SUPER_COMPLEX:
@@ -442,10 +428,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TOPO_COMPLEX_TYPE__MAXIMAL_COMPLEX:
 				return getMaximalComplex();
 			case GMLPackage.TOPO_COMPLEX_TYPE__SUPER_COMPLEX:
@@ -471,10 +455,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TOPO_COMPLEX_TYPE__MAXIMAL_COMPLEX:
 				setMaximalComplex((TopoComplexPropertyType)newValue);
 				return;
@@ -509,10 +491,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_COMPLEX_TYPE__MAXIMAL_COMPLEX:
 				setMaximalComplex((TopoComplexPropertyType)null);
 				return;
@@ -544,10 +524,8 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_COMPLEX_TYPE__MAXIMAL_COMPLEX:
 				return maximalComplex != null;
 			case GMLPackage.TOPO_COMPLEX_TYPE__SUPER_COMPLEX:
@@ -572,11 +550,10 @@ public class TopoComplexTypeImpl extends AbstractTopologyTypeImpl implements Top
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (aggregationType: ");
 		if (aggregationTypeESet) result.append(aggregationType); else result.append("<unset>");
 		result.append(", isMaximal: ");

@@ -42,8 +42,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObjectTypeImpl implements AbstractCoordinateOperationType
-{
+public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObjectTypeImpl implements AbstractCoordinateOperationType {
 	/**
 	 * The cached value of the '{@link #getDomainOfValidity() <em>Domain Of Validity</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -119,8 +118,7 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractCoordinateOperationTypeImpl()
-	{
+	protected AbstractCoordinateOperationTypeImpl() {
 		super();
 	}
 
@@ -130,8 +128,7 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractCoordinateOperationType();
 	}
 
@@ -140,8 +137,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainOfValidityType getDomainOfValidity()
-	{
+	@Override
+	public DomainOfValidityType getDomainOfValidity() {
 		return domainOfValidity;
 	}
 
@@ -150,12 +147,10 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDomainOfValidity(DomainOfValidityType newDomainOfValidity, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDomainOfValidity(DomainOfValidityType newDomainOfValidity, NotificationChain msgs) {
 		DomainOfValidityType oldDomainOfValidity = domainOfValidity;
 		domainOfValidity = newDomainOfValidity;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__DOMAIN_OF_VALIDITY, oldDomainOfValidity, newDomainOfValidity);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -167,10 +162,9 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDomainOfValidity(DomainOfValidityType newDomainOfValidity)
-	{
-		if (newDomainOfValidity != domainOfValidity)
-		{
+	@Override
+	public void setDomainOfValidity(DomainOfValidityType newDomainOfValidity) {
+		if (newDomainOfValidity != domainOfValidity) {
 			NotificationChain msgs = null;
 			if (domainOfValidity != null)
 				msgs = ((InternalEObject)domainOfValidity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__DOMAIN_OF_VALIDITY, null, msgs);
@@ -188,10 +182,9 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getScope()
-	{
-		if (scope == null)
-		{
+	@Override
+	public EList<String> getScope() {
+		if (scope == null) {
 			scope = new EDataTypeEList<String>(String.class, this, GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__SCOPE);
 		}
 		return scope;
@@ -202,8 +195,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getOperationVersion()
-	{
+	@Override
+	public String getOperationVersion() {
 		return operationVersion;
 	}
 
@@ -212,8 +205,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationVersion(String newOperationVersion)
-	{
+	@Override
+	public void setOperationVersion(String newOperationVersion) {
 		String oldOperationVersion = operationVersion;
 		operationVersion = newOperationVersion;
 		if (eNotificationRequired())
@@ -225,10 +218,9 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CoordinateOperationAccuracyType> getCoordinateOperationAccuracy()
-	{
-		if (coordinateOperationAccuracy == null)
-		{
+	@Override
+	public EList<CoordinateOperationAccuracyType> getCoordinateOperationAccuracy() {
+		if (coordinateOperationAccuracy == null) {
 			coordinateOperationAccuracy = new EObjectContainmentEList<CoordinateOperationAccuracyType>(CoordinateOperationAccuracyType.class, this, GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__COORDINATE_OPERATION_ACCURACY);
 		}
 		return coordinateOperationAccuracy;
@@ -239,8 +231,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CRSPropertyType getSourceCRS()
-	{
+	@Override
+	public CRSPropertyType getSourceCRS() {
 		return sourceCRS;
 	}
 
@@ -249,12 +241,10 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSourceCRS(CRSPropertyType newSourceCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSourceCRS(CRSPropertyType newSourceCRS, NotificationChain msgs) {
 		CRSPropertyType oldSourceCRS = sourceCRS;
 		sourceCRS = newSourceCRS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__SOURCE_CRS, oldSourceCRS, newSourceCRS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -266,10 +256,9 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceCRS(CRSPropertyType newSourceCRS)
-	{
-		if (newSourceCRS != sourceCRS)
-		{
+	@Override
+	public void setSourceCRS(CRSPropertyType newSourceCRS) {
+		if (newSourceCRS != sourceCRS) {
 			NotificationChain msgs = null;
 			if (sourceCRS != null)
 				msgs = ((InternalEObject)sourceCRS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__SOURCE_CRS, null, msgs);
@@ -287,8 +276,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CRSPropertyType getTargetCRS()
-	{
+	@Override
+	public CRSPropertyType getTargetCRS() {
 		return targetCRS;
 	}
 
@@ -297,12 +286,10 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTargetCRS(CRSPropertyType newTargetCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTargetCRS(CRSPropertyType newTargetCRS, NotificationChain msgs) {
 		CRSPropertyType oldTargetCRS = targetCRS;
 		targetCRS = newTargetCRS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__TARGET_CRS, oldTargetCRS, newTargetCRS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -314,10 +301,9 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetCRS(CRSPropertyType newTargetCRS)
-	{
-		if (newTargetCRS != targetCRS)
-		{
+	@Override
+	public void setTargetCRS(CRSPropertyType newTargetCRS) {
+		if (newTargetCRS != targetCRS) {
 			NotificationChain msgs = null;
 			if (targetCRS != null)
 				msgs = ((InternalEObject)targetCRS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__TARGET_CRS, null, msgs);
@@ -336,10 +322,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__DOMAIN_OF_VALIDITY:
 				return basicSetDomainOfValidity(null, msgs);
 			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__COORDINATE_OPERATION_ACCURACY:
@@ -358,10 +342,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__DOMAIN_OF_VALIDITY:
 				return getDomainOfValidity();
 			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__SCOPE:
@@ -385,10 +367,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__DOMAIN_OF_VALIDITY:
 				setDomainOfValidity((DomainOfValidityType)newValue);
 				return;
@@ -419,10 +399,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__DOMAIN_OF_VALIDITY:
 				setDomainOfValidity((DomainOfValidityType)null);
 				return;
@@ -451,10 +429,8 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__DOMAIN_OF_VALIDITY:
 				return domainOfValidity != null;
 			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE__SCOPE:
@@ -477,11 +453,10 @@ public abstract class AbstractCoordinateOperationTypeImpl extends IdentifiedObje
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (scope: ");
 		result.append(scope);
 		result.append(", operationVersion: ");

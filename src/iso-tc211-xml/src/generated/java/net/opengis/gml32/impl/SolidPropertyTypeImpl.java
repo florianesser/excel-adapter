@@ -47,8 +47,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implements SolidPropertyType
-{
+public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implements SolidPropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractSolidGroup() <em>Abstract Solid Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -300,8 +299,7 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SolidPropertyTypeImpl()
-	{
+	protected SolidPropertyTypeImpl() {
 		super();
 	}
 
@@ -311,8 +309,7 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getSolidPropertyType();
 	}
 
@@ -321,10 +318,9 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractSolidGroup()
-	{
-		if (abstractSolidGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractSolidGroup() {
+		if (abstractSolidGroup == null) {
 			abstractSolidGroup = new BasicFeatureMap(this, GMLPackage.SOLID_PROPERTY_TYPE__ABSTRACT_SOLID_GROUP);
 		}
 		return abstractSolidGroup;
@@ -335,8 +331,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractSolidType getAbstractSolid()
-	{
+	@Override
+	public AbstractSolidType getAbstractSolid() {
 		return (AbstractSolidType)getAbstractSolidGroup().get(GMLPackage.eINSTANCE.getSolidPropertyType_AbstractSolid(), true);
 	}
 
@@ -345,8 +341,7 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractSolid(AbstractSolidType newAbstractSolid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractSolid(AbstractSolidType newAbstractSolid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractSolidGroup()).basicAdd(GMLPackage.eINSTANCE.getSolidPropertyType_AbstractSolid(), newAbstractSolid, msgs);
 	}
 
@@ -355,8 +350,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -365,8 +360,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -380,8 +375,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -395,8 +390,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -405,8 +400,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -415,8 +410,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -428,8 +423,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -438,8 +433,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -451,8 +446,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -461,8 +456,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -474,8 +469,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -484,8 +479,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -499,8 +494,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -514,8 +509,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -524,8 +519,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -534,8 +529,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -547,8 +542,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -557,8 +552,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -570,8 +565,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -580,8 +575,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -595,8 +590,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -610,8 +605,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -620,8 +615,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -630,8 +625,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -643,8 +638,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -653,8 +648,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -668,8 +663,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -683,8 +678,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -694,10 +689,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.SOLID_PROPERTY_TYPE__ABSTRACT_SOLID_GROUP:
 				return ((InternalEList<?>)getAbstractSolidGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.SOLID_PROPERTY_TYPE__ABSTRACT_SOLID:
@@ -712,10 +705,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.SOLID_PROPERTY_TYPE__ABSTRACT_SOLID_GROUP:
 				if (coreType) return getAbstractSolidGroup();
 				return ((FeatureMap.Internal)getAbstractSolidGroup()).getWrapper();
@@ -751,10 +742,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.SOLID_PROPERTY_TYPE__ABSTRACT_SOLID_GROUP:
 				((FeatureMap.Internal)getAbstractSolidGroup()).set(newValue);
 				return;
@@ -798,10 +787,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SOLID_PROPERTY_TYPE__ABSTRACT_SOLID_GROUP:
 				getAbstractSolidGroup().clear();
 				return;
@@ -845,10 +832,8 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SOLID_PROPERTY_TYPE__ABSTRACT_SOLID_GROUP:
 				return abstractSolidGroup != null && !abstractSolidGroup.isEmpty();
 			case GMLPackage.SOLID_PROPERTY_TYPE__ABSTRACT_SOLID:
@@ -883,11 +868,10 @@ public class SolidPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractSolidGroup: ");
 		result.append(abstractSolidGroup);
 		result.append(", actuate: ");

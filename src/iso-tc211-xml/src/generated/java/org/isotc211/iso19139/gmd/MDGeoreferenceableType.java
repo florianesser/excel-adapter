@@ -28,15 +28,10 @@ import org.isotc211.iso19139.gco.RecordPropertyType;
  * @model extendedMetaData="name='MD_Georeferenceable_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDGeoreferenceableType extends MDGridSpatialRepresentationType
-{
+public interface MDGeoreferenceableType extends MDGridSpatialRepresentationType {
 	/**
 	 * Returns the value of the '<em><b>Control Point Availability</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Control Point Availability</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Control Point Availability</em>' containment reference.
 	 * @see #setControlPointAvailability(BooleanPropertyType)
@@ -60,10 +55,6 @@ public interface MDGeoreferenceableType extends MDGridSpatialRepresentationType
 	/**
 	 * Returns the value of the '<em><b>Orientation Parameter Availability</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Orientation Parameter Availability</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Orientation Parameter Availability</em>' containment reference.
 	 * @see #setOrientationParameterAvailability(BooleanPropertyType)
@@ -87,10 +78,6 @@ public interface MDGeoreferenceableType extends MDGridSpatialRepresentationType
 	/**
 	 * Returns the value of the '<em><b>Orientation Parameter Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Orientation Parameter Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Orientation Parameter Description</em>' containment reference.
 	 * @see #setOrientationParameterDescription(CharacterStringPropertyType)
@@ -114,10 +101,6 @@ public interface MDGeoreferenceableType extends MDGridSpatialRepresentationType
 	/**
 	 * Returns the value of the '<em><b>Georeferenced Parameters</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Georeferenced Parameters</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Georeferenced Parameters</em>' containment reference.
 	 * @see #setGeoreferencedParameters(RecordPropertyType)
@@ -142,10 +125,6 @@ public interface MDGeoreferenceableType extends MDGridSpatialRepresentationType
 	 * Returns the value of the '<em><b>Parameter Citation</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CICitationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parameter Citation</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Parameter Citation</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDGeoreferenceableType_ParameterCitation()

@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ArcByBulgeTypeImpl extends ArcStringByBulgeTypeImpl implements ArcByBulgeType
-{
+public class ArcByBulgeTypeImpl extends ArcStringByBulgeTypeImpl implements ArcByBulgeType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArcByBulgeTypeImpl()
-	{
+	protected ArcByBulgeTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class ArcByBulgeTypeImpl extends ArcStringByBulgeTypeImpl implements ArcB
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getArcByBulgeType();
 	}
 

@@ -26,8 +26,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='TopoComplexType' kind='elementOnly'"
  * @generated
  */
-public interface TopoComplexType extends AbstractTopologyType
-{
+public interface TopoComplexType extends AbstractTopologyType {
 	/**
 	 * Returns the value of the '<em><b>Maximal Complex</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -132,10 +131,6 @@ public interface TopoComplexType extends AbstractTopologyType
 	 * Returns the value of the '<em><b>Aggregation Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.AggregationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Type</em>' attribute.
 	 * @see net.opengis.gml32.AggregationType
@@ -189,10 +184,6 @@ public interface TopoComplexType extends AbstractTopologyType
 	 * Returns the value of the '<em><b>Is Maximal</b></em>' attribute.
 	 * The default value is <code>"false"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Maximal</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Maximal</em>' attribute.
 	 * @see #isSetIsMaximal()

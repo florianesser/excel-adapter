@@ -20,16 +20,11 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='TimeOrdinalReferenceSystemType' kind='elementOnly'"
  * @generated
  */
-public interface TimeOrdinalReferenceSystemType extends TimeReferenceSystemType
-{
+public interface TimeOrdinalReferenceSystemType extends TimeReferenceSystemType {
 	/**
 	 * Returns the value of the '<em><b>Component</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.TimeOrdinalEraPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Component</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Component</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTimeOrdinalReferenceSystemType_Component()

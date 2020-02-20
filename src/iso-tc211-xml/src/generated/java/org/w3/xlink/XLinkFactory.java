@@ -12,8 +12,7 @@ import org.eclipse.emf.ecore.EFactory;
  * @see org.w3.xlink.XLinkPackage
  * @generated
  */
-public interface XLinkFactory extends EFactory
-{
+public interface XLinkFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->

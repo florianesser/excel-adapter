@@ -19,15 +19,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='ArrayType' kind='elementOnly'"
  * @generated
  */
-public interface ArrayType extends AbstractGMLType
-{
+public interface ArrayType extends AbstractGMLType {
 	/**
 	 * Returns the value of the '<em><b>Members</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Members</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Members</em>' containment reference.
 	 * @see #setMembers(ArrayAssociationType)

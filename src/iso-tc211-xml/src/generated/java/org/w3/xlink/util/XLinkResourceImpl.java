@@ -13,8 +13,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
  * @see org.w3.xlink.util.XLinkResourceFactoryImpl
  * @generated
  */
-public class XLinkResourceImpl extends XMLResourceImpl
-{
+public class XLinkResourceImpl extends XMLResourceImpl {
 	/**
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->
@@ -22,8 +21,7 @@ public class XLinkResourceImpl extends XMLResourceImpl
 	 * @param uri the URI of the new resource.
 	 * @generated
 	 */
-	public XLinkResourceImpl(URI uri)
-	{
+	public XLinkResourceImpl(URI uri) {
 		super(uri);
 	}
 

@@ -41,8 +41,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl implements DQQuantitativeResultType
-{
+public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl implements DQQuantitativeResultType {
 	/**
 	 * The cached value of the '{@link #getValueType() <em>Value Type</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -88,8 +87,7 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQQuantitativeResultTypeImpl()
-	{
+	protected DQQuantitativeResultTypeImpl() {
 		super();
 	}
 
@@ -99,8 +97,7 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQQuantitativeResultType();
 	}
 
@@ -109,8 +106,8 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RecordTypePropertyType getValueType()
-	{
+	@Override
+	public RecordTypePropertyType getValueType() {
 		return valueType;
 	}
 
@@ -119,12 +116,10 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueType(RecordTypePropertyType newValueType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueType(RecordTypePropertyType newValueType, NotificationChain msgs) {
 		RecordTypePropertyType oldValueType = valueType;
 		valueType = newValueType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_TYPE, oldValueType, newValueType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -136,10 +131,9 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueType(RecordTypePropertyType newValueType)
-	{
-		if (newValueType != valueType)
-		{
+	@Override
+	public void setValueType(RecordTypePropertyType newValueType) {
+		if (newValueType != valueType) {
 			NotificationChain msgs = null;
 			if (valueType != null)
 				msgs = ((InternalEObject)valueType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_TYPE, null, msgs);
@@ -157,8 +151,8 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitOfMeasurePropertyType getValueUnit()
-	{
+	@Override
+	public UnitOfMeasurePropertyType getValueUnit() {
 		return valueUnit;
 	}
 
@@ -167,12 +161,10 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueUnit(UnitOfMeasurePropertyType newValueUnit, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueUnit(UnitOfMeasurePropertyType newValueUnit, NotificationChain msgs) {
 		UnitOfMeasurePropertyType oldValueUnit = valueUnit;
 		valueUnit = newValueUnit;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_UNIT, oldValueUnit, newValueUnit);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -184,10 +176,9 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueUnit(UnitOfMeasurePropertyType newValueUnit)
-	{
-		if (newValueUnit != valueUnit)
-		{
+	@Override
+	public void setValueUnit(UnitOfMeasurePropertyType newValueUnit) {
+		if (newValueUnit != valueUnit) {
 			NotificationChain msgs = null;
 			if (valueUnit != null)
 				msgs = ((InternalEObject)valueUnit).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_UNIT, null, msgs);
@@ -205,8 +196,8 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getErrorStatistic()
-	{
+	@Override
+	public CharacterStringPropertyType getErrorStatistic() {
 		return errorStatistic;
 	}
 
@@ -215,12 +206,10 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetErrorStatistic(CharacterStringPropertyType newErrorStatistic, NotificationChain msgs)
-	{
+	public NotificationChain basicSetErrorStatistic(CharacterStringPropertyType newErrorStatistic, NotificationChain msgs) {
 		CharacterStringPropertyType oldErrorStatistic = errorStatistic;
 		errorStatistic = newErrorStatistic;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__ERROR_STATISTIC, oldErrorStatistic, newErrorStatistic);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -232,10 +221,9 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setErrorStatistic(CharacterStringPropertyType newErrorStatistic)
-	{
-		if (newErrorStatistic != errorStatistic)
-		{
+	@Override
+	public void setErrorStatistic(CharacterStringPropertyType newErrorStatistic) {
+		if (newErrorStatistic != errorStatistic) {
 			NotificationChain msgs = null;
 			if (errorStatistic != null)
 				msgs = ((InternalEObject)errorStatistic).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__ERROR_STATISTIC, null, msgs);
@@ -253,10 +241,9 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RecordPropertyType> getValue()
-	{
-		if (value == null)
-		{
+	@Override
+	public EList<RecordPropertyType> getValue() {
+		if (value == null) {
 			value = new EObjectContainmentEList<RecordPropertyType>(RecordPropertyType.class, this, GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE);
 		}
 		return value;
@@ -268,10 +255,8 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_TYPE:
 				return basicSetValueType(null, msgs);
 			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_UNIT:
@@ -290,10 +275,8 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_TYPE:
 				return getValueType();
 			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_UNIT:
@@ -313,10 +296,8 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_TYPE:
 				setValueType((RecordTypePropertyType)newValue);
 				return;
@@ -340,10 +321,8 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_TYPE:
 				setValueType((RecordTypePropertyType)null);
 				return;
@@ -366,10 +345,8 @@ public class DQQuantitativeResultTypeImpl extends AbstractDQResultTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_TYPE:
 				return valueType != null;
 			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE__VALUE_UNIT:

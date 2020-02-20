@@ -14,6 +14,5 @@ package net.opengis.gml32;
  *        extendedMetaData="name='BoundedFeatureType' kind='elementOnly'"
  * @generated
  */
-public interface BoundedFeatureType extends AbstractFeatureType
-{
+public interface BoundedFeatureType extends AbstractFeatureType {
 } // BoundedFeatureType

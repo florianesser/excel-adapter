@@ -19,15 +19,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='DynamicFeatureCollectionType' kind='elementOnly'"
  * @generated
  */
-public interface DynamicFeatureCollectionType extends DynamicFeatureType
-{
+public interface DynamicFeatureCollectionType extends DynamicFeatureType {
 	/**
 	 * Returns the value of the '<em><b>Dynamic Members</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dynamic Members</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dynamic Members</em>' containment reference.
 	 * @see #setDynamicMembers(DynamicFeatureMemberType)

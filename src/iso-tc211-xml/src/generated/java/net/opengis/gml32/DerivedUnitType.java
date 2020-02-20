@@ -20,8 +20,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='DerivedUnitType' kind='elementOnly'"
  * @generated
  */
-public interface DerivedUnitType extends UnitDefinitionType
-{
+public interface DerivedUnitType extends UnitDefinitionType {
 	/**
 	 * Returns the value of the '<em><b>Derivation Unit Term</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.DerivationUnitTermType}.

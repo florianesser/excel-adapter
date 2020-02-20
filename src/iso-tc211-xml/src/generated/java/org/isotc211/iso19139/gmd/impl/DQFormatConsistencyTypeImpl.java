@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQFormatConsistencyTypeImpl extends AbstractDQLogicalConsistencyTypeImpl implements DQFormatConsistencyType
-{
+public class DQFormatConsistencyTypeImpl extends AbstractDQLogicalConsistencyTypeImpl implements DQFormatConsistencyType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQFormatConsistencyTypeImpl()
-	{
+	protected DQFormatConsistencyTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQFormatConsistencyTypeImpl extends AbstractDQLogicalConsistencyTyp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQFormatConsistencyType();
 	}
 

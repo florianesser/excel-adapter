@@ -28,8 +28,7 @@ import org.isotc211.iso19139.gco.*;
  * @see org.isotc211.iso19139.gco.GCOPackage
  * @generated
  */
-public class GCOValidator extends EObjectValidator
-{
+public class GCOValidator extends EObjectValidator {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -78,8 +77,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GCOValidator()
-	{
+	public GCOValidator() {
 		super();
 		xmlTypeValidator = XMLTypeValidator.INSTANCE;
 	}
@@ -91,8 +89,7 @@ public class GCOValidator extends EObjectValidator
 	 * @generated
 	 */
 	@Override
-	protected EPackage getEPackage()
-	{
+	protected EPackage getEPackage() {
 	  return GCOPackage.eINSTANCE;
 	}
 
@@ -103,10 +100,8 @@ public class GCOValidator extends EObjectValidator
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		switch (classifierID)
-		{
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		switch (classifierID) {
 			case GCOPackage.ABSTRACT_OBJECT_TYPE:
 				return validateAbstractObjectType((AbstractObjectType)value, diagnostics, context);
 			case GCOPackage.ANGLE_PROPERTY_TYPE:
@@ -205,8 +200,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractObjectType(AbstractObjectType abstractObjectType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractObjectType(AbstractObjectType abstractObjectType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractObjectType, diagnostics, context);
 	}
 
@@ -215,8 +209,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAnglePropertyType(AnglePropertyType anglePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAnglePropertyType(AnglePropertyType anglePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(anglePropertyType, diagnostics, context);
 	}
 
@@ -225,8 +218,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBinaryPropertyType(BinaryPropertyType binaryPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBinaryPropertyType(BinaryPropertyType binaryPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(binaryPropertyType, diagnostics, context);
 	}
 
@@ -235,8 +227,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBinaryType(BinaryType binaryType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBinaryType(BinaryType binaryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(binaryType, diagnostics, context);
 	}
 
@@ -245,8 +236,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBooleanPropertyType(BooleanPropertyType booleanPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBooleanPropertyType(BooleanPropertyType booleanPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(booleanPropertyType, diagnostics, context);
 	}
 
@@ -255,8 +245,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCharacterStringPropertyType(CharacterStringPropertyType characterStringPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCharacterStringPropertyType(CharacterStringPropertyType characterStringPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(characterStringPropertyType, diagnostics, context);
 	}
 
@@ -265,8 +254,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCodeListValueType(CodeListValueType codeListValueType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCodeListValueType(CodeListValueType codeListValueType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(codeListValueType, diagnostics, context);
 	}
 
@@ -275,8 +263,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDatePropertyType(DatePropertyType datePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDatePropertyType(DatePropertyType datePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(datePropertyType, diagnostics, context);
 	}
 
@@ -285,8 +272,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDateTimePropertyType(DateTimePropertyType dateTimePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDateTimePropertyType(DateTimePropertyType dateTimePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(dateTimePropertyType, diagnostics, context);
 	}
 
@@ -295,8 +281,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDecimalPropertyType(DecimalPropertyType decimalPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDecimalPropertyType(DecimalPropertyType decimalPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(decimalPropertyType, diagnostics, context);
 	}
 
@@ -305,8 +290,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDistancePropertyType(DistancePropertyType distancePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDistancePropertyType(DistancePropertyType distancePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(distancePropertyType, diagnostics, context);
 	}
 
@@ -315,8 +299,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGenericNamePropertyType(GenericNamePropertyType genericNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGenericNamePropertyType(GenericNamePropertyType genericNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(genericNamePropertyType, diagnostics, context);
 	}
 
@@ -325,8 +308,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegerPropertyType(IntegerPropertyType integerPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIntegerPropertyType(IntegerPropertyType integerPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(integerPropertyType, diagnostics, context);
 	}
 
@@ -335,8 +317,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLengthPropertyType(LengthPropertyType lengthPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLengthPropertyType(LengthPropertyType lengthPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(lengthPropertyType, diagnostics, context);
 	}
 
@@ -345,8 +326,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLocalNamePropertyType(LocalNamePropertyType localNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLocalNamePropertyType(LocalNamePropertyType localNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(localNamePropertyType, diagnostics, context);
 	}
 
@@ -355,8 +335,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiplicityPropertyType(MultiplicityPropertyType multiplicityPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiplicityPropertyType(MultiplicityPropertyType multiplicityPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiplicityPropertyType, diagnostics, context);
 	}
 
@@ -365,8 +344,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiplicityRangePropertyType(MultiplicityRangePropertyType multiplicityRangePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiplicityRangePropertyType(MultiplicityRangePropertyType multiplicityRangePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiplicityRangePropertyType, diagnostics, context);
 	}
 
@@ -375,8 +353,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObjectReferencePropertyType(ObjectReferencePropertyType objectReferencePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateObjectReferencePropertyType(ObjectReferencePropertyType objectReferencePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(objectReferencePropertyType, diagnostics, context);
 	}
 
@@ -385,8 +362,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRealPropertyType(RealPropertyType realPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRealPropertyType(RealPropertyType realPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(realPropertyType, diagnostics, context);
 	}
 
@@ -395,8 +371,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDocumentRoot(DocumentRoot documentRoot, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDocumentRoot(DocumentRoot documentRoot, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(documentRoot, diagnostics, context);
 	}
 
@@ -405,8 +380,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMeasurePropertyType(MeasurePropertyType measurePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMeasurePropertyType(MeasurePropertyType measurePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(measurePropertyType, diagnostics, context);
 	}
 
@@ -415,8 +389,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMemberNamePropertyType(MemberNamePropertyType memberNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMemberNamePropertyType(MemberNamePropertyType memberNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(memberNamePropertyType, diagnostics, context);
 	}
 
@@ -425,8 +398,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMemberNameType(MemberNameType memberNameType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMemberNameType(MemberNameType memberNameType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(memberNameType, diagnostics, context);
 	}
 
@@ -435,8 +407,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiplicityRangeType(MultiplicityRangeType multiplicityRangeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiplicityRangeType(MultiplicityRangeType multiplicityRangeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiplicityRangeType, diagnostics, context);
 	}
 
@@ -445,8 +416,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiplicityType(MultiplicityType multiplicityType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiplicityType(MultiplicityType multiplicityType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiplicityType, diagnostics, context);
 	}
 
@@ -455,8 +425,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberPropertyType(NumberPropertyType numberPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNumberPropertyType(NumberPropertyType numberPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(numberPropertyType, diagnostics, context);
 	}
 
@@ -465,8 +434,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRecordPropertyType(RecordPropertyType recordPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRecordPropertyType(RecordPropertyType recordPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(recordPropertyType, diagnostics, context);
 	}
 
@@ -475,8 +443,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRecordTypePropertyType(RecordTypePropertyType recordTypePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRecordTypePropertyType(RecordTypePropertyType recordTypePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(recordTypePropertyType, diagnostics, context);
 	}
 
@@ -485,8 +452,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRecordTypeType(RecordTypeType recordTypeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRecordTypeType(RecordTypeType recordTypeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(recordTypeType, diagnostics, context);
 	}
 
@@ -495,8 +461,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScalePropertyType(ScalePropertyType scalePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateScalePropertyType(ScalePropertyType scalePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(scalePropertyType, diagnostics, context);
 	}
 
@@ -505,8 +470,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScopedNamePropertyType(ScopedNamePropertyType scopedNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateScopedNamePropertyType(ScopedNamePropertyType scopedNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(scopedNamePropertyType, diagnostics, context);
 	}
 
@@ -515,8 +479,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTypeNamePropertyType(TypeNamePropertyType typeNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTypeNamePropertyType(TypeNamePropertyType typeNamePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(typeNamePropertyType, diagnostics, context);
 	}
 
@@ -525,8 +488,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTypeNameType(TypeNameType typeNameType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTypeNameType(TypeNameType typeNameType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(typeNameType, diagnostics, context);
 	}
 
@@ -535,8 +497,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnitOfMeasurePropertyType(UnitOfMeasurePropertyType unitOfMeasurePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUnitOfMeasurePropertyType(UnitOfMeasurePropertyType unitOfMeasurePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(unitOfMeasurePropertyType, diagnostics, context);
 	}
 
@@ -545,8 +506,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnlimitedIntegerPropertyType(UnlimitedIntegerPropertyType unlimitedIntegerPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUnlimitedIntegerPropertyType(UnlimitedIntegerPropertyType unlimitedIntegerPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(unlimitedIntegerPropertyType, diagnostics, context);
 	}
 
@@ -555,8 +515,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnlimitedIntegerType(UnlimitedIntegerType unlimitedIntegerType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUnlimitedIntegerType(UnlimitedIntegerType unlimitedIntegerType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(unlimitedIntegerType, diagnostics, context);
 	}
 
@@ -565,8 +524,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomAnglePropertyType(UomAnglePropertyType uomAnglePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomAnglePropertyType(UomAnglePropertyType uomAnglePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(uomAnglePropertyType, diagnostics, context);
 	}
 
@@ -575,8 +533,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomAreaPropertyType(UomAreaPropertyType uomAreaPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomAreaPropertyType(UomAreaPropertyType uomAreaPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(uomAreaPropertyType, diagnostics, context);
 	}
 
@@ -585,8 +542,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomLengthPropertyType(UomLengthPropertyType uomLengthPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomLengthPropertyType(UomLengthPropertyType uomLengthPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(uomLengthPropertyType, diagnostics, context);
 	}
 
@@ -595,8 +551,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomScalePropertyType(UomScalePropertyType uomScalePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomScalePropertyType(UomScalePropertyType uomScalePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(uomScalePropertyType, diagnostics, context);
 	}
 
@@ -605,8 +560,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomTimePropertyType(UomTimePropertyType uomTimePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomTimePropertyType(UomTimePropertyType uomTimePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(uomTimePropertyType, diagnostics, context);
 	}
 
@@ -615,8 +569,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomVelocityPropertyType(UomVelocityPropertyType uomVelocityPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomVelocityPropertyType(UomVelocityPropertyType uomVelocityPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(uomVelocityPropertyType, diagnostics, context);
 	}
 
@@ -625,8 +578,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomVolumePropertyType(UomVolumePropertyType uomVolumePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomVolumePropertyType(UomVolumePropertyType uomVolumePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(uomVolumePropertyType, diagnostics, context);
 	}
 
@@ -635,8 +587,7 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDateType(XMLGregorianCalendar dateType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDateType(XMLGregorianCalendar dateType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateDateType_MemberTypes(dateType, diagnostics, context);
 		return result;
 	}
@@ -647,40 +598,30 @@ public class GCOValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDateType_MemberTypes(XMLGregorianCalendar dateType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateDateType_MemberTypes(XMLGregorianCalendar dateType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (XMLTypePackage.Literals.DATE.isInstance(dateType))
-			{
+			if (XMLTypePackage.Literals.DATE.isInstance(dateType)) {
 				if (xmlTypeValidator.validateDate(dateType, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(dateType))
-			{
+			if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(dateType)) {
 				if (xmlTypeValidator.validateGYearMonth(dateType, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.GYEAR.isInstance(dateType))
-			{
+			if (XMLTypePackage.Literals.GYEAR.isInstance(dateType)) {
 				if (xmlTypeValidator.validateGYear(dateType, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (XMLTypePackage.Literals.DATE.isInstance(dateType))
-			{
+		else {
+			if (XMLTypePackage.Literals.DATE.isInstance(dateType)) {
 				if (xmlTypeValidator.validateDate(dateType, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(dateType))
-			{
+			if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(dateType)) {
 				if (xmlTypeValidator.validateGYearMonth(dateType, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.GYEAR.isInstance(dateType))
-			{
+			if (XMLTypePackage.Literals.GYEAR.isInstance(dateType)) {
 				if (xmlTypeValidator.validateGYear(dateType, null, context)) return true;
 			}
 		}
@@ -694,8 +635,7 @@ public class GCOValidator extends EObjectValidator
 	 * @generated
 	 */
 	@Override
-	public ResourceLocator getResourceLocator()
-	{
+	public ResourceLocator getResourceLocator() {
 		// TODO
 		// Specialize this to return a resource locator for messages specific to this validator.
 		// Ensure that you remove @generated or mark it @generated NOT

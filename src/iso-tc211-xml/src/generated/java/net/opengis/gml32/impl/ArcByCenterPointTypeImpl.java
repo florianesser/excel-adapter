@@ -44,8 +44,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl implements ArcByCenterPointType
-{
+public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl implements ArcByCenterPointType {
 	/**
 	 * The cached value of the '{@link #getPos() <em>Pos</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -189,8 +188,7 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArcByCenterPointTypeImpl()
-	{
+	protected ArcByCenterPointTypeImpl() {
 		super();
 	}
 
@@ -200,8 +198,7 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getArcByCenterPointType();
 	}
 
@@ -210,8 +207,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionType getPos()
-	{
+	@Override
+	public DirectPositionType getPos() {
 		return pos;
 	}
 
@@ -220,12 +217,10 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPos(DirectPositionType newPos, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPos(DirectPositionType newPos, NotificationChain msgs) {
 		DirectPositionType oldPos = pos;
 		pos = newPos;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_BY_CENTER_POINT_TYPE__POS, oldPos, newPos);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -237,10 +232,9 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPos(DirectPositionType newPos)
-	{
-		if (newPos != pos)
-		{
+	@Override
+	public void setPos(DirectPositionType newPos) {
+		if (newPos != pos) {
 			NotificationChain msgs = null;
 			if (pos != null)
 				msgs = ((InternalEObject)pos).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_BY_CENTER_POINT_TYPE__POS, null, msgs);
@@ -258,8 +252,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType getPointProperty()
-	{
+	@Override
+	public PointPropertyType getPointProperty() {
 		return pointProperty;
 	}
 
@@ -268,12 +262,10 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointProperty(PointPropertyType newPointProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointProperty(PointPropertyType newPointProperty, NotificationChain msgs) {
 		PointPropertyType oldPointProperty = pointProperty;
 		pointProperty = newPointProperty;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_BY_CENTER_POINT_TYPE__POINT_PROPERTY, oldPointProperty, newPointProperty);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -285,10 +277,9 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointProperty(PointPropertyType newPointProperty)
-	{
-		if (newPointProperty != pointProperty)
-		{
+	@Override
+	public void setPointProperty(PointPropertyType newPointProperty) {
+		if (newPointProperty != pointProperty) {
 			NotificationChain msgs = null;
 			if (pointProperty != null)
 				msgs = ((InternalEObject)pointProperty).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_BY_CENTER_POINT_TYPE__POINT_PROPERTY, null, msgs);
@@ -306,8 +297,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType getPointRep()
-	{
+	@Override
+	public PointPropertyType getPointRep() {
 		return pointRep;
 	}
 
@@ -316,12 +307,10 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointRep(PointPropertyType newPointRep, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointRep(PointPropertyType newPointRep, NotificationChain msgs) {
 		PointPropertyType oldPointRep = pointRep;
 		pointRep = newPointRep;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_BY_CENTER_POINT_TYPE__POINT_REP, oldPointRep, newPointRep);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -333,10 +322,9 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointRep(PointPropertyType newPointRep)
-	{
-		if (newPointRep != pointRep)
-		{
+	@Override
+	public void setPointRep(PointPropertyType newPointRep) {
+		if (newPointRep != pointRep) {
 			NotificationChain msgs = null;
 			if (pointRep != null)
 				msgs = ((InternalEObject)pointRep).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_BY_CENTER_POINT_TYPE__POINT_REP, null, msgs);
@@ -354,8 +342,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionListType getPosList()
-	{
+	@Override
+	public DirectPositionListType getPosList() {
 		return posList;
 	}
 
@@ -364,12 +352,10 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs) {
 		DirectPositionListType oldPosList = posList;
 		posList = newPosList;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_BY_CENTER_POINT_TYPE__POS_LIST, oldPosList, newPosList);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -381,10 +367,9 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPosList(DirectPositionListType newPosList)
-	{
-		if (newPosList != posList)
-		{
+	@Override
+	public void setPosList(DirectPositionListType newPosList) {
+		if (newPosList != posList) {
 			NotificationChain msgs = null;
 			if (posList != null)
 				msgs = ((InternalEObject)posList).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_BY_CENTER_POINT_TYPE__POS_LIST, null, msgs);
@@ -402,8 +387,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinatesType getCoordinates()
-	{
+	@Override
+	public CoordinatesType getCoordinates() {
 		return coordinates;
 	}
 
@@ -412,12 +397,10 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs) {
 		CoordinatesType oldCoordinates = coordinates;
 		coordinates = newCoordinates;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_BY_CENTER_POINT_TYPE__COORDINATES, oldCoordinates, newCoordinates);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -429,10 +412,9 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinates(CoordinatesType newCoordinates)
-	{
-		if (newCoordinates != coordinates)
-		{
+	@Override
+	public void setCoordinates(CoordinatesType newCoordinates) {
+		if (newCoordinates != coordinates) {
 			NotificationChain msgs = null;
 			if (coordinates != null)
 				msgs = ((InternalEObject)coordinates).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_BY_CENTER_POINT_TYPE__COORDINATES, null, msgs);
@@ -450,8 +432,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LengthType getRadius()
-	{
+	@Override
+	public LengthType getRadius() {
 		return radius;
 	}
 
@@ -460,12 +442,10 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRadius(LengthType newRadius, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRadius(LengthType newRadius, NotificationChain msgs) {
 		LengthType oldRadius = radius;
 		radius = newRadius;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_BY_CENTER_POINT_TYPE__RADIUS, oldRadius, newRadius);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -477,10 +457,9 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRadius(LengthType newRadius)
-	{
-		if (newRadius != radius)
-		{
+	@Override
+	public void setRadius(LengthType newRadius) {
+		if (newRadius != radius) {
 			NotificationChain msgs = null;
 			if (radius != null)
 				msgs = ((InternalEObject)radius).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_BY_CENTER_POINT_TYPE__RADIUS, null, msgs);
@@ -498,8 +477,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AngleType getStartAngle()
-	{
+	@Override
+	public AngleType getStartAngle() {
 		return startAngle;
 	}
 
@@ -508,12 +487,10 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetStartAngle(AngleType newStartAngle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetStartAngle(AngleType newStartAngle, NotificationChain msgs) {
 		AngleType oldStartAngle = startAngle;
 		startAngle = newStartAngle;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_BY_CENTER_POINT_TYPE__START_ANGLE, oldStartAngle, newStartAngle);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -525,10 +502,9 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStartAngle(AngleType newStartAngle)
-	{
-		if (newStartAngle != startAngle)
-		{
+	@Override
+	public void setStartAngle(AngleType newStartAngle) {
+		if (newStartAngle != startAngle) {
 			NotificationChain msgs = null;
 			if (startAngle != null)
 				msgs = ((InternalEObject)startAngle).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_BY_CENTER_POINT_TYPE__START_ANGLE, null, msgs);
@@ -546,8 +522,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AngleType getEndAngle()
-	{
+	@Override
+	public AngleType getEndAngle() {
 		return endAngle;
 	}
 
@@ -556,12 +532,10 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEndAngle(AngleType newEndAngle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEndAngle(AngleType newEndAngle, NotificationChain msgs) {
 		AngleType oldEndAngle = endAngle;
 		endAngle = newEndAngle;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_BY_CENTER_POINT_TYPE__END_ANGLE, oldEndAngle, newEndAngle);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -573,10 +547,9 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEndAngle(AngleType newEndAngle)
-	{
-		if (newEndAngle != endAngle)
-		{
+	@Override
+	public void setEndAngle(AngleType newEndAngle) {
+		if (newEndAngle != endAngle) {
 			NotificationChain msgs = null;
 			if (endAngle != null)
 				msgs = ((InternalEObject)endAngle).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_BY_CENTER_POINT_TYPE__END_ANGLE, null, msgs);
@@ -594,8 +567,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveInterpolationType getInterpolation()
-	{
+	@Override
+	public CurveInterpolationType getInterpolation() {
 		return interpolation;
 	}
 
@@ -604,8 +577,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInterpolation(CurveInterpolationType newInterpolation)
-	{
+	@Override
+	public void setInterpolation(CurveInterpolationType newInterpolation) {
 		CurveInterpolationType oldInterpolation = interpolation;
 		interpolation = newInterpolation == null ? INTERPOLATION_EDEFAULT : newInterpolation;
 		boolean oldInterpolationESet = interpolationESet;
@@ -619,8 +592,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetInterpolation()
-	{
+	@Override
+	public void unsetInterpolation() {
 		CurveInterpolationType oldInterpolation = interpolation;
 		boolean oldInterpolationESet = interpolationESet;
 		interpolation = INTERPOLATION_EDEFAULT;
@@ -634,8 +607,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetInterpolation()
-	{
+	@Override
+	public boolean isSetInterpolation() {
 		return interpolationESet;
 	}
 
@@ -644,8 +617,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getNumArc()
-	{
+	@Override
+	public BigInteger getNumArc() {
 		return numArc;
 	}
 
@@ -654,8 +627,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNumArc(BigInteger newNumArc)
-	{
+	@Override
+	public void setNumArc(BigInteger newNumArc) {
 		BigInteger oldNumArc = numArc;
 		numArc = newNumArc;
 		boolean oldNumArcESet = numArcESet;
@@ -669,8 +642,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetNumArc()
-	{
+	@Override
+	public void unsetNumArc() {
 		BigInteger oldNumArc = numArc;
 		boolean oldNumArcESet = numArcESet;
 		numArc = NUM_ARC_EDEFAULT;
@@ -684,8 +657,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetNumArc()
-	{
+	@Override
+	public boolean isSetNumArc() {
 		return numArcESet;
 	}
 
@@ -695,10 +668,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ARC_BY_CENTER_POINT_TYPE__POS:
 				return basicSetPos(null, msgs);
 			case GMLPackage.ARC_BY_CENTER_POINT_TYPE__POINT_PROPERTY:
@@ -725,10 +696,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ARC_BY_CENTER_POINT_TYPE__POS:
 				return getPos();
 			case GMLPackage.ARC_BY_CENTER_POINT_TYPE__POINT_PROPERTY:
@@ -759,10 +728,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ARC_BY_CENTER_POINT_TYPE__POS:
 				setPos((DirectPositionType)newValue);
 				return;
@@ -803,10 +770,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ARC_BY_CENTER_POINT_TYPE__POS:
 				setPos((DirectPositionType)null);
 				return;
@@ -847,10 +812,8 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ARC_BY_CENTER_POINT_TYPE__POS:
 				return pos != null;
 			case GMLPackage.ARC_BY_CENTER_POINT_TYPE__POINT_PROPERTY:
@@ -881,11 +844,10 @@ public class ArcByCenterPointTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (interpolation: ");
 		if (interpolationESet) result.append(interpolation); else result.append("<unset>");
 		result.append(", numArc: ");

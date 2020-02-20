@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implements SequenceRuleType
-{
+public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implements SequenceRuleType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -116,8 +115,7 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SequenceRuleTypeImpl()
-	{
+	protected SequenceRuleTypeImpl() {
 		super();
 	}
 
@@ -127,8 +125,7 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getSequenceRuleType();
 	}
 
@@ -137,8 +134,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SequenceRuleEnumeration getValue()
-	{
+	@Override
+	public SequenceRuleEnumeration getValue() {
 		return value;
 	}
 
@@ -147,8 +144,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(SequenceRuleEnumeration newValue)
-	{
+	@Override
+	public void setValue(SequenceRuleEnumeration newValue) {
 		SequenceRuleEnumeration oldValue = value;
 		value = newValue == null ? VALUE_EDEFAULT : newValue;
 		boolean oldValueESet = valueESet;
@@ -162,8 +159,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetValue()
-	{
+	@Override
+	public void unsetValue() {
 		SequenceRuleEnumeration oldValue = value;
 		boolean oldValueESet = valueESet;
 		value = VALUE_EDEFAULT;
@@ -177,8 +174,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetValue()
-	{
+	@Override
+	public boolean isSetValue() {
 		return valueESet;
 	}
 
@@ -187,8 +184,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> getAxisOrder()
-	{
+	@Override
+	public List<String> getAxisOrder() {
 		return axisOrder;
 	}
 
@@ -197,8 +194,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisOrder(List<String> newAxisOrder)
-	{
+	@Override
+	public void setAxisOrder(List<String> newAxisOrder) {
 		List<String> oldAxisOrder = axisOrder;
 		axisOrder = newAxisOrder;
 		if (eNotificationRequired())
@@ -210,8 +207,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IncrementOrder getOrder()
-	{
+	@Override
+	public IncrementOrder getOrder() {
 		return order;
 	}
 
@@ -220,8 +217,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrder(IncrementOrder newOrder)
-	{
+	@Override
+	public void setOrder(IncrementOrder newOrder) {
 		IncrementOrder oldOrder = order;
 		order = newOrder == null ? ORDER_EDEFAULT : newOrder;
 		boolean oldOrderESet = orderESet;
@@ -235,8 +232,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOrder()
-	{
+	@Override
+	public void unsetOrder() {
 		IncrementOrder oldOrder = order;
 		boolean oldOrderESet = orderESet;
 		order = ORDER_EDEFAULT;
@@ -250,8 +247,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOrder()
-	{
+	@Override
+	public boolean isSetOrder() {
 		return orderESet;
 	}
 
@@ -261,10 +258,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.SEQUENCE_RULE_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.SEQUENCE_RULE_TYPE__AXIS_ORDER:
@@ -282,10 +277,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.SEQUENCE_RULE_TYPE__VALUE:
 				setValue((SequenceRuleEnumeration)newValue);
 				return;
@@ -305,10 +298,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SEQUENCE_RULE_TYPE__VALUE:
 				unsetValue();
 				return;
@@ -328,10 +319,8 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SEQUENCE_RULE_TYPE__VALUE:
 				return isSetValue();
 			case GMLPackage.SEQUENCE_RULE_TYPE__AXIS_ORDER:
@@ -348,11 +337,10 @@ public class SequenceRuleTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		if (valueESet) result.append(value); else result.append("<unset>");
 		result.append(", axisOrder: ");

@@ -12,8 +12,7 @@ import org.eclipse.emf.ecore.EFactory;
  * @see org.isotc211.iso19139.gts.GTSPackage
  * @generated
  */
-public interface GTSFactory extends EFactory
-{
+public interface GTSFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->

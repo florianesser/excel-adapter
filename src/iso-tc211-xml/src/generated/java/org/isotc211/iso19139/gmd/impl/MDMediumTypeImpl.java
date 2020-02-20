@@ -46,8 +46,7 @@ import org.isotc211.iso19139.gmd.MDMediumType;
  *
  * @generated
  */
-public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMediumType
-{
+public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMediumType {
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -113,8 +112,7 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDMediumTypeImpl()
-	{
+	protected MDMediumTypeImpl() {
 		super();
 	}
 
@@ -124,8 +122,7 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDMediumType();
 	}
 
@@ -134,8 +131,8 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMediumNameCodePropertyType getName()
-	{
+	@Override
+	public MDMediumNameCodePropertyType getName() {
 		return name;
 	}
 
@@ -144,12 +141,10 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetName(MDMediumNameCodePropertyType newName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetName(MDMediumNameCodePropertyType newName, NotificationChain msgs) {
 		MDMediumNameCodePropertyType oldName = name;
 		name = newName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MEDIUM_TYPE__NAME, oldName, newName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -161,10 +156,9 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(MDMediumNameCodePropertyType newName)
-	{
-		if (newName != name)
-		{
+	@Override
+	public void setName(MDMediumNameCodePropertyType newName) {
+		if (newName != name) {
 			NotificationChain msgs = null;
 			if (name != null)
 				msgs = ((InternalEObject)name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MEDIUM_TYPE__NAME, null, msgs);
@@ -182,10 +176,9 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RealPropertyType> getDensity()
-	{
-		if (density == null)
-		{
+	@Override
+	public EList<RealPropertyType> getDensity() {
+		if (density == null) {
 			density = new EObjectContainmentEList<RealPropertyType>(RealPropertyType.class, this, GMDPackage.MD_MEDIUM_TYPE__DENSITY);
 		}
 		return density;
@@ -196,8 +189,8 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDensityUnits()
-	{
+	@Override
+	public CharacterStringPropertyType getDensityUnits() {
 		return densityUnits;
 	}
 
@@ -206,12 +199,10 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDensityUnits(CharacterStringPropertyType newDensityUnits, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDensityUnits(CharacterStringPropertyType newDensityUnits, NotificationChain msgs) {
 		CharacterStringPropertyType oldDensityUnits = densityUnits;
 		densityUnits = newDensityUnits;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MEDIUM_TYPE__DENSITY_UNITS, oldDensityUnits, newDensityUnits);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -223,10 +214,9 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDensityUnits(CharacterStringPropertyType newDensityUnits)
-	{
-		if (newDensityUnits != densityUnits)
-		{
+	@Override
+	public void setDensityUnits(CharacterStringPropertyType newDensityUnits) {
+		if (newDensityUnits != densityUnits) {
 			NotificationChain msgs = null;
 			if (densityUnits != null)
 				msgs = ((InternalEObject)densityUnits).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MEDIUM_TYPE__DENSITY_UNITS, null, msgs);
@@ -244,8 +234,8 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType getVolumes()
-	{
+	@Override
+	public IntegerPropertyType getVolumes() {
 		return volumes;
 	}
 
@@ -254,12 +244,10 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVolumes(IntegerPropertyType newVolumes, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVolumes(IntegerPropertyType newVolumes, NotificationChain msgs) {
 		IntegerPropertyType oldVolumes = volumes;
 		volumes = newVolumes;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MEDIUM_TYPE__VOLUMES, oldVolumes, newVolumes);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -271,10 +259,9 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVolumes(IntegerPropertyType newVolumes)
-	{
-		if (newVolumes != volumes)
-		{
+	@Override
+	public void setVolumes(IntegerPropertyType newVolumes) {
+		if (newVolumes != volumes) {
 			NotificationChain msgs = null;
 			if (volumes != null)
 				msgs = ((InternalEObject)volumes).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MEDIUM_TYPE__VOLUMES, null, msgs);
@@ -292,10 +279,9 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDMediumFormatCodePropertyType> getMediumFormat()
-	{
-		if (mediumFormat == null)
-		{
+	@Override
+	public EList<MDMediumFormatCodePropertyType> getMediumFormat() {
+		if (mediumFormat == null) {
 			mediumFormat = new EObjectContainmentEList<MDMediumFormatCodePropertyType>(MDMediumFormatCodePropertyType.class, this, GMDPackage.MD_MEDIUM_TYPE__MEDIUM_FORMAT);
 		}
 		return mediumFormat;
@@ -306,8 +292,8 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getMediumNote()
-	{
+	@Override
+	public CharacterStringPropertyType getMediumNote() {
 		return mediumNote;
 	}
 
@@ -316,12 +302,10 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMediumNote(CharacterStringPropertyType newMediumNote, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMediumNote(CharacterStringPropertyType newMediumNote, NotificationChain msgs) {
 		CharacterStringPropertyType oldMediumNote = mediumNote;
 		mediumNote = newMediumNote;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MEDIUM_TYPE__MEDIUM_NOTE, oldMediumNote, newMediumNote);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -333,10 +317,9 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMediumNote(CharacterStringPropertyType newMediumNote)
-	{
-		if (newMediumNote != mediumNote)
-		{
+	@Override
+	public void setMediumNote(CharacterStringPropertyType newMediumNote) {
+		if (newMediumNote != mediumNote) {
 			NotificationChain msgs = null;
 			if (mediumNote != null)
 				msgs = ((InternalEObject)mediumNote).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MEDIUM_TYPE__MEDIUM_NOTE, null, msgs);
@@ -355,10 +338,8 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_TYPE__NAME:
 				return basicSetName(null, msgs);
 			case GMDPackage.MD_MEDIUM_TYPE__DENSITY:
@@ -381,10 +362,8 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_TYPE__NAME:
 				return getName();
 			case GMDPackage.MD_MEDIUM_TYPE__DENSITY:
@@ -408,10 +387,8 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_TYPE__NAME:
 				setName((MDMediumNameCodePropertyType)newValue);
 				return;
@@ -442,10 +419,8 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_TYPE__NAME:
 				setName((MDMediumNameCodePropertyType)null);
 				return;
@@ -474,10 +449,8 @@ public class MDMediumTypeImpl extends AbstractObjectTypeImpl implements MDMedium
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_TYPE__NAME:
 				return name != null;
 			case GMDPackage.MD_MEDIUM_TYPE__DENSITY:

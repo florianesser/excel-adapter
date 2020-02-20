@@ -41,8 +41,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container implements GeodeticDatumPropertyType
-{
+public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container implements GeodeticDatumPropertyType {
 	/**
 	 * The cached value of the '{@link #getGeodeticDatum() <em>Geodetic Datum</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -265,8 +264,7 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeodeticDatumPropertyTypeImpl()
-	{
+	protected GeodeticDatumPropertyTypeImpl() {
 		super();
 	}
 
@@ -276,8 +274,7 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeodeticDatumPropertyType();
 	}
 
@@ -286,8 +283,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumType getGeodeticDatum()
-	{
+	@Override
+	public GeodeticDatumType getGeodeticDatum() {
 		return geodeticDatum;
 	}
 
@@ -296,12 +293,10 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeodeticDatum(GeodeticDatumType newGeodeticDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeodeticDatum(GeodeticDatumType newGeodeticDatum, NotificationChain msgs) {
 		GeodeticDatumType oldGeodeticDatum = geodeticDatum;
 		geodeticDatum = newGeodeticDatum;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE__GEODETIC_DATUM, oldGeodeticDatum, newGeodeticDatum);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -313,10 +308,9 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeodeticDatum(GeodeticDatumType newGeodeticDatum)
-	{
-		if (newGeodeticDatum != geodeticDatum)
-		{
+	@Override
+	public void setGeodeticDatum(GeodeticDatumType newGeodeticDatum) {
+		if (newGeodeticDatum != geodeticDatum) {
 			NotificationChain msgs = null;
 			if (geodeticDatum != null)
 				msgs = ((InternalEObject)geodeticDatum).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE__GEODETIC_DATUM, null, msgs);
@@ -334,8 +328,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -344,8 +338,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -359,8 +353,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -374,8 +368,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -384,8 +378,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -394,8 +388,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -407,8 +401,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -417,8 +411,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -430,8 +424,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -440,8 +434,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -453,8 +447,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -463,8 +457,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -476,8 +470,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -486,8 +480,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -499,8 +493,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -509,8 +503,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -524,8 +518,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -539,8 +533,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -549,8 +543,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -559,8 +553,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -572,8 +566,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -582,8 +576,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -597,8 +591,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -612,8 +606,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -623,10 +617,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE__GEODETIC_DATUM:
 				return basicSetGeodeticDatum(null, msgs);
 		}
@@ -639,10 +631,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE__GEODETIC_DATUM:
 				return getGeodeticDatum();
 			case GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE__ACTUATE:
@@ -673,10 +663,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE__GEODETIC_DATUM:
 				setGeodeticDatum((GeodeticDatumType)newValue);
 				return;
@@ -717,10 +705,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE__GEODETIC_DATUM:
 				setGeodeticDatum((GeodeticDatumType)null);
 				return;
@@ -761,10 +747,8 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE__GEODETIC_DATUM:
 				return geodeticDatum != null;
 			case GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE__ACTUATE:
@@ -795,11 +779,10 @@ public class GeodeticDatumPropertyTypeImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (actuate: ");
 		if (actuateESet) result.append(actuate); else result.append("<unset>");
 		result.append(", arcrole: ");

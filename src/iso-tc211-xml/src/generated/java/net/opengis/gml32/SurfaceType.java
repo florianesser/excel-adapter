@@ -21,8 +21,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='SurfaceType' kind='elementOnly'"
  * @generated
  */
-public interface SurfaceType extends AbstractSurfaceType
-{
+public interface SurfaceType extends AbstractSurfaceType {
 	/**
 	 * Returns the value of the '<em><b>Patches Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.

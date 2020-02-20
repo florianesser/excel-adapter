@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='VerticalCSType' kind='elementOnly'"
  * @generated
  */
-public interface VerticalCSType extends AbstractCoordinateSystemType
-{
+public interface VerticalCSType extends AbstractCoordinateSystemType {
 } // VerticalCSType

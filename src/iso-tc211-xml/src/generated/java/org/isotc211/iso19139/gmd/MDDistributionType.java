@@ -28,16 +28,11 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  * @model extendedMetaData="name='MD_Distribution_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDDistributionType extends AbstractObjectType
-{
+public interface MDDistributionType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Distribution Format</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDFormatPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distribution Format</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distribution Format</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDistributionType_DistributionFormat()
@@ -51,10 +46,6 @@ public interface MDDistributionType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Distributor</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDDistributorPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distributor</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distributor</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDistributionType_Distributor()
@@ -68,10 +59,6 @@ public interface MDDistributionType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Transfer Options</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDDigitalTransferOptionsPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Transfer Options</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Transfer Options</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDistributionType_TransferOptions()

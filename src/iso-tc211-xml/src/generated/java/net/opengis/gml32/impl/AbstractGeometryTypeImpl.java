@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl implements AbstractGeometryType
-{
+public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl implements AbstractGeometryType {
 	/**
 	 * The default value of the '{@link #getAxisLabels() <em>Axis Labels</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -118,8 +117,7 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGeometryTypeImpl()
-	{
+	protected AbstractGeometryTypeImpl() {
 		super();
 	}
 
@@ -129,8 +127,7 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGeometryType();
 	}
 
@@ -139,8 +136,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> getAxisLabels()
-	{
+	@Override
+	public List<String> getAxisLabels() {
 		return axisLabels;
 	}
 
@@ -149,8 +146,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisLabels(List<String> newAxisLabels)
-	{
+	@Override
+	public void setAxisLabels(List<String> newAxisLabels) {
 		List<String> oldAxisLabels = axisLabels;
 		axisLabels = newAxisLabels;
 		if (eNotificationRequired())
@@ -162,8 +159,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getSrsDimension()
-	{
+	@Override
+	public BigInteger getSrsDimension() {
 		return srsDimension;
 	}
 
@@ -172,8 +169,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSrsDimension(BigInteger newSrsDimension)
-	{
+	@Override
+	public void setSrsDimension(BigInteger newSrsDimension) {
 		BigInteger oldSrsDimension = srsDimension;
 		srsDimension = newSrsDimension;
 		if (eNotificationRequired())
@@ -185,8 +182,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getSrsName()
-	{
+	@Override
+	public String getSrsName() {
 		return srsName;
 	}
 
@@ -195,8 +192,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSrsName(String newSrsName)
-	{
+	@Override
+	public void setSrsName(String newSrsName) {
 		String oldSrsName = srsName;
 		srsName = newSrsName;
 		if (eNotificationRequired())
@@ -208,8 +205,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> getUomLabels()
-	{
+	@Override
+	public List<String> getUomLabels() {
 		return uomLabels;
 	}
 
@@ -218,8 +215,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUomLabels(List<String> newUomLabels)
-	{
+	@Override
+	public void setUomLabels(List<String> newUomLabels) {
 		List<String> oldUomLabels = uomLabels;
 		uomLabels = newUomLabels;
 		if (eNotificationRequired())
@@ -232,10 +229,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GEOMETRY_TYPE__AXIS_LABELS:
 				return getAxisLabels();
 			case GMLPackage.ABSTRACT_GEOMETRY_TYPE__SRS_DIMENSION:
@@ -255,10 +250,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GEOMETRY_TYPE__AXIS_LABELS:
 				setAxisLabels((List<String>)newValue);
 				return;
@@ -281,10 +274,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GEOMETRY_TYPE__AXIS_LABELS:
 				setAxisLabels(AXIS_LABELS_EDEFAULT);
 				return;
@@ -307,10 +298,8 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GEOMETRY_TYPE__AXIS_LABELS:
 				return AXIS_LABELS_EDEFAULT == null ? axisLabels != null : !AXIS_LABELS_EDEFAULT.equals(axisLabels);
 			case GMLPackage.ABSTRACT_GEOMETRY_TYPE__SRS_DIMENSION:
@@ -329,11 +318,10 @@ public abstract class AbstractGeometryTypeImpl extends AbstractGMLTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (axisLabels: ");
 		result.append(axisLabels);
 		result.append(", srsDimension: ");

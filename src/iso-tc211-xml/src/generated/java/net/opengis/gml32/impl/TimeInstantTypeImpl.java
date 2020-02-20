@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl implements TimeInstantType
-{
+public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl implements TimeInstantType {
 	/**
 	 * The cached value of the '{@link #getTimePosition() <em>Time Position</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeInstantTypeImpl()
-	{
+	protected TimeInstantTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeInstantType();
 	}
 
@@ -65,8 +62,8 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePositionType getTimePosition()
-	{
+	@Override
+	public TimePositionType getTimePosition() {
 		return timePosition;
 	}
 
@@ -75,12 +72,10 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimePosition(TimePositionType newTimePosition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimePosition(TimePositionType newTimePosition, NotificationChain msgs) {
 		TimePositionType oldTimePosition = timePosition;
 		timePosition = newTimePosition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_INSTANT_TYPE__TIME_POSITION, oldTimePosition, newTimePosition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimePosition(TimePositionType newTimePosition)
-	{
-		if (newTimePosition != timePosition)
-		{
+	@Override
+	public void setTimePosition(TimePositionType newTimePosition) {
+		if (newTimePosition != timePosition) {
 			NotificationChain msgs = null;
 			if (timePosition != null)
 				msgs = ((InternalEObject)timePosition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_INSTANT_TYPE__TIME_POSITION, null, msgs);
@@ -114,10 +108,8 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_INSTANT_TYPE__TIME_POSITION:
 				return basicSetTimePosition(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_INSTANT_TYPE__TIME_POSITION:
 				return getTimePosition();
 		}
@@ -146,10 +136,8 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_INSTANT_TYPE__TIME_POSITION:
 				setTimePosition((TimePositionType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_INSTANT_TYPE__TIME_POSITION:
 				setTimePosition((TimePositionType)null);
 				return;
@@ -180,10 +166,8 @@ public class TimeInstantTypeImpl extends AbstractTimeGeometricPrimitiveTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_INSTANT_TYPE__TIME_POSITION:
 				return timePosition != null;
 		}

@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='AggregationType'"
  * @generated
  */
-public enum AggregationType implements Enumerator
-{
+public enum AggregationType implements Enumerator {
 	/**
 	 * The '<em><b>Set</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -82,10 +81,6 @@ public enum AggregationType implements Enumerator
 	/**
 	 * The '<em><b>Set</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Set</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SET
 	 * @model name="set"
@@ -97,10 +92,6 @@ public enum AggregationType implements Enumerator
 	/**
 	 * The '<em><b>Bag</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Bag</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #BAG
 	 * @model name="bag"
@@ -112,10 +103,6 @@ public enum AggregationType implements Enumerator
 	/**
 	 * The '<em><b>Sequence</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Sequence</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SEQUENCE
 	 * @model name="sequence"
@@ -127,10 +114,6 @@ public enum AggregationType implements Enumerator
 	/**
 	 * The '<em><b>Array</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Array</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ARRAY
 	 * @model name="array"
@@ -142,10 +125,6 @@ public enum AggregationType implements Enumerator
 	/**
 	 * The '<em><b>Record</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Record</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #RECORD
 	 * @model name="record"
@@ -157,10 +136,6 @@ public enum AggregationType implements Enumerator
 	/**
 	 * The '<em><b>Table</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Table</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #TABLE
 	 * @model name="table"
@@ -176,8 +151,7 @@ public enum AggregationType implements Enumerator
 	 * @generated
 	 */
 	private static final AggregationType[] VALUES_ARRAY =
-		new AggregationType[]
-		{
+		new AggregationType[] {
 			SET,
 			BAG,
 			SEQUENCE,
@@ -202,13 +176,10 @@ public enum AggregationType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static AggregationType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static AggregationType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			AggregationType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -223,13 +194,10 @@ public enum AggregationType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static AggregationType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static AggregationType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			AggregationType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -244,10 +212,8 @@ public enum AggregationType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static AggregationType get(int value)
-	{
-		switch (value)
-		{
+	public static AggregationType get(int value) {
+		switch (value) {
 			case SET_VALUE: return SET;
 			case BAG_VALUE: return BAG;
 			case SEQUENCE_VALUE: return SEQUENCE;
@@ -285,8 +251,7 @@ public enum AggregationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private AggregationType(int value, String name, String literal)
-	{
+	private AggregationType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -297,8 +262,8 @@ public enum AggregationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -307,8 +272,8 @@ public enum AggregationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -317,8 +282,8 @@ public enum AggregationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -329,8 +294,7 @@ public enum AggregationType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

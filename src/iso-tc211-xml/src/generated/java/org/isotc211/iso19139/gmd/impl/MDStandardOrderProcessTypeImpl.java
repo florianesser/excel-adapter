@@ -34,8 +34,7 @@ import org.isotc211.iso19139.gmd.MDStandardOrderProcessType;
  *
  * @generated
  */
-public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl implements MDStandardOrderProcessType
-{
+public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl implements MDStandardOrderProcessType {
 	/**
 	 * The cached value of the '{@link #getFees() <em>Fees</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -81,8 +80,7 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDStandardOrderProcessTypeImpl()
-	{
+	protected MDStandardOrderProcessTypeImpl() {
 		super();
 	}
 
@@ -92,8 +90,7 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDStandardOrderProcessType();
 	}
 
@@ -102,8 +99,8 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getFees()
-	{
+	@Override
+	public CharacterStringPropertyType getFees() {
 		return fees;
 	}
 
@@ -112,12 +109,10 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFees(CharacterStringPropertyType newFees, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFees(CharacterStringPropertyType newFees, NotificationChain msgs) {
 		CharacterStringPropertyType oldFees = fees;
 		fees = newFees;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__FEES, oldFees, newFees);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -129,10 +124,9 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFees(CharacterStringPropertyType newFees)
-	{
-		if (newFees != fees)
-		{
+	@Override
+	public void setFees(CharacterStringPropertyType newFees) {
+		if (newFees != fees) {
 			NotificationChain msgs = null;
 			if (fees != null)
 				msgs = ((InternalEObject)fees).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__FEES, null, msgs);
@@ -150,8 +144,8 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DateTimePropertyType getPlannedAvailableDateTime()
-	{
+	@Override
+	public DateTimePropertyType getPlannedAvailableDateTime() {
 		return plannedAvailableDateTime;
 	}
 
@@ -160,12 +154,10 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPlannedAvailableDateTime(DateTimePropertyType newPlannedAvailableDateTime, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPlannedAvailableDateTime(DateTimePropertyType newPlannedAvailableDateTime, NotificationChain msgs) {
 		DateTimePropertyType oldPlannedAvailableDateTime = plannedAvailableDateTime;
 		plannedAvailableDateTime = newPlannedAvailableDateTime;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__PLANNED_AVAILABLE_DATE_TIME, oldPlannedAvailableDateTime, newPlannedAvailableDateTime);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -177,10 +169,9 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPlannedAvailableDateTime(DateTimePropertyType newPlannedAvailableDateTime)
-	{
-		if (newPlannedAvailableDateTime != plannedAvailableDateTime)
-		{
+	@Override
+	public void setPlannedAvailableDateTime(DateTimePropertyType newPlannedAvailableDateTime) {
+		if (newPlannedAvailableDateTime != plannedAvailableDateTime) {
 			NotificationChain msgs = null;
 			if (plannedAvailableDateTime != null)
 				msgs = ((InternalEObject)plannedAvailableDateTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__PLANNED_AVAILABLE_DATE_TIME, null, msgs);
@@ -198,8 +189,8 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getOrderingInstructions()
-	{
+	@Override
+	public CharacterStringPropertyType getOrderingInstructions() {
 		return orderingInstructions;
 	}
 
@@ -208,12 +199,10 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrderingInstructions(CharacterStringPropertyType newOrderingInstructions, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOrderingInstructions(CharacterStringPropertyType newOrderingInstructions, NotificationChain msgs) {
 		CharacterStringPropertyType oldOrderingInstructions = orderingInstructions;
 		orderingInstructions = newOrderingInstructions;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__ORDERING_INSTRUCTIONS, oldOrderingInstructions, newOrderingInstructions);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -225,10 +214,9 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrderingInstructions(CharacterStringPropertyType newOrderingInstructions)
-	{
-		if (newOrderingInstructions != orderingInstructions)
-		{
+	@Override
+	public void setOrderingInstructions(CharacterStringPropertyType newOrderingInstructions) {
+		if (newOrderingInstructions != orderingInstructions) {
 			NotificationChain msgs = null;
 			if (orderingInstructions != null)
 				msgs = ((InternalEObject)orderingInstructions).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__ORDERING_INSTRUCTIONS, null, msgs);
@@ -246,8 +234,8 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getTurnaround()
-	{
+	@Override
+	public CharacterStringPropertyType getTurnaround() {
 		return turnaround;
 	}
 
@@ -256,12 +244,10 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTurnaround(CharacterStringPropertyType newTurnaround, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTurnaround(CharacterStringPropertyType newTurnaround, NotificationChain msgs) {
 		CharacterStringPropertyType oldTurnaround = turnaround;
 		turnaround = newTurnaround;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__TURNAROUND, oldTurnaround, newTurnaround);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -273,10 +259,9 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTurnaround(CharacterStringPropertyType newTurnaround)
-	{
-		if (newTurnaround != turnaround)
-		{
+	@Override
+	public void setTurnaround(CharacterStringPropertyType newTurnaround) {
+		if (newTurnaround != turnaround) {
 			NotificationChain msgs = null;
 			if (turnaround != null)
 				msgs = ((InternalEObject)turnaround).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__TURNAROUND, null, msgs);
@@ -295,10 +280,8 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__FEES:
 				return basicSetFees(null, msgs);
 			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__PLANNED_AVAILABLE_DATE_TIME:
@@ -317,10 +300,8 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__FEES:
 				return getFees();
 			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__PLANNED_AVAILABLE_DATE_TIME:
@@ -339,10 +320,8 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__FEES:
 				setFees((CharacterStringPropertyType)newValue);
 				return;
@@ -365,10 +344,8 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__FEES:
 				setFees((CharacterStringPropertyType)null);
 				return;
@@ -391,10 +368,8 @@ public class MDStandardOrderProcessTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__FEES:
 				return fees != null;
 			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE__PLANNED_AVAILABLE_DATE_TIME:

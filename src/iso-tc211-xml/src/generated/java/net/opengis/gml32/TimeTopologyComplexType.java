@@ -21,16 +21,11 @@ import org.eclipse.emf.common.util.EList;
  *        extendedMetaData="name='TimeTopologyComplexType' kind='elementOnly'"
  * @generated
  */
-public interface TimeTopologyComplexType extends AbstractTimeComplexType
-{
+public interface TimeTopologyComplexType extends AbstractTimeComplexType {
 	/**
 	 * Returns the value of the '<em><b>Primitive</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.TimeTopologyPrimitivePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primitive</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Primitive</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTimeTopologyComplexType_Primitive()

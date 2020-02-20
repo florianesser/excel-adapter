@@ -45,8 +45,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements OperationMethodType
-{
+public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements OperationMethodType {
 	/**
 	 * The cached value of the '{@link #getFormulaCitation() <em>Formula Citation</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -122,8 +121,7 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected OperationMethodTypeImpl()
-	{
+	protected OperationMethodTypeImpl() {
 		super();
 	}
 
@@ -133,8 +131,7 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getOperationMethodType();
 	}
 
@@ -143,8 +140,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormulaCitationType getFormulaCitation()
-	{
+	@Override
+	public FormulaCitationType getFormulaCitation() {
 		return formulaCitation;
 	}
 
@@ -153,12 +150,10 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFormulaCitation(FormulaCitationType newFormulaCitation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFormulaCitation(FormulaCitationType newFormulaCitation, NotificationChain msgs) {
 		FormulaCitationType oldFormulaCitation = formulaCitation;
 		formulaCitation = newFormulaCitation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.OPERATION_METHOD_TYPE__FORMULA_CITATION, oldFormulaCitation, newFormulaCitation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -170,10 +165,9 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFormulaCitation(FormulaCitationType newFormulaCitation)
-	{
-		if (newFormulaCitation != formulaCitation)
-		{
+	@Override
+	public void setFormulaCitation(FormulaCitationType newFormulaCitation) {
+		if (newFormulaCitation != formulaCitation) {
 			NotificationChain msgs = null;
 			if (formulaCitation != null)
 				msgs = ((InternalEObject)formulaCitation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.OPERATION_METHOD_TYPE__FORMULA_CITATION, null, msgs);
@@ -191,10 +185,9 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getFormulaGroup()
-	{
-		if (formulaGroup == null)
-		{
+	@Override
+	public FeatureMap getFormulaGroup() {
+		if (formulaGroup == null) {
 			formulaGroup = new BasicFeatureMap(this, GMLPackage.OPERATION_METHOD_TYPE__FORMULA_GROUP);
 		}
 		return formulaGroup;
@@ -205,8 +198,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getFormula()
-	{
+	@Override
+	public CodeType getFormula() {
 		return (CodeType)getFormulaGroup().get(GMLPackage.eINSTANCE.getOperationMethodType_Formula(), true);
 	}
 
@@ -215,8 +208,7 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFormula(CodeType newFormula, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFormula(CodeType newFormula, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getFormulaGroup()).basicAdd(GMLPackage.eINSTANCE.getOperationMethodType_Formula(), newFormula, msgs);
 	}
 
@@ -225,8 +217,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFormula(CodeType newFormula)
-	{
+	@Override
+	public void setFormula(CodeType newFormula) {
 		((FeatureMap.Internal)getFormulaGroup()).set(GMLPackage.eINSTANCE.getOperationMethodType_Formula(), newFormula);
 	}
 
@@ -235,8 +227,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getSourceDimensions()
-	{
+	@Override
+	public BigInteger getSourceDimensions() {
 		return sourceDimensions;
 	}
 
@@ -245,8 +237,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceDimensions(BigInteger newSourceDimensions)
-	{
+	@Override
+	public void setSourceDimensions(BigInteger newSourceDimensions) {
 		BigInteger oldSourceDimensions = sourceDimensions;
 		sourceDimensions = newSourceDimensions;
 		if (eNotificationRequired())
@@ -258,8 +250,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getTargetDimensions()
-	{
+	@Override
+	public BigInteger getTargetDimensions() {
 		return targetDimensions;
 	}
 
@@ -268,8 +260,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetDimensions(BigInteger newTargetDimensions)
-	{
+	@Override
+	public void setTargetDimensions(BigInteger newTargetDimensions) {
 		BigInteger oldTargetDimensions = targetDimensions;
 		targetDimensions = newTargetDimensions;
 		if (eNotificationRequired())
@@ -281,10 +273,9 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractGeneralOperationParameterPropertyType> getParameter()
-	{
-		if (parameter == null)
-		{
+	@Override
+	public EList<AbstractGeneralOperationParameterPropertyType> getParameter() {
+		if (parameter == null) {
 			parameter = new EObjectContainmentEList<AbstractGeneralOperationParameterPropertyType>(AbstractGeneralOperationParameterPropertyType.class, this, GMLPackage.OPERATION_METHOD_TYPE__PARAMETER);
 		}
 		return parameter;
@@ -296,10 +287,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_METHOD_TYPE__FORMULA_CITATION:
 				return basicSetFormulaCitation(null, msgs);
 			case GMLPackage.OPERATION_METHOD_TYPE__FORMULA_GROUP:
@@ -318,10 +307,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_METHOD_TYPE__FORMULA_CITATION:
 				return getFormulaCitation();
 			case GMLPackage.OPERATION_METHOD_TYPE__FORMULA_GROUP:
@@ -346,10 +333,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_METHOD_TYPE__FORMULA_CITATION:
 				setFormulaCitation((FormulaCitationType)newValue);
 				return;
@@ -379,10 +364,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_METHOD_TYPE__FORMULA_CITATION:
 				setFormulaCitation((FormulaCitationType)null);
 				return;
@@ -411,10 +394,8 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_METHOD_TYPE__FORMULA_CITATION:
 				return formulaCitation != null;
 			case GMLPackage.OPERATION_METHOD_TYPE__FORMULA_GROUP:
@@ -437,11 +418,10 @@ public class OperationMethodTypeImpl extends IdentifiedObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (formulaGroup: ");
 		result.append(formulaGroup);
 		result.append(", sourceDimensions: ");

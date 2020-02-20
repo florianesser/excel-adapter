@@ -23,15 +23,10 @@ package org.isotc211.iso19139.gco;
  * @model extendedMetaData="name='TypeName_Type' kind='elementOnly'"
  * @generated
  */
-public interface TypeNameType extends AbstractObjectType
-{
+public interface TypeNameType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>AName</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>AName</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>AName</em>' containment reference.
 	 * @see #setAName(CharacterStringPropertyType)

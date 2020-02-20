@@ -28,8 +28,7 @@ import org.isotc211.iso19139.gco.IntegerPropertyType;
  *
  * @generated
  */
-public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implements IntegerPropertyType
-{
+public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implements IntegerPropertyType {
 	/**
 	 * The default value of the '{@link #getInteger() <em>Integer</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IntegerPropertyTypeImpl()
-	{
+	protected IntegerPropertyTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.INTEGER_PROPERTY_TYPE;
 	}
 
@@ -96,8 +93,8 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getInteger()
-	{
+	@Override
+	public BigInteger getInteger() {
 		return integer;
 	}
 
@@ -106,8 +103,8 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInteger(BigInteger newInteger)
-	{
+	@Override
+	public void setInteger(BigInteger newInteger) {
 		BigInteger oldInteger = integer;
 		integer = newInteger;
 		if (eNotificationRequired())
@@ -119,8 +116,8 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -129,8 +126,8 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -143,10 +140,8 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.INTEGER_PROPERTY_TYPE__INTEGER:
 				return getInteger();
 			case GCOPackage.INTEGER_PROPERTY_TYPE__NIL_REASON:
@@ -161,10 +156,8 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.INTEGER_PROPERTY_TYPE__INTEGER:
 				setInteger((BigInteger)newValue);
 				return;
@@ -181,10 +174,8 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.INTEGER_PROPERTY_TYPE__INTEGER:
 				setInteger(INTEGER_EDEFAULT);
 				return;
@@ -201,10 +192,8 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.INTEGER_PROPERTY_TYPE__INTEGER:
 				return INTEGER_EDEFAULT == null ? integer != null : !INTEGER_EDEFAULT.equals(integer);
 			case GCOPackage.INTEGER_PROPERTY_TYPE__NIL_REASON:
@@ -219,11 +208,10 @@ public class IntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (integer: ");
 		result.append(integer);
 		result.append(", nilReason: ");

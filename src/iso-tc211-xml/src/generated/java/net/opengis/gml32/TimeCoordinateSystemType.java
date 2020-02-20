@@ -21,15 +21,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='TimeCoordinateSystemType' kind='elementOnly'"
  * @generated
  */
-public interface TimeCoordinateSystemType extends TimeReferenceSystemType
-{
+public interface TimeCoordinateSystemType extends TimeReferenceSystemType {
 	/**
 	 * Returns the value of the '<em><b>Origin Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Origin Position</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Origin Position</em>' containment reference.
 	 * @see #setOriginPosition(TimePositionType)
@@ -53,10 +48,6 @@ public interface TimeCoordinateSystemType extends TimeReferenceSystemType
 	/**
 	 * Returns the value of the '<em><b>Origin</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Origin</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Origin</em>' containment reference.
 	 * @see #setOrigin(TimeInstantPropertyType)
@@ -80,10 +71,6 @@ public interface TimeCoordinateSystemType extends TimeReferenceSystemType
 	/**
 	 * Returns the value of the '<em><b>Interval</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interval</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Interval</em>' containment reference.
 	 * @see #setInterval(TimeIntervalLengthType)

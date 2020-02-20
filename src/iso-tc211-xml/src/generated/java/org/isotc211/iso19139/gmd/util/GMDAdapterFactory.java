@@ -23,8 +23,7 @@ import org.isotc211.iso19139.gmd.*;
  * @see org.isotc211.iso19139.gmd.GMDPackage
  * @generated
  */
-public class GMDAdapterFactory extends AdapterFactoryImpl
-{
+public class GMDAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
@@ -39,10 +38,8 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMDAdapterFactory()
-	{
-		if (modelPackage == null)
-		{
+	public GMDAdapterFactory() {
+		if (modelPackage == null) {
 			modelPackage = GMDPackage.eINSTANCE;
 		}
 	}
@@ -56,14 +53,11 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean isFactoryForType(Object object)
-	{
-		if (object == modelPackage)
-		{
+	public boolean isFactoryForType(Object object) {
+		if (object == modelPackage) {
 			return true;
 		}
-		if (object instanceof EObject)
-		{
+		if (object instanceof EObject) {
 			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
@@ -76,1196 +70,957 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	protected GMDSwitch<Adapter> modelSwitch =
-		new GMDSwitch<Adapter>()
-		{
+		new GMDSwitch<Adapter>() {
 			@Override
-			public Adapter caseAbstractDQCompletenessType(AbstractDQCompletenessType object)
-			{
+			public Adapter caseAbstractDQCompletenessType(AbstractDQCompletenessType object) {
 				return createAbstractDQCompletenessTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractDQElementType(AbstractDQElementType object)
-			{
+			public Adapter caseAbstractDQElementType(AbstractDQElementType object) {
 				return createAbstractDQElementTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractDQLogicalConsistencyType(AbstractDQLogicalConsistencyType object)
-			{
+			public Adapter caseAbstractDQLogicalConsistencyType(AbstractDQLogicalConsistencyType object) {
 				return createAbstractDQLogicalConsistencyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractDQPositionalAccuracyType(AbstractDQPositionalAccuracyType object)
-			{
+			public Adapter caseAbstractDQPositionalAccuracyType(AbstractDQPositionalAccuracyType object) {
 				return createAbstractDQPositionalAccuracyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractDQResultType(AbstractDQResultType object)
-			{
+			public Adapter caseAbstractDQResultType(AbstractDQResultType object) {
 				return createAbstractDQResultTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractDQTemporalAccuracyType(AbstractDQTemporalAccuracyType object)
-			{
+			public Adapter caseAbstractDQTemporalAccuracyType(AbstractDQTemporalAccuracyType object) {
 				return createAbstractDQTemporalAccuracyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractDQThematicAccuracyType(AbstractDQThematicAccuracyType object)
-			{
+			public Adapter caseAbstractDQThematicAccuracyType(AbstractDQThematicAccuracyType object) {
 				return createAbstractDQThematicAccuracyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractDSAggregateType(AbstractDSAggregateType object)
-			{
+			public Adapter caseAbstractDSAggregateType(AbstractDSAggregateType object) {
 				return createAbstractDSAggregateTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractEXGeographicExtentType(AbstractEXGeographicExtentType object)
-			{
+			public Adapter caseAbstractEXGeographicExtentType(AbstractEXGeographicExtentType object) {
 				return createAbstractEXGeographicExtentTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractMDContentInformationType(AbstractMDContentInformationType object)
-			{
+			public Adapter caseAbstractMDContentInformationType(AbstractMDContentInformationType object) {
 				return createAbstractMDContentInformationTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractMDIdentificationType(AbstractMDIdentificationType object)
-			{
+			public Adapter caseAbstractMDIdentificationType(AbstractMDIdentificationType object) {
 				return createAbstractMDIdentificationTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractMDSpatialRepresentationType(AbstractMDSpatialRepresentationType object)
-			{
+			public Adapter caseAbstractMDSpatialRepresentationType(AbstractMDSpatialRepresentationType object) {
 				return createAbstractMDSpatialRepresentationTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractRSReferenceSystemType(AbstractRSReferenceSystemType object)
-			{
+			public Adapter caseAbstractRSReferenceSystemType(AbstractRSReferenceSystemType object) {
 				return createAbstractRSReferenceSystemTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIAddressPropertyType(CIAddressPropertyType object)
-			{
+			public Adapter caseCIAddressPropertyType(CIAddressPropertyType object) {
 				return createCIAddressPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIAddressType(CIAddressType object)
-			{
+			public Adapter caseCIAddressType(CIAddressType object) {
 				return createCIAddressTypeAdapter();
 			}
 			@Override
-			public Adapter caseCICitationPropertyType(CICitationPropertyType object)
-			{
+			public Adapter caseCICitationPropertyType(CICitationPropertyType object) {
 				return createCICitationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCICitationType(CICitationType object)
-			{
+			public Adapter caseCICitationType(CICitationType object) {
 				return createCICitationTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIContactPropertyType(CIContactPropertyType object)
-			{
+			public Adapter caseCIContactPropertyType(CIContactPropertyType object) {
 				return createCIContactPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIContactType(CIContactType object)
-			{
+			public Adapter caseCIContactType(CIContactType object) {
 				return createCIContactTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIDatePropertyType(CIDatePropertyType object)
-			{
+			public Adapter caseCIDatePropertyType(CIDatePropertyType object) {
 				return createCIDatePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIDateType(CIDateType object)
-			{
+			public Adapter caseCIDateType(CIDateType object) {
 				return createCIDateTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIDateTypeCodePropertyType(CIDateTypeCodePropertyType object)
-			{
+			public Adapter caseCIDateTypeCodePropertyType(CIDateTypeCodePropertyType object) {
 				return createCIDateTypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIOnLineFunctionCodePropertyType(CIOnLineFunctionCodePropertyType object)
-			{
+			public Adapter caseCIOnLineFunctionCodePropertyType(CIOnLineFunctionCodePropertyType object) {
 				return createCIOnLineFunctionCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIOnlineResourcePropertyType(CIOnlineResourcePropertyType object)
-			{
+			public Adapter caseCIOnlineResourcePropertyType(CIOnlineResourcePropertyType object) {
 				return createCIOnlineResourcePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIOnlineResourceType(CIOnlineResourceType object)
-			{
+			public Adapter caseCIOnlineResourceType(CIOnlineResourceType object) {
 				return createCIOnlineResourceTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIPresentationFormCodePropertyType(CIPresentationFormCodePropertyType object)
-			{
+			public Adapter caseCIPresentationFormCodePropertyType(CIPresentationFormCodePropertyType object) {
 				return createCIPresentationFormCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIResponsiblePartyPropertyType(CIResponsiblePartyPropertyType object)
-			{
+			public Adapter caseCIResponsiblePartyPropertyType(CIResponsiblePartyPropertyType object) {
 				return createCIResponsiblePartyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIResponsiblePartyType(CIResponsiblePartyType object)
-			{
+			public Adapter caseCIResponsiblePartyType(CIResponsiblePartyType object) {
 				return createCIResponsiblePartyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCIRoleCodePropertyType(CIRoleCodePropertyType object)
-			{
+			public Adapter caseCIRoleCodePropertyType(CIRoleCodePropertyType object) {
 				return createCIRoleCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCISeriesPropertyType(CISeriesPropertyType object)
-			{
+			public Adapter caseCISeriesPropertyType(CISeriesPropertyType object) {
 				return createCISeriesPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCISeriesType(CISeriesType object)
-			{
+			public Adapter caseCISeriesType(CISeriesType object) {
 				return createCISeriesTypeAdapter();
 			}
 			@Override
-			public Adapter caseCITelephonePropertyType(CITelephonePropertyType object)
-			{
+			public Adapter caseCITelephonePropertyType(CITelephonePropertyType object) {
 				return createCITelephonePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCITelephoneType(CITelephoneType object)
-			{
+			public Adapter caseCITelephoneType(CITelephoneType object) {
 				return createCITelephoneTypeAdapter();
 			}
 			@Override
-			public Adapter caseCountryPropertyType(CountryPropertyType object)
-			{
+			public Adapter caseCountryPropertyType(CountryPropertyType object) {
 				return createCountryPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQAbsoluteExternalPositionalAccuracyPropertyType(DQAbsoluteExternalPositionalAccuracyPropertyType object)
-			{
+			public Adapter caseDQAbsoluteExternalPositionalAccuracyPropertyType(DQAbsoluteExternalPositionalAccuracyPropertyType object) {
 				return createDQAbsoluteExternalPositionalAccuracyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQAbsoluteExternalPositionalAccuracyType(DQAbsoluteExternalPositionalAccuracyType object)
-			{
+			public Adapter caseDQAbsoluteExternalPositionalAccuracyType(DQAbsoluteExternalPositionalAccuracyType object) {
 				return createDQAbsoluteExternalPositionalAccuracyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQAccuracyOfATimeMeasurementPropertyType(DQAccuracyOfATimeMeasurementPropertyType object)
-			{
+			public Adapter caseDQAccuracyOfATimeMeasurementPropertyType(DQAccuracyOfATimeMeasurementPropertyType object) {
 				return createDQAccuracyOfATimeMeasurementPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQAccuracyOfATimeMeasurementType(DQAccuracyOfATimeMeasurementType object)
-			{
+			public Adapter caseDQAccuracyOfATimeMeasurementType(DQAccuracyOfATimeMeasurementType object) {
 				return createDQAccuracyOfATimeMeasurementTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQCompletenessCommissionPropertyType(DQCompletenessCommissionPropertyType object)
-			{
+			public Adapter caseDQCompletenessCommissionPropertyType(DQCompletenessCommissionPropertyType object) {
 				return createDQCompletenessCommissionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQCompletenessCommissionType(DQCompletenessCommissionType object)
-			{
+			public Adapter caseDQCompletenessCommissionType(DQCompletenessCommissionType object) {
 				return createDQCompletenessCommissionTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQCompletenessOmissionPropertyType(DQCompletenessOmissionPropertyType object)
-			{
+			public Adapter caseDQCompletenessOmissionPropertyType(DQCompletenessOmissionPropertyType object) {
 				return createDQCompletenessOmissionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQCompletenessOmissionType(DQCompletenessOmissionType object)
-			{
+			public Adapter caseDQCompletenessOmissionType(DQCompletenessOmissionType object) {
 				return createDQCompletenessOmissionTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQCompletenessPropertyType(DQCompletenessPropertyType object)
-			{
+			public Adapter caseDQCompletenessPropertyType(DQCompletenessPropertyType object) {
 				return createDQCompletenessPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQConceptualConsistencyPropertyType(DQConceptualConsistencyPropertyType object)
-			{
+			public Adapter caseDQConceptualConsistencyPropertyType(DQConceptualConsistencyPropertyType object) {
 				return createDQConceptualConsistencyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQConceptualConsistencyType(DQConceptualConsistencyType object)
-			{
+			public Adapter caseDQConceptualConsistencyType(DQConceptualConsistencyType object) {
 				return createDQConceptualConsistencyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQConformanceResultPropertyType(DQConformanceResultPropertyType object)
-			{
+			public Adapter caseDQConformanceResultPropertyType(DQConformanceResultPropertyType object) {
 				return createDQConformanceResultPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQConformanceResultType(DQConformanceResultType object)
-			{
+			public Adapter caseDQConformanceResultType(DQConformanceResultType object) {
 				return createDQConformanceResultTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQDataQualityPropertyType(DQDataQualityPropertyType object)
-			{
+			public Adapter caseDQDataQualityPropertyType(DQDataQualityPropertyType object) {
 				return createDQDataQualityPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQDataQualityType(DQDataQualityType object)
-			{
+			public Adapter caseDQDataQualityType(DQDataQualityType object) {
 				return createDQDataQualityTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQDomainConsistencyPropertyType(DQDomainConsistencyPropertyType object)
-			{
+			public Adapter caseDQDomainConsistencyPropertyType(DQDomainConsistencyPropertyType object) {
 				return createDQDomainConsistencyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQDomainConsistencyType(DQDomainConsistencyType object)
-			{
+			public Adapter caseDQDomainConsistencyType(DQDomainConsistencyType object) {
 				return createDQDomainConsistencyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQElementPropertyType(DQElementPropertyType object)
-			{
+			public Adapter caseDQElementPropertyType(DQElementPropertyType object) {
 				return createDQElementPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQEvaluationMethodTypeCodePropertyType(DQEvaluationMethodTypeCodePropertyType object)
-			{
+			public Adapter caseDQEvaluationMethodTypeCodePropertyType(DQEvaluationMethodTypeCodePropertyType object) {
 				return createDQEvaluationMethodTypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQFormatConsistencyPropertyType(DQFormatConsistencyPropertyType object)
-			{
+			public Adapter caseDQFormatConsistencyPropertyType(DQFormatConsistencyPropertyType object) {
 				return createDQFormatConsistencyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQFormatConsistencyType(DQFormatConsistencyType object)
-			{
+			public Adapter caseDQFormatConsistencyType(DQFormatConsistencyType object) {
 				return createDQFormatConsistencyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQGriddedDataPositionalAccuracyPropertyType(DQGriddedDataPositionalAccuracyPropertyType object)
-			{
+			public Adapter caseDQGriddedDataPositionalAccuracyPropertyType(DQGriddedDataPositionalAccuracyPropertyType object) {
 				return createDQGriddedDataPositionalAccuracyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQGriddedDataPositionalAccuracyType(DQGriddedDataPositionalAccuracyType object)
-			{
+			public Adapter caseDQGriddedDataPositionalAccuracyType(DQGriddedDataPositionalAccuracyType object) {
 				return createDQGriddedDataPositionalAccuracyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQLogicalConsistencyPropertyType(DQLogicalConsistencyPropertyType object)
-			{
+			public Adapter caseDQLogicalConsistencyPropertyType(DQLogicalConsistencyPropertyType object) {
 				return createDQLogicalConsistencyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQNonQuantitativeAttributeAccuracyPropertyType(DQNonQuantitativeAttributeAccuracyPropertyType object)
-			{
+			public Adapter caseDQNonQuantitativeAttributeAccuracyPropertyType(DQNonQuantitativeAttributeAccuracyPropertyType object) {
 				return createDQNonQuantitativeAttributeAccuracyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQNonQuantitativeAttributeAccuracyType(DQNonQuantitativeAttributeAccuracyType object)
-			{
+			public Adapter caseDQNonQuantitativeAttributeAccuracyType(DQNonQuantitativeAttributeAccuracyType object) {
 				return createDQNonQuantitativeAttributeAccuracyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQPositionalAccuracyPropertyType(DQPositionalAccuracyPropertyType object)
-			{
+			public Adapter caseDQPositionalAccuracyPropertyType(DQPositionalAccuracyPropertyType object) {
 				return createDQPositionalAccuracyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQQuantitativeAttributeAccuracyPropertyType(DQQuantitativeAttributeAccuracyPropertyType object)
-			{
+			public Adapter caseDQQuantitativeAttributeAccuracyPropertyType(DQQuantitativeAttributeAccuracyPropertyType object) {
 				return createDQQuantitativeAttributeAccuracyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQQuantitativeAttributeAccuracyType(DQQuantitativeAttributeAccuracyType object)
-			{
+			public Adapter caseDQQuantitativeAttributeAccuracyType(DQQuantitativeAttributeAccuracyType object) {
 				return createDQQuantitativeAttributeAccuracyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQQuantitativeResultPropertyType(DQQuantitativeResultPropertyType object)
-			{
+			public Adapter caseDQQuantitativeResultPropertyType(DQQuantitativeResultPropertyType object) {
 				return createDQQuantitativeResultPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQQuantitativeResultType(DQQuantitativeResultType object)
-			{
+			public Adapter caseDQQuantitativeResultType(DQQuantitativeResultType object) {
 				return createDQQuantitativeResultTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQRelativeInternalPositionalAccuracyPropertyType(DQRelativeInternalPositionalAccuracyPropertyType object)
-			{
+			public Adapter caseDQRelativeInternalPositionalAccuracyPropertyType(DQRelativeInternalPositionalAccuracyPropertyType object) {
 				return createDQRelativeInternalPositionalAccuracyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQRelativeInternalPositionalAccuracyType(DQRelativeInternalPositionalAccuracyType object)
-			{
+			public Adapter caseDQRelativeInternalPositionalAccuracyType(DQRelativeInternalPositionalAccuracyType object) {
 				return createDQRelativeInternalPositionalAccuracyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQResultPropertyType(DQResultPropertyType object)
-			{
+			public Adapter caseDQResultPropertyType(DQResultPropertyType object) {
 				return createDQResultPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQScopePropertyType(DQScopePropertyType object)
-			{
+			public Adapter caseDQScopePropertyType(DQScopePropertyType object) {
 				return createDQScopePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQScopeType(DQScopeType object)
-			{
+			public Adapter caseDQScopeType(DQScopeType object) {
 				return createDQScopeTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQTemporalAccuracyPropertyType(DQTemporalAccuracyPropertyType object)
-			{
+			public Adapter caseDQTemporalAccuracyPropertyType(DQTemporalAccuracyPropertyType object) {
 				return createDQTemporalAccuracyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQTemporalConsistencyPropertyType(DQTemporalConsistencyPropertyType object)
-			{
+			public Adapter caseDQTemporalConsistencyPropertyType(DQTemporalConsistencyPropertyType object) {
 				return createDQTemporalConsistencyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQTemporalConsistencyType(DQTemporalConsistencyType object)
-			{
+			public Adapter caseDQTemporalConsistencyType(DQTemporalConsistencyType object) {
 				return createDQTemporalConsistencyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQTemporalValidityPropertyType(DQTemporalValidityPropertyType object)
-			{
+			public Adapter caseDQTemporalValidityPropertyType(DQTemporalValidityPropertyType object) {
 				return createDQTemporalValidityPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQTemporalValidityType(DQTemporalValidityType object)
-			{
+			public Adapter caseDQTemporalValidityType(DQTemporalValidityType object) {
 				return createDQTemporalValidityTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQThematicAccuracyPropertyType(DQThematicAccuracyPropertyType object)
-			{
+			public Adapter caseDQThematicAccuracyPropertyType(DQThematicAccuracyPropertyType object) {
 				return createDQThematicAccuracyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQThematicClassificationCorrectnessPropertyType(DQThematicClassificationCorrectnessPropertyType object)
-			{
+			public Adapter caseDQThematicClassificationCorrectnessPropertyType(DQThematicClassificationCorrectnessPropertyType object) {
 				return createDQThematicClassificationCorrectnessPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQThematicClassificationCorrectnessType(DQThematicClassificationCorrectnessType object)
-			{
+			public Adapter caseDQThematicClassificationCorrectnessType(DQThematicClassificationCorrectnessType object) {
 				return createDQThematicClassificationCorrectnessTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQTopologicalConsistencyPropertyType(DQTopologicalConsistencyPropertyType object)
-			{
+			public Adapter caseDQTopologicalConsistencyPropertyType(DQTopologicalConsistencyPropertyType object) {
 				return createDQTopologicalConsistencyPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDQTopologicalConsistencyType(DQTopologicalConsistencyType object)
-			{
+			public Adapter caseDQTopologicalConsistencyType(DQTopologicalConsistencyType object) {
 				return createDQTopologicalConsistencyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSAggregatePropertyType(DSAggregatePropertyType object)
-			{
+			public Adapter caseDSAggregatePropertyType(DSAggregatePropertyType object) {
 				return createDSAggregatePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSAssociationPropertyType(DSAssociationPropertyType object)
-			{
+			public Adapter caseDSAssociationPropertyType(DSAssociationPropertyType object) {
 				return createDSAssociationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSAssociationType(DSAssociationType object)
-			{
+			public Adapter caseDSAssociationType(DSAssociationType object) {
 				return createDSAssociationTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSAssociationTypeCodePropertyType(DSAssociationTypeCodePropertyType object)
-			{
+			public Adapter caseDSAssociationTypeCodePropertyType(DSAssociationTypeCodePropertyType object) {
 				return createDSAssociationTypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSDataSetPropertyType(DSDataSetPropertyType object)
-			{
+			public Adapter caseDSDataSetPropertyType(DSDataSetPropertyType object) {
 				return createDSDataSetPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSDataSetType(DSDataSetType object)
-			{
+			public Adapter caseDSDataSetType(DSDataSetType object) {
 				return createDSDataSetTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSInitiativePropertyType(DSInitiativePropertyType object)
-			{
+			public Adapter caseDSInitiativePropertyType(DSInitiativePropertyType object) {
 				return createDSInitiativePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSInitiativeType(DSInitiativeType object)
-			{
+			public Adapter caseDSInitiativeType(DSInitiativeType object) {
 				return createDSInitiativeTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSInitiativeTypeCodePropertyType(DSInitiativeTypeCodePropertyType object)
-			{
+			public Adapter caseDSInitiativeTypeCodePropertyType(DSInitiativeTypeCodePropertyType object) {
 				return createDSInitiativeTypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSOtherAggregatePropertyType(DSOtherAggregatePropertyType object)
-			{
+			public Adapter caseDSOtherAggregatePropertyType(DSOtherAggregatePropertyType object) {
 				return createDSOtherAggregatePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSOtherAggregateType(DSOtherAggregateType object)
-			{
+			public Adapter caseDSOtherAggregateType(DSOtherAggregateType object) {
 				return createDSOtherAggregateTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSPlatformPropertyType(DSPlatformPropertyType object)
-			{
+			public Adapter caseDSPlatformPropertyType(DSPlatformPropertyType object) {
 				return createDSPlatformPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSPlatformType(DSPlatformType object)
-			{
+			public Adapter caseDSPlatformType(DSPlatformType object) {
 				return createDSPlatformTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSProductionSeriesPropertyType(DSProductionSeriesPropertyType object)
-			{
+			public Adapter caseDSProductionSeriesPropertyType(DSProductionSeriesPropertyType object) {
 				return createDSProductionSeriesPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSProductionSeriesType(DSProductionSeriesType object)
-			{
+			public Adapter caseDSProductionSeriesType(DSProductionSeriesType object) {
 				return createDSProductionSeriesTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSSensorPropertyType(DSSensorPropertyType object)
-			{
+			public Adapter caseDSSensorPropertyType(DSSensorPropertyType object) {
 				return createDSSensorPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSSensorType(DSSensorType object)
-			{
+			public Adapter caseDSSensorType(DSSensorType object) {
 				return createDSSensorTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSSeriesPropertyType(DSSeriesPropertyType object)
-			{
+			public Adapter caseDSSeriesPropertyType(DSSeriesPropertyType object) {
 				return createDSSeriesPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSSeriesType(DSSeriesType object)
-			{
+			public Adapter caseDSSeriesType(DSSeriesType object) {
 				return createDSSeriesTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSStereoMatePropertyType(DSStereoMatePropertyType object)
-			{
+			public Adapter caseDSStereoMatePropertyType(DSStereoMatePropertyType object) {
 				return createDSStereoMatePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDSStereoMateType(DSStereoMateType object)
-			{
+			public Adapter caseDSStereoMateType(DSStereoMateType object) {
 				return createDSStereoMateTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXBoundingPolygonPropertyType(EXBoundingPolygonPropertyType object)
-			{
+			public Adapter caseEXBoundingPolygonPropertyType(EXBoundingPolygonPropertyType object) {
 				return createEXBoundingPolygonPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXBoundingPolygonType(EXBoundingPolygonType object)
-			{
+			public Adapter caseEXBoundingPolygonType(EXBoundingPolygonType object) {
 				return createEXBoundingPolygonTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXExtentPropertyType(EXExtentPropertyType object)
-			{
+			public Adapter caseEXExtentPropertyType(EXExtentPropertyType object) {
 				return createEXExtentPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXExtentType(EXExtentType object)
-			{
+			public Adapter caseEXExtentType(EXExtentType object) {
 				return createEXExtentTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXGeographicBoundingBoxPropertyType(EXGeographicBoundingBoxPropertyType object)
-			{
+			public Adapter caseEXGeographicBoundingBoxPropertyType(EXGeographicBoundingBoxPropertyType object) {
 				return createEXGeographicBoundingBoxPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXGeographicBoundingBoxType(EXGeographicBoundingBoxType object)
-			{
+			public Adapter caseEXGeographicBoundingBoxType(EXGeographicBoundingBoxType object) {
 				return createEXGeographicBoundingBoxTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXGeographicDescriptionPropertyType(EXGeographicDescriptionPropertyType object)
-			{
+			public Adapter caseEXGeographicDescriptionPropertyType(EXGeographicDescriptionPropertyType object) {
 				return createEXGeographicDescriptionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXGeographicDescriptionType(EXGeographicDescriptionType object)
-			{
+			public Adapter caseEXGeographicDescriptionType(EXGeographicDescriptionType object) {
 				return createEXGeographicDescriptionTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXGeographicExtentPropertyType(EXGeographicExtentPropertyType object)
-			{
+			public Adapter caseEXGeographicExtentPropertyType(EXGeographicExtentPropertyType object) {
 				return createEXGeographicExtentPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXSpatialTemporalExtentPropertyType(EXSpatialTemporalExtentPropertyType object)
-			{
+			public Adapter caseEXSpatialTemporalExtentPropertyType(EXSpatialTemporalExtentPropertyType object) {
 				return createEXSpatialTemporalExtentPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXSpatialTemporalExtentType(EXSpatialTemporalExtentType object)
-			{
+			public Adapter caseEXSpatialTemporalExtentType(EXSpatialTemporalExtentType object) {
 				return createEXSpatialTemporalExtentTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXTemporalExtentPropertyType(EXTemporalExtentPropertyType object)
-			{
+			public Adapter caseEXTemporalExtentPropertyType(EXTemporalExtentPropertyType object) {
 				return createEXTemporalExtentPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXTemporalExtentType(EXTemporalExtentType object)
-			{
+			public Adapter caseEXTemporalExtentType(EXTemporalExtentType object) {
 				return createEXTemporalExtentTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXVerticalExtentPropertyType(EXVerticalExtentPropertyType object)
-			{
+			public Adapter caseEXVerticalExtentPropertyType(EXVerticalExtentPropertyType object) {
 				return createEXVerticalExtentPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEXVerticalExtentType(EXVerticalExtentType object)
-			{
+			public Adapter caseEXVerticalExtentType(EXVerticalExtentType object) {
 				return createEXVerticalExtentTypeAdapter();
 			}
 			@Override
-			public Adapter caseLanguageCodePropertyType(LanguageCodePropertyType object)
-			{
+			public Adapter caseLanguageCodePropertyType(LanguageCodePropertyType object) {
 				return createLanguageCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLILineagePropertyType(LILineagePropertyType object)
-			{
+			public Adapter caseLILineagePropertyType(LILineagePropertyType object) {
 				return createLILineagePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLILineageType(LILineageType object)
-			{
+			public Adapter caseLILineageType(LILineageType object) {
 				return createLILineageTypeAdapter();
 			}
 			@Override
-			public Adapter caseLIProcessStepPropertyType(LIProcessStepPropertyType object)
-			{
+			public Adapter caseLIProcessStepPropertyType(LIProcessStepPropertyType object) {
 				return createLIProcessStepPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLIProcessStepType(LIProcessStepType object)
-			{
+			public Adapter caseLIProcessStepType(LIProcessStepType object) {
 				return createLIProcessStepTypeAdapter();
 			}
 			@Override
-			public Adapter caseLISourcePropertyType(LISourcePropertyType object)
-			{
+			public Adapter caseLISourcePropertyType(LISourcePropertyType object) {
 				return createLISourcePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLISourceType(LISourceType object)
-			{
+			public Adapter caseLISourceType(LISourceType object) {
 				return createLISourceTypeAdapter();
 			}
 			@Override
-			public Adapter caseLocalisedCharacterStringPropertyType(LocalisedCharacterStringPropertyType object)
-			{
+			public Adapter caseLocalisedCharacterStringPropertyType(LocalisedCharacterStringPropertyType object) {
 				return createLocalisedCharacterStringPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLocalisedCharacterStringType(LocalisedCharacterStringType object)
-			{
+			public Adapter caseLocalisedCharacterStringType(LocalisedCharacterStringType object) {
 				return createLocalisedCharacterStringTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDAggregateInformationPropertyType(MDAggregateInformationPropertyType object)
-			{
+			public Adapter caseMDAggregateInformationPropertyType(MDAggregateInformationPropertyType object) {
 				return createMDAggregateInformationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDAggregateInformationType(MDAggregateInformationType object)
-			{
+			public Adapter caseMDAggregateInformationType(MDAggregateInformationType object) {
 				return createMDAggregateInformationTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDApplicationSchemaInformationPropertyType(MDApplicationSchemaInformationPropertyType object)
-			{
+			public Adapter caseMDApplicationSchemaInformationPropertyType(MDApplicationSchemaInformationPropertyType object) {
 				return createMDApplicationSchemaInformationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDApplicationSchemaInformationType(MDApplicationSchemaInformationType object)
-			{
+			public Adapter caseMDApplicationSchemaInformationType(MDApplicationSchemaInformationType object) {
 				return createMDApplicationSchemaInformationTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDBandPropertyType(MDBandPropertyType object)
-			{
+			public Adapter caseMDBandPropertyType(MDBandPropertyType object) {
 				return createMDBandPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDBandType(MDBandType object)
-			{
+			public Adapter caseMDBandType(MDBandType object) {
 				return createMDBandTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDBrowseGraphicPropertyType(MDBrowseGraphicPropertyType object)
-			{
+			public Adapter caseMDBrowseGraphicPropertyType(MDBrowseGraphicPropertyType object) {
 				return createMDBrowseGraphicPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDBrowseGraphicType(MDBrowseGraphicType object)
-			{
+			public Adapter caseMDBrowseGraphicType(MDBrowseGraphicType object) {
 				return createMDBrowseGraphicTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDCellGeometryCodePropertyType(MDCellGeometryCodePropertyType object)
-			{
+			public Adapter caseMDCellGeometryCodePropertyType(MDCellGeometryCodePropertyType object) {
 				return createMDCellGeometryCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDCharacterSetCodePropertyType(MDCharacterSetCodePropertyType object)
-			{
+			public Adapter caseMDCharacterSetCodePropertyType(MDCharacterSetCodePropertyType object) {
 				return createMDCharacterSetCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDClassificationCodePropertyType(MDClassificationCodePropertyType object)
-			{
+			public Adapter caseMDClassificationCodePropertyType(MDClassificationCodePropertyType object) {
 				return createMDClassificationCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDConstraintsPropertyType(MDConstraintsPropertyType object)
-			{
+			public Adapter caseMDConstraintsPropertyType(MDConstraintsPropertyType object) {
 				return createMDConstraintsPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDConstraintsType(MDConstraintsType object)
-			{
+			public Adapter caseMDConstraintsType(MDConstraintsType object) {
 				return createMDConstraintsTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDContentInformationPropertyType(MDContentInformationPropertyType object)
-			{
+			public Adapter caseMDContentInformationPropertyType(MDContentInformationPropertyType object) {
 				return createMDContentInformationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDCoverageContentTypeCodePropertyType(MDCoverageContentTypeCodePropertyType object)
-			{
+			public Adapter caseMDCoverageContentTypeCodePropertyType(MDCoverageContentTypeCodePropertyType object) {
 				return createMDCoverageContentTypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDCoverageDescriptionPropertyType(MDCoverageDescriptionPropertyType object)
-			{
+			public Adapter caseMDCoverageDescriptionPropertyType(MDCoverageDescriptionPropertyType object) {
 				return createMDCoverageDescriptionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDCoverageDescriptionType(MDCoverageDescriptionType object)
-			{
+			public Adapter caseMDCoverageDescriptionType(MDCoverageDescriptionType object) {
 				return createMDCoverageDescriptionTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDataIdentificationPropertyType(MDDataIdentificationPropertyType object)
-			{
+			public Adapter caseMDDataIdentificationPropertyType(MDDataIdentificationPropertyType object) {
 				return createMDDataIdentificationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDataIdentificationType(MDDataIdentificationType object)
-			{
+			public Adapter caseMDDataIdentificationType(MDDataIdentificationType object) {
 				return createMDDataIdentificationTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDatatypeCodePropertyType(MDDatatypeCodePropertyType object)
-			{
+			public Adapter caseMDDatatypeCodePropertyType(MDDatatypeCodePropertyType object) {
 				return createMDDatatypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDigitalTransferOptionsPropertyType(MDDigitalTransferOptionsPropertyType object)
-			{
+			public Adapter caseMDDigitalTransferOptionsPropertyType(MDDigitalTransferOptionsPropertyType object) {
 				return createMDDigitalTransferOptionsPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDigitalTransferOptionsType(MDDigitalTransferOptionsType object)
-			{
+			public Adapter caseMDDigitalTransferOptionsType(MDDigitalTransferOptionsType object) {
 				return createMDDigitalTransferOptionsTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDimensionNameTypeCodePropertyType(MDDimensionNameTypeCodePropertyType object)
-			{
+			public Adapter caseMDDimensionNameTypeCodePropertyType(MDDimensionNameTypeCodePropertyType object) {
 				return createMDDimensionNameTypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDimensionPropertyType(MDDimensionPropertyType object)
-			{
+			public Adapter caseMDDimensionPropertyType(MDDimensionPropertyType object) {
 				return createMDDimensionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDimensionType(MDDimensionType object)
-			{
+			public Adapter caseMDDimensionType(MDDimensionType object) {
 				return createMDDimensionTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDistributionPropertyType(MDDistributionPropertyType object)
-			{
+			public Adapter caseMDDistributionPropertyType(MDDistributionPropertyType object) {
 				return createMDDistributionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDistributionType(MDDistributionType object)
-			{
+			public Adapter caseMDDistributionType(MDDistributionType object) {
 				return createMDDistributionTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDistributionUnitsPropertyType(MDDistributionUnitsPropertyType object)
-			{
+			public Adapter caseMDDistributionUnitsPropertyType(MDDistributionUnitsPropertyType object) {
 				return createMDDistributionUnitsPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDistributorPropertyType(MDDistributorPropertyType object)
-			{
+			public Adapter caseMDDistributorPropertyType(MDDistributorPropertyType object) {
 				return createMDDistributorPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDDistributorType(MDDistributorType object)
-			{
+			public Adapter caseMDDistributorType(MDDistributorType object) {
 				return createMDDistributorTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDExtendedElementInformationPropertyType(MDExtendedElementInformationPropertyType object)
-			{
+			public Adapter caseMDExtendedElementInformationPropertyType(MDExtendedElementInformationPropertyType object) {
 				return createMDExtendedElementInformationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDExtendedElementInformationType(MDExtendedElementInformationType object)
-			{
+			public Adapter caseMDExtendedElementInformationType(MDExtendedElementInformationType object) {
 				return createMDExtendedElementInformationTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDFeatureCatalogueDescriptionPropertyType(MDFeatureCatalogueDescriptionPropertyType object)
-			{
+			public Adapter caseMDFeatureCatalogueDescriptionPropertyType(MDFeatureCatalogueDescriptionPropertyType object) {
 				return createMDFeatureCatalogueDescriptionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDFeatureCatalogueDescriptionType(MDFeatureCatalogueDescriptionType object)
-			{
+			public Adapter caseMDFeatureCatalogueDescriptionType(MDFeatureCatalogueDescriptionType object) {
 				return createMDFeatureCatalogueDescriptionTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDFormatPropertyType(MDFormatPropertyType object)
-			{
+			public Adapter caseMDFormatPropertyType(MDFormatPropertyType object) {
 				return createMDFormatPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDFormatType(MDFormatType object)
-			{
+			public Adapter caseMDFormatType(MDFormatType object) {
 				return createMDFormatTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDGeometricObjectsPropertyType(MDGeometricObjectsPropertyType object)
-			{
+			public Adapter caseMDGeometricObjectsPropertyType(MDGeometricObjectsPropertyType object) {
 				return createMDGeometricObjectsPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDGeometricObjectsType(MDGeometricObjectsType object)
-			{
+			public Adapter caseMDGeometricObjectsType(MDGeometricObjectsType object) {
 				return createMDGeometricObjectsTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDGeometricObjectTypeCodePropertyType(MDGeometricObjectTypeCodePropertyType object)
-			{
+			public Adapter caseMDGeometricObjectTypeCodePropertyType(MDGeometricObjectTypeCodePropertyType object) {
 				return createMDGeometricObjectTypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDGeorectifiedPropertyType(MDGeorectifiedPropertyType object)
-			{
+			public Adapter caseMDGeorectifiedPropertyType(MDGeorectifiedPropertyType object) {
 				return createMDGeorectifiedPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDGeorectifiedType(MDGeorectifiedType object)
-			{
+			public Adapter caseMDGeorectifiedType(MDGeorectifiedType object) {
 				return createMDGeorectifiedTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDGeoreferenceablePropertyType(MDGeoreferenceablePropertyType object)
-			{
+			public Adapter caseMDGeoreferenceablePropertyType(MDGeoreferenceablePropertyType object) {
 				return createMDGeoreferenceablePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDGeoreferenceableType(MDGeoreferenceableType object)
-			{
+			public Adapter caseMDGeoreferenceableType(MDGeoreferenceableType object) {
 				return createMDGeoreferenceableTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDGridSpatialRepresentationPropertyType(MDGridSpatialRepresentationPropertyType object)
-			{
+			public Adapter caseMDGridSpatialRepresentationPropertyType(MDGridSpatialRepresentationPropertyType object) {
 				return createMDGridSpatialRepresentationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDGridSpatialRepresentationType(MDGridSpatialRepresentationType object)
-			{
+			public Adapter caseMDGridSpatialRepresentationType(MDGridSpatialRepresentationType object) {
 				return createMDGridSpatialRepresentationTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDIdentificationPropertyType(MDIdentificationPropertyType object)
-			{
+			public Adapter caseMDIdentificationPropertyType(MDIdentificationPropertyType object) {
 				return createMDIdentificationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDIdentifierPropertyType(MDIdentifierPropertyType object)
-			{
+			public Adapter caseMDIdentifierPropertyType(MDIdentifierPropertyType object) {
 				return createMDIdentifierPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDIdentifierType(MDIdentifierType object)
-			{
+			public Adapter caseMDIdentifierType(MDIdentifierType object) {
 				return createMDIdentifierTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDImageDescriptionPropertyType(MDImageDescriptionPropertyType object)
-			{
+			public Adapter caseMDImageDescriptionPropertyType(MDImageDescriptionPropertyType object) {
 				return createMDImageDescriptionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDImageDescriptionType(MDImageDescriptionType object)
-			{
+			public Adapter caseMDImageDescriptionType(MDImageDescriptionType object) {
 				return createMDImageDescriptionTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDImagingConditionCodePropertyType(MDImagingConditionCodePropertyType object)
-			{
+			public Adapter caseMDImagingConditionCodePropertyType(MDImagingConditionCodePropertyType object) {
 				return createMDImagingConditionCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDKeywordsPropertyType(MDKeywordsPropertyType object)
-			{
+			public Adapter caseMDKeywordsPropertyType(MDKeywordsPropertyType object) {
 				return createMDKeywordsPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDKeywordsType(MDKeywordsType object)
-			{
+			public Adapter caseMDKeywordsType(MDKeywordsType object) {
 				return createMDKeywordsTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDKeywordTypeCodePropertyType(MDKeywordTypeCodePropertyType object)
-			{
+			public Adapter caseMDKeywordTypeCodePropertyType(MDKeywordTypeCodePropertyType object) {
 				return createMDKeywordTypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDLegalConstraintsPropertyType(MDLegalConstraintsPropertyType object)
-			{
+			public Adapter caseMDLegalConstraintsPropertyType(MDLegalConstraintsPropertyType object) {
 				return createMDLegalConstraintsPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDLegalConstraintsType(MDLegalConstraintsType object)
-			{
+			public Adapter caseMDLegalConstraintsType(MDLegalConstraintsType object) {
 				return createMDLegalConstraintsTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMaintenanceFrequencyCodePropertyType(MDMaintenanceFrequencyCodePropertyType object)
-			{
+			public Adapter caseMDMaintenanceFrequencyCodePropertyType(MDMaintenanceFrequencyCodePropertyType object) {
 				return createMDMaintenanceFrequencyCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMaintenanceInformationPropertyType(MDMaintenanceInformationPropertyType object)
-			{
+			public Adapter caseMDMaintenanceInformationPropertyType(MDMaintenanceInformationPropertyType object) {
 				return createMDMaintenanceInformationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMaintenanceInformationType(MDMaintenanceInformationType object)
-			{
+			public Adapter caseMDMaintenanceInformationType(MDMaintenanceInformationType object) {
 				return createMDMaintenanceInformationTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMediumFormatCodePropertyType(MDMediumFormatCodePropertyType object)
-			{
+			public Adapter caseMDMediumFormatCodePropertyType(MDMediumFormatCodePropertyType object) {
 				return createMDMediumFormatCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMediumNameCodePropertyType(MDMediumNameCodePropertyType object)
-			{
+			public Adapter caseMDMediumNameCodePropertyType(MDMediumNameCodePropertyType object) {
 				return createMDMediumNameCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMediumPropertyType(MDMediumPropertyType object)
-			{
+			public Adapter caseMDMediumPropertyType(MDMediumPropertyType object) {
 				return createMDMediumPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMediumType(MDMediumType object)
-			{
+			public Adapter caseMDMediumType(MDMediumType object) {
 				return createMDMediumTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMetadataExtensionInformationPropertyType(MDMetadataExtensionInformationPropertyType object)
-			{
+			public Adapter caseMDMetadataExtensionInformationPropertyType(MDMetadataExtensionInformationPropertyType object) {
 				return createMDMetadataExtensionInformationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMetadataExtensionInformationType(MDMetadataExtensionInformationType object)
-			{
+			public Adapter caseMDMetadataExtensionInformationType(MDMetadataExtensionInformationType object) {
 				return createMDMetadataExtensionInformationTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMetadataPropertyType(MDMetadataPropertyType object)
-			{
+			public Adapter caseMDMetadataPropertyType(MDMetadataPropertyType object) {
 				return createMDMetadataPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDMetadataType(MDMetadataType object)
-			{
+			public Adapter caseMDMetadataType(MDMetadataType object) {
 				return createMDMetadataTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDObligationCodePropertyType(MDObligationCodePropertyType object)
-			{
+			public Adapter caseMDObligationCodePropertyType(MDObligationCodePropertyType object) {
 				return createMDObligationCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDPixelOrientationCodePropertyType(MDPixelOrientationCodePropertyType object)
-			{
+			public Adapter caseMDPixelOrientationCodePropertyType(MDPixelOrientationCodePropertyType object) {
 				return createMDPixelOrientationCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDPortrayalCatalogueReferencePropertyType(MDPortrayalCatalogueReferencePropertyType object)
-			{
+			public Adapter caseMDPortrayalCatalogueReferencePropertyType(MDPortrayalCatalogueReferencePropertyType object) {
 				return createMDPortrayalCatalogueReferencePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDPortrayalCatalogueReferenceType(MDPortrayalCatalogueReferenceType object)
-			{
+			public Adapter caseMDPortrayalCatalogueReferenceType(MDPortrayalCatalogueReferenceType object) {
 				return createMDPortrayalCatalogueReferenceTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDProgressCodePropertyType(MDProgressCodePropertyType object)
-			{
+			public Adapter caseMDProgressCodePropertyType(MDProgressCodePropertyType object) {
 				return createMDProgressCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDRangeDimensionPropertyType(MDRangeDimensionPropertyType object)
-			{
+			public Adapter caseMDRangeDimensionPropertyType(MDRangeDimensionPropertyType object) {
 				return createMDRangeDimensionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDRangeDimensionType(MDRangeDimensionType object)
-			{
+			public Adapter caseMDRangeDimensionType(MDRangeDimensionType object) {
 				return createMDRangeDimensionTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDReferenceSystemPropertyType(MDReferenceSystemPropertyType object)
-			{
+			public Adapter caseMDReferenceSystemPropertyType(MDReferenceSystemPropertyType object) {
 				return createMDReferenceSystemPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDReferenceSystemType(MDReferenceSystemType object)
-			{
+			public Adapter caseMDReferenceSystemType(MDReferenceSystemType object) {
 				return createMDReferenceSystemTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDRepresentativeFractionPropertyType(MDRepresentativeFractionPropertyType object)
-			{
+			public Adapter caseMDRepresentativeFractionPropertyType(MDRepresentativeFractionPropertyType object) {
 				return createMDRepresentativeFractionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDRepresentativeFractionType(MDRepresentativeFractionType object)
-			{
+			public Adapter caseMDRepresentativeFractionType(MDRepresentativeFractionType object) {
 				return createMDRepresentativeFractionTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDResolutionPropertyType(MDResolutionPropertyType object)
-			{
+			public Adapter caseMDResolutionPropertyType(MDResolutionPropertyType object) {
 				return createMDResolutionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDResolutionType(MDResolutionType object)
-			{
+			public Adapter caseMDResolutionType(MDResolutionType object) {
 				return createMDResolutionTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDRestrictionCodePropertyType(MDRestrictionCodePropertyType object)
-			{
+			public Adapter caseMDRestrictionCodePropertyType(MDRestrictionCodePropertyType object) {
 				return createMDRestrictionCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDScopeCodePropertyType(MDScopeCodePropertyType object)
-			{
+			public Adapter caseMDScopeCodePropertyType(MDScopeCodePropertyType object) {
 				return createMDScopeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDScopeDescriptionPropertyType(MDScopeDescriptionPropertyType object)
-			{
+			public Adapter caseMDScopeDescriptionPropertyType(MDScopeDescriptionPropertyType object) {
 				return createMDScopeDescriptionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDScopeDescriptionType(MDScopeDescriptionType object)
-			{
+			public Adapter caseMDScopeDescriptionType(MDScopeDescriptionType object) {
 				return createMDScopeDescriptionTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDSecurityConstraintsPropertyType(MDSecurityConstraintsPropertyType object)
-			{
+			public Adapter caseMDSecurityConstraintsPropertyType(MDSecurityConstraintsPropertyType object) {
 				return createMDSecurityConstraintsPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDSecurityConstraintsType(MDSecurityConstraintsType object)
-			{
+			public Adapter caseMDSecurityConstraintsType(MDSecurityConstraintsType object) {
 				return createMDSecurityConstraintsTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDServiceIdentificationPropertyType(MDServiceIdentificationPropertyType object)
-			{
+			public Adapter caseMDServiceIdentificationPropertyType(MDServiceIdentificationPropertyType object) {
 				return createMDServiceIdentificationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDServiceIdentificationType(MDServiceIdentificationType object)
-			{
+			public Adapter caseMDServiceIdentificationType(MDServiceIdentificationType object) {
 				return createMDServiceIdentificationTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDSpatialRepresentationPropertyType(MDSpatialRepresentationPropertyType object)
-			{
+			public Adapter caseMDSpatialRepresentationPropertyType(MDSpatialRepresentationPropertyType object) {
 				return createMDSpatialRepresentationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDSpatialRepresentationTypeCodePropertyType(MDSpatialRepresentationTypeCodePropertyType object)
-			{
+			public Adapter caseMDSpatialRepresentationTypeCodePropertyType(MDSpatialRepresentationTypeCodePropertyType object) {
 				return createMDSpatialRepresentationTypeCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDStandardOrderProcessPropertyType(MDStandardOrderProcessPropertyType object)
-			{
+			public Adapter caseMDStandardOrderProcessPropertyType(MDStandardOrderProcessPropertyType object) {
 				return createMDStandardOrderProcessPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDStandardOrderProcessType(MDStandardOrderProcessType object)
-			{
+			public Adapter caseMDStandardOrderProcessType(MDStandardOrderProcessType object) {
 				return createMDStandardOrderProcessTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDTopicCategoryCodePropertyType(MDTopicCategoryCodePropertyType object)
-			{
+			public Adapter caseMDTopicCategoryCodePropertyType(MDTopicCategoryCodePropertyType object) {
 				return createMDTopicCategoryCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDTopologyLevelCodePropertyType(MDTopologyLevelCodePropertyType object)
-			{
+			public Adapter caseMDTopologyLevelCodePropertyType(MDTopologyLevelCodePropertyType object) {
 				return createMDTopologyLevelCodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDUsagePropertyType(MDUsagePropertyType object)
-			{
+			public Adapter caseMDUsagePropertyType(MDUsagePropertyType object) {
 				return createMDUsagePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDUsageType(MDUsageType object)
-			{
+			public Adapter caseMDUsageType(MDUsageType object) {
 				return createMDUsageTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDVectorSpatialRepresentationPropertyType(MDVectorSpatialRepresentationPropertyType object)
-			{
+			public Adapter caseMDVectorSpatialRepresentationPropertyType(MDVectorSpatialRepresentationPropertyType object) {
 				return createMDVectorSpatialRepresentationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMDVectorSpatialRepresentationType(MDVectorSpatialRepresentationType object)
-			{
+			public Adapter caseMDVectorSpatialRepresentationType(MDVectorSpatialRepresentationType object) {
 				return createMDVectorSpatialRepresentationTypeAdapter();
 			}
 			@Override
-			public Adapter casePTFreeTextPropertyType(PTFreeTextPropertyType object)
-			{
+			public Adapter casePTFreeTextPropertyType(PTFreeTextPropertyType object) {
 				return createPTFreeTextPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter casePTFreeTextType(PTFreeTextType object)
-			{
+			public Adapter casePTFreeTextType(PTFreeTextType object) {
 				return createPTFreeTextTypeAdapter();
 			}
 			@Override
-			public Adapter casePTLocaleContainerPropertyType(PTLocaleContainerPropertyType object)
-			{
+			public Adapter casePTLocaleContainerPropertyType(PTLocaleContainerPropertyType object) {
 				return createPTLocaleContainerPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter casePTLocaleContainerType(PTLocaleContainerType object)
-			{
+			public Adapter casePTLocaleContainerType(PTLocaleContainerType object) {
 				return createPTLocaleContainerTypeAdapter();
 			}
 			@Override
-			public Adapter casePTLocalePropertyType(PTLocalePropertyType object)
-			{
+			public Adapter casePTLocalePropertyType(PTLocalePropertyType object) {
 				return createPTLocalePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter casePTLocaleType(PTLocaleType object)
-			{
+			public Adapter casePTLocaleType(PTLocaleType object) {
 				return createPTLocaleTypeAdapter();
 			}
 			@Override
-			public Adapter caseRSIdentifierPropertyType(RSIdentifierPropertyType object)
-			{
+			public Adapter caseRSIdentifierPropertyType(RSIdentifierPropertyType object) {
 				return createRSIdentifierPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseRSIdentifierType(RSIdentifierType object)
-			{
+			public Adapter caseRSIdentifierType(RSIdentifierType object) {
 				return createRSIdentifierTypeAdapter();
 			}
 			@Override
-			public Adapter caseRSReferenceSystemPropertyType(RSReferenceSystemPropertyType object)
-			{
+			public Adapter caseRSReferenceSystemPropertyType(RSReferenceSystemPropertyType object) {
 				return createRSReferenceSystemPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseURLPropertyType(URLPropertyType object)
-			{
+			public Adapter caseURLPropertyType(URLPropertyType object) {
 				return createURLPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDocumentRoot(DocumentRoot object)
-			{
+			public Adapter caseDocumentRoot(DocumentRoot object) {
 				return createDocumentRootAdapter();
 			}
 			@Override
-			public Adapter caseAbstractObjectType(AbstractObjectType object)
-			{
+			public Adapter caseAbstractObjectType(AbstractObjectType object) {
 				return createAbstractObjectTypeAdapter();
 			}
 			@Override
-			public Adapter caseObjectReferencePropertyType(ObjectReferencePropertyType object)
-			{
+			public Adapter caseObjectReferencePropertyType(ObjectReferencePropertyType object) {
 				return createObjectReferencePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCharacterStringPropertyType(CharacterStringPropertyType object)
-			{
+			public Adapter caseCharacterStringPropertyType(CharacterStringPropertyType object) {
 				return createCharacterStringPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter defaultCase(EObject object)
-			{
+			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
 		};
@@ -1279,8 +1034,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdapter(Notifier target)
-	{
+	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
@@ -1295,8 +1049,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractDQCompletenessType
 	 * @generated
 	 */
-	public Adapter createAbstractDQCompletenessTypeAdapter()
-	{
+	public Adapter createAbstractDQCompletenessTypeAdapter() {
 		return null;
 	}
 
@@ -1310,8 +1063,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractDQElementType
 	 * @generated
 	 */
-	public Adapter createAbstractDQElementTypeAdapter()
-	{
+	public Adapter createAbstractDQElementTypeAdapter() {
 		return null;
 	}
 
@@ -1325,8 +1077,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractDQLogicalConsistencyType
 	 * @generated
 	 */
-	public Adapter createAbstractDQLogicalConsistencyTypeAdapter()
-	{
+	public Adapter createAbstractDQLogicalConsistencyTypeAdapter() {
 		return null;
 	}
 
@@ -1340,8 +1091,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractDQPositionalAccuracyType
 	 * @generated
 	 */
-	public Adapter createAbstractDQPositionalAccuracyTypeAdapter()
-	{
+	public Adapter createAbstractDQPositionalAccuracyTypeAdapter() {
 		return null;
 	}
 
@@ -1355,8 +1105,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractDQResultType
 	 * @generated
 	 */
-	public Adapter createAbstractDQResultTypeAdapter()
-	{
+	public Adapter createAbstractDQResultTypeAdapter() {
 		return null;
 	}
 
@@ -1370,8 +1119,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractDQTemporalAccuracyType
 	 * @generated
 	 */
-	public Adapter createAbstractDQTemporalAccuracyTypeAdapter()
-	{
+	public Adapter createAbstractDQTemporalAccuracyTypeAdapter() {
 		return null;
 	}
 
@@ -1385,8 +1133,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractDQThematicAccuracyType
 	 * @generated
 	 */
-	public Adapter createAbstractDQThematicAccuracyTypeAdapter()
-	{
+	public Adapter createAbstractDQThematicAccuracyTypeAdapter() {
 		return null;
 	}
 
@@ -1400,8 +1147,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractDSAggregateType
 	 * @generated
 	 */
-	public Adapter createAbstractDSAggregateTypeAdapter()
-	{
+	public Adapter createAbstractDSAggregateTypeAdapter() {
 		return null;
 	}
 
@@ -1415,8 +1161,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractEXGeographicExtentType
 	 * @generated
 	 */
-	public Adapter createAbstractEXGeographicExtentTypeAdapter()
-	{
+	public Adapter createAbstractEXGeographicExtentTypeAdapter() {
 		return null;
 	}
 
@@ -1430,8 +1175,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractMDContentInformationType
 	 * @generated
 	 */
-	public Adapter createAbstractMDContentInformationTypeAdapter()
-	{
+	public Adapter createAbstractMDContentInformationTypeAdapter() {
 		return null;
 	}
 
@@ -1445,8 +1189,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractMDIdentificationType
 	 * @generated
 	 */
-	public Adapter createAbstractMDIdentificationTypeAdapter()
-	{
+	public Adapter createAbstractMDIdentificationTypeAdapter() {
 		return null;
 	}
 
@@ -1460,8 +1203,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractMDSpatialRepresentationType
 	 * @generated
 	 */
-	public Adapter createAbstractMDSpatialRepresentationTypeAdapter()
-	{
+	public Adapter createAbstractMDSpatialRepresentationTypeAdapter() {
 		return null;
 	}
 
@@ -1475,8 +1217,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.AbstractRSReferenceSystemType
 	 * @generated
 	 */
-	public Adapter createAbstractRSReferenceSystemTypeAdapter()
-	{
+	public Adapter createAbstractRSReferenceSystemTypeAdapter() {
 		return null;
 	}
 
@@ -1490,8 +1231,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIAddressPropertyType
 	 * @generated
 	 */
-	public Adapter createCIAddressPropertyTypeAdapter()
-	{
+	public Adapter createCIAddressPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1505,8 +1245,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIAddressType
 	 * @generated
 	 */
-	public Adapter createCIAddressTypeAdapter()
-	{
+	public Adapter createCIAddressTypeAdapter() {
 		return null;
 	}
 
@@ -1520,8 +1259,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CICitationPropertyType
 	 * @generated
 	 */
-	public Adapter createCICitationPropertyTypeAdapter()
-	{
+	public Adapter createCICitationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1535,8 +1273,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CICitationType
 	 * @generated
 	 */
-	public Adapter createCICitationTypeAdapter()
-	{
+	public Adapter createCICitationTypeAdapter() {
 		return null;
 	}
 
@@ -1550,8 +1287,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIContactPropertyType
 	 * @generated
 	 */
-	public Adapter createCIContactPropertyTypeAdapter()
-	{
+	public Adapter createCIContactPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1565,8 +1301,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIContactType
 	 * @generated
 	 */
-	public Adapter createCIContactTypeAdapter()
-	{
+	public Adapter createCIContactTypeAdapter() {
 		return null;
 	}
 
@@ -1580,8 +1315,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIDatePropertyType
 	 * @generated
 	 */
-	public Adapter createCIDatePropertyTypeAdapter()
-	{
+	public Adapter createCIDatePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1595,8 +1329,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIDateType
 	 * @generated
 	 */
-	public Adapter createCIDateTypeAdapter()
-	{
+	public Adapter createCIDateTypeAdapter() {
 		return null;
 	}
 
@@ -1610,8 +1343,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIDateTypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createCIDateTypeCodePropertyTypeAdapter()
-	{
+	public Adapter createCIDateTypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1625,8 +1357,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIOnLineFunctionCodePropertyType
 	 * @generated
 	 */
-	public Adapter createCIOnLineFunctionCodePropertyTypeAdapter()
-	{
+	public Adapter createCIOnLineFunctionCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1640,8 +1371,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIOnlineResourcePropertyType
 	 * @generated
 	 */
-	public Adapter createCIOnlineResourcePropertyTypeAdapter()
-	{
+	public Adapter createCIOnlineResourcePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1655,8 +1385,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIOnlineResourceType
 	 * @generated
 	 */
-	public Adapter createCIOnlineResourceTypeAdapter()
-	{
+	public Adapter createCIOnlineResourceTypeAdapter() {
 		return null;
 	}
 
@@ -1670,8 +1399,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIPresentationFormCodePropertyType
 	 * @generated
 	 */
-	public Adapter createCIPresentationFormCodePropertyTypeAdapter()
-	{
+	public Adapter createCIPresentationFormCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1685,8 +1413,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIResponsiblePartyPropertyType
 	 * @generated
 	 */
-	public Adapter createCIResponsiblePartyPropertyTypeAdapter()
-	{
+	public Adapter createCIResponsiblePartyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1700,8 +1427,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIResponsiblePartyType
 	 * @generated
 	 */
-	public Adapter createCIResponsiblePartyTypeAdapter()
-	{
+	public Adapter createCIResponsiblePartyTypeAdapter() {
 		return null;
 	}
 
@@ -1715,8 +1441,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CIRoleCodePropertyType
 	 * @generated
 	 */
-	public Adapter createCIRoleCodePropertyTypeAdapter()
-	{
+	public Adapter createCIRoleCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1730,8 +1455,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CISeriesPropertyType
 	 * @generated
 	 */
-	public Adapter createCISeriesPropertyTypeAdapter()
-	{
+	public Adapter createCISeriesPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1745,8 +1469,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CISeriesType
 	 * @generated
 	 */
-	public Adapter createCISeriesTypeAdapter()
-	{
+	public Adapter createCISeriesTypeAdapter() {
 		return null;
 	}
 
@@ -1760,8 +1483,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CITelephonePropertyType
 	 * @generated
 	 */
-	public Adapter createCITelephonePropertyTypeAdapter()
-	{
+	public Adapter createCITelephonePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1775,8 +1497,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CITelephoneType
 	 * @generated
 	 */
-	public Adapter createCITelephoneTypeAdapter()
-	{
+	public Adapter createCITelephoneTypeAdapter() {
 		return null;
 	}
 
@@ -1790,8 +1511,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.CountryPropertyType
 	 * @generated
 	 */
-	public Adapter createCountryPropertyTypeAdapter()
-	{
+	public Adapter createCountryPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1805,8 +1525,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQAbsoluteExternalPositionalAccuracyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQAbsoluteExternalPositionalAccuracyPropertyTypeAdapter()
-	{
+	public Adapter createDQAbsoluteExternalPositionalAccuracyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1820,8 +1539,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQAbsoluteExternalPositionalAccuracyType
 	 * @generated
 	 */
-	public Adapter createDQAbsoluteExternalPositionalAccuracyTypeAdapter()
-	{
+	public Adapter createDQAbsoluteExternalPositionalAccuracyTypeAdapter() {
 		return null;
 	}
 
@@ -1835,8 +1553,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQAccuracyOfATimeMeasurementPropertyType
 	 * @generated
 	 */
-	public Adapter createDQAccuracyOfATimeMeasurementPropertyTypeAdapter()
-	{
+	public Adapter createDQAccuracyOfATimeMeasurementPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1850,8 +1567,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQAccuracyOfATimeMeasurementType
 	 * @generated
 	 */
-	public Adapter createDQAccuracyOfATimeMeasurementTypeAdapter()
-	{
+	public Adapter createDQAccuracyOfATimeMeasurementTypeAdapter() {
 		return null;
 	}
 
@@ -1865,8 +1581,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQCompletenessCommissionPropertyType
 	 * @generated
 	 */
-	public Adapter createDQCompletenessCommissionPropertyTypeAdapter()
-	{
+	public Adapter createDQCompletenessCommissionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1880,8 +1595,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQCompletenessCommissionType
 	 * @generated
 	 */
-	public Adapter createDQCompletenessCommissionTypeAdapter()
-	{
+	public Adapter createDQCompletenessCommissionTypeAdapter() {
 		return null;
 	}
 
@@ -1895,8 +1609,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQCompletenessOmissionPropertyType
 	 * @generated
 	 */
-	public Adapter createDQCompletenessOmissionPropertyTypeAdapter()
-	{
+	public Adapter createDQCompletenessOmissionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1910,8 +1623,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQCompletenessOmissionType
 	 * @generated
 	 */
-	public Adapter createDQCompletenessOmissionTypeAdapter()
-	{
+	public Adapter createDQCompletenessOmissionTypeAdapter() {
 		return null;
 	}
 
@@ -1925,8 +1637,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQCompletenessPropertyType
 	 * @generated
 	 */
-	public Adapter createDQCompletenessPropertyTypeAdapter()
-	{
+	public Adapter createDQCompletenessPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1940,8 +1651,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQConceptualConsistencyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQConceptualConsistencyPropertyTypeAdapter()
-	{
+	public Adapter createDQConceptualConsistencyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1955,8 +1665,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQConceptualConsistencyType
 	 * @generated
 	 */
-	public Adapter createDQConceptualConsistencyTypeAdapter()
-	{
+	public Adapter createDQConceptualConsistencyTypeAdapter() {
 		return null;
 	}
 
@@ -1970,8 +1679,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQConformanceResultPropertyType
 	 * @generated
 	 */
-	public Adapter createDQConformanceResultPropertyTypeAdapter()
-	{
+	public Adapter createDQConformanceResultPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -1985,8 +1693,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQConformanceResultType
 	 * @generated
 	 */
-	public Adapter createDQConformanceResultTypeAdapter()
-	{
+	public Adapter createDQConformanceResultTypeAdapter() {
 		return null;
 	}
 
@@ -2000,8 +1707,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQDataQualityPropertyType
 	 * @generated
 	 */
-	public Adapter createDQDataQualityPropertyTypeAdapter()
-	{
+	public Adapter createDQDataQualityPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2015,8 +1721,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQDataQualityType
 	 * @generated
 	 */
-	public Adapter createDQDataQualityTypeAdapter()
-	{
+	public Adapter createDQDataQualityTypeAdapter() {
 		return null;
 	}
 
@@ -2030,8 +1735,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQDomainConsistencyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQDomainConsistencyPropertyTypeAdapter()
-	{
+	public Adapter createDQDomainConsistencyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2045,8 +1749,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQDomainConsistencyType
 	 * @generated
 	 */
-	public Adapter createDQDomainConsistencyTypeAdapter()
-	{
+	public Adapter createDQDomainConsistencyTypeAdapter() {
 		return null;
 	}
 
@@ -2060,8 +1763,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQElementPropertyType
 	 * @generated
 	 */
-	public Adapter createDQElementPropertyTypeAdapter()
-	{
+	public Adapter createDQElementPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2075,8 +1777,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQEvaluationMethodTypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createDQEvaluationMethodTypeCodePropertyTypeAdapter()
-	{
+	public Adapter createDQEvaluationMethodTypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2090,8 +1791,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQFormatConsistencyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQFormatConsistencyPropertyTypeAdapter()
-	{
+	public Adapter createDQFormatConsistencyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2105,8 +1805,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQFormatConsistencyType
 	 * @generated
 	 */
-	public Adapter createDQFormatConsistencyTypeAdapter()
-	{
+	public Adapter createDQFormatConsistencyTypeAdapter() {
 		return null;
 	}
 
@@ -2120,8 +1819,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQGriddedDataPositionalAccuracyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQGriddedDataPositionalAccuracyPropertyTypeAdapter()
-	{
+	public Adapter createDQGriddedDataPositionalAccuracyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2135,8 +1833,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQGriddedDataPositionalAccuracyType
 	 * @generated
 	 */
-	public Adapter createDQGriddedDataPositionalAccuracyTypeAdapter()
-	{
+	public Adapter createDQGriddedDataPositionalAccuracyTypeAdapter() {
 		return null;
 	}
 
@@ -2150,8 +1847,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQLogicalConsistencyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQLogicalConsistencyPropertyTypeAdapter()
-	{
+	public Adapter createDQLogicalConsistencyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2165,8 +1861,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQNonQuantitativeAttributeAccuracyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQNonQuantitativeAttributeAccuracyPropertyTypeAdapter()
-	{
+	public Adapter createDQNonQuantitativeAttributeAccuracyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2180,8 +1875,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQNonQuantitativeAttributeAccuracyType
 	 * @generated
 	 */
-	public Adapter createDQNonQuantitativeAttributeAccuracyTypeAdapter()
-	{
+	public Adapter createDQNonQuantitativeAttributeAccuracyTypeAdapter() {
 		return null;
 	}
 
@@ -2195,8 +1889,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQPositionalAccuracyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQPositionalAccuracyPropertyTypeAdapter()
-	{
+	public Adapter createDQPositionalAccuracyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2210,8 +1903,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQQuantitativeAttributeAccuracyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQQuantitativeAttributeAccuracyPropertyTypeAdapter()
-	{
+	public Adapter createDQQuantitativeAttributeAccuracyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2225,8 +1917,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQQuantitativeAttributeAccuracyType
 	 * @generated
 	 */
-	public Adapter createDQQuantitativeAttributeAccuracyTypeAdapter()
-	{
+	public Adapter createDQQuantitativeAttributeAccuracyTypeAdapter() {
 		return null;
 	}
 
@@ -2240,8 +1931,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQQuantitativeResultPropertyType
 	 * @generated
 	 */
-	public Adapter createDQQuantitativeResultPropertyTypeAdapter()
-	{
+	public Adapter createDQQuantitativeResultPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2255,8 +1945,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQQuantitativeResultType
 	 * @generated
 	 */
-	public Adapter createDQQuantitativeResultTypeAdapter()
-	{
+	public Adapter createDQQuantitativeResultTypeAdapter() {
 		return null;
 	}
 
@@ -2270,8 +1959,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQRelativeInternalPositionalAccuracyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQRelativeInternalPositionalAccuracyPropertyTypeAdapter()
-	{
+	public Adapter createDQRelativeInternalPositionalAccuracyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2285,8 +1973,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQRelativeInternalPositionalAccuracyType
 	 * @generated
 	 */
-	public Adapter createDQRelativeInternalPositionalAccuracyTypeAdapter()
-	{
+	public Adapter createDQRelativeInternalPositionalAccuracyTypeAdapter() {
 		return null;
 	}
 
@@ -2300,8 +1987,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQResultPropertyType
 	 * @generated
 	 */
-	public Adapter createDQResultPropertyTypeAdapter()
-	{
+	public Adapter createDQResultPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2315,8 +2001,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQScopePropertyType
 	 * @generated
 	 */
-	public Adapter createDQScopePropertyTypeAdapter()
-	{
+	public Adapter createDQScopePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2330,8 +2015,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQScopeType
 	 * @generated
 	 */
-	public Adapter createDQScopeTypeAdapter()
-	{
+	public Adapter createDQScopeTypeAdapter() {
 		return null;
 	}
 
@@ -2345,8 +2029,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQTemporalAccuracyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQTemporalAccuracyPropertyTypeAdapter()
-	{
+	public Adapter createDQTemporalAccuracyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2360,8 +2043,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQTemporalConsistencyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQTemporalConsistencyPropertyTypeAdapter()
-	{
+	public Adapter createDQTemporalConsistencyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2375,8 +2057,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQTemporalConsistencyType
 	 * @generated
 	 */
-	public Adapter createDQTemporalConsistencyTypeAdapter()
-	{
+	public Adapter createDQTemporalConsistencyTypeAdapter() {
 		return null;
 	}
 
@@ -2390,8 +2071,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQTemporalValidityPropertyType
 	 * @generated
 	 */
-	public Adapter createDQTemporalValidityPropertyTypeAdapter()
-	{
+	public Adapter createDQTemporalValidityPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2405,8 +2085,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQTemporalValidityType
 	 * @generated
 	 */
-	public Adapter createDQTemporalValidityTypeAdapter()
-	{
+	public Adapter createDQTemporalValidityTypeAdapter() {
 		return null;
 	}
 
@@ -2420,8 +2099,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQThematicAccuracyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQThematicAccuracyPropertyTypeAdapter()
-	{
+	public Adapter createDQThematicAccuracyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2435,8 +2113,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQThematicClassificationCorrectnessPropertyType
 	 * @generated
 	 */
-	public Adapter createDQThematicClassificationCorrectnessPropertyTypeAdapter()
-	{
+	public Adapter createDQThematicClassificationCorrectnessPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2450,8 +2127,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQThematicClassificationCorrectnessType
 	 * @generated
 	 */
-	public Adapter createDQThematicClassificationCorrectnessTypeAdapter()
-	{
+	public Adapter createDQThematicClassificationCorrectnessTypeAdapter() {
 		return null;
 	}
 
@@ -2465,8 +2141,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQTopologicalConsistencyPropertyType
 	 * @generated
 	 */
-	public Adapter createDQTopologicalConsistencyPropertyTypeAdapter()
-	{
+	public Adapter createDQTopologicalConsistencyPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2480,8 +2155,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DQTopologicalConsistencyType
 	 * @generated
 	 */
-	public Adapter createDQTopologicalConsistencyTypeAdapter()
-	{
+	public Adapter createDQTopologicalConsistencyTypeAdapter() {
 		return null;
 	}
 
@@ -2495,8 +2169,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSAggregatePropertyType
 	 * @generated
 	 */
-	public Adapter createDSAggregatePropertyTypeAdapter()
-	{
+	public Adapter createDSAggregatePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2510,8 +2183,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSAssociationPropertyType
 	 * @generated
 	 */
-	public Adapter createDSAssociationPropertyTypeAdapter()
-	{
+	public Adapter createDSAssociationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2525,8 +2197,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSAssociationType
 	 * @generated
 	 */
-	public Adapter createDSAssociationTypeAdapter()
-	{
+	public Adapter createDSAssociationTypeAdapter() {
 		return null;
 	}
 
@@ -2540,8 +2211,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSAssociationTypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createDSAssociationTypeCodePropertyTypeAdapter()
-	{
+	public Adapter createDSAssociationTypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2555,8 +2225,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSDataSetPropertyType
 	 * @generated
 	 */
-	public Adapter createDSDataSetPropertyTypeAdapter()
-	{
+	public Adapter createDSDataSetPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2570,8 +2239,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSDataSetType
 	 * @generated
 	 */
-	public Adapter createDSDataSetTypeAdapter()
-	{
+	public Adapter createDSDataSetTypeAdapter() {
 		return null;
 	}
 
@@ -2585,8 +2253,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSInitiativePropertyType
 	 * @generated
 	 */
-	public Adapter createDSInitiativePropertyTypeAdapter()
-	{
+	public Adapter createDSInitiativePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2600,8 +2267,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSInitiativeType
 	 * @generated
 	 */
-	public Adapter createDSInitiativeTypeAdapter()
-	{
+	public Adapter createDSInitiativeTypeAdapter() {
 		return null;
 	}
 
@@ -2615,8 +2281,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSInitiativeTypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createDSInitiativeTypeCodePropertyTypeAdapter()
-	{
+	public Adapter createDSInitiativeTypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2630,8 +2295,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSOtherAggregatePropertyType
 	 * @generated
 	 */
-	public Adapter createDSOtherAggregatePropertyTypeAdapter()
-	{
+	public Adapter createDSOtherAggregatePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2645,8 +2309,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSOtherAggregateType
 	 * @generated
 	 */
-	public Adapter createDSOtherAggregateTypeAdapter()
-	{
+	public Adapter createDSOtherAggregateTypeAdapter() {
 		return null;
 	}
 
@@ -2660,8 +2323,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSPlatformPropertyType
 	 * @generated
 	 */
-	public Adapter createDSPlatformPropertyTypeAdapter()
-	{
+	public Adapter createDSPlatformPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2675,8 +2337,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSPlatformType
 	 * @generated
 	 */
-	public Adapter createDSPlatformTypeAdapter()
-	{
+	public Adapter createDSPlatformTypeAdapter() {
 		return null;
 	}
 
@@ -2690,8 +2351,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSProductionSeriesPropertyType
 	 * @generated
 	 */
-	public Adapter createDSProductionSeriesPropertyTypeAdapter()
-	{
+	public Adapter createDSProductionSeriesPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2705,8 +2365,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSProductionSeriesType
 	 * @generated
 	 */
-	public Adapter createDSProductionSeriesTypeAdapter()
-	{
+	public Adapter createDSProductionSeriesTypeAdapter() {
 		return null;
 	}
 
@@ -2720,8 +2379,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSSensorPropertyType
 	 * @generated
 	 */
-	public Adapter createDSSensorPropertyTypeAdapter()
-	{
+	public Adapter createDSSensorPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2735,8 +2393,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSSensorType
 	 * @generated
 	 */
-	public Adapter createDSSensorTypeAdapter()
-	{
+	public Adapter createDSSensorTypeAdapter() {
 		return null;
 	}
 
@@ -2750,8 +2407,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSSeriesPropertyType
 	 * @generated
 	 */
-	public Adapter createDSSeriesPropertyTypeAdapter()
-	{
+	public Adapter createDSSeriesPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2765,8 +2421,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSSeriesType
 	 * @generated
 	 */
-	public Adapter createDSSeriesTypeAdapter()
-	{
+	public Adapter createDSSeriesTypeAdapter() {
 		return null;
 	}
 
@@ -2780,8 +2435,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSStereoMatePropertyType
 	 * @generated
 	 */
-	public Adapter createDSStereoMatePropertyTypeAdapter()
-	{
+	public Adapter createDSStereoMatePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2795,8 +2449,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DSStereoMateType
 	 * @generated
 	 */
-	public Adapter createDSStereoMateTypeAdapter()
-	{
+	public Adapter createDSStereoMateTypeAdapter() {
 		return null;
 	}
 
@@ -2810,8 +2463,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXBoundingPolygonPropertyType
 	 * @generated
 	 */
-	public Adapter createEXBoundingPolygonPropertyTypeAdapter()
-	{
+	public Adapter createEXBoundingPolygonPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2825,8 +2477,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXBoundingPolygonType
 	 * @generated
 	 */
-	public Adapter createEXBoundingPolygonTypeAdapter()
-	{
+	public Adapter createEXBoundingPolygonTypeAdapter() {
 		return null;
 	}
 
@@ -2840,8 +2491,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXExtentPropertyType
 	 * @generated
 	 */
-	public Adapter createEXExtentPropertyTypeAdapter()
-	{
+	public Adapter createEXExtentPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2855,8 +2505,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXExtentType
 	 * @generated
 	 */
-	public Adapter createEXExtentTypeAdapter()
-	{
+	public Adapter createEXExtentTypeAdapter() {
 		return null;
 	}
 
@@ -2870,8 +2519,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXGeographicBoundingBoxPropertyType
 	 * @generated
 	 */
-	public Adapter createEXGeographicBoundingBoxPropertyTypeAdapter()
-	{
+	public Adapter createEXGeographicBoundingBoxPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2885,8 +2533,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXGeographicBoundingBoxType
 	 * @generated
 	 */
-	public Adapter createEXGeographicBoundingBoxTypeAdapter()
-	{
+	public Adapter createEXGeographicBoundingBoxTypeAdapter() {
 		return null;
 	}
 
@@ -2900,8 +2547,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXGeographicDescriptionPropertyType
 	 * @generated
 	 */
-	public Adapter createEXGeographicDescriptionPropertyTypeAdapter()
-	{
+	public Adapter createEXGeographicDescriptionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2915,8 +2561,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXGeographicDescriptionType
 	 * @generated
 	 */
-	public Adapter createEXGeographicDescriptionTypeAdapter()
-	{
+	public Adapter createEXGeographicDescriptionTypeAdapter() {
 		return null;
 	}
 
@@ -2930,8 +2575,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXGeographicExtentPropertyType
 	 * @generated
 	 */
-	public Adapter createEXGeographicExtentPropertyTypeAdapter()
-	{
+	public Adapter createEXGeographicExtentPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2945,8 +2589,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXSpatialTemporalExtentPropertyType
 	 * @generated
 	 */
-	public Adapter createEXSpatialTemporalExtentPropertyTypeAdapter()
-	{
+	public Adapter createEXSpatialTemporalExtentPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2960,8 +2603,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXSpatialTemporalExtentType
 	 * @generated
 	 */
-	public Adapter createEXSpatialTemporalExtentTypeAdapter()
-	{
+	public Adapter createEXSpatialTemporalExtentTypeAdapter() {
 		return null;
 	}
 
@@ -2975,8 +2617,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXTemporalExtentPropertyType
 	 * @generated
 	 */
-	public Adapter createEXTemporalExtentPropertyTypeAdapter()
-	{
+	public Adapter createEXTemporalExtentPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2990,8 +2631,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXTemporalExtentType
 	 * @generated
 	 */
-	public Adapter createEXTemporalExtentTypeAdapter()
-	{
+	public Adapter createEXTemporalExtentTypeAdapter() {
 		return null;
 	}
 
@@ -3005,8 +2645,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXVerticalExtentPropertyType
 	 * @generated
 	 */
-	public Adapter createEXVerticalExtentPropertyTypeAdapter()
-	{
+	public Adapter createEXVerticalExtentPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3020,8 +2659,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.EXVerticalExtentType
 	 * @generated
 	 */
-	public Adapter createEXVerticalExtentTypeAdapter()
-	{
+	public Adapter createEXVerticalExtentTypeAdapter() {
 		return null;
 	}
 
@@ -3035,8 +2673,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.LanguageCodePropertyType
 	 * @generated
 	 */
-	public Adapter createLanguageCodePropertyTypeAdapter()
-	{
+	public Adapter createLanguageCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3050,8 +2687,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.LILineagePropertyType
 	 * @generated
 	 */
-	public Adapter createLILineagePropertyTypeAdapter()
-	{
+	public Adapter createLILineagePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3065,8 +2701,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.LILineageType
 	 * @generated
 	 */
-	public Adapter createLILineageTypeAdapter()
-	{
+	public Adapter createLILineageTypeAdapter() {
 		return null;
 	}
 
@@ -3080,8 +2715,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.LIProcessStepPropertyType
 	 * @generated
 	 */
-	public Adapter createLIProcessStepPropertyTypeAdapter()
-	{
+	public Adapter createLIProcessStepPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3095,8 +2729,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.LIProcessStepType
 	 * @generated
 	 */
-	public Adapter createLIProcessStepTypeAdapter()
-	{
+	public Adapter createLIProcessStepTypeAdapter() {
 		return null;
 	}
 
@@ -3110,8 +2743,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.LISourcePropertyType
 	 * @generated
 	 */
-	public Adapter createLISourcePropertyTypeAdapter()
-	{
+	public Adapter createLISourcePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3125,8 +2757,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.LISourceType
 	 * @generated
 	 */
-	public Adapter createLISourceTypeAdapter()
-	{
+	public Adapter createLISourceTypeAdapter() {
 		return null;
 	}
 
@@ -3140,8 +2771,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.LocalisedCharacterStringPropertyType
 	 * @generated
 	 */
-	public Adapter createLocalisedCharacterStringPropertyTypeAdapter()
-	{
+	public Adapter createLocalisedCharacterStringPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3155,8 +2785,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.LocalisedCharacterStringType
 	 * @generated
 	 */
-	public Adapter createLocalisedCharacterStringTypeAdapter()
-	{
+	public Adapter createLocalisedCharacterStringTypeAdapter() {
 		return null;
 	}
 
@@ -3170,8 +2799,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDAggregateInformationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDAggregateInformationPropertyTypeAdapter()
-	{
+	public Adapter createMDAggregateInformationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3185,8 +2813,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDAggregateInformationType
 	 * @generated
 	 */
-	public Adapter createMDAggregateInformationTypeAdapter()
-	{
+	public Adapter createMDAggregateInformationTypeAdapter() {
 		return null;
 	}
 
@@ -3200,8 +2827,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDApplicationSchemaInformationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDApplicationSchemaInformationPropertyTypeAdapter()
-	{
+	public Adapter createMDApplicationSchemaInformationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3215,8 +2841,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDApplicationSchemaInformationType
 	 * @generated
 	 */
-	public Adapter createMDApplicationSchemaInformationTypeAdapter()
-	{
+	public Adapter createMDApplicationSchemaInformationTypeAdapter() {
 		return null;
 	}
 
@@ -3230,8 +2855,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDBandPropertyType
 	 * @generated
 	 */
-	public Adapter createMDBandPropertyTypeAdapter()
-	{
+	public Adapter createMDBandPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3245,8 +2869,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDBandType
 	 * @generated
 	 */
-	public Adapter createMDBandTypeAdapter()
-	{
+	public Adapter createMDBandTypeAdapter() {
 		return null;
 	}
 
@@ -3260,8 +2883,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDBrowseGraphicPropertyType
 	 * @generated
 	 */
-	public Adapter createMDBrowseGraphicPropertyTypeAdapter()
-	{
+	public Adapter createMDBrowseGraphicPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3275,8 +2897,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDBrowseGraphicType
 	 * @generated
 	 */
-	public Adapter createMDBrowseGraphicTypeAdapter()
-	{
+	public Adapter createMDBrowseGraphicTypeAdapter() {
 		return null;
 	}
 
@@ -3290,8 +2911,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDCellGeometryCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDCellGeometryCodePropertyTypeAdapter()
-	{
+	public Adapter createMDCellGeometryCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3305,8 +2925,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDCharacterSetCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDCharacterSetCodePropertyTypeAdapter()
-	{
+	public Adapter createMDCharacterSetCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3320,8 +2939,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDClassificationCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDClassificationCodePropertyTypeAdapter()
-	{
+	public Adapter createMDClassificationCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3335,8 +2953,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDConstraintsPropertyType
 	 * @generated
 	 */
-	public Adapter createMDConstraintsPropertyTypeAdapter()
-	{
+	public Adapter createMDConstraintsPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3350,8 +2967,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDConstraintsType
 	 * @generated
 	 */
-	public Adapter createMDConstraintsTypeAdapter()
-	{
+	public Adapter createMDConstraintsTypeAdapter() {
 		return null;
 	}
 
@@ -3365,8 +2981,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDContentInformationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDContentInformationPropertyTypeAdapter()
-	{
+	public Adapter createMDContentInformationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3380,8 +2995,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDCoverageContentTypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDCoverageContentTypeCodePropertyTypeAdapter()
-	{
+	public Adapter createMDCoverageContentTypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3395,8 +3009,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDCoverageDescriptionPropertyType
 	 * @generated
 	 */
-	public Adapter createMDCoverageDescriptionPropertyTypeAdapter()
-	{
+	public Adapter createMDCoverageDescriptionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3410,8 +3023,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDCoverageDescriptionType
 	 * @generated
 	 */
-	public Adapter createMDCoverageDescriptionTypeAdapter()
-	{
+	public Adapter createMDCoverageDescriptionTypeAdapter() {
 		return null;
 	}
 
@@ -3425,8 +3037,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDataIdentificationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDDataIdentificationPropertyTypeAdapter()
-	{
+	public Adapter createMDDataIdentificationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3440,8 +3051,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDataIdentificationType
 	 * @generated
 	 */
-	public Adapter createMDDataIdentificationTypeAdapter()
-	{
+	public Adapter createMDDataIdentificationTypeAdapter() {
 		return null;
 	}
 
@@ -3455,8 +3065,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDatatypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDDatatypeCodePropertyTypeAdapter()
-	{
+	public Adapter createMDDatatypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3470,8 +3079,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDigitalTransferOptionsPropertyType
 	 * @generated
 	 */
-	public Adapter createMDDigitalTransferOptionsPropertyTypeAdapter()
-	{
+	public Adapter createMDDigitalTransferOptionsPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3485,8 +3093,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDigitalTransferOptionsType
 	 * @generated
 	 */
-	public Adapter createMDDigitalTransferOptionsTypeAdapter()
-	{
+	public Adapter createMDDigitalTransferOptionsTypeAdapter() {
 		return null;
 	}
 
@@ -3500,8 +3107,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDimensionNameTypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDDimensionNameTypeCodePropertyTypeAdapter()
-	{
+	public Adapter createMDDimensionNameTypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3515,8 +3121,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDimensionPropertyType
 	 * @generated
 	 */
-	public Adapter createMDDimensionPropertyTypeAdapter()
-	{
+	public Adapter createMDDimensionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3530,8 +3135,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDimensionType
 	 * @generated
 	 */
-	public Adapter createMDDimensionTypeAdapter()
-	{
+	public Adapter createMDDimensionTypeAdapter() {
 		return null;
 	}
 
@@ -3545,8 +3149,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDistributionPropertyType
 	 * @generated
 	 */
-	public Adapter createMDDistributionPropertyTypeAdapter()
-	{
+	public Adapter createMDDistributionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3560,8 +3163,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDistributionType
 	 * @generated
 	 */
-	public Adapter createMDDistributionTypeAdapter()
-	{
+	public Adapter createMDDistributionTypeAdapter() {
 		return null;
 	}
 
@@ -3575,8 +3177,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDistributionUnitsPropertyType
 	 * @generated
 	 */
-	public Adapter createMDDistributionUnitsPropertyTypeAdapter()
-	{
+	public Adapter createMDDistributionUnitsPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3590,8 +3191,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDistributorPropertyType
 	 * @generated
 	 */
-	public Adapter createMDDistributorPropertyTypeAdapter()
-	{
+	public Adapter createMDDistributorPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3605,8 +3205,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDDistributorType
 	 * @generated
 	 */
-	public Adapter createMDDistributorTypeAdapter()
-	{
+	public Adapter createMDDistributorTypeAdapter() {
 		return null;
 	}
 
@@ -3620,8 +3219,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDExtendedElementInformationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDExtendedElementInformationPropertyTypeAdapter()
-	{
+	public Adapter createMDExtendedElementInformationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3635,8 +3233,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDExtendedElementInformationType
 	 * @generated
 	 */
-	public Adapter createMDExtendedElementInformationTypeAdapter()
-	{
+	public Adapter createMDExtendedElementInformationTypeAdapter() {
 		return null;
 	}
 
@@ -3650,8 +3247,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDFeatureCatalogueDescriptionPropertyType
 	 * @generated
 	 */
-	public Adapter createMDFeatureCatalogueDescriptionPropertyTypeAdapter()
-	{
+	public Adapter createMDFeatureCatalogueDescriptionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3665,8 +3261,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDFeatureCatalogueDescriptionType
 	 * @generated
 	 */
-	public Adapter createMDFeatureCatalogueDescriptionTypeAdapter()
-	{
+	public Adapter createMDFeatureCatalogueDescriptionTypeAdapter() {
 		return null;
 	}
 
@@ -3680,8 +3275,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDFormatPropertyType
 	 * @generated
 	 */
-	public Adapter createMDFormatPropertyTypeAdapter()
-	{
+	public Adapter createMDFormatPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3695,8 +3289,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDFormatType
 	 * @generated
 	 */
-	public Adapter createMDFormatTypeAdapter()
-	{
+	public Adapter createMDFormatTypeAdapter() {
 		return null;
 	}
 
@@ -3710,8 +3303,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDGeometricObjectsPropertyType
 	 * @generated
 	 */
-	public Adapter createMDGeometricObjectsPropertyTypeAdapter()
-	{
+	public Adapter createMDGeometricObjectsPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3725,8 +3317,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDGeometricObjectsType
 	 * @generated
 	 */
-	public Adapter createMDGeometricObjectsTypeAdapter()
-	{
+	public Adapter createMDGeometricObjectsTypeAdapter() {
 		return null;
 	}
 
@@ -3740,8 +3331,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDGeometricObjectTypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDGeometricObjectTypeCodePropertyTypeAdapter()
-	{
+	public Adapter createMDGeometricObjectTypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3755,8 +3345,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDGeorectifiedPropertyType
 	 * @generated
 	 */
-	public Adapter createMDGeorectifiedPropertyTypeAdapter()
-	{
+	public Adapter createMDGeorectifiedPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3770,8 +3359,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDGeorectifiedType
 	 * @generated
 	 */
-	public Adapter createMDGeorectifiedTypeAdapter()
-	{
+	public Adapter createMDGeorectifiedTypeAdapter() {
 		return null;
 	}
 
@@ -3785,8 +3373,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDGeoreferenceablePropertyType
 	 * @generated
 	 */
-	public Adapter createMDGeoreferenceablePropertyTypeAdapter()
-	{
+	public Adapter createMDGeoreferenceablePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3800,8 +3387,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDGeoreferenceableType
 	 * @generated
 	 */
-	public Adapter createMDGeoreferenceableTypeAdapter()
-	{
+	public Adapter createMDGeoreferenceableTypeAdapter() {
 		return null;
 	}
 
@@ -3815,8 +3401,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDGridSpatialRepresentationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDGridSpatialRepresentationPropertyTypeAdapter()
-	{
+	public Adapter createMDGridSpatialRepresentationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3830,8 +3415,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDGridSpatialRepresentationType
 	 * @generated
 	 */
-	public Adapter createMDGridSpatialRepresentationTypeAdapter()
-	{
+	public Adapter createMDGridSpatialRepresentationTypeAdapter() {
 		return null;
 	}
 
@@ -3845,8 +3429,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDIdentificationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDIdentificationPropertyTypeAdapter()
-	{
+	public Adapter createMDIdentificationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3860,8 +3443,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDIdentifierPropertyType
 	 * @generated
 	 */
-	public Adapter createMDIdentifierPropertyTypeAdapter()
-	{
+	public Adapter createMDIdentifierPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3875,8 +3457,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDIdentifierType
 	 * @generated
 	 */
-	public Adapter createMDIdentifierTypeAdapter()
-	{
+	public Adapter createMDIdentifierTypeAdapter() {
 		return null;
 	}
 
@@ -3890,8 +3471,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDImageDescriptionPropertyType
 	 * @generated
 	 */
-	public Adapter createMDImageDescriptionPropertyTypeAdapter()
-	{
+	public Adapter createMDImageDescriptionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3905,8 +3485,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDImageDescriptionType
 	 * @generated
 	 */
-	public Adapter createMDImageDescriptionTypeAdapter()
-	{
+	public Adapter createMDImageDescriptionTypeAdapter() {
 		return null;
 	}
 
@@ -3920,8 +3499,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDImagingConditionCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDImagingConditionCodePropertyTypeAdapter()
-	{
+	public Adapter createMDImagingConditionCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3935,8 +3513,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDKeywordsPropertyType
 	 * @generated
 	 */
-	public Adapter createMDKeywordsPropertyTypeAdapter()
-	{
+	public Adapter createMDKeywordsPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3950,8 +3527,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDKeywordsType
 	 * @generated
 	 */
-	public Adapter createMDKeywordsTypeAdapter()
-	{
+	public Adapter createMDKeywordsTypeAdapter() {
 		return null;
 	}
 
@@ -3965,8 +3541,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDKeywordTypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDKeywordTypeCodePropertyTypeAdapter()
-	{
+	public Adapter createMDKeywordTypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3980,8 +3555,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDLegalConstraintsPropertyType
 	 * @generated
 	 */
-	public Adapter createMDLegalConstraintsPropertyTypeAdapter()
-	{
+	public Adapter createMDLegalConstraintsPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3995,8 +3569,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDLegalConstraintsType
 	 * @generated
 	 */
-	public Adapter createMDLegalConstraintsTypeAdapter()
-	{
+	public Adapter createMDLegalConstraintsTypeAdapter() {
 		return null;
 	}
 
@@ -4010,8 +3583,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMaintenanceFrequencyCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDMaintenanceFrequencyCodePropertyTypeAdapter()
-	{
+	public Adapter createMDMaintenanceFrequencyCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4025,8 +3597,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMaintenanceInformationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDMaintenanceInformationPropertyTypeAdapter()
-	{
+	public Adapter createMDMaintenanceInformationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4040,8 +3611,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMaintenanceInformationType
 	 * @generated
 	 */
-	public Adapter createMDMaintenanceInformationTypeAdapter()
-	{
+	public Adapter createMDMaintenanceInformationTypeAdapter() {
 		return null;
 	}
 
@@ -4055,8 +3625,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMediumFormatCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDMediumFormatCodePropertyTypeAdapter()
-	{
+	public Adapter createMDMediumFormatCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4070,8 +3639,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMediumNameCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDMediumNameCodePropertyTypeAdapter()
-	{
+	public Adapter createMDMediumNameCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4085,8 +3653,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMediumPropertyType
 	 * @generated
 	 */
-	public Adapter createMDMediumPropertyTypeAdapter()
-	{
+	public Adapter createMDMediumPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4100,8 +3667,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMediumType
 	 * @generated
 	 */
-	public Adapter createMDMediumTypeAdapter()
-	{
+	public Adapter createMDMediumTypeAdapter() {
 		return null;
 	}
 
@@ -4115,8 +3681,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMetadataExtensionInformationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDMetadataExtensionInformationPropertyTypeAdapter()
-	{
+	public Adapter createMDMetadataExtensionInformationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4130,8 +3695,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMetadataExtensionInformationType
 	 * @generated
 	 */
-	public Adapter createMDMetadataExtensionInformationTypeAdapter()
-	{
+	public Adapter createMDMetadataExtensionInformationTypeAdapter() {
 		return null;
 	}
 
@@ -4145,8 +3709,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMetadataPropertyType
 	 * @generated
 	 */
-	public Adapter createMDMetadataPropertyTypeAdapter()
-	{
+	public Adapter createMDMetadataPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4160,8 +3723,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDMetadataType
 	 * @generated
 	 */
-	public Adapter createMDMetadataTypeAdapter()
-	{
+	public Adapter createMDMetadataTypeAdapter() {
 		return null;
 	}
 
@@ -4175,8 +3737,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDObligationCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDObligationCodePropertyTypeAdapter()
-	{
+	public Adapter createMDObligationCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4190,8 +3751,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDPixelOrientationCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDPixelOrientationCodePropertyTypeAdapter()
-	{
+	public Adapter createMDPixelOrientationCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4205,8 +3765,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDPortrayalCatalogueReferencePropertyType
 	 * @generated
 	 */
-	public Adapter createMDPortrayalCatalogueReferencePropertyTypeAdapter()
-	{
+	public Adapter createMDPortrayalCatalogueReferencePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4220,8 +3779,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDPortrayalCatalogueReferenceType
 	 * @generated
 	 */
-	public Adapter createMDPortrayalCatalogueReferenceTypeAdapter()
-	{
+	public Adapter createMDPortrayalCatalogueReferenceTypeAdapter() {
 		return null;
 	}
 
@@ -4235,8 +3793,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDProgressCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDProgressCodePropertyTypeAdapter()
-	{
+	public Adapter createMDProgressCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4250,8 +3807,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDRangeDimensionPropertyType
 	 * @generated
 	 */
-	public Adapter createMDRangeDimensionPropertyTypeAdapter()
-	{
+	public Adapter createMDRangeDimensionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4265,8 +3821,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDRangeDimensionType
 	 * @generated
 	 */
-	public Adapter createMDRangeDimensionTypeAdapter()
-	{
+	public Adapter createMDRangeDimensionTypeAdapter() {
 		return null;
 	}
 
@@ -4280,8 +3835,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDReferenceSystemPropertyType
 	 * @generated
 	 */
-	public Adapter createMDReferenceSystemPropertyTypeAdapter()
-	{
+	public Adapter createMDReferenceSystemPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4295,8 +3849,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDReferenceSystemType
 	 * @generated
 	 */
-	public Adapter createMDReferenceSystemTypeAdapter()
-	{
+	public Adapter createMDReferenceSystemTypeAdapter() {
 		return null;
 	}
 
@@ -4310,8 +3863,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDRepresentativeFractionPropertyType
 	 * @generated
 	 */
-	public Adapter createMDRepresentativeFractionPropertyTypeAdapter()
-	{
+	public Adapter createMDRepresentativeFractionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4325,8 +3877,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDRepresentativeFractionType
 	 * @generated
 	 */
-	public Adapter createMDRepresentativeFractionTypeAdapter()
-	{
+	public Adapter createMDRepresentativeFractionTypeAdapter() {
 		return null;
 	}
 
@@ -4340,8 +3891,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDResolutionPropertyType
 	 * @generated
 	 */
-	public Adapter createMDResolutionPropertyTypeAdapter()
-	{
+	public Adapter createMDResolutionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4355,8 +3905,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDResolutionType
 	 * @generated
 	 */
-	public Adapter createMDResolutionTypeAdapter()
-	{
+	public Adapter createMDResolutionTypeAdapter() {
 		return null;
 	}
 
@@ -4370,8 +3919,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDRestrictionCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDRestrictionCodePropertyTypeAdapter()
-	{
+	public Adapter createMDRestrictionCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4385,8 +3933,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDScopeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDScopeCodePropertyTypeAdapter()
-	{
+	public Adapter createMDScopeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4400,8 +3947,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDScopeDescriptionPropertyType
 	 * @generated
 	 */
-	public Adapter createMDScopeDescriptionPropertyTypeAdapter()
-	{
+	public Adapter createMDScopeDescriptionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4415,8 +3961,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDScopeDescriptionType
 	 * @generated
 	 */
-	public Adapter createMDScopeDescriptionTypeAdapter()
-	{
+	public Adapter createMDScopeDescriptionTypeAdapter() {
 		return null;
 	}
 
@@ -4430,8 +3975,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDSecurityConstraintsPropertyType
 	 * @generated
 	 */
-	public Adapter createMDSecurityConstraintsPropertyTypeAdapter()
-	{
+	public Adapter createMDSecurityConstraintsPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4445,8 +3989,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDSecurityConstraintsType
 	 * @generated
 	 */
-	public Adapter createMDSecurityConstraintsTypeAdapter()
-	{
+	public Adapter createMDSecurityConstraintsTypeAdapter() {
 		return null;
 	}
 
@@ -4460,8 +4003,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDServiceIdentificationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDServiceIdentificationPropertyTypeAdapter()
-	{
+	public Adapter createMDServiceIdentificationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4475,8 +4017,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDServiceIdentificationType
 	 * @generated
 	 */
-	public Adapter createMDServiceIdentificationTypeAdapter()
-	{
+	public Adapter createMDServiceIdentificationTypeAdapter() {
 		return null;
 	}
 
@@ -4490,8 +4031,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDSpatialRepresentationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDSpatialRepresentationPropertyTypeAdapter()
-	{
+	public Adapter createMDSpatialRepresentationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4505,8 +4045,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDSpatialRepresentationTypeCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDSpatialRepresentationTypeCodePropertyTypeAdapter()
-	{
+	public Adapter createMDSpatialRepresentationTypeCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4520,8 +4059,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDStandardOrderProcessPropertyType
 	 * @generated
 	 */
-	public Adapter createMDStandardOrderProcessPropertyTypeAdapter()
-	{
+	public Adapter createMDStandardOrderProcessPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4535,8 +4073,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDStandardOrderProcessType
 	 * @generated
 	 */
-	public Adapter createMDStandardOrderProcessTypeAdapter()
-	{
+	public Adapter createMDStandardOrderProcessTypeAdapter() {
 		return null;
 	}
 
@@ -4550,8 +4087,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDTopicCategoryCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDTopicCategoryCodePropertyTypeAdapter()
-	{
+	public Adapter createMDTopicCategoryCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4565,8 +4101,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDTopologyLevelCodePropertyType
 	 * @generated
 	 */
-	public Adapter createMDTopologyLevelCodePropertyTypeAdapter()
-	{
+	public Adapter createMDTopologyLevelCodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4580,8 +4115,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDUsagePropertyType
 	 * @generated
 	 */
-	public Adapter createMDUsagePropertyTypeAdapter()
-	{
+	public Adapter createMDUsagePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4595,8 +4129,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDUsageType
 	 * @generated
 	 */
-	public Adapter createMDUsageTypeAdapter()
-	{
+	public Adapter createMDUsageTypeAdapter() {
 		return null;
 	}
 
@@ -4610,8 +4143,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDVectorSpatialRepresentationPropertyType
 	 * @generated
 	 */
-	public Adapter createMDVectorSpatialRepresentationPropertyTypeAdapter()
-	{
+	public Adapter createMDVectorSpatialRepresentationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4625,8 +4157,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.MDVectorSpatialRepresentationType
 	 * @generated
 	 */
-	public Adapter createMDVectorSpatialRepresentationTypeAdapter()
-	{
+	public Adapter createMDVectorSpatialRepresentationTypeAdapter() {
 		return null;
 	}
 
@@ -4640,8 +4171,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.PTFreeTextPropertyType
 	 * @generated
 	 */
-	public Adapter createPTFreeTextPropertyTypeAdapter()
-	{
+	public Adapter createPTFreeTextPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4655,8 +4185,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.PTFreeTextType
 	 * @generated
 	 */
-	public Adapter createPTFreeTextTypeAdapter()
-	{
+	public Adapter createPTFreeTextTypeAdapter() {
 		return null;
 	}
 
@@ -4670,8 +4199,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.PTLocaleContainerPropertyType
 	 * @generated
 	 */
-	public Adapter createPTLocaleContainerPropertyTypeAdapter()
-	{
+	public Adapter createPTLocaleContainerPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4685,8 +4213,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.PTLocaleContainerType
 	 * @generated
 	 */
-	public Adapter createPTLocaleContainerTypeAdapter()
-	{
+	public Adapter createPTLocaleContainerTypeAdapter() {
 		return null;
 	}
 
@@ -4700,8 +4227,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.PTLocalePropertyType
 	 * @generated
 	 */
-	public Adapter createPTLocalePropertyTypeAdapter()
-	{
+	public Adapter createPTLocalePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4715,8 +4241,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.PTLocaleType
 	 * @generated
 	 */
-	public Adapter createPTLocaleTypeAdapter()
-	{
+	public Adapter createPTLocaleTypeAdapter() {
 		return null;
 	}
 
@@ -4730,8 +4255,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.RSIdentifierPropertyType
 	 * @generated
 	 */
-	public Adapter createRSIdentifierPropertyTypeAdapter()
-	{
+	public Adapter createRSIdentifierPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4745,8 +4269,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.RSIdentifierType
 	 * @generated
 	 */
-	public Adapter createRSIdentifierTypeAdapter()
-	{
+	public Adapter createRSIdentifierTypeAdapter() {
 		return null;
 	}
 
@@ -4760,8 +4283,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.RSReferenceSystemPropertyType
 	 * @generated
 	 */
-	public Adapter createRSReferenceSystemPropertyTypeAdapter()
-	{
+	public Adapter createRSReferenceSystemPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4775,8 +4297,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.URLPropertyType
 	 * @generated
 	 */
-	public Adapter createURLPropertyTypeAdapter()
-	{
+	public Adapter createURLPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4790,8 +4311,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gmd.DocumentRoot
 	 * @generated
 	 */
-	public Adapter createDocumentRootAdapter()
-	{
+	public Adapter createDocumentRootAdapter() {
 		return null;
 	}
 
@@ -4805,8 +4325,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.AbstractObjectType
 	 * @generated
 	 */
-	public Adapter createAbstractObjectTypeAdapter()
-	{
+	public Adapter createAbstractObjectTypeAdapter() {
 		return null;
 	}
 
@@ -4820,8 +4339,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.ObjectReferencePropertyType
 	 * @generated
 	 */
-	public Adapter createObjectReferencePropertyTypeAdapter()
-	{
+	public Adapter createObjectReferencePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4835,8 +4353,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.CharacterStringPropertyType
 	 * @generated
 	 */
-	public Adapter createCharacterStringPropertyTypeAdapter()
-	{
+	public Adapter createCharacterStringPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4848,8 +4365,7 @@ public class GMDAdapterFactory extends AdapterFactoryImpl
 	 * @return the new adapter.
 	 * @generated
 	 */
-	public Adapter createEObjectAdapter()
-	{
+	public Adapter createEObjectAdapter() {
 		return null;
 	}
 

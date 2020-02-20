@@ -35,8 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
-{
+public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType {
 	/**
 	 * The cached value of the '{@link #getExterior() <em>Exterior</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -62,8 +61,7 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SolidTypeImpl()
-	{
+	protected SolidTypeImpl() {
 		super();
 	}
 
@@ -73,8 +71,7 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getSolidType();
 	}
 
@@ -83,8 +80,8 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShellPropertyType getExterior()
-	{
+	@Override
+	public ShellPropertyType getExterior() {
 		return exterior;
 	}
 
@@ -93,12 +90,10 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExterior(ShellPropertyType newExterior, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExterior(ShellPropertyType newExterior, NotificationChain msgs) {
 		ShellPropertyType oldExterior = exterior;
 		exterior = newExterior;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.SOLID_TYPE__EXTERIOR, oldExterior, newExterior);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -110,10 +105,9 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExterior(ShellPropertyType newExterior)
-	{
-		if (newExterior != exterior)
-		{
+	@Override
+	public void setExterior(ShellPropertyType newExterior) {
+		if (newExterior != exterior) {
 			NotificationChain msgs = null;
 			if (exterior != null)
 				msgs = ((InternalEObject)exterior).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.SOLID_TYPE__EXTERIOR, null, msgs);
@@ -131,10 +125,9 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ShellPropertyType> getInterior()
-	{
-		if (interior == null)
-		{
+	@Override
+	public EList<ShellPropertyType> getInterior() {
+		if (interior == null) {
 			interior = new EObjectContainmentEList<ShellPropertyType>(ShellPropertyType.class, this, GMLPackage.SOLID_TYPE__INTERIOR);
 		}
 		return interior;
@@ -146,10 +139,8 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.SOLID_TYPE__EXTERIOR:
 				return basicSetExterior(null, msgs);
 			case GMLPackage.SOLID_TYPE__INTERIOR:
@@ -164,10 +155,8 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.SOLID_TYPE__EXTERIOR:
 				return getExterior();
 			case GMLPackage.SOLID_TYPE__INTERIOR:
@@ -183,10 +172,8 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.SOLID_TYPE__EXTERIOR:
 				setExterior((ShellPropertyType)newValue);
 				return;
@@ -204,10 +191,8 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SOLID_TYPE__EXTERIOR:
 				setExterior((ShellPropertyType)null);
 				return;
@@ -224,10 +209,8 @@ public class SolidTypeImpl extends AbstractSolidTypeImpl implements SolidType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SOLID_TYPE__EXTERIOR:
 				return exterior != null;
 			case GMLPackage.SOLID_TYPE__INTERIOR:

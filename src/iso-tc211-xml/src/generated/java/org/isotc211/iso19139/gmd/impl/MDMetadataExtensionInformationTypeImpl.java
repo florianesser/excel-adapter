@@ -38,8 +38,7 @@ import org.isotc211.iso19139.gmd.MDMetadataExtensionInformationType;
  *
  * @generated
  */
-public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeImpl implements MDMetadataExtensionInformationType
-{
+public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeImpl implements MDMetadataExtensionInformationType {
 	/**
 	 * The cached value of the '{@link #getExtensionOnLineResource() <em>Extension On Line Resource</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -65,8 +64,7 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDMetadataExtensionInformationTypeImpl()
-	{
+	protected MDMetadataExtensionInformationTypeImpl() {
 		super();
 	}
 
@@ -76,8 +74,7 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDMetadataExtensionInformationType();
 	}
 
@@ -86,8 +83,8 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIOnlineResourcePropertyType getExtensionOnLineResource()
-	{
+	@Override
+	public CIOnlineResourcePropertyType getExtensionOnLineResource() {
 		return extensionOnLineResource;
 	}
 
@@ -96,12 +93,10 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExtensionOnLineResource(CIOnlineResourcePropertyType newExtensionOnLineResource, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExtensionOnLineResource(CIOnlineResourcePropertyType newExtensionOnLineResource, NotificationChain msgs) {
 		CIOnlineResourcePropertyType oldExtensionOnLineResource = extensionOnLineResource;
 		extensionOnLineResource = newExtensionOnLineResource;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENSION_ON_LINE_RESOURCE, oldExtensionOnLineResource, newExtensionOnLineResource);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -113,10 +108,9 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExtensionOnLineResource(CIOnlineResourcePropertyType newExtensionOnLineResource)
-	{
-		if (newExtensionOnLineResource != extensionOnLineResource)
-		{
+	@Override
+	public void setExtensionOnLineResource(CIOnlineResourcePropertyType newExtensionOnLineResource) {
+		if (newExtensionOnLineResource != extensionOnLineResource) {
 			NotificationChain msgs = null;
 			if (extensionOnLineResource != null)
 				msgs = ((InternalEObject)extensionOnLineResource).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENSION_ON_LINE_RESOURCE, null, msgs);
@@ -134,10 +128,9 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDExtendedElementInformationPropertyType> getExtendedElementInformation()
-	{
-		if (extendedElementInformation == null)
-		{
+	@Override
+	public EList<MDExtendedElementInformationPropertyType> getExtendedElementInformation() {
+		if (extendedElementInformation == null) {
 			extendedElementInformation = new EObjectContainmentEList<MDExtendedElementInformationPropertyType>(MDExtendedElementInformationPropertyType.class, this, GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENDED_ELEMENT_INFORMATION);
 		}
 		return extendedElementInformation;
@@ -149,10 +142,8 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENSION_ON_LINE_RESOURCE:
 				return basicSetExtensionOnLineResource(null, msgs);
 			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENDED_ELEMENT_INFORMATION:
@@ -167,10 +158,8 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENSION_ON_LINE_RESOURCE:
 				return getExtensionOnLineResource();
 			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENDED_ELEMENT_INFORMATION:
@@ -186,10 +175,8 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENSION_ON_LINE_RESOURCE:
 				setExtensionOnLineResource((CIOnlineResourcePropertyType)newValue);
 				return;
@@ -207,10 +194,8 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENSION_ON_LINE_RESOURCE:
 				setExtensionOnLineResource((CIOnlineResourcePropertyType)null);
 				return;
@@ -227,10 +212,8 @@ public class MDMetadataExtensionInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENSION_ON_LINE_RESOURCE:
 				return extensionOnLineResource != null;
 			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE__EXTENDED_ELEMENT_INFORMATION:

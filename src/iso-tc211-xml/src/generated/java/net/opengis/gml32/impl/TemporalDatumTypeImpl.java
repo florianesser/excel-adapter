@@ -26,8 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements TemporalDatumType
-{
+public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements TemporalDatumType {
 	/**
 	 * The default value of the '{@link #getOrigin() <em>Origin</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -53,8 +52,7 @@ public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TemporalDatumTypeImpl()
-	{
+	protected TemporalDatumTypeImpl() {
 		super();
 	}
 
@@ -64,8 +62,7 @@ public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTemporalDatumType();
 	}
 
@@ -74,8 +71,8 @@ public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getOrigin()
-	{
+	@Override
+	public XMLGregorianCalendar getOrigin() {
 		return origin;
 	}
 
@@ -84,8 +81,8 @@ public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrigin(XMLGregorianCalendar newOrigin)
-	{
+	@Override
+	public void setOrigin(XMLGregorianCalendar newOrigin) {
 		XMLGregorianCalendar oldOrigin = origin;
 		origin = newOrigin;
 		if (eNotificationRequired())
@@ -98,10 +95,8 @@ public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TEMPORAL_DATUM_TYPE__ORIGIN:
 				return getOrigin();
 		}
@@ -114,10 +109,8 @@ public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TEMPORAL_DATUM_TYPE__ORIGIN:
 				setOrigin((XMLGregorianCalendar)newValue);
 				return;
@@ -131,10 +124,8 @@ public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TEMPORAL_DATUM_TYPE__ORIGIN:
 				setOrigin(ORIGIN_EDEFAULT);
 				return;
@@ -148,10 +139,8 @@ public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TEMPORAL_DATUM_TYPE__ORIGIN:
 				return ORIGIN_EDEFAULT == null ? origin != null : !ORIGIN_EDEFAULT.equals(origin);
 		}
@@ -164,11 +153,10 @@ public class TemporalDatumTypeImpl extends TemporalDatumBaseTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (origin: ");
 		result.append(origin);
 		result.append(')');

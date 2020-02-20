@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
-{
+public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType {
 	/**
 	 * The cached value of the '{@link #getMembers() <em>Members</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArrayTypeImpl()
-	{
+	protected ArrayTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getArrayType();
 	}
 
@@ -65,8 +62,8 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArrayAssociationType getMembers()
-	{
+	@Override
+	public ArrayAssociationType getMembers() {
 		return members;
 	}
 
@@ -75,12 +72,10 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMembers(ArrayAssociationType newMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMembers(ArrayAssociationType newMembers, NotificationChain msgs) {
 		ArrayAssociationType oldMembers = members;
 		members = newMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARRAY_TYPE__MEMBERS, oldMembers, newMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMembers(ArrayAssociationType newMembers)
-	{
-		if (newMembers != members)
-		{
+	@Override
+	public void setMembers(ArrayAssociationType newMembers) {
+		if (newMembers != members) {
 			NotificationChain msgs = null;
 			if (members != null)
 				msgs = ((InternalEObject)members).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARRAY_TYPE__MEMBERS, null, msgs);
@@ -114,10 +108,8 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_TYPE__MEMBERS:
 				return basicSetMembers(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_TYPE__MEMBERS:
 				return getMembers();
 		}
@@ -146,10 +136,8 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_TYPE__MEMBERS:
 				setMembers((ArrayAssociationType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_TYPE__MEMBERS:
 				setMembers((ArrayAssociationType)null);
 				return;
@@ -180,10 +166,8 @@ public class ArrayTypeImpl extends AbstractGMLTypeImpl implements ArrayType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_TYPE__MEMBERS:
 				return members != null;
 		}

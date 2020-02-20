@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSProductionSeriesTypeImpl extends DSSeriesTypeImpl implements DSProductionSeriesType
-{
+public class DSProductionSeriesTypeImpl extends DSSeriesTypeImpl implements DSProductionSeriesType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSProductionSeriesTypeImpl()
-	{
+	protected DSProductionSeriesTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DSProductionSeriesTypeImpl extends DSSeriesTypeImpl implements DSPr
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSProductionSeriesType();
 	}
 

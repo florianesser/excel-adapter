@@ -15,6 +15,5 @@ import org.eclipse.emf.ecore.EObject;
  *        extendedMetaData="name='AbstractGeneralParameterValueType' kind='empty'"
  * @generated
  */
-public interface AbstractGeneralParameterValueType extends EObject
-{
+public interface AbstractGeneralParameterValueType extends EObject {
 } // AbstractGeneralParameterValueType

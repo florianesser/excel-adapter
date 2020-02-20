@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CartesianCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements CartesianCSType
-{
+public class CartesianCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements CartesianCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CartesianCSTypeImpl()
-	{
+	protected CartesianCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class CartesianCSTypeImpl extends AbstractCoordinateSystemTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCartesianCSType();
 	}
 

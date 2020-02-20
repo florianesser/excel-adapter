@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='DynamicFeatureType' kind='elementOnly'"
  * @generated
  */
-public interface DynamicFeatureType extends AbstractFeatureType
-{
+public interface DynamicFeatureType extends AbstractFeatureType {
 	/**
 	 * Returns the value of the '<em><b>Valid Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

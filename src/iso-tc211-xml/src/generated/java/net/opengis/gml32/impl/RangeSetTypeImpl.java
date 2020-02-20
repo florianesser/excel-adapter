@@ -44,8 +44,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements RangeSetType
-{
+public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements RangeSetType {
 	/**
 	 * The cached value of the '{@link #getValueArray() <em>Value Array</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -91,8 +90,7 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RangeSetTypeImpl()
-	{
+	protected RangeSetTypeImpl() {
 		super();
 	}
 
@@ -102,8 +100,7 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getRangeSetType();
 	}
 
@@ -112,10 +109,9 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ValueArrayType> getValueArray()
-	{
-		if (valueArray == null)
-		{
+	@Override
+	public EList<ValueArrayType> getValueArray() {
+		if (valueArray == null) {
 			valueArray = new EObjectContainmentEList<ValueArrayType>(ValueArrayType.class, this, GMLPackage.RANGE_SET_TYPE__VALUE_ARRAY);
 		}
 		return valueArray;
@@ -126,10 +122,9 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractScalarValueListGroup()
-	{
-		if (abstractScalarValueListGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractScalarValueListGroup() {
+		if (abstractScalarValueListGroup == null) {
 			abstractScalarValueListGroup = new BasicFeatureMap(this, GMLPackage.RANGE_SET_TYPE__ABSTRACT_SCALAR_VALUE_LIST_GROUP);
 		}
 		return abstractScalarValueListGroup;
@@ -140,8 +135,8 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EObject> getAbstractScalarValueList()
-	{
+	@Override
+	public EList<EObject> getAbstractScalarValueList() {
 		return getAbstractScalarValueListGroup().list(GMLPackage.eINSTANCE.getRangeSetType_AbstractScalarValueList());
 	}
 
@@ -150,8 +145,8 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DataBlockType getDataBlock()
-	{
+	@Override
+	public DataBlockType getDataBlock() {
 		return dataBlock;
 	}
 
@@ -160,12 +155,10 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataBlock(DataBlockType newDataBlock, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataBlock(DataBlockType newDataBlock, NotificationChain msgs) {
 		DataBlockType oldDataBlock = dataBlock;
 		dataBlock = newDataBlock;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.RANGE_SET_TYPE__DATA_BLOCK, oldDataBlock, newDataBlock);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -177,10 +170,9 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataBlock(DataBlockType newDataBlock)
-	{
-		if (newDataBlock != dataBlock)
-		{
+	@Override
+	public void setDataBlock(DataBlockType newDataBlock) {
+		if (newDataBlock != dataBlock) {
 			NotificationChain msgs = null;
 			if (dataBlock != null)
 				msgs = ((InternalEObject)dataBlock).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.RANGE_SET_TYPE__DATA_BLOCK, null, msgs);
@@ -198,8 +190,8 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FileType getFile()
-	{
+	@Override
+	public FileType getFile() {
 		return file;
 	}
 
@@ -208,12 +200,10 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFile(FileType newFile, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFile(FileType newFile, NotificationChain msgs) {
 		FileType oldFile = file;
 		file = newFile;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.RANGE_SET_TYPE__FILE, oldFile, newFile);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -225,10 +215,9 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFile(FileType newFile)
-	{
-		if (newFile != file)
-		{
+	@Override
+	public void setFile(FileType newFile) {
+		if (newFile != file) {
 			NotificationChain msgs = null;
 			if (file != null)
 				msgs = ((InternalEObject)file).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.RANGE_SET_TYPE__FILE, null, msgs);
@@ -247,10 +236,8 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.RANGE_SET_TYPE__VALUE_ARRAY:
 				return ((InternalEList<?>)getValueArray()).basicRemove(otherEnd, msgs);
 			case GMLPackage.RANGE_SET_TYPE__ABSTRACT_SCALAR_VALUE_LIST_GROUP:
@@ -271,10 +258,8 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.RANGE_SET_TYPE__VALUE_ARRAY:
 				return getValueArray();
 			case GMLPackage.RANGE_SET_TYPE__ABSTRACT_SCALAR_VALUE_LIST_GROUP:
@@ -297,10 +282,8 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.RANGE_SET_TYPE__VALUE_ARRAY:
 				getValueArray().clear();
 				getValueArray().addAll((Collection<? extends ValueArrayType>)newValue);
@@ -324,10 +307,8 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.RANGE_SET_TYPE__VALUE_ARRAY:
 				getValueArray().clear();
 				return;
@@ -350,10 +331,8 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.RANGE_SET_TYPE__VALUE_ARRAY:
 				return valueArray != null && !valueArray.isEmpty();
 			case GMLPackage.RANGE_SET_TYPE__ABSTRACT_SCALAR_VALUE_LIST_GROUP:
@@ -374,11 +353,10 @@ public class RangeSetTypeImpl extends MinimalEObjectImpl.Container implements Ra
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractScalarValueListGroup: ");
 		result.append(abstractScalarValueListGroup);
 		result.append(')');

@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class UserDefinedCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements UserDefinedCSType
-{
+public class UserDefinedCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements UserDefinedCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UserDefinedCSTypeImpl()
-	{
+	protected UserDefinedCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class UserDefinedCSTypeImpl extends AbstractCoordinateSystemTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getUserDefinedCSType();
 	}
 

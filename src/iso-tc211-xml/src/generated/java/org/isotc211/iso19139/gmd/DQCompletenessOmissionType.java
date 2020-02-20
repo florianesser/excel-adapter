@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_CompletenessOmission_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQCompletenessOmissionType extends AbstractDQCompletenessType
-{
+public interface DQCompletenessOmissionType extends AbstractDQCompletenessType {
 } // DQCompletenessOmissionType

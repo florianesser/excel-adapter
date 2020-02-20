@@ -38,8 +38,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements GeodeticCRSType
-{
+public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements GeodeticCRSType {
 	/**
 	 * The cached value of the '{@link #getEllipsoidalCSGroup() <em>Ellipsoidal CS Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -85,8 +84,7 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeodeticCRSTypeImpl()
-	{
+	protected GeodeticCRSTypeImpl() {
 		super();
 	}
 
@@ -96,8 +94,7 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeodeticCRSType();
 	}
 
@@ -106,10 +103,9 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getEllipsoidalCSGroup()
-	{
-		if (ellipsoidalCSGroup == null)
-		{
+	@Override
+	public FeatureMap getEllipsoidalCSGroup() {
+		if (ellipsoidalCSGroup == null) {
 			ellipsoidalCSGroup = new BasicFeatureMap(this, GMLPackage.GEODETIC_CRS_TYPE__ELLIPSOIDAL_CS_GROUP);
 		}
 		return ellipsoidalCSGroup;
@@ -120,8 +116,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidalCSPropertyType getEllipsoidalCS()
-	{
+	@Override
+	public EllipsoidalCSPropertyType getEllipsoidalCS() {
 		return (EllipsoidalCSPropertyType)getEllipsoidalCSGroup().get(GMLPackage.eINSTANCE.getGeodeticCRSType_EllipsoidalCS(), true);
 	}
 
@@ -130,8 +126,7 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEllipsoidalCS(EllipsoidalCSPropertyType newEllipsoidalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEllipsoidalCS(EllipsoidalCSPropertyType newEllipsoidalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getEllipsoidalCSGroup()).basicAdd(GMLPackage.eINSTANCE.getGeodeticCRSType_EllipsoidalCS(), newEllipsoidalCS, msgs);
 	}
 
@@ -140,8 +135,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEllipsoidalCS(EllipsoidalCSPropertyType newEllipsoidalCS)
-	{
+	@Override
+	public void setEllipsoidalCS(EllipsoidalCSPropertyType newEllipsoidalCS) {
 		((FeatureMap.Internal)getEllipsoidalCSGroup()).set(GMLPackage.eINSTANCE.getGeodeticCRSType_EllipsoidalCS(), newEllipsoidalCS);
 	}
 
@@ -150,10 +145,9 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getCartesianCSGroup()
-	{
-		if (cartesianCSGroup == null)
-		{
+	@Override
+	public FeatureMap getCartesianCSGroup() {
+		if (cartesianCSGroup == null) {
 			cartesianCSGroup = new BasicFeatureMap(this, GMLPackage.GEODETIC_CRS_TYPE__CARTESIAN_CS_GROUP);
 		}
 		return cartesianCSGroup;
@@ -164,8 +158,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSPropertyType getCartesianCS()
-	{
+	@Override
+	public CartesianCSPropertyType getCartesianCS() {
 		return (CartesianCSPropertyType)getCartesianCSGroup().get(GMLPackage.eINSTANCE.getGeodeticCRSType_CartesianCS(), true);
 	}
 
@@ -174,8 +168,7 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getCartesianCSGroup()).basicAdd(GMLPackage.eINSTANCE.getGeodeticCRSType_CartesianCS(), newCartesianCS, msgs);
 	}
 
@@ -184,8 +177,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCartesianCS(CartesianCSPropertyType newCartesianCS)
-	{
+	@Override
+	public void setCartesianCS(CartesianCSPropertyType newCartesianCS) {
 		((FeatureMap.Internal)getCartesianCSGroup()).set(GMLPackage.eINSTANCE.getGeodeticCRSType_CartesianCS(), newCartesianCS);
 	}
 
@@ -194,10 +187,9 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getSphericalCSGroup()
-	{
-		if (sphericalCSGroup == null)
-		{
+	@Override
+	public FeatureMap getSphericalCSGroup() {
+		if (sphericalCSGroup == null) {
 			sphericalCSGroup = new BasicFeatureMap(this, GMLPackage.GEODETIC_CRS_TYPE__SPHERICAL_CS_GROUP);
 		}
 		return sphericalCSGroup;
@@ -208,8 +200,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphericalCSPropertyType getSphericalCS()
-	{
+	@Override
+	public SphericalCSPropertyType getSphericalCS() {
 		return (SphericalCSPropertyType)getSphericalCSGroup().get(GMLPackage.eINSTANCE.getGeodeticCRSType_SphericalCS(), true);
 	}
 
@@ -218,8 +210,7 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSphericalCS(SphericalCSPropertyType newSphericalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSphericalCS(SphericalCSPropertyType newSphericalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getSphericalCSGroup()).basicAdd(GMLPackage.eINSTANCE.getGeodeticCRSType_SphericalCS(), newSphericalCS, msgs);
 	}
 
@@ -228,8 +219,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSphericalCS(SphericalCSPropertyType newSphericalCS)
-	{
+	@Override
+	public void setSphericalCS(SphericalCSPropertyType newSphericalCS) {
 		((FeatureMap.Internal)getSphericalCSGroup()).set(GMLPackage.eINSTANCE.getGeodeticCRSType_SphericalCS(), newSphericalCS);
 	}
 
@@ -238,10 +229,9 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getGeodeticDatumGroup()
-	{
-		if (geodeticDatumGroup == null)
-		{
+	@Override
+	public FeatureMap getGeodeticDatumGroup() {
+		if (geodeticDatumGroup == null) {
 			geodeticDatumGroup = new BasicFeatureMap(this, GMLPackage.GEODETIC_CRS_TYPE__GEODETIC_DATUM_GROUP);
 		}
 		return geodeticDatumGroup;
@@ -252,8 +242,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumPropertyType getGeodeticDatum()
-	{
+	@Override
+	public GeodeticDatumPropertyType getGeodeticDatum() {
 		return (GeodeticDatumPropertyType)getGeodeticDatumGroup().get(GMLPackage.eINSTANCE.getGeodeticCRSType_GeodeticDatum(), true);
 	}
 
@@ -262,8 +252,7 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeodeticDatum(GeodeticDatumPropertyType newGeodeticDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeodeticDatum(GeodeticDatumPropertyType newGeodeticDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getGeodeticDatumGroup()).basicAdd(GMLPackage.eINSTANCE.getGeodeticCRSType_GeodeticDatum(), newGeodeticDatum, msgs);
 	}
 
@@ -272,8 +261,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeodeticDatum(GeodeticDatumPropertyType newGeodeticDatum)
-	{
+	@Override
+	public void setGeodeticDatum(GeodeticDatumPropertyType newGeodeticDatum) {
 		((FeatureMap.Internal)getGeodeticDatumGroup()).set(GMLPackage.eINSTANCE.getGeodeticCRSType_GeodeticDatum(), newGeodeticDatum);
 	}
 
@@ -283,10 +272,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_CRS_TYPE__ELLIPSOIDAL_CS_GROUP:
 				return ((InternalEList<?>)getEllipsoidalCSGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.GEODETIC_CRS_TYPE__ELLIPSOIDAL_CS:
@@ -313,10 +300,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_CRS_TYPE__ELLIPSOIDAL_CS_GROUP:
 				if (coreType) return getEllipsoidalCSGroup();
 				return ((FeatureMap.Internal)getEllipsoidalCSGroup()).getWrapper();
@@ -347,10 +332,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_CRS_TYPE__ELLIPSOIDAL_CS_GROUP:
 				((FeatureMap.Internal)getEllipsoidalCSGroup()).set(newValue);
 				return;
@@ -385,10 +368,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_CRS_TYPE__ELLIPSOIDAL_CS_GROUP:
 				getEllipsoidalCSGroup().clear();
 				return;
@@ -423,10 +404,8 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_CRS_TYPE__ELLIPSOIDAL_CS_GROUP:
 				return ellipsoidalCSGroup != null && !ellipsoidalCSGroup.isEmpty();
 			case GMLPackage.GEODETIC_CRS_TYPE__ELLIPSOIDAL_CS:
@@ -453,11 +432,10 @@ public class GeodeticCRSTypeImpl extends AbstractCRSTypeImpl implements Geodetic
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (ellipsoidalCSGroup: ");
 		result.append(ellipsoidalCSGroup);
 		result.append(", cartesianCSGroup: ");

@@ -20,8 +20,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='RectangleType' kind='elementOnly'"
  * @generated
  */
-public interface RectangleType extends AbstractSurfacePatchType
-{
+public interface RectangleType extends AbstractSurfacePatchType {
 	/**
 	 * Returns the value of the '<em><b>Exterior</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -53,10 +52,6 @@ public interface RectangleType extends AbstractSurfacePatchType
 	 * The default value is <code>"planar"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.SurfaceInterpolationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interpolation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Interpolation</em>' attribute.
 	 * @see net.opengis.gml32.SurfaceInterpolationType

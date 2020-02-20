@@ -20,8 +20,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='OrientableSurfaceType' kind='elementOnly'"
  * @generated
  */
-public interface OrientableSurfaceType extends AbstractSurfaceType
-{
+public interface OrientableSurfaceType extends AbstractSurfaceType {
 	/**
 	 * Returns the value of the '<em><b>Base Surface</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -53,10 +52,6 @@ public interface OrientableSurfaceType extends AbstractSurfaceType
 	 * The default value is <code>"+"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.SignType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Orientation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Orientation</em>' attribute.
 	 * @see net.opengis.gml32.SignType

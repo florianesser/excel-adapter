@@ -19,8 +19,7 @@ import org.isotc211.iso19139.gco.*;
  * @see org.isotc211.iso19139.gco.GCOPackage
  * @generated
  */
-public class GCOAdapterFactory extends AdapterFactoryImpl
-{
+public class GCOAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
@@ -35,10 +34,8 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GCOAdapterFactory()
-	{
-		if (modelPackage == null)
-		{
+	public GCOAdapterFactory() {
+		if (modelPackage == null) {
 			modelPackage = GCOPackage.eINSTANCE;
 		}
 	}
@@ -52,14 +49,11 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean isFactoryForType(Object object)
-	{
-		if (object == modelPackage)
-		{
+	public boolean isFactoryForType(Object object) {
+		if (object == modelPackage) {
 			return true;
 		}
-		if (object instanceof EObject)
-		{
+		if (object instanceof EObject) {
 			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
@@ -72,226 +66,181 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	protected GCOSwitch<Adapter> modelSwitch =
-		new GCOSwitch<Adapter>()
-		{
+		new GCOSwitch<Adapter>() {
 			@Override
-			public Adapter caseAbstractObjectType(AbstractObjectType object)
-			{
+			public Adapter caseAbstractObjectType(AbstractObjectType object) {
 				return createAbstractObjectTypeAdapter();
 			}
 			@Override
-			public Adapter caseAnglePropertyType(AnglePropertyType object)
-			{
+			public Adapter caseAnglePropertyType(AnglePropertyType object) {
 				return createAnglePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseBinaryPropertyType(BinaryPropertyType object)
-			{
+			public Adapter caseBinaryPropertyType(BinaryPropertyType object) {
 				return createBinaryPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseBinaryType(BinaryType object)
-			{
+			public Adapter caseBinaryType(BinaryType object) {
 				return createBinaryTypeAdapter();
 			}
 			@Override
-			public Adapter caseBooleanPropertyType(BooleanPropertyType object)
-			{
+			public Adapter caseBooleanPropertyType(BooleanPropertyType object) {
 				return createBooleanPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCharacterStringPropertyType(CharacterStringPropertyType object)
-			{
+			public Adapter caseCharacterStringPropertyType(CharacterStringPropertyType object) {
 				return createCharacterStringPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCodeListValueType(CodeListValueType object)
-			{
+			public Adapter caseCodeListValueType(CodeListValueType object) {
 				return createCodeListValueTypeAdapter();
 			}
 			@Override
-			public Adapter caseDatePropertyType(DatePropertyType object)
-			{
+			public Adapter caseDatePropertyType(DatePropertyType object) {
 				return createDatePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDateTimePropertyType(DateTimePropertyType object)
-			{
+			public Adapter caseDateTimePropertyType(DateTimePropertyType object) {
 				return createDateTimePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDecimalPropertyType(DecimalPropertyType object)
-			{
+			public Adapter caseDecimalPropertyType(DecimalPropertyType object) {
 				return createDecimalPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDistancePropertyType(DistancePropertyType object)
-			{
+			public Adapter caseDistancePropertyType(DistancePropertyType object) {
 				return createDistancePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGenericNamePropertyType(GenericNamePropertyType object)
-			{
+			public Adapter caseGenericNamePropertyType(GenericNamePropertyType object) {
 				return createGenericNamePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseIntegerPropertyType(IntegerPropertyType object)
-			{
+			public Adapter caseIntegerPropertyType(IntegerPropertyType object) {
 				return createIntegerPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLengthPropertyType(LengthPropertyType object)
-			{
+			public Adapter caseLengthPropertyType(LengthPropertyType object) {
 				return createLengthPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLocalNamePropertyType(LocalNamePropertyType object)
-			{
+			public Adapter caseLocalNamePropertyType(LocalNamePropertyType object) {
 				return createLocalNamePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiplicityPropertyType(MultiplicityPropertyType object)
-			{
+			public Adapter caseMultiplicityPropertyType(MultiplicityPropertyType object) {
 				return createMultiplicityPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiplicityRangePropertyType(MultiplicityRangePropertyType object)
-			{
+			public Adapter caseMultiplicityRangePropertyType(MultiplicityRangePropertyType object) {
 				return createMultiplicityRangePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseObjectReferencePropertyType(ObjectReferencePropertyType object)
-			{
+			public Adapter caseObjectReferencePropertyType(ObjectReferencePropertyType object) {
 				return createObjectReferencePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseRealPropertyType(RealPropertyType object)
-			{
+			public Adapter caseRealPropertyType(RealPropertyType object) {
 				return createRealPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDocumentRoot(DocumentRoot object)
-			{
+			public Adapter caseDocumentRoot(DocumentRoot object) {
 				return createDocumentRootAdapter();
 			}
 			@Override
-			public Adapter caseMeasurePropertyType(MeasurePropertyType object)
-			{
+			public Adapter caseMeasurePropertyType(MeasurePropertyType object) {
 				return createMeasurePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMemberNamePropertyType(MemberNamePropertyType object)
-			{
+			public Adapter caseMemberNamePropertyType(MemberNamePropertyType object) {
 				return createMemberNamePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMemberNameType(MemberNameType object)
-			{
+			public Adapter caseMemberNameType(MemberNameType object) {
 				return createMemberNameTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiplicityRangeType(MultiplicityRangeType object)
-			{
+			public Adapter caseMultiplicityRangeType(MultiplicityRangeType object) {
 				return createMultiplicityRangeTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiplicityType(MultiplicityType object)
-			{
+			public Adapter caseMultiplicityType(MultiplicityType object) {
 				return createMultiplicityTypeAdapter();
 			}
 			@Override
-			public Adapter caseNumberPropertyType(NumberPropertyType object)
-			{
+			public Adapter caseNumberPropertyType(NumberPropertyType object) {
 				return createNumberPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseRecordPropertyType(RecordPropertyType object)
-			{
+			public Adapter caseRecordPropertyType(RecordPropertyType object) {
 				return createRecordPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseRecordTypePropertyType(RecordTypePropertyType object)
-			{
+			public Adapter caseRecordTypePropertyType(RecordTypePropertyType object) {
 				return createRecordTypePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseRecordTypeType(RecordTypeType object)
-			{
+			public Adapter caseRecordTypeType(RecordTypeType object) {
 				return createRecordTypeTypeAdapter();
 			}
 			@Override
-			public Adapter caseScalePropertyType(ScalePropertyType object)
-			{
+			public Adapter caseScalePropertyType(ScalePropertyType object) {
 				return createScalePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseScopedNamePropertyType(ScopedNamePropertyType object)
-			{
+			public Adapter caseScopedNamePropertyType(ScopedNamePropertyType object) {
 				return createScopedNamePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTypeNamePropertyType(TypeNamePropertyType object)
-			{
+			public Adapter caseTypeNamePropertyType(TypeNamePropertyType object) {
 				return createTypeNamePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTypeNameType(TypeNameType object)
-			{
+			public Adapter caseTypeNameType(TypeNameType object) {
 				return createTypeNameTypeAdapter();
 			}
 			@Override
-			public Adapter caseUnitOfMeasurePropertyType(UnitOfMeasurePropertyType object)
-			{
+			public Adapter caseUnitOfMeasurePropertyType(UnitOfMeasurePropertyType object) {
 				return createUnitOfMeasurePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseUnlimitedIntegerPropertyType(UnlimitedIntegerPropertyType object)
-			{
+			public Adapter caseUnlimitedIntegerPropertyType(UnlimitedIntegerPropertyType object) {
 				return createUnlimitedIntegerPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseUnlimitedIntegerType(UnlimitedIntegerType object)
-			{
+			public Adapter caseUnlimitedIntegerType(UnlimitedIntegerType object) {
 				return createUnlimitedIntegerTypeAdapter();
 			}
 			@Override
-			public Adapter caseUomAnglePropertyType(UomAnglePropertyType object)
-			{
+			public Adapter caseUomAnglePropertyType(UomAnglePropertyType object) {
 				return createUomAnglePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseUomAreaPropertyType(UomAreaPropertyType object)
-			{
+			public Adapter caseUomAreaPropertyType(UomAreaPropertyType object) {
 				return createUomAreaPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseUomLengthPropertyType(UomLengthPropertyType object)
-			{
+			public Adapter caseUomLengthPropertyType(UomLengthPropertyType object) {
 				return createUomLengthPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseUomScalePropertyType(UomScalePropertyType object)
-			{
+			public Adapter caseUomScalePropertyType(UomScalePropertyType object) {
 				return createUomScalePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseUomTimePropertyType(UomTimePropertyType object)
-			{
+			public Adapter caseUomTimePropertyType(UomTimePropertyType object) {
 				return createUomTimePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseUomVelocityPropertyType(UomVelocityPropertyType object)
-			{
+			public Adapter caseUomVelocityPropertyType(UomVelocityPropertyType object) {
 				return createUomVelocityPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseUomVolumePropertyType(UomVolumePropertyType object)
-			{
+			public Adapter caseUomVolumePropertyType(UomVolumePropertyType object) {
 				return createUomVolumePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter defaultCase(EObject object)
-			{
+			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
 		};
@@ -305,8 +254,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdapter(Notifier target)
-	{
+	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
@@ -321,8 +269,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.AbstractObjectType
 	 * @generated
 	 */
-	public Adapter createAbstractObjectTypeAdapter()
-	{
+	public Adapter createAbstractObjectTypeAdapter() {
 		return null;
 	}
 
@@ -336,8 +283,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.AnglePropertyType
 	 * @generated
 	 */
-	public Adapter createAnglePropertyTypeAdapter()
-	{
+	public Adapter createAnglePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -351,8 +297,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.BinaryPropertyType
 	 * @generated
 	 */
-	public Adapter createBinaryPropertyTypeAdapter()
-	{
+	public Adapter createBinaryPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -366,8 +311,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.BinaryType
 	 * @generated
 	 */
-	public Adapter createBinaryTypeAdapter()
-	{
+	public Adapter createBinaryTypeAdapter() {
 		return null;
 	}
 
@@ -381,8 +325,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.BooleanPropertyType
 	 * @generated
 	 */
-	public Adapter createBooleanPropertyTypeAdapter()
-	{
+	public Adapter createBooleanPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -396,8 +339,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.CharacterStringPropertyType
 	 * @generated
 	 */
-	public Adapter createCharacterStringPropertyTypeAdapter()
-	{
+	public Adapter createCharacterStringPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -411,8 +353,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.CodeListValueType
 	 * @generated
 	 */
-	public Adapter createCodeListValueTypeAdapter()
-	{
+	public Adapter createCodeListValueTypeAdapter() {
 		return null;
 	}
 
@@ -426,8 +367,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.DatePropertyType
 	 * @generated
 	 */
-	public Adapter createDatePropertyTypeAdapter()
-	{
+	public Adapter createDatePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -441,8 +381,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.DateTimePropertyType
 	 * @generated
 	 */
-	public Adapter createDateTimePropertyTypeAdapter()
-	{
+	public Adapter createDateTimePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -456,8 +395,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.DecimalPropertyType
 	 * @generated
 	 */
-	public Adapter createDecimalPropertyTypeAdapter()
-	{
+	public Adapter createDecimalPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -471,8 +409,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.DistancePropertyType
 	 * @generated
 	 */
-	public Adapter createDistancePropertyTypeAdapter()
-	{
+	public Adapter createDistancePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -486,8 +423,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.GenericNamePropertyType
 	 * @generated
 	 */
-	public Adapter createGenericNamePropertyTypeAdapter()
-	{
+	public Adapter createGenericNamePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -501,8 +437,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.IntegerPropertyType
 	 * @generated
 	 */
-	public Adapter createIntegerPropertyTypeAdapter()
-	{
+	public Adapter createIntegerPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -516,8 +451,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.LengthPropertyType
 	 * @generated
 	 */
-	public Adapter createLengthPropertyTypeAdapter()
-	{
+	public Adapter createLengthPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -531,8 +465,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.LocalNamePropertyType
 	 * @generated
 	 */
-	public Adapter createLocalNamePropertyTypeAdapter()
-	{
+	public Adapter createLocalNamePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -546,8 +479,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.MultiplicityPropertyType
 	 * @generated
 	 */
-	public Adapter createMultiplicityPropertyTypeAdapter()
-	{
+	public Adapter createMultiplicityPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -561,8 +493,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.MultiplicityRangePropertyType
 	 * @generated
 	 */
-	public Adapter createMultiplicityRangePropertyTypeAdapter()
-	{
+	public Adapter createMultiplicityRangePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -576,8 +507,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.ObjectReferencePropertyType
 	 * @generated
 	 */
-	public Adapter createObjectReferencePropertyTypeAdapter()
-	{
+	public Adapter createObjectReferencePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -591,8 +521,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.RealPropertyType
 	 * @generated
 	 */
-	public Adapter createRealPropertyTypeAdapter()
-	{
+	public Adapter createRealPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -606,8 +535,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.DocumentRoot
 	 * @generated
 	 */
-	public Adapter createDocumentRootAdapter()
-	{
+	public Adapter createDocumentRootAdapter() {
 		return null;
 	}
 
@@ -621,8 +549,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.MeasurePropertyType
 	 * @generated
 	 */
-	public Adapter createMeasurePropertyTypeAdapter()
-	{
+	public Adapter createMeasurePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -636,8 +563,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.MemberNamePropertyType
 	 * @generated
 	 */
-	public Adapter createMemberNamePropertyTypeAdapter()
-	{
+	public Adapter createMemberNamePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -651,8 +577,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.MemberNameType
 	 * @generated
 	 */
-	public Adapter createMemberNameTypeAdapter()
-	{
+	public Adapter createMemberNameTypeAdapter() {
 		return null;
 	}
 
@@ -666,8 +591,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.MultiplicityRangeType
 	 * @generated
 	 */
-	public Adapter createMultiplicityRangeTypeAdapter()
-	{
+	public Adapter createMultiplicityRangeTypeAdapter() {
 		return null;
 	}
 
@@ -681,8 +605,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.MultiplicityType
 	 * @generated
 	 */
-	public Adapter createMultiplicityTypeAdapter()
-	{
+	public Adapter createMultiplicityTypeAdapter() {
 		return null;
 	}
 
@@ -696,8 +619,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.NumberPropertyType
 	 * @generated
 	 */
-	public Adapter createNumberPropertyTypeAdapter()
-	{
+	public Adapter createNumberPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -711,8 +633,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.RecordPropertyType
 	 * @generated
 	 */
-	public Adapter createRecordPropertyTypeAdapter()
-	{
+	public Adapter createRecordPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -726,8 +647,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.RecordTypePropertyType
 	 * @generated
 	 */
-	public Adapter createRecordTypePropertyTypeAdapter()
-	{
+	public Adapter createRecordTypePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -741,8 +661,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.RecordTypeType
 	 * @generated
 	 */
-	public Adapter createRecordTypeTypeAdapter()
-	{
+	public Adapter createRecordTypeTypeAdapter() {
 		return null;
 	}
 
@@ -756,8 +675,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.ScalePropertyType
 	 * @generated
 	 */
-	public Adapter createScalePropertyTypeAdapter()
-	{
+	public Adapter createScalePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -771,8 +689,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.ScopedNamePropertyType
 	 * @generated
 	 */
-	public Adapter createScopedNamePropertyTypeAdapter()
-	{
+	public Adapter createScopedNamePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -786,8 +703,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.TypeNamePropertyType
 	 * @generated
 	 */
-	public Adapter createTypeNamePropertyTypeAdapter()
-	{
+	public Adapter createTypeNamePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -801,8 +717,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.TypeNameType
 	 * @generated
 	 */
-	public Adapter createTypeNameTypeAdapter()
-	{
+	public Adapter createTypeNameTypeAdapter() {
 		return null;
 	}
 
@@ -816,8 +731,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UnitOfMeasurePropertyType
 	 * @generated
 	 */
-	public Adapter createUnitOfMeasurePropertyTypeAdapter()
-	{
+	public Adapter createUnitOfMeasurePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -831,8 +745,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UnlimitedIntegerPropertyType
 	 * @generated
 	 */
-	public Adapter createUnlimitedIntegerPropertyTypeAdapter()
-	{
+	public Adapter createUnlimitedIntegerPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -846,8 +759,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UnlimitedIntegerType
 	 * @generated
 	 */
-	public Adapter createUnlimitedIntegerTypeAdapter()
-	{
+	public Adapter createUnlimitedIntegerTypeAdapter() {
 		return null;
 	}
 
@@ -861,8 +773,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UomAnglePropertyType
 	 * @generated
 	 */
-	public Adapter createUomAnglePropertyTypeAdapter()
-	{
+	public Adapter createUomAnglePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -876,8 +787,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UomAreaPropertyType
 	 * @generated
 	 */
-	public Adapter createUomAreaPropertyTypeAdapter()
-	{
+	public Adapter createUomAreaPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -891,8 +801,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UomLengthPropertyType
 	 * @generated
 	 */
-	public Adapter createUomLengthPropertyTypeAdapter()
-	{
+	public Adapter createUomLengthPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -906,8 +815,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UomScalePropertyType
 	 * @generated
 	 */
-	public Adapter createUomScalePropertyTypeAdapter()
-	{
+	public Adapter createUomScalePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -921,8 +829,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UomTimePropertyType
 	 * @generated
 	 */
-	public Adapter createUomTimePropertyTypeAdapter()
-	{
+	public Adapter createUomTimePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -936,8 +843,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UomVelocityPropertyType
 	 * @generated
 	 */
-	public Adapter createUomVelocityPropertyTypeAdapter()
-	{
+	public Adapter createUomVelocityPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -951,8 +857,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gco.UomVolumePropertyType
 	 * @generated
 	 */
-	public Adapter createUomVolumePropertyTypeAdapter()
-	{
+	public Adapter createUomVolumePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -964,8 +869,7 @@ public class GCOAdapterFactory extends AdapterFactoryImpl
 	 * @return the new adapter.
 	 * @generated
 	 */
-	public Adapter createEObjectAdapter()
-	{
+	public Adapter createEObjectAdapter() {
 		return null;
 	}
 

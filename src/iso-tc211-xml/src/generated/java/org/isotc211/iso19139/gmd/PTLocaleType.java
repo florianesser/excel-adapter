@@ -22,15 +22,10 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  * @model extendedMetaData="name='PT_Locale_Type' kind='elementOnly'"
  * @generated
  */
-public interface PTLocaleType extends AbstractObjectType
-{
+public interface PTLocaleType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Language Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Language Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Language Code</em>' containment reference.
 	 * @see #setLanguageCode(LanguageCodePropertyType)
@@ -54,10 +49,6 @@ public interface PTLocaleType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Country</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Country</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Country</em>' containment reference.
 	 * @see #setCountry(CountryPropertyType)
@@ -81,10 +72,6 @@ public interface PTLocaleType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Character Encoding</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Character Encoding</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Character Encoding</em>' containment reference.
 	 * @see #setCharacterEncoding(MDCharacterSetCodePropertyType)

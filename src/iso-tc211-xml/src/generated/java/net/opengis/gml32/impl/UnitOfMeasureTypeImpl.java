@@ -25,8 +25,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implements UnitOfMeasureType
-{
+public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implements UnitOfMeasureType {
 	/**
 	 * The default value of the '{@link #getUom() <em>Uom</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -52,8 +51,7 @@ public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UnitOfMeasureTypeImpl()
-	{
+	protected UnitOfMeasureTypeImpl() {
 		super();
 	}
 
@@ -63,8 +61,7 @@ public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getUnitOfMeasureType();
 	}
 
@@ -73,8 +70,8 @@ public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUom()
-	{
+	@Override
+	public String getUom() {
 		return uom;
 	}
 
@@ -83,8 +80,8 @@ public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUom(String newUom)
-	{
+	@Override
+	public void setUom(String newUom) {
 		String oldUom = uom;
 		uom = newUom;
 		if (eNotificationRequired())
@@ -97,10 +94,8 @@ public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.UNIT_OF_MEASURE_TYPE__UOM:
 				return getUom();
 		}
@@ -113,10 +108,8 @@ public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.UNIT_OF_MEASURE_TYPE__UOM:
 				setUom((String)newValue);
 				return;
@@ -130,10 +123,8 @@ public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.UNIT_OF_MEASURE_TYPE__UOM:
 				setUom(UOM_EDEFAULT);
 				return;
@@ -147,10 +138,8 @@ public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.UNIT_OF_MEASURE_TYPE__UOM:
 				return UOM_EDEFAULT == null ? uom != null : !UOM_EDEFAULT.equals(uom);
 		}
@@ -163,11 +152,10 @@ public class UnitOfMeasureTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (uom: ");
 		result.append(uom);
 		result.append(')');

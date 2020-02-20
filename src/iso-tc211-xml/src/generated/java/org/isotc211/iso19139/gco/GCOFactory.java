@@ -12,8 +12,7 @@ import org.eclipse.emf.ecore.EFactory;
  * @see org.isotc211.iso19139.gco.GCOPackage
  * @generated
  */
-public interface GCOFactory extends EFactory
-{
+public interface GCOFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->

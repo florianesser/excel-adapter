@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.xml.type.util.XMLTypeValidator;
  * @see net.opengis.gml32.GMLPackage
  * @generated
  */
-public class GMLValidator extends EObjectValidator
-{
+public class GMLValidator extends EObjectValidator {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -86,8 +85,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMLValidator()
-	{
+	public GMLValidator() {
 		super();
 		xmlTypeValidator = XMLTypeValidator.INSTANCE;
 	}
@@ -99,8 +97,7 @@ public class GMLValidator extends EObjectValidator
 	 * @generated
 	 */
 	@Override
-	protected EPackage getEPackage()
-	{
+	protected EPackage getEPackage() {
 	  return GMLPackage.eINSTANCE;
 	}
 
@@ -111,10 +108,8 @@ public class GMLValidator extends EObjectValidator
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		switch (classifierID)
-		{
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		switch (classifierID) {
 			case GMLPackage.ABSTRACT_CONTINUOUS_COVERAGE_TYPE:
 				return validateAbstractContinuousCoverageType((AbstractContinuousCoverageType)value, diagnostics, context);
 			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE:
@@ -945,8 +940,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractContinuousCoverageType(AbstractContinuousCoverageType abstractContinuousCoverageType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractContinuousCoverageType(AbstractContinuousCoverageType abstractContinuousCoverageType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractContinuousCoverageType, diagnostics, context);
 	}
 
@@ -955,8 +949,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractCoordinateOperationType(AbstractCoordinateOperationType abstractCoordinateOperationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractCoordinateOperationType(AbstractCoordinateOperationType abstractCoordinateOperationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractCoordinateOperationType, diagnostics, context);
 	}
 
@@ -965,8 +958,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractCoordinateSystemType(AbstractCoordinateSystemType abstractCoordinateSystemType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractCoordinateSystemType(AbstractCoordinateSystemType abstractCoordinateSystemType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractCoordinateSystemType, diagnostics, context);
 	}
 
@@ -975,8 +967,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractCoverageType(AbstractCoverageType abstractCoverageType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractCoverageType(AbstractCoverageType abstractCoverageType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractCoverageType, diagnostics, context);
 	}
 
@@ -985,8 +976,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractCRSType(AbstractCRSType abstractCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractCRSType(AbstractCRSType abstractCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractCRSType, diagnostics, context);
 	}
 
@@ -995,8 +985,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractCurveSegmentType(AbstractCurveSegmentType abstractCurveSegmentType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractCurveSegmentType(AbstractCurveSegmentType abstractCurveSegmentType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractCurveSegmentType, diagnostics, context);
 	}
 
@@ -1005,8 +994,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractCurveType(AbstractCurveType abstractCurveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractCurveType(AbstractCurveType abstractCurveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractCurveType, diagnostics, context);
 	}
 
@@ -1015,8 +1003,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractDatumType(AbstractDatumType abstractDatumType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractDatumType(AbstractDatumType abstractDatumType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractDatumType, diagnostics, context);
 	}
 
@@ -1025,8 +1012,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractFeatureCollectionType(AbstractFeatureCollectionType abstractFeatureCollectionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractFeatureCollectionType(AbstractFeatureCollectionType abstractFeatureCollectionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractFeatureCollectionType, diagnostics, context);
 	}
 
@@ -1035,8 +1021,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractFeatureMemberType(AbstractFeatureMemberType abstractFeatureMemberType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractFeatureMemberType(AbstractFeatureMemberType abstractFeatureMemberType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractFeatureMemberType, diagnostics, context);
 	}
 
@@ -1045,8 +1030,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractFeatureType(AbstractFeatureType abstractFeatureType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractFeatureType(AbstractFeatureType abstractFeatureType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractFeatureType, diagnostics, context);
 	}
 
@@ -1055,8 +1039,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeneralConversionType(AbstractGeneralConversionType abstractGeneralConversionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeneralConversionType(AbstractGeneralConversionType abstractGeneralConversionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeneralConversionType, diagnostics, context);
 	}
 
@@ -1065,8 +1048,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeneralDerivedCRSType(AbstractGeneralDerivedCRSType abstractGeneralDerivedCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeneralDerivedCRSType(AbstractGeneralDerivedCRSType abstractGeneralDerivedCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeneralDerivedCRSType, diagnostics, context);
 	}
 
@@ -1075,8 +1057,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeneralOperationParameterPropertyType(AbstractGeneralOperationParameterPropertyType abstractGeneralOperationParameterPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeneralOperationParameterPropertyType(AbstractGeneralOperationParameterPropertyType abstractGeneralOperationParameterPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeneralOperationParameterPropertyType, diagnostics, context);
 	}
 
@@ -1085,8 +1066,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeneralOperationParameterType(AbstractGeneralOperationParameterType abstractGeneralOperationParameterType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeneralOperationParameterType(AbstractGeneralOperationParameterType abstractGeneralOperationParameterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeneralOperationParameterType, diagnostics, context);
 	}
 
@@ -1095,8 +1075,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeneralParameterValuePropertyType(AbstractGeneralParameterValuePropertyType abstractGeneralParameterValuePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeneralParameterValuePropertyType(AbstractGeneralParameterValuePropertyType abstractGeneralParameterValuePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeneralParameterValuePropertyType, diagnostics, context);
 	}
 
@@ -1105,8 +1084,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeneralParameterValueType(AbstractGeneralParameterValueType abstractGeneralParameterValueType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeneralParameterValueType(AbstractGeneralParameterValueType abstractGeneralParameterValueType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeneralParameterValueType, diagnostics, context);
 	}
 
@@ -1115,8 +1093,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeneralTransformationType(AbstractGeneralTransformationType abstractGeneralTransformationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeneralTransformationType(AbstractGeneralTransformationType abstractGeneralTransformationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeneralTransformationType, diagnostics, context);
 	}
 
@@ -1125,8 +1102,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeometricAggregateType(AbstractGeometricAggregateType abstractGeometricAggregateType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeometricAggregateType(AbstractGeometricAggregateType abstractGeometricAggregateType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeometricAggregateType, diagnostics, context);
 	}
 
@@ -1135,8 +1111,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeometricPrimitiveType(AbstractGeometricPrimitiveType abstractGeometricPrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeometricPrimitiveType(AbstractGeometricPrimitiveType abstractGeometricPrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeometricPrimitiveType, diagnostics, context);
 	}
 
@@ -1145,8 +1120,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGeometryType(AbstractGeometryType abstractGeometryType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGeometryType(AbstractGeometryType abstractGeometryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGeometryType, diagnostics, context);
 	}
 
@@ -1155,8 +1129,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGMLType(AbstractGMLType abstractGMLType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGMLType(AbstractGMLType abstractGMLType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGMLType, diagnostics, context);
 	}
 
@@ -1165,8 +1138,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractGriddedSurfaceType(AbstractGriddedSurfaceType abstractGriddedSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractGriddedSurfaceType(AbstractGriddedSurfaceType abstractGriddedSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractGriddedSurfaceType, diagnostics, context);
 	}
 
@@ -1175,8 +1147,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractMemberType(AbstractMemberType abstractMemberType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractMemberType(AbstractMemberType abstractMemberType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractMemberType, diagnostics, context);
 	}
 
@@ -1185,8 +1156,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractMetadataPropertyType(AbstractMetadataPropertyType abstractMetadataPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractMetadataPropertyType(AbstractMetadataPropertyType abstractMetadataPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractMetadataPropertyType, diagnostics, context);
 	}
 
@@ -1195,8 +1165,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractMetaDataType(AbstractMetaDataType abstractMetaDataType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractMetaDataType(AbstractMetaDataType abstractMetaDataType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractMetaDataType, diagnostics, context);
 	}
 
@@ -1205,8 +1174,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractParametricCurveSurfaceType(AbstractParametricCurveSurfaceType abstractParametricCurveSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractParametricCurveSurfaceType(AbstractParametricCurveSurfaceType abstractParametricCurveSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractParametricCurveSurfaceType, diagnostics, context);
 	}
 
@@ -1215,8 +1183,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractRingPropertyType(AbstractRingPropertyType abstractRingPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractRingPropertyType(AbstractRingPropertyType abstractRingPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractRingPropertyType, diagnostics, context);
 	}
 
@@ -1225,8 +1192,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractRingType(AbstractRingType abstractRingType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractRingType(AbstractRingType abstractRingType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractRingType, diagnostics, context);
 	}
 
@@ -1235,8 +1201,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractSolidType(AbstractSolidType abstractSolidType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractSolidType(AbstractSolidType abstractSolidType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractSolidType, diagnostics, context);
 	}
 
@@ -1245,8 +1210,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractSurfacePatchType(AbstractSurfacePatchType abstractSurfacePatchType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractSurfacePatchType(AbstractSurfacePatchType abstractSurfacePatchType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractSurfacePatchType, diagnostics, context);
 	}
 
@@ -1255,8 +1219,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractSurfaceType(AbstractSurfaceType abstractSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractSurfaceType(AbstractSurfaceType abstractSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractSurfaceType, diagnostics, context);
 	}
 
@@ -1265,8 +1228,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractTimeComplexType(AbstractTimeComplexType abstractTimeComplexType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractTimeComplexType(AbstractTimeComplexType abstractTimeComplexType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractTimeComplexType, diagnostics, context);
 	}
 
@@ -1275,8 +1237,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractTimeGeometricPrimitiveType(AbstractTimeGeometricPrimitiveType abstractTimeGeometricPrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractTimeGeometricPrimitiveType(AbstractTimeGeometricPrimitiveType abstractTimeGeometricPrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractTimeGeometricPrimitiveType, diagnostics, context);
 	}
 
@@ -1285,8 +1246,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractTimeObjectType(AbstractTimeObjectType abstractTimeObjectType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractTimeObjectType(AbstractTimeObjectType abstractTimeObjectType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractTimeObjectType, diagnostics, context);
 	}
 
@@ -1295,8 +1255,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractTimePrimitiveType(AbstractTimePrimitiveType abstractTimePrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractTimePrimitiveType(AbstractTimePrimitiveType abstractTimePrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractTimePrimitiveType, diagnostics, context);
 	}
 
@@ -1305,8 +1264,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractTimeSliceType(AbstractTimeSliceType abstractTimeSliceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractTimeSliceType(AbstractTimeSliceType abstractTimeSliceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractTimeSliceType, diagnostics, context);
 	}
 
@@ -1315,8 +1273,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractTimeTopologyPrimitiveType(AbstractTimeTopologyPrimitiveType abstractTimeTopologyPrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractTimeTopologyPrimitiveType(AbstractTimeTopologyPrimitiveType abstractTimeTopologyPrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractTimeTopologyPrimitiveType, diagnostics, context);
 	}
 
@@ -1325,8 +1282,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractTopologyType(AbstractTopologyType abstractTopologyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractTopologyType(AbstractTopologyType abstractTopologyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractTopologyType, diagnostics, context);
 	}
 
@@ -1335,8 +1291,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbstractTopoPrimitiveType(AbstractTopoPrimitiveType abstractTopoPrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAbstractTopoPrimitiveType(AbstractTopoPrimitiveType abstractTopoPrimitiveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(abstractTopoPrimitiveType, diagnostics, context);
 	}
 
@@ -1345,8 +1300,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAffineCSPropertyType(AffineCSPropertyType affineCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAffineCSPropertyType(AffineCSPropertyType affineCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(affineCSPropertyType, diagnostics, context);
 	}
 
@@ -1355,8 +1309,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAffineCSType(AffineCSType affineCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAffineCSType(AffineCSType affineCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(affineCSType, diagnostics, context);
 	}
 
@@ -1365,8 +1318,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAffinePlacementType(AffinePlacementType affinePlacementType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAffinePlacementType(AffinePlacementType affinePlacementType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(affinePlacementType, diagnostics, context);
 	}
 
@@ -1375,8 +1327,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAngleChoiceType(AngleChoiceType angleChoiceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAngleChoiceType(AngleChoiceType angleChoiceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(angleChoiceType, diagnostics, context);
 	}
 
@@ -1385,8 +1336,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAngleType(AngleType angleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAngleType(AngleType angleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(angleType, diagnostics, context);
 	}
 
@@ -1395,8 +1345,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcByBulgeType(ArcByBulgeType arcByBulgeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcByBulgeType(ArcByBulgeType arcByBulgeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arcByBulgeType, diagnostics, context);
 	}
 
@@ -1405,8 +1354,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcByCenterPointType(ArcByCenterPointType arcByCenterPointType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcByCenterPointType(ArcByCenterPointType arcByCenterPointType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arcByCenterPointType, diagnostics, context);
 	}
 
@@ -1415,8 +1363,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcStringByBulgeType(ArcStringByBulgeType arcStringByBulgeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcStringByBulgeType(ArcStringByBulgeType arcStringByBulgeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arcStringByBulgeType, diagnostics, context);
 	}
 
@@ -1425,8 +1372,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcStringType(ArcStringType arcStringType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcStringType(ArcStringType arcStringType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arcStringType, diagnostics, context);
 	}
 
@@ -1435,8 +1381,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcType(ArcType arcType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcType(ArcType arcType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arcType, diagnostics, context);
 	}
 
@@ -1445,8 +1390,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAreaType(AreaType areaType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAreaType(AreaType areaType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(areaType, diagnostics, context);
 	}
 
@@ -1455,8 +1399,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArrayAssociationType(ArrayAssociationType arrayAssociationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArrayAssociationType(ArrayAssociationType arrayAssociationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arrayAssociationType, diagnostics, context);
 	}
 
@@ -1465,8 +1408,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArrayType(ArrayType arrayType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArrayType(ArrayType arrayType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arrayType, diagnostics, context);
 	}
 
@@ -1475,8 +1417,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssociationRoleType(AssociationRoleType associationRoleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAssociationRoleType(AssociationRoleType associationRoleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(associationRoleType, diagnostics, context);
 	}
 
@@ -1485,8 +1426,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBagType(BagType bagType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBagType(BagType bagType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(bagType, diagnostics, context);
 	}
 
@@ -1495,8 +1435,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBaseUnitType(BaseUnitType baseUnitType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBaseUnitType(BaseUnitType baseUnitType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(baseUnitType, diagnostics, context);
 	}
 
@@ -1505,8 +1444,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBezierType(BezierType bezierType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBezierType(BezierType bezierType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(bezierType, diagnostics, context);
 	}
 
@@ -1515,8 +1453,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBooleanPropertyType(BooleanPropertyType booleanPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBooleanPropertyType(BooleanPropertyType booleanPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(booleanPropertyType, diagnostics, context);
 	}
 
@@ -1525,8 +1462,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBooleanType(BooleanType booleanType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBooleanType(BooleanType booleanType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(booleanType, diagnostics, context);
 	}
 
@@ -1535,8 +1471,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBoundedFeatureType(BoundedFeatureType boundedFeatureType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBoundedFeatureType(BoundedFeatureType boundedFeatureType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(boundedFeatureType, diagnostics, context);
 	}
 
@@ -1545,8 +1480,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBoundingShapeType(BoundingShapeType boundingShapeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBoundingShapeType(BoundingShapeType boundingShapeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(boundingShapeType, diagnostics, context);
 	}
 
@@ -1555,8 +1489,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBSplineType(BSplineType bSplineType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBSplineType(BSplineType bSplineType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(bSplineType, diagnostics, context);
 	}
 
@@ -1565,8 +1498,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCartesianCSPropertyType(CartesianCSPropertyType cartesianCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCartesianCSPropertyType(CartesianCSPropertyType cartesianCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(cartesianCSPropertyType, diagnostics, context);
 	}
 
@@ -1575,8 +1507,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCartesianCSType(CartesianCSType cartesianCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCartesianCSType(CartesianCSType cartesianCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(cartesianCSType, diagnostics, context);
 	}
 
@@ -1585,8 +1516,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCategoryExtentType(CategoryExtentType categoryExtentType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCategoryExtentType(CategoryExtentType categoryExtentType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(categoryExtentType, diagnostics, context);
 	}
 
@@ -1595,8 +1525,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCategoryPropertyType(CategoryPropertyType categoryPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCategoryPropertyType(CategoryPropertyType categoryPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(categoryPropertyType, diagnostics, context);
 	}
 
@@ -1605,8 +1534,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCategoryType(CategoryType categoryType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCategoryType(CategoryType categoryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(categoryType, diagnostics, context);
 	}
 
@@ -1615,8 +1543,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCircleByCenterPointType(CircleByCenterPointType circleByCenterPointType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCircleByCenterPointType(CircleByCenterPointType circleByCenterPointType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(circleByCenterPointType, diagnostics, context);
 	}
 
@@ -1625,8 +1552,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCircleType(CircleType circleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCircleType(CircleType circleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(circleType, diagnostics, context);
 	}
 
@@ -1635,8 +1561,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClothoidType(ClothoidType clothoidType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateClothoidType(ClothoidType clothoidType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(clothoidType, diagnostics, context);
 	}
 
@@ -1645,8 +1570,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCodeListType(CodeListType codeListType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCodeListType(CodeListType codeListType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(codeListType, diagnostics, context);
 	}
 
@@ -1655,8 +1579,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCodeOrNilReasonListType(CodeOrNilReasonListType codeOrNilReasonListType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCodeOrNilReasonListType(CodeOrNilReasonListType codeOrNilReasonListType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(codeOrNilReasonListType, diagnostics, context);
 	}
 
@@ -1665,8 +1588,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCodeType(CodeType codeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCodeType(CodeType codeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(codeType, diagnostics, context);
 	}
 
@@ -1675,8 +1597,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCodeWithAuthorityType(CodeWithAuthorityType codeWithAuthorityType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCodeWithAuthorityType(CodeWithAuthorityType codeWithAuthorityType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(codeWithAuthorityType, diagnostics, context);
 	}
 
@@ -1685,8 +1606,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCompositeCurveType(CompositeCurveType compositeCurveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCompositeCurveType(CompositeCurveType compositeCurveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(compositeCurveType, diagnostics, context);
 	}
 
@@ -1695,8 +1615,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCompositeSolidType(CompositeSolidType compositeSolidType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCompositeSolidType(CompositeSolidType compositeSolidType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(compositeSolidType, diagnostics, context);
 	}
 
@@ -1705,8 +1624,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCompositeSurfaceType(CompositeSurfaceType compositeSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCompositeSurfaceType(CompositeSurfaceType compositeSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(compositeSurfaceType, diagnostics, context);
 	}
 
@@ -1715,8 +1633,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCompositeValueType(CompositeValueType compositeValueType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCompositeValueType(CompositeValueType compositeValueType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(compositeValueType, diagnostics, context);
 	}
 
@@ -1725,8 +1642,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCompoundCRSPropertyType(CompoundCRSPropertyType compoundCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCompoundCRSPropertyType(CompoundCRSPropertyType compoundCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(compoundCRSPropertyType, diagnostics, context);
 	}
 
@@ -1735,8 +1651,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCompoundCRSType(CompoundCRSType compoundCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCompoundCRSType(CompoundCRSType compoundCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(compoundCRSType, diagnostics, context);
 	}
 
@@ -1745,8 +1660,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConcatenatedOperationPropertyType(ConcatenatedOperationPropertyType concatenatedOperationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateConcatenatedOperationPropertyType(ConcatenatedOperationPropertyType concatenatedOperationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(concatenatedOperationPropertyType, diagnostics, context);
 	}
 
@@ -1755,8 +1669,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConcatenatedOperationType(ConcatenatedOperationType concatenatedOperationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateConcatenatedOperationType(ConcatenatedOperationType concatenatedOperationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(concatenatedOperationType, diagnostics, context);
 	}
 
@@ -1765,8 +1678,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConeType(ConeType coneType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateConeType(ConeType coneType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(coneType, diagnostics, context);
 	}
 
@@ -1775,8 +1687,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateControlPointType(ControlPointType controlPointType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateControlPointType(ControlPointType controlPointType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(controlPointType, diagnostics, context);
 	}
 
@@ -1785,8 +1696,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConventionalUnitType(ConventionalUnitType conventionalUnitType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateConventionalUnitType(ConventionalUnitType conventionalUnitType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(conventionalUnitType, diagnostics, context);
 	}
 
@@ -1795,8 +1705,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConversionPropertyType(ConversionPropertyType conversionPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateConversionPropertyType(ConversionPropertyType conversionPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(conversionPropertyType, diagnostics, context);
 	}
 
@@ -1805,8 +1714,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConversionToPreferredUnitType(ConversionToPreferredUnitType conversionToPreferredUnitType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateConversionToPreferredUnitType(ConversionToPreferredUnitType conversionToPreferredUnitType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(conversionToPreferredUnitType, diagnostics, context);
 	}
 
@@ -1815,8 +1723,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConversionType(ConversionType conversionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateConversionType(ConversionType conversionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(conversionType, diagnostics, context);
 	}
 
@@ -1825,8 +1732,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoordinateOperationAccuracyType(CoordinateOperationAccuracyType coordinateOperationAccuracyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCoordinateOperationAccuracyType(CoordinateOperationAccuracyType coordinateOperationAccuracyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(coordinateOperationAccuracyType, diagnostics, context);
 	}
 
@@ -1835,8 +1741,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoordinateOperationPropertyType(CoordinateOperationPropertyType coordinateOperationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCoordinateOperationPropertyType(CoordinateOperationPropertyType coordinateOperationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(coordinateOperationPropertyType, diagnostics, context);
 	}
 
@@ -1845,8 +1750,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoordinatesType(CoordinatesType coordinatesType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCoordinatesType(CoordinatesType coordinatesType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(coordinatesType, diagnostics, context);
 	}
 
@@ -1855,8 +1759,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoordinateSystemAxisPropertyType(CoordinateSystemAxisPropertyType coordinateSystemAxisPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCoordinateSystemAxisPropertyType(CoordinateSystemAxisPropertyType coordinateSystemAxisPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(coordinateSystemAxisPropertyType, diagnostics, context);
 	}
 
@@ -1865,8 +1768,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoordinateSystemAxisType(CoordinateSystemAxisType coordinateSystemAxisType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCoordinateSystemAxisType(CoordinateSystemAxisType coordinateSystemAxisType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(coordinateSystemAxisType, diagnostics, context);
 	}
 
@@ -1875,8 +1777,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoordinateSystemPropertyType(CoordinateSystemPropertyType coordinateSystemPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCoordinateSystemPropertyType(CoordinateSystemPropertyType coordinateSystemPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(coordinateSystemPropertyType, diagnostics, context);
 	}
 
@@ -1885,8 +1786,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCountPropertyType(CountPropertyType countPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCountPropertyType(CountPropertyType countPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(countPropertyType, diagnostics, context);
 	}
 
@@ -1895,8 +1795,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCountType(CountType countType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCountType(CountType countType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(countType, diagnostics, context);
 	}
 
@@ -1905,8 +1804,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoverageFunctionType(CoverageFunctionType coverageFunctionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCoverageFunctionType(CoverageFunctionType coverageFunctionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(coverageFunctionType, diagnostics, context);
 	}
 
@@ -1915,8 +1813,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCRSPropertyType(CRSPropertyType crsPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCRSPropertyType(CRSPropertyType crsPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(crsPropertyType, diagnostics, context);
 	}
 
@@ -1925,8 +1822,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCubicSplineType(CubicSplineType cubicSplineType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCubicSplineType(CubicSplineType cubicSplineType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(cubicSplineType, diagnostics, context);
 	}
 
@@ -1935,8 +1831,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCurveArrayPropertyType(CurveArrayPropertyType curveArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCurveArrayPropertyType(CurveArrayPropertyType curveArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(curveArrayPropertyType, diagnostics, context);
 	}
 
@@ -1945,8 +1840,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCurvePropertyType(CurvePropertyType curvePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCurvePropertyType(CurvePropertyType curvePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(curvePropertyType, diagnostics, context);
 	}
 
@@ -1955,8 +1849,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCurveSegmentArrayPropertyType(CurveSegmentArrayPropertyType curveSegmentArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCurveSegmentArrayPropertyType(CurveSegmentArrayPropertyType curveSegmentArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(curveSegmentArrayPropertyType, diagnostics, context);
 	}
 
@@ -1965,8 +1858,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCurveType(CurveType curveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCurveType(CurveType curveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(curveType, diagnostics, context);
 	}
 
@@ -1975,8 +1867,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCylinderType(CylinderType cylinderType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCylinderType(CylinderType cylinderType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(cylinderType, diagnostics, context);
 	}
 
@@ -1985,8 +1876,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCylindricalCSPropertyType(CylindricalCSPropertyType cylindricalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCylindricalCSPropertyType(CylindricalCSPropertyType cylindricalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(cylindricalCSPropertyType, diagnostics, context);
 	}
 
@@ -1995,8 +1885,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCylindricalCSType(CylindricalCSType cylindricalCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCylindricalCSType(CylindricalCSType cylindricalCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(cylindricalCSType, diagnostics, context);
 	}
 
@@ -2005,8 +1894,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDataBlockType(DataBlockType dataBlockType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDataBlockType(DataBlockType dataBlockType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(dataBlockType, diagnostics, context);
 	}
 
@@ -2015,8 +1903,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDatumPropertyType(DatumPropertyType datumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDatumPropertyType(DatumPropertyType datumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(datumPropertyType, diagnostics, context);
 	}
 
@@ -2025,8 +1912,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDefinitionBaseType(DefinitionBaseType definitionBaseType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDefinitionBaseType(DefinitionBaseType definitionBaseType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(definitionBaseType, diagnostics, context);
 	}
 
@@ -2035,8 +1921,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDefinitionProxyType(DefinitionProxyType definitionProxyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDefinitionProxyType(DefinitionProxyType definitionProxyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(definitionProxyType, diagnostics, context);
 	}
 
@@ -2045,8 +1930,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDefinitionType(DefinitionType definitionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDefinitionType(DefinitionType definitionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(definitionType, diagnostics, context);
 	}
 
@@ -2055,8 +1939,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDegreesType(DegreesType degreesType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDegreesType(DegreesType degreesType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(degreesType, diagnostics, context);
 	}
 
@@ -2065,8 +1948,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDerivationUnitTermType(DerivationUnitTermType derivationUnitTermType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDerivationUnitTermType(DerivationUnitTermType derivationUnitTermType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(derivationUnitTermType, diagnostics, context);
 	}
 
@@ -2075,8 +1957,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDerivedCRSPropertyType(DerivedCRSPropertyType derivedCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDerivedCRSPropertyType(DerivedCRSPropertyType derivedCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(derivedCRSPropertyType, diagnostics, context);
 	}
 
@@ -2085,8 +1966,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDerivedCRSType(DerivedCRSType derivedCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDerivedCRSType(DerivedCRSType derivedCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(derivedCRSType, diagnostics, context);
 	}
 
@@ -2095,8 +1975,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDerivedUnitType(DerivedUnitType derivedUnitType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDerivedUnitType(DerivedUnitType derivedUnitType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(derivedUnitType, diagnostics, context);
 	}
 
@@ -2105,8 +1984,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDictionaryEntryType(DictionaryEntryType dictionaryEntryType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDictionaryEntryType(DictionaryEntryType dictionaryEntryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(dictionaryEntryType, diagnostics, context);
 	}
 
@@ -2115,8 +1993,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDictionaryType(DictionaryType dictionaryType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDictionaryType(DictionaryType dictionaryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(dictionaryType, diagnostics, context);
 	}
 
@@ -2125,8 +2002,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectedEdgePropertyType(DirectedEdgePropertyType directedEdgePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectedEdgePropertyType(DirectedEdgePropertyType directedEdgePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directedEdgePropertyType, diagnostics, context);
 	}
 
@@ -2135,8 +2011,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectedFacePropertyType(DirectedFacePropertyType directedFacePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectedFacePropertyType(DirectedFacePropertyType directedFacePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directedFacePropertyType, diagnostics, context);
 	}
 
@@ -2145,8 +2020,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectedNodePropertyType(DirectedNodePropertyType directedNodePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectedNodePropertyType(DirectedNodePropertyType directedNodePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directedNodePropertyType, diagnostics, context);
 	}
 
@@ -2155,8 +2029,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectedObservationAtDistanceType(DirectedObservationAtDistanceType directedObservationAtDistanceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectedObservationAtDistanceType(DirectedObservationAtDistanceType directedObservationAtDistanceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directedObservationAtDistanceType, diagnostics, context);
 	}
 
@@ -2165,8 +2038,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectedObservationType(DirectedObservationType directedObservationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectedObservationType(DirectedObservationType directedObservationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directedObservationType, diagnostics, context);
 	}
 
@@ -2175,8 +2047,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectedTopoSolidPropertyType(DirectedTopoSolidPropertyType directedTopoSolidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectedTopoSolidPropertyType(DirectedTopoSolidPropertyType directedTopoSolidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directedTopoSolidPropertyType, diagnostics, context);
 	}
 
@@ -2185,8 +2056,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectionDescriptionType(DirectionDescriptionType directionDescriptionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectionDescriptionType(DirectionDescriptionType directionDescriptionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directionDescriptionType, diagnostics, context);
 	}
 
@@ -2195,8 +2065,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectionPropertyType(DirectionPropertyType directionPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectionPropertyType(DirectionPropertyType directionPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directionPropertyType, diagnostics, context);
 	}
 
@@ -2205,8 +2074,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectionVectorType(DirectionVectorType directionVectorType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectionVectorType(DirectionVectorType directionVectorType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directionVectorType, diagnostics, context);
 	}
 
@@ -2215,8 +2083,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectPositionListType(DirectPositionListType directPositionListType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectPositionListType(DirectPositionListType directPositionListType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directPositionListType, diagnostics, context);
 	}
 
@@ -2225,8 +2092,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectPositionType(DirectPositionType directPositionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectPositionType(DirectPositionType directPositionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(directPositionType, diagnostics, context);
 	}
 
@@ -2235,8 +2101,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiscreteCoverageType(DiscreteCoverageType discreteCoverageType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDiscreteCoverageType(DiscreteCoverageType discreteCoverageType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(discreteCoverageType, diagnostics, context);
 	}
 
@@ -2245,8 +2110,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDMSAngleType(DMSAngleType dmsAngleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDMSAngleType(DMSAngleType dmsAngleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(dmsAngleType, diagnostics, context);
 	}
 
@@ -2255,8 +2119,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDocumentRoot(DocumentRoot documentRoot, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDocumentRoot(DocumentRoot documentRoot, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(documentRoot, diagnostics, context);
 	}
 
@@ -2265,8 +2128,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDomainOfValidityType(DomainOfValidityType domainOfValidityType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDomainOfValidityType(DomainOfValidityType domainOfValidityType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(domainOfValidityType, diagnostics, context);
 	}
 
@@ -2275,8 +2137,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDomainSetType(DomainSetType domainSetType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDomainSetType(DomainSetType domainSetType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(domainSetType, diagnostics, context);
 	}
 
@@ -2285,8 +2146,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDynamicFeatureCollectionType(DynamicFeatureCollectionType dynamicFeatureCollectionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDynamicFeatureCollectionType(DynamicFeatureCollectionType dynamicFeatureCollectionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(dynamicFeatureCollectionType, diagnostics, context);
 	}
 
@@ -2295,8 +2155,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDynamicFeatureMemberType(DynamicFeatureMemberType dynamicFeatureMemberType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDynamicFeatureMemberType(DynamicFeatureMemberType dynamicFeatureMemberType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(dynamicFeatureMemberType, diagnostics, context);
 	}
 
@@ -2305,8 +2164,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDynamicFeatureType(DynamicFeatureType dynamicFeatureType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDynamicFeatureType(DynamicFeatureType dynamicFeatureType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(dynamicFeatureType, diagnostics, context);
 	}
 
@@ -2315,8 +2173,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEdgeType(EdgeType edgeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEdgeType(EdgeType edgeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(edgeType, diagnostics, context);
 	}
 
@@ -2325,8 +2182,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEllipsoidalCSPropertyType(EllipsoidalCSPropertyType ellipsoidalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEllipsoidalCSPropertyType(EllipsoidalCSPropertyType ellipsoidalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(ellipsoidalCSPropertyType, diagnostics, context);
 	}
 
@@ -2335,8 +2191,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEllipsoidalCSType(EllipsoidalCSType ellipsoidalCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEllipsoidalCSType(EllipsoidalCSType ellipsoidalCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(ellipsoidalCSType, diagnostics, context);
 	}
 
@@ -2345,8 +2200,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEllipsoidPropertyType(EllipsoidPropertyType ellipsoidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEllipsoidPropertyType(EllipsoidPropertyType ellipsoidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(ellipsoidPropertyType, diagnostics, context);
 	}
 
@@ -2355,8 +2209,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEllipsoidType(EllipsoidType ellipsoidType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEllipsoidType(EllipsoidType ellipsoidType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(ellipsoidType, diagnostics, context);
 	}
 
@@ -2365,8 +2218,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEngineeringCRSPropertyType(EngineeringCRSPropertyType engineeringCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEngineeringCRSPropertyType(EngineeringCRSPropertyType engineeringCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(engineeringCRSPropertyType, diagnostics, context);
 	}
 
@@ -2375,8 +2227,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEngineeringCRSType(EngineeringCRSType engineeringCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEngineeringCRSType(EngineeringCRSType engineeringCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(engineeringCRSType, diagnostics, context);
 	}
 
@@ -2385,8 +2236,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEngineeringDatumPropertyType(EngineeringDatumPropertyType engineeringDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEngineeringDatumPropertyType(EngineeringDatumPropertyType engineeringDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(engineeringDatumPropertyType, diagnostics, context);
 	}
 
@@ -2395,8 +2245,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEngineeringDatumType(EngineeringDatumType engineeringDatumType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEngineeringDatumType(EngineeringDatumType engineeringDatumType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(engineeringDatumType, diagnostics, context);
 	}
 
@@ -2405,8 +2254,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEnvelopeType(EnvelopeType envelopeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEnvelopeType(EnvelopeType envelopeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(envelopeType, diagnostics, context);
 	}
 
@@ -2415,8 +2263,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEnvelopeWithTimePeriodType(EnvelopeWithTimePeriodType envelopeWithTimePeriodType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateEnvelopeWithTimePeriodType(EnvelopeWithTimePeriodType envelopeWithTimePeriodType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(envelopeWithTimePeriodType, diagnostics, context);
 	}
 
@@ -2425,8 +2272,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFaceOrTopoSolidPropertyType(FaceOrTopoSolidPropertyType faceOrTopoSolidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateFaceOrTopoSolidPropertyType(FaceOrTopoSolidPropertyType faceOrTopoSolidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(faceOrTopoSolidPropertyType, diagnostics, context);
 	}
 
@@ -2435,8 +2281,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFaceType(FaceType faceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateFaceType(FaceType faceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(faceType, diagnostics, context);
 	}
 
@@ -2445,8 +2290,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFeatureArrayPropertyType(FeatureArrayPropertyType featureArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateFeatureArrayPropertyType(FeatureArrayPropertyType featureArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(featureArrayPropertyType, diagnostics, context);
 	}
 
@@ -2455,8 +2299,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFeatureCollectionType(FeatureCollectionType featureCollectionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateFeatureCollectionType(FeatureCollectionType featureCollectionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(featureCollectionType, diagnostics, context);
 	}
 
@@ -2465,8 +2308,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFeaturePropertyType(FeaturePropertyType featurePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateFeaturePropertyType(FeaturePropertyType featurePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(featurePropertyType, diagnostics, context);
 	}
 
@@ -2475,8 +2317,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFileType(FileType fileType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateFileType(FileType fileType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(fileType, diagnostics, context);
 	}
 
@@ -2485,8 +2326,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFormulaCitationType(FormulaCitationType formulaCitationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateFormulaCitationType(FormulaCitationType formulaCitationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(formulaCitationType, diagnostics, context);
 	}
 
@@ -2495,8 +2335,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFormulaType(FormulaType formulaType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateFormulaType(FormulaType formulaType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(formulaType, diagnostics, context);
 	}
 
@@ -2505,8 +2344,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralConversionPropertyType(GeneralConversionPropertyType generalConversionPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeneralConversionPropertyType(GeneralConversionPropertyType generalConversionPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(generalConversionPropertyType, diagnostics, context);
 	}
 
@@ -2515,8 +2353,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralTransformationPropertyType(GeneralTransformationPropertyType generalTransformationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeneralTransformationPropertyType(GeneralTransformationPropertyType generalTransformationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(generalTransformationPropertyType, diagnostics, context);
 	}
 
@@ -2525,8 +2362,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGenericMetaDataType(GenericMetaDataType genericMetaDataType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGenericMetaDataType(GenericMetaDataType genericMetaDataType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(genericMetaDataType, diagnostics, context);
 	}
 
@@ -2535,8 +2371,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeocentricCRSPropertyType(GeocentricCRSPropertyType geocentricCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeocentricCRSPropertyType(GeocentricCRSPropertyType geocentricCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geocentricCRSPropertyType, diagnostics, context);
 	}
 
@@ -2545,8 +2380,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeocentricCRSType(GeocentricCRSType geocentricCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeocentricCRSType(GeocentricCRSType geocentricCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geocentricCRSType, diagnostics, context);
 	}
 
@@ -2555,8 +2389,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeodesicStringType(GeodesicStringType geodesicStringType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeodesicStringType(GeodesicStringType geodesicStringType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geodesicStringType, diagnostics, context);
 	}
 
@@ -2565,8 +2398,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeodesicType(GeodesicType geodesicType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeodesicType(GeodesicType geodesicType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geodesicType, diagnostics, context);
 	}
 
@@ -2575,8 +2407,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeodeticCRSPropertyType(GeodeticCRSPropertyType geodeticCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeodeticCRSPropertyType(GeodeticCRSPropertyType geodeticCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geodeticCRSPropertyType, diagnostics, context);
 	}
 
@@ -2585,8 +2416,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeodeticCRSType(GeodeticCRSType geodeticCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeodeticCRSType(GeodeticCRSType geodeticCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geodeticCRSType, diagnostics, context);
 	}
 
@@ -2595,8 +2425,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeodeticDatumPropertyType(GeodeticDatumPropertyType geodeticDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeodeticDatumPropertyType(GeodeticDatumPropertyType geodeticDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geodeticDatumPropertyType, diagnostics, context);
 	}
 
@@ -2605,8 +2434,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeodeticDatumType(GeodeticDatumType geodeticDatumType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeodeticDatumType(GeodeticDatumType geodeticDatumType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geodeticDatumType, diagnostics, context);
 	}
 
@@ -2615,8 +2443,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeographicCRSPropertyType(GeographicCRSPropertyType geographicCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeographicCRSPropertyType(GeographicCRSPropertyType geographicCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geographicCRSPropertyType, diagnostics, context);
 	}
 
@@ -2625,8 +2452,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeographicCRSType(GeographicCRSType geographicCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeographicCRSType(GeographicCRSType geographicCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geographicCRSType, diagnostics, context);
 	}
 
@@ -2635,8 +2461,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeometricComplexPropertyType(GeometricComplexPropertyType geometricComplexPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeometricComplexPropertyType(GeometricComplexPropertyType geometricComplexPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geometricComplexPropertyType, diagnostics, context);
 	}
 
@@ -2645,8 +2470,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeometricComplexType(GeometricComplexType geometricComplexType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeometricComplexType(GeometricComplexType geometricComplexType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geometricComplexType, diagnostics, context);
 	}
 
@@ -2655,8 +2479,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeometricPrimitivePropertyType(GeometricPrimitivePropertyType geometricPrimitivePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeometricPrimitivePropertyType(GeometricPrimitivePropertyType geometricPrimitivePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geometricPrimitivePropertyType, diagnostics, context);
 	}
 
@@ -2665,8 +2488,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeometryArrayPropertyType(GeometryArrayPropertyType geometryArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeometryArrayPropertyType(GeometryArrayPropertyType geometryArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geometryArrayPropertyType, diagnostics, context);
 	}
 
@@ -2675,8 +2497,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeometryPropertyType(GeometryPropertyType geometryPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGeometryPropertyType(GeometryPropertyType geometryPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(geometryPropertyType, diagnostics, context);
 	}
 
@@ -2685,8 +2506,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGridEnvelopeType(GridEnvelopeType gridEnvelopeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGridEnvelopeType(GridEnvelopeType gridEnvelopeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(gridEnvelopeType, diagnostics, context);
 	}
 
@@ -2695,8 +2515,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGridFunctionType(GridFunctionType gridFunctionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGridFunctionType(GridFunctionType gridFunctionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(gridFunctionType, diagnostics, context);
 	}
 
@@ -2705,8 +2524,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGridLengthType(GridLengthType gridLengthType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGridLengthType(GridLengthType gridLengthType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(gridLengthType, diagnostics, context);
 	}
 
@@ -2715,8 +2533,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGridLimitsType(GridLimitsType gridLimitsType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGridLimitsType(GridLimitsType gridLimitsType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(gridLimitsType, diagnostics, context);
 	}
 
@@ -2725,8 +2542,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGridType(GridType gridType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateGridType(GridType gridType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(gridType, diagnostics, context);
 	}
 
@@ -2735,8 +2551,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryPropertyType(HistoryPropertyType historyPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateHistoryPropertyType(HistoryPropertyType historyPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(historyPropertyType, diagnostics, context);
 	}
 
@@ -2745,8 +2560,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIdentifiedObjectType(IdentifiedObjectType identifiedObjectType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIdentifiedObjectType(IdentifiedObjectType identifiedObjectType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(identifiedObjectType, diagnostics, context);
 	}
 
@@ -2755,8 +2569,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImageCRSPropertyType(ImageCRSPropertyType imageCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateImageCRSPropertyType(ImageCRSPropertyType imageCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(imageCRSPropertyType, diagnostics, context);
 	}
 
@@ -2765,8 +2578,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImageCRSType(ImageCRSType imageCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateImageCRSType(ImageCRSType imageCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(imageCRSType, diagnostics, context);
 	}
 
@@ -2775,8 +2587,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImageDatumPropertyType(ImageDatumPropertyType imageDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateImageDatumPropertyType(ImageDatumPropertyType imageDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(imageDatumPropertyType, diagnostics, context);
 	}
 
@@ -2785,8 +2596,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImageDatumType(ImageDatumType imageDatumType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateImageDatumType(ImageDatumType imageDatumType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(imageDatumType, diagnostics, context);
 	}
 
@@ -2795,8 +2605,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIndirectEntryType(IndirectEntryType indirectEntryType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIndirectEntryType(IndirectEntryType indirectEntryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(indirectEntryType, diagnostics, context);
 	}
 
@@ -2805,8 +2614,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInlinePropertyType(InlinePropertyType inlinePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateInlinePropertyType(InlinePropertyType inlinePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(inlinePropertyType, diagnostics, context);
 	}
 
@@ -2815,8 +2623,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateKnotPropertyType(KnotPropertyType knotPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateKnotPropertyType(KnotPropertyType knotPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(knotPropertyType, diagnostics, context);
 	}
 
@@ -2825,8 +2632,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateKnotType(KnotType knotType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateKnotType(KnotType knotType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(knotType, diagnostics, context);
 	}
 
@@ -2835,8 +2641,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLengthType(LengthType lengthType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLengthType(LengthType lengthType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(lengthType, diagnostics, context);
 	}
 
@@ -2845,8 +2650,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLinearCSPropertyType(LinearCSPropertyType linearCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLinearCSPropertyType(LinearCSPropertyType linearCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(linearCSPropertyType, diagnostics, context);
 	}
 
@@ -2855,8 +2659,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLinearCSType(LinearCSType linearCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLinearCSType(LinearCSType linearCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(linearCSType, diagnostics, context);
 	}
 
@@ -2865,8 +2668,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLinearRingPropertyType(LinearRingPropertyType linearRingPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLinearRingPropertyType(LinearRingPropertyType linearRingPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(linearRingPropertyType, diagnostics, context);
 	}
 
@@ -2875,8 +2677,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLinearRingType(LinearRingType linearRingType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLinearRingType(LinearRingType linearRingType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(linearRingType, diagnostics, context);
 	}
 
@@ -2885,8 +2686,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLineStringSegmentArrayPropertyType(LineStringSegmentArrayPropertyType lineStringSegmentArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLineStringSegmentArrayPropertyType(LineStringSegmentArrayPropertyType lineStringSegmentArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(lineStringSegmentArrayPropertyType, diagnostics, context);
 	}
 
@@ -2895,8 +2695,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLineStringSegmentType(LineStringSegmentType lineStringSegmentType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLineStringSegmentType(LineStringSegmentType lineStringSegmentType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(lineStringSegmentType, diagnostics, context);
 	}
 
@@ -2905,8 +2704,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLineStringType(LineStringType lineStringType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLineStringType(LineStringType lineStringType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(lineStringType, diagnostics, context);
 	}
 
@@ -2915,8 +2713,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLocationPropertyType(LocationPropertyType locationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLocationPropertyType(LocationPropertyType locationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(locationPropertyType, diagnostics, context);
 	}
 
@@ -2925,8 +2722,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMappingRuleType(MappingRuleType mappingRuleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMappingRuleType(MappingRuleType mappingRuleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(mappingRuleType, diagnostics, context);
 	}
 
@@ -2935,8 +2731,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMeasureListType(MeasureListType measureListType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMeasureListType(MeasureListType measureListType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(measureListType, diagnostics, context);
 	}
 
@@ -2945,8 +2740,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMeasureOrNilReasonListType(MeasureOrNilReasonListType measureOrNilReasonListType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMeasureOrNilReasonListType(MeasureOrNilReasonListType measureOrNilReasonListType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(measureOrNilReasonListType, diagnostics, context);
 	}
 
@@ -2955,8 +2749,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMeasureType(MeasureType measureType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMeasureType(MeasureType measureType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(measureType, diagnostics, context);
 	}
 
@@ -2965,8 +2758,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMetaDataPropertyType(MetaDataPropertyType metaDataPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMetaDataPropertyType(MetaDataPropertyType metaDataPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(metaDataPropertyType, diagnostics, context);
 	}
 
@@ -2975,8 +2767,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMovingObjectStatusType(MovingObjectStatusType movingObjectStatusType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMovingObjectStatusType(MovingObjectStatusType movingObjectStatusType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(movingObjectStatusType, diagnostics, context);
 	}
 
@@ -2985,8 +2776,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiCurvePropertyType(MultiCurvePropertyType multiCurvePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiCurvePropertyType(MultiCurvePropertyType multiCurvePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiCurvePropertyType, diagnostics, context);
 	}
 
@@ -2995,8 +2785,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiCurveType(MultiCurveType multiCurveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiCurveType(MultiCurveType multiCurveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiCurveType, diagnostics, context);
 	}
 
@@ -3005,8 +2794,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiGeometryPropertyType(MultiGeometryPropertyType multiGeometryPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiGeometryPropertyType(MultiGeometryPropertyType multiGeometryPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiGeometryPropertyType, diagnostics, context);
 	}
 
@@ -3015,8 +2803,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiGeometryType(MultiGeometryType multiGeometryType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiGeometryType(MultiGeometryType multiGeometryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiGeometryType, diagnostics, context);
 	}
 
@@ -3025,8 +2812,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiPointPropertyType(MultiPointPropertyType multiPointPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiPointPropertyType(MultiPointPropertyType multiPointPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiPointPropertyType, diagnostics, context);
 	}
 
@@ -3035,8 +2821,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiPointType(MultiPointType multiPointType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiPointType(MultiPointType multiPointType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiPointType, diagnostics, context);
 	}
 
@@ -3045,8 +2830,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiSolidPropertyType(MultiSolidPropertyType multiSolidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiSolidPropertyType(MultiSolidPropertyType multiSolidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiSolidPropertyType, diagnostics, context);
 	}
 
@@ -3055,8 +2839,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiSolidType(MultiSolidType multiSolidType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiSolidType(MultiSolidType multiSolidType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiSolidType, diagnostics, context);
 	}
 
@@ -3065,8 +2848,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiSurfacePropertyType(MultiSurfacePropertyType multiSurfacePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiSurfacePropertyType(MultiSurfacePropertyType multiSurfacePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiSurfacePropertyType, diagnostics, context);
 	}
 
@@ -3075,8 +2857,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMultiSurfaceType(MultiSurfaceType multiSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateMultiSurfaceType(MultiSurfaceType multiSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(multiSurfaceType, diagnostics, context);
 	}
 
@@ -3085,8 +2866,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNodeOrEdgePropertyType(NodeOrEdgePropertyType nodeOrEdgePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNodeOrEdgePropertyType(NodeOrEdgePropertyType nodeOrEdgePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(nodeOrEdgePropertyType, diagnostics, context);
 	}
 
@@ -3095,8 +2875,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNodePropertyType(NodePropertyType nodePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNodePropertyType(NodePropertyType nodePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(nodePropertyType, diagnostics, context);
 	}
 
@@ -3105,8 +2884,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNodeType(NodeType nodeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNodeType(NodeType nodeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(nodeType, diagnostics, context);
 	}
 
@@ -3115,8 +2893,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObliqueCartesianCSPropertyType(ObliqueCartesianCSPropertyType obliqueCartesianCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateObliqueCartesianCSPropertyType(ObliqueCartesianCSPropertyType obliqueCartesianCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(obliqueCartesianCSPropertyType, diagnostics, context);
 	}
 
@@ -3125,8 +2902,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObliqueCartesianCSType(ObliqueCartesianCSType obliqueCartesianCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateObliqueCartesianCSType(ObliqueCartesianCSType obliqueCartesianCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(obliqueCartesianCSType, diagnostics, context);
 	}
 
@@ -3135,8 +2911,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObservationType(ObservationType observationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateObservationType(ObservationType observationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(observationType, diagnostics, context);
 	}
 
@@ -3145,8 +2920,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOffsetCurveType(OffsetCurveType offsetCurveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOffsetCurveType(OffsetCurveType offsetCurveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(offsetCurveType, diagnostics, context);
 	}
 
@@ -3155,8 +2929,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperationMethodPropertyType(OperationMethodPropertyType operationMethodPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOperationMethodPropertyType(OperationMethodPropertyType operationMethodPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(operationMethodPropertyType, diagnostics, context);
 	}
 
@@ -3165,8 +2938,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperationMethodType(OperationMethodType operationMethodType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOperationMethodType(OperationMethodType operationMethodType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(operationMethodType, diagnostics, context);
 	}
 
@@ -3175,8 +2947,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperationParameterGroupPropertyType(OperationParameterGroupPropertyType operationParameterGroupPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOperationParameterGroupPropertyType(OperationParameterGroupPropertyType operationParameterGroupPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(operationParameterGroupPropertyType, diagnostics, context);
 	}
 
@@ -3185,8 +2956,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperationParameterGroupType(OperationParameterGroupType operationParameterGroupType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOperationParameterGroupType(OperationParameterGroupType operationParameterGroupType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(operationParameterGroupType, diagnostics, context);
 	}
 
@@ -3195,8 +2965,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperationParameterPropertyType(OperationParameterPropertyType operationParameterPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOperationParameterPropertyType(OperationParameterPropertyType operationParameterPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(operationParameterPropertyType, diagnostics, context);
 	}
 
@@ -3205,8 +2974,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperationParameterType(OperationParameterType operationParameterType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOperationParameterType(OperationParameterType operationParameterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(operationParameterType, diagnostics, context);
 	}
 
@@ -3215,8 +2983,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperationPropertyType(OperationPropertyType operationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOperationPropertyType(OperationPropertyType operationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(operationPropertyType, diagnostics, context);
 	}
 
@@ -3225,8 +2992,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOrientableCurveType(OrientableCurveType orientableCurveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOrientableCurveType(OrientableCurveType orientableCurveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(orientableCurveType, diagnostics, context);
 	}
 
@@ -3235,8 +3001,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOrientableSurfaceType(OrientableSurfaceType orientableSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateOrientableSurfaceType(OrientableSurfaceType orientableSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(orientableSurfaceType, diagnostics, context);
 	}
 
@@ -3245,8 +3010,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateParameterValueGroupType(ParameterValueGroupType parameterValueGroupType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateParameterValueGroupType(ParameterValueGroupType parameterValueGroupType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(parameterValueGroupType, diagnostics, context);
 	}
 
@@ -3255,8 +3019,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateParameterValueType(ParameterValueType parameterValueType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateParameterValueType(ParameterValueType parameterValueType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(parameterValueType, diagnostics, context);
 	}
 
@@ -3265,8 +3028,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePassThroughOperationPropertyType(PassThroughOperationPropertyType passThroughOperationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePassThroughOperationPropertyType(PassThroughOperationPropertyType passThroughOperationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(passThroughOperationPropertyType, diagnostics, context);
 	}
 
@@ -3275,8 +3037,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePassThroughOperationType(PassThroughOperationType passThroughOperationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePassThroughOperationType(PassThroughOperationType passThroughOperationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(passThroughOperationType, diagnostics, context);
 	}
 
@@ -3285,8 +3046,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePointArrayPropertyType(PointArrayPropertyType pointArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePointArrayPropertyType(PointArrayPropertyType pointArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(pointArrayPropertyType, diagnostics, context);
 	}
 
@@ -3295,8 +3055,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePointPropertyType(PointPropertyType pointPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePointPropertyType(PointPropertyType pointPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(pointPropertyType, diagnostics, context);
 	}
 
@@ -3305,8 +3064,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePointType(PointType pointType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePointType(PointType pointType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(pointType, diagnostics, context);
 	}
 
@@ -3315,8 +3073,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolarCSPropertyType(PolarCSPropertyType polarCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePolarCSPropertyType(PolarCSPropertyType polarCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(polarCSPropertyType, diagnostics, context);
 	}
 
@@ -3325,8 +3082,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolarCSType(PolarCSType polarCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePolarCSType(PolarCSType polarCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(polarCSType, diagnostics, context);
 	}
 
@@ -3335,8 +3091,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolygonPatchType(PolygonPatchType polygonPatchType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePolygonPatchType(PolygonPatchType polygonPatchType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(polygonPatchType, diagnostics, context);
 	}
 
@@ -3345,8 +3100,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolygonType(PolygonType polygonType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePolygonType(PolygonType polygonType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(polygonType, diagnostics, context);
 	}
 
@@ -3355,8 +3109,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrimeMeridianPropertyType(PrimeMeridianPropertyType primeMeridianPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePrimeMeridianPropertyType(PrimeMeridianPropertyType primeMeridianPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(primeMeridianPropertyType, diagnostics, context);
 	}
 
@@ -3365,8 +3118,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrimeMeridianType(PrimeMeridianType primeMeridianType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePrimeMeridianType(PrimeMeridianType primeMeridianType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(primeMeridianType, diagnostics, context);
 	}
 
@@ -3375,8 +3127,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePriorityLocationPropertyType(PriorityLocationPropertyType priorityLocationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validatePriorityLocationPropertyType(PriorityLocationPropertyType priorityLocationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(priorityLocationPropertyType, diagnostics, context);
 	}
 
@@ -3385,8 +3136,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedurePropertyType(ProcedurePropertyType procedurePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateProcedurePropertyType(ProcedurePropertyType procedurePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(procedurePropertyType, diagnostics, context);
 	}
 
@@ -3395,8 +3145,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProjectedCRSPropertyType(ProjectedCRSPropertyType projectedCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateProjectedCRSPropertyType(ProjectedCRSPropertyType projectedCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(projectedCRSPropertyType, diagnostics, context);
 	}
 
@@ -3405,8 +3154,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProjectedCRSType(ProjectedCRSType projectedCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateProjectedCRSType(ProjectedCRSType projectedCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(projectedCRSType, diagnostics, context);
 	}
 
@@ -3415,8 +3163,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQuantityExtentType(QuantityExtentType quantityExtentType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateQuantityExtentType(QuantityExtentType quantityExtentType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(quantityExtentType, diagnostics, context);
 	}
 
@@ -3425,8 +3172,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQuantityPropertyType(QuantityPropertyType quantityPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateQuantityPropertyType(QuantityPropertyType quantityPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(quantityPropertyType, diagnostics, context);
 	}
 
@@ -3435,8 +3181,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQuantityType(QuantityType quantityType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateQuantityType(QuantityType quantityType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(quantityType, diagnostics, context);
 	}
 
@@ -3445,8 +3190,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRangeSetType(RangeSetType rangeSetType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRangeSetType(RangeSetType rangeSetType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(rangeSetType, diagnostics, context);
 	}
 
@@ -3455,8 +3199,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRectangleType(RectangleType rectangleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRectangleType(RectangleType rectangleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(rectangleType, diagnostics, context);
 	}
 
@@ -3465,8 +3208,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRectifiedGridType(RectifiedGridType rectifiedGridType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRectifiedGridType(RectifiedGridType rectifiedGridType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(rectifiedGridType, diagnostics, context);
 	}
 
@@ -3475,8 +3217,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReferenceType(ReferenceType referenceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateReferenceType(ReferenceType referenceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(referenceType, diagnostics, context);
 	}
 
@@ -3485,8 +3226,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefLocationType(RefLocationType refLocationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRefLocationType(RefLocationType refLocationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(refLocationType, diagnostics, context);
 	}
 
@@ -3495,8 +3235,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRelatedTimeType(RelatedTimeType relatedTimeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRelatedTimeType(RelatedTimeType relatedTimeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(relatedTimeType, diagnostics, context);
 	}
 
@@ -3505,8 +3244,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultType(ResultType resultType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateResultType(ResultType resultType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(resultType, diagnostics, context);
 	}
 
@@ -3515,8 +3253,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRingPropertyType(RingPropertyType ringPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRingPropertyType(RingPropertyType ringPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(ringPropertyType, diagnostics, context);
 	}
 
@@ -3525,8 +3262,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRingType(RingType ringType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRingType(RingType ringType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(ringType, diagnostics, context);
 	}
 
@@ -3535,8 +3271,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRowsType(RowsType rowsType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRowsType(RowsType rowsType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(rowsType, diagnostics, context);
 	}
 
@@ -3545,8 +3280,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRowType(RowType rowType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRowType(RowType rowType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(rowType, diagnostics, context);
 	}
 
@@ -3555,8 +3289,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScaleType(ScaleType scaleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateScaleType(ScaleType scaleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(scaleType, diagnostics, context);
 	}
 
@@ -3565,8 +3298,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecondDefiningParameterType(SecondDefiningParameterType secondDefiningParameterType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSecondDefiningParameterType(SecondDefiningParameterType secondDefiningParameterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(secondDefiningParameterType, diagnostics, context);
 	}
 
@@ -3575,8 +3307,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecondDefiningParameterType1(SecondDefiningParameterType1 secondDefiningParameterType1, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSecondDefiningParameterType1(SecondDefiningParameterType1 secondDefiningParameterType1, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(secondDefiningParameterType1, diagnostics, context);
 	}
 
@@ -3585,8 +3316,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSequenceRuleType(SequenceRuleType sequenceRuleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSequenceRuleType(SequenceRuleType sequenceRuleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(sequenceRuleType, diagnostics, context);
 	}
 
@@ -3595,8 +3325,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateShellPropertyType(ShellPropertyType shellPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateShellPropertyType(ShellPropertyType shellPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(shellPropertyType, diagnostics, context);
 	}
 
@@ -3605,8 +3334,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateShellType(ShellType shellType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateShellType(ShellType shellType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(shellType, diagnostics, context);
 	}
 
@@ -3615,8 +3343,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSingleCRSPropertyType(SingleCRSPropertyType singleCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSingleCRSPropertyType(SingleCRSPropertyType singleCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(singleCRSPropertyType, diagnostics, context);
 	}
 
@@ -3625,8 +3352,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSingleOperationPropertyType(SingleOperationPropertyType singleOperationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSingleOperationPropertyType(SingleOperationPropertyType singleOperationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(singleOperationPropertyType, diagnostics, context);
 	}
 
@@ -3635,8 +3361,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSolidArrayPropertyType(SolidArrayPropertyType solidArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSolidArrayPropertyType(SolidArrayPropertyType solidArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(solidArrayPropertyType, diagnostics, context);
 	}
 
@@ -3645,8 +3370,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSolidPropertyType(SolidPropertyType solidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSolidPropertyType(SolidPropertyType solidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(solidPropertyType, diagnostics, context);
 	}
 
@@ -3655,8 +3379,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSolidType(SolidType solidType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSolidType(SolidType solidType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(solidType, diagnostics, context);
 	}
 
@@ -3665,8 +3388,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSpeedType(SpeedType speedType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSpeedType(SpeedType speedType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(speedType, diagnostics, context);
 	}
 
@@ -3675,8 +3397,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSphereType(SphereType sphereType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSphereType(SphereType sphereType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(sphereType, diagnostics, context);
 	}
 
@@ -3685,8 +3406,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSphericalCSPropertyType(SphericalCSPropertyType sphericalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSphericalCSPropertyType(SphericalCSPropertyType sphericalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(sphericalCSPropertyType, diagnostics, context);
 	}
 
@@ -3695,8 +3415,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSphericalCSType(SphericalCSType sphericalCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSphericalCSType(SphericalCSType sphericalCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(sphericalCSType, diagnostics, context);
 	}
 
@@ -3705,8 +3424,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStringOrRefType(StringOrRefType stringOrRefType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateStringOrRefType(StringOrRefType stringOrRefType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(stringOrRefType, diagnostics, context);
 	}
 
@@ -3715,8 +3433,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurfaceArrayPropertyType(SurfaceArrayPropertyType surfaceArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSurfaceArrayPropertyType(SurfaceArrayPropertyType surfaceArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(surfaceArrayPropertyType, diagnostics, context);
 	}
 
@@ -3725,8 +3442,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurfacePatchArrayPropertyType(SurfacePatchArrayPropertyType surfacePatchArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSurfacePatchArrayPropertyType(SurfacePatchArrayPropertyType surfacePatchArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(surfacePatchArrayPropertyType, diagnostics, context);
 	}
 
@@ -3735,8 +3451,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurfacePropertyType(SurfacePropertyType surfacePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSurfacePropertyType(SurfacePropertyType surfacePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(surfacePropertyType, diagnostics, context);
 	}
 
@@ -3745,8 +3460,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurfaceType(SurfaceType surfaceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSurfaceType(SurfaceType surfaceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(surfaceType, diagnostics, context);
 	}
 
@@ -3755,8 +3469,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTargetPropertyType(TargetPropertyType targetPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTargetPropertyType(TargetPropertyType targetPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(targetPropertyType, diagnostics, context);
 	}
 
@@ -3765,8 +3478,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTemporalCRSPropertyType(TemporalCRSPropertyType temporalCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTemporalCRSPropertyType(TemporalCRSPropertyType temporalCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(temporalCRSPropertyType, diagnostics, context);
 	}
 
@@ -3775,8 +3487,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTemporalCRSType(TemporalCRSType temporalCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTemporalCRSType(TemporalCRSType temporalCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(temporalCRSType, diagnostics, context);
 	}
 
@@ -3785,8 +3496,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTemporalCSPropertyType(TemporalCSPropertyType temporalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTemporalCSPropertyType(TemporalCSPropertyType temporalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(temporalCSPropertyType, diagnostics, context);
 	}
 
@@ -3795,8 +3505,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTemporalCSType(TemporalCSType temporalCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTemporalCSType(TemporalCSType temporalCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(temporalCSType, diagnostics, context);
 	}
 
@@ -3805,8 +3514,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTemporalDatumBaseType(TemporalDatumBaseType temporalDatumBaseType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTemporalDatumBaseType(TemporalDatumBaseType temporalDatumBaseType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(temporalDatumBaseType, diagnostics, context);
 	}
 
@@ -3815,8 +3523,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTemporalDatumPropertyType(TemporalDatumPropertyType temporalDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTemporalDatumPropertyType(TemporalDatumPropertyType temporalDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(temporalDatumPropertyType, diagnostics, context);
 	}
 
@@ -3825,8 +3532,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTemporalDatumType(TemporalDatumType temporalDatumType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTemporalDatumType(TemporalDatumType temporalDatumType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(temporalDatumType, diagnostics, context);
 	}
 
@@ -3835,8 +3541,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeCalendarEraPropertyType(TimeCalendarEraPropertyType timeCalendarEraPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeCalendarEraPropertyType(TimeCalendarEraPropertyType timeCalendarEraPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeCalendarEraPropertyType, diagnostics, context);
 	}
 
@@ -3845,8 +3550,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeCalendarEraType(TimeCalendarEraType timeCalendarEraType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeCalendarEraType(TimeCalendarEraType timeCalendarEraType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeCalendarEraType, diagnostics, context);
 	}
 
@@ -3855,8 +3559,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeCalendarPropertyType(TimeCalendarPropertyType timeCalendarPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeCalendarPropertyType(TimeCalendarPropertyType timeCalendarPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeCalendarPropertyType, diagnostics, context);
 	}
 
@@ -3865,8 +3568,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeCalendarType(TimeCalendarType timeCalendarType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeCalendarType(TimeCalendarType timeCalendarType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeCalendarType, diagnostics, context);
 	}
 
@@ -3875,8 +3577,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeClockPropertyType(TimeClockPropertyType timeClockPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeClockPropertyType(TimeClockPropertyType timeClockPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeClockPropertyType, diagnostics, context);
 	}
 
@@ -3885,8 +3586,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeClockType(TimeClockType timeClockType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeClockType(TimeClockType timeClockType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeClockType, diagnostics, context);
 	}
 
@@ -3895,8 +3595,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeCoordinateSystemType(TimeCoordinateSystemType timeCoordinateSystemType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeCoordinateSystemType(TimeCoordinateSystemType timeCoordinateSystemType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeCoordinateSystemType, diagnostics, context);
 	}
 
@@ -3905,8 +3604,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeCSPropertyType(TimeCSPropertyType timeCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeCSPropertyType(TimeCSPropertyType timeCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeCSPropertyType, diagnostics, context);
 	}
 
@@ -3915,8 +3613,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeCSType(TimeCSType timeCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeCSType(TimeCSType timeCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeCSType, diagnostics, context);
 	}
 
@@ -3925,8 +3622,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeEdgePropertyType(TimeEdgePropertyType timeEdgePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeEdgePropertyType(TimeEdgePropertyType timeEdgePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeEdgePropertyType, diagnostics, context);
 	}
 
@@ -3935,8 +3631,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeEdgeType(TimeEdgeType timeEdgeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeEdgeType(TimeEdgeType timeEdgeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeEdgeType, diagnostics, context);
 	}
 
@@ -3945,8 +3640,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeInstantPropertyType(TimeInstantPropertyType timeInstantPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeInstantPropertyType(TimeInstantPropertyType timeInstantPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeInstantPropertyType, diagnostics, context);
 	}
 
@@ -3955,8 +3649,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeInstantType(TimeInstantType timeInstantType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeInstantType(TimeInstantType timeInstantType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeInstantType, diagnostics, context);
 	}
 
@@ -3965,8 +3658,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeIntervalLengthType(TimeIntervalLengthType timeIntervalLengthType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeIntervalLengthType(TimeIntervalLengthType timeIntervalLengthType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeIntervalLengthType, diagnostics, context);
 	}
 
@@ -3975,8 +3667,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeNodePropertyType(TimeNodePropertyType timeNodePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeNodePropertyType(TimeNodePropertyType timeNodePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeNodePropertyType, diagnostics, context);
 	}
 
@@ -3985,8 +3676,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeNodeType(TimeNodeType timeNodeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeNodeType(TimeNodeType timeNodeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeNodeType, diagnostics, context);
 	}
 
@@ -3995,8 +3685,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeOrdinalEraPropertyType(TimeOrdinalEraPropertyType timeOrdinalEraPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeOrdinalEraPropertyType(TimeOrdinalEraPropertyType timeOrdinalEraPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeOrdinalEraPropertyType, diagnostics, context);
 	}
 
@@ -4005,8 +3694,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeOrdinalEraType(TimeOrdinalEraType timeOrdinalEraType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeOrdinalEraType(TimeOrdinalEraType timeOrdinalEraType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeOrdinalEraType, diagnostics, context);
 	}
 
@@ -4015,8 +3703,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeOrdinalReferenceSystemType(TimeOrdinalReferenceSystemType timeOrdinalReferenceSystemType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeOrdinalReferenceSystemType(TimeOrdinalReferenceSystemType timeOrdinalReferenceSystemType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeOrdinalReferenceSystemType, diagnostics, context);
 	}
 
@@ -4025,8 +3712,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimePeriodPropertyType(TimePeriodPropertyType timePeriodPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimePeriodPropertyType(TimePeriodPropertyType timePeriodPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timePeriodPropertyType, diagnostics, context);
 	}
 
@@ -4035,8 +3721,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimePeriodType(TimePeriodType timePeriodType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimePeriodType(TimePeriodType timePeriodType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timePeriodType, diagnostics, context);
 	}
 
@@ -4045,8 +3730,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimePositionType(TimePositionType timePositionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimePositionType(TimePositionType timePositionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timePositionType, diagnostics, context);
 	}
 
@@ -4055,8 +3739,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimePrimitivePropertyType(TimePrimitivePropertyType timePrimitivePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimePrimitivePropertyType(TimePrimitivePropertyType timePrimitivePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timePrimitivePropertyType, diagnostics, context);
 	}
 
@@ -4065,8 +3748,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeReferenceSystemType(TimeReferenceSystemType timeReferenceSystemType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeReferenceSystemType(TimeReferenceSystemType timeReferenceSystemType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeReferenceSystemType, diagnostics, context);
 	}
 
@@ -4075,8 +3757,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeTopologyComplexPropertyType(TimeTopologyComplexPropertyType timeTopologyComplexPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeTopologyComplexPropertyType(TimeTopologyComplexPropertyType timeTopologyComplexPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeTopologyComplexPropertyType, diagnostics, context);
 	}
 
@@ -4085,8 +3766,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeTopologyComplexType(TimeTopologyComplexType timeTopologyComplexType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeTopologyComplexType(TimeTopologyComplexType timeTopologyComplexType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeTopologyComplexType, diagnostics, context);
 	}
 
@@ -4095,8 +3775,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeTopologyPrimitivePropertyType(TimeTopologyPrimitivePropertyType timeTopologyPrimitivePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeTopologyPrimitivePropertyType(TimeTopologyPrimitivePropertyType timeTopologyPrimitivePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeTopologyPrimitivePropertyType, diagnostics, context);
 	}
 
@@ -4105,8 +3784,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeType(TimeType timeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeType(TimeType timeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(timeType, diagnostics, context);
 	}
 
@@ -4115,8 +3793,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTinType(TinType tinType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTinType(TinType tinType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(tinType, diagnostics, context);
 	}
 
@@ -4125,8 +3802,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoComplexPropertyType(TopoComplexPropertyType topoComplexPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoComplexPropertyType(TopoComplexPropertyType topoComplexPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoComplexPropertyType, diagnostics, context);
 	}
 
@@ -4135,8 +3811,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoComplexType(TopoComplexType topoComplexType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoComplexType(TopoComplexType topoComplexType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoComplexType, diagnostics, context);
 	}
 
@@ -4145,8 +3820,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoCurvePropertyType(TopoCurvePropertyType topoCurvePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoCurvePropertyType(TopoCurvePropertyType topoCurvePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoCurvePropertyType, diagnostics, context);
 	}
 
@@ -4155,8 +3829,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoCurveType(TopoCurveType topoCurveType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoCurveType(TopoCurveType topoCurveType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoCurveType, diagnostics, context);
 	}
 
@@ -4165,8 +3838,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoPointPropertyType(TopoPointPropertyType topoPointPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoPointPropertyType(TopoPointPropertyType topoPointPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoPointPropertyType, diagnostics, context);
 	}
 
@@ -4175,8 +3847,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoPointType(TopoPointType topoPointType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoPointType(TopoPointType topoPointType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoPointType, diagnostics, context);
 	}
 
@@ -4185,8 +3856,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoPrimitiveArrayAssociationType(TopoPrimitiveArrayAssociationType topoPrimitiveArrayAssociationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoPrimitiveArrayAssociationType(TopoPrimitiveArrayAssociationType topoPrimitiveArrayAssociationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoPrimitiveArrayAssociationType, diagnostics, context);
 	}
 
@@ -4195,8 +3865,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoPrimitiveMemberType(TopoPrimitiveMemberType topoPrimitiveMemberType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoPrimitiveMemberType(TopoPrimitiveMemberType topoPrimitiveMemberType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoPrimitiveMemberType, diagnostics, context);
 	}
 
@@ -4205,8 +3874,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoSolidPropertyType(TopoSolidPropertyType topoSolidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoSolidPropertyType(TopoSolidPropertyType topoSolidPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoSolidPropertyType, diagnostics, context);
 	}
 
@@ -4215,8 +3883,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoSolidType(TopoSolidType topoSolidType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoSolidType(TopoSolidType topoSolidType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoSolidType, diagnostics, context);
 	}
 
@@ -4225,8 +3892,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoSurfacePropertyType(TopoSurfacePropertyType topoSurfacePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoSurfacePropertyType(TopoSurfacePropertyType topoSurfacePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoSurfacePropertyType, diagnostics, context);
 	}
 
@@ -4235,8 +3901,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoSurfaceType(TopoSurfaceType topoSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoSurfaceType(TopoSurfaceType topoSurfaceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoSurfaceType, diagnostics, context);
 	}
 
@@ -4245,8 +3910,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoVolumePropertyType(TopoVolumePropertyType topoVolumePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoVolumePropertyType(TopoVolumePropertyType topoVolumePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoVolumePropertyType, diagnostics, context);
 	}
 
@@ -4255,8 +3919,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTopoVolumeType(TopoVolumeType topoVolumeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTopoVolumeType(TopoVolumeType topoVolumeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(topoVolumeType, diagnostics, context);
 	}
 
@@ -4265,8 +3928,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransformationPropertyType(TransformationPropertyType transformationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTransformationPropertyType(TransformationPropertyType transformationPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(transformationPropertyType, diagnostics, context);
 	}
 
@@ -4275,8 +3937,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransformationType(TransformationType transformationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTransformationType(TransformationType transformationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(transformationType, diagnostics, context);
 	}
 
@@ -4285,8 +3946,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTriangleType(TriangleType triangleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTriangleType(TriangleType triangleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(triangleType, diagnostics, context);
 	}
 
@@ -4295,8 +3955,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnitDefinitionType(UnitDefinitionType unitDefinitionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUnitDefinitionType(UnitDefinitionType unitDefinitionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(unitDefinitionType, diagnostics, context);
 	}
 
@@ -4305,8 +3964,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnitOfMeasureType(UnitOfMeasureType unitOfMeasureType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUnitOfMeasureType(UnitOfMeasureType unitOfMeasureType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(unitOfMeasureType, diagnostics, context);
 	}
 
@@ -4315,8 +3973,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUserDefinedCSPropertyType(UserDefinedCSPropertyType userDefinedCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUserDefinedCSPropertyType(UserDefinedCSPropertyType userDefinedCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(userDefinedCSPropertyType, diagnostics, context);
 	}
 
@@ -4325,8 +3982,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUserDefinedCSType(UserDefinedCSType userDefinedCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUserDefinedCSType(UserDefinedCSType userDefinedCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(userDefinedCSType, diagnostics, context);
 	}
 
@@ -4335,8 +3991,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateValueArrayPropertyType(ValueArrayPropertyType valueArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateValueArrayPropertyType(ValueArrayPropertyType valueArrayPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(valueArrayPropertyType, diagnostics, context);
 	}
 
@@ -4345,8 +4000,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateValueArrayType(ValueArrayType valueArrayType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateValueArrayType(ValueArrayType valueArrayType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(valueArrayType, diagnostics, context);
 	}
 
@@ -4355,8 +4009,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateValuePropertyType(ValuePropertyType valuePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateValuePropertyType(ValuePropertyType valuePropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(valuePropertyType, diagnostics, context);
 	}
 
@@ -4365,8 +4018,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVectorType(VectorType vectorType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateVectorType(VectorType vectorType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(vectorType, diagnostics, context);
 	}
 
@@ -4375,8 +4027,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVerticalCRSPropertyType(VerticalCRSPropertyType verticalCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateVerticalCRSPropertyType(VerticalCRSPropertyType verticalCRSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(verticalCRSPropertyType, diagnostics, context);
 	}
 
@@ -4385,8 +4036,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVerticalCRSType(VerticalCRSType verticalCRSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateVerticalCRSType(VerticalCRSType verticalCRSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(verticalCRSType, diagnostics, context);
 	}
 
@@ -4395,8 +4045,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVerticalCSPropertyType(VerticalCSPropertyType verticalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateVerticalCSPropertyType(VerticalCSPropertyType verticalCSPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(verticalCSPropertyType, diagnostics, context);
 	}
 
@@ -4405,8 +4054,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVerticalCSType(VerticalCSType verticalCSType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateVerticalCSType(VerticalCSType verticalCSType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(verticalCSType, diagnostics, context);
 	}
 
@@ -4415,8 +4063,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVerticalDatumPropertyType(VerticalDatumPropertyType verticalDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateVerticalDatumPropertyType(VerticalDatumPropertyType verticalDatumPropertyType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(verticalDatumPropertyType, diagnostics, context);
 	}
 
@@ -4425,8 +4072,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVerticalDatumType(VerticalDatumType verticalDatumType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateVerticalDatumType(VerticalDatumType verticalDatumType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(verticalDatumType, diagnostics, context);
 	}
 
@@ -4435,8 +4081,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVolumeType(VolumeType volumeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateVolumeType(VolumeType volumeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(volumeType, diagnostics, context);
 	}
 
@@ -4445,8 +4090,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAggregationType(AggregationType aggregationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAggregationType(AggregationType aggregationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4455,8 +4099,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCompassPointEnumeration(CompassPointEnumeration compassPointEnumeration, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCompassPointEnumeration(CompassPointEnumeration compassPointEnumeration, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4465,8 +4108,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCurveInterpolationType(CurveInterpolationType curveInterpolationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCurveInterpolationType(CurveInterpolationType curveInterpolationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4475,8 +4117,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectionType(DirectionType directionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectionType(DirectionType directionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4485,8 +4126,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIncrementOrder(IncrementOrder incrementOrder, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIncrementOrder(IncrementOrder incrementOrder, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4495,8 +4135,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateKnotTypesType(KnotTypesType knotTypesType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateKnotTypesType(KnotTypesType knotTypesType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4505,8 +4144,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNilReasonEnumerationMember0(NilReasonEnumerationMember0 nilReasonEnumerationMember0, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNilReasonEnumerationMember0(NilReasonEnumerationMember0 nilReasonEnumerationMember0, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4515,8 +4153,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRelativePositionType(RelativePositionType relativePositionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRelativePositionType(RelativePositionType relativePositionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4525,8 +4162,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSequenceRuleEnumeration(SequenceRuleEnumeration sequenceRuleEnumeration, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSequenceRuleEnumeration(SequenceRuleEnumeration sequenceRuleEnumeration, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4535,8 +4171,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignType(SignType signType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSignType(SignType signType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4545,8 +4180,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSuccessionType(SuccessionType successionType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSuccessionType(SuccessionType successionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4555,8 +4189,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurfaceInterpolationType(SurfaceInterpolationType surfaceInterpolationType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSurfaceInterpolationType(SurfaceInterpolationType surfaceInterpolationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4565,8 +4198,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeIndeterminateValueType(TimeIndeterminateValueType timeIndeterminateValueType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeIndeterminateValueType(TimeIndeterminateValueType timeIndeterminateValueType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4575,8 +4207,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeUnitTypeMember0(TimeUnitTypeMember0 timeUnitTypeMember0, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeUnitTypeMember0(TimeUnitTypeMember0 timeUnitTypeMember0, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4585,8 +4216,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAggregationTypeObject(AggregationType aggregationTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAggregationTypeObject(AggregationType aggregationTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4595,8 +4225,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcMinutesType(BigInteger arcMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcMinutesType(BigInteger arcMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = xmlTypeValidator.validateNonNegativeInteger_Min(arcMinutesType, diagnostics, context);
 		if (result || diagnostics != null) result &= validateArcMinutesType_Max(arcMinutesType, diagnostics, context);
 		return result;
@@ -4616,8 +4245,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcMinutesType_Max(BigInteger arcMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcMinutesType_Max(BigInteger arcMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = arcMinutesType.compareTo(ARC_MINUTES_TYPE__MAX__VALUE) <= 0;
 		if (!result && diagnostics != null)
 			reportMaxViolation(GMLPackage.eINSTANCE.getArcMinutesType(), arcMinutesType, ARC_MINUTES_TYPE__MAX__VALUE, true, diagnostics, context);
@@ -4629,8 +4257,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcSecondsType(BigDecimal arcSecondsType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcSecondsType(BigDecimal arcSecondsType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateArcSecondsType_Min(arcSecondsType, diagnostics, context);
 		if (result || diagnostics != null) result &= validateArcSecondsType_Max(arcSecondsType, diagnostics, context);
 		return result;
@@ -4650,8 +4277,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcSecondsType_Min(BigDecimal arcSecondsType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcSecondsType_Min(BigDecimal arcSecondsType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = arcSecondsType.compareTo(ARC_SECONDS_TYPE__MIN__VALUE) >= 0;
 		if (!result && diagnostics != null)
 			reportMinViolation(GMLPackage.eINSTANCE.getArcSecondsType(), arcSecondsType, ARC_SECONDS_TYPE__MIN__VALUE, true, diagnostics, context);
@@ -4672,8 +4298,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcSecondsType_Max(BigDecimal arcSecondsType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcSecondsType_Max(BigDecimal arcSecondsType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = arcSecondsType.compareTo(ARC_SECONDS_TYPE__MAX__VALUE) < 0;
 		if (!result && diagnostics != null)
 			reportMaxViolation(GMLPackage.eINSTANCE.getArcSecondsType(), arcSecondsType, ARC_SECONDS_TYPE__MAX__VALUE, false, diagnostics, context);
@@ -4685,8 +4310,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAxisDirection(String axisDirection, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAxisDirection(String axisDirection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateAxisDirection_Pattern(axisDirection, diagnostics, context);
 		return result;
 	}
@@ -4698,10 +4322,8 @@ public class GMLValidator extends EObjectValidator
 	 * @see #validateAxisDirection_Pattern
 	 */
 	public static final  PatternMatcher [][] AXIS_DIRECTION__PATTERN__VALUES =
-		new PatternMatcher [][]
-		{
-			new PatternMatcher []
-			{
+		new PatternMatcher [][] {
+			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher("[\\+\\-][1-9][0-9]*")
 			}
 		};
@@ -4712,8 +4334,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAxisDirection_Pattern(String axisDirection, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAxisDirection_Pattern(String axisDirection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validatePattern(GMLPackage.eINSTANCE.getAxisDirection(), axisDirection, AXIS_DIRECTION__PATTERN__VALUES, diagnostics, context);
 	}
 
@@ -4722,8 +4343,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAxisDirectionList(List<?> axisDirectionList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAxisDirectionList(List<?> axisDirectionList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateAxisDirectionList_ItemType(axisDirectionList, diagnostics, context);
 		return result;
 	}
@@ -4734,18 +4354,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAxisDirectionList_ItemType(List<?> axisDirectionList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateAxisDirectionList_ItemType(List<?> axisDirectionList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = axisDirectionList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = axisDirectionList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (GMLPackage.eINSTANCE.getAxisDirection().isInstance(item))
-			{
+			if (GMLPackage.eINSTANCE.getAxisDirection().isInstance(item)) {
 				result &= validateAxisDirection((String)item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(GMLPackage.eINSTANCE.getAxisDirection(), item, diagnostics, context);
 			}
@@ -4758,8 +4374,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBooleanList(List<?> booleanList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBooleanList(List<?> booleanList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateBooleanList_ItemType(booleanList, diagnostics, context);
 		return result;
 	}
@@ -4770,18 +4385,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBooleanList_ItemType(List<?> booleanList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBooleanList_ItemType(List<?> booleanList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = booleanList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = booleanList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (XMLTypePackage.Literals.BOOLEAN.isInstance(item))
-			{
+			if (XMLTypePackage.Literals.BOOLEAN.isInstance(item)) {
 				result &= xmlTypeValidator.validateBoolean((Boolean)item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(XMLTypePackage.Literals.BOOLEAN, item, diagnostics, context);
 			}
@@ -4794,8 +4405,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBooleanOrNilReason(Object booleanOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBooleanOrNilReason(Object booleanOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateBooleanOrNilReason_MemberTypes(booleanOrNilReason, diagnostics, context);
 		return result;
 	}
@@ -4806,40 +4416,30 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBooleanOrNilReason_MemberTypes(Object booleanOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateBooleanOrNilReason_MemberTypes(Object booleanOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(booleanOrNilReason))
-			{
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(booleanOrNilReason)) {
 				if (validateNilReasonEnumeration(booleanOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.BOOLEAN.isInstance(booleanOrNilReason))
-			{
+			if (XMLTypePackage.Literals.BOOLEAN.isInstance(booleanOrNilReason)) {
 				if (xmlTypeValidator.validateBoolean((Boolean)booleanOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(booleanOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(booleanOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)booleanOrNilReason, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(booleanOrNilReason))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(booleanOrNilReason)) {
 				if (validateNilReasonEnumeration(booleanOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.BOOLEAN.isInstance(booleanOrNilReason))
-			{
+			if (XMLTypePackage.Literals.BOOLEAN.isInstance(booleanOrNilReason)) {
 				if (xmlTypeValidator.validateBoolean((Boolean)booleanOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(booleanOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(booleanOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)booleanOrNilReason, null, context)) return true;
 			}
 		}
@@ -4851,8 +4451,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBooleanOrNilReasonList(List<?> booleanOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBooleanOrNilReasonList(List<?> booleanOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateBooleanOrNilReasonList_ItemType(booleanOrNilReasonList, diagnostics, context);
 		return result;
 	}
@@ -4863,18 +4462,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBooleanOrNilReasonList_ItemType(List<?> booleanOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateBooleanOrNilReasonList_ItemType(List<?> booleanOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = booleanOrNilReasonList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = booleanOrNilReasonList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (GMLPackage.eINSTANCE.getBooleanOrNilReason().isInstance(item))
-			{
+			if (GMLPackage.eINSTANCE.getBooleanOrNilReason().isInstance(item)) {
 				result &= validateBooleanOrNilReason(item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(GMLPackage.eINSTANCE.getBooleanOrNilReason(), item, diagnostics, context);
 			}
@@ -4887,8 +4482,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCalDate(XMLGregorianCalendar calDate, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCalDate(XMLGregorianCalendar calDate, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateCalDate_MemberTypes(calDate, diagnostics, context);
 		return result;
 	}
@@ -4899,40 +4493,30 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCalDate_MemberTypes(XMLGregorianCalendar calDate, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateCalDate_MemberTypes(XMLGregorianCalendar calDate, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (XMLTypePackage.Literals.DATE.isInstance(calDate))
-			{
+			if (XMLTypePackage.Literals.DATE.isInstance(calDate)) {
 				if (xmlTypeValidator.validateDate(calDate, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(calDate))
-			{
+			if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(calDate)) {
 				if (xmlTypeValidator.validateGYearMonth(calDate, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.GYEAR.isInstance(calDate))
-			{
+			if (XMLTypePackage.Literals.GYEAR.isInstance(calDate)) {
 				if (xmlTypeValidator.validateGYear(calDate, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (XMLTypePackage.Literals.DATE.isInstance(calDate))
-			{
+		else {
+			if (XMLTypePackage.Literals.DATE.isInstance(calDate)) {
 				if (xmlTypeValidator.validateDate(calDate, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(calDate))
-			{
+			if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(calDate)) {
 				if (xmlTypeValidator.validateGYearMonth(calDate, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.GYEAR.isInstance(calDate))
-			{
+			if (XMLTypePackage.Literals.GYEAR.isInstance(calDate)) {
 				if (xmlTypeValidator.validateGYear(calDate, null, context)) return true;
 			}
 		}
@@ -4944,8 +4528,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCompassPointEnumerationObject(CompassPointEnumeration compassPointEnumerationObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCompassPointEnumerationObject(CompassPointEnumeration compassPointEnumerationObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -4954,8 +4537,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCountExtentType(List<?> countExtentType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCountExtentType(List<?> countExtentType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateIntegerOrNilReasonList_ItemType(countExtentType, diagnostics, context);
 		if (result || diagnostics != null) result &= validateCountExtentType_MinLength(countExtentType, diagnostics, context);
 		if (result || diagnostics != null) result &= validateCountExtentType_MaxLength(countExtentType, diagnostics, context);
@@ -4968,8 +4550,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCountExtentType_MinLength(List<?> countExtentType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCountExtentType_MinLength(List<?> countExtentType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		int length = countExtentType.size();
 		boolean result = length >= 2;
 		if (!result && diagnostics != null)
@@ -4983,8 +4564,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCountExtentType_MaxLength(List<?> countExtentType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCountExtentType_MaxLength(List<?> countExtentType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		int length = countExtentType.size();
 		boolean result = length <= 2;
 		if (!result && diagnostics != null)
@@ -4997,8 +4577,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCurveInterpolationTypeObject(CurveInterpolationType curveInterpolationTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateCurveInterpolationTypeObject(CurveInterpolationType curveInterpolationTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5007,8 +4586,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDecimalMinutesType(BigDecimal decimalMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDecimalMinutesType(BigDecimal decimalMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateDecimalMinutesType_Min(decimalMinutesType, diagnostics, context);
 		if (result || diagnostics != null) result &= validateDecimalMinutesType_Max(decimalMinutesType, diagnostics, context);
 		return result;
@@ -5028,8 +4606,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDecimalMinutesType_Min(BigDecimal decimalMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDecimalMinutesType_Min(BigDecimal decimalMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = decimalMinutesType.compareTo(DECIMAL_MINUTES_TYPE__MIN__VALUE) >= 0;
 		if (!result && diagnostics != null)
 			reportMinViolation(GMLPackage.eINSTANCE.getDecimalMinutesType(), decimalMinutesType, DECIMAL_MINUTES_TYPE__MIN__VALUE, true, diagnostics, context);
@@ -5050,8 +4627,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDecimalMinutesType_Max(BigDecimal decimalMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDecimalMinutesType_Max(BigDecimal decimalMinutesType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = decimalMinutesType.compareTo(DECIMAL_MINUTES_TYPE__MAX__VALUE) < 0;
 		if (!result && diagnostics != null)
 			reportMaxViolation(GMLPackage.eINSTANCE.getDecimalMinutesType(), decimalMinutesType, DECIMAL_MINUTES_TYPE__MAX__VALUE, false, diagnostics, context);
@@ -5063,8 +4639,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDegreeValueType(BigInteger degreeValueType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDegreeValueType(BigInteger degreeValueType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = xmlTypeValidator.validateNonNegativeInteger_Min(degreeValueType, diagnostics, context);
 		if (result || diagnostics != null) result &= validateDegreeValueType_Max(degreeValueType, diagnostics, context);
 		return result;
@@ -5084,8 +4659,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDegreeValueType_Max(BigInteger degreeValueType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDegreeValueType_Max(BigInteger degreeValueType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = degreeValueType.compareTo(DEGREE_VALUE_TYPE__MAX__VALUE) <= 0;
 		if (!result && diagnostics != null)
 			reportMaxViolation(GMLPackage.eINSTANCE.getDegreeValueType(), degreeValueType, DEGREE_VALUE_TYPE__MAX__VALUE, true, diagnostics, context);
@@ -5097,8 +4671,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDirectionTypeObject(DirectionType directionTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDirectionTypeObject(DirectionType directionTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5107,8 +4680,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDoubleList(List<?> doubleList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDoubleList(List<?> doubleList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateDoubleList_ItemType(doubleList, diagnostics, context);
 		return result;
 	}
@@ -5119,18 +4691,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDoubleList_ItemType(List<?> doubleList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDoubleList_ItemType(List<?> doubleList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = doubleList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = doubleList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (XMLTypePackage.Literals.DOUBLE.isInstance(item))
-			{
+			if (XMLTypePackage.Literals.DOUBLE.isInstance(item)) {
 				result &= xmlTypeValidator.validateDouble((Double)item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(XMLTypePackage.Literals.DOUBLE, item, diagnostics, context);
 			}
@@ -5143,8 +4711,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDoubleOrNilReason(Object doubleOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDoubleOrNilReason(Object doubleOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateDoubleOrNilReason_MemberTypes(doubleOrNilReason, diagnostics, context);
 		return result;
 	}
@@ -5155,40 +4722,30 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDoubleOrNilReason_MemberTypes(Object doubleOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateDoubleOrNilReason_MemberTypes(Object doubleOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(doubleOrNilReason))
-			{
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(doubleOrNilReason)) {
 				if (validateNilReasonEnumeration(doubleOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.DOUBLE.isInstance(doubleOrNilReason))
-			{
+			if (XMLTypePackage.Literals.DOUBLE.isInstance(doubleOrNilReason)) {
 				if (xmlTypeValidator.validateDouble((Double)doubleOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(doubleOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(doubleOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)doubleOrNilReason, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(doubleOrNilReason))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(doubleOrNilReason)) {
 				if (validateNilReasonEnumeration(doubleOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.DOUBLE.isInstance(doubleOrNilReason))
-			{
+			if (XMLTypePackage.Literals.DOUBLE.isInstance(doubleOrNilReason)) {
 				if (xmlTypeValidator.validateDouble((Double)doubleOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(doubleOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(doubleOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)doubleOrNilReason, null, context)) return true;
 			}
 		}
@@ -5200,8 +4757,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDoubleOrNilReasonList(List<?> doubleOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDoubleOrNilReasonList(List<?> doubleOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateDoubleOrNilReasonList_ItemType(doubleOrNilReasonList, diagnostics, context);
 		return result;
 	}
@@ -5212,18 +4768,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDoubleOrNilReasonList_ItemType(List<?> doubleOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDoubleOrNilReasonList_ItemType(List<?> doubleOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = doubleOrNilReasonList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = doubleOrNilReasonList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (GMLPackage.eINSTANCE.getDoubleOrNilReason().isInstance(item))
-			{
+			if (GMLPackage.eINSTANCE.getDoubleOrNilReason().isInstance(item)) {
 				result &= validateDoubleOrNilReason(item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(GMLPackage.eINSTANCE.getDoubleOrNilReason(), item, diagnostics, context);
 			}
@@ -5236,8 +4788,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIncrementOrderObject(IncrementOrder incrementOrderObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIncrementOrderObject(IncrementOrder incrementOrderObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5246,8 +4797,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegerList(List<?> integerList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIntegerList(List<?> integerList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateIntegerList_ItemType(integerList, diagnostics, context);
 		return result;
 	}
@@ -5258,18 +4808,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegerList_ItemType(List<?> integerList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIntegerList_ItemType(List<?> integerList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = integerList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = integerList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (XMLTypePackage.Literals.INTEGER.isInstance(item))
-			{
+			if (XMLTypePackage.Literals.INTEGER.isInstance(item)) {
 				result &= xmlTypeValidator.validateInteger((BigInteger)item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(XMLTypePackage.Literals.INTEGER, item, diagnostics, context);
 			}
@@ -5282,8 +4828,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegerOrNilReason(Object integerOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIntegerOrNilReason(Object integerOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateIntegerOrNilReason_MemberTypes(integerOrNilReason, diagnostics, context);
 		return result;
 	}
@@ -5294,40 +4839,30 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegerOrNilReason_MemberTypes(Object integerOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateIntegerOrNilReason_MemberTypes(Object integerOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(integerOrNilReason))
-			{
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(integerOrNilReason)) {
 				if (validateNilReasonEnumeration(integerOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.INTEGER.isInstance(integerOrNilReason))
-			{
+			if (XMLTypePackage.Literals.INTEGER.isInstance(integerOrNilReason)) {
 				if (xmlTypeValidator.validateInteger((BigInteger)integerOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(integerOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(integerOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)integerOrNilReason, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(integerOrNilReason))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(integerOrNilReason)) {
 				if (validateNilReasonEnumeration(integerOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.INTEGER.isInstance(integerOrNilReason))
-			{
+			if (XMLTypePackage.Literals.INTEGER.isInstance(integerOrNilReason)) {
 				if (xmlTypeValidator.validateInteger((BigInteger)integerOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(integerOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(integerOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)integerOrNilReason, null, context)) return true;
 			}
 		}
@@ -5339,8 +4874,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegerOrNilReasonList(List<?> integerOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIntegerOrNilReasonList(List<?> integerOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateIntegerOrNilReasonList_ItemType(integerOrNilReasonList, diagnostics, context);
 		return result;
 	}
@@ -5351,18 +4885,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegerOrNilReasonList_ItemType(List<?> integerOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateIntegerOrNilReasonList_ItemType(List<?> integerOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = integerOrNilReasonList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = integerOrNilReasonList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (GMLPackage.eINSTANCE.getIntegerOrNilReason().isInstance(item))
-			{
+			if (GMLPackage.eINSTANCE.getIntegerOrNilReason().isInstance(item)) {
 				result &= validateIntegerOrNilReason(item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(GMLPackage.eINSTANCE.getIntegerOrNilReason(), item, diagnostics, context);
 			}
@@ -5375,8 +4905,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateKnotTypesTypeObject(KnotTypesType knotTypesTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateKnotTypesTypeObject(KnotTypesType knotTypesTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5385,8 +4914,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNameList(List<?> nameList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNameList(List<?> nameList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateNameList_ItemType(nameList, diagnostics, context);
 		return result;
 	}
@@ -5397,18 +4925,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNameList_ItemType(List<?> nameList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNameList_ItemType(List<?> nameList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = nameList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = nameList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (XMLTypePackage.Literals.NAME.isInstance(item))
-			{
+			if (XMLTypePackage.Literals.NAME.isInstance(item)) {
 				result &= xmlTypeValidator.validateName((String)item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(XMLTypePackage.Literals.NAME, item, diagnostics, context);
 			}
@@ -5421,8 +4945,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNameOrNilReason(Object nameOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNameOrNilReason(Object nameOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateNameOrNilReason_MemberTypes(nameOrNilReason, diagnostics, context);
 		return result;
 	}
@@ -5433,40 +4956,30 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNameOrNilReason_MemberTypes(Object nameOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateNameOrNilReason_MemberTypes(Object nameOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(nameOrNilReason))
-			{
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(nameOrNilReason)) {
 				if (validateNilReasonEnumeration(nameOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.NAME.isInstance(nameOrNilReason))
-			{
+			if (XMLTypePackage.Literals.NAME.isInstance(nameOrNilReason)) {
 				if (xmlTypeValidator.validateName((String)nameOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(nameOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(nameOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)nameOrNilReason, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(nameOrNilReason))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(nameOrNilReason)) {
 				if (validateNilReasonEnumeration(nameOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.NAME.isInstance(nameOrNilReason))
-			{
+			if (XMLTypePackage.Literals.NAME.isInstance(nameOrNilReason)) {
 				if (xmlTypeValidator.validateName((String)nameOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(nameOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(nameOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)nameOrNilReason, null, context)) return true;
 			}
 		}
@@ -5478,8 +4991,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNameOrNilReasonList(List<?> nameOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNameOrNilReasonList(List<?> nameOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateNameOrNilReasonList_ItemType(nameOrNilReasonList, diagnostics, context);
 		return result;
 	}
@@ -5490,18 +5002,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNameOrNilReasonList_ItemType(List<?> nameOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNameOrNilReasonList_ItemType(List<?> nameOrNilReasonList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = nameOrNilReasonList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = nameOrNilReasonList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (GMLPackage.eINSTANCE.getNameOrNilReason().isInstance(item))
-			{
+			if (GMLPackage.eINSTANCE.getNameOrNilReason().isInstance(item)) {
 				result &= validateNameOrNilReason(item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(GMLPackage.eINSTANCE.getNameOrNilReason(), item, diagnostics, context);
 			}
@@ -5514,8 +5022,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNCNameList(List<?> ncNameList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNCNameList(List<?> ncNameList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateNCNameList_ItemType(ncNameList, diagnostics, context);
 		return result;
 	}
@@ -5526,18 +5033,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNCNameList_ItemType(List<?> ncNameList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNCNameList_ItemType(List<?> ncNameList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = ncNameList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = ncNameList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (XMLTypePackage.Literals.NC_NAME.isInstance(item))
-			{
+			if (XMLTypePackage.Literals.NC_NAME.isInstance(item)) {
 				result &= xmlTypeValidator.validateNCName((String)item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(XMLTypePackage.Literals.NC_NAME, item, diagnostics, context);
 			}
@@ -5550,8 +5053,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNilReasonEnumeration(Object nilReasonEnumeration, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNilReasonEnumeration(Object nilReasonEnumeration, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateNilReasonEnumeration_MemberTypes(nilReasonEnumeration, diagnostics, context);
 		return result;
 	}
@@ -5562,32 +5064,24 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNilReasonEnumeration_MemberTypes(Object nilReasonEnumeration, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateNilReasonEnumeration_MemberTypes(Object nilReasonEnumeration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember0().isInstance(nilReasonEnumeration))
-			{
+			if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember0().isInstance(nilReasonEnumeration)) {
 				if (validateNilReasonEnumerationMember0((NilReasonEnumerationMember0)nilReasonEnumeration, tempDiagnostics, context)) return true;
 			}
-			if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember1().isInstance(nilReasonEnumeration))
-			{
+			if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember1().isInstance(nilReasonEnumeration)) {
 				if (validateNilReasonEnumerationMember1((String)nilReasonEnumeration, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember0().isInstance(nilReasonEnumeration))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember0().isInstance(nilReasonEnumeration)) {
 				if (validateNilReasonEnumerationMember0((NilReasonEnumerationMember0)nilReasonEnumeration, null, context)) return true;
 			}
-			if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember1().isInstance(nilReasonEnumeration))
-			{
+			if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember1().isInstance(nilReasonEnumeration)) {
 				if (validateNilReasonEnumerationMember1((String)nilReasonEnumeration, null, context)) return true;
 			}
 		}
@@ -5599,8 +5093,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNilReasonEnumerationMember0Object(NilReasonEnumerationMember0 nilReasonEnumerationMember0Object, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNilReasonEnumerationMember0Object(NilReasonEnumerationMember0 nilReasonEnumerationMember0Object, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5609,8 +5102,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNilReasonEnumerationMember1(String nilReasonEnumerationMember1, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNilReasonEnumerationMember1(String nilReasonEnumerationMember1, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateNilReasonEnumerationMember1_Pattern(nilReasonEnumerationMember1, diagnostics, context);
 		return result;
 	}
@@ -5622,10 +5114,8 @@ public class GMLValidator extends EObjectValidator
 	 * @see #validateNilReasonEnumerationMember1_Pattern
 	 */
 	public static final  PatternMatcher [][] NIL_REASON_ENUMERATION_MEMBER1__PATTERN__VALUES =
-		new PatternMatcher [][]
-		{
-			new PatternMatcher []
-			{
+		new PatternMatcher [][] {
+			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher("other:\\w{2,}")
 			}
 		};
@@ -5636,8 +5126,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNilReasonEnumerationMember1_Pattern(String nilReasonEnumerationMember1, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNilReasonEnumerationMember1_Pattern(String nilReasonEnumerationMember1, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validatePattern(GMLPackage.eINSTANCE.getNilReasonEnumerationMember1(), nilReasonEnumerationMember1, NIL_REASON_ENUMERATION_MEMBER1__PATTERN__VALUES, diagnostics, context);
 	}
 
@@ -5646,8 +5135,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNilReasonType(Object nilReasonType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateNilReasonType(Object nilReasonType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateNilReasonType_MemberTypes(nilReasonType, diagnostics, context);
 		return result;
 	}
@@ -5658,32 +5146,24 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNilReasonType_MemberTypes(Object nilReasonType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateNilReasonType_MemberTypes(Object nilReasonType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(nilReasonType))
-			{
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(nilReasonType)) {
 				if (validateNilReasonEnumeration(nilReasonType, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(nilReasonType))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(nilReasonType)) {
 				if (xmlTypeValidator.validateAnyURI((String)nilReasonType, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(nilReasonType))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(nilReasonType)) {
 				if (validateNilReasonEnumeration(nilReasonType, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(nilReasonType))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(nilReasonType)) {
 				if (xmlTypeValidator.validateAnyURI((String)nilReasonType, null, context)) return true;
 			}
 		}
@@ -5695,8 +5175,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQNameList(List<?> qNameList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateQNameList(List<?> qNameList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateQNameList_ItemType(qNameList, diagnostics, context);
 		return result;
 	}
@@ -5707,18 +5186,14 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQNameList_ItemType(List<?> qNameList, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateQNameList_ItemType(List<?> qNameList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = true;
-		for (Iterator<?> i = qNameList.iterator(); i.hasNext() && (result || diagnostics != null); )
-		{
+		for (Iterator<?> i = qNameList.iterator(); i.hasNext() && (result || diagnostics != null); ) {
 			Object item = i.next();
-			if (XMLTypePackage.Literals.QNAME.isInstance(item))
-			{
+			if (XMLTypePackage.Literals.QNAME.isInstance(item)) {
 				result &= xmlTypeValidator.validateQName((QName)item, diagnostics, context);
 			}
-			else
-			{
+			else {
 				result = false;
 				reportDataValueTypeViolation(XMLTypePackage.Literals.QNAME, item, diagnostics, context);
 			}
@@ -5731,8 +5206,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRelativePositionTypeObject(RelativePositionType relativePositionTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRelativePositionTypeObject(RelativePositionType relativePositionTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5741,8 +5215,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSequenceRuleEnumerationObject(SequenceRuleEnumeration sequenceRuleEnumerationObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSequenceRuleEnumerationObject(SequenceRuleEnumeration sequenceRuleEnumerationObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5751,8 +5224,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignTypeObject(SignType signTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSignTypeObject(SignType signTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5761,8 +5233,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStringOrNilReason(Object stringOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateStringOrNilReason(Object stringOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateStringOrNilReason_MemberTypes(stringOrNilReason, diagnostics, context);
 		return result;
 	}
@@ -5773,40 +5244,30 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStringOrNilReason_MemberTypes(Object stringOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateStringOrNilReason_MemberTypes(Object stringOrNilReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(stringOrNilReason))
-			{
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(stringOrNilReason)) {
 				if (validateNilReasonEnumeration(stringOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.STRING.isInstance(stringOrNilReason))
-			{
+			if (XMLTypePackage.Literals.STRING.isInstance(stringOrNilReason)) {
 				if (xmlTypeValidator.validateString((String)stringOrNilReason, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(stringOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(stringOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)stringOrNilReason, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(stringOrNilReason))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(stringOrNilReason)) {
 				if (validateNilReasonEnumeration(stringOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.STRING.isInstance(stringOrNilReason))
-			{
+			if (XMLTypePackage.Literals.STRING.isInstance(stringOrNilReason)) {
 				if (xmlTypeValidator.validateString((String)stringOrNilReason, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(stringOrNilReason))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(stringOrNilReason)) {
 				if (xmlTypeValidator.validateAnyURI((String)stringOrNilReason, null, context)) return true;
 			}
 		}
@@ -5818,8 +5279,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSuccessionTypeObject(SuccessionType successionTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSuccessionTypeObject(SuccessionType successionTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5828,8 +5288,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurfaceInterpolationTypeObject(SurfaceInterpolationType surfaceInterpolationTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSurfaceInterpolationTypeObject(SurfaceInterpolationType surfaceInterpolationTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5838,8 +5297,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeIndeterminateValueTypeObject(TimeIndeterminateValueType timeIndeterminateValueTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeIndeterminateValueTypeObject(TimeIndeterminateValueType timeIndeterminateValueTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5848,8 +5306,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimePositionUnion(Object timePositionUnion, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimePositionUnion(Object timePositionUnion, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateTimePositionUnion_MemberTypes(timePositionUnion, diagnostics, context);
 		return result;
 	}
@@ -5860,56 +5317,42 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimePositionUnion_MemberTypes(Object timePositionUnion, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateTimePositionUnion_MemberTypes(Object timePositionUnion, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getCalDate().isInstance(timePositionUnion))
-			{
+			if (GMLPackage.eINSTANCE.getCalDate().isInstance(timePositionUnion)) {
 				if (validateCalDate((XMLGregorianCalendar)timePositionUnion, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.TIME.isInstance(timePositionUnion))
-			{
+			if (XMLTypePackage.Literals.TIME.isInstance(timePositionUnion)) {
 				if (xmlTypeValidator.validateTime((XMLGregorianCalendar)timePositionUnion, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.DATE_TIME.isInstance(timePositionUnion))
-			{
+			if (XMLTypePackage.Literals.DATE_TIME.isInstance(timePositionUnion)) {
 				if (xmlTypeValidator.validateDateTime((XMLGregorianCalendar)timePositionUnion, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(timePositionUnion))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(timePositionUnion)) {
 				if (xmlTypeValidator.validateAnyURI((String)timePositionUnion, tempDiagnostics, context)) return true;
 			}
-			if (XMLTypePackage.Literals.DECIMAL.isInstance(timePositionUnion))
-			{
+			if (XMLTypePackage.Literals.DECIMAL.isInstance(timePositionUnion)) {
 				if (xmlTypeValidator.validateDecimal((BigDecimal)timePositionUnion, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getCalDate().isInstance(timePositionUnion))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getCalDate().isInstance(timePositionUnion)) {
 				if (validateCalDate((XMLGregorianCalendar)timePositionUnion, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.TIME.isInstance(timePositionUnion))
-			{
+			if (XMLTypePackage.Literals.TIME.isInstance(timePositionUnion)) {
 				if (xmlTypeValidator.validateTime((XMLGregorianCalendar)timePositionUnion, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.DATE_TIME.isInstance(timePositionUnion))
-			{
+			if (XMLTypePackage.Literals.DATE_TIME.isInstance(timePositionUnion)) {
 				if (xmlTypeValidator.validateDateTime((XMLGregorianCalendar)timePositionUnion, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.ANY_URI.isInstance(timePositionUnion))
-			{
+			if (XMLTypePackage.Literals.ANY_URI.isInstance(timePositionUnion)) {
 				if (xmlTypeValidator.validateAnyURI((String)timePositionUnion, null, context)) return true;
 			}
-			if (XMLTypePackage.Literals.DECIMAL.isInstance(timePositionUnion))
-			{
+			if (XMLTypePackage.Literals.DECIMAL.isInstance(timePositionUnion)) {
 				if (xmlTypeValidator.validateDecimal((BigDecimal)timePositionUnion, null, context)) return true;
 			}
 		}
@@ -5921,8 +5364,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeUnitType(Object timeUnitType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeUnitType(Object timeUnitType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateTimeUnitType_MemberTypes(timeUnitType, diagnostics, context);
 		return result;
 	}
@@ -5933,32 +5375,24 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeUnitType_MemberTypes(Object timeUnitType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateTimeUnitType_MemberTypes(Object timeUnitType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getTimeUnitTypeMember0().isInstance(timeUnitType))
-			{
+			if (GMLPackage.eINSTANCE.getTimeUnitTypeMember0().isInstance(timeUnitType)) {
 				if (validateTimeUnitTypeMember0((TimeUnitTypeMember0)timeUnitType, tempDiagnostics, context)) return true;
 			}
-			if (GMLPackage.eINSTANCE.getTimeUnitTypeMember1().isInstance(timeUnitType))
-			{
+			if (GMLPackage.eINSTANCE.getTimeUnitTypeMember1().isInstance(timeUnitType)) {
 				if (validateTimeUnitTypeMember1((String)timeUnitType, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getTimeUnitTypeMember0().isInstance(timeUnitType))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getTimeUnitTypeMember0().isInstance(timeUnitType)) {
 				if (validateTimeUnitTypeMember0((TimeUnitTypeMember0)timeUnitType, null, context)) return true;
 			}
-			if (GMLPackage.eINSTANCE.getTimeUnitTypeMember1().isInstance(timeUnitType))
-			{
+			if (GMLPackage.eINSTANCE.getTimeUnitTypeMember1().isInstance(timeUnitType)) {
 				if (validateTimeUnitTypeMember1((String)timeUnitType, null, context)) return true;
 			}
 		}
@@ -5970,8 +5404,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeUnitTypeMember0Object(TimeUnitTypeMember0 timeUnitTypeMember0Object, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeUnitTypeMember0Object(TimeUnitTypeMember0 timeUnitTypeMember0Object, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -5980,8 +5413,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeUnitTypeMember1(String timeUnitTypeMember1, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeUnitTypeMember1(String timeUnitTypeMember1, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateTimeUnitTypeMember1_Pattern(timeUnitTypeMember1, diagnostics, context);
 		return result;
 	}
@@ -5993,10 +5425,8 @@ public class GMLValidator extends EObjectValidator
 	 * @see #validateTimeUnitTypeMember1_Pattern
 	 */
 	public static final  PatternMatcher [][] TIME_UNIT_TYPE_MEMBER1__PATTERN__VALUES =
-		new PatternMatcher [][]
-		{
-			new PatternMatcher []
-			{
+		new PatternMatcher [][] {
+			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher("other:\\w{2,}")
 			}
 		};
@@ -6007,8 +5437,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimeUnitTypeMember1_Pattern(String timeUnitTypeMember1, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTimeUnitTypeMember1_Pattern(String timeUnitTypeMember1, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validatePattern(GMLPackage.eINSTANCE.getTimeUnitTypeMember1(), timeUnitTypeMember1, TIME_UNIT_TYPE_MEMBER1__PATTERN__VALUES, diagnostics, context);
 	}
 
@@ -6017,8 +5446,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomIdentifier(String uomIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomIdentifier(String uomIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateUomIdentifier_MemberTypes(uomIdentifier, diagnostics, context);
 		return result;
 	}
@@ -6029,32 +5457,24 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomIdentifier_MemberTypes(String uomIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		if (diagnostics != null)
-		{
+	public boolean validateUomIdentifier_MemberTypes(String uomIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (diagnostics != null) {
 			BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-			if (GMLPackage.eINSTANCE.getUomSymbol().isInstance(uomIdentifier))
-			{
+			if (GMLPackage.eINSTANCE.getUomSymbol().isInstance(uomIdentifier)) {
 				if (validateUomSymbol(uomIdentifier, tempDiagnostics, context)) return true;
 			}
-			if (GMLPackage.eINSTANCE.getUomURI().isInstance(uomIdentifier))
-			{
+			if (GMLPackage.eINSTANCE.getUomURI().isInstance(uomIdentifier)) {
 				if (validateUomURI(uomIdentifier, tempDiagnostics, context)) return true;
 			}
-			for (Diagnostic diagnostic : tempDiagnostics.getChildren())
-			{
+			for (Diagnostic diagnostic : tempDiagnostics.getChildren()) {
 				diagnostics.add(diagnostic);
 			}
 		}
-		else
-		{
-			if (GMLPackage.eINSTANCE.getUomSymbol().isInstance(uomIdentifier))
-			{
+		else {
+			if (GMLPackage.eINSTANCE.getUomSymbol().isInstance(uomIdentifier)) {
 				if (validateUomSymbol(uomIdentifier, null, context)) return true;
 			}
-			if (GMLPackage.eINSTANCE.getUomURI().isInstance(uomIdentifier))
-			{
+			if (GMLPackage.eINSTANCE.getUomURI().isInstance(uomIdentifier)) {
 				if (validateUomURI(uomIdentifier, null, context)) return true;
 			}
 		}
@@ -6066,8 +5486,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomSymbol(String uomSymbol, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomSymbol(String uomSymbol, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateUomSymbol_Pattern(uomSymbol, diagnostics, context);
 		return result;
 	}
@@ -6079,10 +5498,8 @@ public class GMLValidator extends EObjectValidator
 	 * @see #validateUomSymbol_Pattern
 	 */
 	public static final  PatternMatcher [][] UOM_SYMBOL__PATTERN__VALUES =
-		new PatternMatcher [][]
-		{
-			new PatternMatcher []
-			{
+		new PatternMatcher [][] {
+			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher("[^: \\n\\r\\t]+")
 			}
 		};
@@ -6093,8 +5510,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomSymbol_Pattern(String uomSymbol, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomSymbol_Pattern(String uomSymbol, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validatePattern(GMLPackage.eINSTANCE.getUomSymbol(), uomSymbol, UOM_SYMBOL__PATTERN__VALUES, diagnostics, context);
 	}
 
@@ -6103,8 +5519,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomURI(String uomURI, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomURI(String uomURI, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateUomURI_Pattern(uomURI, diagnostics, context);
 		return result;
 	}
@@ -6116,10 +5531,8 @@ public class GMLValidator extends EObjectValidator
 	 * @see #validateUomURI_Pattern
 	 */
 	public static final  PatternMatcher [][] UOM_URI__PATTERN__VALUES =
-		new PatternMatcher [][]
-		{
-			new PatternMatcher []
-			{
+		new PatternMatcher [][] {
+			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher("([a-zA-Z][a-zA-Z0-9\\-\\+\\.]*:|\\.\\./|\\./|#).*")
 			}
 		};
@@ -6130,8 +5543,7 @@ public class GMLValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUomURI_Pattern(String uomURI, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateUomURI_Pattern(String uomURI, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validatePattern(GMLPackage.eINSTANCE.getUomURI(), uomURI, UOM_URI__PATTERN__VALUES, diagnostics, context);
 	}
 
@@ -6142,8 +5554,7 @@ public class GMLValidator extends EObjectValidator
 	 * @generated
 	 */
 	@Override
-	public ResourceLocator getResourceLocator()
-	{
+	public ResourceLocator getResourceLocator() {
 		// TODO
 		// Specialize this to return a resource locator for messages specific to this validator.
 		// Ensure that you remove @generated or mark it @generated NOT

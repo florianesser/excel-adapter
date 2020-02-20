@@ -12,8 +12,7 @@ import org.eclipse.emf.ecore.EFactory;
  * @see net.opengis.gml32.GMLPackage
  * @generated
  */
-public interface GMLFactory extends EFactory
-{
+public interface GMLFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->

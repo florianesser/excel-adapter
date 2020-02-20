@@ -24,15 +24,10 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  * @model extendedMetaData="name='DQ_DataQuality_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQDataQualityType extends AbstractObjectType
-{
+public interface DQDataQualityType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Scope</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Scope</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scope</em>' containment reference.
 	 * @see #setScope(DQScopePropertyType)
@@ -57,10 +52,6 @@ public interface DQDataQualityType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Report</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.DQElementPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Report</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Report</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDQDataQualityType_Report()
@@ -73,10 +64,6 @@ public interface DQDataQualityType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Lineage</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Lineage</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Lineage</em>' containment reference.
 	 * @see #setLineage(LILineagePropertyType)

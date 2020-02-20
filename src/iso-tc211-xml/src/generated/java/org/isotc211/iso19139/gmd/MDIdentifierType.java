@@ -22,15 +22,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='MD_Identifier_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDIdentifierType extends AbstractObjectType
-{
+public interface MDIdentifierType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Authority</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Authority</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Authority</em>' containment reference.
 	 * @see #setAuthority(CICitationPropertyType)
@@ -54,10 +49,6 @@ public interface MDIdentifierType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Code</em>' containment reference.
 	 * @see #setCode(CharacterStringPropertyType)

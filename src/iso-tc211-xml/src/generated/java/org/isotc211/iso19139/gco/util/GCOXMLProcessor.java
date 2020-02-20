@@ -18,8 +18,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GCOXMLProcessor extends XMLProcessor
-{
+public class GCOXMLProcessor extends XMLProcessor {
 
 	/**
 	 * Public constructor to instantiate the helper.
@@ -27,8 +26,7 @@ public class GCOXMLProcessor extends XMLProcessor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GCOXMLProcessor()
-	{
+	public GCOXMLProcessor() {
 		super((EPackage.Registry.INSTANCE));
 		GCOPackage.eINSTANCE.eClass();
 	}
@@ -40,10 +38,8 @@ public class GCOXMLProcessor extends XMLProcessor
 	 * @generated
 	 */
 	@Override
-	protected Map<String, Resource.Factory> getRegistrations()
-	{
-		if (registrations == null)
-		{
+	protected Map<String, Resource.Factory> getRegistrations() {
+		if (registrations == null) {
 			super.getRegistrations();
 			registrations.put(XML_EXTENSION, new GCOResourceFactoryImpl());
 			registrations.put(STAR_EXTENSION, new GCOResourceFactoryImpl());

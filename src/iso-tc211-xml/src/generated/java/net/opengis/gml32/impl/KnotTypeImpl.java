@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotType
-{
+public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -114,8 +113,7 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected KnotTypeImpl()
-	{
+	protected KnotTypeImpl() {
 		super();
 	}
 
@@ -125,8 +123,7 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getKnotType();
 	}
 
@@ -135,8 +132,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getValue()
-	{
+	@Override
+	public double getValue() {
 		return value;
 	}
 
@@ -145,8 +142,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(double newValue)
-	{
+	@Override
+	public void setValue(double newValue) {
 		double oldValue = value;
 		value = newValue;
 		boolean oldValueESet = valueESet;
@@ -160,8 +157,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetValue()
-	{
+	@Override
+	public void unsetValue() {
 		double oldValue = value;
 		boolean oldValueESet = valueESet;
 		value = VALUE_EDEFAULT;
@@ -175,8 +172,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetValue()
-	{
+	@Override
+	public boolean isSetValue() {
 		return valueESet;
 	}
 
@@ -185,8 +182,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getMultiplicity()
-	{
+	@Override
+	public BigInteger getMultiplicity() {
 		return multiplicity;
 	}
 
@@ -195,8 +192,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiplicity(BigInteger newMultiplicity)
-	{
+	@Override
+	public void setMultiplicity(BigInteger newMultiplicity) {
 		BigInteger oldMultiplicity = multiplicity;
 		multiplicity = newMultiplicity;
 		if (eNotificationRequired())
@@ -208,8 +205,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getWeight()
-	{
+	@Override
+	public double getWeight() {
 		return weight;
 	}
 
@@ -218,8 +215,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setWeight(double newWeight)
-	{
+	@Override
+	public void setWeight(double newWeight) {
 		double oldWeight = weight;
 		weight = newWeight;
 		boolean oldWeightESet = weightESet;
@@ -233,8 +230,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetWeight()
-	{
+	@Override
+	public void unsetWeight() {
 		double oldWeight = weight;
 		boolean oldWeightESet = weightESet;
 		weight = WEIGHT_EDEFAULT;
@@ -248,8 +245,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetWeight()
-	{
+	@Override
+	public boolean isSetWeight() {
 		return weightESet;
 	}
 
@@ -259,10 +256,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.KNOT_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.KNOT_TYPE__MULTIPLICITY:
@@ -279,10 +274,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.KNOT_TYPE__VALUE:
 				setValue((Double)newValue);
 				return;
@@ -302,10 +295,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.KNOT_TYPE__VALUE:
 				unsetValue();
 				return;
@@ -325,10 +316,8 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.KNOT_TYPE__VALUE:
 				return isSetValue();
 			case GMLPackage.KNOT_TYPE__MULTIPLICITY:
@@ -345,11 +334,10 @@ public class KnotTypeImpl extends MinimalEObjectImpl.Container implements KnotTy
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		if (valueESet) result.append(value); else result.append("<unset>");
 		result.append(", multiplicity: ");

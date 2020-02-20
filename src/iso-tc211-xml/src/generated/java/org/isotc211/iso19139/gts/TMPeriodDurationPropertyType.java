@@ -23,15 +23,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='TM_PeriodDuration_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface TMPeriodDurationPropertyType extends EObject
-{
+public interface TMPeriodDurationPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>TM Period Duration</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>TM Period Duration</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>TM Period Duration</em>' attribute.
 	 * @see #setTMPeriodDuration(Duration)
@@ -55,10 +50,6 @@ public interface TMPeriodDurationPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

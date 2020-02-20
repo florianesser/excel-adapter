@@ -41,8 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
-{
+public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType {
 	/**
 	 * The cached value of the '{@link #getPosList() <em>Pos List</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -68,8 +67,7 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RowTypeImpl()
-	{
+	protected RowTypeImpl() {
 		super();
 	}
 
@@ -79,8 +77,7 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getRowType();
 	}
 
@@ -89,8 +86,8 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionListType getPosList()
-	{
+	@Override
+	public DirectPositionListType getPosList() {
 		return posList;
 	}
 
@@ -99,12 +96,10 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs) {
 		DirectPositionListType oldPosList = posList;
 		posList = newPosList;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ROW_TYPE__POS_LIST, oldPosList, newPosList);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -116,10 +111,9 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPosList(DirectPositionListType newPosList)
-	{
-		if (newPosList != posList)
-		{
+	@Override
+	public void setPosList(DirectPositionListType newPosList) {
+		if (newPosList != posList) {
 			NotificationChain msgs = null;
 			if (posList != null)
 				msgs = ((InternalEObject)posList).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ROW_TYPE__POS_LIST, null, msgs);
@@ -137,10 +131,9 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getGeometricPositionGroup()
-	{
-		if (geometricPositionGroup == null)
-		{
+	@Override
+	public FeatureMap getGeometricPositionGroup() {
+		if (geometricPositionGroup == null) {
 			geometricPositionGroup = new BasicFeatureMap(this, GMLPackage.ROW_TYPE__GEOMETRIC_POSITION_GROUP);
 		}
 		return geometricPositionGroup;
@@ -151,8 +144,8 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectPositionType> getPos()
-	{
+	@Override
+	public EList<DirectPositionType> getPos() {
 		return getGeometricPositionGroup().list(GMLPackage.eINSTANCE.getRowType_Pos());
 	}
 
@@ -161,8 +154,8 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PointPropertyType> getPointProperty()
-	{
+	@Override
+	public EList<PointPropertyType> getPointProperty() {
 		return getGeometricPositionGroup().list(GMLPackage.eINSTANCE.getRowType_PointProperty());
 	}
 
@@ -172,10 +165,8 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ROW_TYPE__POS_LIST:
 				return basicSetPosList(null, msgs);
 			case GMLPackage.ROW_TYPE__GEOMETRIC_POSITION_GROUP:
@@ -194,10 +185,8 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ROW_TYPE__POS_LIST:
 				return getPosList();
 			case GMLPackage.ROW_TYPE__GEOMETRIC_POSITION_GROUP:
@@ -218,10 +207,8 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ROW_TYPE__POS_LIST:
 				setPosList((DirectPositionListType)newValue);
 				return;
@@ -246,10 +233,8 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ROW_TYPE__POS_LIST:
 				setPosList((DirectPositionListType)null);
 				return;
@@ -272,10 +257,8 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ROW_TYPE__POS_LIST:
 				return posList != null;
 			case GMLPackage.ROW_TYPE__GEOMETRIC_POSITION_GROUP:
@@ -294,11 +277,10 @@ public class RowTypeImpl extends MinimalEObjectImpl.Container implements RowType
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (geometricPositionGroup: ");
 		result.append(geometricPositionGroup);
 		result.append(')');

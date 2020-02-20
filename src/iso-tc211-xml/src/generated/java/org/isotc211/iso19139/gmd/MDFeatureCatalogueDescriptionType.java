@@ -32,15 +32,10 @@ import org.isotc211.iso19139.gco.GenericNamePropertyType;
  * @model extendedMetaData="name='MD_FeatureCatalogueDescription_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDFeatureCatalogueDescriptionType extends AbstractMDContentInformationType
-{
+public interface MDFeatureCatalogueDescriptionType extends AbstractMDContentInformationType {
 	/**
 	 * Returns the value of the '<em><b>Compliance Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Compliance Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compliance Code</em>' containment reference.
 	 * @see #setComplianceCode(BooleanPropertyType)
@@ -65,10 +60,6 @@ public interface MDFeatureCatalogueDescriptionType extends AbstractMDContentInfo
 	 * Returns the value of the '<em><b>Language</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Language</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Language</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDFeatureCatalogueDescriptionType_Language()
@@ -81,10 +72,6 @@ public interface MDFeatureCatalogueDescriptionType extends AbstractMDContentInfo
 	/**
 	 * Returns the value of the '<em><b>Included With Dataset</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Included With Dataset</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Included With Dataset</em>' containment reference.
 	 * @see #setIncludedWithDataset(BooleanPropertyType)
@@ -109,10 +96,6 @@ public interface MDFeatureCatalogueDescriptionType extends AbstractMDContentInfo
 	 * Returns the value of the '<em><b>Feature Types</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.GenericNamePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Types</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Types</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDFeatureCatalogueDescriptionType_FeatureTypes()
@@ -126,10 +109,6 @@ public interface MDFeatureCatalogueDescriptionType extends AbstractMDContentInfo
 	 * Returns the value of the '<em><b>Feature Catalogue Citation</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CICitationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Catalogue Citation</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Catalogue Citation</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDFeatureCatalogueDescriptionType_FeatureCatalogueCitation()

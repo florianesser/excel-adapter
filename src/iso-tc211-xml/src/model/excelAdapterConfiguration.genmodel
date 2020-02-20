@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/iso-tc211-xml/src/generated/java" editDirectory="/iso-tc211-xml.edit/src"
     editorDirectory="/iso-tc211-xml.editor/src" modelPluginID="iso-tc211-xml" modelName="ExcelAdapterConfiguration"
     updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     editPluginID="iso-tc211-xml.edit" editorPluginID="iso-tc211-xml.editor" operationReflection="true"
     importOrganizing="true">
   <foreignModel>excelAdapterConfiguration.ecore</foreignModel>
@@ -16,6 +16,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute excelAdapterConfiguration.ecore#//ColumnConfiguration/references"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute excelAdapterConfiguration.ecore#//ColumnConfiguration/columnName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute excelAdapterConfiguration.ecore#//ColumnConfiguration/separatorChar"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute excelAdapterConfiguration.ecore#//ColumnConfiguration/valueMapper"/>
     </genClasses>
     <genClasses ecoreClass="excelAdapterConfiguration.ecore#//DocumentRoot">
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute excelAdapterConfiguration.ecore#//DocumentRoot/mixed"/>

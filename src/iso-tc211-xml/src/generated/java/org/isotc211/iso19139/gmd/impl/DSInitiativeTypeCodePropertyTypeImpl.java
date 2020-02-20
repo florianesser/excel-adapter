@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements DSInitiativeTypeCodePropertyType
-{
+public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements DSInitiativeTypeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getDSInitiativeTypeCode() <em>DS Initiative Type Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSInitiativeTypeCodePropertyTypeImpl()
-	{
+	protected DSInitiativeTypeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSInitiativeTypeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getDSInitiativeTypeCode()
-	{
+	@Override
+	public CodeListValueType getDSInitiativeTypeCode() {
 		return dSInitiativeTypeCode;
 	}
 
@@ -98,12 +95,10 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDSInitiativeTypeCode(CodeListValueType newDSInitiativeTypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDSInitiativeTypeCode(CodeListValueType newDSInitiativeTypeCode, NotificationChain msgs) {
 		CodeListValueType oldDSInitiativeTypeCode = dSInitiativeTypeCode;
 		dSInitiativeTypeCode = newDSInitiativeTypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE__DS_INITIATIVE_TYPE_CODE, oldDSInitiativeTypeCode, newDSInitiativeTypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDSInitiativeTypeCode(CodeListValueType newDSInitiativeTypeCode)
-	{
-		if (newDSInitiativeTypeCode != dSInitiativeTypeCode)
-		{
+	@Override
+	public void setDSInitiativeTypeCode(CodeListValueType newDSInitiativeTypeCode) {
+		if (newDSInitiativeTypeCode != dSInitiativeTypeCode) {
 			NotificationChain msgs = null;
 			if (dSInitiativeTypeCode != null)
 				msgs = ((InternalEObject)dSInitiativeTypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE__DS_INITIATIVE_TYPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE__DS_INITIATIVE_TYPE_CODE:
 				return basicSetDSInitiativeTypeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE__DS_INITIATIVE_TYPE_CODE:
 				return getDSInitiativeTypeCode();
 			case GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE__DS_INITIATIVE_TYPE_CODE:
 				setDSInitiativeTypeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE__DS_INITIATIVE_TYPE_CODE:
 				setDSInitiativeTypeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE__DS_INITIATIVE_TYPE_CODE:
 				return dSInitiativeTypeCode != null;
 			case GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class DSInitiativeTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

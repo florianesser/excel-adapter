@@ -70,6 +70,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ColumnConfiguration createColumnConfiguration() {
 		ColumnConfigurationImpl columnConfiguration = new ColumnConfigurationImpl();
 		return columnConfiguration;
@@ -80,6 +81,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DocumentRoot createDocumentRoot() {
 		DocumentRootImpl documentRoot = new DocumentRootImpl();
 		return documentRoot;
@@ -90,6 +92,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ExcelConfiguration createExcelConfiguration() {
 		ExcelConfigurationImpl excelConfiguration = new ExcelConfigurationImpl();
 		return excelConfiguration;
@@ -100,6 +103,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SheetConfiguration createSheetConfiguration() {
 		SheetConfigurationImpl sheetConfiguration = new SheetConfigurationImpl();
 		return sheetConfiguration;
@@ -110,6 +114,7 @@ public class ExcelAdapterConfigurationFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ExcelAdapterConfigurationPackage getExcelAdapterConfigurationPackage() {
 		return (ExcelAdapterConfigurationPackage)getEPackage();
 	}

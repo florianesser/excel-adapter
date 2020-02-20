@@ -22,16 +22,11 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='rows_._type' kind='elementOnly'"
  * @generated
  */
-public interface RowsType extends EObject
-{
+public interface RowsType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Row</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.RowType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Row</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Row</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getRowsType_Row()

@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements RefLocationType
-{
+public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements RefLocationType {
 	/**
 	 * The cached value of the '{@link #getAffinePlacement() <em>Affine Placement</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -45,8 +44,7 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RefLocationTypeImpl()
-	{
+	protected RefLocationTypeImpl() {
 		super();
 	}
 
@@ -56,8 +54,7 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getRefLocationType();
 	}
 
@@ -66,8 +63,8 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffinePlacementType getAffinePlacement()
-	{
+	@Override
+	public AffinePlacementType getAffinePlacement() {
 		return affinePlacement;
 	}
 
@@ -76,12 +73,10 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAffinePlacement(AffinePlacementType newAffinePlacement, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAffinePlacement(AffinePlacementType newAffinePlacement, NotificationChain msgs) {
 		AffinePlacementType oldAffinePlacement = affinePlacement;
 		affinePlacement = newAffinePlacement;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.REF_LOCATION_TYPE__AFFINE_PLACEMENT, oldAffinePlacement, newAffinePlacement);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -93,10 +88,9 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAffinePlacement(AffinePlacementType newAffinePlacement)
-	{
-		if (newAffinePlacement != affinePlacement)
-		{
+	@Override
+	public void setAffinePlacement(AffinePlacementType newAffinePlacement) {
+		if (newAffinePlacement != affinePlacement) {
 			NotificationChain msgs = null;
 			if (affinePlacement != null)
 				msgs = ((InternalEObject)affinePlacement).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.REF_LOCATION_TYPE__AFFINE_PLACEMENT, null, msgs);
@@ -115,10 +109,8 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.REF_LOCATION_TYPE__AFFINE_PLACEMENT:
 				return basicSetAffinePlacement(null, msgs);
 		}
@@ -131,10 +123,8 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.REF_LOCATION_TYPE__AFFINE_PLACEMENT:
 				return getAffinePlacement();
 		}
@@ -147,10 +137,8 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.REF_LOCATION_TYPE__AFFINE_PLACEMENT:
 				setAffinePlacement((AffinePlacementType)newValue);
 				return;
@@ -164,10 +152,8 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.REF_LOCATION_TYPE__AFFINE_PLACEMENT:
 				setAffinePlacement((AffinePlacementType)null);
 				return;
@@ -181,10 +167,8 @@ public class RefLocationTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.REF_LOCATION_TYPE__AFFINE_PLACEMENT:
 				return affinePlacement != null;
 		}

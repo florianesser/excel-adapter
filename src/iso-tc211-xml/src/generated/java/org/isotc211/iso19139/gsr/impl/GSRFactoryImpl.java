@@ -18,26 +18,21 @@ import org.isotc211.iso19139.gsr.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GSRFactoryImpl extends EFactoryImpl implements GSRFactory
-{
+public class GSRFactoryImpl extends EFactoryImpl implements GSRFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static GSRFactory init()
-	{
-		try
-		{
+	public static GSRFactory init() {
+		try {
 			GSRFactory theGSRFactory = (GSRFactory)EPackage.Registry.INSTANCE.getEFactory(GSRPackage.eNS_URI);
-			if (theGSRFactory != null)
-			{
+			if (theGSRFactory != null) {
 				return theGSRFactory;
 			}
 		}
-		catch (Exception exception)
-		{
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new GSRFactoryImpl();
@@ -49,8 +44,7 @@ public class GSRFactoryImpl extends EFactoryImpl implements GSRFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSRFactoryImpl()
-	{
+	public GSRFactoryImpl() {
 		super();
 	}
 
@@ -60,10 +54,8 @@ public class GSRFactoryImpl extends EFactoryImpl implements GSRFactory
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass)
-	{
-		switch (eClass.getClassifierID())
-		{
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
 			case GSRPackage.SCCRS_PROPERTY_TYPE: return createSCCRSPropertyType();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -75,8 +67,8 @@ public class GSRFactoryImpl extends EFactoryImpl implements GSRFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SCCRSPropertyType createSCCRSPropertyType()
-	{
+	@Override
+	public SCCRSPropertyType createSCCRSPropertyType() {
 		SCCRSPropertyTypeImpl sccrsPropertyType = new SCCRSPropertyTypeImpl();
 		return sccrsPropertyType;
 	}
@@ -86,8 +78,8 @@ public class GSRFactoryImpl extends EFactoryImpl implements GSRFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSRPackage getGSRPackage()
-	{
+	@Override
+	public GSRPackage getGSRPackage() {
 		return (GSRPackage)getEPackage();
 	}
 
@@ -98,8 +90,7 @@ public class GSRFactoryImpl extends EFactoryImpl implements GSRFactory
 	 * @generated
 	 */
 	@Deprecated
-	public static GSRPackage getPackage()
-	{
+	public static GSRPackage getPackage() {
 		return GSRPackage.eINSTANCE;
 	}
 

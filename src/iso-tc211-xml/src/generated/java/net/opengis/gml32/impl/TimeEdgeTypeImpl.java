@@ -30,8 +30,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl implements TimeEdgeType
-{
+public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl implements TimeEdgeType {
 	/**
 	 * The cached value of the '{@link #getStart() <em>Start</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeEdgeTypeImpl()
-	{
+	protected TimeEdgeTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeEdgeType();
 	}
 
@@ -88,8 +85,8 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeNodePropertyType getStart()
-	{
+	@Override
+	public TimeNodePropertyType getStart() {
 		return start;
 	}
 
@@ -98,12 +95,10 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetStart(TimeNodePropertyType newStart, NotificationChain msgs)
-	{
+	public NotificationChain basicSetStart(TimeNodePropertyType newStart, NotificationChain msgs) {
 		TimeNodePropertyType oldStart = start;
 		start = newStart;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_EDGE_TYPE__START, oldStart, newStart);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStart(TimeNodePropertyType newStart)
-	{
-		if (newStart != start)
-		{
+	@Override
+	public void setStart(TimeNodePropertyType newStart) {
+		if (newStart != start) {
 			NotificationChain msgs = null;
 			if (start != null)
 				msgs = ((InternalEObject)start).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_EDGE_TYPE__START, null, msgs);
@@ -136,8 +130,8 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeNodePropertyType getEnd()
-	{
+	@Override
+	public TimeNodePropertyType getEnd() {
 		return end;
 	}
 
@@ -146,12 +140,10 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEnd(TimeNodePropertyType newEnd, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEnd(TimeNodePropertyType newEnd, NotificationChain msgs) {
 		TimeNodePropertyType oldEnd = end;
 		end = newEnd;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_EDGE_TYPE__END, oldEnd, newEnd);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -163,10 +155,9 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEnd(TimeNodePropertyType newEnd)
-	{
-		if (newEnd != end)
-		{
+	@Override
+	public void setEnd(TimeNodePropertyType newEnd) {
+		if (newEnd != end) {
 			NotificationChain msgs = null;
 			if (end != null)
 				msgs = ((InternalEObject)end).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_EDGE_TYPE__END, null, msgs);
@@ -184,8 +175,8 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePeriodPropertyType getExtent()
-	{
+	@Override
+	public TimePeriodPropertyType getExtent() {
 		return extent;
 	}
 
@@ -194,12 +185,10 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExtent(TimePeriodPropertyType newExtent, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExtent(TimePeriodPropertyType newExtent, NotificationChain msgs) {
 		TimePeriodPropertyType oldExtent = extent;
 		extent = newExtent;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_EDGE_TYPE__EXTENT, oldExtent, newExtent);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -211,10 +200,9 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExtent(TimePeriodPropertyType newExtent)
-	{
-		if (newExtent != extent)
-		{
+	@Override
+	public void setExtent(TimePeriodPropertyType newExtent) {
+		if (newExtent != extent) {
 			NotificationChain msgs = null;
 			if (extent != null)
 				msgs = ((InternalEObject)extent).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_EDGE_TYPE__EXTENT, null, msgs);
@@ -233,10 +221,8 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_EDGE_TYPE__START:
 				return basicSetStart(null, msgs);
 			case GMLPackage.TIME_EDGE_TYPE__END:
@@ -253,10 +239,8 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_EDGE_TYPE__START:
 				return getStart();
 			case GMLPackage.TIME_EDGE_TYPE__END:
@@ -273,10 +257,8 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_EDGE_TYPE__START:
 				setStart((TimeNodePropertyType)newValue);
 				return;
@@ -296,10 +278,8 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_EDGE_TYPE__START:
 				setStart((TimeNodePropertyType)null);
 				return;
@@ -319,10 +299,8 @@ public class TimeEdgeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_EDGE_TYPE__START:
 				return start != null;
 			case GMLPackage.TIME_EDGE_TYPE__END:

@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DS_Series_Type' kind='elementOnly'"
  * @generated
  */
-public interface DSSeriesType extends AbstractDSAggregateType
-{
+public interface DSSeriesType extends AbstractDSAggregateType {
 } // DSSeriesType

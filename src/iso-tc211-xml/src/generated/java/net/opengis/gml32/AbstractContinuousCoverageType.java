@@ -20,8 +20,7 @@ package net.opengis.gml32;
  *        extendedMetaData="name='AbstractContinuousCoverageType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractContinuousCoverageType extends AbstractCoverageType
-{
+public interface AbstractContinuousCoverageType extends AbstractCoverageType {
 	/**
 	 * Returns the value of the '<em><b>Coverage Function</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

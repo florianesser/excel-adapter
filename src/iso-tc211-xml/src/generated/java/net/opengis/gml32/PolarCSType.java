@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='PolarCSType' kind='elementOnly'"
  * @generated
  */
-public interface PolarCSType extends AbstractCoordinateSystemType
-{
+public interface PolarCSType extends AbstractCoordinateSystemType {
 } // PolarCSType

@@ -21,15 +21,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='MappingRuleType' kind='elementOnly'"
  * @generated
  */
-public interface MappingRuleType extends EObject
-{
+public interface MappingRuleType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Rule Definition</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rule Definition</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Rule Definition</em>' attribute.
 	 * @see #setRuleDefinition(String)
@@ -53,10 +48,6 @@ public interface MappingRuleType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Rule Reference</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rule Reference</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Rule Reference</em>' containment reference.
 	 * @see #setRuleReference(ReferenceType)

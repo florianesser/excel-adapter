@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQThematicClassificationCorrectnessTypeImpl extends AbstractDQThematicAccuracyTypeImpl implements DQThematicClassificationCorrectnessType
-{
+public class DQThematicClassificationCorrectnessTypeImpl extends AbstractDQThematicAccuracyTypeImpl implements DQThematicClassificationCorrectnessType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQThematicClassificationCorrectnessTypeImpl()
-	{
+	protected DQThematicClassificationCorrectnessTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQThematicClassificationCorrectnessTypeImpl extends AbstractDQThema
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQThematicClassificationCorrectnessType();
 	}
 

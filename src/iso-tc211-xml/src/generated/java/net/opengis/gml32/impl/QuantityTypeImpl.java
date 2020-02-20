@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
-{
+public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType {
 	/**
 	 * The default value of the '{@link #getNilReason() <em>Nil Reason</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -51,8 +50,7 @@ public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected QuantityTypeImpl()
-	{
+	protected QuantityTypeImpl() {
 		super();
 	}
 
@@ -62,8 +60,7 @@ public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getQuantityType();
 	}
 
@@ -72,8 +69,8 @@ public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -82,8 +79,8 @@ public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -96,10 +93,8 @@ public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.QUANTITY_TYPE__NIL_REASON:
 				return getNilReason();
 		}
@@ -112,10 +107,8 @@ public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.QUANTITY_TYPE__NIL_REASON:
 				setNilReason(newValue);
 				return;
@@ -129,10 +122,8 @@ public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.QUANTITY_TYPE__NIL_REASON:
 				setNilReason(NIL_REASON_EDEFAULT);
 				return;
@@ -146,10 +137,8 @@ public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.QUANTITY_TYPE__NIL_REASON:
 				return NIL_REASON_EDEFAULT == null ? nilReason != null : !NIL_REASON_EDEFAULT.equals(nilReason);
 		}
@@ -162,11 +151,10 @@ public class QuantityTypeImpl extends MeasureTypeImpl implements QuantityType
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

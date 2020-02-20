@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl implements AbstractCRSType
-{
+public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl implements AbstractCRSType {
 	/**
 	 * The cached value of the '{@link #getDomainOfValidity() <em>Domain Of Validity</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -60,8 +59,7 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractCRSTypeImpl()
-	{
+	protected AbstractCRSTypeImpl() {
 		super();
 	}
 
@@ -71,8 +69,7 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractCRSType();
 	}
 
@@ -81,10 +78,9 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DomainOfValidityType> getDomainOfValidity()
-	{
-		if (domainOfValidity == null)
-		{
+	@Override
+	public EList<DomainOfValidityType> getDomainOfValidity() {
+		if (domainOfValidity == null) {
 			domainOfValidity = new EObjectContainmentEList<DomainOfValidityType>(DomainOfValidityType.class, this, GMLPackage.ABSTRACT_CRS_TYPE__DOMAIN_OF_VALIDITY);
 		}
 		return domainOfValidity;
@@ -95,10 +91,9 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getScope()
-	{
-		if (scope == null)
-		{
+	@Override
+	public EList<String> getScope() {
+		if (scope == null) {
 			scope = new EDataTypeEList<String>(String.class, this, GMLPackage.ABSTRACT_CRS_TYPE__SCOPE);
 		}
 		return scope;
@@ -110,10 +105,8 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_CRS_TYPE__DOMAIN_OF_VALIDITY:
 				return ((InternalEList<?>)getDomainOfValidity()).basicRemove(otherEnd, msgs);
 		}
@@ -126,10 +119,8 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_CRS_TYPE__DOMAIN_OF_VALIDITY:
 				return getDomainOfValidity();
 			case GMLPackage.ABSTRACT_CRS_TYPE__SCOPE:
@@ -145,10 +136,8 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_CRS_TYPE__DOMAIN_OF_VALIDITY:
 				getDomainOfValidity().clear();
 				getDomainOfValidity().addAll((Collection<? extends DomainOfValidityType>)newValue);
@@ -167,10 +156,8 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_CRS_TYPE__DOMAIN_OF_VALIDITY:
 				getDomainOfValidity().clear();
 				return;
@@ -187,10 +174,8 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_CRS_TYPE__DOMAIN_OF_VALIDITY:
 				return domainOfValidity != null && !domainOfValidity.isEmpty();
 			case GMLPackage.ABSTRACT_CRS_TYPE__SCOPE:
@@ -205,11 +190,10 @@ public abstract class AbstractCRSTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (scope: ");
 		result.append(scope);
 		result.append(')');

@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class DirectedObservationTypeImpl extends ObservationTypeImpl implements DirectedObservationType
-{
+public class DirectedObservationTypeImpl extends ObservationTypeImpl implements DirectedObservationType {
 	/**
 	 * The cached value of the '{@link #getDirection() <em>Direction</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DirectedObservationTypeImpl()
-	{
+	protected DirectedObservationTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDirectedObservationType();
 	}
 
@@ -65,8 +62,8 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionPropertyType getDirection()
-	{
+	@Override
+	public DirectionPropertyType getDirection() {
 		return direction;
 	}
 
@@ -75,12 +72,10 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirection(DirectionPropertyType newDirection, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirection(DirectionPropertyType newDirection, NotificationChain msgs) {
 		DirectionPropertyType oldDirection = direction;
 		direction = newDirection;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DIRECTED_OBSERVATION_TYPE__DIRECTION, oldDirection, newDirection);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirection(DirectionPropertyType newDirection)
-	{
-		if (newDirection != direction)
-		{
+	@Override
+	public void setDirection(DirectionPropertyType newDirection) {
+		if (newDirection != direction) {
 			NotificationChain msgs = null;
 			if (direction != null)
 				msgs = ((InternalEObject)direction).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DIRECTED_OBSERVATION_TYPE__DIRECTION, null, msgs);
@@ -114,10 +108,8 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_TYPE__DIRECTION:
 				return basicSetDirection(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_TYPE__DIRECTION:
 				return getDirection();
 		}
@@ -146,10 +136,8 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_TYPE__DIRECTION:
 				setDirection((DirectionPropertyType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_TYPE__DIRECTION:
 				setDirection((DirectionPropertyType)null);
 				return;
@@ -180,10 +166,8 @@ public class DirectedObservationTypeImpl extends ObservationTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_TYPE__DIRECTION:
 				return direction != null;
 		}

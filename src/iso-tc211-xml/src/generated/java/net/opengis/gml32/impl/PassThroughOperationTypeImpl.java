@@ -42,8 +42,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTypeImpl implements PassThroughOperationType
-{
+public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTypeImpl implements PassThroughOperationType {
 	/**
 	 * The cached value of the '{@link #getModifiedCoordinate() <em>Modified Coordinate</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -98,8 +97,7 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PassThroughOperationTypeImpl()
-	{
+	protected PassThroughOperationTypeImpl() {
 		super();
 	}
 
@@ -109,8 +107,7 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getPassThroughOperationType();
 	}
 
@@ -119,10 +116,9 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<BigInteger> getModifiedCoordinate()
-	{
-		if (modifiedCoordinate == null)
-		{
+	@Override
+	public EList<BigInteger> getModifiedCoordinate() {
+		if (modifiedCoordinate == null) {
 			modifiedCoordinate = new EDataTypeEList<BigInteger>(BigInteger.class, this, GMLPackage.PASS_THROUGH_OPERATION_TYPE__MODIFIED_COORDINATE);
 		}
 		return modifiedCoordinate;
@@ -133,10 +129,9 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getCoordOperationGroup()
-	{
-		if (coordOperationGroup == null)
-		{
+	@Override
+	public FeatureMap getCoordOperationGroup() {
+		if (coordOperationGroup == null) {
 			coordOperationGroup = new BasicFeatureMap(this, GMLPackage.PASS_THROUGH_OPERATION_TYPE__COORD_OPERATION_GROUP);
 		}
 		return coordOperationGroup;
@@ -147,8 +142,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateOperationPropertyType getCoordOperation()
-	{
+	@Override
+	public CoordinateOperationPropertyType getCoordOperation() {
 		return (CoordinateOperationPropertyType)getCoordOperationGroup().get(GMLPackage.eINSTANCE.getPassThroughOperationType_CoordOperation(), true);
 	}
 
@@ -157,8 +152,7 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordOperation(CoordinateOperationPropertyType newCoordOperation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordOperation(CoordinateOperationPropertyType newCoordOperation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getCoordOperationGroup()).basicAdd(GMLPackage.eINSTANCE.getPassThroughOperationType_CoordOperation(), newCoordOperation, msgs);
 	}
 
@@ -167,8 +161,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordOperation(CoordinateOperationPropertyType newCoordOperation)
-	{
+	@Override
+	public void setCoordOperation(CoordinateOperationPropertyType newCoordOperation) {
 		((FeatureMap.Internal)getCoordOperationGroup()).set(GMLPackage.eINSTANCE.getPassThroughOperationType_CoordOperation(), newCoordOperation);
 	}
 
@@ -177,8 +171,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -187,8 +181,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -202,8 +196,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -217,8 +211,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -228,10 +222,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.PASS_THROUGH_OPERATION_TYPE__COORD_OPERATION_GROUP:
 				return ((InternalEList<?>)getCoordOperationGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.PASS_THROUGH_OPERATION_TYPE__COORD_OPERATION:
@@ -246,10 +238,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.PASS_THROUGH_OPERATION_TYPE__MODIFIED_COORDINATE:
 				return getModifiedCoordinate();
 			case GMLPackage.PASS_THROUGH_OPERATION_TYPE__COORD_OPERATION_GROUP:
@@ -270,10 +260,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.PASS_THROUGH_OPERATION_TYPE__MODIFIED_COORDINATE:
 				getModifiedCoordinate().clear();
 				getModifiedCoordinate().addAll((Collection<? extends BigInteger>)newValue);
@@ -297,10 +285,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PASS_THROUGH_OPERATION_TYPE__MODIFIED_COORDINATE:
 				getModifiedCoordinate().clear();
 				return;
@@ -323,10 +309,8 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PASS_THROUGH_OPERATION_TYPE__MODIFIED_COORDINATE:
 				return modifiedCoordinate != null && !modifiedCoordinate.isEmpty();
 			case GMLPackage.PASS_THROUGH_OPERATION_TYPE__COORD_OPERATION_GROUP:
@@ -345,11 +329,10 @@ public class PassThroughOperationTypeImpl extends AbstractCoordinateOperationTyp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (modifiedCoordinate: ");
 		result.append(modifiedCoordinate);
 		result.append(", coordOperationGroup: ");

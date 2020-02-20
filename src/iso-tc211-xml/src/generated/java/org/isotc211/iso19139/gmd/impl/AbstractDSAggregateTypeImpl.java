@@ -38,8 +38,7 @@ import org.isotc211.iso19139.gmd.MDMetadataPropertyType;
  *
  * @generated
  */
-public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl implements AbstractDSAggregateType
-{
+public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl implements AbstractDSAggregateType {
 	/**
 	 * The cached value of the '{@link #getComposedOf() <em>Composed Of</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -85,8 +84,7 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractDSAggregateTypeImpl()
-	{
+	protected AbstractDSAggregateTypeImpl() {
 		super();
 	}
 
@@ -96,8 +94,7 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractDSAggregateType();
 	}
 
@@ -106,10 +103,9 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DSDataSetPropertyType> getComposedOf()
-	{
-		if (composedOf == null)
-		{
+	@Override
+	public EList<DSDataSetPropertyType> getComposedOf() {
+		if (composedOf == null) {
 			composedOf = new EObjectContainmentEList<DSDataSetPropertyType>(DSDataSetPropertyType.class, this, GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__COMPOSED_OF);
 		}
 		return composedOf;
@@ -120,10 +116,9 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDMetadataPropertyType> getSeriesMetadata()
-	{
-		if (seriesMetadata == null)
-		{
+	@Override
+	public EList<MDMetadataPropertyType> getSeriesMetadata() {
+		if (seriesMetadata == null) {
 			seriesMetadata = new EObjectContainmentEList<MDMetadataPropertyType>(MDMetadataPropertyType.class, this, GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__SERIES_METADATA);
 		}
 		return seriesMetadata;
@@ -134,10 +129,9 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DSAggregatePropertyType> getSubset()
-	{
-		if (subset == null)
-		{
+	@Override
+	public EList<DSAggregatePropertyType> getSubset() {
+		if (subset == null) {
 			subset = new EObjectContainmentEList<DSAggregatePropertyType>(DSAggregatePropertyType.class, this, GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__SUBSET);
 		}
 		return subset;
@@ -148,10 +142,9 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DSAggregatePropertyType> getSuperset()
-	{
-		if (superset == null)
-		{
+	@Override
+	public EList<DSAggregatePropertyType> getSuperset() {
+		if (superset == null) {
 			superset = new EObjectContainmentEList<DSAggregatePropertyType>(DSAggregatePropertyType.class, this, GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__SUPERSET);
 		}
 		return superset;
@@ -163,10 +156,8 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__COMPOSED_OF:
 				return ((InternalEList<?>)getComposedOf()).basicRemove(otherEnd, msgs);
 			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__SERIES_METADATA:
@@ -185,10 +176,8 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__COMPOSED_OF:
 				return getComposedOf();
 			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__SERIES_METADATA:
@@ -208,10 +197,8 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__COMPOSED_OF:
 				getComposedOf().clear();
 				getComposedOf().addAll((Collection<? extends DSDataSetPropertyType>)newValue);
@@ -238,10 +225,8 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__COMPOSED_OF:
 				getComposedOf().clear();
 				return;
@@ -264,10 +249,8 @@ public abstract class AbstractDSAggregateTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__COMPOSED_OF:
 				return composedOf != null && !composedOf.isEmpty();
 			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE__SERIES_METADATA:

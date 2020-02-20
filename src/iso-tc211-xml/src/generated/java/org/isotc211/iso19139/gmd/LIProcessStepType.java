@@ -28,15 +28,10 @@ import org.isotc211.iso19139.gco.DateTimePropertyType;
  * @model extendedMetaData="name='LI_ProcessStep_Type' kind='elementOnly'"
  * @generated
  */
-public interface LIProcessStepType extends AbstractObjectType
-{
+public interface LIProcessStepType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(CharacterStringPropertyType)
@@ -60,10 +55,6 @@ public interface LIProcessStepType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Rationale</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rationale</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Rationale</em>' containment reference.
 	 * @see #setRationale(CharacterStringPropertyType)
@@ -87,10 +78,6 @@ public interface LIProcessStepType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Date Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date Time</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date Time</em>' containment reference.
 	 * @see #setDateTime(DateTimePropertyType)
@@ -115,10 +102,6 @@ public interface LIProcessStepType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Processor</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIResponsiblePartyPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Processor</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Processor</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getLIProcessStepType_Processor()
@@ -132,10 +115,6 @@ public interface LIProcessStepType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Source</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.LISourcePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Source</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getLIProcessStepType_Source()

@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gco.ScopedNamePropertyType;
  *
  * @generated
  */
-public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container implements ScopedNamePropertyType
-{
+public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container implements ScopedNamePropertyType {
 	/**
 	 * The cached value of the '{@link #getScopedName() <em>Scoped Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ScopedNamePropertyTypeImpl()
-	{
+	protected ScopedNamePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.SCOPED_NAME_PROPERTY_TYPE;
 	}
 
@@ -88,8 +85,8 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getScopedName()
-	{
+	@Override
+	public CodeType getScopedName() {
 		return scopedName;
 	}
 
@@ -98,12 +95,10 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetScopedName(CodeType newScopedName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetScopedName(CodeType newScopedName, NotificationChain msgs) {
 		CodeType oldScopedName = scopedName;
 		scopedName = newScopedName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.SCOPED_NAME_PROPERTY_TYPE__SCOPED_NAME, oldScopedName, newScopedName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setScopedName(CodeType newScopedName)
-	{
-		if (newScopedName != scopedName)
-		{
+	@Override
+	public void setScopedName(CodeType newScopedName) {
+		if (newScopedName != scopedName) {
 			NotificationChain msgs = null;
 			if (scopedName != null)
 				msgs = ((InternalEObject)scopedName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.SCOPED_NAME_PROPERTY_TYPE__SCOPED_NAME, null, msgs);
@@ -136,8 +130,8 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.SCOPED_NAME_PROPERTY_TYPE__SCOPED_NAME:
 				return basicSetScopedName(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.SCOPED_NAME_PROPERTY_TYPE__SCOPED_NAME:
 				return getScopedName();
 			case GCOPackage.SCOPED_NAME_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.SCOPED_NAME_PROPERTY_TYPE__SCOPED_NAME:
 				setScopedName((CodeType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.SCOPED_NAME_PROPERTY_TYPE__SCOPED_NAME:
 				setScopedName((CodeType)null);
 				return;
@@ -234,10 +220,8 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.SCOPED_NAME_PROPERTY_TYPE__SCOPED_NAME:
 				return scopedName != null;
 			case GCOPackage.SCOPED_NAME_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class ScopedNamePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

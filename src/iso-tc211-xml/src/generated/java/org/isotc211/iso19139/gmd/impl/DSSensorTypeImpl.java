@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSSensorTypeImpl extends DSSeriesTypeImpl implements DSSensorType
-{
+public class DSSensorTypeImpl extends DSSeriesTypeImpl implements DSSensorType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSSensorTypeImpl()
-	{
+	protected DSSensorTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DSSensorTypeImpl extends DSSeriesTypeImpl implements DSSensorType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSSensorType();
 	}
 

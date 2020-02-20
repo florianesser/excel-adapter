@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gco.ScalePropertyType;
  *
  * @generated
  */
-public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implements ScalePropertyType
-{
+public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implements ScalePropertyType {
 	/**
 	 * The cached value of the '{@link #getScale() <em>Scale</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ScalePropertyTypeImpl()
-	{
+	protected ScalePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.SCALE_PROPERTY_TYPE;
 	}
 
@@ -88,8 +85,8 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ScaleType getScale()
-	{
+	@Override
+	public ScaleType getScale() {
 		return scale;
 	}
 
@@ -98,12 +95,10 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetScale(ScaleType newScale, NotificationChain msgs)
-	{
+	public NotificationChain basicSetScale(ScaleType newScale, NotificationChain msgs) {
 		ScaleType oldScale = scale;
 		scale = newScale;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.SCALE_PROPERTY_TYPE__SCALE, oldScale, newScale);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setScale(ScaleType newScale)
-	{
-		if (newScale != scale)
-		{
+	@Override
+	public void setScale(ScaleType newScale) {
+		if (newScale != scale) {
 			NotificationChain msgs = null;
 			if (scale != null)
 				msgs = ((InternalEObject)scale).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.SCALE_PROPERTY_TYPE__SCALE, null, msgs);
@@ -136,8 +130,8 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.SCALE_PROPERTY_TYPE__SCALE:
 				return basicSetScale(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.SCALE_PROPERTY_TYPE__SCALE:
 				return getScale();
 			case GCOPackage.SCALE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.SCALE_PROPERTY_TYPE__SCALE:
 				setScale((ScaleType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.SCALE_PROPERTY_TYPE__SCALE:
 				setScale((ScaleType)null);
 				return;
@@ -234,10 +220,8 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.SCALE_PROPERTY_TYPE__SCALE:
 				return scale != null;
 			case GCOPackage.SCALE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class ScalePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

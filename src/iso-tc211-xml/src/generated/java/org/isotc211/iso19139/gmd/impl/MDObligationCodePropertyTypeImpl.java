@@ -27,8 +27,7 @@ import org.isotc211.iso19139.gmd.MDObligationCodeType;
  *
  * @generated
  */
-public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDObligationCodePropertyType
-{
+public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDObligationCodePropertyType {
 	/**
 	 * The default value of the '{@link #getMDObligationCode() <em>MD Obligation Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -83,8 +82,7 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDObligationCodePropertyTypeImpl()
-	{
+	protected MDObligationCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -94,8 +92,7 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDObligationCodePropertyType();
 	}
 
@@ -104,8 +101,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDObligationCodeType getMDObligationCode()
-	{
+	@Override
+	public MDObligationCodeType getMDObligationCode() {
 		return mDObligationCode;
 	}
 
@@ -114,8 +111,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDObligationCode(MDObligationCodeType newMDObligationCode)
-	{
+	@Override
+	public void setMDObligationCode(MDObligationCodeType newMDObligationCode) {
 		MDObligationCodeType oldMDObligationCode = mDObligationCode;
 		mDObligationCode = newMDObligationCode == null ? MD_OBLIGATION_CODE_EDEFAULT : newMDObligationCode;
 		boolean oldMDObligationCodeESet = mDObligationCodeESet;
@@ -129,8 +126,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetMDObligationCode()
-	{
+	@Override
+	public void unsetMDObligationCode() {
 		MDObligationCodeType oldMDObligationCode = mDObligationCode;
 		boolean oldMDObligationCodeESet = mDObligationCodeESet;
 		mDObligationCode = MD_OBLIGATION_CODE_EDEFAULT;
@@ -144,8 +141,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetMDObligationCode()
-	{
+	@Override
+	public boolean isSetMDObligationCode() {
 		return mDObligationCodeESet;
 	}
 
@@ -154,8 +151,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -164,8 +161,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -178,10 +175,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_OBLIGATION_CODE_PROPERTY_TYPE__MD_OBLIGATION_CODE:
 				return getMDObligationCode();
 			case GMDPackage.MD_OBLIGATION_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -196,10 +191,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_OBLIGATION_CODE_PROPERTY_TYPE__MD_OBLIGATION_CODE:
 				setMDObligationCode((MDObligationCodeType)newValue);
 				return;
@@ -216,10 +209,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_OBLIGATION_CODE_PROPERTY_TYPE__MD_OBLIGATION_CODE:
 				unsetMDObligationCode();
 				return;
@@ -236,10 +227,8 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_OBLIGATION_CODE_PROPERTY_TYPE__MD_OBLIGATION_CODE:
 				return isSetMDObligationCode();
 			case GMDPackage.MD_OBLIGATION_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -254,11 +243,10 @@ public class MDObligationCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (mDObligationCode: ");
 		if (mDObligationCodeESet) result.append(mDObligationCode); else result.append("<unset>");
 		result.append(", nilReason: ");

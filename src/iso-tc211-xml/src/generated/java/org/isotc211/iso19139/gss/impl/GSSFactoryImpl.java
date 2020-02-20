@@ -18,26 +18,21 @@ import org.isotc211.iso19139.gss.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GSSFactoryImpl extends EFactoryImpl implements GSSFactory
-{
+public class GSSFactoryImpl extends EFactoryImpl implements GSSFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static GSSFactory init()
-	{
-		try
-		{
+	public static GSSFactory init() {
+		try {
 			GSSFactory theGSSFactory = (GSSFactory)EPackage.Registry.INSTANCE.getEFactory(GSSPackage.eNS_URI);
-			if (theGSSFactory != null)
-			{
+			if (theGSSFactory != null) {
 				return theGSSFactory;
 			}
 		}
-		catch (Exception exception)
-		{
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new GSSFactoryImpl();
@@ -49,8 +44,7 @@ public class GSSFactoryImpl extends EFactoryImpl implements GSSFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSSFactoryImpl()
-	{
+	public GSSFactoryImpl() {
 		super();
 	}
 
@@ -60,10 +54,8 @@ public class GSSFactoryImpl extends EFactoryImpl implements GSSFactory
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass)
-	{
-		switch (eClass.getClassifierID())
-		{
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
 			case GSSPackage.GM_OBJECT_PROPERTY_TYPE: return createGMObjectPropertyType();
 			case GSSPackage.GM_POINT_PROPERTY_TYPE: return createGMPointPropertyType();
 			default:
@@ -76,8 +68,8 @@ public class GSSFactoryImpl extends EFactoryImpl implements GSSFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMObjectPropertyType createGMObjectPropertyType()
-	{
+	@Override
+	public GMObjectPropertyType createGMObjectPropertyType() {
 		GMObjectPropertyTypeImpl gmObjectPropertyType = new GMObjectPropertyTypeImpl();
 		return gmObjectPropertyType;
 	}
@@ -87,8 +79,8 @@ public class GSSFactoryImpl extends EFactoryImpl implements GSSFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMPointPropertyType createGMPointPropertyType()
-	{
+	@Override
+	public GMPointPropertyType createGMPointPropertyType() {
 		GMPointPropertyTypeImpl gmPointPropertyType = new GMPointPropertyTypeImpl();
 		return gmPointPropertyType;
 	}
@@ -98,8 +90,8 @@ public class GSSFactoryImpl extends EFactoryImpl implements GSSFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSSPackage getGSSPackage()
-	{
+	@Override
+	public GSSPackage getGSSPackage() {
 		return (GSSPackage)getEPackage();
 	}
 
@@ -110,8 +102,7 @@ public class GSSFactoryImpl extends EFactoryImpl implements GSSFactory
 	 * @generated
 	 */
 	@Deprecated
-	public static GSSPackage getPackage()
-	{
+	public static GSSPackage getPackage() {
 		return GSSPackage.eINSTANCE;
 	}
 

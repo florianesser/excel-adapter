@@ -24,16 +24,11 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='Multiplicity_Type' kind='elementOnly'"
  * @generated
  */
-public interface MultiplicityType extends AbstractObjectType
-{
+public interface MultiplicityType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Range</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.MultiplicityRangePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Range</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Range</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getMultiplicityType_Range()

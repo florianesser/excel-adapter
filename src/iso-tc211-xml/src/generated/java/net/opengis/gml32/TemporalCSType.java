@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='TemporalCSType' kind='elementOnly'"
  * @generated
  */
-public interface TemporalCSType extends AbstractCoordinateSystemType
-{
+public interface TemporalCSType extends AbstractCoordinateSystemType {
 } // TemporalCSType

@@ -32,8 +32,7 @@ import org.isotc211.iso19139.gmd.MDRangeDimensionType;
  *
  * @generated
  */
-public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements MDRangeDimensionType
-{
+public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements MDRangeDimensionType {
 	/**
 	 * The cached value of the '{@link #getSequenceIdentifier() <em>Sequence Identifier</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -59,8 +58,7 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDRangeDimensionTypeImpl()
-	{
+	protected MDRangeDimensionTypeImpl() {
 		super();
 	}
 
@@ -70,8 +68,7 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDRangeDimensionType();
 	}
 
@@ -80,8 +77,8 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MemberNamePropertyType getSequenceIdentifier()
-	{
+	@Override
+	public MemberNamePropertyType getSequenceIdentifier() {
 		return sequenceIdentifier;
 	}
 
@@ -90,12 +87,10 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSequenceIdentifier(MemberNamePropertyType newSequenceIdentifier, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSequenceIdentifier(MemberNamePropertyType newSequenceIdentifier, NotificationChain msgs) {
 		MemberNamePropertyType oldSequenceIdentifier = sequenceIdentifier;
 		sequenceIdentifier = newSequenceIdentifier;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_RANGE_DIMENSION_TYPE__SEQUENCE_IDENTIFIER, oldSequenceIdentifier, newSequenceIdentifier);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -107,10 +102,9 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSequenceIdentifier(MemberNamePropertyType newSequenceIdentifier)
-	{
-		if (newSequenceIdentifier != sequenceIdentifier)
-		{
+	@Override
+	public void setSequenceIdentifier(MemberNamePropertyType newSequenceIdentifier) {
+		if (newSequenceIdentifier != sequenceIdentifier) {
 			NotificationChain msgs = null;
 			if (sequenceIdentifier != null)
 				msgs = ((InternalEObject)sequenceIdentifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_RANGE_DIMENSION_TYPE__SEQUENCE_IDENTIFIER, null, msgs);
@@ -128,8 +122,8 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDescriptor()
-	{
+	@Override
+	public CharacterStringPropertyType getDescriptor() {
 		return descriptor;
 	}
 
@@ -138,12 +132,10 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescriptor(CharacterStringPropertyType newDescriptor, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescriptor(CharacterStringPropertyType newDescriptor, NotificationChain msgs) {
 		CharacterStringPropertyType oldDescriptor = descriptor;
 		descriptor = newDescriptor;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_RANGE_DIMENSION_TYPE__DESCRIPTOR, oldDescriptor, newDescriptor);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -155,10 +147,9 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescriptor(CharacterStringPropertyType newDescriptor)
-	{
-		if (newDescriptor != descriptor)
-		{
+	@Override
+	public void setDescriptor(CharacterStringPropertyType newDescriptor) {
+		if (newDescriptor != descriptor) {
 			NotificationChain msgs = null;
 			if (descriptor != null)
 				msgs = ((InternalEObject)descriptor).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_RANGE_DIMENSION_TYPE__DESCRIPTOR, null, msgs);
@@ -177,10 +168,8 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_RANGE_DIMENSION_TYPE__SEQUENCE_IDENTIFIER:
 				return basicSetSequenceIdentifier(null, msgs);
 			case GMDPackage.MD_RANGE_DIMENSION_TYPE__DESCRIPTOR:
@@ -195,10 +184,8 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_RANGE_DIMENSION_TYPE__SEQUENCE_IDENTIFIER:
 				return getSequenceIdentifier();
 			case GMDPackage.MD_RANGE_DIMENSION_TYPE__DESCRIPTOR:
@@ -213,10 +200,8 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_RANGE_DIMENSION_TYPE__SEQUENCE_IDENTIFIER:
 				setSequenceIdentifier((MemberNamePropertyType)newValue);
 				return;
@@ -233,10 +218,8 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_RANGE_DIMENSION_TYPE__SEQUENCE_IDENTIFIER:
 				setSequenceIdentifier((MemberNamePropertyType)null);
 				return;
@@ -253,10 +236,8 @@ public class MDRangeDimensionTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_RANGE_DIMENSION_TYPE__SEQUENCE_IDENTIFIER:
 				return sequenceIdentifier != null;
 			case GMDPackage.MD_RANGE_DIMENSION_TYPE__DESCRIPTOR:

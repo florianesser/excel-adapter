@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container implements DirectPositionType
-{
+public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container implements DirectPositionType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -140,8 +139,7 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DirectPositionTypeImpl()
-	{
+	protected DirectPositionTypeImpl() {
 		super();
 	}
 
@@ -151,8 +149,7 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDirectPositionType();
 	}
 
@@ -161,8 +158,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Double> getValue()
-	{
+	@Override
+	public List<Double> getValue() {
 		return value;
 	}
 
@@ -171,8 +168,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(List<Double> newValue)
-	{
+	@Override
+	public void setValue(List<Double> newValue) {
 		List<Double> oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -184,8 +181,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> getAxisLabels()
-	{
+	@Override
+	public List<String> getAxisLabels() {
 		return axisLabels;
 	}
 
@@ -194,8 +191,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisLabels(List<String> newAxisLabels)
-	{
+	@Override
+	public void setAxisLabels(List<String> newAxisLabels) {
 		List<String> oldAxisLabels = axisLabels;
 		axisLabels = newAxisLabels;
 		if (eNotificationRequired())
@@ -207,8 +204,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getSrsDimension()
-	{
+	@Override
+	public BigInteger getSrsDimension() {
 		return srsDimension;
 	}
 
@@ -217,8 +214,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSrsDimension(BigInteger newSrsDimension)
-	{
+	@Override
+	public void setSrsDimension(BigInteger newSrsDimension) {
 		BigInteger oldSrsDimension = srsDimension;
 		srsDimension = newSrsDimension;
 		if (eNotificationRequired())
@@ -230,8 +227,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getSrsName()
-	{
+	@Override
+	public String getSrsName() {
 		return srsName;
 	}
 
@@ -240,8 +237,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSrsName(String newSrsName)
-	{
+	@Override
+	public void setSrsName(String newSrsName) {
 		String oldSrsName = srsName;
 		srsName = newSrsName;
 		if (eNotificationRequired())
@@ -253,8 +250,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> getUomLabels()
-	{
+	@Override
+	public List<String> getUomLabels() {
 		return uomLabels;
 	}
 
@@ -263,8 +260,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUomLabels(List<String> newUomLabels)
-	{
+	@Override
+	public void setUomLabels(List<String> newUomLabels) {
 		List<String> oldUomLabels = uomLabels;
 		uomLabels = newUomLabels;
 		if (eNotificationRequired())
@@ -277,10 +274,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DIRECT_POSITION_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.DIRECT_POSITION_TYPE__AXIS_LABELS:
@@ -302,10 +297,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DIRECT_POSITION_TYPE__VALUE:
 				setValue((List<Double>)newValue);
 				return;
@@ -331,10 +324,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECT_POSITION_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -360,10 +351,8 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECT_POSITION_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GMLPackage.DIRECT_POSITION_TYPE__AXIS_LABELS:
@@ -384,11 +373,10 @@ public class DirectPositionTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", axisLabels: ");

@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceType
-{
+public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceType {
 	/**
 	 * The cached value of the '{@link #getPatchesGroup() <em>Patches Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -46,8 +45,7 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SurfaceTypeImpl()
-	{
+	protected SurfaceTypeImpl() {
 		super();
 	}
 
@@ -57,8 +55,7 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getSurfaceType();
 	}
 
@@ -67,10 +64,9 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getPatchesGroup()
-	{
-		if (patchesGroup == null)
-		{
+	@Override
+	public FeatureMap getPatchesGroup() {
+		if (patchesGroup == null) {
 			patchesGroup = new BasicFeatureMap(this, GMLPackage.SURFACE_TYPE__PATCHES_GROUP);
 		}
 		return patchesGroup;
@@ -81,8 +77,8 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePatchArrayPropertyType getPatches()
-	{
+	@Override
+	public SurfacePatchArrayPropertyType getPatches() {
 		return (SurfacePatchArrayPropertyType)getPatchesGroup().get(GMLPackage.eINSTANCE.getSurfaceType_Patches(), true);
 	}
 
@@ -91,8 +87,7 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPatches(SurfacePatchArrayPropertyType newPatches, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPatches(SurfacePatchArrayPropertyType newPatches, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getPatchesGroup()).basicAdd(GMLPackage.eINSTANCE.getSurfaceType_Patches(), newPatches, msgs);
 	}
 
@@ -101,8 +96,8 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPatches(SurfacePatchArrayPropertyType newPatches)
-	{
+	@Override
+	public void setPatches(SurfacePatchArrayPropertyType newPatches) {
 		((FeatureMap.Internal)getPatchesGroup()).set(GMLPackage.eINSTANCE.getSurfaceType_Patches(), newPatches);
 	}
 
@@ -112,10 +107,8 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.SURFACE_TYPE__PATCHES_GROUP:
 				return ((InternalEList<?>)getPatchesGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.SURFACE_TYPE__PATCHES:
@@ -130,10 +123,8 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.SURFACE_TYPE__PATCHES_GROUP:
 				if (coreType) return getPatchesGroup();
 				return ((FeatureMap.Internal)getPatchesGroup()).getWrapper();
@@ -149,10 +140,8 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.SURFACE_TYPE__PATCHES_GROUP:
 				((FeatureMap.Internal)getPatchesGroup()).set(newValue);
 				return;
@@ -169,10 +158,8 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SURFACE_TYPE__PATCHES_GROUP:
 				getPatchesGroup().clear();
 				return;
@@ -189,10 +176,8 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SURFACE_TYPE__PATCHES_GROUP:
 				return patchesGroup != null && !patchesGroup.isEmpty();
 			case GMLPackage.SURFACE_TYPE__PATCHES:
@@ -207,11 +192,10 @@ public class SurfaceTypeImpl extends AbstractSurfaceTypeImpl implements SurfaceT
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (patchesGroup: ");
 		result.append(patchesGroup);
 		result.append(')');

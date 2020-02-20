@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class VerticalDatumTypeImpl extends AbstractDatumTypeImpl implements VerticalDatumType
-{
+public class VerticalDatumTypeImpl extends AbstractDatumTypeImpl implements VerticalDatumType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected VerticalDatumTypeImpl()
-	{
+	protected VerticalDatumTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class VerticalDatumTypeImpl extends AbstractDatumTypeImpl implements Vert
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getVerticalDatumType();
 	}
 

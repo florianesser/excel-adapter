@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='MD_ObligationCode_Type'"
  * @generated
  */
-public enum MDObligationCodeType implements Enumerator
-{
+public enum MDObligationCodeType implements Enumerator {
 	/**
 	 * The '<em><b>Mandatory</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -52,10 +51,6 @@ public enum MDObligationCodeType implements Enumerator
 	/**
 	 * The '<em><b>Mandatory</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Mandatory</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #MANDATORY
 	 * @model name="mandatory"
@@ -67,10 +62,6 @@ public enum MDObligationCodeType implements Enumerator
 	/**
 	 * The '<em><b>Optional</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Optional</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #OPTIONAL
 	 * @model name="optional"
@@ -82,10 +73,6 @@ public enum MDObligationCodeType implements Enumerator
 	/**
 	 * The '<em><b>Conditional</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Conditional</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CONDITIONAL
 	 * @model name="conditional"
@@ -101,8 +88,7 @@ public enum MDObligationCodeType implements Enumerator
 	 * @generated
 	 */
 	private static final MDObligationCodeType[] VALUES_ARRAY =
-		new MDObligationCodeType[]
-		{
+		new MDObligationCodeType[] {
 			MANDATORY,
 			OPTIONAL,
 			CONDITIONAL,
@@ -124,13 +110,10 @@ public enum MDObligationCodeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static MDObligationCodeType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static MDObligationCodeType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			MDObligationCodeType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -145,13 +128,10 @@ public enum MDObligationCodeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static MDObligationCodeType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static MDObligationCodeType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			MDObligationCodeType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -166,10 +146,8 @@ public enum MDObligationCodeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static MDObligationCodeType get(int value)
-	{
-		switch (value)
-		{
+	public static MDObligationCodeType get(int value) {
+		switch (value) {
 			case MANDATORY_VALUE: return MANDATORY;
 			case OPTIONAL_VALUE: return OPTIONAL;
 			case CONDITIONAL_VALUE: return CONDITIONAL;
@@ -204,8 +182,7 @@ public enum MDObligationCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private MDObligationCodeType(int value, String name, String literal)
-	{
+	private MDObligationCodeType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -216,8 +193,8 @@ public enum MDObligationCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -226,8 +203,8 @@ public enum MDObligationCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -236,8 +213,8 @@ public enum MDObligationCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -248,8 +225,7 @@ public enum MDObligationCodeType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

@@ -22,16 +22,11 @@ import org.eclipse.emf.common.util.EList;
  *        extendedMetaData="name='AbstractFeatureCollectionType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractFeatureCollectionType extends AbstractFeatureType
-{
+public interface AbstractFeatureCollectionType extends AbstractFeatureType {
 	/**
 	 * Returns the value of the '<em><b>Feature Member</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.FeaturePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Member</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Member</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getAbstractFeatureCollectionType_FeatureMember()
@@ -44,10 +39,6 @@ public interface AbstractFeatureCollectionType extends AbstractFeatureType
 	/**
 	 * Returns the value of the '<em><b>Feature Members</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Members</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Members</em>' containment reference.
 	 * @see #setFeatureMembers(FeatureArrayPropertyType)

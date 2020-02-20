@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='CircleType' kind='elementOnly'"
  * @generated
  */
-public interface CircleType extends ArcType
-{
+public interface CircleType extends ArcType {
 } // CircleType

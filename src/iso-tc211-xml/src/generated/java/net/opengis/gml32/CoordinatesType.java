@@ -33,15 +33,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='CoordinatesType' kind='simple'"
  * @generated
  */
-public interface CoordinatesType extends EObject
-{
+public interface CoordinatesType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(String)
@@ -66,10 +61,6 @@ public interface CoordinatesType extends EObject
 	 * Returns the value of the '<em><b>Cs</b></em>' attribute.
 	 * The default value is <code>","</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cs</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cs</em>' attribute.
 	 * @see #isSetCs()
@@ -121,10 +112,6 @@ public interface CoordinatesType extends EObject
 	 * Returns the value of the '<em><b>Decimal</b></em>' attribute.
 	 * The default value is <code>"."</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Decimal</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Decimal</em>' attribute.
 	 * @see #isSetDecimal()
@@ -176,10 +163,6 @@ public interface CoordinatesType extends EObject
 	 * Returns the value of the '<em><b>Ts</b></em>' attribute.
 	 * The default value is <code>" "</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ts</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ts</em>' attribute.
 	 * @see #isSetTs()

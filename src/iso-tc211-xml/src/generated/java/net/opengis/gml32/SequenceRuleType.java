@@ -28,16 +28,11 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='SequenceRuleType' kind='simple'"
  * @generated
  */
-public interface SequenceRuleType extends EObject
-{
+public interface SequenceRuleType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.SequenceRuleEnumeration}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see net.opengis.gml32.SequenceRuleEnumeration
@@ -90,10 +85,6 @@ public interface SequenceRuleType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Axis Order</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Axis Order</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Axis Order</em>' attribute.
 	 * @see #setAxisOrder(List)
@@ -118,10 +109,6 @@ public interface SequenceRuleType extends EObject
 	 * Returns the value of the '<em><b>Order</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.IncrementOrder}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order</em>' attribute.
 	 * @see net.opengis.gml32.IncrementOrder

@@ -98,6 +98,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FeatureMap getMixed() {
 		if (mixed == null) {
 			mixed = new BasicFeatureMap(this, ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__MIXED);
@@ -110,6 +111,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EMap<String, String> getXMLNSPrefixMap() {
 		if (xMLNSPrefixMap == null) {
 			xMLNSPrefixMap = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
@@ -122,6 +124,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EMap<String, String> getXSISchemaLocation() {
 		if (xSISchemaLocation == null) {
 			xSISchemaLocation = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, ExcelAdapterConfigurationPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);
@@ -134,6 +137,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ColumnConfiguration getColumnConfiguration() {
 		return (ColumnConfiguration)getMixed().get(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__COLUMN_CONFIGURATION, true);
 	}
@@ -152,6 +156,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setColumnConfiguration(ColumnConfiguration newColumnConfiguration) {
 		((FeatureMap.Internal)getMixed()).set(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__COLUMN_CONFIGURATION, newColumnConfiguration);
 	}
@@ -161,6 +166,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ExcelConfiguration getExcelConfiguration() {
 		return (ExcelConfiguration)getMixed().get(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__EXCEL_CONFIGURATION, true);
 	}
@@ -179,6 +185,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setExcelConfiguration(ExcelConfiguration newExcelConfiguration) {
 		((FeatureMap.Internal)getMixed()).set(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__EXCEL_CONFIGURATION, newExcelConfiguration);
 	}
@@ -188,6 +195,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SheetConfiguration getSheetConfiguration() {
 		return (SheetConfiguration)getMixed().get(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__SHEET_CONFIGURATION, true);
 	}
@@ -206,6 +214,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSheetConfiguration(SheetConfiguration newSheetConfiguration) {
 		((FeatureMap.Internal)getMixed()).set(ExcelAdapterConfigurationPackage.Literals.DOCUMENT_ROOT__SHEET_CONFIGURATION, newSheetConfiguration);
 	}
@@ -354,7 +363,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (mixed: ");
 		result.append(mixed);
 		result.append(')');

@@ -42,8 +42,7 @@ import org.w3.xlink.XLinkPackage;
  *
  * @generated
  */
-public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
-{
+public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -226,8 +225,7 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SimpleImpl()
-	{
+	protected SimpleImpl() {
 		super();
 	}
 
@@ -237,8 +235,7 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return XLinkPackage.Literals.SIMPLE;
 	}
 
@@ -247,10 +244,9 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getMixed()
-	{
-		if (mixed == null)
-		{
+	@Override
+	public FeatureMap getMixed() {
+		if (mixed == null) {
 			mixed = new BasicFeatureMap(this, XLinkPackage.SIMPLE__MIXED);
 		}
 		return mixed;
@@ -261,8 +257,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAny()
-	{
+	@Override
+	public FeatureMap getAny() {
 		return (FeatureMap)getMixed().<FeatureMap.Entry>list(XLinkPackage.Literals.SIMPLE__ANY);
 	}
 
@@ -271,8 +267,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -281,8 +277,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -296,8 +292,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -311,8 +307,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -321,8 +317,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -331,8 +327,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -344,8 +340,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -354,8 +350,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -367,8 +363,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -377,8 +373,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -390,8 +386,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -400,8 +396,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -415,8 +411,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -430,8 +426,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -440,8 +436,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -450,8 +446,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -463,8 +459,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -473,8 +469,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -488,8 +484,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -503,8 +499,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -514,10 +510,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case XLinkPackage.SIMPLE__MIXED:
 				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 			case XLinkPackage.SIMPLE__ANY:
@@ -532,10 +526,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case XLinkPackage.SIMPLE__MIXED:
 				if (coreType) return getMixed();
 				return ((FeatureMap.Internal)getMixed()).getWrapper();
@@ -566,10 +558,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case XLinkPackage.SIMPLE__MIXED:
 				((FeatureMap.Internal)getMixed()).set(newValue);
 				return;
@@ -607,10 +597,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.SIMPLE__MIXED:
 				getMixed().clear();
 				return;
@@ -648,10 +636,8 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.SIMPLE__MIXED:
 				return mixed != null && !mixed.isEmpty();
 			case XLinkPackage.SIMPLE__ANY:
@@ -680,11 +666,10 @@ public class SimpleImpl extends MinimalEObjectImpl.Container implements Simple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (mixed: ");
 		result.append(mixed);
 		result.append(", actuate: ");

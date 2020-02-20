@@ -25,15 +25,10 @@ import javax.xml.datatype.Duration;
  * @model extendedMetaData="name='TimePeriodType' kind='elementOnly'"
  * @generated
  */
-public interface TimePeriodType extends AbstractTimeGeometricPrimitiveType
-{
+public interface TimePeriodType extends AbstractTimeGeometricPrimitiveType {
 	/**
 	 * Returns the value of the '<em><b>Begin Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Begin Position</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Begin Position</em>' containment reference.
 	 * @see #setBeginPosition(TimePositionType)
@@ -57,10 +52,6 @@ public interface TimePeriodType extends AbstractTimeGeometricPrimitiveType
 	/**
 	 * Returns the value of the '<em><b>Begin</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Begin</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Begin</em>' containment reference.
 	 * @see #setBegin(TimeInstantPropertyType)
@@ -84,10 +75,6 @@ public interface TimePeriodType extends AbstractTimeGeometricPrimitiveType
 	/**
 	 * Returns the value of the '<em><b>End Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>End Position</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>End Position</em>' containment reference.
 	 * @see #setEndPosition(TimePositionType)
@@ -111,10 +98,6 @@ public interface TimePeriodType extends AbstractTimeGeometricPrimitiveType
 	/**
 	 * Returns the value of the '<em><b>End</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>End</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>End</em>' containment reference.
 	 * @see #setEnd(TimeInstantPropertyType)

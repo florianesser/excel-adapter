@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements DSAssociationTypeCodePropertyType
-{
+public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements DSAssociationTypeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getDSAssociationTypeCode() <em>DS Association Type Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSAssociationTypeCodePropertyTypeImpl()
-	{
+	protected DSAssociationTypeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSAssociationTypeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getDSAssociationTypeCode()
-	{
+	@Override
+	public CodeListValueType getDSAssociationTypeCode() {
 		return dSAssociationTypeCode;
 	}
 
@@ -98,12 +95,10 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDSAssociationTypeCode(CodeListValueType newDSAssociationTypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDSAssociationTypeCode(CodeListValueType newDSAssociationTypeCode, NotificationChain msgs) {
 		CodeListValueType oldDSAssociationTypeCode = dSAssociationTypeCode;
 		dSAssociationTypeCode = newDSAssociationTypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE__DS_ASSOCIATION_TYPE_CODE, oldDSAssociationTypeCode, newDSAssociationTypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDSAssociationTypeCode(CodeListValueType newDSAssociationTypeCode)
-	{
-		if (newDSAssociationTypeCode != dSAssociationTypeCode)
-		{
+	@Override
+	public void setDSAssociationTypeCode(CodeListValueType newDSAssociationTypeCode) {
+		if (newDSAssociationTypeCode != dSAssociationTypeCode) {
 			NotificationChain msgs = null;
 			if (dSAssociationTypeCode != null)
 				msgs = ((InternalEObject)dSAssociationTypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE__DS_ASSOCIATION_TYPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE__DS_ASSOCIATION_TYPE_CODE:
 				return basicSetDSAssociationTypeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE__DS_ASSOCIATION_TYPE_CODE:
 				return getDSAssociationTypeCode();
 			case GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE__DS_ASSOCIATION_TYPE_CODE:
 				setDSAssociationTypeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE__DS_ASSOCIATION_TYPE_CODE:
 				setDSAssociationTypeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE__DS_ASSOCIATION_TYPE_CODE:
 				return dSAssociationTypeCode != null;
 			case GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class DSAssociationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

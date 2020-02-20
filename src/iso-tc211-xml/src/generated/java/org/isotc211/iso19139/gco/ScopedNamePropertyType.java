@@ -23,15 +23,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='ScopedName_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface ScopedNamePropertyType extends EObject
-{
+public interface ScopedNamePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Scoped Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Scoped Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scoped Name</em>' containment reference.
 	 * @see #setScopedName(CodeType)
@@ -55,10 +50,6 @@ public interface ScopedNamePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

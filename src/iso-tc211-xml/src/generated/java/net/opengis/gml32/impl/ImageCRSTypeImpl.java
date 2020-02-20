@@ -40,8 +40,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSType
-{
+public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSType {
 	/**
 	 * The cached value of the '{@link #getCartesianCSGroup() <em>Cartesian CS Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -87,8 +86,7 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ImageCRSTypeImpl()
-	{
+	protected ImageCRSTypeImpl() {
 		super();
 	}
 
@@ -98,8 +96,7 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getImageCRSType();
 	}
 
@@ -108,10 +105,9 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getCartesianCSGroup()
-	{
-		if (cartesianCSGroup == null)
-		{
+	@Override
+	public FeatureMap getCartesianCSGroup() {
+		if (cartesianCSGroup == null) {
 			cartesianCSGroup = new BasicFeatureMap(this, GMLPackage.IMAGE_CRS_TYPE__CARTESIAN_CS_GROUP);
 		}
 		return cartesianCSGroup;
@@ -122,8 +118,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSPropertyType getCartesianCS()
-	{
+	@Override
+	public CartesianCSPropertyType getCartesianCS() {
 		return (CartesianCSPropertyType)getCartesianCSGroup().get(GMLPackage.eINSTANCE.getImageCRSType_CartesianCS(), true);
 	}
 
@@ -132,8 +128,7 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getCartesianCSGroup()).basicAdd(GMLPackage.eINSTANCE.getImageCRSType_CartesianCS(), newCartesianCS, msgs);
 	}
 
@@ -142,8 +137,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCartesianCS(CartesianCSPropertyType newCartesianCS)
-	{
+	@Override
+	public void setCartesianCS(CartesianCSPropertyType newCartesianCS) {
 		((FeatureMap.Internal)getCartesianCSGroup()).set(GMLPackage.eINSTANCE.getImageCRSType_CartesianCS(), newCartesianCS);
 	}
 
@@ -152,10 +147,9 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAffineCSGroup()
-	{
-		if (affineCSGroup == null)
-		{
+	@Override
+	public FeatureMap getAffineCSGroup() {
+		if (affineCSGroup == null) {
 			affineCSGroup = new BasicFeatureMap(this, GMLPackage.IMAGE_CRS_TYPE__AFFINE_CS_GROUP);
 		}
 		return affineCSGroup;
@@ -166,8 +160,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffineCSPropertyType getAffineCS()
-	{
+	@Override
+	public AffineCSPropertyType getAffineCS() {
 		return (AffineCSPropertyType)getAffineCSGroup().get(GMLPackage.eINSTANCE.getImageCRSType_AffineCS(), true);
 	}
 
@@ -176,8 +170,7 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAffineCS(AffineCSPropertyType newAffineCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAffineCS(AffineCSPropertyType newAffineCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAffineCSGroup()).basicAdd(GMLPackage.eINSTANCE.getImageCRSType_AffineCS(), newAffineCS, msgs);
 	}
 
@@ -186,8 +179,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAffineCS(AffineCSPropertyType newAffineCS)
-	{
+	@Override
+	public void setAffineCS(AffineCSPropertyType newAffineCS) {
 		((FeatureMap.Internal)getAffineCSGroup()).set(GMLPackage.eINSTANCE.getImageCRSType_AffineCS(), newAffineCS);
 	}
 
@@ -196,8 +189,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ObliqueCartesianCSPropertyType getUsesObliqueCartesianCS()
-	{
+	@Override
+	public ObliqueCartesianCSPropertyType getUsesObliqueCartesianCS() {
 		return usesObliqueCartesianCS;
 	}
 
@@ -206,12 +199,10 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType newUsesObliqueCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType newUsesObliqueCartesianCS, NotificationChain msgs) {
 		ObliqueCartesianCSPropertyType oldUsesObliqueCartesianCS = usesObliqueCartesianCS;
 		usesObliqueCartesianCS = newUsesObliqueCartesianCS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.IMAGE_CRS_TYPE__USES_OBLIQUE_CARTESIAN_CS, oldUsesObliqueCartesianCS, newUsesObliqueCartesianCS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -223,10 +214,9 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType newUsesObliqueCartesianCS)
-	{
-		if (newUsesObliqueCartesianCS != usesObliqueCartesianCS)
-		{
+	@Override
+	public void setUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType newUsesObliqueCartesianCS) {
+		if (newUsesObliqueCartesianCS != usesObliqueCartesianCS) {
 			NotificationChain msgs = null;
 			if (usesObliqueCartesianCS != null)
 				msgs = ((InternalEObject)usesObliqueCartesianCS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.IMAGE_CRS_TYPE__USES_OBLIQUE_CARTESIAN_CS, null, msgs);
@@ -244,10 +234,9 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getImageDatumGroup()
-	{
-		if (imageDatumGroup == null)
-		{
+	@Override
+	public FeatureMap getImageDatumGroup() {
+		if (imageDatumGroup == null) {
 			imageDatumGroup = new BasicFeatureMap(this, GMLPackage.IMAGE_CRS_TYPE__IMAGE_DATUM_GROUP);
 		}
 		return imageDatumGroup;
@@ -258,8 +247,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageDatumPropertyType getImageDatum()
-	{
+	@Override
+	public ImageDatumPropertyType getImageDatum() {
 		return (ImageDatumPropertyType)getImageDatumGroup().get(GMLPackage.eINSTANCE.getImageCRSType_ImageDatum(), true);
 	}
 
@@ -268,8 +257,7 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetImageDatum(ImageDatumPropertyType newImageDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetImageDatum(ImageDatumPropertyType newImageDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getImageDatumGroup()).basicAdd(GMLPackage.eINSTANCE.getImageCRSType_ImageDatum(), newImageDatum, msgs);
 	}
 
@@ -278,8 +266,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImageDatum(ImageDatumPropertyType newImageDatum)
-	{
+	@Override
+	public void setImageDatum(ImageDatumPropertyType newImageDatum) {
 		((FeatureMap.Internal)getImageDatumGroup()).set(GMLPackage.eINSTANCE.getImageCRSType_ImageDatum(), newImageDatum);
 	}
 
@@ -289,10 +277,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_CRS_TYPE__CARTESIAN_CS_GROUP:
 				return ((InternalEList<?>)getCartesianCSGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.IMAGE_CRS_TYPE__CARTESIAN_CS:
@@ -317,10 +303,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_CRS_TYPE__CARTESIAN_CS_GROUP:
 				if (coreType) return getCartesianCSGroup();
 				return ((FeatureMap.Internal)getCartesianCSGroup()).getWrapper();
@@ -348,10 +332,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_CRS_TYPE__CARTESIAN_CS_GROUP:
 				((FeatureMap.Internal)getCartesianCSGroup()).set(newValue);
 				return;
@@ -383,10 +365,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_CRS_TYPE__CARTESIAN_CS_GROUP:
 				getCartesianCSGroup().clear();
 				return;
@@ -418,10 +398,8 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_CRS_TYPE__CARTESIAN_CS_GROUP:
 				return cartesianCSGroup != null && !cartesianCSGroup.isEmpty();
 			case GMLPackage.IMAGE_CRS_TYPE__CARTESIAN_CS:
@@ -446,11 +424,10 @@ public class ImageCRSTypeImpl extends AbstractCRSTypeImpl implements ImageCRSTyp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (cartesianCSGroup: ");
 		result.append(cartesianCSGroup);
 		result.append(", affineCSGroup: ");

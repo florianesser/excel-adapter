@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQRelativeInternalPositionalAccuracyTypeImpl extends AbstractDQPositionalAccuracyTypeImpl implements DQRelativeInternalPositionalAccuracyType
-{
+public class DQRelativeInternalPositionalAccuracyTypeImpl extends AbstractDQPositionalAccuracyTypeImpl implements DQRelativeInternalPositionalAccuracyType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQRelativeInternalPositionalAccuracyTypeImpl()
-	{
+	protected DQRelativeInternalPositionalAccuracyTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQRelativeInternalPositionalAccuracyTypeImpl extends AbstractDQPosi
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQRelativeInternalPositionalAccuracyType();
 	}
 

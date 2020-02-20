@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class OperationParameterTypeImpl extends AbstractGeneralOperationParameterTypeImpl implements OperationParameterType
-{
+public class OperationParameterTypeImpl extends AbstractGeneralOperationParameterTypeImpl implements OperationParameterType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected OperationParameterTypeImpl()
-	{
+	protected OperationParameterTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class OperationParameterTypeImpl extends AbstractGeneralOperationParamete
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getOperationParameterType();
 	}
 

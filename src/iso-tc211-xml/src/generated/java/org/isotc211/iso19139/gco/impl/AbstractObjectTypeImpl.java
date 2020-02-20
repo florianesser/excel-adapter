@@ -26,8 +26,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Container implements AbstractObjectType
-{
+public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Container implements AbstractObjectType {
 	/**
 	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -73,8 +72,7 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractObjectTypeImpl()
-	{
+	protected AbstractObjectTypeImpl() {
 		super();
 	}
 
@@ -84,8 +82,7 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.ABSTRACT_OBJECT_TYPE;
 	}
 
@@ -94,8 +91,8 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getId()
-	{
+	@Override
+	public String getId() {
 		return id;
 	}
 
@@ -104,8 +101,8 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setId(String newId)
-	{
+	@Override
+	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
@@ -117,8 +114,8 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUuid()
-	{
+	@Override
+	public String getUuid() {
 		return uuid;
 	}
 
@@ -127,8 +124,8 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUuid(String newUuid)
-	{
+	@Override
+	public void setUuid(String newUuid) {
 		String oldUuid = uuid;
 		uuid = newUuid;
 		if (eNotificationRequired())
@@ -141,10 +138,8 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.ABSTRACT_OBJECT_TYPE__ID:
 				return getId();
 			case GCOPackage.ABSTRACT_OBJECT_TYPE__UUID:
@@ -159,10 +154,8 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.ABSTRACT_OBJECT_TYPE__ID:
 				setId((String)newValue);
 				return;
@@ -179,10 +172,8 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.ABSTRACT_OBJECT_TYPE__ID:
 				setId(ID_EDEFAULT);
 				return;
@@ -199,10 +190,8 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.ABSTRACT_OBJECT_TYPE__ID:
 				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 			case GCOPackage.ABSTRACT_OBJECT_TYPE__UUID:
@@ -217,11 +206,10 @@ public abstract class AbstractObjectTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (id: ");
 		result.append(id);
 		result.append(", uuid: ");

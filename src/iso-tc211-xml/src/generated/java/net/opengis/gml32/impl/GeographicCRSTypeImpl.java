@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements GeographicCRSType
-{
+public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements GeographicCRSType {
 	/**
 	 * The cached value of the '{@link #getUsesEllipsoidalCS() <em>Uses Ellipsoidal CS</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -56,8 +55,7 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeographicCRSTypeImpl()
-	{
+	protected GeographicCRSTypeImpl() {
 		super();
 	}
 
@@ -67,8 +65,7 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeographicCRSType();
 	}
 
@@ -77,8 +74,8 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidalCSPropertyType getUsesEllipsoidalCS()
-	{
+	@Override
+	public EllipsoidalCSPropertyType getUsesEllipsoidalCS() {
 		return usesEllipsoidalCS;
 	}
 
@@ -87,12 +84,10 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesEllipsoidalCS(EllipsoidalCSPropertyType newUsesEllipsoidalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesEllipsoidalCS(EllipsoidalCSPropertyType newUsesEllipsoidalCS, NotificationChain msgs) {
 		EllipsoidalCSPropertyType oldUsesEllipsoidalCS = usesEllipsoidalCS;
 		usesEllipsoidalCS = newUsesEllipsoidalCS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_ELLIPSOIDAL_CS, oldUsesEllipsoidalCS, newUsesEllipsoidalCS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -104,10 +99,9 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesEllipsoidalCS(EllipsoidalCSPropertyType newUsesEllipsoidalCS)
-	{
-		if (newUsesEllipsoidalCS != usesEllipsoidalCS)
-		{
+	@Override
+	public void setUsesEllipsoidalCS(EllipsoidalCSPropertyType newUsesEllipsoidalCS) {
+		if (newUsesEllipsoidalCS != usesEllipsoidalCS) {
 			NotificationChain msgs = null;
 			if (usesEllipsoidalCS != null)
 				msgs = ((InternalEObject)usesEllipsoidalCS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_ELLIPSOIDAL_CS, null, msgs);
@@ -125,8 +119,8 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumPropertyType getUsesGeodeticDatum()
-	{
+	@Override
+	public GeodeticDatumPropertyType getUsesGeodeticDatum() {
 		return usesGeodeticDatum;
 	}
 
@@ -135,12 +129,10 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum, NotificationChain msgs) {
 		GeodeticDatumPropertyType oldUsesGeodeticDatum = usesGeodeticDatum;
 		usesGeodeticDatum = newUsesGeodeticDatum;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_GEODETIC_DATUM, oldUsesGeodeticDatum, newUsesGeodeticDatum);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -152,10 +144,9 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum)
-	{
-		if (newUsesGeodeticDatum != usesGeodeticDatum)
-		{
+	@Override
+	public void setUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum) {
+		if (newUsesGeodeticDatum != usesGeodeticDatum) {
 			NotificationChain msgs = null;
 			if (usesGeodeticDatum != null)
 				msgs = ((InternalEObject)usesGeodeticDatum).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_GEODETIC_DATUM, null, msgs);
@@ -174,10 +165,8 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_ELLIPSOIDAL_CS:
 				return basicSetUsesEllipsoidalCS(null, msgs);
 			case GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_GEODETIC_DATUM:
@@ -192,10 +181,8 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_ELLIPSOIDAL_CS:
 				return getUsesEllipsoidalCS();
 			case GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_GEODETIC_DATUM:
@@ -210,10 +197,8 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_ELLIPSOIDAL_CS:
 				setUsesEllipsoidalCS((EllipsoidalCSPropertyType)newValue);
 				return;
@@ -230,10 +215,8 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_ELLIPSOIDAL_CS:
 				setUsesEllipsoidalCS((EllipsoidalCSPropertyType)null);
 				return;
@@ -250,10 +233,8 @@ public class GeographicCRSTypeImpl extends AbstractCRSTypeImpl implements Geogra
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_ELLIPSOIDAL_CS:
 				return usesEllipsoidalCS != null;
 			case GMLPackage.GEOGRAPHIC_CRS_TYPE__USES_GEODETIC_DATUM:

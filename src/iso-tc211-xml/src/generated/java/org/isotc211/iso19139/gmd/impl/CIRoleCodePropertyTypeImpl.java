@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements CIRoleCodePropertyType
-{
+public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements CIRoleCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getCIRoleCode() <em>CI Role Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CIRoleCodePropertyTypeImpl()
-	{
+	protected CIRoleCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCIRoleCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getCIRoleCode()
-	{
+	@Override
+	public CodeListValueType getCIRoleCode() {
 		return cIRoleCode;
 	}
 
@@ -98,12 +95,10 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCIRoleCode(CodeListValueType newCIRoleCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCIRoleCode(CodeListValueType newCIRoleCode, NotificationChain msgs) {
 		CodeListValueType oldCIRoleCode = cIRoleCode;
 		cIRoleCode = newCIRoleCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE__CI_ROLE_CODE, oldCIRoleCode, newCIRoleCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCIRoleCode(CodeListValueType newCIRoleCode)
-	{
-		if (newCIRoleCode != cIRoleCode)
-		{
+	@Override
+	public void setCIRoleCode(CodeListValueType newCIRoleCode) {
+		if (newCIRoleCode != cIRoleCode) {
 			NotificationChain msgs = null;
 			if (cIRoleCode != null)
 				msgs = ((InternalEObject)cIRoleCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE__CI_ROLE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE__CI_ROLE_CODE:
 				return basicSetCIRoleCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE__CI_ROLE_CODE:
 				return getCIRoleCode();
 			case GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE__CI_ROLE_CODE:
 				setCIRoleCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE__CI_ROLE_CODE:
 				setCIRoleCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE__CI_ROLE_CODE:
 				return cIRoleCode != null;
 			case GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class CIRoleCodePropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

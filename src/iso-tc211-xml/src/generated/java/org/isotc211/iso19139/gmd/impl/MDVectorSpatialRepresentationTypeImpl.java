@@ -36,8 +36,7 @@ import org.isotc211.iso19139.gmd.MDVectorSpatialRepresentationType;
  *
  * @generated
  */
-public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepresentationTypeImpl implements MDVectorSpatialRepresentationType
-{
+public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepresentationTypeImpl implements MDVectorSpatialRepresentationType {
 	/**
 	 * The cached value of the '{@link #getTopologyLevel() <em>Topology Level</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDVectorSpatialRepresentationTypeImpl()
-	{
+	protected MDVectorSpatialRepresentationTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDVectorSpatialRepresentationType();
 	}
 
@@ -84,8 +81,8 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDTopologyLevelCodePropertyType getTopologyLevel()
-	{
+	@Override
+	public MDTopologyLevelCodePropertyType getTopologyLevel() {
 		return topologyLevel;
 	}
 
@@ -94,12 +91,10 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopologyLevel(MDTopologyLevelCodePropertyType newTopologyLevel, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopologyLevel(MDTopologyLevelCodePropertyType newTopologyLevel, NotificationChain msgs) {
 		MDTopologyLevelCodePropertyType oldTopologyLevel = topologyLevel;
 		topologyLevel = newTopologyLevel;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__TOPOLOGY_LEVEL, oldTopologyLevel, newTopologyLevel);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -111,10 +106,9 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopologyLevel(MDTopologyLevelCodePropertyType newTopologyLevel)
-	{
-		if (newTopologyLevel != topologyLevel)
-		{
+	@Override
+	public void setTopologyLevel(MDTopologyLevelCodePropertyType newTopologyLevel) {
+		if (newTopologyLevel != topologyLevel) {
 			NotificationChain msgs = null;
 			if (topologyLevel != null)
 				msgs = ((InternalEObject)topologyLevel).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__TOPOLOGY_LEVEL, null, msgs);
@@ -132,10 +126,9 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDGeometricObjectsPropertyType> getGeometricObjects()
-	{
-		if (geometricObjects == null)
-		{
+	@Override
+	public EList<MDGeometricObjectsPropertyType> getGeometricObjects() {
+		if (geometricObjects == null) {
 			geometricObjects = new EObjectContainmentEList<MDGeometricObjectsPropertyType>(MDGeometricObjectsPropertyType.class, this, GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__GEOMETRIC_OBJECTS);
 		}
 		return geometricObjects;
@@ -147,10 +140,8 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__TOPOLOGY_LEVEL:
 				return basicSetTopologyLevel(null, msgs);
 			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__GEOMETRIC_OBJECTS:
@@ -165,10 +156,8 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__TOPOLOGY_LEVEL:
 				return getTopologyLevel();
 			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__GEOMETRIC_OBJECTS:
@@ -184,10 +173,8 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__TOPOLOGY_LEVEL:
 				setTopologyLevel((MDTopologyLevelCodePropertyType)newValue);
 				return;
@@ -205,10 +192,8 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__TOPOLOGY_LEVEL:
 				setTopologyLevel((MDTopologyLevelCodePropertyType)null);
 				return;
@@ -225,10 +210,8 @@ public class MDVectorSpatialRepresentationTypeImpl extends AbstractMDSpatialRepr
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__TOPOLOGY_LEVEL:
 				return topologyLevel != null;
 			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE__GEOMETRIC_OBJECTS:

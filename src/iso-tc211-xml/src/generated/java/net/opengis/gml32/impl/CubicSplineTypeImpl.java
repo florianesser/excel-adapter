@@ -51,8 +51,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements CubicSplineType
-{
+public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements CubicSplineType {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -166,8 +165,7 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CubicSplineTypeImpl()
-	{
+	protected CubicSplineTypeImpl() {
 		super();
 	}
 
@@ -177,8 +175,7 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCubicSplineType();
 	}
 
@@ -187,10 +184,9 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getGroup()
-	{
-		if (group == null)
-		{
+	@Override
+	public FeatureMap getGroup() {
+		if (group == null) {
 			group = new BasicFeatureMap(this, GMLPackage.CUBIC_SPLINE_TYPE__GROUP);
 		}
 		return group;
@@ -201,8 +197,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectPositionType> getPos()
-	{
+	@Override
+	public EList<DirectPositionType> getPos() {
 		return getGroup().list(GMLPackage.eINSTANCE.getCubicSplineType_Pos());
 	}
 
@@ -211,8 +207,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PointPropertyType> getPointProperty()
-	{
+	@Override
+	public EList<PointPropertyType> getPointProperty() {
 		return getGroup().list(GMLPackage.eINSTANCE.getCubicSplineType_PointProperty());
 	}
 
@@ -221,8 +217,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PointPropertyType> getPointRep()
-	{
+	@Override
+	public EList<PointPropertyType> getPointRep() {
 		return getGroup().list(GMLPackage.eINSTANCE.getCubicSplineType_PointRep());
 	}
 
@@ -231,8 +227,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionListType getPosList()
-	{
+	@Override
+	public DirectPositionListType getPosList() {
 		return posList;
 	}
 
@@ -241,12 +237,10 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs) {
 		DirectPositionListType oldPosList = posList;
 		posList = newPosList;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CUBIC_SPLINE_TYPE__POS_LIST, oldPosList, newPosList);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -258,10 +252,9 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPosList(DirectPositionListType newPosList)
-	{
-		if (newPosList != posList)
-		{
+	@Override
+	public void setPosList(DirectPositionListType newPosList) {
+		if (newPosList != posList) {
 			NotificationChain msgs = null;
 			if (posList != null)
 				msgs = ((InternalEObject)posList).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CUBIC_SPLINE_TYPE__POS_LIST, null, msgs);
@@ -279,8 +272,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinatesType getCoordinates()
-	{
+	@Override
+	public CoordinatesType getCoordinates() {
 		return coordinates;
 	}
 
@@ -289,12 +282,10 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs) {
 		CoordinatesType oldCoordinates = coordinates;
 		coordinates = newCoordinates;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CUBIC_SPLINE_TYPE__COORDINATES, oldCoordinates, newCoordinates);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -306,10 +297,9 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinates(CoordinatesType newCoordinates)
-	{
-		if (newCoordinates != coordinates)
-		{
+	@Override
+	public void setCoordinates(CoordinatesType newCoordinates) {
+		if (newCoordinates != coordinates) {
 			NotificationChain msgs = null;
 			if (coordinates != null)
 				msgs = ((InternalEObject)coordinates).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CUBIC_SPLINE_TYPE__COORDINATES, null, msgs);
@@ -327,8 +317,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VectorType getVectorAtStart()
-	{
+	@Override
+	public VectorType getVectorAtStart() {
 		return vectorAtStart;
 	}
 
@@ -337,12 +327,10 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVectorAtStart(VectorType newVectorAtStart, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVectorAtStart(VectorType newVectorAtStart, NotificationChain msgs) {
 		VectorType oldVectorAtStart = vectorAtStart;
 		vectorAtStart = newVectorAtStart;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CUBIC_SPLINE_TYPE__VECTOR_AT_START, oldVectorAtStart, newVectorAtStart);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -354,10 +342,9 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVectorAtStart(VectorType newVectorAtStart)
-	{
-		if (newVectorAtStart != vectorAtStart)
-		{
+	@Override
+	public void setVectorAtStart(VectorType newVectorAtStart) {
+		if (newVectorAtStart != vectorAtStart) {
 			NotificationChain msgs = null;
 			if (vectorAtStart != null)
 				msgs = ((InternalEObject)vectorAtStart).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CUBIC_SPLINE_TYPE__VECTOR_AT_START, null, msgs);
@@ -375,8 +362,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VectorType getVectorAtEnd()
-	{
+	@Override
+	public VectorType getVectorAtEnd() {
 		return vectorAtEnd;
 	}
 
@@ -385,12 +372,10 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVectorAtEnd(VectorType newVectorAtEnd, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVectorAtEnd(VectorType newVectorAtEnd, NotificationChain msgs) {
 		VectorType oldVectorAtEnd = vectorAtEnd;
 		vectorAtEnd = newVectorAtEnd;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CUBIC_SPLINE_TYPE__VECTOR_AT_END, oldVectorAtEnd, newVectorAtEnd);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -402,10 +387,9 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVectorAtEnd(VectorType newVectorAtEnd)
-	{
-		if (newVectorAtEnd != vectorAtEnd)
-		{
+	@Override
+	public void setVectorAtEnd(VectorType newVectorAtEnd) {
+		if (newVectorAtEnd != vectorAtEnd) {
 			NotificationChain msgs = null;
 			if (vectorAtEnd != null)
 				msgs = ((InternalEObject)vectorAtEnd).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CUBIC_SPLINE_TYPE__VECTOR_AT_END, null, msgs);
@@ -423,8 +407,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getDegree()
-	{
+	@Override
+	public BigInteger getDegree() {
 		return degree;
 	}
 
@@ -433,8 +417,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDegree(BigInteger newDegree)
-	{
+	@Override
+	public void setDegree(BigInteger newDegree) {
 		BigInteger oldDegree = degree;
 		degree = newDegree;
 		boolean oldDegreeESet = degreeESet;
@@ -448,8 +432,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetDegree()
-	{
+	@Override
+	public void unsetDegree() {
 		BigInteger oldDegree = degree;
 		boolean oldDegreeESet = degreeESet;
 		degree = DEGREE_EDEFAULT;
@@ -463,8 +447,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetDegree()
-	{
+	@Override
+	public boolean isSetDegree() {
 		return degreeESet;
 	}
 
@@ -473,8 +457,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveInterpolationType getInterpolation()
-	{
+	@Override
+	public CurveInterpolationType getInterpolation() {
 		return interpolation;
 	}
 
@@ -483,8 +467,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInterpolation(CurveInterpolationType newInterpolation)
-	{
+	@Override
+	public void setInterpolation(CurveInterpolationType newInterpolation) {
 		CurveInterpolationType oldInterpolation = interpolation;
 		interpolation = newInterpolation == null ? INTERPOLATION_EDEFAULT : newInterpolation;
 		boolean oldInterpolationESet = interpolationESet;
@@ -498,8 +482,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetInterpolation()
-	{
+	@Override
+	public void unsetInterpolation() {
 		CurveInterpolationType oldInterpolation = interpolation;
 		boolean oldInterpolationESet = interpolationESet;
 		interpolation = INTERPOLATION_EDEFAULT;
@@ -513,8 +497,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetInterpolation()
-	{
+	@Override
+	public boolean isSetInterpolation() {
 		return interpolationESet;
 	}
 
@@ -524,10 +508,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.CUBIC_SPLINE_TYPE__GROUP:
 				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.CUBIC_SPLINE_TYPE__POS:
@@ -554,10 +536,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CUBIC_SPLINE_TYPE__GROUP:
 				if (coreType) return getGroup();
 				return ((FeatureMap.Internal)getGroup()).getWrapper();
@@ -590,10 +570,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CUBIC_SPLINE_TYPE__GROUP:
 				((FeatureMap.Internal)getGroup()).set(newValue);
 				return;
@@ -637,10 +615,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CUBIC_SPLINE_TYPE__GROUP:
 				getGroup().clear();
 				return;
@@ -681,10 +657,8 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CUBIC_SPLINE_TYPE__GROUP:
 				return group != null && !group.isEmpty();
 			case GMLPackage.CUBIC_SPLINE_TYPE__POS:
@@ -715,11 +689,10 @@ public class CubicSplineTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (group: ");
 		result.append(group);
 		result.append(", degree: ");

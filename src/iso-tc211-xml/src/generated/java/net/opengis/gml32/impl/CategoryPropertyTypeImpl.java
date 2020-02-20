@@ -41,8 +41,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container implements CategoryPropertyType
-{
+public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container implements CategoryPropertyType {
 	/**
 	 * The cached value of the '{@link #getCategory() <em>Category</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -274,8 +273,7 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CategoryPropertyTypeImpl()
-	{
+	protected CategoryPropertyTypeImpl() {
 		super();
 	}
 
@@ -285,8 +283,7 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCategoryPropertyType();
 	}
 
@@ -295,8 +292,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CategoryType getCategory()
-	{
+	@Override
+	public CategoryType getCategory() {
 		return category;
 	}
 
@@ -305,14 +302,12 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCategory(CategoryType newCategory, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCategory(CategoryType newCategory, NotificationChain msgs) {
 		CategoryType oldCategory = category;
 		category = newCategory;
 		boolean oldCategoryESet = categoryESet;
 		categoryESet = true;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CATEGORY_PROPERTY_TYPE__CATEGORY, oldCategory, newCategory, !oldCategoryESet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -324,10 +319,9 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCategory(CategoryType newCategory)
-	{
-		if (newCategory != category)
-		{
+	@Override
+	public void setCategory(CategoryType newCategory) {
+		if (newCategory != category) {
 			NotificationChain msgs = null;
 			if (category != null)
 				msgs = ((InternalEObject)category).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CATEGORY_PROPERTY_TYPE__CATEGORY, null, msgs);
@@ -336,8 +330,7 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 			msgs = basicSetCategory(newCategory, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
-		else
-		{
+		else {
 			boolean oldCategoryESet = categoryESet;
 			categoryESet = true;
 			if (eNotificationRequired())
@@ -350,14 +343,12 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicUnsetCategory(NotificationChain msgs)
-	{
+	public NotificationChain basicUnsetCategory(NotificationChain msgs) {
 		CategoryType oldCategory = category;
 		category = null;
 		boolean oldCategoryESet = categoryESet;
 		categoryESet = false;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.UNSET, GMLPackage.CATEGORY_PROPERTY_TYPE__CATEGORY, oldCategory, null, oldCategoryESet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -369,17 +360,15 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetCategory()
-	{
-		if (category != null)
-		{
+	@Override
+	public void unsetCategory() {
+		if (category != null) {
 			NotificationChain msgs = null;
 			msgs = ((InternalEObject)category).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CATEGORY_PROPERTY_TYPE__CATEGORY, null, msgs);
 			msgs = basicUnsetCategory(msgs);
 			if (msgs != null) msgs.dispatch();
 		}
-		else
-		{
+		else {
 			boolean oldCategoryESet = categoryESet;
 			categoryESet = false;
 			if (eNotificationRequired())
@@ -392,8 +381,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetCategory()
-	{
+	@Override
+	public boolean isSetCategory() {
 		return categoryESet;
 	}
 
@@ -402,8 +391,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -412,8 +401,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -427,8 +416,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -442,8 +431,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -452,8 +441,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -462,8 +451,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -475,8 +464,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -485,8 +474,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -498,8 +487,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -508,8 +497,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -521,8 +510,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -531,8 +520,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -544,8 +533,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -554,8 +543,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -567,8 +556,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -577,8 +566,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -592,8 +581,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -607,8 +596,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -617,8 +606,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -627,8 +616,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -640,8 +629,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -650,8 +639,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -665,8 +654,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -680,8 +669,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -691,10 +680,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.CATEGORY_PROPERTY_TYPE__CATEGORY:
 				return basicUnsetCategory(msgs);
 		}
@@ -707,10 +694,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CATEGORY_PROPERTY_TYPE__CATEGORY:
 				return getCategory();
 			case GMLPackage.CATEGORY_PROPERTY_TYPE__ACTUATE:
@@ -741,10 +726,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CATEGORY_PROPERTY_TYPE__CATEGORY:
 				setCategory((CategoryType)newValue);
 				return;
@@ -785,10 +768,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CATEGORY_PROPERTY_TYPE__CATEGORY:
 				unsetCategory();
 				return;
@@ -829,10 +810,8 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CATEGORY_PROPERTY_TYPE__CATEGORY:
 				return isSetCategory();
 			case GMLPackage.CATEGORY_PROPERTY_TYPE__ACTUATE:
@@ -863,11 +842,10 @@ public class CategoryPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (actuate: ");
 		if (actuateESet) result.append(actuate); else result.append("<unset>");
 		result.append(", arcrole: ");

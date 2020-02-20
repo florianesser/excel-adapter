@@ -25,8 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implements RelatedTimeType
-{
+public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implements RelatedTimeType {
 	/**
 	 * The default value of the '{@link #getRelativePosition() <em>Relative Position</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -61,8 +60,7 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RelatedTimeTypeImpl()
-	{
+	protected RelatedTimeTypeImpl() {
 		super();
 	}
 
@@ -72,8 +70,7 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getRelatedTimeType();
 	}
 
@@ -82,8 +79,8 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RelativePositionType getRelativePosition()
-	{
+	@Override
+	public RelativePositionType getRelativePosition() {
 		return relativePosition;
 	}
 
@@ -92,8 +89,8 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRelativePosition(RelativePositionType newRelativePosition)
-	{
+	@Override
+	public void setRelativePosition(RelativePositionType newRelativePosition) {
 		RelativePositionType oldRelativePosition = relativePosition;
 		relativePosition = newRelativePosition == null ? RELATIVE_POSITION_EDEFAULT : newRelativePosition;
 		boolean oldRelativePositionESet = relativePositionESet;
@@ -107,8 +104,8 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetRelativePosition()
-	{
+	@Override
+	public void unsetRelativePosition() {
 		RelativePositionType oldRelativePosition = relativePosition;
 		boolean oldRelativePositionESet = relativePositionESet;
 		relativePosition = RELATIVE_POSITION_EDEFAULT;
@@ -122,8 +119,8 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetRelativePosition()
-	{
+	@Override
+	public boolean isSetRelativePosition() {
 		return relativePositionESet;
 	}
 
@@ -133,10 +130,8 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.RELATED_TIME_TYPE__RELATIVE_POSITION:
 				return getRelativePosition();
 		}
@@ -149,10 +144,8 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.RELATED_TIME_TYPE__RELATIVE_POSITION:
 				setRelativePosition((RelativePositionType)newValue);
 				return;
@@ -166,10 +159,8 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.RELATED_TIME_TYPE__RELATIVE_POSITION:
 				unsetRelativePosition();
 				return;
@@ -183,10 +174,8 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.RELATED_TIME_TYPE__RELATIVE_POSITION:
 				return isSetRelativePosition();
 		}
@@ -199,11 +188,10 @@ public class RelatedTimeTypeImpl extends TimePrimitivePropertyTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (relativePosition: ");
 		if (relativePositionESet) result.append(relativePosition); else result.append("<unset>");
 		result.append(')');

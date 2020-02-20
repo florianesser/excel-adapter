@@ -21,15 +21,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='EnvelopeWithTimePeriodType' kind='elementOnly'"
  * @generated
  */
-public interface EnvelopeWithTimePeriodType extends EnvelopeType
-{
+public interface EnvelopeWithTimePeriodType extends EnvelopeType {
 	/**
 	 * Returns the value of the '<em><b>Begin Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Begin Position</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Begin Position</em>' containment reference.
 	 * @see #setBeginPosition(TimePositionType)
@@ -53,10 +48,6 @@ public interface EnvelopeWithTimePeriodType extends EnvelopeType
 	/**
 	 * Returns the value of the '<em><b>End Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>End Position</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>End Position</em>' containment reference.
 	 * @see #setEndPosition(TimePositionType)
@@ -81,10 +72,6 @@ public interface EnvelopeWithTimePeriodType extends EnvelopeType
 	 * Returns the value of the '<em><b>Frame</b></em>' attribute.
 	 * The default value is <code>"#ISO-8601"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Frame</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Frame</em>' attribute.
 	 * @see #isSetFrame()

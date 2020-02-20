@@ -27,15 +27,10 @@ import org.isotc211.iso19139.gco.DecimalPropertyType;
  * @model extendedMetaData="name='EX_GeographicBoundingBox_Type' kind='elementOnly'"
  * @generated
  */
-public interface EXGeographicBoundingBoxType extends AbstractEXGeographicExtentType
-{
+public interface EXGeographicBoundingBoxType extends AbstractEXGeographicExtentType {
 	/**
 	 * Returns the value of the '<em><b>West Bound Longitude</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>West Bound Longitude</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>West Bound Longitude</em>' containment reference.
 	 * @see #setWestBoundLongitude(DecimalPropertyType)
@@ -59,10 +54,6 @@ public interface EXGeographicBoundingBoxType extends AbstractEXGeographicExtentT
 	/**
 	 * Returns the value of the '<em><b>East Bound Longitude</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>East Bound Longitude</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>East Bound Longitude</em>' containment reference.
 	 * @see #setEastBoundLongitude(DecimalPropertyType)
@@ -86,10 +77,6 @@ public interface EXGeographicBoundingBoxType extends AbstractEXGeographicExtentT
 	/**
 	 * Returns the value of the '<em><b>South Bound Latitude</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>South Bound Latitude</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>South Bound Latitude</em>' containment reference.
 	 * @see #setSouthBoundLatitude(DecimalPropertyType)
@@ -113,10 +100,6 @@ public interface EXGeographicBoundingBoxType extends AbstractEXGeographicExtentT
 	/**
 	 * Returns the value of the '<em><b>North Bound Latitude</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>North Bound Latitude</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>North Bound Latitude</em>' containment reference.
 	 * @see #setNorthBoundLatitude(DecimalPropertyType)

@@ -37,8 +37,7 @@ import org.w3.xlink.XLinkPackage;
  *
  * @generated
  */
-public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements ResourceType
-{
+public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements ResourceType {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -143,8 +142,7 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ResourceTypeImpl()
-	{
+	protected ResourceTypeImpl() {
 		super();
 	}
 
@@ -154,8 +152,7 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return XLinkPackage.Literals.RESOURCE_TYPE;
 	}
 
@@ -164,10 +161,9 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getMixed()
-	{
-		if (mixed == null)
-		{
+	@Override
+	public FeatureMap getMixed() {
+		if (mixed == null) {
 			mixed = new BasicFeatureMap(this, XLinkPackage.RESOURCE_TYPE__MIXED);
 		}
 		return mixed;
@@ -178,8 +174,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAny()
-	{
+	@Override
+	public FeatureMap getAny() {
 		return (FeatureMap)getMixed().<FeatureMap.Entry>list(XLinkPackage.Literals.RESOURCE_TYPE__ANY);
 	}
 
@@ -188,8 +184,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLabel()
-	{
+	@Override
+	public String getLabel() {
 		return label;
 	}
 
@@ -198,8 +194,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLabel(String newLabel)
-	{
+	@Override
+	public void setLabel(String newLabel) {
 		String oldLabel = label;
 		label = newLabel;
 		if (eNotificationRequired())
@@ -211,8 +207,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -221,8 +217,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -234,8 +230,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -244,8 +240,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -257,8 +253,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -267,8 +263,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -282,8 +278,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -297,8 +293,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -308,10 +304,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case XLinkPackage.RESOURCE_TYPE__MIXED:
 				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 			case XLinkPackage.RESOURCE_TYPE__ANY:
@@ -326,10 +320,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case XLinkPackage.RESOURCE_TYPE__MIXED:
 				if (coreType) return getMixed();
 				return ((FeatureMap.Internal)getMixed()).getWrapper();
@@ -354,10 +346,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case XLinkPackage.RESOURCE_TYPE__MIXED:
 				((FeatureMap.Internal)getMixed()).set(newValue);
 				return;
@@ -386,10 +376,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.RESOURCE_TYPE__MIXED:
 				getMixed().clear();
 				return;
@@ -418,10 +406,8 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.RESOURCE_TYPE__MIXED:
 				return mixed != null && !mixed.isEmpty();
 			case XLinkPackage.RESOURCE_TYPE__ANY:
@@ -444,11 +430,10 @@ public class ResourceTypeImpl extends MinimalEObjectImpl.Container implements Re
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (mixed: ");
 		result.append(mixed);
 		result.append(", label: ");

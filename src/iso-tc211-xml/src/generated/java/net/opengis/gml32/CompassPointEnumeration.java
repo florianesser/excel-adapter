@@ -20,8 +20,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='CompassPointEnumeration'"
  * @generated
  */
-public enum CompassPointEnumeration implements Enumerator
-{
+public enum CompassPointEnumeration implements Enumerator {
 	/**
 	 * The '<em><b>N</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -185,10 +184,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>N</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>N</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #N
 	 * @model
@@ -200,10 +195,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>NNE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>NNE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NNE
 	 * @model
@@ -215,10 +206,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>NE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>NE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NE
 	 * @model
@@ -230,10 +217,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>ENE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>ENE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ENE
 	 * @model
@@ -245,10 +228,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>E</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>E</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #E
 	 * @model
@@ -260,10 +239,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>ESE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>ESE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ESE
 	 * @model
@@ -275,10 +250,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>SE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>SE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SE
 	 * @model
@@ -290,10 +261,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>SSE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>SSE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SSE
 	 * @model
@@ -305,10 +272,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>S</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>S</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #S
 	 * @model
@@ -320,10 +283,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>SSW</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>SSW</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SSW
 	 * @model
@@ -335,10 +294,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>SW</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>SW</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SW
 	 * @model
@@ -350,10 +305,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>WSW</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>WSW</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #WSW
 	 * @model
@@ -365,10 +316,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>W</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>W</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #W
 	 * @model
@@ -380,10 +327,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>WNW</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>WNW</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #WNW
 	 * @model
@@ -395,10 +338,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>NW</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>NW</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NW
 	 * @model
@@ -410,10 +349,6 @@ public enum CompassPointEnumeration implements Enumerator
 	/**
 	 * The '<em><b>NNW</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>NNW</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NNW
 	 * @model
@@ -429,8 +364,7 @@ public enum CompassPointEnumeration implements Enumerator
 	 * @generated
 	 */
 	private static final CompassPointEnumeration[] VALUES_ARRAY =
-		new CompassPointEnumeration[]
-		{
+		new CompassPointEnumeration[] {
 			N,
 			NNE,
 			NE,
@@ -465,13 +399,10 @@ public enum CompassPointEnumeration implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static CompassPointEnumeration get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static CompassPointEnumeration get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			CompassPointEnumeration result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -486,13 +417,10 @@ public enum CompassPointEnumeration implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static CompassPointEnumeration getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static CompassPointEnumeration getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			CompassPointEnumeration result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -507,10 +435,8 @@ public enum CompassPointEnumeration implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static CompassPointEnumeration get(int value)
-	{
-		switch (value)
-		{
+	public static CompassPointEnumeration get(int value) {
+		switch (value) {
 			case N_VALUE: return N;
 			case NNE_VALUE: return NNE;
 			case NE_VALUE: return NE;
@@ -558,8 +484,7 @@ public enum CompassPointEnumeration implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private CompassPointEnumeration(int value, String name, String literal)
-	{
+	private CompassPointEnumeration(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -570,8 +495,8 @@ public enum CompassPointEnumeration implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -580,8 +505,8 @@ public enum CompassPointEnumeration implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -590,8 +515,8 @@ public enum CompassPointEnumeration implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -602,8 +527,7 @@ public enum CompassPointEnumeration implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

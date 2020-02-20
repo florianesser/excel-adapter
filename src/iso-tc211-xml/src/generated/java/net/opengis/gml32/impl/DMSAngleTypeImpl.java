@@ -34,8 +34,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DMSAngleType
-{
+public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DMSAngleType {
 	/**
 	 * The cached value of the '{@link #getDegrees() <em>Degrees</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -111,8 +110,7 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DMSAngleTypeImpl()
-	{
+	protected DMSAngleTypeImpl() {
 		super();
 	}
 
@@ -122,8 +120,7 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDMSAngleType();
 	}
 
@@ -132,8 +129,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DegreesType getDegrees()
-	{
+	@Override
+	public DegreesType getDegrees() {
 		return degrees;
 	}
 
@@ -142,12 +139,10 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDegrees(DegreesType newDegrees, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDegrees(DegreesType newDegrees, NotificationChain msgs) {
 		DegreesType oldDegrees = degrees;
 		degrees = newDegrees;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DMS_ANGLE_TYPE__DEGREES, oldDegrees, newDegrees);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -159,10 +154,9 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDegrees(DegreesType newDegrees)
-	{
-		if (newDegrees != degrees)
-		{
+	@Override
+	public void setDegrees(DegreesType newDegrees) {
+		if (newDegrees != degrees) {
 			NotificationChain msgs = null;
 			if (degrees != null)
 				msgs = ((InternalEObject)degrees).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DMS_ANGLE_TYPE__DEGREES, null, msgs);
@@ -180,8 +174,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal getDecimalMinutes()
-	{
+	@Override
+	public BigDecimal getDecimalMinutes() {
 		return decimalMinutes;
 	}
 
@@ -190,8 +184,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDecimalMinutes(BigDecimal newDecimalMinutes)
-	{
+	@Override
+	public void setDecimalMinutes(BigDecimal newDecimalMinutes) {
 		BigDecimal oldDecimalMinutes = decimalMinutes;
 		decimalMinutes = newDecimalMinutes;
 		if (eNotificationRequired())
@@ -203,8 +197,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getMinutes()
-	{
+	@Override
+	public BigInteger getMinutes() {
 		return minutes;
 	}
 
@@ -213,8 +207,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMinutes(BigInteger newMinutes)
-	{
+	@Override
+	public void setMinutes(BigInteger newMinutes) {
 		BigInteger oldMinutes = minutes;
 		minutes = newMinutes;
 		if (eNotificationRequired())
@@ -226,8 +220,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal getSeconds()
-	{
+	@Override
+	public BigDecimal getSeconds() {
 		return seconds;
 	}
 
@@ -236,8 +230,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSeconds(BigDecimal newSeconds)
-	{
+	@Override
+	public void setSeconds(BigDecimal newSeconds) {
 		BigDecimal oldSeconds = seconds;
 		seconds = newSeconds;
 		if (eNotificationRequired())
@@ -250,10 +244,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DMS_ANGLE_TYPE__DEGREES:
 				return basicSetDegrees(null, msgs);
 		}
@@ -266,10 +258,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DMS_ANGLE_TYPE__DEGREES:
 				return getDegrees();
 			case GMLPackage.DMS_ANGLE_TYPE__DECIMAL_MINUTES:
@@ -288,10 +278,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DMS_ANGLE_TYPE__DEGREES:
 				setDegrees((DegreesType)newValue);
 				return;
@@ -314,10 +302,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DMS_ANGLE_TYPE__DEGREES:
 				setDegrees((DegreesType)null);
 				return;
@@ -340,10 +326,8 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DMS_ANGLE_TYPE__DEGREES:
 				return degrees != null;
 			case GMLPackage.DMS_ANGLE_TYPE__DECIMAL_MINUTES:
@@ -362,11 +346,10 @@ public class DMSAngleTypeImpl extends MinimalEObjectImpl.Container implements DM
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (decimalMinutes: ");
 		result.append(decimalMinutes);
 		result.append(", minutes: ");

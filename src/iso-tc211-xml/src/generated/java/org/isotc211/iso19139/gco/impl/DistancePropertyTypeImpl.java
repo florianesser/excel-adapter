@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container implements DistancePropertyType
-{
+public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container implements DistancePropertyType {
 	/**
 	 * The cached value of the '{@link #getDistance() <em>Distance</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DistancePropertyTypeImpl()
-	{
+	protected DistancePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.DISTANCE_PROPERTY_TYPE;
 	}
 
@@ -88,8 +85,8 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LengthType getDistance()
-	{
+	@Override
+	public LengthType getDistance() {
 		return distance;
 	}
 
@@ -98,12 +95,10 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDistance(LengthType newDistance, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDistance(LengthType newDistance, NotificationChain msgs) {
 		LengthType oldDistance = distance;
 		distance = newDistance;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.DISTANCE_PROPERTY_TYPE__DISTANCE, oldDistance, newDistance);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDistance(LengthType newDistance)
-	{
-		if (newDistance != distance)
-		{
+	@Override
+	public void setDistance(LengthType newDistance) {
+		if (newDistance != distance) {
 			NotificationChain msgs = null;
 			if (distance != null)
 				msgs = ((InternalEObject)distance).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.DISTANCE_PROPERTY_TYPE__DISTANCE, null, msgs);
@@ -136,8 +130,8 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.DISTANCE_PROPERTY_TYPE__DISTANCE:
 				return basicSetDistance(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.DISTANCE_PROPERTY_TYPE__DISTANCE:
 				return getDistance();
 			case GCOPackage.DISTANCE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.DISTANCE_PROPERTY_TYPE__DISTANCE:
 				setDistance((LengthType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.DISTANCE_PROPERTY_TYPE__DISTANCE:
 				setDistance((LengthType)null);
 				return;
@@ -234,10 +220,8 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.DISTANCE_PROPERTY_TYPE__DISTANCE:
 				return distance != null;
 			case GCOPackage.DISTANCE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class DistancePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

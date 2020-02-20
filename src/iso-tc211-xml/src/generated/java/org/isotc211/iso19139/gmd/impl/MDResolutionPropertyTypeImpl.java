@@ -29,8 +29,7 @@ import org.isotc211.iso19139.gmd.MDResolutionType;
  *
  * @generated
  */
-public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container implements MDResolutionPropertyType
-{
+public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container implements MDResolutionPropertyType {
 	/**
 	 * The cached value of the '{@link #getMDResolution() <em>MD Resolution</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -66,8 +65,7 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDResolutionPropertyTypeImpl()
-	{
+	protected MDResolutionPropertyTypeImpl() {
 		super();
 	}
 
@@ -77,8 +75,7 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDResolutionPropertyType();
 	}
 
@@ -87,8 +84,8 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDResolutionType getMDResolution()
-	{
+	@Override
+	public MDResolutionType getMDResolution() {
 		return mDResolution;
 	}
 
@@ -97,12 +94,10 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDResolution(MDResolutionType newMDResolution, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDResolution(MDResolutionType newMDResolution, NotificationChain msgs) {
 		MDResolutionType oldMDResolution = mDResolution;
 		mDResolution = newMDResolution;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_RESOLUTION_PROPERTY_TYPE__MD_RESOLUTION, oldMDResolution, newMDResolution);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -114,10 +109,9 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDResolution(MDResolutionType newMDResolution)
-	{
-		if (newMDResolution != mDResolution)
-		{
+	@Override
+	public void setMDResolution(MDResolutionType newMDResolution) {
+		if (newMDResolution != mDResolution) {
 			NotificationChain msgs = null;
 			if (mDResolution != null)
 				msgs = ((InternalEObject)mDResolution).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_RESOLUTION_PROPERTY_TYPE__MD_RESOLUTION, null, msgs);
@@ -135,8 +129,8 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -145,8 +139,8 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -159,10 +153,8 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_PROPERTY_TYPE__MD_RESOLUTION:
 				return basicSetMDResolution(null, msgs);
 		}
@@ -175,10 +167,8 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_PROPERTY_TYPE__MD_RESOLUTION:
 				return getMDResolution();
 			case GMDPackage.MD_RESOLUTION_PROPERTY_TYPE__NIL_REASON:
@@ -193,10 +183,8 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_PROPERTY_TYPE__MD_RESOLUTION:
 				setMDResolution((MDResolutionType)newValue);
 				return;
@@ -213,10 +201,8 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_PROPERTY_TYPE__MD_RESOLUTION:
 				setMDResolution((MDResolutionType)null);
 				return;
@@ -233,10 +219,8 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_PROPERTY_TYPE__MD_RESOLUTION:
 				return mDResolution != null;
 			case GMDPackage.MD_RESOLUTION_PROPERTY_TYPE__NIL_REASON:
@@ -251,11 +235,10 @@ public class MDResolutionPropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

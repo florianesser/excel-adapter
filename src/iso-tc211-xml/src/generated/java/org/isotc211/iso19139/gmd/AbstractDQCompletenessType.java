@@ -14,6 +14,5 @@ package org.isotc211.iso19139.gmd;
  *        extendedMetaData="name='AbstractDQ_Completeness_Type' kind='elementOnly'"
  * @generated
  */
-public interface AbstractDQCompletenessType extends AbstractDQElementType
-{
+public interface AbstractDQCompletenessType extends AbstractDQElementType {
 } // AbstractDQCompletenessType

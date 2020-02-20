@@ -53,8 +53,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl implements ArcStringByBulgeType
-{
+public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl implements ArcStringByBulgeType {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -159,8 +158,7 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArcStringByBulgeTypeImpl()
-	{
+	protected ArcStringByBulgeTypeImpl() {
 		super();
 	}
 
@@ -170,8 +168,7 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getArcStringByBulgeType();
 	}
 
@@ -180,10 +177,9 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getGroup()
-	{
-		if (group == null)
-		{
+	@Override
+	public FeatureMap getGroup() {
+		if (group == null) {
 			group = new BasicFeatureMap(this, GMLPackage.ARC_STRING_BY_BULGE_TYPE__GROUP);
 		}
 		return group;
@@ -194,8 +190,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectPositionType> getPos()
-	{
+	@Override
+	public EList<DirectPositionType> getPos() {
 		return getGroup().list(GMLPackage.eINSTANCE.getArcStringByBulgeType_Pos());
 	}
 
@@ -204,8 +200,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PointPropertyType> getPointProperty()
-	{
+	@Override
+	public EList<PointPropertyType> getPointProperty() {
 		return getGroup().list(GMLPackage.eINSTANCE.getArcStringByBulgeType_PointProperty());
 	}
 
@@ -214,8 +210,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PointPropertyType> getPointRep()
-	{
+	@Override
+	public EList<PointPropertyType> getPointRep() {
 		return getGroup().list(GMLPackage.eINSTANCE.getArcStringByBulgeType_PointRep());
 	}
 
@@ -224,8 +220,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionListType getPosList()
-	{
+	@Override
+	public DirectPositionListType getPosList() {
 		return posList;
 	}
 
@@ -234,12 +230,10 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs) {
 		DirectPositionListType oldPosList = posList;
 		posList = newPosList;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_STRING_BY_BULGE_TYPE__POS_LIST, oldPosList, newPosList);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -251,10 +245,9 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPosList(DirectPositionListType newPosList)
-	{
-		if (newPosList != posList)
-		{
+	@Override
+	public void setPosList(DirectPositionListType newPosList) {
+		if (newPosList != posList) {
 			NotificationChain msgs = null;
 			if (posList != null)
 				msgs = ((InternalEObject)posList).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_STRING_BY_BULGE_TYPE__POS_LIST, null, msgs);
@@ -272,8 +265,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinatesType getCoordinates()
-	{
+	@Override
+	public CoordinatesType getCoordinates() {
 		return coordinates;
 	}
 
@@ -282,12 +275,10 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs) {
 		CoordinatesType oldCoordinates = coordinates;
 		coordinates = newCoordinates;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ARC_STRING_BY_BULGE_TYPE__COORDINATES, oldCoordinates, newCoordinates);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -299,10 +290,9 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinates(CoordinatesType newCoordinates)
-	{
-		if (newCoordinates != coordinates)
-		{
+	@Override
+	public void setCoordinates(CoordinatesType newCoordinates) {
+		if (newCoordinates != coordinates) {
 			NotificationChain msgs = null;
 			if (coordinates != null)
 				msgs = ((InternalEObject)coordinates).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ARC_STRING_BY_BULGE_TYPE__COORDINATES, null, msgs);
@@ -320,10 +310,9 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Double> getBulge()
-	{
-		if (bulge == null)
-		{
+	@Override
+	public EList<Double> getBulge() {
+		if (bulge == null) {
 			bulge = new EDataTypeEList<Double>(Double.class, this, GMLPackage.ARC_STRING_BY_BULGE_TYPE__BULGE);
 		}
 		return bulge;
@@ -334,10 +323,9 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<VectorType> getNormal()
-	{
-		if (normal == null)
-		{
+	@Override
+	public EList<VectorType> getNormal() {
+		if (normal == null) {
 			normal = new EObjectContainmentEList<VectorType>(VectorType.class, this, GMLPackage.ARC_STRING_BY_BULGE_TYPE__NORMAL);
 		}
 		return normal;
@@ -348,8 +336,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveInterpolationType getInterpolation()
-	{
+	@Override
+	public CurveInterpolationType getInterpolation() {
 		return interpolation;
 	}
 
@@ -358,8 +346,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInterpolation(CurveInterpolationType newInterpolation)
-	{
+	@Override
+	public void setInterpolation(CurveInterpolationType newInterpolation) {
 		CurveInterpolationType oldInterpolation = interpolation;
 		interpolation = newInterpolation == null ? INTERPOLATION_EDEFAULT : newInterpolation;
 		boolean oldInterpolationESet = interpolationESet;
@@ -373,8 +361,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetInterpolation()
-	{
+	@Override
+	public void unsetInterpolation() {
 		CurveInterpolationType oldInterpolation = interpolation;
 		boolean oldInterpolationESet = interpolationESet;
 		interpolation = INTERPOLATION_EDEFAULT;
@@ -388,8 +376,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetInterpolation()
-	{
+	@Override
+	public boolean isSetInterpolation() {
 		return interpolationESet;
 	}
 
@@ -398,8 +386,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getNumArc()
-	{
+	@Override
+	public BigInteger getNumArc() {
 		return numArc;
 	}
 
@@ -408,8 +396,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNumArc(BigInteger newNumArc)
-	{
+	@Override
+	public void setNumArc(BigInteger newNumArc) {
 		BigInteger oldNumArc = numArc;
 		numArc = newNumArc;
 		if (eNotificationRequired())
@@ -422,10 +410,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ARC_STRING_BY_BULGE_TYPE__GROUP:
 				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.ARC_STRING_BY_BULGE_TYPE__POS:
@@ -450,10 +436,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ARC_STRING_BY_BULGE_TYPE__GROUP:
 				if (coreType) return getGroup();
 				return ((FeatureMap.Internal)getGroup()).getWrapper();
@@ -486,10 +470,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ARC_STRING_BY_BULGE_TYPE__GROUP:
 				((FeatureMap.Internal)getGroup()).set(newValue);
 				return;
@@ -535,10 +517,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ARC_STRING_BY_BULGE_TYPE__GROUP:
 				getGroup().clear();
 				return;
@@ -579,10 +559,8 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ARC_STRING_BY_BULGE_TYPE__GROUP:
 				return group != null && !group.isEmpty();
 			case GMLPackage.ARC_STRING_BY_BULGE_TYPE__POS:
@@ -613,11 +591,10 @@ public class ArcStringByBulgeTypeImpl extends AbstractCurveSegmentTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (group: ");
 		result.append(group);
 		result.append(", bulge: ");

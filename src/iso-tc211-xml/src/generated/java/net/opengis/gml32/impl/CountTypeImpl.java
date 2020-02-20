@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class CountTypeImpl extends MinimalEObjectImpl.Container implements CountType
-{
+public class CountTypeImpl extends MinimalEObjectImpl.Container implements CountType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CountTypeImpl()
-	{
+	protected CountTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCountType();
 	}
 
@@ -96,8 +93,8 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getValue()
-	{
+	@Override
+	public BigInteger getValue() {
 		return value;
 	}
 
@@ -106,8 +103,8 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(BigInteger newValue)
-	{
+	@Override
+	public void setValue(BigInteger newValue) {
 		BigInteger oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -119,8 +116,8 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -129,8 +126,8 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -143,10 +140,8 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.COUNT_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.COUNT_TYPE__NIL_REASON:
@@ -161,10 +156,8 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.COUNT_TYPE__VALUE:
 				setValue((BigInteger)newValue);
 				return;
@@ -181,10 +174,8 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COUNT_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -201,10 +192,8 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COUNT_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GMLPackage.COUNT_TYPE__NIL_REASON:
@@ -219,11 +208,10 @@ public class CountTypeImpl extends MinimalEObjectImpl.Container implements Count
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", nilReason: ");

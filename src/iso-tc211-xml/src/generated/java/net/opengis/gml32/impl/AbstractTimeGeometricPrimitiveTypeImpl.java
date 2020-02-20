@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTimePrimitiveTypeImpl implements AbstractTimeGeometricPrimitiveType
-{
+public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTimePrimitiveTypeImpl implements AbstractTimeGeometricPrimitiveType {
 	/**
 	 * The default value of the '{@link #getFrame() <em>Frame</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -60,8 +59,7 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractTimeGeometricPrimitiveTypeImpl()
-	{
+	protected AbstractTimeGeometricPrimitiveTypeImpl() {
 		super();
 	}
 
@@ -71,8 +69,7 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractTimeGeometricPrimitiveType();
 	}
 
@@ -81,8 +78,8 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getFrame()
-	{
+	@Override
+	public String getFrame() {
 		return frame;
 	}
 
@@ -91,8 +88,8 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFrame(String newFrame)
-	{
+	@Override
+	public void setFrame(String newFrame) {
 		String oldFrame = frame;
 		frame = newFrame;
 		boolean oldFrameESet = frameESet;
@@ -106,8 +103,8 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetFrame()
-	{
+	@Override
+	public void unsetFrame() {
 		String oldFrame = frame;
 		boolean oldFrameESet = frameESet;
 		frame = FRAME_EDEFAULT;
@@ -121,8 +118,8 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetFrame()
-	{
+	@Override
+	public boolean isSetFrame() {
 		return frameESet;
 	}
 
@@ -132,10 +129,8 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_GEOMETRIC_PRIMITIVE_TYPE__FRAME:
 				return getFrame();
 		}
@@ -148,10 +143,8 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_GEOMETRIC_PRIMITIVE_TYPE__FRAME:
 				setFrame((String)newValue);
 				return;
@@ -165,10 +158,8 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_GEOMETRIC_PRIMITIVE_TYPE__FRAME:
 				unsetFrame();
 				return;
@@ -182,10 +173,8 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_GEOMETRIC_PRIMITIVE_TYPE__FRAME:
 				return isSetFrame();
 		}
@@ -198,11 +187,10 @@ public abstract class AbstractTimeGeometricPrimitiveTypeImpl extends AbstractTim
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (frame: ");
 		if (frameESet) result.append(frame); else result.append("<unset>");
 		result.append(')');

@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DS_Platform_Type' kind='elementOnly'"
  * @generated
  */
-public interface DSPlatformType extends DSSeriesType
-{
+public interface DSPlatformType extends DSSeriesType {
 } // DSPlatformType

@@ -33,16 +33,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='CubicSplineType' kind='elementOnly'"
  * @generated
  */
-public interface CubicSplineType extends AbstractCurveSegmentType
-{
+public interface CubicSplineType extends AbstractCurveSegmentType {
 	/**
 	 * Returns the value of the '<em><b>Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Group</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getCubicSplineType_Group()
@@ -56,10 +51,6 @@ public interface CubicSplineType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Pos</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.DirectPositionType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getCubicSplineType_Pos()
@@ -89,10 +80,6 @@ public interface CubicSplineType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Point Rep</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.PointPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Point Rep</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Point Rep</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getCubicSplineType_PointRep()
@@ -105,10 +92,6 @@ public interface CubicSplineType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Pos List</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos List</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos List</em>' containment reference.
 	 * @see #setPosList(DirectPositionListType)
@@ -132,10 +115,6 @@ public interface CubicSplineType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Coordinates</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Coordinates</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coordinates</em>' containment reference.
 	 * @see #setCoordinates(CoordinatesType)
@@ -159,10 +138,6 @@ public interface CubicSplineType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Vector At Start</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vector At Start</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vector At Start</em>' containment reference.
 	 * @see #setVectorAtStart(VectorType)
@@ -186,10 +161,6 @@ public interface CubicSplineType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Vector At End</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vector At End</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vector At End</em>' containment reference.
 	 * @see #setVectorAtEnd(VectorType)
@@ -214,10 +185,6 @@ public interface CubicSplineType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Degree</b></em>' attribute.
 	 * The default value is <code>"3"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Degree</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Degree</em>' attribute.
 	 * @see #isSetDegree()
@@ -270,10 +237,6 @@ public interface CubicSplineType extends AbstractCurveSegmentType
 	 * The default value is <code>"cubicSpline"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.CurveInterpolationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interpolation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Interpolation</em>' attribute.
 	 * @see net.opengis.gml32.CurveInterpolationType

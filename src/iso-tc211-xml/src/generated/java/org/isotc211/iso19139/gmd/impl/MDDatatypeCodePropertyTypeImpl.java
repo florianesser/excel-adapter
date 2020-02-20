@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDDatatypeCodePropertyType;
  *
  * @generated
  */
-public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDDatatypeCodePropertyType
-{
+public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDDatatypeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDDatatypeCode() <em>MD Datatype Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDDatatypeCodePropertyTypeImpl()
-	{
+	protected MDDatatypeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDDatatypeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDDatatypeCode()
-	{
+	@Override
+	public CodeListValueType getMDDatatypeCode() {
 		return mDDatatypeCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDDatatypeCode(CodeListValueType newMDDatatypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDDatatypeCode(CodeListValueType newMDDatatypeCode, NotificationChain msgs) {
 		CodeListValueType oldMDDatatypeCode = mDDatatypeCode;
 		mDDatatypeCode = newMDDatatypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE__MD_DATATYPE_CODE, oldMDDatatypeCode, newMDDatatypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDDatatypeCode(CodeListValueType newMDDatatypeCode)
-	{
-		if (newMDDatatypeCode != mDDatatypeCode)
-		{
+	@Override
+	public void setMDDatatypeCode(CodeListValueType newMDDatatypeCode) {
+		if (newMDDatatypeCode != mDDatatypeCode) {
 			NotificationChain msgs = null;
 			if (mDDatatypeCode != null)
 				msgs = ((InternalEObject)mDDatatypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE__MD_DATATYPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE__MD_DATATYPE_CODE:
 				return basicSetMDDatatypeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE__MD_DATATYPE_CODE:
 				return getMDDatatypeCode();
 			case GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE__MD_DATATYPE_CODE:
 				setMDDatatypeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE__MD_DATATYPE_CODE:
 				setMDDatatypeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE__MD_DATATYPE_CODE:
 				return mDDatatypeCode != null;
 			case GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDDatatypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

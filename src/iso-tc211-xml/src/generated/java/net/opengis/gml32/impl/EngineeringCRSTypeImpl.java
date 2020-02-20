@@ -52,8 +52,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements EngineeringCRSType
-{
+public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements EngineeringCRSType {
 	/**
 	 * The cached value of the '{@link #getAffineCSGroup() <em>Affine CS Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -149,8 +148,7 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EngineeringCRSTypeImpl()
-	{
+	protected EngineeringCRSTypeImpl() {
 		super();
 	}
 
@@ -160,8 +158,7 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getEngineeringCRSType();
 	}
 
@@ -170,10 +167,9 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAffineCSGroup()
-	{
-		if (affineCSGroup == null)
-		{
+	@Override
+	public FeatureMap getAffineCSGroup() {
+		if (affineCSGroup == null) {
 			affineCSGroup = new BasicFeatureMap(this, GMLPackage.ENGINEERING_CRS_TYPE__AFFINE_CS_GROUP);
 		}
 		return affineCSGroup;
@@ -184,8 +180,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffineCSPropertyType getAffineCS()
-	{
+	@Override
+	public AffineCSPropertyType getAffineCS() {
 		return (AffineCSPropertyType)getAffineCSGroup().get(GMLPackage.eINSTANCE.getEngineeringCRSType_AffineCS(), true);
 	}
 
@@ -194,8 +190,7 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAffineCS(AffineCSPropertyType newAffineCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAffineCS(AffineCSPropertyType newAffineCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAffineCSGroup()).basicAdd(GMLPackage.eINSTANCE.getEngineeringCRSType_AffineCS(), newAffineCS, msgs);
 	}
 
@@ -204,8 +199,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAffineCS(AffineCSPropertyType newAffineCS)
-	{
+	@Override
+	public void setAffineCS(AffineCSPropertyType newAffineCS) {
 		((FeatureMap.Internal)getAffineCSGroup()).set(GMLPackage.eINSTANCE.getEngineeringCRSType_AffineCS(), newAffineCS);
 	}
 
@@ -214,10 +209,9 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getCartesianCSGroup()
-	{
-		if (cartesianCSGroup == null)
-		{
+	@Override
+	public FeatureMap getCartesianCSGroup() {
+		if (cartesianCSGroup == null) {
 			cartesianCSGroup = new BasicFeatureMap(this, GMLPackage.ENGINEERING_CRS_TYPE__CARTESIAN_CS_GROUP);
 		}
 		return cartesianCSGroup;
@@ -228,8 +222,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSPropertyType getCartesianCS()
-	{
+	@Override
+	public CartesianCSPropertyType getCartesianCS() {
 		return (CartesianCSPropertyType)getCartesianCSGroup().get(GMLPackage.eINSTANCE.getEngineeringCRSType_CartesianCS(), true);
 	}
 
@@ -238,8 +232,7 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getCartesianCSGroup()).basicAdd(GMLPackage.eINSTANCE.getEngineeringCRSType_CartesianCS(), newCartesianCS, msgs);
 	}
 
@@ -248,8 +241,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCartesianCS(CartesianCSPropertyType newCartesianCS)
-	{
+	@Override
+	public void setCartesianCS(CartesianCSPropertyType newCartesianCS) {
 		((FeatureMap.Internal)getCartesianCSGroup()).set(GMLPackage.eINSTANCE.getEngineeringCRSType_CartesianCS(), newCartesianCS);
 	}
 
@@ -258,8 +251,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CylindricalCSPropertyType getCylindricalCS()
-	{
+	@Override
+	public CylindricalCSPropertyType getCylindricalCS() {
 		return cylindricalCS;
 	}
 
@@ -268,12 +261,10 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCylindricalCS(CylindricalCSPropertyType newCylindricalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCylindricalCS(CylindricalCSPropertyType newCylindricalCS, NotificationChain msgs) {
 		CylindricalCSPropertyType oldCylindricalCS = cylindricalCS;
 		cylindricalCS = newCylindricalCS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ENGINEERING_CRS_TYPE__CYLINDRICAL_CS, oldCylindricalCS, newCylindricalCS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -285,10 +276,9 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCylindricalCS(CylindricalCSPropertyType newCylindricalCS)
-	{
-		if (newCylindricalCS != cylindricalCS)
-		{
+	@Override
+	public void setCylindricalCS(CylindricalCSPropertyType newCylindricalCS) {
+		if (newCylindricalCS != cylindricalCS) {
 			NotificationChain msgs = null;
 			if (cylindricalCS != null)
 				msgs = ((InternalEObject)cylindricalCS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ENGINEERING_CRS_TYPE__CYLINDRICAL_CS, null, msgs);
@@ -306,8 +296,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearCSPropertyType getLinearCS()
-	{
+	@Override
+	public LinearCSPropertyType getLinearCS() {
 		return linearCS;
 	}
 
@@ -316,12 +306,10 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLinearCS(LinearCSPropertyType newLinearCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLinearCS(LinearCSPropertyType newLinearCS, NotificationChain msgs) {
 		LinearCSPropertyType oldLinearCS = linearCS;
 		linearCS = newLinearCS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ENGINEERING_CRS_TYPE__LINEAR_CS, oldLinearCS, newLinearCS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -333,10 +321,9 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLinearCS(LinearCSPropertyType newLinearCS)
-	{
-		if (newLinearCS != linearCS)
-		{
+	@Override
+	public void setLinearCS(LinearCSPropertyType newLinearCS) {
+		if (newLinearCS != linearCS) {
 			NotificationChain msgs = null;
 			if (linearCS != null)
 				msgs = ((InternalEObject)linearCS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ENGINEERING_CRS_TYPE__LINEAR_CS, null, msgs);
@@ -354,8 +341,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolarCSPropertyType getPolarCS()
-	{
+	@Override
+	public PolarCSPropertyType getPolarCS() {
 		return polarCS;
 	}
 
@@ -364,12 +351,10 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPolarCS(PolarCSPropertyType newPolarCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPolarCS(PolarCSPropertyType newPolarCS, NotificationChain msgs) {
 		PolarCSPropertyType oldPolarCS = polarCS;
 		polarCS = newPolarCS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ENGINEERING_CRS_TYPE__POLAR_CS, oldPolarCS, newPolarCS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -381,10 +366,9 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPolarCS(PolarCSPropertyType newPolarCS)
-	{
-		if (newPolarCS != polarCS)
-		{
+	@Override
+	public void setPolarCS(PolarCSPropertyType newPolarCS) {
+		if (newPolarCS != polarCS) {
 			NotificationChain msgs = null;
 			if (polarCS != null)
 				msgs = ((InternalEObject)polarCS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ENGINEERING_CRS_TYPE__POLAR_CS, null, msgs);
@@ -402,10 +386,9 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getSphericalCSGroup()
-	{
-		if (sphericalCSGroup == null)
-		{
+	@Override
+	public FeatureMap getSphericalCSGroup() {
+		if (sphericalCSGroup == null) {
 			sphericalCSGroup = new BasicFeatureMap(this, GMLPackage.ENGINEERING_CRS_TYPE__SPHERICAL_CS_GROUP);
 		}
 		return sphericalCSGroup;
@@ -416,8 +399,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphericalCSPropertyType getSphericalCS()
-	{
+	@Override
+	public SphericalCSPropertyType getSphericalCS() {
 		return (SphericalCSPropertyType)getSphericalCSGroup().get(GMLPackage.eINSTANCE.getEngineeringCRSType_SphericalCS(), true);
 	}
 
@@ -426,8 +409,7 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSphericalCS(SphericalCSPropertyType newSphericalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSphericalCS(SphericalCSPropertyType newSphericalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getSphericalCSGroup()).basicAdd(GMLPackage.eINSTANCE.getEngineeringCRSType_SphericalCS(), newSphericalCS, msgs);
 	}
 
@@ -436,8 +418,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSphericalCS(SphericalCSPropertyType newSphericalCS)
-	{
+	@Override
+	public void setSphericalCS(SphericalCSPropertyType newSphericalCS) {
 		((FeatureMap.Internal)getSphericalCSGroup()).set(GMLPackage.eINSTANCE.getEngineeringCRSType_SphericalCS(), newSphericalCS);
 	}
 
@@ -446,8 +428,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UserDefinedCSPropertyType getUserDefinedCS()
-	{
+	@Override
+	public UserDefinedCSPropertyType getUserDefinedCS() {
 		return userDefinedCS;
 	}
 
@@ -456,12 +438,10 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUserDefinedCS(UserDefinedCSPropertyType newUserDefinedCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUserDefinedCS(UserDefinedCSPropertyType newUserDefinedCS, NotificationChain msgs) {
 		UserDefinedCSPropertyType oldUserDefinedCS = userDefinedCS;
 		userDefinedCS = newUserDefinedCS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ENGINEERING_CRS_TYPE__USER_DEFINED_CS, oldUserDefinedCS, newUserDefinedCS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -473,10 +453,9 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUserDefinedCS(UserDefinedCSPropertyType newUserDefinedCS)
-	{
-		if (newUserDefinedCS != userDefinedCS)
-		{
+	@Override
+	public void setUserDefinedCS(UserDefinedCSPropertyType newUserDefinedCS) {
+		if (newUserDefinedCS != userDefinedCS) {
 			NotificationChain msgs = null;
 			if (userDefinedCS != null)
 				msgs = ((InternalEObject)userDefinedCS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ENGINEERING_CRS_TYPE__USER_DEFINED_CS, null, msgs);
@@ -494,10 +473,9 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getCoordinateSystemGroup()
-	{
-		if (coordinateSystemGroup == null)
-		{
+	@Override
+	public FeatureMap getCoordinateSystemGroup() {
+		if (coordinateSystemGroup == null) {
 			coordinateSystemGroup = new BasicFeatureMap(this, GMLPackage.ENGINEERING_CRS_TYPE__COORDINATE_SYSTEM_GROUP);
 		}
 		return coordinateSystemGroup;
@@ -508,8 +486,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemPropertyType getCoordinateSystem()
-	{
+	@Override
+	public CoordinateSystemPropertyType getCoordinateSystem() {
 		return (CoordinateSystemPropertyType)getCoordinateSystemGroup().get(GMLPackage.eINSTANCE.getEngineeringCRSType_CoordinateSystem(), true);
 	}
 
@@ -518,8 +496,7 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getCoordinateSystemGroup()).basicAdd(GMLPackage.eINSTANCE.getEngineeringCRSType_CoordinateSystem(), newCoordinateSystem, msgs);
 	}
 
@@ -528,8 +505,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem)
-	{
+	@Override
+	public void setCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem) {
 		((FeatureMap.Internal)getCoordinateSystemGroup()).set(GMLPackage.eINSTANCE.getEngineeringCRSType_CoordinateSystem(), newCoordinateSystem);
 	}
 
@@ -538,10 +515,9 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getEngineeringDatumGroup()
-	{
-		if (engineeringDatumGroup == null)
-		{
+	@Override
+	public FeatureMap getEngineeringDatumGroup() {
+		if (engineeringDatumGroup == null) {
 			engineeringDatumGroup = new BasicFeatureMap(this, GMLPackage.ENGINEERING_CRS_TYPE__ENGINEERING_DATUM_GROUP);
 		}
 		return engineeringDatumGroup;
@@ -552,8 +528,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringDatumPropertyType getEngineeringDatum()
-	{
+	@Override
+	public EngineeringDatumPropertyType getEngineeringDatum() {
 		return (EngineeringDatumPropertyType)getEngineeringDatumGroup().get(GMLPackage.eINSTANCE.getEngineeringCRSType_EngineeringDatum(), true);
 	}
 
@@ -562,8 +538,7 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEngineeringDatum(EngineeringDatumPropertyType newEngineeringDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEngineeringDatum(EngineeringDatumPropertyType newEngineeringDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getEngineeringDatumGroup()).basicAdd(GMLPackage.eINSTANCE.getEngineeringCRSType_EngineeringDatum(), newEngineeringDatum, msgs);
 	}
 
@@ -572,8 +547,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEngineeringDatum(EngineeringDatumPropertyType newEngineeringDatum)
-	{
+	@Override
+	public void setEngineeringDatum(EngineeringDatumPropertyType newEngineeringDatum) {
 		((FeatureMap.Internal)getEngineeringDatumGroup()).set(GMLPackage.eINSTANCE.getEngineeringCRSType_EngineeringDatum(), newEngineeringDatum);
 	}
 
@@ -583,10 +558,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ENGINEERING_CRS_TYPE__AFFINE_CS_GROUP:
 				return ((InternalEList<?>)getAffineCSGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.ENGINEERING_CRS_TYPE__AFFINE_CS:
@@ -625,10 +598,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ENGINEERING_CRS_TYPE__AFFINE_CS_GROUP:
 				if (coreType) return getAffineCSGroup();
 				return ((FeatureMap.Internal)getAffineCSGroup()).getWrapper();
@@ -672,10 +643,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ENGINEERING_CRS_TYPE__AFFINE_CS_GROUP:
 				((FeatureMap.Internal)getAffineCSGroup()).set(newValue);
 				return;
@@ -728,10 +697,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ENGINEERING_CRS_TYPE__AFFINE_CS_GROUP:
 				getAffineCSGroup().clear();
 				return;
@@ -784,10 +751,8 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ENGINEERING_CRS_TYPE__AFFINE_CS_GROUP:
 				return affineCSGroup != null && !affineCSGroup.isEmpty();
 			case GMLPackage.ENGINEERING_CRS_TYPE__AFFINE_CS:
@@ -826,11 +791,10 @@ public class EngineeringCRSTypeImpl extends AbstractCRSTypeImpl implements Engin
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (affineCSGroup: ");
 		result.append(affineCSGroup);
 		result.append(", cartesianCSGroup: ");

@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements OffsetCurveType
-{
+public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements OffsetCurveType {
 	/**
 	 * The cached value of the '{@link #getOffsetBase() <em>Offset Base</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -68,8 +67,7 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected OffsetCurveTypeImpl()
-	{
+	protected OffsetCurveTypeImpl() {
 		super();
 	}
 
@@ -79,8 +77,7 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getOffsetCurveType();
 	}
 
@@ -89,8 +86,8 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurvePropertyType getOffsetBase()
-	{
+	@Override
+	public CurvePropertyType getOffsetBase() {
 		return offsetBase;
 	}
 
@@ -99,12 +96,10 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOffsetBase(CurvePropertyType newOffsetBase, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOffsetBase(CurvePropertyType newOffsetBase, NotificationChain msgs) {
 		CurvePropertyType oldOffsetBase = offsetBase;
 		offsetBase = newOffsetBase;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.OFFSET_CURVE_TYPE__OFFSET_BASE, oldOffsetBase, newOffsetBase);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -116,10 +111,9 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOffsetBase(CurvePropertyType newOffsetBase)
-	{
-		if (newOffsetBase != offsetBase)
-		{
+	@Override
+	public void setOffsetBase(CurvePropertyType newOffsetBase) {
+		if (newOffsetBase != offsetBase) {
 			NotificationChain msgs = null;
 			if (offsetBase != null)
 				msgs = ((InternalEObject)offsetBase).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.OFFSET_CURVE_TYPE__OFFSET_BASE, null, msgs);
@@ -137,8 +131,8 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LengthType getDistance()
-	{
+	@Override
+	public LengthType getDistance() {
 		return distance;
 	}
 
@@ -147,12 +141,10 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDistance(LengthType newDistance, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDistance(LengthType newDistance, NotificationChain msgs) {
 		LengthType oldDistance = distance;
 		distance = newDistance;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.OFFSET_CURVE_TYPE__DISTANCE, oldDistance, newDistance);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -164,10 +156,9 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDistance(LengthType newDistance)
-	{
-		if (newDistance != distance)
-		{
+	@Override
+	public void setDistance(LengthType newDistance) {
+		if (newDistance != distance) {
 			NotificationChain msgs = null;
 			if (distance != null)
 				msgs = ((InternalEObject)distance).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.OFFSET_CURVE_TYPE__DISTANCE, null, msgs);
@@ -185,8 +176,8 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VectorType getRefDirection()
-	{
+	@Override
+	public VectorType getRefDirection() {
 		return refDirection;
 	}
 
@@ -195,12 +186,10 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRefDirection(VectorType newRefDirection, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRefDirection(VectorType newRefDirection, NotificationChain msgs) {
 		VectorType oldRefDirection = refDirection;
 		refDirection = newRefDirection;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.OFFSET_CURVE_TYPE__REF_DIRECTION, oldRefDirection, newRefDirection);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -212,10 +201,9 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRefDirection(VectorType newRefDirection)
-	{
-		if (newRefDirection != refDirection)
-		{
+	@Override
+	public void setRefDirection(VectorType newRefDirection) {
+		if (newRefDirection != refDirection) {
 			NotificationChain msgs = null;
 			if (refDirection != null)
 				msgs = ((InternalEObject)refDirection).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.OFFSET_CURVE_TYPE__REF_DIRECTION, null, msgs);
@@ -234,10 +222,8 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.OFFSET_CURVE_TYPE__OFFSET_BASE:
 				return basicSetOffsetBase(null, msgs);
 			case GMLPackage.OFFSET_CURVE_TYPE__DISTANCE:
@@ -254,10 +240,8 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.OFFSET_CURVE_TYPE__OFFSET_BASE:
 				return getOffsetBase();
 			case GMLPackage.OFFSET_CURVE_TYPE__DISTANCE:
@@ -274,10 +258,8 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.OFFSET_CURVE_TYPE__OFFSET_BASE:
 				setOffsetBase((CurvePropertyType)newValue);
 				return;
@@ -297,10 +279,8 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.OFFSET_CURVE_TYPE__OFFSET_BASE:
 				setOffsetBase((CurvePropertyType)null);
 				return;
@@ -320,10 +300,8 @@ public class OffsetCurveTypeImpl extends AbstractCurveSegmentTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.OFFSET_CURVE_TYPE__OFFSET_BASE:
 				return offsetBase != null;
 			case GMLPackage.OFFSET_CURVE_TYPE__DISTANCE:

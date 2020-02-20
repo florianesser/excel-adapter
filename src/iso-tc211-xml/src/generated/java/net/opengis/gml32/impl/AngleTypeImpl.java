@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class AngleTypeImpl extends MeasureTypeImpl implements AngleType
-{
+public class AngleTypeImpl extends MeasureTypeImpl implements AngleType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AngleTypeImpl()
-	{
+	protected AngleTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class AngleTypeImpl extends MeasureTypeImpl implements AngleType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAngleType();
 	}
 

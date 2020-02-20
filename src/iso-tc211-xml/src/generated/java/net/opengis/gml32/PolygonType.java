@@ -21,8 +21,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='PolygonType' kind='elementOnly'"
  * @generated
  */
-public interface PolygonType extends AbstractSurfaceType
-{
+public interface PolygonType extends AbstractSurfaceType {
 	/**
 	 * Returns the value of the '<em><b>Exterior</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

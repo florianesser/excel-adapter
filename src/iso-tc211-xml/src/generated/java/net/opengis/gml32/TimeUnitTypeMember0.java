@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='TimeUnitType_._member_._0'"
  * @generated
  */
-public enum TimeUnitTypeMember0 implements Enumerator
-{
+public enum TimeUnitTypeMember0 implements Enumerator {
 	/**
 	 * The '<em><b>Year</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -82,10 +81,6 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	/**
 	 * The '<em><b>Year</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Year</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #YEAR
 	 * @model name="year"
@@ -97,10 +92,6 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	/**
 	 * The '<em><b>Month</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Month</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #MONTH
 	 * @model name="month"
@@ -112,10 +103,6 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	/**
 	 * The '<em><b>Day</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Day</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #DAY
 	 * @model name="day"
@@ -127,10 +114,6 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	/**
 	 * The '<em><b>Hour</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Hour</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #HOUR
 	 * @model name="hour"
@@ -142,10 +125,6 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	/**
 	 * The '<em><b>Minute</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Minute</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #MINUTE
 	 * @model name="minute"
@@ -157,10 +136,6 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	/**
 	 * The '<em><b>Second</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Second</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SECOND
 	 * @model name="second"
@@ -176,8 +151,7 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	 * @generated
 	 */
 	private static final TimeUnitTypeMember0[] VALUES_ARRAY =
-		new TimeUnitTypeMember0[]
-		{
+		new TimeUnitTypeMember0[] {
 			YEAR,
 			MONTH,
 			DAY,
@@ -202,13 +176,10 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static TimeUnitTypeMember0 get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static TimeUnitTypeMember0 get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			TimeUnitTypeMember0 result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -223,13 +194,10 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static TimeUnitTypeMember0 getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static TimeUnitTypeMember0 getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			TimeUnitTypeMember0 result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -244,10 +212,8 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static TimeUnitTypeMember0 get(int value)
-	{
-		switch (value)
-		{
+	public static TimeUnitTypeMember0 get(int value) {
+		switch (value) {
 			case YEAR_VALUE: return YEAR;
 			case MONTH_VALUE: return MONTH;
 			case DAY_VALUE: return DAY;
@@ -285,8 +251,7 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private TimeUnitTypeMember0(int value, String name, String literal)
-	{
+	private TimeUnitTypeMember0(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -297,8 +262,8 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -307,8 +272,8 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -317,8 +282,8 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -329,8 +294,7 @@ public enum TimeUnitTypeMember0 implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

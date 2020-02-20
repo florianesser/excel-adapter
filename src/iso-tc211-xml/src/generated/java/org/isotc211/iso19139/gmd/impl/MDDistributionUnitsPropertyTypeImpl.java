@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDDistributionUnitsPropertyType;
  *
  * @generated
  */
-public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Container implements MDDistributionUnitsPropertyType
-{
+public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Container implements MDDistributionUnitsPropertyType {
 	/**
 	 * The cached value of the '{@link #getMDDistributionUnits() <em>MD Distribution Units</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDDistributionUnitsPropertyTypeImpl()
-	{
+	protected MDDistributionUnitsPropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDDistributionUnitsPropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDDistributionUnits()
-	{
+	@Override
+	public CodeListValueType getMDDistributionUnits() {
 		return mDDistributionUnits;
 	}
 
@@ -98,12 +95,10 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDDistributionUnits(CodeListValueType newMDDistributionUnits, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDDistributionUnits(CodeListValueType newMDDistributionUnits, NotificationChain msgs) {
 		CodeListValueType oldMDDistributionUnits = mDDistributionUnits;
 		mDDistributionUnits = newMDDistributionUnits;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE__MD_DISTRIBUTION_UNITS, oldMDDistributionUnits, newMDDistributionUnits);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDDistributionUnits(CodeListValueType newMDDistributionUnits)
-	{
-		if (newMDDistributionUnits != mDDistributionUnits)
-		{
+	@Override
+	public void setMDDistributionUnits(CodeListValueType newMDDistributionUnits) {
+		if (newMDDistributionUnits != mDDistributionUnits) {
 			NotificationChain msgs = null;
 			if (mDDistributionUnits != null)
 				msgs = ((InternalEObject)mDDistributionUnits).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE__MD_DISTRIBUTION_UNITS, null, msgs);
@@ -136,8 +130,8 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE__MD_DISTRIBUTION_UNITS:
 				return basicSetMDDistributionUnits(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE__MD_DISTRIBUTION_UNITS:
 				return getMDDistributionUnits();
 			case GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE__MD_DISTRIBUTION_UNITS:
 				setMDDistributionUnits((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE__MD_DISTRIBUTION_UNITS:
 				setMDDistributionUnits((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE__MD_DISTRIBUTION_UNITS:
 				return mDDistributionUnits != null;
 			case GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDDistributionUnitsPropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

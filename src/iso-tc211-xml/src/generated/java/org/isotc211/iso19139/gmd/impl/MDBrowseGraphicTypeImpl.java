@@ -32,8 +32,7 @@ import org.isotc211.iso19139.gmd.MDBrowseGraphicType;
  *
  * @generated
  */
-public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements MDBrowseGraphicType
-{
+public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements MDBrowseGraphicType {
 	/**
 	 * The cached value of the '{@link #getFileName() <em>File Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -69,8 +68,7 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDBrowseGraphicTypeImpl()
-	{
+	protected MDBrowseGraphicTypeImpl() {
 		super();
 	}
 
@@ -80,8 +78,7 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDBrowseGraphicType();
 	}
 
@@ -90,8 +87,8 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getFileName()
-	{
+	@Override
+	public CharacterStringPropertyType getFileName() {
 		return fileName;
 	}
 
@@ -100,12 +97,10 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFileName(CharacterStringPropertyType newFileName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFileName(CharacterStringPropertyType newFileName, NotificationChain msgs) {
 		CharacterStringPropertyType oldFileName = fileName;
 		fileName = newFileName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_NAME, oldFileName, newFileName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -117,10 +112,9 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFileName(CharacterStringPropertyType newFileName)
-	{
-		if (newFileName != fileName)
-		{
+	@Override
+	public void setFileName(CharacterStringPropertyType newFileName) {
+		if (newFileName != fileName) {
 			NotificationChain msgs = null;
 			if (fileName != null)
 				msgs = ((InternalEObject)fileName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_NAME, null, msgs);
@@ -138,8 +132,8 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getFileDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getFileDescription() {
 		return fileDescription;
 	}
 
@@ -148,12 +142,10 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFileDescription(CharacterStringPropertyType newFileDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFileDescription(CharacterStringPropertyType newFileDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldFileDescription = fileDescription;
 		fileDescription = newFileDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_DESCRIPTION, oldFileDescription, newFileDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -165,10 +157,9 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFileDescription(CharacterStringPropertyType newFileDescription)
-	{
-		if (newFileDescription != fileDescription)
-		{
+	@Override
+	public void setFileDescription(CharacterStringPropertyType newFileDescription) {
+		if (newFileDescription != fileDescription) {
 			NotificationChain msgs = null;
 			if (fileDescription != null)
 				msgs = ((InternalEObject)fileDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_DESCRIPTION, null, msgs);
@@ -186,8 +177,8 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getFileType()
-	{
+	@Override
+	public CharacterStringPropertyType getFileType() {
 		return fileType;
 	}
 
@@ -196,12 +187,10 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFileType(CharacterStringPropertyType newFileType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFileType(CharacterStringPropertyType newFileType, NotificationChain msgs) {
 		CharacterStringPropertyType oldFileType = fileType;
 		fileType = newFileType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_TYPE, oldFileType, newFileType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -213,10 +202,9 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFileType(CharacterStringPropertyType newFileType)
-	{
-		if (newFileType != fileType)
-		{
+	@Override
+	public void setFileType(CharacterStringPropertyType newFileType) {
+		if (newFileType != fileType) {
 			NotificationChain msgs = null;
 			if (fileType != null)
 				msgs = ((InternalEObject)fileType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_TYPE, null, msgs);
@@ -235,10 +223,8 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_NAME:
 				return basicSetFileName(null, msgs);
 			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_DESCRIPTION:
@@ -255,10 +241,8 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_NAME:
 				return getFileName();
 			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_DESCRIPTION:
@@ -275,10 +259,8 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_NAME:
 				setFileName((CharacterStringPropertyType)newValue);
 				return;
@@ -298,10 +280,8 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_NAME:
 				setFileName((CharacterStringPropertyType)null);
 				return;
@@ -321,10 +301,8 @@ public class MDBrowseGraphicTypeImpl extends AbstractObjectTypeImpl implements M
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_NAME:
 				return fileName != null;
 			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE__FILE_DESCRIPTION:

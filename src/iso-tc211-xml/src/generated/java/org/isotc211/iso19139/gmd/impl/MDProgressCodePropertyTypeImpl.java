@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDProgressCodePropertyType;
  *
  * @generated
  */
-public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDProgressCodePropertyType
-{
+public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDProgressCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDProgressCode() <em>MD Progress Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDProgressCodePropertyTypeImpl()
-	{
+	protected MDProgressCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDProgressCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDProgressCode()
-	{
+	@Override
+	public CodeListValueType getMDProgressCode() {
 		return mDProgressCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDProgressCode(CodeListValueType newMDProgressCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDProgressCode(CodeListValueType newMDProgressCode, NotificationChain msgs) {
 		CodeListValueType oldMDProgressCode = mDProgressCode;
 		mDProgressCode = newMDProgressCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE__MD_PROGRESS_CODE, oldMDProgressCode, newMDProgressCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDProgressCode(CodeListValueType newMDProgressCode)
-	{
-		if (newMDProgressCode != mDProgressCode)
-		{
+	@Override
+	public void setMDProgressCode(CodeListValueType newMDProgressCode) {
+		if (newMDProgressCode != mDProgressCode) {
 			NotificationChain msgs = null;
 			if (mDProgressCode != null)
 				msgs = ((InternalEObject)mDProgressCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE__MD_PROGRESS_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE__MD_PROGRESS_CODE:
 				return basicSetMDProgressCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE__MD_PROGRESS_CODE:
 				return getMDProgressCode();
 			case GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE__MD_PROGRESS_CODE:
 				setMDProgressCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE__MD_PROGRESS_CODE:
 				setMDProgressCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE__MD_PROGRESS_CODE:
 				return mDProgressCode != null;
 			case GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDProgressCodePropertyTypeImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

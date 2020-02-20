@@ -32,8 +32,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implements DQConformanceResultType
-{
+public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implements DQConformanceResultType {
 	/**
 	 * The cached value of the '{@link #getSpecification() <em>Specification</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -69,8 +68,7 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQConformanceResultTypeImpl()
-	{
+	protected DQConformanceResultTypeImpl() {
 		super();
 	}
 
@@ -80,8 +78,7 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQConformanceResultType();
 	}
 
@@ -90,8 +87,8 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationPropertyType getSpecification()
-	{
+	@Override
+	public CICitationPropertyType getSpecification() {
 		return specification;
 	}
 
@@ -100,12 +97,10 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSpecification(CICitationPropertyType newSpecification, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSpecification(CICitationPropertyType newSpecification, NotificationChain msgs) {
 		CICitationPropertyType oldSpecification = specification;
 		specification = newSpecification;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__SPECIFICATION, oldSpecification, newSpecification);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -117,10 +112,9 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSpecification(CICitationPropertyType newSpecification)
-	{
-		if (newSpecification != specification)
-		{
+	@Override
+	public void setSpecification(CICitationPropertyType newSpecification) {
+		if (newSpecification != specification) {
 			NotificationChain msgs = null;
 			if (specification != null)
 				msgs = ((InternalEObject)specification).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__SPECIFICATION, null, msgs);
@@ -138,8 +132,8 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getExplanation()
-	{
+	@Override
+	public CharacterStringPropertyType getExplanation() {
 		return explanation;
 	}
 
@@ -148,12 +142,10 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExplanation(CharacterStringPropertyType newExplanation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExplanation(CharacterStringPropertyType newExplanation, NotificationChain msgs) {
 		CharacterStringPropertyType oldExplanation = explanation;
 		explanation = newExplanation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__EXPLANATION, oldExplanation, newExplanation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -165,10 +157,9 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExplanation(CharacterStringPropertyType newExplanation)
-	{
-		if (newExplanation != explanation)
-		{
+	@Override
+	public void setExplanation(CharacterStringPropertyType newExplanation) {
+		if (newExplanation != explanation) {
 			NotificationChain msgs = null;
 			if (explanation != null)
 				msgs = ((InternalEObject)explanation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__EXPLANATION, null, msgs);
@@ -186,8 +177,8 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getPass()
-	{
+	@Override
+	public BooleanPropertyType getPass() {
 		return pass;
 	}
 
@@ -196,12 +187,10 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPass(BooleanPropertyType newPass, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPass(BooleanPropertyType newPass, NotificationChain msgs) {
 		BooleanPropertyType oldPass = pass;
 		pass = newPass;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__PASS, oldPass, newPass);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -213,10 +202,9 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPass(BooleanPropertyType newPass)
-	{
-		if (newPass != pass)
-		{
+	@Override
+	public void setPass(BooleanPropertyType newPass) {
+		if (newPass != pass) {
 			NotificationChain msgs = null;
 			if (pass != null)
 				msgs = ((InternalEObject)pass).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__PASS, null, msgs);
@@ -235,10 +223,8 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__SPECIFICATION:
 				return basicSetSpecification(null, msgs);
 			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__EXPLANATION:
@@ -255,10 +241,8 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__SPECIFICATION:
 				return getSpecification();
 			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__EXPLANATION:
@@ -275,10 +259,8 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__SPECIFICATION:
 				setSpecification((CICitationPropertyType)newValue);
 				return;
@@ -298,10 +280,8 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__SPECIFICATION:
 				setSpecification((CICitationPropertyType)null);
 				return;
@@ -321,10 +301,8 @@ public class DQConformanceResultTypeImpl extends AbstractDQResultTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__SPECIFICATION:
 				return specification != null;
 			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE__EXPLANATION:

@@ -26,15 +26,10 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='GeodesicStringType' kind='elementOnly'"
  * @generated
  */
-public interface GeodesicStringType extends AbstractCurveSegmentType
-{
+public interface GeodesicStringType extends AbstractCurveSegmentType {
 	/**
 	 * Returns the value of the '<em><b>Pos List</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos List</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos List</em>' containment reference.
 	 * @see #setPosList(DirectPositionListType)
@@ -59,10 +54,6 @@ public interface GeodesicStringType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Geometric Position Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geometric Position Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geometric Position Group</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getGeodesicStringType_GeometricPositionGroup()
@@ -76,10 +67,6 @@ public interface GeodesicStringType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Pos</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.DirectPositionType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getGeodesicStringType_Pos()
@@ -110,10 +97,6 @@ public interface GeodesicStringType extends AbstractCurveSegmentType
 	 * The default value is <code>"geodesic"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.CurveInterpolationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interpolation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Interpolation</em>' attribute.
 	 * @see net.opengis.gml32.CurveInterpolationType

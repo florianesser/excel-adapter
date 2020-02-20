@@ -19,15 +19,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='Category_._type' kind='simple'"
  * @generated
  */
-public interface CategoryType extends CodeType
-{
+public interface CategoryType extends CodeType {
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

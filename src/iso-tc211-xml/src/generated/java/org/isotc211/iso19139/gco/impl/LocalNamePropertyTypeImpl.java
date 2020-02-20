@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gco.LocalNamePropertyType;
  *
  * @generated
  */
-public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container implements LocalNamePropertyType
-{
+public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container implements LocalNamePropertyType {
 	/**
 	 * The cached value of the '{@link #getLocalName() <em>Local Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LocalNamePropertyTypeImpl()
-	{
+	protected LocalNamePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.LOCAL_NAME_PROPERTY_TYPE;
 	}
 
@@ -88,8 +85,8 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getLocalName()
-	{
+	@Override
+	public CodeType getLocalName() {
 		return localName;
 	}
 
@@ -98,12 +95,10 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocalName(CodeType newLocalName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocalName(CodeType newLocalName, NotificationChain msgs) {
 		CodeType oldLocalName = localName;
 		localName = newLocalName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.LOCAL_NAME_PROPERTY_TYPE__LOCAL_NAME, oldLocalName, newLocalName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocalName(CodeType newLocalName)
-	{
-		if (newLocalName != localName)
-		{
+	@Override
+	public void setLocalName(CodeType newLocalName) {
+		if (newLocalName != localName) {
 			NotificationChain msgs = null;
 			if (localName != null)
 				msgs = ((InternalEObject)localName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.LOCAL_NAME_PROPERTY_TYPE__LOCAL_NAME, null, msgs);
@@ -136,8 +130,8 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.LOCAL_NAME_PROPERTY_TYPE__LOCAL_NAME:
 				return basicSetLocalName(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.LOCAL_NAME_PROPERTY_TYPE__LOCAL_NAME:
 				return getLocalName();
 			case GCOPackage.LOCAL_NAME_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.LOCAL_NAME_PROPERTY_TYPE__LOCAL_NAME:
 				setLocalName((CodeType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.LOCAL_NAME_PROPERTY_TYPE__LOCAL_NAME:
 				setLocalName((CodeType)null);
 				return;
@@ -234,10 +220,8 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.LOCAL_NAME_PROPERTY_TYPE__LOCAL_NAME:
 				return localName != null;
 			case GCOPackage.LOCAL_NAME_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class LocalNamePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

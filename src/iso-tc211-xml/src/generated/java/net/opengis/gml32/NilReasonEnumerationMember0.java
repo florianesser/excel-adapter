@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='NilReasonEnumeration_._member_._0'"
  * @generated
  */
-public enum NilReasonEnumerationMember0 implements Enumerator
-{
+public enum NilReasonEnumerationMember0 implements Enumerator {
 	/**
 	 * The '<em><b>Inapplicable</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -72,10 +71,6 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	/**
 	 * The '<em><b>Inapplicable</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Inapplicable</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #INAPPLICABLE
 	 * @model name="inapplicable"
@@ -87,10 +82,6 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	/**
 	 * The '<em><b>Missing</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Missing</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #MISSING
 	 * @model name="missing"
@@ -102,10 +93,6 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	/**
 	 * The '<em><b>Template</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Template</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #TEMPLATE
 	 * @model name="template"
@@ -117,10 +104,6 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	/**
 	 * The '<em><b>Unknown</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Unknown</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #UNKNOWN
 	 * @model name="unknown"
@@ -132,10 +115,6 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	/**
 	 * The '<em><b>Withheld</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Withheld</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #WITHHELD
 	 * @model name="withheld"
@@ -151,8 +130,7 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	 * @generated
 	 */
 	private static final NilReasonEnumerationMember0[] VALUES_ARRAY =
-		new NilReasonEnumerationMember0[]
-		{
+		new NilReasonEnumerationMember0[] {
 			INAPPLICABLE,
 			MISSING,
 			TEMPLATE,
@@ -176,13 +154,10 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static NilReasonEnumerationMember0 get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static NilReasonEnumerationMember0 get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			NilReasonEnumerationMember0 result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -197,13 +172,10 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static NilReasonEnumerationMember0 getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static NilReasonEnumerationMember0 getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			NilReasonEnumerationMember0 result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -218,10 +190,8 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static NilReasonEnumerationMember0 get(int value)
-	{
-		switch (value)
-		{
+	public static NilReasonEnumerationMember0 get(int value) {
+		switch (value) {
 			case INAPPLICABLE_VALUE: return INAPPLICABLE;
 			case MISSING_VALUE: return MISSING;
 			case TEMPLATE_VALUE: return TEMPLATE;
@@ -258,8 +228,7 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private NilReasonEnumerationMember0(int value, String name, String literal)
-	{
+	private NilReasonEnumerationMember0(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -270,8 +239,8 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -280,8 +249,8 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -290,8 +259,8 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -302,8 +271,7 @@ public enum NilReasonEnumerationMember0 implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

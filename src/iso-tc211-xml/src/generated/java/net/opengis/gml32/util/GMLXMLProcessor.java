@@ -18,8 +18,7 @@ import org.eclipse.emf.ecore.xmi.util.XMLProcessor;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GMLXMLProcessor extends XMLProcessor
-{
+public class GMLXMLProcessor extends XMLProcessor {
 
 	/**
 	 * Public constructor to instantiate the helper.
@@ -27,8 +26,7 @@ public class GMLXMLProcessor extends XMLProcessor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMLXMLProcessor()
-	{
+	public GMLXMLProcessor() {
 		super((EPackage.Registry.INSTANCE));
 		GMLPackage.eINSTANCE.eClass();
 	}
@@ -40,10 +38,8 @@ public class GMLXMLProcessor extends XMLProcessor
 	 * @generated
 	 */
 	@Override
-	protected Map<String, Resource.Factory> getRegistrations()
-	{
-		if (registrations == null)
-		{
+	protected Map<String, Resource.Factory> getRegistrations() {
+		if (registrations == null) {
 			super.getRegistrations();
 			registrations.put(XML_EXTENSION, new GMLResourceFactoryImpl());
 			registrations.put(STAR_EXTENSION, new GMLResourceFactoryImpl());

@@ -32,8 +32,7 @@ import org.isotc211.iso19139.gss.GMObjectPropertyType;
  *
  * @generated
  */
-public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImpl implements EXBoundingPolygonType
-{
+public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImpl implements EXBoundingPolygonType {
 	/**
 	 * The cached value of the '{@link #getPolygon() <em>Polygon</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -49,8 +48,7 @@ public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EXBoundingPolygonTypeImpl()
-	{
+	protected EXBoundingPolygonTypeImpl() {
 		super();
 	}
 
@@ -60,8 +58,7 @@ public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getEXBoundingPolygonType();
 	}
 
@@ -70,10 +67,9 @@ public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<GMObjectPropertyType> getPolygon()
-	{
-		if (polygon == null)
-		{
+	@Override
+	public EList<GMObjectPropertyType> getPolygon() {
+		if (polygon == null) {
 			polygon = new EObjectContainmentEList<GMObjectPropertyType>(GMObjectPropertyType.class, this, GMDPackage.EX_BOUNDING_POLYGON_TYPE__POLYGON);
 		}
 		return polygon;
@@ -85,10 +81,8 @@ public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.EX_BOUNDING_POLYGON_TYPE__POLYGON:
 				return ((InternalEList<?>)getPolygon()).basicRemove(otherEnd, msgs);
 		}
@@ -101,10 +95,8 @@ public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.EX_BOUNDING_POLYGON_TYPE__POLYGON:
 				return getPolygon();
 		}
@@ -118,10 +110,8 @@ public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.EX_BOUNDING_POLYGON_TYPE__POLYGON:
 				getPolygon().clear();
 				getPolygon().addAll((Collection<? extends GMObjectPropertyType>)newValue);
@@ -136,10 +126,8 @@ public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_BOUNDING_POLYGON_TYPE__POLYGON:
 				getPolygon().clear();
 				return;
@@ -153,10 +141,8 @@ public class EXBoundingPolygonTypeImpl extends AbstractEXGeographicExtentTypeImp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_BOUNDING_POLYGON_TYPE__POLYGON:
 				return polygon != null && !polygon.isEmpty();
 		}

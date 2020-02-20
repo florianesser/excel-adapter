@@ -26,8 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements CylinderType
-{
+public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements CylinderType {
 	/**
 	 * The default value of the '{@link #getHorizontalCurveType() <em>Horizontal Curve Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -91,8 +90,7 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CylinderTypeImpl()
-	{
+	protected CylinderTypeImpl() {
 		super();
 	}
 
@@ -102,8 +100,7 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCylinderType();
 	}
 
@@ -112,8 +109,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveInterpolationType getHorizontalCurveType()
-	{
+	@Override
+	public CurveInterpolationType getHorizontalCurveType() {
 		return horizontalCurveType;
 	}
 
@@ -122,8 +119,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHorizontalCurveType(CurveInterpolationType newHorizontalCurveType)
-	{
+	@Override
+	public void setHorizontalCurveType(CurveInterpolationType newHorizontalCurveType) {
 		CurveInterpolationType oldHorizontalCurveType = horizontalCurveType;
 		horizontalCurveType = newHorizontalCurveType == null ? HORIZONTAL_CURVE_TYPE_EDEFAULT : newHorizontalCurveType;
 		boolean oldHorizontalCurveTypeESet = horizontalCurveTypeESet;
@@ -137,8 +134,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetHorizontalCurveType()
-	{
+	@Override
+	public void unsetHorizontalCurveType() {
 		CurveInterpolationType oldHorizontalCurveType = horizontalCurveType;
 		boolean oldHorizontalCurveTypeESet = horizontalCurveTypeESet;
 		horizontalCurveType = HORIZONTAL_CURVE_TYPE_EDEFAULT;
@@ -152,8 +149,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetHorizontalCurveType()
-	{
+	@Override
+	public boolean isSetHorizontalCurveType() {
 		return horizontalCurveTypeESet;
 	}
 
@@ -162,8 +159,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveInterpolationType getVerticalCurveType()
-	{
+	@Override
+	public CurveInterpolationType getVerticalCurveType() {
 		return verticalCurveType;
 	}
 
@@ -172,8 +169,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalCurveType(CurveInterpolationType newVerticalCurveType)
-	{
+	@Override
+	public void setVerticalCurveType(CurveInterpolationType newVerticalCurveType) {
 		CurveInterpolationType oldVerticalCurveType = verticalCurveType;
 		verticalCurveType = newVerticalCurveType == null ? VERTICAL_CURVE_TYPE_EDEFAULT : newVerticalCurveType;
 		boolean oldVerticalCurveTypeESet = verticalCurveTypeESet;
@@ -187,8 +184,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetVerticalCurveType()
-	{
+	@Override
+	public void unsetVerticalCurveType() {
 		CurveInterpolationType oldVerticalCurveType = verticalCurveType;
 		boolean oldVerticalCurveTypeESet = verticalCurveTypeESet;
 		verticalCurveType = VERTICAL_CURVE_TYPE_EDEFAULT;
@@ -202,8 +199,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetVerticalCurveType()
-	{
+	@Override
+	public boolean isSetVerticalCurveType() {
 		return verticalCurveTypeESet;
 	}
 
@@ -213,10 +210,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CYLINDER_TYPE__HORIZONTAL_CURVE_TYPE:
 				return getHorizontalCurveType();
 			case GMLPackage.CYLINDER_TYPE__VERTICAL_CURVE_TYPE:
@@ -231,10 +226,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CYLINDER_TYPE__HORIZONTAL_CURVE_TYPE:
 				setHorizontalCurveType((CurveInterpolationType)newValue);
 				return;
@@ -251,10 +244,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CYLINDER_TYPE__HORIZONTAL_CURVE_TYPE:
 				unsetHorizontalCurveType();
 				return;
@@ -271,10 +262,8 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CYLINDER_TYPE__HORIZONTAL_CURVE_TYPE:
 				return isSetHorizontalCurveType();
 			case GMLPackage.CYLINDER_TYPE__VERTICAL_CURVE_TYPE:
@@ -289,11 +278,10 @@ public class CylinderTypeImpl extends AbstractGriddedSurfaceTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (horizontalCurveType: ");
 		if (horizontalCurveTypeESet) result.append(horizontalCurveType); else result.append("<unset>");
 		result.append(", verticalCurveType: ");

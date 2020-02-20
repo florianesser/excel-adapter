@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class QuantityExtentTypeImpl extends MeasureOrNilReasonListTypeImpl implements QuantityExtentType
-{
+public class QuantityExtentTypeImpl extends MeasureOrNilReasonListTypeImpl implements QuantityExtentType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected QuantityExtentTypeImpl()
-	{
+	protected QuantityExtentTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class QuantityExtentTypeImpl extends MeasureOrNilReasonListTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getQuantityExtentType();
 	}
 

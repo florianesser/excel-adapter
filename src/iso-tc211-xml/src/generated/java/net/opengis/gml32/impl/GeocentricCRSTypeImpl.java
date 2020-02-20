@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements GeocentricCRSType
-{
+public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements GeocentricCRSType {
 	/**
 	 * The cached value of the '{@link #getUsesCartesianCS() <em>Uses Cartesian CS</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -68,8 +67,7 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeocentricCRSTypeImpl()
-	{
+	protected GeocentricCRSTypeImpl() {
 		super();
 	}
 
@@ -79,8 +77,7 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeocentricCRSType();
 	}
 
@@ -89,8 +86,8 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSPropertyType getUsesCartesianCS()
-	{
+	@Override
+	public CartesianCSPropertyType getUsesCartesianCS() {
 		return usesCartesianCS;
 	}
 
@@ -99,12 +96,10 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesCartesianCS(CartesianCSPropertyType newUsesCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesCartesianCS(CartesianCSPropertyType newUsesCartesianCS, NotificationChain msgs) {
 		CartesianCSPropertyType oldUsesCartesianCS = usesCartesianCS;
 		usesCartesianCS = newUsesCartesianCS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEOCENTRIC_CRS_TYPE__USES_CARTESIAN_CS, oldUsesCartesianCS, newUsesCartesianCS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -116,10 +111,9 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesCartesianCS(CartesianCSPropertyType newUsesCartesianCS)
-	{
-		if (newUsesCartesianCS != usesCartesianCS)
-		{
+	@Override
+	public void setUsesCartesianCS(CartesianCSPropertyType newUsesCartesianCS) {
+		if (newUsesCartesianCS != usesCartesianCS) {
 			NotificationChain msgs = null;
 			if (usesCartesianCS != null)
 				msgs = ((InternalEObject)usesCartesianCS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEOCENTRIC_CRS_TYPE__USES_CARTESIAN_CS, null, msgs);
@@ -137,8 +131,8 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphericalCSPropertyType getUsesSphericalCS()
-	{
+	@Override
+	public SphericalCSPropertyType getUsesSphericalCS() {
 		return usesSphericalCS;
 	}
 
@@ -147,12 +141,10 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesSphericalCS(SphericalCSPropertyType newUsesSphericalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesSphericalCS(SphericalCSPropertyType newUsesSphericalCS, NotificationChain msgs) {
 		SphericalCSPropertyType oldUsesSphericalCS = usesSphericalCS;
 		usesSphericalCS = newUsesSphericalCS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEOCENTRIC_CRS_TYPE__USES_SPHERICAL_CS, oldUsesSphericalCS, newUsesSphericalCS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -164,10 +156,9 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesSphericalCS(SphericalCSPropertyType newUsesSphericalCS)
-	{
-		if (newUsesSphericalCS != usesSphericalCS)
-		{
+	@Override
+	public void setUsesSphericalCS(SphericalCSPropertyType newUsesSphericalCS) {
+		if (newUsesSphericalCS != usesSphericalCS) {
 			NotificationChain msgs = null;
 			if (usesSphericalCS != null)
 				msgs = ((InternalEObject)usesSphericalCS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEOCENTRIC_CRS_TYPE__USES_SPHERICAL_CS, null, msgs);
@@ -185,8 +176,8 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumPropertyType getUsesGeodeticDatum()
-	{
+	@Override
+	public GeodeticDatumPropertyType getUsesGeodeticDatum() {
 		return usesGeodeticDatum;
 	}
 
@@ -195,12 +186,10 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum, NotificationChain msgs) {
 		GeodeticDatumPropertyType oldUsesGeodeticDatum = usesGeodeticDatum;
 		usesGeodeticDatum = newUsesGeodeticDatum;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEOCENTRIC_CRS_TYPE__USES_GEODETIC_DATUM, oldUsesGeodeticDatum, newUsesGeodeticDatum);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -212,10 +201,9 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum)
-	{
-		if (newUsesGeodeticDatum != usesGeodeticDatum)
-		{
+	@Override
+	public void setUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum) {
+		if (newUsesGeodeticDatum != usesGeodeticDatum) {
 			NotificationChain msgs = null;
 			if (usesGeodeticDatum != null)
 				msgs = ((InternalEObject)usesGeodeticDatum).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEOCENTRIC_CRS_TYPE__USES_GEODETIC_DATUM, null, msgs);
@@ -234,10 +222,8 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GEOCENTRIC_CRS_TYPE__USES_CARTESIAN_CS:
 				return basicSetUsesCartesianCS(null, msgs);
 			case GMLPackage.GEOCENTRIC_CRS_TYPE__USES_SPHERICAL_CS:
@@ -254,10 +240,8 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GEOCENTRIC_CRS_TYPE__USES_CARTESIAN_CS:
 				return getUsesCartesianCS();
 			case GMLPackage.GEOCENTRIC_CRS_TYPE__USES_SPHERICAL_CS:
@@ -274,10 +258,8 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GEOCENTRIC_CRS_TYPE__USES_CARTESIAN_CS:
 				setUsesCartesianCS((CartesianCSPropertyType)newValue);
 				return;
@@ -297,10 +279,8 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEOCENTRIC_CRS_TYPE__USES_CARTESIAN_CS:
 				setUsesCartesianCS((CartesianCSPropertyType)null);
 				return;
@@ -320,10 +300,8 @@ public class GeocentricCRSTypeImpl extends AbstractCRSTypeImpl implements Geocen
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEOCENTRIC_CRS_TYPE__USES_CARTESIAN_CS:
 				return usesCartesianCS != null;
 			case GMLPackage.GEOCENTRIC_CRS_TYPE__USES_SPHERICAL_CS:

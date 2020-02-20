@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='TimeType' kind='simple'"
  * @generated
  */
-public interface TimeType extends MeasureType
-{
+public interface TimeType extends MeasureType {
 } // TimeType

@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implements DerivedCRSType
-{
+public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implements DerivedCRSType {
 	/**
 	 * The cached value of the '{@link #getBaseCRS() <em>Base CRS</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -73,8 +72,7 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DerivedCRSTypeImpl()
-	{
+	protected DerivedCRSTypeImpl() {
 		super();
 	}
 
@@ -84,8 +82,7 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDerivedCRSType();
 	}
 
@@ -94,8 +91,8 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SingleCRSPropertyType getBaseCRS()
-	{
+	@Override
+	public SingleCRSPropertyType getBaseCRS() {
 		return baseCRS;
 	}
 
@@ -104,12 +101,10 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseCRS(SingleCRSPropertyType newBaseCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseCRS(SingleCRSPropertyType newBaseCRS, NotificationChain msgs) {
 		SingleCRSPropertyType oldBaseCRS = baseCRS;
 		baseCRS = newBaseCRS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DERIVED_CRS_TYPE__BASE_CRS, oldBaseCRS, newBaseCRS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -121,10 +116,9 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseCRS(SingleCRSPropertyType newBaseCRS)
-	{
-		if (newBaseCRS != baseCRS)
-		{
+	@Override
+	public void setBaseCRS(SingleCRSPropertyType newBaseCRS) {
+		if (newBaseCRS != baseCRS) {
 			NotificationChain msgs = null;
 			if (baseCRS != null)
 				msgs = ((InternalEObject)baseCRS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DERIVED_CRS_TYPE__BASE_CRS, null, msgs);
@@ -142,8 +136,8 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getDerivedCRSType()
-	{
+	@Override
+	public CodeWithAuthorityType getDerivedCRSType() {
 		return derivedCRSType;
 	}
 
@@ -152,12 +146,10 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDerivedCRSType(CodeWithAuthorityType newDerivedCRSType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDerivedCRSType(CodeWithAuthorityType newDerivedCRSType, NotificationChain msgs) {
 		CodeWithAuthorityType oldDerivedCRSType = derivedCRSType;
 		derivedCRSType = newDerivedCRSType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DERIVED_CRS_TYPE__DERIVED_CRS_TYPE, oldDerivedCRSType, newDerivedCRSType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -169,10 +161,9 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDerivedCRSType(CodeWithAuthorityType newDerivedCRSType)
-	{
-		if (newDerivedCRSType != derivedCRSType)
-		{
+	@Override
+	public void setDerivedCRSType(CodeWithAuthorityType newDerivedCRSType) {
+		if (newDerivedCRSType != derivedCRSType) {
 			NotificationChain msgs = null;
 			if (derivedCRSType != null)
 				msgs = ((InternalEObject)derivedCRSType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DERIVED_CRS_TYPE__DERIVED_CRS_TYPE, null, msgs);
@@ -190,10 +181,9 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getCoordinateSystemGroup()
-	{
-		if (coordinateSystemGroup == null)
-		{
+	@Override
+	public FeatureMap getCoordinateSystemGroup() {
+		if (coordinateSystemGroup == null) {
 			coordinateSystemGroup = new BasicFeatureMap(this, GMLPackage.DERIVED_CRS_TYPE__COORDINATE_SYSTEM_GROUP);
 		}
 		return coordinateSystemGroup;
@@ -204,8 +194,8 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemPropertyType getCoordinateSystem()
-	{
+	@Override
+	public CoordinateSystemPropertyType getCoordinateSystem() {
 		return (CoordinateSystemPropertyType)getCoordinateSystemGroup().get(GMLPackage.eINSTANCE.getDerivedCRSType_CoordinateSystem(), true);
 	}
 
@@ -214,8 +204,7 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getCoordinateSystemGroup()).basicAdd(GMLPackage.eINSTANCE.getDerivedCRSType_CoordinateSystem(), newCoordinateSystem, msgs);
 	}
 
@@ -224,8 +213,8 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem)
-	{
+	@Override
+	public void setCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem) {
 		((FeatureMap.Internal)getCoordinateSystemGroup()).set(GMLPackage.eINSTANCE.getDerivedCRSType_CoordinateSystem(), newCoordinateSystem);
 	}
 
@@ -235,10 +224,8 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_CRS_TYPE__BASE_CRS:
 				return basicSetBaseCRS(null, msgs);
 			case GMLPackage.DERIVED_CRS_TYPE__DERIVED_CRS_TYPE:
@@ -257,10 +244,8 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_CRS_TYPE__BASE_CRS:
 				return getBaseCRS();
 			case GMLPackage.DERIVED_CRS_TYPE__DERIVED_CRS_TYPE:
@@ -280,10 +265,8 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_CRS_TYPE__BASE_CRS:
 				setBaseCRS((SingleCRSPropertyType)newValue);
 				return;
@@ -306,10 +289,8 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_CRS_TYPE__BASE_CRS:
 				setBaseCRS((SingleCRSPropertyType)null);
 				return;
@@ -332,10 +313,8 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_CRS_TYPE__BASE_CRS:
 				return baseCRS != null;
 			case GMLPackage.DERIVED_CRS_TYPE__DERIVED_CRS_TYPE:
@@ -354,11 +333,10 @@ public class DerivedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (coordinateSystemGroup: ");
 		result.append(coordinateSystemGroup);
 		result.append(')');

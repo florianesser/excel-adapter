@@ -26,8 +26,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements BinaryType
-{
+public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements BinaryType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -73,8 +72,7 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BinaryTypeImpl()
-	{
+	protected BinaryTypeImpl() {
 		super();
 	}
 
@@ -84,8 +82,7 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.BINARY_TYPE;
 	}
 
@@ -94,8 +91,8 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValue()
-	{
+	@Override
+	public String getValue() {
 		return value;
 	}
 
@@ -104,8 +101,8 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(String newValue)
-	{
+	@Override
+	public void setValue(String newValue) {
 		String oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -117,8 +114,8 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getSrc()
-	{
+	@Override
+	public String getSrc() {
 		return src;
 	}
 
@@ -127,8 +124,8 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSrc(String newSrc)
-	{
+	@Override
+	public void setSrc(String newSrc) {
 		String oldSrc = src;
 		src = newSrc;
 		if (eNotificationRequired())
@@ -141,10 +138,8 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.BINARY_TYPE__VALUE:
 				return getValue();
 			case GCOPackage.BINARY_TYPE__SRC:
@@ -159,10 +154,8 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.BINARY_TYPE__VALUE:
 				setValue((String)newValue);
 				return;
@@ -179,10 +172,8 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.BINARY_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -199,10 +190,8 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.BINARY_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GCOPackage.BINARY_TYPE__SRC:
@@ -217,11 +206,10 @@ public class BinaryTypeImpl extends MinimalEObjectImpl.Container implements Bina
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", src: ");

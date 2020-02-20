@@ -27,8 +27,7 @@ import org.isotc211.iso19139.gmd.LocalisedCharacterStringType;
  *
  * @generated
  */
-public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Container implements LocalisedCharacterStringType
-{
+public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Container implements LocalisedCharacterStringType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -94,8 +93,7 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LocalisedCharacterStringTypeImpl()
-	{
+	protected LocalisedCharacterStringTypeImpl() {
 		super();
 	}
 
@@ -105,8 +103,7 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getLocalisedCharacterStringType();
 	}
 
@@ -115,8 +112,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValue()
-	{
+	@Override
+	public String getValue() {
 		return value;
 	}
 
@@ -125,8 +122,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(String newValue)
-	{
+	@Override
+	public void setValue(String newValue) {
 		String oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -138,8 +135,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getId()
-	{
+	@Override
+	public String getId() {
 		return id;
 	}
 
@@ -148,8 +145,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setId(String newId)
-	{
+	@Override
+	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
@@ -161,8 +158,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLocale()
-	{
+	@Override
+	public String getLocale() {
 		return locale;
 	}
 
@@ -171,8 +168,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocale(String newLocale)
-	{
+	@Override
+	public void setLocale(String newLocale) {
 		String oldLocale = locale;
 		locale = newLocale;
 		if (eNotificationRequired())
@@ -185,10 +182,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.LOCALISED_CHARACTER_STRING_TYPE__VALUE:
 				return getValue();
 			case GMDPackage.LOCALISED_CHARACTER_STRING_TYPE__ID:
@@ -205,10 +200,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.LOCALISED_CHARACTER_STRING_TYPE__VALUE:
 				setValue((String)newValue);
 				return;
@@ -228,10 +221,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LOCALISED_CHARACTER_STRING_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -251,10 +242,8 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LOCALISED_CHARACTER_STRING_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GMDPackage.LOCALISED_CHARACTER_STRING_TYPE__ID:
@@ -271,11 +260,10 @@ public class LocalisedCharacterStringTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", id: ");

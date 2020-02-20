@@ -32,8 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Container implements AbstractMetaDataType
-{
+public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Container implements AbstractMetaDataType {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -69,8 +68,7 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractMetaDataTypeImpl()
-	{
+	protected AbstractMetaDataTypeImpl() {
 		super();
 	}
 
@@ -80,8 +78,7 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractMetaDataType();
 	}
 
@@ -90,10 +87,9 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getMixed()
-	{
-		if (mixed == null)
-		{
+	@Override
+	public FeatureMap getMixed() {
+		if (mixed == null) {
 			mixed = new BasicFeatureMap(this, GMLPackage.ABSTRACT_META_DATA_TYPE__MIXED);
 		}
 		return mixed;
@@ -104,8 +100,8 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getId()
-	{
+	@Override
+	public String getId() {
 		return id;
 	}
 
@@ -114,8 +110,8 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setId(String newId)
-	{
+	@Override
+	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
@@ -128,10 +124,8 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_META_DATA_TYPE__MIXED:
 				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 		}
@@ -144,10 +138,8 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_META_DATA_TYPE__MIXED:
 				if (coreType) return getMixed();
 				return ((FeatureMap.Internal)getMixed()).getWrapper();
@@ -163,10 +155,8 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_META_DATA_TYPE__MIXED:
 				((FeatureMap.Internal)getMixed()).set(newValue);
 				return;
@@ -183,10 +173,8 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_META_DATA_TYPE__MIXED:
 				getMixed().clear();
 				return;
@@ -203,10 +191,8 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_META_DATA_TYPE__MIXED:
 				return mixed != null && !mixed.isEmpty();
 			case GMLPackage.ABSTRACT_META_DATA_TYPE__ID:
@@ -221,11 +207,10 @@ public abstract class AbstractMetaDataTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (mixed: ");
 		result.append(mixed);
 		result.append(", id: ");

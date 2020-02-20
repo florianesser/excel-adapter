@@ -28,15 +28,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='PT_LocaleContainer_Type' kind='elementOnly'"
  * @generated
  */
-public interface PTLocaleContainerType extends EObject
-{
+public interface PTLocaleContainerType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(CharacterStringPropertyType)
@@ -60,10 +55,6 @@ public interface PTLocaleContainerType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Locale</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Locale</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Locale</em>' containment reference.
 	 * @see #setLocale(PTLocalePropertyType)
@@ -88,10 +79,6 @@ public interface PTLocaleContainerType extends EObject
 	 * Returns the value of the '<em><b>Date</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIDatePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getPTLocaleContainerType_Date()
@@ -105,10 +92,6 @@ public interface PTLocaleContainerType extends EObject
 	 * Returns the value of the '<em><b>Responsible Party</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIResponsiblePartyPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Responsible Party</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Responsible Party</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getPTLocaleContainerType_ResponsibleParty()
@@ -122,10 +105,6 @@ public interface PTLocaleContainerType extends EObject
 	 * Returns the value of the '<em><b>Localised String</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.LocalisedCharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Localised String</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Localised String</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getPTLocaleContainerType_LocalisedString()

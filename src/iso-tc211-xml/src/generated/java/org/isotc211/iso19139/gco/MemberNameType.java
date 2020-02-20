@@ -24,15 +24,10 @@ package org.isotc211.iso19139.gco;
  * @model extendedMetaData="name='MemberName_Type' kind='elementOnly'"
  * @generated
  */
-public interface MemberNameType extends AbstractObjectType
-{
+public interface MemberNameType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>AName</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>AName</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>AName</em>' containment reference.
 	 * @see #setAName(CharacterStringPropertyType)
@@ -56,10 +51,6 @@ public interface MemberNameType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Attribute Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Attribute Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Attribute Type</em>' containment reference.
 	 * @see #setAttributeType(TypeNamePropertyType)

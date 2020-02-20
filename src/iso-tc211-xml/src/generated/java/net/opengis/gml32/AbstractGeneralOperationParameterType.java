@@ -21,8 +21,7 @@ import java.math.BigInteger;
  *        extendedMetaData="name='AbstractGeneralOperationParameterType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractGeneralOperationParameterType extends IdentifiedObjectType
-{
+public interface AbstractGeneralOperationParameterType extends IdentifiedObjectType {
 	/**
 	 * Returns the value of the '<em><b>Minimum Occurs</b></em>' attribute.
 	 * <!-- begin-user-doc -->

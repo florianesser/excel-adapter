@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_TemporalConsistency_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQTemporalConsistencyType extends AbstractDQTemporalAccuracyType
-{
+public interface DQTemporalConsistencyType extends AbstractDQTemporalAccuracyType {
 } // DQTemporalConsistencyType

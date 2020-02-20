@@ -21,6 +21,5 @@ package net.opengis.gml32;
  *        extendedMetaData="name='IdentifiedObjectType' kind='elementOnly'"
  * @generated
  */
-public interface IdentifiedObjectType extends DefinitionType
-{
+public interface IdentifiedObjectType extends DefinitionType {
 } // IdentifiedObjectType

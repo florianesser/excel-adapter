@@ -18,8 +18,7 @@ import org.w3.xlink.XLinkPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class XLinkXMLProcessor extends XMLProcessor
-{
+public class XLinkXMLProcessor extends XMLProcessor {
 
 	/**
 	 * Public constructor to instantiate the helper.
@@ -27,8 +26,7 @@ public class XLinkXMLProcessor extends XMLProcessor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XLinkXMLProcessor()
-	{
+	public XLinkXMLProcessor() {
 		super((EPackage.Registry.INSTANCE));
 		XLinkPackage.eINSTANCE.eClass();
 	}
@@ -40,10 +38,8 @@ public class XLinkXMLProcessor extends XMLProcessor
 	 * @generated
 	 */
 	@Override
-	protected Map<String, Resource.Factory> getRegistrations()
-	{
-		if (registrations == null)
-		{
+	protected Map<String, Resource.Factory> getRegistrations() {
+		if (registrations == null) {
 			super.getRegistrations();
 			registrations.put(XML_EXTENSION, new XLinkResourceFactoryImpl());
 			registrations.put(STAR_EXTENSION, new XLinkResourceFactoryImpl());

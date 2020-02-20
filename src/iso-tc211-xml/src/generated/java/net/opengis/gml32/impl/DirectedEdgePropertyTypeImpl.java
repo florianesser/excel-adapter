@@ -44,8 +44,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container implements DirectedEdgePropertyType
-{
+public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container implements DirectedEdgePropertyType {
 	/**
 	 * The cached value of the '{@link #getEdge() <em>Edge</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -326,8 +325,7 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DirectedEdgePropertyTypeImpl()
-	{
+	protected DirectedEdgePropertyTypeImpl() {
 		super();
 	}
 
@@ -337,8 +335,7 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDirectedEdgePropertyType();
 	}
 
@@ -347,8 +344,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EdgeType getEdge()
-	{
+	@Override
+	public EdgeType getEdge() {
 		return edge;
 	}
 
@@ -357,12 +354,10 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEdge(EdgeType newEdge, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEdge(EdgeType newEdge, NotificationChain msgs) {
 		EdgeType oldEdge = edge;
 		edge = newEdge;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE__EDGE, oldEdge, newEdge);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -374,10 +369,9 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEdge(EdgeType newEdge)
-	{
-		if (newEdge != edge)
-		{
+	@Override
+	public void setEdge(EdgeType newEdge) {
+		if (newEdge != edge) {
 			NotificationChain msgs = null;
 			if (edge != null)
 				msgs = ((InternalEObject)edge).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE__EDGE, null, msgs);
@@ -395,8 +389,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -405,8 +399,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -420,8 +414,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -435,8 +429,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -445,8 +439,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -455,8 +449,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -468,8 +462,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -478,8 +472,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -491,8 +485,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -501,8 +495,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -514,8 +508,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SignType getOrientation()
-	{
+	@Override
+	public SignType getOrientation() {
 		return orientation;
 	}
 
@@ -524,8 +518,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrientation(SignType newOrientation)
-	{
+	@Override
+	public void setOrientation(SignType newOrientation) {
 		SignType oldOrientation = orientation;
 		orientation = newOrientation == null ? ORIENTATION_EDEFAULT : newOrientation;
 		boolean oldOrientationESet = orientationESet;
@@ -539,8 +533,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOrientation()
-	{
+	@Override
+	public void unsetOrientation() {
 		SignType oldOrientation = orientation;
 		boolean oldOrientationESet = orientationESet;
 		orientation = ORIENTATION_EDEFAULT;
@@ -554,8 +548,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOrientation()
-	{
+	@Override
+	public boolean isSetOrientation() {
 		return orientationESet;
 	}
 
@@ -564,8 +558,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -574,8 +568,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -589,8 +583,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -604,8 +598,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -614,8 +608,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -624,8 +618,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -637,8 +631,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -647,8 +641,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -660,8 +654,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -670,8 +664,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -685,8 +679,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -700,8 +694,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -710,8 +704,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -720,8 +714,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -733,8 +727,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -743,8 +737,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -758,8 +752,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -773,8 +767,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -784,10 +778,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE__EDGE:
 				return basicSetEdge(null, msgs);
 		}
@@ -800,10 +792,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE__EDGE:
 				return getEdge();
 			case GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE__ACTUATE:
@@ -838,10 +828,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE__EDGE:
 				setEdge((EdgeType)newValue);
 				return;
@@ -888,10 +876,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE__EDGE:
 				setEdge((EdgeType)null);
 				return;
@@ -938,10 +924,8 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE__EDGE:
 				return edge != null;
 			case GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE__ACTUATE:
@@ -976,11 +960,10 @@ public class DirectedEdgePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (actuate: ");
 		if (actuateESet) result.append(actuate); else result.append("<unset>");
 		result.append(", arcrole: ");

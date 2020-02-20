@@ -32,16 +32,11 @@ import org.w3.xlink.TypeType;
  * @model extendedMetaData="name='ObjectReference_PropertyType' kind='empty'"
  * @generated
  */
-public interface ObjectReferencePropertyType extends EObject
-{
+public interface ObjectReferencePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Actuate</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.w3.xlink.ActuateType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Actuate</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Actuate</em>' attribute.
 	 * @see org.w3.xlink.ActuateType
@@ -94,10 +89,6 @@ public interface ObjectReferencePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Arcrole</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Arcrole</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Arcrole</em>' attribute.
 	 * @see #setArcrole(String)
@@ -121,10 +112,6 @@ public interface ObjectReferencePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Href</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Href</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Href</em>' attribute.
 	 * @see #setHref(String)
@@ -148,10 +135,6 @@ public interface ObjectReferencePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)
@@ -175,10 +158,6 @@ public interface ObjectReferencePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Role</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Role</em>' attribute.
 	 * @see #setRole(String)
@@ -203,10 +182,6 @@ public interface ObjectReferencePropertyType extends EObject
 	 * Returns the value of the '<em><b>Show</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.w3.xlink.ShowType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Show</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Show</em>' attribute.
 	 * @see org.w3.xlink.ShowType
@@ -259,10 +234,6 @@ public interface ObjectReferencePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' attribute.
 	 * @see #setTitle(String)
@@ -288,10 +259,6 @@ public interface ObjectReferencePropertyType extends EObject
 	 * The default value is <code>"simple"</code>.
 	 * The literals are from the enumeration {@link org.w3.xlink.TypeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see org.w3.xlink.TypeType
@@ -344,10 +311,6 @@ public interface ObjectReferencePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uuidref</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uuidref</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uuidref</em>' attribute.
 	 * @see #setUuidref(String)

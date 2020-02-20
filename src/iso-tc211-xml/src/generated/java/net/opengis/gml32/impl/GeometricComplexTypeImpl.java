@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implements GeometricComplexType
-{
+public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implements GeometricComplexType {
 	/**
 	 * The cached value of the '{@link #getElement() <em>Element</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -82,8 +81,7 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeometricComplexTypeImpl()
-	{
+	protected GeometricComplexTypeImpl() {
 		super();
 	}
 
@@ -93,8 +91,7 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeometricComplexType();
 	}
 
@@ -103,10 +100,9 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<GeometricPrimitivePropertyType> getElement()
-	{
-		if (element == null)
-		{
+	@Override
+	public EList<GeometricPrimitivePropertyType> getElement() {
+		if (element == null) {
 			element = new EObjectContainmentEList<GeometricPrimitivePropertyType>(GeometricPrimitivePropertyType.class, this, GMLPackage.GEOMETRIC_COMPLEX_TYPE__ELEMENT);
 		}
 		return element;
@@ -117,8 +113,8 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -127,8 +123,8 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -142,8 +138,8 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -157,8 +153,8 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -168,10 +164,8 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_TYPE__ELEMENT:
 				return ((InternalEList<?>)getElement()).basicRemove(otherEnd, msgs);
 		}
@@ -184,10 +178,8 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_TYPE__ELEMENT:
 				return getElement();
 			case GMLPackage.GEOMETRIC_COMPLEX_TYPE__AGGREGATION_TYPE:
@@ -203,10 +195,8 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_TYPE__ELEMENT:
 				getElement().clear();
 				getElement().addAll((Collection<? extends GeometricPrimitivePropertyType>)newValue);
@@ -224,10 +214,8 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_TYPE__ELEMENT:
 				getElement().clear();
 				return;
@@ -244,10 +232,8 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_TYPE__ELEMENT:
 				return element != null && !element.isEmpty();
 			case GMLPackage.GEOMETRIC_COMPLEX_TYPE__AGGREGATION_TYPE:
@@ -262,11 +248,10 @@ public class GeometricComplexTypeImpl extends AbstractGeometryTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (aggregationType: ");
 		if (aggregationTypeESet) result.append(aggregationType); else result.append("<unset>");
 		result.append(')');

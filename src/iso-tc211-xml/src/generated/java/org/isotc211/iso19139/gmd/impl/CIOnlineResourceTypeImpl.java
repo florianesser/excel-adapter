@@ -37,8 +37,7 @@ import org.isotc211.iso19139.gmd.URLPropertyType;
  *
  * @generated
  */
-public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements CIOnlineResourceType
-{
+public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements CIOnlineResourceType {
 	/**
 	 * The cached value of the '{@link #getLinkage() <em>Linkage</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -104,8 +103,7 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CIOnlineResourceTypeImpl()
-	{
+	protected CIOnlineResourceTypeImpl() {
 		super();
 	}
 
@@ -115,8 +113,7 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCIOnlineResourceType();
 	}
 
@@ -125,8 +122,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public URLPropertyType getLinkage()
-	{
+	@Override
+	public URLPropertyType getLinkage() {
 		return linkage;
 	}
 
@@ -135,12 +132,10 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLinkage(URLPropertyType newLinkage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLinkage(URLPropertyType newLinkage, NotificationChain msgs) {
 		URLPropertyType oldLinkage = linkage;
 		linkage = newLinkage;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ONLINE_RESOURCE_TYPE__LINKAGE, oldLinkage, newLinkage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -152,10 +147,9 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLinkage(URLPropertyType newLinkage)
-	{
-		if (newLinkage != linkage)
-		{
+	@Override
+	public void setLinkage(URLPropertyType newLinkage) {
+		if (newLinkage != linkage) {
 			NotificationChain msgs = null;
 			if (linkage != null)
 				msgs = ((InternalEObject)linkage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ONLINE_RESOURCE_TYPE__LINKAGE, null, msgs);
@@ -173,8 +167,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getProtocol()
-	{
+	@Override
+	public CharacterStringPropertyType getProtocol() {
 		return protocol;
 	}
 
@@ -183,12 +177,10 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetProtocol(CharacterStringPropertyType newProtocol, NotificationChain msgs)
-	{
+	public NotificationChain basicSetProtocol(CharacterStringPropertyType newProtocol, NotificationChain msgs) {
 		CharacterStringPropertyType oldProtocol = protocol;
 		protocol = newProtocol;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ONLINE_RESOURCE_TYPE__PROTOCOL, oldProtocol, newProtocol);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -200,10 +192,9 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProtocol(CharacterStringPropertyType newProtocol)
-	{
-		if (newProtocol != protocol)
-		{
+	@Override
+	public void setProtocol(CharacterStringPropertyType newProtocol) {
+		if (newProtocol != protocol) {
 			NotificationChain msgs = null;
 			if (protocol != null)
 				msgs = ((InternalEObject)protocol).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ONLINE_RESOURCE_TYPE__PROTOCOL, null, msgs);
@@ -221,8 +212,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getApplicationProfile()
-	{
+	@Override
+	public CharacterStringPropertyType getApplicationProfile() {
 		return applicationProfile;
 	}
 
@@ -231,12 +222,10 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetApplicationProfile(CharacterStringPropertyType newApplicationProfile, NotificationChain msgs)
-	{
+	public NotificationChain basicSetApplicationProfile(CharacterStringPropertyType newApplicationProfile, NotificationChain msgs) {
 		CharacterStringPropertyType oldApplicationProfile = applicationProfile;
 		applicationProfile = newApplicationProfile;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ONLINE_RESOURCE_TYPE__APPLICATION_PROFILE, oldApplicationProfile, newApplicationProfile);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -248,10 +237,9 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setApplicationProfile(CharacterStringPropertyType newApplicationProfile)
-	{
-		if (newApplicationProfile != applicationProfile)
-		{
+	@Override
+	public void setApplicationProfile(CharacterStringPropertyType newApplicationProfile) {
+		if (newApplicationProfile != applicationProfile) {
 			NotificationChain msgs = null;
 			if (applicationProfile != null)
 				msgs = ((InternalEObject)applicationProfile).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ONLINE_RESOURCE_TYPE__APPLICATION_PROFILE, null, msgs);
@@ -269,8 +257,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getName()
-	{
+	@Override
+	public CharacterStringPropertyType getName() {
 		return name;
 	}
 
@@ -279,12 +267,10 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetName(CharacterStringPropertyType newName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetName(CharacterStringPropertyType newName, NotificationChain msgs) {
 		CharacterStringPropertyType oldName = name;
 		name = newName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ONLINE_RESOURCE_TYPE__NAME, oldName, newName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -296,10 +282,9 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(CharacterStringPropertyType newName)
-	{
-		if (newName != name)
-		{
+	@Override
+	public void setName(CharacterStringPropertyType newName) {
+		if (newName != name) {
 			NotificationChain msgs = null;
 			if (name != null)
 				msgs = ((InternalEObject)name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ONLINE_RESOURCE_TYPE__NAME, null, msgs);
@@ -317,8 +302,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getDescription() {
 		return description;
 	}
 
@@ -327,12 +312,10 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldDescription = description;
 		description = newDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ONLINE_RESOURCE_TYPE__DESCRIPTION, oldDescription, newDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -344,10 +327,9 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescription(CharacterStringPropertyType newDescription)
-	{
-		if (newDescription != description)
-		{
+	@Override
+	public void setDescription(CharacterStringPropertyType newDescription) {
+		if (newDescription != description) {
 			NotificationChain msgs = null;
 			if (description != null)
 				msgs = ((InternalEObject)description).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ONLINE_RESOURCE_TYPE__DESCRIPTION, null, msgs);
@@ -365,8 +347,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIOnLineFunctionCodePropertyType getFunction()
-	{
+	@Override
+	public CIOnLineFunctionCodePropertyType getFunction() {
 		return function;
 	}
 
@@ -375,12 +357,10 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFunction(CIOnLineFunctionCodePropertyType newFunction, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFunction(CIOnLineFunctionCodePropertyType newFunction, NotificationChain msgs) {
 		CIOnLineFunctionCodePropertyType oldFunction = function;
 		function = newFunction;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ONLINE_RESOURCE_TYPE__FUNCTION, oldFunction, newFunction);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -392,10 +372,9 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFunction(CIOnLineFunctionCodePropertyType newFunction)
-	{
-		if (newFunction != function)
-		{
+	@Override
+	public void setFunction(CIOnLineFunctionCodePropertyType newFunction) {
+		if (newFunction != function) {
 			NotificationChain msgs = null;
 			if (function != null)
 				msgs = ((InternalEObject)function).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ONLINE_RESOURCE_TYPE__FUNCTION, null, msgs);
@@ -414,10 +393,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_ONLINE_RESOURCE_TYPE__LINKAGE:
 				return basicSetLinkage(null, msgs);
 			case GMDPackage.CI_ONLINE_RESOURCE_TYPE__PROTOCOL:
@@ -440,10 +417,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_ONLINE_RESOURCE_TYPE__LINKAGE:
 				return getLinkage();
 			case GMDPackage.CI_ONLINE_RESOURCE_TYPE__PROTOCOL:
@@ -466,10 +441,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_ONLINE_RESOURCE_TYPE__LINKAGE:
 				setLinkage((URLPropertyType)newValue);
 				return;
@@ -498,10 +471,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_ONLINE_RESOURCE_TYPE__LINKAGE:
 				setLinkage((URLPropertyType)null);
 				return;
@@ -530,10 +501,8 @@ public class CIOnlineResourceTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_ONLINE_RESOURCE_TYPE__LINKAGE:
 				return linkage != null;
 			case GMDPackage.CI_ONLINE_RESOURCE_TYPE__PROTOCOL:

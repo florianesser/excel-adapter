@@ -19,8 +19,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='TopoPointType' kind='elementOnly'"
  * @generated
  */
-public interface TopoPointType extends AbstractTopologyType
-{
+public interface TopoPointType extends AbstractTopologyType {
 	/**
 	 * Returns the value of the '<em><b>Directed Node</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

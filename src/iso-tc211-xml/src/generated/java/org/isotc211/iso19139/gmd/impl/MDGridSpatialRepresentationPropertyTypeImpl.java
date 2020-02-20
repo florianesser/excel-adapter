@@ -46,8 +46,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectImpl.Container implements MDGridSpatialRepresentationPropertyType
-{
+public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectImpl.Container implements MDGridSpatialRepresentationPropertyType {
 	/**
 	 * The cached value of the '{@link #getMDGridSpatialRepresentationGroup() <em>MD Grid Spatial Representation Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -270,8 +269,7 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDGridSpatialRepresentationPropertyTypeImpl()
-	{
+	protected MDGridSpatialRepresentationPropertyTypeImpl() {
 		super();
 	}
 
@@ -281,8 +279,7 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDGridSpatialRepresentationPropertyType();
 	}
 
@@ -291,10 +288,9 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getMDGridSpatialRepresentationGroup()
-	{
-		if (mDGridSpatialRepresentationGroup == null)
-		{
+	@Override
+	public FeatureMap getMDGridSpatialRepresentationGroup() {
+		if (mDGridSpatialRepresentationGroup == null) {
 			mDGridSpatialRepresentationGroup = new BasicFeatureMap(this, GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE__MD_GRID_SPATIAL_REPRESENTATION_GROUP);
 		}
 		return mDGridSpatialRepresentationGroup;
@@ -305,8 +301,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGridSpatialRepresentationType getMDGridSpatialRepresentation()
-	{
+	@Override
+	public MDGridSpatialRepresentationType getMDGridSpatialRepresentation() {
 		return (MDGridSpatialRepresentationType)getMDGridSpatialRepresentationGroup().get(GMDPackage.eINSTANCE.getMDGridSpatialRepresentationPropertyType_MDGridSpatialRepresentation(), true);
 	}
 
@@ -315,8 +311,7 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDGridSpatialRepresentation(MDGridSpatialRepresentationType newMDGridSpatialRepresentation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDGridSpatialRepresentation(MDGridSpatialRepresentationType newMDGridSpatialRepresentation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMDGridSpatialRepresentationGroup()).basicAdd(GMDPackage.eINSTANCE.getMDGridSpatialRepresentationPropertyType_MDGridSpatialRepresentation(), newMDGridSpatialRepresentation, msgs);
 	}
 
@@ -325,8 +320,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDGridSpatialRepresentation(MDGridSpatialRepresentationType newMDGridSpatialRepresentation)
-	{
+	@Override
+	public void setMDGridSpatialRepresentation(MDGridSpatialRepresentationType newMDGridSpatialRepresentation) {
 		((FeatureMap.Internal)getMDGridSpatialRepresentationGroup()).set(GMDPackage.eINSTANCE.getMDGridSpatialRepresentationPropertyType_MDGridSpatialRepresentation(), newMDGridSpatialRepresentation);
 	}
 
@@ -335,8 +330,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -345,8 +340,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -360,8 +355,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -375,8 +370,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -385,8 +380,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -395,8 +390,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -408,8 +403,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -418,8 +413,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -431,8 +426,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -441,8 +436,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -454,8 +449,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -464,8 +459,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -477,8 +472,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -487,8 +482,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -502,8 +497,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -517,8 +512,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -527,8 +522,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -537,8 +532,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -550,8 +545,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -560,8 +555,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -575,8 +570,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -590,8 +585,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -600,8 +595,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUuidref()
-	{
+	@Override
+	public String getUuidref() {
 		return uuidref;
 	}
 
@@ -610,8 +605,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUuidref(String newUuidref)
-	{
+	@Override
+	public void setUuidref(String newUuidref) {
 		String oldUuidref = uuidref;
 		uuidref = newUuidref;
 		if (eNotificationRequired())
@@ -624,10 +619,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE__MD_GRID_SPATIAL_REPRESENTATION_GROUP:
 				return ((InternalEList<?>)getMDGridSpatialRepresentationGroup()).basicRemove(otherEnd, msgs);
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE__MD_GRID_SPATIAL_REPRESENTATION:
@@ -642,10 +635,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE__MD_GRID_SPATIAL_REPRESENTATION_GROUP:
 				if (coreType) return getMDGridSpatialRepresentationGroup();
 				return ((FeatureMap.Internal)getMDGridSpatialRepresentationGroup()).getWrapper();
@@ -679,10 +670,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE__MD_GRID_SPATIAL_REPRESENTATION_GROUP:
 				((FeatureMap.Internal)getMDGridSpatialRepresentationGroup()).set(newValue);
 				return;
@@ -726,10 +715,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE__MD_GRID_SPATIAL_REPRESENTATION_GROUP:
 				getMDGridSpatialRepresentationGroup().clear();
 				return;
@@ -773,10 +760,8 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE__MD_GRID_SPATIAL_REPRESENTATION_GROUP:
 				return mDGridSpatialRepresentationGroup != null && !mDGridSpatialRepresentationGroup.isEmpty();
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE__MD_GRID_SPATIAL_REPRESENTATION:
@@ -809,11 +794,10 @@ public class MDGridSpatialRepresentationPropertyTypeImpl extends MinimalEObjectI
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (mDGridSpatialRepresentationGroup: ");
 		result.append(mDGridSpatialRepresentationGroup);
 		result.append(", actuate: ");

@@ -31,8 +31,7 @@ import org.isotc211.iso19139.gmd.MDResolutionType;
  *
  * @generated
  */
-public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implements MDResolutionType
-{
+public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implements MDResolutionType {
 	/**
 	 * The cached value of the '{@link #getEquivalentScale() <em>Equivalent Scale</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -58,8 +57,7 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDResolutionTypeImpl()
-	{
+	protected MDResolutionTypeImpl() {
 		super();
 	}
 
@@ -69,8 +67,7 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDResolutionType();
 	}
 
@@ -79,8 +76,8 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDRepresentativeFractionPropertyType getEquivalentScale()
-	{
+	@Override
+	public MDRepresentativeFractionPropertyType getEquivalentScale() {
 		return equivalentScale;
 	}
 
@@ -89,12 +86,10 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEquivalentScale(MDRepresentativeFractionPropertyType newEquivalentScale, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEquivalentScale(MDRepresentativeFractionPropertyType newEquivalentScale, NotificationChain msgs) {
 		MDRepresentativeFractionPropertyType oldEquivalentScale = equivalentScale;
 		equivalentScale = newEquivalentScale;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_RESOLUTION_TYPE__EQUIVALENT_SCALE, oldEquivalentScale, newEquivalentScale);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -106,10 +101,9 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEquivalentScale(MDRepresentativeFractionPropertyType newEquivalentScale)
-	{
-		if (newEquivalentScale != equivalentScale)
-		{
+	@Override
+	public void setEquivalentScale(MDRepresentativeFractionPropertyType newEquivalentScale) {
+		if (newEquivalentScale != equivalentScale) {
 			NotificationChain msgs = null;
 			if (equivalentScale != null)
 				msgs = ((InternalEObject)equivalentScale).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_RESOLUTION_TYPE__EQUIVALENT_SCALE, null, msgs);
@@ -127,8 +121,8 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DistancePropertyType getDistance()
-	{
+	@Override
+	public DistancePropertyType getDistance() {
 		return distance;
 	}
 
@@ -137,12 +131,10 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDistance(DistancePropertyType newDistance, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDistance(DistancePropertyType newDistance, NotificationChain msgs) {
 		DistancePropertyType oldDistance = distance;
 		distance = newDistance;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_RESOLUTION_TYPE__DISTANCE, oldDistance, newDistance);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -154,10 +146,9 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDistance(DistancePropertyType newDistance)
-	{
-		if (newDistance != distance)
-		{
+	@Override
+	public void setDistance(DistancePropertyType newDistance) {
+		if (newDistance != distance) {
 			NotificationChain msgs = null;
 			if (distance != null)
 				msgs = ((InternalEObject)distance).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_RESOLUTION_TYPE__DISTANCE, null, msgs);
@@ -176,10 +167,8 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_TYPE__EQUIVALENT_SCALE:
 				return basicSetEquivalentScale(null, msgs);
 			case GMDPackage.MD_RESOLUTION_TYPE__DISTANCE:
@@ -194,10 +183,8 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_TYPE__EQUIVALENT_SCALE:
 				return getEquivalentScale();
 			case GMDPackage.MD_RESOLUTION_TYPE__DISTANCE:
@@ -212,10 +199,8 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_TYPE__EQUIVALENT_SCALE:
 				setEquivalentScale((MDRepresentativeFractionPropertyType)newValue);
 				return;
@@ -232,10 +217,8 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_TYPE__EQUIVALENT_SCALE:
 				setEquivalentScale((MDRepresentativeFractionPropertyType)null);
 				return;
@@ -252,10 +235,8 @@ public class MDResolutionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_RESOLUTION_TYPE__EQUIVALENT_SCALE:
 				return equivalentScale != null;
 			case GMDPackage.MD_RESOLUTION_TYPE__DISTANCE:

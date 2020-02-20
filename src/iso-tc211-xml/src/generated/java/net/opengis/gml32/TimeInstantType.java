@@ -19,8 +19,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='TimeInstantType' kind='elementOnly'"
  * @generated
  */
-public interface TimeInstantType extends AbstractTimeGeometricPrimitiveType
-{
+public interface TimeInstantType extends AbstractTimeGeometricPrimitiveType {
 	/**
 	 * Returns the value of the '<em><b>Time Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

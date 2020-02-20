@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements GridLimitsType
-{
+public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements GridLimitsType {
 	/**
 	 * The cached value of the '{@link #getGridEnvelope() <em>Grid Envelope</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -45,8 +44,7 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GridLimitsTypeImpl()
-	{
+	protected GridLimitsTypeImpl() {
 		super();
 	}
 
@@ -56,8 +54,7 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGridLimitsType();
 	}
 
@@ -66,8 +63,8 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridEnvelopeType getGridEnvelope()
-	{
+	@Override
+	public GridEnvelopeType getGridEnvelope() {
 		return gridEnvelope;
 	}
 
@@ -76,12 +73,10 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGridEnvelope(GridEnvelopeType newGridEnvelope, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGridEnvelope(GridEnvelopeType newGridEnvelope, NotificationChain msgs) {
 		GridEnvelopeType oldGridEnvelope = gridEnvelope;
 		gridEnvelope = newGridEnvelope;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GRID_LIMITS_TYPE__GRID_ENVELOPE, oldGridEnvelope, newGridEnvelope);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -93,10 +88,9 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGridEnvelope(GridEnvelopeType newGridEnvelope)
-	{
-		if (newGridEnvelope != gridEnvelope)
-		{
+	@Override
+	public void setGridEnvelope(GridEnvelopeType newGridEnvelope) {
+		if (newGridEnvelope != gridEnvelope) {
 			NotificationChain msgs = null;
 			if (gridEnvelope != null)
 				msgs = ((InternalEObject)gridEnvelope).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GRID_LIMITS_TYPE__GRID_ENVELOPE, null, msgs);
@@ -115,10 +109,8 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GRID_LIMITS_TYPE__GRID_ENVELOPE:
 				return basicSetGridEnvelope(null, msgs);
 		}
@@ -131,10 +123,8 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GRID_LIMITS_TYPE__GRID_ENVELOPE:
 				return getGridEnvelope();
 		}
@@ -147,10 +137,8 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GRID_LIMITS_TYPE__GRID_ENVELOPE:
 				setGridEnvelope((GridEnvelopeType)newValue);
 				return;
@@ -164,10 +152,8 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GRID_LIMITS_TYPE__GRID_ENVELOPE:
 				setGridEnvelope((GridEnvelopeType)null);
 				return;
@@ -181,10 +167,8 @@ public class GridLimitsTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GRID_LIMITS_TYPE__GRID_ENVELOPE:
 				return gridEnvelope != null;
 		}

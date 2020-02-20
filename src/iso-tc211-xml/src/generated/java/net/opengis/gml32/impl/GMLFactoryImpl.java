@@ -34,26 +34,21 @@ import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
-{
+public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static GMLFactory init()
-	{
-		try
-		{
+	public static GMLFactory init() {
+		try {
 			GMLFactory theGMLFactory = (GMLFactory)EPackage.Registry.INSTANCE.getEFactory(GMLPackage.eNS_URI);
-			if (theGMLFactory != null)
-			{
+			if (theGMLFactory != null) {
 				return theGMLFactory;
 			}
 		}
-		catch (Exception exception)
-		{
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new GMLFactoryImpl();
@@ -65,8 +60,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMLFactoryImpl()
-	{
+	public GMLFactoryImpl() {
 		super();
 	}
 
@@ -76,10 +70,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass)
-	{
-		switch (eClass.getClassifierID())
-		{
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
 			case GMLPackage.ABSTRACT_GENERAL_OPERATION_PARAMETER_PROPERTY_TYPE: return createAbstractGeneralOperationParameterPropertyType();
 			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE: return createAbstractGeneralParameterValuePropertyType();
 			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE: return createAbstractRingPropertyType();
@@ -401,10 +393,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * @generated
 	 */
 	@Override
-	public Object createFromString(EDataType eDataType, String initialValue)
-	{
-		switch (eDataType.getClassifierID())
-		{
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
 			case GMLPackage.AGGREGATION_TYPE:
 				return createAggregationTypeFromString(eDataType, initialValue);
 			case GMLPackage.COMPASS_POINT_ENUMERATION:
@@ -536,10 +526,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * @generated
 	 */
 	@Override
-	public String convertToString(EDataType eDataType, Object instanceValue)
-	{
-		switch (eDataType.getClassifierID())
-		{
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
 			case GMLPackage.AGGREGATION_TYPE:
 				return convertAggregationTypeToString(eDataType, instanceValue);
 			case GMLPackage.COMPASS_POINT_ENUMERATION:
@@ -670,8 +658,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralOperationParameterPropertyType createAbstractGeneralOperationParameterPropertyType()
-	{
+	@Override
+	public AbstractGeneralOperationParameterPropertyType createAbstractGeneralOperationParameterPropertyType() {
 		AbstractGeneralOperationParameterPropertyTypeImpl abstractGeneralOperationParameterPropertyType = new AbstractGeneralOperationParameterPropertyTypeImpl();
 		return abstractGeneralOperationParameterPropertyType;
 	}
@@ -681,8 +669,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralParameterValuePropertyType createAbstractGeneralParameterValuePropertyType()
-	{
+	@Override
+	public AbstractGeneralParameterValuePropertyType createAbstractGeneralParameterValuePropertyType() {
 		AbstractGeneralParameterValuePropertyTypeImpl abstractGeneralParameterValuePropertyType = new AbstractGeneralParameterValuePropertyTypeImpl();
 		return abstractGeneralParameterValuePropertyType;
 	}
@@ -692,8 +680,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractRingPropertyType createAbstractRingPropertyType()
-	{
+	@Override
+	public AbstractRingPropertyType createAbstractRingPropertyType() {
 		AbstractRingPropertyTypeImpl abstractRingPropertyType = new AbstractRingPropertyTypeImpl();
 		return abstractRingPropertyType;
 	}
@@ -703,8 +691,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractSolidType createAbstractSolidType()
-	{
+	@Override
+	public AbstractSolidType createAbstractSolidType() {
 		AbstractSolidTypeImpl abstractSolidType = new AbstractSolidTypeImpl();
 		return abstractSolidType;
 	}
@@ -714,8 +702,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffineCSPropertyType createAffineCSPropertyType()
-	{
+	@Override
+	public AffineCSPropertyType createAffineCSPropertyType() {
 		AffineCSPropertyTypeImpl affineCSPropertyType = new AffineCSPropertyTypeImpl();
 		return affineCSPropertyType;
 	}
@@ -725,8 +713,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffineCSType createAffineCSType()
-	{
+	@Override
+	public AffineCSType createAffineCSType() {
 		AffineCSTypeImpl affineCSType = new AffineCSTypeImpl();
 		return affineCSType;
 	}
@@ -736,8 +724,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffinePlacementType createAffinePlacementType()
-	{
+	@Override
+	public AffinePlacementType createAffinePlacementType() {
 		AffinePlacementTypeImpl affinePlacementType = new AffinePlacementTypeImpl();
 		return affinePlacementType;
 	}
@@ -747,8 +735,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AngleChoiceType createAngleChoiceType()
-	{
+	@Override
+	public AngleChoiceType createAngleChoiceType() {
 		AngleChoiceTypeImpl angleChoiceType = new AngleChoiceTypeImpl();
 		return angleChoiceType;
 	}
@@ -758,8 +746,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AngleType createAngleType()
-	{
+	@Override
+	public AngleType createAngleType() {
 		AngleTypeImpl angleType = new AngleTypeImpl();
 		return angleType;
 	}
@@ -769,8 +757,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcByBulgeType createArcByBulgeType()
-	{
+	@Override
+	public ArcByBulgeType createArcByBulgeType() {
 		ArcByBulgeTypeImpl arcByBulgeType = new ArcByBulgeTypeImpl();
 		return arcByBulgeType;
 	}
@@ -780,8 +768,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcByCenterPointType createArcByCenterPointType()
-	{
+	@Override
+	public ArcByCenterPointType createArcByCenterPointType() {
 		ArcByCenterPointTypeImpl arcByCenterPointType = new ArcByCenterPointTypeImpl();
 		return arcByCenterPointType;
 	}
@@ -791,8 +779,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcStringByBulgeType createArcStringByBulgeType()
-	{
+	@Override
+	public ArcStringByBulgeType createArcStringByBulgeType() {
 		ArcStringByBulgeTypeImpl arcStringByBulgeType = new ArcStringByBulgeTypeImpl();
 		return arcStringByBulgeType;
 	}
@@ -802,8 +790,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcStringType createArcStringType()
-	{
+	@Override
+	public ArcStringType createArcStringType() {
 		ArcStringTypeImpl arcStringType = new ArcStringTypeImpl();
 		return arcStringType;
 	}
@@ -813,8 +801,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcType createArcType()
-	{
+	@Override
+	public ArcType createArcType() {
 		ArcTypeImpl arcType = new ArcTypeImpl();
 		return arcType;
 	}
@@ -824,8 +812,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AreaType createAreaType()
-	{
+	@Override
+	public AreaType createAreaType() {
 		AreaTypeImpl areaType = new AreaTypeImpl();
 		return areaType;
 	}
@@ -835,8 +823,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArrayAssociationType createArrayAssociationType()
-	{
+	@Override
+	public ArrayAssociationType createArrayAssociationType() {
 		ArrayAssociationTypeImpl arrayAssociationType = new ArrayAssociationTypeImpl();
 		return arrayAssociationType;
 	}
@@ -846,8 +834,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArrayType createArrayType()
-	{
+	@Override
+	public ArrayType createArrayType() {
 		ArrayTypeImpl arrayType = new ArrayTypeImpl();
 		return arrayType;
 	}
@@ -857,8 +845,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssociationRoleType createAssociationRoleType()
-	{
+	@Override
+	public AssociationRoleType createAssociationRoleType() {
 		AssociationRoleTypeImpl associationRoleType = new AssociationRoleTypeImpl();
 		return associationRoleType;
 	}
@@ -868,8 +856,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BagType createBagType()
-	{
+	@Override
+	public BagType createBagType() {
 		BagTypeImpl bagType = new BagTypeImpl();
 		return bagType;
 	}
@@ -879,8 +867,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BaseUnitType createBaseUnitType()
-	{
+	@Override
+	public BaseUnitType createBaseUnitType() {
 		BaseUnitTypeImpl baseUnitType = new BaseUnitTypeImpl();
 		return baseUnitType;
 	}
@@ -890,8 +878,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BezierType createBezierType()
-	{
+	@Override
+	public BezierType createBezierType() {
 		BezierTypeImpl bezierType = new BezierTypeImpl();
 		return bezierType;
 	}
@@ -901,8 +889,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType createBooleanPropertyType()
-	{
+	@Override
+	public BooleanPropertyType createBooleanPropertyType() {
 		BooleanPropertyTypeImpl booleanPropertyType = new BooleanPropertyTypeImpl();
 		return booleanPropertyType;
 	}
@@ -912,8 +900,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanType createBooleanType()
-	{
+	@Override
+	public BooleanType createBooleanType() {
 		BooleanTypeImpl booleanType = new BooleanTypeImpl();
 		return booleanType;
 	}
@@ -923,8 +911,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BoundingShapeType createBoundingShapeType()
-	{
+	@Override
+	public BoundingShapeType createBoundingShapeType() {
 		BoundingShapeTypeImpl boundingShapeType = new BoundingShapeTypeImpl();
 		return boundingShapeType;
 	}
@@ -934,8 +922,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BSplineType createBSplineType()
-	{
+	@Override
+	public BSplineType createBSplineType() {
 		BSplineTypeImpl bSplineType = new BSplineTypeImpl();
 		return bSplineType;
 	}
@@ -945,8 +933,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSPropertyType createCartesianCSPropertyType()
-	{
+	@Override
+	public CartesianCSPropertyType createCartesianCSPropertyType() {
 		CartesianCSPropertyTypeImpl cartesianCSPropertyType = new CartesianCSPropertyTypeImpl();
 		return cartesianCSPropertyType;
 	}
@@ -956,8 +944,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSType createCartesianCSType()
-	{
+	@Override
+	public CartesianCSType createCartesianCSType() {
 		CartesianCSTypeImpl cartesianCSType = new CartesianCSTypeImpl();
 		return cartesianCSType;
 	}
@@ -967,8 +955,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CategoryExtentType createCategoryExtentType()
-	{
+	@Override
+	public CategoryExtentType createCategoryExtentType() {
 		CategoryExtentTypeImpl categoryExtentType = new CategoryExtentTypeImpl();
 		return categoryExtentType;
 	}
@@ -978,8 +966,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CategoryPropertyType createCategoryPropertyType()
-	{
+	@Override
+	public CategoryPropertyType createCategoryPropertyType() {
 		CategoryPropertyTypeImpl categoryPropertyType = new CategoryPropertyTypeImpl();
 		return categoryPropertyType;
 	}
@@ -989,8 +977,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CategoryType createCategoryType()
-	{
+	@Override
+	public CategoryType createCategoryType() {
 		CategoryTypeImpl categoryType = new CategoryTypeImpl();
 		return categoryType;
 	}
@@ -1000,8 +988,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CircleByCenterPointType createCircleByCenterPointType()
-	{
+	@Override
+	public CircleByCenterPointType createCircleByCenterPointType() {
 		CircleByCenterPointTypeImpl circleByCenterPointType = new CircleByCenterPointTypeImpl();
 		return circleByCenterPointType;
 	}
@@ -1011,8 +999,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CircleType createCircleType()
-	{
+	@Override
+	public CircleType createCircleType() {
 		CircleTypeImpl circleType = new CircleTypeImpl();
 		return circleType;
 	}
@@ -1022,8 +1010,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ClothoidType createClothoidType()
-	{
+	@Override
+	public ClothoidType createClothoidType() {
 		ClothoidTypeImpl clothoidType = new ClothoidTypeImpl();
 		return clothoidType;
 	}
@@ -1033,8 +1021,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListType createCodeListType()
-	{
+	@Override
+	public CodeListType createCodeListType() {
 		CodeListTypeImpl codeListType = new CodeListTypeImpl();
 		return codeListType;
 	}
@@ -1044,8 +1032,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeOrNilReasonListType createCodeOrNilReasonListType()
-	{
+	@Override
+	public CodeOrNilReasonListType createCodeOrNilReasonListType() {
 		CodeOrNilReasonListTypeImpl codeOrNilReasonListType = new CodeOrNilReasonListTypeImpl();
 		return codeOrNilReasonListType;
 	}
@@ -1055,8 +1043,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType createCodeType()
-	{
+	@Override
+	public CodeType createCodeType() {
 		CodeTypeImpl codeType = new CodeTypeImpl();
 		return codeType;
 	}
@@ -1066,8 +1054,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType createCodeWithAuthorityType()
-	{
+	@Override
+	public CodeWithAuthorityType createCodeWithAuthorityType() {
 		CodeWithAuthorityTypeImpl codeWithAuthorityType = new CodeWithAuthorityTypeImpl();
 		return codeWithAuthorityType;
 	}
@@ -1077,8 +1065,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeCurveType createCompositeCurveType()
-	{
+	@Override
+	public CompositeCurveType createCompositeCurveType() {
 		CompositeCurveTypeImpl compositeCurveType = new CompositeCurveTypeImpl();
 		return compositeCurveType;
 	}
@@ -1088,8 +1076,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeSolidType createCompositeSolidType()
-	{
+	@Override
+	public CompositeSolidType createCompositeSolidType() {
 		CompositeSolidTypeImpl compositeSolidType = new CompositeSolidTypeImpl();
 		return compositeSolidType;
 	}
@@ -1099,8 +1087,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeSurfaceType createCompositeSurfaceType()
-	{
+	@Override
+	public CompositeSurfaceType createCompositeSurfaceType() {
 		CompositeSurfaceTypeImpl compositeSurfaceType = new CompositeSurfaceTypeImpl();
 		return compositeSurfaceType;
 	}
@@ -1110,8 +1098,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeValueType createCompositeValueType()
-	{
+	@Override
+	public CompositeValueType createCompositeValueType() {
 		CompositeValueTypeImpl compositeValueType = new CompositeValueTypeImpl();
 		return compositeValueType;
 	}
@@ -1121,8 +1109,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompoundCRSPropertyType createCompoundCRSPropertyType()
-	{
+	@Override
+	public CompoundCRSPropertyType createCompoundCRSPropertyType() {
 		CompoundCRSPropertyTypeImpl compoundCRSPropertyType = new CompoundCRSPropertyTypeImpl();
 		return compoundCRSPropertyType;
 	}
@@ -1132,8 +1120,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompoundCRSType createCompoundCRSType()
-	{
+	@Override
+	public CompoundCRSType createCompoundCRSType() {
 		CompoundCRSTypeImpl compoundCRSType = new CompoundCRSTypeImpl();
 		return compoundCRSType;
 	}
@@ -1143,8 +1131,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConcatenatedOperationPropertyType createConcatenatedOperationPropertyType()
-	{
+	@Override
+	public ConcatenatedOperationPropertyType createConcatenatedOperationPropertyType() {
 		ConcatenatedOperationPropertyTypeImpl concatenatedOperationPropertyType = new ConcatenatedOperationPropertyTypeImpl();
 		return concatenatedOperationPropertyType;
 	}
@@ -1154,8 +1142,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConcatenatedOperationType createConcatenatedOperationType()
-	{
+	@Override
+	public ConcatenatedOperationType createConcatenatedOperationType() {
 		ConcatenatedOperationTypeImpl concatenatedOperationType = new ConcatenatedOperationTypeImpl();
 		return concatenatedOperationType;
 	}
@@ -1165,8 +1153,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConeType createConeType()
-	{
+	@Override
+	public ConeType createConeType() {
 		ConeTypeImpl coneType = new ConeTypeImpl();
 		return coneType;
 	}
@@ -1176,8 +1164,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ControlPointType createControlPointType()
-	{
+	@Override
+	public ControlPointType createControlPointType() {
 		ControlPointTypeImpl controlPointType = new ControlPointTypeImpl();
 		return controlPointType;
 	}
@@ -1187,8 +1175,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConventionalUnitType createConventionalUnitType()
-	{
+	@Override
+	public ConventionalUnitType createConventionalUnitType() {
 		ConventionalUnitTypeImpl conventionalUnitType = new ConventionalUnitTypeImpl();
 		return conventionalUnitType;
 	}
@@ -1198,8 +1186,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConversionPropertyType createConversionPropertyType()
-	{
+	@Override
+	public ConversionPropertyType createConversionPropertyType() {
 		ConversionPropertyTypeImpl conversionPropertyType = new ConversionPropertyTypeImpl();
 		return conversionPropertyType;
 	}
@@ -1209,8 +1197,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConversionToPreferredUnitType createConversionToPreferredUnitType()
-	{
+	@Override
+	public ConversionToPreferredUnitType createConversionToPreferredUnitType() {
 		ConversionToPreferredUnitTypeImpl conversionToPreferredUnitType = new ConversionToPreferredUnitTypeImpl();
 		return conversionToPreferredUnitType;
 	}
@@ -1220,8 +1208,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConversionType createConversionType()
-	{
+	@Override
+	public ConversionType createConversionType() {
 		ConversionTypeImpl conversionType = new ConversionTypeImpl();
 		return conversionType;
 	}
@@ -1231,8 +1219,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateOperationAccuracyType createCoordinateOperationAccuracyType()
-	{
+	@Override
+	public CoordinateOperationAccuracyType createCoordinateOperationAccuracyType() {
 		CoordinateOperationAccuracyTypeImpl coordinateOperationAccuracyType = new CoordinateOperationAccuracyTypeImpl();
 		return coordinateOperationAccuracyType;
 	}
@@ -1242,8 +1230,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateOperationPropertyType createCoordinateOperationPropertyType()
-	{
+	@Override
+	public CoordinateOperationPropertyType createCoordinateOperationPropertyType() {
 		CoordinateOperationPropertyTypeImpl coordinateOperationPropertyType = new CoordinateOperationPropertyTypeImpl();
 		return coordinateOperationPropertyType;
 	}
@@ -1253,8 +1241,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinatesType createCoordinatesType()
-	{
+	@Override
+	public CoordinatesType createCoordinatesType() {
 		CoordinatesTypeImpl coordinatesType = new CoordinatesTypeImpl();
 		return coordinatesType;
 	}
@@ -1264,8 +1252,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemAxisPropertyType createCoordinateSystemAxisPropertyType()
-	{
+	@Override
+	public CoordinateSystemAxisPropertyType createCoordinateSystemAxisPropertyType() {
 		CoordinateSystemAxisPropertyTypeImpl coordinateSystemAxisPropertyType = new CoordinateSystemAxisPropertyTypeImpl();
 		return coordinateSystemAxisPropertyType;
 	}
@@ -1275,8 +1263,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemAxisType createCoordinateSystemAxisType()
-	{
+	@Override
+	public CoordinateSystemAxisType createCoordinateSystemAxisType() {
 		CoordinateSystemAxisTypeImpl coordinateSystemAxisType = new CoordinateSystemAxisTypeImpl();
 		return coordinateSystemAxisType;
 	}
@@ -1286,8 +1274,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemPropertyType createCoordinateSystemPropertyType()
-	{
+	@Override
+	public CoordinateSystemPropertyType createCoordinateSystemPropertyType() {
 		CoordinateSystemPropertyTypeImpl coordinateSystemPropertyType = new CoordinateSystemPropertyTypeImpl();
 		return coordinateSystemPropertyType;
 	}
@@ -1297,8 +1285,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CountPropertyType createCountPropertyType()
-	{
+	@Override
+	public CountPropertyType createCountPropertyType() {
 		CountPropertyTypeImpl countPropertyType = new CountPropertyTypeImpl();
 		return countPropertyType;
 	}
@@ -1308,8 +1296,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CountType createCountType()
-	{
+	@Override
+	public CountType createCountType() {
 		CountTypeImpl countType = new CountTypeImpl();
 		return countType;
 	}
@@ -1319,8 +1307,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoverageFunctionType createCoverageFunctionType()
-	{
+	@Override
+	public CoverageFunctionType createCoverageFunctionType() {
 		CoverageFunctionTypeImpl coverageFunctionType = new CoverageFunctionTypeImpl();
 		return coverageFunctionType;
 	}
@@ -1330,8 +1318,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CRSPropertyType createCRSPropertyType()
-	{
+	@Override
+	public CRSPropertyType createCRSPropertyType() {
 		CRSPropertyTypeImpl crsPropertyType = new CRSPropertyTypeImpl();
 		return crsPropertyType;
 	}
@@ -1341,8 +1329,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CubicSplineType createCubicSplineType()
-	{
+	@Override
+	public CubicSplineType createCubicSplineType() {
 		CubicSplineTypeImpl cubicSplineType = new CubicSplineTypeImpl();
 		return cubicSplineType;
 	}
@@ -1352,8 +1340,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveArrayPropertyType createCurveArrayPropertyType()
-	{
+	@Override
+	public CurveArrayPropertyType createCurveArrayPropertyType() {
 		CurveArrayPropertyTypeImpl curveArrayPropertyType = new CurveArrayPropertyTypeImpl();
 		return curveArrayPropertyType;
 	}
@@ -1363,8 +1351,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurvePropertyType createCurvePropertyType()
-	{
+	@Override
+	public CurvePropertyType createCurvePropertyType() {
 		CurvePropertyTypeImpl curvePropertyType = new CurvePropertyTypeImpl();
 		return curvePropertyType;
 	}
@@ -1374,8 +1362,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveSegmentArrayPropertyType createCurveSegmentArrayPropertyType()
-	{
+	@Override
+	public CurveSegmentArrayPropertyType createCurveSegmentArrayPropertyType() {
 		CurveSegmentArrayPropertyTypeImpl curveSegmentArrayPropertyType = new CurveSegmentArrayPropertyTypeImpl();
 		return curveSegmentArrayPropertyType;
 	}
@@ -1385,8 +1373,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveType createCurveType()
-	{
+	@Override
+	public CurveType createCurveType() {
 		CurveTypeImpl curveType = new CurveTypeImpl();
 		return curveType;
 	}
@@ -1396,8 +1384,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CylinderType createCylinderType()
-	{
+	@Override
+	public CylinderType createCylinderType() {
 		CylinderTypeImpl cylinderType = new CylinderTypeImpl();
 		return cylinderType;
 	}
@@ -1407,8 +1395,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CylindricalCSPropertyType createCylindricalCSPropertyType()
-	{
+	@Override
+	public CylindricalCSPropertyType createCylindricalCSPropertyType() {
 		CylindricalCSPropertyTypeImpl cylindricalCSPropertyType = new CylindricalCSPropertyTypeImpl();
 		return cylindricalCSPropertyType;
 	}
@@ -1418,8 +1406,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CylindricalCSType createCylindricalCSType()
-	{
+	@Override
+	public CylindricalCSType createCylindricalCSType() {
 		CylindricalCSTypeImpl cylindricalCSType = new CylindricalCSTypeImpl();
 		return cylindricalCSType;
 	}
@@ -1429,8 +1417,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DataBlockType createDataBlockType()
-	{
+	@Override
+	public DataBlockType createDataBlockType() {
 		DataBlockTypeImpl dataBlockType = new DataBlockTypeImpl();
 		return dataBlockType;
 	}
@@ -1440,8 +1428,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DatumPropertyType createDatumPropertyType()
-	{
+	@Override
+	public DatumPropertyType createDatumPropertyType() {
 		DatumPropertyTypeImpl datumPropertyType = new DatumPropertyTypeImpl();
 		return datumPropertyType;
 	}
@@ -1451,8 +1439,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DefinitionBaseType createDefinitionBaseType()
-	{
+	@Override
+	public DefinitionBaseType createDefinitionBaseType() {
 		DefinitionBaseTypeImpl definitionBaseType = new DefinitionBaseTypeImpl();
 		return definitionBaseType;
 	}
@@ -1462,8 +1450,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DefinitionProxyType createDefinitionProxyType()
-	{
+	@Override
+	public DefinitionProxyType createDefinitionProxyType() {
 		DefinitionProxyTypeImpl definitionProxyType = new DefinitionProxyTypeImpl();
 		return definitionProxyType;
 	}
@@ -1473,8 +1461,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DefinitionType createDefinitionType()
-	{
+	@Override
+	public DefinitionType createDefinitionType() {
 		DefinitionTypeImpl definitionType = new DefinitionTypeImpl();
 		return definitionType;
 	}
@@ -1484,8 +1472,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DegreesType createDegreesType()
-	{
+	@Override
+	public DegreesType createDegreesType() {
 		DegreesTypeImpl degreesType = new DegreesTypeImpl();
 		return degreesType;
 	}
@@ -1495,8 +1483,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DerivationUnitTermType createDerivationUnitTermType()
-	{
+	@Override
+	public DerivationUnitTermType createDerivationUnitTermType() {
 		DerivationUnitTermTypeImpl derivationUnitTermType = new DerivationUnitTermTypeImpl();
 		return derivationUnitTermType;
 	}
@@ -1506,8 +1494,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DerivedCRSPropertyType createDerivedCRSPropertyType()
-	{
+	@Override
+	public DerivedCRSPropertyType createDerivedCRSPropertyType() {
 		DerivedCRSPropertyTypeImpl derivedCRSPropertyType = new DerivedCRSPropertyTypeImpl();
 		return derivedCRSPropertyType;
 	}
@@ -1517,8 +1505,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DerivedCRSType createDerivedCRSType()
-	{
+	@Override
+	public DerivedCRSType createDerivedCRSType() {
 		DerivedCRSTypeImpl derivedCRSType = new DerivedCRSTypeImpl();
 		return derivedCRSType;
 	}
@@ -1528,8 +1516,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DerivedUnitType createDerivedUnitType()
-	{
+	@Override
+	public DerivedUnitType createDerivedUnitType() {
 		DerivedUnitTypeImpl derivedUnitType = new DerivedUnitTypeImpl();
 		return derivedUnitType;
 	}
@@ -1539,8 +1527,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DictionaryEntryType createDictionaryEntryType()
-	{
+	@Override
+	public DictionaryEntryType createDictionaryEntryType() {
 		DictionaryEntryTypeImpl dictionaryEntryType = new DictionaryEntryTypeImpl();
 		return dictionaryEntryType;
 	}
@@ -1550,8 +1538,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DictionaryType createDictionaryType()
-	{
+	@Override
+	public DictionaryType createDictionaryType() {
 		DictionaryTypeImpl dictionaryType = new DictionaryTypeImpl();
 		return dictionaryType;
 	}
@@ -1561,8 +1549,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedEdgePropertyType createDirectedEdgePropertyType()
-	{
+	@Override
+	public DirectedEdgePropertyType createDirectedEdgePropertyType() {
 		DirectedEdgePropertyTypeImpl directedEdgePropertyType = new DirectedEdgePropertyTypeImpl();
 		return directedEdgePropertyType;
 	}
@@ -1572,8 +1560,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedFacePropertyType createDirectedFacePropertyType()
-	{
+	@Override
+	public DirectedFacePropertyType createDirectedFacePropertyType() {
 		DirectedFacePropertyTypeImpl directedFacePropertyType = new DirectedFacePropertyTypeImpl();
 		return directedFacePropertyType;
 	}
@@ -1583,8 +1571,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedNodePropertyType createDirectedNodePropertyType()
-	{
+	@Override
+	public DirectedNodePropertyType createDirectedNodePropertyType() {
 		DirectedNodePropertyTypeImpl directedNodePropertyType = new DirectedNodePropertyTypeImpl();
 		return directedNodePropertyType;
 	}
@@ -1594,8 +1582,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedObservationAtDistanceType createDirectedObservationAtDistanceType()
-	{
+	@Override
+	public DirectedObservationAtDistanceType createDirectedObservationAtDistanceType() {
 		DirectedObservationAtDistanceTypeImpl directedObservationAtDistanceType = new DirectedObservationAtDistanceTypeImpl();
 		return directedObservationAtDistanceType;
 	}
@@ -1605,8 +1593,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedObservationType createDirectedObservationType()
-	{
+	@Override
+	public DirectedObservationType createDirectedObservationType() {
 		DirectedObservationTypeImpl directedObservationType = new DirectedObservationTypeImpl();
 		return directedObservationType;
 	}
@@ -1616,8 +1604,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedTopoSolidPropertyType createDirectedTopoSolidPropertyType()
-	{
+	@Override
+	public DirectedTopoSolidPropertyType createDirectedTopoSolidPropertyType() {
 		DirectedTopoSolidPropertyTypeImpl directedTopoSolidPropertyType = new DirectedTopoSolidPropertyTypeImpl();
 		return directedTopoSolidPropertyType;
 	}
@@ -1627,8 +1615,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionDescriptionType createDirectionDescriptionType()
-	{
+	@Override
+	public DirectionDescriptionType createDirectionDescriptionType() {
 		DirectionDescriptionTypeImpl directionDescriptionType = new DirectionDescriptionTypeImpl();
 		return directionDescriptionType;
 	}
@@ -1638,8 +1626,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionPropertyType createDirectionPropertyType()
-	{
+	@Override
+	public DirectionPropertyType createDirectionPropertyType() {
 		DirectionPropertyTypeImpl directionPropertyType = new DirectionPropertyTypeImpl();
 		return directionPropertyType;
 	}
@@ -1649,8 +1637,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionVectorType createDirectionVectorType()
-	{
+	@Override
+	public DirectionVectorType createDirectionVectorType() {
 		DirectionVectorTypeImpl directionVectorType = new DirectionVectorTypeImpl();
 		return directionVectorType;
 	}
@@ -1660,8 +1648,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionListType createDirectPositionListType()
-	{
+	@Override
+	public DirectPositionListType createDirectPositionListType() {
 		DirectPositionListTypeImpl directPositionListType = new DirectPositionListTypeImpl();
 		return directPositionListType;
 	}
@@ -1671,8 +1659,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionType createDirectPositionType()
-	{
+	@Override
+	public DirectPositionType createDirectPositionType() {
 		DirectPositionTypeImpl directPositionType = new DirectPositionTypeImpl();
 		return directPositionType;
 	}
@@ -1682,8 +1670,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscreteCoverageType createDiscreteCoverageType()
-	{
+	@Override
+	public DiscreteCoverageType createDiscreteCoverageType() {
 		DiscreteCoverageTypeImpl discreteCoverageType = new DiscreteCoverageTypeImpl();
 		return discreteCoverageType;
 	}
@@ -1693,8 +1681,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DMSAngleType createDMSAngleType()
-	{
+	@Override
+	public DMSAngleType createDMSAngleType() {
 		DMSAngleTypeImpl dmsAngleType = new DMSAngleTypeImpl();
 		return dmsAngleType;
 	}
@@ -1704,8 +1692,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DocumentRoot createDocumentRoot()
-	{
+	@Override
+	public DocumentRoot createDocumentRoot() {
 		DocumentRootImpl documentRoot = new DocumentRootImpl();
 		return documentRoot;
 	}
@@ -1715,8 +1703,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainOfValidityType createDomainOfValidityType()
-	{
+	@Override
+	public DomainOfValidityType createDomainOfValidityType() {
 		DomainOfValidityTypeImpl domainOfValidityType = new DomainOfValidityTypeImpl();
 		return domainOfValidityType;
 	}
@@ -1726,8 +1714,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainSetType createDomainSetType()
-	{
+	@Override
+	public DomainSetType createDomainSetType() {
 		DomainSetTypeImpl domainSetType = new DomainSetTypeImpl();
 		return domainSetType;
 	}
@@ -1737,8 +1725,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DynamicFeatureCollectionType createDynamicFeatureCollectionType()
-	{
+	@Override
+	public DynamicFeatureCollectionType createDynamicFeatureCollectionType() {
 		DynamicFeatureCollectionTypeImpl dynamicFeatureCollectionType = new DynamicFeatureCollectionTypeImpl();
 		return dynamicFeatureCollectionType;
 	}
@@ -1748,8 +1736,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DynamicFeatureMemberType createDynamicFeatureMemberType()
-	{
+	@Override
+	public DynamicFeatureMemberType createDynamicFeatureMemberType() {
 		DynamicFeatureMemberTypeImpl dynamicFeatureMemberType = new DynamicFeatureMemberTypeImpl();
 		return dynamicFeatureMemberType;
 	}
@@ -1759,8 +1747,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DynamicFeatureType createDynamicFeatureType()
-	{
+	@Override
+	public DynamicFeatureType createDynamicFeatureType() {
 		DynamicFeatureTypeImpl dynamicFeatureType = new DynamicFeatureTypeImpl();
 		return dynamicFeatureType;
 	}
@@ -1770,8 +1758,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EdgeType createEdgeType()
-	{
+	@Override
+	public EdgeType createEdgeType() {
 		EdgeTypeImpl edgeType = new EdgeTypeImpl();
 		return edgeType;
 	}
@@ -1781,8 +1769,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidalCSPropertyType createEllipsoidalCSPropertyType()
-	{
+	@Override
+	public EllipsoidalCSPropertyType createEllipsoidalCSPropertyType() {
 		EllipsoidalCSPropertyTypeImpl ellipsoidalCSPropertyType = new EllipsoidalCSPropertyTypeImpl();
 		return ellipsoidalCSPropertyType;
 	}
@@ -1792,8 +1780,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidalCSType createEllipsoidalCSType()
-	{
+	@Override
+	public EllipsoidalCSType createEllipsoidalCSType() {
 		EllipsoidalCSTypeImpl ellipsoidalCSType = new EllipsoidalCSTypeImpl();
 		return ellipsoidalCSType;
 	}
@@ -1803,8 +1791,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidPropertyType createEllipsoidPropertyType()
-	{
+	@Override
+	public EllipsoidPropertyType createEllipsoidPropertyType() {
 		EllipsoidPropertyTypeImpl ellipsoidPropertyType = new EllipsoidPropertyTypeImpl();
 		return ellipsoidPropertyType;
 	}
@@ -1814,8 +1802,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidType createEllipsoidType()
-	{
+	@Override
+	public EllipsoidType createEllipsoidType() {
 		EllipsoidTypeImpl ellipsoidType = new EllipsoidTypeImpl();
 		return ellipsoidType;
 	}
@@ -1825,8 +1813,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringCRSPropertyType createEngineeringCRSPropertyType()
-	{
+	@Override
+	public EngineeringCRSPropertyType createEngineeringCRSPropertyType() {
 		EngineeringCRSPropertyTypeImpl engineeringCRSPropertyType = new EngineeringCRSPropertyTypeImpl();
 		return engineeringCRSPropertyType;
 	}
@@ -1836,8 +1824,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringCRSType createEngineeringCRSType()
-	{
+	@Override
+	public EngineeringCRSType createEngineeringCRSType() {
 		EngineeringCRSTypeImpl engineeringCRSType = new EngineeringCRSTypeImpl();
 		return engineeringCRSType;
 	}
@@ -1847,8 +1835,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringDatumPropertyType createEngineeringDatumPropertyType()
-	{
+	@Override
+	public EngineeringDatumPropertyType createEngineeringDatumPropertyType() {
 		EngineeringDatumPropertyTypeImpl engineeringDatumPropertyType = new EngineeringDatumPropertyTypeImpl();
 		return engineeringDatumPropertyType;
 	}
@@ -1858,8 +1846,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringDatumType createEngineeringDatumType()
-	{
+	@Override
+	public EngineeringDatumType createEngineeringDatumType() {
 		EngineeringDatumTypeImpl engineeringDatumType = new EngineeringDatumTypeImpl();
 		return engineeringDatumType;
 	}
@@ -1869,8 +1857,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EnvelopeType createEnvelopeType()
-	{
+	@Override
+	public EnvelopeType createEnvelopeType() {
 		EnvelopeTypeImpl envelopeType = new EnvelopeTypeImpl();
 		return envelopeType;
 	}
@@ -1880,8 +1868,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EnvelopeWithTimePeriodType createEnvelopeWithTimePeriodType()
-	{
+	@Override
+	public EnvelopeWithTimePeriodType createEnvelopeWithTimePeriodType() {
 		EnvelopeWithTimePeriodTypeImpl envelopeWithTimePeriodType = new EnvelopeWithTimePeriodTypeImpl();
 		return envelopeWithTimePeriodType;
 	}
@@ -1891,8 +1879,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FaceOrTopoSolidPropertyType createFaceOrTopoSolidPropertyType()
-	{
+	@Override
+	public FaceOrTopoSolidPropertyType createFaceOrTopoSolidPropertyType() {
 		FaceOrTopoSolidPropertyTypeImpl faceOrTopoSolidPropertyType = new FaceOrTopoSolidPropertyTypeImpl();
 		return faceOrTopoSolidPropertyType;
 	}
@@ -1902,8 +1890,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FaceType createFaceType()
-	{
+	@Override
+	public FaceType createFaceType() {
 		FaceTypeImpl faceType = new FaceTypeImpl();
 		return faceType;
 	}
@@ -1913,8 +1901,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureArrayPropertyType createFeatureArrayPropertyType()
-	{
+	@Override
+	public FeatureArrayPropertyType createFeatureArrayPropertyType() {
 		FeatureArrayPropertyTypeImpl featureArrayPropertyType = new FeatureArrayPropertyTypeImpl();
 		return featureArrayPropertyType;
 	}
@@ -1924,8 +1912,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureCollectionType createFeatureCollectionType()
-	{
+	@Override
+	public FeatureCollectionType createFeatureCollectionType() {
 		FeatureCollectionTypeImpl featureCollectionType = new FeatureCollectionTypeImpl();
 		return featureCollectionType;
 	}
@@ -1935,8 +1923,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeaturePropertyType createFeaturePropertyType()
-	{
+	@Override
+	public FeaturePropertyType createFeaturePropertyType() {
 		FeaturePropertyTypeImpl featurePropertyType = new FeaturePropertyTypeImpl();
 		return featurePropertyType;
 	}
@@ -1946,8 +1934,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FileType createFileType()
-	{
+	@Override
+	public FileType createFileType() {
 		FileTypeImpl fileType = new FileTypeImpl();
 		return fileType;
 	}
@@ -1957,8 +1945,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormulaCitationType createFormulaCitationType()
-	{
+	@Override
+	public FormulaCitationType createFormulaCitationType() {
 		FormulaCitationTypeImpl formulaCitationType = new FormulaCitationTypeImpl();
 		return formulaCitationType;
 	}
@@ -1968,8 +1956,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormulaType createFormulaType()
-	{
+	@Override
+	public FormulaType createFormulaType() {
 		FormulaTypeImpl formulaType = new FormulaTypeImpl();
 		return formulaType;
 	}
@@ -1979,8 +1967,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeneralConversionPropertyType createGeneralConversionPropertyType()
-	{
+	@Override
+	public GeneralConversionPropertyType createGeneralConversionPropertyType() {
 		GeneralConversionPropertyTypeImpl generalConversionPropertyType = new GeneralConversionPropertyTypeImpl();
 		return generalConversionPropertyType;
 	}
@@ -1990,8 +1978,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeneralTransformationPropertyType createGeneralTransformationPropertyType()
-	{
+	@Override
+	public GeneralTransformationPropertyType createGeneralTransformationPropertyType() {
 		GeneralTransformationPropertyTypeImpl generalTransformationPropertyType = new GeneralTransformationPropertyTypeImpl();
 		return generalTransformationPropertyType;
 	}
@@ -2001,8 +1989,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GenericMetaDataType createGenericMetaDataType()
-	{
+	@Override
+	public GenericMetaDataType createGenericMetaDataType() {
 		GenericMetaDataTypeImpl genericMetaDataType = new GenericMetaDataTypeImpl();
 		return genericMetaDataType;
 	}
@@ -2012,8 +2000,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeocentricCRSPropertyType createGeocentricCRSPropertyType()
-	{
+	@Override
+	public GeocentricCRSPropertyType createGeocentricCRSPropertyType() {
 		GeocentricCRSPropertyTypeImpl geocentricCRSPropertyType = new GeocentricCRSPropertyTypeImpl();
 		return geocentricCRSPropertyType;
 	}
@@ -2023,8 +2011,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeocentricCRSType createGeocentricCRSType()
-	{
+	@Override
+	public GeocentricCRSType createGeocentricCRSType() {
 		GeocentricCRSTypeImpl geocentricCRSType = new GeocentricCRSTypeImpl();
 		return geocentricCRSType;
 	}
@@ -2034,8 +2022,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodesicStringType createGeodesicStringType()
-	{
+	@Override
+	public GeodesicStringType createGeodesicStringType() {
 		GeodesicStringTypeImpl geodesicStringType = new GeodesicStringTypeImpl();
 		return geodesicStringType;
 	}
@@ -2045,8 +2033,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodesicType createGeodesicType()
-	{
+	@Override
+	public GeodesicType createGeodesicType() {
 		GeodesicTypeImpl geodesicType = new GeodesicTypeImpl();
 		return geodesicType;
 	}
@@ -2056,8 +2044,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticCRSPropertyType createGeodeticCRSPropertyType()
-	{
+	@Override
+	public GeodeticCRSPropertyType createGeodeticCRSPropertyType() {
 		GeodeticCRSPropertyTypeImpl geodeticCRSPropertyType = new GeodeticCRSPropertyTypeImpl();
 		return geodeticCRSPropertyType;
 	}
@@ -2067,8 +2055,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticCRSType createGeodeticCRSType()
-	{
+	@Override
+	public GeodeticCRSType createGeodeticCRSType() {
 		GeodeticCRSTypeImpl geodeticCRSType = new GeodeticCRSTypeImpl();
 		return geodeticCRSType;
 	}
@@ -2078,8 +2066,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumPropertyType createGeodeticDatumPropertyType()
-	{
+	@Override
+	public GeodeticDatumPropertyType createGeodeticDatumPropertyType() {
 		GeodeticDatumPropertyTypeImpl geodeticDatumPropertyType = new GeodeticDatumPropertyTypeImpl();
 		return geodeticDatumPropertyType;
 	}
@@ -2089,8 +2077,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumType createGeodeticDatumType()
-	{
+	@Override
+	public GeodeticDatumType createGeodeticDatumType() {
 		GeodeticDatumTypeImpl geodeticDatumType = new GeodeticDatumTypeImpl();
 		return geodeticDatumType;
 	}
@@ -2100,8 +2088,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeographicCRSPropertyType createGeographicCRSPropertyType()
-	{
+	@Override
+	public GeographicCRSPropertyType createGeographicCRSPropertyType() {
 		GeographicCRSPropertyTypeImpl geographicCRSPropertyType = new GeographicCRSPropertyTypeImpl();
 		return geographicCRSPropertyType;
 	}
@@ -2111,8 +2099,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeographicCRSType createGeographicCRSType()
-	{
+	@Override
+	public GeographicCRSType createGeographicCRSType() {
 		GeographicCRSTypeImpl geographicCRSType = new GeographicCRSTypeImpl();
 		return geographicCRSType;
 	}
@@ -2122,8 +2110,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometricComplexPropertyType createGeometricComplexPropertyType()
-	{
+	@Override
+	public GeometricComplexPropertyType createGeometricComplexPropertyType() {
 		GeometricComplexPropertyTypeImpl geometricComplexPropertyType = new GeometricComplexPropertyTypeImpl();
 		return geometricComplexPropertyType;
 	}
@@ -2133,8 +2121,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometricComplexType createGeometricComplexType()
-	{
+	@Override
+	public GeometricComplexType createGeometricComplexType() {
 		GeometricComplexTypeImpl geometricComplexType = new GeometricComplexTypeImpl();
 		return geometricComplexType;
 	}
@@ -2144,8 +2132,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometricPrimitivePropertyType createGeometricPrimitivePropertyType()
-	{
+	@Override
+	public GeometricPrimitivePropertyType createGeometricPrimitivePropertyType() {
 		GeometricPrimitivePropertyTypeImpl geometricPrimitivePropertyType = new GeometricPrimitivePropertyTypeImpl();
 		return geometricPrimitivePropertyType;
 	}
@@ -2155,8 +2143,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometryArrayPropertyType createGeometryArrayPropertyType()
-	{
+	@Override
+	public GeometryArrayPropertyType createGeometryArrayPropertyType() {
 		GeometryArrayPropertyTypeImpl geometryArrayPropertyType = new GeometryArrayPropertyTypeImpl();
 		return geometryArrayPropertyType;
 	}
@@ -2166,8 +2154,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometryPropertyType createGeometryPropertyType()
-	{
+	@Override
+	public GeometryPropertyType createGeometryPropertyType() {
 		GeometryPropertyTypeImpl geometryPropertyType = new GeometryPropertyTypeImpl();
 		return geometryPropertyType;
 	}
@@ -2177,8 +2165,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridEnvelopeType createGridEnvelopeType()
-	{
+	@Override
+	public GridEnvelopeType createGridEnvelopeType() {
 		GridEnvelopeTypeImpl gridEnvelopeType = new GridEnvelopeTypeImpl();
 		return gridEnvelopeType;
 	}
@@ -2188,8 +2176,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridFunctionType createGridFunctionType()
-	{
+	@Override
+	public GridFunctionType createGridFunctionType() {
 		GridFunctionTypeImpl gridFunctionType = new GridFunctionTypeImpl();
 		return gridFunctionType;
 	}
@@ -2199,8 +2187,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridLengthType createGridLengthType()
-	{
+	@Override
+	public GridLengthType createGridLengthType() {
 		GridLengthTypeImpl gridLengthType = new GridLengthTypeImpl();
 		return gridLengthType;
 	}
@@ -2210,8 +2198,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridLimitsType createGridLimitsType()
-	{
+	@Override
+	public GridLimitsType createGridLimitsType() {
 		GridLimitsTypeImpl gridLimitsType = new GridLimitsTypeImpl();
 		return gridLimitsType;
 	}
@@ -2221,8 +2209,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridType createGridType()
-	{
+	@Override
+	public GridType createGridType() {
 		GridTypeImpl gridType = new GridTypeImpl();
 		return gridType;
 	}
@@ -2232,8 +2220,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryPropertyType createHistoryPropertyType()
-	{
+	@Override
+	public HistoryPropertyType createHistoryPropertyType() {
 		HistoryPropertyTypeImpl historyPropertyType = new HistoryPropertyTypeImpl();
 		return historyPropertyType;
 	}
@@ -2243,8 +2231,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageCRSPropertyType createImageCRSPropertyType()
-	{
+	@Override
+	public ImageCRSPropertyType createImageCRSPropertyType() {
 		ImageCRSPropertyTypeImpl imageCRSPropertyType = new ImageCRSPropertyTypeImpl();
 		return imageCRSPropertyType;
 	}
@@ -2254,8 +2242,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageCRSType createImageCRSType()
-	{
+	@Override
+	public ImageCRSType createImageCRSType() {
 		ImageCRSTypeImpl imageCRSType = new ImageCRSTypeImpl();
 		return imageCRSType;
 	}
@@ -2265,8 +2253,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageDatumPropertyType createImageDatumPropertyType()
-	{
+	@Override
+	public ImageDatumPropertyType createImageDatumPropertyType() {
 		ImageDatumPropertyTypeImpl imageDatumPropertyType = new ImageDatumPropertyTypeImpl();
 		return imageDatumPropertyType;
 	}
@@ -2276,8 +2264,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageDatumType createImageDatumType()
-	{
+	@Override
+	public ImageDatumType createImageDatumType() {
 		ImageDatumTypeImpl imageDatumType = new ImageDatumTypeImpl();
 		return imageDatumType;
 	}
@@ -2287,8 +2275,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IndirectEntryType createIndirectEntryType()
-	{
+	@Override
+	public IndirectEntryType createIndirectEntryType() {
 		IndirectEntryTypeImpl indirectEntryType = new IndirectEntryTypeImpl();
 		return indirectEntryType;
 	}
@@ -2298,8 +2286,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InlinePropertyType createInlinePropertyType()
-	{
+	@Override
+	public InlinePropertyType createInlinePropertyType() {
 		InlinePropertyTypeImpl inlinePropertyType = new InlinePropertyTypeImpl();
 		return inlinePropertyType;
 	}
@@ -2309,8 +2297,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public KnotPropertyType createKnotPropertyType()
-	{
+	@Override
+	public KnotPropertyType createKnotPropertyType() {
 		KnotPropertyTypeImpl knotPropertyType = new KnotPropertyTypeImpl();
 		return knotPropertyType;
 	}
@@ -2320,8 +2308,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public KnotType createKnotType()
-	{
+	@Override
+	public KnotType createKnotType() {
 		KnotTypeImpl knotType = new KnotTypeImpl();
 		return knotType;
 	}
@@ -2331,8 +2319,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LengthType createLengthType()
-	{
+	@Override
+	public LengthType createLengthType() {
 		LengthTypeImpl lengthType = new LengthTypeImpl();
 		return lengthType;
 	}
@@ -2342,8 +2330,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearCSPropertyType createLinearCSPropertyType()
-	{
+	@Override
+	public LinearCSPropertyType createLinearCSPropertyType() {
 		LinearCSPropertyTypeImpl linearCSPropertyType = new LinearCSPropertyTypeImpl();
 		return linearCSPropertyType;
 	}
@@ -2353,8 +2341,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearCSType createLinearCSType()
-	{
+	@Override
+	public LinearCSType createLinearCSType() {
 		LinearCSTypeImpl linearCSType = new LinearCSTypeImpl();
 		return linearCSType;
 	}
@@ -2364,8 +2352,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearRingPropertyType createLinearRingPropertyType()
-	{
+	@Override
+	public LinearRingPropertyType createLinearRingPropertyType() {
 		LinearRingPropertyTypeImpl linearRingPropertyType = new LinearRingPropertyTypeImpl();
 		return linearRingPropertyType;
 	}
@@ -2375,8 +2363,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearRingType createLinearRingType()
-	{
+	@Override
+	public LinearRingType createLinearRingType() {
 		LinearRingTypeImpl linearRingType = new LinearRingTypeImpl();
 		return linearRingType;
 	}
@@ -2386,8 +2374,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LineStringSegmentArrayPropertyType createLineStringSegmentArrayPropertyType()
-	{
+	@Override
+	public LineStringSegmentArrayPropertyType createLineStringSegmentArrayPropertyType() {
 		LineStringSegmentArrayPropertyTypeImpl lineStringSegmentArrayPropertyType = new LineStringSegmentArrayPropertyTypeImpl();
 		return lineStringSegmentArrayPropertyType;
 	}
@@ -2397,8 +2385,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LineStringSegmentType createLineStringSegmentType()
-	{
+	@Override
+	public LineStringSegmentType createLineStringSegmentType() {
 		LineStringSegmentTypeImpl lineStringSegmentType = new LineStringSegmentTypeImpl();
 		return lineStringSegmentType;
 	}
@@ -2408,8 +2396,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LineStringType createLineStringType()
-	{
+	@Override
+	public LineStringType createLineStringType() {
 		LineStringTypeImpl lineStringType = new LineStringTypeImpl();
 		return lineStringType;
 	}
@@ -2419,8 +2407,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LocationPropertyType createLocationPropertyType()
-	{
+	@Override
+	public LocationPropertyType createLocationPropertyType() {
 		LocationPropertyTypeImpl locationPropertyType = new LocationPropertyTypeImpl();
 		return locationPropertyType;
 	}
@@ -2430,8 +2418,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MappingRuleType createMappingRuleType()
-	{
+	@Override
+	public MappingRuleType createMappingRuleType() {
 		MappingRuleTypeImpl mappingRuleType = new MappingRuleTypeImpl();
 		return mappingRuleType;
 	}
@@ -2441,8 +2429,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureListType createMeasureListType()
-	{
+	@Override
+	public MeasureListType createMeasureListType() {
 		MeasureListTypeImpl measureListType = new MeasureListTypeImpl();
 		return measureListType;
 	}
@@ -2452,8 +2440,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureOrNilReasonListType createMeasureOrNilReasonListType()
-	{
+	@Override
+	public MeasureOrNilReasonListType createMeasureOrNilReasonListType() {
 		MeasureOrNilReasonListTypeImpl measureOrNilReasonListType = new MeasureOrNilReasonListTypeImpl();
 		return measureOrNilReasonListType;
 	}
@@ -2463,8 +2451,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType createMeasureType()
-	{
+	@Override
+	public MeasureType createMeasureType() {
 		MeasureTypeImpl measureType = new MeasureTypeImpl();
 		return measureType;
 	}
@@ -2474,8 +2462,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MetaDataPropertyType createMetaDataPropertyType()
-	{
+	@Override
+	public MetaDataPropertyType createMetaDataPropertyType() {
 		MetaDataPropertyTypeImpl metaDataPropertyType = new MetaDataPropertyTypeImpl();
 		return metaDataPropertyType;
 	}
@@ -2485,8 +2473,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MovingObjectStatusType createMovingObjectStatusType()
-	{
+	@Override
+	public MovingObjectStatusType createMovingObjectStatusType() {
 		MovingObjectStatusTypeImpl movingObjectStatusType = new MovingObjectStatusTypeImpl();
 		return movingObjectStatusType;
 	}
@@ -2496,8 +2484,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiCurvePropertyType createMultiCurvePropertyType()
-	{
+	@Override
+	public MultiCurvePropertyType createMultiCurvePropertyType() {
 		MultiCurvePropertyTypeImpl multiCurvePropertyType = new MultiCurvePropertyTypeImpl();
 		return multiCurvePropertyType;
 	}
@@ -2507,8 +2495,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiCurveType createMultiCurveType()
-	{
+	@Override
+	public MultiCurveType createMultiCurveType() {
 		MultiCurveTypeImpl multiCurveType = new MultiCurveTypeImpl();
 		return multiCurveType;
 	}
@@ -2518,8 +2506,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiGeometryPropertyType createMultiGeometryPropertyType()
-	{
+	@Override
+	public MultiGeometryPropertyType createMultiGeometryPropertyType() {
 		MultiGeometryPropertyTypeImpl multiGeometryPropertyType = new MultiGeometryPropertyTypeImpl();
 		return multiGeometryPropertyType;
 	}
@@ -2529,8 +2517,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiGeometryType createMultiGeometryType()
-	{
+	@Override
+	public MultiGeometryType createMultiGeometryType() {
 		MultiGeometryTypeImpl multiGeometryType = new MultiGeometryTypeImpl();
 		return multiGeometryType;
 	}
@@ -2540,8 +2528,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiPointPropertyType createMultiPointPropertyType()
-	{
+	@Override
+	public MultiPointPropertyType createMultiPointPropertyType() {
 		MultiPointPropertyTypeImpl multiPointPropertyType = new MultiPointPropertyTypeImpl();
 		return multiPointPropertyType;
 	}
@@ -2551,8 +2539,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiPointType createMultiPointType()
-	{
+	@Override
+	public MultiPointType createMultiPointType() {
 		MultiPointTypeImpl multiPointType = new MultiPointTypeImpl();
 		return multiPointType;
 	}
@@ -2562,8 +2550,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSolidPropertyType createMultiSolidPropertyType()
-	{
+	@Override
+	public MultiSolidPropertyType createMultiSolidPropertyType() {
 		MultiSolidPropertyTypeImpl multiSolidPropertyType = new MultiSolidPropertyTypeImpl();
 		return multiSolidPropertyType;
 	}
@@ -2573,8 +2561,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSolidType createMultiSolidType()
-	{
+	@Override
+	public MultiSolidType createMultiSolidType() {
 		MultiSolidTypeImpl multiSolidType = new MultiSolidTypeImpl();
 		return multiSolidType;
 	}
@@ -2584,8 +2572,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSurfacePropertyType createMultiSurfacePropertyType()
-	{
+	@Override
+	public MultiSurfacePropertyType createMultiSurfacePropertyType() {
 		MultiSurfacePropertyTypeImpl multiSurfacePropertyType = new MultiSurfacePropertyTypeImpl();
 		return multiSurfacePropertyType;
 	}
@@ -2595,8 +2583,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSurfaceType createMultiSurfaceType()
-	{
+	@Override
+	public MultiSurfaceType createMultiSurfaceType() {
 		MultiSurfaceTypeImpl multiSurfaceType = new MultiSurfaceTypeImpl();
 		return multiSurfaceType;
 	}
@@ -2606,8 +2594,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NodeOrEdgePropertyType createNodeOrEdgePropertyType()
-	{
+	@Override
+	public NodeOrEdgePropertyType createNodeOrEdgePropertyType() {
 		NodeOrEdgePropertyTypeImpl nodeOrEdgePropertyType = new NodeOrEdgePropertyTypeImpl();
 		return nodeOrEdgePropertyType;
 	}
@@ -2617,8 +2605,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NodePropertyType createNodePropertyType()
-	{
+	@Override
+	public NodePropertyType createNodePropertyType() {
 		NodePropertyTypeImpl nodePropertyType = new NodePropertyTypeImpl();
 		return nodePropertyType;
 	}
@@ -2628,8 +2616,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NodeType createNodeType()
-	{
+	@Override
+	public NodeType createNodeType() {
 		NodeTypeImpl nodeType = new NodeTypeImpl();
 		return nodeType;
 	}
@@ -2639,8 +2627,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ObliqueCartesianCSPropertyType createObliqueCartesianCSPropertyType()
-	{
+	@Override
+	public ObliqueCartesianCSPropertyType createObliqueCartesianCSPropertyType() {
 		ObliqueCartesianCSPropertyTypeImpl obliqueCartesianCSPropertyType = new ObliqueCartesianCSPropertyTypeImpl();
 		return obliqueCartesianCSPropertyType;
 	}
@@ -2650,8 +2638,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ObliqueCartesianCSType createObliqueCartesianCSType()
-	{
+	@Override
+	public ObliqueCartesianCSType createObliqueCartesianCSType() {
 		ObliqueCartesianCSTypeImpl obliqueCartesianCSType = new ObliqueCartesianCSTypeImpl();
 		return obliqueCartesianCSType;
 	}
@@ -2661,8 +2649,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ObservationType createObservationType()
-	{
+	@Override
+	public ObservationType createObservationType() {
 		ObservationTypeImpl observationType = new ObservationTypeImpl();
 		return observationType;
 	}
@@ -2672,8 +2660,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OffsetCurveType createOffsetCurveType()
-	{
+	@Override
+	public OffsetCurveType createOffsetCurveType() {
 		OffsetCurveTypeImpl offsetCurveType = new OffsetCurveTypeImpl();
 		return offsetCurveType;
 	}
@@ -2683,8 +2671,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationMethodPropertyType createOperationMethodPropertyType()
-	{
+	@Override
+	public OperationMethodPropertyType createOperationMethodPropertyType() {
 		OperationMethodPropertyTypeImpl operationMethodPropertyType = new OperationMethodPropertyTypeImpl();
 		return operationMethodPropertyType;
 	}
@@ -2694,8 +2682,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationMethodType createOperationMethodType()
-	{
+	@Override
+	public OperationMethodType createOperationMethodType() {
 		OperationMethodTypeImpl operationMethodType = new OperationMethodTypeImpl();
 		return operationMethodType;
 	}
@@ -2705,8 +2693,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterGroupPropertyType createOperationParameterGroupPropertyType()
-	{
+	@Override
+	public OperationParameterGroupPropertyType createOperationParameterGroupPropertyType() {
 		OperationParameterGroupPropertyTypeImpl operationParameterGroupPropertyType = new OperationParameterGroupPropertyTypeImpl();
 		return operationParameterGroupPropertyType;
 	}
@@ -2716,8 +2704,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterGroupType createOperationParameterGroupType()
-	{
+	@Override
+	public OperationParameterGroupType createOperationParameterGroupType() {
 		OperationParameterGroupTypeImpl operationParameterGroupType = new OperationParameterGroupTypeImpl();
 		return operationParameterGroupType;
 	}
@@ -2727,8 +2715,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterPropertyType createOperationParameterPropertyType()
-	{
+	@Override
+	public OperationParameterPropertyType createOperationParameterPropertyType() {
 		OperationParameterPropertyTypeImpl operationParameterPropertyType = new OperationParameterPropertyTypeImpl();
 		return operationParameterPropertyType;
 	}
@@ -2738,8 +2726,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterType createOperationParameterType()
-	{
+	@Override
+	public OperationParameterType createOperationParameterType() {
 		OperationParameterTypeImpl operationParameterType = new OperationParameterTypeImpl();
 		return operationParameterType;
 	}
@@ -2749,8 +2737,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationPropertyType createOperationPropertyType()
-	{
+	@Override
+	public OperationPropertyType createOperationPropertyType() {
 		OperationPropertyTypeImpl operationPropertyType = new OperationPropertyTypeImpl();
 		return operationPropertyType;
 	}
@@ -2760,8 +2748,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OrientableCurveType createOrientableCurveType()
-	{
+	@Override
+	public OrientableCurveType createOrientableCurveType() {
 		OrientableCurveTypeImpl orientableCurveType = new OrientableCurveTypeImpl();
 		return orientableCurveType;
 	}
@@ -2771,8 +2759,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OrientableSurfaceType createOrientableSurfaceType()
-	{
+	@Override
+	public OrientableSurfaceType createOrientableSurfaceType() {
 		OrientableSurfaceTypeImpl orientableSurfaceType = new OrientableSurfaceTypeImpl();
 		return orientableSurfaceType;
 	}
@@ -2782,8 +2770,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ParameterValueGroupType createParameterValueGroupType()
-	{
+	@Override
+	public ParameterValueGroupType createParameterValueGroupType() {
 		ParameterValueGroupTypeImpl parameterValueGroupType = new ParameterValueGroupTypeImpl();
 		return parameterValueGroupType;
 	}
@@ -2793,8 +2781,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ParameterValueType createParameterValueType()
-	{
+	@Override
+	public ParameterValueType createParameterValueType() {
 		ParameterValueTypeImpl parameterValueType = new ParameterValueTypeImpl();
 		return parameterValueType;
 	}
@@ -2804,8 +2792,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PassThroughOperationPropertyType createPassThroughOperationPropertyType()
-	{
+	@Override
+	public PassThroughOperationPropertyType createPassThroughOperationPropertyType() {
 		PassThroughOperationPropertyTypeImpl passThroughOperationPropertyType = new PassThroughOperationPropertyTypeImpl();
 		return passThroughOperationPropertyType;
 	}
@@ -2815,8 +2803,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PassThroughOperationType createPassThroughOperationType()
-	{
+	@Override
+	public PassThroughOperationType createPassThroughOperationType() {
 		PassThroughOperationTypeImpl passThroughOperationType = new PassThroughOperationTypeImpl();
 		return passThroughOperationType;
 	}
@@ -2826,8 +2814,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointArrayPropertyType createPointArrayPropertyType()
-	{
+	@Override
+	public PointArrayPropertyType createPointArrayPropertyType() {
 		PointArrayPropertyTypeImpl pointArrayPropertyType = new PointArrayPropertyTypeImpl();
 		return pointArrayPropertyType;
 	}
@@ -2837,8 +2825,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType createPointPropertyType()
-	{
+	@Override
+	public PointPropertyType createPointPropertyType() {
 		PointPropertyTypeImpl pointPropertyType = new PointPropertyTypeImpl();
 		return pointPropertyType;
 	}
@@ -2848,8 +2836,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointType createPointType()
-	{
+	@Override
+	public PointType createPointType() {
 		PointTypeImpl pointType = new PointTypeImpl();
 		return pointType;
 	}
@@ -2859,8 +2847,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolarCSPropertyType createPolarCSPropertyType()
-	{
+	@Override
+	public PolarCSPropertyType createPolarCSPropertyType() {
 		PolarCSPropertyTypeImpl polarCSPropertyType = new PolarCSPropertyTypeImpl();
 		return polarCSPropertyType;
 	}
@@ -2870,8 +2858,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolarCSType createPolarCSType()
-	{
+	@Override
+	public PolarCSType createPolarCSType() {
 		PolarCSTypeImpl polarCSType = new PolarCSTypeImpl();
 		return polarCSType;
 	}
@@ -2881,8 +2869,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolygonPatchType createPolygonPatchType()
-	{
+	@Override
+	public PolygonPatchType createPolygonPatchType() {
 		PolygonPatchTypeImpl polygonPatchType = new PolygonPatchTypeImpl();
 		return polygonPatchType;
 	}
@@ -2892,8 +2880,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolygonType createPolygonType()
-	{
+	@Override
+	public PolygonType createPolygonType() {
 		PolygonTypeImpl polygonType = new PolygonTypeImpl();
 		return polygonType;
 	}
@@ -2903,8 +2891,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrimeMeridianPropertyType createPrimeMeridianPropertyType()
-	{
+	@Override
+	public PrimeMeridianPropertyType createPrimeMeridianPropertyType() {
 		PrimeMeridianPropertyTypeImpl primeMeridianPropertyType = new PrimeMeridianPropertyTypeImpl();
 		return primeMeridianPropertyType;
 	}
@@ -2914,8 +2902,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrimeMeridianType createPrimeMeridianType()
-	{
+	@Override
+	public PrimeMeridianType createPrimeMeridianType() {
 		PrimeMeridianTypeImpl primeMeridianType = new PrimeMeridianTypeImpl();
 		return primeMeridianType;
 	}
@@ -2925,8 +2913,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PriorityLocationPropertyType createPriorityLocationPropertyType()
-	{
+	@Override
+	public PriorityLocationPropertyType createPriorityLocationPropertyType() {
 		PriorityLocationPropertyTypeImpl priorityLocationPropertyType = new PriorityLocationPropertyTypeImpl();
 		return priorityLocationPropertyType;
 	}
@@ -2936,8 +2924,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedurePropertyType createProcedurePropertyType()
-	{
+	@Override
+	public ProcedurePropertyType createProcedurePropertyType() {
 		ProcedurePropertyTypeImpl procedurePropertyType = new ProcedurePropertyTypeImpl();
 		return procedurePropertyType;
 	}
@@ -2947,8 +2935,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProjectedCRSPropertyType createProjectedCRSPropertyType()
-	{
+	@Override
+	public ProjectedCRSPropertyType createProjectedCRSPropertyType() {
 		ProjectedCRSPropertyTypeImpl projectedCRSPropertyType = new ProjectedCRSPropertyTypeImpl();
 		return projectedCRSPropertyType;
 	}
@@ -2958,8 +2946,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProjectedCRSType createProjectedCRSType()
-	{
+	@Override
+	public ProjectedCRSType createProjectedCRSType() {
 		ProjectedCRSTypeImpl projectedCRSType = new ProjectedCRSTypeImpl();
 		return projectedCRSType;
 	}
@@ -2969,8 +2957,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public QuantityExtentType createQuantityExtentType()
-	{
+	@Override
+	public QuantityExtentType createQuantityExtentType() {
 		QuantityExtentTypeImpl quantityExtentType = new QuantityExtentTypeImpl();
 		return quantityExtentType;
 	}
@@ -2980,8 +2968,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public QuantityPropertyType createQuantityPropertyType()
-	{
+	@Override
+	public QuantityPropertyType createQuantityPropertyType() {
 		QuantityPropertyTypeImpl quantityPropertyType = new QuantityPropertyTypeImpl();
 		return quantityPropertyType;
 	}
@@ -2991,8 +2979,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public QuantityType createQuantityType()
-	{
+	@Override
+	public QuantityType createQuantityType() {
 		QuantityTypeImpl quantityType = new QuantityTypeImpl();
 		return quantityType;
 	}
@@ -3002,8 +2990,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RangeSetType createRangeSetType()
-	{
+	@Override
+	public RangeSetType createRangeSetType() {
 		RangeSetTypeImpl rangeSetType = new RangeSetTypeImpl();
 		return rangeSetType;
 	}
@@ -3013,8 +3001,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RectangleType createRectangleType()
-	{
+	@Override
+	public RectangleType createRectangleType() {
 		RectangleTypeImpl rectangleType = new RectangleTypeImpl();
 		return rectangleType;
 	}
@@ -3024,8 +3012,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RectifiedGridType createRectifiedGridType()
-	{
+	@Override
+	public RectifiedGridType createRectifiedGridType() {
 		RectifiedGridTypeImpl rectifiedGridType = new RectifiedGridTypeImpl();
 		return rectifiedGridType;
 	}
@@ -3035,8 +3023,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType createReferenceType()
-	{
+	@Override
+	public ReferenceType createReferenceType() {
 		ReferenceTypeImpl referenceType = new ReferenceTypeImpl();
 		return referenceType;
 	}
@@ -3046,8 +3034,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RefLocationType createRefLocationType()
-	{
+	@Override
+	public RefLocationType createRefLocationType() {
 		RefLocationTypeImpl refLocationType = new RefLocationTypeImpl();
 		return refLocationType;
 	}
@@ -3057,8 +3045,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RelatedTimeType createRelatedTimeType()
-	{
+	@Override
+	public RelatedTimeType createRelatedTimeType() {
 		RelatedTimeTypeImpl relatedTimeType = new RelatedTimeTypeImpl();
 		return relatedTimeType;
 	}
@@ -3068,8 +3056,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResultType createResultType()
-	{
+	@Override
+	public ResultType createResultType() {
 		ResultTypeImpl resultType = new ResultTypeImpl();
 		return resultType;
 	}
@@ -3079,8 +3067,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RingPropertyType createRingPropertyType()
-	{
+	@Override
+	public RingPropertyType createRingPropertyType() {
 		RingPropertyTypeImpl ringPropertyType = new RingPropertyTypeImpl();
 		return ringPropertyType;
 	}
@@ -3090,8 +3078,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RingType createRingType()
-	{
+	@Override
+	public RingType createRingType() {
 		RingTypeImpl ringType = new RingTypeImpl();
 		return ringType;
 	}
@@ -3101,8 +3089,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RowsType createRowsType()
-	{
+	@Override
+	public RowsType createRowsType() {
 		RowsTypeImpl rowsType = new RowsTypeImpl();
 		return rowsType;
 	}
@@ -3112,8 +3100,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RowType createRowType()
-	{
+	@Override
+	public RowType createRowType() {
 		RowTypeImpl rowType = new RowTypeImpl();
 		return rowType;
 	}
@@ -3123,8 +3111,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ScaleType createScaleType()
-	{
+	@Override
+	public ScaleType createScaleType() {
 		ScaleTypeImpl scaleType = new ScaleTypeImpl();
 		return scaleType;
 	}
@@ -3134,8 +3122,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SecondDefiningParameterType createSecondDefiningParameterType()
-	{
+	@Override
+	public SecondDefiningParameterType createSecondDefiningParameterType() {
 		SecondDefiningParameterTypeImpl secondDefiningParameterType = new SecondDefiningParameterTypeImpl();
 		return secondDefiningParameterType;
 	}
@@ -3145,8 +3133,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SecondDefiningParameterType1 createSecondDefiningParameterType1()
-	{
+	@Override
+	public SecondDefiningParameterType1 createSecondDefiningParameterType1() {
 		SecondDefiningParameterType1Impl secondDefiningParameterType1 = new SecondDefiningParameterType1Impl();
 		return secondDefiningParameterType1;
 	}
@@ -3156,8 +3144,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SequenceRuleType createSequenceRuleType()
-	{
+	@Override
+	public SequenceRuleType createSequenceRuleType() {
 		SequenceRuleTypeImpl sequenceRuleType = new SequenceRuleTypeImpl();
 		return sequenceRuleType;
 	}
@@ -3167,8 +3155,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShellPropertyType createShellPropertyType()
-	{
+	@Override
+	public ShellPropertyType createShellPropertyType() {
 		ShellPropertyTypeImpl shellPropertyType = new ShellPropertyTypeImpl();
 		return shellPropertyType;
 	}
@@ -3178,8 +3166,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShellType createShellType()
-	{
+	@Override
+	public ShellType createShellType() {
 		ShellTypeImpl shellType = new ShellTypeImpl();
 		return shellType;
 	}
@@ -3189,8 +3177,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SingleCRSPropertyType createSingleCRSPropertyType()
-	{
+	@Override
+	public SingleCRSPropertyType createSingleCRSPropertyType() {
 		SingleCRSPropertyTypeImpl singleCRSPropertyType = new SingleCRSPropertyTypeImpl();
 		return singleCRSPropertyType;
 	}
@@ -3200,8 +3188,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SingleOperationPropertyType createSingleOperationPropertyType()
-	{
+	@Override
+	public SingleOperationPropertyType createSingleOperationPropertyType() {
 		SingleOperationPropertyTypeImpl singleOperationPropertyType = new SingleOperationPropertyTypeImpl();
 		return singleOperationPropertyType;
 	}
@@ -3211,8 +3199,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidArrayPropertyType createSolidArrayPropertyType()
-	{
+	@Override
+	public SolidArrayPropertyType createSolidArrayPropertyType() {
 		SolidArrayPropertyTypeImpl solidArrayPropertyType = new SolidArrayPropertyTypeImpl();
 		return solidArrayPropertyType;
 	}
@@ -3222,8 +3210,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidPropertyType createSolidPropertyType()
-	{
+	@Override
+	public SolidPropertyType createSolidPropertyType() {
 		SolidPropertyTypeImpl solidPropertyType = new SolidPropertyTypeImpl();
 		return solidPropertyType;
 	}
@@ -3233,8 +3221,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidType createSolidType()
-	{
+	@Override
+	public SolidType createSolidType() {
 		SolidTypeImpl solidType = new SolidTypeImpl();
 		return solidType;
 	}
@@ -3244,8 +3232,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SpeedType createSpeedType()
-	{
+	@Override
+	public SpeedType createSpeedType() {
 		SpeedTypeImpl speedType = new SpeedTypeImpl();
 		return speedType;
 	}
@@ -3255,8 +3243,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphereType createSphereType()
-	{
+	@Override
+	public SphereType createSphereType() {
 		SphereTypeImpl sphereType = new SphereTypeImpl();
 		return sphereType;
 	}
@@ -3266,8 +3254,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphericalCSPropertyType createSphericalCSPropertyType()
-	{
+	@Override
+	public SphericalCSPropertyType createSphericalCSPropertyType() {
 		SphericalCSPropertyTypeImpl sphericalCSPropertyType = new SphericalCSPropertyTypeImpl();
 		return sphericalCSPropertyType;
 	}
@@ -3277,8 +3265,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphericalCSType createSphericalCSType()
-	{
+	@Override
+	public SphericalCSType createSphericalCSType() {
 		SphericalCSTypeImpl sphericalCSType = new SphericalCSTypeImpl();
 		return sphericalCSType;
 	}
@@ -3288,8 +3276,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType createStringOrRefType()
-	{
+	@Override
+	public StringOrRefType createStringOrRefType() {
 		StringOrRefTypeImpl stringOrRefType = new StringOrRefTypeImpl();
 		return stringOrRefType;
 	}
@@ -3299,8 +3287,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceArrayPropertyType createSurfaceArrayPropertyType()
-	{
+	@Override
+	public SurfaceArrayPropertyType createSurfaceArrayPropertyType() {
 		SurfaceArrayPropertyTypeImpl surfaceArrayPropertyType = new SurfaceArrayPropertyTypeImpl();
 		return surfaceArrayPropertyType;
 	}
@@ -3310,8 +3298,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePatchArrayPropertyType createSurfacePatchArrayPropertyType()
-	{
+	@Override
+	public SurfacePatchArrayPropertyType createSurfacePatchArrayPropertyType() {
 		SurfacePatchArrayPropertyTypeImpl surfacePatchArrayPropertyType = new SurfacePatchArrayPropertyTypeImpl();
 		return surfacePatchArrayPropertyType;
 	}
@@ -3321,8 +3309,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePropertyType createSurfacePropertyType()
-	{
+	@Override
+	public SurfacePropertyType createSurfacePropertyType() {
 		SurfacePropertyTypeImpl surfacePropertyType = new SurfacePropertyTypeImpl();
 		return surfacePropertyType;
 	}
@@ -3332,8 +3320,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceType createSurfaceType()
-	{
+	@Override
+	public SurfaceType createSurfaceType() {
 		SurfaceTypeImpl surfaceType = new SurfaceTypeImpl();
 		return surfaceType;
 	}
@@ -3343,8 +3331,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TargetPropertyType createTargetPropertyType()
-	{
+	@Override
+	public TargetPropertyType createTargetPropertyType() {
 		TargetPropertyTypeImpl targetPropertyType = new TargetPropertyTypeImpl();
 		return targetPropertyType;
 	}
@@ -3354,8 +3342,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCRSPropertyType createTemporalCRSPropertyType()
-	{
+	@Override
+	public TemporalCRSPropertyType createTemporalCRSPropertyType() {
 		TemporalCRSPropertyTypeImpl temporalCRSPropertyType = new TemporalCRSPropertyTypeImpl();
 		return temporalCRSPropertyType;
 	}
@@ -3365,8 +3353,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCRSType createTemporalCRSType()
-	{
+	@Override
+	public TemporalCRSType createTemporalCRSType() {
 		TemporalCRSTypeImpl temporalCRSType = new TemporalCRSTypeImpl();
 		return temporalCRSType;
 	}
@@ -3376,8 +3364,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCSPropertyType createTemporalCSPropertyType()
-	{
+	@Override
+	public TemporalCSPropertyType createTemporalCSPropertyType() {
 		TemporalCSPropertyTypeImpl temporalCSPropertyType = new TemporalCSPropertyTypeImpl();
 		return temporalCSPropertyType;
 	}
@@ -3387,8 +3375,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCSType createTemporalCSType()
-	{
+	@Override
+	public TemporalCSType createTemporalCSType() {
 		TemporalCSTypeImpl temporalCSType = new TemporalCSTypeImpl();
 		return temporalCSType;
 	}
@@ -3398,8 +3386,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalDatumPropertyType createTemporalDatumPropertyType()
-	{
+	@Override
+	public TemporalDatumPropertyType createTemporalDatumPropertyType() {
 		TemporalDatumPropertyTypeImpl temporalDatumPropertyType = new TemporalDatumPropertyTypeImpl();
 		return temporalDatumPropertyType;
 	}
@@ -3409,8 +3397,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalDatumType createTemporalDatumType()
-	{
+	@Override
+	public TemporalDatumType createTemporalDatumType() {
 		TemporalDatumTypeImpl temporalDatumType = new TemporalDatumTypeImpl();
 		return temporalDatumType;
 	}
@@ -3420,8 +3408,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCalendarEraPropertyType createTimeCalendarEraPropertyType()
-	{
+	@Override
+	public TimeCalendarEraPropertyType createTimeCalendarEraPropertyType() {
 		TimeCalendarEraPropertyTypeImpl timeCalendarEraPropertyType = new TimeCalendarEraPropertyTypeImpl();
 		return timeCalendarEraPropertyType;
 	}
@@ -3431,8 +3419,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCalendarEraType createTimeCalendarEraType()
-	{
+	@Override
+	public TimeCalendarEraType createTimeCalendarEraType() {
 		TimeCalendarEraTypeImpl timeCalendarEraType = new TimeCalendarEraTypeImpl();
 		return timeCalendarEraType;
 	}
@@ -3442,8 +3430,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCalendarPropertyType createTimeCalendarPropertyType()
-	{
+	@Override
+	public TimeCalendarPropertyType createTimeCalendarPropertyType() {
 		TimeCalendarPropertyTypeImpl timeCalendarPropertyType = new TimeCalendarPropertyTypeImpl();
 		return timeCalendarPropertyType;
 	}
@@ -3453,8 +3441,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCalendarType createTimeCalendarType()
-	{
+	@Override
+	public TimeCalendarType createTimeCalendarType() {
 		TimeCalendarTypeImpl timeCalendarType = new TimeCalendarTypeImpl();
 		return timeCalendarType;
 	}
@@ -3464,8 +3452,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeClockPropertyType createTimeClockPropertyType()
-	{
+	@Override
+	public TimeClockPropertyType createTimeClockPropertyType() {
 		TimeClockPropertyTypeImpl timeClockPropertyType = new TimeClockPropertyTypeImpl();
 		return timeClockPropertyType;
 	}
@@ -3475,8 +3463,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeClockType createTimeClockType()
-	{
+	@Override
+	public TimeClockType createTimeClockType() {
 		TimeClockTypeImpl timeClockType = new TimeClockTypeImpl();
 		return timeClockType;
 	}
@@ -3486,8 +3474,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCoordinateSystemType createTimeCoordinateSystemType()
-	{
+	@Override
+	public TimeCoordinateSystemType createTimeCoordinateSystemType() {
 		TimeCoordinateSystemTypeImpl timeCoordinateSystemType = new TimeCoordinateSystemTypeImpl();
 		return timeCoordinateSystemType;
 	}
@@ -3497,8 +3485,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCSPropertyType createTimeCSPropertyType()
-	{
+	@Override
+	public TimeCSPropertyType createTimeCSPropertyType() {
 		TimeCSPropertyTypeImpl timeCSPropertyType = new TimeCSPropertyTypeImpl();
 		return timeCSPropertyType;
 	}
@@ -3508,8 +3496,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCSType createTimeCSType()
-	{
+	@Override
+	public TimeCSType createTimeCSType() {
 		TimeCSTypeImpl timeCSType = new TimeCSTypeImpl();
 		return timeCSType;
 	}
@@ -3519,8 +3507,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeEdgePropertyType createTimeEdgePropertyType()
-	{
+	@Override
+	public TimeEdgePropertyType createTimeEdgePropertyType() {
 		TimeEdgePropertyTypeImpl timeEdgePropertyType = new TimeEdgePropertyTypeImpl();
 		return timeEdgePropertyType;
 	}
@@ -3530,8 +3518,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeEdgeType createTimeEdgeType()
-	{
+	@Override
+	public TimeEdgeType createTimeEdgeType() {
 		TimeEdgeTypeImpl timeEdgeType = new TimeEdgeTypeImpl();
 		return timeEdgeType;
 	}
@@ -3541,8 +3529,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeInstantPropertyType createTimeInstantPropertyType()
-	{
+	@Override
+	public TimeInstantPropertyType createTimeInstantPropertyType() {
 		TimeInstantPropertyTypeImpl timeInstantPropertyType = new TimeInstantPropertyTypeImpl();
 		return timeInstantPropertyType;
 	}
@@ -3552,8 +3540,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeInstantType createTimeInstantType()
-	{
+	@Override
+	public TimeInstantType createTimeInstantType() {
 		TimeInstantTypeImpl timeInstantType = new TimeInstantTypeImpl();
 		return timeInstantType;
 	}
@@ -3563,8 +3551,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeIntervalLengthType createTimeIntervalLengthType()
-	{
+	@Override
+	public TimeIntervalLengthType createTimeIntervalLengthType() {
 		TimeIntervalLengthTypeImpl timeIntervalLengthType = new TimeIntervalLengthTypeImpl();
 		return timeIntervalLengthType;
 	}
@@ -3574,8 +3562,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeNodePropertyType createTimeNodePropertyType()
-	{
+	@Override
+	public TimeNodePropertyType createTimeNodePropertyType() {
 		TimeNodePropertyTypeImpl timeNodePropertyType = new TimeNodePropertyTypeImpl();
 		return timeNodePropertyType;
 	}
@@ -3585,8 +3573,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeNodeType createTimeNodeType()
-	{
+	@Override
+	public TimeNodeType createTimeNodeType() {
 		TimeNodeTypeImpl timeNodeType = new TimeNodeTypeImpl();
 		return timeNodeType;
 	}
@@ -3596,8 +3584,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeOrdinalEraPropertyType createTimeOrdinalEraPropertyType()
-	{
+	@Override
+	public TimeOrdinalEraPropertyType createTimeOrdinalEraPropertyType() {
 		TimeOrdinalEraPropertyTypeImpl timeOrdinalEraPropertyType = new TimeOrdinalEraPropertyTypeImpl();
 		return timeOrdinalEraPropertyType;
 	}
@@ -3607,8 +3595,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeOrdinalEraType createTimeOrdinalEraType()
-	{
+	@Override
+	public TimeOrdinalEraType createTimeOrdinalEraType() {
 		TimeOrdinalEraTypeImpl timeOrdinalEraType = new TimeOrdinalEraTypeImpl();
 		return timeOrdinalEraType;
 	}
@@ -3618,8 +3606,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeOrdinalReferenceSystemType createTimeOrdinalReferenceSystemType()
-	{
+	@Override
+	public TimeOrdinalReferenceSystemType createTimeOrdinalReferenceSystemType() {
 		TimeOrdinalReferenceSystemTypeImpl timeOrdinalReferenceSystemType = new TimeOrdinalReferenceSystemTypeImpl();
 		return timeOrdinalReferenceSystemType;
 	}
@@ -3629,8 +3617,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePeriodPropertyType createTimePeriodPropertyType()
-	{
+	@Override
+	public TimePeriodPropertyType createTimePeriodPropertyType() {
 		TimePeriodPropertyTypeImpl timePeriodPropertyType = new TimePeriodPropertyTypeImpl();
 		return timePeriodPropertyType;
 	}
@@ -3640,8 +3628,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePeriodType createTimePeriodType()
-	{
+	@Override
+	public TimePeriodType createTimePeriodType() {
 		TimePeriodTypeImpl timePeriodType = new TimePeriodTypeImpl();
 		return timePeriodType;
 	}
@@ -3651,8 +3639,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePositionType createTimePositionType()
-	{
+	@Override
+	public TimePositionType createTimePositionType() {
 		TimePositionTypeImpl timePositionType = new TimePositionTypeImpl();
 		return timePositionType;
 	}
@@ -3662,8 +3650,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePrimitivePropertyType createTimePrimitivePropertyType()
-	{
+	@Override
+	public TimePrimitivePropertyType createTimePrimitivePropertyType() {
 		TimePrimitivePropertyTypeImpl timePrimitivePropertyType = new TimePrimitivePropertyTypeImpl();
 		return timePrimitivePropertyType;
 	}
@@ -3673,8 +3661,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeReferenceSystemType createTimeReferenceSystemType()
-	{
+	@Override
+	public TimeReferenceSystemType createTimeReferenceSystemType() {
 		TimeReferenceSystemTypeImpl timeReferenceSystemType = new TimeReferenceSystemTypeImpl();
 		return timeReferenceSystemType;
 	}
@@ -3684,8 +3672,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeTopologyComplexPropertyType createTimeTopologyComplexPropertyType()
-	{
+	@Override
+	public TimeTopologyComplexPropertyType createTimeTopologyComplexPropertyType() {
 		TimeTopologyComplexPropertyTypeImpl timeTopologyComplexPropertyType = new TimeTopologyComplexPropertyTypeImpl();
 		return timeTopologyComplexPropertyType;
 	}
@@ -3695,8 +3683,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeTopologyPrimitivePropertyType createTimeTopologyPrimitivePropertyType()
-	{
+	@Override
+	public TimeTopologyPrimitivePropertyType createTimeTopologyPrimitivePropertyType() {
 		TimeTopologyPrimitivePropertyTypeImpl timeTopologyPrimitivePropertyType = new TimeTopologyPrimitivePropertyTypeImpl();
 		return timeTopologyPrimitivePropertyType;
 	}
@@ -3706,8 +3694,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeType createTimeType()
-	{
+	@Override
+	public TimeType createTimeType() {
 		TimeTypeImpl timeType = new TimeTypeImpl();
 		return timeType;
 	}
@@ -3717,8 +3705,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TinType createTinType()
-	{
+	@Override
+	public TinType createTinType() {
 		TinTypeImpl tinType = new TinTypeImpl();
 		return tinType;
 	}
@@ -3728,8 +3716,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoComplexPropertyType createTopoComplexPropertyType()
-	{
+	@Override
+	public TopoComplexPropertyType createTopoComplexPropertyType() {
 		TopoComplexPropertyTypeImpl topoComplexPropertyType = new TopoComplexPropertyTypeImpl();
 		return topoComplexPropertyType;
 	}
@@ -3739,8 +3727,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoComplexType createTopoComplexType()
-	{
+	@Override
+	public TopoComplexType createTopoComplexType() {
 		TopoComplexTypeImpl topoComplexType = new TopoComplexTypeImpl();
 		return topoComplexType;
 	}
@@ -3750,8 +3738,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoCurvePropertyType createTopoCurvePropertyType()
-	{
+	@Override
+	public TopoCurvePropertyType createTopoCurvePropertyType() {
 		TopoCurvePropertyTypeImpl topoCurvePropertyType = new TopoCurvePropertyTypeImpl();
 		return topoCurvePropertyType;
 	}
@@ -3761,8 +3749,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoCurveType createTopoCurveType()
-	{
+	@Override
+	public TopoCurveType createTopoCurveType() {
 		TopoCurveTypeImpl topoCurveType = new TopoCurveTypeImpl();
 		return topoCurveType;
 	}
@@ -3772,8 +3760,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoPointPropertyType createTopoPointPropertyType()
-	{
+	@Override
+	public TopoPointPropertyType createTopoPointPropertyType() {
 		TopoPointPropertyTypeImpl topoPointPropertyType = new TopoPointPropertyTypeImpl();
 		return topoPointPropertyType;
 	}
@@ -3783,8 +3771,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoPointType createTopoPointType()
-	{
+	@Override
+	public TopoPointType createTopoPointType() {
 		TopoPointTypeImpl topoPointType = new TopoPointTypeImpl();
 		return topoPointType;
 	}
@@ -3794,8 +3782,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoPrimitiveArrayAssociationType createTopoPrimitiveArrayAssociationType()
-	{
+	@Override
+	public TopoPrimitiveArrayAssociationType createTopoPrimitiveArrayAssociationType() {
 		TopoPrimitiveArrayAssociationTypeImpl topoPrimitiveArrayAssociationType = new TopoPrimitiveArrayAssociationTypeImpl();
 		return topoPrimitiveArrayAssociationType;
 	}
@@ -3805,8 +3793,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoPrimitiveMemberType createTopoPrimitiveMemberType()
-	{
+	@Override
+	public TopoPrimitiveMemberType createTopoPrimitiveMemberType() {
 		TopoPrimitiveMemberTypeImpl topoPrimitiveMemberType = new TopoPrimitiveMemberTypeImpl();
 		return topoPrimitiveMemberType;
 	}
@@ -3816,8 +3804,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoSolidPropertyType createTopoSolidPropertyType()
-	{
+	@Override
+	public TopoSolidPropertyType createTopoSolidPropertyType() {
 		TopoSolidPropertyTypeImpl topoSolidPropertyType = new TopoSolidPropertyTypeImpl();
 		return topoSolidPropertyType;
 	}
@@ -3827,8 +3815,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoSolidType createTopoSolidType()
-	{
+	@Override
+	public TopoSolidType createTopoSolidType() {
 		TopoSolidTypeImpl topoSolidType = new TopoSolidTypeImpl();
 		return topoSolidType;
 	}
@@ -3838,8 +3826,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoSurfacePropertyType createTopoSurfacePropertyType()
-	{
+	@Override
+	public TopoSurfacePropertyType createTopoSurfacePropertyType() {
 		TopoSurfacePropertyTypeImpl topoSurfacePropertyType = new TopoSurfacePropertyTypeImpl();
 		return topoSurfacePropertyType;
 	}
@@ -3849,8 +3837,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoSurfaceType createTopoSurfaceType()
-	{
+	@Override
+	public TopoSurfaceType createTopoSurfaceType() {
 		TopoSurfaceTypeImpl topoSurfaceType = new TopoSurfaceTypeImpl();
 		return topoSurfaceType;
 	}
@@ -3860,8 +3848,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoVolumePropertyType createTopoVolumePropertyType()
-	{
+	@Override
+	public TopoVolumePropertyType createTopoVolumePropertyType() {
 		TopoVolumePropertyTypeImpl topoVolumePropertyType = new TopoVolumePropertyTypeImpl();
 		return topoVolumePropertyType;
 	}
@@ -3871,8 +3859,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoVolumeType createTopoVolumeType()
-	{
+	@Override
+	public TopoVolumeType createTopoVolumeType() {
 		TopoVolumeTypeImpl topoVolumeType = new TopoVolumeTypeImpl();
 		return topoVolumeType;
 	}
@@ -3882,8 +3870,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TransformationPropertyType createTransformationPropertyType()
-	{
+	@Override
+	public TransformationPropertyType createTransformationPropertyType() {
 		TransformationPropertyTypeImpl transformationPropertyType = new TransformationPropertyTypeImpl();
 		return transformationPropertyType;
 	}
@@ -3893,8 +3881,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TransformationType createTransformationType()
-	{
+	@Override
+	public TransformationType createTransformationType() {
 		TransformationTypeImpl transformationType = new TransformationTypeImpl();
 		return transformationType;
 	}
@@ -3904,8 +3892,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TriangleType createTriangleType()
-	{
+	@Override
+	public TriangleType createTriangleType() {
 		TriangleTypeImpl triangleType = new TriangleTypeImpl();
 		return triangleType;
 	}
@@ -3915,8 +3903,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitDefinitionType createUnitDefinitionType()
-	{
+	@Override
+	public UnitDefinitionType createUnitDefinitionType() {
 		UnitDefinitionTypeImpl unitDefinitionType = new UnitDefinitionTypeImpl();
 		return unitDefinitionType;
 	}
@@ -3926,8 +3914,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitOfMeasureType createUnitOfMeasureType()
-	{
+	@Override
+	public UnitOfMeasureType createUnitOfMeasureType() {
 		UnitOfMeasureTypeImpl unitOfMeasureType = new UnitOfMeasureTypeImpl();
 		return unitOfMeasureType;
 	}
@@ -3937,8 +3925,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UserDefinedCSPropertyType createUserDefinedCSPropertyType()
-	{
+	@Override
+	public UserDefinedCSPropertyType createUserDefinedCSPropertyType() {
 		UserDefinedCSPropertyTypeImpl userDefinedCSPropertyType = new UserDefinedCSPropertyTypeImpl();
 		return userDefinedCSPropertyType;
 	}
@@ -3948,8 +3936,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UserDefinedCSType createUserDefinedCSType()
-	{
+	@Override
+	public UserDefinedCSType createUserDefinedCSType() {
 		UserDefinedCSTypeImpl userDefinedCSType = new UserDefinedCSTypeImpl();
 		return userDefinedCSType;
 	}
@@ -3959,8 +3947,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ValueArrayPropertyType createValueArrayPropertyType()
-	{
+	@Override
+	public ValueArrayPropertyType createValueArrayPropertyType() {
 		ValueArrayPropertyTypeImpl valueArrayPropertyType = new ValueArrayPropertyTypeImpl();
 		return valueArrayPropertyType;
 	}
@@ -3970,8 +3958,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ValueArrayType createValueArrayType()
-	{
+	@Override
+	public ValueArrayType createValueArrayType() {
 		ValueArrayTypeImpl valueArrayType = new ValueArrayTypeImpl();
 		return valueArrayType;
 	}
@@ -3981,8 +3969,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ValuePropertyType createValuePropertyType()
-	{
+	@Override
+	public ValuePropertyType createValuePropertyType() {
 		ValuePropertyTypeImpl valuePropertyType = new ValuePropertyTypeImpl();
 		return valuePropertyType;
 	}
@@ -3992,8 +3980,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VectorType createVectorType()
-	{
+	@Override
+	public VectorType createVectorType() {
 		VectorTypeImpl vectorType = new VectorTypeImpl();
 		return vectorType;
 	}
@@ -4003,8 +3991,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCRSPropertyType createVerticalCRSPropertyType()
-	{
+	@Override
+	public VerticalCRSPropertyType createVerticalCRSPropertyType() {
 		VerticalCRSPropertyTypeImpl verticalCRSPropertyType = new VerticalCRSPropertyTypeImpl();
 		return verticalCRSPropertyType;
 	}
@@ -4014,8 +4002,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCRSType createVerticalCRSType()
-	{
+	@Override
+	public VerticalCRSType createVerticalCRSType() {
 		VerticalCRSTypeImpl verticalCRSType = new VerticalCRSTypeImpl();
 		return verticalCRSType;
 	}
@@ -4025,8 +4013,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCSPropertyType createVerticalCSPropertyType()
-	{
+	@Override
+	public VerticalCSPropertyType createVerticalCSPropertyType() {
 		VerticalCSPropertyTypeImpl verticalCSPropertyType = new VerticalCSPropertyTypeImpl();
 		return verticalCSPropertyType;
 	}
@@ -4036,8 +4024,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCSType createVerticalCSType()
-	{
+	@Override
+	public VerticalCSType createVerticalCSType() {
 		VerticalCSTypeImpl verticalCSType = new VerticalCSTypeImpl();
 		return verticalCSType;
 	}
@@ -4047,8 +4035,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalDatumPropertyType createVerticalDatumPropertyType()
-	{
+	@Override
+	public VerticalDatumPropertyType createVerticalDatumPropertyType() {
 		VerticalDatumPropertyTypeImpl verticalDatumPropertyType = new VerticalDatumPropertyTypeImpl();
 		return verticalDatumPropertyType;
 	}
@@ -4058,8 +4046,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalDatumType createVerticalDatumType()
-	{
+	@Override
+	public VerticalDatumType createVerticalDatumType() {
 		VerticalDatumTypeImpl verticalDatumType = new VerticalDatumTypeImpl();
 		return verticalDatumType;
 	}
@@ -4069,8 +4057,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VolumeType createVolumeType()
-	{
+	@Override
+	public VolumeType createVolumeType() {
 		VolumeTypeImpl volumeType = new VolumeTypeImpl();
 		return volumeType;
 	}
@@ -4080,8 +4068,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType createAggregationTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public AggregationType createAggregationTypeFromString(EDataType eDataType, String initialValue) {
 		AggregationType result = AggregationType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4092,8 +4079,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertAggregationTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertAggregationTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4102,8 +4088,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompassPointEnumeration createCompassPointEnumerationFromString(EDataType eDataType, String initialValue)
-	{
+	public CompassPointEnumeration createCompassPointEnumerationFromString(EDataType eDataType, String initialValue) {
 		CompassPointEnumeration result = CompassPointEnumeration.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4114,8 +4099,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertCompassPointEnumerationToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertCompassPointEnumerationToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4124,8 +4108,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveInterpolationType createCurveInterpolationTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public CurveInterpolationType createCurveInterpolationTypeFromString(EDataType eDataType, String initialValue) {
 		CurveInterpolationType result = CurveInterpolationType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4136,8 +4119,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertCurveInterpolationTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertCurveInterpolationTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4146,8 +4128,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionType createDirectionTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public DirectionType createDirectionTypeFromString(EDataType eDataType, String initialValue) {
 		DirectionType result = DirectionType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4158,8 +4139,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDirectionTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertDirectionTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4168,8 +4148,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IncrementOrder createIncrementOrderFromString(EDataType eDataType, String initialValue)
-	{
+	public IncrementOrder createIncrementOrderFromString(EDataType eDataType, String initialValue) {
 		IncrementOrder result = IncrementOrder.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4180,8 +4159,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertIncrementOrderToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertIncrementOrderToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4190,8 +4168,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public KnotTypesType createKnotTypesTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public KnotTypesType createKnotTypesTypeFromString(EDataType eDataType, String initialValue) {
 		KnotTypesType result = KnotTypesType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4202,8 +4179,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertKnotTypesTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertKnotTypesTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4212,8 +4188,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NilReasonEnumerationMember0 createNilReasonEnumerationMember0FromString(EDataType eDataType, String initialValue)
-	{
+	public NilReasonEnumerationMember0 createNilReasonEnumerationMember0FromString(EDataType eDataType, String initialValue) {
 		NilReasonEnumerationMember0 result = NilReasonEnumerationMember0.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4224,8 +4199,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNilReasonEnumerationMember0ToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertNilReasonEnumerationMember0ToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4234,8 +4208,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RelativePositionType createRelativePositionTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public RelativePositionType createRelativePositionTypeFromString(EDataType eDataType, String initialValue) {
 		RelativePositionType result = RelativePositionType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4246,8 +4219,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertRelativePositionTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertRelativePositionTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4256,8 +4228,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SequenceRuleEnumeration createSequenceRuleEnumerationFromString(EDataType eDataType, String initialValue)
-	{
+	public SequenceRuleEnumeration createSequenceRuleEnumerationFromString(EDataType eDataType, String initialValue) {
 		SequenceRuleEnumeration result = SequenceRuleEnumeration.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4268,8 +4239,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSequenceRuleEnumerationToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertSequenceRuleEnumerationToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4278,8 +4248,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SignType createSignTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public SignType createSignTypeFromString(EDataType eDataType, String initialValue) {
 		SignType result = SignType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4290,8 +4259,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSignTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertSignTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4300,8 +4268,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SuccessionType createSuccessionTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public SuccessionType createSuccessionTypeFromString(EDataType eDataType, String initialValue) {
 		SuccessionType result = SuccessionType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4312,8 +4279,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSuccessionTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertSuccessionTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4322,8 +4288,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceInterpolationType createSurfaceInterpolationTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public SurfaceInterpolationType createSurfaceInterpolationTypeFromString(EDataType eDataType, String initialValue) {
 		SurfaceInterpolationType result = SurfaceInterpolationType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4334,8 +4299,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSurfaceInterpolationTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertSurfaceInterpolationTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4344,8 +4308,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeIndeterminateValueType createTimeIndeterminateValueTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public TimeIndeterminateValueType createTimeIndeterminateValueTypeFromString(EDataType eDataType, String initialValue) {
 		TimeIndeterminateValueType result = TimeIndeterminateValueType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4356,8 +4319,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTimeIndeterminateValueTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTimeIndeterminateValueTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4366,8 +4328,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeUnitTypeMember0 createTimeUnitTypeMember0FromString(EDataType eDataType, String initialValue)
-	{
+	public TimeUnitTypeMember0 createTimeUnitTypeMember0FromString(EDataType eDataType, String initialValue) {
 		TimeUnitTypeMember0 result = TimeUnitTypeMember0.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -4378,8 +4339,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTimeUnitTypeMember0ToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTimeUnitTypeMember0ToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -4388,8 +4348,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType createAggregationTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public AggregationType createAggregationTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createAggregationTypeFromString(GMLPackage.eINSTANCE.getAggregationType(), initialValue);
 	}
 
@@ -4398,8 +4357,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertAggregationTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertAggregationTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertAggregationTypeToString(GMLPackage.eINSTANCE.getAggregationType(), instanceValue);
 	}
 
@@ -4408,8 +4366,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger createArcMinutesTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public BigInteger createArcMinutesTypeFromString(EDataType eDataType, String initialValue) {
 		return (BigInteger)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.NON_NEGATIVE_INTEGER, initialValue);
 	}
 
@@ -4418,8 +4375,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertArcMinutesTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertArcMinutesTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.NON_NEGATIVE_INTEGER, instanceValue);
 	}
 
@@ -4428,8 +4384,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal createArcSecondsTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public BigDecimal createArcSecondsTypeFromString(EDataType eDataType, String initialValue) {
 		return (BigDecimal)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DECIMAL, initialValue);
 	}
 
@@ -4438,8 +4393,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertArcSecondsTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertArcSecondsTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DECIMAL, instanceValue);
 	}
 
@@ -4448,8 +4402,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createAxisDirectionFromString(EDataType eDataType, String initialValue)
-	{
+	public String createAxisDirectionFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, initialValue);
 	}
 
@@ -4458,8 +4411,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertAxisDirectionToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertAxisDirectionToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
 	}
 
@@ -4468,12 +4420,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> createAxisDirectionListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<String> createAxisDirectionListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<String> result = new ArrayList<String>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add(createAxisDirectionFromString(GMLPackage.eINSTANCE.getAxisDirection(), item));
 		}
 		return result;
@@ -4484,14 +4434,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertAxisDirectionListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertAxisDirectionListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(convertAxisDirectionToString(GMLPackage.eINSTANCE.getAxisDirection(), item));
 			result.append(' ');
 		}
@@ -4503,12 +4451,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Boolean> createBooleanListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<Boolean> createBooleanListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<Boolean> result = new ArrayList<Boolean>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add((Boolean)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.BOOLEAN, item));
 		}
 		return result;
@@ -4519,14 +4465,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertBooleanListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertBooleanListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.BOOLEAN, item));
 			result.append(' ');
 		}
@@ -4538,45 +4482,35 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createBooleanOrNilReasonFromString(EDataType eDataType, String initialValue)
-	{
+	public Object createBooleanOrNilReasonFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		Object result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createNilReasonEnumerationFromString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.BOOLEAN, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -4589,42 +4523,32 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertBooleanOrNilReasonToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertBooleanOrNilReasonToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue)) {
+			try {
 				String value = convertNilReasonEnumerationToString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.BOOLEAN.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.BOOLEAN.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.BOOLEAN, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -4636,12 +4560,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Object> createBooleanOrNilReasonListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<Object> createBooleanOrNilReasonListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<Object> result = new ArrayList<Object>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add(createBooleanOrNilReasonFromString(GMLPackage.eINSTANCE.getBooleanOrNilReason(), item));
 		}
 		return result;
@@ -4652,14 +4574,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertBooleanOrNilReasonListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertBooleanOrNilReasonListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(convertBooleanOrNilReasonToString(GMLPackage.eINSTANCE.getBooleanOrNilReason(), item));
 			result.append(' ');
 		}
@@ -4671,45 +4591,35 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar createCalDateFromString(EDataType eDataType, String initialValue)
-	{
+	public XMLGregorianCalendar createCalDateFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		XMLGregorianCalendar result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = (XMLGregorianCalendar)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DATE, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = (XMLGregorianCalendar)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.GYEAR_MONTH, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = (XMLGregorianCalendar)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.GYEAR, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -4722,42 +4632,32 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertCalDateToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertCalDateToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (XMLTypePackage.Literals.DATE.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.DATE.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DATE, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.GYEAR_MONTH, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.GYEAR.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.GYEAR.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.GYEAR, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -4769,8 +4669,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompassPointEnumeration createCompassPointEnumerationObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public CompassPointEnumeration createCompassPointEnumerationObjectFromString(EDataType eDataType, String initialValue) {
 		return createCompassPointEnumerationFromString(GMLPackage.eINSTANCE.getCompassPointEnumeration(), initialValue);
 	}
 
@@ -4779,8 +4678,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertCompassPointEnumerationObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertCompassPointEnumerationObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertCompassPointEnumerationToString(GMLPackage.eINSTANCE.getCompassPointEnumeration(), instanceValue);
 	}
 
@@ -4789,8 +4687,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Object> createCountExtentTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public List<Object> createCountExtentTypeFromString(EDataType eDataType, String initialValue) {
 		return createIntegerOrNilReasonListFromString(GMLPackage.eINSTANCE.getIntegerOrNilReasonList(), initialValue);
 	}
 
@@ -4799,8 +4696,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertCountExtentTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertCountExtentTypeToString(EDataType eDataType, Object instanceValue) {
 		return convertIntegerOrNilReasonListToString(GMLPackage.eINSTANCE.getIntegerOrNilReasonList(), instanceValue);
 	}
 
@@ -4809,8 +4705,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveInterpolationType createCurveInterpolationTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public CurveInterpolationType createCurveInterpolationTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createCurveInterpolationTypeFromString(GMLPackage.eINSTANCE.getCurveInterpolationType(), initialValue);
 	}
 
@@ -4819,8 +4714,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertCurveInterpolationTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertCurveInterpolationTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertCurveInterpolationTypeToString(GMLPackage.eINSTANCE.getCurveInterpolationType(), instanceValue);
 	}
 
@@ -4829,8 +4723,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal createDecimalMinutesTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public BigDecimal createDecimalMinutesTypeFromString(EDataType eDataType, String initialValue) {
 		return (BigDecimal)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DECIMAL, initialValue);
 	}
 
@@ -4839,8 +4732,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDecimalMinutesTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertDecimalMinutesTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DECIMAL, instanceValue);
 	}
 
@@ -4849,8 +4741,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger createDegreeValueTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public BigInteger createDegreeValueTypeFromString(EDataType eDataType, String initialValue) {
 		return (BigInteger)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.NON_NEGATIVE_INTEGER, initialValue);
 	}
 
@@ -4859,8 +4750,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDegreeValueTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertDegreeValueTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.NON_NEGATIVE_INTEGER, instanceValue);
 	}
 
@@ -4869,8 +4759,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionType createDirectionTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public DirectionType createDirectionTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createDirectionTypeFromString(GMLPackage.eINSTANCE.getDirectionType(), initialValue);
 	}
 
@@ -4879,8 +4768,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDirectionTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertDirectionTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertDirectionTypeToString(GMLPackage.eINSTANCE.getDirectionType(), instanceValue);
 	}
 
@@ -4889,12 +4777,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Double> createDoubleListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<Double> createDoubleListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<Double> result = new ArrayList<Double>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add((Double)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DOUBLE, item));
 		}
 		return result;
@@ -4905,14 +4791,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDoubleListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertDoubleListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DOUBLE, item));
 			result.append(' ');
 		}
@@ -4924,45 +4808,35 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createDoubleOrNilReasonFromString(EDataType eDataType, String initialValue)
-	{
+	public Object createDoubleOrNilReasonFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		Object result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createNilReasonEnumerationFromString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DOUBLE, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -4975,42 +4849,32 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDoubleOrNilReasonToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertDoubleOrNilReasonToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue)) {
+			try {
 				String value = convertNilReasonEnumerationToString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.DOUBLE.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.DOUBLE.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DOUBLE, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -5022,12 +4886,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Object> createDoubleOrNilReasonListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<Object> createDoubleOrNilReasonListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<Object> result = new ArrayList<Object>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add(createDoubleOrNilReasonFromString(GMLPackage.eINSTANCE.getDoubleOrNilReason(), item));
 		}
 		return result;
@@ -5038,14 +4900,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDoubleOrNilReasonListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertDoubleOrNilReasonListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(convertDoubleOrNilReasonToString(GMLPackage.eINSTANCE.getDoubleOrNilReason(), item));
 			result.append(' ');
 		}
@@ -5057,8 +4917,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IncrementOrder createIncrementOrderObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public IncrementOrder createIncrementOrderObjectFromString(EDataType eDataType, String initialValue) {
 		return createIncrementOrderFromString(GMLPackage.eINSTANCE.getIncrementOrder(), initialValue);
 	}
 
@@ -5067,8 +4926,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertIncrementOrderObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertIncrementOrderObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertIncrementOrderToString(GMLPackage.eINSTANCE.getIncrementOrder(), instanceValue);
 	}
 
@@ -5077,12 +4935,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<BigInteger> createIntegerListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<BigInteger> createIntegerListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<BigInteger> result = new ArrayList<BigInteger>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add((BigInteger)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.INTEGER, item));
 		}
 		return result;
@@ -5093,14 +4949,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertIntegerListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertIntegerListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.INTEGER, item));
 			result.append(' ');
 		}
@@ -5112,45 +4966,35 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createIntegerOrNilReasonFromString(EDataType eDataType, String initialValue)
-	{
+	public Object createIntegerOrNilReasonFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		Object result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createNilReasonEnumerationFromString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.INTEGER, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -5163,42 +5007,32 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertIntegerOrNilReasonToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertIntegerOrNilReasonToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue)) {
+			try {
 				String value = convertNilReasonEnumerationToString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.INTEGER.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.INTEGER.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.INTEGER, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -5210,12 +5044,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Object> createIntegerOrNilReasonListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<Object> createIntegerOrNilReasonListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<Object> result = new ArrayList<Object>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add(createIntegerOrNilReasonFromString(GMLPackage.eINSTANCE.getIntegerOrNilReason(), item));
 		}
 		return result;
@@ -5226,14 +5058,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertIntegerOrNilReasonListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertIntegerOrNilReasonListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(convertIntegerOrNilReasonToString(GMLPackage.eINSTANCE.getIntegerOrNilReason(), item));
 			result.append(' ');
 		}
@@ -5245,8 +5075,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public KnotTypesType createKnotTypesTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public KnotTypesType createKnotTypesTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createKnotTypesTypeFromString(GMLPackage.eINSTANCE.getKnotTypesType(), initialValue);
 	}
 
@@ -5255,8 +5084,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertKnotTypesTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertKnotTypesTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertKnotTypesTypeToString(GMLPackage.eINSTANCE.getKnotTypesType(), instanceValue);
 	}
 
@@ -5265,12 +5093,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> createNameListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<String> createNameListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<String> result = new ArrayList<String>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add((String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.NAME, item));
 		}
 		return result;
@@ -5281,14 +5107,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNameListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertNameListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.NAME, item));
 			result.append(' ');
 		}
@@ -5300,45 +5124,35 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createNameOrNilReasonFromString(EDataType eDataType, String initialValue)
-	{
+	public Object createNameOrNilReasonFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		Object result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createNilReasonEnumerationFromString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.NAME, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -5351,42 +5165,32 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNameOrNilReasonToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertNameOrNilReasonToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue)) {
+			try {
 				String value = convertNilReasonEnumerationToString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.NAME.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.NAME.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.NAME, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -5398,12 +5202,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Object> createNameOrNilReasonListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<Object> createNameOrNilReasonListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<Object> result = new ArrayList<Object>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add(createNameOrNilReasonFromString(GMLPackage.eINSTANCE.getNameOrNilReason(), item));
 		}
 		return result;
@@ -5414,14 +5216,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNameOrNilReasonListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertNameOrNilReasonListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(convertNameOrNilReasonToString(GMLPackage.eINSTANCE.getNameOrNilReason(), item));
 			result.append(' ');
 		}
@@ -5433,12 +5233,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> createNCNameListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<String> createNCNameListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<String> result = new ArrayList<String>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add((String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.NC_NAME, item));
 		}
 		return result;
@@ -5449,14 +5247,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNCNameListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertNCNameListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.NC_NAME, item));
 			result.append(' ');
 		}
@@ -5468,33 +5264,26 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createNilReasonEnumerationFromString(EDataType eDataType, String initialValue)
-	{
+	public Object createNilReasonEnumerationFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		Object result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createNilReasonEnumerationMember0FromString(GMLPackage.eINSTANCE.getNilReasonEnumerationMember0(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = createNilReasonEnumerationMember1FromString(GMLPackage.eINSTANCE.getNilReasonEnumerationMember1(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -5507,30 +5296,23 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNilReasonEnumerationToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertNilReasonEnumerationToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember0().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember0().isInstance(instanceValue)) {
+			try {
 				String value = convertNilReasonEnumerationMember0ToString(GMLPackage.eINSTANCE.getNilReasonEnumerationMember0(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember1().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getNilReasonEnumerationMember1().isInstance(instanceValue)) {
+			try {
 				String value = convertNilReasonEnumerationMember1ToString(GMLPackage.eINSTANCE.getNilReasonEnumerationMember1(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -5542,8 +5324,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NilReasonEnumerationMember0 createNilReasonEnumerationMember0ObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public NilReasonEnumerationMember0 createNilReasonEnumerationMember0ObjectFromString(EDataType eDataType, String initialValue) {
 		return createNilReasonEnumerationMember0FromString(GMLPackage.eINSTANCE.getNilReasonEnumerationMember0(), initialValue);
 	}
 
@@ -5552,8 +5333,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNilReasonEnumerationMember0ObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertNilReasonEnumerationMember0ObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertNilReasonEnumerationMember0ToString(GMLPackage.eINSTANCE.getNilReasonEnumerationMember0(), instanceValue);
 	}
 
@@ -5562,8 +5342,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createNilReasonEnumerationMember1FromString(EDataType eDataType, String initialValue)
-	{
+	public String createNilReasonEnumerationMember1FromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, initialValue);
 	}
 
@@ -5572,8 +5351,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNilReasonEnumerationMember1ToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertNilReasonEnumerationMember1ToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
 	}
 
@@ -5582,33 +5360,26 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createNilReasonTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public Object createNilReasonTypeFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		Object result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createNilReasonEnumerationFromString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -5621,30 +5392,23 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNilReasonTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertNilReasonTypeToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue)) {
+			try {
 				String value = convertNilReasonEnumerationToString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -5656,12 +5420,10 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<QName> createQNameListFromString(EDataType eDataType, String initialValue)
-	{
+	public List<QName> createQNameListFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		List<QName> result = new ArrayList<QName>();
-		for (String item : split(initialValue))
-		{
+		for (String item : split(initialValue)) {
 			result.add((QName)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.QNAME, item));
 		}
 		return result;
@@ -5672,14 +5434,12 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertQNameListToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertQNameListToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
 		List<?> list = (List<?>)instanceValue;
 		if (list.isEmpty()) return "";
 		StringBuffer result = new StringBuffer();
-		for (Object item : list)
-		{
+		for (Object item : list) {
 			result.append(XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.QNAME, item));
 			result.append(' ');
 		}
@@ -5691,8 +5451,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RelativePositionType createRelativePositionTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public RelativePositionType createRelativePositionTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createRelativePositionTypeFromString(GMLPackage.eINSTANCE.getRelativePositionType(), initialValue);
 	}
 
@@ -5701,8 +5460,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertRelativePositionTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertRelativePositionTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertRelativePositionTypeToString(GMLPackage.eINSTANCE.getRelativePositionType(), instanceValue);
 	}
 
@@ -5711,8 +5469,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SequenceRuleEnumeration createSequenceRuleEnumerationObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public SequenceRuleEnumeration createSequenceRuleEnumerationObjectFromString(EDataType eDataType, String initialValue) {
 		return createSequenceRuleEnumerationFromString(GMLPackage.eINSTANCE.getSequenceRuleEnumeration(), initialValue);
 	}
 
@@ -5721,8 +5478,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSequenceRuleEnumerationObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertSequenceRuleEnumerationObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertSequenceRuleEnumerationToString(GMLPackage.eINSTANCE.getSequenceRuleEnumeration(), instanceValue);
 	}
 
@@ -5731,8 +5487,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SignType createSignTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public SignType createSignTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createSignTypeFromString(GMLPackage.eINSTANCE.getSignType(), initialValue);
 	}
 
@@ -5741,8 +5496,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSignTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertSignTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertSignTypeToString(GMLPackage.eINSTANCE.getSignType(), instanceValue);
 	}
 
@@ -5751,45 +5505,35 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createStringOrNilReasonFromString(EDataType eDataType, String initialValue)
-	{
+	public Object createStringOrNilReasonFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		Object result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createNilReasonEnumerationFromString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -5802,42 +5546,32 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertStringOrNilReasonToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertStringOrNilReasonToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getNilReasonEnumeration().isInstance(instanceValue)) {
+			try {
 				String value = convertNilReasonEnumerationToString(GMLPackage.eINSTANCE.getNilReasonEnumeration(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.STRING.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.STRING.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -5849,8 +5583,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SuccessionType createSuccessionTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public SuccessionType createSuccessionTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createSuccessionTypeFromString(GMLPackage.eINSTANCE.getSuccessionType(), initialValue);
 	}
 
@@ -5859,8 +5592,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSuccessionTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertSuccessionTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertSuccessionTypeToString(GMLPackage.eINSTANCE.getSuccessionType(), instanceValue);
 	}
 
@@ -5869,8 +5601,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceInterpolationType createSurfaceInterpolationTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public SurfaceInterpolationType createSurfaceInterpolationTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createSurfaceInterpolationTypeFromString(GMLPackage.eINSTANCE.getSurfaceInterpolationType(), initialValue);
 	}
 
@@ -5879,8 +5610,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSurfaceInterpolationTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertSurfaceInterpolationTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertSurfaceInterpolationTypeToString(GMLPackage.eINSTANCE.getSurfaceInterpolationType(), instanceValue);
 	}
 
@@ -5889,8 +5619,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeIndeterminateValueType createTimeIndeterminateValueTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public TimeIndeterminateValueType createTimeIndeterminateValueTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createTimeIndeterminateValueTypeFromString(GMLPackage.eINSTANCE.getTimeIndeterminateValueType(), initialValue);
 	}
 
@@ -5899,8 +5628,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTimeIndeterminateValueTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTimeIndeterminateValueTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertTimeIndeterminateValueTypeToString(GMLPackage.eINSTANCE.getTimeIndeterminateValueType(), instanceValue);
 	}
 
@@ -5909,69 +5637,53 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createTimePositionUnionFromString(EDataType eDataType, String initialValue)
-	{
+	public Object createTimePositionUnionFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		Object result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createCalDateFromString(GMLPackage.eINSTANCE.getCalDate(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.TIME, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DATE_TIME, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DECIMAL, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -5984,66 +5696,50 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTimePositionUnionToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTimePositionUnionToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getCalDate().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getCalDate().isInstance(instanceValue)) {
+			try {
 				String value = convertCalDateToString(GMLPackage.eINSTANCE.getCalDate(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.TIME.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.TIME.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.TIME, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.DATE_TIME.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.DATE_TIME.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DATE_TIME, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.ANY_URI.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.DECIMAL.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.DECIMAL.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DECIMAL, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -6055,33 +5751,26 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createTimeUnitTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public Object createTimeUnitTypeFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		Object result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createTimeUnitTypeMember0FromString(GMLPackage.eINSTANCE.getTimeUnitTypeMember0(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = createTimeUnitTypeMember1FromString(GMLPackage.eINSTANCE.getTimeUnitTypeMember1(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -6094,30 +5783,23 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTimeUnitTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTimeUnitTypeToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getTimeUnitTypeMember0().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getTimeUnitTypeMember0().isInstance(instanceValue)) {
+			try {
 				String value = convertTimeUnitTypeMember0ToString(GMLPackage.eINSTANCE.getTimeUnitTypeMember0(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (GMLPackage.eINSTANCE.getTimeUnitTypeMember1().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getTimeUnitTypeMember1().isInstance(instanceValue)) {
+			try {
 				String value = convertTimeUnitTypeMember1ToString(GMLPackage.eINSTANCE.getTimeUnitTypeMember1(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -6129,8 +5811,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeUnitTypeMember0 createTimeUnitTypeMember0ObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public TimeUnitTypeMember0 createTimeUnitTypeMember0ObjectFromString(EDataType eDataType, String initialValue) {
 		return createTimeUnitTypeMember0FromString(GMLPackage.eINSTANCE.getTimeUnitTypeMember0(), initialValue);
 	}
 
@@ -6139,8 +5820,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTimeUnitTypeMember0ObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTimeUnitTypeMember0ObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertTimeUnitTypeMember0ToString(GMLPackage.eINSTANCE.getTimeUnitTypeMember0(), instanceValue);
 	}
 
@@ -6149,8 +5829,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createTimeUnitTypeMember1FromString(EDataType eDataType, String initialValue)
-	{
+	public String createTimeUnitTypeMember1FromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, initialValue);
 	}
 
@@ -6159,8 +5838,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTimeUnitTypeMember1ToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTimeUnitTypeMember1ToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
 	}
 
@@ -6169,33 +5847,26 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createUomIdentifierFromString(EDataType eDataType, String initialValue)
-	{
+	public String createUomIdentifierFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		String result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = createUomSymbolFromString(GMLPackage.eINSTANCE.getUomSymbol(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = createUomURIFromString(GMLPackage.eINSTANCE.getUomURI(), initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -6208,30 +5879,23 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertUomIdentifierToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertUomIdentifierToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (GMLPackage.eINSTANCE.getUomSymbol().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getUomSymbol().isInstance(instanceValue)) {
+			try {
 				String value = convertUomSymbolToString(GMLPackage.eINSTANCE.getUomSymbol(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (GMLPackage.eINSTANCE.getUomURI().isInstance(instanceValue))
-		{
-			try
-			{
+		if (GMLPackage.eINSTANCE.getUomURI().isInstance(instanceValue)) {
+			try {
 				String value = convertUomURIToString(GMLPackage.eINSTANCE.getUomURI(), instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -6243,8 +5907,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createUomSymbolFromString(EDataType eDataType, String initialValue)
-	{
+	public String createUomSymbolFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, initialValue);
 	}
 
@@ -6253,8 +5916,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertUomSymbolToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertUomSymbolToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
 	}
 
@@ -6263,8 +5925,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createUomURIFromString(EDataType eDataType, String initialValue)
-	{
+	public String createUomURIFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
 	}
 
@@ -6273,8 +5934,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertUomURIToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertUomURIToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 	}
 
@@ -6283,8 +5943,8 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMLPackage getGMLPackage()
-	{
+	@Override
+	public GMLPackage getGMLPackage() {
 		return (GMLPackage)getEPackage();
 	}
 
@@ -6295,8 +5955,7 @@ public class GMLFactoryImpl extends EFactoryImpl implements GMLFactory
 	 * @generated
 	 */
 	@Deprecated
-	public static GMLPackage getPackage()
-	{
+	public static GMLPackage getPackage() {
 		return GMLPackage.eINSTANCE;
 	}
 

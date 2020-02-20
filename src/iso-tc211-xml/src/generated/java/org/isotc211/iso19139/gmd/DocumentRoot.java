@@ -160,16 +160,11 @@ import org.isotc211.iso19139.gco.CodeListValueType;
  * @model extendedMetaData="name='' kind='mixed'"
  * @generated
  */
-public interface DocumentRoot extends EObject
-{
+public interface DocumentRoot extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Mixed</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mixed</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mixed</em>' attribute list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_Mixed()
@@ -184,14 +179,10 @@ public interface DocumentRoot extends EObject
 	 * The key is of type {@link java.lang.String},
 	 * and the value is of type {@link java.lang.String},
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>XMLNS Prefix Map</em>' map isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>XMLNS Prefix Map</em>' map.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_XMLNSPrefixMap()
-	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry<org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString>" transient="true"
+	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;" transient="true"
 	 *        extendedMetaData="kind='attribute' name='xmlns:prefix'"
 	 * @generated
 	 */
@@ -202,14 +193,10 @@ public interface DocumentRoot extends EObject
 	 * The key is of type {@link java.lang.String},
 	 * and the value is of type {@link java.lang.String},
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>XSI Schema Location</em>' map isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>XSI Schema Location</em>' map.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_XSISchemaLocation()
-	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry<org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString>" transient="true"
+	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;" transient="true"
 	 *        extendedMetaData="kind='attribute' name='xsi:schemaLocation'"
 	 * @generated
 	 */
@@ -218,10 +205,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract DQ Completeness</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract DQ Completeness</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract DQ Completeness</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractDQCompleteness()
@@ -234,10 +217,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract DQ Element</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract DQ Element</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract DQ Element</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractDQElement()
@@ -250,10 +229,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract DQ Logical Consistency</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract DQ Logical Consistency</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract DQ Logical Consistency</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractDQLogicalConsistency()
@@ -266,10 +241,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract DQ Positional Accuracy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract DQ Positional Accuracy</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract DQ Positional Accuracy</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractDQPositionalAccuracy()
@@ -282,10 +253,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract DQ Result</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract DQ Result</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract DQ Result</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractDQResult()
@@ -298,10 +265,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract DQ Temporal Accuracy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract DQ Temporal Accuracy</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract DQ Temporal Accuracy</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractDQTemporalAccuracy()
@@ -314,10 +277,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract DQ Thematic Accuracy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract DQ Thematic Accuracy</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract DQ Thematic Accuracy</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractDQThematicAccuracy()
@@ -330,10 +289,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract DS Aggregate</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract DS Aggregate</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract DS Aggregate</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractDSAggregate()
@@ -346,10 +301,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract EX Geographic Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract EX Geographic Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract EX Geographic Extent</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractEXGeographicExtent()
@@ -362,10 +313,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract MD Content Information</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract MD Content Information</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract MD Content Information</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractMDContentInformation()
@@ -378,10 +325,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract MD Identification</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract MD Identification</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract MD Identification</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractMDIdentification()
@@ -394,10 +337,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract MD Spatial Representation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract MD Spatial Representation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract MD Spatial Representation</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractMDSpatialRepresentation()
@@ -410,10 +349,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract RS Reference System</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract RS Reference System</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract RS Reference System</em>' containment reference.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDocumentRoot_AbstractRSReferenceSystem()
@@ -426,10 +361,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Address</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Address</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Address</em>' containment reference.
 	 * @see #setCIAddress(CIAddressType)
@@ -453,10 +384,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Citation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Citation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Citation</em>' containment reference.
 	 * @see #setCICitation(CICitationType)
@@ -480,10 +407,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Contact</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Contact</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Contact</em>' containment reference.
 	 * @see #setCIContact(CIContactType)
@@ -507,10 +430,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Date</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Date</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Date</em>' containment reference.
 	 * @see #setCIDate(CIDateType)
@@ -534,10 +453,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Date Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Date Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Date Type Code</em>' containment reference.
 	 * @see #setCIDateTypeCode(CodeListValueType)
@@ -561,10 +476,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI On Line Function Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI On Line Function Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI On Line Function Code</em>' containment reference.
 	 * @see #setCIOnLineFunctionCode(CodeListValueType)
@@ -588,10 +499,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Online Resource</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Online Resource</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Online Resource</em>' containment reference.
 	 * @see #setCIOnlineResource(CIOnlineResourceType)
@@ -615,10 +522,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Presentation Form Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Presentation Form Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Presentation Form Code</em>' containment reference.
 	 * @see #setCIPresentationFormCode(CodeListValueType)
@@ -642,10 +545,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Responsible Party</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Responsible Party</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Responsible Party</em>' containment reference.
 	 * @see #setCIResponsibleParty(CIResponsiblePartyType)
@@ -669,10 +568,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Role Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Role Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Role Code</em>' containment reference.
 	 * @see #setCIRoleCode(CodeListValueType)
@@ -696,10 +591,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Series</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Series</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Series</em>' containment reference.
 	 * @see #setCISeries(CISeriesType)
@@ -723,10 +614,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>CI Telephone</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>CI Telephone</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CI Telephone</em>' containment reference.
 	 * @see #setCITelephone(CITelephoneType)
@@ -750,10 +637,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Country</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Country</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Country</em>' containment reference.
 	 * @see #setCountry(CodeListValueType)
@@ -777,10 +660,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Absolute External Positional Accuracy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Absolute External Positional Accuracy</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Absolute External Positional Accuracy</em>' containment reference.
 	 * @see #setDQAbsoluteExternalPositionalAccuracy(DQAbsoluteExternalPositionalAccuracyType)
@@ -804,10 +683,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Accuracy Of ATime Measurement</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Accuracy Of ATime Measurement</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Accuracy Of ATime Measurement</em>' containment reference.
 	 * @see #setDQAccuracyOfATimeMeasurement(DQAccuracyOfATimeMeasurementType)
@@ -831,10 +706,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Completeness Commission</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Completeness Commission</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Completeness Commission</em>' containment reference.
 	 * @see #setDQCompletenessCommission(DQCompletenessCommissionType)
@@ -858,10 +729,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Completeness Omission</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Completeness Omission</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Completeness Omission</em>' containment reference.
 	 * @see #setDQCompletenessOmission(DQCompletenessOmissionType)
@@ -885,10 +752,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Conceptual Consistency</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Conceptual Consistency</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Conceptual Consistency</em>' containment reference.
 	 * @see #setDQConceptualConsistency(DQConceptualConsistencyType)
@@ -912,10 +775,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Conformance Result</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Conformance Result</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Conformance Result</em>' containment reference.
 	 * @see #setDQConformanceResult(DQConformanceResultType)
@@ -939,10 +798,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Data Quality</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Data Quality</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Data Quality</em>' containment reference.
 	 * @see #setDQDataQuality(DQDataQualityType)
@@ -966,10 +821,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Domain Consistency</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Domain Consistency</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Domain Consistency</em>' containment reference.
 	 * @see #setDQDomainConsistency(DQDomainConsistencyType)
@@ -993,10 +844,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Evaluation Method Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Evaluation Method Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Evaluation Method Type Code</em>' containment reference.
 	 * @see #setDQEvaluationMethodTypeCode(CodeListValueType)
@@ -1020,10 +867,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Format Consistency</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Format Consistency</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Format Consistency</em>' containment reference.
 	 * @see #setDQFormatConsistency(DQFormatConsistencyType)
@@ -1047,10 +890,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Gridded Data Positional Accuracy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Gridded Data Positional Accuracy</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Gridded Data Positional Accuracy</em>' containment reference.
 	 * @see #setDQGriddedDataPositionalAccuracy(DQGriddedDataPositionalAccuracyType)
@@ -1074,10 +913,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Non Quantitative Attribute Accuracy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Non Quantitative Attribute Accuracy</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Non Quantitative Attribute Accuracy</em>' containment reference.
 	 * @see #setDQNonQuantitativeAttributeAccuracy(DQNonQuantitativeAttributeAccuracyType)
@@ -1101,10 +936,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Quantitative Attribute Accuracy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Quantitative Attribute Accuracy</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Quantitative Attribute Accuracy</em>' containment reference.
 	 * @see #setDQQuantitativeAttributeAccuracy(DQQuantitativeAttributeAccuracyType)
@@ -1128,10 +959,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Quantitative Result</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Quantitative Result</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Quantitative Result</em>' containment reference.
 	 * @see #setDQQuantitativeResult(DQQuantitativeResultType)
@@ -1155,10 +982,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Relative Internal Positional Accuracy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Relative Internal Positional Accuracy</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Relative Internal Positional Accuracy</em>' containment reference.
 	 * @see #setDQRelativeInternalPositionalAccuracy(DQRelativeInternalPositionalAccuracyType)
@@ -1182,10 +1005,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Scope</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Scope</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Scope</em>' containment reference.
 	 * @see #setDQScope(DQScopeType)
@@ -1209,10 +1028,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Temporal Consistency</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Temporal Consistency</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Temporal Consistency</em>' containment reference.
 	 * @see #setDQTemporalConsistency(DQTemporalConsistencyType)
@@ -1236,10 +1051,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Temporal Validity</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Temporal Validity</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Temporal Validity</em>' containment reference.
 	 * @see #setDQTemporalValidity(DQTemporalValidityType)
@@ -1263,10 +1074,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Thematic Classification Correctness</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Thematic Classification Correctness</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Thematic Classification Correctness</em>' containment reference.
 	 * @see #setDQThematicClassificationCorrectness(DQThematicClassificationCorrectnessType)
@@ -1290,10 +1097,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DQ Topological Consistency</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DQ Topological Consistency</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DQ Topological Consistency</em>' containment reference.
 	 * @see #setDQTopologicalConsistency(DQTopologicalConsistencyType)
@@ -1317,10 +1120,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Association</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Association</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Association</em>' containment reference.
 	 * @see #setDSAssociation(DSAssociationType)
@@ -1344,10 +1143,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Association Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Association Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Association Type Code</em>' containment reference.
 	 * @see #setDSAssociationTypeCode(CodeListValueType)
@@ -1371,10 +1166,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Data Set</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Data Set</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Data Set</em>' containment reference.
 	 * @see #setDSDataSet(DSDataSetType)
@@ -1398,10 +1189,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Initiative</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Initiative</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Initiative</em>' containment reference.
 	 * @see #setDSInitiative(DSInitiativeType)
@@ -1425,10 +1212,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Initiative Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Initiative Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Initiative Type Code</em>' containment reference.
 	 * @see #setDSInitiativeTypeCode(CodeListValueType)
@@ -1452,10 +1235,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Other Aggregate</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Other Aggregate</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Other Aggregate</em>' containment reference.
 	 * @see #setDSOtherAggregate(DSOtherAggregateType)
@@ -1479,10 +1258,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Platform</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Platform</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Platform</em>' containment reference.
 	 * @see #setDSPlatform(DSPlatformType)
@@ -1506,10 +1281,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Series</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Series</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Series</em>' containment reference.
 	 * @see #setDSSeries(DSSeriesType)
@@ -1533,10 +1304,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Production Series</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Production Series</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Production Series</em>' containment reference.
 	 * @see #setDSProductionSeries(DSProductionSeriesType)
@@ -1560,10 +1327,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Sensor</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Sensor</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Sensor</em>' containment reference.
 	 * @see #setDSSensor(DSSensorType)
@@ -1587,10 +1350,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>DS Stereo Mate</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Stereo Mate</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Stereo Mate</em>' containment reference.
 	 * @see #setDSStereoMate(DSStereoMateType)
@@ -1614,10 +1373,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>EX Bounding Polygon</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>EX Bounding Polygon</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>EX Bounding Polygon</em>' containment reference.
 	 * @see #setEXBoundingPolygon(EXBoundingPolygonType)
@@ -1641,10 +1396,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>EX Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>EX Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>EX Extent</em>' containment reference.
 	 * @see #setEXExtent(EXExtentType)
@@ -1668,10 +1419,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>EX Geographic Bounding Box</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>EX Geographic Bounding Box</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>EX Geographic Bounding Box</em>' containment reference.
 	 * @see #setEXGeographicBoundingBox(EXGeographicBoundingBoxType)
@@ -1695,10 +1442,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>EX Geographic Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>EX Geographic Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>EX Geographic Description</em>' containment reference.
 	 * @see #setEXGeographicDescription(EXGeographicDescriptionType)
@@ -1722,10 +1465,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>EX Spatial Temporal Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>EX Spatial Temporal Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>EX Spatial Temporal Extent</em>' containment reference.
 	 * @see #setEXSpatialTemporalExtent(EXSpatialTemporalExtentType)
@@ -1749,10 +1488,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>EX Temporal Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>EX Temporal Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>EX Temporal Extent</em>' containment reference.
 	 * @see #setEXTemporalExtent(EXTemporalExtentType)
@@ -1776,10 +1511,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>EX Vertical Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>EX Vertical Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>EX Vertical Extent</em>' containment reference.
 	 * @see #setEXVerticalExtent(EXVerticalExtentType)
@@ -1803,10 +1534,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Language Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Language Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Language Code</em>' containment reference.
 	 * @see #setLanguageCode(CodeListValueType)
@@ -1830,10 +1557,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>LI Lineage</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>LI Lineage</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>LI Lineage</em>' containment reference.
 	 * @see #setLILineage(LILineageType)
@@ -1857,10 +1580,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>LI Process Step</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>LI Process Step</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>LI Process Step</em>' containment reference.
 	 * @see #setLIProcessStep(LIProcessStepType)
@@ -1884,10 +1603,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>LI Source</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>LI Source</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>LI Source</em>' containment reference.
 	 * @see #setLISource(LISourceType)
@@ -1911,10 +1626,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Localised Character String</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Localised Character String</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Localised Character String</em>' containment reference.
 	 * @see #setLocalisedCharacterString(LocalisedCharacterStringType)
@@ -1938,10 +1649,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Aggregate Information</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Aggregate Information</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Aggregate Information</em>' containment reference.
 	 * @see #setMDAggregateInformation(MDAggregateInformationType)
@@ -1965,10 +1672,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Application Schema Information</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Application Schema Information</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Application Schema Information</em>' containment reference.
 	 * @see #setMDApplicationSchemaInformation(MDApplicationSchemaInformationType)
@@ -1992,10 +1695,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Band</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Band</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Band</em>' containment reference.
 	 * @see #setMDBand(MDBandType)
@@ -2019,10 +1718,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Range Dimension</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Range Dimension</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Range Dimension</em>' containment reference.
 	 * @see #setMDRangeDimension(MDRangeDimensionType)
@@ -2046,10 +1741,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Browse Graphic</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Browse Graphic</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Browse Graphic</em>' containment reference.
 	 * @see #setMDBrowseGraphic(MDBrowseGraphicType)
@@ -2073,10 +1764,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Cell Geometry Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Cell Geometry Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Cell Geometry Code</em>' containment reference.
 	 * @see #setMDCellGeometryCode(CodeListValueType)
@@ -2100,10 +1787,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Character Set Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Character Set Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Character Set Code</em>' containment reference.
 	 * @see #setMDCharacterSetCode(CodeListValueType)
@@ -2127,10 +1810,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Classification Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Classification Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Classification Code</em>' containment reference.
 	 * @see #setMDClassificationCode(CodeListValueType)
@@ -2154,10 +1833,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Constraints</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Constraints</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Constraints</em>' containment reference.
 	 * @see #setMDConstraints(MDConstraintsType)
@@ -2181,10 +1856,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Coverage Content Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Coverage Content Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Coverage Content Type Code</em>' containment reference.
 	 * @see #setMDCoverageContentTypeCode(CodeListValueType)
@@ -2208,10 +1879,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Coverage Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Coverage Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Coverage Description</em>' containment reference.
 	 * @see #setMDCoverageDescription(MDCoverageDescriptionType)
@@ -2235,10 +1902,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Data Identification</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Data Identification</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Data Identification</em>' containment reference.
 	 * @see #setMDDataIdentification(MDDataIdentificationType)
@@ -2262,10 +1925,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Datatype Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Datatype Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Datatype Code</em>' containment reference.
 	 * @see #setMDDatatypeCode(CodeListValueType)
@@ -2289,10 +1948,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Digital Transfer Options</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Digital Transfer Options</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Digital Transfer Options</em>' containment reference.
 	 * @see #setMDDigitalTransferOptions(MDDigitalTransferOptionsType)
@@ -2316,10 +1971,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Dimension</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Dimension</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Dimension</em>' containment reference.
 	 * @see #setMDDimension(MDDimensionType)
@@ -2343,10 +1994,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Dimension Name Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Dimension Name Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Dimension Name Type Code</em>' containment reference.
 	 * @see #setMDDimensionNameTypeCode(CodeListValueType)
@@ -2370,10 +2017,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Distribution</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Distribution</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Distribution</em>' containment reference.
 	 * @see #setMDDistribution(MDDistributionType)
@@ -2397,10 +2040,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Distribution Units</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Distribution Units</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Distribution Units</em>' containment reference.
 	 * @see #setMDDistributionUnits(CodeListValueType)
@@ -2424,10 +2063,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Distributor</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Distributor</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Distributor</em>' containment reference.
 	 * @see #setMDDistributor(MDDistributorType)
@@ -2451,10 +2086,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Extended Element Information</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Extended Element Information</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Extended Element Information</em>' containment reference.
 	 * @see #setMDExtendedElementInformation(MDExtendedElementInformationType)
@@ -2478,10 +2109,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Feature Catalogue Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Feature Catalogue Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Feature Catalogue Description</em>' containment reference.
 	 * @see #setMDFeatureCatalogueDescription(MDFeatureCatalogueDescriptionType)
@@ -2505,10 +2132,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Format</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Format</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Format</em>' containment reference.
 	 * @see #setMDFormat(MDFormatType)
@@ -2532,10 +2155,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Geometric Objects</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Geometric Objects</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Geometric Objects</em>' containment reference.
 	 * @see #setMDGeometricObjects(MDGeometricObjectsType)
@@ -2559,10 +2178,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Geometric Object Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Geometric Object Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Geometric Object Type Code</em>' containment reference.
 	 * @see #setMDGeometricObjectTypeCode(CodeListValueType)
@@ -2586,10 +2201,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Georectified</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Georectified</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Georectified</em>' containment reference.
 	 * @see #setMDGeorectified(MDGeorectifiedType)
@@ -2613,10 +2224,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Grid Spatial Representation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Grid Spatial Representation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Grid Spatial Representation</em>' containment reference.
 	 * @see #setMDGridSpatialRepresentation(MDGridSpatialRepresentationType)
@@ -2640,10 +2247,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Georeferenceable</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Georeferenceable</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Georeferenceable</em>' containment reference.
 	 * @see #setMDGeoreferenceable(MDGeoreferenceableType)
@@ -2667,10 +2270,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Identifier</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Identifier</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Identifier</em>' containment reference.
 	 * @see #setMDIdentifier(MDIdentifierType)
@@ -2694,10 +2293,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Image Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Image Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Image Description</em>' containment reference.
 	 * @see #setMDImageDescription(MDImageDescriptionType)
@@ -2721,10 +2316,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Imaging Condition Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Imaging Condition Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Imaging Condition Code</em>' containment reference.
 	 * @see #setMDImagingConditionCode(CodeListValueType)
@@ -2748,10 +2339,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Keywords</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Keywords</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Keywords</em>' containment reference.
 	 * @see #setMDKeywords(MDKeywordsType)
@@ -2775,10 +2362,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Keyword Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Keyword Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Keyword Type Code</em>' containment reference.
 	 * @see #setMDKeywordTypeCode(CodeListValueType)
@@ -2802,10 +2385,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Legal Constraints</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Legal Constraints</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Legal Constraints</em>' containment reference.
 	 * @see #setMDLegalConstraints(MDLegalConstraintsType)
@@ -2829,10 +2408,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Maintenance Frequency Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Maintenance Frequency Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Maintenance Frequency Code</em>' containment reference.
 	 * @see #setMDMaintenanceFrequencyCode(CodeListValueType)
@@ -2856,10 +2431,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Maintenance Information</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Maintenance Information</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Maintenance Information</em>' containment reference.
 	 * @see #setMDMaintenanceInformation(MDMaintenanceInformationType)
@@ -2883,10 +2454,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Medium</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Medium</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Medium</em>' containment reference.
 	 * @see #setMDMedium(MDMediumType)
@@ -2910,10 +2477,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Medium Format Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Medium Format Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Medium Format Code</em>' containment reference.
 	 * @see #setMDMediumFormatCode(CodeListValueType)
@@ -2937,10 +2500,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Medium Name Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Medium Name Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Medium Name Code</em>' containment reference.
 	 * @see #setMDMediumNameCode(CodeListValueType)
@@ -2964,10 +2523,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Metadata</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Metadata</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Metadata</em>' containment reference.
 	 * @see #setMDMetadata(MDMetadataType)
@@ -2991,10 +2546,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Metadata Extension Information</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Metadata Extension Information</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Metadata Extension Information</em>' containment reference.
 	 * @see #setMDMetadataExtensionInformation(MDMetadataExtensionInformationType)
@@ -3019,10 +2570,6 @@ public interface DocumentRoot extends EObject
 	 * Returns the value of the '<em><b>MD Obligation Code</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.isotc211.iso19139.gmd.MDObligationCodeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Obligation Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Obligation Code</em>' attribute.
 	 * @see org.isotc211.iso19139.gmd.MDObligationCodeType
@@ -3049,10 +2596,6 @@ public interface DocumentRoot extends EObject
 	 * Returns the value of the '<em><b>MD Pixel Orientation Code</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.isotc211.iso19139.gmd.MDPixelOrientationCodeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Pixel Orientation Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Pixel Orientation Code</em>' attribute.
 	 * @see org.isotc211.iso19139.gmd.MDPixelOrientationCodeType
@@ -3078,10 +2621,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Portrayal Catalogue Reference</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Portrayal Catalogue Reference</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Portrayal Catalogue Reference</em>' containment reference.
 	 * @see #setMDPortrayalCatalogueReference(MDPortrayalCatalogueReferenceType)
@@ -3105,10 +2644,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Progress Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Progress Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Progress Code</em>' containment reference.
 	 * @see #setMDProgressCode(CodeListValueType)
@@ -3132,10 +2667,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Reference System</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Reference System</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Reference System</em>' containment reference.
 	 * @see #setMDReferenceSystem(MDReferenceSystemType)
@@ -3159,10 +2690,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Representative Fraction</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Representative Fraction</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Representative Fraction</em>' containment reference.
 	 * @see #setMDRepresentativeFraction(MDRepresentativeFractionType)
@@ -3186,10 +2713,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Resolution</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Resolution</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Resolution</em>' containment reference.
 	 * @see #setMDResolution(MDResolutionType)
@@ -3213,10 +2736,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Restriction Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Restriction Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Restriction Code</em>' containment reference.
 	 * @see #setMDRestrictionCode(CodeListValueType)
@@ -3240,10 +2759,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Scope Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Scope Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Scope Code</em>' containment reference.
 	 * @see #setMDScopeCode(CodeListValueType)
@@ -3267,10 +2782,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Scope Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Scope Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Scope Description</em>' containment reference.
 	 * @see #setMDScopeDescription(MDScopeDescriptionType)
@@ -3294,10 +2805,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Security Constraints</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Security Constraints</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Security Constraints</em>' containment reference.
 	 * @see #setMDSecurityConstraints(MDSecurityConstraintsType)
@@ -3321,10 +2828,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Service Identification</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Service Identification</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Service Identification</em>' containment reference.
 	 * @see #setMDServiceIdentification(MDServiceIdentificationType)
@@ -3348,10 +2851,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Spatial Representation Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Spatial Representation Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Spatial Representation Type Code</em>' containment reference.
 	 * @see #setMDSpatialRepresentationTypeCode(CodeListValueType)
@@ -3375,10 +2874,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Standard Order Process</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Standard Order Process</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Standard Order Process</em>' containment reference.
 	 * @see #setMDStandardOrderProcess(MDStandardOrderProcessType)
@@ -3403,10 +2898,6 @@ public interface DocumentRoot extends EObject
 	 * Returns the value of the '<em><b>MD Topic Category Code</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.isotc211.iso19139.gmd.MDTopicCategoryCodeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Topic Category Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Topic Category Code</em>' attribute.
 	 * @see org.isotc211.iso19139.gmd.MDTopicCategoryCodeType
@@ -3432,10 +2923,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Topology Level Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Topology Level Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Topology Level Code</em>' containment reference.
 	 * @see #setMDTopologyLevelCode(CodeListValueType)
@@ -3459,10 +2946,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Usage</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Usage</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Usage</em>' containment reference.
 	 * @see #setMDUsage(MDUsageType)
@@ -3486,10 +2969,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>MD Vector Spatial Representation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Vector Spatial Representation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Vector Spatial Representation</em>' containment reference.
 	 * @see #setMDVectorSpatialRepresentation(MDVectorSpatialRepresentationType)
@@ -3513,10 +2992,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>PT Free Text</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>PT Free Text</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>PT Free Text</em>' containment reference.
 	 * @see #setPTFreeText(PTFreeTextType)
@@ -3540,10 +3015,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>PT Locale</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>PT Locale</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>PT Locale</em>' containment reference.
 	 * @see #setPTLocale(PTLocaleType)
@@ -3567,10 +3038,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>PT Locale Container</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>PT Locale Container</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>PT Locale Container</em>' containment reference.
 	 * @see #setPTLocaleContainer(PTLocaleContainerType)
@@ -3594,10 +3061,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>RS Identifier</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>RS Identifier</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>RS Identifier</em>' containment reference.
 	 * @see #setRSIdentifier(RSIdentifierType)
@@ -3621,10 +3084,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>URL</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>URL</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>URL</em>' attribute.
 	 * @see #setURL(String)

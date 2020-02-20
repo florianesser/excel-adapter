@@ -21,16 +21,11 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='CompositeCurveType' kind='elementOnly'"
  * @generated
  */
-public interface CompositeCurveType extends AbstractCurveType
-{
+public interface CompositeCurveType extends AbstractCurveType {
 	/**
 	 * Returns the value of the '<em><b>Curve Member</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.CurvePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Curve Member</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Curve Member</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getCompositeCurveType_CurveMember()
@@ -44,10 +39,6 @@ public interface CompositeCurveType extends AbstractCurveType
 	 * Returns the value of the '<em><b>Aggregation Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.AggregationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Type</em>' attribute.
 	 * @see net.opengis.gml32.AggregationType

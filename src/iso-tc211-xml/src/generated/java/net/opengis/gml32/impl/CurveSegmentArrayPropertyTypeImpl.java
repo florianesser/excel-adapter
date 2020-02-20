@@ -34,8 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Container implements CurveSegmentArrayPropertyType
-{
+public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Container implements CurveSegmentArrayPropertyType {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -51,8 +50,7 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CurveSegmentArrayPropertyTypeImpl()
-	{
+	protected CurveSegmentArrayPropertyTypeImpl() {
 		super();
 	}
 
@@ -62,8 +60,7 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCurveSegmentArrayPropertyType();
 	}
 
@@ -72,10 +69,9 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getGroup()
-	{
-		if (group == null)
-		{
+	@Override
+	public FeatureMap getGroup() {
+		if (group == null) {
 			group = new BasicFeatureMap(this, GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE__GROUP);
 		}
 		return group;
@@ -86,8 +82,8 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractCurveSegmentGroup()
-	{
+	@Override
+	public FeatureMap getAbstractCurveSegmentGroup() {
 		return (FeatureMap)getGroup().<FeatureMap.Entry>list(GMLPackage.eINSTANCE.getCurveSegmentArrayPropertyType_AbstractCurveSegmentGroup());
 	}
 
@@ -96,8 +92,8 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractCurveSegmentType> getAbstractCurveSegment()
-	{
+	@Override
+	public EList<AbstractCurveSegmentType> getAbstractCurveSegment() {
 		return getAbstractCurveSegmentGroup().list(GMLPackage.eINSTANCE.getCurveSegmentArrayPropertyType_AbstractCurveSegment());
 	}
 
@@ -107,10 +103,8 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE__GROUP:
 				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE__ABSTRACT_CURVE_SEGMENT_GROUP:
@@ -127,10 +121,8 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE__GROUP:
 				if (coreType) return getGroup();
 				return ((FeatureMap.Internal)getGroup()).getWrapper();
@@ -149,10 +141,8 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE__GROUP:
 				((FeatureMap.Internal)getGroup()).set(newValue);
 				return;
@@ -169,10 +159,8 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE__GROUP:
 				getGroup().clear();
 				return;
@@ -189,10 +177,8 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE__GROUP:
 				return group != null && !group.isEmpty();
 			case GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE__ABSTRACT_CURVE_SEGMENT_GROUP:
@@ -209,11 +195,10 @@ public class CurveSegmentArrayPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (group: ");
 		result.append(group);
 		result.append(')');

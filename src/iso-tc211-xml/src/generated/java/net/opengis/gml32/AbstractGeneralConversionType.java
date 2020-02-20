@@ -14,6 +14,5 @@ package net.opengis.gml32;
  *        extendedMetaData="name='AbstractGeneralConversionType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractGeneralConversionType extends AbstractCoordinateOperationType
-{
+public interface AbstractGeneralConversionType extends AbstractCoordinateOperationType {
 } // AbstractGeneralConversionType

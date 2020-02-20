@@ -31,8 +31,7 @@ import org.isotc211.iso19139.gco.NumberPropertyType;
  *
  * @generated
  */
-public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container implements NumberPropertyType
-{
+public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container implements NumberPropertyType {
 	/**
 	 * The default value of the '{@link #getReal() <em>Real</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -127,8 +126,7 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected NumberPropertyTypeImpl()
-	{
+	protected NumberPropertyTypeImpl() {
 		super();
 	}
 
@@ -138,8 +136,7 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.NUMBER_PROPERTY_TYPE;
 	}
 
@@ -148,8 +145,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getReal()
-	{
+	@Override
+	public double getReal() {
 		return real;
 	}
 
@@ -158,8 +155,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReal(double newReal)
-	{
+	@Override
+	public void setReal(double newReal) {
 		double oldReal = real;
 		real = newReal;
 		boolean oldRealESet = realESet;
@@ -173,8 +170,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetReal()
-	{
+	@Override
+	public void unsetReal() {
 		double oldReal = real;
 		boolean oldRealESet = realESet;
 		real = REAL_EDEFAULT;
@@ -188,8 +185,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetReal()
-	{
+	@Override
+	public boolean isSetReal() {
 		return realESet;
 	}
 
@@ -198,8 +195,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal getDecimal()
-	{
+	@Override
+	public BigDecimal getDecimal() {
 		return decimal;
 	}
 
@@ -208,8 +205,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDecimal(BigDecimal newDecimal)
-	{
+	@Override
+	public void setDecimal(BigDecimal newDecimal) {
 		BigDecimal oldDecimal = decimal;
 		decimal = newDecimal;
 		if (eNotificationRequired())
@@ -221,8 +218,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getInteger()
-	{
+	@Override
+	public BigInteger getInteger() {
 		return integer;
 	}
 
@@ -231,8 +228,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInteger(BigInteger newInteger)
-	{
+	@Override
+	public void setInteger(BigInteger newInteger) {
 		BigInteger oldInteger = integer;
 		integer = newInteger;
 		if (eNotificationRequired())
@@ -244,8 +241,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -254,8 +251,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -268,10 +265,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.NUMBER_PROPERTY_TYPE__REAL:
 				return getReal();
 			case GCOPackage.NUMBER_PROPERTY_TYPE__DECIMAL:
@@ -290,10 +285,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.NUMBER_PROPERTY_TYPE__REAL:
 				setReal((Double)newValue);
 				return;
@@ -316,10 +309,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.NUMBER_PROPERTY_TYPE__REAL:
 				unsetReal();
 				return;
@@ -342,10 +333,8 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.NUMBER_PROPERTY_TYPE__REAL:
 				return isSetReal();
 			case GCOPackage.NUMBER_PROPERTY_TYPE__DECIMAL:
@@ -364,11 +353,10 @@ public class NumberPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (real: ");
 		if (realESet) result.append(real); else result.append("<unset>");
 		result.append(", decimal: ");

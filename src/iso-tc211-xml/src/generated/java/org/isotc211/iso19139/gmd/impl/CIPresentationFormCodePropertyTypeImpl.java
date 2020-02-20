@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements CIPresentationFormCodePropertyType
-{
+public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements CIPresentationFormCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getCIPresentationFormCode() <em>CI Presentation Form Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CIPresentationFormCodePropertyTypeImpl()
-	{
+	protected CIPresentationFormCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCIPresentationFormCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getCIPresentationFormCode()
-	{
+	@Override
+	public CodeListValueType getCIPresentationFormCode() {
 		return cIPresentationFormCode;
 	}
 
@@ -98,12 +95,10 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCIPresentationFormCode(CodeListValueType newCIPresentationFormCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCIPresentationFormCode(CodeListValueType newCIPresentationFormCode, NotificationChain msgs) {
 		CodeListValueType oldCIPresentationFormCode = cIPresentationFormCode;
 		cIPresentationFormCode = newCIPresentationFormCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE__CI_PRESENTATION_FORM_CODE, oldCIPresentationFormCode, newCIPresentationFormCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCIPresentationFormCode(CodeListValueType newCIPresentationFormCode)
-	{
-		if (newCIPresentationFormCode != cIPresentationFormCode)
-		{
+	@Override
+	public void setCIPresentationFormCode(CodeListValueType newCIPresentationFormCode) {
+		if (newCIPresentationFormCode != cIPresentationFormCode) {
 			NotificationChain msgs = null;
 			if (cIPresentationFormCode != null)
 				msgs = ((InternalEObject)cIPresentationFormCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE__CI_PRESENTATION_FORM_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE__CI_PRESENTATION_FORM_CODE:
 				return basicSetCIPresentationFormCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE__CI_PRESENTATION_FORM_CODE:
 				return getCIPresentationFormCode();
 			case GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE__CI_PRESENTATION_FORM_CODE:
 				setCIPresentationFormCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE__CI_PRESENTATION_FORM_CODE:
 				setCIPresentationFormCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE__CI_PRESENTATION_FORM_CODE:
 				return cIPresentationFormCode != null;
 			case GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class CIPresentationFormCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

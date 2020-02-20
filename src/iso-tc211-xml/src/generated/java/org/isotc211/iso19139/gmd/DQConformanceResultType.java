@@ -27,15 +27,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='DQ_ConformanceResult_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQConformanceResultType extends AbstractDQResultType
-{
+public interface DQConformanceResultType extends AbstractDQResultType {
 	/**
 	 * Returns the value of the '<em><b>Specification</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Specification</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Specification</em>' containment reference.
 	 * @see #setSpecification(CICitationPropertyType)
@@ -59,10 +54,6 @@ public interface DQConformanceResultType extends AbstractDQResultType
 	/**
 	 * Returns the value of the '<em><b>Explanation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Explanation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Explanation</em>' containment reference.
 	 * @see #setExplanation(CharacterStringPropertyType)
@@ -86,10 +77,6 @@ public interface DQConformanceResultType extends AbstractDQResultType
 	/**
 	 * Returns the value of the '<em><b>Pass</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pass</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pass</em>' containment reference.
 	 * @see #setPass(BooleanPropertyType)

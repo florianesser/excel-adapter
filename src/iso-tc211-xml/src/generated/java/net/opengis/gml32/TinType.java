@@ -23,16 +23,11 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='TinType' kind='elementOnly'"
  * @generated
  */
-public interface TinType extends SurfaceType
-{
+public interface TinType extends SurfaceType {
 	/**
 	 * Returns the value of the '<em><b>Stop Lines</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.LineStringSegmentArrayPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Stop Lines</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Stop Lines</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTinType_StopLines()
@@ -46,10 +41,6 @@ public interface TinType extends SurfaceType
 	 * Returns the value of the '<em><b>Break Lines</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.LineStringSegmentArrayPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Break Lines</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Break Lines</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTinType_BreakLines()
@@ -62,10 +53,6 @@ public interface TinType extends SurfaceType
 	/**
 	 * Returns the value of the '<em><b>Max Length</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Max Length</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Length</em>' containment reference.
 	 * @see #setMaxLength(LengthType)
@@ -89,10 +76,6 @@ public interface TinType extends SurfaceType
 	/**
 	 * Returns the value of the '<em><b>Control Point</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Control Point</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Control Point</em>' containment reference.
 	 * @see #setControlPoint(ControlPointType)

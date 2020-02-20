@@ -29,8 +29,7 @@ import org.isotc211.iso19139.gco.UnlimitedIntegerPropertyType;
  *
  * @generated
  */
-public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements MultiplicityRangeType
-{
+public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements MultiplicityRangeType {
 	/**
 	 * The cached value of the '{@link #getLower() <em>Lower</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -56,8 +55,7 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MultiplicityRangeTypeImpl()
-	{
+	protected MultiplicityRangeTypeImpl() {
 		super();
 	}
 
@@ -67,8 +65,7 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.MULTIPLICITY_RANGE_TYPE;
 	}
 
@@ -77,8 +74,8 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType getLower()
-	{
+	@Override
+	public IntegerPropertyType getLower() {
 		return lower;
 	}
 
@@ -87,12 +84,10 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLower(IntegerPropertyType newLower, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLower(IntegerPropertyType newLower, NotificationChain msgs) {
 		IntegerPropertyType oldLower = lower;
 		lower = newLower;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.MULTIPLICITY_RANGE_TYPE__LOWER, oldLower, newLower);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -104,10 +99,9 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLower(IntegerPropertyType newLower)
-	{
-		if (newLower != lower)
-		{
+	@Override
+	public void setLower(IntegerPropertyType newLower) {
+		if (newLower != lower) {
 			NotificationChain msgs = null;
 			if (lower != null)
 				msgs = ((InternalEObject)lower).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.MULTIPLICITY_RANGE_TYPE__LOWER, null, msgs);
@@ -125,8 +119,8 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnlimitedIntegerPropertyType getUpper()
-	{
+	@Override
+	public UnlimitedIntegerPropertyType getUpper() {
 		return upper;
 	}
 
@@ -135,12 +129,10 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUpper(UnlimitedIntegerPropertyType newUpper, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUpper(UnlimitedIntegerPropertyType newUpper, NotificationChain msgs) {
 		UnlimitedIntegerPropertyType oldUpper = upper;
 		upper = newUpper;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.MULTIPLICITY_RANGE_TYPE__UPPER, oldUpper, newUpper);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -152,10 +144,9 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUpper(UnlimitedIntegerPropertyType newUpper)
-	{
-		if (newUpper != upper)
-		{
+	@Override
+	public void setUpper(UnlimitedIntegerPropertyType newUpper) {
+		if (newUpper != upper) {
 			NotificationChain msgs = null;
 			if (upper != null)
 				msgs = ((InternalEObject)upper).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.MULTIPLICITY_RANGE_TYPE__UPPER, null, msgs);
@@ -174,10 +165,8 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_RANGE_TYPE__LOWER:
 				return basicSetLower(null, msgs);
 			case GCOPackage.MULTIPLICITY_RANGE_TYPE__UPPER:
@@ -192,10 +181,8 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_RANGE_TYPE__LOWER:
 				return getLower();
 			case GCOPackage.MULTIPLICITY_RANGE_TYPE__UPPER:
@@ -210,10 +197,8 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_RANGE_TYPE__LOWER:
 				setLower((IntegerPropertyType)newValue);
 				return;
@@ -230,10 +215,8 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_RANGE_TYPE__LOWER:
 				setLower((IntegerPropertyType)null);
 				return;
@@ -250,10 +233,8 @@ public class MultiplicityRangeTypeImpl extends AbstractObjectTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_RANGE_TYPE__LOWER:
 				return lower != null;
 			case GCOPackage.MULTIPLICITY_RANGE_TYPE__UPPER:

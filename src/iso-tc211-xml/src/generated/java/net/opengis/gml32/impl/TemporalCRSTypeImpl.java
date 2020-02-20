@@ -37,8 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements TemporalCRSType
-{
+public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements TemporalCRSType {
 	/**
 	 * The cached value of the '{@link #getTimeCSGroup() <em>Time CS Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -74,8 +73,7 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TemporalCRSTypeImpl()
-	{
+	protected TemporalCRSTypeImpl() {
 		super();
 	}
 
@@ -85,8 +83,7 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTemporalCRSType();
 	}
 
@@ -95,10 +92,9 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getTimeCSGroup()
-	{
-		if (timeCSGroup == null)
-		{
+	@Override
+	public FeatureMap getTimeCSGroup() {
+		if (timeCSGroup == null) {
 			timeCSGroup = new BasicFeatureMap(this, GMLPackage.TEMPORAL_CRS_TYPE__TIME_CS_GROUP);
 		}
 		return timeCSGroup;
@@ -109,8 +105,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCSPropertyType getTimeCS()
-	{
+	@Override
+	public TimeCSPropertyType getTimeCS() {
 		return (TimeCSPropertyType)getTimeCSGroup().get(GMLPackage.eINSTANCE.getTemporalCRSType_TimeCS(), true);
 	}
 
@@ -119,8 +115,7 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeCS(TimeCSPropertyType newTimeCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeCS(TimeCSPropertyType newTimeCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getTimeCSGroup()).basicAdd(GMLPackage.eINSTANCE.getTemporalCRSType_TimeCS(), newTimeCS, msgs);
 	}
 
@@ -129,8 +124,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeCS(TimeCSPropertyType newTimeCS)
-	{
+	@Override
+	public void setTimeCS(TimeCSPropertyType newTimeCS) {
 		((FeatureMap.Internal)getTimeCSGroup()).set(GMLPackage.eINSTANCE.getTemporalCRSType_TimeCS(), newTimeCS);
 	}
 
@@ -139,8 +134,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCSPropertyType getUsesTemporalCS()
-	{
+	@Override
+	public TemporalCSPropertyType getUsesTemporalCS() {
 		return usesTemporalCS;
 	}
 
@@ -149,12 +144,10 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesTemporalCS(TemporalCSPropertyType newUsesTemporalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesTemporalCS(TemporalCSPropertyType newUsesTemporalCS, NotificationChain msgs) {
 		TemporalCSPropertyType oldUsesTemporalCS = usesTemporalCS;
 		usesTemporalCS = newUsesTemporalCS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TEMPORAL_CRS_TYPE__USES_TEMPORAL_CS, oldUsesTemporalCS, newUsesTemporalCS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -166,10 +159,9 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesTemporalCS(TemporalCSPropertyType newUsesTemporalCS)
-	{
-		if (newUsesTemporalCS != usesTemporalCS)
-		{
+	@Override
+	public void setUsesTemporalCS(TemporalCSPropertyType newUsesTemporalCS) {
+		if (newUsesTemporalCS != usesTemporalCS) {
 			NotificationChain msgs = null;
 			if (usesTemporalCS != null)
 				msgs = ((InternalEObject)usesTemporalCS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TEMPORAL_CRS_TYPE__USES_TEMPORAL_CS, null, msgs);
@@ -187,10 +179,9 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getTemporalDatumGroup()
-	{
-		if (temporalDatumGroup == null)
-		{
+	@Override
+	public FeatureMap getTemporalDatumGroup() {
+		if (temporalDatumGroup == null) {
 			temporalDatumGroup = new BasicFeatureMap(this, GMLPackage.TEMPORAL_CRS_TYPE__TEMPORAL_DATUM_GROUP);
 		}
 		return temporalDatumGroup;
@@ -201,8 +192,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalDatumPropertyType getTemporalDatum()
-	{
+	@Override
+	public TemporalDatumPropertyType getTemporalDatum() {
 		return (TemporalDatumPropertyType)getTemporalDatumGroup().get(GMLPackage.eINSTANCE.getTemporalCRSType_TemporalDatum(), true);
 	}
 
@@ -211,8 +202,7 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTemporalDatum(TemporalDatumPropertyType newTemporalDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTemporalDatum(TemporalDatumPropertyType newTemporalDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getTemporalDatumGroup()).basicAdd(GMLPackage.eINSTANCE.getTemporalCRSType_TemporalDatum(), newTemporalDatum, msgs);
 	}
 
@@ -221,8 +211,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTemporalDatum(TemporalDatumPropertyType newTemporalDatum)
-	{
+	@Override
+	public void setTemporalDatum(TemporalDatumPropertyType newTemporalDatum) {
 		((FeatureMap.Internal)getTemporalDatumGroup()).set(GMLPackage.eINSTANCE.getTemporalCRSType_TemporalDatum(), newTemporalDatum);
 	}
 
@@ -232,10 +222,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TEMPORAL_CRS_TYPE__TIME_CS_GROUP:
 				return ((InternalEList<?>)getTimeCSGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.TEMPORAL_CRS_TYPE__TIME_CS:
@@ -256,10 +244,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TEMPORAL_CRS_TYPE__TIME_CS_GROUP:
 				if (coreType) return getTimeCSGroup();
 				return ((FeatureMap.Internal)getTimeCSGroup()).getWrapper();
@@ -282,10 +268,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TEMPORAL_CRS_TYPE__TIME_CS_GROUP:
 				((FeatureMap.Internal)getTimeCSGroup()).set(newValue);
 				return;
@@ -311,10 +295,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TEMPORAL_CRS_TYPE__TIME_CS_GROUP:
 				getTimeCSGroup().clear();
 				return;
@@ -340,10 +322,8 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TEMPORAL_CRS_TYPE__TIME_CS_GROUP:
 				return timeCSGroup != null && !timeCSGroup.isEmpty();
 			case GMLPackage.TEMPORAL_CRS_TYPE__TIME_CS:
@@ -364,11 +344,10 @@ public class TemporalCRSTypeImpl extends AbstractCRSTypeImpl implements Temporal
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (timeCSGroup: ");
 		result.append(timeCSGroup);
 		result.append(", temporalDatumGroup: ");

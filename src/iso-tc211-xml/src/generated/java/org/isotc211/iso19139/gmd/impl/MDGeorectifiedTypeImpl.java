@@ -45,8 +45,7 @@ import org.isotc211.iso19139.gss.GMPointPropertyType;
  *
  * @generated
  */
-public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl implements MDGeorectifiedType
-{
+public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl implements MDGeorectifiedType {
 	/**
 	 * The cached value of the '{@link #getCheckPointAvailability() <em>Check Point Availability</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -122,8 +121,7 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDGeorectifiedTypeImpl()
-	{
+	protected MDGeorectifiedTypeImpl() {
 		super();
 	}
 
@@ -133,8 +131,7 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDGeorectifiedType();
 	}
 
@@ -143,8 +140,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getCheckPointAvailability()
-	{
+	@Override
+	public BooleanPropertyType getCheckPointAvailability() {
 		return checkPointAvailability;
 	}
 
@@ -153,12 +150,10 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCheckPointAvailability(BooleanPropertyType newCheckPointAvailability, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCheckPointAvailability(BooleanPropertyType newCheckPointAvailability, NotificationChain msgs) {
 		BooleanPropertyType oldCheckPointAvailability = checkPointAvailability;
 		checkPointAvailability = newCheckPointAvailability;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_AVAILABILITY, oldCheckPointAvailability, newCheckPointAvailability);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -170,10 +165,9 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCheckPointAvailability(BooleanPropertyType newCheckPointAvailability)
-	{
-		if (newCheckPointAvailability != checkPointAvailability)
-		{
+	@Override
+	public void setCheckPointAvailability(BooleanPropertyType newCheckPointAvailability) {
+		if (newCheckPointAvailability != checkPointAvailability) {
 			NotificationChain msgs = null;
 			if (checkPointAvailability != null)
 				msgs = ((InternalEObject)checkPointAvailability).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_AVAILABILITY, null, msgs);
@@ -191,8 +185,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getCheckPointDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getCheckPointDescription() {
 		return checkPointDescription;
 	}
 
@@ -201,12 +195,10 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCheckPointDescription(CharacterStringPropertyType newCheckPointDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCheckPointDescription(CharacterStringPropertyType newCheckPointDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldCheckPointDescription = checkPointDescription;
 		checkPointDescription = newCheckPointDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_DESCRIPTION, oldCheckPointDescription, newCheckPointDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -218,10 +210,9 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCheckPointDescription(CharacterStringPropertyType newCheckPointDescription)
-	{
-		if (newCheckPointDescription != checkPointDescription)
-		{
+	@Override
+	public void setCheckPointDescription(CharacterStringPropertyType newCheckPointDescription) {
+		if (newCheckPointDescription != checkPointDescription) {
 			NotificationChain msgs = null;
 			if (checkPointDescription != null)
 				msgs = ((InternalEObject)checkPointDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_DESCRIPTION, null, msgs);
@@ -239,10 +230,9 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<GMPointPropertyType> getCornerPoints()
-	{
-		if (cornerPoints == null)
-		{
+	@Override
+	public EList<GMPointPropertyType> getCornerPoints() {
+		if (cornerPoints == null) {
 			cornerPoints = new EObjectContainmentEList<GMPointPropertyType>(GMPointPropertyType.class, this, GMDPackage.MD_GEORECTIFIED_TYPE__CORNER_POINTS);
 		}
 		return cornerPoints;
@@ -253,8 +243,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMPointPropertyType getCenterPoint()
-	{
+	@Override
+	public GMPointPropertyType getCenterPoint() {
 		return centerPoint;
 	}
 
@@ -263,12 +253,10 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCenterPoint(GMPointPropertyType newCenterPoint, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCenterPoint(GMPointPropertyType newCenterPoint, NotificationChain msgs) {
 		GMPointPropertyType oldCenterPoint = centerPoint;
 		centerPoint = newCenterPoint;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEORECTIFIED_TYPE__CENTER_POINT, oldCenterPoint, newCenterPoint);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -280,10 +268,9 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCenterPoint(GMPointPropertyType newCenterPoint)
-	{
-		if (newCenterPoint != centerPoint)
-		{
+	@Override
+	public void setCenterPoint(GMPointPropertyType newCenterPoint) {
+		if (newCenterPoint != centerPoint) {
 			NotificationChain msgs = null;
 			if (centerPoint != null)
 				msgs = ((InternalEObject)centerPoint).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEORECTIFIED_TYPE__CENTER_POINT, null, msgs);
@@ -301,8 +288,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDPixelOrientationCodePropertyType getPointInPixel()
-	{
+	@Override
+	public MDPixelOrientationCodePropertyType getPointInPixel() {
 		return pointInPixel;
 	}
 
@@ -311,12 +298,10 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointInPixel(MDPixelOrientationCodePropertyType newPointInPixel, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointInPixel(MDPixelOrientationCodePropertyType newPointInPixel, NotificationChain msgs) {
 		MDPixelOrientationCodePropertyType oldPointInPixel = pointInPixel;
 		pointInPixel = newPointInPixel;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEORECTIFIED_TYPE__POINT_IN_PIXEL, oldPointInPixel, newPointInPixel);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -328,10 +313,9 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointInPixel(MDPixelOrientationCodePropertyType newPointInPixel)
-	{
-		if (newPointInPixel != pointInPixel)
-		{
+	@Override
+	public void setPointInPixel(MDPixelOrientationCodePropertyType newPointInPixel) {
+		if (newPointInPixel != pointInPixel) {
 			NotificationChain msgs = null;
 			if (pointInPixel != null)
 				msgs = ((InternalEObject)pointInPixel).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEORECTIFIED_TYPE__POINT_IN_PIXEL, null, msgs);
@@ -349,8 +333,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getTransformationDimensionDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getTransformationDimensionDescription() {
 		return transformationDimensionDescription;
 	}
 
@@ -359,12 +343,10 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTransformationDimensionDescription(CharacterStringPropertyType newTransformationDimensionDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTransformationDimensionDescription(CharacterStringPropertyType newTransformationDimensionDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldTransformationDimensionDescription = transformationDimensionDescription;
 		transformationDimensionDescription = newTransformationDimensionDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEORECTIFIED_TYPE__TRANSFORMATION_DIMENSION_DESCRIPTION, oldTransformationDimensionDescription, newTransformationDimensionDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -376,10 +358,9 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTransformationDimensionDescription(CharacterStringPropertyType newTransformationDimensionDescription)
-	{
-		if (newTransformationDimensionDescription != transformationDimensionDescription)
-		{
+	@Override
+	public void setTransformationDimensionDescription(CharacterStringPropertyType newTransformationDimensionDescription) {
+		if (newTransformationDimensionDescription != transformationDimensionDescription) {
 			NotificationChain msgs = null;
 			if (transformationDimensionDescription != null)
 				msgs = ((InternalEObject)transformationDimensionDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEORECTIFIED_TYPE__TRANSFORMATION_DIMENSION_DESCRIPTION, null, msgs);
@@ -397,10 +378,9 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getTransformationDimensionMapping()
-	{
-		if (transformationDimensionMapping == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getTransformationDimensionMapping() {
+		if (transformationDimensionMapping == null) {
 			transformationDimensionMapping = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_GEORECTIFIED_TYPE__TRANSFORMATION_DIMENSION_MAPPING);
 		}
 		return transformationDimensionMapping;
@@ -412,10 +392,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_AVAILABILITY:
 				return basicSetCheckPointAvailability(null, msgs);
 			case GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_DESCRIPTION:
@@ -440,10 +418,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_AVAILABILITY:
 				return getCheckPointAvailability();
 			case GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_DESCRIPTION:
@@ -469,10 +445,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_AVAILABILITY:
 				setCheckPointAvailability((BooleanPropertyType)newValue);
 				return;
@@ -506,10 +480,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_AVAILABILITY:
 				setCheckPointAvailability((BooleanPropertyType)null);
 				return;
@@ -541,10 +513,8 @@ public class MDGeorectifiedTypeImpl extends MDGridSpatialRepresentationTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_AVAILABILITY:
 				return checkPointAvailability != null;
 			case GMDPackage.MD_GEORECTIFIED_TYPE__CHECK_POINT_DESCRIPTION:

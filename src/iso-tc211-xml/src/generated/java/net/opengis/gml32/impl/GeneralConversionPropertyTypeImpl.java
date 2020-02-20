@@ -46,8 +46,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Container implements GeneralConversionPropertyType
-{
+public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Container implements GeneralConversionPropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractGeneralConversionGroup() <em>Abstract General Conversion Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -270,8 +269,7 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeneralConversionPropertyTypeImpl()
-	{
+	protected GeneralConversionPropertyTypeImpl() {
 		super();
 	}
 
@@ -281,8 +279,7 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeneralConversionPropertyType();
 	}
 
@@ -291,10 +288,9 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractGeneralConversionGroup()
-	{
-		if (abstractGeneralConversionGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractGeneralConversionGroup() {
+		if (abstractGeneralConversionGroup == null) {
 			abstractGeneralConversionGroup = new BasicFeatureMap(this, GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE__ABSTRACT_GENERAL_CONVERSION_GROUP);
 		}
 		return abstractGeneralConversionGroup;
@@ -305,8 +301,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralConversionType getAbstractGeneralConversion()
-	{
+	@Override
+	public AbstractGeneralConversionType getAbstractGeneralConversion() {
 		return (AbstractGeneralConversionType)getAbstractGeneralConversionGroup().get(GMLPackage.eINSTANCE.getGeneralConversionPropertyType_AbstractGeneralConversion(), true);
 	}
 
@@ -315,8 +311,7 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeneralConversion(AbstractGeneralConversionType newAbstractGeneralConversion, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeneralConversion(AbstractGeneralConversionType newAbstractGeneralConversion, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractGeneralConversionGroup()).basicAdd(GMLPackage.eINSTANCE.getGeneralConversionPropertyType_AbstractGeneralConversion(), newAbstractGeneralConversion, msgs);
 	}
 
@@ -325,8 +320,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -335,8 +330,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -350,8 +345,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -365,8 +360,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -375,8 +370,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -385,8 +380,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -398,8 +393,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -408,8 +403,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -421,8 +416,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -431,8 +426,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -444,8 +439,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -454,8 +449,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -467,8 +462,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -477,8 +472,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -490,8 +485,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -500,8 +495,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -515,8 +510,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -530,8 +525,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -540,8 +535,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -550,8 +545,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -563,8 +558,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -573,8 +568,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -588,8 +583,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -603,8 +598,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -614,10 +609,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE__ABSTRACT_GENERAL_CONVERSION_GROUP:
 				return ((InternalEList<?>)getAbstractGeneralConversionGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE__ABSTRACT_GENERAL_CONVERSION:
@@ -632,10 +625,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE__ABSTRACT_GENERAL_CONVERSION_GROUP:
 				if (coreType) return getAbstractGeneralConversionGroup();
 				return ((FeatureMap.Internal)getAbstractGeneralConversionGroup()).getWrapper();
@@ -669,10 +660,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE__ABSTRACT_GENERAL_CONVERSION_GROUP:
 				((FeatureMap.Internal)getAbstractGeneralConversionGroup()).set(newValue);
 				return;
@@ -713,10 +702,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE__ABSTRACT_GENERAL_CONVERSION_GROUP:
 				getAbstractGeneralConversionGroup().clear();
 				return;
@@ -757,10 +744,8 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE__ABSTRACT_GENERAL_CONVERSION_GROUP:
 				return abstractGeneralConversionGroup != null && !abstractGeneralConversionGroup.isEmpty();
 			case GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE__ABSTRACT_GENERAL_CONVERSION:
@@ -793,11 +778,10 @@ public class GeneralConversionPropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractGeneralConversionGroup: ");
 		result.append(abstractGeneralConversionGroup);
 		result.append(", actuate: ");

@@ -51,8 +51,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container implements LocationPropertyType
-{
+public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container implements LocationPropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractGeometryGroup() <em>Abstract Geometry Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -315,8 +314,7 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LocationPropertyTypeImpl()
-	{
+	protected LocationPropertyTypeImpl() {
 		super();
 	}
 
@@ -326,8 +324,7 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getLocationPropertyType();
 	}
 
@@ -336,10 +333,9 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractGeometryGroup()
-	{
-		if (abstractGeometryGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractGeometryGroup() {
+		if (abstractGeometryGroup == null) {
 			abstractGeometryGroup = new BasicFeatureMap(this, GMLPackage.LOCATION_PROPERTY_TYPE__ABSTRACT_GEOMETRY_GROUP);
 		}
 		return abstractGeometryGroup;
@@ -350,8 +346,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeometryType getAbstractGeometry()
-	{
+	@Override
+	public AbstractGeometryType getAbstractGeometry() {
 		return (AbstractGeometryType)getAbstractGeometryGroup().get(GMLPackage.eINSTANCE.getLocationPropertyType_AbstractGeometry(), true);
 	}
 
@@ -360,8 +356,7 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeometry(AbstractGeometryType newAbstractGeometry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeometry(AbstractGeometryType newAbstractGeometry, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractGeometryGroup()).basicAdd(GMLPackage.eINSTANCE.getLocationPropertyType_AbstractGeometry(), newAbstractGeometry, msgs);
 	}
 
@@ -370,8 +365,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getLocationKeyWord()
-	{
+	@Override
+	public CodeType getLocationKeyWord() {
 		return locationKeyWord;
 	}
 
@@ -380,12 +375,10 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocationKeyWord(CodeType newLocationKeyWord, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocationKeyWord(CodeType newLocationKeyWord, NotificationChain msgs) {
 		CodeType oldLocationKeyWord = locationKeyWord;
 		locationKeyWord = newLocationKeyWord;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.LOCATION_PROPERTY_TYPE__LOCATION_KEY_WORD, oldLocationKeyWord, newLocationKeyWord);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -397,10 +390,9 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocationKeyWord(CodeType newLocationKeyWord)
-	{
-		if (newLocationKeyWord != locationKeyWord)
-		{
+	@Override
+	public void setLocationKeyWord(CodeType newLocationKeyWord) {
+		if (newLocationKeyWord != locationKeyWord) {
 			NotificationChain msgs = null;
 			if (locationKeyWord != null)
 				msgs = ((InternalEObject)locationKeyWord).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.LOCATION_PROPERTY_TYPE__LOCATION_KEY_WORD, null, msgs);
@@ -418,8 +410,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getLocationString()
-	{
+	@Override
+	public StringOrRefType getLocationString() {
 		return locationString;
 	}
 
@@ -428,12 +420,10 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocationString(StringOrRefType newLocationString, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocationString(StringOrRefType newLocationString, NotificationChain msgs) {
 		StringOrRefType oldLocationString = locationString;
 		locationString = newLocationString;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.LOCATION_PROPERTY_TYPE__LOCATION_STRING, oldLocationString, newLocationString);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -445,10 +435,9 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocationString(StringOrRefType newLocationString)
-	{
-		if (newLocationString != locationString)
-		{
+	@Override
+	public void setLocationString(StringOrRefType newLocationString) {
+		if (newLocationString != locationString) {
 			NotificationChain msgs = null;
 			if (locationString != null)
 				msgs = ((InternalEObject)locationString).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.LOCATION_PROPERTY_TYPE__LOCATION_STRING, null, msgs);
@@ -466,8 +455,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNull()
-	{
+	@Override
+	public Object getNull() {
 		return null_;
 	}
 
@@ -476,8 +465,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNull(Object newNull)
-	{
+	@Override
+	public void setNull(Object newNull) {
 		Object oldNull = null_;
 		null_ = newNull;
 		if (eNotificationRequired())
@@ -489,8 +478,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -499,8 +488,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -514,8 +503,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -529,8 +518,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -539,8 +528,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -549,8 +538,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -562,8 +551,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -572,8 +561,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -585,8 +574,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -595,8 +584,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -608,8 +597,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -618,8 +607,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -631,8 +620,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -641,8 +630,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -654,8 +643,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -664,8 +653,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -679,8 +668,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -694,8 +683,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -704,8 +693,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -714,8 +703,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -727,8 +716,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -737,8 +726,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -752,8 +741,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -767,8 +756,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -778,10 +767,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.LOCATION_PROPERTY_TYPE__ABSTRACT_GEOMETRY_GROUP:
 				return ((InternalEList<?>)getAbstractGeometryGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.LOCATION_PROPERTY_TYPE__ABSTRACT_GEOMETRY:
@@ -800,10 +787,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.LOCATION_PROPERTY_TYPE__ABSTRACT_GEOMETRY_GROUP:
 				if (coreType) return getAbstractGeometryGroup();
 				return ((FeatureMap.Internal)getAbstractGeometryGroup()).getWrapper();
@@ -843,10 +828,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.LOCATION_PROPERTY_TYPE__ABSTRACT_GEOMETRY_GROUP:
 				((FeatureMap.Internal)getAbstractGeometryGroup()).set(newValue);
 				return;
@@ -896,10 +879,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.LOCATION_PROPERTY_TYPE__ABSTRACT_GEOMETRY_GROUP:
 				getAbstractGeometryGroup().clear();
 				return;
@@ -949,10 +930,8 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.LOCATION_PROPERTY_TYPE__ABSTRACT_GEOMETRY_GROUP:
 				return abstractGeometryGroup != null && !abstractGeometryGroup.isEmpty();
 			case GMLPackage.LOCATION_PROPERTY_TYPE__ABSTRACT_GEOMETRY:
@@ -991,11 +970,10 @@ public class LocationPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractGeometryGroup: ");
 		result.append(abstractGeometryGroup);
 		result.append(", null: ");

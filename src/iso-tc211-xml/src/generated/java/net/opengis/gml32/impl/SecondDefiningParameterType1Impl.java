@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Container implements SecondDefiningParameterType1
-{
+public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Container implements SecondDefiningParameterType1 {
 	/**
 	 * The cached value of the '{@link #getSecondDefiningParameter() <em>Second Defining Parameter</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -45,8 +44,7 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SecondDefiningParameterType1Impl()
-	{
+	protected SecondDefiningParameterType1Impl() {
 		super();
 	}
 
@@ -56,8 +54,7 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getSecondDefiningParameterType1();
 	}
 
@@ -66,8 +63,8 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SecondDefiningParameterType getSecondDefiningParameter()
-	{
+	@Override
+	public SecondDefiningParameterType getSecondDefiningParameter() {
 		return secondDefiningParameter;
 	}
 
@@ -76,12 +73,10 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSecondDefiningParameter(SecondDefiningParameterType newSecondDefiningParameter, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSecondDefiningParameter(SecondDefiningParameterType newSecondDefiningParameter, NotificationChain msgs) {
 		SecondDefiningParameterType oldSecondDefiningParameter = secondDefiningParameter;
 		secondDefiningParameter = newSecondDefiningParameter;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.SECOND_DEFINING_PARAMETER_TYPE1__SECOND_DEFINING_PARAMETER, oldSecondDefiningParameter, newSecondDefiningParameter);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -93,10 +88,9 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSecondDefiningParameter(SecondDefiningParameterType newSecondDefiningParameter)
-	{
-		if (newSecondDefiningParameter != secondDefiningParameter)
-		{
+	@Override
+	public void setSecondDefiningParameter(SecondDefiningParameterType newSecondDefiningParameter) {
+		if (newSecondDefiningParameter != secondDefiningParameter) {
 			NotificationChain msgs = null;
 			if (secondDefiningParameter != null)
 				msgs = ((InternalEObject)secondDefiningParameter).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.SECOND_DEFINING_PARAMETER_TYPE1__SECOND_DEFINING_PARAMETER, null, msgs);
@@ -115,10 +109,8 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE1__SECOND_DEFINING_PARAMETER:
 				return basicSetSecondDefiningParameter(null, msgs);
 		}
@@ -131,10 +123,8 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE1__SECOND_DEFINING_PARAMETER:
 				return getSecondDefiningParameter();
 		}
@@ -147,10 +137,8 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE1__SECOND_DEFINING_PARAMETER:
 				setSecondDefiningParameter((SecondDefiningParameterType)newValue);
 				return;
@@ -164,10 +152,8 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE1__SECOND_DEFINING_PARAMETER:
 				setSecondDefiningParameter((SecondDefiningParameterType)null);
 				return;
@@ -181,10 +167,8 @@ public class SecondDefiningParameterType1Impl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE1__SECOND_DEFINING_PARAMETER:
 				return secondDefiningParameter != null;
 		}

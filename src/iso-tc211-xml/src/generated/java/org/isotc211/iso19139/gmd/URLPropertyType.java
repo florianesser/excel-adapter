@@ -21,15 +21,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='URL_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface URLPropertyType extends EObject
-{
+public interface URLPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>URL</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>URL</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>URL</em>' attribute.
 	 * @see #setURL(String)
@@ -53,10 +48,6 @@ public interface URLPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

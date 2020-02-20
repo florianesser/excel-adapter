@@ -40,8 +40,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeType
-{
+public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeType {
 	/**
 	 * The cached value of the '{@link #getContainer() <em>Container</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -106,8 +105,7 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected NodeTypeImpl()
-	{
+	protected NodeTypeImpl() {
 		super();
 	}
 
@@ -117,8 +115,7 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getNodeType();
 	}
 
@@ -127,8 +124,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FaceOrTopoSolidPropertyType getContainer()
-	{
+	@Override
+	public FaceOrTopoSolidPropertyType getContainer() {
 		return container;
 	}
 
@@ -137,12 +134,10 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContainer(FaceOrTopoSolidPropertyType newContainer, NotificationChain msgs)
-	{
+	public NotificationChain basicSetContainer(FaceOrTopoSolidPropertyType newContainer, NotificationChain msgs) {
 		FaceOrTopoSolidPropertyType oldContainer = container;
 		container = newContainer;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.NODE_TYPE__CONTAINER, oldContainer, newContainer);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -154,10 +149,9 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setContainer(FaceOrTopoSolidPropertyType newContainer)
-	{
-		if (newContainer != container)
-		{
+	@Override
+	public void setContainer(FaceOrTopoSolidPropertyType newContainer) {
+		if (newContainer != container) {
 			NotificationChain msgs = null;
 			if (container != null)
 				msgs = ((InternalEObject)container).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.NODE_TYPE__CONTAINER, null, msgs);
@@ -175,10 +169,9 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectedEdgePropertyType> getDirectedEdge()
-	{
-		if (directedEdge == null)
-		{
+	@Override
+	public EList<DirectedEdgePropertyType> getDirectedEdge() {
+		if (directedEdge == null) {
 			directedEdge = new EObjectContainmentEList<DirectedEdgePropertyType>(DirectedEdgePropertyType.class, this, GMLPackage.NODE_TYPE__DIRECTED_EDGE);
 		}
 		return directedEdge;
@@ -189,8 +182,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType getPointProperty()
-	{
+	@Override
+	public PointPropertyType getPointProperty() {
 		return pointProperty;
 	}
 
@@ -199,12 +192,10 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointProperty(PointPropertyType newPointProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointProperty(PointPropertyType newPointProperty, NotificationChain msgs) {
 		PointPropertyType oldPointProperty = pointProperty;
 		pointProperty = newPointProperty;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.NODE_TYPE__POINT_PROPERTY, oldPointProperty, newPointProperty);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -216,10 +207,9 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointProperty(PointPropertyType newPointProperty)
-	{
-		if (newPointProperty != pointProperty)
-		{
+	@Override
+	public void setPointProperty(PointPropertyType newPointProperty) {
+		if (newPointProperty != pointProperty) {
 			NotificationChain msgs = null;
 			if (pointProperty != null)
 				msgs = ((InternalEObject)pointProperty).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.NODE_TYPE__POINT_PROPERTY, null, msgs);
@@ -237,8 +227,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -247,8 +237,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -262,8 +252,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -277,8 +267,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -288,10 +278,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.NODE_TYPE__CONTAINER:
 				return basicSetContainer(null, msgs);
 			case GMLPackage.NODE_TYPE__DIRECTED_EDGE:
@@ -308,10 +296,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.NODE_TYPE__CONTAINER:
 				return getContainer();
 			case GMLPackage.NODE_TYPE__DIRECTED_EDGE:
@@ -331,10 +317,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.NODE_TYPE__CONTAINER:
 				setContainer((FaceOrTopoSolidPropertyType)newValue);
 				return;
@@ -358,10 +342,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.NODE_TYPE__CONTAINER:
 				setContainer((FaceOrTopoSolidPropertyType)null);
 				return;
@@ -384,10 +366,8 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.NODE_TYPE__CONTAINER:
 				return container != null;
 			case GMLPackage.NODE_TYPE__DIRECTED_EDGE:
@@ -406,11 +386,10 @@ public class NodeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements NodeT
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (aggregationType: ");
 		if (aggregationTypeESet) result.append(aggregationType); else result.append("<unset>");
 		result.append(')');

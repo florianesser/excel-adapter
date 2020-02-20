@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='VolumeType' kind='simple'"
  * @generated
  */
-public interface VolumeType extends MeasureType
-{
+public interface VolumeType extends MeasureType {
 } // VolumeType

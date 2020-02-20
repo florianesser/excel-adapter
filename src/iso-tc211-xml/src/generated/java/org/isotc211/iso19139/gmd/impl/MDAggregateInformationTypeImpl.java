@@ -35,8 +35,7 @@ import org.isotc211.iso19139.gmd.MDIdentifierPropertyType;
  *
  * @generated
  */
-public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl implements MDAggregateInformationType
-{
+public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl implements MDAggregateInformationType {
 	/**
 	 * The cached value of the '{@link #getAggregateDataSetName() <em>Aggregate Data Set Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -82,8 +81,7 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDAggregateInformationTypeImpl()
-	{
+	protected MDAggregateInformationTypeImpl() {
 		super();
 	}
 
@@ -93,8 +91,7 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDAggregateInformationType();
 	}
 
@@ -103,8 +100,8 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationPropertyType getAggregateDataSetName()
-	{
+	@Override
+	public CICitationPropertyType getAggregateDataSetName() {
 		return aggregateDataSetName;
 	}
 
@@ -113,12 +110,10 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAggregateDataSetName(CICitationPropertyType newAggregateDataSetName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAggregateDataSetName(CICitationPropertyType newAggregateDataSetName, NotificationChain msgs) {
 		CICitationPropertyType oldAggregateDataSetName = aggregateDataSetName;
 		aggregateDataSetName = newAggregateDataSetName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_NAME, oldAggregateDataSetName, newAggregateDataSetName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -130,10 +125,9 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregateDataSetName(CICitationPropertyType newAggregateDataSetName)
-	{
-		if (newAggregateDataSetName != aggregateDataSetName)
-		{
+	@Override
+	public void setAggregateDataSetName(CICitationPropertyType newAggregateDataSetName) {
+		if (newAggregateDataSetName != aggregateDataSetName) {
 			NotificationChain msgs = null;
 			if (aggregateDataSetName != null)
 				msgs = ((InternalEObject)aggregateDataSetName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_NAME, null, msgs);
@@ -151,8 +145,8 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDIdentifierPropertyType getAggregateDataSetIdentifier()
-	{
+	@Override
+	public MDIdentifierPropertyType getAggregateDataSetIdentifier() {
 		return aggregateDataSetIdentifier;
 	}
 
@@ -161,12 +155,10 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAggregateDataSetIdentifier(MDIdentifierPropertyType newAggregateDataSetIdentifier, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAggregateDataSetIdentifier(MDIdentifierPropertyType newAggregateDataSetIdentifier, NotificationChain msgs) {
 		MDIdentifierPropertyType oldAggregateDataSetIdentifier = aggregateDataSetIdentifier;
 		aggregateDataSetIdentifier = newAggregateDataSetIdentifier;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_IDENTIFIER, oldAggregateDataSetIdentifier, newAggregateDataSetIdentifier);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -178,10 +170,9 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregateDataSetIdentifier(MDIdentifierPropertyType newAggregateDataSetIdentifier)
-	{
-		if (newAggregateDataSetIdentifier != aggregateDataSetIdentifier)
-		{
+	@Override
+	public void setAggregateDataSetIdentifier(MDIdentifierPropertyType newAggregateDataSetIdentifier) {
+		if (newAggregateDataSetIdentifier != aggregateDataSetIdentifier) {
 			NotificationChain msgs = null;
 			if (aggregateDataSetIdentifier != null)
 				msgs = ((InternalEObject)aggregateDataSetIdentifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_IDENTIFIER, null, msgs);
@@ -199,8 +190,8 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSAssociationTypeCodePropertyType getAssociationType()
-	{
+	@Override
+	public DSAssociationTypeCodePropertyType getAssociationType() {
 		return associationType;
 	}
 
@@ -209,12 +200,10 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAssociationType(DSAssociationTypeCodePropertyType newAssociationType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAssociationType(DSAssociationTypeCodePropertyType newAssociationType, NotificationChain msgs) {
 		DSAssociationTypeCodePropertyType oldAssociationType = associationType;
 		associationType = newAssociationType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__ASSOCIATION_TYPE, oldAssociationType, newAssociationType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -226,10 +215,9 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAssociationType(DSAssociationTypeCodePropertyType newAssociationType)
-	{
-		if (newAssociationType != associationType)
-		{
+	@Override
+	public void setAssociationType(DSAssociationTypeCodePropertyType newAssociationType) {
+		if (newAssociationType != associationType) {
 			NotificationChain msgs = null;
 			if (associationType != null)
 				msgs = ((InternalEObject)associationType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__ASSOCIATION_TYPE, null, msgs);
@@ -247,8 +235,8 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSInitiativeTypeCodePropertyType getInitiativeType()
-	{
+	@Override
+	public DSInitiativeTypeCodePropertyType getInitiativeType() {
 		return initiativeType;
 	}
 
@@ -257,12 +245,10 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetInitiativeType(DSInitiativeTypeCodePropertyType newInitiativeType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetInitiativeType(DSInitiativeTypeCodePropertyType newInitiativeType, NotificationChain msgs) {
 		DSInitiativeTypeCodePropertyType oldInitiativeType = initiativeType;
 		initiativeType = newInitiativeType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__INITIATIVE_TYPE, oldInitiativeType, newInitiativeType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -274,10 +260,9 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInitiativeType(DSInitiativeTypeCodePropertyType newInitiativeType)
-	{
-		if (newInitiativeType != initiativeType)
-		{
+	@Override
+	public void setInitiativeType(DSInitiativeTypeCodePropertyType newInitiativeType) {
+		if (newInitiativeType != initiativeType) {
 			NotificationChain msgs = null;
 			if (initiativeType != null)
 				msgs = ((InternalEObject)initiativeType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__INITIATIVE_TYPE, null, msgs);
@@ -296,10 +281,8 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_NAME:
 				return basicSetAggregateDataSetName(null, msgs);
 			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_IDENTIFIER:
@@ -318,10 +301,8 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_NAME:
 				return getAggregateDataSetName();
 			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_IDENTIFIER:
@@ -340,10 +321,8 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_NAME:
 				setAggregateDataSetName((CICitationPropertyType)newValue);
 				return;
@@ -366,10 +345,8 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_NAME:
 				setAggregateDataSetName((CICitationPropertyType)null);
 				return;
@@ -392,10 +369,8 @@ public class MDAggregateInformationTypeImpl extends AbstractObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_NAME:
 				return aggregateDataSetName != null;
 			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE__AGGREGATE_DATA_SET_IDENTIFIER:

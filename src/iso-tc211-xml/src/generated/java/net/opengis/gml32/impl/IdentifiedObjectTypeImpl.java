@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class IdentifiedObjectTypeImpl extends DefinitionTypeImpl implements IdentifiedObjectType
-{
+public abstract class IdentifiedObjectTypeImpl extends DefinitionTypeImpl implements IdentifiedObjectType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IdentifiedObjectTypeImpl()
-	{
+	protected IdentifiedObjectTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class IdentifiedObjectTypeImpl extends DefinitionTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getIdentifiedObjectType();
 	}
 

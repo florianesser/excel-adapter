@@ -56,15 +56,10 @@ import org.isotc211.iso19139.gco.ObjectReferencePropertyType;
  * @model extendedMetaData="name='MD_Metadata_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDMetadataType extends AbstractObjectType
-{
+public interface MDMetadataType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>File Identifier</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>File Identifier</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>File Identifier</em>' containment reference.
 	 * @see #setFileIdentifier(CharacterStringPropertyType)
@@ -88,10 +83,6 @@ public interface MDMetadataType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Language</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Language</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Language</em>' containment reference.
 	 * @see #setLanguage(CharacterStringPropertyType)
@@ -115,10 +106,6 @@ public interface MDMetadataType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Character Set</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Character Set</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Character Set</em>' containment reference.
 	 * @see #setCharacterSet(MDCharacterSetCodePropertyType)
@@ -142,10 +129,6 @@ public interface MDMetadataType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Parent Identifier</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Identifier</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Parent Identifier</em>' containment reference.
 	 * @see #setParentIdentifier(CharacterStringPropertyType)
@@ -170,10 +153,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Hierarchy Level</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDScopeCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Hierarchy Level</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Hierarchy Level</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_HierarchyLevel()
@@ -187,10 +166,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Hierarchy Level Name</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Hierarchy Level Name</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Hierarchy Level Name</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_HierarchyLevelName()
@@ -204,10 +179,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Contact</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIResponsiblePartyPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Contact</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_Contact()
@@ -220,10 +191,6 @@ public interface MDMetadataType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Date Stamp</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date Stamp</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date Stamp</em>' containment reference.
 	 * @see #setDateStamp(DatePropertyType)
@@ -247,10 +214,6 @@ public interface MDMetadataType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Metadata Standard Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Metadata Standard Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Metadata Standard Name</em>' containment reference.
 	 * @see #setMetadataStandardName(CharacterStringPropertyType)
@@ -274,10 +237,6 @@ public interface MDMetadataType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Metadata Standard Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Metadata Standard Version</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Metadata Standard Version</em>' containment reference.
 	 * @see #setMetadataStandardVersion(CharacterStringPropertyType)
@@ -301,10 +260,6 @@ public interface MDMetadataType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Data Set URI</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Set URI</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Data Set URI</em>' containment reference.
 	 * @see #setDataSetURI(CharacterStringPropertyType)
@@ -329,10 +284,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Locale</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.PTLocalePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Locale</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Locale</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_Locale()
@@ -346,10 +297,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Spatial Representation Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDSpatialRepresentationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Spatial Representation Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Spatial Representation Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_SpatialRepresentationInfo()
@@ -363,10 +310,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Reference System Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDReferenceSystemPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reference System Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference System Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_ReferenceSystemInfo()
@@ -380,10 +323,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Metadata Extension Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDMetadataExtensionInformationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Metadata Extension Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Metadata Extension Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_MetadataExtensionInfo()
@@ -397,10 +336,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Identification Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDIdentificationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Identification Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Identification Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_IdentificationInfo()
@@ -414,10 +349,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Content Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDContentInformationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Content Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_ContentInfo()
@@ -430,10 +361,6 @@ public interface MDMetadataType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Distribution Info</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distribution Info</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distribution Info</em>' containment reference.
 	 * @see #setDistributionInfo(MDDistributionPropertyType)
@@ -458,10 +385,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Data Quality Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.DQDataQualityPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Quality Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Data Quality Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_DataQualityInfo()
@@ -475,10 +398,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Portrayal Catalogue Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDPortrayalCatalogueReferencePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Portrayal Catalogue Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Portrayal Catalogue Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_PortrayalCatalogueInfo()
@@ -492,10 +411,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Metadata Constraints</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDConstraintsPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Metadata Constraints</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Metadata Constraints</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_MetadataConstraints()
@@ -509,10 +424,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Application Schema Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDApplicationSchemaInformationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Application Schema Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Application Schema Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_ApplicationSchemaInfo()
@@ -525,10 +436,6 @@ public interface MDMetadataType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Metadata Maintenance</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Metadata Maintenance</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Metadata Maintenance</em>' containment reference.
 	 * @see #setMetadataMaintenance(MDMaintenanceInformationPropertyType)
@@ -553,10 +460,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Series</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.DSAggregatePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Series</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Series</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_Series()
@@ -570,10 +473,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Describes</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.DSDataSetPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Describes</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Describes</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_Describes()
@@ -587,10 +486,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Property Type</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.ObjectReferencePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Property Type</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Property Type</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_PropertyType()
@@ -604,10 +499,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Feature Type</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.ObjectReferencePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Type</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Type</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_FeatureType()
@@ -621,10 +512,6 @@ public interface MDMetadataType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Feature Attribute</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.ObjectReferencePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Attribute</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Attribute</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataType_FeatureAttribute()

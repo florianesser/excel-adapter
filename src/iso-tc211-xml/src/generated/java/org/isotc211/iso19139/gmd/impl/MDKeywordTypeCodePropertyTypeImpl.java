@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDKeywordTypeCodePropertyType;
  *
  * @generated
  */
-public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDKeywordTypeCodePropertyType
-{
+public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDKeywordTypeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDKeywordTypeCode() <em>MD Keyword Type Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDKeywordTypeCodePropertyTypeImpl()
-	{
+	protected MDKeywordTypeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDKeywordTypeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDKeywordTypeCode()
-	{
+	@Override
+	public CodeListValueType getMDKeywordTypeCode() {
 		return mDKeywordTypeCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDKeywordTypeCode(CodeListValueType newMDKeywordTypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDKeywordTypeCode(CodeListValueType newMDKeywordTypeCode, NotificationChain msgs) {
 		CodeListValueType oldMDKeywordTypeCode = mDKeywordTypeCode;
 		mDKeywordTypeCode = newMDKeywordTypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE__MD_KEYWORD_TYPE_CODE, oldMDKeywordTypeCode, newMDKeywordTypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDKeywordTypeCode(CodeListValueType newMDKeywordTypeCode)
-	{
-		if (newMDKeywordTypeCode != mDKeywordTypeCode)
-		{
+	@Override
+	public void setMDKeywordTypeCode(CodeListValueType newMDKeywordTypeCode) {
+		if (newMDKeywordTypeCode != mDKeywordTypeCode) {
 			NotificationChain msgs = null;
 			if (mDKeywordTypeCode != null)
 				msgs = ((InternalEObject)mDKeywordTypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE__MD_KEYWORD_TYPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE__MD_KEYWORD_TYPE_CODE:
 				return basicSetMDKeywordTypeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE__MD_KEYWORD_TYPE_CODE:
 				return getMDKeywordTypeCode();
 			case GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE__MD_KEYWORD_TYPE_CODE:
 				setMDKeywordTypeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE__MD_KEYWORD_TYPE_CODE:
 				setMDKeywordTypeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE__MD_KEYWORD_TYPE_CODE:
 				return mDKeywordTypeCode != null;
 			case GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDKeywordTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Contai
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

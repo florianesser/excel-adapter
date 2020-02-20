@@ -17,6 +17,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='LengthType' kind='simple'"
  * @generated
  */
-public interface LengthType extends MeasureType
-{
+public interface LengthType extends MeasureType {
 } // LengthType

@@ -31,8 +31,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl implements EXSpatialTemporalExtentType
-{
+public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl implements EXSpatialTemporalExtentType {
 	/**
 	 * The cached value of the '{@link #getSpatialExtent() <em>Spatial Extent</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EXSpatialTemporalExtentTypeImpl()
-	{
+	protected EXSpatialTemporalExtentTypeImpl() {
 		super();
 	}
 
@@ -59,8 +57,7 @@ public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl im
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getEXSpatialTemporalExtentType();
 	}
 
@@ -69,10 +66,9 @@ public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EXGeographicExtentPropertyType> getSpatialExtent()
-	{
-		if (spatialExtent == null)
-		{
+	@Override
+	public EList<EXGeographicExtentPropertyType> getSpatialExtent() {
+		if (spatialExtent == null) {
 			spatialExtent = new EObjectContainmentEList<EXGeographicExtentPropertyType>(EXGeographicExtentPropertyType.class, this, GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_TYPE__SPATIAL_EXTENT);
 		}
 		return spatialExtent;
@@ -84,10 +80,8 @@ public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_TYPE__SPATIAL_EXTENT:
 				return ((InternalEList<?>)getSpatialExtent()).basicRemove(otherEnd, msgs);
 		}
@@ -100,10 +94,8 @@ public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_TYPE__SPATIAL_EXTENT:
 				return getSpatialExtent();
 		}
@@ -117,10 +109,8 @@ public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl im
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_TYPE__SPATIAL_EXTENT:
 				getSpatialExtent().clear();
 				getSpatialExtent().addAll((Collection<? extends EXGeographicExtentPropertyType>)newValue);
@@ -135,10 +125,8 @@ public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_TYPE__SPATIAL_EXTENT:
 				getSpatialExtent().clear();
 				return;
@@ -152,10 +140,8 @@ public class EXSpatialTemporalExtentTypeImpl extends EXTemporalExtentTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_TYPE__SPATIAL_EXTENT:
 				return spatialExtent != null && !spatialExtent.isEmpty();
 		}

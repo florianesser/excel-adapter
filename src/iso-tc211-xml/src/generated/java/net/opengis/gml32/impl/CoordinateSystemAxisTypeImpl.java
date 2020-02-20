@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl implements CoordinateSystemAxisType
-{
+public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl implements CoordinateSystemAxisType {
 	/**
 	 * The cached value of the '{@link #getAxisAbbrev() <em>Axis Abbrev</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -148,8 +147,7 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CoordinateSystemAxisTypeImpl()
-	{
+	protected CoordinateSystemAxisTypeImpl() {
 		super();
 	}
 
@@ -159,8 +157,7 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCoordinateSystemAxisType();
 	}
 
@@ -169,8 +166,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getAxisAbbrev()
-	{
+	@Override
+	public CodeType getAxisAbbrev() {
 		return axisAbbrev;
 	}
 
@@ -179,12 +176,10 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAxisAbbrev(CodeType newAxisAbbrev, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAxisAbbrev(CodeType newAxisAbbrev, NotificationChain msgs) {
 		CodeType oldAxisAbbrev = axisAbbrev;
 		axisAbbrev = newAxisAbbrev;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_ABBREV, oldAxisAbbrev, newAxisAbbrev);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -196,10 +191,9 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisAbbrev(CodeType newAxisAbbrev)
-	{
-		if (newAxisAbbrev != axisAbbrev)
-		{
+	@Override
+	public void setAxisAbbrev(CodeType newAxisAbbrev) {
+		if (newAxisAbbrev != axisAbbrev) {
 			NotificationChain msgs = null;
 			if (axisAbbrev != null)
 				msgs = ((InternalEObject)axisAbbrev).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_ABBREV, null, msgs);
@@ -217,8 +211,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getAxisDirection()
-	{
+	@Override
+	public CodeWithAuthorityType getAxisDirection() {
 		return axisDirection;
 	}
 
@@ -227,12 +221,10 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAxisDirection(CodeWithAuthorityType newAxisDirection, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAxisDirection(CodeWithAuthorityType newAxisDirection, NotificationChain msgs) {
 		CodeWithAuthorityType oldAxisDirection = axisDirection;
 		axisDirection = newAxisDirection;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_DIRECTION, oldAxisDirection, newAxisDirection);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -244,10 +236,9 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisDirection(CodeWithAuthorityType newAxisDirection)
-	{
-		if (newAxisDirection != axisDirection)
-		{
+	@Override
+	public void setAxisDirection(CodeWithAuthorityType newAxisDirection) {
+		if (newAxisDirection != axisDirection) {
 			NotificationChain msgs = null;
 			if (axisDirection != null)
 				msgs = ((InternalEObject)axisDirection).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_DIRECTION, null, msgs);
@@ -265,8 +256,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getMinimumValue()
-	{
+	@Override
+	public double getMinimumValue() {
 		return minimumValue;
 	}
 
@@ -275,8 +266,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMinimumValue(double newMinimumValue)
-	{
+	@Override
+	public void setMinimumValue(double newMinimumValue) {
 		double oldMinimumValue = minimumValue;
 		minimumValue = newMinimumValue;
 		boolean oldMinimumValueESet = minimumValueESet;
@@ -290,8 +281,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetMinimumValue()
-	{
+	@Override
+	public void unsetMinimumValue() {
 		double oldMinimumValue = minimumValue;
 		boolean oldMinimumValueESet = minimumValueESet;
 		minimumValue = MINIMUM_VALUE_EDEFAULT;
@@ -305,8 +296,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetMinimumValue()
-	{
+	@Override
+	public boolean isSetMinimumValue() {
 		return minimumValueESet;
 	}
 
@@ -315,8 +306,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getMaximumValue()
-	{
+	@Override
+	public double getMaximumValue() {
 		return maximumValue;
 	}
 
@@ -325,8 +316,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaximumValue(double newMaximumValue)
-	{
+	@Override
+	public void setMaximumValue(double newMaximumValue) {
 		double oldMaximumValue = maximumValue;
 		maximumValue = newMaximumValue;
 		boolean oldMaximumValueESet = maximumValueESet;
@@ -340,8 +331,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetMaximumValue()
-	{
+	@Override
+	public void unsetMaximumValue() {
 		double oldMaximumValue = maximumValue;
 		boolean oldMaximumValueESet = maximumValueESet;
 		maximumValue = MAXIMUM_VALUE_EDEFAULT;
@@ -355,8 +346,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetMaximumValue()
-	{
+	@Override
+	public boolean isSetMaximumValue() {
 		return maximumValueESet;
 	}
 
@@ -365,8 +356,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getRangeMeaning()
-	{
+	@Override
+	public CodeWithAuthorityType getRangeMeaning() {
 		return rangeMeaning;
 	}
 
@@ -375,12 +366,10 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRangeMeaning(CodeWithAuthorityType newRangeMeaning, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRangeMeaning(CodeWithAuthorityType newRangeMeaning, NotificationChain msgs) {
 		CodeWithAuthorityType oldRangeMeaning = rangeMeaning;
 		rangeMeaning = newRangeMeaning;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__RANGE_MEANING, oldRangeMeaning, newRangeMeaning);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -392,10 +381,9 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRangeMeaning(CodeWithAuthorityType newRangeMeaning)
-	{
-		if (newRangeMeaning != rangeMeaning)
-		{
+	@Override
+	public void setRangeMeaning(CodeWithAuthorityType newRangeMeaning) {
+		if (newRangeMeaning != rangeMeaning) {
 			NotificationChain msgs = null;
 			if (rangeMeaning != null)
 				msgs = ((InternalEObject)rangeMeaning).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__RANGE_MEANING, null, msgs);
@@ -413,8 +401,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUom()
-	{
+	@Override
+	public String getUom() {
 		return uom;
 	}
 
@@ -423,8 +411,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUom(String newUom)
-	{
+	@Override
+	public void setUom(String newUom) {
 		String oldUom = uom;
 		uom = newUom;
 		if (eNotificationRequired())
@@ -437,10 +425,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_ABBREV:
 				return basicSetAxisAbbrev(null, msgs);
 			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_DIRECTION:
@@ -457,10 +443,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_ABBREV:
 				return getAxisAbbrev();
 			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_DIRECTION:
@@ -483,10 +467,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_ABBREV:
 				setAxisAbbrev((CodeType)newValue);
 				return;
@@ -515,10 +497,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_ABBREV:
 				setAxisAbbrev((CodeType)null);
 				return;
@@ -547,10 +527,8 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_ABBREV:
 				return axisAbbrev != null;
 			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE__AXIS_DIRECTION:
@@ -573,11 +551,10 @@ public class CoordinateSystemAxisTypeImpl extends IdentifiedObjectTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (minimumValue: ");
 		if (minimumValueESet) result.append(minimumValue); else result.append("<unset>");
 		result.append(", maximumValue: ");

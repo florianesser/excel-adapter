@@ -29,15 +29,10 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  * @model extendedMetaData="name='MD_Distributor_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDDistributorType extends AbstractObjectType
-{
+public interface MDDistributorType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Distributor Contact</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distributor Contact</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distributor Contact</em>' containment reference.
 	 * @see #setDistributorContact(CIResponsiblePartyPropertyType)
@@ -62,10 +57,6 @@ public interface MDDistributorType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Distribution Order Process</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDStandardOrderProcessPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distribution Order Process</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distribution Order Process</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDistributorType_DistributionOrderProcess()
@@ -79,10 +70,6 @@ public interface MDDistributorType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Distributor Format</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDFormatPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distributor Format</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distributor Format</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDistributorType_DistributorFormat()
@@ -96,10 +83,6 @@ public interface MDDistributorType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Distributor Transfer Options</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDDigitalTransferOptionsPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distributor Transfer Options</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distributor Transfer Options</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDistributorType_DistributorTransferOptions()

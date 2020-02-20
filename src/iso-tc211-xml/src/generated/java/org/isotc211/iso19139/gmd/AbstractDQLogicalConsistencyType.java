@@ -14,6 +14,5 @@ package org.isotc211.iso19139.gmd;
  *        extendedMetaData="name='AbstractDQ_LogicalConsistency_Type' kind='elementOnly'"
  * @generated
  */
-public interface AbstractDQLogicalConsistencyType extends AbstractDQElementType
-{
+public interface AbstractDQLogicalConsistencyType extends AbstractDQElementType {
 } // AbstractDQLogicalConsistencyType

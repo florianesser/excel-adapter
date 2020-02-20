@@ -42,8 +42,7 @@ import org.isotc211.iso19139.gmd.MDGeoreferenceableType;
  *
  * @generated
  */
-public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeImpl implements MDGeoreferenceableType
-{
+public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeImpl implements MDGeoreferenceableType {
 	/**
 	 * The cached value of the '{@link #getControlPointAvailability() <em>Control Point Availability</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -99,8 +98,7 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDGeoreferenceableTypeImpl()
-	{
+	protected MDGeoreferenceableTypeImpl() {
 		super();
 	}
 
@@ -110,8 +108,7 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDGeoreferenceableType();
 	}
 
@@ -120,8 +117,8 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getControlPointAvailability()
-	{
+	@Override
+	public BooleanPropertyType getControlPointAvailability() {
 		return controlPointAvailability;
 	}
 
@@ -130,12 +127,10 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetControlPointAvailability(BooleanPropertyType newControlPointAvailability, NotificationChain msgs)
-	{
+	public NotificationChain basicSetControlPointAvailability(BooleanPropertyType newControlPointAvailability, NotificationChain msgs) {
 		BooleanPropertyType oldControlPointAvailability = controlPointAvailability;
 		controlPointAvailability = newControlPointAvailability;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEOREFERENCEABLE_TYPE__CONTROL_POINT_AVAILABILITY, oldControlPointAvailability, newControlPointAvailability);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -147,10 +142,9 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setControlPointAvailability(BooleanPropertyType newControlPointAvailability)
-	{
-		if (newControlPointAvailability != controlPointAvailability)
-		{
+	@Override
+	public void setControlPointAvailability(BooleanPropertyType newControlPointAvailability) {
+		if (newControlPointAvailability != controlPointAvailability) {
 			NotificationChain msgs = null;
 			if (controlPointAvailability != null)
 				msgs = ((InternalEObject)controlPointAvailability).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEOREFERENCEABLE_TYPE__CONTROL_POINT_AVAILABILITY, null, msgs);
@@ -168,8 +162,8 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getOrientationParameterAvailability()
-	{
+	@Override
+	public BooleanPropertyType getOrientationParameterAvailability() {
 		return orientationParameterAvailability;
 	}
 
@@ -178,12 +172,10 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrientationParameterAvailability(BooleanPropertyType newOrientationParameterAvailability, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOrientationParameterAvailability(BooleanPropertyType newOrientationParameterAvailability, NotificationChain msgs) {
 		BooleanPropertyType oldOrientationParameterAvailability = orientationParameterAvailability;
 		orientationParameterAvailability = newOrientationParameterAvailability;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEOREFERENCEABLE_TYPE__ORIENTATION_PARAMETER_AVAILABILITY, oldOrientationParameterAvailability, newOrientationParameterAvailability);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -195,10 +187,9 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrientationParameterAvailability(BooleanPropertyType newOrientationParameterAvailability)
-	{
-		if (newOrientationParameterAvailability != orientationParameterAvailability)
-		{
+	@Override
+	public void setOrientationParameterAvailability(BooleanPropertyType newOrientationParameterAvailability) {
+		if (newOrientationParameterAvailability != orientationParameterAvailability) {
 			NotificationChain msgs = null;
 			if (orientationParameterAvailability != null)
 				msgs = ((InternalEObject)orientationParameterAvailability).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEOREFERENCEABLE_TYPE__ORIENTATION_PARAMETER_AVAILABILITY, null, msgs);
@@ -216,8 +207,8 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getOrientationParameterDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getOrientationParameterDescription() {
 		return orientationParameterDescription;
 	}
 
@@ -226,12 +217,10 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrientationParameterDescription(CharacterStringPropertyType newOrientationParameterDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOrientationParameterDescription(CharacterStringPropertyType newOrientationParameterDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldOrientationParameterDescription = orientationParameterDescription;
 		orientationParameterDescription = newOrientationParameterDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEOREFERENCEABLE_TYPE__ORIENTATION_PARAMETER_DESCRIPTION, oldOrientationParameterDescription, newOrientationParameterDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -243,10 +232,9 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrientationParameterDescription(CharacterStringPropertyType newOrientationParameterDescription)
-	{
-		if (newOrientationParameterDescription != orientationParameterDescription)
-		{
+	@Override
+	public void setOrientationParameterDescription(CharacterStringPropertyType newOrientationParameterDescription) {
+		if (newOrientationParameterDescription != orientationParameterDescription) {
 			NotificationChain msgs = null;
 			if (orientationParameterDescription != null)
 				msgs = ((InternalEObject)orientationParameterDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEOREFERENCEABLE_TYPE__ORIENTATION_PARAMETER_DESCRIPTION, null, msgs);
@@ -264,8 +252,8 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RecordPropertyType getGeoreferencedParameters()
-	{
+	@Override
+	public RecordPropertyType getGeoreferencedParameters() {
 		return georeferencedParameters;
 	}
 
@@ -274,12 +262,10 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeoreferencedParameters(RecordPropertyType newGeoreferencedParameters, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeoreferencedParameters(RecordPropertyType newGeoreferencedParameters, NotificationChain msgs) {
 		RecordPropertyType oldGeoreferencedParameters = georeferencedParameters;
 		georeferencedParameters = newGeoreferencedParameters;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEOREFERENCEABLE_TYPE__GEOREFERENCED_PARAMETERS, oldGeoreferencedParameters, newGeoreferencedParameters);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -291,10 +277,9 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeoreferencedParameters(RecordPropertyType newGeoreferencedParameters)
-	{
-		if (newGeoreferencedParameters != georeferencedParameters)
-		{
+	@Override
+	public void setGeoreferencedParameters(RecordPropertyType newGeoreferencedParameters) {
+		if (newGeoreferencedParameters != georeferencedParameters) {
 			NotificationChain msgs = null;
 			if (georeferencedParameters != null)
 				msgs = ((InternalEObject)georeferencedParameters).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEOREFERENCEABLE_TYPE__GEOREFERENCED_PARAMETERS, null, msgs);
@@ -312,10 +297,9 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CICitationPropertyType> getParameterCitation()
-	{
-		if (parameterCitation == null)
-		{
+	@Override
+	public EList<CICitationPropertyType> getParameterCitation() {
+		if (parameterCitation == null) {
 			parameterCitation = new EObjectContainmentEList<CICitationPropertyType>(CICitationPropertyType.class, this, GMDPackage.MD_GEOREFERENCEABLE_TYPE__PARAMETER_CITATION);
 		}
 		return parameterCitation;
@@ -327,10 +311,8 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOREFERENCEABLE_TYPE__CONTROL_POINT_AVAILABILITY:
 				return basicSetControlPointAvailability(null, msgs);
 			case GMDPackage.MD_GEOREFERENCEABLE_TYPE__ORIENTATION_PARAMETER_AVAILABILITY:
@@ -351,10 +333,8 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOREFERENCEABLE_TYPE__CONTROL_POINT_AVAILABILITY:
 				return getControlPointAvailability();
 			case GMDPackage.MD_GEOREFERENCEABLE_TYPE__ORIENTATION_PARAMETER_AVAILABILITY:
@@ -376,10 +356,8 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOREFERENCEABLE_TYPE__CONTROL_POINT_AVAILABILITY:
 				setControlPointAvailability((BooleanPropertyType)newValue);
 				return;
@@ -406,10 +384,8 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOREFERENCEABLE_TYPE__CONTROL_POINT_AVAILABILITY:
 				setControlPointAvailability((BooleanPropertyType)null);
 				return;
@@ -435,10 +411,8 @@ public class MDGeoreferenceableTypeImpl extends MDGridSpatialRepresentationTypeI
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOREFERENCEABLE_TYPE__CONTROL_POINT_AVAILABILITY:
 				return controlPointAvailability != null;
 			case GMDPackage.MD_GEOREFERENCEABLE_TYPE__ORIENTATION_PARAMETER_AVAILABILITY:

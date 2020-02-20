@@ -22,8 +22,7 @@ import org.isotc211.iso19139.gco.*;
  * @see org.isotc211.iso19139.gco.GCOPackage
  * @generated
  */
-public class GCOSwitch<T> extends Switch<T>
-{
+public class GCOSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -38,10 +37,8 @@ public class GCOSwitch<T> extends Switch<T>
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GCOSwitch()
-	{
-		if (modelPackage == null)
-		{
+	public GCOSwitch() {
+		if (modelPackage == null) {
 			modelPackage = GCOPackage.eINSTANCE;
 		}
 	}
@@ -55,8 +52,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage)
-	{
+	protected boolean isSwitchFor(EPackage ePackage) {
 		return ePackage == modelPackage;
 	}
 
@@ -68,310 +64,265 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject)
-	{
-		switch (classifierID)
-		{
-			case GCOPackage.ABSTRACT_OBJECT_TYPE:
-			{
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case GCOPackage.ABSTRACT_OBJECT_TYPE: {
 				AbstractObjectType abstractObjectType = (AbstractObjectType)theEObject;
 				T result = caseAbstractObjectType(abstractObjectType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.ANGLE_PROPERTY_TYPE:
-			{
+			case GCOPackage.ANGLE_PROPERTY_TYPE: {
 				AnglePropertyType anglePropertyType = (AnglePropertyType)theEObject;
 				T result = caseAnglePropertyType(anglePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.BINARY_PROPERTY_TYPE:
-			{
+			case GCOPackage.BINARY_PROPERTY_TYPE: {
 				BinaryPropertyType binaryPropertyType = (BinaryPropertyType)theEObject;
 				T result = caseBinaryPropertyType(binaryPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.BINARY_TYPE:
-			{
+			case GCOPackage.BINARY_TYPE: {
 				BinaryType binaryType = (BinaryType)theEObject;
 				T result = caseBinaryType(binaryType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.BOOLEAN_PROPERTY_TYPE:
-			{
+			case GCOPackage.BOOLEAN_PROPERTY_TYPE: {
 				BooleanPropertyType booleanPropertyType = (BooleanPropertyType)theEObject;
 				T result = caseBooleanPropertyType(booleanPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.CHARACTER_STRING_PROPERTY_TYPE:
-			{
+			case GCOPackage.CHARACTER_STRING_PROPERTY_TYPE: {
 				CharacterStringPropertyType characterStringPropertyType = (CharacterStringPropertyType)theEObject;
 				T result = caseCharacterStringPropertyType(characterStringPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.CODE_LIST_VALUE_TYPE:
-			{
+			case GCOPackage.CODE_LIST_VALUE_TYPE: {
 				CodeListValueType codeListValueType = (CodeListValueType)theEObject;
 				T result = caseCodeListValueType(codeListValueType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.DATE_PROPERTY_TYPE:
-			{
+			case GCOPackage.DATE_PROPERTY_TYPE: {
 				DatePropertyType datePropertyType = (DatePropertyType)theEObject;
 				T result = caseDatePropertyType(datePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.DATE_TIME_PROPERTY_TYPE:
-			{
+			case GCOPackage.DATE_TIME_PROPERTY_TYPE: {
 				DateTimePropertyType dateTimePropertyType = (DateTimePropertyType)theEObject;
 				T result = caseDateTimePropertyType(dateTimePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.DECIMAL_PROPERTY_TYPE:
-			{
+			case GCOPackage.DECIMAL_PROPERTY_TYPE: {
 				DecimalPropertyType decimalPropertyType = (DecimalPropertyType)theEObject;
 				T result = caseDecimalPropertyType(decimalPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.DISTANCE_PROPERTY_TYPE:
-			{
+			case GCOPackage.DISTANCE_PROPERTY_TYPE: {
 				DistancePropertyType distancePropertyType = (DistancePropertyType)theEObject;
 				T result = caseDistancePropertyType(distancePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.GENERIC_NAME_PROPERTY_TYPE:
-			{
+			case GCOPackage.GENERIC_NAME_PROPERTY_TYPE: {
 				GenericNamePropertyType genericNamePropertyType = (GenericNamePropertyType)theEObject;
 				T result = caseGenericNamePropertyType(genericNamePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.INTEGER_PROPERTY_TYPE:
-			{
+			case GCOPackage.INTEGER_PROPERTY_TYPE: {
 				IntegerPropertyType integerPropertyType = (IntegerPropertyType)theEObject;
 				T result = caseIntegerPropertyType(integerPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.LENGTH_PROPERTY_TYPE:
-			{
+			case GCOPackage.LENGTH_PROPERTY_TYPE: {
 				LengthPropertyType lengthPropertyType = (LengthPropertyType)theEObject;
 				T result = caseLengthPropertyType(lengthPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.LOCAL_NAME_PROPERTY_TYPE:
-			{
+			case GCOPackage.LOCAL_NAME_PROPERTY_TYPE: {
 				LocalNamePropertyType localNamePropertyType = (LocalNamePropertyType)theEObject;
 				T result = caseLocalNamePropertyType(localNamePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.MULTIPLICITY_PROPERTY_TYPE:
-			{
+			case GCOPackage.MULTIPLICITY_PROPERTY_TYPE: {
 				MultiplicityPropertyType multiplicityPropertyType = (MultiplicityPropertyType)theEObject;
 				T result = caseMultiplicityPropertyType(multiplicityPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.MULTIPLICITY_RANGE_PROPERTY_TYPE:
-			{
+			case GCOPackage.MULTIPLICITY_RANGE_PROPERTY_TYPE: {
 				MultiplicityRangePropertyType multiplicityRangePropertyType = (MultiplicityRangePropertyType)theEObject;
 				T result = caseMultiplicityRangePropertyType(multiplicityRangePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.OBJECT_REFERENCE_PROPERTY_TYPE:
-			{
+			case GCOPackage.OBJECT_REFERENCE_PROPERTY_TYPE: {
 				ObjectReferencePropertyType objectReferencePropertyType = (ObjectReferencePropertyType)theEObject;
 				T result = caseObjectReferencePropertyType(objectReferencePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.REAL_PROPERTY_TYPE:
-			{
+			case GCOPackage.REAL_PROPERTY_TYPE: {
 				RealPropertyType realPropertyType = (RealPropertyType)theEObject;
 				T result = caseRealPropertyType(realPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.DOCUMENT_ROOT:
-			{
+			case GCOPackage.DOCUMENT_ROOT: {
 				DocumentRoot documentRoot = (DocumentRoot)theEObject;
 				T result = caseDocumentRoot(documentRoot);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.MEASURE_PROPERTY_TYPE:
-			{
+			case GCOPackage.MEASURE_PROPERTY_TYPE: {
 				MeasurePropertyType measurePropertyType = (MeasurePropertyType)theEObject;
 				T result = caseMeasurePropertyType(measurePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.MEMBER_NAME_PROPERTY_TYPE:
-			{
+			case GCOPackage.MEMBER_NAME_PROPERTY_TYPE: {
 				MemberNamePropertyType memberNamePropertyType = (MemberNamePropertyType)theEObject;
 				T result = caseMemberNamePropertyType(memberNamePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.MEMBER_NAME_TYPE:
-			{
+			case GCOPackage.MEMBER_NAME_TYPE: {
 				MemberNameType memberNameType = (MemberNameType)theEObject;
 				T result = caseMemberNameType(memberNameType);
 				if (result == null) result = caseAbstractObjectType(memberNameType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.MULTIPLICITY_RANGE_TYPE:
-			{
+			case GCOPackage.MULTIPLICITY_RANGE_TYPE: {
 				MultiplicityRangeType multiplicityRangeType = (MultiplicityRangeType)theEObject;
 				T result = caseMultiplicityRangeType(multiplicityRangeType);
 				if (result == null) result = caseAbstractObjectType(multiplicityRangeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.MULTIPLICITY_TYPE:
-			{
+			case GCOPackage.MULTIPLICITY_TYPE: {
 				MultiplicityType multiplicityType = (MultiplicityType)theEObject;
 				T result = caseMultiplicityType(multiplicityType);
 				if (result == null) result = caseAbstractObjectType(multiplicityType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.NUMBER_PROPERTY_TYPE:
-			{
+			case GCOPackage.NUMBER_PROPERTY_TYPE: {
 				NumberPropertyType numberPropertyType = (NumberPropertyType)theEObject;
 				T result = caseNumberPropertyType(numberPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.RECORD_PROPERTY_TYPE:
-			{
+			case GCOPackage.RECORD_PROPERTY_TYPE: {
 				RecordPropertyType recordPropertyType = (RecordPropertyType)theEObject;
 				T result = caseRecordPropertyType(recordPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.RECORD_TYPE_PROPERTY_TYPE:
-			{
+			case GCOPackage.RECORD_TYPE_PROPERTY_TYPE: {
 				RecordTypePropertyType recordTypePropertyType = (RecordTypePropertyType)theEObject;
 				T result = caseRecordTypePropertyType(recordTypePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.RECORD_TYPE_TYPE:
-			{
+			case GCOPackage.RECORD_TYPE_TYPE: {
 				RecordTypeType recordTypeType = (RecordTypeType)theEObject;
 				T result = caseRecordTypeType(recordTypeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.SCALE_PROPERTY_TYPE:
-			{
+			case GCOPackage.SCALE_PROPERTY_TYPE: {
 				ScalePropertyType scalePropertyType = (ScalePropertyType)theEObject;
 				T result = caseScalePropertyType(scalePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.SCOPED_NAME_PROPERTY_TYPE:
-			{
+			case GCOPackage.SCOPED_NAME_PROPERTY_TYPE: {
 				ScopedNamePropertyType scopedNamePropertyType = (ScopedNamePropertyType)theEObject;
 				T result = caseScopedNamePropertyType(scopedNamePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.TYPE_NAME_PROPERTY_TYPE:
-			{
+			case GCOPackage.TYPE_NAME_PROPERTY_TYPE: {
 				TypeNamePropertyType typeNamePropertyType = (TypeNamePropertyType)theEObject;
 				T result = caseTypeNamePropertyType(typeNamePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.TYPE_NAME_TYPE:
-			{
+			case GCOPackage.TYPE_NAME_TYPE: {
 				TypeNameType typeNameType = (TypeNameType)theEObject;
 				T result = caseTypeNameType(typeNameType);
 				if (result == null) result = caseAbstractObjectType(typeNameType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UNIT_OF_MEASURE_PROPERTY_TYPE:
-			{
+			case GCOPackage.UNIT_OF_MEASURE_PROPERTY_TYPE: {
 				UnitOfMeasurePropertyType unitOfMeasurePropertyType = (UnitOfMeasurePropertyType)theEObject;
 				T result = caseUnitOfMeasurePropertyType(unitOfMeasurePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE:
-			{
+			case GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE: {
 				UnlimitedIntegerPropertyType unlimitedIntegerPropertyType = (UnlimitedIntegerPropertyType)theEObject;
 				T result = caseUnlimitedIntegerPropertyType(unlimitedIntegerPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UNLIMITED_INTEGER_TYPE:
-			{
+			case GCOPackage.UNLIMITED_INTEGER_TYPE: {
 				UnlimitedIntegerType unlimitedIntegerType = (UnlimitedIntegerType)theEObject;
 				T result = caseUnlimitedIntegerType(unlimitedIntegerType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UOM_ANGLE_PROPERTY_TYPE:
-			{
+			case GCOPackage.UOM_ANGLE_PROPERTY_TYPE: {
 				UomAnglePropertyType uomAnglePropertyType = (UomAnglePropertyType)theEObject;
 				T result = caseUomAnglePropertyType(uomAnglePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UOM_AREA_PROPERTY_TYPE:
-			{
+			case GCOPackage.UOM_AREA_PROPERTY_TYPE: {
 				UomAreaPropertyType uomAreaPropertyType = (UomAreaPropertyType)theEObject;
 				T result = caseUomAreaPropertyType(uomAreaPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UOM_LENGTH_PROPERTY_TYPE:
-			{
+			case GCOPackage.UOM_LENGTH_PROPERTY_TYPE: {
 				UomLengthPropertyType uomLengthPropertyType = (UomLengthPropertyType)theEObject;
 				T result = caseUomLengthPropertyType(uomLengthPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UOM_SCALE_PROPERTY_TYPE:
-			{
+			case GCOPackage.UOM_SCALE_PROPERTY_TYPE: {
 				UomScalePropertyType uomScalePropertyType = (UomScalePropertyType)theEObject;
 				T result = caseUomScalePropertyType(uomScalePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UOM_TIME_PROPERTY_TYPE:
-			{
+			case GCOPackage.UOM_TIME_PROPERTY_TYPE: {
 				UomTimePropertyType uomTimePropertyType = (UomTimePropertyType)theEObject;
 				T result = caseUomTimePropertyType(uomTimePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UOM_VELOCITY_PROPERTY_TYPE:
-			{
+			case GCOPackage.UOM_VELOCITY_PROPERTY_TYPE: {
 				UomVelocityPropertyType uomVelocityPropertyType = (UomVelocityPropertyType)theEObject;
 				T result = caseUomVelocityPropertyType(uomVelocityPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GCOPackage.UOM_VOLUME_PROPERTY_TYPE:
-			{
+			case GCOPackage.UOM_VOLUME_PROPERTY_TYPE: {
 				UomVolumePropertyType uomVolumePropertyType = (UomVolumePropertyType)theEObject;
 				T result = caseUomVolumePropertyType(uomVolumePropertyType);
 				if (result == null) result = defaultCase(theEObject);
@@ -392,8 +343,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractObjectType(AbstractObjectType object)
-	{
+	public T caseAbstractObjectType(AbstractObjectType object) {
 		return null;
 	}
 
@@ -408,8 +358,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAnglePropertyType(AnglePropertyType object)
-	{
+	public T caseAnglePropertyType(AnglePropertyType object) {
 		return null;
 	}
 
@@ -424,8 +373,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBinaryPropertyType(BinaryPropertyType object)
-	{
+	public T caseBinaryPropertyType(BinaryPropertyType object) {
 		return null;
 	}
 
@@ -440,8 +388,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBinaryType(BinaryType object)
-	{
+	public T caseBinaryType(BinaryType object) {
 		return null;
 	}
 
@@ -456,8 +403,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBooleanPropertyType(BooleanPropertyType object)
-	{
+	public T caseBooleanPropertyType(BooleanPropertyType object) {
 		return null;
 	}
 
@@ -472,8 +418,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCharacterStringPropertyType(CharacterStringPropertyType object)
-	{
+	public T caseCharacterStringPropertyType(CharacterStringPropertyType object) {
 		return null;
 	}
 
@@ -488,8 +433,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCodeListValueType(CodeListValueType object)
-	{
+	public T caseCodeListValueType(CodeListValueType object) {
 		return null;
 	}
 
@@ -504,8 +448,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDatePropertyType(DatePropertyType object)
-	{
+	public T caseDatePropertyType(DatePropertyType object) {
 		return null;
 	}
 
@@ -520,8 +463,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDateTimePropertyType(DateTimePropertyType object)
-	{
+	public T caseDateTimePropertyType(DateTimePropertyType object) {
 		return null;
 	}
 
@@ -536,8 +478,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDecimalPropertyType(DecimalPropertyType object)
-	{
+	public T caseDecimalPropertyType(DecimalPropertyType object) {
 		return null;
 	}
 
@@ -552,8 +493,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDistancePropertyType(DistancePropertyType object)
-	{
+	public T caseDistancePropertyType(DistancePropertyType object) {
 		return null;
 	}
 
@@ -568,8 +508,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGenericNamePropertyType(GenericNamePropertyType object)
-	{
+	public T caseGenericNamePropertyType(GenericNamePropertyType object) {
 		return null;
 	}
 
@@ -584,8 +523,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIntegerPropertyType(IntegerPropertyType object)
-	{
+	public T caseIntegerPropertyType(IntegerPropertyType object) {
 		return null;
 	}
 
@@ -600,8 +538,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLengthPropertyType(LengthPropertyType object)
-	{
+	public T caseLengthPropertyType(LengthPropertyType object) {
 		return null;
 	}
 
@@ -616,8 +553,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLocalNamePropertyType(LocalNamePropertyType object)
-	{
+	public T caseLocalNamePropertyType(LocalNamePropertyType object) {
 		return null;
 	}
 
@@ -632,8 +568,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiplicityPropertyType(MultiplicityPropertyType object)
-	{
+	public T caseMultiplicityPropertyType(MultiplicityPropertyType object) {
 		return null;
 	}
 
@@ -648,8 +583,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiplicityRangePropertyType(MultiplicityRangePropertyType object)
-	{
+	public T caseMultiplicityRangePropertyType(MultiplicityRangePropertyType object) {
 		return null;
 	}
 
@@ -664,8 +598,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObjectReferencePropertyType(ObjectReferencePropertyType object)
-	{
+	public T caseObjectReferencePropertyType(ObjectReferencePropertyType object) {
 		return null;
 	}
 
@@ -680,8 +613,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRealPropertyType(RealPropertyType object)
-	{
+	public T caseRealPropertyType(RealPropertyType object) {
 		return null;
 	}
 
@@ -696,8 +628,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDocumentRoot(DocumentRoot object)
-	{
+	public T caseDocumentRoot(DocumentRoot object) {
 		return null;
 	}
 
@@ -712,8 +643,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMeasurePropertyType(MeasurePropertyType object)
-	{
+	public T caseMeasurePropertyType(MeasurePropertyType object) {
 		return null;
 	}
 
@@ -728,8 +658,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMemberNamePropertyType(MemberNamePropertyType object)
-	{
+	public T caseMemberNamePropertyType(MemberNamePropertyType object) {
 		return null;
 	}
 
@@ -744,8 +673,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMemberNameType(MemberNameType object)
-	{
+	public T caseMemberNameType(MemberNameType object) {
 		return null;
 	}
 
@@ -760,8 +688,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiplicityRangeType(MultiplicityRangeType object)
-	{
+	public T caseMultiplicityRangeType(MultiplicityRangeType object) {
 		return null;
 	}
 
@@ -776,8 +703,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiplicityType(MultiplicityType object)
-	{
+	public T caseMultiplicityType(MultiplicityType object) {
 		return null;
 	}
 
@@ -792,8 +718,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNumberPropertyType(NumberPropertyType object)
-	{
+	public T caseNumberPropertyType(NumberPropertyType object) {
 		return null;
 	}
 
@@ -808,8 +733,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRecordPropertyType(RecordPropertyType object)
-	{
+	public T caseRecordPropertyType(RecordPropertyType object) {
 		return null;
 	}
 
@@ -824,8 +748,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRecordTypePropertyType(RecordTypePropertyType object)
-	{
+	public T caseRecordTypePropertyType(RecordTypePropertyType object) {
 		return null;
 	}
 
@@ -840,8 +763,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRecordTypeType(RecordTypeType object)
-	{
+	public T caseRecordTypeType(RecordTypeType object) {
 		return null;
 	}
 
@@ -856,8 +778,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseScalePropertyType(ScalePropertyType object)
-	{
+	public T caseScalePropertyType(ScalePropertyType object) {
 		return null;
 	}
 
@@ -872,8 +793,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseScopedNamePropertyType(ScopedNamePropertyType object)
-	{
+	public T caseScopedNamePropertyType(ScopedNamePropertyType object) {
 		return null;
 	}
 
@@ -888,8 +808,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTypeNamePropertyType(TypeNamePropertyType object)
-	{
+	public T caseTypeNamePropertyType(TypeNamePropertyType object) {
 		return null;
 	}
 
@@ -904,8 +823,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTypeNameType(TypeNameType object)
-	{
+	public T caseTypeNameType(TypeNameType object) {
 		return null;
 	}
 
@@ -920,8 +838,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUnitOfMeasurePropertyType(UnitOfMeasurePropertyType object)
-	{
+	public T caseUnitOfMeasurePropertyType(UnitOfMeasurePropertyType object) {
 		return null;
 	}
 
@@ -936,8 +853,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUnlimitedIntegerPropertyType(UnlimitedIntegerPropertyType object)
-	{
+	public T caseUnlimitedIntegerPropertyType(UnlimitedIntegerPropertyType object) {
 		return null;
 	}
 
@@ -952,8 +868,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUnlimitedIntegerType(UnlimitedIntegerType object)
-	{
+	public T caseUnlimitedIntegerType(UnlimitedIntegerType object) {
 		return null;
 	}
 
@@ -968,8 +883,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUomAnglePropertyType(UomAnglePropertyType object)
-	{
+	public T caseUomAnglePropertyType(UomAnglePropertyType object) {
 		return null;
 	}
 
@@ -984,8 +898,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUomAreaPropertyType(UomAreaPropertyType object)
-	{
+	public T caseUomAreaPropertyType(UomAreaPropertyType object) {
 		return null;
 	}
 
@@ -1000,8 +913,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUomLengthPropertyType(UomLengthPropertyType object)
-	{
+	public T caseUomLengthPropertyType(UomLengthPropertyType object) {
 		return null;
 	}
 
@@ -1016,8 +928,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUomScalePropertyType(UomScalePropertyType object)
-	{
+	public T caseUomScalePropertyType(UomScalePropertyType object) {
 		return null;
 	}
 
@@ -1032,8 +943,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUomTimePropertyType(UomTimePropertyType object)
-	{
+	public T caseUomTimePropertyType(UomTimePropertyType object) {
 		return null;
 	}
 
@@ -1048,8 +958,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUomVelocityPropertyType(UomVelocityPropertyType object)
-	{
+	public T caseUomVelocityPropertyType(UomVelocityPropertyType object) {
 		return null;
 	}
 
@@ -1064,8 +973,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUomVolumePropertyType(UomVolumePropertyType object)
-	{
+	public T caseUomVolumePropertyType(UomVolumePropertyType object) {
 		return null;
 	}
 
@@ -1081,8 +989,7 @@ public class GCOSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object)
-	{
+	public T defaultCase(EObject object) {
 		return null;
 	}
 

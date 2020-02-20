@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='AffineCSType' kind='elementOnly'"
  * @generated
  */
-public interface AffineCSType extends AbstractCoordinateSystemType
-{
+public interface AffineCSType extends AbstractCoordinateSystemType {
 } // AffineCSType

@@ -20,15 +20,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='ValueArrayType' kind='elementOnly'"
  * @generated
  */
-public interface ValueArrayType extends CompositeValueType
-{
+public interface ValueArrayType extends CompositeValueType {
 	/**
 	 * Returns the value of the '<em><b>Code Space</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Code Space</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Code Space</em>' attribute.
 	 * @see #setCodeSpace(String)
@@ -52,10 +47,6 @@ public interface ValueArrayType extends CompositeValueType
 	/**
 	 * Returns the value of the '<em><b>Uom</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uom</em>' attribute.
 	 * @see #setUom(String)

@@ -32,16 +32,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='arcType' kind='elementOnly'"
  * @generated
  */
-public interface ArcType extends EObject
-{
+public interface ArcType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Title Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title Group</em>' attribute list.
 	 * @see org.w3.xlink.XLinkPackage#getArcType_TitleGroup()
@@ -55,10 +50,6 @@ public interface ArcType extends EObject
 	 * Returns the value of the '<em><b>Title</b></em>' containment reference list.
 	 * The list contents are of type {@link org.w3.xlink.TitleEltType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' containment reference list.
 	 * @see org.w3.xlink.XLinkPackage#getArcType_Title()
@@ -72,10 +63,6 @@ public interface ArcType extends EObject
 	 * Returns the value of the '<em><b>Actuate</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.w3.xlink.ActuateType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Actuate</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Actuate</em>' attribute.
 	 * @see org.w3.xlink.ActuateType
@@ -128,10 +115,6 @@ public interface ArcType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Arcrole</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Arcrole</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Arcrole</em>' attribute.
 	 * @see #setArcrole(String)
@@ -155,10 +138,6 @@ public interface ArcType extends EObject
 	/**
 	 * Returns the value of the '<em><b>From</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>From</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>From</em>' attribute.
 	 * @see #setFrom(String)
@@ -183,10 +162,6 @@ public interface ArcType extends EObject
 	 * Returns the value of the '<em><b>Show</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.w3.xlink.ShowType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Show</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Show</em>' attribute.
 	 * @see org.w3.xlink.ShowType
@@ -239,10 +214,6 @@ public interface ArcType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Title1</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title1</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title1</em>' attribute.
 	 * @see #setTitle1(String)
@@ -296,10 +267,6 @@ public interface ArcType extends EObject
 	 * The default value is <code>"arc"</code>.
 	 * The literals are from the enumeration {@link org.w3.xlink.TypeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see org.w3.xlink.TypeType

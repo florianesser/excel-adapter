@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='PassThroughOperationType' kind='elementOnly'"
  * @generated
  */
-public interface PassThroughOperationType extends AbstractCoordinateOperationType
-{
+public interface PassThroughOperationType extends AbstractCoordinateOperationType {
 	/**
 	 * Returns the value of the '<em><b>Modified Coordinate</b></em>' attribute list.
 	 * The list contents are of type {@link java.math.BigInteger}.
@@ -91,10 +90,6 @@ public interface PassThroughOperationType extends AbstractCoordinateOperationTyp
 	 * Returns the value of the '<em><b>Aggregation Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.AggregationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Type</em>' attribute.
 	 * @see net.opengis.gml32.AggregationType

@@ -36,15 +36,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='DirectPositionListType' kind='simple'"
  * @generated
  */
-public interface DirectPositionListType extends EObject
-{
+public interface DirectPositionListType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(List)
@@ -68,10 +63,6 @@ public interface DirectPositionListType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Axis Labels</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Axis Labels</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Axis Labels</em>' attribute.
 	 * @see #setAxisLabels(List)
@@ -95,10 +86,6 @@ public interface DirectPositionListType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Count</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Count</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Count</em>' attribute.
 	 * @see #setCount(BigInteger)
@@ -122,10 +109,6 @@ public interface DirectPositionListType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Srs Dimension</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Srs Dimension</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Srs Dimension</em>' attribute.
 	 * @see #setSrsDimension(BigInteger)
@@ -149,10 +132,6 @@ public interface DirectPositionListType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Srs Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Srs Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Srs Name</em>' attribute.
 	 * @see #setSrsName(String)
@@ -176,10 +155,6 @@ public interface DirectPositionListType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uom Labels</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Labels</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uom Labels</em>' attribute.
 	 * @see #setUomLabels(List)

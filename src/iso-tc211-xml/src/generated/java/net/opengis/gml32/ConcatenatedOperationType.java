@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='ConcatenatedOperationType' kind='elementOnly'"
  * @generated
  */
-public interface ConcatenatedOperationType extends AbstractCoordinateOperationType
-{
+public interface ConcatenatedOperationType extends AbstractCoordinateOperationType {
 	/**
 	 * Returns the value of the '<em><b>Coord Operation Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
@@ -67,10 +66,6 @@ public interface ConcatenatedOperationType extends AbstractCoordinateOperationTy
 	 * Returns the value of the '<em><b>Aggregation Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.AggregationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Type</em>' attribute.
 	 * @see net.opengis.gml32.AggregationType

@@ -35,8 +35,7 @@ import org.isotc211.iso19139.gmd.MDRestrictionCodePropertyType;
  *
  * @generated
  */
-public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements MDLegalConstraintsType
-{
+public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements MDLegalConstraintsType {
 	/**
 	 * The cached value of the '{@link #getAccessConstraints() <em>Access Constraints</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -72,8 +71,7 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDLegalConstraintsTypeImpl()
-	{
+	protected MDLegalConstraintsTypeImpl() {
 		super();
 	}
 
@@ -83,8 +81,7 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDLegalConstraintsType();
 	}
 
@@ -93,10 +90,9 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDRestrictionCodePropertyType> getAccessConstraints()
-	{
-		if (accessConstraints == null)
-		{
+	@Override
+	public EList<MDRestrictionCodePropertyType> getAccessConstraints() {
+		if (accessConstraints == null) {
 			accessConstraints = new EObjectContainmentEList<MDRestrictionCodePropertyType>(MDRestrictionCodePropertyType.class, this, GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__ACCESS_CONSTRAINTS);
 		}
 		return accessConstraints;
@@ -107,10 +103,9 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDRestrictionCodePropertyType> getUseConstraints()
-	{
-		if (useConstraints == null)
-		{
+	@Override
+	public EList<MDRestrictionCodePropertyType> getUseConstraints() {
+		if (useConstraints == null) {
 			useConstraints = new EObjectContainmentEList<MDRestrictionCodePropertyType>(MDRestrictionCodePropertyType.class, this, GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__USE_CONSTRAINTS);
 		}
 		return useConstraints;
@@ -121,10 +116,9 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getOtherConstraints()
-	{
-		if (otherConstraints == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getOtherConstraints() {
+		if (otherConstraints == null) {
 			otherConstraints = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__OTHER_CONSTRAINTS);
 		}
 		return otherConstraints;
@@ -136,10 +130,8 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__ACCESS_CONSTRAINTS:
 				return ((InternalEList<?>)getAccessConstraints()).basicRemove(otherEnd, msgs);
 			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__USE_CONSTRAINTS:
@@ -156,10 +148,8 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__ACCESS_CONSTRAINTS:
 				return getAccessConstraints();
 			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__USE_CONSTRAINTS:
@@ -177,10 +167,8 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__ACCESS_CONSTRAINTS:
 				getAccessConstraints().clear();
 				getAccessConstraints().addAll((Collection<? extends MDRestrictionCodePropertyType>)newValue);
@@ -203,10 +191,8 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__ACCESS_CONSTRAINTS:
 				getAccessConstraints().clear();
 				return;
@@ -226,10 +212,8 @@ public class MDLegalConstraintsTypeImpl extends MDConstraintsTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__ACCESS_CONSTRAINTS:
 				return accessConstraints != null && !accessConstraints.isEmpty();
 			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE__USE_CONSTRAINTS:

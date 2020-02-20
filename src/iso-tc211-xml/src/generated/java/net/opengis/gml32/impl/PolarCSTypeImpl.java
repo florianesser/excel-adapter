@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PolarCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements PolarCSType
-{
+public class PolarCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements PolarCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PolarCSTypeImpl()
-	{
+	protected PolarCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class PolarCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getPolarCSType();
 	}
 

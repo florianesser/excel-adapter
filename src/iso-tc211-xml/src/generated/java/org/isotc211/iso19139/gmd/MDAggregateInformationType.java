@@ -27,15 +27,10 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  * @model extendedMetaData="name='MD_AggregateInformation_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDAggregateInformationType extends AbstractObjectType
-{
+public interface MDAggregateInformationType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Aggregate Data Set Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregate Data Set Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregate Data Set Name</em>' containment reference.
 	 * @see #setAggregateDataSetName(CICitationPropertyType)
@@ -59,10 +54,6 @@ public interface MDAggregateInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Aggregate Data Set Identifier</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregate Data Set Identifier</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregate Data Set Identifier</em>' containment reference.
 	 * @see #setAggregateDataSetIdentifier(MDIdentifierPropertyType)
@@ -86,10 +77,6 @@ public interface MDAggregateInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Association Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Association Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Association Type</em>' containment reference.
 	 * @see #setAssociationType(DSAssociationTypeCodePropertyType)
@@ -113,10 +100,6 @@ public interface MDAggregateInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Initiative Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Initiative Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Initiative Type</em>' containment reference.
 	 * @see #setInitiativeType(DSInitiativeTypeCodePropertyType)

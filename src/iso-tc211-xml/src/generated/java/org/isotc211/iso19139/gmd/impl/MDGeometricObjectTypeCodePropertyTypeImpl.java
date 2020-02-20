@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDGeometricObjectTypeCodePropertyType;
  *
  * @generated
  */
-public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDGeometricObjectTypeCodePropertyType
-{
+public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDGeometricObjectTypeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDGeometricObjectTypeCode() <em>MD Geometric Object Type Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDGeometricObjectTypeCodePropertyTypeImpl()
-	{
+	protected MDGeometricObjectTypeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDGeometricObjectTypeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDGeometricObjectTypeCode()
-	{
+	@Override
+	public CodeListValueType getMDGeometricObjectTypeCode() {
 		return mDGeometricObjectTypeCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDGeometricObjectTypeCode(CodeListValueType newMDGeometricObjectTypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDGeometricObjectTypeCode(CodeListValueType newMDGeometricObjectTypeCode, NotificationChain msgs) {
 		CodeListValueType oldMDGeometricObjectTypeCode = mDGeometricObjectTypeCode;
 		mDGeometricObjectTypeCode = newMDGeometricObjectTypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE__MD_GEOMETRIC_OBJECT_TYPE_CODE, oldMDGeometricObjectTypeCode, newMDGeometricObjectTypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDGeometricObjectTypeCode(CodeListValueType newMDGeometricObjectTypeCode)
-	{
-		if (newMDGeometricObjectTypeCode != mDGeometricObjectTypeCode)
-		{
+	@Override
+	public void setMDGeometricObjectTypeCode(CodeListValueType newMDGeometricObjectTypeCode) {
+		if (newMDGeometricObjectTypeCode != mDGeometricObjectTypeCode) {
 			NotificationChain msgs = null;
 			if (mDGeometricObjectTypeCode != null)
 				msgs = ((InternalEObject)mDGeometricObjectTypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE__MD_GEOMETRIC_OBJECT_TYPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE__MD_GEOMETRIC_OBJECT_TYPE_CODE:
 				return basicSetMDGeometricObjectTypeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE__MD_GEOMETRIC_OBJECT_TYPE_CODE:
 				return getMDGeometricObjectTypeCode();
 			case GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE__MD_GEOMETRIC_OBJECT_TYPE_CODE:
 				setMDGeometricObjectTypeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE__MD_GEOMETRIC_OBJECT_TYPE_CODE:
 				setMDGeometricObjectTypeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE__MD_GEOMETRIC_OBJECT_TYPE_CODE:
 				return mDGeometricObjectTypeCode != null;
 			case GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDGeometricObjectTypeCodePropertyTypeImpl extends MinimalEObjectImp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiGeometryType
-{
+public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiGeometryType {
 	/**
 	 * The cached value of the '{@link #getGeometryMember() <em>Geometry Member</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MultiGeometryTypeImpl()
-	{
+	protected MultiGeometryTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMultiGeometryType();
 	}
 
@@ -84,10 +81,9 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<GeometryPropertyType> getGeometryMember()
-	{
-		if (geometryMember == null)
-		{
+	@Override
+	public EList<GeometryPropertyType> getGeometryMember() {
+		if (geometryMember == null) {
 			geometryMember = new EObjectContainmentEList<GeometryPropertyType>(GeometryPropertyType.class, this, GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBER);
 		}
 		return geometryMember;
@@ -98,8 +94,8 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometryArrayPropertyType getGeometryMembers()
-	{
+	@Override
+	public GeometryArrayPropertyType getGeometryMembers() {
 		return geometryMembers;
 	}
 
@@ -108,12 +104,10 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeometryMembers(GeometryArrayPropertyType newGeometryMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeometryMembers(GeometryArrayPropertyType newGeometryMembers, NotificationChain msgs) {
 		GeometryArrayPropertyType oldGeometryMembers = geometryMembers;
 		geometryMembers = newGeometryMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBERS, oldGeometryMembers, newGeometryMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +119,9 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeometryMembers(GeometryArrayPropertyType newGeometryMembers)
-	{
-		if (newGeometryMembers != geometryMembers)
-		{
+	@Override
+	public void setGeometryMembers(GeometryArrayPropertyType newGeometryMembers) {
+		if (newGeometryMembers != geometryMembers) {
 			NotificationChain msgs = null;
 			if (geometryMembers != null)
 				msgs = ((InternalEObject)geometryMembers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBERS, null, msgs);
@@ -147,10 +140,8 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBER:
 				return ((InternalEList<?>)getGeometryMember()).basicRemove(otherEnd, msgs);
 			case GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBERS:
@@ -165,10 +156,8 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBER:
 				return getGeometryMember();
 			case GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBERS:
@@ -184,10 +173,8 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBER:
 				getGeometryMember().clear();
 				getGeometryMember().addAll((Collection<? extends GeometryPropertyType>)newValue);
@@ -205,10 +192,8 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBER:
 				getGeometryMember().clear();
 				return;
@@ -225,10 +210,8 @@ public class MultiGeometryTypeImpl extends AbstractGeometricAggregateTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBER:
 				return geometryMember != null && !geometryMember.isEmpty();
 			case GMLPackage.MULTI_GEOMETRY_TYPE__GEOMETRY_MEMBERS:

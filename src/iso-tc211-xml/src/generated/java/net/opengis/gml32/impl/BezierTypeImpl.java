@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class BezierTypeImpl extends BSplineTypeImpl implements BezierType
-{
+public class BezierTypeImpl extends BSplineTypeImpl implements BezierType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BezierTypeImpl()
-	{
+	protected BezierTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class BezierTypeImpl extends BSplineTypeImpl implements BezierType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getBezierType();
 	}
 

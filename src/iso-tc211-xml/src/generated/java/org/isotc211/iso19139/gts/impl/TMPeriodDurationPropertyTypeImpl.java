@@ -28,8 +28,7 @@ import org.isotc211.iso19139.gts.TMPeriodDurationPropertyType;
  *
  * @generated
  */
-public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Container implements TMPeriodDurationPropertyType
-{
+public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Container implements TMPeriodDurationPropertyType {
 	/**
 	 * The default value of the '{@link #getTMPeriodDuration() <em>TM Period Duration</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TMPeriodDurationPropertyTypeImpl()
-	{
+	protected TMPeriodDurationPropertyTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GTSPackage.Literals.TM_PERIOD_DURATION_PROPERTY_TYPE;
 	}
 
@@ -96,8 +93,8 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Duration getTMPeriodDuration()
-	{
+	@Override
+	public Duration getTMPeriodDuration() {
 		return tMPeriodDuration;
 	}
 
@@ -106,8 +103,8 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTMPeriodDuration(Duration newTMPeriodDuration)
-	{
+	@Override
+	public void setTMPeriodDuration(Duration newTMPeriodDuration) {
 		Duration oldTMPeriodDuration = tMPeriodDuration;
 		tMPeriodDuration = newTMPeriodDuration;
 		if (eNotificationRequired())
@@ -119,8 +116,8 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -129,8 +126,8 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -143,10 +140,8 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GTSPackage.TM_PERIOD_DURATION_PROPERTY_TYPE__TM_PERIOD_DURATION:
 				return getTMPeriodDuration();
 			case GTSPackage.TM_PERIOD_DURATION_PROPERTY_TYPE__NIL_REASON:
@@ -161,10 +156,8 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GTSPackage.TM_PERIOD_DURATION_PROPERTY_TYPE__TM_PERIOD_DURATION:
 				setTMPeriodDuration((Duration)newValue);
 				return;
@@ -181,10 +174,8 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GTSPackage.TM_PERIOD_DURATION_PROPERTY_TYPE__TM_PERIOD_DURATION:
 				setTMPeriodDuration(TM_PERIOD_DURATION_EDEFAULT);
 				return;
@@ -201,10 +192,8 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GTSPackage.TM_PERIOD_DURATION_PROPERTY_TYPE__TM_PERIOD_DURATION:
 				return TM_PERIOD_DURATION_EDEFAULT == null ? tMPeriodDuration != null : !TM_PERIOD_DURATION_EDEFAULT.equals(tMPeriodDuration);
 			case GTSPackage.TM_PERIOD_DURATION_PROPERTY_TYPE__NIL_REASON:
@@ -219,11 +208,10 @@ public class TMPeriodDurationPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (tMPeriodDuration: ");
 		result.append(tMPeriodDuration);
 		result.append(", nilReason: ");

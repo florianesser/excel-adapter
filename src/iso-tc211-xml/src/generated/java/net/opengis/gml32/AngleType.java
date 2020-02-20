@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='AngleType' kind='simple'"
  * @generated
  */
-public interface AngleType extends MeasureType
-{
+public interface AngleType extends MeasureType {
 } // AngleType

@@ -30,8 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implements GridEnvelopeType
-{
+public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implements GridEnvelopeType {
 	/**
 	 * The default value of the '{@link #getLow() <em>Low</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -77,8 +76,7 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GridEnvelopeTypeImpl()
-	{
+	protected GridEnvelopeTypeImpl() {
 		super();
 	}
 
@@ -88,8 +86,7 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGridEnvelopeType();
 	}
 
@@ -98,8 +95,8 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<BigInteger> getLow()
-	{
+	@Override
+	public List<BigInteger> getLow() {
 		return low;
 	}
 
@@ -108,8 +105,8 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLow(List<BigInteger> newLow)
-	{
+	@Override
+	public void setLow(List<BigInteger> newLow) {
 		List<BigInteger> oldLow = low;
 		low = newLow;
 		if (eNotificationRequired())
@@ -121,8 +118,8 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<BigInteger> getHigh()
-	{
+	@Override
+	public List<BigInteger> getHigh() {
 		return high;
 	}
 
@@ -131,8 +128,8 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHigh(List<BigInteger> newHigh)
-	{
+	@Override
+	public void setHigh(List<BigInteger> newHigh) {
 		List<BigInteger> oldHigh = high;
 		high = newHigh;
 		if (eNotificationRequired())
@@ -145,10 +142,8 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GRID_ENVELOPE_TYPE__LOW:
 				return getLow();
 			case GMLPackage.GRID_ENVELOPE_TYPE__HIGH:
@@ -164,10 +159,8 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GRID_ENVELOPE_TYPE__LOW:
 				setLow((List<BigInteger>)newValue);
 				return;
@@ -184,10 +177,8 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GRID_ENVELOPE_TYPE__LOW:
 				setLow(LOW_EDEFAULT);
 				return;
@@ -204,10 +195,8 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GRID_ENVELOPE_TYPE__LOW:
 				return LOW_EDEFAULT == null ? low != null : !LOW_EDEFAULT.equals(low);
 			case GMLPackage.GRID_ENVELOPE_TYPE__HIGH:
@@ -222,11 +211,10 @@ public class GridEnvelopeTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (low: ");
 		result.append(low);
 		result.append(", high: ");

@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_RelativeInternalPositionalAccuracy_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQRelativeInternalPositionalAccuracyType extends AbstractDQPositionalAccuracyType
-{
+public interface DQRelativeInternalPositionalAccuracyType extends AbstractDQPositionalAccuracyType {
 } // DQRelativeInternalPositionalAccuracyType

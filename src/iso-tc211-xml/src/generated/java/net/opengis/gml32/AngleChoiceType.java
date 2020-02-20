@@ -21,8 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='AngleChoiceType' kind='elementOnly'"
  * @generated
  */
-public interface AngleChoiceType extends EObject
-{
+public interface AngleChoiceType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -52,10 +51,6 @@ public interface AngleChoiceType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Dms Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dms Angle</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dms Angle</em>' containment reference.
 	 * @see #setDmsAngle(DMSAngleType)

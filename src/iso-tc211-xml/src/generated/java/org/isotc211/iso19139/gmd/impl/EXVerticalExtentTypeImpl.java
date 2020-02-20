@@ -34,8 +34,7 @@ import org.isotc211.iso19139.gsr.SCCRSPropertyType;
  *
  * @generated
  */
-public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements EXVerticalExtentType
-{
+public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements EXVerticalExtentType {
 	/**
 	 * The cached value of the '{@link #getMinimumValue() <em>Minimum Value</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -71,8 +70,7 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EXVerticalExtentTypeImpl()
-	{
+	protected EXVerticalExtentTypeImpl() {
 		super();
 	}
 
@@ -82,8 +80,7 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getEXVerticalExtentType();
 	}
 
@@ -92,8 +89,8 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getMinimumValue()
-	{
+	@Override
+	public RealPropertyType getMinimumValue() {
 		return minimumValue;
 	}
 
@@ -102,12 +99,10 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMinimumValue(RealPropertyType newMinimumValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMinimumValue(RealPropertyType newMinimumValue, NotificationChain msgs) {
 		RealPropertyType oldMinimumValue = minimumValue;
 		minimumValue = newMinimumValue;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_VERTICAL_EXTENT_TYPE__MINIMUM_VALUE, oldMinimumValue, newMinimumValue);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -119,10 +114,9 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMinimumValue(RealPropertyType newMinimumValue)
-	{
-		if (newMinimumValue != minimumValue)
-		{
+	@Override
+	public void setMinimumValue(RealPropertyType newMinimumValue) {
+		if (newMinimumValue != minimumValue) {
 			NotificationChain msgs = null;
 			if (minimumValue != null)
 				msgs = ((InternalEObject)minimumValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_VERTICAL_EXTENT_TYPE__MINIMUM_VALUE, null, msgs);
@@ -140,8 +134,8 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getMaximumValue()
-	{
+	@Override
+	public RealPropertyType getMaximumValue() {
 		return maximumValue;
 	}
 
@@ -150,12 +144,10 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMaximumValue(RealPropertyType newMaximumValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMaximumValue(RealPropertyType newMaximumValue, NotificationChain msgs) {
 		RealPropertyType oldMaximumValue = maximumValue;
 		maximumValue = newMaximumValue;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_VERTICAL_EXTENT_TYPE__MAXIMUM_VALUE, oldMaximumValue, newMaximumValue);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -167,10 +159,9 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaximumValue(RealPropertyType newMaximumValue)
-	{
-		if (newMaximumValue != maximumValue)
-		{
+	@Override
+	public void setMaximumValue(RealPropertyType newMaximumValue) {
+		if (newMaximumValue != maximumValue) {
 			NotificationChain msgs = null;
 			if (maximumValue != null)
 				msgs = ((InternalEObject)maximumValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_VERTICAL_EXTENT_TYPE__MAXIMUM_VALUE, null, msgs);
@@ -188,8 +179,8 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SCCRSPropertyType getVerticalCRS()
-	{
+	@Override
+	public SCCRSPropertyType getVerticalCRS() {
 		return verticalCRS;
 	}
 
@@ -198,12 +189,10 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalCRS(SCCRSPropertyType newVerticalCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalCRS(SCCRSPropertyType newVerticalCRS, NotificationChain msgs) {
 		SCCRSPropertyType oldVerticalCRS = verticalCRS;
 		verticalCRS = newVerticalCRS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_VERTICAL_EXTENT_TYPE__VERTICAL_CRS, oldVerticalCRS, newVerticalCRS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -215,10 +204,9 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalCRS(SCCRSPropertyType newVerticalCRS)
-	{
-		if (newVerticalCRS != verticalCRS)
-		{
+	@Override
+	public void setVerticalCRS(SCCRSPropertyType newVerticalCRS) {
+		if (newVerticalCRS != verticalCRS) {
 			NotificationChain msgs = null;
 			if (verticalCRS != null)
 				msgs = ((InternalEObject)verticalCRS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_VERTICAL_EXTENT_TYPE__VERTICAL_CRS, null, msgs);
@@ -237,10 +225,8 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.EX_VERTICAL_EXTENT_TYPE__MINIMUM_VALUE:
 				return basicSetMinimumValue(null, msgs);
 			case GMDPackage.EX_VERTICAL_EXTENT_TYPE__MAXIMUM_VALUE:
@@ -257,10 +243,8 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.EX_VERTICAL_EXTENT_TYPE__MINIMUM_VALUE:
 				return getMinimumValue();
 			case GMDPackage.EX_VERTICAL_EXTENT_TYPE__MAXIMUM_VALUE:
@@ -277,10 +261,8 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.EX_VERTICAL_EXTENT_TYPE__MINIMUM_VALUE:
 				setMinimumValue((RealPropertyType)newValue);
 				return;
@@ -300,10 +282,8 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_VERTICAL_EXTENT_TYPE__MINIMUM_VALUE:
 				setMinimumValue((RealPropertyType)null);
 				return;
@@ -323,10 +303,8 @@ public class EXVerticalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_VERTICAL_EXTENT_TYPE__MINIMUM_VALUE:
 				return minimumValue != null;
 			case GMDPackage.EX_VERTICAL_EXTENT_TYPE__MAXIMUM_VALUE:

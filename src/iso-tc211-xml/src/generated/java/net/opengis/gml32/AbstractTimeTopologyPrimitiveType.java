@@ -20,15 +20,10 @@ package net.opengis.gml32;
  *        extendedMetaData="name='AbstractTimeTopologyPrimitiveType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractTimeTopologyPrimitiveType extends AbstractTimePrimitiveType
-{
+public interface AbstractTimeTopologyPrimitiveType extends AbstractTimePrimitiveType {
 	/**
 	 * Returns the value of the '<em><b>Complex</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Complex</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Complex</em>' containment reference.
 	 * @see #setComplex(ReferenceType)

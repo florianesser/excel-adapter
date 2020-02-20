@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class AreaTypeImpl extends MeasureTypeImpl implements AreaType
-{
+public class AreaTypeImpl extends MeasureTypeImpl implements AreaType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AreaTypeImpl()
-	{
+	protected AreaTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class AreaTypeImpl extends MeasureTypeImpl implements AreaType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAreaType();
 	}
 

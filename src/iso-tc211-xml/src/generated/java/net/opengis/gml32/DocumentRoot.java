@@ -505,16 +505,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='' kind='mixed'"
  * @generated
  */
-public interface DocumentRoot extends EObject
-{
+public interface DocumentRoot extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Mixed</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mixed</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mixed</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getDocumentRoot_Mixed()
@@ -529,14 +524,10 @@ public interface DocumentRoot extends EObject
 	 * The key is of type {@link java.lang.String},
 	 * and the value is of type {@link java.lang.String},
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>XMLNS Prefix Map</em>' map isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>XMLNS Prefix Map</em>' map.
 	 * @see net.opengis.gml32.GMLPackage#getDocumentRoot_XMLNSPrefixMap()
-	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry<org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString>" transient="true"
+	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;" transient="true"
 	 *        extendedMetaData="kind='attribute' name='xmlns:prefix'"
 	 * @generated
 	 */
@@ -547,14 +538,10 @@ public interface DocumentRoot extends EObject
 	 * The key is of type {@link java.lang.String},
 	 * and the value is of type {@link java.lang.String},
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>XSI Schema Location</em>' map isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>XSI Schema Location</em>' map.
 	 * @see net.opengis.gml32.GMLPackage#getDocumentRoot_XSISchemaLocation()
-	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry<org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString>" transient="true"
+	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;" transient="true"
 	 *        extendedMetaData="kind='attribute' name='xsi:schemaLocation'"
 	 * @generated
 	 */
@@ -831,10 +818,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract Feature Collection</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract Feature Collection</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract Feature Collection</em>' containment reference.
 	 * @see net.opengis.gml32.GMLPackage#getDocumentRoot_AbstractFeatureCollection()
@@ -863,10 +846,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract Operation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract Operation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract Operation</em>' containment reference.
 	 * @see net.opengis.gml32.GMLPackage#getDocumentRoot_AbstractOperation()
@@ -939,10 +918,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract General Operation Parameter Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract General Operation Parameter Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract General Operation Parameter Ref</em>' containment reference.
 	 * @see #setAbstractGeneralOperationParameterRef(AbstractGeneralOperationParameterPropertyType)
@@ -1062,10 +1037,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract Implicit Geometry</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract Implicit Geometry</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract Implicit Geometry</em>' containment reference.
 	 * @see net.opengis.gml32.GMLPackage#getDocumentRoot_AbstractImplicitGeometry()
@@ -1093,10 +1064,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract Meta Data</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract Meta Data</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract Meta Data</em>' containment reference.
 	 * @see net.opengis.gml32.GMLPackage#getDocumentRoot_AbstractMetaData()
@@ -1331,10 +1298,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract Topology</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract Topology</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract Topology</em>' containment reference.
 	 * @see net.opengis.gml32.GMLPackage#getDocumentRoot_AbstractTopology()
@@ -1471,10 +1434,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Anchor Point</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Anchor Point</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Anchor Point</em>' containment reference.
 	 * @see #setAnchorPoint(CodeType)
@@ -1665,10 +1624,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Array</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Array</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Array</em>' containment reference.
 	 * @see #setArray(ArrayType)
@@ -1692,10 +1647,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Association Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Association Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Association Name</em>' attribute.
 	 * @see #setAssociationName(String)
@@ -1799,10 +1750,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Bag</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Bag</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Bag</em>' containment reference.
 	 * @see #setBag(BagType)
@@ -1904,10 +1851,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Base Geographic CRS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Base Geographic CRS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Geographic CRS</em>' containment reference.
 	 * @see #setBaseGeographicCRS(GeographicCRSPropertyType)
@@ -2075,10 +2018,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Boolean</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Boolean</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Boolean</em>' containment reference.
 	 * @see #setBoolean(BooleanType)
@@ -2102,10 +2041,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Boolean List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Boolean List</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Boolean List</em>' attribute.
 	 * @see #setBooleanList(List)
@@ -2233,10 +2168,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Cartesian CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cartesian CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cartesian CS Ref</em>' containment reference.
 	 * @see #setCartesianCSRef(CartesianCSPropertyType)
@@ -2313,10 +2244,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Category Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Category Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Category Extent</em>' containment reference.
 	 * @see #setCategoryExtent(CategoryExtentType)
@@ -2340,10 +2267,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Category List</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Category List</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Category List</em>' containment reference.
 	 * @see #setCategoryList(CodeOrNilReasonListType)
@@ -2367,10 +2290,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Center Line Of</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Center Line Of</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Center Line Of</em>' containment reference.
 	 * @see #setCenterLineOf(CurvePropertyType)
@@ -2394,10 +2313,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Center Of</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Center Of</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Center Of</em>' containment reference.
 	 * @see #setCenterOf(PointPropertyType)
@@ -2664,10 +2579,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Compound CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Compound CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compound CRS Ref</em>' containment reference.
 	 * @see #setCompoundCRSRef(CompoundCRSPropertyType)
@@ -2691,10 +2602,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Concatenated Operation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Concatenated Operation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Concatenated Operation</em>' containment reference.
 	 * @see #setConcatenatedOperation(ConcatenatedOperationType)
@@ -2718,10 +2625,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Concatenated Operation Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Concatenated Operation Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Concatenated Operation Ref</em>' containment reference.
 	 * @see #setConcatenatedOperationRef(ConcatenatedOperationPropertyType)
@@ -2745,10 +2648,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Cone</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cone</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cone</em>' containment reference.
 	 * @see #setCone(ConeType)
@@ -2853,10 +2752,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Conversion Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Conversion Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Conversion Ref</em>' containment reference.
 	 * @see #setConversionRef(ConversionPropertyType)
@@ -2932,10 +2827,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Coordinate Operation Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Coordinate Operation Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coordinate Operation Ref</em>' containment reference.
 	 * @see #setCoordinateOperationRef(CoordinateOperationPropertyType)
@@ -2959,10 +2850,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Coordinates</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Coordinates</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coordinates</em>' containment reference.
 	 * @see #setCoordinates(CoordinatesType)
@@ -3038,10 +2925,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Coordinate System Axis Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Coordinate System Axis Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coordinate System Axis Ref</em>' containment reference.
 	 * @see #setCoordinateSystemAxisRef(CoordinateSystemAxisPropertyType)
@@ -3065,10 +2948,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Coordinate System Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Coordinate System Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coordinate System Ref</em>' containment reference.
 	 * @see #setCoordinateSystemRef(CoordinateSystemPropertyType)
@@ -3118,10 +2997,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Count</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Count</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Count</em>' containment reference.
 	 * @see #setCount(CountType)
@@ -3145,10 +3020,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Count Extent</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Count Extent</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Count Extent</em>' attribute.
 	 * @see #setCountExtent(List)
@@ -3172,10 +3043,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Count List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Count List</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Count List</em>' attribute.
 	 * @see #setCountList(List)
@@ -3255,10 +3122,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Crs Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Crs Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Crs Ref</em>' containment reference.
 	 * @see #setCrsRef(CRSPropertyType)
@@ -3341,10 +3204,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Curve Array Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Curve Array Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Curve Array Property</em>' containment reference.
 	 * @see #setCurveArrayProperty(CurveArrayPropertyType)
@@ -3368,10 +3227,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Curve Member</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Curve Member</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Curve Member</em>' containment reference.
 	 * @see #setCurveMember(CurvePropertyType)
@@ -3447,10 +3302,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Cylinder</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cylinder</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cylinder</em>' containment reference.
 	 * @see #setCylinder(CylinderType)
@@ -3526,10 +3377,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Cylindrical CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cylindrical CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cylindrical CS Ref</em>' containment reference.
 	 * @see #setCylindricalCSRef(CylindricalCSPropertyType)
@@ -3632,10 +3479,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Datum Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Datum Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Datum Ref</em>' containment reference.
 	 * @see #setDatumRef(DatumPropertyType)
@@ -3659,10 +3502,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Decimal Minutes</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Decimal Minutes</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Decimal Minutes</em>' attribute.
 	 * @see #setDecimalMinutes(BigDecimal)
@@ -3686,10 +3525,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Default Code Space</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default Code Space</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Default Code Space</em>' attribute.
 	 * @see #setDefaultCodeSpace(String)
@@ -3713,10 +3548,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Definition Collection</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Definition Collection</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Definition Collection</em>' containment reference.
 	 * @see #setDefinitionCollection(DictionaryType)
@@ -3740,10 +3571,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Definition Member</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Definition Member</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Definition Member</em>' containment reference.
 	 * @see #setDefinitionMember(DictionaryEntryType)
@@ -3795,10 +3622,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Definition Proxy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Definition Proxy</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Definition Proxy</em>' containment reference.
 	 * @see #setDefinitionProxy(DefinitionProxyType)
@@ -3822,10 +3645,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Definition Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Definition Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Definition Ref</em>' containment reference.
 	 * @see #setDefinitionRef(ReferenceType)
@@ -3849,10 +3668,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Degrees</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Degrees</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Degrees</em>' containment reference.
 	 * @see #setDegrees(DegreesType)
@@ -3929,10 +3744,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Derived CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Derived CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Derived CRS Ref</em>' containment reference.
 	 * @see #setDerivedCRSRef(DerivedCRSPropertyType)
@@ -4303,10 +4114,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Dms Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dms Angle</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dms Angle</em>' containment reference.
 	 * @see #setDmsAngle(DMSAngleType)
@@ -4330,10 +4137,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Dms Angle Value</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dms Angle Value</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dms Angle Value</em>' containment reference.
 	 * @see #setDmsAngleValue(DMSAngleType)
@@ -4519,10 +4322,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Dynamic Members</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dynamic Members</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dynamic Members</em>' containment reference.
 	 * @see #setDynamicMembers(DynamicFeatureMemberType)
@@ -4576,10 +4375,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Edge Of</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Edge Of</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Edge Of</em>' containment reference.
 	 * @see #setEdgeOf(CurvePropertyType)
@@ -4707,10 +4502,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Ellipsoidal CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ellipsoidal CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ellipsoidal CS Ref</em>' containment reference.
 	 * @see #setEllipsoidalCSRef(EllipsoidalCSPropertyType)
@@ -4734,10 +4525,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Ellipsoid Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ellipsoid Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ellipsoid Ref</em>' containment reference.
 	 * @see #setEllipsoidRef(EllipsoidPropertyType)
@@ -4789,10 +4576,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Engineering CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Engineering CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Engineering CRS Ref</em>' containment reference.
 	 * @see #setEngineeringCRSRef(EngineeringCRSPropertyType)
@@ -4868,10 +4651,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Engineering Datum Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Engineering Datum Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Engineering Datum Ref</em>' containment reference.
 	 * @see #setEngineeringDatumRef(EngineeringDatumPropertyType)
@@ -4949,10 +4728,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Extent Of</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Extent Of</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extent Of</em>' containment reference.
 	 * @see #setExtentOf(SurfacePropertyType)
@@ -5031,10 +4806,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Feature Collection</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Collection</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Collection</em>' containment reference.
 	 * @see #setFeatureCollection(FeatureCollectionType)
@@ -5058,10 +4829,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Feature Member</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Member</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Member</em>' containment reference.
 	 * @see #setFeatureMember(FeaturePropertyType)
@@ -5085,10 +4852,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Feature Members</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Members</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Members</em>' containment reference.
 	 * @see #setFeatureMembers(FeatureArrayPropertyType)
@@ -5112,10 +4875,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Feature Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Property</em>' containment reference.
 	 * @see #setFeatureProperty(FeaturePropertyType)
@@ -5224,10 +4983,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>General Conversion Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>General Conversion Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>General Conversion Ref</em>' containment reference.
 	 * @see #setGeneralConversionRef(GeneralConversionPropertyType)
@@ -5251,10 +5006,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>General Transformation Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>General Transformation Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>General Transformation Ref</em>' containment reference.
 	 * @see #setGeneralTransformationRef(GeneralTransformationPropertyType)
@@ -5278,10 +5029,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Generic Meta Data</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Generic Meta Data</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generic Meta Data</em>' containment reference.
 	 * @see #setGenericMetaData(GenericMetaDataType)
@@ -5305,10 +5052,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Geocentric CRS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geocentric CRS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geocentric CRS</em>' containment reference.
 	 * @see #setGeocentricCRS(GeocentricCRSType)
@@ -5332,10 +5075,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Geocentric CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geocentric CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geocentric CRS Ref</em>' containment reference.
 	 * @see #setGeocentricCRSRef(GeocentricCRSPropertyType)
@@ -5359,10 +5098,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Geodesic</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geodesic</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geodesic</em>' containment reference.
 	 * @see #setGeodesic(GeodesicType)
@@ -5415,10 +5150,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Geodetic CRS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geodetic CRS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geodetic CRS</em>' containment reference.
 	 * @see #setGeodeticCRS(GeodeticCRSType)
@@ -5495,10 +5226,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Geodetic Datum Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geodetic Datum Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geodetic Datum Ref</em>' containment reference.
 	 * @see #setGeodeticDatumRef(GeodeticDatumPropertyType)
@@ -5522,10 +5249,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Geographic CRS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geographic CRS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geographic CRS</em>' containment reference.
 	 * @see #setGeographicCRS(GeographicCRSType)
@@ -5549,10 +5272,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Geographic CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geographic CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geographic CRS Ref</em>' containment reference.
 	 * @see #setGeographicCRSRef(GeographicCRSPropertyType)
@@ -5576,10 +5295,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Geometric Complex</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geometric Complex</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geometric Complex</em>' containment reference.
 	 * @see #setGeometricComplex(GeometricComplexType)
@@ -5655,10 +5370,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Gml Profile Schema</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gml Profile Schema</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Gml Profile Schema</em>' attribute.
 	 * @see #setGmlProfileSchema(String)
@@ -5763,10 +5474,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Grid Domain</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Grid Domain</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Grid Domain</em>' containment reference.
 	 * @see #setGridDomain(DomainSetType)
@@ -5922,10 +5629,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Image CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Image CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Image CRS Ref</em>' containment reference.
 	 * @see #setImageCRSRef(ImageCRSPropertyType)
@@ -6001,10 +5704,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Image Datum Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Image Datum Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Image Datum Ref</em>' containment reference.
 	 * @see #setImageDatumRef(ImageDatumPropertyType)
@@ -6028,10 +5727,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Includes Single CRS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Includes Single CRS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Includes Single CRS</em>' containment reference.
 	 * @see #setIncludesSingleCRS(SingleCRSPropertyType)
@@ -6055,10 +5750,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Indirect Entry</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Indirect Entry</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Indirect Entry</em>' containment reference.
 	 * @see #setIndirectEntry(IndirectEntryType)
@@ -6212,10 +5903,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Linear CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Linear CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Linear CS Ref</em>' containment reference.
 	 * @see #setLinearCSRef(LinearCSPropertyType)
@@ -6318,10 +6005,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Location</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Location</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location</em>' containment reference.
 	 * @see #setLocation(LocationPropertyType)
@@ -6345,10 +6028,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Location Key Word</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Location Key Word</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location Key Word</em>' containment reference.
 	 * @see #setLocationKeyWord(CodeType)
@@ -6424,10 +6103,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Location String</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Location String</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location String</em>' containment reference.
 	 * @see #setLocationString(StringOrRefType)
@@ -6451,10 +6126,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Mapping Rule</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mapping Rule</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mapping Rule</em>' containment reference.
 	 * @see #setMappingRule(StringOrRefType)
@@ -6582,10 +6253,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Member</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Member</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Member</em>' containment reference.
 	 * @see #setMember(AssociationRoleType)
@@ -6609,10 +6276,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Members</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Members</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Members</em>' containment reference.
 	 * @see #setMembers(ArrayAssociationType)
@@ -6636,10 +6299,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Meta Data Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Meta Data Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Meta Data Property</em>' containment reference.
 	 * @see #setMetaDataProperty(MetaDataPropertyType)
@@ -6689,10 +6348,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Method Formula</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Method Formula</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Method Formula</em>' containment reference.
 	 * @see #setMethodFormula(CodeType)
@@ -6768,10 +6423,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Minutes</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Minutes</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Minutes</em>' attribute.
 	 * @see #setMinutes(BigInteger)
@@ -6821,10 +6472,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Moving Object Status</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Moving Object Status</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Moving Object Status</em>' containment reference.
 	 * @see #setMovingObjectStatus(MovingObjectStatusType)
@@ -6848,10 +6495,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Center Line Of</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Center Line Of</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Center Line Of</em>' containment reference.
 	 * @see #setMultiCenterLineOf(MultiCurvePropertyType)
@@ -6875,10 +6518,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Center Of</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Center Of</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Center Of</em>' containment reference.
 	 * @see #setMultiCenterOf(MultiPointPropertyType)
@@ -6902,10 +6541,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Coverage</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Coverage</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Coverage</em>' containment reference.
 	 * @see #setMultiCoverage(MultiSurfacePropertyType)
@@ -6988,10 +6623,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Curve Domain</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Curve Domain</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Curve Domain</em>' containment reference.
 	 * @see #setMultiCurveDomain(DomainSetType)
@@ -7015,10 +6646,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Curve Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Curve Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Curve Property</em>' containment reference.
 	 * @see #setMultiCurveProperty(MultiCurvePropertyType)
@@ -7042,10 +6669,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Edge Of</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Edge Of</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Edge Of</em>' containment reference.
 	 * @see #setMultiEdgeOf(MultiCurvePropertyType)
@@ -7069,10 +6692,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Extent Of</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Extent Of</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Extent Of</em>' containment reference.
 	 * @see #setMultiExtentOf(MultiSurfacePropertyType)
@@ -7123,10 +6742,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Geometry Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Geometry Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Geometry Property</em>' containment reference.
 	 * @see #setMultiGeometryProperty(MultiGeometryPropertyType)
@@ -7150,10 +6765,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Location</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Location</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Location</em>' containment reference.
 	 * @see #setMultiLocation(MultiPointPropertyType)
@@ -7236,10 +6847,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Point Domain</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Point Domain</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Point Domain</em>' containment reference.
 	 * @see #setMultiPointDomain(DomainSetType)
@@ -7263,10 +6870,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Point Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Point Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Point Property</em>' containment reference.
 	 * @see #setMultiPointProperty(MultiPointPropertyType)
@@ -7290,10 +6893,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Position</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Position</em>' containment reference.
 	 * @see #setMultiPosition(MultiPointPropertyType)
@@ -7376,10 +6975,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Solid Domain</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Solid Domain</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Solid Domain</em>' containment reference.
 	 * @see #setMultiSolidDomain(DomainSetType)
@@ -7403,10 +6998,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Solid Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Solid Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Solid Property</em>' containment reference.
 	 * @see #setMultiSolidProperty(MultiSolidPropertyType)
@@ -7489,10 +7080,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Surface Domain</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Surface Domain</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Surface Domain</em>' containment reference.
 	 * @see #setMultiSurfaceDomain(DomainSetType)
@@ -7516,10 +7103,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multi Surface Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multi Surface Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multi Surface Property</em>' containment reference.
 	 * @see #setMultiSurfaceProperty(MultiSurfacePropertyType)
@@ -7598,10 +7181,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Null</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Null</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Null</em>' attribute.
 	 * @see #setNull(Object)
@@ -7625,10 +7204,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Oblique Cartesian CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Oblique Cartesian CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Oblique Cartesian CS</em>' containment reference.
 	 * @see #setObliqueCartesianCS(ObliqueCartesianCSType)
@@ -7652,10 +7227,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Oblique Cartesian CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Oblique Cartesian CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Oblique Cartesian CS Ref</em>' containment reference.
 	 * @see #setObliqueCartesianCSRef(ObliqueCartesianCSPropertyType)
@@ -7733,10 +7304,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Operation Method Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Operation Method Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Method Ref</em>' containment reference.
 	 * @see #setOperationMethodRef(OperationMethodPropertyType)
@@ -7839,10 +7406,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Operation Parameter Group Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Operation Parameter Group Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Parameter Group Ref</em>' containment reference.
 	 * @see #setOperationParameterGroupRef(OperationParameterPropertyType)
@@ -7866,10 +7429,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Operation Parameter Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Operation Parameter Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Parameter Ref</em>' containment reference.
 	 * @see #setOperationParameterRef(OperationParameterPropertyType)
@@ -7893,10 +7452,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Operation Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Operation Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Ref</em>' containment reference.
 	 * @see #setOperationRef(OperationPropertyType)
@@ -8156,10 +7711,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Pass Through Operation Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pass Through Operation Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pass Through Operation Ref</em>' containment reference.
 	 * @see #setPassThroughOperationRef(PassThroughOperationPropertyType)
@@ -8261,10 +7812,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Point Array Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Point Array Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Point Array Property</em>' containment reference.
 	 * @see #setPointArrayProperty(PointArrayPropertyType)
@@ -8366,10 +7913,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Point Rep</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Point Rep</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Point Rep</em>' containment reference.
 	 * @see #setPointRep(PointPropertyType)
@@ -8445,10 +7988,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Polar CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Polar CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Polar CS Ref</em>' containment reference.
 	 * @see #setPolarCSRef(PolarCSPropertyType)
@@ -8526,10 +8065,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Polygon Patches</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Polygon Patches</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Polygon Patches</em>' containment reference.
 	 * @see #setPolygonPatches(SurfacePatchArrayPropertyType)
@@ -8607,10 +8142,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Pos</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos</em>' containment reference.
 	 * @see #setPos(DirectPositionType)
@@ -8634,10 +8165,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Position</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position</em>' containment reference.
 	 * @see #setPosition(PointPropertyType)
@@ -8661,10 +8188,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Pos List</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos List</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos List</em>' containment reference.
 	 * @see #setPosList(DirectPositionListType)
@@ -8740,10 +8263,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Prime Meridian Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Prime Meridian Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Prime Meridian Ref</em>' containment reference.
 	 * @see #setPrimeMeridianRef(PrimeMeridianPropertyType)
@@ -8767,10 +8286,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Priority Location</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Priority Location</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Priority Location</em>' containment reference.
 	 * @see #setPriorityLocation(PriorityLocationPropertyType)
@@ -8820,10 +8335,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Projected CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Projected CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Projected CRS Ref</em>' containment reference.
 	 * @see #setProjectedCRSRef(ProjectedCRSPropertyType)
@@ -8873,10 +8384,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Quantity Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quantity Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Quantity Extent</em>' containment reference.
 	 * @see #setQuantityExtent(QuantityExtentType)
@@ -8900,10 +8407,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Quantity List</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quantity List</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Quantity List</em>' containment reference.
 	 * @see #setQuantityList(MeasureOrNilReasonListType)
@@ -9006,10 +8509,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Range Parameters</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Range Parameters</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Range Parameters</em>' containment reference.
 	 * @see #setRangeParameters(AssociationRoleType)
@@ -9168,10 +8667,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Rectified Grid Domain</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rectified Grid Domain</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Rectified Grid Domain</em>' containment reference.
 	 * @see #setRectifiedGridDomain(DomainSetType)
@@ -9195,10 +8690,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Reference System Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reference System Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference System Ref</em>' containment reference.
 	 * @see #setReferenceSystemRef(CRSPropertyType)
@@ -9222,10 +8713,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Remarks</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Remarks</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Remarks</em>' attribute.
 	 * @see #setRemarks(String)
@@ -9249,10 +8736,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Result Of</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Result Of</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Result Of</em>' containment reference.
 	 * @see #setResultOf(ResultType)
@@ -9410,10 +8893,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Second Defining Parameter1</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Second Defining Parameter1</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Second Defining Parameter1</em>' containment reference.
 	 * @see #setSecondDefiningParameter1(SecondDefiningParameterType)
@@ -9437,10 +8916,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Seconds</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Seconds</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Seconds</em>' attribute.
 	 * @see #setSeconds(BigDecimal)
@@ -9545,10 +9020,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Single CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Single CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Single CRS Ref</em>' containment reference.
 	 * @see #setSingleCRSRef(SingleCRSPropertyType)
@@ -9572,10 +9043,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Single Operation Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Single Operation Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Single Operation Ref</em>' containment reference.
 	 * @see #setSingleOperationRef(SingleOperationPropertyType)
@@ -9625,10 +9092,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Solid Array Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Solid Array Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Solid Array Property</em>' containment reference.
 	 * @see #setSolidArrayProperty(SolidArrayPropertyType)
@@ -9782,10 +9245,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Sphere</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sphere</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sphere</em>' containment reference.
 	 * @see #setSphere(SphereType)
@@ -9861,10 +9320,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Spherical CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Spherical CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Spherical CS Ref</em>' containment reference.
 	 * @see #setSphericalCSRef(SphericalCSPropertyType)
@@ -9888,10 +9343,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Status</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Status</em>' containment reference.
 	 * @see #setStatus(StringOrRefType)
@@ -9915,10 +9366,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Status Reference</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Reference</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Status Reference</em>' containment reference.
 	 * @see #setStatusReference(ReferenceType)
@@ -9994,10 +9441,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Subject</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subject</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Subject</em>' containment reference.
 	 * @see #setSubject(TargetPropertyType)
@@ -10021,10 +9464,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Target</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target</em>' containment reference.
 	 * @see #setTarget(TargetPropertyType)
@@ -10074,10 +9513,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Surface Array Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Surface Array Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Surface Array Property</em>' containment reference.
 	 * @see #setSurfaceArrayProperty(SurfaceArrayPropertyType)
@@ -10231,10 +9666,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Target Element</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Element</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Element</em>' attribute.
 	 * @see #setTargetElement(String)
@@ -10284,10 +9715,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Temporal CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Temporal CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Temporal CRS Ref</em>' containment reference.
 	 * @see #setTemporalCRSRef(TemporalCRSPropertyType)
@@ -10311,10 +9738,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Temporal CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Temporal CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Temporal CS</em>' containment reference.
 	 * @see #setTemporalCS(TemporalCSType)
@@ -10338,10 +9761,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Temporal CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Temporal CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Temporal CS Ref</em>' containment reference.
 	 * @see #setTemporalCSRef(TemporalCSPropertyType)
@@ -10417,10 +9836,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Temporal Datum Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Temporal Datum Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Temporal Datum Ref</em>' containment reference.
 	 * @see #setTemporalDatumRef(TemporalDatumPropertyType)
@@ -10968,10 +10383,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Topo Complex Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Topo Complex Property</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Topo Complex Property</em>' containment reference.
 	 * @see #setTopoComplexProperty(TopoComplexPropertyType)
@@ -11284,10 +10695,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Track</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Track</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Track</em>' containment reference.
 	 * @see #setTrack(HistoryPropertyType)
@@ -11339,10 +10746,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Transformation Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Transformation Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Transformation Ref</em>' containment reference.
 	 * @see #setTransformationRef(TransformationPropertyType)
@@ -11394,10 +10797,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Triangle Patches</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Triangle Patches</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Triangle Patches</em>' containment reference.
 	 * @see #setTrianglePatches(SurfacePatchArrayPropertyType)
@@ -11526,10 +10925,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>User Defined CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Defined CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Defined CS Ref</em>' containment reference.
 	 * @see #setUserDefinedCSRef(UserDefinedCSPropertyType)
@@ -11553,10 +10948,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Affine CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Affine CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Affine CS</em>' containment reference.
 	 * @see #setUsesAffineCS(AffineCSPropertyType)
@@ -11580,10 +10971,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Axis</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Axis</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Axis</em>' containment reference.
 	 * @see #setUsesAxis(CoordinateSystemAxisPropertyType)
@@ -11607,10 +10994,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Cartesian CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Cartesian CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Cartesian CS</em>' containment reference.
 	 * @see #setUsesCartesianCS(CartesianCSPropertyType)
@@ -11634,10 +11017,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses CS</em>' containment reference.
 	 * @see #setUsesCS(CoordinateSystemPropertyType)
@@ -11661,10 +11040,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Ellipsoid</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Ellipsoid</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Ellipsoid</em>' containment reference.
 	 * @see #setUsesEllipsoid(EllipsoidPropertyType)
@@ -11688,10 +11063,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Ellipsoidal CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Ellipsoidal CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Ellipsoidal CS</em>' containment reference.
 	 * @see #setUsesEllipsoidalCS(EllipsoidalCSPropertyType)
@@ -11715,10 +11086,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Engineering Datum</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Engineering Datum</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Engineering Datum</em>' containment reference.
 	 * @see #setUsesEngineeringDatum(EngineeringDatumPropertyType)
@@ -11742,10 +11109,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Geodetic Datum</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Geodetic Datum</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Geodetic Datum</em>' containment reference.
 	 * @see #setUsesGeodeticDatum(GeodeticDatumPropertyType)
@@ -11769,10 +11132,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Image Datum</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Image Datum</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Image Datum</em>' containment reference.
 	 * @see #setUsesImageDatum(ImageDatumPropertyType)
@@ -11796,10 +11155,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Method</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Method</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Method</em>' containment reference.
 	 * @see #setUsesMethod(OperationMethodPropertyType)
@@ -11823,10 +11178,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Oblique Cartesian CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Oblique Cartesian CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Oblique Cartesian CS</em>' containment reference.
 	 * @see #setUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType)
@@ -11850,10 +11201,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Operation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Operation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Operation</em>' containment reference.
 	 * @see #setUsesOperation(CoordinateOperationPropertyType)
@@ -11877,10 +11224,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Prime Meridian</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Prime Meridian</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Prime Meridian</em>' containment reference.
 	 * @see #setUsesPrimeMeridian(PrimeMeridianPropertyType)
@@ -11904,10 +11247,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Single Operation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Single Operation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Single Operation</em>' containment reference.
 	 * @see #setUsesSingleOperation(CoordinateOperationPropertyType)
@@ -11931,10 +11270,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Spherical CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Spherical CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Spherical CS</em>' containment reference.
 	 * @see #setUsesSphericalCS(SphericalCSPropertyType)
@@ -11958,10 +11293,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Temporal CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Temporal CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Temporal CS</em>' containment reference.
 	 * @see #setUsesTemporalCS(TemporalCSPropertyType)
@@ -11985,10 +11316,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Temporal Datum</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Temporal Datum</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Temporal Datum</em>' containment reference.
 	 * @see #setUsesTemporalDatum(TemporalDatumPropertyType)
@@ -12012,10 +11339,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Time CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Time CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Time CS</em>' containment reference.
 	 * @see #setUsesTimeCS(TimeCSPropertyType)
@@ -12039,10 +11362,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Vertical CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Vertical CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Vertical CS</em>' containment reference.
 	 * @see #setUsesVerticalCS(VerticalCSPropertyType)
@@ -12092,10 +11411,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uses Vertical Datum</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Vertical Datum</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Vertical Datum</em>' containment reference.
 	 * @see #setUsesVerticalDatum(VerticalDatumPropertyType)
@@ -12145,10 +11460,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Using</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Using</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Using</em>' containment reference.
 	 * @see #setUsing(ProcedurePropertyType)
@@ -12356,10 +11667,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Value Of Parameter</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value Of Parameter</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value Of Parameter</em>' containment reference.
 	 * @see #setValueOfParameter(OperationParameterPropertyType)
@@ -12409,10 +11716,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Values Of Group</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Values Of Group</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Values Of Group</em>' containment reference.
 	 * @see #setValuesOfGroup(OperationParameterGroupPropertyType)
@@ -12436,10 +11739,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Vector</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vector</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vector</em>' containment reference.
 	 * @see #setVector(VectorType)
@@ -12489,10 +11788,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Vertical CRS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vertical CRS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vertical CRS Ref</em>' containment reference.
 	 * @see #setVerticalCRSRef(VerticalCRSPropertyType)
@@ -12542,10 +11837,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Vertical CS Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vertical CS Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vertical CS Ref</em>' containment reference.
 	 * @see #setVerticalCSRef(VerticalCSPropertyType)
@@ -12595,10 +11886,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Vertical Datum Ref</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vertical Datum Ref</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vertical Datum Ref</em>' containment reference.
 	 * @see #setVerticalDatumRef(VerticalDatumPropertyType)
@@ -12648,10 +11935,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Remote Schema</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Remote Schema</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Remote Schema</em>' attribute.
 	 * @see #setRemoteSchema(String)
@@ -12675,10 +11958,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uom</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uom</em>' attribute.
 	 * @see #setUom(String)

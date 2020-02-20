@@ -21,8 +21,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='TopoSurfaceType' kind='elementOnly'"
  * @generated
  */
-public interface TopoSurfaceType extends AbstractTopologyType
-{
+public interface TopoSurfaceType extends AbstractTopologyType {
 	/**
 	 * Returns the value of the '<em><b>Directed Face</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.DirectedFacePropertyType}.
@@ -43,10 +42,6 @@ public interface TopoSurfaceType extends AbstractTopologyType
 	 * Returns the value of the '<em><b>Aggregation Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.AggregationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Type</em>' attribute.
 	 * @see net.opengis.gml32.AggregationType

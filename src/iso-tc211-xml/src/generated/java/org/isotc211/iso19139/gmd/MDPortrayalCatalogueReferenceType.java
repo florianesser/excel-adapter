@@ -26,16 +26,11 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  * @model extendedMetaData="name='MD_PortrayalCatalogueReference_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDPortrayalCatalogueReferenceType extends AbstractObjectType
-{
+public interface MDPortrayalCatalogueReferenceType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Portrayal Catalogue Citation</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CICitationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Portrayal Catalogue Citation</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Portrayal Catalogue Citation</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDPortrayalCatalogueReferenceType_PortrayalCatalogueCitation()

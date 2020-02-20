@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements OrientableCurveType
-{
+public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements OrientableCurveType {
 	/**
 	 * The cached value of the '{@link #getBaseCurve() <em>Base Curve</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected OrientableCurveTypeImpl()
-	{
+	protected OrientableCurveTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getOrientableCurveType();
 	}
 
@@ -96,8 +93,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurvePropertyType getBaseCurve()
-	{
+	@Override
+	public CurvePropertyType getBaseCurve() {
 		return baseCurve;
 	}
 
@@ -106,12 +103,10 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseCurve(CurvePropertyType newBaseCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseCurve(CurvePropertyType newBaseCurve, NotificationChain msgs) {
 		CurvePropertyType oldBaseCurve = baseCurve;
 		baseCurve = newBaseCurve;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ORIENTABLE_CURVE_TYPE__BASE_CURVE, oldBaseCurve, newBaseCurve);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -123,10 +118,9 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseCurve(CurvePropertyType newBaseCurve)
-	{
-		if (newBaseCurve != baseCurve)
-		{
+	@Override
+	public void setBaseCurve(CurvePropertyType newBaseCurve) {
+		if (newBaseCurve != baseCurve) {
 			NotificationChain msgs = null;
 			if (baseCurve != null)
 				msgs = ((InternalEObject)baseCurve).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ORIENTABLE_CURVE_TYPE__BASE_CURVE, null, msgs);
@@ -144,8 +138,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SignType getOrientation()
-	{
+	@Override
+	public SignType getOrientation() {
 		return orientation;
 	}
 
@@ -154,8 +148,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrientation(SignType newOrientation)
-	{
+	@Override
+	public void setOrientation(SignType newOrientation) {
 		SignType oldOrientation = orientation;
 		orientation = newOrientation == null ? ORIENTATION_EDEFAULT : newOrientation;
 		boolean oldOrientationESet = orientationESet;
@@ -169,8 +163,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOrientation()
-	{
+	@Override
+	public void unsetOrientation() {
 		SignType oldOrientation = orientation;
 		boolean oldOrientationESet = orientationESet;
 		orientation = ORIENTATION_EDEFAULT;
@@ -184,8 +178,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOrientation()
-	{
+	@Override
+	public boolean isSetOrientation() {
 		return orientationESet;
 	}
 
@@ -195,10 +189,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_CURVE_TYPE__BASE_CURVE:
 				return basicSetBaseCurve(null, msgs);
 		}
@@ -211,10 +203,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_CURVE_TYPE__BASE_CURVE:
 				return getBaseCurve();
 			case GMLPackage.ORIENTABLE_CURVE_TYPE__ORIENTATION:
@@ -229,10 +219,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_CURVE_TYPE__BASE_CURVE:
 				setBaseCurve((CurvePropertyType)newValue);
 				return;
@@ -249,10 +237,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_CURVE_TYPE__BASE_CURVE:
 				setBaseCurve((CurvePropertyType)null);
 				return;
@@ -269,10 +255,8 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_CURVE_TYPE__BASE_CURVE:
 				return baseCurve != null;
 			case GMLPackage.ORIENTABLE_CURVE_TYPE__ORIENTATION:
@@ -287,11 +271,10 @@ public class OrientableCurveTypeImpl extends AbstractCurveTypeImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (orientation: ");
 		if (orientationESet) result.append(orientation); else result.append("<unset>");
 		result.append(')');

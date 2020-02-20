@@ -21,16 +21,11 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='MD_TopicCategoryCode_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface MDTopicCategoryCodePropertyType extends EObject
-{
+public interface MDTopicCategoryCodePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>MD Topic Category Code</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.isotc211.iso19139.gmd.MDTopicCategoryCodeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Topic Category Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Topic Category Code</em>' attribute.
 	 * @see org.isotc211.iso19139.gmd.MDTopicCategoryCodeType
@@ -83,10 +78,6 @@ public interface MDTopicCategoryCodePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

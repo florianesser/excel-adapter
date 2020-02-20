@@ -19,8 +19,7 @@ import org.isotc211.iso19139.gss.*;
  * @see org.isotc211.iso19139.gss.GSSPackage
  * @generated
  */
-public class GSSAdapterFactory extends AdapterFactoryImpl
-{
+public class GSSAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
@@ -35,10 +34,8 @@ public class GSSAdapterFactory extends AdapterFactoryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSSAdapterFactory()
-	{
-		if (modelPackage == null)
-		{
+	public GSSAdapterFactory() {
+		if (modelPackage == null) {
 			modelPackage = GSSPackage.eINSTANCE;
 		}
 	}
@@ -52,14 +49,11 @@ public class GSSAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean isFactoryForType(Object object)
-	{
-		if (object == modelPackage)
-		{
+	public boolean isFactoryForType(Object object) {
+		if (object == modelPackage) {
 			return true;
 		}
-		if (object instanceof EObject)
-		{
+		if (object instanceof EObject) {
 			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
@@ -72,21 +66,17 @@ public class GSSAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	protected GSSSwitch<Adapter> modelSwitch =
-		new GSSSwitch<Adapter>()
-		{
+		new GSSSwitch<Adapter>() {
 			@Override
-			public Adapter caseGMObjectPropertyType(GMObjectPropertyType object)
-			{
+			public Adapter caseGMObjectPropertyType(GMObjectPropertyType object) {
 				return createGMObjectPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGMPointPropertyType(GMPointPropertyType object)
-			{
+			public Adapter caseGMPointPropertyType(GMPointPropertyType object) {
 				return createGMPointPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter defaultCase(EObject object)
-			{
+			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
 		};
@@ -100,8 +90,7 @@ public class GSSAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdapter(Notifier target)
-	{
+	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
@@ -116,8 +105,7 @@ public class GSSAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gss.GMObjectPropertyType
 	 * @generated
 	 */
-	public Adapter createGMObjectPropertyTypeAdapter()
-	{
+	public Adapter createGMObjectPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -131,8 +119,7 @@ public class GSSAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gss.GMPointPropertyType
 	 * @generated
 	 */
-	public Adapter createGMPointPropertyTypeAdapter()
-	{
+	public Adapter createGMPointPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -144,8 +131,7 @@ public class GSSAdapterFactory extends AdapterFactoryImpl
 	 * @return the new adapter.
 	 * @generated
 	 */
-	public Adapter createEObjectAdapter()
-	{
+	public Adapter createEObjectAdapter() {
 		return null;
 	}
 

@@ -32,8 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements GeodeticDatumType
-{
+public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements GeodeticDatumType {
 	/**
 	 * The cached value of the '{@link #getPrimeMeridianGroup() <em>Prime Meridian Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -59,8 +58,7 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeodeticDatumTypeImpl()
-	{
+	protected GeodeticDatumTypeImpl() {
 		super();
 	}
 
@@ -70,8 +68,7 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeodeticDatumType();
 	}
 
@@ -80,10 +77,9 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getPrimeMeridianGroup()
-	{
-		if (primeMeridianGroup == null)
-		{
+	@Override
+	public FeatureMap getPrimeMeridianGroup() {
+		if (primeMeridianGroup == null) {
 			primeMeridianGroup = new BasicFeatureMap(this, GMLPackage.GEODETIC_DATUM_TYPE__PRIME_MERIDIAN_GROUP);
 		}
 		return primeMeridianGroup;
@@ -94,8 +90,8 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrimeMeridianPropertyType getPrimeMeridian()
-	{
+	@Override
+	public PrimeMeridianPropertyType getPrimeMeridian() {
 		return (PrimeMeridianPropertyType)getPrimeMeridianGroup().get(GMLPackage.eINSTANCE.getGeodeticDatumType_PrimeMeridian(), true);
 	}
 
@@ -104,8 +100,7 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPrimeMeridian(PrimeMeridianPropertyType newPrimeMeridian, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPrimeMeridian(PrimeMeridianPropertyType newPrimeMeridian, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getPrimeMeridianGroup()).basicAdd(GMLPackage.eINSTANCE.getGeodeticDatumType_PrimeMeridian(), newPrimeMeridian, msgs);
 	}
 
@@ -114,8 +109,8 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPrimeMeridian(PrimeMeridianPropertyType newPrimeMeridian)
-	{
+	@Override
+	public void setPrimeMeridian(PrimeMeridianPropertyType newPrimeMeridian) {
 		((FeatureMap.Internal)getPrimeMeridianGroup()).set(GMLPackage.eINSTANCE.getGeodeticDatumType_PrimeMeridian(), newPrimeMeridian);
 	}
 
@@ -124,10 +119,9 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getEllipsoidGroup()
-	{
-		if (ellipsoidGroup == null)
-		{
+	@Override
+	public FeatureMap getEllipsoidGroup() {
+		if (ellipsoidGroup == null) {
 			ellipsoidGroup = new BasicFeatureMap(this, GMLPackage.GEODETIC_DATUM_TYPE__ELLIPSOID_GROUP);
 		}
 		return ellipsoidGroup;
@@ -138,8 +132,8 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidPropertyType getEllipsoid()
-	{
+	@Override
+	public EllipsoidPropertyType getEllipsoid() {
 		return (EllipsoidPropertyType)getEllipsoidGroup().get(GMLPackage.eINSTANCE.getGeodeticDatumType_Ellipsoid(), true);
 	}
 
@@ -148,8 +142,7 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEllipsoid(EllipsoidPropertyType newEllipsoid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEllipsoid(EllipsoidPropertyType newEllipsoid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getEllipsoidGroup()).basicAdd(GMLPackage.eINSTANCE.getGeodeticDatumType_Ellipsoid(), newEllipsoid, msgs);
 	}
 
@@ -158,8 +151,8 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEllipsoid(EllipsoidPropertyType newEllipsoid)
-	{
+	@Override
+	public void setEllipsoid(EllipsoidPropertyType newEllipsoid) {
 		((FeatureMap.Internal)getEllipsoidGroup()).set(GMLPackage.eINSTANCE.getGeodeticDatumType_Ellipsoid(), newEllipsoid);
 	}
 
@@ -169,10 +162,8 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_TYPE__PRIME_MERIDIAN_GROUP:
 				return ((InternalEList<?>)getPrimeMeridianGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.GEODETIC_DATUM_TYPE__PRIME_MERIDIAN:
@@ -191,10 +182,8 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_TYPE__PRIME_MERIDIAN_GROUP:
 				if (coreType) return getPrimeMeridianGroup();
 				return ((FeatureMap.Internal)getPrimeMeridianGroup()).getWrapper();
@@ -215,10 +204,8 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_TYPE__PRIME_MERIDIAN_GROUP:
 				((FeatureMap.Internal)getPrimeMeridianGroup()).set(newValue);
 				return;
@@ -241,10 +228,8 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_TYPE__PRIME_MERIDIAN_GROUP:
 				getPrimeMeridianGroup().clear();
 				return;
@@ -267,10 +252,8 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEODETIC_DATUM_TYPE__PRIME_MERIDIAN_GROUP:
 				return primeMeridianGroup != null && !primeMeridianGroup.isEmpty();
 			case GMLPackage.GEODETIC_DATUM_TYPE__PRIME_MERIDIAN:
@@ -289,11 +272,10 @@ public class GeodeticDatumTypeImpl extends AbstractDatumTypeImpl implements Geod
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (primeMeridianGroup: ");
 		result.append(primeMeridianGroup);
 		result.append(", ellipsoidGroup: ");

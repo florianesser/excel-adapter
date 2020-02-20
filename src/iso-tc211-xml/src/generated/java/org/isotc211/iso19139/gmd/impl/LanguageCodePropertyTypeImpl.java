@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.LanguageCodePropertyType;
  *
  * @generated
  */
-public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements LanguageCodePropertyType
-{
+public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements LanguageCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getLanguageCode() <em>Language Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LanguageCodePropertyTypeImpl()
-	{
+	protected LanguageCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getLanguageCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getLanguageCode()
-	{
+	@Override
+	public CodeListValueType getLanguageCode() {
 		return languageCode;
 	}
 
@@ -98,12 +95,10 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLanguageCode(CodeListValueType newLanguageCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLanguageCode(CodeListValueType newLanguageCode, NotificationChain msgs) {
 		CodeListValueType oldLanguageCode = languageCode;
 		languageCode = newLanguageCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE__LANGUAGE_CODE, oldLanguageCode, newLanguageCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLanguageCode(CodeListValueType newLanguageCode)
-	{
-		if (newLanguageCode != languageCode)
-		{
+	@Override
+	public void setLanguageCode(CodeListValueType newLanguageCode) {
+		if (newLanguageCode != languageCode) {
 			NotificationChain msgs = null;
 			if (languageCode != null)
 				msgs = ((InternalEObject)languageCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE__LANGUAGE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE__LANGUAGE_CODE:
 				return basicSetLanguageCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE__LANGUAGE_CODE:
 				return getLanguageCode();
 			case GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE__LANGUAGE_CODE:
 				setLanguageCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE__LANGUAGE_CODE:
 				setLanguageCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE__LANGUAGE_CODE:
 				return languageCode != null;
 			case GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class LanguageCodePropertyTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

@@ -21,15 +21,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='Binary_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface BinaryPropertyType extends EObject
-{
+public interface BinaryPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Binary</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Binary</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Binary</em>' containment reference.
 	 * @see #setBinary(BinaryType)
@@ -53,10 +48,6 @@ public interface BinaryPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

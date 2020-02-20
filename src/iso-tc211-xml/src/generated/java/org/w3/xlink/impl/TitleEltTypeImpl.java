@@ -35,8 +35,7 @@ import org.w3.xlink.XLinkPackage;
  *
  * @generated
  */
-public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements TitleEltType
-{
+public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements TitleEltType {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -101,8 +100,7 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TitleEltTypeImpl()
-	{
+	protected TitleEltTypeImpl() {
 		super();
 	}
 
@@ -112,8 +110,7 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return XLinkPackage.Literals.TITLE_ELT_TYPE;
 	}
 
@@ -122,10 +119,9 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getMixed()
-	{
-		if (mixed == null)
-		{
+	@Override
+	public FeatureMap getMixed() {
+		if (mixed == null) {
 			mixed = new BasicFeatureMap(this, XLinkPackage.TITLE_ELT_TYPE__MIXED);
 		}
 		return mixed;
@@ -136,8 +132,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAny()
-	{
+	@Override
+	public FeatureMap getAny() {
 		return (FeatureMap)getMixed().<FeatureMap.Entry>list(XLinkPackage.Literals.TITLE_ELT_TYPE__ANY);
 	}
 
@@ -146,8 +142,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLang()
-	{
+	@Override
+	public String getLang() {
 		return lang;
 	}
 
@@ -156,8 +152,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLang(String newLang)
-	{
+	@Override
+	public void setLang(String newLang) {
 		String oldLang = lang;
 		lang = newLang;
 		if (eNotificationRequired())
@@ -169,8 +165,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -179,8 +175,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -194,8 +190,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -209,8 +205,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -220,10 +216,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case XLinkPackage.TITLE_ELT_TYPE__MIXED:
 				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 			case XLinkPackage.TITLE_ELT_TYPE__ANY:
@@ -238,10 +232,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case XLinkPackage.TITLE_ELT_TYPE__MIXED:
 				if (coreType) return getMixed();
 				return ((FeatureMap.Internal)getMixed()).getWrapper();
@@ -262,10 +254,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case XLinkPackage.TITLE_ELT_TYPE__MIXED:
 				((FeatureMap.Internal)getMixed()).set(newValue);
 				return;
@@ -288,10 +278,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.TITLE_ELT_TYPE__MIXED:
 				getMixed().clear();
 				return;
@@ -314,10 +302,8 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.TITLE_ELT_TYPE__MIXED:
 				return mixed != null && !mixed.isEmpty();
 			case XLinkPackage.TITLE_ELT_TYPE__ANY:
@@ -336,11 +322,10 @@ public class TitleEltTypeImpl extends MinimalEObjectImpl.Container implements Ti
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (mixed: ");
 		result.append(mixed);
 		result.append(", lang: ");

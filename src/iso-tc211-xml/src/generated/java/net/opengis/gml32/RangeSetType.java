@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='RangeSetType' kind='elementOnly'"
  * @generated
  */
-public interface RangeSetType extends EObject
-{
+public interface RangeSetType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value Array</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.ValueArrayType}.

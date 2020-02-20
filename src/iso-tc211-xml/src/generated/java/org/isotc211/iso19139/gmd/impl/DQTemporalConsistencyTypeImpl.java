@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQTemporalConsistencyTypeImpl extends AbstractDQTemporalAccuracyTypeImpl implements DQTemporalConsistencyType
-{
+public class DQTemporalConsistencyTypeImpl extends AbstractDQTemporalAccuracyTypeImpl implements DQTemporalConsistencyType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQTemporalConsistencyTypeImpl()
-	{
+	protected DQTemporalConsistencyTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQTemporalConsistencyTypeImpl extends AbstractDQTemporalAccuracyTyp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQTemporalConsistencyType();
 	}
 

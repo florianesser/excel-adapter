@@ -41,8 +41,7 @@ import org.isotc211.iso19139.gmd.MDGridSpatialRepresentationType;
  *
  * @generated
  */
-public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepresentationTypeImpl implements MDGridSpatialRepresentationType
-{
+public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepresentationTypeImpl implements MDGridSpatialRepresentationType {
 	/**
 	 * The cached value of the '{@link #getNumberOfDimensions() <em>Number Of Dimensions</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -88,8 +87,7 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDGridSpatialRepresentationTypeImpl()
-	{
+	protected MDGridSpatialRepresentationTypeImpl() {
 		super();
 	}
 
@@ -99,8 +97,7 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDGridSpatialRepresentationType();
 	}
 
@@ -109,8 +106,8 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType getNumberOfDimensions()
-	{
+	@Override
+	public IntegerPropertyType getNumberOfDimensions() {
 		return numberOfDimensions;
 	}
 
@@ -119,12 +116,10 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetNumberOfDimensions(IntegerPropertyType newNumberOfDimensions, NotificationChain msgs)
-	{
+	public NotificationChain basicSetNumberOfDimensions(IntegerPropertyType newNumberOfDimensions, NotificationChain msgs) {
 		IntegerPropertyType oldNumberOfDimensions = numberOfDimensions;
 		numberOfDimensions = newNumberOfDimensions;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__NUMBER_OF_DIMENSIONS, oldNumberOfDimensions, newNumberOfDimensions);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -136,10 +131,9 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNumberOfDimensions(IntegerPropertyType newNumberOfDimensions)
-	{
-		if (newNumberOfDimensions != numberOfDimensions)
-		{
+	@Override
+	public void setNumberOfDimensions(IntegerPropertyType newNumberOfDimensions) {
+		if (newNumberOfDimensions != numberOfDimensions) {
 			NotificationChain msgs = null;
 			if (numberOfDimensions != null)
 				msgs = ((InternalEObject)numberOfDimensions).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__NUMBER_OF_DIMENSIONS, null, msgs);
@@ -157,10 +151,9 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDDimensionPropertyType> getAxisDimensionProperties()
-	{
-		if (axisDimensionProperties == null)
-		{
+	@Override
+	public EList<MDDimensionPropertyType> getAxisDimensionProperties() {
+		if (axisDimensionProperties == null) {
 			axisDimensionProperties = new EObjectContainmentEList<MDDimensionPropertyType>(MDDimensionPropertyType.class, this, GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__AXIS_DIMENSION_PROPERTIES);
 		}
 		return axisDimensionProperties;
@@ -171,8 +164,8 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDCellGeometryCodePropertyType getCellGeometry()
-	{
+	@Override
+	public MDCellGeometryCodePropertyType getCellGeometry() {
 		return cellGeometry;
 	}
 
@@ -181,12 +174,10 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCellGeometry(MDCellGeometryCodePropertyType newCellGeometry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCellGeometry(MDCellGeometryCodePropertyType newCellGeometry, NotificationChain msgs) {
 		MDCellGeometryCodePropertyType oldCellGeometry = cellGeometry;
 		cellGeometry = newCellGeometry;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__CELL_GEOMETRY, oldCellGeometry, newCellGeometry);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -198,10 +189,9 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCellGeometry(MDCellGeometryCodePropertyType newCellGeometry)
-	{
-		if (newCellGeometry != cellGeometry)
-		{
+	@Override
+	public void setCellGeometry(MDCellGeometryCodePropertyType newCellGeometry) {
+		if (newCellGeometry != cellGeometry) {
 			NotificationChain msgs = null;
 			if (cellGeometry != null)
 				msgs = ((InternalEObject)cellGeometry).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__CELL_GEOMETRY, null, msgs);
@@ -219,8 +209,8 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getTransformationParameterAvailability()
-	{
+	@Override
+	public BooleanPropertyType getTransformationParameterAvailability() {
 		return transformationParameterAvailability;
 	}
 
@@ -229,12 +219,10 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTransformationParameterAvailability(BooleanPropertyType newTransformationParameterAvailability, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTransformationParameterAvailability(BooleanPropertyType newTransformationParameterAvailability, NotificationChain msgs) {
 		BooleanPropertyType oldTransformationParameterAvailability = transformationParameterAvailability;
 		transformationParameterAvailability = newTransformationParameterAvailability;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__TRANSFORMATION_PARAMETER_AVAILABILITY, oldTransformationParameterAvailability, newTransformationParameterAvailability);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -246,10 +234,9 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTransformationParameterAvailability(BooleanPropertyType newTransformationParameterAvailability)
-	{
-		if (newTransformationParameterAvailability != transformationParameterAvailability)
-		{
+	@Override
+	public void setTransformationParameterAvailability(BooleanPropertyType newTransformationParameterAvailability) {
+		if (newTransformationParameterAvailability != transformationParameterAvailability) {
 			NotificationChain msgs = null;
 			if (transformationParameterAvailability != null)
 				msgs = ((InternalEObject)transformationParameterAvailability).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__TRANSFORMATION_PARAMETER_AVAILABILITY, null, msgs);
@@ -268,10 +255,8 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__NUMBER_OF_DIMENSIONS:
 				return basicSetNumberOfDimensions(null, msgs);
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__AXIS_DIMENSION_PROPERTIES:
@@ -290,10 +275,8 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__NUMBER_OF_DIMENSIONS:
 				return getNumberOfDimensions();
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__AXIS_DIMENSION_PROPERTIES:
@@ -313,10 +296,8 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__NUMBER_OF_DIMENSIONS:
 				setNumberOfDimensions((IntegerPropertyType)newValue);
 				return;
@@ -340,10 +321,8 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__NUMBER_OF_DIMENSIONS:
 				setNumberOfDimensions((IntegerPropertyType)null);
 				return;
@@ -366,10 +345,8 @@ public class MDGridSpatialRepresentationTypeImpl extends AbstractMDSpatialRepres
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__NUMBER_OF_DIMENSIONS:
 				return numberOfDimensions != null;
 			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE__AXIS_DIMENSION_PROPERTIES:

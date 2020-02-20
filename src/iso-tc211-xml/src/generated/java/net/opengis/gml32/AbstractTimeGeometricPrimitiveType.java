@@ -20,16 +20,11 @@ package net.opengis.gml32;
  *        extendedMetaData="name='AbstractTimeGeometricPrimitiveType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractTimeGeometricPrimitiveType extends AbstractTimePrimitiveType
-{
+public interface AbstractTimeGeometricPrimitiveType extends AbstractTimePrimitiveType {
 	/**
 	 * Returns the value of the '<em><b>Frame</b></em>' attribute.
 	 * The default value is <code>"#ISO-8601"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Frame</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Frame</em>' attribute.
 	 * @see #isSetFrame()

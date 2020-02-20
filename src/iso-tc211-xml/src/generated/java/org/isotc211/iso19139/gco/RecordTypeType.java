@@ -31,15 +31,10 @@ import org.w3.xlink.TypeType;
  * @model extendedMetaData="name='RecordType_Type' kind='simple'"
  * @generated
  */
-public interface RecordTypeType extends EObject
-{
+public interface RecordTypeType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(String)
@@ -64,10 +59,6 @@ public interface RecordTypeType extends EObject
 	 * Returns the value of the '<em><b>Actuate</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.w3.xlink.ActuateType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Actuate</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Actuate</em>' attribute.
 	 * @see org.w3.xlink.ActuateType
@@ -120,10 +111,6 @@ public interface RecordTypeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Arcrole</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Arcrole</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Arcrole</em>' attribute.
 	 * @see #setArcrole(String)
@@ -147,10 +134,6 @@ public interface RecordTypeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Href</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Href</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Href</em>' attribute.
 	 * @see #setHref(String)
@@ -174,10 +157,6 @@ public interface RecordTypeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Role</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Role</em>' attribute.
 	 * @see #setRole(String)
@@ -202,10 +181,6 @@ public interface RecordTypeType extends EObject
 	 * Returns the value of the '<em><b>Show</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.w3.xlink.ShowType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Show</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Show</em>' attribute.
 	 * @see org.w3.xlink.ShowType
@@ -258,10 +233,6 @@ public interface RecordTypeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' attribute.
 	 * @see #setTitle(String)
@@ -287,10 +258,6 @@ public interface RecordTypeType extends EObject
 	 * The default value is <code>"simple"</code>.
 	 * The literals are from the enumeration {@link org.w3.xlink.TypeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see org.w3.xlink.TypeType

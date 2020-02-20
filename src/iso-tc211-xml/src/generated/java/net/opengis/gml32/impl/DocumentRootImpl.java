@@ -815,8 +815,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class DocumentRootImpl extends MinimalEObjectImpl.Container implements DocumentRoot
-{
+public class DocumentRootImpl extends MinimalEObjectImpl.Container implements DocumentRoot {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -1222,8 +1221,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DocumentRootImpl()
-	{
+	protected DocumentRootImpl() {
 		super();
 	}
 
@@ -1233,8 +1231,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDocumentRoot();
 	}
 
@@ -1243,10 +1240,9 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getMixed()
-	{
-		if (mixed == null)
-		{
+	@Override
+	public FeatureMap getMixed() {
+		if (mixed == null) {
 			mixed = new BasicFeatureMap(this, GMLPackage.DOCUMENT_ROOT__MIXED);
 		}
 		return mixed;
@@ -1257,10 +1253,9 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EMap<String, String> getXMLNSPrefixMap()
-	{
-		if (xMLNSPrefixMap == null)
-		{
+	@Override
+	public EMap<String, String> getXMLNSPrefixMap() {
+		if (xMLNSPrefixMap == null) {
 			xMLNSPrefixMap = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, GMLPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
 		}
 		return xMLNSPrefixMap;
@@ -1271,10 +1266,9 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EMap<String, String> getXSISchemaLocation()
-	{
-		if (xSISchemaLocation == null)
-		{
+	@Override
+	public EMap<String, String> getXSISchemaLocation() {
+		if (xSISchemaLocation == null) {
 			xSISchemaLocation = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, GMLPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);
 		}
 		return xSISchemaLocation;
@@ -1285,8 +1279,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssociationRoleType getAbstractAssociationRole()
-	{
+	@Override
+	public AssociationRoleType getAbstractAssociationRole() {
 		return (AssociationRoleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractAssociationRole(), true);
 	}
 
@@ -1295,8 +1289,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractAssociationRole(AssociationRoleType newAbstractAssociationRole, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractAssociationRole(AssociationRoleType newAbstractAssociationRole, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractAssociationRole(), newAbstractAssociationRole, msgs);
 	}
 
@@ -1305,8 +1298,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractContinuousCoverageType getAbstractContinuousCoverage()
-	{
+	@Override
+	public AbstractContinuousCoverageType getAbstractContinuousCoverage() {
 		return (AbstractContinuousCoverageType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractContinuousCoverage(), true);
 	}
 
@@ -1315,8 +1308,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractContinuousCoverage(AbstractContinuousCoverageType newAbstractContinuousCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractContinuousCoverage(AbstractContinuousCoverageType newAbstractContinuousCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractContinuousCoverage(), newAbstractContinuousCoverage, msgs);
 	}
 
@@ -1325,8 +1317,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractFeatureType getAbstractFeature()
-	{
+	@Override
+	public AbstractFeatureType getAbstractFeature() {
 		return (AbstractFeatureType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractFeature(), true);
 	}
 
@@ -1335,8 +1327,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractFeature(AbstractFeatureType newAbstractFeature, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractFeature(AbstractFeatureType newAbstractFeature, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractFeature(), newAbstractFeature, msgs);
 	}
 
@@ -1345,8 +1336,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGMLType getAbstractGML()
-	{
+	@Override
+	public AbstractGMLType getAbstractGML() {
 		return (AbstractGMLType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGML(), true);
 	}
 
@@ -1355,8 +1346,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGML(AbstractGMLType newAbstractGML, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGML(AbstractGMLType newAbstractGML, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGML(), newAbstractGML, msgs);
 	}
 
@@ -1365,8 +1355,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObject getAbstractObject()
-	{
+	@Override
+	public EObject getAbstractObject() {
 		return (EObject)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractObject(), true);
 	}
 
@@ -1375,8 +1365,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractObject(EObject newAbstractObject, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractObject(EObject newAbstractObject, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractObject(), newAbstractObject, msgs);
 	}
 
@@ -1385,8 +1374,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCoordinateOperationType getAbstractCoordinateOperation()
-	{
+	@Override
+	public AbstractCoordinateOperationType getAbstractCoordinateOperation() {
 		return (AbstractCoordinateOperationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCoordinateOperation(), true);
 	}
 
@@ -1395,8 +1384,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractCoordinateOperation(AbstractCoordinateOperationType newAbstractCoordinateOperation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractCoordinateOperation(AbstractCoordinateOperationType newAbstractCoordinateOperation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCoordinateOperation(), newAbstractCoordinateOperation, msgs);
 	}
 
@@ -1405,8 +1393,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DefinitionType getDefinition()
-	{
+	@Override
+	public DefinitionType getDefinition() {
 		return (DefinitionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Definition(), true);
 	}
 
@@ -1415,8 +1403,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDefinition(DefinitionType newDefinition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDefinition(DefinitionType newDefinition, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Definition(), newDefinition, msgs);
 	}
 
@@ -1425,8 +1412,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDefinition(DefinitionType newDefinition)
-	{
+	@Override
+	public void setDefinition(DefinitionType newDefinition) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Definition(), newDefinition);
 	}
 
@@ -1435,8 +1422,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCoordinateSystemType getAbstractCoordinateSystem()
-	{
+	@Override
+	public AbstractCoordinateSystemType getAbstractCoordinateSystem() {
 		return (AbstractCoordinateSystemType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCoordinateSystem(), true);
 	}
 
@@ -1445,8 +1432,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractCoordinateSystem(AbstractCoordinateSystemType newAbstractCoordinateSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractCoordinateSystem(AbstractCoordinateSystemType newAbstractCoordinateSystem, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCoordinateSystem(), newAbstractCoordinateSystem, msgs);
 	}
 
@@ -1455,8 +1441,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCoverageType getAbstractCoverage()
-	{
+	@Override
+	public AbstractCoverageType getAbstractCoverage() {
 		return (AbstractCoverageType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCoverage(), true);
 	}
 
@@ -1465,8 +1451,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractCoverage(AbstractCoverageType newAbstractCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractCoverage(AbstractCoverageType newAbstractCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCoverage(), newAbstractCoverage, msgs);
 	}
 
@@ -1475,8 +1460,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCRSType getAbstractCRS()
-	{
+	@Override
+	public AbstractCRSType getAbstractCRS() {
 		return (AbstractCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCRS(), true);
 	}
 
@@ -1485,8 +1470,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractCRS(AbstractCRSType newAbstractCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractCRS(AbstractCRSType newAbstractCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCRS(), newAbstractCRS, msgs);
 	}
 
@@ -1495,8 +1479,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCurveType getAbstractCurve()
-	{
+	@Override
+	public AbstractCurveType getAbstractCurve() {
 		return (AbstractCurveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCurve(), true);
 	}
 
@@ -1505,8 +1489,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractCurve(AbstractCurveType newAbstractCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractCurve(AbstractCurveType newAbstractCurve, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCurve(), newAbstractCurve, msgs);
 	}
 
@@ -1515,8 +1498,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeometricPrimitiveType getAbstractGeometricPrimitive()
-	{
+	@Override
+	public AbstractGeometricPrimitiveType getAbstractGeometricPrimitive() {
 		return (AbstractGeometricPrimitiveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeometricPrimitive(), true);
 	}
 
@@ -1525,8 +1508,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeometricPrimitive(AbstractGeometricPrimitiveType newAbstractGeometricPrimitive, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeometricPrimitive(AbstractGeometricPrimitiveType newAbstractGeometricPrimitive, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeometricPrimitive(), newAbstractGeometricPrimitive, msgs);
 	}
 
@@ -1535,8 +1517,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeometryType getAbstractGeometry()
-	{
+	@Override
+	public AbstractGeometryType getAbstractGeometry() {
 		return (AbstractGeometryType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeometry(), true);
 	}
 
@@ -1545,8 +1527,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeometry(AbstractGeometryType newAbstractGeometry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeometry(AbstractGeometryType newAbstractGeometry, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeometry(), newAbstractGeometry, msgs);
 	}
 
@@ -1555,8 +1536,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCurveSegmentType getAbstractCurveSegment()
-	{
+	@Override
+	public AbstractCurveSegmentType getAbstractCurveSegment() {
 		return (AbstractCurveSegmentType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCurveSegment(), true);
 	}
 
@@ -1565,8 +1546,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractCurveSegment(AbstractCurveSegmentType newAbstractCurveSegment, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractCurveSegment(AbstractCurveSegmentType newAbstractCurveSegment, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractCurveSegment(), newAbstractCurveSegment, msgs);
 	}
 
@@ -1575,8 +1555,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractDatumType getAbstractDatum()
-	{
+	@Override
+	public AbstractDatumType getAbstractDatum() {
 		return (AbstractDatumType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractDatum(), true);
 	}
 
@@ -1585,8 +1565,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractDatum(AbstractDatumType newAbstractDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractDatum(AbstractDatumType newAbstractDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractDatum(), newAbstractDatum, msgs);
 	}
 
@@ -1595,8 +1574,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscreteCoverageType getAbstractDiscreteCoverage()
-	{
+	@Override
+	public DiscreteCoverageType getAbstractDiscreteCoverage() {
 		return (DiscreteCoverageType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractDiscreteCoverage(), true);
 	}
 
@@ -1605,8 +1584,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractDiscreteCoverage(DiscreteCoverageType newAbstractDiscreteCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractDiscreteCoverage(DiscreteCoverageType newAbstractDiscreteCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractDiscreteCoverage(), newAbstractDiscreteCoverage, msgs);
 	}
 
@@ -1615,8 +1593,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractFeatureCollectionType getAbstractFeatureCollection()
-	{
+	@Override
+	public AbstractFeatureCollectionType getAbstractFeatureCollection() {
 		return (AbstractFeatureCollectionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractFeatureCollection(), true);
 	}
 
@@ -1625,8 +1603,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractFeatureCollection(AbstractFeatureCollectionType newAbstractFeatureCollection, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractFeatureCollection(AbstractFeatureCollectionType newAbstractFeatureCollection, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractFeatureCollection(), newAbstractFeatureCollection, msgs);
 	}
 
@@ -1635,8 +1612,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralConversionType getAbstractGeneralConversion()
-	{
+	@Override
+	public AbstractGeneralConversionType getAbstractGeneralConversion() {
 		return (AbstractGeneralConversionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralConversion(), true);
 	}
 
@@ -1645,8 +1622,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeneralConversion(AbstractGeneralConversionType newAbstractGeneralConversion, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeneralConversion(AbstractGeneralConversionType newAbstractGeneralConversion, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralConversion(), newAbstractGeneralConversion, msgs);
 	}
 
@@ -1655,8 +1631,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCoordinateOperationType getAbstractOperation()
-	{
+	@Override
+	public AbstractCoordinateOperationType getAbstractOperation() {
 		return (AbstractCoordinateOperationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractOperation(), true);
 	}
 
@@ -1665,8 +1641,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractOperation(AbstractCoordinateOperationType newAbstractOperation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractOperation(AbstractCoordinateOperationType newAbstractOperation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractOperation(), newAbstractOperation, msgs);
 	}
 
@@ -1675,8 +1650,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCoordinateOperationType getAbstractSingleOperation()
-	{
+	@Override
+	public AbstractCoordinateOperationType getAbstractSingleOperation() {
 		return (AbstractCoordinateOperationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSingleOperation(), true);
 	}
 
@@ -1685,8 +1660,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractSingleOperation(AbstractCoordinateOperationType newAbstractSingleOperation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractSingleOperation(AbstractCoordinateOperationType newAbstractSingleOperation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSingleOperation(), newAbstractSingleOperation, msgs);
 	}
 
@@ -1695,8 +1669,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralDerivedCRSType getAbstractGeneralDerivedCRS()
-	{
+	@Override
+	public AbstractGeneralDerivedCRSType getAbstractGeneralDerivedCRS() {
 		return (AbstractGeneralDerivedCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralDerivedCRS(), true);
 	}
 
@@ -1705,8 +1679,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeneralDerivedCRS(AbstractGeneralDerivedCRSType newAbstractGeneralDerivedCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeneralDerivedCRS(AbstractGeneralDerivedCRSType newAbstractGeneralDerivedCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralDerivedCRS(), newAbstractGeneralDerivedCRS, msgs);
 	}
 
@@ -1715,8 +1688,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCRSType getAbstractSingleCRS()
-	{
+	@Override
+	public AbstractCRSType getAbstractSingleCRS() {
 		return (AbstractCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSingleCRS(), true);
 	}
 
@@ -1725,8 +1698,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractSingleCRS(AbstractCRSType newAbstractSingleCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractSingleCRS(AbstractCRSType newAbstractSingleCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSingleCRS(), newAbstractSingleCRS, msgs);
 	}
 
@@ -1735,8 +1707,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralOperationParameterType getAbstractGeneralOperationParameter()
-	{
+	@Override
+	public AbstractGeneralOperationParameterType getAbstractGeneralOperationParameter() {
 		return (AbstractGeneralOperationParameterType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralOperationParameter(), true);
 	}
 
@@ -1745,8 +1717,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeneralOperationParameter(AbstractGeneralOperationParameterType newAbstractGeneralOperationParameter, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeneralOperationParameter(AbstractGeneralOperationParameterType newAbstractGeneralOperationParameter, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralOperationParameter(), newAbstractGeneralOperationParameter, msgs);
 	}
 
@@ -1755,8 +1726,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralOperationParameterPropertyType getAbstractGeneralOperationParameterRef()
-	{
+	@Override
+	public AbstractGeneralOperationParameterPropertyType getAbstractGeneralOperationParameterRef() {
 		return (AbstractGeneralOperationParameterPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralOperationParameterRef(), true);
 	}
 
@@ -1765,8 +1736,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeneralOperationParameterRef(AbstractGeneralOperationParameterPropertyType newAbstractGeneralOperationParameterRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeneralOperationParameterRef(AbstractGeneralOperationParameterPropertyType newAbstractGeneralOperationParameterRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralOperationParameterRef(), newAbstractGeneralOperationParameterRef, msgs);
 	}
 
@@ -1775,8 +1745,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAbstractGeneralOperationParameterRef(AbstractGeneralOperationParameterPropertyType newAbstractGeneralOperationParameterRef)
-	{
+	@Override
+	public void setAbstractGeneralOperationParameterRef(AbstractGeneralOperationParameterPropertyType newAbstractGeneralOperationParameterRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralOperationParameterRef(), newAbstractGeneralOperationParameterRef);
 	}
 
@@ -1785,8 +1755,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralParameterValueType getAbstractGeneralParameterValue()
-	{
+	@Override
+	public AbstractGeneralParameterValueType getAbstractGeneralParameterValue() {
 		return (AbstractGeneralParameterValueType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralParameterValue(), true);
 	}
 
@@ -1795,8 +1765,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeneralParameterValue(AbstractGeneralParameterValueType newAbstractGeneralParameterValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeneralParameterValue(AbstractGeneralParameterValueType newAbstractGeneralParameterValue, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralParameterValue(), newAbstractGeneralParameterValue, msgs);
 	}
 
@@ -1805,8 +1774,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralTransformationType getAbstractGeneralTransformation()
-	{
+	@Override
+	public AbstractGeneralTransformationType getAbstractGeneralTransformation() {
 		return (AbstractGeneralTransformationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralTransformation(), true);
 	}
 
@@ -1815,8 +1784,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeneralTransformation(AbstractGeneralTransformationType newAbstractGeneralTransformation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeneralTransformation(AbstractGeneralTransformationType newAbstractGeneralTransformation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeneralTransformation(), newAbstractGeneralTransformation, msgs);
 	}
 
@@ -1825,8 +1793,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeometricAggregateType getAbstractGeometricAggregate()
-	{
+	@Override
+	public AbstractGeometricAggregateType getAbstractGeometricAggregate() {
 		return (AbstractGeometricAggregateType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeometricAggregate(), true);
 	}
 
@@ -1835,8 +1803,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeometricAggregate(AbstractGeometricAggregateType newAbstractGeometricAggregate, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeometricAggregate(AbstractGeometricAggregateType newAbstractGeometricAggregate, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGeometricAggregate(), newAbstractGeometricAggregate, msgs);
 	}
 
@@ -1845,8 +1812,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGriddedSurfaceType getAbstractGriddedSurface()
-	{
+	@Override
+	public AbstractGriddedSurfaceType getAbstractGriddedSurface() {
 		return (AbstractGriddedSurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGriddedSurface(), true);
 	}
 
@@ -1855,8 +1822,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGriddedSurface(AbstractGriddedSurfaceType newAbstractGriddedSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGriddedSurface(AbstractGriddedSurfaceType newAbstractGriddedSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractGriddedSurface(), newAbstractGriddedSurface, msgs);
 	}
 
@@ -1865,8 +1831,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractParametricCurveSurfaceType getAbstractParametricCurveSurface()
-	{
+	@Override
+	public AbstractParametricCurveSurfaceType getAbstractParametricCurveSurface() {
 		return (AbstractParametricCurveSurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractParametricCurveSurface(), true);
 	}
 
@@ -1875,8 +1841,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractParametricCurveSurface(AbstractParametricCurveSurfaceType newAbstractParametricCurveSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractParametricCurveSurface(AbstractParametricCurveSurfaceType newAbstractParametricCurveSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractParametricCurveSurface(), newAbstractParametricCurveSurface, msgs);
 	}
 
@@ -1885,8 +1850,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractSurfacePatchType getAbstractSurfacePatch()
-	{
+	@Override
+	public AbstractSurfacePatchType getAbstractSurfacePatch() {
 		return (AbstractSurfacePatchType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSurfacePatch(), true);
 	}
 
@@ -1895,8 +1860,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractSurfacePatch(AbstractSurfacePatchType newAbstractSurfacePatch, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractSurfacePatch(AbstractSurfacePatchType newAbstractSurfacePatch, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSurfacePatch(), newAbstractSurfacePatch, msgs);
 	}
 
@@ -1905,8 +1869,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeometryType getAbstractImplicitGeometry()
-	{
+	@Override
+	public AbstractGeometryType getAbstractImplicitGeometry() {
 		return (AbstractGeometryType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractImplicitGeometry(), true);
 	}
 
@@ -1915,8 +1879,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractImplicitGeometry(AbstractGeometryType newAbstractImplicitGeometry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractImplicitGeometry(AbstractGeometryType newAbstractImplicitGeometry, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractImplicitGeometry(), newAbstractImplicitGeometry, msgs);
 	}
 
@@ -1925,8 +1888,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InlinePropertyType getAbstractInlineProperty()
-	{
+	@Override
+	public InlinePropertyType getAbstractInlineProperty() {
 		return (InlinePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractInlineProperty(), true);
 	}
 
@@ -1935,8 +1898,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractInlineProperty(InlinePropertyType newAbstractInlineProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractInlineProperty(InlinePropertyType newAbstractInlineProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractInlineProperty(), newAbstractInlineProperty, msgs);
 	}
 
@@ -1945,8 +1907,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractMetaDataType getAbstractMetaData()
-	{
+	@Override
+	public AbstractMetaDataType getAbstractMetaData() {
 		return (AbstractMetaDataType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractMetaData(), true);
 	}
 
@@ -1955,8 +1917,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractMetaData(AbstractMetaDataType newAbstractMetaData, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractMetaData(AbstractMetaDataType newAbstractMetaData, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractMetaData(), newAbstractMetaData, msgs);
 	}
 
@@ -1965,8 +1926,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getAbstractReference()
-	{
+	@Override
+	public ReferenceType getAbstractReference() {
 		return (ReferenceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractReference(), true);
 	}
 
@@ -1975,8 +1936,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractReference(ReferenceType newAbstractReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractReference(ReferenceType newAbstractReference, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractReference(), newAbstractReference, msgs);
 	}
 
@@ -1985,8 +1945,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractRingType getAbstractRing()
-	{
+	@Override
+	public AbstractRingType getAbstractRing() {
 		return (AbstractRingType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractRing(), true);
 	}
 
@@ -1995,8 +1955,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractRing(AbstractRingType newAbstractRing, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractRing(AbstractRingType newAbstractRing, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractRing(), newAbstractRing, msgs);
 	}
 
@@ -2005,8 +1964,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObject getAbstractScalarValue()
-	{
+	@Override
+	public EObject getAbstractScalarValue() {
 		return (EObject)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractScalarValue(), true);
 	}
 
@@ -2015,8 +1974,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractScalarValue(EObject newAbstractScalarValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractScalarValue(EObject newAbstractScalarValue, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractScalarValue(), newAbstractScalarValue, msgs);
 	}
 
@@ -2025,8 +1983,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObject getAbstractValue()
-	{
+	@Override
+	public EObject getAbstractValue() {
 		return (EObject)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractValue(), true);
 	}
 
@@ -2035,8 +1993,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractValue(EObject newAbstractValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractValue(EObject newAbstractValue, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractValue(), newAbstractValue, msgs);
 	}
 
@@ -2045,8 +2002,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObject getAbstractScalarValueList()
-	{
+	@Override
+	public EObject getAbstractScalarValueList() {
 		return (EObject)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractScalarValueList(), true);
 	}
 
@@ -2055,8 +2012,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractScalarValueList(EObject newAbstractScalarValueList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractScalarValueList(EObject newAbstractScalarValueList, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractScalarValueList(), newAbstractScalarValueList, msgs);
 	}
 
@@ -2065,8 +2021,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractSolidType getAbstractSolid()
-	{
+	@Override
+	public AbstractSolidType getAbstractSolid() {
 		return (AbstractSolidType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSolid(), true);
 	}
 
@@ -2075,8 +2031,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractSolid(AbstractSolidType newAbstractSolid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractSolid(AbstractSolidType newAbstractSolid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSolid(), newAbstractSolid, msgs);
 	}
 
@@ -2085,8 +2040,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssociationRoleType getAbstractStrictAssociationRole()
-	{
+	@Override
+	public AssociationRoleType getAbstractStrictAssociationRole() {
 		return (AssociationRoleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractStrictAssociationRole(), true);
 	}
 
@@ -2095,8 +2050,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractStrictAssociationRole(AssociationRoleType newAbstractStrictAssociationRole, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractStrictAssociationRole(AssociationRoleType newAbstractStrictAssociationRole, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractStrictAssociationRole(), newAbstractStrictAssociationRole, msgs);
 	}
 
@@ -2105,8 +2059,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractSurfaceType getAbstractSurface()
-	{
+	@Override
+	public AbstractSurfaceType getAbstractSurface() {
 		return (AbstractSurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSurface(), true);
 	}
 
@@ -2115,8 +2069,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractSurface(AbstractSurfaceType newAbstractSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractSurface(AbstractSurfaceType newAbstractSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractSurface(), newAbstractSurface, msgs);
 	}
 
@@ -2125,8 +2078,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractTimeComplexType getAbstractTimeComplex()
-	{
+	@Override
+	public AbstractTimeComplexType getAbstractTimeComplex() {
 		return (AbstractTimeComplexType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeComplex(), true);
 	}
 
@@ -2135,8 +2088,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractTimeComplex(AbstractTimeComplexType newAbstractTimeComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractTimeComplex(AbstractTimeComplexType newAbstractTimeComplex, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeComplex(), newAbstractTimeComplex, msgs);
 	}
 
@@ -2145,8 +2097,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractTimeObjectType getAbstractTimeObject()
-	{
+	@Override
+	public AbstractTimeObjectType getAbstractTimeObject() {
 		return (AbstractTimeObjectType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeObject(), true);
 	}
 
@@ -2155,8 +2107,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractTimeObject(AbstractTimeObjectType newAbstractTimeObject, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractTimeObject(AbstractTimeObjectType newAbstractTimeObject, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeObject(), newAbstractTimeObject, msgs);
 	}
 
@@ -2165,8 +2116,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractTimeGeometricPrimitiveType getAbstractTimeGeometricPrimitive()
-	{
+	@Override
+	public AbstractTimeGeometricPrimitiveType getAbstractTimeGeometricPrimitive() {
 		return (AbstractTimeGeometricPrimitiveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeGeometricPrimitive(), true);
 	}
 
@@ -2175,8 +2126,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractTimeGeometricPrimitive(AbstractTimeGeometricPrimitiveType newAbstractTimeGeometricPrimitive, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractTimeGeometricPrimitive(AbstractTimeGeometricPrimitiveType newAbstractTimeGeometricPrimitive, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeGeometricPrimitive(), newAbstractTimeGeometricPrimitive, msgs);
 	}
 
@@ -2185,8 +2135,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractTimePrimitiveType getAbstractTimePrimitive()
-	{
+	@Override
+	public AbstractTimePrimitiveType getAbstractTimePrimitive() {
 		return (AbstractTimePrimitiveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimePrimitive(), true);
 	}
 
@@ -2195,8 +2145,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractTimePrimitive(AbstractTimePrimitiveType newAbstractTimePrimitive, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractTimePrimitive(AbstractTimePrimitiveType newAbstractTimePrimitive, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimePrimitive(), newAbstractTimePrimitive, msgs);
 	}
 
@@ -2205,8 +2154,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractTimeSliceType getAbstractTimeSlice()
-	{
+	@Override
+	public AbstractTimeSliceType getAbstractTimeSlice() {
 		return (AbstractTimeSliceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeSlice(), true);
 	}
 
@@ -2215,8 +2164,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractTimeSlice(AbstractTimeSliceType newAbstractTimeSlice, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractTimeSlice(AbstractTimeSliceType newAbstractTimeSlice, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeSlice(), newAbstractTimeSlice, msgs);
 	}
 
@@ -2225,8 +2173,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractTimeTopologyPrimitiveType getAbstractTimeTopologyPrimitive()
-	{
+	@Override
+	public AbstractTimeTopologyPrimitiveType getAbstractTimeTopologyPrimitive() {
 		return (AbstractTimeTopologyPrimitiveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeTopologyPrimitive(), true);
 	}
 
@@ -2235,8 +2183,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractTimeTopologyPrimitive(AbstractTimeTopologyPrimitiveType newAbstractTimeTopologyPrimitive, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractTimeTopologyPrimitive(AbstractTimeTopologyPrimitiveType newAbstractTimeTopologyPrimitive, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTimeTopologyPrimitive(), newAbstractTimeTopologyPrimitive, msgs);
 	}
 
@@ -2245,8 +2192,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractTopologyType getAbstractTopology()
-	{
+	@Override
+	public AbstractTopologyType getAbstractTopology() {
 		return (AbstractTopologyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTopology(), true);
 	}
 
@@ -2255,8 +2202,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractTopology(AbstractTopologyType newAbstractTopology, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractTopology(AbstractTopologyType newAbstractTopology, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTopology(), newAbstractTopology, msgs);
 	}
 
@@ -2265,8 +2211,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractTopoPrimitiveType getAbstractTopoPrimitive()
-	{
+	@Override
+	public AbstractTopoPrimitiveType getAbstractTopoPrimitive() {
 		return (AbstractTopoPrimitiveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTopoPrimitive(), true);
 	}
 
@@ -2275,8 +2221,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractTopoPrimitive(AbstractTopoPrimitiveType newAbstractTopoPrimitive, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractTopoPrimitive(AbstractTopoPrimitiveType newAbstractTopoPrimitive, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AbstractTopoPrimitive(), newAbstractTopoPrimitive, msgs);
 	}
 
@@ -2285,8 +2230,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffineCSPropertyType getAffineCS()
-	{
+	@Override
+	public AffineCSPropertyType getAffineCS() {
 		return (AffineCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AffineCS(), true);
 	}
 
@@ -2295,8 +2240,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAffineCS(AffineCSPropertyType newAffineCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAffineCS(AffineCSPropertyType newAffineCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AffineCS(), newAffineCS, msgs);
 	}
 
@@ -2305,8 +2249,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAffineCS(AffineCSPropertyType newAffineCS)
-	{
+	@Override
+	public void setAffineCS(AffineCSPropertyType newAffineCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_AffineCS(), newAffineCS);
 	}
 
@@ -2315,8 +2259,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffineCSType getAffineCS1()
-	{
+	@Override
+	public AffineCSType getAffineCS1() {
 		return (AffineCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AffineCS1(), true);
 	}
 
@@ -2325,8 +2269,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAffineCS1(AffineCSType newAffineCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAffineCS1(AffineCSType newAffineCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AffineCS1(), newAffineCS1, msgs);
 	}
 
@@ -2335,8 +2278,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAffineCS1(AffineCSType newAffineCS1)
-	{
+	@Override
+	public void setAffineCS1(AffineCSType newAffineCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_AffineCS1(), newAffineCS1);
 	}
 
@@ -2345,8 +2288,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffinePlacementType getAffinePlacement()
-	{
+	@Override
+	public AffinePlacementType getAffinePlacement() {
 		return (AffinePlacementType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AffinePlacement(), true);
 	}
 
@@ -2355,8 +2298,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAffinePlacement(AffinePlacementType newAffinePlacement, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAffinePlacement(AffinePlacementType newAffinePlacement, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AffinePlacement(), newAffinePlacement, msgs);
 	}
 
@@ -2365,8 +2307,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAffinePlacement(AffinePlacementType newAffinePlacement)
-	{
+	@Override
+	public void setAffinePlacement(AffinePlacementType newAffinePlacement) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_AffinePlacement(), newAffinePlacement);
 	}
 
@@ -2375,8 +2317,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getAnchorDefinition()
-	{
+	@Override
+	public CodeType getAnchorDefinition() {
 		return (CodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AnchorDefinition(), true);
 	}
 
@@ -2385,8 +2327,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnchorDefinition(CodeType newAnchorDefinition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAnchorDefinition(CodeType newAnchorDefinition, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AnchorDefinition(), newAnchorDefinition, msgs);
 	}
 
@@ -2395,8 +2336,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnchorDefinition(CodeType newAnchorDefinition)
-	{
+	@Override
+	public void setAnchorDefinition(CodeType newAnchorDefinition) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_AnchorDefinition(), newAnchorDefinition);
 	}
 
@@ -2405,8 +2346,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getAnchorPoint()
-	{
+	@Override
+	public CodeType getAnchorPoint() {
 		return (CodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AnchorPoint(), true);
 	}
 
@@ -2415,8 +2356,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnchorPoint(CodeType newAnchorPoint, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAnchorPoint(CodeType newAnchorPoint, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AnchorPoint(), newAnchorPoint, msgs);
 	}
 
@@ -2425,8 +2365,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnchorPoint(CodeType newAnchorPoint)
-	{
+	@Override
+	public void setAnchorPoint(CodeType newAnchorPoint) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_AnchorPoint(), newAnchorPoint);
 	}
 
@@ -2435,8 +2375,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AngleType getAngle()
-	{
+	@Override
+	public AngleType getAngle() {
 		return (AngleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Angle(), true);
 	}
 
@@ -2445,8 +2385,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngle(AngleType newAngle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAngle(AngleType newAngle, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Angle(), newAngle, msgs);
 	}
 
@@ -2455,8 +2394,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAngle(AngleType newAngle)
-	{
+	@Override
+	public void setAngle(AngleType newAngle) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Angle(), newAngle);
 	}
 
@@ -2465,8 +2404,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcType getArc()
-	{
+	@Override
+	public ArcType getArc() {
 		return (ArcType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Arc(), true);
 	}
 
@@ -2475,8 +2414,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetArc(ArcType newArc, NotificationChain msgs)
-	{
+	public NotificationChain basicSetArc(ArcType newArc, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Arc(), newArc, msgs);
 	}
 
@@ -2485,8 +2423,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArc(ArcType newArc)
-	{
+	@Override
+	public void setArc(ArcType newArc) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Arc(), newArc);
 	}
 
@@ -2495,8 +2433,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcStringType getArcString()
-	{
+	@Override
+	public ArcStringType getArcString() {
 		return (ArcStringType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ArcString(), true);
 	}
 
@@ -2505,8 +2443,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetArcString(ArcStringType newArcString, NotificationChain msgs)
-	{
+	public NotificationChain basicSetArcString(ArcStringType newArcString, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ArcString(), newArcString, msgs);
 	}
 
@@ -2515,8 +2452,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcString(ArcStringType newArcString)
-	{
+	@Override
+	public void setArcString(ArcStringType newArcString) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ArcString(), newArcString);
 	}
 
@@ -2525,8 +2462,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcByBulgeType getArcByBulge()
-	{
+	@Override
+	public ArcByBulgeType getArcByBulge() {
 		return (ArcByBulgeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ArcByBulge(), true);
 	}
 
@@ -2535,8 +2472,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetArcByBulge(ArcByBulgeType newArcByBulge, NotificationChain msgs)
-	{
+	public NotificationChain basicSetArcByBulge(ArcByBulgeType newArcByBulge, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ArcByBulge(), newArcByBulge, msgs);
 	}
 
@@ -2545,8 +2481,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcByBulge(ArcByBulgeType newArcByBulge)
-	{
+	@Override
+	public void setArcByBulge(ArcByBulgeType newArcByBulge) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ArcByBulge(), newArcByBulge);
 	}
 
@@ -2555,8 +2491,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcStringByBulgeType getArcStringByBulge()
-	{
+	@Override
+	public ArcStringByBulgeType getArcStringByBulge() {
 		return (ArcStringByBulgeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ArcStringByBulge(), true);
 	}
 
@@ -2565,8 +2501,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetArcStringByBulge(ArcStringByBulgeType newArcStringByBulge, NotificationChain msgs)
-	{
+	public NotificationChain basicSetArcStringByBulge(ArcStringByBulgeType newArcStringByBulge, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ArcStringByBulge(), newArcStringByBulge, msgs);
 	}
 
@@ -2575,8 +2510,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcStringByBulge(ArcStringByBulgeType newArcStringByBulge)
-	{
+	@Override
+	public void setArcStringByBulge(ArcStringByBulgeType newArcStringByBulge) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ArcStringByBulge(), newArcStringByBulge);
 	}
 
@@ -2585,8 +2520,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcByCenterPointType getArcByCenterPoint()
-	{
+	@Override
+	public ArcByCenterPointType getArcByCenterPoint() {
 		return (ArcByCenterPointType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ArcByCenterPoint(), true);
 	}
 
@@ -2595,8 +2530,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetArcByCenterPoint(ArcByCenterPointType newArcByCenterPoint, NotificationChain msgs)
-	{
+	public NotificationChain basicSetArcByCenterPoint(ArcByCenterPointType newArcByCenterPoint, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ArcByCenterPoint(), newArcByCenterPoint, msgs);
 	}
 
@@ -2605,8 +2539,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcByCenterPoint(ArcByCenterPointType newArcByCenterPoint)
-	{
+	@Override
+	public void setArcByCenterPoint(ArcByCenterPointType newArcByCenterPoint) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ArcByCenterPoint(), newArcByCenterPoint);
 	}
 
@@ -2615,8 +2549,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArrayType getArray()
-	{
+	@Override
+	public ArrayType getArray() {
 		return (ArrayType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Array(), true);
 	}
 
@@ -2625,8 +2559,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetArray(ArrayType newArray, NotificationChain msgs)
-	{
+	public NotificationChain basicSetArray(ArrayType newArray, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Array(), newArray, msgs);
 	}
 
@@ -2635,8 +2568,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArray(ArrayType newArray)
-	{
+	@Override
+	public void setArray(ArrayType newArray) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Array(), newArray);
 	}
 
@@ -2645,8 +2578,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getAssociationName()
-	{
+	@Override
+	public String getAssociationName() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AssociationName(), true);
 	}
 
@@ -2655,8 +2588,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAssociationName(String newAssociationName)
-	{
+	@Override
+	public void setAssociationName(String newAssociationName) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_AssociationName(), newAssociationName);
 	}
 
@@ -2665,8 +2598,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemAxisPropertyType getAxis()
-	{
+	@Override
+	public CoordinateSystemAxisPropertyType getAxis() {
 		return (CoordinateSystemAxisPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Axis(), true);
 	}
 
@@ -2675,8 +2608,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAxis(CoordinateSystemAxisPropertyType newAxis, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAxis(CoordinateSystemAxisPropertyType newAxis, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Axis(), newAxis, msgs);
 	}
 
@@ -2685,8 +2617,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxis(CoordinateSystemAxisPropertyType newAxis)
-	{
+	@Override
+	public void setAxis(CoordinateSystemAxisPropertyType newAxis) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Axis(), newAxis);
 	}
 
@@ -2695,8 +2627,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getAxisAbbrev()
-	{
+	@Override
+	public CodeType getAxisAbbrev() {
 		return (CodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AxisAbbrev(), true);
 	}
 
@@ -2705,8 +2637,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAxisAbbrev(CodeType newAxisAbbrev, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAxisAbbrev(CodeType newAxisAbbrev, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AxisAbbrev(), newAxisAbbrev, msgs);
 	}
 
@@ -2715,8 +2646,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisAbbrev(CodeType newAxisAbbrev)
-	{
+	@Override
+	public void setAxisAbbrev(CodeType newAxisAbbrev) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_AxisAbbrev(), newAxisAbbrev);
 	}
 
@@ -2725,8 +2656,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getAxisDirection()
-	{
+	@Override
+	public CodeWithAuthorityType getAxisDirection() {
 		return (CodeWithAuthorityType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_AxisDirection(), true);
 	}
 
@@ -2735,8 +2666,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAxisDirection(CodeWithAuthorityType newAxisDirection, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAxisDirection(CodeWithAuthorityType newAxisDirection, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_AxisDirection(), newAxisDirection, msgs);
 	}
 
@@ -2745,8 +2675,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisDirection(CodeWithAuthorityType newAxisDirection)
-	{
+	@Override
+	public void setAxisDirection(CodeWithAuthorityType newAxisDirection) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_AxisDirection(), newAxisDirection);
 	}
 
@@ -2755,8 +2685,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BagType getBag()
-	{
+	@Override
+	public BagType getBag() {
 		return (BagType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Bag(), true);
 	}
 
@@ -2765,8 +2695,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBag(BagType newBag, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBag(BagType newBag, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Bag(), newBag, msgs);
 	}
 
@@ -2775,8 +2704,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBag(BagType newBag)
-	{
+	@Override
+	public void setBag(BagType newBag) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Bag(), newBag);
 	}
 
@@ -2785,8 +2714,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SingleCRSPropertyType getBaseCRS()
-	{
+	@Override
+	public SingleCRSPropertyType getBaseCRS() {
 		return (SingleCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BaseCRS(), true);
 	}
 
@@ -2795,8 +2724,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseCRS(SingleCRSPropertyType newBaseCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseCRS(SingleCRSPropertyType newBaseCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_BaseCRS(), newBaseCRS, msgs);
 	}
 
@@ -2805,8 +2733,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseCRS(SingleCRSPropertyType newBaseCRS)
-	{
+	@Override
+	public void setBaseCRS(SingleCRSPropertyType newBaseCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BaseCRS(), newBaseCRS);
 	}
 
@@ -2815,8 +2743,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurvePropertyType getBaseCurve()
-	{
+	@Override
+	public CurvePropertyType getBaseCurve() {
 		return (CurvePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BaseCurve(), true);
 	}
 
@@ -2825,8 +2753,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseCurve(CurvePropertyType newBaseCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseCurve(CurvePropertyType newBaseCurve, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_BaseCurve(), newBaseCurve, msgs);
 	}
 
@@ -2835,8 +2762,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseCurve(CurvePropertyType newBaseCurve)
-	{
+	@Override
+	public void setBaseCurve(CurvePropertyType newBaseCurve) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BaseCurve(), newBaseCurve);
 	}
 
@@ -2845,8 +2772,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticCRSPropertyType getBaseGeodeticCRS()
-	{
+	@Override
+	public GeodeticCRSPropertyType getBaseGeodeticCRS() {
 		return (GeodeticCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BaseGeodeticCRS(), true);
 	}
 
@@ -2855,8 +2782,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseGeodeticCRS(GeodeticCRSPropertyType newBaseGeodeticCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseGeodeticCRS(GeodeticCRSPropertyType newBaseGeodeticCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_BaseGeodeticCRS(), newBaseGeodeticCRS, msgs);
 	}
 
@@ -2865,8 +2791,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseGeodeticCRS(GeodeticCRSPropertyType newBaseGeodeticCRS)
-	{
+	@Override
+	public void setBaseGeodeticCRS(GeodeticCRSPropertyType newBaseGeodeticCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BaseGeodeticCRS(), newBaseGeodeticCRS);
 	}
 
@@ -2875,8 +2801,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeographicCRSPropertyType getBaseGeographicCRS()
-	{
+	@Override
+	public GeographicCRSPropertyType getBaseGeographicCRS() {
 		return (GeographicCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BaseGeographicCRS(), true);
 	}
 
@@ -2885,8 +2811,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseGeographicCRS(GeographicCRSPropertyType newBaseGeographicCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseGeographicCRS(GeographicCRSPropertyType newBaseGeographicCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_BaseGeographicCRS(), newBaseGeographicCRS, msgs);
 	}
 
@@ -2895,8 +2820,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseGeographicCRS(GeographicCRSPropertyType newBaseGeographicCRS)
-	{
+	@Override
+	public void setBaseGeographicCRS(GeographicCRSPropertyType newBaseGeographicCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BaseGeographicCRS(), newBaseGeographicCRS);
 	}
 
@@ -2905,8 +2830,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePropertyType getBaseSurface()
-	{
+	@Override
+	public SurfacePropertyType getBaseSurface() {
 		return (SurfacePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BaseSurface(), true);
 	}
 
@@ -2915,8 +2840,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseSurface(SurfacePropertyType newBaseSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseSurface(SurfacePropertyType newBaseSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_BaseSurface(), newBaseSurface, msgs);
 	}
 
@@ -2925,8 +2849,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseSurface(SurfacePropertyType newBaseSurface)
-	{
+	@Override
+	public void setBaseSurface(SurfacePropertyType newBaseSurface) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BaseSurface(), newBaseSurface);
 	}
 
@@ -2935,8 +2859,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BaseUnitType getBaseUnit()
-	{
+	@Override
+	public BaseUnitType getBaseUnit() {
 		return (BaseUnitType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BaseUnit(), true);
 	}
 
@@ -2945,8 +2869,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseUnit(BaseUnitType newBaseUnit, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseUnit(BaseUnitType newBaseUnit, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_BaseUnit(), newBaseUnit, msgs);
 	}
 
@@ -2955,8 +2878,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseUnit(BaseUnitType newBaseUnit)
-	{
+	@Override
+	public void setBaseUnit(BaseUnitType newBaseUnit) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BaseUnit(), newBaseUnit);
 	}
 
@@ -2965,8 +2888,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitDefinitionType getUnitDefinition()
-	{
+	@Override
+	public UnitDefinitionType getUnitDefinition() {
 		return (UnitDefinitionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UnitDefinition(), true);
 	}
 
@@ -2975,8 +2898,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUnitDefinition(UnitDefinitionType newUnitDefinition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUnitDefinition(UnitDefinitionType newUnitDefinition, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UnitDefinition(), newUnitDefinition, msgs);
 	}
 
@@ -2985,8 +2907,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUnitDefinition(UnitDefinitionType newUnitDefinition)
-	{
+	@Override
+	public void setUnitDefinition(UnitDefinitionType newUnitDefinition) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UnitDefinition(), newUnitDefinition);
 	}
 
@@ -2995,8 +2917,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BezierType getBezier()
-	{
+	@Override
+	public BezierType getBezier() {
 		return (BezierType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Bezier(), true);
 	}
 
@@ -3005,8 +2927,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBezier(BezierType newBezier, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBezier(BezierType newBezier, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Bezier(), newBezier, msgs);
 	}
 
@@ -3015,8 +2936,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBezier(BezierType newBezier)
-	{
+	@Override
+	public void setBezier(BezierType newBezier) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Bezier(), newBezier);
 	}
 
@@ -3025,8 +2946,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BSplineType getBSpline()
-	{
+	@Override
+	public BSplineType getBSpline() {
 		return (BSplineType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BSpline(), true);
 	}
 
@@ -3035,8 +2956,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBSpline(BSplineType newBSpline, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBSpline(BSplineType newBSpline, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_BSpline(), newBSpline, msgs);
 	}
 
@@ -3045,8 +2965,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBSpline(BSplineType newBSpline)
-	{
+	@Override
+	public void setBSpline(BSplineType newBSpline) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BSpline(), newBSpline);
 	}
 
@@ -3055,8 +2975,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanType getBoolean()
-	{
+	@Override
+	public BooleanType getBoolean() {
 		return (BooleanType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Boolean(), true);
 	}
 
@@ -3065,8 +2985,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBoolean(BooleanType newBoolean, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBoolean(BooleanType newBoolean, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Boolean(), newBoolean, msgs);
 	}
 
@@ -3075,8 +2994,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBoolean(BooleanType newBoolean)
-	{
+	@Override
+	public void setBoolean(BooleanType newBoolean) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Boolean(), newBoolean);
 	}
 
@@ -3086,8 +3005,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public List<Object> getBooleanList()
-	{
+	@Override
+	public List<Object> getBooleanList() {
 		return (List<Object>)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BooleanList(), true);
 	}
 
@@ -3096,8 +3015,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBooleanList(List<Object> newBooleanList)
-	{
+	@Override
+	public void setBooleanList(List<Object> newBooleanList) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BooleanList(), newBooleanList);
 	}
 
@@ -3106,8 +3025,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isBooleanValue()
-	{
+	@Override
+	public boolean isBooleanValue() {
 		return (Boolean)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BooleanValue(), true);
 	}
 
@@ -3116,8 +3035,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBooleanValue(boolean newBooleanValue)
-	{
+	@Override
+	public void setBooleanValue(boolean newBooleanValue) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BooleanValue(), newBooleanValue);
 	}
 
@@ -3126,8 +3045,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BoundingShapeType getBoundedBy()
-	{
+	@Override
+	public BoundingShapeType getBoundedBy() {
 		return (BoundingShapeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_BoundedBy(), true);
 	}
 
@@ -3136,8 +3055,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBoundedBy(BoundingShapeType newBoundedBy, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBoundedBy(BoundingShapeType newBoundedBy, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_BoundedBy(), newBoundedBy, msgs);
 	}
 
@@ -3146,8 +3064,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBoundedBy(BoundingShapeType newBoundedBy)
-	{
+	@Override
+	public void setBoundedBy(BoundingShapeType newBoundedBy) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_BoundedBy(), newBoundedBy);
 	}
 
@@ -3156,8 +3074,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSPropertyType getCartesianCS()
-	{
+	@Override
+	public CartesianCSPropertyType getCartesianCS() {
 		return (CartesianCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CartesianCS(), true);
 	}
 
@@ -3166,8 +3084,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CartesianCS(), newCartesianCS, msgs);
 	}
 
@@ -3176,8 +3093,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCartesianCS(CartesianCSPropertyType newCartesianCS)
-	{
+	@Override
+	public void setCartesianCS(CartesianCSPropertyType newCartesianCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CartesianCS(), newCartesianCS);
 	}
 
@@ -3186,8 +3103,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSType getCartesianCS1()
-	{
+	@Override
+	public CartesianCSType getCartesianCS1() {
 		return (CartesianCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CartesianCS1(), true);
 	}
 
@@ -3196,8 +3113,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCartesianCS1(CartesianCSType newCartesianCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCartesianCS1(CartesianCSType newCartesianCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CartesianCS1(), newCartesianCS1, msgs);
 	}
 
@@ -3206,8 +3122,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCartesianCS1(CartesianCSType newCartesianCS1)
-	{
+	@Override
+	public void setCartesianCS1(CartesianCSType newCartesianCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CartesianCS1(), newCartesianCS1);
 	}
 
@@ -3216,8 +3132,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSPropertyType getCartesianCSRef()
-	{
+	@Override
+	public CartesianCSPropertyType getCartesianCSRef() {
 		return (CartesianCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CartesianCSRef(), true);
 	}
 
@@ -3226,8 +3142,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCartesianCSRef(CartesianCSPropertyType newCartesianCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCartesianCSRef(CartesianCSPropertyType newCartesianCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CartesianCSRef(), newCartesianCSRef, msgs);
 	}
 
@@ -3236,8 +3151,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCartesianCSRef(CartesianCSPropertyType newCartesianCSRef)
-	{
+	@Override
+	public void setCartesianCSRef(CartesianCSPropertyType newCartesianCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CartesianCSRef(), newCartesianCSRef);
 	}
 
@@ -3246,8 +3161,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getCatalogSymbol()
-	{
+	@Override
+	public CodeType getCatalogSymbol() {
 		return (CodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CatalogSymbol(), true);
 	}
 
@@ -3256,8 +3171,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCatalogSymbol(CodeType newCatalogSymbol, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCatalogSymbol(CodeType newCatalogSymbol, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CatalogSymbol(), newCatalogSymbol, msgs);
 	}
 
@@ -3266,8 +3180,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCatalogSymbol(CodeType newCatalogSymbol)
-	{
+	@Override
+	public void setCatalogSymbol(CodeType newCatalogSymbol) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CatalogSymbol(), newCatalogSymbol);
 	}
 
@@ -3276,8 +3190,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CategoryType getCategory()
-	{
+	@Override
+	public CategoryType getCategory() {
 		return (CategoryType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Category(), true);
 	}
 
@@ -3286,8 +3200,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCategory(CategoryType newCategory, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCategory(CategoryType newCategory, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Category(), newCategory, msgs);
 	}
 
@@ -3296,8 +3209,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCategory(CategoryType newCategory)
-	{
+	@Override
+	public void setCategory(CategoryType newCategory) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Category(), newCategory);
 	}
 
@@ -3306,8 +3219,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CategoryExtentType getCategoryExtent()
-	{
+	@Override
+	public CategoryExtentType getCategoryExtent() {
 		return (CategoryExtentType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CategoryExtent(), true);
 	}
 
@@ -3316,8 +3229,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCategoryExtent(CategoryExtentType newCategoryExtent, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCategoryExtent(CategoryExtentType newCategoryExtent, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CategoryExtent(), newCategoryExtent, msgs);
 	}
 
@@ -3326,8 +3238,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCategoryExtent(CategoryExtentType newCategoryExtent)
-	{
+	@Override
+	public void setCategoryExtent(CategoryExtentType newCategoryExtent) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CategoryExtent(), newCategoryExtent);
 	}
 
@@ -3336,8 +3248,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeOrNilReasonListType getCategoryList()
-	{
+	@Override
+	public CodeOrNilReasonListType getCategoryList() {
 		return (CodeOrNilReasonListType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CategoryList(), true);
 	}
 
@@ -3346,8 +3258,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCategoryList(CodeOrNilReasonListType newCategoryList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCategoryList(CodeOrNilReasonListType newCategoryList, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CategoryList(), newCategoryList, msgs);
 	}
 
@@ -3356,8 +3267,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCategoryList(CodeOrNilReasonListType newCategoryList)
-	{
+	@Override
+	public void setCategoryList(CodeOrNilReasonListType newCategoryList) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CategoryList(), newCategoryList);
 	}
 
@@ -3366,8 +3277,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurvePropertyType getCenterLineOf()
-	{
+	@Override
+	public CurvePropertyType getCenterLineOf() {
 		return (CurvePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CenterLineOf(), true);
 	}
 
@@ -3376,8 +3287,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCenterLineOf(CurvePropertyType newCenterLineOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCenterLineOf(CurvePropertyType newCenterLineOf, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CenterLineOf(), newCenterLineOf, msgs);
 	}
 
@@ -3386,8 +3296,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCenterLineOf(CurvePropertyType newCenterLineOf)
-	{
+	@Override
+	public void setCenterLineOf(CurvePropertyType newCenterLineOf) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CenterLineOf(), newCenterLineOf);
 	}
 
@@ -3396,8 +3306,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType getCenterOf()
-	{
+	@Override
+	public PointPropertyType getCenterOf() {
 		return (PointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CenterOf(), true);
 	}
 
@@ -3406,8 +3316,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCenterOf(PointPropertyType newCenterOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCenterOf(PointPropertyType newCenterOf, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CenterOf(), newCenterOf, msgs);
 	}
 
@@ -3416,8 +3325,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCenterOf(PointPropertyType newCenterOf)
-	{
+	@Override
+	public void setCenterOf(PointPropertyType newCenterOf) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CenterOf(), newCenterOf);
 	}
 
@@ -3426,8 +3335,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CircleType getCircle()
-	{
+	@Override
+	public CircleType getCircle() {
 		return (CircleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Circle(), true);
 	}
 
@@ -3436,8 +3345,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCircle(CircleType newCircle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCircle(CircleType newCircle, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Circle(), newCircle, msgs);
 	}
 
@@ -3446,8 +3354,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCircle(CircleType newCircle)
-	{
+	@Override
+	public void setCircle(CircleType newCircle) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Circle(), newCircle);
 	}
 
@@ -3456,8 +3364,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CircleByCenterPointType getCircleByCenterPoint()
-	{
+	@Override
+	public CircleByCenterPointType getCircleByCenterPoint() {
 		return (CircleByCenterPointType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CircleByCenterPoint(), true);
 	}
 
@@ -3466,8 +3374,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCircleByCenterPoint(CircleByCenterPointType newCircleByCenterPoint, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCircleByCenterPoint(CircleByCenterPointType newCircleByCenterPoint, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CircleByCenterPoint(), newCircleByCenterPoint, msgs);
 	}
 
@@ -3476,8 +3383,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCircleByCenterPoint(CircleByCenterPointType newCircleByCenterPoint)
-	{
+	@Override
+	public void setCircleByCenterPoint(CircleByCenterPointType newCircleByCenterPoint) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CircleByCenterPoint(), newCircleByCenterPoint);
 	}
 
@@ -3486,8 +3393,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ClothoidType getClothoid()
-	{
+	@Override
+	public ClothoidType getClothoid() {
 		return (ClothoidType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Clothoid(), true);
 	}
 
@@ -3496,8 +3403,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetClothoid(ClothoidType newClothoid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetClothoid(ClothoidType newClothoid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Clothoid(), newClothoid, msgs);
 	}
 
@@ -3506,8 +3412,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setClothoid(ClothoidType newClothoid)
-	{
+	@Override
+	public void setClothoid(ClothoidType newClothoid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Clothoid(), newClothoid);
 	}
 
@@ -3516,8 +3422,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SingleCRSPropertyType getComponentReferenceSystem()
-	{
+	@Override
+	public SingleCRSPropertyType getComponentReferenceSystem() {
 		return (SingleCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ComponentReferenceSystem(), true);
 	}
 
@@ -3526,8 +3432,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetComponentReferenceSystem(SingleCRSPropertyType newComponentReferenceSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetComponentReferenceSystem(SingleCRSPropertyType newComponentReferenceSystem, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ComponentReferenceSystem(), newComponentReferenceSystem, msgs);
 	}
 
@@ -3536,8 +3441,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setComponentReferenceSystem(SingleCRSPropertyType newComponentReferenceSystem)
-	{
+	@Override
+	public void setComponentReferenceSystem(SingleCRSPropertyType newComponentReferenceSystem) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ComponentReferenceSystem(), newComponentReferenceSystem);
 	}
 
@@ -3546,8 +3451,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeCurveType getCompositeCurve()
-	{
+	@Override
+	public CompositeCurveType getCompositeCurve() {
 		return (CompositeCurveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CompositeCurve(), true);
 	}
 
@@ -3556,8 +3461,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompositeCurve(CompositeCurveType newCompositeCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompositeCurve(CompositeCurveType newCompositeCurve, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CompositeCurve(), newCompositeCurve, msgs);
 	}
 
@@ -3566,8 +3470,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompositeCurve(CompositeCurveType newCompositeCurve)
-	{
+	@Override
+	public void setCompositeCurve(CompositeCurveType newCompositeCurve) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CompositeCurve(), newCompositeCurve);
 	}
 
@@ -3576,8 +3480,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeSolidType getCompositeSolid()
-	{
+	@Override
+	public CompositeSolidType getCompositeSolid() {
 		return (CompositeSolidType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CompositeSolid(), true);
 	}
 
@@ -3586,8 +3490,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompositeSolid(CompositeSolidType newCompositeSolid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompositeSolid(CompositeSolidType newCompositeSolid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CompositeSolid(), newCompositeSolid, msgs);
 	}
 
@@ -3596,8 +3499,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompositeSolid(CompositeSolidType newCompositeSolid)
-	{
+	@Override
+	public void setCompositeSolid(CompositeSolidType newCompositeSolid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CompositeSolid(), newCompositeSolid);
 	}
 
@@ -3606,8 +3509,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeSurfaceType getCompositeSurface()
-	{
+	@Override
+	public CompositeSurfaceType getCompositeSurface() {
 		return (CompositeSurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CompositeSurface(), true);
 	}
 
@@ -3616,8 +3519,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompositeSurface(CompositeSurfaceType newCompositeSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompositeSurface(CompositeSurfaceType newCompositeSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CompositeSurface(), newCompositeSurface, msgs);
 	}
 
@@ -3626,8 +3528,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompositeSurface(CompositeSurfaceType newCompositeSurface)
-	{
+	@Override
+	public void setCompositeSurface(CompositeSurfaceType newCompositeSurface) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CompositeSurface(), newCompositeSurface);
 	}
 
@@ -3636,8 +3538,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeValueType getCompositeValue()
-	{
+	@Override
+	public CompositeValueType getCompositeValue() {
 		return (CompositeValueType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CompositeValue(), true);
 	}
 
@@ -3646,8 +3548,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompositeValue(CompositeValueType newCompositeValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompositeValue(CompositeValueType newCompositeValue, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CompositeValue(), newCompositeValue, msgs);
 	}
 
@@ -3656,8 +3557,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompositeValue(CompositeValueType newCompositeValue)
-	{
+	@Override
+	public void setCompositeValue(CompositeValueType newCompositeValue) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CompositeValue(), newCompositeValue);
 	}
 
@@ -3666,8 +3567,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompoundCRSType getCompoundCRS()
-	{
+	@Override
+	public CompoundCRSType getCompoundCRS() {
 		return (CompoundCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CompoundCRS(), true);
 	}
 
@@ -3676,8 +3577,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompoundCRS(CompoundCRSType newCompoundCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompoundCRS(CompoundCRSType newCompoundCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CompoundCRS(), newCompoundCRS, msgs);
 	}
 
@@ -3686,8 +3586,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompoundCRS(CompoundCRSType newCompoundCRS)
-	{
+	@Override
+	public void setCompoundCRS(CompoundCRSType newCompoundCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CompoundCRS(), newCompoundCRS);
 	}
 
@@ -3696,8 +3596,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompoundCRSPropertyType getCompoundCRSRef()
-	{
+	@Override
+	public CompoundCRSPropertyType getCompoundCRSRef() {
 		return (CompoundCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CompoundCRSRef(), true);
 	}
 
@@ -3706,8 +3606,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompoundCRSRef(CompoundCRSPropertyType newCompoundCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompoundCRSRef(CompoundCRSPropertyType newCompoundCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CompoundCRSRef(), newCompoundCRSRef, msgs);
 	}
 
@@ -3716,8 +3615,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompoundCRSRef(CompoundCRSPropertyType newCompoundCRSRef)
-	{
+	@Override
+	public void setCompoundCRSRef(CompoundCRSPropertyType newCompoundCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CompoundCRSRef(), newCompoundCRSRef);
 	}
 
@@ -3726,8 +3625,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConcatenatedOperationType getConcatenatedOperation()
-	{
+	@Override
+	public ConcatenatedOperationType getConcatenatedOperation() {
 		return (ConcatenatedOperationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ConcatenatedOperation(), true);
 	}
 
@@ -3736,8 +3635,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConcatenatedOperation(ConcatenatedOperationType newConcatenatedOperation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConcatenatedOperation(ConcatenatedOperationType newConcatenatedOperation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ConcatenatedOperation(), newConcatenatedOperation, msgs);
 	}
 
@@ -3746,8 +3644,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConcatenatedOperation(ConcatenatedOperationType newConcatenatedOperation)
-	{
+	@Override
+	public void setConcatenatedOperation(ConcatenatedOperationType newConcatenatedOperation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ConcatenatedOperation(), newConcatenatedOperation);
 	}
 
@@ -3756,8 +3654,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConcatenatedOperationPropertyType getConcatenatedOperationRef()
-	{
+	@Override
+	public ConcatenatedOperationPropertyType getConcatenatedOperationRef() {
 		return (ConcatenatedOperationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ConcatenatedOperationRef(), true);
 	}
 
@@ -3766,8 +3664,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConcatenatedOperationRef(ConcatenatedOperationPropertyType newConcatenatedOperationRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConcatenatedOperationRef(ConcatenatedOperationPropertyType newConcatenatedOperationRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ConcatenatedOperationRef(), newConcatenatedOperationRef, msgs);
 	}
 
@@ -3776,8 +3673,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConcatenatedOperationRef(ConcatenatedOperationPropertyType newConcatenatedOperationRef)
-	{
+	@Override
+	public void setConcatenatedOperationRef(ConcatenatedOperationPropertyType newConcatenatedOperationRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ConcatenatedOperationRef(), newConcatenatedOperationRef);
 	}
 
@@ -3786,8 +3683,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConeType getCone()
-	{
+	@Override
+	public ConeType getCone() {
 		return (ConeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Cone(), true);
 	}
 
@@ -3796,8 +3693,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCone(ConeType newCone, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCone(ConeType newCone, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Cone(), newCone, msgs);
 	}
 
@@ -3806,8 +3702,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCone(ConeType newCone)
-	{
+	@Override
+	public void setCone(ConeType newCone) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Cone(), newCone);
 	}
 
@@ -3816,8 +3712,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConventionalUnitType getConventionalUnit()
-	{
+	@Override
+	public ConventionalUnitType getConventionalUnit() {
 		return (ConventionalUnitType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ConventionalUnit(), true);
 	}
 
@@ -3826,8 +3722,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConventionalUnit(ConventionalUnitType newConventionalUnit, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConventionalUnit(ConventionalUnitType newConventionalUnit, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ConventionalUnit(), newConventionalUnit, msgs);
 	}
 
@@ -3836,8 +3731,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConventionalUnit(ConventionalUnitType newConventionalUnit)
-	{
+	@Override
+	public void setConventionalUnit(ConventionalUnitType newConventionalUnit) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ConventionalUnit(), newConventionalUnit);
 	}
 
@@ -3846,8 +3741,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeneralConversionPropertyType getConversion()
-	{
+	@Override
+	public GeneralConversionPropertyType getConversion() {
 		return (GeneralConversionPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Conversion(), true);
 	}
 
@@ -3856,8 +3751,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConversion(GeneralConversionPropertyType newConversion, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConversion(GeneralConversionPropertyType newConversion, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Conversion(), newConversion, msgs);
 	}
 
@@ -3866,8 +3760,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConversion(GeneralConversionPropertyType newConversion)
-	{
+	@Override
+	public void setConversion(GeneralConversionPropertyType newConversion) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Conversion(), newConversion);
 	}
 
@@ -3876,8 +3770,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConversionType getConversion1()
-	{
+	@Override
+	public ConversionType getConversion1() {
 		return (ConversionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Conversion1(), true);
 	}
 
@@ -3886,8 +3780,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConversion1(ConversionType newConversion1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConversion1(ConversionType newConversion1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Conversion1(), newConversion1, msgs);
 	}
 
@@ -3896,8 +3789,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConversion1(ConversionType newConversion1)
-	{
+	@Override
+	public void setConversion1(ConversionType newConversion1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Conversion1(), newConversion1);
 	}
 
@@ -3906,8 +3799,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConversionPropertyType getConversionRef()
-	{
+	@Override
+	public ConversionPropertyType getConversionRef() {
 		return (ConversionPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ConversionRef(), true);
 	}
 
@@ -3916,8 +3809,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConversionRef(ConversionPropertyType newConversionRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConversionRef(ConversionPropertyType newConversionRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ConversionRef(), newConversionRef, msgs);
 	}
 
@@ -3926,8 +3818,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConversionRef(ConversionPropertyType newConversionRef)
-	{
+	@Override
+	public void setConversionRef(ConversionPropertyType newConversionRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ConversionRef(), newConversionRef);
 	}
 
@@ -3936,8 +3828,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConversionToPreferredUnitType getConversionToPreferredUnit()
-	{
+	@Override
+	public ConversionToPreferredUnitType getConversionToPreferredUnit() {
 		return (ConversionToPreferredUnitType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ConversionToPreferredUnit(), true);
 	}
 
@@ -3946,8 +3838,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConversionToPreferredUnit(ConversionToPreferredUnitType newConversionToPreferredUnit, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConversionToPreferredUnit(ConversionToPreferredUnitType newConversionToPreferredUnit, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ConversionToPreferredUnit(), newConversionToPreferredUnit, msgs);
 	}
 
@@ -3956,8 +3847,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConversionToPreferredUnit(ConversionToPreferredUnitType newConversionToPreferredUnit)
-	{
+	@Override
+	public void setConversionToPreferredUnit(ConversionToPreferredUnitType newConversionToPreferredUnit) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ConversionToPreferredUnit(), newConversionToPreferredUnit);
 	}
 
@@ -3966,8 +3857,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateOperationAccuracyType getCoordinateOperationAccuracy()
-	{
+	@Override
+	public CoordinateOperationAccuracyType getCoordinateOperationAccuracy() {
 		return (CoordinateOperationAccuracyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateOperationAccuracy(), true);
 	}
 
@@ -3976,8 +3867,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinateOperationAccuracy(CoordinateOperationAccuracyType newCoordinateOperationAccuracy, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinateOperationAccuracy(CoordinateOperationAccuracyType newCoordinateOperationAccuracy, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateOperationAccuracy(), newCoordinateOperationAccuracy, msgs);
 	}
 
@@ -3986,8 +3876,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinateOperationAccuracy(CoordinateOperationAccuracyType newCoordinateOperationAccuracy)
-	{
+	@Override
+	public void setCoordinateOperationAccuracy(CoordinateOperationAccuracyType newCoordinateOperationAccuracy) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateOperationAccuracy(), newCoordinateOperationAccuracy);
 	}
 
@@ -3996,8 +3886,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateOperationPropertyType getCoordinateOperationRef()
-	{
+	@Override
+	public CoordinateOperationPropertyType getCoordinateOperationRef() {
 		return (CoordinateOperationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateOperationRef(), true);
 	}
 
@@ -4006,8 +3896,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinateOperationRef(CoordinateOperationPropertyType newCoordinateOperationRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinateOperationRef(CoordinateOperationPropertyType newCoordinateOperationRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateOperationRef(), newCoordinateOperationRef, msgs);
 	}
 
@@ -4016,8 +3905,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinateOperationRef(CoordinateOperationPropertyType newCoordinateOperationRef)
-	{
+	@Override
+	public void setCoordinateOperationRef(CoordinateOperationPropertyType newCoordinateOperationRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateOperationRef(), newCoordinateOperationRef);
 	}
 
@@ -4026,8 +3915,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinatesType getCoordinates()
-	{
+	@Override
+	public CoordinatesType getCoordinates() {
 		return (CoordinatesType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Coordinates(), true);
 	}
 
@@ -4036,8 +3925,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Coordinates(), newCoordinates, msgs);
 	}
 
@@ -4046,8 +3934,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinates(CoordinatesType newCoordinates)
-	{
+	@Override
+	public void setCoordinates(CoordinatesType newCoordinates) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Coordinates(), newCoordinates);
 	}
 
@@ -4056,8 +3944,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemPropertyType getCoordinateSystem()
-	{
+	@Override
+	public CoordinateSystemPropertyType getCoordinateSystem() {
 		return (CoordinateSystemPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystem(), true);
 	}
 
@@ -4066,8 +3954,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystem(), newCoordinateSystem, msgs);
 	}
 
@@ -4076,8 +3963,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem)
-	{
+	@Override
+	public void setCoordinateSystem(CoordinateSystemPropertyType newCoordinateSystem) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystem(), newCoordinateSystem);
 	}
 
@@ -4086,8 +3973,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemAxisType getCoordinateSystemAxis()
-	{
+	@Override
+	public CoordinateSystemAxisType getCoordinateSystemAxis() {
 		return (CoordinateSystemAxisType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystemAxis(), true);
 	}
 
@@ -4096,8 +3983,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinateSystemAxis(CoordinateSystemAxisType newCoordinateSystemAxis, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinateSystemAxis(CoordinateSystemAxisType newCoordinateSystemAxis, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystemAxis(), newCoordinateSystemAxis, msgs);
 	}
 
@@ -4106,8 +3992,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinateSystemAxis(CoordinateSystemAxisType newCoordinateSystemAxis)
-	{
+	@Override
+	public void setCoordinateSystemAxis(CoordinateSystemAxisType newCoordinateSystemAxis) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystemAxis(), newCoordinateSystemAxis);
 	}
 
@@ -4116,8 +4002,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemAxisPropertyType getCoordinateSystemAxisRef()
-	{
+	@Override
+	public CoordinateSystemAxisPropertyType getCoordinateSystemAxisRef() {
 		return (CoordinateSystemAxisPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystemAxisRef(), true);
 	}
 
@@ -4126,8 +4012,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinateSystemAxisRef(CoordinateSystemAxisPropertyType newCoordinateSystemAxisRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinateSystemAxisRef(CoordinateSystemAxisPropertyType newCoordinateSystemAxisRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystemAxisRef(), newCoordinateSystemAxisRef, msgs);
 	}
 
@@ -4136,8 +4021,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinateSystemAxisRef(CoordinateSystemAxisPropertyType newCoordinateSystemAxisRef)
-	{
+	@Override
+	public void setCoordinateSystemAxisRef(CoordinateSystemAxisPropertyType newCoordinateSystemAxisRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystemAxisRef(), newCoordinateSystemAxisRef);
 	}
 
@@ -4146,8 +4031,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemPropertyType getCoordinateSystemRef()
-	{
+	@Override
+	public CoordinateSystemPropertyType getCoordinateSystemRef() {
 		return (CoordinateSystemPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystemRef(), true);
 	}
 
@@ -4156,8 +4041,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinateSystemRef(CoordinateSystemPropertyType newCoordinateSystemRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinateSystemRef(CoordinateSystemPropertyType newCoordinateSystemRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystemRef(), newCoordinateSystemRef, msgs);
 	}
 
@@ -4166,8 +4050,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinateSystemRef(CoordinateSystemPropertyType newCoordinateSystemRef)
-	{
+	@Override
+	public void setCoordinateSystemRef(CoordinateSystemPropertyType newCoordinateSystemRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CoordinateSystemRef(), newCoordinateSystemRef);
 	}
 
@@ -4176,8 +4060,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateOperationPropertyType getCoordOperation()
-	{
+	@Override
+	public CoordinateOperationPropertyType getCoordOperation() {
 		return (CoordinateOperationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CoordOperation(), true);
 	}
 
@@ -4186,8 +4070,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordOperation(CoordinateOperationPropertyType newCoordOperation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordOperation(CoordinateOperationPropertyType newCoordOperation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CoordOperation(), newCoordOperation, msgs);
 	}
 
@@ -4196,8 +4079,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordOperation(CoordinateOperationPropertyType newCoordOperation)
-	{
+	@Override
+	public void setCoordOperation(CoordinateOperationPropertyType newCoordOperation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CoordOperation(), newCoordOperation);
 	}
 
@@ -4206,8 +4089,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CountType getCount()
-	{
+	@Override
+	public CountType getCount() {
 		return (CountType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Count(), true);
 	}
 
@@ -4216,8 +4099,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCount(CountType newCount, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCount(CountType newCount, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Count(), newCount, msgs);
 	}
 
@@ -4226,8 +4108,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCount(CountType newCount)
-	{
+	@Override
+	public void setCount(CountType newCount) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Count(), newCount);
 	}
 
@@ -4237,8 +4119,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public List<Object> getCountExtent()
-	{
+	@Override
+	public List<Object> getCountExtent() {
 		return (List<Object>)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CountExtent(), true);
 	}
 
@@ -4247,8 +4129,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCountExtent(List<Object> newCountExtent)
-	{
+	@Override
+	public void setCountExtent(List<Object> newCountExtent) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CountExtent(), newCountExtent);
 	}
 
@@ -4258,8 +4140,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public List<Object> getCountList()
-	{
+	@Override
+	public List<Object> getCountList() {
 		return (List<Object>)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CountList(), true);
 	}
 
@@ -4268,8 +4150,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCountList(List<Object> newCountList)
-	{
+	@Override
+	public void setCountList(List<Object> newCountList) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CountList(), newCountList);
 	}
 
@@ -4278,8 +4160,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoverageFunctionType getCoverageFunction()
-	{
+	@Override
+	public CoverageFunctionType getCoverageFunction() {
 		return (CoverageFunctionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CoverageFunction(), true);
 	}
 
@@ -4288,8 +4170,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoverageFunction(CoverageFunctionType newCoverageFunction, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoverageFunction(CoverageFunctionType newCoverageFunction, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CoverageFunction(), newCoverageFunction, msgs);
 	}
 
@@ -4298,8 +4179,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoverageFunction(CoverageFunctionType newCoverageFunction)
-	{
+	@Override
+	public void setCoverageFunction(CoverageFunctionType newCoverageFunction) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CoverageFunction(), newCoverageFunction);
 	}
 
@@ -4308,8 +4189,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MappingRuleType getCoverageMappingRule()
-	{
+	@Override
+	public MappingRuleType getCoverageMappingRule() {
 		return (MappingRuleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CoverageMappingRule(), true);
 	}
 
@@ -4318,8 +4199,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoverageMappingRule(MappingRuleType newCoverageMappingRule, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoverageMappingRule(MappingRuleType newCoverageMappingRule, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CoverageMappingRule(), newCoverageMappingRule, msgs);
 	}
 
@@ -4328,8 +4208,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoverageMappingRule(MappingRuleType newCoverageMappingRule)
-	{
+	@Override
+	public void setCoverageMappingRule(MappingRuleType newCoverageMappingRule) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CoverageMappingRule(), newCoverageMappingRule);
 	}
 
@@ -4338,8 +4218,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CRSPropertyType getCrsRef()
-	{
+	@Override
+	public CRSPropertyType getCrsRef() {
 		return (CRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CrsRef(), true);
 	}
 
@@ -4348,8 +4228,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCrsRef(CRSPropertyType newCrsRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCrsRef(CRSPropertyType newCrsRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CrsRef(), newCrsRef, msgs);
 	}
 
@@ -4358,8 +4237,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCrsRef(CRSPropertyType newCrsRef)
-	{
+	@Override
+	public void setCrsRef(CRSPropertyType newCrsRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CrsRef(), newCrsRef);
 	}
 
@@ -4368,8 +4247,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CubicSplineType getCubicSpline()
-	{
+	@Override
+	public CubicSplineType getCubicSpline() {
 		return (CubicSplineType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CubicSpline(), true);
 	}
 
@@ -4378,8 +4257,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCubicSpline(CubicSplineType newCubicSpline, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCubicSpline(CubicSplineType newCubicSpline, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CubicSpline(), newCubicSpline, msgs);
 	}
 
@@ -4388,8 +4266,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCubicSpline(CubicSplineType newCubicSpline)
-	{
+	@Override
+	public void setCubicSpline(CubicSplineType newCubicSpline) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CubicSpline(), newCubicSpline);
 	}
 
@@ -4398,8 +4276,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveType getCurve()
-	{
+	@Override
+	public CurveType getCurve() {
 		return (CurveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Curve(), true);
 	}
 
@@ -4408,8 +4286,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCurve(CurveType newCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCurve(CurveType newCurve, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Curve(), newCurve, msgs);
 	}
 
@@ -4418,8 +4295,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCurve(CurveType newCurve)
-	{
+	@Override
+	public void setCurve(CurveType newCurve) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Curve(), newCurve);
 	}
 
@@ -4428,8 +4305,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveArrayPropertyType getCurveArrayProperty()
-	{
+	@Override
+	public CurveArrayPropertyType getCurveArrayProperty() {
 		return (CurveArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CurveArrayProperty(), true);
 	}
 
@@ -4438,8 +4315,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCurveArrayProperty(CurveArrayPropertyType newCurveArrayProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCurveArrayProperty(CurveArrayPropertyType newCurveArrayProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CurveArrayProperty(), newCurveArrayProperty, msgs);
 	}
 
@@ -4448,8 +4324,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCurveArrayProperty(CurveArrayPropertyType newCurveArrayProperty)
-	{
+	@Override
+	public void setCurveArrayProperty(CurveArrayPropertyType newCurveArrayProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CurveArrayProperty(), newCurveArrayProperty);
 	}
 
@@ -4458,8 +4334,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurvePropertyType getCurveMember()
-	{
+	@Override
+	public CurvePropertyType getCurveMember() {
 		return (CurvePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CurveMember(), true);
 	}
 
@@ -4468,8 +4344,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCurveMember(CurvePropertyType newCurveMember, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCurveMember(CurvePropertyType newCurveMember, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CurveMember(), newCurveMember, msgs);
 	}
 
@@ -4478,8 +4353,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCurveMember(CurvePropertyType newCurveMember)
-	{
+	@Override
+	public void setCurveMember(CurvePropertyType newCurveMember) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CurveMember(), newCurveMember);
 	}
 
@@ -4488,8 +4363,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveArrayPropertyType getCurveMembers()
-	{
+	@Override
+	public CurveArrayPropertyType getCurveMembers() {
 		return (CurveArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CurveMembers(), true);
 	}
 
@@ -4498,8 +4373,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCurveMembers(CurveArrayPropertyType newCurveMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCurveMembers(CurveArrayPropertyType newCurveMembers, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CurveMembers(), newCurveMembers, msgs);
 	}
 
@@ -4508,8 +4382,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCurveMembers(CurveArrayPropertyType newCurveMembers)
-	{
+	@Override
+	public void setCurveMembers(CurveArrayPropertyType newCurveMembers) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CurveMembers(), newCurveMembers);
 	}
 
@@ -4518,8 +4392,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurvePropertyType getCurveProperty()
-	{
+	@Override
+	public CurvePropertyType getCurveProperty() {
 		return (CurvePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CurveProperty(), true);
 	}
 
@@ -4528,8 +4402,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCurveProperty(CurvePropertyType newCurveProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCurveProperty(CurvePropertyType newCurveProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CurveProperty(), newCurveProperty, msgs);
 	}
 
@@ -4538,8 +4411,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCurveProperty(CurvePropertyType newCurveProperty)
-	{
+	@Override
+	public void setCurveProperty(CurvePropertyType newCurveProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CurveProperty(), newCurveProperty);
 	}
 
@@ -4548,8 +4421,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CylinderType getCylinder()
-	{
+	@Override
+	public CylinderType getCylinder() {
 		return (CylinderType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Cylinder(), true);
 	}
 
@@ -4558,8 +4431,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCylinder(CylinderType newCylinder, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCylinder(CylinderType newCylinder, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Cylinder(), newCylinder, msgs);
 	}
 
@@ -4568,8 +4440,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCylinder(CylinderType newCylinder)
-	{
+	@Override
+	public void setCylinder(CylinderType newCylinder) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Cylinder(), newCylinder);
 	}
 
@@ -4578,8 +4450,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CylindricalCSPropertyType getCylindricalCS()
-	{
+	@Override
+	public CylindricalCSPropertyType getCylindricalCS() {
 		return (CylindricalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CylindricalCS(), true);
 	}
 
@@ -4588,8 +4460,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCylindricalCS(CylindricalCSPropertyType newCylindricalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCylindricalCS(CylindricalCSPropertyType newCylindricalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CylindricalCS(), newCylindricalCS, msgs);
 	}
 
@@ -4598,8 +4469,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCylindricalCS(CylindricalCSPropertyType newCylindricalCS)
-	{
+	@Override
+	public void setCylindricalCS(CylindricalCSPropertyType newCylindricalCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CylindricalCS(), newCylindricalCS);
 	}
 
@@ -4608,8 +4479,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CylindricalCSType getCylindricalCS1()
-	{
+	@Override
+	public CylindricalCSType getCylindricalCS1() {
 		return (CylindricalCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CylindricalCS1(), true);
 	}
 
@@ -4618,8 +4489,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCylindricalCS1(CylindricalCSType newCylindricalCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCylindricalCS1(CylindricalCSType newCylindricalCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CylindricalCS1(), newCylindricalCS1, msgs);
 	}
 
@@ -4628,8 +4498,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCylindricalCS1(CylindricalCSType newCylindricalCS1)
-	{
+	@Override
+	public void setCylindricalCS1(CylindricalCSType newCylindricalCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CylindricalCS1(), newCylindricalCS1);
 	}
 
@@ -4638,8 +4508,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CylindricalCSPropertyType getCylindricalCSRef()
-	{
+	@Override
+	public CylindricalCSPropertyType getCylindricalCSRef() {
 		return (CylindricalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_CylindricalCSRef(), true);
 	}
 
@@ -4648,8 +4518,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCylindricalCSRef(CylindricalCSPropertyType newCylindricalCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCylindricalCSRef(CylindricalCSPropertyType newCylindricalCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_CylindricalCSRef(), newCylindricalCSRef, msgs);
 	}
 
@@ -4658,8 +4527,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCylindricalCSRef(CylindricalCSPropertyType newCylindricalCSRef)
-	{
+	@Override
+	public void setCylindricalCSRef(CylindricalCSPropertyType newCylindricalCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_CylindricalCSRef(), newCylindricalCSRef);
 	}
 
@@ -4668,8 +4537,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DataBlockType getDataBlock()
-	{
+	@Override
+	public DataBlockType getDataBlock() {
 		return (DataBlockType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DataBlock(), true);
 	}
 
@@ -4678,8 +4547,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataBlock(DataBlockType newDataBlock, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataBlock(DataBlockType newDataBlock, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DataBlock(), newDataBlock, msgs);
 	}
 
@@ -4688,8 +4556,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataBlock(DataBlockType newDataBlock)
-	{
+	@Override
+	public void setDataBlock(DataBlockType newDataBlock) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DataBlock(), newDataBlock);
 	}
 
@@ -4698,8 +4566,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getDataSource()
-	{
+	@Override
+	public StringOrRefType getDataSource() {
 		return (StringOrRefType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DataSource(), true);
 	}
 
@@ -4708,8 +4576,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataSource(StringOrRefType newDataSource, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataSource(StringOrRefType newDataSource, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DataSource(), newDataSource, msgs);
 	}
 
@@ -4718,8 +4585,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataSource(StringOrRefType newDataSource)
-	{
+	@Override
+	public void setDataSource(StringOrRefType newDataSource) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DataSource(), newDataSource);
 	}
 
@@ -4728,8 +4595,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getDataSourceReference()
-	{
+	@Override
+	public ReferenceType getDataSourceReference() {
 		return (ReferenceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DataSourceReference(), true);
 	}
 
@@ -4738,8 +4605,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataSourceReference(ReferenceType newDataSourceReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataSourceReference(ReferenceType newDataSourceReference, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DataSourceReference(), newDataSourceReference, msgs);
 	}
 
@@ -4748,8 +4614,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataSourceReference(ReferenceType newDataSourceReference)
-	{
+	@Override
+	public void setDataSourceReference(ReferenceType newDataSourceReference) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DataSourceReference(), newDataSourceReference);
 	}
 
@@ -4758,8 +4624,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DatumPropertyType getDatumRef()
-	{
+	@Override
+	public DatumPropertyType getDatumRef() {
 		return (DatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DatumRef(), true);
 	}
 
@@ -4768,8 +4634,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDatumRef(DatumPropertyType newDatumRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDatumRef(DatumPropertyType newDatumRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DatumRef(), newDatumRef, msgs);
 	}
 
@@ -4778,8 +4643,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDatumRef(DatumPropertyType newDatumRef)
-	{
+	@Override
+	public void setDatumRef(DatumPropertyType newDatumRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DatumRef(), newDatumRef);
 	}
 
@@ -4788,8 +4653,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal getDecimalMinutes()
-	{
+	@Override
+	public BigDecimal getDecimalMinutes() {
 		return (BigDecimal)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DecimalMinutes(), true);
 	}
 
@@ -4798,8 +4663,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDecimalMinutes(BigDecimal newDecimalMinutes)
-	{
+	@Override
+	public void setDecimalMinutes(BigDecimal newDecimalMinutes) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DecimalMinutes(), newDecimalMinutes);
 	}
 
@@ -4808,8 +4673,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDefaultCodeSpace()
-	{
+	@Override
+	public String getDefaultCodeSpace() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DefaultCodeSpace(), true);
 	}
 
@@ -4818,8 +4683,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDefaultCodeSpace(String newDefaultCodeSpace)
-	{
+	@Override
+	public void setDefaultCodeSpace(String newDefaultCodeSpace) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DefaultCodeSpace(), newDefaultCodeSpace);
 	}
 
@@ -4828,8 +4693,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DictionaryType getDefinitionCollection()
-	{
+	@Override
+	public DictionaryType getDefinitionCollection() {
 		return (DictionaryType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionCollection(), true);
 	}
 
@@ -4838,8 +4703,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDefinitionCollection(DictionaryType newDefinitionCollection, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDefinitionCollection(DictionaryType newDefinitionCollection, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionCollection(), newDefinitionCollection, msgs);
 	}
 
@@ -4848,8 +4712,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDefinitionCollection(DictionaryType newDefinitionCollection)
-	{
+	@Override
+	public void setDefinitionCollection(DictionaryType newDefinitionCollection) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionCollection(), newDefinitionCollection);
 	}
 
@@ -4858,8 +4722,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DictionaryEntryType getDefinitionMember()
-	{
+	@Override
+	public DictionaryEntryType getDefinitionMember() {
 		return (DictionaryEntryType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionMember(), true);
 	}
 
@@ -4868,8 +4732,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDefinitionMember(DictionaryEntryType newDefinitionMember, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDefinitionMember(DictionaryEntryType newDefinitionMember, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionMember(), newDefinitionMember, msgs);
 	}
 
@@ -4878,8 +4741,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDefinitionMember(DictionaryEntryType newDefinitionMember)
-	{
+	@Override
+	public void setDefinitionMember(DictionaryEntryType newDefinitionMember) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionMember(), newDefinitionMember);
 	}
 
@@ -4888,8 +4751,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DictionaryEntryType getDictionaryEntry()
-	{
+	@Override
+	public DictionaryEntryType getDictionaryEntry() {
 		return (DictionaryEntryType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DictionaryEntry(), true);
 	}
 
@@ -4898,8 +4761,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDictionaryEntry(DictionaryEntryType newDictionaryEntry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDictionaryEntry(DictionaryEntryType newDictionaryEntry, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DictionaryEntry(), newDictionaryEntry, msgs);
 	}
 
@@ -4908,8 +4770,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDictionaryEntry(DictionaryEntryType newDictionaryEntry)
-	{
+	@Override
+	public void setDictionaryEntry(DictionaryEntryType newDictionaryEntry) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DictionaryEntry(), newDictionaryEntry);
 	}
 
@@ -4918,8 +4780,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DefinitionProxyType getDefinitionProxy()
-	{
+	@Override
+	public DefinitionProxyType getDefinitionProxy() {
 		return (DefinitionProxyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionProxy(), true);
 	}
 
@@ -4928,8 +4790,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDefinitionProxy(DefinitionProxyType newDefinitionProxy, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDefinitionProxy(DefinitionProxyType newDefinitionProxy, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionProxy(), newDefinitionProxy, msgs);
 	}
 
@@ -4938,8 +4799,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDefinitionProxy(DefinitionProxyType newDefinitionProxy)
-	{
+	@Override
+	public void setDefinitionProxy(DefinitionProxyType newDefinitionProxy) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionProxy(), newDefinitionProxy);
 	}
 
@@ -4948,8 +4809,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getDefinitionRef()
-	{
+	@Override
+	public ReferenceType getDefinitionRef() {
 		return (ReferenceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionRef(), true);
 	}
 
@@ -4958,8 +4819,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDefinitionRef(ReferenceType newDefinitionRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDefinitionRef(ReferenceType newDefinitionRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionRef(), newDefinitionRef, msgs);
 	}
 
@@ -4968,8 +4828,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDefinitionRef(ReferenceType newDefinitionRef)
-	{
+	@Override
+	public void setDefinitionRef(ReferenceType newDefinitionRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DefinitionRef(), newDefinitionRef);
 	}
 
@@ -4978,8 +4838,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DegreesType getDegrees()
-	{
+	@Override
+	public DegreesType getDegrees() {
 		return (DegreesType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Degrees(), true);
 	}
 
@@ -4988,8 +4848,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDegrees(DegreesType newDegrees, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDegrees(DegreesType newDegrees, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Degrees(), newDegrees, msgs);
 	}
 
@@ -4998,8 +4857,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDegrees(DegreesType newDegrees)
-	{
+	@Override
+	public void setDegrees(DegreesType newDegrees) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Degrees(), newDegrees);
 	}
 
@@ -5008,8 +4867,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DerivationUnitTermType getDerivationUnitTerm()
-	{
+	@Override
+	public DerivationUnitTermType getDerivationUnitTerm() {
 		return (DerivationUnitTermType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DerivationUnitTerm(), true);
 	}
 
@@ -5018,8 +4877,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDerivationUnitTerm(DerivationUnitTermType newDerivationUnitTerm, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDerivationUnitTerm(DerivationUnitTermType newDerivationUnitTerm, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DerivationUnitTerm(), newDerivationUnitTerm, msgs);
 	}
 
@@ -5028,8 +4886,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDerivationUnitTerm(DerivationUnitTermType newDerivationUnitTerm)
-	{
+	@Override
+	public void setDerivationUnitTerm(DerivationUnitTermType newDerivationUnitTerm) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DerivationUnitTerm(), newDerivationUnitTerm);
 	}
 
@@ -5038,8 +4896,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DerivedCRSType getDerivedCRS()
-	{
+	@Override
+	public DerivedCRSType getDerivedCRS() {
 		return (DerivedCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DerivedCRS(), true);
 	}
 
@@ -5048,8 +4906,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDerivedCRS(DerivedCRSType newDerivedCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDerivedCRS(DerivedCRSType newDerivedCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DerivedCRS(), newDerivedCRS, msgs);
 	}
 
@@ -5058,8 +4915,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDerivedCRS(DerivedCRSType newDerivedCRS)
-	{
+	@Override
+	public void setDerivedCRS(DerivedCRSType newDerivedCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DerivedCRS(), newDerivedCRS);
 	}
 
@@ -5068,8 +4925,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DerivedCRSPropertyType getDerivedCRSRef()
-	{
+	@Override
+	public DerivedCRSPropertyType getDerivedCRSRef() {
 		return (DerivedCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DerivedCRSRef(), true);
 	}
 
@@ -5078,8 +4935,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDerivedCRSRef(DerivedCRSPropertyType newDerivedCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDerivedCRSRef(DerivedCRSPropertyType newDerivedCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DerivedCRSRef(), newDerivedCRSRef, msgs);
 	}
 
@@ -5088,8 +4944,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDerivedCRSRef(DerivedCRSPropertyType newDerivedCRSRef)
-	{
+	@Override
+	public void setDerivedCRSRef(DerivedCRSPropertyType newDerivedCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DerivedCRSRef(), newDerivedCRSRef);
 	}
 
@@ -5098,8 +4954,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getDerivedCRSType()
-	{
+	@Override
+	public CodeWithAuthorityType getDerivedCRSType() {
 		return (CodeWithAuthorityType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DerivedCRSType(), true);
 	}
 
@@ -5108,8 +4964,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDerivedCRSType(CodeWithAuthorityType newDerivedCRSType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDerivedCRSType(CodeWithAuthorityType newDerivedCRSType, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DerivedCRSType(), newDerivedCRSType, msgs);
 	}
 
@@ -5118,8 +4973,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDerivedCRSType(CodeWithAuthorityType newDerivedCRSType)
-	{
+	@Override
+	public void setDerivedCRSType(CodeWithAuthorityType newDerivedCRSType) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DerivedCRSType(), newDerivedCRSType);
 	}
 
@@ -5128,8 +4983,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DerivedUnitType getDerivedUnit()
-	{
+	@Override
+	public DerivedUnitType getDerivedUnit() {
 		return (DerivedUnitType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DerivedUnit(), true);
 	}
 
@@ -5138,8 +4993,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDerivedUnit(DerivedUnitType newDerivedUnit, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDerivedUnit(DerivedUnitType newDerivedUnit, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DerivedUnit(), newDerivedUnit, msgs);
 	}
 
@@ -5148,8 +5002,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDerivedUnit(DerivedUnitType newDerivedUnit)
-	{
+	@Override
+	public void setDerivedUnit(DerivedUnitType newDerivedUnit) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DerivedUnit(), newDerivedUnit);
 	}
 
@@ -5158,8 +5012,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getDescription()
-	{
+	@Override
+	public StringOrRefType getDescription() {
 		return (StringOrRefType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Description(), true);
 	}
 
@@ -5168,8 +5022,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescription(StringOrRefType newDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescription(StringOrRefType newDescription, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Description(), newDescription, msgs);
 	}
 
@@ -5178,8 +5031,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescription(StringOrRefType newDescription)
-	{
+	@Override
+	public void setDescription(StringOrRefType newDescription) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Description(), newDescription);
 	}
 
@@ -5188,8 +5041,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getDescriptionReference()
-	{
+	@Override
+	public ReferenceType getDescriptionReference() {
 		return (ReferenceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DescriptionReference(), true);
 	}
 
@@ -5198,8 +5051,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescriptionReference(ReferenceType newDescriptionReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescriptionReference(ReferenceType newDescriptionReference, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DescriptionReference(), newDescriptionReference, msgs);
 	}
 
@@ -5208,8 +5060,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescriptionReference(ReferenceType newDescriptionReference)
-	{
+	@Override
+	public void setDescriptionReference(ReferenceType newDescriptionReference) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DescriptionReference(), newDescriptionReference);
 	}
 
@@ -5218,8 +5070,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DictionaryType getDictionary()
-	{
+	@Override
+	public DictionaryType getDictionary() {
 		return (DictionaryType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Dictionary(), true);
 	}
 
@@ -5228,8 +5080,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDictionary(DictionaryType newDictionary, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDictionary(DictionaryType newDictionary, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Dictionary(), newDictionary, msgs);
 	}
 
@@ -5238,8 +5089,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDictionary(DictionaryType newDictionary)
-	{
+	@Override
+	public void setDictionary(DictionaryType newDictionary) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Dictionary(), newDictionary);
 	}
 
@@ -5248,8 +5099,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedEdgePropertyType getDirectedEdge()
-	{
+	@Override
+	public DirectedEdgePropertyType getDirectedEdge() {
 		return (DirectedEdgePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DirectedEdge(), true);
 	}
 
@@ -5258,8 +5109,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectedEdge(DirectedEdgePropertyType newDirectedEdge, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectedEdge(DirectedEdgePropertyType newDirectedEdge, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DirectedEdge(), newDirectedEdge, msgs);
 	}
 
@@ -5268,8 +5118,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectedEdge(DirectedEdgePropertyType newDirectedEdge)
-	{
+	@Override
+	public void setDirectedEdge(DirectedEdgePropertyType newDirectedEdge) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DirectedEdge(), newDirectedEdge);
 	}
 
@@ -5278,8 +5128,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedFacePropertyType getDirectedFace()
-	{
+	@Override
+	public DirectedFacePropertyType getDirectedFace() {
 		return (DirectedFacePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DirectedFace(), true);
 	}
 
@@ -5288,8 +5138,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectedFace(DirectedFacePropertyType newDirectedFace, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectedFace(DirectedFacePropertyType newDirectedFace, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DirectedFace(), newDirectedFace, msgs);
 	}
 
@@ -5298,8 +5147,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectedFace(DirectedFacePropertyType newDirectedFace)
-	{
+	@Override
+	public void setDirectedFace(DirectedFacePropertyType newDirectedFace) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DirectedFace(), newDirectedFace);
 	}
 
@@ -5308,8 +5157,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedNodePropertyType getDirectedNode()
-	{
+	@Override
+	public DirectedNodePropertyType getDirectedNode() {
 		return (DirectedNodePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DirectedNode(), true);
 	}
 
@@ -5318,8 +5167,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectedNode(DirectedNodePropertyType newDirectedNode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectedNode(DirectedNodePropertyType newDirectedNode, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DirectedNode(), newDirectedNode, msgs);
 	}
 
@@ -5328,8 +5176,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectedNode(DirectedNodePropertyType newDirectedNode)
-	{
+	@Override
+	public void setDirectedNode(DirectedNodePropertyType newDirectedNode) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DirectedNode(), newDirectedNode);
 	}
 
@@ -5338,8 +5186,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedObservationType getDirectedObservation()
-	{
+	@Override
+	public DirectedObservationType getDirectedObservation() {
 		return (DirectedObservationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DirectedObservation(), true);
 	}
 
@@ -5348,8 +5196,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectedObservation(DirectedObservationType newDirectedObservation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectedObservation(DirectedObservationType newDirectedObservation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DirectedObservation(), newDirectedObservation, msgs);
 	}
 
@@ -5358,8 +5205,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectedObservation(DirectedObservationType newDirectedObservation)
-	{
+	@Override
+	public void setDirectedObservation(DirectedObservationType newDirectedObservation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DirectedObservation(), newDirectedObservation);
 	}
 
@@ -5368,8 +5215,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ObservationType getObservation()
-	{
+	@Override
+	public ObservationType getObservation() {
 		return (ObservationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Observation(), true);
 	}
 
@@ -5378,8 +5225,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetObservation(ObservationType newObservation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetObservation(ObservationType newObservation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Observation(), newObservation, msgs);
 	}
 
@@ -5388,8 +5234,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setObservation(ObservationType newObservation)
-	{
+	@Override
+	public void setObservation(ObservationType newObservation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Observation(), newObservation);
 	}
 
@@ -5398,8 +5244,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedObservationAtDistanceType getDirectedObservationAtDistance()
-	{
+	@Override
+	public DirectedObservationAtDistanceType getDirectedObservationAtDistance() {
 		return (DirectedObservationAtDistanceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DirectedObservationAtDistance(), true);
 	}
 
@@ -5408,8 +5254,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectedObservationAtDistance(DirectedObservationAtDistanceType newDirectedObservationAtDistance, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectedObservationAtDistance(DirectedObservationAtDistanceType newDirectedObservationAtDistance, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DirectedObservationAtDistance(), newDirectedObservationAtDistance, msgs);
 	}
 
@@ -5418,8 +5263,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectedObservationAtDistance(DirectedObservationAtDistanceType newDirectedObservationAtDistance)
-	{
+	@Override
+	public void setDirectedObservationAtDistance(DirectedObservationAtDistanceType newDirectedObservationAtDistance) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DirectedObservationAtDistance(), newDirectedObservationAtDistance);
 	}
 
@@ -5428,8 +5273,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectedTopoSolidPropertyType getDirectedTopoSolid()
-	{
+	@Override
+	public DirectedTopoSolidPropertyType getDirectedTopoSolid() {
 		return (DirectedTopoSolidPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DirectedTopoSolid(), true);
 	}
 
@@ -5438,8 +5283,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectedTopoSolid(DirectedTopoSolidPropertyType newDirectedTopoSolid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectedTopoSolid(DirectedTopoSolidPropertyType newDirectedTopoSolid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DirectedTopoSolid(), newDirectedTopoSolid, msgs);
 	}
 
@@ -5448,8 +5292,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectedTopoSolid(DirectedTopoSolidPropertyType newDirectedTopoSolid)
-	{
+	@Override
+	public void setDirectedTopoSolid(DirectedTopoSolidPropertyType newDirectedTopoSolid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DirectedTopoSolid(), newDirectedTopoSolid);
 	}
 
@@ -5458,8 +5302,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionPropertyType getDirection()
-	{
+	@Override
+	public DirectionPropertyType getDirection() {
 		return (DirectionPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Direction(), true);
 	}
 
@@ -5468,8 +5312,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirection(DirectionPropertyType newDirection, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirection(DirectionPropertyType newDirection, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Direction(), newDirection, msgs);
 	}
 
@@ -5478,8 +5321,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirection(DirectionPropertyType newDirection)
-	{
+	@Override
+	public void setDirection(DirectionPropertyType newDirection) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Direction(), newDirection);
 	}
 
@@ -5488,8 +5331,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DMSAngleType getDmsAngle()
-	{
+	@Override
+	public DMSAngleType getDmsAngle() {
 		return (DMSAngleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DmsAngle(), true);
 	}
 
@@ -5498,8 +5341,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDmsAngle(DMSAngleType newDmsAngle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDmsAngle(DMSAngleType newDmsAngle, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DmsAngle(), newDmsAngle, msgs);
 	}
 
@@ -5508,8 +5350,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDmsAngle(DMSAngleType newDmsAngle)
-	{
+	@Override
+	public void setDmsAngle(DMSAngleType newDmsAngle) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DmsAngle(), newDmsAngle);
 	}
 
@@ -5518,8 +5360,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DMSAngleType getDmsAngleValue()
-	{
+	@Override
+	public DMSAngleType getDmsAngleValue() {
 		return (DMSAngleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DmsAngleValue(), true);
 	}
 
@@ -5528,8 +5370,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDmsAngleValue(DMSAngleType newDmsAngleValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDmsAngleValue(DMSAngleType newDmsAngleValue, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DmsAngleValue(), newDmsAngleValue, msgs);
 	}
 
@@ -5538,8 +5379,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDmsAngleValue(DMSAngleType newDmsAngleValue)
-	{
+	@Override
+	public void setDmsAngleValue(DMSAngleType newDmsAngleValue) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DmsAngleValue(), newDmsAngleValue);
 	}
 
@@ -5548,8 +5389,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainOfValidityType getDomainOfValidity()
-	{
+	@Override
+	public DomainOfValidityType getDomainOfValidity() {
 		return (DomainOfValidityType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DomainOfValidity(), true);
 	}
 
@@ -5558,8 +5399,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDomainOfValidity(DomainOfValidityType newDomainOfValidity, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDomainOfValidity(DomainOfValidityType newDomainOfValidity, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DomainOfValidity(), newDomainOfValidity, msgs);
 	}
 
@@ -5568,8 +5408,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDomainOfValidity(DomainOfValidityType newDomainOfValidity)
-	{
+	@Override
+	public void setDomainOfValidity(DomainOfValidityType newDomainOfValidity) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DomainOfValidity(), newDomainOfValidity);
 	}
 
@@ -5578,8 +5418,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainSetType getDomainSet()
-	{
+	@Override
+	public DomainSetType getDomainSet() {
 		return (DomainSetType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DomainSet(), true);
 	}
 
@@ -5588,8 +5428,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDomainSet(DomainSetType newDomainSet, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDomainSet(DomainSetType newDomainSet, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DomainSet(), newDomainSet, msgs);
 	}
 
@@ -5598,8 +5437,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDomainSet(DomainSetType newDomainSet)
-	{
+	@Override
+	public void setDomainSet(DomainSetType newDomainSet) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DomainSet(), newDomainSet);
 	}
 
@@ -5609,8 +5448,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public List<Object> getDoubleOrNilReasonTupleList()
-	{
+	@Override
+	public List<Object> getDoubleOrNilReasonTupleList() {
 		return (List<Object>)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DoubleOrNilReasonTupleList(), true);
 	}
 
@@ -5619,8 +5458,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDoubleOrNilReasonTupleList(List<Object> newDoubleOrNilReasonTupleList)
-	{
+	@Override
+	public void setDoubleOrNilReasonTupleList(List<Object> newDoubleOrNilReasonTupleList) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DoubleOrNilReasonTupleList(), newDoubleOrNilReasonTupleList);
 	}
 
@@ -5629,8 +5468,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Duration getDuration()
-	{
+	@Override
+	public Duration getDuration() {
 		return (Duration)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Duration(), true);
 	}
 
@@ -5639,8 +5478,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDuration(Duration newDuration)
-	{
+	@Override
+	public void setDuration(Duration newDuration) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Duration(), newDuration);
 	}
 
@@ -5649,8 +5488,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DynamicFeatureType getDynamicFeature()
-	{
+	@Override
+	public DynamicFeatureType getDynamicFeature() {
 		return (DynamicFeatureType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DynamicFeature(), true);
 	}
 
@@ -5659,8 +5498,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDynamicFeature(DynamicFeatureType newDynamicFeature, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDynamicFeature(DynamicFeatureType newDynamicFeature, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DynamicFeature(), newDynamicFeature, msgs);
 	}
 
@@ -5669,8 +5507,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDynamicFeature(DynamicFeatureType newDynamicFeature)
-	{
+	@Override
+	public void setDynamicFeature(DynamicFeatureType newDynamicFeature) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DynamicFeature(), newDynamicFeature);
 	}
 
@@ -5679,8 +5517,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DynamicFeatureCollectionType getDynamicFeatureCollection()
-	{
+	@Override
+	public DynamicFeatureCollectionType getDynamicFeatureCollection() {
 		return (DynamicFeatureCollectionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DynamicFeatureCollection(), true);
 	}
 
@@ -5689,8 +5527,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDynamicFeatureCollection(DynamicFeatureCollectionType newDynamicFeatureCollection, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDynamicFeatureCollection(DynamicFeatureCollectionType newDynamicFeatureCollection, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DynamicFeatureCollection(), newDynamicFeatureCollection, msgs);
 	}
 
@@ -5699,8 +5536,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDynamicFeatureCollection(DynamicFeatureCollectionType newDynamicFeatureCollection)
-	{
+	@Override
+	public void setDynamicFeatureCollection(DynamicFeatureCollectionType newDynamicFeatureCollection) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DynamicFeatureCollection(), newDynamicFeatureCollection);
 	}
 
@@ -5709,8 +5546,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DynamicFeatureMemberType getDynamicMembers()
-	{
+	@Override
+	public DynamicFeatureMemberType getDynamicMembers() {
 		return (DynamicFeatureMemberType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_DynamicMembers(), true);
 	}
 
@@ -5719,8 +5556,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDynamicMembers(DynamicFeatureMemberType newDynamicMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDynamicMembers(DynamicFeatureMemberType newDynamicMembers, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_DynamicMembers(), newDynamicMembers, msgs);
 	}
 
@@ -5729,8 +5565,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDynamicMembers(DynamicFeatureMemberType newDynamicMembers)
-	{
+	@Override
+	public void setDynamicMembers(DynamicFeatureMemberType newDynamicMembers) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_DynamicMembers(), newDynamicMembers);
 	}
 
@@ -5739,8 +5575,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EdgeType getEdge()
-	{
+	@Override
+	public EdgeType getEdge() {
 		return (EdgeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Edge(), true);
 	}
 
@@ -5749,8 +5585,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEdge(EdgeType newEdge, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEdge(EdgeType newEdge, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Edge(), newEdge, msgs);
 	}
 
@@ -5759,8 +5594,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEdge(EdgeType newEdge)
-	{
+	@Override
+	public void setEdge(EdgeType newEdge) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Edge(), newEdge);
 	}
 
@@ -5769,8 +5604,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurvePropertyType getEdgeOf()
-	{
+	@Override
+	public CurvePropertyType getEdgeOf() {
 		return (CurvePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EdgeOf(), true);
 	}
 
@@ -5779,8 +5614,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEdgeOf(CurvePropertyType newEdgeOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEdgeOf(CurvePropertyType newEdgeOf, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EdgeOf(), newEdgeOf, msgs);
 	}
 
@@ -5789,8 +5623,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEdgeOf(CurvePropertyType newEdgeOf)
-	{
+	@Override
+	public void setEdgeOf(CurvePropertyType newEdgeOf) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EdgeOf(), newEdgeOf);
 	}
 
@@ -5799,8 +5633,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidPropertyType getEllipsoid()
-	{
+	@Override
+	public EllipsoidPropertyType getEllipsoid() {
 		return (EllipsoidPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Ellipsoid(), true);
 	}
 
@@ -5809,8 +5643,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEllipsoid(EllipsoidPropertyType newEllipsoid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEllipsoid(EllipsoidPropertyType newEllipsoid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Ellipsoid(), newEllipsoid, msgs);
 	}
 
@@ -5819,8 +5652,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEllipsoid(EllipsoidPropertyType newEllipsoid)
-	{
+	@Override
+	public void setEllipsoid(EllipsoidPropertyType newEllipsoid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Ellipsoid(), newEllipsoid);
 	}
 
@@ -5829,8 +5662,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidType getEllipsoid1()
-	{
+	@Override
+	public EllipsoidType getEllipsoid1() {
 		return (EllipsoidType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Ellipsoid1(), true);
 	}
 
@@ -5839,8 +5672,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEllipsoid1(EllipsoidType newEllipsoid1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEllipsoid1(EllipsoidType newEllipsoid1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Ellipsoid1(), newEllipsoid1, msgs);
 	}
 
@@ -5849,8 +5681,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEllipsoid1(EllipsoidType newEllipsoid1)
-	{
+	@Override
+	public void setEllipsoid1(EllipsoidType newEllipsoid1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Ellipsoid1(), newEllipsoid1);
 	}
 
@@ -5859,8 +5691,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidalCSPropertyType getEllipsoidalCS()
-	{
+	@Override
+	public EllipsoidalCSPropertyType getEllipsoidalCS() {
 		return (EllipsoidalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidalCS(), true);
 	}
 
@@ -5869,8 +5701,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEllipsoidalCS(EllipsoidalCSPropertyType newEllipsoidalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEllipsoidalCS(EllipsoidalCSPropertyType newEllipsoidalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidalCS(), newEllipsoidalCS, msgs);
 	}
 
@@ -5879,8 +5710,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEllipsoidalCS(EllipsoidalCSPropertyType newEllipsoidalCS)
-	{
+	@Override
+	public void setEllipsoidalCS(EllipsoidalCSPropertyType newEllipsoidalCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidalCS(), newEllipsoidalCS);
 	}
 
@@ -5889,8 +5720,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidalCSType getEllipsoidalCS1()
-	{
+	@Override
+	public EllipsoidalCSType getEllipsoidalCS1() {
 		return (EllipsoidalCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidalCS1(), true);
 	}
 
@@ -5899,8 +5730,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEllipsoidalCS1(EllipsoidalCSType newEllipsoidalCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEllipsoidalCS1(EllipsoidalCSType newEllipsoidalCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidalCS1(), newEllipsoidalCS1, msgs);
 	}
 
@@ -5909,8 +5739,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEllipsoidalCS1(EllipsoidalCSType newEllipsoidalCS1)
-	{
+	@Override
+	public void setEllipsoidalCS1(EllipsoidalCSType newEllipsoidalCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidalCS1(), newEllipsoidalCS1);
 	}
 
@@ -5919,8 +5749,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidalCSPropertyType getEllipsoidalCSRef()
-	{
+	@Override
+	public EllipsoidalCSPropertyType getEllipsoidalCSRef() {
 		return (EllipsoidalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidalCSRef(), true);
 	}
 
@@ -5929,8 +5759,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEllipsoidalCSRef(EllipsoidalCSPropertyType newEllipsoidalCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEllipsoidalCSRef(EllipsoidalCSPropertyType newEllipsoidalCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidalCSRef(), newEllipsoidalCSRef, msgs);
 	}
 
@@ -5939,8 +5768,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEllipsoidalCSRef(EllipsoidalCSPropertyType newEllipsoidalCSRef)
-	{
+	@Override
+	public void setEllipsoidalCSRef(EllipsoidalCSPropertyType newEllipsoidalCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidalCSRef(), newEllipsoidalCSRef);
 	}
 
@@ -5949,8 +5778,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidPropertyType getEllipsoidRef()
-	{
+	@Override
+	public EllipsoidPropertyType getEllipsoidRef() {
 		return (EllipsoidPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidRef(), true);
 	}
 
@@ -5959,8 +5788,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEllipsoidRef(EllipsoidPropertyType newEllipsoidRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEllipsoidRef(EllipsoidPropertyType newEllipsoidRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidRef(), newEllipsoidRef, msgs);
 	}
 
@@ -5969,8 +5797,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEllipsoidRef(EllipsoidPropertyType newEllipsoidRef)
-	{
+	@Override
+	public void setEllipsoidRef(EllipsoidPropertyType newEllipsoidRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EllipsoidRef(), newEllipsoidRef);
 	}
 
@@ -5979,8 +5807,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringCRSType getEngineeringCRS()
-	{
+	@Override
+	public EngineeringCRSType getEngineeringCRS() {
 		return (EngineeringCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringCRS(), true);
 	}
 
@@ -5989,8 +5817,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEngineeringCRS(EngineeringCRSType newEngineeringCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEngineeringCRS(EngineeringCRSType newEngineeringCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringCRS(), newEngineeringCRS, msgs);
 	}
 
@@ -5999,8 +5826,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEngineeringCRS(EngineeringCRSType newEngineeringCRS)
-	{
+	@Override
+	public void setEngineeringCRS(EngineeringCRSType newEngineeringCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringCRS(), newEngineeringCRS);
 	}
 
@@ -6009,8 +5836,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringCRSPropertyType getEngineeringCRSRef()
-	{
+	@Override
+	public EngineeringCRSPropertyType getEngineeringCRSRef() {
 		return (EngineeringCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringCRSRef(), true);
 	}
 
@@ -6019,8 +5846,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEngineeringCRSRef(EngineeringCRSPropertyType newEngineeringCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEngineeringCRSRef(EngineeringCRSPropertyType newEngineeringCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringCRSRef(), newEngineeringCRSRef, msgs);
 	}
 
@@ -6029,8 +5855,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEngineeringCRSRef(EngineeringCRSPropertyType newEngineeringCRSRef)
-	{
+	@Override
+	public void setEngineeringCRSRef(EngineeringCRSPropertyType newEngineeringCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringCRSRef(), newEngineeringCRSRef);
 	}
 
@@ -6039,8 +5865,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringDatumPropertyType getEngineeringDatum()
-	{
+	@Override
+	public EngineeringDatumPropertyType getEngineeringDatum() {
 		return (EngineeringDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringDatum(), true);
 	}
 
@@ -6049,8 +5875,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEngineeringDatum(EngineeringDatumPropertyType newEngineeringDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEngineeringDatum(EngineeringDatumPropertyType newEngineeringDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringDatum(), newEngineeringDatum, msgs);
 	}
 
@@ -6059,8 +5884,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEngineeringDatum(EngineeringDatumPropertyType newEngineeringDatum)
-	{
+	@Override
+	public void setEngineeringDatum(EngineeringDatumPropertyType newEngineeringDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringDatum(), newEngineeringDatum);
 	}
 
@@ -6069,8 +5894,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringDatumType getEngineeringDatum1()
-	{
+	@Override
+	public EngineeringDatumType getEngineeringDatum1() {
 		return (EngineeringDatumType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringDatum1(), true);
 	}
 
@@ -6079,8 +5904,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEngineeringDatum1(EngineeringDatumType newEngineeringDatum1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEngineeringDatum1(EngineeringDatumType newEngineeringDatum1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringDatum1(), newEngineeringDatum1, msgs);
 	}
 
@@ -6089,8 +5913,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEngineeringDatum1(EngineeringDatumType newEngineeringDatum1)
-	{
+	@Override
+	public void setEngineeringDatum1(EngineeringDatumType newEngineeringDatum1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringDatum1(), newEngineeringDatum1);
 	}
 
@@ -6099,8 +5923,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringDatumPropertyType getEngineeringDatumRef()
-	{
+	@Override
+	public EngineeringDatumPropertyType getEngineeringDatumRef() {
 		return (EngineeringDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringDatumRef(), true);
 	}
 
@@ -6109,8 +5933,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEngineeringDatumRef(EngineeringDatumPropertyType newEngineeringDatumRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEngineeringDatumRef(EngineeringDatumPropertyType newEngineeringDatumRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringDatumRef(), newEngineeringDatumRef, msgs);
 	}
 
@@ -6119,8 +5942,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEngineeringDatumRef(EngineeringDatumPropertyType newEngineeringDatumRef)
-	{
+	@Override
+	public void setEngineeringDatumRef(EngineeringDatumPropertyType newEngineeringDatumRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EngineeringDatumRef(), newEngineeringDatumRef);
 	}
 
@@ -6129,8 +5952,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EnvelopeType getEnvelope()
-	{
+	@Override
+	public EnvelopeType getEnvelope() {
 		return (EnvelopeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Envelope(), true);
 	}
 
@@ -6139,8 +5962,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEnvelope(EnvelopeType newEnvelope, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEnvelope(EnvelopeType newEnvelope, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Envelope(), newEnvelope, msgs);
 	}
 
@@ -6149,8 +5971,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEnvelope(EnvelopeType newEnvelope)
-	{
+	@Override
+	public void setEnvelope(EnvelopeType newEnvelope) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Envelope(), newEnvelope);
 	}
 
@@ -6159,8 +5981,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EnvelopeWithTimePeriodType getEnvelopeWithTimePeriod()
-	{
+	@Override
+	public EnvelopeWithTimePeriodType getEnvelopeWithTimePeriod() {
 		return (EnvelopeWithTimePeriodType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_EnvelopeWithTimePeriod(), true);
 	}
 
@@ -6169,8 +5991,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEnvelopeWithTimePeriod(EnvelopeWithTimePeriodType newEnvelopeWithTimePeriod, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEnvelopeWithTimePeriod(EnvelopeWithTimePeriodType newEnvelopeWithTimePeriod, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_EnvelopeWithTimePeriod(), newEnvelopeWithTimePeriod, msgs);
 	}
 
@@ -6179,8 +6000,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEnvelopeWithTimePeriod(EnvelopeWithTimePeriodType newEnvelopeWithTimePeriod)
-	{
+	@Override
+	public void setEnvelopeWithTimePeriod(EnvelopeWithTimePeriodType newEnvelopeWithTimePeriod) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_EnvelopeWithTimePeriod(), newEnvelopeWithTimePeriod);
 	}
 
@@ -6189,8 +6010,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePropertyType getExtentOf()
-	{
+	@Override
+	public SurfacePropertyType getExtentOf() {
 		return (SurfacePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ExtentOf(), true);
 	}
 
@@ -6199,8 +6020,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExtentOf(SurfacePropertyType newExtentOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExtentOf(SurfacePropertyType newExtentOf, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ExtentOf(), newExtentOf, msgs);
 	}
 
@@ -6209,8 +6029,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExtentOf(SurfacePropertyType newExtentOf)
-	{
+	@Override
+	public void setExtentOf(SurfacePropertyType newExtentOf) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ExtentOf(), newExtentOf);
 	}
 
@@ -6219,8 +6039,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractRingPropertyType getExterior()
-	{
+	@Override
+	public AbstractRingPropertyType getExterior() {
 		return (AbstractRingPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Exterior(), true);
 	}
 
@@ -6229,8 +6049,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExterior(AbstractRingPropertyType newExterior, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExterior(AbstractRingPropertyType newExterior, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Exterior(), newExterior, msgs);
 	}
 
@@ -6239,8 +6058,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExterior(AbstractRingPropertyType newExterior)
-	{
+	@Override
+	public void setExterior(AbstractRingPropertyType newExterior) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Exterior(), newExterior);
 	}
 
@@ -6249,8 +6068,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FaceType getFace()
-	{
+	@Override
+	public FaceType getFace() {
 		return (FaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Face(), true);
 	}
 
@@ -6259,8 +6078,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFace(FaceType newFace, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFace(FaceType newFace, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Face(), newFace, msgs);
 	}
 
@@ -6269,8 +6087,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFace(FaceType newFace)
-	{
+	@Override
+	public void setFace(FaceType newFace) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Face(), newFace);
 	}
 
@@ -6279,8 +6097,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureCollectionType getFeatureCollection()
-	{
+	@Override
+	public FeatureCollectionType getFeatureCollection() {
 		return (FeatureCollectionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_FeatureCollection(), true);
 	}
 
@@ -6289,8 +6107,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFeatureCollection(FeatureCollectionType newFeatureCollection, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFeatureCollection(FeatureCollectionType newFeatureCollection, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_FeatureCollection(), newFeatureCollection, msgs);
 	}
 
@@ -6299,8 +6116,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFeatureCollection(FeatureCollectionType newFeatureCollection)
-	{
+	@Override
+	public void setFeatureCollection(FeatureCollectionType newFeatureCollection) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_FeatureCollection(), newFeatureCollection);
 	}
 
@@ -6309,8 +6126,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeaturePropertyType getFeatureMember()
-	{
+	@Override
+	public FeaturePropertyType getFeatureMember() {
 		return (FeaturePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_FeatureMember(), true);
 	}
 
@@ -6319,8 +6136,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFeatureMember(FeaturePropertyType newFeatureMember, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFeatureMember(FeaturePropertyType newFeatureMember, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_FeatureMember(), newFeatureMember, msgs);
 	}
 
@@ -6329,8 +6145,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFeatureMember(FeaturePropertyType newFeatureMember)
-	{
+	@Override
+	public void setFeatureMember(FeaturePropertyType newFeatureMember) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_FeatureMember(), newFeatureMember);
 	}
 
@@ -6339,8 +6155,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureArrayPropertyType getFeatureMembers()
-	{
+	@Override
+	public FeatureArrayPropertyType getFeatureMembers() {
 		return (FeatureArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_FeatureMembers(), true);
 	}
 
@@ -6349,8 +6165,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFeatureMembers(FeatureArrayPropertyType newFeatureMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFeatureMembers(FeatureArrayPropertyType newFeatureMembers, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_FeatureMembers(), newFeatureMembers, msgs);
 	}
 
@@ -6359,8 +6174,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFeatureMembers(FeatureArrayPropertyType newFeatureMembers)
-	{
+	@Override
+	public void setFeatureMembers(FeatureArrayPropertyType newFeatureMembers) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_FeatureMembers(), newFeatureMembers);
 	}
 
@@ -6369,8 +6184,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeaturePropertyType getFeatureProperty()
-	{
+	@Override
+	public FeaturePropertyType getFeatureProperty() {
 		return (FeaturePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_FeatureProperty(), true);
 	}
 
@@ -6379,8 +6194,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFeatureProperty(FeaturePropertyType newFeatureProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFeatureProperty(FeaturePropertyType newFeatureProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_FeatureProperty(), newFeatureProperty, msgs);
 	}
 
@@ -6389,8 +6203,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFeatureProperty(FeaturePropertyType newFeatureProperty)
-	{
+	@Override
+	public void setFeatureProperty(FeaturePropertyType newFeatureProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_FeatureProperty(), newFeatureProperty);
 	}
 
@@ -6399,8 +6213,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FileType getFile()
-	{
+	@Override
+	public FileType getFile() {
 		return (FileType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_File(), true);
 	}
 
@@ -6409,8 +6223,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFile(FileType newFile, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFile(FileType newFile, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_File(), newFile, msgs);
 	}
 
@@ -6419,8 +6232,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFile(FileType newFile)
-	{
+	@Override
+	public void setFile(FileType newFile) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_File(), newFile);
 	}
 
@@ -6429,8 +6242,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getFormula()
-	{
+	@Override
+	public CodeType getFormula() {
 		return (CodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Formula(), true);
 	}
 
@@ -6439,8 +6252,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFormula(CodeType newFormula, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFormula(CodeType newFormula, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Formula(), newFormula, msgs);
 	}
 
@@ -6449,8 +6261,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFormula(CodeType newFormula)
-	{
+	@Override
+	public void setFormula(CodeType newFormula) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Formula(), newFormula);
 	}
 
@@ -6459,8 +6271,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormulaCitationType getFormulaCitation()
-	{
+	@Override
+	public FormulaCitationType getFormulaCitation() {
 		return (FormulaCitationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_FormulaCitation(), true);
 	}
 
@@ -6469,8 +6281,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFormulaCitation(FormulaCitationType newFormulaCitation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFormulaCitation(FormulaCitationType newFormulaCitation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_FormulaCitation(), newFormulaCitation, msgs);
 	}
 
@@ -6479,8 +6290,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFormulaCitation(FormulaCitationType newFormulaCitation)
-	{
+	@Override
+	public void setFormulaCitation(FormulaCitationType newFormulaCitation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_FormulaCitation(), newFormulaCitation);
 	}
 
@@ -6489,8 +6300,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeneralConversionPropertyType getGeneralConversionRef()
-	{
+	@Override
+	public GeneralConversionPropertyType getGeneralConversionRef() {
 		return (GeneralConversionPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeneralConversionRef(), true);
 	}
 
@@ -6499,8 +6310,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeneralConversionRef(GeneralConversionPropertyType newGeneralConversionRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeneralConversionRef(GeneralConversionPropertyType newGeneralConversionRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeneralConversionRef(), newGeneralConversionRef, msgs);
 	}
 
@@ -6509,8 +6319,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeneralConversionRef(GeneralConversionPropertyType newGeneralConversionRef)
-	{
+	@Override
+	public void setGeneralConversionRef(GeneralConversionPropertyType newGeneralConversionRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeneralConversionRef(), newGeneralConversionRef);
 	}
 
@@ -6519,8 +6329,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeneralTransformationPropertyType getGeneralTransformationRef()
-	{
+	@Override
+	public GeneralTransformationPropertyType getGeneralTransformationRef() {
 		return (GeneralTransformationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeneralTransformationRef(), true);
 	}
 
@@ -6529,8 +6339,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeneralTransformationRef(GeneralTransformationPropertyType newGeneralTransformationRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeneralTransformationRef(GeneralTransformationPropertyType newGeneralTransformationRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeneralTransformationRef(), newGeneralTransformationRef, msgs);
 	}
 
@@ -6539,8 +6348,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeneralTransformationRef(GeneralTransformationPropertyType newGeneralTransformationRef)
-	{
+	@Override
+	public void setGeneralTransformationRef(GeneralTransformationPropertyType newGeneralTransformationRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeneralTransformationRef(), newGeneralTransformationRef);
 	}
 
@@ -6549,8 +6358,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GenericMetaDataType getGenericMetaData()
-	{
+	@Override
+	public GenericMetaDataType getGenericMetaData() {
 		return (GenericMetaDataType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GenericMetaData(), true);
 	}
 
@@ -6559,8 +6368,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGenericMetaData(GenericMetaDataType newGenericMetaData, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGenericMetaData(GenericMetaDataType newGenericMetaData, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GenericMetaData(), newGenericMetaData, msgs);
 	}
 
@@ -6569,8 +6377,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGenericMetaData(GenericMetaDataType newGenericMetaData)
-	{
+	@Override
+	public void setGenericMetaData(GenericMetaDataType newGenericMetaData) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GenericMetaData(), newGenericMetaData);
 	}
 
@@ -6579,8 +6387,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeocentricCRSType getGeocentricCRS()
-	{
+	@Override
+	public GeocentricCRSType getGeocentricCRS() {
 		return (GeocentricCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeocentricCRS(), true);
 	}
 
@@ -6589,8 +6397,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeocentricCRS(GeocentricCRSType newGeocentricCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeocentricCRS(GeocentricCRSType newGeocentricCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeocentricCRS(), newGeocentricCRS, msgs);
 	}
 
@@ -6599,8 +6406,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeocentricCRS(GeocentricCRSType newGeocentricCRS)
-	{
+	@Override
+	public void setGeocentricCRS(GeocentricCRSType newGeocentricCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeocentricCRS(), newGeocentricCRS);
 	}
 
@@ -6609,8 +6416,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeocentricCRSPropertyType getGeocentricCRSRef()
-	{
+	@Override
+	public GeocentricCRSPropertyType getGeocentricCRSRef() {
 		return (GeocentricCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeocentricCRSRef(), true);
 	}
 
@@ -6619,8 +6426,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeocentricCRSRef(GeocentricCRSPropertyType newGeocentricCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeocentricCRSRef(GeocentricCRSPropertyType newGeocentricCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeocentricCRSRef(), newGeocentricCRSRef, msgs);
 	}
 
@@ -6629,8 +6435,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeocentricCRSRef(GeocentricCRSPropertyType newGeocentricCRSRef)
-	{
+	@Override
+	public void setGeocentricCRSRef(GeocentricCRSPropertyType newGeocentricCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeocentricCRSRef(), newGeocentricCRSRef);
 	}
 
@@ -6639,8 +6445,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodesicType getGeodesic()
-	{
+	@Override
+	public GeodesicType getGeodesic() {
 		return (GeodesicType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Geodesic(), true);
 	}
 
@@ -6649,8 +6455,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeodesic(GeodesicType newGeodesic, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeodesic(GeodesicType newGeodesic, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Geodesic(), newGeodesic, msgs);
 	}
 
@@ -6659,8 +6464,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeodesic(GeodesicType newGeodesic)
-	{
+	@Override
+	public void setGeodesic(GeodesicType newGeodesic) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Geodesic(), newGeodesic);
 	}
 
@@ -6669,8 +6474,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodesicStringType getGeodesicString()
-	{
+	@Override
+	public GeodesicStringType getGeodesicString() {
 		return (GeodesicStringType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeodesicString(), true);
 	}
 
@@ -6679,8 +6484,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeodesicString(GeodesicStringType newGeodesicString, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeodesicString(GeodesicStringType newGeodesicString, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeodesicString(), newGeodesicString, msgs);
 	}
 
@@ -6689,8 +6493,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeodesicString(GeodesicStringType newGeodesicString)
-	{
+	@Override
+	public void setGeodesicString(GeodesicStringType newGeodesicString) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeodesicString(), newGeodesicString);
 	}
 
@@ -6699,8 +6503,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticCRSType getGeodeticCRS()
-	{
+	@Override
+	public GeodeticCRSType getGeodeticCRS() {
 		return (GeodeticCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticCRS(), true);
 	}
 
@@ -6709,8 +6513,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeodeticCRS(GeodeticCRSType newGeodeticCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeodeticCRS(GeodeticCRSType newGeodeticCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticCRS(), newGeodeticCRS, msgs);
 	}
 
@@ -6719,8 +6522,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeodeticCRS(GeodeticCRSType newGeodeticCRS)
-	{
+	@Override
+	public void setGeodeticCRS(GeodeticCRSType newGeodeticCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticCRS(), newGeodeticCRS);
 	}
 
@@ -6729,8 +6532,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumPropertyType getGeodeticDatum()
-	{
+	@Override
+	public GeodeticDatumPropertyType getGeodeticDatum() {
 		return (GeodeticDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticDatum(), true);
 	}
 
@@ -6739,8 +6542,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeodeticDatum(GeodeticDatumPropertyType newGeodeticDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeodeticDatum(GeodeticDatumPropertyType newGeodeticDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticDatum(), newGeodeticDatum, msgs);
 	}
 
@@ -6749,8 +6551,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeodeticDatum(GeodeticDatumPropertyType newGeodeticDatum)
-	{
+	@Override
+	public void setGeodeticDatum(GeodeticDatumPropertyType newGeodeticDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticDatum(), newGeodeticDatum);
 	}
 
@@ -6759,8 +6561,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumType getGeodeticDatum1()
-	{
+	@Override
+	public GeodeticDatumType getGeodeticDatum1() {
 		return (GeodeticDatumType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticDatum1(), true);
 	}
 
@@ -6769,8 +6571,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeodeticDatum1(GeodeticDatumType newGeodeticDatum1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeodeticDatum1(GeodeticDatumType newGeodeticDatum1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticDatum1(), newGeodeticDatum1, msgs);
 	}
 
@@ -6779,8 +6580,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeodeticDatum1(GeodeticDatumType newGeodeticDatum1)
-	{
+	@Override
+	public void setGeodeticDatum1(GeodeticDatumType newGeodeticDatum1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticDatum1(), newGeodeticDatum1);
 	}
 
@@ -6789,8 +6590,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumPropertyType getGeodeticDatumRef()
-	{
+	@Override
+	public GeodeticDatumPropertyType getGeodeticDatumRef() {
 		return (GeodeticDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticDatumRef(), true);
 	}
 
@@ -6799,8 +6600,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeodeticDatumRef(GeodeticDatumPropertyType newGeodeticDatumRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeodeticDatumRef(GeodeticDatumPropertyType newGeodeticDatumRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticDatumRef(), newGeodeticDatumRef, msgs);
 	}
 
@@ -6809,8 +6609,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeodeticDatumRef(GeodeticDatumPropertyType newGeodeticDatumRef)
-	{
+	@Override
+	public void setGeodeticDatumRef(GeodeticDatumPropertyType newGeodeticDatumRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeodeticDatumRef(), newGeodeticDatumRef);
 	}
 
@@ -6819,8 +6619,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeographicCRSType getGeographicCRS()
-	{
+	@Override
+	public GeographicCRSType getGeographicCRS() {
 		return (GeographicCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeographicCRS(), true);
 	}
 
@@ -6829,8 +6629,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeographicCRS(GeographicCRSType newGeographicCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeographicCRS(GeographicCRSType newGeographicCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeographicCRS(), newGeographicCRS, msgs);
 	}
 
@@ -6839,8 +6638,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeographicCRS(GeographicCRSType newGeographicCRS)
-	{
+	@Override
+	public void setGeographicCRS(GeographicCRSType newGeographicCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeographicCRS(), newGeographicCRS);
 	}
 
@@ -6849,8 +6648,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeographicCRSPropertyType getGeographicCRSRef()
-	{
+	@Override
+	public GeographicCRSPropertyType getGeographicCRSRef() {
 		return (GeographicCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeographicCRSRef(), true);
 	}
 
@@ -6859,8 +6658,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeographicCRSRef(GeographicCRSPropertyType newGeographicCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeographicCRSRef(GeographicCRSPropertyType newGeographicCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeographicCRSRef(), newGeographicCRSRef, msgs);
 	}
 
@@ -6869,8 +6667,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeographicCRSRef(GeographicCRSPropertyType newGeographicCRSRef)
-	{
+	@Override
+	public void setGeographicCRSRef(GeographicCRSPropertyType newGeographicCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeographicCRSRef(), newGeographicCRSRef);
 	}
 
@@ -6879,8 +6677,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometricComplexType getGeometricComplex()
-	{
+	@Override
+	public GeometricComplexType getGeometricComplex() {
 		return (GeometricComplexType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeometricComplex(), true);
 	}
 
@@ -6889,8 +6687,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeometricComplex(GeometricComplexType newGeometricComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeometricComplex(GeometricComplexType newGeometricComplex, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeometricComplex(), newGeometricComplex, msgs);
 	}
 
@@ -6899,8 +6696,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeometricComplex(GeometricComplexType newGeometricComplex)
-	{
+	@Override
+	public void setGeometricComplex(GeometricComplexType newGeometricComplex) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeometricComplex(), newGeometricComplex);
 	}
 
@@ -6909,8 +6706,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometryPropertyType getGeometryMember()
-	{
+	@Override
+	public GeometryPropertyType getGeometryMember() {
 		return (GeometryPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeometryMember(), true);
 	}
 
@@ -6919,8 +6716,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeometryMember(GeometryPropertyType newGeometryMember, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeometryMember(GeometryPropertyType newGeometryMember, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeometryMember(), newGeometryMember, msgs);
 	}
 
@@ -6929,8 +6725,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeometryMember(GeometryPropertyType newGeometryMember)
-	{
+	@Override
+	public void setGeometryMember(GeometryPropertyType newGeometryMember) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeometryMember(), newGeometryMember);
 	}
 
@@ -6939,8 +6735,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometryArrayPropertyType getGeometryMembers()
-	{
+	@Override
+	public GeometryArrayPropertyType getGeometryMembers() {
 		return (GeometryArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GeometryMembers(), true);
 	}
 
@@ -6949,8 +6745,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeometryMembers(GeometryArrayPropertyType newGeometryMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeometryMembers(GeometryArrayPropertyType newGeometryMembers, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GeometryMembers(), newGeometryMembers, msgs);
 	}
 
@@ -6959,8 +6754,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeometryMembers(GeometryArrayPropertyType newGeometryMembers)
-	{
+	@Override
+	public void setGeometryMembers(GeometryArrayPropertyType newGeometryMembers) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GeometryMembers(), newGeometryMembers);
 	}
 
@@ -6969,8 +6764,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getGmlProfileSchema()
-	{
+	@Override
+	public String getGmlProfileSchema() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GmlProfileSchema(), true);
 	}
 
@@ -6979,8 +6774,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGmlProfileSchema(String newGmlProfileSchema)
-	{
+	@Override
+	public void setGmlProfileSchema(String newGmlProfileSchema) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GmlProfileSchema(), newGmlProfileSchema);
 	}
 
@@ -6989,8 +6784,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AngleType getGreenwichLongitude()
-	{
+	@Override
+	public AngleType getGreenwichLongitude() {
 		return (AngleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GreenwichLongitude(), true);
 	}
 
@@ -6999,8 +6794,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGreenwichLongitude(AngleType newGreenwichLongitude, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGreenwichLongitude(AngleType newGreenwichLongitude, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GreenwichLongitude(), newGreenwichLongitude, msgs);
 	}
 
@@ -7009,8 +6803,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGreenwichLongitude(AngleType newGreenwichLongitude)
-	{
+	@Override
+	public void setGreenwichLongitude(AngleType newGreenwichLongitude) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GreenwichLongitude(), newGreenwichLongitude);
 	}
 
@@ -7019,8 +6813,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridType getGrid()
-	{
+	@Override
+	public GridType getGrid() {
 		return (GridType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Grid(), true);
 	}
 
@@ -7029,8 +6823,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGrid(GridType newGrid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGrid(GridType newGrid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Grid(), newGrid, msgs);
 	}
 
@@ -7039,8 +6832,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGrid(GridType newGrid)
-	{
+	@Override
+	public void setGrid(GridType newGrid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Grid(), newGrid);
 	}
 
@@ -7049,8 +6842,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscreteCoverageType getGridCoverage()
-	{
+	@Override
+	public DiscreteCoverageType getGridCoverage() {
 		return (DiscreteCoverageType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GridCoverage(), true);
 	}
 
@@ -7059,8 +6852,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGridCoverage(DiscreteCoverageType newGridCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGridCoverage(DiscreteCoverageType newGridCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GridCoverage(), newGridCoverage, msgs);
 	}
 
@@ -7069,8 +6861,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGridCoverage(DiscreteCoverageType newGridCoverage)
-	{
+	@Override
+	public void setGridCoverage(DiscreteCoverageType newGridCoverage) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GridCoverage(), newGridCoverage);
 	}
 
@@ -7079,8 +6871,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainSetType getGridDomain()
-	{
+	@Override
+	public DomainSetType getGridDomain() {
 		return (DomainSetType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GridDomain(), true);
 	}
 
@@ -7089,8 +6881,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGridDomain(DomainSetType newGridDomain, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGridDomain(DomainSetType newGridDomain, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GridDomain(), newGridDomain, msgs);
 	}
 
@@ -7099,8 +6890,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGridDomain(DomainSetType newGridDomain)
-	{
+	@Override
+	public void setGridDomain(DomainSetType newGridDomain) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GridDomain(), newGridDomain);
 	}
 
@@ -7109,8 +6900,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridFunctionType getGridFunction()
-	{
+	@Override
+	public GridFunctionType getGridFunction() {
 		return (GridFunctionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_GridFunction(), true);
 	}
 
@@ -7119,8 +6910,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGridFunction(GridFunctionType newGridFunction, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGridFunction(GridFunctionType newGridFunction, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_GridFunction(), newGridFunction, msgs);
 	}
 
@@ -7129,8 +6919,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGridFunction(GridFunctionType newGridFunction)
-	{
+	@Override
+	public void setGridFunction(GridFunctionType newGridFunction) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_GridFunction(), newGridFunction);
 	}
 
@@ -7139,8 +6929,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterGroupPropertyType getGroup()
-	{
+	@Override
+	public OperationParameterGroupPropertyType getGroup() {
 		return (OperationParameterGroupPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Group(), true);
 	}
 
@@ -7149,8 +6939,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGroup(OperationParameterGroupPropertyType newGroup, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGroup(OperationParameterGroupPropertyType newGroup, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Group(), newGroup, msgs);
 	}
 
@@ -7159,8 +6948,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGroup(OperationParameterGroupPropertyType newGroup)
-	{
+	@Override
+	public void setGroup(OperationParameterGroupPropertyType newGroup) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Group(), newGroup);
 	}
 
@@ -7169,8 +6958,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryPropertyType getHistory()
-	{
+	@Override
+	public HistoryPropertyType getHistory() {
 		return (HistoryPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_History(), true);
 	}
 
@@ -7179,8 +6968,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetHistory(HistoryPropertyType newHistory, NotificationChain msgs)
-	{
+	public NotificationChain basicSetHistory(HistoryPropertyType newHistory, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_History(), newHistory, msgs);
 	}
 
@@ -7189,8 +6977,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHistory(HistoryPropertyType newHistory)
-	{
+	@Override
+	public void setHistory(HistoryPropertyType newHistory) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_History(), newHistory);
 	}
 
@@ -7199,8 +6987,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getIdentifier()
-	{
+	@Override
+	public CodeWithAuthorityType getIdentifier() {
 		return (CodeWithAuthorityType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Identifier(), true);
 	}
 
@@ -7209,8 +6997,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIdentifier(CodeWithAuthorityType newIdentifier, NotificationChain msgs)
-	{
+	public NotificationChain basicSetIdentifier(CodeWithAuthorityType newIdentifier, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Identifier(), newIdentifier, msgs);
 	}
 
@@ -7219,8 +7006,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIdentifier(CodeWithAuthorityType newIdentifier)
-	{
+	@Override
+	public void setIdentifier(CodeWithAuthorityType newIdentifier) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Identifier(), newIdentifier);
 	}
 
@@ -7229,8 +7016,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageCRSType getImageCRS()
-	{
+	@Override
+	public ImageCRSType getImageCRS() {
 		return (ImageCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ImageCRS(), true);
 	}
 
@@ -7239,8 +7026,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetImageCRS(ImageCRSType newImageCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetImageCRS(ImageCRSType newImageCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ImageCRS(), newImageCRS, msgs);
 	}
 
@@ -7249,8 +7035,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImageCRS(ImageCRSType newImageCRS)
-	{
+	@Override
+	public void setImageCRS(ImageCRSType newImageCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ImageCRS(), newImageCRS);
 	}
 
@@ -7259,8 +7045,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageCRSPropertyType getImageCRSRef()
-	{
+	@Override
+	public ImageCRSPropertyType getImageCRSRef() {
 		return (ImageCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ImageCRSRef(), true);
 	}
 
@@ -7269,8 +7055,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetImageCRSRef(ImageCRSPropertyType newImageCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetImageCRSRef(ImageCRSPropertyType newImageCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ImageCRSRef(), newImageCRSRef, msgs);
 	}
 
@@ -7279,8 +7064,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImageCRSRef(ImageCRSPropertyType newImageCRSRef)
-	{
+	@Override
+	public void setImageCRSRef(ImageCRSPropertyType newImageCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ImageCRSRef(), newImageCRSRef);
 	}
 
@@ -7289,8 +7074,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageDatumPropertyType getImageDatum()
-	{
+	@Override
+	public ImageDatumPropertyType getImageDatum() {
 		return (ImageDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ImageDatum(), true);
 	}
 
@@ -7299,8 +7084,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetImageDatum(ImageDatumPropertyType newImageDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetImageDatum(ImageDatumPropertyType newImageDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ImageDatum(), newImageDatum, msgs);
 	}
 
@@ -7309,8 +7093,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImageDatum(ImageDatumPropertyType newImageDatum)
-	{
+	@Override
+	public void setImageDatum(ImageDatumPropertyType newImageDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ImageDatum(), newImageDatum);
 	}
 
@@ -7319,8 +7103,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageDatumType getImageDatum1()
-	{
+	@Override
+	public ImageDatumType getImageDatum1() {
 		return (ImageDatumType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ImageDatum1(), true);
 	}
 
@@ -7329,8 +7113,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetImageDatum1(ImageDatumType newImageDatum1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetImageDatum1(ImageDatumType newImageDatum1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ImageDatum1(), newImageDatum1, msgs);
 	}
 
@@ -7339,8 +7122,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImageDatum1(ImageDatumType newImageDatum1)
-	{
+	@Override
+	public void setImageDatum1(ImageDatumType newImageDatum1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ImageDatum1(), newImageDatum1);
 	}
 
@@ -7349,8 +7132,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageDatumPropertyType getImageDatumRef()
-	{
+	@Override
+	public ImageDatumPropertyType getImageDatumRef() {
 		return (ImageDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ImageDatumRef(), true);
 	}
 
@@ -7359,8 +7142,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetImageDatumRef(ImageDatumPropertyType newImageDatumRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetImageDatumRef(ImageDatumPropertyType newImageDatumRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ImageDatumRef(), newImageDatumRef, msgs);
 	}
 
@@ -7369,8 +7151,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImageDatumRef(ImageDatumPropertyType newImageDatumRef)
-	{
+	@Override
+	public void setImageDatumRef(ImageDatumPropertyType newImageDatumRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ImageDatumRef(), newImageDatumRef);
 	}
 
@@ -7379,8 +7161,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SingleCRSPropertyType getIncludesSingleCRS()
-	{
+	@Override
+	public SingleCRSPropertyType getIncludesSingleCRS() {
 		return (SingleCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_IncludesSingleCRS(), true);
 	}
 
@@ -7389,8 +7171,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIncludesSingleCRS(SingleCRSPropertyType newIncludesSingleCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetIncludesSingleCRS(SingleCRSPropertyType newIncludesSingleCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_IncludesSingleCRS(), newIncludesSingleCRS, msgs);
 	}
 
@@ -7399,8 +7180,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIncludesSingleCRS(SingleCRSPropertyType newIncludesSingleCRS)
-	{
+	@Override
+	public void setIncludesSingleCRS(SingleCRSPropertyType newIncludesSingleCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_IncludesSingleCRS(), newIncludesSingleCRS);
 	}
 
@@ -7409,8 +7190,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IndirectEntryType getIndirectEntry()
-	{
+	@Override
+	public IndirectEntryType getIndirectEntry() {
 		return (IndirectEntryType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_IndirectEntry(), true);
 	}
 
@@ -7419,8 +7200,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIndirectEntry(IndirectEntryType newIndirectEntry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetIndirectEntry(IndirectEntryType newIndirectEntry, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_IndirectEntry(), newIndirectEntry, msgs);
 	}
 
@@ -7429,8 +7209,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIndirectEntry(IndirectEntryType newIndirectEntry)
-	{
+	@Override
+	public void setIndirectEntry(IndirectEntryType newIndirectEntry) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_IndirectEntry(), newIndirectEntry);
 	}
 
@@ -7439,8 +7219,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getIntegerValue()
-	{
+	@Override
+	public BigInteger getIntegerValue() {
 		return (BigInteger)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_IntegerValue(), true);
 	}
 
@@ -7449,8 +7229,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIntegerValue(BigInteger newIntegerValue)
-	{
+	@Override
+	public void setIntegerValue(BigInteger newIntegerValue) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_IntegerValue(), newIntegerValue);
 	}
 
@@ -7460,8 +7240,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public List<BigInteger> getIntegerValueList()
-	{
+	@Override
+	public List<BigInteger> getIntegerValueList() {
 		return (List<BigInteger>)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_IntegerValueList(), true);
 	}
 
@@ -7470,8 +7250,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIntegerValueList(List<BigInteger> newIntegerValueList)
-	{
+	@Override
+	public void setIntegerValueList(List<BigInteger> newIntegerValueList) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_IntegerValueList(), newIntegerValueList);
 	}
 
@@ -7480,8 +7260,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractRingPropertyType getInterior()
-	{
+	@Override
+	public AbstractRingPropertyType getInterior() {
 		return (AbstractRingPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Interior(), true);
 	}
 
@@ -7490,8 +7270,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetInterior(AbstractRingPropertyType newInterior, NotificationChain msgs)
-	{
+	public NotificationChain basicSetInterior(AbstractRingPropertyType newInterior, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Interior(), newInterior, msgs);
 	}
 
@@ -7500,8 +7279,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInterior(AbstractRingPropertyType newInterior)
-	{
+	@Override
+	public void setInterior(AbstractRingPropertyType newInterior) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Interior(), newInterior);
 	}
 
@@ -7510,8 +7289,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearCSPropertyType getLinearCS()
-	{
+	@Override
+	public LinearCSPropertyType getLinearCS() {
 		return (LinearCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LinearCS(), true);
 	}
 
@@ -7520,8 +7299,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLinearCS(LinearCSPropertyType newLinearCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLinearCS(LinearCSPropertyType newLinearCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LinearCS(), newLinearCS, msgs);
 	}
 
@@ -7530,8 +7308,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLinearCS(LinearCSPropertyType newLinearCS)
-	{
+	@Override
+	public void setLinearCS(LinearCSPropertyType newLinearCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LinearCS(), newLinearCS);
 	}
 
@@ -7540,8 +7318,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearCSType getLinearCS1()
-	{
+	@Override
+	public LinearCSType getLinearCS1() {
 		return (LinearCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LinearCS1(), true);
 	}
 
@@ -7550,8 +7328,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLinearCS1(LinearCSType newLinearCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLinearCS1(LinearCSType newLinearCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LinearCS1(), newLinearCS1, msgs);
 	}
 
@@ -7560,8 +7337,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLinearCS1(LinearCSType newLinearCS1)
-	{
+	@Override
+	public void setLinearCS1(LinearCSType newLinearCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LinearCS1(), newLinearCS1);
 	}
 
@@ -7570,8 +7347,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearCSPropertyType getLinearCSRef()
-	{
+	@Override
+	public LinearCSPropertyType getLinearCSRef() {
 		return (LinearCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LinearCSRef(), true);
 	}
 
@@ -7580,8 +7357,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLinearCSRef(LinearCSPropertyType newLinearCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLinearCSRef(LinearCSPropertyType newLinearCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LinearCSRef(), newLinearCSRef, msgs);
 	}
 
@@ -7590,8 +7366,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLinearCSRef(LinearCSPropertyType newLinearCSRef)
-	{
+	@Override
+	public void setLinearCSRef(LinearCSPropertyType newLinearCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LinearCSRef(), newLinearCSRef);
 	}
 
@@ -7600,8 +7376,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearRingType getLinearRing()
-	{
+	@Override
+	public LinearRingType getLinearRing() {
 		return (LinearRingType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LinearRing(), true);
 	}
 
@@ -7610,8 +7386,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLinearRing(LinearRingType newLinearRing, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLinearRing(LinearRingType newLinearRing, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LinearRing(), newLinearRing, msgs);
 	}
 
@@ -7620,8 +7395,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLinearRing(LinearRingType newLinearRing)
-	{
+	@Override
+	public void setLinearRing(LinearRingType newLinearRing) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LinearRing(), newLinearRing);
 	}
 
@@ -7630,8 +7405,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LineStringType getLineString()
-	{
+	@Override
+	public LineStringType getLineString() {
 		return (LineStringType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LineString(), true);
 	}
 
@@ -7640,8 +7415,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLineString(LineStringType newLineString, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLineString(LineStringType newLineString, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LineString(), newLineString, msgs);
 	}
 
@@ -7650,8 +7424,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLineString(LineStringType newLineString)
-	{
+	@Override
+	public void setLineString(LineStringType newLineString) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LineString(), newLineString);
 	}
 
@@ -7660,8 +7434,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LineStringSegmentType getLineStringSegment()
-	{
+	@Override
+	public LineStringSegmentType getLineStringSegment() {
 		return (LineStringSegmentType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LineStringSegment(), true);
 	}
 
@@ -7670,8 +7444,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLineStringSegment(LineStringSegmentType newLineStringSegment, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLineStringSegment(LineStringSegmentType newLineStringSegment, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LineStringSegment(), newLineStringSegment, msgs);
 	}
 
@@ -7680,8 +7453,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLineStringSegment(LineStringSegmentType newLineStringSegment)
-	{
+	@Override
+	public void setLineStringSegment(LineStringSegmentType newLineStringSegment) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LineStringSegment(), newLineStringSegment);
 	}
 
@@ -7690,8 +7463,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LocationPropertyType getLocation()
-	{
+	@Override
+	public LocationPropertyType getLocation() {
 		return (LocationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Location(), true);
 	}
 
@@ -7700,8 +7473,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocation(LocationPropertyType newLocation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocation(LocationPropertyType newLocation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Location(), newLocation, msgs);
 	}
 
@@ -7710,8 +7482,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocation(LocationPropertyType newLocation)
-	{
+	@Override
+	public void setLocation(LocationPropertyType newLocation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Location(), newLocation);
 	}
 
@@ -7720,8 +7492,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getLocationKeyWord()
-	{
+	@Override
+	public CodeType getLocationKeyWord() {
 		return (CodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LocationKeyWord(), true);
 	}
 
@@ -7730,8 +7502,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocationKeyWord(CodeType newLocationKeyWord, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocationKeyWord(CodeType newLocationKeyWord, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LocationKeyWord(), newLocationKeyWord, msgs);
 	}
 
@@ -7740,8 +7511,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocationKeyWord(CodeType newLocationKeyWord)
-	{
+	@Override
+	public void setLocationKeyWord(CodeType newLocationKeyWord) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LocationKeyWord(), newLocationKeyWord);
 	}
 
@@ -7750,8 +7521,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getLocationName()
-	{
+	@Override
+	public CodeType getLocationName() {
 		return (CodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LocationName(), true);
 	}
 
@@ -7760,8 +7531,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocationName(CodeType newLocationName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocationName(CodeType newLocationName, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LocationName(), newLocationName, msgs);
 	}
 
@@ -7770,8 +7540,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocationName(CodeType newLocationName)
-	{
+	@Override
+	public void setLocationName(CodeType newLocationName) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LocationName(), newLocationName);
 	}
 
@@ -7780,8 +7550,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getLocationReference()
-	{
+	@Override
+	public ReferenceType getLocationReference() {
 		return (ReferenceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LocationReference(), true);
 	}
 
@@ -7790,8 +7560,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocationReference(ReferenceType newLocationReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocationReference(ReferenceType newLocationReference, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LocationReference(), newLocationReference, msgs);
 	}
 
@@ -7800,8 +7569,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocationReference(ReferenceType newLocationReference)
-	{
+	@Override
+	public void setLocationReference(ReferenceType newLocationReference) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LocationReference(), newLocationReference);
 	}
 
@@ -7810,8 +7579,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getLocationString()
-	{
+	@Override
+	public StringOrRefType getLocationString() {
 		return (StringOrRefType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_LocationString(), true);
 	}
 
@@ -7820,8 +7589,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocationString(StringOrRefType newLocationString, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocationString(StringOrRefType newLocationString, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_LocationString(), newLocationString, msgs);
 	}
 
@@ -7830,8 +7598,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocationString(StringOrRefType newLocationString)
-	{
+	@Override
+	public void setLocationString(StringOrRefType newLocationString) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_LocationString(), newLocationString);
 	}
 
@@ -7840,8 +7608,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getMappingRule()
-	{
+	@Override
+	public StringOrRefType getMappingRule() {
 		return (StringOrRefType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MappingRule(), true);
 	}
 
@@ -7850,8 +7618,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMappingRule(StringOrRefType newMappingRule, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMappingRule(StringOrRefType newMappingRule, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MappingRule(), newMappingRule, msgs);
 	}
 
@@ -7860,8 +7627,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMappingRule(StringOrRefType newMappingRule)
-	{
+	@Override
+	public void setMappingRule(StringOrRefType newMappingRule) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MappingRule(), newMappingRule);
 	}
 
@@ -7870,8 +7637,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoComplexPropertyType getMaximalComplex()
-	{
+	@Override
+	public TopoComplexPropertyType getMaximalComplex() {
 		return (TopoComplexPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MaximalComplex(), true);
 	}
 
@@ -7880,8 +7647,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMaximalComplex(TopoComplexPropertyType newMaximalComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMaximalComplex(TopoComplexPropertyType newMaximalComplex, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MaximalComplex(), newMaximalComplex, msgs);
 	}
 
@@ -7890,8 +7656,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaximalComplex(TopoComplexPropertyType newMaximalComplex)
-	{
+	@Override
+	public void setMaximalComplex(TopoComplexPropertyType newMaximalComplex) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MaximalComplex(), newMaximalComplex);
 	}
 
@@ -7900,8 +7666,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getMaximumOccurs()
-	{
+	@Override
+	public BigInteger getMaximumOccurs() {
 		return (BigInteger)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MaximumOccurs(), true);
 	}
 
@@ -7910,8 +7676,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaximumOccurs(BigInteger newMaximumOccurs)
-	{
+	@Override
+	public void setMaximumOccurs(BigInteger newMaximumOccurs) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MaximumOccurs(), newMaximumOccurs);
 	}
 
@@ -7920,8 +7686,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getMaximumValue()
-	{
+	@Override
+	public double getMaximumValue() {
 		return (Double)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MaximumValue(), true);
 	}
 
@@ -7930,8 +7696,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaximumValue(double newMaximumValue)
-	{
+	@Override
+	public void setMaximumValue(double newMaximumValue) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MaximumValue(), newMaximumValue);
 	}
 
@@ -7940,8 +7706,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getMeasure()
-	{
+	@Override
+	public MeasureType getMeasure() {
 		return (MeasureType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Measure(), true);
 	}
 
@@ -7950,8 +7716,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMeasure(MeasureType newMeasure, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMeasure(MeasureType newMeasure, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Measure(), newMeasure, msgs);
 	}
 
@@ -7960,8 +7725,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMeasure(MeasureType newMeasure)
-	{
+	@Override
+	public void setMeasure(MeasureType newMeasure) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Measure(), newMeasure);
 	}
 
@@ -7970,8 +7735,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssociationRoleType getMember()
-	{
+	@Override
+	public AssociationRoleType getMember() {
 		return (AssociationRoleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Member(), true);
 	}
 
@@ -7980,8 +7745,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMember(AssociationRoleType newMember, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMember(AssociationRoleType newMember, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Member(), newMember, msgs);
 	}
 
@@ -7990,8 +7754,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMember(AssociationRoleType newMember)
-	{
+	@Override
+	public void setMember(AssociationRoleType newMember) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Member(), newMember);
 	}
 
@@ -8000,8 +7764,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArrayAssociationType getMembers()
-	{
+	@Override
+	public ArrayAssociationType getMembers() {
 		return (ArrayAssociationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Members(), true);
 	}
 
@@ -8010,8 +7774,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMembers(ArrayAssociationType newMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMembers(ArrayAssociationType newMembers, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Members(), newMembers, msgs);
 	}
 
@@ -8020,8 +7783,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMembers(ArrayAssociationType newMembers)
-	{
+	@Override
+	public void setMembers(ArrayAssociationType newMembers) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Members(), newMembers);
 	}
 
@@ -8030,8 +7793,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MetaDataPropertyType getMetaDataProperty()
-	{
+	@Override
+	public MetaDataPropertyType getMetaDataProperty() {
 		return (MetaDataPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MetaDataProperty(), true);
 	}
 
@@ -8040,8 +7803,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMetaDataProperty(MetaDataPropertyType newMetaDataProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMetaDataProperty(MetaDataPropertyType newMetaDataProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MetaDataProperty(), newMetaDataProperty, msgs);
 	}
 
@@ -8050,8 +7812,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMetaDataProperty(MetaDataPropertyType newMetaDataProperty)
-	{
+	@Override
+	public void setMetaDataProperty(MetaDataPropertyType newMetaDataProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MetaDataProperty(), newMetaDataProperty);
 	}
 
@@ -8060,8 +7822,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationMethodPropertyType getMethod()
-	{
+	@Override
+	public OperationMethodPropertyType getMethod() {
 		return (OperationMethodPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Method(), true);
 	}
 
@@ -8070,8 +7832,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMethod(OperationMethodPropertyType newMethod, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMethod(OperationMethodPropertyType newMethod, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Method(), newMethod, msgs);
 	}
 
@@ -8080,8 +7841,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMethod(OperationMethodPropertyType newMethod)
-	{
+	@Override
+	public void setMethod(OperationMethodPropertyType newMethod) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Method(), newMethod);
 	}
 
@@ -8090,8 +7851,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getMethodFormula()
-	{
+	@Override
+	public CodeType getMethodFormula() {
 		return (CodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MethodFormula(), true);
 	}
 
@@ -8100,8 +7861,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMethodFormula(CodeType newMethodFormula, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMethodFormula(CodeType newMethodFormula, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MethodFormula(), newMethodFormula, msgs);
 	}
 
@@ -8110,8 +7870,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMethodFormula(CodeType newMethodFormula)
-	{
+	@Override
+	public void setMethodFormula(CodeType newMethodFormula) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MethodFormula(), newMethodFormula);
 	}
 
@@ -8120,8 +7880,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getMinimumOccurs()
-	{
+	@Override
+	public BigInteger getMinimumOccurs() {
 		return (BigInteger)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MinimumOccurs(), true);
 	}
 
@@ -8130,8 +7890,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMinimumOccurs(BigInteger newMinimumOccurs)
-	{
+	@Override
+	public void setMinimumOccurs(BigInteger newMinimumOccurs) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MinimumOccurs(), newMinimumOccurs);
 	}
 
@@ -8140,8 +7900,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getMinimumValue()
-	{
+	@Override
+	public double getMinimumValue() {
 		return (Double)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MinimumValue(), true);
 	}
 
@@ -8150,8 +7910,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMinimumValue(double newMinimumValue)
-	{
+	@Override
+	public void setMinimumValue(double newMinimumValue) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MinimumValue(), newMinimumValue);
 	}
 
@@ -8160,8 +7920,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getMinutes()
-	{
+	@Override
+	public BigInteger getMinutes() {
 		return (BigInteger)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Minutes(), true);
 	}
 
@@ -8170,8 +7930,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMinutes(BigInteger newMinutes)
-	{
+	@Override
+	public void setMinutes(BigInteger newMinutes) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Minutes(), newMinutes);
 	}
 
@@ -8180,8 +7940,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getModifiedCoordinate()
-	{
+	@Override
+	public BigInteger getModifiedCoordinate() {
 		return (BigInteger)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ModifiedCoordinate(), true);
 	}
 
@@ -8190,8 +7950,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setModifiedCoordinate(BigInteger newModifiedCoordinate)
-	{
+	@Override
+	public void setModifiedCoordinate(BigInteger newModifiedCoordinate) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ModifiedCoordinate(), newModifiedCoordinate);
 	}
 
@@ -8200,8 +7960,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MovingObjectStatusType getMovingObjectStatus()
-	{
+	@Override
+	public MovingObjectStatusType getMovingObjectStatus() {
 		return (MovingObjectStatusType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MovingObjectStatus(), true);
 	}
 
@@ -8210,8 +7970,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMovingObjectStatus(MovingObjectStatusType newMovingObjectStatus, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMovingObjectStatus(MovingObjectStatusType newMovingObjectStatus, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MovingObjectStatus(), newMovingObjectStatus, msgs);
 	}
 
@@ -8220,8 +7979,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMovingObjectStatus(MovingObjectStatusType newMovingObjectStatus)
-	{
+	@Override
+	public void setMovingObjectStatus(MovingObjectStatusType newMovingObjectStatus) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MovingObjectStatus(), newMovingObjectStatus);
 	}
 
@@ -8230,8 +7989,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiCurvePropertyType getMultiCenterLineOf()
-	{
+	@Override
+	public MultiCurvePropertyType getMultiCenterLineOf() {
 		return (MultiCurvePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiCenterLineOf(), true);
 	}
 
@@ -8240,8 +7999,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiCenterLineOf(MultiCurvePropertyType newMultiCenterLineOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiCenterLineOf(MultiCurvePropertyType newMultiCenterLineOf, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiCenterLineOf(), newMultiCenterLineOf, msgs);
 	}
 
@@ -8250,8 +8008,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiCenterLineOf(MultiCurvePropertyType newMultiCenterLineOf)
-	{
+	@Override
+	public void setMultiCenterLineOf(MultiCurvePropertyType newMultiCenterLineOf) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiCenterLineOf(), newMultiCenterLineOf);
 	}
 
@@ -8260,8 +8018,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiPointPropertyType getMultiCenterOf()
-	{
+	@Override
+	public MultiPointPropertyType getMultiCenterOf() {
 		return (MultiPointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiCenterOf(), true);
 	}
 
@@ -8270,8 +8028,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiCenterOf(MultiPointPropertyType newMultiCenterOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiCenterOf(MultiPointPropertyType newMultiCenterOf, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiCenterOf(), newMultiCenterOf, msgs);
 	}
 
@@ -8280,8 +8037,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiCenterOf(MultiPointPropertyType newMultiCenterOf)
-	{
+	@Override
+	public void setMultiCenterOf(MultiPointPropertyType newMultiCenterOf) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiCenterOf(), newMultiCenterOf);
 	}
 
@@ -8290,8 +8047,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSurfacePropertyType getMultiCoverage()
-	{
+	@Override
+	public MultiSurfacePropertyType getMultiCoverage() {
 		return (MultiSurfacePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiCoverage(), true);
 	}
 
@@ -8300,8 +8057,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiCoverage(MultiSurfacePropertyType newMultiCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiCoverage(MultiSurfacePropertyType newMultiCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiCoverage(), newMultiCoverage, msgs);
 	}
 
@@ -8310,8 +8066,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiCoverage(MultiSurfacePropertyType newMultiCoverage)
-	{
+	@Override
+	public void setMultiCoverage(MultiSurfacePropertyType newMultiCoverage) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiCoverage(), newMultiCoverage);
 	}
 
@@ -8320,8 +8076,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiCurveType getMultiCurve()
-	{
+	@Override
+	public MultiCurveType getMultiCurve() {
 		return (MultiCurveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurve(), true);
 	}
 
@@ -8330,8 +8086,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiCurve(MultiCurveType newMultiCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiCurve(MultiCurveType newMultiCurve, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurve(), newMultiCurve, msgs);
 	}
 
@@ -8340,8 +8095,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiCurve(MultiCurveType newMultiCurve)
-	{
+	@Override
+	public void setMultiCurve(MultiCurveType newMultiCurve) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurve(), newMultiCurve);
 	}
 
@@ -8350,8 +8105,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscreteCoverageType getMultiCurveCoverage()
-	{
+	@Override
+	public DiscreteCoverageType getMultiCurveCoverage() {
 		return (DiscreteCoverageType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurveCoverage(), true);
 	}
 
@@ -8360,8 +8115,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiCurveCoverage(DiscreteCoverageType newMultiCurveCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiCurveCoverage(DiscreteCoverageType newMultiCurveCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurveCoverage(), newMultiCurveCoverage, msgs);
 	}
 
@@ -8370,8 +8124,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiCurveCoverage(DiscreteCoverageType newMultiCurveCoverage)
-	{
+	@Override
+	public void setMultiCurveCoverage(DiscreteCoverageType newMultiCurveCoverage) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurveCoverage(), newMultiCurveCoverage);
 	}
 
@@ -8380,8 +8134,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainSetType getMultiCurveDomain()
-	{
+	@Override
+	public DomainSetType getMultiCurveDomain() {
 		return (DomainSetType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurveDomain(), true);
 	}
 
@@ -8390,8 +8144,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiCurveDomain(DomainSetType newMultiCurveDomain, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiCurveDomain(DomainSetType newMultiCurveDomain, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurveDomain(), newMultiCurveDomain, msgs);
 	}
 
@@ -8400,8 +8153,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiCurveDomain(DomainSetType newMultiCurveDomain)
-	{
+	@Override
+	public void setMultiCurveDomain(DomainSetType newMultiCurveDomain) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurveDomain(), newMultiCurveDomain);
 	}
 
@@ -8410,8 +8163,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiCurvePropertyType getMultiCurveProperty()
-	{
+	@Override
+	public MultiCurvePropertyType getMultiCurveProperty() {
 		return (MultiCurvePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurveProperty(), true);
 	}
 
@@ -8420,8 +8173,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiCurveProperty(MultiCurvePropertyType newMultiCurveProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiCurveProperty(MultiCurvePropertyType newMultiCurveProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurveProperty(), newMultiCurveProperty, msgs);
 	}
 
@@ -8430,8 +8182,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiCurveProperty(MultiCurvePropertyType newMultiCurveProperty)
-	{
+	@Override
+	public void setMultiCurveProperty(MultiCurvePropertyType newMultiCurveProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiCurveProperty(), newMultiCurveProperty);
 	}
 
@@ -8440,8 +8192,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiCurvePropertyType getMultiEdgeOf()
-	{
+	@Override
+	public MultiCurvePropertyType getMultiEdgeOf() {
 		return (MultiCurvePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiEdgeOf(), true);
 	}
 
@@ -8450,8 +8202,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiEdgeOf(MultiCurvePropertyType newMultiEdgeOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiEdgeOf(MultiCurvePropertyType newMultiEdgeOf, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiEdgeOf(), newMultiEdgeOf, msgs);
 	}
 
@@ -8460,8 +8211,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiEdgeOf(MultiCurvePropertyType newMultiEdgeOf)
-	{
+	@Override
+	public void setMultiEdgeOf(MultiCurvePropertyType newMultiEdgeOf) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiEdgeOf(), newMultiEdgeOf);
 	}
 
@@ -8470,8 +8221,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSurfacePropertyType getMultiExtentOf()
-	{
+	@Override
+	public MultiSurfacePropertyType getMultiExtentOf() {
 		return (MultiSurfacePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiExtentOf(), true);
 	}
 
@@ -8480,8 +8231,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiExtentOf(MultiSurfacePropertyType newMultiExtentOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiExtentOf(MultiSurfacePropertyType newMultiExtentOf, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiExtentOf(), newMultiExtentOf, msgs);
 	}
 
@@ -8490,8 +8240,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiExtentOf(MultiSurfacePropertyType newMultiExtentOf)
-	{
+	@Override
+	public void setMultiExtentOf(MultiSurfacePropertyType newMultiExtentOf) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiExtentOf(), newMultiExtentOf);
 	}
 
@@ -8500,8 +8250,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiGeometryType getMultiGeometry()
-	{
+	@Override
+	public MultiGeometryType getMultiGeometry() {
 		return (MultiGeometryType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiGeometry(), true);
 	}
 
@@ -8510,8 +8260,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiGeometry(MultiGeometryType newMultiGeometry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiGeometry(MultiGeometryType newMultiGeometry, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiGeometry(), newMultiGeometry, msgs);
 	}
 
@@ -8520,8 +8269,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiGeometry(MultiGeometryType newMultiGeometry)
-	{
+	@Override
+	public void setMultiGeometry(MultiGeometryType newMultiGeometry) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiGeometry(), newMultiGeometry);
 	}
 
@@ -8530,8 +8279,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiGeometryPropertyType getMultiGeometryProperty()
-	{
+	@Override
+	public MultiGeometryPropertyType getMultiGeometryProperty() {
 		return (MultiGeometryPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiGeometryProperty(), true);
 	}
 
@@ -8540,8 +8289,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiGeometryProperty(MultiGeometryPropertyType newMultiGeometryProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiGeometryProperty(MultiGeometryPropertyType newMultiGeometryProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiGeometryProperty(), newMultiGeometryProperty, msgs);
 	}
 
@@ -8550,8 +8298,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiGeometryProperty(MultiGeometryPropertyType newMultiGeometryProperty)
-	{
+	@Override
+	public void setMultiGeometryProperty(MultiGeometryPropertyType newMultiGeometryProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiGeometryProperty(), newMultiGeometryProperty);
 	}
 
@@ -8560,8 +8308,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiPointPropertyType getMultiLocation()
-	{
+	@Override
+	public MultiPointPropertyType getMultiLocation() {
 		return (MultiPointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiLocation(), true);
 	}
 
@@ -8570,8 +8318,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiLocation(MultiPointPropertyType newMultiLocation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiLocation(MultiPointPropertyType newMultiLocation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiLocation(), newMultiLocation, msgs);
 	}
 
@@ -8580,8 +8327,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiLocation(MultiPointPropertyType newMultiLocation)
-	{
+	@Override
+	public void setMultiLocation(MultiPointPropertyType newMultiLocation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiLocation(), newMultiLocation);
 	}
 
@@ -8590,8 +8337,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiPointType getMultiPoint()
-	{
+	@Override
+	public MultiPointType getMultiPoint() {
 		return (MultiPointType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiPoint(), true);
 	}
 
@@ -8600,8 +8347,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiPoint(MultiPointType newMultiPoint, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiPoint(MultiPointType newMultiPoint, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiPoint(), newMultiPoint, msgs);
 	}
 
@@ -8610,8 +8356,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiPoint(MultiPointType newMultiPoint)
-	{
+	@Override
+	public void setMultiPoint(MultiPointType newMultiPoint) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiPoint(), newMultiPoint);
 	}
 
@@ -8620,8 +8366,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscreteCoverageType getMultiPointCoverage()
-	{
+	@Override
+	public DiscreteCoverageType getMultiPointCoverage() {
 		return (DiscreteCoverageType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiPointCoverage(), true);
 	}
 
@@ -8630,8 +8376,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiPointCoverage(DiscreteCoverageType newMultiPointCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiPointCoverage(DiscreteCoverageType newMultiPointCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiPointCoverage(), newMultiPointCoverage, msgs);
 	}
 
@@ -8640,8 +8385,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiPointCoverage(DiscreteCoverageType newMultiPointCoverage)
-	{
+	@Override
+	public void setMultiPointCoverage(DiscreteCoverageType newMultiPointCoverage) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiPointCoverage(), newMultiPointCoverage);
 	}
 
@@ -8650,8 +8395,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainSetType getMultiPointDomain()
-	{
+	@Override
+	public DomainSetType getMultiPointDomain() {
 		return (DomainSetType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiPointDomain(), true);
 	}
 
@@ -8660,8 +8405,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiPointDomain(DomainSetType newMultiPointDomain, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiPointDomain(DomainSetType newMultiPointDomain, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiPointDomain(), newMultiPointDomain, msgs);
 	}
 
@@ -8670,8 +8414,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiPointDomain(DomainSetType newMultiPointDomain)
-	{
+	@Override
+	public void setMultiPointDomain(DomainSetType newMultiPointDomain) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiPointDomain(), newMultiPointDomain);
 	}
 
@@ -8680,8 +8424,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiPointPropertyType getMultiPointProperty()
-	{
+	@Override
+	public MultiPointPropertyType getMultiPointProperty() {
 		return (MultiPointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiPointProperty(), true);
 	}
 
@@ -8690,8 +8434,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiPointProperty(MultiPointPropertyType newMultiPointProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiPointProperty(MultiPointPropertyType newMultiPointProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiPointProperty(), newMultiPointProperty, msgs);
 	}
 
@@ -8700,8 +8443,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiPointProperty(MultiPointPropertyType newMultiPointProperty)
-	{
+	@Override
+	public void setMultiPointProperty(MultiPointPropertyType newMultiPointProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiPointProperty(), newMultiPointProperty);
 	}
 
@@ -8710,8 +8453,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiPointPropertyType getMultiPosition()
-	{
+	@Override
+	public MultiPointPropertyType getMultiPosition() {
 		return (MultiPointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiPosition(), true);
 	}
 
@@ -8720,8 +8463,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiPosition(MultiPointPropertyType newMultiPosition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiPosition(MultiPointPropertyType newMultiPosition, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiPosition(), newMultiPosition, msgs);
 	}
 
@@ -8730,8 +8472,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiPosition(MultiPointPropertyType newMultiPosition)
-	{
+	@Override
+	public void setMultiPosition(MultiPointPropertyType newMultiPosition) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiPosition(), newMultiPosition);
 	}
 
@@ -8740,8 +8482,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSolidType getMultiSolid()
-	{
+	@Override
+	public MultiSolidType getMultiSolid() {
 		return (MultiSolidType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolid(), true);
 	}
 
@@ -8750,8 +8492,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiSolid(MultiSolidType newMultiSolid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiSolid(MultiSolidType newMultiSolid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolid(), newMultiSolid, msgs);
 	}
 
@@ -8760,8 +8501,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiSolid(MultiSolidType newMultiSolid)
-	{
+	@Override
+	public void setMultiSolid(MultiSolidType newMultiSolid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolid(), newMultiSolid);
 	}
 
@@ -8770,8 +8511,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscreteCoverageType getMultiSolidCoverage()
-	{
+	@Override
+	public DiscreteCoverageType getMultiSolidCoverage() {
 		return (DiscreteCoverageType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolidCoverage(), true);
 	}
 
@@ -8780,8 +8521,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiSolidCoverage(DiscreteCoverageType newMultiSolidCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiSolidCoverage(DiscreteCoverageType newMultiSolidCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolidCoverage(), newMultiSolidCoverage, msgs);
 	}
 
@@ -8790,8 +8530,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiSolidCoverage(DiscreteCoverageType newMultiSolidCoverage)
-	{
+	@Override
+	public void setMultiSolidCoverage(DiscreteCoverageType newMultiSolidCoverage) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolidCoverage(), newMultiSolidCoverage);
 	}
 
@@ -8800,8 +8540,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainSetType getMultiSolidDomain()
-	{
+	@Override
+	public DomainSetType getMultiSolidDomain() {
 		return (DomainSetType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolidDomain(), true);
 	}
 
@@ -8810,8 +8550,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiSolidDomain(DomainSetType newMultiSolidDomain, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiSolidDomain(DomainSetType newMultiSolidDomain, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolidDomain(), newMultiSolidDomain, msgs);
 	}
 
@@ -8820,8 +8559,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiSolidDomain(DomainSetType newMultiSolidDomain)
-	{
+	@Override
+	public void setMultiSolidDomain(DomainSetType newMultiSolidDomain) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolidDomain(), newMultiSolidDomain);
 	}
 
@@ -8830,8 +8569,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSolidPropertyType getMultiSolidProperty()
-	{
+	@Override
+	public MultiSolidPropertyType getMultiSolidProperty() {
 		return (MultiSolidPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolidProperty(), true);
 	}
 
@@ -8840,8 +8579,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiSolidProperty(MultiSolidPropertyType newMultiSolidProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiSolidProperty(MultiSolidPropertyType newMultiSolidProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolidProperty(), newMultiSolidProperty, msgs);
 	}
 
@@ -8850,8 +8588,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiSolidProperty(MultiSolidPropertyType newMultiSolidProperty)
-	{
+	@Override
+	public void setMultiSolidProperty(MultiSolidPropertyType newMultiSolidProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiSolidProperty(), newMultiSolidProperty);
 	}
 
@@ -8860,8 +8598,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSurfaceType getMultiSurface()
-	{
+	@Override
+	public MultiSurfaceType getMultiSurface() {
 		return (MultiSurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurface(), true);
 	}
 
@@ -8870,8 +8608,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiSurface(MultiSurfaceType newMultiSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiSurface(MultiSurfaceType newMultiSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurface(), newMultiSurface, msgs);
 	}
 
@@ -8880,8 +8617,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiSurface(MultiSurfaceType newMultiSurface)
-	{
+	@Override
+	public void setMultiSurface(MultiSurfaceType newMultiSurface) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurface(), newMultiSurface);
 	}
 
@@ -8890,8 +8627,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscreteCoverageType getMultiSurfaceCoverage()
-	{
+	@Override
+	public DiscreteCoverageType getMultiSurfaceCoverage() {
 		return (DiscreteCoverageType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurfaceCoverage(), true);
 	}
 
@@ -8900,8 +8637,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiSurfaceCoverage(DiscreteCoverageType newMultiSurfaceCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiSurfaceCoverage(DiscreteCoverageType newMultiSurfaceCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurfaceCoverage(), newMultiSurfaceCoverage, msgs);
 	}
 
@@ -8910,8 +8646,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiSurfaceCoverage(DiscreteCoverageType newMultiSurfaceCoverage)
-	{
+	@Override
+	public void setMultiSurfaceCoverage(DiscreteCoverageType newMultiSurfaceCoverage) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurfaceCoverage(), newMultiSurfaceCoverage);
 	}
 
@@ -8920,8 +8656,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainSetType getMultiSurfaceDomain()
-	{
+	@Override
+	public DomainSetType getMultiSurfaceDomain() {
 		return (DomainSetType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurfaceDomain(), true);
 	}
 
@@ -8930,8 +8666,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiSurfaceDomain(DomainSetType newMultiSurfaceDomain, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiSurfaceDomain(DomainSetType newMultiSurfaceDomain, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurfaceDomain(), newMultiSurfaceDomain, msgs);
 	}
 
@@ -8940,8 +8675,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiSurfaceDomain(DomainSetType newMultiSurfaceDomain)
-	{
+	@Override
+	public void setMultiSurfaceDomain(DomainSetType newMultiSurfaceDomain) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurfaceDomain(), newMultiSurfaceDomain);
 	}
 
@@ -8950,8 +8685,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiSurfacePropertyType getMultiSurfaceProperty()
-	{
+	@Override
+	public MultiSurfacePropertyType getMultiSurfaceProperty() {
 		return (MultiSurfacePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurfaceProperty(), true);
 	}
 
@@ -8960,8 +8695,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMultiSurfaceProperty(MultiSurfacePropertyType newMultiSurfaceProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMultiSurfaceProperty(MultiSurfacePropertyType newMultiSurfaceProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurfaceProperty(), newMultiSurfaceProperty, msgs);
 	}
 
@@ -8970,8 +8704,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiSurfaceProperty(MultiSurfacePropertyType newMultiSurfaceProperty)
-	{
+	@Override
+	public void setMultiSurfaceProperty(MultiSurfacePropertyType newMultiSurfaceProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_MultiSurfaceProperty(), newMultiSurfaceProperty);
 	}
 
@@ -8980,8 +8714,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getName()
-	{
+	@Override
+	public CodeType getName() {
 		return (CodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Name(), true);
 	}
 
@@ -8990,8 +8724,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetName(CodeType newName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetName(CodeType newName, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Name(), newName, msgs);
 	}
 
@@ -9000,8 +8733,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(CodeType newName)
-	{
+	@Override
+	public void setName(CodeType newName) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Name(), newName);
 	}
 
@@ -9010,8 +8743,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NodeType getNode()
-	{
+	@Override
+	public NodeType getNode() {
 		return (NodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Node(), true);
 	}
 
@@ -9020,8 +8753,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetNode(NodeType newNode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetNode(NodeType newNode, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Node(), newNode, msgs);
 	}
 
@@ -9030,8 +8762,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNode(NodeType newNode)
-	{
+	@Override
+	public void setNode(NodeType newNode) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Node(), newNode);
 	}
 
@@ -9040,8 +8772,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNull()
-	{
+	@Override
+	public Object getNull() {
 		return getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Null(), true);
 	}
 
@@ -9050,8 +8782,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNull(Object newNull)
-	{
+	@Override
+	public void setNull(Object newNull) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Null(), newNull);
 	}
 
@@ -9060,8 +8792,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ObliqueCartesianCSType getObliqueCartesianCS()
-	{
+	@Override
+	public ObliqueCartesianCSType getObliqueCartesianCS() {
 		return (ObliqueCartesianCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ObliqueCartesianCS(), true);
 	}
 
@@ -9070,8 +8802,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetObliqueCartesianCS(ObliqueCartesianCSType newObliqueCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetObliqueCartesianCS(ObliqueCartesianCSType newObliqueCartesianCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ObliqueCartesianCS(), newObliqueCartesianCS, msgs);
 	}
 
@@ -9080,8 +8811,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setObliqueCartesianCS(ObliqueCartesianCSType newObliqueCartesianCS)
-	{
+	@Override
+	public void setObliqueCartesianCS(ObliqueCartesianCSType newObliqueCartesianCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ObliqueCartesianCS(), newObliqueCartesianCS);
 	}
 
@@ -9090,8 +8821,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ObliqueCartesianCSPropertyType getObliqueCartesianCSRef()
-	{
+	@Override
+	public ObliqueCartesianCSPropertyType getObliqueCartesianCSRef() {
 		return (ObliqueCartesianCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ObliqueCartesianCSRef(), true);
 	}
 
@@ -9100,8 +8831,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetObliqueCartesianCSRef(ObliqueCartesianCSPropertyType newObliqueCartesianCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetObliqueCartesianCSRef(ObliqueCartesianCSPropertyType newObliqueCartesianCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ObliqueCartesianCSRef(), newObliqueCartesianCSRef, msgs);
 	}
 
@@ -9110,8 +8840,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setObliqueCartesianCSRef(ObliqueCartesianCSPropertyType newObliqueCartesianCSRef)
-	{
+	@Override
+	public void setObliqueCartesianCSRef(ObliqueCartesianCSPropertyType newObliqueCartesianCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ObliqueCartesianCSRef(), newObliqueCartesianCSRef);
 	}
 
@@ -9120,8 +8850,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OffsetCurveType getOffsetCurve()
-	{
+	@Override
+	public OffsetCurveType getOffsetCurve() {
 		return (OffsetCurveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OffsetCurve(), true);
 	}
 
@@ -9130,8 +8860,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOffsetCurve(OffsetCurveType newOffsetCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOffsetCurve(OffsetCurveType newOffsetCurve, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OffsetCurve(), newOffsetCurve, msgs);
 	}
 
@@ -9140,8 +8869,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOffsetCurve(OffsetCurveType newOffsetCurve)
-	{
+	@Override
+	public void setOffsetCurve(OffsetCurveType newOffsetCurve) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OffsetCurve(), newOffsetCurve);
 	}
 
@@ -9150,8 +8879,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationMethodType getOperationMethod()
-	{
+	@Override
+	public OperationMethodType getOperationMethod() {
 		return (OperationMethodType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OperationMethod(), true);
 	}
 
@@ -9160,8 +8889,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOperationMethod(OperationMethodType newOperationMethod, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOperationMethod(OperationMethodType newOperationMethod, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OperationMethod(), newOperationMethod, msgs);
 	}
 
@@ -9170,8 +8898,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationMethod(OperationMethodType newOperationMethod)
-	{
+	@Override
+	public void setOperationMethod(OperationMethodType newOperationMethod) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OperationMethod(), newOperationMethod);
 	}
 
@@ -9180,8 +8908,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationMethodPropertyType getOperationMethodRef()
-	{
+	@Override
+	public OperationMethodPropertyType getOperationMethodRef() {
 		return (OperationMethodPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OperationMethodRef(), true);
 	}
 
@@ -9190,8 +8918,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOperationMethodRef(OperationMethodPropertyType newOperationMethodRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOperationMethodRef(OperationMethodPropertyType newOperationMethodRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OperationMethodRef(), newOperationMethodRef, msgs);
 	}
 
@@ -9200,8 +8927,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationMethodRef(OperationMethodPropertyType newOperationMethodRef)
-	{
+	@Override
+	public void setOperationMethodRef(OperationMethodPropertyType newOperationMethodRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OperationMethodRef(), newOperationMethodRef);
 	}
 
@@ -9210,8 +8937,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterPropertyType getOperationParameter()
-	{
+	@Override
+	public OperationParameterPropertyType getOperationParameter() {
 		return (OperationParameterPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameter(), true);
 	}
 
@@ -9220,8 +8947,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOperationParameter(OperationParameterPropertyType newOperationParameter, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOperationParameter(OperationParameterPropertyType newOperationParameter, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameter(), newOperationParameter, msgs);
 	}
 
@@ -9230,8 +8956,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationParameter(OperationParameterPropertyType newOperationParameter)
-	{
+	@Override
+	public void setOperationParameter(OperationParameterPropertyType newOperationParameter) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameter(), newOperationParameter);
 	}
 
@@ -9240,8 +8966,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterType getOperationParameter1()
-	{
+	@Override
+	public OperationParameterType getOperationParameter1() {
 		return (OperationParameterType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameter1(), true);
 	}
 
@@ -9250,8 +8976,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOperationParameter1(OperationParameterType newOperationParameter1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOperationParameter1(OperationParameterType newOperationParameter1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameter1(), newOperationParameter1, msgs);
 	}
 
@@ -9260,8 +8985,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationParameter1(OperationParameterType newOperationParameter1)
-	{
+	@Override
+	public void setOperationParameter1(OperationParameterType newOperationParameter1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameter1(), newOperationParameter1);
 	}
 
@@ -9270,8 +8995,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterGroupType getOperationParameterGroup()
-	{
+	@Override
+	public OperationParameterGroupType getOperationParameterGroup() {
 		return (OperationParameterGroupType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameterGroup(), true);
 	}
 
@@ -9280,8 +9005,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOperationParameterGroup(OperationParameterGroupType newOperationParameterGroup, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOperationParameterGroup(OperationParameterGroupType newOperationParameterGroup, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameterGroup(), newOperationParameterGroup, msgs);
 	}
 
@@ -9290,8 +9014,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationParameterGroup(OperationParameterGroupType newOperationParameterGroup)
-	{
+	@Override
+	public void setOperationParameterGroup(OperationParameterGroupType newOperationParameterGroup) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameterGroup(), newOperationParameterGroup);
 	}
 
@@ -9300,8 +9024,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterPropertyType getOperationParameterGroupRef()
-	{
+	@Override
+	public OperationParameterPropertyType getOperationParameterGroupRef() {
 		return (OperationParameterPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameterGroupRef(), true);
 	}
 
@@ -9310,8 +9034,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOperationParameterGroupRef(OperationParameterPropertyType newOperationParameterGroupRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOperationParameterGroupRef(OperationParameterPropertyType newOperationParameterGroupRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameterGroupRef(), newOperationParameterGroupRef, msgs);
 	}
 
@@ -9320,8 +9043,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationParameterGroupRef(OperationParameterPropertyType newOperationParameterGroupRef)
-	{
+	@Override
+	public void setOperationParameterGroupRef(OperationParameterPropertyType newOperationParameterGroupRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameterGroupRef(), newOperationParameterGroupRef);
 	}
 
@@ -9330,8 +9053,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterPropertyType getOperationParameterRef()
-	{
+	@Override
+	public OperationParameterPropertyType getOperationParameterRef() {
 		return (OperationParameterPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameterRef(), true);
 	}
 
@@ -9340,8 +9063,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOperationParameterRef(OperationParameterPropertyType newOperationParameterRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOperationParameterRef(OperationParameterPropertyType newOperationParameterRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameterRef(), newOperationParameterRef, msgs);
 	}
 
@@ -9350,8 +9072,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationParameterRef(OperationParameterPropertyType newOperationParameterRef)
-	{
+	@Override
+	public void setOperationParameterRef(OperationParameterPropertyType newOperationParameterRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OperationParameterRef(), newOperationParameterRef);
 	}
 
@@ -9360,8 +9082,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationPropertyType getOperationRef()
-	{
+	@Override
+	public OperationPropertyType getOperationRef() {
 		return (OperationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OperationRef(), true);
 	}
 
@@ -9370,8 +9092,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOperationRef(OperationPropertyType newOperationRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOperationRef(OperationPropertyType newOperationRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OperationRef(), newOperationRef, msgs);
 	}
 
@@ -9380,8 +9101,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationRef(OperationPropertyType newOperationRef)
-	{
+	@Override
+	public void setOperationRef(OperationPropertyType newOperationRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OperationRef(), newOperationRef);
 	}
 
@@ -9390,8 +9111,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getOperationVersion()
-	{
+	@Override
+	public String getOperationVersion() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OperationVersion(), true);
 	}
 
@@ -9400,8 +9121,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationVersion(String newOperationVersion)
-	{
+	@Override
+	public void setOperationVersion(String newOperationVersion) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OperationVersion(), newOperationVersion);
 	}
 
@@ -9410,8 +9131,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OrientableCurveType getOrientableCurve()
-	{
+	@Override
+	public OrientableCurveType getOrientableCurve() {
 		return (OrientableCurveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OrientableCurve(), true);
 	}
 
@@ -9420,8 +9141,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrientableCurve(OrientableCurveType newOrientableCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOrientableCurve(OrientableCurveType newOrientableCurve, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OrientableCurve(), newOrientableCurve, msgs);
 	}
 
@@ -9430,8 +9150,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrientableCurve(OrientableCurveType newOrientableCurve)
-	{
+	@Override
+	public void setOrientableCurve(OrientableCurveType newOrientableCurve) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OrientableCurve(), newOrientableCurve);
 	}
 
@@ -9440,8 +9160,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OrientableSurfaceType getOrientableSurface()
-	{
+	@Override
+	public OrientableSurfaceType getOrientableSurface() {
 		return (OrientableSurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_OrientableSurface(), true);
 	}
 
@@ -9450,8 +9170,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrientableSurface(OrientableSurfaceType newOrientableSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOrientableSurface(OrientableSurfaceType newOrientableSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_OrientableSurface(), newOrientableSurface, msgs);
 	}
 
@@ -9460,8 +9179,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrientableSurface(OrientableSurfaceType newOrientableSurface)
-	{
+	@Override
+	public void setOrientableSurface(OrientableSurfaceType newOrientableSurface) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_OrientableSurface(), newOrientableSurface);
 	}
 
@@ -9470,8 +9189,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getOrigin()
-	{
+	@Override
+	public XMLGregorianCalendar getOrigin() {
 		return (XMLGregorianCalendar)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Origin(), true);
 	}
 
@@ -9480,8 +9199,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrigin(XMLGregorianCalendar newOrigin)
-	{
+	@Override
+	public void setOrigin(XMLGregorianCalendar newOrigin) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Origin(), newOrigin);
 	}
 
@@ -9490,8 +9209,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralOperationParameterPropertyType getParameter()
-	{
+	@Override
+	public AbstractGeneralOperationParameterPropertyType getParameter() {
 		return (AbstractGeneralOperationParameterPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Parameter(), true);
 	}
 
@@ -9500,8 +9219,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetParameter(AbstractGeneralOperationParameterPropertyType newParameter, NotificationChain msgs)
-	{
+	public NotificationChain basicSetParameter(AbstractGeneralOperationParameterPropertyType newParameter, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Parameter(), newParameter, msgs);
 	}
 
@@ -9510,8 +9228,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setParameter(AbstractGeneralOperationParameterPropertyType newParameter)
-	{
+	@Override
+	public void setParameter(AbstractGeneralOperationParameterPropertyType newParameter) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Parameter(), newParameter);
 	}
 
@@ -9520,8 +9238,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralParameterValuePropertyType getParameterValue()
-	{
+	@Override
+	public AbstractGeneralParameterValuePropertyType getParameterValue() {
 		return (AbstractGeneralParameterValuePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ParameterValue(), true);
 	}
 
@@ -9530,8 +9248,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetParameterValue(AbstractGeneralParameterValuePropertyType newParameterValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetParameterValue(AbstractGeneralParameterValuePropertyType newParameterValue, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ParameterValue(), newParameterValue, msgs);
 	}
 
@@ -9540,8 +9257,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setParameterValue(AbstractGeneralParameterValuePropertyType newParameterValue)
-	{
+	@Override
+	public void setParameterValue(AbstractGeneralParameterValuePropertyType newParameterValue) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ParameterValue(), newParameterValue);
 	}
 
@@ -9550,8 +9267,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ParameterValueType getParameterValue1()
-	{
+	@Override
+	public ParameterValueType getParameterValue1() {
 		return (ParameterValueType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ParameterValue1(), true);
 	}
 
@@ -9560,8 +9277,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetParameterValue1(ParameterValueType newParameterValue1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetParameterValue1(ParameterValueType newParameterValue1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ParameterValue1(), newParameterValue1, msgs);
 	}
 
@@ -9570,8 +9286,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setParameterValue1(ParameterValueType newParameterValue1)
-	{
+	@Override
+	public void setParameterValue1(ParameterValueType newParameterValue1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ParameterValue1(), newParameterValue1);
 	}
 
@@ -9580,8 +9296,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ParameterValueGroupType getParameterValueGroup()
-	{
+	@Override
+	public ParameterValueGroupType getParameterValueGroup() {
 		return (ParameterValueGroupType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ParameterValueGroup(), true);
 	}
 
@@ -9590,8 +9306,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetParameterValueGroup(ParameterValueGroupType newParameterValueGroup, NotificationChain msgs)
-	{
+	public NotificationChain basicSetParameterValueGroup(ParameterValueGroupType newParameterValueGroup, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ParameterValueGroup(), newParameterValueGroup, msgs);
 	}
 
@@ -9600,8 +9315,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setParameterValueGroup(ParameterValueGroupType newParameterValueGroup)
-	{
+	@Override
+	public void setParameterValueGroup(ParameterValueGroupType newParameterValueGroup) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ParameterValueGroup(), newParameterValueGroup);
 	}
 
@@ -9610,8 +9325,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PassThroughOperationType getPassThroughOperation()
-	{
+	@Override
+	public PassThroughOperationType getPassThroughOperation() {
 		return (PassThroughOperationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PassThroughOperation(), true);
 	}
 
@@ -9620,8 +9335,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPassThroughOperation(PassThroughOperationType newPassThroughOperation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPassThroughOperation(PassThroughOperationType newPassThroughOperation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PassThroughOperation(), newPassThroughOperation, msgs);
 	}
 
@@ -9630,8 +9344,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPassThroughOperation(PassThroughOperationType newPassThroughOperation)
-	{
+	@Override
+	public void setPassThroughOperation(PassThroughOperationType newPassThroughOperation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PassThroughOperation(), newPassThroughOperation);
 	}
 
@@ -9640,8 +9354,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PassThroughOperationPropertyType getPassThroughOperationRef()
-	{
+	@Override
+	public PassThroughOperationPropertyType getPassThroughOperationRef() {
 		return (PassThroughOperationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PassThroughOperationRef(), true);
 	}
 
@@ -9650,8 +9364,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPassThroughOperationRef(PassThroughOperationPropertyType newPassThroughOperationRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPassThroughOperationRef(PassThroughOperationPropertyType newPassThroughOperationRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PassThroughOperationRef(), newPassThroughOperationRef, msgs);
 	}
 
@@ -9660,8 +9373,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPassThroughOperationRef(PassThroughOperationPropertyType newPassThroughOperationRef)
-	{
+	@Override
+	public void setPassThroughOperationRef(PassThroughOperationPropertyType newPassThroughOperationRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PassThroughOperationRef(), newPassThroughOperationRef);
 	}
 
@@ -9670,8 +9383,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePatchArrayPropertyType getPatches()
-	{
+	@Override
+	public SurfacePatchArrayPropertyType getPatches() {
 		return (SurfacePatchArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Patches(), true);
 	}
 
@@ -9680,8 +9393,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPatches(SurfacePatchArrayPropertyType newPatches, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPatches(SurfacePatchArrayPropertyType newPatches, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Patches(), newPatches, msgs);
 	}
 
@@ -9690,8 +9402,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPatches(SurfacePatchArrayPropertyType newPatches)
-	{
+	@Override
+	public void setPatches(SurfacePatchArrayPropertyType newPatches) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Patches(), newPatches);
 	}
 
@@ -9700,8 +9412,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getPixelInCell()
-	{
+	@Override
+	public CodeWithAuthorityType getPixelInCell() {
 		return (CodeWithAuthorityType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PixelInCell(), true);
 	}
 
@@ -9710,8 +9422,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPixelInCell(CodeWithAuthorityType newPixelInCell, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPixelInCell(CodeWithAuthorityType newPixelInCell, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PixelInCell(), newPixelInCell, msgs);
 	}
 
@@ -9720,8 +9431,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPixelInCell(CodeWithAuthorityType newPixelInCell)
-	{
+	@Override
+	public void setPixelInCell(CodeWithAuthorityType newPixelInCell) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PixelInCell(), newPixelInCell);
 	}
 
@@ -9730,8 +9441,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointType getPoint()
-	{
+	@Override
+	public PointType getPoint() {
 		return (PointType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Point(), true);
 	}
 
@@ -9740,8 +9451,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPoint(PointType newPoint, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPoint(PointType newPoint, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Point(), newPoint, msgs);
 	}
 
@@ -9750,8 +9460,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPoint(PointType newPoint)
-	{
+	@Override
+	public void setPoint(PointType newPoint) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Point(), newPoint);
 	}
 
@@ -9760,8 +9470,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointArrayPropertyType getPointArrayProperty()
-	{
+	@Override
+	public PointArrayPropertyType getPointArrayProperty() {
 		return (PointArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PointArrayProperty(), true);
 	}
 
@@ -9770,8 +9480,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointArrayProperty(PointArrayPropertyType newPointArrayProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointArrayProperty(PointArrayPropertyType newPointArrayProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PointArrayProperty(), newPointArrayProperty, msgs);
 	}
 
@@ -9780,8 +9489,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointArrayProperty(PointArrayPropertyType newPointArrayProperty)
-	{
+	@Override
+	public void setPointArrayProperty(PointArrayPropertyType newPointArrayProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PointArrayProperty(), newPointArrayProperty);
 	}
 
@@ -9790,8 +9499,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType getPointMember()
-	{
+	@Override
+	public PointPropertyType getPointMember() {
 		return (PointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PointMember(), true);
 	}
 
@@ -9800,8 +9509,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointMember(PointPropertyType newPointMember, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointMember(PointPropertyType newPointMember, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PointMember(), newPointMember, msgs);
 	}
 
@@ -9810,8 +9518,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointMember(PointPropertyType newPointMember)
-	{
+	@Override
+	public void setPointMember(PointPropertyType newPointMember) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PointMember(), newPointMember);
 	}
 
@@ -9820,8 +9528,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointArrayPropertyType getPointMembers()
-	{
+	@Override
+	public PointArrayPropertyType getPointMembers() {
 		return (PointArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PointMembers(), true);
 	}
 
@@ -9830,8 +9538,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointMembers(PointArrayPropertyType newPointMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointMembers(PointArrayPropertyType newPointMembers, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PointMembers(), newPointMembers, msgs);
 	}
 
@@ -9840,8 +9547,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointMembers(PointArrayPropertyType newPointMembers)
-	{
+	@Override
+	public void setPointMembers(PointArrayPropertyType newPointMembers) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PointMembers(), newPointMembers);
 	}
 
@@ -9850,8 +9557,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType getPointProperty()
-	{
+	@Override
+	public PointPropertyType getPointProperty() {
 		return (PointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PointProperty(), true);
 	}
 
@@ -9860,8 +9567,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointProperty(PointPropertyType newPointProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointProperty(PointPropertyType newPointProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PointProperty(), newPointProperty, msgs);
 	}
 
@@ -9870,8 +9576,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointProperty(PointPropertyType newPointProperty)
-	{
+	@Override
+	public void setPointProperty(PointPropertyType newPointProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PointProperty(), newPointProperty);
 	}
 
@@ -9880,8 +9586,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType getPointRep()
-	{
+	@Override
+	public PointPropertyType getPointRep() {
 		return (PointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PointRep(), true);
 	}
 
@@ -9890,8 +9596,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointRep(PointPropertyType newPointRep, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPointRep(PointPropertyType newPointRep, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PointRep(), newPointRep, msgs);
 	}
 
@@ -9900,8 +9605,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPointRep(PointPropertyType newPointRep)
-	{
+	@Override
+	public void setPointRep(PointPropertyType newPointRep) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PointRep(), newPointRep);
 	}
 
@@ -9910,8 +9615,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolarCSPropertyType getPolarCS()
-	{
+	@Override
+	public PolarCSPropertyType getPolarCS() {
 		return (PolarCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PolarCS(), true);
 	}
 
@@ -9920,8 +9625,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPolarCS(PolarCSPropertyType newPolarCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPolarCS(PolarCSPropertyType newPolarCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PolarCS(), newPolarCS, msgs);
 	}
 
@@ -9930,8 +9634,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPolarCS(PolarCSPropertyType newPolarCS)
-	{
+	@Override
+	public void setPolarCS(PolarCSPropertyType newPolarCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PolarCS(), newPolarCS);
 	}
 
@@ -9940,8 +9644,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolarCSType getPolarCS1()
-	{
+	@Override
+	public PolarCSType getPolarCS1() {
 		return (PolarCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PolarCS1(), true);
 	}
 
@@ -9950,8 +9654,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPolarCS1(PolarCSType newPolarCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPolarCS1(PolarCSType newPolarCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PolarCS1(), newPolarCS1, msgs);
 	}
 
@@ -9960,8 +9663,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPolarCS1(PolarCSType newPolarCS1)
-	{
+	@Override
+	public void setPolarCS1(PolarCSType newPolarCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PolarCS1(), newPolarCS1);
 	}
 
@@ -9970,8 +9673,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolarCSPropertyType getPolarCSRef()
-	{
+	@Override
+	public PolarCSPropertyType getPolarCSRef() {
 		return (PolarCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PolarCSRef(), true);
 	}
 
@@ -9980,8 +9683,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPolarCSRef(PolarCSPropertyType newPolarCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPolarCSRef(PolarCSPropertyType newPolarCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PolarCSRef(), newPolarCSRef, msgs);
 	}
 
@@ -9990,8 +9692,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPolarCSRef(PolarCSPropertyType newPolarCSRef)
-	{
+	@Override
+	public void setPolarCSRef(PolarCSPropertyType newPolarCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PolarCSRef(), newPolarCSRef);
 	}
 
@@ -10000,8 +9702,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolygonType getPolygon()
-	{
+	@Override
+	public PolygonType getPolygon() {
 		return (PolygonType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Polygon(), true);
 	}
 
@@ -10010,8 +9712,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPolygon(PolygonType newPolygon, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPolygon(PolygonType newPolygon, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Polygon(), newPolygon, msgs);
 	}
 
@@ -10020,8 +9721,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPolygon(PolygonType newPolygon)
-	{
+	@Override
+	public void setPolygon(PolygonType newPolygon) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Polygon(), newPolygon);
 	}
 
@@ -10030,8 +9731,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolygonPatchType getPolygonPatch()
-	{
+	@Override
+	public PolygonPatchType getPolygonPatch() {
 		return (PolygonPatchType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PolygonPatch(), true);
 	}
 
@@ -10040,8 +9741,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPolygonPatch(PolygonPatchType newPolygonPatch, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPolygonPatch(PolygonPatchType newPolygonPatch, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PolygonPatch(), newPolygonPatch, msgs);
 	}
 
@@ -10050,8 +9750,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPolygonPatch(PolygonPatchType newPolygonPatch)
-	{
+	@Override
+	public void setPolygonPatch(PolygonPatchType newPolygonPatch) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PolygonPatch(), newPolygonPatch);
 	}
 
@@ -10060,8 +9760,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePatchArrayPropertyType getPolygonPatches()
-	{
+	@Override
+	public SurfacePatchArrayPropertyType getPolygonPatches() {
 		return (SurfacePatchArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PolygonPatches(), true);
 	}
 
@@ -10070,8 +9770,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPolygonPatches(SurfacePatchArrayPropertyType newPolygonPatches, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPolygonPatches(SurfacePatchArrayPropertyType newPolygonPatches, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PolygonPatches(), newPolygonPatches, msgs);
 	}
 
@@ -10080,8 +9779,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPolygonPatches(SurfacePatchArrayPropertyType newPolygonPatches)
-	{
+	@Override
+	public void setPolygonPatches(SurfacePatchArrayPropertyType newPolygonPatches) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PolygonPatches(), newPolygonPatches);
 	}
 
@@ -10090,8 +9789,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceType getPolyhedralSurface()
-	{
+	@Override
+	public SurfaceType getPolyhedralSurface() {
 		return (SurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PolyhedralSurface(), true);
 	}
 
@@ -10100,8 +9799,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPolyhedralSurface(SurfaceType newPolyhedralSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPolyhedralSurface(SurfaceType newPolyhedralSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PolyhedralSurface(), newPolyhedralSurface, msgs);
 	}
 
@@ -10110,8 +9808,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPolyhedralSurface(SurfaceType newPolyhedralSurface)
-	{
+	@Override
+	public void setPolyhedralSurface(SurfaceType newPolyhedralSurface) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PolyhedralSurface(), newPolyhedralSurface);
 	}
 
@@ -10120,8 +9818,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceType getSurface()
-	{
+	@Override
+	public SurfaceType getSurface() {
 		return (SurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Surface(), true);
 	}
 
@@ -10130,8 +9828,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSurface(SurfaceType newSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSurface(SurfaceType newSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Surface(), newSurface, msgs);
 	}
 
@@ -10140,8 +9837,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSurface(SurfaceType newSurface)
-	{
+	@Override
+	public void setSurface(SurfaceType newSurface) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Surface(), newSurface);
 	}
 
@@ -10150,8 +9847,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionType getPos()
-	{
+	@Override
+	public DirectPositionType getPos() {
 		return (DirectPositionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Pos(), true);
 	}
 
@@ -10160,8 +9857,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPos(DirectPositionType newPos, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPos(DirectPositionType newPos, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Pos(), newPos, msgs);
 	}
 
@@ -10170,8 +9866,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPos(DirectPositionType newPos)
-	{
+	@Override
+	public void setPos(DirectPositionType newPos) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Pos(), newPos);
 	}
 
@@ -10180,8 +9876,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType getPosition()
-	{
+	@Override
+	public PointPropertyType getPosition() {
 		return (PointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Position(), true);
 	}
 
@@ -10190,8 +9886,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPosition(PointPropertyType newPosition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPosition(PointPropertyType newPosition, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Position(), newPosition, msgs);
 	}
 
@@ -10200,8 +9895,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPosition(PointPropertyType newPosition)
-	{
+	@Override
+	public void setPosition(PointPropertyType newPosition) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Position(), newPosition);
 	}
 
@@ -10210,8 +9905,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionListType getPosList()
-	{
+	@Override
+	public DirectPositionListType getPosList() {
 		return (DirectPositionListType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PosList(), true);
 	}
 
@@ -10220,8 +9915,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PosList(), newPosList, msgs);
 	}
 
@@ -10230,8 +9924,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPosList(DirectPositionListType newPosList)
-	{
+	@Override
+	public void setPosList(DirectPositionListType newPosList) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PosList(), newPosList);
 	}
 
@@ -10240,8 +9934,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrimeMeridianPropertyType getPrimeMeridian()
-	{
+	@Override
+	public PrimeMeridianPropertyType getPrimeMeridian() {
 		return (PrimeMeridianPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PrimeMeridian(), true);
 	}
 
@@ -10250,8 +9944,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPrimeMeridian(PrimeMeridianPropertyType newPrimeMeridian, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPrimeMeridian(PrimeMeridianPropertyType newPrimeMeridian, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PrimeMeridian(), newPrimeMeridian, msgs);
 	}
 
@@ -10260,8 +9953,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPrimeMeridian(PrimeMeridianPropertyType newPrimeMeridian)
-	{
+	@Override
+	public void setPrimeMeridian(PrimeMeridianPropertyType newPrimeMeridian) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PrimeMeridian(), newPrimeMeridian);
 	}
 
@@ -10270,8 +9963,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrimeMeridianType getPrimeMeridian1()
-	{
+	@Override
+	public PrimeMeridianType getPrimeMeridian1() {
 		return (PrimeMeridianType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PrimeMeridian1(), true);
 	}
 
@@ -10280,8 +9973,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPrimeMeridian1(PrimeMeridianType newPrimeMeridian1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPrimeMeridian1(PrimeMeridianType newPrimeMeridian1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PrimeMeridian1(), newPrimeMeridian1, msgs);
 	}
 
@@ -10290,8 +9982,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPrimeMeridian1(PrimeMeridianType newPrimeMeridian1)
-	{
+	@Override
+	public void setPrimeMeridian1(PrimeMeridianType newPrimeMeridian1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PrimeMeridian1(), newPrimeMeridian1);
 	}
 
@@ -10300,8 +9992,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrimeMeridianPropertyType getPrimeMeridianRef()
-	{
+	@Override
+	public PrimeMeridianPropertyType getPrimeMeridianRef() {
 		return (PrimeMeridianPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PrimeMeridianRef(), true);
 	}
 
@@ -10310,8 +10002,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPrimeMeridianRef(PrimeMeridianPropertyType newPrimeMeridianRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPrimeMeridianRef(PrimeMeridianPropertyType newPrimeMeridianRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PrimeMeridianRef(), newPrimeMeridianRef, msgs);
 	}
 
@@ -10320,8 +10011,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPrimeMeridianRef(PrimeMeridianPropertyType newPrimeMeridianRef)
-	{
+	@Override
+	public void setPrimeMeridianRef(PrimeMeridianPropertyType newPrimeMeridianRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PrimeMeridianRef(), newPrimeMeridianRef);
 	}
 
@@ -10330,8 +10021,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PriorityLocationPropertyType getPriorityLocation()
-	{
+	@Override
+	public PriorityLocationPropertyType getPriorityLocation() {
 		return (PriorityLocationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_PriorityLocation(), true);
 	}
 
@@ -10340,8 +10031,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPriorityLocation(PriorityLocationPropertyType newPriorityLocation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPriorityLocation(PriorityLocationPropertyType newPriorityLocation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_PriorityLocation(), newPriorityLocation, msgs);
 	}
 
@@ -10350,8 +10040,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPriorityLocation(PriorityLocationPropertyType newPriorityLocation)
-	{
+	@Override
+	public void setPriorityLocation(PriorityLocationPropertyType newPriorityLocation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_PriorityLocation(), newPriorityLocation);
 	}
 
@@ -10360,8 +10050,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProjectedCRSType getProjectedCRS()
-	{
+	@Override
+	public ProjectedCRSType getProjectedCRS() {
 		return (ProjectedCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ProjectedCRS(), true);
 	}
 
@@ -10370,8 +10060,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetProjectedCRS(ProjectedCRSType newProjectedCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetProjectedCRS(ProjectedCRSType newProjectedCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ProjectedCRS(), newProjectedCRS, msgs);
 	}
 
@@ -10380,8 +10069,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProjectedCRS(ProjectedCRSType newProjectedCRS)
-	{
+	@Override
+	public void setProjectedCRS(ProjectedCRSType newProjectedCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ProjectedCRS(), newProjectedCRS);
 	}
 
@@ -10390,8 +10079,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProjectedCRSPropertyType getProjectedCRSRef()
-	{
+	@Override
+	public ProjectedCRSPropertyType getProjectedCRSRef() {
 		return (ProjectedCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ProjectedCRSRef(), true);
 	}
 
@@ -10400,8 +10089,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetProjectedCRSRef(ProjectedCRSPropertyType newProjectedCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetProjectedCRSRef(ProjectedCRSPropertyType newProjectedCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ProjectedCRSRef(), newProjectedCRSRef, msgs);
 	}
 
@@ -10410,8 +10098,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProjectedCRSRef(ProjectedCRSPropertyType newProjectedCRSRef)
-	{
+	@Override
+	public void setProjectedCRSRef(ProjectedCRSPropertyType newProjectedCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ProjectedCRSRef(), newProjectedCRSRef);
 	}
 
@@ -10420,8 +10108,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public QuantityType getQuantity()
-	{
+	@Override
+	public QuantityType getQuantity() {
 		return (QuantityType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Quantity(), true);
 	}
 
@@ -10430,8 +10118,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetQuantity(QuantityType newQuantity, NotificationChain msgs)
-	{
+	public NotificationChain basicSetQuantity(QuantityType newQuantity, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Quantity(), newQuantity, msgs);
 	}
 
@@ -10440,8 +10127,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQuantity(QuantityType newQuantity)
-	{
+	@Override
+	public void setQuantity(QuantityType newQuantity) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Quantity(), newQuantity);
 	}
 
@@ -10450,8 +10137,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public QuantityExtentType getQuantityExtent()
-	{
+	@Override
+	public QuantityExtentType getQuantityExtent() {
 		return (QuantityExtentType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_QuantityExtent(), true);
 	}
 
@@ -10460,8 +10147,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetQuantityExtent(QuantityExtentType newQuantityExtent, NotificationChain msgs)
-	{
+	public NotificationChain basicSetQuantityExtent(QuantityExtentType newQuantityExtent, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_QuantityExtent(), newQuantityExtent, msgs);
 	}
 
@@ -10470,8 +10156,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQuantityExtent(QuantityExtentType newQuantityExtent)
-	{
+	@Override
+	public void setQuantityExtent(QuantityExtentType newQuantityExtent) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_QuantityExtent(), newQuantityExtent);
 	}
 
@@ -10480,8 +10166,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureOrNilReasonListType getQuantityList()
-	{
+	@Override
+	public MeasureOrNilReasonListType getQuantityList() {
 		return (MeasureOrNilReasonListType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_QuantityList(), true);
 	}
 
@@ -10490,8 +10176,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetQuantityList(MeasureOrNilReasonListType newQuantityList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetQuantityList(MeasureOrNilReasonListType newQuantityList, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_QuantityList(), newQuantityList, msgs);
 	}
 
@@ -10500,8 +10185,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQuantityList(MeasureOrNilReasonListType newQuantityList)
-	{
+	@Override
+	public void setQuantityList(MeasureOrNilReasonListType newQuantityList) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_QuantityList(), newQuantityList);
 	}
 
@@ -10510,8 +10195,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getQuantityType()
-	{
+	@Override
+	public StringOrRefType getQuantityType() {
 		return (StringOrRefType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_QuantityType(), true);
 	}
 
@@ -10520,8 +10205,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetQuantityType(StringOrRefType newQuantityType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetQuantityType(StringOrRefType newQuantityType, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_QuantityType(), newQuantityType, msgs);
 	}
 
@@ -10530,8 +10214,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQuantityType(StringOrRefType newQuantityType)
-	{
+	@Override
+	public void setQuantityType(StringOrRefType newQuantityType) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_QuantityType(), newQuantityType);
 	}
 
@@ -10540,8 +10224,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getQuantityTypeReference()
-	{
+	@Override
+	public ReferenceType getQuantityTypeReference() {
 		return (ReferenceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_QuantityTypeReference(), true);
 	}
 
@@ -10550,8 +10234,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetQuantityTypeReference(ReferenceType newQuantityTypeReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetQuantityTypeReference(ReferenceType newQuantityTypeReference, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_QuantityTypeReference(), newQuantityTypeReference, msgs);
 	}
 
@@ -10560,8 +10243,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQuantityTypeReference(ReferenceType newQuantityTypeReference)
-	{
+	@Override
+	public void setQuantityTypeReference(ReferenceType newQuantityTypeReference) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_QuantityTypeReference(), newQuantityTypeReference);
 	}
 
@@ -10570,8 +10253,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getRangeMeaning()
-	{
+	@Override
+	public CodeWithAuthorityType getRangeMeaning() {
 		return (CodeWithAuthorityType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_RangeMeaning(), true);
 	}
 
@@ -10580,8 +10263,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRangeMeaning(CodeWithAuthorityType newRangeMeaning, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRangeMeaning(CodeWithAuthorityType newRangeMeaning, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_RangeMeaning(), newRangeMeaning, msgs);
 	}
 
@@ -10590,8 +10272,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRangeMeaning(CodeWithAuthorityType newRangeMeaning)
-	{
+	@Override
+	public void setRangeMeaning(CodeWithAuthorityType newRangeMeaning) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_RangeMeaning(), newRangeMeaning);
 	}
 
@@ -10600,8 +10282,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssociationRoleType getRangeParameters()
-	{
+	@Override
+	public AssociationRoleType getRangeParameters() {
 		return (AssociationRoleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_RangeParameters(), true);
 	}
 
@@ -10610,8 +10292,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRangeParameters(AssociationRoleType newRangeParameters, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRangeParameters(AssociationRoleType newRangeParameters, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_RangeParameters(), newRangeParameters, msgs);
 	}
 
@@ -10620,8 +10301,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRangeParameters(AssociationRoleType newRangeParameters)
-	{
+	@Override
+	public void setRangeParameters(AssociationRoleType newRangeParameters) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_RangeParameters(), newRangeParameters);
 	}
 
@@ -10630,8 +10311,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RangeSetType getRangeSet()
-	{
+	@Override
+	public RangeSetType getRangeSet() {
 		return (RangeSetType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_RangeSet(), true);
 	}
 
@@ -10640,8 +10321,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRangeSet(RangeSetType newRangeSet, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRangeSet(RangeSetType newRangeSet, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_RangeSet(), newRangeSet, msgs);
 	}
 
@@ -10650,8 +10330,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRangeSet(RangeSetType newRangeSet)
-	{
+	@Override
+	public void setRangeSet(RangeSetType newRangeSet) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_RangeSet(), newRangeSet);
 	}
 
@@ -10660,8 +10340,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getRealizationEpoch()
-	{
+	@Override
+	public XMLGregorianCalendar getRealizationEpoch() {
 		return (XMLGregorianCalendar)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_RealizationEpoch(), true);
 	}
 
@@ -10670,8 +10350,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRealizationEpoch(XMLGregorianCalendar newRealizationEpoch)
-	{
+	@Override
+	public void setRealizationEpoch(XMLGregorianCalendar newRealizationEpoch) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_RealizationEpoch(), newRealizationEpoch);
 	}
 
@@ -10680,8 +10360,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RectangleType getRectangle()
-	{
+	@Override
+	public RectangleType getRectangle() {
 		return (RectangleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Rectangle(), true);
 	}
 
@@ -10690,8 +10370,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRectangle(RectangleType newRectangle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRectangle(RectangleType newRectangle, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Rectangle(), newRectangle, msgs);
 	}
 
@@ -10700,8 +10379,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRectangle(RectangleType newRectangle)
-	{
+	@Override
+	public void setRectangle(RectangleType newRectangle) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Rectangle(), newRectangle);
 	}
 
@@ -10710,8 +10389,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RectifiedGridType getRectifiedGrid()
-	{
+	@Override
+	public RectifiedGridType getRectifiedGrid() {
 		return (RectifiedGridType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_RectifiedGrid(), true);
 	}
 
@@ -10720,8 +10399,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRectifiedGrid(RectifiedGridType newRectifiedGrid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRectifiedGrid(RectifiedGridType newRectifiedGrid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_RectifiedGrid(), newRectifiedGrid, msgs);
 	}
 
@@ -10730,8 +10408,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRectifiedGrid(RectifiedGridType newRectifiedGrid)
-	{
+	@Override
+	public void setRectifiedGrid(RectifiedGridType newRectifiedGrid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_RectifiedGrid(), newRectifiedGrid);
 	}
 
@@ -10740,8 +10418,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscreteCoverageType getRectifiedGridCoverage()
-	{
+	@Override
+	public DiscreteCoverageType getRectifiedGridCoverage() {
 		return (DiscreteCoverageType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_RectifiedGridCoverage(), true);
 	}
 
@@ -10750,8 +10428,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRectifiedGridCoverage(DiscreteCoverageType newRectifiedGridCoverage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRectifiedGridCoverage(DiscreteCoverageType newRectifiedGridCoverage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_RectifiedGridCoverage(), newRectifiedGridCoverage, msgs);
 	}
 
@@ -10760,8 +10437,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRectifiedGridCoverage(DiscreteCoverageType newRectifiedGridCoverage)
-	{
+	@Override
+	public void setRectifiedGridCoverage(DiscreteCoverageType newRectifiedGridCoverage) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_RectifiedGridCoverage(), newRectifiedGridCoverage);
 	}
 
@@ -10770,8 +10447,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainSetType getRectifiedGridDomain()
-	{
+	@Override
+	public DomainSetType getRectifiedGridDomain() {
 		return (DomainSetType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_RectifiedGridDomain(), true);
 	}
 
@@ -10780,8 +10457,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRectifiedGridDomain(DomainSetType newRectifiedGridDomain, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRectifiedGridDomain(DomainSetType newRectifiedGridDomain, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_RectifiedGridDomain(), newRectifiedGridDomain, msgs);
 	}
 
@@ -10790,8 +10466,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRectifiedGridDomain(DomainSetType newRectifiedGridDomain)
-	{
+	@Override
+	public void setRectifiedGridDomain(DomainSetType newRectifiedGridDomain) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_RectifiedGridDomain(), newRectifiedGridDomain);
 	}
 
@@ -10800,8 +10476,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CRSPropertyType getReferenceSystemRef()
-	{
+	@Override
+	public CRSPropertyType getReferenceSystemRef() {
 		return (CRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ReferenceSystemRef(), true);
 	}
 
@@ -10810,8 +10486,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetReferenceSystemRef(CRSPropertyType newReferenceSystemRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetReferenceSystemRef(CRSPropertyType newReferenceSystemRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ReferenceSystemRef(), newReferenceSystemRef, msgs);
 	}
 
@@ -10820,8 +10495,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReferenceSystemRef(CRSPropertyType newReferenceSystemRef)
-	{
+	@Override
+	public void setReferenceSystemRef(CRSPropertyType newReferenceSystemRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ReferenceSystemRef(), newReferenceSystemRef);
 	}
 
@@ -10830,8 +10505,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemarks()
-	{
+	@Override
+	public String getRemarks() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Remarks(), true);
 	}
 
@@ -10840,8 +10515,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemarks(String newRemarks)
-	{
+	@Override
+	public void setRemarks(String newRemarks) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Remarks(), newRemarks);
 	}
 
@@ -10850,8 +10525,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResultType getResultOf()
-	{
+	@Override
+	public ResultType getResultOf() {
 		return (ResultType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ResultOf(), true);
 	}
 
@@ -10860,8 +10535,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetResultOf(ResultType newResultOf, NotificationChain msgs)
-	{
+	public NotificationChain basicSetResultOf(ResultType newResultOf, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ResultOf(), newResultOf, msgs);
 	}
 
@@ -10870,8 +10544,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setResultOf(ResultType newResultOf)
-	{
+	@Override
+	public void setResultOf(ResultType newResultOf) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ResultOf(), newResultOf);
 	}
 
@@ -10880,8 +10554,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getReversePropertyName()
-	{
+	@Override
+	public String getReversePropertyName() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ReversePropertyName(), true);
 	}
 
@@ -10890,8 +10564,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReversePropertyName(String newReversePropertyName)
-	{
+	@Override
+	public void setReversePropertyName(String newReversePropertyName) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ReversePropertyName(), newReversePropertyName);
 	}
 
@@ -10900,8 +10574,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RingType getRing()
-	{
+	@Override
+	public RingType getRing() {
 		return (RingType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Ring(), true);
 	}
 
@@ -10910,8 +10584,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRing(RingType newRing, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRing(RingType newRing, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Ring(), newRing, msgs);
 	}
 
@@ -10920,8 +10593,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRing(RingType newRing)
-	{
+	@Override
+	public void setRing(RingType newRing) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Ring(), newRing);
 	}
 
@@ -10930,8 +10603,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConversionToPreferredUnitType getRoughConversionToPreferredUnit()
-	{
+	@Override
+	public ConversionToPreferredUnitType getRoughConversionToPreferredUnit() {
 		return (ConversionToPreferredUnitType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_RoughConversionToPreferredUnit(), true);
 	}
 
@@ -10940,8 +10613,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRoughConversionToPreferredUnit(ConversionToPreferredUnitType newRoughConversionToPreferredUnit, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRoughConversionToPreferredUnit(ConversionToPreferredUnitType newRoughConversionToPreferredUnit, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_RoughConversionToPreferredUnit(), newRoughConversionToPreferredUnit, msgs);
 	}
 
@@ -10950,8 +10622,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRoughConversionToPreferredUnit(ConversionToPreferredUnitType newRoughConversionToPreferredUnit)
-	{
+	@Override
+	public void setRoughConversionToPreferredUnit(ConversionToPreferredUnitType newRoughConversionToPreferredUnit) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_RoughConversionToPreferredUnit(), newRoughConversionToPreferredUnit);
 	}
 
@@ -10960,8 +10632,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getScope()
-	{
+	@Override
+	public String getScope() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Scope(), true);
 	}
 
@@ -10970,8 +10642,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setScope(String newScope)
-	{
+	@Override
+	public void setScope(String newScope) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Scope(), newScope);
 	}
 
@@ -10980,8 +10652,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SecondDefiningParameterType1 getSecondDefiningParameter()
-	{
+	@Override
+	public SecondDefiningParameterType1 getSecondDefiningParameter() {
 		return (SecondDefiningParameterType1)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SecondDefiningParameter(), true);
 	}
 
@@ -10990,8 +10662,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSecondDefiningParameter(SecondDefiningParameterType1 newSecondDefiningParameter, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSecondDefiningParameter(SecondDefiningParameterType1 newSecondDefiningParameter, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SecondDefiningParameter(), newSecondDefiningParameter, msgs);
 	}
 
@@ -11000,8 +10671,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSecondDefiningParameter(SecondDefiningParameterType1 newSecondDefiningParameter)
-	{
+	@Override
+	public void setSecondDefiningParameter(SecondDefiningParameterType1 newSecondDefiningParameter) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SecondDefiningParameter(), newSecondDefiningParameter);
 	}
 
@@ -11010,8 +10681,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SecondDefiningParameterType getSecondDefiningParameter1()
-	{
+	@Override
+	public SecondDefiningParameterType getSecondDefiningParameter1() {
 		return (SecondDefiningParameterType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SecondDefiningParameter1(), true);
 	}
 
@@ -11020,8 +10691,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSecondDefiningParameter1(SecondDefiningParameterType newSecondDefiningParameter1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSecondDefiningParameter1(SecondDefiningParameterType newSecondDefiningParameter1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SecondDefiningParameter1(), newSecondDefiningParameter1, msgs);
 	}
 
@@ -11030,8 +10700,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSecondDefiningParameter1(SecondDefiningParameterType newSecondDefiningParameter1)
-	{
+	@Override
+	public void setSecondDefiningParameter1(SecondDefiningParameterType newSecondDefiningParameter1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SecondDefiningParameter1(), newSecondDefiningParameter1);
 	}
 
@@ -11040,8 +10710,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal getSeconds()
-	{
+	@Override
+	public BigDecimal getSeconds() {
 		return (BigDecimal)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Seconds(), true);
 	}
 
@@ -11050,8 +10720,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSeconds(BigDecimal newSeconds)
-	{
+	@Override
+	public void setSeconds(BigDecimal newSeconds) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Seconds(), newSeconds);
 	}
 
@@ -11060,8 +10730,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveSegmentArrayPropertyType getSegments()
-	{
+	@Override
+	public CurveSegmentArrayPropertyType getSegments() {
 		return (CurveSegmentArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Segments(), true);
 	}
 
@@ -11070,8 +10740,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSegments(CurveSegmentArrayPropertyType newSegments, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSegments(CurveSegmentArrayPropertyType newSegments, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Segments(), newSegments, msgs);
 	}
 
@@ -11080,8 +10749,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSegments(CurveSegmentArrayPropertyType newSegments)
-	{
+	@Override
+	public void setSegments(CurveSegmentArrayPropertyType newSegments) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Segments(), newSegments);
 	}
 
@@ -11090,8 +10759,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getSemiMajorAxis()
-	{
+	@Override
+	public MeasureType getSemiMajorAxis() {
 		return (MeasureType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SemiMajorAxis(), true);
 	}
 
@@ -11100,8 +10769,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSemiMajorAxis(MeasureType newSemiMajorAxis, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSemiMajorAxis(MeasureType newSemiMajorAxis, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SemiMajorAxis(), newSemiMajorAxis, msgs);
 	}
 
@@ -11110,8 +10778,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSemiMajorAxis(MeasureType newSemiMajorAxis)
-	{
+	@Override
+	public void setSemiMajorAxis(MeasureType newSemiMajorAxis) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SemiMajorAxis(), newSemiMajorAxis);
 	}
 
@@ -11120,8 +10788,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShellType getShell()
-	{
+	@Override
+	public ShellType getShell() {
 		return (ShellType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Shell(), true);
 	}
 
@@ -11130,8 +10798,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetShell(ShellType newShell, NotificationChain msgs)
-	{
+	public NotificationChain basicSetShell(ShellType newShell, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Shell(), newShell, msgs);
 	}
 
@@ -11140,8 +10807,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShell(ShellType newShell)
-	{
+	@Override
+	public void setShell(ShellType newShell) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Shell(), newShell);
 	}
 
@@ -11150,8 +10817,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SingleCRSPropertyType getSingleCRSRef()
-	{
+	@Override
+	public SingleCRSPropertyType getSingleCRSRef() {
 		return (SingleCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SingleCRSRef(), true);
 	}
 
@@ -11160,8 +10827,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSingleCRSRef(SingleCRSPropertyType newSingleCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSingleCRSRef(SingleCRSPropertyType newSingleCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SingleCRSRef(), newSingleCRSRef, msgs);
 	}
 
@@ -11170,8 +10836,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSingleCRSRef(SingleCRSPropertyType newSingleCRSRef)
-	{
+	@Override
+	public void setSingleCRSRef(SingleCRSPropertyType newSingleCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SingleCRSRef(), newSingleCRSRef);
 	}
 
@@ -11180,8 +10846,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SingleOperationPropertyType getSingleOperationRef()
-	{
+	@Override
+	public SingleOperationPropertyType getSingleOperationRef() {
 		return (SingleOperationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SingleOperationRef(), true);
 	}
 
@@ -11190,8 +10856,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSingleOperationRef(SingleOperationPropertyType newSingleOperationRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSingleOperationRef(SingleOperationPropertyType newSingleOperationRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SingleOperationRef(), newSingleOperationRef, msgs);
 	}
 
@@ -11200,8 +10865,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSingleOperationRef(SingleOperationPropertyType newSingleOperationRef)
-	{
+	@Override
+	public void setSingleOperationRef(SingleOperationPropertyType newSingleOperationRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SingleOperationRef(), newSingleOperationRef);
 	}
 
@@ -11210,8 +10875,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidType getSolid()
-	{
+	@Override
+	public SolidType getSolid() {
 		return (SolidType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Solid(), true);
 	}
 
@@ -11220,8 +10885,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSolid(SolidType newSolid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSolid(SolidType newSolid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Solid(), newSolid, msgs);
 	}
 
@@ -11230,8 +10894,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSolid(SolidType newSolid)
-	{
+	@Override
+	public void setSolid(SolidType newSolid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Solid(), newSolid);
 	}
 
@@ -11240,8 +10904,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidArrayPropertyType getSolidArrayProperty()
-	{
+	@Override
+	public SolidArrayPropertyType getSolidArrayProperty() {
 		return (SolidArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SolidArrayProperty(), true);
 	}
 
@@ -11250,8 +10914,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSolidArrayProperty(SolidArrayPropertyType newSolidArrayProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSolidArrayProperty(SolidArrayPropertyType newSolidArrayProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SolidArrayProperty(), newSolidArrayProperty, msgs);
 	}
 
@@ -11260,8 +10923,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSolidArrayProperty(SolidArrayPropertyType newSolidArrayProperty)
-	{
+	@Override
+	public void setSolidArrayProperty(SolidArrayPropertyType newSolidArrayProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SolidArrayProperty(), newSolidArrayProperty);
 	}
 
@@ -11270,8 +10933,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidPropertyType getSolidMember()
-	{
+	@Override
+	public SolidPropertyType getSolidMember() {
 		return (SolidPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SolidMember(), true);
 	}
 
@@ -11280,8 +10943,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSolidMember(SolidPropertyType newSolidMember, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSolidMember(SolidPropertyType newSolidMember, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SolidMember(), newSolidMember, msgs);
 	}
 
@@ -11290,8 +10952,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSolidMember(SolidPropertyType newSolidMember)
-	{
+	@Override
+	public void setSolidMember(SolidPropertyType newSolidMember) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SolidMember(), newSolidMember);
 	}
 
@@ -11300,8 +10962,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidArrayPropertyType getSolidMembers()
-	{
+	@Override
+	public SolidArrayPropertyType getSolidMembers() {
 		return (SolidArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SolidMembers(), true);
 	}
 
@@ -11310,8 +10972,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSolidMembers(SolidArrayPropertyType newSolidMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSolidMembers(SolidArrayPropertyType newSolidMembers, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SolidMembers(), newSolidMembers, msgs);
 	}
 
@@ -11320,8 +10981,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSolidMembers(SolidArrayPropertyType newSolidMembers)
-	{
+	@Override
+	public void setSolidMembers(SolidArrayPropertyType newSolidMembers) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SolidMembers(), newSolidMembers);
 	}
 
@@ -11330,8 +10991,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidPropertyType getSolidProperty()
-	{
+	@Override
+	public SolidPropertyType getSolidProperty() {
 		return (SolidPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SolidProperty(), true);
 	}
 
@@ -11340,8 +11001,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSolidProperty(SolidPropertyType newSolidProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSolidProperty(SolidPropertyType newSolidProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SolidProperty(), newSolidProperty, msgs);
 	}
 
@@ -11350,8 +11010,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSolidProperty(SolidPropertyType newSolidProperty)
-	{
+	@Override
+	public void setSolidProperty(SolidPropertyType newSolidProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SolidProperty(), newSolidProperty);
 	}
 
@@ -11360,8 +11020,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CRSPropertyType getSourceCRS()
-	{
+	@Override
+	public CRSPropertyType getSourceCRS() {
 		return (CRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SourceCRS(), true);
 	}
 
@@ -11370,8 +11030,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSourceCRS(CRSPropertyType newSourceCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSourceCRS(CRSPropertyType newSourceCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SourceCRS(), newSourceCRS, msgs);
 	}
 
@@ -11380,8 +11039,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceCRS(CRSPropertyType newSourceCRS)
-	{
+	@Override
+	public void setSourceCRS(CRSPropertyType newSourceCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SourceCRS(), newSourceCRS);
 	}
 
@@ -11390,8 +11049,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getSourceDimensions()
-	{
+	@Override
+	public BigInteger getSourceDimensions() {
 		return (BigInteger)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SourceDimensions(), true);
 	}
 
@@ -11400,8 +11059,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceDimensions(BigInteger newSourceDimensions)
-	{
+	@Override
+	public void setSourceDimensions(BigInteger newSourceDimensions) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SourceDimensions(), newSourceDimensions);
 	}
 
@@ -11410,8 +11069,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphereType getSphere()
-	{
+	@Override
+	public SphereType getSphere() {
 		return (SphereType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Sphere(), true);
 	}
 
@@ -11420,8 +11079,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSphere(SphereType newSphere, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSphere(SphereType newSphere, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Sphere(), newSphere, msgs);
 	}
 
@@ -11430,8 +11088,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSphere(SphereType newSphere)
-	{
+	@Override
+	public void setSphere(SphereType newSphere) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Sphere(), newSphere);
 	}
 
@@ -11440,8 +11098,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphericalCSPropertyType getSphericalCS()
-	{
+	@Override
+	public SphericalCSPropertyType getSphericalCS() {
 		return (SphericalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SphericalCS(), true);
 	}
 
@@ -11450,8 +11108,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSphericalCS(SphericalCSPropertyType newSphericalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSphericalCS(SphericalCSPropertyType newSphericalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SphericalCS(), newSphericalCS, msgs);
 	}
 
@@ -11460,8 +11117,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSphericalCS(SphericalCSPropertyType newSphericalCS)
-	{
+	@Override
+	public void setSphericalCS(SphericalCSPropertyType newSphericalCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SphericalCS(), newSphericalCS);
 	}
 
@@ -11470,8 +11127,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphericalCSType getSphericalCS1()
-	{
+	@Override
+	public SphericalCSType getSphericalCS1() {
 		return (SphericalCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SphericalCS1(), true);
 	}
 
@@ -11480,8 +11137,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSphericalCS1(SphericalCSType newSphericalCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSphericalCS1(SphericalCSType newSphericalCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SphericalCS1(), newSphericalCS1, msgs);
 	}
 
@@ -11490,8 +11146,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSphericalCS1(SphericalCSType newSphericalCS1)
-	{
+	@Override
+	public void setSphericalCS1(SphericalCSType newSphericalCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SphericalCS1(), newSphericalCS1);
 	}
 
@@ -11500,8 +11156,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphericalCSPropertyType getSphericalCSRef()
-	{
+	@Override
+	public SphericalCSPropertyType getSphericalCSRef() {
 		return (SphericalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SphericalCSRef(), true);
 	}
 
@@ -11510,8 +11166,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSphericalCSRef(SphericalCSPropertyType newSphericalCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSphericalCSRef(SphericalCSPropertyType newSphericalCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SphericalCSRef(), newSphericalCSRef, msgs);
 	}
 
@@ -11520,8 +11175,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSphericalCSRef(SphericalCSPropertyType newSphericalCSRef)
-	{
+	@Override
+	public void setSphericalCSRef(SphericalCSPropertyType newSphericalCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SphericalCSRef(), newSphericalCSRef);
 	}
 
@@ -11530,8 +11185,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getStatus()
-	{
+	@Override
+	public StringOrRefType getStatus() {
 		return (StringOrRefType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Status(), true);
 	}
 
@@ -11540,8 +11195,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetStatus(StringOrRefType newStatus, NotificationChain msgs)
-	{
+	public NotificationChain basicSetStatus(StringOrRefType newStatus, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Status(), newStatus, msgs);
 	}
 
@@ -11550,8 +11204,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStatus(StringOrRefType newStatus)
-	{
+	@Override
+	public void setStatus(StringOrRefType newStatus) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Status(), newStatus);
 	}
 
@@ -11560,8 +11214,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getStatusReference()
-	{
+	@Override
+	public ReferenceType getStatusReference() {
 		return (ReferenceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_StatusReference(), true);
 	}
 
@@ -11570,8 +11224,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetStatusReference(ReferenceType newStatusReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetStatusReference(ReferenceType newStatusReference, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_StatusReference(), newStatusReference, msgs);
 	}
 
@@ -11580,8 +11233,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStatusReference(ReferenceType newStatusReference)
-	{
+	@Override
+	public void setStatusReference(ReferenceType newStatusReference) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_StatusReference(), newStatusReference);
 	}
 
@@ -11590,8 +11243,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getStringValue()
-	{
+	@Override
+	public String getStringValue() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_StringValue(), true);
 	}
 
@@ -11600,8 +11253,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStringValue(String newStringValue)
-	{
+	@Override
+	public void setStringValue(String newStringValue) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_StringValue(), newStringValue);
 	}
 
@@ -11610,8 +11263,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoComplexPropertyType getSubComplex()
-	{
+	@Override
+	public TopoComplexPropertyType getSubComplex() {
 		return (TopoComplexPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SubComplex(), true);
 	}
 
@@ -11620,8 +11273,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSubComplex(TopoComplexPropertyType newSubComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSubComplex(TopoComplexPropertyType newSubComplex, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SubComplex(), newSubComplex, msgs);
 	}
 
@@ -11630,8 +11282,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSubComplex(TopoComplexPropertyType newSubComplex)
-	{
+	@Override
+	public void setSubComplex(TopoComplexPropertyType newSubComplex) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SubComplex(), newSubComplex);
 	}
 
@@ -11640,8 +11292,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TargetPropertyType getSubject()
-	{
+	@Override
+	public TargetPropertyType getSubject() {
 		return (TargetPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Subject(), true);
 	}
 
@@ -11650,8 +11302,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSubject(TargetPropertyType newSubject, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSubject(TargetPropertyType newSubject, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Subject(), newSubject, msgs);
 	}
 
@@ -11660,8 +11311,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSubject(TargetPropertyType newSubject)
-	{
+	@Override
+	public void setSubject(TargetPropertyType newSubject) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Subject(), newSubject);
 	}
 
@@ -11670,8 +11321,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TargetPropertyType getTarget()
-	{
+	@Override
+	public TargetPropertyType getTarget() {
 		return (TargetPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Target(), true);
 	}
 
@@ -11680,8 +11331,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTarget(TargetPropertyType newTarget, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTarget(TargetPropertyType newTarget, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Target(), newTarget, msgs);
 	}
 
@@ -11690,8 +11340,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTarget(TargetPropertyType newTarget)
-	{
+	@Override
+	public void setTarget(TargetPropertyType newTarget) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Target(), newTarget);
 	}
 
@@ -11700,8 +11350,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoComplexPropertyType getSuperComplex()
-	{
+	@Override
+	public TopoComplexPropertyType getSuperComplex() {
 		return (TopoComplexPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SuperComplex(), true);
 	}
 
@@ -11710,8 +11360,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSuperComplex(TopoComplexPropertyType newSuperComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSuperComplex(TopoComplexPropertyType newSuperComplex, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SuperComplex(), newSuperComplex, msgs);
 	}
 
@@ -11720,8 +11369,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSuperComplex(TopoComplexPropertyType newSuperComplex)
-	{
+	@Override
+	public void setSuperComplex(TopoComplexPropertyType newSuperComplex) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SuperComplex(), newSuperComplex);
 	}
 
@@ -11730,8 +11379,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceArrayPropertyType getSurfaceArrayProperty()
-	{
+	@Override
+	public SurfaceArrayPropertyType getSurfaceArrayProperty() {
 		return (SurfaceArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceArrayProperty(), true);
 	}
 
@@ -11740,8 +11389,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSurfaceArrayProperty(SurfaceArrayPropertyType newSurfaceArrayProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSurfaceArrayProperty(SurfaceArrayPropertyType newSurfaceArrayProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceArrayProperty(), newSurfaceArrayProperty, msgs);
 	}
 
@@ -11750,8 +11398,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSurfaceArrayProperty(SurfaceArrayPropertyType newSurfaceArrayProperty)
-	{
+	@Override
+	public void setSurfaceArrayProperty(SurfaceArrayPropertyType newSurfaceArrayProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceArrayProperty(), newSurfaceArrayProperty);
 	}
 
@@ -11760,8 +11408,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePropertyType getSurfaceMember()
-	{
+	@Override
+	public SurfacePropertyType getSurfaceMember() {
 		return (SurfacePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceMember(), true);
 	}
 
@@ -11770,8 +11418,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSurfaceMember(SurfacePropertyType newSurfaceMember, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSurfaceMember(SurfacePropertyType newSurfaceMember, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceMember(), newSurfaceMember, msgs);
 	}
 
@@ -11780,8 +11427,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSurfaceMember(SurfacePropertyType newSurfaceMember)
-	{
+	@Override
+	public void setSurfaceMember(SurfacePropertyType newSurfaceMember) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceMember(), newSurfaceMember);
 	}
 
@@ -11790,8 +11437,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceArrayPropertyType getSurfaceMembers()
-	{
+	@Override
+	public SurfaceArrayPropertyType getSurfaceMembers() {
 		return (SurfaceArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceMembers(), true);
 	}
 
@@ -11800,8 +11447,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSurfaceMembers(SurfaceArrayPropertyType newSurfaceMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSurfaceMembers(SurfaceArrayPropertyType newSurfaceMembers, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceMembers(), newSurfaceMembers, msgs);
 	}
 
@@ -11810,8 +11456,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSurfaceMembers(SurfaceArrayPropertyType newSurfaceMembers)
-	{
+	@Override
+	public void setSurfaceMembers(SurfaceArrayPropertyType newSurfaceMembers) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceMembers(), newSurfaceMembers);
 	}
 
@@ -11820,8 +11466,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePropertyType getSurfaceProperty()
-	{
+	@Override
+	public SurfacePropertyType getSurfaceProperty() {
 		return (SurfacePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceProperty(), true);
 	}
 
@@ -11830,8 +11476,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSurfaceProperty(SurfacePropertyType newSurfaceProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSurfaceProperty(SurfacePropertyType newSurfaceProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceProperty(), newSurfaceProperty, msgs);
 	}
 
@@ -11840,8 +11485,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSurfaceProperty(SurfacePropertyType newSurfaceProperty)
-	{
+	@Override
+	public void setSurfaceProperty(SurfacePropertyType newSurfaceProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_SurfaceProperty(), newSurfaceProperty);
 	}
 
@@ -11850,8 +11495,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CRSPropertyType getTargetCRS()
-	{
+	@Override
+	public CRSPropertyType getTargetCRS() {
 		return (CRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TargetCRS(), true);
 	}
 
@@ -11860,8 +11505,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTargetCRS(CRSPropertyType newTargetCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTargetCRS(CRSPropertyType newTargetCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TargetCRS(), newTargetCRS, msgs);
 	}
 
@@ -11870,8 +11514,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetCRS(CRSPropertyType newTargetCRS)
-	{
+	@Override
+	public void setTargetCRS(CRSPropertyType newTargetCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TargetCRS(), newTargetCRS);
 	}
 
@@ -11880,8 +11524,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getTargetDimensions()
-	{
+	@Override
+	public BigInteger getTargetDimensions() {
 		return (BigInteger)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TargetDimensions(), true);
 	}
 
@@ -11890,8 +11534,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetDimensions(BigInteger newTargetDimensions)
-	{
+	@Override
+	public void setTargetDimensions(BigInteger newTargetDimensions) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TargetDimensions(), newTargetDimensions);
 	}
 
@@ -11900,8 +11544,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTargetElement()
-	{
+	@Override
+	public String getTargetElement() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TargetElement(), true);
 	}
 
@@ -11910,8 +11554,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetElement(String newTargetElement)
-	{
+	@Override
+	public void setTargetElement(String newTargetElement) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TargetElement(), newTargetElement);
 	}
 
@@ -11920,8 +11564,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCRSType getTemporalCRS()
-	{
+	@Override
+	public TemporalCRSType getTemporalCRS() {
 		return (TemporalCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCRS(), true);
 	}
 
@@ -11930,8 +11574,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTemporalCRS(TemporalCRSType newTemporalCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTemporalCRS(TemporalCRSType newTemporalCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCRS(), newTemporalCRS, msgs);
 	}
 
@@ -11940,8 +11583,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTemporalCRS(TemporalCRSType newTemporalCRS)
-	{
+	@Override
+	public void setTemporalCRS(TemporalCRSType newTemporalCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCRS(), newTemporalCRS);
 	}
 
@@ -11950,8 +11593,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCRSPropertyType getTemporalCRSRef()
-	{
+	@Override
+	public TemporalCRSPropertyType getTemporalCRSRef() {
 		return (TemporalCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCRSRef(), true);
 	}
 
@@ -11960,8 +11603,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTemporalCRSRef(TemporalCRSPropertyType newTemporalCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTemporalCRSRef(TemporalCRSPropertyType newTemporalCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCRSRef(), newTemporalCRSRef, msgs);
 	}
 
@@ -11970,8 +11612,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTemporalCRSRef(TemporalCRSPropertyType newTemporalCRSRef)
-	{
+	@Override
+	public void setTemporalCRSRef(TemporalCRSPropertyType newTemporalCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCRSRef(), newTemporalCRSRef);
 	}
 
@@ -11980,8 +11622,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCSType getTemporalCS()
-	{
+	@Override
+	public TemporalCSType getTemporalCS() {
 		return (TemporalCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCS(), true);
 	}
 
@@ -11990,8 +11632,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTemporalCS(TemporalCSType newTemporalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTemporalCS(TemporalCSType newTemporalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCS(), newTemporalCS, msgs);
 	}
 
@@ -12000,8 +11641,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTemporalCS(TemporalCSType newTemporalCS)
-	{
+	@Override
+	public void setTemporalCS(TemporalCSType newTemporalCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCS(), newTemporalCS);
 	}
 
@@ -12010,8 +11651,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCSPropertyType getTemporalCSRef()
-	{
+	@Override
+	public TemporalCSPropertyType getTemporalCSRef() {
 		return (TemporalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCSRef(), true);
 	}
 
@@ -12020,8 +11661,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTemporalCSRef(TemporalCSPropertyType newTemporalCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTemporalCSRef(TemporalCSPropertyType newTemporalCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCSRef(), newTemporalCSRef, msgs);
 	}
 
@@ -12030,8 +11670,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTemporalCSRef(TemporalCSPropertyType newTemporalCSRef)
-	{
+	@Override
+	public void setTemporalCSRef(TemporalCSPropertyType newTemporalCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TemporalCSRef(), newTemporalCSRef);
 	}
 
@@ -12040,8 +11680,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalDatumPropertyType getTemporalDatum()
-	{
+	@Override
+	public TemporalDatumPropertyType getTemporalDatum() {
 		return (TemporalDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TemporalDatum(), true);
 	}
 
@@ -12050,8 +11690,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTemporalDatum(TemporalDatumPropertyType newTemporalDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTemporalDatum(TemporalDatumPropertyType newTemporalDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TemporalDatum(), newTemporalDatum, msgs);
 	}
 
@@ -12060,8 +11699,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTemporalDatum(TemporalDatumPropertyType newTemporalDatum)
-	{
+	@Override
+	public void setTemporalDatum(TemporalDatumPropertyType newTemporalDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TemporalDatum(), newTemporalDatum);
 	}
 
@@ -12070,8 +11709,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalDatumType getTemporalDatum1()
-	{
+	@Override
+	public TemporalDatumType getTemporalDatum1() {
 		return (TemporalDatumType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TemporalDatum1(), true);
 	}
 
@@ -12080,8 +11719,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTemporalDatum1(TemporalDatumType newTemporalDatum1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTemporalDatum1(TemporalDatumType newTemporalDatum1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TemporalDatum1(), newTemporalDatum1, msgs);
 	}
 
@@ -12090,8 +11728,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTemporalDatum1(TemporalDatumType newTemporalDatum1)
-	{
+	@Override
+	public void setTemporalDatum1(TemporalDatumType newTemporalDatum1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TemporalDatum1(), newTemporalDatum1);
 	}
 
@@ -12100,8 +11738,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalDatumPropertyType getTemporalDatumRef()
-	{
+	@Override
+	public TemporalDatumPropertyType getTemporalDatumRef() {
 		return (TemporalDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TemporalDatumRef(), true);
 	}
 
@@ -12110,8 +11748,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTemporalDatumRef(TemporalDatumPropertyType newTemporalDatumRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTemporalDatumRef(TemporalDatumPropertyType newTemporalDatumRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TemporalDatumRef(), newTemporalDatumRef, msgs);
 	}
 
@@ -12120,8 +11757,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTemporalDatumRef(TemporalDatumPropertyType newTemporalDatumRef)
-	{
+	@Override
+	public void setTemporalDatumRef(TemporalDatumPropertyType newTemporalDatumRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TemporalDatumRef(), newTemporalDatumRef);
 	}
 
@@ -12130,8 +11767,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCalendarType getTimeCalendar()
-	{
+	@Override
+	public TimeCalendarType getTimeCalendar() {
 		return (TimeCalendarType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeCalendar(), true);
 	}
 
@@ -12140,8 +11777,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeCalendar(TimeCalendarType newTimeCalendar, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeCalendar(TimeCalendarType newTimeCalendar, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeCalendar(), newTimeCalendar, msgs);
 	}
 
@@ -12150,8 +11786,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeCalendar(TimeCalendarType newTimeCalendar)
-	{
+	@Override
+	public void setTimeCalendar(TimeCalendarType newTimeCalendar) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeCalendar(), newTimeCalendar);
 	}
 
@@ -12160,8 +11796,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeReferenceSystemType getTimeReferenceSystem()
-	{
+	@Override
+	public TimeReferenceSystemType getTimeReferenceSystem() {
 		return (TimeReferenceSystemType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeReferenceSystem(), true);
 	}
 
@@ -12170,8 +11806,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeReferenceSystem(TimeReferenceSystemType newTimeReferenceSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeReferenceSystem(TimeReferenceSystemType newTimeReferenceSystem, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeReferenceSystem(), newTimeReferenceSystem, msgs);
 	}
 
@@ -12180,8 +11815,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeReferenceSystem(TimeReferenceSystemType newTimeReferenceSystem)
-	{
+	@Override
+	public void setTimeReferenceSystem(TimeReferenceSystemType newTimeReferenceSystem) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeReferenceSystem(), newTimeReferenceSystem);
 	}
 
@@ -12190,8 +11825,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCalendarEraType getTimeCalendarEra()
-	{
+	@Override
+	public TimeCalendarEraType getTimeCalendarEra() {
 		return (TimeCalendarEraType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeCalendarEra(), true);
 	}
 
@@ -12200,8 +11835,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeCalendarEra(TimeCalendarEraType newTimeCalendarEra, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeCalendarEra(TimeCalendarEraType newTimeCalendarEra, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeCalendarEra(), newTimeCalendarEra, msgs);
 	}
 
@@ -12210,8 +11844,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeCalendarEra(TimeCalendarEraType newTimeCalendarEra)
-	{
+	@Override
+	public void setTimeCalendarEra(TimeCalendarEraType newTimeCalendarEra) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeCalendarEra(), newTimeCalendarEra);
 	}
 
@@ -12220,8 +11854,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeClockType getTimeClock()
-	{
+	@Override
+	public TimeClockType getTimeClock() {
 		return (TimeClockType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeClock(), true);
 	}
 
@@ -12230,8 +11864,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeClock(TimeClockType newTimeClock, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeClock(TimeClockType newTimeClock, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeClock(), newTimeClock, msgs);
 	}
 
@@ -12240,8 +11873,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeClock(TimeClockType newTimeClock)
-	{
+	@Override
+	public void setTimeClock(TimeClockType newTimeClock) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeClock(), newTimeClock);
 	}
 
@@ -12250,8 +11883,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCoordinateSystemType getTimeCoordinateSystem()
-	{
+	@Override
+	public TimeCoordinateSystemType getTimeCoordinateSystem() {
 		return (TimeCoordinateSystemType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeCoordinateSystem(), true);
 	}
 
@@ -12260,8 +11893,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeCoordinateSystem(TimeCoordinateSystemType newTimeCoordinateSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeCoordinateSystem(TimeCoordinateSystemType newTimeCoordinateSystem, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeCoordinateSystem(), newTimeCoordinateSystem, msgs);
 	}
 
@@ -12270,8 +11902,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeCoordinateSystem(TimeCoordinateSystemType newTimeCoordinateSystem)
-	{
+	@Override
+	public void setTimeCoordinateSystem(TimeCoordinateSystemType newTimeCoordinateSystem) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeCoordinateSystem(), newTimeCoordinateSystem);
 	}
 
@@ -12280,8 +11912,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCSPropertyType getTimeCS()
-	{
+	@Override
+	public TimeCSPropertyType getTimeCS() {
 		return (TimeCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeCS(), true);
 	}
 
@@ -12290,8 +11922,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeCS(TimeCSPropertyType newTimeCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeCS(TimeCSPropertyType newTimeCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeCS(), newTimeCS, msgs);
 	}
 
@@ -12300,8 +11931,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeCS(TimeCSPropertyType newTimeCS)
-	{
+	@Override
+	public void setTimeCS(TimeCSPropertyType newTimeCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeCS(), newTimeCS);
 	}
 
@@ -12310,8 +11941,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCSType getTimeCS1()
-	{
+	@Override
+	public TimeCSType getTimeCS1() {
 		return (TimeCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeCS1(), true);
 	}
 
@@ -12320,8 +11951,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeCS1(TimeCSType newTimeCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeCS1(TimeCSType newTimeCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeCS1(), newTimeCS1, msgs);
 	}
 
@@ -12330,8 +11960,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeCS1(TimeCSType newTimeCS1)
-	{
+	@Override
+	public void setTimeCS1(TimeCSType newTimeCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeCS1(), newTimeCS1);
 	}
 
@@ -12340,8 +11970,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeEdgeType getTimeEdge()
-	{
+	@Override
+	public TimeEdgeType getTimeEdge() {
 		return (TimeEdgeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeEdge(), true);
 	}
 
@@ -12350,8 +11980,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeEdge(TimeEdgeType newTimeEdge, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeEdge(TimeEdgeType newTimeEdge, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeEdge(), newTimeEdge, msgs);
 	}
 
@@ -12360,8 +11989,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeEdge(TimeEdgeType newTimeEdge)
-	{
+	@Override
+	public void setTimeEdge(TimeEdgeType newTimeEdge) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeEdge(), newTimeEdge);
 	}
 
@@ -12370,8 +11999,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeInstantType getTimeInstant()
-	{
+	@Override
+	public TimeInstantType getTimeInstant() {
 		return (TimeInstantType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeInstant(), true);
 	}
 
@@ -12380,8 +12009,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeInstant(TimeInstantType newTimeInstant, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeInstant(TimeInstantType newTimeInstant, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeInstant(), newTimeInstant, msgs);
 	}
 
@@ -12390,8 +12018,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeInstant(TimeInstantType newTimeInstant)
-	{
+	@Override
+	public void setTimeInstant(TimeInstantType newTimeInstant) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeInstant(), newTimeInstant);
 	}
 
@@ -12400,8 +12028,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeIntervalLengthType getTimeInterval()
-	{
+	@Override
+	public TimeIntervalLengthType getTimeInterval() {
 		return (TimeIntervalLengthType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeInterval(), true);
 	}
 
@@ -12410,8 +12038,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeInterval(TimeIntervalLengthType newTimeInterval, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeInterval(TimeIntervalLengthType newTimeInterval, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeInterval(), newTimeInterval, msgs);
 	}
 
@@ -12420,8 +12047,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeInterval(TimeIntervalLengthType newTimeInterval)
-	{
+	@Override
+	public void setTimeInterval(TimeIntervalLengthType newTimeInterval) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeInterval(), newTimeInterval);
 	}
 
@@ -12430,8 +12057,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeNodeType getTimeNode()
-	{
+	@Override
+	public TimeNodeType getTimeNode() {
 		return (TimeNodeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeNode(), true);
 	}
 
@@ -12440,8 +12067,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeNode(TimeNodeType newTimeNode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeNode(TimeNodeType newTimeNode, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeNode(), newTimeNode, msgs);
 	}
 
@@ -12450,8 +12076,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeNode(TimeNodeType newTimeNode)
-	{
+	@Override
+	public void setTimeNode(TimeNodeType newTimeNode) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeNode(), newTimeNode);
 	}
 
@@ -12460,8 +12086,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeOrdinalEraType getTimeOrdinalEra()
-	{
+	@Override
+	public TimeOrdinalEraType getTimeOrdinalEra() {
 		return (TimeOrdinalEraType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeOrdinalEra(), true);
 	}
 
@@ -12470,8 +12096,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeOrdinalEra(TimeOrdinalEraType newTimeOrdinalEra, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeOrdinalEra(TimeOrdinalEraType newTimeOrdinalEra, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeOrdinalEra(), newTimeOrdinalEra, msgs);
 	}
 
@@ -12480,8 +12105,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeOrdinalEra(TimeOrdinalEraType newTimeOrdinalEra)
-	{
+	@Override
+	public void setTimeOrdinalEra(TimeOrdinalEraType newTimeOrdinalEra) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeOrdinalEra(), newTimeOrdinalEra);
 	}
 
@@ -12490,8 +12115,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeOrdinalReferenceSystemType getTimeOrdinalReferenceSystem()
-	{
+	@Override
+	public TimeOrdinalReferenceSystemType getTimeOrdinalReferenceSystem() {
 		return (TimeOrdinalReferenceSystemType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeOrdinalReferenceSystem(), true);
 	}
 
@@ -12500,8 +12125,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeOrdinalReferenceSystem(TimeOrdinalReferenceSystemType newTimeOrdinalReferenceSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeOrdinalReferenceSystem(TimeOrdinalReferenceSystemType newTimeOrdinalReferenceSystem, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeOrdinalReferenceSystem(), newTimeOrdinalReferenceSystem, msgs);
 	}
 
@@ -12510,8 +12134,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeOrdinalReferenceSystem(TimeOrdinalReferenceSystemType newTimeOrdinalReferenceSystem)
-	{
+	@Override
+	public void setTimeOrdinalReferenceSystem(TimeOrdinalReferenceSystemType newTimeOrdinalReferenceSystem) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeOrdinalReferenceSystem(), newTimeOrdinalReferenceSystem);
 	}
 
@@ -12520,8 +12144,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePeriodType getTimePeriod()
-	{
+	@Override
+	public TimePeriodType getTimePeriod() {
 		return (TimePeriodType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimePeriod(), true);
 	}
 
@@ -12530,8 +12154,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimePeriod(TimePeriodType newTimePeriod, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimePeriod(TimePeriodType newTimePeriod, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimePeriod(), newTimePeriod, msgs);
 	}
 
@@ -12540,8 +12163,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimePeriod(TimePeriodType newTimePeriod)
-	{
+	@Override
+	public void setTimePeriod(TimePeriodType newTimePeriod) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimePeriod(), newTimePeriod);
 	}
 
@@ -12550,8 +12173,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePositionType getTimePosition()
-	{
+	@Override
+	public TimePositionType getTimePosition() {
 		return (TimePositionType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimePosition(), true);
 	}
 
@@ -12560,8 +12183,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimePosition(TimePositionType newTimePosition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimePosition(TimePositionType newTimePosition, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimePosition(), newTimePosition, msgs);
 	}
 
@@ -12570,8 +12192,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimePosition(TimePositionType newTimePosition)
-	{
+	@Override
+	public void setTimePosition(TimePositionType newTimePosition) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimePosition(), newTimePosition);
 	}
 
@@ -12580,8 +12202,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeTopologyComplexType getTimeTopologyComplex()
-	{
+	@Override
+	public TimeTopologyComplexType getTimeTopologyComplex() {
 		return (TimeTopologyComplexType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TimeTopologyComplex(), true);
 	}
 
@@ -12590,8 +12212,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTimeTopologyComplex(TimeTopologyComplexType newTimeTopologyComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTimeTopologyComplex(TimeTopologyComplexType newTimeTopologyComplex, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TimeTopologyComplex(), newTimeTopologyComplex, msgs);
 	}
 
@@ -12600,8 +12221,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeTopologyComplex(TimeTopologyComplexType newTimeTopologyComplex)
-	{
+	@Override
+	public void setTimeTopologyComplex(TimeTopologyComplexType newTimeTopologyComplex) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TimeTopologyComplex(), newTimeTopologyComplex);
 	}
 
@@ -12610,8 +12231,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TinType getTin()
-	{
+	@Override
+	public TinType getTin() {
 		return (TinType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Tin(), true);
 	}
 
@@ -12620,8 +12241,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTin(TinType newTin, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTin(TinType newTin, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Tin(), newTin, msgs);
 	}
 
@@ -12630,8 +12250,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTin(TinType newTin)
-	{
+	@Override
+	public void setTin(TinType newTin) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Tin(), newTin);
 	}
 
@@ -12640,8 +12260,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceType getTriangulatedSurface()
-	{
+	@Override
+	public SurfaceType getTriangulatedSurface() {
 		return (SurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TriangulatedSurface(), true);
 	}
 
@@ -12650,8 +12270,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTriangulatedSurface(SurfaceType newTriangulatedSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTriangulatedSurface(SurfaceType newTriangulatedSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TriangulatedSurface(), newTriangulatedSurface, msgs);
 	}
 
@@ -12660,8 +12279,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTriangulatedSurface(SurfaceType newTriangulatedSurface)
-	{
+	@Override
+	public void setTriangulatedSurface(SurfaceType newTriangulatedSurface) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TriangulatedSurface(), newTriangulatedSurface);
 	}
 
@@ -12670,8 +12289,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoComplexType getTopoComplex()
-	{
+	@Override
+	public TopoComplexType getTopoComplex() {
 		return (TopoComplexType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoComplex(), true);
 	}
 
@@ -12680,8 +12299,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoComplex(TopoComplexType newTopoComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoComplex(TopoComplexType newTopoComplex, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoComplex(), newTopoComplex, msgs);
 	}
 
@@ -12690,8 +12308,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoComplex(TopoComplexType newTopoComplex)
-	{
+	@Override
+	public void setTopoComplex(TopoComplexType newTopoComplex) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoComplex(), newTopoComplex);
 	}
 
@@ -12700,8 +12318,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoComplexPropertyType getTopoComplexProperty()
-	{
+	@Override
+	public TopoComplexPropertyType getTopoComplexProperty() {
 		return (TopoComplexPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoComplexProperty(), true);
 	}
 
@@ -12710,8 +12328,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoComplexProperty(TopoComplexPropertyType newTopoComplexProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoComplexProperty(TopoComplexPropertyType newTopoComplexProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoComplexProperty(), newTopoComplexProperty, msgs);
 	}
 
@@ -12720,8 +12337,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoComplexProperty(TopoComplexPropertyType newTopoComplexProperty)
-	{
+	@Override
+	public void setTopoComplexProperty(TopoComplexPropertyType newTopoComplexProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoComplexProperty(), newTopoComplexProperty);
 	}
 
@@ -12730,8 +12347,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoCurveType getTopoCurve()
-	{
+	@Override
+	public TopoCurveType getTopoCurve() {
 		return (TopoCurveType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoCurve(), true);
 	}
 
@@ -12740,8 +12357,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoCurve(TopoCurveType newTopoCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoCurve(TopoCurveType newTopoCurve, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoCurve(), newTopoCurve, msgs);
 	}
 
@@ -12750,8 +12366,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoCurve(TopoCurveType newTopoCurve)
-	{
+	@Override
+	public void setTopoCurve(TopoCurveType newTopoCurve) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoCurve(), newTopoCurve);
 	}
 
@@ -12760,8 +12376,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoCurvePropertyType getTopoCurveProperty()
-	{
+	@Override
+	public TopoCurvePropertyType getTopoCurveProperty() {
 		return (TopoCurvePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoCurveProperty(), true);
 	}
 
@@ -12770,8 +12386,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoCurveProperty(TopoCurvePropertyType newTopoCurveProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoCurveProperty(TopoCurvePropertyType newTopoCurveProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoCurveProperty(), newTopoCurveProperty, msgs);
 	}
 
@@ -12780,8 +12395,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoCurveProperty(TopoCurvePropertyType newTopoCurveProperty)
-	{
+	@Override
+	public void setTopoCurveProperty(TopoCurvePropertyType newTopoCurveProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoCurveProperty(), newTopoCurveProperty);
 	}
 
@@ -12790,8 +12405,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoPointType getTopoPoint()
-	{
+	@Override
+	public TopoPointType getTopoPoint() {
 		return (TopoPointType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoPoint(), true);
 	}
 
@@ -12800,8 +12415,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoPoint(TopoPointType newTopoPoint, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoPoint(TopoPointType newTopoPoint, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoPoint(), newTopoPoint, msgs);
 	}
 
@@ -12810,8 +12424,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoPoint(TopoPointType newTopoPoint)
-	{
+	@Override
+	public void setTopoPoint(TopoPointType newTopoPoint) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoPoint(), newTopoPoint);
 	}
 
@@ -12820,8 +12434,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoPointPropertyType getTopoPointProperty()
-	{
+	@Override
+	public TopoPointPropertyType getTopoPointProperty() {
 		return (TopoPointPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoPointProperty(), true);
 	}
 
@@ -12830,8 +12444,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoPointProperty(TopoPointPropertyType newTopoPointProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoPointProperty(TopoPointPropertyType newTopoPointProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoPointProperty(), newTopoPointProperty, msgs);
 	}
 
@@ -12840,8 +12453,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoPointProperty(TopoPointPropertyType newTopoPointProperty)
-	{
+	@Override
+	public void setTopoPointProperty(TopoPointPropertyType newTopoPointProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoPointProperty(), newTopoPointProperty);
 	}
 
@@ -12850,8 +12463,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoPrimitiveMemberType getTopoPrimitiveMember()
-	{
+	@Override
+	public TopoPrimitiveMemberType getTopoPrimitiveMember() {
 		return (TopoPrimitiveMemberType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoPrimitiveMember(), true);
 	}
 
@@ -12860,8 +12473,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoPrimitiveMember(TopoPrimitiveMemberType newTopoPrimitiveMember, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoPrimitiveMember(TopoPrimitiveMemberType newTopoPrimitiveMember, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoPrimitiveMember(), newTopoPrimitiveMember, msgs);
 	}
 
@@ -12870,8 +12482,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoPrimitiveMember(TopoPrimitiveMemberType newTopoPrimitiveMember)
-	{
+	@Override
+	public void setTopoPrimitiveMember(TopoPrimitiveMemberType newTopoPrimitiveMember) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoPrimitiveMember(), newTopoPrimitiveMember);
 	}
 
@@ -12880,8 +12492,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoPrimitiveArrayAssociationType getTopoPrimitiveMembers()
-	{
+	@Override
+	public TopoPrimitiveArrayAssociationType getTopoPrimitiveMembers() {
 		return (TopoPrimitiveArrayAssociationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoPrimitiveMembers(), true);
 	}
 
@@ -12890,8 +12502,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoPrimitiveMembers(TopoPrimitiveArrayAssociationType newTopoPrimitiveMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoPrimitiveMembers(TopoPrimitiveArrayAssociationType newTopoPrimitiveMembers, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoPrimitiveMembers(), newTopoPrimitiveMembers, msgs);
 	}
 
@@ -12900,8 +12511,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoPrimitiveMembers(TopoPrimitiveArrayAssociationType newTopoPrimitiveMembers)
-	{
+	@Override
+	public void setTopoPrimitiveMembers(TopoPrimitiveArrayAssociationType newTopoPrimitiveMembers) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoPrimitiveMembers(), newTopoPrimitiveMembers);
 	}
 
@@ -12910,8 +12521,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoSolidType getTopoSolid()
-	{
+	@Override
+	public TopoSolidType getTopoSolid() {
 		return (TopoSolidType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoSolid(), true);
 	}
 
@@ -12920,8 +12531,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoSolid(TopoSolidType newTopoSolid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoSolid(TopoSolidType newTopoSolid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoSolid(), newTopoSolid, msgs);
 	}
 
@@ -12930,8 +12540,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoSolid(TopoSolidType newTopoSolid)
-	{
+	@Override
+	public void setTopoSolid(TopoSolidType newTopoSolid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoSolid(), newTopoSolid);
 	}
 
@@ -12940,8 +12550,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoSurfaceType getTopoSurface()
-	{
+	@Override
+	public TopoSurfaceType getTopoSurface() {
 		return (TopoSurfaceType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoSurface(), true);
 	}
 
@@ -12950,8 +12560,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoSurface(TopoSurfaceType newTopoSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoSurface(TopoSurfaceType newTopoSurface, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoSurface(), newTopoSurface, msgs);
 	}
 
@@ -12960,8 +12569,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoSurface(TopoSurfaceType newTopoSurface)
-	{
+	@Override
+	public void setTopoSurface(TopoSurfaceType newTopoSurface) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoSurface(), newTopoSurface);
 	}
 
@@ -12970,8 +12579,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoSurfacePropertyType getTopoSurfaceProperty()
-	{
+	@Override
+	public TopoSurfacePropertyType getTopoSurfaceProperty() {
 		return (TopoSurfacePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoSurfaceProperty(), true);
 	}
 
@@ -12980,8 +12589,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoSurfaceProperty(TopoSurfacePropertyType newTopoSurfaceProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoSurfaceProperty(TopoSurfacePropertyType newTopoSurfaceProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoSurfaceProperty(), newTopoSurfaceProperty, msgs);
 	}
 
@@ -12990,8 +12598,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoSurfaceProperty(TopoSurfacePropertyType newTopoSurfaceProperty)
-	{
+	@Override
+	public void setTopoSurfaceProperty(TopoSurfacePropertyType newTopoSurfaceProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoSurfaceProperty(), newTopoSurfaceProperty);
 	}
 
@@ -13000,8 +12608,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoVolumeType getTopoVolume()
-	{
+	@Override
+	public TopoVolumeType getTopoVolume() {
 		return (TopoVolumeType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoVolume(), true);
 	}
 
@@ -13010,8 +12618,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoVolume(TopoVolumeType newTopoVolume, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoVolume(TopoVolumeType newTopoVolume, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoVolume(), newTopoVolume, msgs);
 	}
 
@@ -13020,8 +12627,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoVolume(TopoVolumeType newTopoVolume)
-	{
+	@Override
+	public void setTopoVolume(TopoVolumeType newTopoVolume) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoVolume(), newTopoVolume);
 	}
 
@@ -13030,8 +12637,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoVolumePropertyType getTopoVolumeProperty()
-	{
+	@Override
+	public TopoVolumePropertyType getTopoVolumeProperty() {
 		return (TopoVolumePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TopoVolumeProperty(), true);
 	}
 
@@ -13040,8 +12647,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoVolumeProperty(TopoVolumePropertyType newTopoVolumeProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoVolumeProperty(TopoVolumePropertyType newTopoVolumeProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TopoVolumeProperty(), newTopoVolumeProperty, msgs);
 	}
 
@@ -13050,8 +12656,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoVolumeProperty(TopoVolumePropertyType newTopoVolumeProperty)
-	{
+	@Override
+	public void setTopoVolumeProperty(TopoVolumePropertyType newTopoVolumeProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TopoVolumeProperty(), newTopoVolumeProperty);
 	}
 
@@ -13060,8 +12666,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryPropertyType getTrack()
-	{
+	@Override
+	public HistoryPropertyType getTrack() {
 		return (HistoryPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Track(), true);
 	}
 
@@ -13070,8 +12676,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTrack(HistoryPropertyType newTrack, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTrack(HistoryPropertyType newTrack, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Track(), newTrack, msgs);
 	}
 
@@ -13080,8 +12685,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTrack(HistoryPropertyType newTrack)
-	{
+	@Override
+	public void setTrack(HistoryPropertyType newTrack) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Track(), newTrack);
 	}
 
@@ -13090,8 +12695,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TransformationType getTransformation()
-	{
+	@Override
+	public TransformationType getTransformation() {
 		return (TransformationType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Transformation(), true);
 	}
 
@@ -13100,8 +12705,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTransformation(TransformationType newTransformation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTransformation(TransformationType newTransformation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Transformation(), newTransformation, msgs);
 	}
 
@@ -13110,8 +12714,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTransformation(TransformationType newTransformation)
-	{
+	@Override
+	public void setTransformation(TransformationType newTransformation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Transformation(), newTransformation);
 	}
 
@@ -13120,8 +12724,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TransformationPropertyType getTransformationRef()
-	{
+	@Override
+	public TransformationPropertyType getTransformationRef() {
 		return (TransformationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TransformationRef(), true);
 	}
 
@@ -13130,8 +12734,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTransformationRef(TransformationPropertyType newTransformationRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTransformationRef(TransformationPropertyType newTransformationRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TransformationRef(), newTransformationRef, msgs);
 	}
 
@@ -13140,8 +12743,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTransformationRef(TransformationPropertyType newTransformationRef)
-	{
+	@Override
+	public void setTransformationRef(TransformationPropertyType newTransformationRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TransformationRef(), newTransformationRef);
 	}
 
@@ -13150,8 +12753,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TriangleType getTriangle()
-	{
+	@Override
+	public TriangleType getTriangle() {
 		return (TriangleType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Triangle(), true);
 	}
 
@@ -13160,8 +12763,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTriangle(TriangleType newTriangle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTriangle(TriangleType newTriangle, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Triangle(), newTriangle, msgs);
 	}
 
@@ -13170,8 +12772,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTriangle(TriangleType newTriangle)
-	{
+	@Override
+	public void setTriangle(TriangleType newTriangle) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Triangle(), newTriangle);
 	}
 
@@ -13180,8 +12782,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePatchArrayPropertyType getTrianglePatches()
-	{
+	@Override
+	public SurfacePatchArrayPropertyType getTrianglePatches() {
 		return (SurfacePatchArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TrianglePatches(), true);
 	}
 
@@ -13190,8 +12792,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTrianglePatches(SurfacePatchArrayPropertyType newTrianglePatches, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTrianglePatches(SurfacePatchArrayPropertyType newTrianglePatches, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TrianglePatches(), newTrianglePatches, msgs);
 	}
 
@@ -13200,8 +12801,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTrianglePatches(SurfacePatchArrayPropertyType newTrianglePatches)
-	{
+	@Override
+	public void setTrianglePatches(SurfacePatchArrayPropertyType newTrianglePatches) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TrianglePatches(), newTrianglePatches);
 	}
 
@@ -13210,8 +12811,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinatesType getTupleList()
-	{
+	@Override
+	public CoordinatesType getTupleList() {
 		return (CoordinatesType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_TupleList(), true);
 	}
 
@@ -13220,8 +12821,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTupleList(CoordinatesType newTupleList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTupleList(CoordinatesType newTupleList, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_TupleList(), newTupleList, msgs);
 	}
 
@@ -13230,8 +12830,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTupleList(CoordinatesType newTupleList)
-	{
+	@Override
+	public void setTupleList(CoordinatesType newTupleList) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_TupleList(), newTupleList);
 	}
 
@@ -13240,8 +12840,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitOfMeasureType getUnitOfMeasure()
-	{
+	@Override
+	public UnitOfMeasureType getUnitOfMeasure() {
 		return (UnitOfMeasureType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UnitOfMeasure(), true);
 	}
 
@@ -13250,8 +12850,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUnitOfMeasure(UnitOfMeasureType newUnitOfMeasure, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUnitOfMeasure(UnitOfMeasureType newUnitOfMeasure, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UnitOfMeasure(), newUnitOfMeasure, msgs);
 	}
 
@@ -13260,8 +12859,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUnitOfMeasure(UnitOfMeasureType newUnitOfMeasure)
-	{
+	@Override
+	public void setUnitOfMeasure(UnitOfMeasureType newUnitOfMeasure) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UnitOfMeasure(), newUnitOfMeasure);
 	}
 
@@ -13270,8 +12869,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UserDefinedCSPropertyType getUserDefinedCS()
-	{
+	@Override
+	public UserDefinedCSPropertyType getUserDefinedCS() {
 		return (UserDefinedCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UserDefinedCS(), true);
 	}
 
@@ -13280,8 +12879,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUserDefinedCS(UserDefinedCSPropertyType newUserDefinedCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUserDefinedCS(UserDefinedCSPropertyType newUserDefinedCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UserDefinedCS(), newUserDefinedCS, msgs);
 	}
 
@@ -13290,8 +12888,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUserDefinedCS(UserDefinedCSPropertyType newUserDefinedCS)
-	{
+	@Override
+	public void setUserDefinedCS(UserDefinedCSPropertyType newUserDefinedCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UserDefinedCS(), newUserDefinedCS);
 	}
 
@@ -13300,8 +12898,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UserDefinedCSType getUserDefinedCS1()
-	{
+	@Override
+	public UserDefinedCSType getUserDefinedCS1() {
 		return (UserDefinedCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UserDefinedCS1(), true);
 	}
 
@@ -13310,8 +12908,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUserDefinedCS1(UserDefinedCSType newUserDefinedCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUserDefinedCS1(UserDefinedCSType newUserDefinedCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UserDefinedCS1(), newUserDefinedCS1, msgs);
 	}
 
@@ -13320,8 +12917,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUserDefinedCS1(UserDefinedCSType newUserDefinedCS1)
-	{
+	@Override
+	public void setUserDefinedCS1(UserDefinedCSType newUserDefinedCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UserDefinedCS1(), newUserDefinedCS1);
 	}
 
@@ -13330,8 +12927,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UserDefinedCSPropertyType getUserDefinedCSRef()
-	{
+	@Override
+	public UserDefinedCSPropertyType getUserDefinedCSRef() {
 		return (UserDefinedCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UserDefinedCSRef(), true);
 	}
 
@@ -13340,8 +12937,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUserDefinedCSRef(UserDefinedCSPropertyType newUserDefinedCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUserDefinedCSRef(UserDefinedCSPropertyType newUserDefinedCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UserDefinedCSRef(), newUserDefinedCSRef, msgs);
 	}
 
@@ -13350,8 +12946,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUserDefinedCSRef(UserDefinedCSPropertyType newUserDefinedCSRef)
-	{
+	@Override
+	public void setUserDefinedCSRef(UserDefinedCSPropertyType newUserDefinedCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UserDefinedCSRef(), newUserDefinedCSRef);
 	}
 
@@ -13360,8 +12956,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AffineCSPropertyType getUsesAffineCS()
-	{
+	@Override
+	public AffineCSPropertyType getUsesAffineCS() {
 		return (AffineCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesAffineCS(), true);
 	}
 
@@ -13370,8 +12966,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesAffineCS(AffineCSPropertyType newUsesAffineCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesAffineCS(AffineCSPropertyType newUsesAffineCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesAffineCS(), newUsesAffineCS, msgs);
 	}
 
@@ -13380,8 +12975,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesAffineCS(AffineCSPropertyType newUsesAffineCS)
-	{
+	@Override
+	public void setUsesAffineCS(AffineCSPropertyType newUsesAffineCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesAffineCS(), newUsesAffineCS);
 	}
 
@@ -13390,8 +12985,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemAxisPropertyType getUsesAxis()
-	{
+	@Override
+	public CoordinateSystemAxisPropertyType getUsesAxis() {
 		return (CoordinateSystemAxisPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesAxis(), true);
 	}
 
@@ -13400,8 +12995,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesAxis(CoordinateSystemAxisPropertyType newUsesAxis, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesAxis(CoordinateSystemAxisPropertyType newUsesAxis, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesAxis(), newUsesAxis, msgs);
 	}
 
@@ -13410,8 +13004,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesAxis(CoordinateSystemAxisPropertyType newUsesAxis)
-	{
+	@Override
+	public void setUsesAxis(CoordinateSystemAxisPropertyType newUsesAxis) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesAxis(), newUsesAxis);
 	}
 
@@ -13420,8 +13014,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSPropertyType getUsesCartesianCS()
-	{
+	@Override
+	public CartesianCSPropertyType getUsesCartesianCS() {
 		return (CartesianCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesCartesianCS(), true);
 	}
 
@@ -13430,8 +13024,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesCartesianCS(CartesianCSPropertyType newUsesCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesCartesianCS(CartesianCSPropertyType newUsesCartesianCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesCartesianCS(), newUsesCartesianCS, msgs);
 	}
 
@@ -13440,8 +13033,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesCartesianCS(CartesianCSPropertyType newUsesCartesianCS)
-	{
+	@Override
+	public void setUsesCartesianCS(CartesianCSPropertyType newUsesCartesianCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesCartesianCS(), newUsesCartesianCS);
 	}
 
@@ -13450,8 +13043,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateSystemPropertyType getUsesCS()
-	{
+	@Override
+	public CoordinateSystemPropertyType getUsesCS() {
 		return (CoordinateSystemPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesCS(), true);
 	}
 
@@ -13460,8 +13053,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesCS(CoordinateSystemPropertyType newUsesCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesCS(CoordinateSystemPropertyType newUsesCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesCS(), newUsesCS, msgs);
 	}
 
@@ -13470,8 +13062,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesCS(CoordinateSystemPropertyType newUsesCS)
-	{
+	@Override
+	public void setUsesCS(CoordinateSystemPropertyType newUsesCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesCS(), newUsesCS);
 	}
 
@@ -13480,8 +13072,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidPropertyType getUsesEllipsoid()
-	{
+	@Override
+	public EllipsoidPropertyType getUsesEllipsoid() {
 		return (EllipsoidPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesEllipsoid(), true);
 	}
 
@@ -13490,8 +13082,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesEllipsoid(EllipsoidPropertyType newUsesEllipsoid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesEllipsoid(EllipsoidPropertyType newUsesEllipsoid, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesEllipsoid(), newUsesEllipsoid, msgs);
 	}
 
@@ -13500,8 +13091,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesEllipsoid(EllipsoidPropertyType newUsesEllipsoid)
-	{
+	@Override
+	public void setUsesEllipsoid(EllipsoidPropertyType newUsesEllipsoid) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesEllipsoid(), newUsesEllipsoid);
 	}
 
@@ -13510,8 +13101,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EllipsoidalCSPropertyType getUsesEllipsoidalCS()
-	{
+	@Override
+	public EllipsoidalCSPropertyType getUsesEllipsoidalCS() {
 		return (EllipsoidalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesEllipsoidalCS(), true);
 	}
 
@@ -13520,8 +13111,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesEllipsoidalCS(EllipsoidalCSPropertyType newUsesEllipsoidalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesEllipsoidalCS(EllipsoidalCSPropertyType newUsesEllipsoidalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesEllipsoidalCS(), newUsesEllipsoidalCS, msgs);
 	}
 
@@ -13530,8 +13120,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesEllipsoidalCS(EllipsoidalCSPropertyType newUsesEllipsoidalCS)
-	{
+	@Override
+	public void setUsesEllipsoidalCS(EllipsoidalCSPropertyType newUsesEllipsoidalCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesEllipsoidalCS(), newUsesEllipsoidalCS);
 	}
 
@@ -13540,8 +13130,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EngineeringDatumPropertyType getUsesEngineeringDatum()
-	{
+	@Override
+	public EngineeringDatumPropertyType getUsesEngineeringDatum() {
 		return (EngineeringDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesEngineeringDatum(), true);
 	}
 
@@ -13550,8 +13140,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesEngineeringDatum(EngineeringDatumPropertyType newUsesEngineeringDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesEngineeringDatum(EngineeringDatumPropertyType newUsesEngineeringDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesEngineeringDatum(), newUsesEngineeringDatum, msgs);
 	}
 
@@ -13560,8 +13149,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesEngineeringDatum(EngineeringDatumPropertyType newUsesEngineeringDatum)
-	{
+	@Override
+	public void setUsesEngineeringDatum(EngineeringDatumPropertyType newUsesEngineeringDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesEngineeringDatum(), newUsesEngineeringDatum);
 	}
 
@@ -13570,8 +13159,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticDatumPropertyType getUsesGeodeticDatum()
-	{
+	@Override
+	public GeodeticDatumPropertyType getUsesGeodeticDatum() {
 		return (GeodeticDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesGeodeticDatum(), true);
 	}
 
@@ -13580,8 +13169,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesGeodeticDatum(), newUsesGeodeticDatum, msgs);
 	}
 
@@ -13590,8 +13178,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum)
-	{
+	@Override
+	public void setUsesGeodeticDatum(GeodeticDatumPropertyType newUsesGeodeticDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesGeodeticDatum(), newUsesGeodeticDatum);
 	}
 
@@ -13600,8 +13188,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageDatumPropertyType getUsesImageDatum()
-	{
+	@Override
+	public ImageDatumPropertyType getUsesImageDatum() {
 		return (ImageDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesImageDatum(), true);
 	}
 
@@ -13610,8 +13198,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesImageDatum(ImageDatumPropertyType newUsesImageDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesImageDatum(ImageDatumPropertyType newUsesImageDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesImageDatum(), newUsesImageDatum, msgs);
 	}
 
@@ -13620,8 +13207,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesImageDatum(ImageDatumPropertyType newUsesImageDatum)
-	{
+	@Override
+	public void setUsesImageDatum(ImageDatumPropertyType newUsesImageDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesImageDatum(), newUsesImageDatum);
 	}
 
@@ -13630,8 +13217,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationMethodPropertyType getUsesMethod()
-	{
+	@Override
+	public OperationMethodPropertyType getUsesMethod() {
 		return (OperationMethodPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesMethod(), true);
 	}
 
@@ -13640,8 +13227,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesMethod(OperationMethodPropertyType newUsesMethod, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesMethod(OperationMethodPropertyType newUsesMethod, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesMethod(), newUsesMethod, msgs);
 	}
 
@@ -13650,8 +13236,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesMethod(OperationMethodPropertyType newUsesMethod)
-	{
+	@Override
+	public void setUsesMethod(OperationMethodPropertyType newUsesMethod) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesMethod(), newUsesMethod);
 	}
 
@@ -13660,8 +13246,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ObliqueCartesianCSPropertyType getUsesObliqueCartesianCS()
-	{
+	@Override
+	public ObliqueCartesianCSPropertyType getUsesObliqueCartesianCS() {
 		return (ObliqueCartesianCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesObliqueCartesianCS(), true);
 	}
 
@@ -13670,8 +13256,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType newUsesObliqueCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType newUsesObliqueCartesianCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesObliqueCartesianCS(), newUsesObliqueCartesianCS, msgs);
 	}
 
@@ -13680,8 +13265,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType newUsesObliqueCartesianCS)
-	{
+	@Override
+	public void setUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType newUsesObliqueCartesianCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesObliqueCartesianCS(), newUsesObliqueCartesianCS);
 	}
 
@@ -13690,8 +13275,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateOperationPropertyType getUsesOperation()
-	{
+	@Override
+	public CoordinateOperationPropertyType getUsesOperation() {
 		return (CoordinateOperationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesOperation(), true);
 	}
 
@@ -13700,8 +13285,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesOperation(CoordinateOperationPropertyType newUsesOperation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesOperation(CoordinateOperationPropertyType newUsesOperation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesOperation(), newUsesOperation, msgs);
 	}
 
@@ -13710,8 +13294,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesOperation(CoordinateOperationPropertyType newUsesOperation)
-	{
+	@Override
+	public void setUsesOperation(CoordinateOperationPropertyType newUsesOperation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesOperation(), newUsesOperation);
 	}
 
@@ -13720,8 +13304,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrimeMeridianPropertyType getUsesPrimeMeridian()
-	{
+	@Override
+	public PrimeMeridianPropertyType getUsesPrimeMeridian() {
 		return (PrimeMeridianPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesPrimeMeridian(), true);
 	}
 
@@ -13730,8 +13314,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesPrimeMeridian(PrimeMeridianPropertyType newUsesPrimeMeridian, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesPrimeMeridian(PrimeMeridianPropertyType newUsesPrimeMeridian, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesPrimeMeridian(), newUsesPrimeMeridian, msgs);
 	}
 
@@ -13740,8 +13323,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesPrimeMeridian(PrimeMeridianPropertyType newUsesPrimeMeridian)
-	{
+	@Override
+	public void setUsesPrimeMeridian(PrimeMeridianPropertyType newUsesPrimeMeridian) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesPrimeMeridian(), newUsesPrimeMeridian);
 	}
 
@@ -13750,8 +13333,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinateOperationPropertyType getUsesSingleOperation()
-	{
+	@Override
+	public CoordinateOperationPropertyType getUsesSingleOperation() {
 		return (CoordinateOperationPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesSingleOperation(), true);
 	}
 
@@ -13760,8 +13343,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesSingleOperation(CoordinateOperationPropertyType newUsesSingleOperation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesSingleOperation(CoordinateOperationPropertyType newUsesSingleOperation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesSingleOperation(), newUsesSingleOperation, msgs);
 	}
 
@@ -13770,8 +13352,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesSingleOperation(CoordinateOperationPropertyType newUsesSingleOperation)
-	{
+	@Override
+	public void setUsesSingleOperation(CoordinateOperationPropertyType newUsesSingleOperation) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesSingleOperation(), newUsesSingleOperation);
 	}
 
@@ -13780,8 +13362,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SphericalCSPropertyType getUsesSphericalCS()
-	{
+	@Override
+	public SphericalCSPropertyType getUsesSphericalCS() {
 		return (SphericalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesSphericalCS(), true);
 	}
 
@@ -13790,8 +13372,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesSphericalCS(SphericalCSPropertyType newUsesSphericalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesSphericalCS(SphericalCSPropertyType newUsesSphericalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesSphericalCS(), newUsesSphericalCS, msgs);
 	}
 
@@ -13800,8 +13381,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesSphericalCS(SphericalCSPropertyType newUsesSphericalCS)
-	{
+	@Override
+	public void setUsesSphericalCS(SphericalCSPropertyType newUsesSphericalCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesSphericalCS(), newUsesSphericalCS);
 	}
 
@@ -13810,8 +13391,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalCSPropertyType getUsesTemporalCS()
-	{
+	@Override
+	public TemporalCSPropertyType getUsesTemporalCS() {
 		return (TemporalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesTemporalCS(), true);
 	}
 
@@ -13820,8 +13401,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesTemporalCS(TemporalCSPropertyType newUsesTemporalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesTemporalCS(TemporalCSPropertyType newUsesTemporalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesTemporalCS(), newUsesTemporalCS, msgs);
 	}
 
@@ -13830,8 +13410,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesTemporalCS(TemporalCSPropertyType newUsesTemporalCS)
-	{
+	@Override
+	public void setUsesTemporalCS(TemporalCSPropertyType newUsesTemporalCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesTemporalCS(), newUsesTemporalCS);
 	}
 
@@ -13840,8 +13420,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemporalDatumPropertyType getUsesTemporalDatum()
-	{
+	@Override
+	public TemporalDatumPropertyType getUsesTemporalDatum() {
 		return (TemporalDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesTemporalDatum(), true);
 	}
 
@@ -13850,8 +13430,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesTemporalDatum(TemporalDatumPropertyType newUsesTemporalDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesTemporalDatum(TemporalDatumPropertyType newUsesTemporalDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesTemporalDatum(), newUsesTemporalDatum, msgs);
 	}
 
@@ -13860,8 +13439,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesTemporalDatum(TemporalDatumPropertyType newUsesTemporalDatum)
-	{
+	@Override
+	public void setUsesTemporalDatum(TemporalDatumPropertyType newUsesTemporalDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesTemporalDatum(), newUsesTemporalDatum);
 	}
 
@@ -13870,8 +13449,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeCSPropertyType getUsesTimeCS()
-	{
+	@Override
+	public TimeCSPropertyType getUsesTimeCS() {
 		return (TimeCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesTimeCS(), true);
 	}
 
@@ -13880,8 +13459,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesTimeCS(TimeCSPropertyType newUsesTimeCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesTimeCS(TimeCSPropertyType newUsesTimeCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesTimeCS(), newUsesTimeCS, msgs);
 	}
 
@@ -13890,8 +13468,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesTimeCS(TimeCSPropertyType newUsesTimeCS)
-	{
+	@Override
+	public void setUsesTimeCS(TimeCSPropertyType newUsesTimeCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesTimeCS(), newUsesTimeCS);
 	}
 
@@ -13900,8 +13478,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCSPropertyType getUsesVerticalCS()
-	{
+	@Override
+	public VerticalCSPropertyType getUsesVerticalCS() {
 		return (VerticalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesVerticalCS(), true);
 	}
 
@@ -13910,8 +13488,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesVerticalCS(VerticalCSPropertyType newUsesVerticalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesVerticalCS(VerticalCSPropertyType newUsesVerticalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesVerticalCS(), newUsesVerticalCS, msgs);
 	}
 
@@ -13920,8 +13497,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesVerticalCS(VerticalCSPropertyType newUsesVerticalCS)
-	{
+	@Override
+	public void setUsesVerticalCS(VerticalCSPropertyType newUsesVerticalCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesVerticalCS(), newUsesVerticalCS);
 	}
 
@@ -13930,8 +13507,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCSPropertyType getVerticalCS()
-	{
+	@Override
+	public VerticalCSPropertyType getVerticalCS() {
 		return (VerticalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCS(), true);
 	}
 
@@ -13940,8 +13517,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalCS(VerticalCSPropertyType newVerticalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalCS(VerticalCSPropertyType newVerticalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCS(), newVerticalCS, msgs);
 	}
 
@@ -13950,8 +13526,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalCS(VerticalCSPropertyType newVerticalCS)
-	{
+	@Override
+	public void setVerticalCS(VerticalCSPropertyType newVerticalCS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCS(), newVerticalCS);
 	}
 
@@ -13960,8 +13536,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalDatumPropertyType getUsesVerticalDatum()
-	{
+	@Override
+	public VerticalDatumPropertyType getUsesVerticalDatum() {
 		return (VerticalDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_UsesVerticalDatum(), true);
 	}
 
@@ -13970,8 +13546,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsesVerticalDatum(VerticalDatumPropertyType newUsesVerticalDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsesVerticalDatum(VerticalDatumPropertyType newUsesVerticalDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_UsesVerticalDatum(), newUsesVerticalDatum, msgs);
 	}
 
@@ -13980,8 +13555,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsesVerticalDatum(VerticalDatumPropertyType newUsesVerticalDatum)
-	{
+	@Override
+	public void setUsesVerticalDatum(VerticalDatumPropertyType newUsesVerticalDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_UsesVerticalDatum(), newUsesVerticalDatum);
 	}
 
@@ -13990,8 +13565,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalDatumPropertyType getVerticalDatum()
-	{
+	@Override
+	public VerticalDatumPropertyType getVerticalDatum() {
 		return (VerticalDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_VerticalDatum(), true);
 	}
 
@@ -14000,8 +13575,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalDatum(VerticalDatumPropertyType newVerticalDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalDatum(VerticalDatumPropertyType newVerticalDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_VerticalDatum(), newVerticalDatum, msgs);
 	}
 
@@ -14010,8 +13584,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalDatum(VerticalDatumPropertyType newVerticalDatum)
-	{
+	@Override
+	public void setVerticalDatum(VerticalDatumPropertyType newVerticalDatum) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_VerticalDatum(), newVerticalDatum);
 	}
 
@@ -14020,8 +13594,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedurePropertyType getUsing()
-	{
+	@Override
+	public ProcedurePropertyType getUsing() {
 		return (ProcedurePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Using(), true);
 	}
 
@@ -14030,8 +13604,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsing(ProcedurePropertyType newUsing, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsing(ProcedurePropertyType newUsing, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Using(), newUsing, msgs);
 	}
 
@@ -14040,8 +13613,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsing(ProcedurePropertyType newUsing)
-	{
+	@Override
+	public void setUsing(ProcedurePropertyType newUsing) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Using(), newUsing);
 	}
 
@@ -14050,8 +13623,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePrimitivePropertyType getValidTime()
-	{
+	@Override
+	public TimePrimitivePropertyType getValidTime() {
 		return (TimePrimitivePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ValidTime(), true);
 	}
 
@@ -14060,8 +13633,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValidTime(TimePrimitivePropertyType newValidTime, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValidTime(TimePrimitivePropertyType newValidTime, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ValidTime(), newValidTime, msgs);
 	}
 
@@ -14070,8 +13642,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValidTime(TimePrimitivePropertyType newValidTime)
-	{
+	@Override
+	public void setValidTime(TimePrimitivePropertyType newValidTime) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ValidTime(), newValidTime);
 	}
 
@@ -14080,8 +13652,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getValue()
-	{
+	@Override
+	public MeasureType getValue() {
 		return (MeasureType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Value(), true);
 	}
 
@@ -14090,8 +13662,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValue(MeasureType newValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValue(MeasureType newValue, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Value(), newValue, msgs);
 	}
 
@@ -14100,8 +13671,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(MeasureType newValue)
-	{
+	@Override
+	public void setValue(MeasureType newValue) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Value(), newValue);
 	}
 
@@ -14110,8 +13681,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ValueArrayType getValueArray()
-	{
+	@Override
+	public ValueArrayType getValueArray() {
 		return (ValueArrayType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ValueArray(), true);
 	}
 
@@ -14120,8 +13691,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueArray(ValueArrayType newValueArray, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueArray(ValueArrayType newValueArray, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ValueArray(), newValueArray, msgs);
 	}
 
@@ -14130,8 +13700,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueArray(ValueArrayType newValueArray)
-	{
+	@Override
+	public void setValueArray(ValueArrayType newValueArray) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ValueArray(), newValueArray);
 	}
 
@@ -14140,8 +13710,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ValuePropertyType getValueComponent()
-	{
+	@Override
+	public ValuePropertyType getValueComponent() {
 		return (ValuePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ValueComponent(), true);
 	}
 
@@ -14150,8 +13720,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueComponent(ValuePropertyType newValueComponent, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueComponent(ValuePropertyType newValueComponent, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ValueComponent(), newValueComponent, msgs);
 	}
 
@@ -14160,8 +13729,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueComponent(ValuePropertyType newValueComponent)
-	{
+	@Override
+	public void setValueComponent(ValuePropertyType newValueComponent) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ValueComponent(), newValueComponent);
 	}
 
@@ -14170,8 +13739,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ValueArrayPropertyType getValueComponents()
-	{
+	@Override
+	public ValueArrayPropertyType getValueComponents() {
 		return (ValueArrayPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ValueComponents(), true);
 	}
 
@@ -14180,8 +13749,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueComponents(ValueArrayPropertyType newValueComponents, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueComponents(ValueArrayPropertyType newValueComponents, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ValueComponents(), newValueComponents, msgs);
 	}
 
@@ -14190,8 +13758,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueComponents(ValueArrayPropertyType newValueComponents)
-	{
+	@Override
+	public void setValueComponents(ValueArrayPropertyType newValueComponents) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ValueComponents(), newValueComponents);
 	}
 
@@ -14200,8 +13768,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValueFile()
-	{
+	@Override
+	public String getValueFile() {
 		return (String)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ValueFile(), true);
 	}
 
@@ -14210,8 +13778,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueFile(String newValueFile)
-	{
+	@Override
+	public void setValueFile(String newValueFile) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ValueFile(), newValueFile);
 	}
 
@@ -14220,8 +13788,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureListType getValueList()
-	{
+	@Override
+	public MeasureListType getValueList() {
 		return (MeasureListType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ValueList(), true);
 	}
 
@@ -14230,8 +13798,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueList(MeasureListType newValueList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueList(MeasureListType newValueList, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ValueList(), newValueList, msgs);
 	}
 
@@ -14240,8 +13807,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueList(MeasureListType newValueList)
-	{
+	@Override
+	public void setValueList(MeasureListType newValueList) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ValueList(), newValueList);
 	}
 
@@ -14250,8 +13817,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterPropertyType getValueOfParameter()
-	{
+	@Override
+	public OperationParameterPropertyType getValueOfParameter() {
 		return (OperationParameterPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ValueOfParameter(), true);
 	}
 
@@ -14260,8 +13827,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueOfParameter(OperationParameterPropertyType newValueOfParameter, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueOfParameter(OperationParameterPropertyType newValueOfParameter, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ValueOfParameter(), newValueOfParameter, msgs);
 	}
 
@@ -14270,8 +13836,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueOfParameter(OperationParameterPropertyType newValueOfParameter)
-	{
+	@Override
+	public void setValueOfParameter(OperationParameterPropertyType newValueOfParameter) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ValueOfParameter(), newValueOfParameter);
 	}
 
@@ -14280,8 +13846,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ValuePropertyType getValueProperty()
-	{
+	@Override
+	public ValuePropertyType getValueProperty() {
 		return (ValuePropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ValueProperty(), true);
 	}
 
@@ -14290,8 +13856,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueProperty(ValuePropertyType newValueProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueProperty(ValuePropertyType newValueProperty, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ValueProperty(), newValueProperty, msgs);
 	}
 
@@ -14300,8 +13865,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueProperty(ValuePropertyType newValueProperty)
-	{
+	@Override
+	public void setValueProperty(ValuePropertyType newValueProperty) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ValueProperty(), newValueProperty);
 	}
 
@@ -14310,8 +13875,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterGroupPropertyType getValuesOfGroup()
-	{
+	@Override
+	public OperationParameterGroupPropertyType getValuesOfGroup() {
 		return (OperationParameterGroupPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_ValuesOfGroup(), true);
 	}
 
@@ -14320,8 +13885,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValuesOfGroup(OperationParameterGroupPropertyType newValuesOfGroup, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValuesOfGroup(OperationParameterGroupPropertyType newValuesOfGroup, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_ValuesOfGroup(), newValuesOfGroup, msgs);
 	}
 
@@ -14330,8 +13894,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValuesOfGroup(OperationParameterGroupPropertyType newValuesOfGroup)
-	{
+	@Override
+	public void setValuesOfGroup(OperationParameterGroupPropertyType newValuesOfGroup) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_ValuesOfGroup(), newValuesOfGroup);
 	}
 
@@ -14340,8 +13904,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VectorType getVector()
-	{
+	@Override
+	public VectorType getVector() {
 		return (VectorType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_Vector(), true);
 	}
 
@@ -14350,8 +13914,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVector(VectorType newVector, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVector(VectorType newVector, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_Vector(), newVector, msgs);
 	}
 
@@ -14360,8 +13923,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVector(VectorType newVector)
-	{
+	@Override
+	public void setVector(VectorType newVector) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_Vector(), newVector);
 	}
 
@@ -14370,8 +13933,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCRSType getVerticalCRS()
-	{
+	@Override
+	public VerticalCRSType getVerticalCRS() {
 		return (VerticalCRSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCRS(), true);
 	}
 
@@ -14380,8 +13943,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalCRS(VerticalCRSType newVerticalCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalCRS(VerticalCRSType newVerticalCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCRS(), newVerticalCRS, msgs);
 	}
 
@@ -14390,8 +13952,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalCRS(VerticalCRSType newVerticalCRS)
-	{
+	@Override
+	public void setVerticalCRS(VerticalCRSType newVerticalCRS) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCRS(), newVerticalCRS);
 	}
 
@@ -14400,8 +13962,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCRSPropertyType getVerticalCRSRef()
-	{
+	@Override
+	public VerticalCRSPropertyType getVerticalCRSRef() {
 		return (VerticalCRSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCRSRef(), true);
 	}
 
@@ -14410,8 +13972,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalCRSRef(VerticalCRSPropertyType newVerticalCRSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalCRSRef(VerticalCRSPropertyType newVerticalCRSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCRSRef(), newVerticalCRSRef, msgs);
 	}
 
@@ -14420,8 +13981,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalCRSRef(VerticalCRSPropertyType newVerticalCRSRef)
-	{
+	@Override
+	public void setVerticalCRSRef(VerticalCRSPropertyType newVerticalCRSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCRSRef(), newVerticalCRSRef);
 	}
 
@@ -14430,8 +13991,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCSType getVerticalCS1()
-	{
+	@Override
+	public VerticalCSType getVerticalCS1() {
 		return (VerticalCSType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCS1(), true);
 	}
 
@@ -14440,8 +14001,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalCS1(VerticalCSType newVerticalCS1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalCS1(VerticalCSType newVerticalCS1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCS1(), newVerticalCS1, msgs);
 	}
 
@@ -14450,8 +14010,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalCS1(VerticalCSType newVerticalCS1)
-	{
+	@Override
+	public void setVerticalCS1(VerticalCSType newVerticalCS1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCS1(), newVerticalCS1);
 	}
 
@@ -14460,8 +14020,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCSPropertyType getVerticalCSRef()
-	{
+	@Override
+	public VerticalCSPropertyType getVerticalCSRef() {
 		return (VerticalCSPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCSRef(), true);
 	}
 
@@ -14470,8 +14030,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalCSRef(VerticalCSPropertyType newVerticalCSRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalCSRef(VerticalCSPropertyType newVerticalCSRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCSRef(), newVerticalCSRef, msgs);
 	}
 
@@ -14480,8 +14039,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalCSRef(VerticalCSPropertyType newVerticalCSRef)
-	{
+	@Override
+	public void setVerticalCSRef(VerticalCSPropertyType newVerticalCSRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_VerticalCSRef(), newVerticalCSRef);
 	}
 
@@ -14490,8 +14049,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalDatumType getVerticalDatum1()
-	{
+	@Override
+	public VerticalDatumType getVerticalDatum1() {
 		return (VerticalDatumType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_VerticalDatum1(), true);
 	}
 
@@ -14500,8 +14059,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalDatum1(VerticalDatumType newVerticalDatum1, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalDatum1(VerticalDatumType newVerticalDatum1, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_VerticalDatum1(), newVerticalDatum1, msgs);
 	}
 
@@ -14510,8 +14068,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalDatum1(VerticalDatumType newVerticalDatum1)
-	{
+	@Override
+	public void setVerticalDatum1(VerticalDatumType newVerticalDatum1) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_VerticalDatum1(), newVerticalDatum1);
 	}
 
@@ -14520,8 +14078,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalDatumPropertyType getVerticalDatumRef()
-	{
+	@Override
+	public VerticalDatumPropertyType getVerticalDatumRef() {
 		return (VerticalDatumPropertyType)getMixed().get(GMLPackage.eINSTANCE.getDocumentRoot_VerticalDatumRef(), true);
 	}
 
@@ -14530,8 +14088,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalDatumRef(VerticalDatumPropertyType newVerticalDatumRef, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalDatumRef(VerticalDatumPropertyType newVerticalDatumRef, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(GMLPackage.eINSTANCE.getDocumentRoot_VerticalDatumRef(), newVerticalDatumRef, msgs);
 	}
 
@@ -14540,8 +14097,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalDatumRef(VerticalDatumPropertyType newVerticalDatumRef)
-	{
+	@Override
+	public void setVerticalDatumRef(VerticalDatumPropertyType newVerticalDatumRef) {
 		((FeatureMap.Internal)getMixed()).set(GMLPackage.eINSTANCE.getDocumentRoot_VerticalDatumRef(), newVerticalDatumRef);
 	}
 
@@ -14550,8 +14107,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getId()
-	{
+	@Override
+	public String getId() {
 		return id;
 	}
 
@@ -14560,8 +14117,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setId(String newId)
-	{
+	@Override
+	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
@@ -14573,8 +14130,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -14583,8 +14140,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -14596,8 +14153,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUom()
-	{
+	@Override
+	public String getUom() {
 		return uom;
 	}
 
@@ -14606,8 +14163,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUom(String newUom)
-	{
+	@Override
+	public void setUom(String newUom) {
 		String oldUom = uom;
 		uom = newUom;
 		if (eNotificationRequired())
@@ -14620,10 +14177,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DOCUMENT_ROOT__MIXED:
 				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 			case GMLPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
@@ -15514,10 +15069,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DOCUMENT_ROOT__MIXED:
 				if (coreType) return getMixed();
 				return ((FeatureMap.Internal)getMixed()).getWrapper();
@@ -16480,10 +16033,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DOCUMENT_ROOT__MIXED:
 				((FeatureMap.Internal)getMixed()).set(newValue);
 				return;
@@ -17775,10 +17326,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DOCUMENT_ROOT__MIXED:
 				getMixed().clear();
 				return;
@@ -19070,10 +18619,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DOCUMENT_ROOT__MIXED:
 				return mixed != null && !mixed.isEmpty();
 			case GMLPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
@@ -20032,11 +19579,10 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (mixed: ");
 		result.append(mixed);
 		result.append(", id: ");

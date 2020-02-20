@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CategoryExtentTypeImpl extends CodeOrNilReasonListTypeImpl implements CategoryExtentType
-{
+public class CategoryExtentTypeImpl extends CodeOrNilReasonListTypeImpl implements CategoryExtentType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CategoryExtentTypeImpl()
-	{
+	protected CategoryExtentTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class CategoryExtentTypeImpl extends CodeOrNilReasonListTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCategoryExtentType();
 	}
 

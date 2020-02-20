@@ -35,8 +35,7 @@ import org.isotc211.iso19139.gco.GenericNamePropertyType;
  *
  * @generated
  */
-public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container implements GenericNamePropertyType
-{
+public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container implements GenericNamePropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractGenericNameGroup() <em>Abstract Generic Name Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -72,8 +71,7 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GenericNamePropertyTypeImpl()
-	{
+	protected GenericNamePropertyTypeImpl() {
 		super();
 	}
 
@@ -83,8 +81,7 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.GENERIC_NAME_PROPERTY_TYPE;
 	}
 
@@ -93,10 +90,9 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractGenericNameGroup()
-	{
-		if (abstractGenericNameGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractGenericNameGroup() {
+		if (abstractGenericNameGroup == null) {
 			abstractGenericNameGroup = new BasicFeatureMap(this, GCOPackage.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME_GROUP);
 		}
 		return abstractGenericNameGroup;
@@ -107,8 +103,8 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getAbstractGenericName()
-	{
+	@Override
+	public CodeType getAbstractGenericName() {
 		return (CodeType)getAbstractGenericNameGroup().get(GCOPackage.Literals.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME, true);
 	}
 
@@ -117,8 +113,7 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGenericName(CodeType newAbstractGenericName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGenericName(CodeType newAbstractGenericName, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractGenericNameGroup()).basicAdd(GCOPackage.Literals.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME, newAbstractGenericName, msgs);
 	}
 
@@ -127,8 +122,8 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -137,8 +132,8 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -151,10 +146,8 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME_GROUP:
 				return ((InternalEList<?>)getAbstractGenericNameGroup()).basicRemove(otherEnd, msgs);
 			case GCOPackage.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME:
@@ -169,10 +162,8 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME_GROUP:
 				if (coreType) return getAbstractGenericNameGroup();
 				return ((FeatureMap.Internal)getAbstractGenericNameGroup()).getWrapper();
@@ -190,10 +181,8 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME_GROUP:
 				((FeatureMap.Internal)getAbstractGenericNameGroup()).set(newValue);
 				return;
@@ -210,10 +199,8 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME_GROUP:
 				getAbstractGenericNameGroup().clear();
 				return;
@@ -230,10 +217,8 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME_GROUP:
 				return abstractGenericNameGroup != null && !abstractGenericNameGroup.isEmpty();
 			case GCOPackage.GENERIC_NAME_PROPERTY_TYPE__ABSTRACT_GENERIC_NAME:
@@ -250,11 +235,10 @@ public class GenericNamePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractGenericNameGroup: ");
 		result.append(abstractGenericNameGroup);
 		result.append(", nilReason: ");

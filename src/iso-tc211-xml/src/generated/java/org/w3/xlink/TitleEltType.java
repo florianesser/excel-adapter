@@ -25,16 +25,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='titleEltType' kind='mixed'"
  * @generated
  */
-public interface TitleEltType extends EObject
-{
+public interface TitleEltType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Mixed</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mixed</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mixed</em>' attribute list.
 	 * @see org.w3.xlink.XLinkPackage#getTitleEltType_Mixed()
@@ -48,10 +43,6 @@ public interface TitleEltType extends EObject
 	 * Returns the value of the '<em><b>Any</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Any</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Any</em>' attribute list.
 	 * @see org.w3.xlink.XLinkPackage#getTitleEltType_Any()
@@ -96,10 +87,6 @@ public interface TitleEltType extends EObject
 	 * The default value is <code>"title"</code>.
 	 * The literals are from the enumeration {@link org.w3.xlink.TypeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see org.w3.xlink.TypeType

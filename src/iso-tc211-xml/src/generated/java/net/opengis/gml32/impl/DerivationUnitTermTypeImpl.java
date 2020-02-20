@@ -26,8 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements DerivationUnitTermType
-{
+public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements DerivationUnitTermType {
 	/**
 	 * The default value of the '{@link #getExponent() <em>Exponent</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -53,8 +52,7 @@ public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DerivationUnitTermTypeImpl()
-	{
+	protected DerivationUnitTermTypeImpl() {
 		super();
 	}
 
@@ -64,8 +62,7 @@ public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDerivationUnitTermType();
 	}
 
@@ -74,8 +71,8 @@ public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getExponent()
-	{
+	@Override
+	public BigInteger getExponent() {
 		return exponent;
 	}
 
@@ -84,8 +81,8 @@ public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExponent(BigInteger newExponent)
-	{
+	@Override
+	public void setExponent(BigInteger newExponent) {
 		BigInteger oldExponent = exponent;
 		exponent = newExponent;
 		if (eNotificationRequired())
@@ -98,10 +95,8 @@ public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DERIVATION_UNIT_TERM_TYPE__EXPONENT:
 				return getExponent();
 		}
@@ -114,10 +109,8 @@ public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DERIVATION_UNIT_TERM_TYPE__EXPONENT:
 				setExponent((BigInteger)newValue);
 				return;
@@ -131,10 +124,8 @@ public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DERIVATION_UNIT_TERM_TYPE__EXPONENT:
 				setExponent(EXPONENT_EDEFAULT);
 				return;
@@ -148,10 +139,8 @@ public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DERIVATION_UNIT_TERM_TYPE__EXPONENT:
 				return EXPONENT_EDEFAULT == null ? exponent != null : !EXPONENT_EDEFAULT.equals(exponent);
 		}
@@ -164,11 +153,10 @@ public class DerivationUnitTermTypeImpl extends UnitOfMeasureTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (exponent: ");
 		result.append(exponent);
 		result.append(')');

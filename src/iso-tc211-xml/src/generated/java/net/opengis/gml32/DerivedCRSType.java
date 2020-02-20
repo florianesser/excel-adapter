@@ -23,8 +23,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='DerivedCRSType' kind='elementOnly'"
  * @generated
  */
-public interface DerivedCRSType extends AbstractGeneralDerivedCRSType
-{
+public interface DerivedCRSType extends AbstractGeneralDerivedCRSType {
 	/**
 	 * Returns the value of the '<em><b>Base CRS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

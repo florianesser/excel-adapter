@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl implements DynamicFeatureCollectionType
-{
+public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl implements DynamicFeatureCollectionType {
 	/**
 	 * The cached value of the '{@link #getDynamicMembers() <em>Dynamic Members</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DynamicFeatureCollectionTypeImpl()
-	{
+	protected DynamicFeatureCollectionTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDynamicFeatureCollectionType();
 	}
 
@@ -65,8 +62,8 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DynamicFeatureMemberType getDynamicMembers()
-	{
+	@Override
+	public DynamicFeatureMemberType getDynamicMembers() {
 		return dynamicMembers;
 	}
 
@@ -75,12 +72,10 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDynamicMembers(DynamicFeatureMemberType newDynamicMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDynamicMembers(DynamicFeatureMemberType newDynamicMembers, NotificationChain msgs) {
 		DynamicFeatureMemberType oldDynamicMembers = dynamicMembers;
 		dynamicMembers = newDynamicMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DYNAMIC_FEATURE_COLLECTION_TYPE__DYNAMIC_MEMBERS, oldDynamicMembers, newDynamicMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDynamicMembers(DynamicFeatureMemberType newDynamicMembers)
-	{
-		if (newDynamicMembers != dynamicMembers)
-		{
+	@Override
+	public void setDynamicMembers(DynamicFeatureMemberType newDynamicMembers) {
+		if (newDynamicMembers != dynamicMembers) {
 			NotificationChain msgs = null;
 			if (dynamicMembers != null)
 				msgs = ((InternalEObject)dynamicMembers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DYNAMIC_FEATURE_COLLECTION_TYPE__DYNAMIC_MEMBERS, null, msgs);
@@ -114,10 +108,8 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_COLLECTION_TYPE__DYNAMIC_MEMBERS:
 				return basicSetDynamicMembers(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_COLLECTION_TYPE__DYNAMIC_MEMBERS:
 				return getDynamicMembers();
 		}
@@ -146,10 +136,8 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_COLLECTION_TYPE__DYNAMIC_MEMBERS:
 				setDynamicMembers((DynamicFeatureMemberType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_COLLECTION_TYPE__DYNAMIC_MEMBERS:
 				setDynamicMembers((DynamicFeatureMemberType)null);
 				return;
@@ -180,10 +166,8 @@ public class DynamicFeatureCollectionTypeImpl extends DynamicFeatureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_COLLECTION_TYPE__DYNAMIC_MEMBERS:
 				return dynamicMembers != null;
 		}

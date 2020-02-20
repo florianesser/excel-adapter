@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='GeodesicType' kind='elementOnly'"
  * @generated
  */
-public interface GeodesicType extends GeodesicStringType
-{
+public interface GeodesicType extends GeodesicStringType {
 } // GeodesicType

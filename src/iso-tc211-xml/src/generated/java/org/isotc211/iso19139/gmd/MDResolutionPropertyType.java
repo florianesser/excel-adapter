@@ -21,15 +21,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='MD_Resolution_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface MDResolutionPropertyType extends EObject
-{
+public interface MDResolutionPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>MD Resolution</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Resolution</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Resolution</em>' containment reference.
 	 * @see #setMDResolution(MDResolutionType)
@@ -53,10 +48,6 @@ public interface MDResolutionPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

@@ -83,8 +83,7 @@ import org.isotc211.iso19139.gmd.PTLocalePropertyType;
  *
  * @generated
  */
-public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMetadataType
-{
+public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMetadataType {
 	/**
 	 * The cached value of the '{@link #getFileIdentifier() <em>File Identifier</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -370,8 +369,7 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDMetadataTypeImpl()
-	{
+	protected MDMetadataTypeImpl() {
 		super();
 	}
 
@@ -381,8 +379,7 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDMetadataType();
 	}
 
@@ -391,8 +388,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getFileIdentifier()
-	{
+	@Override
+	public CharacterStringPropertyType getFileIdentifier() {
 		return fileIdentifier;
 	}
 
@@ -401,12 +398,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFileIdentifier(CharacterStringPropertyType newFileIdentifier, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFileIdentifier(CharacterStringPropertyType newFileIdentifier, NotificationChain msgs) {
 		CharacterStringPropertyType oldFileIdentifier = fileIdentifier;
 		fileIdentifier = newFileIdentifier;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__FILE_IDENTIFIER, oldFileIdentifier, newFileIdentifier);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -418,10 +413,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFileIdentifier(CharacterStringPropertyType newFileIdentifier)
-	{
-		if (newFileIdentifier != fileIdentifier)
-		{
+	@Override
+	public void setFileIdentifier(CharacterStringPropertyType newFileIdentifier) {
+		if (newFileIdentifier != fileIdentifier) {
 			NotificationChain msgs = null;
 			if (fileIdentifier != null)
 				msgs = ((InternalEObject)fileIdentifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__FILE_IDENTIFIER, null, msgs);
@@ -439,8 +433,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getLanguage()
-	{
+	@Override
+	public CharacterStringPropertyType getLanguage() {
 		return language;
 	}
 
@@ -449,12 +443,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLanguage(CharacterStringPropertyType newLanguage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLanguage(CharacterStringPropertyType newLanguage, NotificationChain msgs) {
 		CharacterStringPropertyType oldLanguage = language;
 		language = newLanguage;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__LANGUAGE, oldLanguage, newLanguage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -466,10 +458,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLanguage(CharacterStringPropertyType newLanguage)
-	{
-		if (newLanguage != language)
-		{
+	@Override
+	public void setLanguage(CharacterStringPropertyType newLanguage) {
+		if (newLanguage != language) {
 			NotificationChain msgs = null;
 			if (language != null)
 				msgs = ((InternalEObject)language).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__LANGUAGE, null, msgs);
@@ -487,8 +478,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDCharacterSetCodePropertyType getCharacterSet()
-	{
+	@Override
+	public MDCharacterSetCodePropertyType getCharacterSet() {
 		return characterSet;
 	}
 
@@ -497,12 +488,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCharacterSet(MDCharacterSetCodePropertyType newCharacterSet, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCharacterSet(MDCharacterSetCodePropertyType newCharacterSet, NotificationChain msgs) {
 		MDCharacterSetCodePropertyType oldCharacterSet = characterSet;
 		characterSet = newCharacterSet;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__CHARACTER_SET, oldCharacterSet, newCharacterSet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -514,10 +503,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCharacterSet(MDCharacterSetCodePropertyType newCharacterSet)
-	{
-		if (newCharacterSet != characterSet)
-		{
+	@Override
+	public void setCharacterSet(MDCharacterSetCodePropertyType newCharacterSet) {
+		if (newCharacterSet != characterSet) {
 			NotificationChain msgs = null;
 			if (characterSet != null)
 				msgs = ((InternalEObject)characterSet).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__CHARACTER_SET, null, msgs);
@@ -535,8 +523,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getParentIdentifier()
-	{
+	@Override
+	public CharacterStringPropertyType getParentIdentifier() {
 		return parentIdentifier;
 	}
 
@@ -545,12 +533,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetParentIdentifier(CharacterStringPropertyType newParentIdentifier, NotificationChain msgs)
-	{
+	public NotificationChain basicSetParentIdentifier(CharacterStringPropertyType newParentIdentifier, NotificationChain msgs) {
 		CharacterStringPropertyType oldParentIdentifier = parentIdentifier;
 		parentIdentifier = newParentIdentifier;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__PARENT_IDENTIFIER, oldParentIdentifier, newParentIdentifier);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -562,10 +548,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setParentIdentifier(CharacterStringPropertyType newParentIdentifier)
-	{
-		if (newParentIdentifier != parentIdentifier)
-		{
+	@Override
+	public void setParentIdentifier(CharacterStringPropertyType newParentIdentifier) {
+		if (newParentIdentifier != parentIdentifier) {
 			NotificationChain msgs = null;
 			if (parentIdentifier != null)
 				msgs = ((InternalEObject)parentIdentifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__PARENT_IDENTIFIER, null, msgs);
@@ -583,10 +568,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDScopeCodePropertyType> getHierarchyLevel()
-	{
-		if (hierarchyLevel == null)
-		{
+	@Override
+	public EList<MDScopeCodePropertyType> getHierarchyLevel() {
+		if (hierarchyLevel == null) {
 			hierarchyLevel = new EObjectContainmentEList<MDScopeCodePropertyType>(MDScopeCodePropertyType.class, this, GMDPackage.MD_METADATA_TYPE__HIERARCHY_LEVEL);
 		}
 		return hierarchyLevel;
@@ -597,10 +581,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getHierarchyLevelName()
-	{
-		if (hierarchyLevelName == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getHierarchyLevelName() {
+		if (hierarchyLevelName == null) {
 			hierarchyLevelName = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__HIERARCHY_LEVEL_NAME);
 		}
 		return hierarchyLevelName;
@@ -611,10 +594,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIResponsiblePartyPropertyType> getContact()
-	{
-		if (contact == null)
-		{
+	@Override
+	public EList<CIResponsiblePartyPropertyType> getContact() {
+		if (contact == null) {
 			contact = new EObjectContainmentEList<CIResponsiblePartyPropertyType>(CIResponsiblePartyPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__CONTACT);
 		}
 		return contact;
@@ -625,8 +607,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DatePropertyType getDateStamp()
-	{
+	@Override
+	public DatePropertyType getDateStamp() {
 		return dateStamp;
 	}
 
@@ -635,12 +617,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDateStamp(DatePropertyType newDateStamp, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDateStamp(DatePropertyType newDateStamp, NotificationChain msgs) {
 		DatePropertyType oldDateStamp = dateStamp;
 		dateStamp = newDateStamp;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__DATE_STAMP, oldDateStamp, newDateStamp);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -652,10 +632,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDateStamp(DatePropertyType newDateStamp)
-	{
-		if (newDateStamp != dateStamp)
-		{
+	@Override
+	public void setDateStamp(DatePropertyType newDateStamp) {
+		if (newDateStamp != dateStamp) {
 			NotificationChain msgs = null;
 			if (dateStamp != null)
 				msgs = ((InternalEObject)dateStamp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__DATE_STAMP, null, msgs);
@@ -673,8 +652,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getMetadataStandardName()
-	{
+	@Override
+	public CharacterStringPropertyType getMetadataStandardName() {
 		return metadataStandardName;
 	}
 
@@ -683,12 +662,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMetadataStandardName(CharacterStringPropertyType newMetadataStandardName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMetadataStandardName(CharacterStringPropertyType newMetadataStandardName, NotificationChain msgs) {
 		CharacterStringPropertyType oldMetadataStandardName = metadataStandardName;
 		metadataStandardName = newMetadataStandardName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__METADATA_STANDARD_NAME, oldMetadataStandardName, newMetadataStandardName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -700,10 +677,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMetadataStandardName(CharacterStringPropertyType newMetadataStandardName)
-	{
-		if (newMetadataStandardName != metadataStandardName)
-		{
+	@Override
+	public void setMetadataStandardName(CharacterStringPropertyType newMetadataStandardName) {
+		if (newMetadataStandardName != metadataStandardName) {
 			NotificationChain msgs = null;
 			if (metadataStandardName != null)
 				msgs = ((InternalEObject)metadataStandardName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__METADATA_STANDARD_NAME, null, msgs);
@@ -721,8 +697,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getMetadataStandardVersion()
-	{
+	@Override
+	public CharacterStringPropertyType getMetadataStandardVersion() {
 		return metadataStandardVersion;
 	}
 
@@ -731,12 +707,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMetadataStandardVersion(CharacterStringPropertyType newMetadataStandardVersion, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMetadataStandardVersion(CharacterStringPropertyType newMetadataStandardVersion, NotificationChain msgs) {
 		CharacterStringPropertyType oldMetadataStandardVersion = metadataStandardVersion;
 		metadataStandardVersion = newMetadataStandardVersion;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__METADATA_STANDARD_VERSION, oldMetadataStandardVersion, newMetadataStandardVersion);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -748,10 +722,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMetadataStandardVersion(CharacterStringPropertyType newMetadataStandardVersion)
-	{
-		if (newMetadataStandardVersion != metadataStandardVersion)
-		{
+	@Override
+	public void setMetadataStandardVersion(CharacterStringPropertyType newMetadataStandardVersion) {
+		if (newMetadataStandardVersion != metadataStandardVersion) {
 			NotificationChain msgs = null;
 			if (metadataStandardVersion != null)
 				msgs = ((InternalEObject)metadataStandardVersion).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__METADATA_STANDARD_VERSION, null, msgs);
@@ -769,8 +742,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDataSetURI()
-	{
+	@Override
+	public CharacterStringPropertyType getDataSetURI() {
 		return dataSetURI;
 	}
 
@@ -779,12 +752,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataSetURI(CharacterStringPropertyType newDataSetURI, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataSetURI(CharacterStringPropertyType newDataSetURI, NotificationChain msgs) {
 		CharacterStringPropertyType oldDataSetURI = dataSetURI;
 		dataSetURI = newDataSetURI;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__DATA_SET_URI, oldDataSetURI, newDataSetURI);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -796,10 +767,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataSetURI(CharacterStringPropertyType newDataSetURI)
-	{
-		if (newDataSetURI != dataSetURI)
-		{
+	@Override
+	public void setDataSetURI(CharacterStringPropertyType newDataSetURI) {
+		if (newDataSetURI != dataSetURI) {
 			NotificationChain msgs = null;
 			if (dataSetURI != null)
 				msgs = ((InternalEObject)dataSetURI).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__DATA_SET_URI, null, msgs);
@@ -817,10 +787,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PTLocalePropertyType> getLocale()
-	{
-		if (locale == null)
-		{
+	@Override
+	public EList<PTLocalePropertyType> getLocale() {
+		if (locale == null) {
 			locale = new EObjectContainmentEList<PTLocalePropertyType>(PTLocalePropertyType.class, this, GMDPackage.MD_METADATA_TYPE__LOCALE);
 		}
 		return locale;
@@ -831,10 +800,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDSpatialRepresentationPropertyType> getSpatialRepresentationInfo()
-	{
-		if (spatialRepresentationInfo == null)
-		{
+	@Override
+	public EList<MDSpatialRepresentationPropertyType> getSpatialRepresentationInfo() {
+		if (spatialRepresentationInfo == null) {
 			spatialRepresentationInfo = new EObjectContainmentEList<MDSpatialRepresentationPropertyType>(MDSpatialRepresentationPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__SPATIAL_REPRESENTATION_INFO);
 		}
 		return spatialRepresentationInfo;
@@ -845,10 +813,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDReferenceSystemPropertyType> getReferenceSystemInfo()
-	{
-		if (referenceSystemInfo == null)
-		{
+	@Override
+	public EList<MDReferenceSystemPropertyType> getReferenceSystemInfo() {
+		if (referenceSystemInfo == null) {
 			referenceSystemInfo = new EObjectContainmentEList<MDReferenceSystemPropertyType>(MDReferenceSystemPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__REFERENCE_SYSTEM_INFO);
 		}
 		return referenceSystemInfo;
@@ -859,10 +826,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDMetadataExtensionInformationPropertyType> getMetadataExtensionInfo()
-	{
-		if (metadataExtensionInfo == null)
-		{
+	@Override
+	public EList<MDMetadataExtensionInformationPropertyType> getMetadataExtensionInfo() {
+		if (metadataExtensionInfo == null) {
 			metadataExtensionInfo = new EObjectContainmentEList<MDMetadataExtensionInformationPropertyType>(MDMetadataExtensionInformationPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__METADATA_EXTENSION_INFO);
 		}
 		return metadataExtensionInfo;
@@ -873,10 +839,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDIdentificationPropertyType> getIdentificationInfo()
-	{
-		if (identificationInfo == null)
-		{
+	@Override
+	public EList<MDIdentificationPropertyType> getIdentificationInfo() {
+		if (identificationInfo == null) {
 			identificationInfo = new EObjectContainmentEList<MDIdentificationPropertyType>(MDIdentificationPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__IDENTIFICATION_INFO);
 		}
 		return identificationInfo;
@@ -887,10 +852,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDContentInformationPropertyType> getContentInfo()
-	{
-		if (contentInfo == null)
-		{
+	@Override
+	public EList<MDContentInformationPropertyType> getContentInfo() {
+		if (contentInfo == null) {
 			contentInfo = new EObjectContainmentEList<MDContentInformationPropertyType>(MDContentInformationPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__CONTENT_INFO);
 		}
 		return contentInfo;
@@ -901,8 +865,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDistributionPropertyType getDistributionInfo()
-	{
+	@Override
+	public MDDistributionPropertyType getDistributionInfo() {
 		return distributionInfo;
 	}
 
@@ -911,12 +875,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDistributionInfo(MDDistributionPropertyType newDistributionInfo, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDistributionInfo(MDDistributionPropertyType newDistributionInfo, NotificationChain msgs) {
 		MDDistributionPropertyType oldDistributionInfo = distributionInfo;
 		distributionInfo = newDistributionInfo;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__DISTRIBUTION_INFO, oldDistributionInfo, newDistributionInfo);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -928,10 +890,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDistributionInfo(MDDistributionPropertyType newDistributionInfo)
-	{
-		if (newDistributionInfo != distributionInfo)
-		{
+	@Override
+	public void setDistributionInfo(MDDistributionPropertyType newDistributionInfo) {
+		if (newDistributionInfo != distributionInfo) {
 			NotificationChain msgs = null;
 			if (distributionInfo != null)
 				msgs = ((InternalEObject)distributionInfo).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__DISTRIBUTION_INFO, null, msgs);
@@ -949,10 +910,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DQDataQualityPropertyType> getDataQualityInfo()
-	{
-		if (dataQualityInfo == null)
-		{
+	@Override
+	public EList<DQDataQualityPropertyType> getDataQualityInfo() {
+		if (dataQualityInfo == null) {
 			dataQualityInfo = new EObjectContainmentEList<DQDataQualityPropertyType>(DQDataQualityPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__DATA_QUALITY_INFO);
 		}
 		return dataQualityInfo;
@@ -963,10 +923,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDPortrayalCatalogueReferencePropertyType> getPortrayalCatalogueInfo()
-	{
-		if (portrayalCatalogueInfo == null)
-		{
+	@Override
+	public EList<MDPortrayalCatalogueReferencePropertyType> getPortrayalCatalogueInfo() {
+		if (portrayalCatalogueInfo == null) {
 			portrayalCatalogueInfo = new EObjectContainmentEList<MDPortrayalCatalogueReferencePropertyType>(MDPortrayalCatalogueReferencePropertyType.class, this, GMDPackage.MD_METADATA_TYPE__PORTRAYAL_CATALOGUE_INFO);
 		}
 		return portrayalCatalogueInfo;
@@ -977,10 +936,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDConstraintsPropertyType> getMetadataConstraints()
-	{
-		if (metadataConstraints == null)
-		{
+	@Override
+	public EList<MDConstraintsPropertyType> getMetadataConstraints() {
+		if (metadataConstraints == null) {
 			metadataConstraints = new EObjectContainmentEList<MDConstraintsPropertyType>(MDConstraintsPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__METADATA_CONSTRAINTS);
 		}
 		return metadataConstraints;
@@ -991,10 +949,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDApplicationSchemaInformationPropertyType> getApplicationSchemaInfo()
-	{
-		if (applicationSchemaInfo == null)
-		{
+	@Override
+	public EList<MDApplicationSchemaInformationPropertyType> getApplicationSchemaInfo() {
+		if (applicationSchemaInfo == null) {
 			applicationSchemaInfo = new EObjectContainmentEList<MDApplicationSchemaInformationPropertyType>(MDApplicationSchemaInformationPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__APPLICATION_SCHEMA_INFO);
 		}
 		return applicationSchemaInfo;
@@ -1005,8 +962,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMaintenanceInformationPropertyType getMetadataMaintenance()
-	{
+	@Override
+	public MDMaintenanceInformationPropertyType getMetadataMaintenance() {
 		return metadataMaintenance;
 	}
 
@@ -1015,12 +972,10 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMetadataMaintenance(MDMaintenanceInformationPropertyType newMetadataMaintenance, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMetadataMaintenance(MDMaintenanceInformationPropertyType newMetadataMaintenance, NotificationChain msgs) {
 		MDMaintenanceInformationPropertyType oldMetadataMaintenance = metadataMaintenance;
 		metadataMaintenance = newMetadataMaintenance;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_METADATA_TYPE__METADATA_MAINTENANCE, oldMetadataMaintenance, newMetadataMaintenance);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -1032,10 +987,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMetadataMaintenance(MDMaintenanceInformationPropertyType newMetadataMaintenance)
-	{
-		if (newMetadataMaintenance != metadataMaintenance)
-		{
+	@Override
+	public void setMetadataMaintenance(MDMaintenanceInformationPropertyType newMetadataMaintenance) {
+		if (newMetadataMaintenance != metadataMaintenance) {
 			NotificationChain msgs = null;
 			if (metadataMaintenance != null)
 				msgs = ((InternalEObject)metadataMaintenance).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_METADATA_TYPE__METADATA_MAINTENANCE, null, msgs);
@@ -1053,10 +1007,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DSAggregatePropertyType> getSeries()
-	{
-		if (series == null)
-		{
+	@Override
+	public EList<DSAggregatePropertyType> getSeries() {
+		if (series == null) {
 			series = new EObjectContainmentEList<DSAggregatePropertyType>(DSAggregatePropertyType.class, this, GMDPackage.MD_METADATA_TYPE__SERIES);
 		}
 		return series;
@@ -1067,10 +1020,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DSDataSetPropertyType> getDescribes()
-	{
-		if (describes == null)
-		{
+	@Override
+	public EList<DSDataSetPropertyType> getDescribes() {
+		if (describes == null) {
 			describes = new EObjectContainmentEList<DSDataSetPropertyType>(DSDataSetPropertyType.class, this, GMDPackage.MD_METADATA_TYPE__DESCRIBES);
 		}
 		return describes;
@@ -1081,10 +1033,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ObjectReferencePropertyType> getPropertyType()
-	{
-		if (propertyType == null)
-		{
+	@Override
+	public EList<ObjectReferencePropertyType> getPropertyType() {
+		if (propertyType == null) {
 			propertyType = new EObjectContainmentEList<ObjectReferencePropertyType>(ObjectReferencePropertyType.class, this, GMDPackage.MD_METADATA_TYPE__PROPERTY_TYPE);
 		}
 		return propertyType;
@@ -1095,10 +1046,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ObjectReferencePropertyType> getFeatureType()
-	{
-		if (featureType == null)
-		{
+	@Override
+	public EList<ObjectReferencePropertyType> getFeatureType() {
+		if (featureType == null) {
 			featureType = new EObjectContainmentEList<ObjectReferencePropertyType>(ObjectReferencePropertyType.class, this, GMDPackage.MD_METADATA_TYPE__FEATURE_TYPE);
 		}
 		return featureType;
@@ -1109,10 +1059,9 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ObjectReferencePropertyType> getFeatureAttribute()
-	{
-		if (featureAttribute == null)
-		{
+	@Override
+	public EList<ObjectReferencePropertyType> getFeatureAttribute() {
+		if (featureAttribute == null) {
 			featureAttribute = new EObjectContainmentEList<ObjectReferencePropertyType>(ObjectReferencePropertyType.class, this, GMDPackage.MD_METADATA_TYPE__FEATURE_ATTRIBUTE);
 		}
 		return featureAttribute;
@@ -1124,10 +1073,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_TYPE__FILE_IDENTIFIER:
 				return basicSetFileIdentifier(null, msgs);
 			case GMDPackage.MD_METADATA_TYPE__LANGUAGE:
@@ -1194,10 +1141,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_TYPE__FILE_IDENTIFIER:
 				return getFileIdentifier();
 			case GMDPackage.MD_METADATA_TYPE__LANGUAGE:
@@ -1265,10 +1210,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_TYPE__FILE_IDENTIFIER:
 				setFileIdentifier((CharacterStringPropertyType)newValue);
 				return;
@@ -1381,10 +1324,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_TYPE__FILE_IDENTIFIER:
 				setFileIdentifier((CharacterStringPropertyType)null);
 				return;
@@ -1479,10 +1420,8 @@ public class MDMetadataTypeImpl extends AbstractObjectTypeImpl implements MDMeta
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_METADATA_TYPE__FILE_IDENTIFIER:
 				return fileIdentifier != null;
 			case GMDPackage.MD_METADATA_TYPE__LANGUAGE:

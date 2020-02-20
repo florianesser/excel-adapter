@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container implements ArrayAssociationType
-{
+public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container implements ArrayAssociationType {
 	/**
 	 * The cached value of the '{@link #getAbstractObjectGroup() <em>Abstract Object Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -82,8 +81,7 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArrayAssociationTypeImpl()
-	{
+	protected ArrayAssociationTypeImpl() {
 		super();
 	}
 
@@ -93,8 +91,7 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getArrayAssociationType();
 	}
 
@@ -103,10 +100,9 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractObjectGroup()
-	{
-		if (abstractObjectGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractObjectGroup() {
+		if (abstractObjectGroup == null) {
 			abstractObjectGroup = new BasicFeatureMap(this, GMLPackage.ARRAY_ASSOCIATION_TYPE__ABSTRACT_OBJECT_GROUP);
 		}
 		return abstractObjectGroup;
@@ -117,8 +113,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EObject> getAbstractObject()
-	{
+	@Override
+	public EList<EObject> getAbstractObject() {
 		return getAbstractObjectGroup().list(GMLPackage.eINSTANCE.getArrayAssociationType_AbstractObject());
 	}
 
@@ -127,8 +123,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -137,8 +133,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -152,8 +148,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -167,8 +163,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -178,10 +174,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_ASSOCIATION_TYPE__ABSTRACT_OBJECT_GROUP:
 				return ((InternalEList<?>)getAbstractObjectGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.ARRAY_ASSOCIATION_TYPE__ABSTRACT_OBJECT:
@@ -196,10 +190,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_ASSOCIATION_TYPE__ABSTRACT_OBJECT_GROUP:
 				if (coreType) return getAbstractObjectGroup();
 				return ((FeatureMap.Internal)getAbstractObjectGroup()).getWrapper();
@@ -217,10 +209,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_ASSOCIATION_TYPE__ABSTRACT_OBJECT_GROUP:
 				((FeatureMap.Internal)getAbstractObjectGroup()).set(newValue);
 				return;
@@ -237,10 +227,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_ASSOCIATION_TYPE__ABSTRACT_OBJECT_GROUP:
 				getAbstractObjectGroup().clear();
 				return;
@@ -257,10 +245,8 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ARRAY_ASSOCIATION_TYPE__ABSTRACT_OBJECT_GROUP:
 				return abstractObjectGroup != null && !abstractObjectGroup.isEmpty();
 			case GMLPackage.ARRAY_ASSOCIATION_TYPE__ABSTRACT_OBJECT:
@@ -277,11 +263,10 @@ public class ArrayAssociationTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractObjectGroup: ");
 		result.append(abstractObjectGroup);
 		result.append(", owns: ");

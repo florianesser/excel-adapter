@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQGriddedDataPositionalAccuracyTypeImpl extends AbstractDQPositionalAccuracyTypeImpl implements DQGriddedDataPositionalAccuracyType
-{
+public class DQGriddedDataPositionalAccuracyTypeImpl extends AbstractDQPositionalAccuracyTypeImpl implements DQGriddedDataPositionalAccuracyType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQGriddedDataPositionalAccuracyTypeImpl()
-	{
+	protected DQGriddedDataPositionalAccuracyTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQGriddedDataPositionalAccuracyTypeImpl extends AbstractDQPositiona
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQGriddedDataPositionalAccuracyType();
 	}
 

@@ -35,8 +35,7 @@ import org.w3.xlink.TypeType;
  * @model extendedMetaData="name='DirectedFacePropertyType' kind='elementOnly'"
  * @generated
  */
-public interface DirectedFacePropertyType extends EObject
-{
+public interface DirectedFacePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Face</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -70,10 +69,6 @@ public interface DirectedFacePropertyType extends EObject
 	 * Returns the value of the '<em><b>Actuate</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.w3.xlink.ActuateType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Actuate</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Actuate</em>' attribute.
 	 * @see org.w3.xlink.ActuateType
@@ -126,10 +121,6 @@ public interface DirectedFacePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Arcrole</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Arcrole</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Arcrole</em>' attribute.
 	 * @see #setArcrole(String)
@@ -153,10 +144,6 @@ public interface DirectedFacePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Href</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Href</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Href</em>' attribute.
 	 * @see #setHref(String)
@@ -180,10 +167,6 @@ public interface DirectedFacePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)
@@ -209,10 +192,6 @@ public interface DirectedFacePropertyType extends EObject
 	 * The default value is <code>"+"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.SignType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Orientation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Orientation</em>' attribute.
 	 * @see net.opengis.gml32.SignType
@@ -266,10 +245,6 @@ public interface DirectedFacePropertyType extends EObject
 	 * Returns the value of the '<em><b>Owns</b></em>' attribute.
 	 * The default value is <code>"false"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Owns</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Owns</em>' attribute.
 	 * @see #isSetOwns()
@@ -320,10 +295,6 @@ public interface DirectedFacePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Remote Schema</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Remote Schema</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Remote Schema</em>' attribute.
 	 * @see #setRemoteSchema(String)
@@ -347,10 +318,6 @@ public interface DirectedFacePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Role</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Role</em>' attribute.
 	 * @see #setRole(String)
@@ -375,10 +342,6 @@ public interface DirectedFacePropertyType extends EObject
 	 * Returns the value of the '<em><b>Show</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.w3.xlink.ShowType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Show</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Show</em>' attribute.
 	 * @see org.w3.xlink.ShowType
@@ -431,10 +394,6 @@ public interface DirectedFacePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' attribute.
 	 * @see #setTitle(String)
@@ -460,10 +419,6 @@ public interface DirectedFacePropertyType extends EObject
 	 * The default value is <code>"simple"</code>.
 	 * The literals are from the enumeration {@link org.w3.xlink.TypeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see org.w3.xlink.TypeType

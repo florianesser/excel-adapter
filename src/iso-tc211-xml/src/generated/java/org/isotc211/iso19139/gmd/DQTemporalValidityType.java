@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_TemporalValidity_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQTemporalValidityType extends AbstractDQTemporalAccuracyType
-{
+public interface DQTemporalValidityType extends AbstractDQTemporalAccuracyType {
 } // DQTemporalValidityType

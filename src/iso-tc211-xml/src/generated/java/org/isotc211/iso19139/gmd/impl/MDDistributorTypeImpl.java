@@ -42,8 +42,7 @@ import org.isotc211.iso19139.gmd.MDStandardOrderProcessPropertyType;
  *
  * @generated
  */
-public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDDistributorType
-{
+public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDDistributorType {
 	/**
 	 * The cached value of the '{@link #getDistributorContact() <em>Distributor Contact</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -89,8 +88,7 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDDistributorTypeImpl()
-	{
+	protected MDDistributorTypeImpl() {
 		super();
 	}
 
@@ -100,8 +98,7 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDDistributorType();
 	}
 
@@ -110,8 +107,8 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIResponsiblePartyPropertyType getDistributorContact()
-	{
+	@Override
+	public CIResponsiblePartyPropertyType getDistributorContact() {
 		return distributorContact;
 	}
 
@@ -120,12 +117,10 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDistributorContact(CIResponsiblePartyPropertyType newDistributorContact, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDistributorContact(CIResponsiblePartyPropertyType newDistributorContact, NotificationChain msgs) {
 		CIResponsiblePartyPropertyType oldDistributorContact = distributorContact;
 		distributorContact = newDistributorContact;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTOR_CONTACT, oldDistributorContact, newDistributorContact);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -137,10 +132,9 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDistributorContact(CIResponsiblePartyPropertyType newDistributorContact)
-	{
-		if (newDistributorContact != distributorContact)
-		{
+	@Override
+	public void setDistributorContact(CIResponsiblePartyPropertyType newDistributorContact) {
+		if (newDistributorContact != distributorContact) {
 			NotificationChain msgs = null;
 			if (distributorContact != null)
 				msgs = ((InternalEObject)distributorContact).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTOR_CONTACT, null, msgs);
@@ -158,10 +152,9 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDStandardOrderProcessPropertyType> getDistributionOrderProcess()
-	{
-		if (distributionOrderProcess == null)
-		{
+	@Override
+	public EList<MDStandardOrderProcessPropertyType> getDistributionOrderProcess() {
+		if (distributionOrderProcess == null) {
 			distributionOrderProcess = new EObjectContainmentEList<MDStandardOrderProcessPropertyType>(MDStandardOrderProcessPropertyType.class, this, GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTION_ORDER_PROCESS);
 		}
 		return distributionOrderProcess;
@@ -172,10 +165,9 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDFormatPropertyType> getDistributorFormat()
-	{
-		if (distributorFormat == null)
-		{
+	@Override
+	public EList<MDFormatPropertyType> getDistributorFormat() {
+		if (distributorFormat == null) {
 			distributorFormat = new EObjectContainmentEList<MDFormatPropertyType>(MDFormatPropertyType.class, this, GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTOR_FORMAT);
 		}
 		return distributorFormat;
@@ -186,10 +178,9 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDDigitalTransferOptionsPropertyType> getDistributorTransferOptions()
-	{
-		if (distributorTransferOptions == null)
-		{
+	@Override
+	public EList<MDDigitalTransferOptionsPropertyType> getDistributorTransferOptions() {
+		if (distributorTransferOptions == null) {
 			distributorTransferOptions = new EObjectContainmentEList<MDDigitalTransferOptionsPropertyType>(MDDigitalTransferOptionsPropertyType.class, this, GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTOR_TRANSFER_OPTIONS);
 		}
 		return distributorTransferOptions;
@@ -201,10 +192,8 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTOR_CONTACT:
 				return basicSetDistributorContact(null, msgs);
 			case GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTION_ORDER_PROCESS:
@@ -223,10 +212,8 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTOR_CONTACT:
 				return getDistributorContact();
 			case GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTION_ORDER_PROCESS:
@@ -246,10 +233,8 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTOR_CONTACT:
 				setDistributorContact((CIResponsiblePartyPropertyType)newValue);
 				return;
@@ -275,10 +260,8 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTOR_CONTACT:
 				setDistributorContact((CIResponsiblePartyPropertyType)null);
 				return;
@@ -301,10 +284,8 @@ public class MDDistributorTypeImpl extends AbstractObjectTypeImpl implements MDD
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTOR_CONTACT:
 				return distributorContact != null;
 			case GMDPackage.MD_DISTRIBUTOR_TYPE__DISTRIBUTION_ORDER_PROCESS:

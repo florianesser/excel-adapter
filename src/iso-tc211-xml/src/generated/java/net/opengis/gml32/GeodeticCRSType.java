@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='GeodeticCRSType' kind='elementOnly'"
  * @generated
  */
-public interface GeodeticCRSType extends AbstractCRSType
-{
+public interface GeodeticCRSType extends AbstractCRSType {
 	/**
 	 * Returns the value of the '<em><b>Ellipsoidal CS Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.

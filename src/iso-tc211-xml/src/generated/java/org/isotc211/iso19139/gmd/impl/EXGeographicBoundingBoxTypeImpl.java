@@ -31,8 +31,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentTypeImpl implements EXGeographicBoundingBoxType
-{
+public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentTypeImpl implements EXGeographicBoundingBoxType {
 	/**
 	 * The cached value of the '{@link #getWestBoundLongitude() <em>West Bound Longitude</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -78,8 +77,7 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EXGeographicBoundingBoxTypeImpl()
-	{
+	protected EXGeographicBoundingBoxTypeImpl() {
 		super();
 	}
 
@@ -89,8 +87,7 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getEXGeographicBoundingBoxType();
 	}
 
@@ -99,8 +96,8 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DecimalPropertyType getWestBoundLongitude()
-	{
+	@Override
+	public DecimalPropertyType getWestBoundLongitude() {
 		return westBoundLongitude;
 	}
 
@@ -109,12 +106,10 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetWestBoundLongitude(DecimalPropertyType newWestBoundLongitude, NotificationChain msgs)
-	{
+	public NotificationChain basicSetWestBoundLongitude(DecimalPropertyType newWestBoundLongitude, NotificationChain msgs) {
 		DecimalPropertyType oldWestBoundLongitude = westBoundLongitude;
 		westBoundLongitude = newWestBoundLongitude;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__WEST_BOUND_LONGITUDE, oldWestBoundLongitude, newWestBoundLongitude);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -126,10 +121,9 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setWestBoundLongitude(DecimalPropertyType newWestBoundLongitude)
-	{
-		if (newWestBoundLongitude != westBoundLongitude)
-		{
+	@Override
+	public void setWestBoundLongitude(DecimalPropertyType newWestBoundLongitude) {
+		if (newWestBoundLongitude != westBoundLongitude) {
 			NotificationChain msgs = null;
 			if (westBoundLongitude != null)
 				msgs = ((InternalEObject)westBoundLongitude).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__WEST_BOUND_LONGITUDE, null, msgs);
@@ -147,8 +141,8 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DecimalPropertyType getEastBoundLongitude()
-	{
+	@Override
+	public DecimalPropertyType getEastBoundLongitude() {
 		return eastBoundLongitude;
 	}
 
@@ -157,12 +151,10 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEastBoundLongitude(DecimalPropertyType newEastBoundLongitude, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEastBoundLongitude(DecimalPropertyType newEastBoundLongitude, NotificationChain msgs) {
 		DecimalPropertyType oldEastBoundLongitude = eastBoundLongitude;
 		eastBoundLongitude = newEastBoundLongitude;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__EAST_BOUND_LONGITUDE, oldEastBoundLongitude, newEastBoundLongitude);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -174,10 +166,9 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEastBoundLongitude(DecimalPropertyType newEastBoundLongitude)
-	{
-		if (newEastBoundLongitude != eastBoundLongitude)
-		{
+	@Override
+	public void setEastBoundLongitude(DecimalPropertyType newEastBoundLongitude) {
+		if (newEastBoundLongitude != eastBoundLongitude) {
 			NotificationChain msgs = null;
 			if (eastBoundLongitude != null)
 				msgs = ((InternalEObject)eastBoundLongitude).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__EAST_BOUND_LONGITUDE, null, msgs);
@@ -195,8 +186,8 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DecimalPropertyType getSouthBoundLatitude()
-	{
+	@Override
+	public DecimalPropertyType getSouthBoundLatitude() {
 		return southBoundLatitude;
 	}
 
@@ -205,12 +196,10 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSouthBoundLatitude(DecimalPropertyType newSouthBoundLatitude, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSouthBoundLatitude(DecimalPropertyType newSouthBoundLatitude, NotificationChain msgs) {
 		DecimalPropertyType oldSouthBoundLatitude = southBoundLatitude;
 		southBoundLatitude = newSouthBoundLatitude;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__SOUTH_BOUND_LATITUDE, oldSouthBoundLatitude, newSouthBoundLatitude);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -222,10 +211,9 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSouthBoundLatitude(DecimalPropertyType newSouthBoundLatitude)
-	{
-		if (newSouthBoundLatitude != southBoundLatitude)
-		{
+	@Override
+	public void setSouthBoundLatitude(DecimalPropertyType newSouthBoundLatitude) {
+		if (newSouthBoundLatitude != southBoundLatitude) {
 			NotificationChain msgs = null;
 			if (southBoundLatitude != null)
 				msgs = ((InternalEObject)southBoundLatitude).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__SOUTH_BOUND_LATITUDE, null, msgs);
@@ -243,8 +231,8 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DecimalPropertyType getNorthBoundLatitude()
-	{
+	@Override
+	public DecimalPropertyType getNorthBoundLatitude() {
 		return northBoundLatitude;
 	}
 
@@ -253,12 +241,10 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetNorthBoundLatitude(DecimalPropertyType newNorthBoundLatitude, NotificationChain msgs)
-	{
+	public NotificationChain basicSetNorthBoundLatitude(DecimalPropertyType newNorthBoundLatitude, NotificationChain msgs) {
 		DecimalPropertyType oldNorthBoundLatitude = northBoundLatitude;
 		northBoundLatitude = newNorthBoundLatitude;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__NORTH_BOUND_LATITUDE, oldNorthBoundLatitude, newNorthBoundLatitude);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -270,10 +256,9 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNorthBoundLatitude(DecimalPropertyType newNorthBoundLatitude)
-	{
-		if (newNorthBoundLatitude != northBoundLatitude)
-		{
+	@Override
+	public void setNorthBoundLatitude(DecimalPropertyType newNorthBoundLatitude) {
+		if (newNorthBoundLatitude != northBoundLatitude) {
 			NotificationChain msgs = null;
 			if (northBoundLatitude != null)
 				msgs = ((InternalEObject)northBoundLatitude).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__NORTH_BOUND_LATITUDE, null, msgs);
@@ -292,10 +277,8 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__WEST_BOUND_LONGITUDE:
 				return basicSetWestBoundLongitude(null, msgs);
 			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__EAST_BOUND_LONGITUDE:
@@ -314,10 +297,8 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__WEST_BOUND_LONGITUDE:
 				return getWestBoundLongitude();
 			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__EAST_BOUND_LONGITUDE:
@@ -336,10 +317,8 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__WEST_BOUND_LONGITUDE:
 				setWestBoundLongitude((DecimalPropertyType)newValue);
 				return;
@@ -362,10 +341,8 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__WEST_BOUND_LONGITUDE:
 				setWestBoundLongitude((DecimalPropertyType)null);
 				return;
@@ -388,10 +365,8 @@ public class EXGeographicBoundingBoxTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__WEST_BOUND_LONGITUDE:
 				return westBoundLongitude != null;
 			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE__EAST_BOUND_LONGITUDE:

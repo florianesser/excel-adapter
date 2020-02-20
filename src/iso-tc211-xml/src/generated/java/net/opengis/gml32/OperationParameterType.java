@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='OperationParameterType' kind='elementOnly'"
  * @generated
  */
-public interface OperationParameterType extends AbstractGeneralOperationParameterType
-{
+public interface OperationParameterType extends AbstractGeneralOperationParameterType {
 } // OperationParameterType

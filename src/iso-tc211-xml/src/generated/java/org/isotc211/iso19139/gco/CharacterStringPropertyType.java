@@ -24,16 +24,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='CharacterString_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface CharacterStringPropertyType extends EObject
-{
+public interface CharacterStringPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Character String Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Character String Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Character String Group</em>' attribute list.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getCharacterStringPropertyType_CharacterStringGroup()
@@ -46,10 +41,6 @@ public interface CharacterStringPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Character String</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Character String</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Character String</em>' attribute.
 	 * @see #setCharacterString(String)
@@ -73,10 +64,6 @@ public interface CharacterStringPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

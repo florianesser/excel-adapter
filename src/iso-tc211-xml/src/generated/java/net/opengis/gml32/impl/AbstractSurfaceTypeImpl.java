@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class AbstractSurfaceTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements AbstractSurfaceType
-{
+public abstract class AbstractSurfaceTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements AbstractSurfaceType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractSurfaceTypeImpl()
-	{
+	protected AbstractSurfaceTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class AbstractSurfaceTypeImpl extends AbstractGeometricPrimitive
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractSurfaceType();
 	}
 

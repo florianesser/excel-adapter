@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='AreaType' kind='simple'"
  * @generated
  */
-public interface AreaType extends MeasureType
-{
+public interface AreaType extends MeasureType {
 } // AreaType

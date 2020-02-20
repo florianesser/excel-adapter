@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ObliqueCartesianCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements ObliqueCartesianCSType
-{
+public class ObliqueCartesianCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements ObliqueCartesianCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ObliqueCartesianCSTypeImpl()
-	{
+	protected ObliqueCartesianCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class ObliqueCartesianCSTypeImpl extends AbstractCoordinateSystemTypeImpl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getObliqueCartesianCSType();
 	}
 

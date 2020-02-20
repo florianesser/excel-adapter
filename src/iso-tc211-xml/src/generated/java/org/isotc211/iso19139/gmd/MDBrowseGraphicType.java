@@ -27,15 +27,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='MD_BrowseGraphic_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDBrowseGraphicType extends AbstractObjectType
-{
+public interface MDBrowseGraphicType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>File Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>File Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>File Name</em>' containment reference.
 	 * @see #setFileName(CharacterStringPropertyType)
@@ -59,10 +54,6 @@ public interface MDBrowseGraphicType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>File Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>File Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>File Description</em>' containment reference.
 	 * @see #setFileDescription(CharacterStringPropertyType)
@@ -86,10 +77,6 @@ public interface MDBrowseGraphicType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>File Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>File Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>File Type</em>' containment reference.
 	 * @see #setFileType(CharacterStringPropertyType)

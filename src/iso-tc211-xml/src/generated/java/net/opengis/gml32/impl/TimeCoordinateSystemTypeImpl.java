@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl implements TimeCoordinateSystemType
-{
+public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl implements TimeCoordinateSystemType {
 	/**
 	 * The cached value of the '{@link #getOriginPosition() <em>Origin Position</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -68,8 +67,7 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeCoordinateSystemTypeImpl()
-	{
+	protected TimeCoordinateSystemTypeImpl() {
 		super();
 	}
 
@@ -79,8 +77,7 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeCoordinateSystemType();
 	}
 
@@ -89,8 +86,8 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePositionType getOriginPosition()
-	{
+	@Override
+	public TimePositionType getOriginPosition() {
 		return originPosition;
 	}
 
@@ -99,12 +96,10 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOriginPosition(TimePositionType newOriginPosition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOriginPosition(TimePositionType newOriginPosition, NotificationChain msgs) {
 		TimePositionType oldOriginPosition = originPosition;
 		originPosition = newOriginPosition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN_POSITION, oldOriginPosition, newOriginPosition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -116,10 +111,9 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOriginPosition(TimePositionType newOriginPosition)
-	{
-		if (newOriginPosition != originPosition)
-		{
+	@Override
+	public void setOriginPosition(TimePositionType newOriginPosition) {
+		if (newOriginPosition != originPosition) {
 			NotificationChain msgs = null;
 			if (originPosition != null)
 				msgs = ((InternalEObject)originPosition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN_POSITION, null, msgs);
@@ -137,8 +131,8 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeInstantPropertyType getOrigin()
-	{
+	@Override
+	public TimeInstantPropertyType getOrigin() {
 		return origin;
 	}
 
@@ -147,12 +141,10 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrigin(TimeInstantPropertyType newOrigin, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOrigin(TimeInstantPropertyType newOrigin, NotificationChain msgs) {
 		TimeInstantPropertyType oldOrigin = origin;
 		origin = newOrigin;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN, oldOrigin, newOrigin);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -164,10 +156,9 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrigin(TimeInstantPropertyType newOrigin)
-	{
-		if (newOrigin != origin)
-		{
+	@Override
+	public void setOrigin(TimeInstantPropertyType newOrigin) {
+		if (newOrigin != origin) {
 			NotificationChain msgs = null;
 			if (origin != null)
 				msgs = ((InternalEObject)origin).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN, null, msgs);
@@ -185,8 +176,8 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeIntervalLengthType getInterval()
-	{
+	@Override
+	public TimeIntervalLengthType getInterval() {
 		return interval;
 	}
 
@@ -195,12 +186,10 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetInterval(TimeIntervalLengthType newInterval, NotificationChain msgs)
-	{
+	public NotificationChain basicSetInterval(TimeIntervalLengthType newInterval, NotificationChain msgs) {
 		TimeIntervalLengthType oldInterval = interval;
 		interval = newInterval;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__INTERVAL, oldInterval, newInterval);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -212,10 +201,9 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInterval(TimeIntervalLengthType newInterval)
-	{
-		if (newInterval != interval)
-		{
+	@Override
+	public void setInterval(TimeIntervalLengthType newInterval) {
+		if (newInterval != interval) {
 			NotificationChain msgs = null;
 			if (interval != null)
 				msgs = ((InternalEObject)interval).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__INTERVAL, null, msgs);
@@ -234,10 +222,8 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN_POSITION:
 				return basicSetOriginPosition(null, msgs);
 			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN:
@@ -254,10 +240,8 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN_POSITION:
 				return getOriginPosition();
 			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN:
@@ -274,10 +258,8 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN_POSITION:
 				setOriginPosition((TimePositionType)newValue);
 				return;
@@ -297,10 +279,8 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN_POSITION:
 				setOriginPosition((TimePositionType)null);
 				return;
@@ -320,10 +300,8 @@ public class TimeCoordinateSystemTypeImpl extends TimeReferenceSystemTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN_POSITION:
 				return originPosition != null;
 			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE__ORIGIN:

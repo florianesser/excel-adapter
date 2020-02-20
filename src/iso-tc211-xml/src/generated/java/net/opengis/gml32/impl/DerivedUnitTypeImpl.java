@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements DerivedUnitType
-{
+public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements DerivedUnitType {
 	/**
 	 * The cached value of the '{@link #getDerivationUnitTerm() <em>Derivation Unit Term</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements Deriv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DerivedUnitTypeImpl()
-	{
+	protected DerivedUnitTypeImpl() {
 		super();
 	}
 
@@ -59,8 +57,7 @@ public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements Deriv
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDerivedUnitType();
 	}
 
@@ -69,10 +66,9 @@ public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements Deriv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DerivationUnitTermType> getDerivationUnitTerm()
-	{
-		if (derivationUnitTerm == null)
-		{
+	@Override
+	public EList<DerivationUnitTermType> getDerivationUnitTerm() {
+		if (derivationUnitTerm == null) {
 			derivationUnitTerm = new EObjectContainmentEList<DerivationUnitTermType>(DerivationUnitTermType.class, this, GMLPackage.DERIVED_UNIT_TYPE__DERIVATION_UNIT_TERM);
 		}
 		return derivationUnitTerm;
@@ -84,10 +80,8 @@ public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements Deriv
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_UNIT_TYPE__DERIVATION_UNIT_TERM:
 				return ((InternalEList<?>)getDerivationUnitTerm()).basicRemove(otherEnd, msgs);
 		}
@@ -100,10 +94,8 @@ public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements Deriv
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_UNIT_TYPE__DERIVATION_UNIT_TERM:
 				return getDerivationUnitTerm();
 		}
@@ -117,10 +109,8 @@ public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements Deriv
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_UNIT_TYPE__DERIVATION_UNIT_TERM:
 				getDerivationUnitTerm().clear();
 				getDerivationUnitTerm().addAll((Collection<? extends DerivationUnitTermType>)newValue);
@@ -135,10 +125,8 @@ public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements Deriv
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_UNIT_TYPE__DERIVATION_UNIT_TERM:
 				getDerivationUnitTerm().clear();
 				return;
@@ -152,10 +140,8 @@ public class DerivedUnitTypeImpl extends UnitDefinitionTypeImpl implements Deriv
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DERIVED_UNIT_TYPE__DERIVATION_UNIT_TERM:
 				return derivationUnitTerm != null && !derivationUnitTerm.isEmpty();
 		}

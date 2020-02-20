@@ -19,8 +19,7 @@ import org.isotc211.iso19139.gsr.*;
  * @see org.isotc211.iso19139.gsr.GSRPackage
  * @generated
  */
-public class GSRAdapterFactory extends AdapterFactoryImpl
-{
+public class GSRAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
@@ -35,10 +34,8 @@ public class GSRAdapterFactory extends AdapterFactoryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSRAdapterFactory()
-	{
-		if (modelPackage == null)
-		{
+	public GSRAdapterFactory() {
+		if (modelPackage == null) {
 			modelPackage = GSRPackage.eINSTANCE;
 		}
 	}
@@ -52,14 +49,11 @@ public class GSRAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean isFactoryForType(Object object)
-	{
-		if (object == modelPackage)
-		{
+	public boolean isFactoryForType(Object object) {
+		if (object == modelPackage) {
 			return true;
 		}
-		if (object instanceof EObject)
-		{
+		if (object instanceof EObject) {
 			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
@@ -72,16 +66,13 @@ public class GSRAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	protected GSRSwitch<Adapter> modelSwitch =
-		new GSRSwitch<Adapter>()
-		{
+		new GSRSwitch<Adapter>() {
 			@Override
-			public Adapter caseSCCRSPropertyType(SCCRSPropertyType object)
-			{
+			public Adapter caseSCCRSPropertyType(SCCRSPropertyType object) {
 				return createSCCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter defaultCase(EObject object)
-			{
+			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
 		};
@@ -95,8 +86,7 @@ public class GSRAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdapter(Notifier target)
-	{
+	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
@@ -111,8 +101,7 @@ public class GSRAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gsr.SCCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createSCCRSPropertyTypeAdapter()
-	{
+	public Adapter createSCCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -124,8 +113,7 @@ public class GSRAdapterFactory extends AdapterFactoryImpl
 	 * @return the new adapter.
 	 * @generated
 	 */
-	public Adapter createEObjectAdapter()
-	{
+	public Adapter createEObjectAdapter() {
 		return null;
 	}
 

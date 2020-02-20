@@ -30,16 +30,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='locatorType' kind='elementOnly'"
  * @generated
  */
-public interface LocatorType extends EObject
-{
+public interface LocatorType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Title Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title Group</em>' attribute list.
 	 * @see org.w3.xlink.XLinkPackage#getLocatorType_TitleGroup()
@@ -53,10 +48,6 @@ public interface LocatorType extends EObject
 	 * Returns the value of the '<em><b>Title</b></em>' containment reference list.
 	 * The list contents are of type {@link org.w3.xlink.TitleEltType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' containment reference list.
 	 * @see org.w3.xlink.XLinkPackage#getLocatorType_Title()
@@ -69,10 +60,6 @@ public interface LocatorType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Href</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Href</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Href</em>' attribute.
 	 * @see #setHref(String)
@@ -125,10 +112,6 @@ public interface LocatorType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Role</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Role</em>' attribute.
 	 * @see #setRole(String)
@@ -152,10 +135,6 @@ public interface LocatorType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Title1</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title1</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title1</em>' attribute.
 	 * @see #setTitle1(String)
@@ -181,10 +160,6 @@ public interface LocatorType extends EObject
 	 * The default value is <code>"locator"</code>.
 	 * The literals are from the enumeration {@link org.w3.xlink.TypeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see org.w3.xlink.TypeType

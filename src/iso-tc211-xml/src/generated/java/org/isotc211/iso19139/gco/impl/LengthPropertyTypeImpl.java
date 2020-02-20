@@ -35,8 +35,7 @@ import org.isotc211.iso19139.gco.LengthPropertyType;
  *
  * @generated
  */
-public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container implements LengthPropertyType
-{
+public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container implements LengthPropertyType {
 	/**
 	 * The cached value of the '{@link #getLengthGroup() <em>Length Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -72,8 +71,7 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LengthPropertyTypeImpl()
-	{
+	protected LengthPropertyTypeImpl() {
 		super();
 	}
 
@@ -83,8 +81,7 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.LENGTH_PROPERTY_TYPE;
 	}
 
@@ -93,10 +90,9 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getLengthGroup()
-	{
-		if (lengthGroup == null)
-		{
+	@Override
+	public FeatureMap getLengthGroup() {
+		if (lengthGroup == null) {
 			lengthGroup = new BasicFeatureMap(this, GCOPackage.LENGTH_PROPERTY_TYPE__LENGTH_GROUP);
 		}
 		return lengthGroup;
@@ -107,8 +103,8 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LengthType getLength()
-	{
+	@Override
+	public LengthType getLength() {
 		return (LengthType)getLengthGroup().get(GCOPackage.Literals.LENGTH_PROPERTY_TYPE__LENGTH, true);
 	}
 
@@ -117,8 +113,7 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLength(LengthType newLength, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLength(LengthType newLength, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getLengthGroup()).basicAdd(GCOPackage.Literals.LENGTH_PROPERTY_TYPE__LENGTH, newLength, msgs);
 	}
 
@@ -127,8 +122,8 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLength(LengthType newLength)
-	{
+	@Override
+	public void setLength(LengthType newLength) {
 		((FeatureMap.Internal)getLengthGroup()).set(GCOPackage.Literals.LENGTH_PROPERTY_TYPE__LENGTH, newLength);
 	}
 
@@ -137,8 +132,8 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -147,8 +142,8 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -161,10 +156,8 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.LENGTH_PROPERTY_TYPE__LENGTH_GROUP:
 				return ((InternalEList<?>)getLengthGroup()).basicRemove(otherEnd, msgs);
 			case GCOPackage.LENGTH_PROPERTY_TYPE__LENGTH:
@@ -179,10 +172,8 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.LENGTH_PROPERTY_TYPE__LENGTH_GROUP:
 				if (coreType) return getLengthGroup();
 				return ((FeatureMap.Internal)getLengthGroup()).getWrapper();
@@ -200,10 +191,8 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.LENGTH_PROPERTY_TYPE__LENGTH_GROUP:
 				((FeatureMap.Internal)getLengthGroup()).set(newValue);
 				return;
@@ -223,10 +212,8 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.LENGTH_PROPERTY_TYPE__LENGTH_GROUP:
 				getLengthGroup().clear();
 				return;
@@ -246,10 +233,8 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.LENGTH_PROPERTY_TYPE__LENGTH_GROUP:
 				return lengthGroup != null && !lengthGroup.isEmpty();
 			case GCOPackage.LENGTH_PROPERTY_TYPE__LENGTH:
@@ -266,11 +251,10 @@ public class LengthPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (lengthGroup: ");
 		result.append(lengthGroup);
 		result.append(", nilReason: ");

@@ -38,8 +38,7 @@ import org.isotc211.iso19139.gmd.RSIdentifierPropertyType;
  *
  * @generated
  */
-public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements AbstractRSReferenceSystemType
-{
+public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTypeImpl implements AbstractRSReferenceSystemType {
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -65,8 +64,7 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractRSReferenceSystemTypeImpl()
-	{
+	protected AbstractRSReferenceSystemTypeImpl() {
 		super();
 	}
 
@@ -76,8 +74,7 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractRSReferenceSystemType();
 	}
 
@@ -86,8 +83,8 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RSIdentifierPropertyType getName()
-	{
+	@Override
+	public RSIdentifierPropertyType getName() {
 		return name;
 	}
 
@@ -96,12 +93,10 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetName(RSIdentifierPropertyType newName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetName(RSIdentifierPropertyType newName, NotificationChain msgs) {
 		RSIdentifierPropertyType oldName = name;
 		name = newName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__NAME, oldName, newName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -113,10 +108,9 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(RSIdentifierPropertyType newName)
-	{
-		if (newName != name)
-		{
+	@Override
+	public void setName(RSIdentifierPropertyType newName) {
+		if (newName != name) {
 			NotificationChain msgs = null;
 			if (name != null)
 				msgs = ((InternalEObject)name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__NAME, null, msgs);
@@ -134,10 +128,9 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EXExtentPropertyType> getDomainOfValidity()
-	{
-		if (domainOfValidity == null)
-		{
+	@Override
+	public EList<EXExtentPropertyType> getDomainOfValidity() {
+		if (domainOfValidity == null) {
 			domainOfValidity = new EObjectContainmentEList<EXExtentPropertyType>(EXExtentPropertyType.class, this, GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__DOMAIN_OF_VALIDITY);
 		}
 		return domainOfValidity;
@@ -149,10 +142,8 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__NAME:
 				return basicSetName(null, msgs);
 			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__DOMAIN_OF_VALIDITY:
@@ -167,10 +158,8 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__NAME:
 				return getName();
 			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__DOMAIN_OF_VALIDITY:
@@ -186,10 +175,8 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__NAME:
 				setName((RSIdentifierPropertyType)newValue);
 				return;
@@ -207,10 +194,8 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__NAME:
 				setName((RSIdentifierPropertyType)null);
 				return;
@@ -227,10 +212,8 @@ public abstract class AbstractRSReferenceSystemTypeImpl extends AbstractObjectTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__NAME:
 				return name != null;
 			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE__DOMAIN_OF_VALIDITY:

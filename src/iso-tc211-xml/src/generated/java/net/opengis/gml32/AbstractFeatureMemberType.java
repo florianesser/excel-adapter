@@ -26,16 +26,11 @@ import org.eclipse.emf.ecore.EObject;
  *        extendedMetaData="name='AbstractFeatureMemberType' kind='empty'"
  * @generated
  */
-public interface AbstractFeatureMemberType extends EObject
-{
+public interface AbstractFeatureMemberType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Owns</b></em>' attribute.
 	 * The default value is <code>"false"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Owns</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Owns</em>' attribute.
 	 * @see #isSetOwns()

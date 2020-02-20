@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class TimeTypeImpl extends MeasureTypeImpl implements TimeType
-{
+public class TimeTypeImpl extends MeasureTypeImpl implements TimeType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeTypeImpl()
-	{
+	protected TimeTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class TimeTypeImpl extends MeasureTypeImpl implements TimeType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeType();
 	}
 

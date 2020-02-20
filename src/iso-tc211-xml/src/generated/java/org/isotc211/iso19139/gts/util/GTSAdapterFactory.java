@@ -19,8 +19,7 @@ import org.isotc211.iso19139.gts.*;
  * @see org.isotc211.iso19139.gts.GTSPackage
  * @generated
  */
-public class GTSAdapterFactory extends AdapterFactoryImpl
-{
+public class GTSAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
@@ -35,10 +34,8 @@ public class GTSAdapterFactory extends AdapterFactoryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GTSAdapterFactory()
-	{
-		if (modelPackage == null)
-		{
+	public GTSAdapterFactory() {
+		if (modelPackage == null) {
 			modelPackage = GTSPackage.eINSTANCE;
 		}
 	}
@@ -52,14 +49,11 @@ public class GTSAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean isFactoryForType(Object object)
-	{
-		if (object == modelPackage)
-		{
+	public boolean isFactoryForType(Object object) {
+		if (object == modelPackage) {
 			return true;
 		}
-		if (object instanceof EObject)
-		{
+		if (object instanceof EObject) {
 			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
@@ -72,26 +66,21 @@ public class GTSAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	protected GTSSwitch<Adapter> modelSwitch =
-		new GTSSwitch<Adapter>()
-		{
+		new GTSSwitch<Adapter>() {
 			@Override
-			public Adapter caseTMPeriodDurationPropertyType(TMPeriodDurationPropertyType object)
-			{
+			public Adapter caseTMPeriodDurationPropertyType(TMPeriodDurationPropertyType object) {
 				return createTMPeriodDurationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTMPrimitivePropertyType(TMPrimitivePropertyType object)
-			{
+			public Adapter caseTMPrimitivePropertyType(TMPrimitivePropertyType object) {
 				return createTMPrimitivePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDocumentRoot(DocumentRoot object)
-			{
+			public Adapter caseDocumentRoot(DocumentRoot object) {
 				return createDocumentRootAdapter();
 			}
 			@Override
-			public Adapter defaultCase(EObject object)
-			{
+			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
 		};
@@ -105,8 +94,7 @@ public class GTSAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdapter(Notifier target)
-	{
+	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
@@ -121,8 +109,7 @@ public class GTSAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gts.TMPeriodDurationPropertyType
 	 * @generated
 	 */
-	public Adapter createTMPeriodDurationPropertyTypeAdapter()
-	{
+	public Adapter createTMPeriodDurationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -136,8 +123,7 @@ public class GTSAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gts.TMPrimitivePropertyType
 	 * @generated
 	 */
-	public Adapter createTMPrimitivePropertyTypeAdapter()
-	{
+	public Adapter createTMPrimitivePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -151,8 +137,7 @@ public class GTSAdapterFactory extends AdapterFactoryImpl
 	 * @see org.isotc211.iso19139.gts.DocumentRoot
 	 * @generated
 	 */
-	public Adapter createDocumentRootAdapter()
-	{
+	public Adapter createDocumentRootAdapter() {
 		return null;
 	}
 
@@ -164,8 +149,7 @@ public class GTSAdapterFactory extends AdapterFactoryImpl
 	 * @return the new adapter.
 	 * @generated
 	 */
-	public Adapter createEObjectAdapter()
-	{
+	public Adapter createEObjectAdapter() {
 		return null;
 	}
 

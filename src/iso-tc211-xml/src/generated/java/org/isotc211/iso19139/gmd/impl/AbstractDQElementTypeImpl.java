@@ -49,8 +49,7 @@ import org.isotc211.iso19139.gmd.MDIdentifierPropertyType;
  *
  * @generated
  */
-public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl implements AbstractDQElementType
-{
+public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl implements AbstractDQElementType {
 	/**
 	 * The cached value of the '{@link #getNameOfMeasure() <em>Name Of Measure</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -136,8 +135,7 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractDQElementTypeImpl()
-	{
+	protected AbstractDQElementTypeImpl() {
 		super();
 	}
 
@@ -147,8 +145,7 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractDQElementType();
 	}
 
@@ -157,10 +154,9 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getNameOfMeasure()
-	{
-		if (nameOfMeasure == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getNameOfMeasure() {
+		if (nameOfMeasure == null) {
 			nameOfMeasure = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__NAME_OF_MEASURE);
 		}
 		return nameOfMeasure;
@@ -171,8 +167,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDIdentifierPropertyType getMeasureIdentification()
-	{
+	@Override
+	public MDIdentifierPropertyType getMeasureIdentification() {
 		return measureIdentification;
 	}
 
@@ -181,12 +177,10 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMeasureIdentification(MDIdentifierPropertyType newMeasureIdentification, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMeasureIdentification(MDIdentifierPropertyType newMeasureIdentification, NotificationChain msgs) {
 		MDIdentifierPropertyType oldMeasureIdentification = measureIdentification;
 		measureIdentification = newMeasureIdentification;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__MEASURE_IDENTIFICATION, oldMeasureIdentification, newMeasureIdentification);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -198,10 +192,9 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMeasureIdentification(MDIdentifierPropertyType newMeasureIdentification)
-	{
-		if (newMeasureIdentification != measureIdentification)
-		{
+	@Override
+	public void setMeasureIdentification(MDIdentifierPropertyType newMeasureIdentification) {
+		if (newMeasureIdentification != measureIdentification) {
 			NotificationChain msgs = null;
 			if (measureIdentification != null)
 				msgs = ((InternalEObject)measureIdentification).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__MEASURE_IDENTIFICATION, null, msgs);
@@ -219,8 +212,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getMeasureDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getMeasureDescription() {
 		return measureDescription;
 	}
 
@@ -229,12 +222,10 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMeasureDescription(CharacterStringPropertyType newMeasureDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMeasureDescription(CharacterStringPropertyType newMeasureDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldMeasureDescription = measureDescription;
 		measureDescription = newMeasureDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__MEASURE_DESCRIPTION, oldMeasureDescription, newMeasureDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -246,10 +237,9 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMeasureDescription(CharacterStringPropertyType newMeasureDescription)
-	{
-		if (newMeasureDescription != measureDescription)
-		{
+	@Override
+	public void setMeasureDescription(CharacterStringPropertyType newMeasureDescription) {
+		if (newMeasureDescription != measureDescription) {
 			NotificationChain msgs = null;
 			if (measureDescription != null)
 				msgs = ((InternalEObject)measureDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__MEASURE_DESCRIPTION, null, msgs);
@@ -267,8 +257,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQEvaluationMethodTypeCodePropertyType getEvaluationMethodType()
-	{
+	@Override
+	public DQEvaluationMethodTypeCodePropertyType getEvaluationMethodType() {
 		return evaluationMethodType;
 	}
 
@@ -277,12 +267,10 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEvaluationMethodType(DQEvaluationMethodTypeCodePropertyType newEvaluationMethodType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEvaluationMethodType(DQEvaluationMethodTypeCodePropertyType newEvaluationMethodType, NotificationChain msgs) {
 		DQEvaluationMethodTypeCodePropertyType oldEvaluationMethodType = evaluationMethodType;
 		evaluationMethodType = newEvaluationMethodType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__EVALUATION_METHOD_TYPE, oldEvaluationMethodType, newEvaluationMethodType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -294,10 +282,9 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEvaluationMethodType(DQEvaluationMethodTypeCodePropertyType newEvaluationMethodType)
-	{
-		if (newEvaluationMethodType != evaluationMethodType)
-		{
+	@Override
+	public void setEvaluationMethodType(DQEvaluationMethodTypeCodePropertyType newEvaluationMethodType) {
+		if (newEvaluationMethodType != evaluationMethodType) {
 			NotificationChain msgs = null;
 			if (evaluationMethodType != null)
 				msgs = ((InternalEObject)evaluationMethodType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__EVALUATION_METHOD_TYPE, null, msgs);
@@ -315,8 +302,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getEvaluationMethodDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getEvaluationMethodDescription() {
 		return evaluationMethodDescription;
 	}
 
@@ -325,12 +312,10 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEvaluationMethodDescription(CharacterStringPropertyType newEvaluationMethodDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEvaluationMethodDescription(CharacterStringPropertyType newEvaluationMethodDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldEvaluationMethodDescription = evaluationMethodDescription;
 		evaluationMethodDescription = newEvaluationMethodDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__EVALUATION_METHOD_DESCRIPTION, oldEvaluationMethodDescription, newEvaluationMethodDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -342,10 +327,9 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEvaluationMethodDescription(CharacterStringPropertyType newEvaluationMethodDescription)
-	{
-		if (newEvaluationMethodDescription != evaluationMethodDescription)
-		{
+	@Override
+	public void setEvaluationMethodDescription(CharacterStringPropertyType newEvaluationMethodDescription) {
+		if (newEvaluationMethodDescription != evaluationMethodDescription) {
 			NotificationChain msgs = null;
 			if (evaluationMethodDescription != null)
 				msgs = ((InternalEObject)evaluationMethodDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__EVALUATION_METHOD_DESCRIPTION, null, msgs);
@@ -363,8 +347,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationPropertyType getEvaluationProcedure()
-	{
+	@Override
+	public CICitationPropertyType getEvaluationProcedure() {
 		return evaluationProcedure;
 	}
 
@@ -373,12 +357,10 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEvaluationProcedure(CICitationPropertyType newEvaluationProcedure, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEvaluationProcedure(CICitationPropertyType newEvaluationProcedure, NotificationChain msgs) {
 		CICitationPropertyType oldEvaluationProcedure = evaluationProcedure;
 		evaluationProcedure = newEvaluationProcedure;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__EVALUATION_PROCEDURE, oldEvaluationProcedure, newEvaluationProcedure);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -390,10 +372,9 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEvaluationProcedure(CICitationPropertyType newEvaluationProcedure)
-	{
-		if (newEvaluationProcedure != evaluationProcedure)
-		{
+	@Override
+	public void setEvaluationProcedure(CICitationPropertyType newEvaluationProcedure) {
+		if (newEvaluationProcedure != evaluationProcedure) {
 			NotificationChain msgs = null;
 			if (evaluationProcedure != null)
 				msgs = ((InternalEObject)evaluationProcedure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__EVALUATION_PROCEDURE, null, msgs);
@@ -411,10 +392,9 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DateTimePropertyType> getDateTime()
-	{
-		if (dateTime == null)
-		{
+	@Override
+	public EList<DateTimePropertyType> getDateTime() {
+		if (dateTime == null) {
 			dateTime = new EObjectContainmentEList<DateTimePropertyType>(DateTimePropertyType.class, this, GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__DATE_TIME);
 		}
 		return dateTime;
@@ -425,10 +405,9 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DQResultPropertyType> getResult()
-	{
-		if (result == null)
-		{
+	@Override
+	public EList<DQResultPropertyType> getResult() {
+		if (result == null) {
 			result = new EObjectContainmentEList<DQResultPropertyType>(DQResultPropertyType.class, this, GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__RESULT);
 		}
 		return result;
@@ -440,10 +419,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__NAME_OF_MEASURE:
 				return ((InternalEList<?>)getNameOfMeasure()).basicRemove(otherEnd, msgs);
 			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__MEASURE_IDENTIFICATION:
@@ -470,10 +447,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__NAME_OF_MEASURE:
 				return getNameOfMeasure();
 			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__MEASURE_IDENTIFICATION:
@@ -501,10 +476,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__NAME_OF_MEASURE:
 				getNameOfMeasure().clear();
 				getNameOfMeasure().addAll((Collection<? extends CharacterStringPropertyType>)newValue);
@@ -542,10 +515,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__NAME_OF_MEASURE:
 				getNameOfMeasure().clear();
 				return;
@@ -580,10 +551,8 @@ public abstract class AbstractDQElementTypeImpl extends AbstractObjectTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__NAME_OF_MEASURE:
 				return nameOfMeasure != null && !nameOfMeasure.isEmpty();
 			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE__MEASURE_IDENTIFICATION:

@@ -22,8 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *        extendedMetaData="name='AbstractCRSType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractCRSType extends IdentifiedObjectType
-{
+public interface AbstractCRSType extends IdentifiedObjectType {
 	/**
 	 * Returns the value of the '<em><b>Domain Of Validity</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.DomainOfValidityType}.

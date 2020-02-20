@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements CoordinatesType
-{
+public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements CoordinatesType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -142,8 +141,7 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CoordinatesTypeImpl()
-	{
+	protected CoordinatesTypeImpl() {
 		super();
 	}
 
@@ -153,8 +151,7 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCoordinatesType();
 	}
 
@@ -163,8 +160,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValue()
-	{
+	@Override
+	public String getValue() {
 		return value;
 	}
 
@@ -173,8 +170,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(String newValue)
-	{
+	@Override
+	public void setValue(String newValue) {
 		String oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -186,8 +183,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCs()
-	{
+	@Override
+	public String getCs() {
 		return cs;
 	}
 
@@ -196,8 +193,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCs(String newCs)
-	{
+	@Override
+	public void setCs(String newCs) {
 		String oldCs = cs;
 		cs = newCs;
 		boolean oldCsESet = csESet;
@@ -211,8 +208,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetCs()
-	{
+	@Override
+	public void unsetCs() {
 		String oldCs = cs;
 		boolean oldCsESet = csESet;
 		cs = CS_EDEFAULT;
@@ -226,8 +223,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetCs()
-	{
+	@Override
+	public boolean isSetCs() {
 		return csESet;
 	}
 
@@ -236,8 +233,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDecimal()
-	{
+	@Override
+	public String getDecimal() {
 		return decimal;
 	}
 
@@ -246,8 +243,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDecimal(String newDecimal)
-	{
+	@Override
+	public void setDecimal(String newDecimal) {
 		String oldDecimal = decimal;
 		decimal = newDecimal;
 		boolean oldDecimalESet = decimalESet;
@@ -261,8 +258,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetDecimal()
-	{
+	@Override
+	public void unsetDecimal() {
 		String oldDecimal = decimal;
 		boolean oldDecimalESet = decimalESet;
 		decimal = DECIMAL_EDEFAULT;
@@ -276,8 +273,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetDecimal()
-	{
+	@Override
+	public boolean isSetDecimal() {
 		return decimalESet;
 	}
 
@@ -286,8 +283,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTs()
-	{
+	@Override
+	public String getTs() {
 		return ts;
 	}
 
@@ -296,8 +293,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTs(String newTs)
-	{
+	@Override
+	public void setTs(String newTs) {
 		String oldTs = ts;
 		ts = newTs;
 		boolean oldTsESet = tsESet;
@@ -311,8 +308,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetTs()
-	{
+	@Override
+	public void unsetTs() {
 		String oldTs = ts;
 		boolean oldTsESet = tsESet;
 		ts = TS_EDEFAULT;
@@ -326,8 +323,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetTs()
-	{
+	@Override
+	public boolean isSetTs() {
 		return tsESet;
 	}
 
@@ -337,10 +334,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.COORDINATES_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.COORDINATES_TYPE__CS:
@@ -359,10 +354,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.COORDINATES_TYPE__VALUE:
 				setValue((String)newValue);
 				return;
@@ -385,10 +378,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COORDINATES_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -411,10 +402,8 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COORDINATES_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GMLPackage.COORDINATES_TYPE__CS:
@@ -433,11 +422,10 @@ public class CoordinatesTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", cs: ");

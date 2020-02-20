@@ -32,15 +32,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='MD_Format_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDFormatType extends AbstractObjectType
-{
+public interface MDFormatType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(CharacterStringPropertyType)
@@ -64,10 +59,6 @@ public interface MDFormatType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Version</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Version</em>' containment reference.
 	 * @see #setVersion(CharacterStringPropertyType)
@@ -91,10 +82,6 @@ public interface MDFormatType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Amendment Number</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Amendment Number</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Amendment Number</em>' containment reference.
 	 * @see #setAmendmentNumber(CharacterStringPropertyType)
@@ -118,10 +105,6 @@ public interface MDFormatType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Specification</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Specification</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Specification</em>' containment reference.
 	 * @see #setSpecification(CharacterStringPropertyType)
@@ -145,10 +128,6 @@ public interface MDFormatType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>File Decompression Technique</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>File Decompression Technique</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>File Decompression Technique</em>' containment reference.
 	 * @see #setFileDecompressionTechnique(CharacterStringPropertyType)
@@ -173,10 +152,6 @@ public interface MDFormatType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Format Distributor</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDDistributorPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Format Distributor</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Format Distributor</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDFormatType_FormatDistributor()

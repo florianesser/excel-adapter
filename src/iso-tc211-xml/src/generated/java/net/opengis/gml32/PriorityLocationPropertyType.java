@@ -19,15 +19,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='PriorityLocationPropertyType' kind='elementOnly'"
  * @generated
  */
-public interface PriorityLocationPropertyType extends LocationPropertyType
-{
+public interface PriorityLocationPropertyType extends LocationPropertyType {
 	/**
 	 * Returns the value of the '<em><b>Priority</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Priority</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Priority</em>' attribute.
 	 * @see #setPriority(String)

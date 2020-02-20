@@ -40,8 +40,7 @@ import org.isotc211.iso19139.gmd.MDScopeDescriptionPropertyType;
  *
  * @generated
  */
-public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeType
-{
+public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeType {
 	/**
 	 * The cached value of the '{@link #getLevel() <em>Level</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -77,8 +76,7 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQScopeTypeImpl()
-	{
+	protected DQScopeTypeImpl() {
 		super();
 	}
 
@@ -88,8 +86,7 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQScopeType();
 	}
 
@@ -98,8 +95,8 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDScopeCodePropertyType getLevel()
-	{
+	@Override
+	public MDScopeCodePropertyType getLevel() {
 		return level;
 	}
 
@@ -108,12 +105,10 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLevel(MDScopeCodePropertyType newLevel, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLevel(MDScopeCodePropertyType newLevel, NotificationChain msgs) {
 		MDScopeCodePropertyType oldLevel = level;
 		level = newLevel;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_SCOPE_TYPE__LEVEL, oldLevel, newLevel);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +120,9 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLevel(MDScopeCodePropertyType newLevel)
-	{
-		if (newLevel != level)
-		{
+	@Override
+	public void setLevel(MDScopeCodePropertyType newLevel) {
+		if (newLevel != level) {
 			NotificationChain msgs = null;
 			if (level != null)
 				msgs = ((InternalEObject)level).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_SCOPE_TYPE__LEVEL, null, msgs);
@@ -146,8 +140,8 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXExtentPropertyType getExtent()
-	{
+	@Override
+	public EXExtentPropertyType getExtent() {
 		return extent;
 	}
 
@@ -156,12 +150,10 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExtent(EXExtentPropertyType newExtent, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExtent(EXExtentPropertyType newExtent, NotificationChain msgs) {
 		EXExtentPropertyType oldExtent = extent;
 		extent = newExtent;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_SCOPE_TYPE__EXTENT, oldExtent, newExtent);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -173,10 +165,9 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExtent(EXExtentPropertyType newExtent)
-	{
-		if (newExtent != extent)
-		{
+	@Override
+	public void setExtent(EXExtentPropertyType newExtent) {
+		if (newExtent != extent) {
 			NotificationChain msgs = null;
 			if (extent != null)
 				msgs = ((InternalEObject)extent).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_SCOPE_TYPE__EXTENT, null, msgs);
@@ -194,10 +185,9 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDScopeDescriptionPropertyType> getLevelDescription()
-	{
-		if (levelDescription == null)
-		{
+	@Override
+	public EList<MDScopeDescriptionPropertyType> getLevelDescription() {
+		if (levelDescription == null) {
 			levelDescription = new EObjectContainmentEList<MDScopeDescriptionPropertyType>(MDScopeDescriptionPropertyType.class, this, GMDPackage.DQ_SCOPE_TYPE__LEVEL_DESCRIPTION);
 		}
 		return levelDescription;
@@ -209,10 +199,8 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.DQ_SCOPE_TYPE__LEVEL:
 				return basicSetLevel(null, msgs);
 			case GMDPackage.DQ_SCOPE_TYPE__EXTENT:
@@ -229,10 +217,8 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.DQ_SCOPE_TYPE__LEVEL:
 				return getLevel();
 			case GMDPackage.DQ_SCOPE_TYPE__EXTENT:
@@ -250,10 +236,8 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.DQ_SCOPE_TYPE__LEVEL:
 				setLevel((MDScopeCodePropertyType)newValue);
 				return;
@@ -274,10 +258,8 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_SCOPE_TYPE__LEVEL:
 				setLevel((MDScopeCodePropertyType)null);
 				return;
@@ -297,10 +279,8 @@ public class DQScopeTypeImpl extends AbstractObjectTypeImpl implements DQScopeTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_SCOPE_TYPE__LEVEL:
 				return level != null;
 			case GMDPackage.DQ_SCOPE_TYPE__EXTENT:

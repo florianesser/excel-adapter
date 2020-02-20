@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTypeImpl implements DirectedObservationAtDistanceType
-{
+public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTypeImpl implements DirectedObservationAtDistanceType {
 	/**
 	 * The cached value of the '{@link #getDistance() <em>Distance</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DirectedObservationAtDistanceTypeImpl()
-	{
+	protected DirectedObservationAtDistanceTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDirectedObservationAtDistanceType();
 	}
 
@@ -65,8 +62,8 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getDistance()
-	{
+	@Override
+	public MeasureType getDistance() {
 		return distance;
 	}
 
@@ -75,12 +72,10 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDistance(MeasureType newDistance, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDistance(MeasureType newDistance, NotificationChain msgs) {
 		MeasureType oldDistance = distance;
 		distance = newDistance;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DIRECTED_OBSERVATION_AT_DISTANCE_TYPE__DISTANCE, oldDistance, newDistance);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDistance(MeasureType newDistance)
-	{
-		if (newDistance != distance)
-		{
+	@Override
+	public void setDistance(MeasureType newDistance) {
+		if (newDistance != distance) {
 			NotificationChain msgs = null;
 			if (distance != null)
 				msgs = ((InternalEObject)distance).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DIRECTED_OBSERVATION_AT_DISTANCE_TYPE__DISTANCE, null, msgs);
@@ -114,10 +108,8 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_AT_DISTANCE_TYPE__DISTANCE:
 				return basicSetDistance(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_AT_DISTANCE_TYPE__DISTANCE:
 				return getDistance();
 		}
@@ -146,10 +136,8 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_AT_DISTANCE_TYPE__DISTANCE:
 				setDistance((MeasureType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_AT_DISTANCE_TYPE__DISTANCE:
 				setDistance((MeasureType)null);
 				return;
@@ -180,10 +166,8 @@ public class DirectedObservationAtDistanceTypeImpl extends DirectedObservationTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTED_OBSERVATION_AT_DISTANCE_TYPE__DISTANCE:
 				return distance != null;
 		}

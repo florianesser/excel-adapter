@@ -47,8 +47,7 @@ import org.isotc211.iso19139.gmd.MDTopicCategoryCodePropertyType;
  *
  * @generated
  */
-public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeImpl implements MDDataIdentificationType
-{
+public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeImpl implements MDDataIdentificationType {
 	/**
 	 * The cached value of the '{@link #getSpatialRepresentationType() <em>Spatial Representation Type</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -134,8 +133,7 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDDataIdentificationTypeImpl()
-	{
+	protected MDDataIdentificationTypeImpl() {
 		super();
 	}
 
@@ -145,8 +143,7 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDDataIdentificationType();
 	}
 
@@ -155,10 +152,9 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDSpatialRepresentationTypeCodePropertyType> getSpatialRepresentationType()
-	{
-		if (spatialRepresentationType == null)
-		{
+	@Override
+	public EList<MDSpatialRepresentationTypeCodePropertyType> getSpatialRepresentationType() {
+		if (spatialRepresentationType == null) {
 			spatialRepresentationType = new EObjectContainmentEList<MDSpatialRepresentationTypeCodePropertyType>(MDSpatialRepresentationTypeCodePropertyType.class, this, GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_REPRESENTATION_TYPE);
 		}
 		return spatialRepresentationType;
@@ -169,10 +165,9 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDResolutionPropertyType> getSpatialResolution()
-	{
-		if (spatialResolution == null)
-		{
+	@Override
+	public EList<MDResolutionPropertyType> getSpatialResolution() {
+		if (spatialResolution == null) {
 			spatialResolution = new EObjectContainmentEList<MDResolutionPropertyType>(MDResolutionPropertyType.class, this, GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_RESOLUTION);
 		}
 		return spatialResolution;
@@ -183,10 +178,9 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getLanguage()
-	{
-		if (language == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getLanguage() {
+		if (language == null) {
 			language = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_DATA_IDENTIFICATION_TYPE__LANGUAGE);
 		}
 		return language;
@@ -197,10 +191,9 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDCharacterSetCodePropertyType> getCharacterSet()
-	{
-		if (characterSet == null)
-		{
+	@Override
+	public EList<MDCharacterSetCodePropertyType> getCharacterSet() {
+		if (characterSet == null) {
 			characterSet = new EObjectContainmentEList<MDCharacterSetCodePropertyType>(MDCharacterSetCodePropertyType.class, this, GMDPackage.MD_DATA_IDENTIFICATION_TYPE__CHARACTER_SET);
 		}
 		return characterSet;
@@ -211,10 +204,9 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDTopicCategoryCodePropertyType> getTopicCategory()
-	{
-		if (topicCategory == null)
-		{
+	@Override
+	public EList<MDTopicCategoryCodePropertyType> getTopicCategory() {
+		if (topicCategory == null) {
 			topicCategory = new EObjectContainmentEList<MDTopicCategoryCodePropertyType>(MDTopicCategoryCodePropertyType.class, this, GMDPackage.MD_DATA_IDENTIFICATION_TYPE__TOPIC_CATEGORY);
 		}
 		return topicCategory;
@@ -225,8 +217,8 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getEnvironmentDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getEnvironmentDescription() {
 		return environmentDescription;
 	}
 
@@ -235,12 +227,10 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEnvironmentDescription(CharacterStringPropertyType newEnvironmentDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEnvironmentDescription(CharacterStringPropertyType newEnvironmentDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldEnvironmentDescription = environmentDescription;
 		environmentDescription = newEnvironmentDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DATA_IDENTIFICATION_TYPE__ENVIRONMENT_DESCRIPTION, oldEnvironmentDescription, newEnvironmentDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -252,10 +242,9 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEnvironmentDescription(CharacterStringPropertyType newEnvironmentDescription)
-	{
-		if (newEnvironmentDescription != environmentDescription)
-		{
+	@Override
+	public void setEnvironmentDescription(CharacterStringPropertyType newEnvironmentDescription) {
+		if (newEnvironmentDescription != environmentDescription) {
 			NotificationChain msgs = null;
 			if (environmentDescription != null)
 				msgs = ((InternalEObject)environmentDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DATA_IDENTIFICATION_TYPE__ENVIRONMENT_DESCRIPTION, null, msgs);
@@ -273,10 +262,9 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EXExtentPropertyType> getExtent()
-	{
-		if (extent == null)
-		{
+	@Override
+	public EList<EXExtentPropertyType> getExtent() {
+		if (extent == null) {
 			extent = new EObjectContainmentEList<EXExtentPropertyType>(EXExtentPropertyType.class, this, GMDPackage.MD_DATA_IDENTIFICATION_TYPE__EXTENT);
 		}
 		return extent;
@@ -287,8 +275,8 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getSupplementalInformation()
-	{
+	@Override
+	public CharacterStringPropertyType getSupplementalInformation() {
 		return supplementalInformation;
 	}
 
@@ -297,12 +285,10 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSupplementalInformation(CharacterStringPropertyType newSupplementalInformation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSupplementalInformation(CharacterStringPropertyType newSupplementalInformation, NotificationChain msgs) {
 		CharacterStringPropertyType oldSupplementalInformation = supplementalInformation;
 		supplementalInformation = newSupplementalInformation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SUPPLEMENTAL_INFORMATION, oldSupplementalInformation, newSupplementalInformation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -314,10 +300,9 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSupplementalInformation(CharacterStringPropertyType newSupplementalInformation)
-	{
-		if (newSupplementalInformation != supplementalInformation)
-		{
+	@Override
+	public void setSupplementalInformation(CharacterStringPropertyType newSupplementalInformation) {
+		if (newSupplementalInformation != supplementalInformation) {
 			NotificationChain msgs = null;
 			if (supplementalInformation != null)
 				msgs = ((InternalEObject)supplementalInformation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SUPPLEMENTAL_INFORMATION, null, msgs);
@@ -336,10 +321,8 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_REPRESENTATION_TYPE:
 				return ((InternalEList<?>)getSpatialRepresentationType()).basicRemove(otherEnd, msgs);
 			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_RESOLUTION:
@@ -366,10 +349,8 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_REPRESENTATION_TYPE:
 				return getSpatialRepresentationType();
 			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_RESOLUTION:
@@ -397,10 +378,8 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_REPRESENTATION_TYPE:
 				getSpatialRepresentationType().clear();
 				getSpatialRepresentationType().addAll((Collection<? extends MDSpatialRepresentationTypeCodePropertyType>)newValue);
@@ -441,10 +420,8 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_REPRESENTATION_TYPE:
 				getSpatialRepresentationType().clear();
 				return;
@@ -479,10 +456,8 @@ public class MDDataIdentificationTypeImpl extends AbstractMDIdentificationTypeIm
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_REPRESENTATION_TYPE:
 				return spatialRepresentationType != null && !spatialRepresentationType.isEmpty();
 			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE__SPATIAL_RESOLUTION:

@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container implements TopoCurvePropertyType
-{
+public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container implements TopoCurvePropertyType {
 	/**
 	 * The cached value of the '{@link #getTopoCurve() <em>Topo Curve</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TopoCurvePropertyTypeImpl()
-	{
+	protected TopoCurvePropertyTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTopoCurvePropertyType();
 	}
 
@@ -96,8 +93,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoCurveType getTopoCurve()
-	{
+	@Override
+	public TopoCurveType getTopoCurve() {
 		return topoCurve;
 	}
 
@@ -106,12 +103,10 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTopoCurve(TopoCurveType newTopoCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTopoCurve(TopoCurveType newTopoCurve, NotificationChain msgs) {
 		TopoCurveType oldTopoCurve = topoCurve;
 		topoCurve = newTopoCurve;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TOPO_CURVE_PROPERTY_TYPE__TOPO_CURVE, oldTopoCurve, newTopoCurve);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -123,10 +118,9 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTopoCurve(TopoCurveType newTopoCurve)
-	{
-		if (newTopoCurve != topoCurve)
-		{
+	@Override
+	public void setTopoCurve(TopoCurveType newTopoCurve) {
+		if (newTopoCurve != topoCurve) {
 			NotificationChain msgs = null;
 			if (topoCurve != null)
 				msgs = ((InternalEObject)topoCurve).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TOPO_CURVE_PROPERTY_TYPE__TOPO_CURVE, null, msgs);
@@ -144,8 +138,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -154,8 +148,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -169,8 +163,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -184,8 +178,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -195,10 +189,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TOPO_CURVE_PROPERTY_TYPE__TOPO_CURVE:
 				return basicSetTopoCurve(null, msgs);
 		}
@@ -211,10 +203,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TOPO_CURVE_PROPERTY_TYPE__TOPO_CURVE:
 				return getTopoCurve();
 			case GMLPackage.TOPO_CURVE_PROPERTY_TYPE__OWNS:
@@ -229,10 +219,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TOPO_CURVE_PROPERTY_TYPE__TOPO_CURVE:
 				setTopoCurve((TopoCurveType)newValue);
 				return;
@@ -249,10 +237,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_CURVE_PROPERTY_TYPE__TOPO_CURVE:
 				setTopoCurve((TopoCurveType)null);
 				return;
@@ -269,10 +255,8 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_CURVE_PROPERTY_TYPE__TOPO_CURVE:
 				return topoCurve != null;
 			case GMLPackage.TOPO_CURVE_PROPERTY_TYPE__OWNS:
@@ -287,11 +271,10 @@ public class TopoCurvePropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (owns: ");
 		if (ownsESet) result.append(owns); else result.append("<unset>");
 		result.append(')');

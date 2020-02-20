@@ -33,8 +33,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Container implements CharacterStringPropertyType
-{
+public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Container implements CharacterStringPropertyType {
 	/**
 	 * The cached value of the '{@link #getCharacterStringGroup() <em>Character String Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -80,8 +79,7 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CharacterStringPropertyTypeImpl()
-	{
+	protected CharacterStringPropertyTypeImpl() {
 		super();
 	}
 
@@ -91,8 +89,7 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.CHARACTER_STRING_PROPERTY_TYPE;
 	}
 
@@ -101,10 +98,9 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getCharacterStringGroup()
-	{
-		if (characterStringGroup == null)
-		{
+	@Override
+	public FeatureMap getCharacterStringGroup() {
+		if (characterStringGroup == null) {
 			characterStringGroup = new BasicFeatureMap(this, GCOPackage.CHARACTER_STRING_PROPERTY_TYPE__CHARACTER_STRING_GROUP);
 		}
 		return characterStringGroup;
@@ -115,8 +111,8 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCharacterString()
-	{
+	@Override
+	public String getCharacterString() {
 		return (String)getCharacterStringGroup().get(GCOPackage.Literals.CHARACTER_STRING_PROPERTY_TYPE__CHARACTER_STRING, true);
 	}
 
@@ -125,8 +121,8 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCharacterString(String newCharacterString)
-	{
+	@Override
+	public void setCharacterString(String newCharacterString) {
 		((FeatureMap.Internal)getCharacterStringGroup()).set(GCOPackage.Literals.CHARACTER_STRING_PROPERTY_TYPE__CHARACTER_STRING, newCharacterString);
 	}
 
@@ -135,8 +131,8 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -145,8 +141,8 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -159,10 +155,8 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.CHARACTER_STRING_PROPERTY_TYPE__CHARACTER_STRING_GROUP:
 				return ((InternalEList<?>)getCharacterStringGroup()).basicRemove(otherEnd, msgs);
 		}
@@ -175,10 +169,8 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.CHARACTER_STRING_PROPERTY_TYPE__CHARACTER_STRING_GROUP:
 				if (coreType) return getCharacterStringGroup();
 				return ((FeatureMap.Internal)getCharacterStringGroup()).getWrapper();
@@ -196,10 +188,8 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.CHARACTER_STRING_PROPERTY_TYPE__CHARACTER_STRING_GROUP:
 				((FeatureMap.Internal)getCharacterStringGroup()).set(newValue);
 				return;
@@ -219,10 +209,8 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.CHARACTER_STRING_PROPERTY_TYPE__CHARACTER_STRING_GROUP:
 				getCharacterStringGroup().clear();
 				return;
@@ -242,10 +230,8 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.CHARACTER_STRING_PROPERTY_TYPE__CHARACTER_STRING_GROUP:
 				return characterStringGroup != null && !characterStringGroup.isEmpty();
 			case GCOPackage.CHARACTER_STRING_PROPERTY_TYPE__CHARACTER_STRING:
@@ -262,11 +248,10 @@ public class CharacterStringPropertyTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (characterStringGroup: ");
 		result.append(characterStringGroup);
 		result.append(", nilReason: ");

@@ -20,15 +20,10 @@ import org.isotc211.iso19139.gco.ObjectReferencePropertyType;
  * @model extendedMetaData="name='LocalisedCharacterString_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface LocalisedCharacterStringPropertyType extends ObjectReferencePropertyType
-{
+public interface LocalisedCharacterStringPropertyType extends ObjectReferencePropertyType {
 	/**
 	 * Returns the value of the '<em><b>Localised Character String</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Localised Character String</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Localised Character String</em>' containment reference.
 	 * @see #setLocalisedCharacterString(LocalisedCharacterStringType)

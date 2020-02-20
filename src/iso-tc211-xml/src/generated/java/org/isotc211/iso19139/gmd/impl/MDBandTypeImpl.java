@@ -37,8 +37,7 @@ import org.isotc211.iso19139.gmd.MDBandType;
  *
  * @generated
  */
-public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandType
-{
+public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandType {
 	/**
 	 * The cached value of the '{@link #getMaxValue() <em>Max Value</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -124,8 +123,7 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDBandTypeImpl()
-	{
+	protected MDBandTypeImpl() {
 		super();
 	}
 
@@ -135,8 +133,7 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDBandType();
 	}
 
@@ -145,8 +142,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getMaxValue()
-	{
+	@Override
+	public RealPropertyType getMaxValue() {
 		return maxValue;
 	}
 
@@ -155,12 +152,10 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMaxValue(RealPropertyType newMaxValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMaxValue(RealPropertyType newMaxValue, NotificationChain msgs) {
 		RealPropertyType oldMaxValue = maxValue;
 		maxValue = newMaxValue;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BAND_TYPE__MAX_VALUE, oldMaxValue, newMaxValue);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -172,10 +167,9 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaxValue(RealPropertyType newMaxValue)
-	{
-		if (newMaxValue != maxValue)
-		{
+	@Override
+	public void setMaxValue(RealPropertyType newMaxValue) {
+		if (newMaxValue != maxValue) {
 			NotificationChain msgs = null;
 			if (maxValue != null)
 				msgs = ((InternalEObject)maxValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BAND_TYPE__MAX_VALUE, null, msgs);
@@ -193,8 +187,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getMinValue()
-	{
+	@Override
+	public RealPropertyType getMinValue() {
 		return minValue;
 	}
 
@@ -203,12 +197,10 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMinValue(RealPropertyType newMinValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMinValue(RealPropertyType newMinValue, NotificationChain msgs) {
 		RealPropertyType oldMinValue = minValue;
 		minValue = newMinValue;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BAND_TYPE__MIN_VALUE, oldMinValue, newMinValue);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -220,10 +212,9 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMinValue(RealPropertyType newMinValue)
-	{
-		if (newMinValue != minValue)
-		{
+	@Override
+	public void setMinValue(RealPropertyType newMinValue) {
+		if (newMinValue != minValue) {
 			NotificationChain msgs = null;
 			if (minValue != null)
 				msgs = ((InternalEObject)minValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BAND_TYPE__MIN_VALUE, null, msgs);
@@ -241,8 +232,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UomLengthPropertyType getUnits()
-	{
+	@Override
+	public UomLengthPropertyType getUnits() {
 		return units;
 	}
 
@@ -251,12 +242,10 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUnits(UomLengthPropertyType newUnits, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUnits(UomLengthPropertyType newUnits, NotificationChain msgs) {
 		UomLengthPropertyType oldUnits = units;
 		units = newUnits;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BAND_TYPE__UNITS, oldUnits, newUnits);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -268,10 +257,9 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUnits(UomLengthPropertyType newUnits)
-	{
-		if (newUnits != units)
-		{
+	@Override
+	public void setUnits(UomLengthPropertyType newUnits) {
+		if (newUnits != units) {
 			NotificationChain msgs = null;
 			if (units != null)
 				msgs = ((InternalEObject)units).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BAND_TYPE__UNITS, null, msgs);
@@ -289,8 +277,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getPeakResponse()
-	{
+	@Override
+	public RealPropertyType getPeakResponse() {
 		return peakResponse;
 	}
 
@@ -299,12 +287,10 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPeakResponse(RealPropertyType newPeakResponse, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPeakResponse(RealPropertyType newPeakResponse, NotificationChain msgs) {
 		RealPropertyType oldPeakResponse = peakResponse;
 		peakResponse = newPeakResponse;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BAND_TYPE__PEAK_RESPONSE, oldPeakResponse, newPeakResponse);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -316,10 +302,9 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPeakResponse(RealPropertyType newPeakResponse)
-	{
-		if (newPeakResponse != peakResponse)
-		{
+	@Override
+	public void setPeakResponse(RealPropertyType newPeakResponse) {
+		if (newPeakResponse != peakResponse) {
 			NotificationChain msgs = null;
 			if (peakResponse != null)
 				msgs = ((InternalEObject)peakResponse).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BAND_TYPE__PEAK_RESPONSE, null, msgs);
@@ -337,8 +322,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType getBitsPerValue()
-	{
+	@Override
+	public IntegerPropertyType getBitsPerValue() {
 		return bitsPerValue;
 	}
 
@@ -347,12 +332,10 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBitsPerValue(IntegerPropertyType newBitsPerValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBitsPerValue(IntegerPropertyType newBitsPerValue, NotificationChain msgs) {
 		IntegerPropertyType oldBitsPerValue = bitsPerValue;
 		bitsPerValue = newBitsPerValue;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BAND_TYPE__BITS_PER_VALUE, oldBitsPerValue, newBitsPerValue);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -364,10 +347,9 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBitsPerValue(IntegerPropertyType newBitsPerValue)
-	{
-		if (newBitsPerValue != bitsPerValue)
-		{
+	@Override
+	public void setBitsPerValue(IntegerPropertyType newBitsPerValue) {
+		if (newBitsPerValue != bitsPerValue) {
 			NotificationChain msgs = null;
 			if (bitsPerValue != null)
 				msgs = ((InternalEObject)bitsPerValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BAND_TYPE__BITS_PER_VALUE, null, msgs);
@@ -385,8 +367,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType getToneGradation()
-	{
+	@Override
+	public IntegerPropertyType getToneGradation() {
 		return toneGradation;
 	}
 
@@ -395,12 +377,10 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetToneGradation(IntegerPropertyType newToneGradation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetToneGradation(IntegerPropertyType newToneGradation, NotificationChain msgs) {
 		IntegerPropertyType oldToneGradation = toneGradation;
 		toneGradation = newToneGradation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BAND_TYPE__TONE_GRADATION, oldToneGradation, newToneGradation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -412,10 +392,9 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setToneGradation(IntegerPropertyType newToneGradation)
-	{
-		if (newToneGradation != toneGradation)
-		{
+	@Override
+	public void setToneGradation(IntegerPropertyType newToneGradation) {
+		if (newToneGradation != toneGradation) {
 			NotificationChain msgs = null;
 			if (toneGradation != null)
 				msgs = ((InternalEObject)toneGradation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BAND_TYPE__TONE_GRADATION, null, msgs);
@@ -433,8 +412,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getScaleFactor()
-	{
+	@Override
+	public RealPropertyType getScaleFactor() {
 		return scaleFactor;
 	}
 
@@ -443,12 +422,10 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetScaleFactor(RealPropertyType newScaleFactor, NotificationChain msgs)
-	{
+	public NotificationChain basicSetScaleFactor(RealPropertyType newScaleFactor, NotificationChain msgs) {
 		RealPropertyType oldScaleFactor = scaleFactor;
 		scaleFactor = newScaleFactor;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BAND_TYPE__SCALE_FACTOR, oldScaleFactor, newScaleFactor);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -460,10 +437,9 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setScaleFactor(RealPropertyType newScaleFactor)
-	{
-		if (newScaleFactor != scaleFactor)
-		{
+	@Override
+	public void setScaleFactor(RealPropertyType newScaleFactor) {
+		if (newScaleFactor != scaleFactor) {
 			NotificationChain msgs = null;
 			if (scaleFactor != null)
 				msgs = ((InternalEObject)scaleFactor).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BAND_TYPE__SCALE_FACTOR, null, msgs);
@@ -481,8 +457,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getOffset()
-	{
+	@Override
+	public RealPropertyType getOffset() {
 		return offset;
 	}
 
@@ -491,12 +467,10 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOffset(RealPropertyType newOffset, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOffset(RealPropertyType newOffset, NotificationChain msgs) {
 		RealPropertyType oldOffset = offset;
 		offset = newOffset;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_BAND_TYPE__OFFSET, oldOffset, newOffset);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -508,10 +482,9 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOffset(RealPropertyType newOffset)
-	{
-		if (newOffset != offset)
-		{
+	@Override
+	public void setOffset(RealPropertyType newOffset) {
+		if (newOffset != offset) {
 			NotificationChain msgs = null;
 			if (offset != null)
 				msgs = ((InternalEObject)offset).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_BAND_TYPE__OFFSET, null, msgs);
@@ -530,10 +503,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_BAND_TYPE__MAX_VALUE:
 				return basicSetMaxValue(null, msgs);
 			case GMDPackage.MD_BAND_TYPE__MIN_VALUE:
@@ -560,10 +531,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_BAND_TYPE__MAX_VALUE:
 				return getMaxValue();
 			case GMDPackage.MD_BAND_TYPE__MIN_VALUE:
@@ -590,10 +559,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_BAND_TYPE__MAX_VALUE:
 				setMaxValue((RealPropertyType)newValue);
 				return;
@@ -628,10 +595,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_BAND_TYPE__MAX_VALUE:
 				setMaxValue((RealPropertyType)null);
 				return;
@@ -666,10 +631,8 @@ public class MDBandTypeImpl extends MDRangeDimensionTypeImpl implements MDBandTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_BAND_TYPE__MAX_VALUE:
 				return maxValue != null;
 			case GMDPackage.MD_BAND_TYPE__MIN_VALUE:

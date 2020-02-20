@@ -15,6 +15,5 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  *        extendedMetaData="name='AbstractMD_ContentInformation_Type' kind='empty'"
  * @generated
  */
-public interface AbstractMDContentInformationType extends AbstractObjectType
-{
+public interface AbstractMDContentInformationType extends AbstractObjectType {
 } // AbstractMDContentInformationType

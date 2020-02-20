@@ -28,8 +28,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implements CodeListValueType
-{
+public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implements CodeListValueType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -115,8 +114,7 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CodeListValueTypeImpl()
-	{
+	protected CodeListValueTypeImpl() {
 		super();
 	}
 
@@ -126,8 +124,7 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.CODE_LIST_VALUE_TYPE;
 	}
 
@@ -136,8 +133,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValue()
-	{
+	@Override
+	public String getValue() {
 		return value;
 	}
 
@@ -146,8 +143,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(String newValue)
-	{
+	@Override
+	public void setValue(String newValue) {
 		String oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -159,8 +156,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCodeList()
-	{
+	@Override
+	public String getCodeList() {
 		return codeList;
 	}
 
@@ -169,8 +166,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCodeList(String newCodeList)
-	{
+	@Override
+	public void setCodeList(String newCodeList) {
 		String oldCodeList = codeList;
 		codeList = newCodeList;
 		if (eNotificationRequired())
@@ -182,8 +179,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCodeListValue()
-	{
+	@Override
+	public String getCodeListValue() {
 		return codeListValue;
 	}
 
@@ -192,8 +189,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCodeListValue(String newCodeListValue)
-	{
+	@Override
+	public void setCodeListValue(String newCodeListValue) {
 		String oldCodeListValue = codeListValue;
 		codeListValue = newCodeListValue;
 		if (eNotificationRequired())
@@ -205,8 +202,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCodeSpace()
-	{
+	@Override
+	public String getCodeSpace() {
 		return codeSpace;
 	}
 
@@ -215,8 +212,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCodeSpace(String newCodeSpace)
-	{
+	@Override
+	public void setCodeSpace(String newCodeSpace) {
 		String oldCodeSpace = codeSpace;
 		codeSpace = newCodeSpace;
 		if (eNotificationRequired())
@@ -229,10 +226,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.CODE_LIST_VALUE_TYPE__VALUE:
 				return getValue();
 			case GCOPackage.CODE_LIST_VALUE_TYPE__CODE_LIST:
@@ -251,10 +246,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.CODE_LIST_VALUE_TYPE__VALUE:
 				setValue((String)newValue);
 				return;
@@ -277,10 +270,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.CODE_LIST_VALUE_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -303,10 +294,8 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.CODE_LIST_VALUE_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GCOPackage.CODE_LIST_VALUE_TYPE__CODE_LIST:
@@ -325,11 +314,10 @@ public class CodeListValueTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", codeList: ");

@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='ShellPropertyType' kind='elementOnly'"
  * @generated
  */
-public interface ShellPropertyType extends EObject
-{
+public interface ShellPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Shell</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

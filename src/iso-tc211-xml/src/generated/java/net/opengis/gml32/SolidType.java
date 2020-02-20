@@ -21,15 +21,10 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='SolidType' kind='elementOnly'"
  * @generated
  */
-public interface SolidType extends AbstractSolidType
-{
+public interface SolidType extends AbstractSolidType {
 	/**
 	 * Returns the value of the '<em><b>Exterior</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Exterior</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Exterior</em>' containment reference.
 	 * @see #setExterior(ShellPropertyType)
@@ -54,10 +49,6 @@ public interface SolidType extends AbstractSolidType
 	 * Returns the value of the '<em><b>Interior</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.ShellPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interior</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Interior</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getSolidType_Interior()

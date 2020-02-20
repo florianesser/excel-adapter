@@ -26,8 +26,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements BooleanType
-{
+public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements BooleanType {
 	/**
 	 * The default value of the '{@link #isValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,8 +81,7 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BooleanTypeImpl()
-	{
+	protected BooleanTypeImpl() {
 		super();
 	}
 
@@ -93,8 +91,7 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getBooleanType();
 	}
 
@@ -103,8 +100,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isValue()
-	{
+	@Override
+	public boolean isValue() {
 		return value;
 	}
 
@@ -113,8 +110,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(boolean newValue)
-	{
+	@Override
+	public void setValue(boolean newValue) {
 		boolean oldValue = value;
 		value = newValue;
 		boolean oldValueESet = valueESet;
@@ -128,8 +125,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetValue()
-	{
+	@Override
+	public void unsetValue() {
 		boolean oldValue = value;
 		boolean oldValueESet = valueESet;
 		value = VALUE_EDEFAULT;
@@ -143,8 +140,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetValue()
-	{
+	@Override
+	public boolean isSetValue() {
 		return valueESet;
 	}
 
@@ -153,8 +150,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -163,8 +160,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -177,10 +174,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.BOOLEAN_TYPE__VALUE:
 				return isValue();
 			case GMLPackage.BOOLEAN_TYPE__NIL_REASON:
@@ -195,10 +190,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.BOOLEAN_TYPE__VALUE:
 				setValue((Boolean)newValue);
 				return;
@@ -215,10 +208,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.BOOLEAN_TYPE__VALUE:
 				unsetValue();
 				return;
@@ -235,10 +226,8 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.BOOLEAN_TYPE__VALUE:
 				return isSetValue();
 			case GMLPackage.BOOLEAN_TYPE__NIL_REASON:
@@ -253,11 +242,10 @@ public class BooleanTypeImpl extends MinimalEObjectImpl.Container implements Boo
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		if (valueESet) result.append(value); else result.append("<unset>");
 		result.append(", nilReason: ");

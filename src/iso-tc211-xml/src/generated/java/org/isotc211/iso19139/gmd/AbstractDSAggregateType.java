@@ -30,16 +30,11 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  *        extendedMetaData="name='AbstractDS_Aggregate_Type' kind='elementOnly'"
  * @generated
  */
-public interface AbstractDSAggregateType extends AbstractObjectType
-{
+public interface AbstractDSAggregateType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Composed Of</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.DSDataSetPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Composed Of</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Composed Of</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractDSAggregateType_ComposedOf()
@@ -53,10 +48,6 @@ public interface AbstractDSAggregateType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Series Metadata</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDMetadataPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Series Metadata</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Series Metadata</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractDSAggregateType_SeriesMetadata()
@@ -70,10 +61,6 @@ public interface AbstractDSAggregateType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Subset</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.DSAggregatePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subset</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Subset</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractDSAggregateType_Subset()
@@ -87,10 +74,6 @@ public interface AbstractDSAggregateType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Superset</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.DSAggregatePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Superset</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Superset</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractDSAggregateType_Superset()

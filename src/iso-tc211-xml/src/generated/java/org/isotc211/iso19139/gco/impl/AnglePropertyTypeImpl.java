@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implements AnglePropertyType
-{
+public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implements AnglePropertyType {
 	/**
 	 * The cached value of the '{@link #getAngle() <em>Angle</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AnglePropertyTypeImpl()
-	{
+	protected AnglePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.ANGLE_PROPERTY_TYPE;
 	}
 
@@ -88,8 +85,8 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AngleType getAngle()
-	{
+	@Override
+	public AngleType getAngle() {
 		return angle;
 	}
 
@@ -98,12 +95,10 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngle(AngleType newAngle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAngle(AngleType newAngle, NotificationChain msgs) {
 		AngleType oldAngle = angle;
 		angle = newAngle;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.ANGLE_PROPERTY_TYPE__ANGLE, oldAngle, newAngle);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAngle(AngleType newAngle)
-	{
-		if (newAngle != angle)
-		{
+	@Override
+	public void setAngle(AngleType newAngle) {
+		if (newAngle != angle) {
 			NotificationChain msgs = null;
 			if (angle != null)
 				msgs = ((InternalEObject)angle).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.ANGLE_PROPERTY_TYPE__ANGLE, null, msgs);
@@ -136,8 +130,8 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.ANGLE_PROPERTY_TYPE__ANGLE:
 				return basicSetAngle(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.ANGLE_PROPERTY_TYPE__ANGLE:
 				return getAngle();
 			case GCOPackage.ANGLE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.ANGLE_PROPERTY_TYPE__ANGLE:
 				setAngle((AngleType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.ANGLE_PROPERTY_TYPE__ANGLE:
 				setAngle((AngleType)null);
 				return;
@@ -234,10 +220,8 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.ANGLE_PROPERTY_TYPE__ANGLE:
 				return angle != null;
 			case GCOPackage.ANGLE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class AnglePropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

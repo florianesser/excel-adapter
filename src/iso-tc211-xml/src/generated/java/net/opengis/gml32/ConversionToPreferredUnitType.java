@@ -28,15 +28,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='ConversionToPreferredUnitType' kind='elementOnly'"
  * @generated
  */
-public interface ConversionToPreferredUnitType extends UnitOfMeasureType
-{
+public interface ConversionToPreferredUnitType extends UnitOfMeasureType {
 	/**
 	 * Returns the value of the '<em><b>Factor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Factor</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Factor</em>' attribute.
 	 * @see #isSetFactor()
@@ -87,10 +82,6 @@ public interface ConversionToPreferredUnitType extends UnitOfMeasureType
 	/**
 	 * Returns the value of the '<em><b>Formula</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Formula</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Formula</em>' containment reference.
 	 * @see #setFormula(FormulaType)

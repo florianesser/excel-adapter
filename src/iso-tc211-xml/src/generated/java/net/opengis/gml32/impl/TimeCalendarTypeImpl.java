@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements TimeCalendarType
-{
+public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements TimeCalendarType {
 	/**
 	 * The cached value of the '{@link #getReferenceFrame() <em>Reference Frame</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeCalendarTypeImpl()
-	{
+	protected TimeCalendarTypeImpl() {
 		super();
 	}
 
@@ -59,8 +57,7 @@ public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeCalendarType();
 	}
 
@@ -69,10 +66,9 @@ public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TimeCalendarEraPropertyType> getReferenceFrame()
-	{
-		if (referenceFrame == null)
-		{
+	@Override
+	public EList<TimeCalendarEraPropertyType> getReferenceFrame() {
+		if (referenceFrame == null) {
 			referenceFrame = new EObjectContainmentEList<TimeCalendarEraPropertyType>(TimeCalendarEraPropertyType.class, this, GMLPackage.TIME_CALENDAR_TYPE__REFERENCE_FRAME);
 		}
 		return referenceFrame;
@@ -84,10 +80,8 @@ public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_TYPE__REFERENCE_FRAME:
 				return ((InternalEList<?>)getReferenceFrame()).basicRemove(otherEnd, msgs);
 		}
@@ -100,10 +94,8 @@ public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_TYPE__REFERENCE_FRAME:
 				return getReferenceFrame();
 		}
@@ -117,10 +109,8 @@ public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_TYPE__REFERENCE_FRAME:
 				getReferenceFrame().clear();
 				getReferenceFrame().addAll((Collection<? extends TimeCalendarEraPropertyType>)newValue);
@@ -135,10 +125,8 @@ public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_TYPE__REFERENCE_FRAME:
 				getReferenceFrame().clear();
 				return;
@@ -152,10 +140,8 @@ public class TimeCalendarTypeImpl extends TimeReferenceSystemTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_TYPE__REFERENCE_FRAME:
 				return referenceFrame != null && !referenceFrame.isEmpty();
 		}

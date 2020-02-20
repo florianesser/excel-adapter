@@ -23,15 +23,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='DegreesType' kind='simple'"
  * @generated
  */
-public interface DegreesType extends EObject
-{
+public interface DegreesType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(BigInteger)
@@ -56,10 +51,6 @@ public interface DegreesType extends EObject
 	 * Returns the value of the '<em><b>Direction</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.DirectionType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Direction</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Direction</em>' attribute.
 	 * @see net.opengis.gml32.DirectionType

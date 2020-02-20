@@ -41,8 +41,7 @@ import org.isotc211.iso19139.gmd.MDKeywordsType;
  *
  * @generated
  */
-public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeywordsType
-{
+public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeywordsType {
 	/**
 	 * The cached value of the '{@link #getKeyword() <em>Keyword</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -78,8 +77,7 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDKeywordsTypeImpl()
-	{
+	protected MDKeywordsTypeImpl() {
 		super();
 	}
 
@@ -89,8 +87,7 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDKeywordsType();
 	}
 
@@ -99,10 +96,9 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getKeyword()
-	{
-		if (keyword == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getKeyword() {
+		if (keyword == null) {
 			keyword = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_KEYWORDS_TYPE__KEYWORD);
 		}
 		return keyword;
@@ -113,8 +109,8 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDKeywordTypeCodePropertyType getType()
-	{
+	@Override
+	public MDKeywordTypeCodePropertyType getType() {
 		return type;
 	}
 
@@ -123,12 +119,10 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetType(MDKeywordTypeCodePropertyType newType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetType(MDKeywordTypeCodePropertyType newType, NotificationChain msgs) {
 		MDKeywordTypeCodePropertyType oldType = type;
 		type = newType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_KEYWORDS_TYPE__TYPE, oldType, newType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -140,10 +134,9 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(MDKeywordTypeCodePropertyType newType)
-	{
-		if (newType != type)
-		{
+	@Override
+	public void setType(MDKeywordTypeCodePropertyType newType) {
+		if (newType != type) {
 			NotificationChain msgs = null;
 			if (type != null)
 				msgs = ((InternalEObject)type).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_KEYWORDS_TYPE__TYPE, null, msgs);
@@ -161,8 +154,8 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationPropertyType getThesaurusName()
-	{
+	@Override
+	public CICitationPropertyType getThesaurusName() {
 		return thesaurusName;
 	}
 
@@ -171,12 +164,10 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetThesaurusName(CICitationPropertyType newThesaurusName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetThesaurusName(CICitationPropertyType newThesaurusName, NotificationChain msgs) {
 		CICitationPropertyType oldThesaurusName = thesaurusName;
 		thesaurusName = newThesaurusName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_KEYWORDS_TYPE__THESAURUS_NAME, oldThesaurusName, newThesaurusName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -188,10 +179,9 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setThesaurusName(CICitationPropertyType newThesaurusName)
-	{
-		if (newThesaurusName != thesaurusName)
-		{
+	@Override
+	public void setThesaurusName(CICitationPropertyType newThesaurusName) {
+		if (newThesaurusName != thesaurusName) {
 			NotificationChain msgs = null;
 			if (thesaurusName != null)
 				msgs = ((InternalEObject)thesaurusName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_KEYWORDS_TYPE__THESAURUS_NAME, null, msgs);
@@ -210,10 +200,8 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORDS_TYPE__KEYWORD:
 				return ((InternalEList<?>)getKeyword()).basicRemove(otherEnd, msgs);
 			case GMDPackage.MD_KEYWORDS_TYPE__TYPE:
@@ -230,10 +218,8 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORDS_TYPE__KEYWORD:
 				return getKeyword();
 			case GMDPackage.MD_KEYWORDS_TYPE__TYPE:
@@ -251,10 +237,8 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORDS_TYPE__KEYWORD:
 				getKeyword().clear();
 				getKeyword().addAll((Collection<? extends CharacterStringPropertyType>)newValue);
@@ -275,10 +259,8 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORDS_TYPE__KEYWORD:
 				getKeyword().clear();
 				return;
@@ -298,10 +280,8 @@ public class MDKeywordsTypeImpl extends AbstractObjectTypeImpl implements MDKeyw
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_KEYWORDS_TYPE__KEYWORD:
 				return keyword != null && !keyword.isEmpty();
 			case GMDPackage.MD_KEYWORDS_TYPE__TYPE:

@@ -40,8 +40,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements TimeClockType
-{
+public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements TimeClockType {
 	/**
 	 * The cached value of the '{@link #getReferenceEvent() <em>Reference Event</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -107,8 +106,7 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeClockTypeImpl()
-	{
+	protected TimeClockTypeImpl() {
 		super();
 	}
 
@@ -118,8 +116,7 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeClockType();
 	}
 
@@ -128,8 +125,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getReferenceEvent()
-	{
+	@Override
+	public StringOrRefType getReferenceEvent() {
 		return referenceEvent;
 	}
 
@@ -138,12 +135,10 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetReferenceEvent(StringOrRefType newReferenceEvent, NotificationChain msgs)
-	{
+	public NotificationChain basicSetReferenceEvent(StringOrRefType newReferenceEvent, NotificationChain msgs) {
 		StringOrRefType oldReferenceEvent = referenceEvent;
 		referenceEvent = newReferenceEvent;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_CLOCK_TYPE__REFERENCE_EVENT, oldReferenceEvent, newReferenceEvent);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -155,10 +150,9 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReferenceEvent(StringOrRefType newReferenceEvent)
-	{
-		if (newReferenceEvent != referenceEvent)
-		{
+	@Override
+	public void setReferenceEvent(StringOrRefType newReferenceEvent) {
+		if (newReferenceEvent != referenceEvent) {
 			NotificationChain msgs = null;
 			if (referenceEvent != null)
 				msgs = ((InternalEObject)referenceEvent).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_CLOCK_TYPE__REFERENCE_EVENT, null, msgs);
@@ -176,8 +170,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getReferenceTime()
-	{
+	@Override
+	public XMLGregorianCalendar getReferenceTime() {
 		return referenceTime;
 	}
 
@@ -186,8 +180,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReferenceTime(XMLGregorianCalendar newReferenceTime)
-	{
+	@Override
+	public void setReferenceTime(XMLGregorianCalendar newReferenceTime) {
 		XMLGregorianCalendar oldReferenceTime = referenceTime;
 		referenceTime = newReferenceTime;
 		if (eNotificationRequired())
@@ -199,8 +193,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getUtcReference()
-	{
+	@Override
+	public XMLGregorianCalendar getUtcReference() {
 		return utcReference;
 	}
 
@@ -209,8 +203,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUtcReference(XMLGregorianCalendar newUtcReference)
-	{
+	@Override
+	public void setUtcReference(XMLGregorianCalendar newUtcReference) {
 		XMLGregorianCalendar oldUtcReference = utcReference;
 		utcReference = newUtcReference;
 		if (eNotificationRequired())
@@ -222,10 +216,9 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TimeCalendarPropertyType> getDateBasis()
-	{
-		if (dateBasis == null)
-		{
+	@Override
+	public EList<TimeCalendarPropertyType> getDateBasis() {
+		if (dateBasis == null) {
 			dateBasis = new EObjectContainmentEList<TimeCalendarPropertyType>(TimeCalendarPropertyType.class, this, GMLPackage.TIME_CLOCK_TYPE__DATE_BASIS);
 		}
 		return dateBasis;
@@ -237,10 +230,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_CLOCK_TYPE__REFERENCE_EVENT:
 				return basicSetReferenceEvent(null, msgs);
 			case GMLPackage.TIME_CLOCK_TYPE__DATE_BASIS:
@@ -255,10 +246,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_CLOCK_TYPE__REFERENCE_EVENT:
 				return getReferenceEvent();
 			case GMLPackage.TIME_CLOCK_TYPE__REFERENCE_TIME:
@@ -278,10 +267,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_CLOCK_TYPE__REFERENCE_EVENT:
 				setReferenceEvent((StringOrRefType)newValue);
 				return;
@@ -305,10 +292,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_CLOCK_TYPE__REFERENCE_EVENT:
 				setReferenceEvent((StringOrRefType)null);
 				return;
@@ -331,10 +316,8 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_CLOCK_TYPE__REFERENCE_EVENT:
 				return referenceEvent != null;
 			case GMLPackage.TIME_CLOCK_TYPE__REFERENCE_TIME:
@@ -353,11 +336,10 @@ public class TimeClockTypeImpl extends TimeReferenceSystemTypeImpl implements Ti
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (referenceTime: ");
 		result.append(referenceTime);
 		result.append(", utcReference: ");

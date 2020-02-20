@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='GridLengthType' kind='simple'"
  * @generated
  */
-public interface GridLengthType extends MeasureType
-{
+public interface GridLengthType extends MeasureType {
 } // GridLengthType

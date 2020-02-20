@@ -22,8 +22,7 @@ import org.eclipse.emf.ecore.util.Switch;
  * @see net.opengis.gml32.GMLPackage
  * @generated
  */
-public class GMLSwitch<T> extends Switch<T>
-{
+public class GMLSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -38,10 +37,8 @@ public class GMLSwitch<T> extends Switch<T>
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMLSwitch()
-	{
-		if (modelPackage == null)
-		{
+	public GMLSwitch() {
+		if (modelPackage == null) {
 			modelPackage = GMLPackage.eINSTANCE;
 		}
 	}
@@ -55,8 +52,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage)
-	{
+	protected boolean isSwitchFor(EPackage ePackage) {
 		return ePackage == modelPackage;
 	}
 
@@ -68,12 +64,9 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject)
-	{
-		switch (classifierID)
-		{
-			case GMLPackage.ABSTRACT_CONTINUOUS_COVERAGE_TYPE:
-			{
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case GMLPackage.ABSTRACT_CONTINUOUS_COVERAGE_TYPE: {
 				AbstractContinuousCoverageType abstractContinuousCoverageType = (AbstractContinuousCoverageType)theEObject;
 				T result = caseAbstractContinuousCoverageType(abstractContinuousCoverageType);
 				if (result == null) result = caseAbstractCoverageType(abstractContinuousCoverageType);
@@ -82,8 +75,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE:
-			{
+			case GMLPackage.ABSTRACT_COORDINATE_OPERATION_TYPE: {
 				AbstractCoordinateOperationType abstractCoordinateOperationType = (AbstractCoordinateOperationType)theEObject;
 				T result = caseAbstractCoordinateOperationType(abstractCoordinateOperationType);
 				if (result == null) result = caseIdentifiedObjectType(abstractCoordinateOperationType);
@@ -93,8 +85,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE:
-			{
+			case GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE: {
 				AbstractCoordinateSystemType abstractCoordinateSystemType = (AbstractCoordinateSystemType)theEObject;
 				T result = caseAbstractCoordinateSystemType(abstractCoordinateSystemType);
 				if (result == null) result = caseIdentifiedObjectType(abstractCoordinateSystemType);
@@ -104,8 +95,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_COVERAGE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_COVERAGE_TYPE: {
 				AbstractCoverageType abstractCoverageType = (AbstractCoverageType)theEObject;
 				T result = caseAbstractCoverageType(abstractCoverageType);
 				if (result == null) result = caseAbstractFeatureType(abstractCoverageType);
@@ -113,8 +103,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_CRS_TYPE:
-			{
+			case GMLPackage.ABSTRACT_CRS_TYPE: {
 				AbstractCRSType abstractCRSType = (AbstractCRSType)theEObject;
 				T result = caseAbstractCRSType(abstractCRSType);
 				if (result == null) result = caseIdentifiedObjectType(abstractCRSType);
@@ -124,15 +113,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_CURVE_SEGMENT_TYPE:
-			{
+			case GMLPackage.ABSTRACT_CURVE_SEGMENT_TYPE: {
 				AbstractCurveSegmentType abstractCurveSegmentType = (AbstractCurveSegmentType)theEObject;
 				T result = caseAbstractCurveSegmentType(abstractCurveSegmentType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_CURVE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_CURVE_TYPE: {
 				AbstractCurveType abstractCurveType = (AbstractCurveType)theEObject;
 				T result = caseAbstractCurveType(abstractCurveType);
 				if (result == null) result = caseAbstractGeometricPrimitiveType(abstractCurveType);
@@ -141,8 +128,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_DATUM_TYPE:
-			{
+			case GMLPackage.ABSTRACT_DATUM_TYPE: {
 				AbstractDatumType abstractDatumType = (AbstractDatumType)theEObject;
 				T result = caseAbstractDatumType(abstractDatumType);
 				if (result == null) result = caseIdentifiedObjectType(abstractDatumType);
@@ -152,8 +138,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE:
-			{
+			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE: {
 				AbstractFeatureCollectionType abstractFeatureCollectionType = (AbstractFeatureCollectionType)theEObject;
 				T result = caseAbstractFeatureCollectionType(abstractFeatureCollectionType);
 				if (result == null) result = caseAbstractFeatureType(abstractFeatureCollectionType);
@@ -161,23 +146,20 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_FEATURE_MEMBER_TYPE:
-			{
+			case GMLPackage.ABSTRACT_FEATURE_MEMBER_TYPE: {
 				AbstractFeatureMemberType abstractFeatureMemberType = (AbstractFeatureMemberType)theEObject;
 				T result = caseAbstractFeatureMemberType(abstractFeatureMemberType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_FEATURE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_FEATURE_TYPE: {
 				AbstractFeatureType abstractFeatureType = (AbstractFeatureType)theEObject;
 				T result = caseAbstractFeatureType(abstractFeatureType);
 				if (result == null) result = caseAbstractGMLType(abstractFeatureType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GENERAL_CONVERSION_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GENERAL_CONVERSION_TYPE: {
 				AbstractGeneralConversionType abstractGeneralConversionType = (AbstractGeneralConversionType)theEObject;
 				T result = caseAbstractGeneralConversionType(abstractGeneralConversionType);
 				if (result == null) result = caseAbstractCoordinateOperationType(abstractGeneralConversionType);
@@ -188,8 +170,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GENERAL_DERIVED_CRS_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GENERAL_DERIVED_CRS_TYPE: {
 				AbstractGeneralDerivedCRSType abstractGeneralDerivedCRSType = (AbstractGeneralDerivedCRSType)theEObject;
 				T result = caseAbstractGeneralDerivedCRSType(abstractGeneralDerivedCRSType);
 				if (result == null) result = caseAbstractCRSType(abstractGeneralDerivedCRSType);
@@ -200,15 +181,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GENERAL_OPERATION_PARAMETER_PROPERTY_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GENERAL_OPERATION_PARAMETER_PROPERTY_TYPE: {
 				AbstractGeneralOperationParameterPropertyType abstractGeneralOperationParameterPropertyType = (AbstractGeneralOperationParameterPropertyType)theEObject;
 				T result = caseAbstractGeneralOperationParameterPropertyType(abstractGeneralOperationParameterPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GENERAL_OPERATION_PARAMETER_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GENERAL_OPERATION_PARAMETER_TYPE: {
 				AbstractGeneralOperationParameterType abstractGeneralOperationParameterType = (AbstractGeneralOperationParameterType)theEObject;
 				T result = caseAbstractGeneralOperationParameterType(abstractGeneralOperationParameterType);
 				if (result == null) result = caseIdentifiedObjectType(abstractGeneralOperationParameterType);
@@ -218,22 +197,19 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE: {
 				AbstractGeneralParameterValuePropertyType abstractGeneralParameterValuePropertyType = (AbstractGeneralParameterValuePropertyType)theEObject;
 				T result = caseAbstractGeneralParameterValuePropertyType(abstractGeneralParameterValuePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_TYPE: {
 				AbstractGeneralParameterValueType abstractGeneralParameterValueType = (AbstractGeneralParameterValueType)theEObject;
 				T result = caseAbstractGeneralParameterValueType(abstractGeneralParameterValueType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GENERAL_TRANSFORMATION_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GENERAL_TRANSFORMATION_TYPE: {
 				AbstractGeneralTransformationType abstractGeneralTransformationType = (AbstractGeneralTransformationType)theEObject;
 				T result = caseAbstractGeneralTransformationType(abstractGeneralTransformationType);
 				if (result == null) result = caseAbstractCoordinateOperationType(abstractGeneralTransformationType);
@@ -244,8 +220,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GEOMETRIC_AGGREGATE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GEOMETRIC_AGGREGATE_TYPE: {
 				AbstractGeometricAggregateType abstractGeometricAggregateType = (AbstractGeometricAggregateType)theEObject;
 				T result = caseAbstractGeometricAggregateType(abstractGeometricAggregateType);
 				if (result == null) result = caseAbstractGeometryType(abstractGeometricAggregateType);
@@ -253,8 +228,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GEOMETRIC_PRIMITIVE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GEOMETRIC_PRIMITIVE_TYPE: {
 				AbstractGeometricPrimitiveType abstractGeometricPrimitiveType = (AbstractGeometricPrimitiveType)theEObject;
 				T result = caseAbstractGeometricPrimitiveType(abstractGeometricPrimitiveType);
 				if (result == null) result = caseAbstractGeometryType(abstractGeometricPrimitiveType);
@@ -262,23 +236,20 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GEOMETRY_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GEOMETRY_TYPE: {
 				AbstractGeometryType abstractGeometryType = (AbstractGeometryType)theEObject;
 				T result = caseAbstractGeometryType(abstractGeometryType);
 				if (result == null) result = caseAbstractGMLType(abstractGeometryType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GML_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GML_TYPE: {
 				AbstractGMLType abstractGMLType = (AbstractGMLType)theEObject;
 				T result = caseAbstractGMLType(abstractGMLType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE: {
 				AbstractGriddedSurfaceType abstractGriddedSurfaceType = (AbstractGriddedSurfaceType)theEObject;
 				T result = caseAbstractGriddedSurfaceType(abstractGriddedSurfaceType);
 				if (result == null) result = caseAbstractParametricCurveSurfaceType(abstractGriddedSurfaceType);
@@ -286,51 +257,44 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_MEMBER_TYPE:
-			{
+			case GMLPackage.ABSTRACT_MEMBER_TYPE: {
 				AbstractMemberType abstractMemberType = (AbstractMemberType)theEObject;
 				T result = caseAbstractMemberType(abstractMemberType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_METADATA_PROPERTY_TYPE:
-			{
+			case GMLPackage.ABSTRACT_METADATA_PROPERTY_TYPE: {
 				AbstractMetadataPropertyType abstractMetadataPropertyType = (AbstractMetadataPropertyType)theEObject;
 				T result = caseAbstractMetadataPropertyType(abstractMetadataPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_META_DATA_TYPE:
-			{
+			case GMLPackage.ABSTRACT_META_DATA_TYPE: {
 				AbstractMetaDataType abstractMetaDataType = (AbstractMetaDataType)theEObject;
 				T result = caseAbstractMetaDataType(abstractMetaDataType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_PARAMETRIC_CURVE_SURFACE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_PARAMETRIC_CURVE_SURFACE_TYPE: {
 				AbstractParametricCurveSurfaceType abstractParametricCurveSurfaceType = (AbstractParametricCurveSurfaceType)theEObject;
 				T result = caseAbstractParametricCurveSurfaceType(abstractParametricCurveSurfaceType);
 				if (result == null) result = caseAbstractSurfacePatchType(abstractParametricCurveSurfaceType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE:
-			{
+			case GMLPackage.ABSTRACT_RING_PROPERTY_TYPE: {
 				AbstractRingPropertyType abstractRingPropertyType = (AbstractRingPropertyType)theEObject;
 				T result = caseAbstractRingPropertyType(abstractRingPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_RING_TYPE:
-			{
+			case GMLPackage.ABSTRACT_RING_TYPE: {
 				AbstractRingType abstractRingType = (AbstractRingType)theEObject;
 				T result = caseAbstractRingType(abstractRingType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_SOLID_TYPE:
-			{
+			case GMLPackage.ABSTRACT_SOLID_TYPE: {
 				AbstractSolidType abstractSolidType = (AbstractSolidType)theEObject;
 				T result = caseAbstractSolidType(abstractSolidType);
 				if (result == null) result = caseAbstractGeometricPrimitiveType(abstractSolidType);
@@ -339,15 +303,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_SURFACE_PATCH_TYPE:
-			{
+			case GMLPackage.ABSTRACT_SURFACE_PATCH_TYPE: {
 				AbstractSurfacePatchType abstractSurfacePatchType = (AbstractSurfacePatchType)theEObject;
 				T result = caseAbstractSurfacePatchType(abstractSurfacePatchType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_SURFACE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_SURFACE_TYPE: {
 				AbstractSurfaceType abstractSurfaceType = (AbstractSurfaceType)theEObject;
 				T result = caseAbstractSurfaceType(abstractSurfaceType);
 				if (result == null) result = caseAbstractGeometricPrimitiveType(abstractSurfaceType);
@@ -356,8 +318,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_TIME_COMPLEX_TYPE:
-			{
+			case GMLPackage.ABSTRACT_TIME_COMPLEX_TYPE: {
 				AbstractTimeComplexType abstractTimeComplexType = (AbstractTimeComplexType)theEObject;
 				T result = caseAbstractTimeComplexType(abstractTimeComplexType);
 				if (result == null) result = caseAbstractTimeObjectType(abstractTimeComplexType);
@@ -365,8 +326,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_TIME_GEOMETRIC_PRIMITIVE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_TIME_GEOMETRIC_PRIMITIVE_TYPE: {
 				AbstractTimeGeometricPrimitiveType abstractTimeGeometricPrimitiveType = (AbstractTimeGeometricPrimitiveType)theEObject;
 				T result = caseAbstractTimeGeometricPrimitiveType(abstractTimeGeometricPrimitiveType);
 				if (result == null) result = caseAbstractTimePrimitiveType(abstractTimeGeometricPrimitiveType);
@@ -375,16 +335,14 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_TIME_OBJECT_TYPE:
-			{
+			case GMLPackage.ABSTRACT_TIME_OBJECT_TYPE: {
 				AbstractTimeObjectType abstractTimeObjectType = (AbstractTimeObjectType)theEObject;
 				T result = caseAbstractTimeObjectType(abstractTimeObjectType);
 				if (result == null) result = caseAbstractGMLType(abstractTimeObjectType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_TIME_PRIMITIVE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_TIME_PRIMITIVE_TYPE: {
 				AbstractTimePrimitiveType abstractTimePrimitiveType = (AbstractTimePrimitiveType)theEObject;
 				T result = caseAbstractTimePrimitiveType(abstractTimePrimitiveType);
 				if (result == null) result = caseAbstractTimeObjectType(abstractTimePrimitiveType);
@@ -392,16 +350,14 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE: {
 				AbstractTimeSliceType abstractTimeSliceType = (AbstractTimeSliceType)theEObject;
 				T result = caseAbstractTimeSliceType(abstractTimeSliceType);
 				if (result == null) result = caseAbstractGMLType(abstractTimeSliceType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_TIME_TOPOLOGY_PRIMITIVE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_TIME_TOPOLOGY_PRIMITIVE_TYPE: {
 				AbstractTimeTopologyPrimitiveType abstractTimeTopologyPrimitiveType = (AbstractTimeTopologyPrimitiveType)theEObject;
 				T result = caseAbstractTimeTopologyPrimitiveType(abstractTimeTopologyPrimitiveType);
 				if (result == null) result = caseAbstractTimePrimitiveType(abstractTimeTopologyPrimitiveType);
@@ -410,16 +366,14 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_TOPOLOGY_TYPE:
-			{
+			case GMLPackage.ABSTRACT_TOPOLOGY_TYPE: {
 				AbstractTopologyType abstractTopologyType = (AbstractTopologyType)theEObject;
 				T result = caseAbstractTopologyType(abstractTopologyType);
 				if (result == null) result = caseAbstractGMLType(abstractTopologyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ABSTRACT_TOPO_PRIMITIVE_TYPE:
-			{
+			case GMLPackage.ABSTRACT_TOPO_PRIMITIVE_TYPE: {
 				AbstractTopoPrimitiveType abstractTopoPrimitiveType = (AbstractTopoPrimitiveType)theEObject;
 				T result = caseAbstractTopoPrimitiveType(abstractTopoPrimitiveType);
 				if (result == null) result = caseAbstractTopologyType(abstractTopoPrimitiveType);
@@ -427,15 +381,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.AFFINE_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.AFFINE_CS_PROPERTY_TYPE: {
 				AffineCSPropertyType affineCSPropertyType = (AffineCSPropertyType)theEObject;
 				T result = caseAffineCSPropertyType(affineCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.AFFINE_CS_TYPE:
-			{
+			case GMLPackage.AFFINE_CS_TYPE: {
 				AffineCSType affineCSType = (AffineCSType)theEObject;
 				T result = caseAffineCSType(affineCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(affineCSType);
@@ -446,30 +398,26 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.AFFINE_PLACEMENT_TYPE:
-			{
+			case GMLPackage.AFFINE_PLACEMENT_TYPE: {
 				AffinePlacementType affinePlacementType = (AffinePlacementType)theEObject;
 				T result = caseAffinePlacementType(affinePlacementType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ANGLE_CHOICE_TYPE:
-			{
+			case GMLPackage.ANGLE_CHOICE_TYPE: {
 				AngleChoiceType angleChoiceType = (AngleChoiceType)theEObject;
 				T result = caseAngleChoiceType(angleChoiceType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ANGLE_TYPE:
-			{
+			case GMLPackage.ANGLE_TYPE: {
 				AngleType angleType = (AngleType)theEObject;
 				T result = caseAngleType(angleType);
 				if (result == null) result = caseMeasureType(angleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ARC_BY_BULGE_TYPE:
-			{
+			case GMLPackage.ARC_BY_BULGE_TYPE: {
 				ArcByBulgeType arcByBulgeType = (ArcByBulgeType)theEObject;
 				T result = caseArcByBulgeType(arcByBulgeType);
 				if (result == null) result = caseArcStringByBulgeType(arcByBulgeType);
@@ -477,32 +425,28 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ARC_BY_CENTER_POINT_TYPE:
-			{
+			case GMLPackage.ARC_BY_CENTER_POINT_TYPE: {
 				ArcByCenterPointType arcByCenterPointType = (ArcByCenterPointType)theEObject;
 				T result = caseArcByCenterPointType(arcByCenterPointType);
 				if (result == null) result = caseAbstractCurveSegmentType(arcByCenterPointType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ARC_STRING_BY_BULGE_TYPE:
-			{
+			case GMLPackage.ARC_STRING_BY_BULGE_TYPE: {
 				ArcStringByBulgeType arcStringByBulgeType = (ArcStringByBulgeType)theEObject;
 				T result = caseArcStringByBulgeType(arcStringByBulgeType);
 				if (result == null) result = caseAbstractCurveSegmentType(arcStringByBulgeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ARC_STRING_TYPE:
-			{
+			case GMLPackage.ARC_STRING_TYPE: {
 				ArcStringType arcStringType = (ArcStringType)theEObject;
 				T result = caseArcStringType(arcStringType);
 				if (result == null) result = caseAbstractCurveSegmentType(arcStringType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ARC_TYPE:
-			{
+			case GMLPackage.ARC_TYPE: {
 				ArcType arcType = (ArcType)theEObject;
 				T result = caseArcType(arcType);
 				if (result == null) result = caseArcStringType(arcType);
@@ -510,46 +454,40 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.AREA_TYPE:
-			{
+			case GMLPackage.AREA_TYPE: {
 				AreaType areaType = (AreaType)theEObject;
 				T result = caseAreaType(areaType);
 				if (result == null) result = caseMeasureType(areaType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ARRAY_ASSOCIATION_TYPE:
-			{
+			case GMLPackage.ARRAY_ASSOCIATION_TYPE: {
 				ArrayAssociationType arrayAssociationType = (ArrayAssociationType)theEObject;
 				T result = caseArrayAssociationType(arrayAssociationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ARRAY_TYPE:
-			{
+			case GMLPackage.ARRAY_TYPE: {
 				ArrayType arrayType = (ArrayType)theEObject;
 				T result = caseArrayType(arrayType);
 				if (result == null) result = caseAbstractGMLType(arrayType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ASSOCIATION_ROLE_TYPE:
-			{
+			case GMLPackage.ASSOCIATION_ROLE_TYPE: {
 				AssociationRoleType associationRoleType = (AssociationRoleType)theEObject;
 				T result = caseAssociationRoleType(associationRoleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.BAG_TYPE:
-			{
+			case GMLPackage.BAG_TYPE: {
 				BagType bagType = (BagType)theEObject;
 				T result = caseBagType(bagType);
 				if (result == null) result = caseAbstractGMLType(bagType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.BASE_UNIT_TYPE:
-			{
+			case GMLPackage.BASE_UNIT_TYPE: {
 				BaseUnitType baseUnitType = (BaseUnitType)theEObject;
 				T result = caseBaseUnitType(baseUnitType);
 				if (result == null) result = caseUnitDefinitionType(baseUnitType);
@@ -559,8 +497,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.BEZIER_TYPE:
-			{
+			case GMLPackage.BEZIER_TYPE: {
 				BezierType bezierType = (BezierType)theEObject;
 				T result = caseBezierType(bezierType);
 				if (result == null) result = caseBSplineType(bezierType);
@@ -568,22 +505,19 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.BOOLEAN_PROPERTY_TYPE:
-			{
+			case GMLPackage.BOOLEAN_PROPERTY_TYPE: {
 				BooleanPropertyType booleanPropertyType = (BooleanPropertyType)theEObject;
 				T result = caseBooleanPropertyType(booleanPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.BOOLEAN_TYPE:
-			{
+			case GMLPackage.BOOLEAN_TYPE: {
 				BooleanType booleanType = (BooleanType)theEObject;
 				T result = caseBooleanType(booleanType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.BOUNDED_FEATURE_TYPE:
-			{
+			case GMLPackage.BOUNDED_FEATURE_TYPE: {
 				BoundedFeatureType boundedFeatureType = (BoundedFeatureType)theEObject;
 				T result = caseBoundedFeatureType(boundedFeatureType);
 				if (result == null) result = caseAbstractFeatureType(boundedFeatureType);
@@ -591,30 +525,26 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.BOUNDING_SHAPE_TYPE:
-			{
+			case GMLPackage.BOUNDING_SHAPE_TYPE: {
 				BoundingShapeType boundingShapeType = (BoundingShapeType)theEObject;
 				T result = caseBoundingShapeType(boundingShapeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.BSPLINE_TYPE:
-			{
+			case GMLPackage.BSPLINE_TYPE: {
 				BSplineType bSplineType = (BSplineType)theEObject;
 				T result = caseBSplineType(bSplineType);
 				if (result == null) result = caseAbstractCurveSegmentType(bSplineType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CARTESIAN_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.CARTESIAN_CS_PROPERTY_TYPE: {
 				CartesianCSPropertyType cartesianCSPropertyType = (CartesianCSPropertyType)theEObject;
 				T result = caseCartesianCSPropertyType(cartesianCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CARTESIAN_CS_TYPE:
-			{
+			case GMLPackage.CARTESIAN_CS_TYPE: {
 				CartesianCSType cartesianCSType = (CartesianCSType)theEObject;
 				T result = caseCartesianCSType(cartesianCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(cartesianCSType);
@@ -625,31 +555,27 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CATEGORY_EXTENT_TYPE:
-			{
+			case GMLPackage.CATEGORY_EXTENT_TYPE: {
 				CategoryExtentType categoryExtentType = (CategoryExtentType)theEObject;
 				T result = caseCategoryExtentType(categoryExtentType);
 				if (result == null) result = caseCodeOrNilReasonListType(categoryExtentType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CATEGORY_PROPERTY_TYPE:
-			{
+			case GMLPackage.CATEGORY_PROPERTY_TYPE: {
 				CategoryPropertyType categoryPropertyType = (CategoryPropertyType)theEObject;
 				T result = caseCategoryPropertyType(categoryPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CATEGORY_TYPE:
-			{
+			case GMLPackage.CATEGORY_TYPE: {
 				CategoryType categoryType = (CategoryType)theEObject;
 				T result = caseCategoryType(categoryType);
 				if (result == null) result = caseCodeType(categoryType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CIRCLE_BY_CENTER_POINT_TYPE:
-			{
+			case GMLPackage.CIRCLE_BY_CENTER_POINT_TYPE: {
 				CircleByCenterPointType circleByCenterPointType = (CircleByCenterPointType)theEObject;
 				T result = caseCircleByCenterPointType(circleByCenterPointType);
 				if (result == null) result = caseArcByCenterPointType(circleByCenterPointType);
@@ -657,8 +583,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CIRCLE_TYPE:
-			{
+			case GMLPackage.CIRCLE_TYPE: {
 				CircleType circleType = (CircleType)theEObject;
 				T result = caseCircleType(circleType);
 				if (result == null) result = caseArcType(circleType);
@@ -667,45 +592,39 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CLOTHOID_TYPE:
-			{
+			case GMLPackage.CLOTHOID_TYPE: {
 				ClothoidType clothoidType = (ClothoidType)theEObject;
 				T result = caseClothoidType(clothoidType);
 				if (result == null) result = caseAbstractCurveSegmentType(clothoidType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CODE_LIST_TYPE:
-			{
+			case GMLPackage.CODE_LIST_TYPE: {
 				CodeListType codeListType = (CodeListType)theEObject;
 				T result = caseCodeListType(codeListType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CODE_OR_NIL_REASON_LIST_TYPE:
-			{
+			case GMLPackage.CODE_OR_NIL_REASON_LIST_TYPE: {
 				CodeOrNilReasonListType codeOrNilReasonListType = (CodeOrNilReasonListType)theEObject;
 				T result = caseCodeOrNilReasonListType(codeOrNilReasonListType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CODE_TYPE:
-			{
+			case GMLPackage.CODE_TYPE: {
 				CodeType codeType = (CodeType)theEObject;
 				T result = caseCodeType(codeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CODE_WITH_AUTHORITY_TYPE:
-			{
+			case GMLPackage.CODE_WITH_AUTHORITY_TYPE: {
 				CodeWithAuthorityType codeWithAuthorityType = (CodeWithAuthorityType)theEObject;
 				T result = caseCodeWithAuthorityType(codeWithAuthorityType);
 				if (result == null) result = caseCodeType(codeWithAuthorityType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COMPOSITE_CURVE_TYPE:
-			{
+			case GMLPackage.COMPOSITE_CURVE_TYPE: {
 				CompositeCurveType compositeCurveType = (CompositeCurveType)theEObject;
 				T result = caseCompositeCurveType(compositeCurveType);
 				if (result == null) result = caseAbstractCurveType(compositeCurveType);
@@ -715,8 +634,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COMPOSITE_SOLID_TYPE:
-			{
+			case GMLPackage.COMPOSITE_SOLID_TYPE: {
 				CompositeSolidType compositeSolidType = (CompositeSolidType)theEObject;
 				T result = caseCompositeSolidType(compositeSolidType);
 				if (result == null) result = caseAbstractSolidType(compositeSolidType);
@@ -726,8 +644,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COMPOSITE_SURFACE_TYPE:
-			{
+			case GMLPackage.COMPOSITE_SURFACE_TYPE: {
 				CompositeSurfaceType compositeSurfaceType = (CompositeSurfaceType)theEObject;
 				T result = caseCompositeSurfaceType(compositeSurfaceType);
 				if (result == null) result = caseAbstractSurfaceType(compositeSurfaceType);
@@ -737,23 +654,20 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COMPOSITE_VALUE_TYPE:
-			{
+			case GMLPackage.COMPOSITE_VALUE_TYPE: {
 				CompositeValueType compositeValueType = (CompositeValueType)theEObject;
 				T result = caseCompositeValueType(compositeValueType);
 				if (result == null) result = caseAbstractGMLType(compositeValueType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COMPOUND_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.COMPOUND_CRS_PROPERTY_TYPE: {
 				CompoundCRSPropertyType compoundCRSPropertyType = (CompoundCRSPropertyType)theEObject;
 				T result = caseCompoundCRSPropertyType(compoundCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COMPOUND_CRS_TYPE:
-			{
+			case GMLPackage.COMPOUND_CRS_TYPE: {
 				CompoundCRSType compoundCRSType = (CompoundCRSType)theEObject;
 				T result = caseCompoundCRSType(compoundCRSType);
 				if (result == null) result = caseAbstractCRSType(compoundCRSType);
@@ -764,15 +678,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CONCATENATED_OPERATION_PROPERTY_TYPE:
-			{
+			case GMLPackage.CONCATENATED_OPERATION_PROPERTY_TYPE: {
 				ConcatenatedOperationPropertyType concatenatedOperationPropertyType = (ConcatenatedOperationPropertyType)theEObject;
 				T result = caseConcatenatedOperationPropertyType(concatenatedOperationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CONCATENATED_OPERATION_TYPE:
-			{
+			case GMLPackage.CONCATENATED_OPERATION_TYPE: {
 				ConcatenatedOperationType concatenatedOperationType = (ConcatenatedOperationType)theEObject;
 				T result = caseConcatenatedOperationType(concatenatedOperationType);
 				if (result == null) result = caseAbstractCoordinateOperationType(concatenatedOperationType);
@@ -783,8 +695,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CONE_TYPE:
-			{
+			case GMLPackage.CONE_TYPE: {
 				ConeType coneType = (ConeType)theEObject;
 				T result = caseConeType(coneType);
 				if (result == null) result = caseAbstractGriddedSurfaceType(coneType);
@@ -793,15 +704,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CONTROL_POINT_TYPE:
-			{
+			case GMLPackage.CONTROL_POINT_TYPE: {
 				ControlPointType controlPointType = (ControlPointType)theEObject;
 				T result = caseControlPointType(controlPointType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CONVENTIONAL_UNIT_TYPE:
-			{
+			case GMLPackage.CONVENTIONAL_UNIT_TYPE: {
 				ConventionalUnitType conventionalUnitType = (ConventionalUnitType)theEObject;
 				T result = caseConventionalUnitType(conventionalUnitType);
 				if (result == null) result = caseUnitDefinitionType(conventionalUnitType);
@@ -811,23 +720,20 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CONVERSION_PROPERTY_TYPE:
-			{
+			case GMLPackage.CONVERSION_PROPERTY_TYPE: {
 				ConversionPropertyType conversionPropertyType = (ConversionPropertyType)theEObject;
 				T result = caseConversionPropertyType(conversionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE:
-			{
+			case GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE: {
 				ConversionToPreferredUnitType conversionToPreferredUnitType = (ConversionToPreferredUnitType)theEObject;
 				T result = caseConversionToPreferredUnitType(conversionToPreferredUnitType);
 				if (result == null) result = caseUnitOfMeasureType(conversionToPreferredUnitType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CONVERSION_TYPE:
-			{
+			case GMLPackage.CONVERSION_TYPE: {
 				ConversionType conversionType = (ConversionType)theEObject;
 				T result = caseConversionType(conversionType);
 				if (result == null) result = caseAbstractGeneralConversionType(conversionType);
@@ -839,36 +745,31 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE:
-			{
+			case GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE: {
 				CoordinateOperationAccuracyType coordinateOperationAccuracyType = (CoordinateOperationAccuracyType)theEObject;
 				T result = caseCoordinateOperationAccuracyType(coordinateOperationAccuracyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COORDINATE_OPERATION_PROPERTY_TYPE:
-			{
+			case GMLPackage.COORDINATE_OPERATION_PROPERTY_TYPE: {
 				CoordinateOperationPropertyType coordinateOperationPropertyType = (CoordinateOperationPropertyType)theEObject;
 				T result = caseCoordinateOperationPropertyType(coordinateOperationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COORDINATES_TYPE:
-			{
+			case GMLPackage.COORDINATES_TYPE: {
 				CoordinatesType coordinatesType = (CoordinatesType)theEObject;
 				T result = caseCoordinatesType(coordinatesType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COORDINATE_SYSTEM_AXIS_PROPERTY_TYPE:
-			{
+			case GMLPackage.COORDINATE_SYSTEM_AXIS_PROPERTY_TYPE: {
 				CoordinateSystemAxisPropertyType coordinateSystemAxisPropertyType = (CoordinateSystemAxisPropertyType)theEObject;
 				T result = caseCoordinateSystemAxisPropertyType(coordinateSystemAxisPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE:
-			{
+			case GMLPackage.COORDINATE_SYSTEM_AXIS_TYPE: {
 				CoordinateSystemAxisType coordinateSystemAxisType = (CoordinateSystemAxisType)theEObject;
 				T result = caseCoordinateSystemAxisType(coordinateSystemAxisType);
 				if (result == null) result = caseIdentifiedObjectType(coordinateSystemAxisType);
@@ -878,72 +779,62 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COORDINATE_SYSTEM_PROPERTY_TYPE:
-			{
+			case GMLPackage.COORDINATE_SYSTEM_PROPERTY_TYPE: {
 				CoordinateSystemPropertyType coordinateSystemPropertyType = (CoordinateSystemPropertyType)theEObject;
 				T result = caseCoordinateSystemPropertyType(coordinateSystemPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COUNT_PROPERTY_TYPE:
-			{
+			case GMLPackage.COUNT_PROPERTY_TYPE: {
 				CountPropertyType countPropertyType = (CountPropertyType)theEObject;
 				T result = caseCountPropertyType(countPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COUNT_TYPE:
-			{
+			case GMLPackage.COUNT_TYPE: {
 				CountType countType = (CountType)theEObject;
 				T result = caseCountType(countType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.COVERAGE_FUNCTION_TYPE:
-			{
+			case GMLPackage.COVERAGE_FUNCTION_TYPE: {
 				CoverageFunctionType coverageFunctionType = (CoverageFunctionType)theEObject;
 				T result = caseCoverageFunctionType(coverageFunctionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.CRS_PROPERTY_TYPE: {
 				CRSPropertyType crsPropertyType = (CRSPropertyType)theEObject;
 				T result = caseCRSPropertyType(crsPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CUBIC_SPLINE_TYPE:
-			{
+			case GMLPackage.CUBIC_SPLINE_TYPE: {
 				CubicSplineType cubicSplineType = (CubicSplineType)theEObject;
 				T result = caseCubicSplineType(cubicSplineType);
 				if (result == null) result = caseAbstractCurveSegmentType(cubicSplineType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CURVE_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.CURVE_ARRAY_PROPERTY_TYPE: {
 				CurveArrayPropertyType curveArrayPropertyType = (CurveArrayPropertyType)theEObject;
 				T result = caseCurveArrayPropertyType(curveArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CURVE_PROPERTY_TYPE:
-			{
+			case GMLPackage.CURVE_PROPERTY_TYPE: {
 				CurvePropertyType curvePropertyType = (CurvePropertyType)theEObject;
 				T result = caseCurvePropertyType(curvePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.CURVE_SEGMENT_ARRAY_PROPERTY_TYPE: {
 				CurveSegmentArrayPropertyType curveSegmentArrayPropertyType = (CurveSegmentArrayPropertyType)theEObject;
 				T result = caseCurveSegmentArrayPropertyType(curveSegmentArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CURVE_TYPE:
-			{
+			case GMLPackage.CURVE_TYPE: {
 				CurveType curveType = (CurveType)theEObject;
 				T result = caseCurveType(curveType);
 				if (result == null) result = caseAbstractCurveType(curveType);
@@ -953,8 +844,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CYLINDER_TYPE:
-			{
+			case GMLPackage.CYLINDER_TYPE: {
 				CylinderType cylinderType = (CylinderType)theEObject;
 				T result = caseCylinderType(cylinderType);
 				if (result == null) result = caseAbstractGriddedSurfaceType(cylinderType);
@@ -963,15 +853,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CYLINDRICAL_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.CYLINDRICAL_CS_PROPERTY_TYPE: {
 				CylindricalCSPropertyType cylindricalCSPropertyType = (CylindricalCSPropertyType)theEObject;
 				T result = caseCylindricalCSPropertyType(cylindricalCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.CYLINDRICAL_CS_TYPE:
-			{
+			case GMLPackage.CYLINDRICAL_CS_TYPE: {
 				CylindricalCSType cylindricalCSType = (CylindricalCSType)theEObject;
 				T result = caseCylindricalCSType(cylindricalCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(cylindricalCSType);
@@ -982,30 +870,26 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DATA_BLOCK_TYPE:
-			{
+			case GMLPackage.DATA_BLOCK_TYPE: {
 				DataBlockType dataBlockType = (DataBlockType)theEObject;
 				T result = caseDataBlockType(dataBlockType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DATUM_PROPERTY_TYPE:
-			{
+			case GMLPackage.DATUM_PROPERTY_TYPE: {
 				DatumPropertyType datumPropertyType = (DatumPropertyType)theEObject;
 				T result = caseDatumPropertyType(datumPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DEFINITION_BASE_TYPE:
-			{
+			case GMLPackage.DEFINITION_BASE_TYPE: {
 				DefinitionBaseType definitionBaseType = (DefinitionBaseType)theEObject;
 				T result = caseDefinitionBaseType(definitionBaseType);
 				if (result == null) result = caseAbstractGMLType(definitionBaseType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DEFINITION_PROXY_TYPE:
-			{
+			case GMLPackage.DEFINITION_PROXY_TYPE: {
 				DefinitionProxyType definitionProxyType = (DefinitionProxyType)theEObject;
 				T result = caseDefinitionProxyType(definitionProxyType);
 				if (result == null) result = caseDefinitionType(definitionProxyType);
@@ -1014,8 +898,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DEFINITION_TYPE:
-			{
+			case GMLPackage.DEFINITION_TYPE: {
 				DefinitionType definitionType = (DefinitionType)theEObject;
 				T result = caseDefinitionType(definitionType);
 				if (result == null) result = caseDefinitionBaseType(definitionType);
@@ -1023,30 +906,26 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DEGREES_TYPE:
-			{
+			case GMLPackage.DEGREES_TYPE: {
 				DegreesType degreesType = (DegreesType)theEObject;
 				T result = caseDegreesType(degreesType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DERIVATION_UNIT_TERM_TYPE:
-			{
+			case GMLPackage.DERIVATION_UNIT_TERM_TYPE: {
 				DerivationUnitTermType derivationUnitTermType = (DerivationUnitTermType)theEObject;
 				T result = caseDerivationUnitTermType(derivationUnitTermType);
 				if (result == null) result = caseUnitOfMeasureType(derivationUnitTermType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DERIVED_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.DERIVED_CRS_PROPERTY_TYPE: {
 				DerivedCRSPropertyType derivedCRSPropertyType = (DerivedCRSPropertyType)theEObject;
 				T result = caseDerivedCRSPropertyType(derivedCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DERIVED_CRS_TYPE:
-			{
+			case GMLPackage.DERIVED_CRS_TYPE: {
 				DerivedCRSType derivedCRSType = (DerivedCRSType)theEObject;
 				T result = caseDerivedCRSType(derivedCRSType);
 				if (result == null) result = caseAbstractGeneralDerivedCRSType(derivedCRSType);
@@ -1058,8 +937,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DERIVED_UNIT_TYPE:
-			{
+			case GMLPackage.DERIVED_UNIT_TYPE: {
 				DerivedUnitType derivedUnitType = (DerivedUnitType)theEObject;
 				T result = caseDerivedUnitType(derivedUnitType);
 				if (result == null) result = caseUnitDefinitionType(derivedUnitType);
@@ -1069,16 +947,14 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DICTIONARY_ENTRY_TYPE:
-			{
+			case GMLPackage.DICTIONARY_ENTRY_TYPE: {
 				DictionaryEntryType dictionaryEntryType = (DictionaryEntryType)theEObject;
 				T result = caseDictionaryEntryType(dictionaryEntryType);
 				if (result == null) result = caseAbstractMemberType(dictionaryEntryType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DICTIONARY_TYPE:
-			{
+			case GMLPackage.DICTIONARY_TYPE: {
 				DictionaryType dictionaryType = (DictionaryType)theEObject;
 				T result = caseDictionaryType(dictionaryType);
 				if (result == null) result = caseDefinitionType(dictionaryType);
@@ -1087,29 +963,25 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE:
-			{
+			case GMLPackage.DIRECTED_EDGE_PROPERTY_TYPE: {
 				DirectedEdgePropertyType directedEdgePropertyType = (DirectedEdgePropertyType)theEObject;
 				T result = caseDirectedEdgePropertyType(directedEdgePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECTED_FACE_PROPERTY_TYPE:
-			{
+			case GMLPackage.DIRECTED_FACE_PROPERTY_TYPE: {
 				DirectedFacePropertyType directedFacePropertyType = (DirectedFacePropertyType)theEObject;
 				T result = caseDirectedFacePropertyType(directedFacePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECTED_NODE_PROPERTY_TYPE:
-			{
+			case GMLPackage.DIRECTED_NODE_PROPERTY_TYPE: {
 				DirectedNodePropertyType directedNodePropertyType = (DirectedNodePropertyType)theEObject;
 				T result = caseDirectedNodePropertyType(directedNodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECTED_OBSERVATION_AT_DISTANCE_TYPE:
-			{
+			case GMLPackage.DIRECTED_OBSERVATION_AT_DISTANCE_TYPE: {
 				DirectedObservationAtDistanceType directedObservationAtDistanceType = (DirectedObservationAtDistanceType)theEObject;
 				T result = caseDirectedObservationAtDistanceType(directedObservationAtDistanceType);
 				if (result == null) result = caseDirectedObservationType(directedObservationAtDistanceType);
@@ -1119,8 +991,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECTED_OBSERVATION_TYPE:
-			{
+			case GMLPackage.DIRECTED_OBSERVATION_TYPE: {
 				DirectedObservationType directedObservationType = (DirectedObservationType)theEObject;
 				T result = caseDirectedObservationType(directedObservationType);
 				if (result == null) result = caseObservationType(directedObservationType);
@@ -1129,50 +1000,43 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECTED_TOPO_SOLID_PROPERTY_TYPE:
-			{
+			case GMLPackage.DIRECTED_TOPO_SOLID_PROPERTY_TYPE: {
 				DirectedTopoSolidPropertyType directedTopoSolidPropertyType = (DirectedTopoSolidPropertyType)theEObject;
 				T result = caseDirectedTopoSolidPropertyType(directedTopoSolidPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECTION_DESCRIPTION_TYPE:
-			{
+			case GMLPackage.DIRECTION_DESCRIPTION_TYPE: {
 				DirectionDescriptionType directionDescriptionType = (DirectionDescriptionType)theEObject;
 				T result = caseDirectionDescriptionType(directionDescriptionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECTION_PROPERTY_TYPE:
-			{
+			case GMLPackage.DIRECTION_PROPERTY_TYPE: {
 				DirectionPropertyType directionPropertyType = (DirectionPropertyType)theEObject;
 				T result = caseDirectionPropertyType(directionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECTION_VECTOR_TYPE:
-			{
+			case GMLPackage.DIRECTION_VECTOR_TYPE: {
 				DirectionVectorType directionVectorType = (DirectionVectorType)theEObject;
 				T result = caseDirectionVectorType(directionVectorType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECT_POSITION_LIST_TYPE:
-			{
+			case GMLPackage.DIRECT_POSITION_LIST_TYPE: {
 				DirectPositionListType directPositionListType = (DirectPositionListType)theEObject;
 				T result = caseDirectPositionListType(directPositionListType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DIRECT_POSITION_TYPE:
-			{
+			case GMLPackage.DIRECT_POSITION_TYPE: {
 				DirectPositionType directPositionType = (DirectPositionType)theEObject;
 				T result = caseDirectPositionType(directPositionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DISCRETE_COVERAGE_TYPE:
-			{
+			case GMLPackage.DISCRETE_COVERAGE_TYPE: {
 				DiscreteCoverageType discreteCoverageType = (DiscreteCoverageType)theEObject;
 				T result = caseDiscreteCoverageType(discreteCoverageType);
 				if (result == null) result = caseAbstractCoverageType(discreteCoverageType);
@@ -1181,36 +1045,31 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DMS_ANGLE_TYPE:
-			{
+			case GMLPackage.DMS_ANGLE_TYPE: {
 				DMSAngleType dmsAngleType = (DMSAngleType)theEObject;
 				T result = caseDMSAngleType(dmsAngleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DOCUMENT_ROOT:
-			{
+			case GMLPackage.DOCUMENT_ROOT: {
 				DocumentRoot documentRoot = (DocumentRoot)theEObject;
 				T result = caseDocumentRoot(documentRoot);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DOMAIN_OF_VALIDITY_TYPE:
-			{
+			case GMLPackage.DOMAIN_OF_VALIDITY_TYPE: {
 				DomainOfValidityType domainOfValidityType = (DomainOfValidityType)theEObject;
 				T result = caseDomainOfValidityType(domainOfValidityType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DOMAIN_SET_TYPE:
-			{
+			case GMLPackage.DOMAIN_SET_TYPE: {
 				DomainSetType domainSetType = (DomainSetType)theEObject;
 				T result = caseDomainSetType(domainSetType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DYNAMIC_FEATURE_COLLECTION_TYPE:
-			{
+			case GMLPackage.DYNAMIC_FEATURE_COLLECTION_TYPE: {
 				DynamicFeatureCollectionType dynamicFeatureCollectionType = (DynamicFeatureCollectionType)theEObject;
 				T result = caseDynamicFeatureCollectionType(dynamicFeatureCollectionType);
 				if (result == null) result = caseDynamicFeatureType(dynamicFeatureCollectionType);
@@ -1219,16 +1078,14 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DYNAMIC_FEATURE_MEMBER_TYPE:
-			{
+			case GMLPackage.DYNAMIC_FEATURE_MEMBER_TYPE: {
 				DynamicFeatureMemberType dynamicFeatureMemberType = (DynamicFeatureMemberType)theEObject;
 				T result = caseDynamicFeatureMemberType(dynamicFeatureMemberType);
 				if (result == null) result = caseAbstractFeatureMemberType(dynamicFeatureMemberType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.DYNAMIC_FEATURE_TYPE:
-			{
+			case GMLPackage.DYNAMIC_FEATURE_TYPE: {
 				DynamicFeatureType dynamicFeatureType = (DynamicFeatureType)theEObject;
 				T result = caseDynamicFeatureType(dynamicFeatureType);
 				if (result == null) result = caseAbstractFeatureType(dynamicFeatureType);
@@ -1236,8 +1093,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.EDGE_TYPE:
-			{
+			case GMLPackage.EDGE_TYPE: {
 				EdgeType edgeType = (EdgeType)theEObject;
 				T result = caseEdgeType(edgeType);
 				if (result == null) result = caseAbstractTopoPrimitiveType(edgeType);
@@ -1246,15 +1102,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ELLIPSOIDAL_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.ELLIPSOIDAL_CS_PROPERTY_TYPE: {
 				EllipsoidalCSPropertyType ellipsoidalCSPropertyType = (EllipsoidalCSPropertyType)theEObject;
 				T result = caseEllipsoidalCSPropertyType(ellipsoidalCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ELLIPSOIDAL_CS_TYPE:
-			{
+			case GMLPackage.ELLIPSOIDAL_CS_TYPE: {
 				EllipsoidalCSType ellipsoidalCSType = (EllipsoidalCSType)theEObject;
 				T result = caseEllipsoidalCSType(ellipsoidalCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(ellipsoidalCSType);
@@ -1265,15 +1119,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ELLIPSOID_PROPERTY_TYPE:
-			{
+			case GMLPackage.ELLIPSOID_PROPERTY_TYPE: {
 				EllipsoidPropertyType ellipsoidPropertyType = (EllipsoidPropertyType)theEObject;
 				T result = caseEllipsoidPropertyType(ellipsoidPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ELLIPSOID_TYPE:
-			{
+			case GMLPackage.ELLIPSOID_TYPE: {
 				EllipsoidType ellipsoidType = (EllipsoidType)theEObject;
 				T result = caseEllipsoidType(ellipsoidType);
 				if (result == null) result = caseIdentifiedObjectType(ellipsoidType);
@@ -1283,15 +1135,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ENGINEERING_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.ENGINEERING_CRS_PROPERTY_TYPE: {
 				EngineeringCRSPropertyType engineeringCRSPropertyType = (EngineeringCRSPropertyType)theEObject;
 				T result = caseEngineeringCRSPropertyType(engineeringCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ENGINEERING_CRS_TYPE:
-			{
+			case GMLPackage.ENGINEERING_CRS_TYPE: {
 				EngineeringCRSType engineeringCRSType = (EngineeringCRSType)theEObject;
 				T result = caseEngineeringCRSType(engineeringCRSType);
 				if (result == null) result = caseAbstractCRSType(engineeringCRSType);
@@ -1302,15 +1152,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ENGINEERING_DATUM_PROPERTY_TYPE:
-			{
+			case GMLPackage.ENGINEERING_DATUM_PROPERTY_TYPE: {
 				EngineeringDatumPropertyType engineeringDatumPropertyType = (EngineeringDatumPropertyType)theEObject;
 				T result = caseEngineeringDatumPropertyType(engineeringDatumPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ENGINEERING_DATUM_TYPE:
-			{
+			case GMLPackage.ENGINEERING_DATUM_TYPE: {
 				EngineeringDatumType engineeringDatumType = (EngineeringDatumType)theEObject;
 				T result = caseEngineeringDatumType(engineeringDatumType);
 				if (result == null) result = caseAbstractDatumType(engineeringDatumType);
@@ -1321,30 +1169,26 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ENVELOPE_TYPE:
-			{
+			case GMLPackage.ENVELOPE_TYPE: {
 				EnvelopeType envelopeType = (EnvelopeType)theEObject;
 				T result = caseEnvelopeType(envelopeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE:
-			{
+			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE: {
 				EnvelopeWithTimePeriodType envelopeWithTimePeriodType = (EnvelopeWithTimePeriodType)theEObject;
 				T result = caseEnvelopeWithTimePeriodType(envelopeWithTimePeriodType);
 				if (result == null) result = caseEnvelopeType(envelopeWithTimePeriodType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.FACE_OR_TOPO_SOLID_PROPERTY_TYPE:
-			{
+			case GMLPackage.FACE_OR_TOPO_SOLID_PROPERTY_TYPE: {
 				FaceOrTopoSolidPropertyType faceOrTopoSolidPropertyType = (FaceOrTopoSolidPropertyType)theEObject;
 				T result = caseFaceOrTopoSolidPropertyType(faceOrTopoSolidPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.FACE_TYPE:
-			{
+			case GMLPackage.FACE_TYPE: {
 				FaceType faceType = (FaceType)theEObject;
 				T result = caseFaceType(faceType);
 				if (result == null) result = caseAbstractTopoPrimitiveType(faceType);
@@ -1353,15 +1197,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.FEATURE_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.FEATURE_ARRAY_PROPERTY_TYPE: {
 				FeatureArrayPropertyType featureArrayPropertyType = (FeatureArrayPropertyType)theEObject;
 				T result = caseFeatureArrayPropertyType(featureArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.FEATURE_COLLECTION_TYPE:
-			{
+			case GMLPackage.FEATURE_COLLECTION_TYPE: {
 				FeatureCollectionType featureCollectionType = (FeatureCollectionType)theEObject;
 				T result = caseFeatureCollectionType(featureCollectionType);
 				if (result == null) result = caseAbstractFeatureCollectionType(featureCollectionType);
@@ -1370,65 +1212,56 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.FEATURE_PROPERTY_TYPE:
-			{
+			case GMLPackage.FEATURE_PROPERTY_TYPE: {
 				FeaturePropertyType featurePropertyType = (FeaturePropertyType)theEObject;
 				T result = caseFeaturePropertyType(featurePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.FILE_TYPE:
-			{
+			case GMLPackage.FILE_TYPE: {
 				FileType fileType = (FileType)theEObject;
 				T result = caseFileType(fileType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.FORMULA_CITATION_TYPE:
-			{
+			case GMLPackage.FORMULA_CITATION_TYPE: {
 				FormulaCitationType formulaCitationType = (FormulaCitationType)theEObject;
 				T result = caseFormulaCitationType(formulaCitationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.FORMULA_TYPE:
-			{
+			case GMLPackage.FORMULA_TYPE: {
 				FormulaType formulaType = (FormulaType)theEObject;
 				T result = caseFormulaType(formulaType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE:
-			{
+			case GMLPackage.GENERAL_CONVERSION_PROPERTY_TYPE: {
 				GeneralConversionPropertyType generalConversionPropertyType = (GeneralConversionPropertyType)theEObject;
 				T result = caseGeneralConversionPropertyType(generalConversionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GENERAL_TRANSFORMATION_PROPERTY_TYPE:
-			{
+			case GMLPackage.GENERAL_TRANSFORMATION_PROPERTY_TYPE: {
 				GeneralTransformationPropertyType generalTransformationPropertyType = (GeneralTransformationPropertyType)theEObject;
 				T result = caseGeneralTransformationPropertyType(generalTransformationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GENERIC_META_DATA_TYPE:
-			{
+			case GMLPackage.GENERIC_META_DATA_TYPE: {
 				GenericMetaDataType genericMetaDataType = (GenericMetaDataType)theEObject;
 				T result = caseGenericMetaDataType(genericMetaDataType);
 				if (result == null) result = caseAbstractMetaDataType(genericMetaDataType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEOCENTRIC_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.GEOCENTRIC_CRS_PROPERTY_TYPE: {
 				GeocentricCRSPropertyType geocentricCRSPropertyType = (GeocentricCRSPropertyType)theEObject;
 				T result = caseGeocentricCRSPropertyType(geocentricCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEOCENTRIC_CRS_TYPE:
-			{
+			case GMLPackage.GEOCENTRIC_CRS_TYPE: {
 				GeocentricCRSType geocentricCRSType = (GeocentricCRSType)theEObject;
 				T result = caseGeocentricCRSType(geocentricCRSType);
 				if (result == null) result = caseAbstractCRSType(geocentricCRSType);
@@ -1439,16 +1272,14 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEODESIC_STRING_TYPE:
-			{
+			case GMLPackage.GEODESIC_STRING_TYPE: {
 				GeodesicStringType geodesicStringType = (GeodesicStringType)theEObject;
 				T result = caseGeodesicStringType(geodesicStringType);
 				if (result == null) result = caseAbstractCurveSegmentType(geodesicStringType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEODESIC_TYPE:
-			{
+			case GMLPackage.GEODESIC_TYPE: {
 				GeodesicType geodesicType = (GeodesicType)theEObject;
 				T result = caseGeodesicType(geodesicType);
 				if (result == null) result = caseGeodesicStringType(geodesicType);
@@ -1456,15 +1287,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEODETIC_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.GEODETIC_CRS_PROPERTY_TYPE: {
 				GeodeticCRSPropertyType geodeticCRSPropertyType = (GeodeticCRSPropertyType)theEObject;
 				T result = caseGeodeticCRSPropertyType(geodeticCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEODETIC_CRS_TYPE:
-			{
+			case GMLPackage.GEODETIC_CRS_TYPE: {
 				GeodeticCRSType geodeticCRSType = (GeodeticCRSType)theEObject;
 				T result = caseGeodeticCRSType(geodeticCRSType);
 				if (result == null) result = caseAbstractCRSType(geodeticCRSType);
@@ -1475,15 +1304,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE:
-			{
+			case GMLPackage.GEODETIC_DATUM_PROPERTY_TYPE: {
 				GeodeticDatumPropertyType geodeticDatumPropertyType = (GeodeticDatumPropertyType)theEObject;
 				T result = caseGeodeticDatumPropertyType(geodeticDatumPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEODETIC_DATUM_TYPE:
-			{
+			case GMLPackage.GEODETIC_DATUM_TYPE: {
 				GeodeticDatumType geodeticDatumType = (GeodeticDatumType)theEObject;
 				T result = caseGeodeticDatumType(geodeticDatumType);
 				if (result == null) result = caseAbstractDatumType(geodeticDatumType);
@@ -1494,15 +1321,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEOGRAPHIC_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.GEOGRAPHIC_CRS_PROPERTY_TYPE: {
 				GeographicCRSPropertyType geographicCRSPropertyType = (GeographicCRSPropertyType)theEObject;
 				T result = caseGeographicCRSPropertyType(geographicCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEOGRAPHIC_CRS_TYPE:
-			{
+			case GMLPackage.GEOGRAPHIC_CRS_TYPE: {
 				GeographicCRSType geographicCRSType = (GeographicCRSType)theEObject;
 				T result = caseGeographicCRSType(geographicCRSType);
 				if (result == null) result = caseAbstractCRSType(geographicCRSType);
@@ -1513,15 +1338,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE:
-			{
+			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE: {
 				GeometricComplexPropertyType geometricComplexPropertyType = (GeometricComplexPropertyType)theEObject;
 				T result = caseGeometricComplexPropertyType(geometricComplexPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEOMETRIC_COMPLEX_TYPE:
-			{
+			case GMLPackage.GEOMETRIC_COMPLEX_TYPE: {
 				GeometricComplexType geometricComplexType = (GeometricComplexType)theEObject;
 				T result = caseGeometricComplexType(geometricComplexType);
 				if (result == null) result = caseAbstractGeometryType(geometricComplexType);
@@ -1529,58 +1352,50 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEOMETRIC_PRIMITIVE_PROPERTY_TYPE:
-			{
+			case GMLPackage.GEOMETRIC_PRIMITIVE_PROPERTY_TYPE: {
 				GeometricPrimitivePropertyType geometricPrimitivePropertyType = (GeometricPrimitivePropertyType)theEObject;
 				T result = caseGeometricPrimitivePropertyType(geometricPrimitivePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEOMETRY_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.GEOMETRY_ARRAY_PROPERTY_TYPE: {
 				GeometryArrayPropertyType geometryArrayPropertyType = (GeometryArrayPropertyType)theEObject;
 				T result = caseGeometryArrayPropertyType(geometryArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GEOMETRY_PROPERTY_TYPE:
-			{
+			case GMLPackage.GEOMETRY_PROPERTY_TYPE: {
 				GeometryPropertyType geometryPropertyType = (GeometryPropertyType)theEObject;
 				T result = caseGeometryPropertyType(geometryPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GRID_ENVELOPE_TYPE:
-			{
+			case GMLPackage.GRID_ENVELOPE_TYPE: {
 				GridEnvelopeType gridEnvelopeType = (GridEnvelopeType)theEObject;
 				T result = caseGridEnvelopeType(gridEnvelopeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GRID_FUNCTION_TYPE:
-			{
+			case GMLPackage.GRID_FUNCTION_TYPE: {
 				GridFunctionType gridFunctionType = (GridFunctionType)theEObject;
 				T result = caseGridFunctionType(gridFunctionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GRID_LENGTH_TYPE:
-			{
+			case GMLPackage.GRID_LENGTH_TYPE: {
 				GridLengthType gridLengthType = (GridLengthType)theEObject;
 				T result = caseGridLengthType(gridLengthType);
 				if (result == null) result = caseMeasureType(gridLengthType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GRID_LIMITS_TYPE:
-			{
+			case GMLPackage.GRID_LIMITS_TYPE: {
 				GridLimitsType gridLimitsType = (GridLimitsType)theEObject;
 				T result = caseGridLimitsType(gridLimitsType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.GRID_TYPE:
-			{
+			case GMLPackage.GRID_TYPE: {
 				GridType gridType = (GridType)theEObject;
 				T result = caseGridType(gridType);
 				if (result == null) result = caseAbstractGeometryType(gridType);
@@ -1588,15 +1403,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.HISTORY_PROPERTY_TYPE:
-			{
+			case GMLPackage.HISTORY_PROPERTY_TYPE: {
 				HistoryPropertyType historyPropertyType = (HistoryPropertyType)theEObject;
 				T result = caseHistoryPropertyType(historyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.IDENTIFIED_OBJECT_TYPE:
-			{
+			case GMLPackage.IDENTIFIED_OBJECT_TYPE: {
 				IdentifiedObjectType identifiedObjectType = (IdentifiedObjectType)theEObject;
 				T result = caseIdentifiedObjectType(identifiedObjectType);
 				if (result == null) result = caseDefinitionType(identifiedObjectType);
@@ -1605,15 +1418,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.IMAGE_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.IMAGE_CRS_PROPERTY_TYPE: {
 				ImageCRSPropertyType imageCRSPropertyType = (ImageCRSPropertyType)theEObject;
 				T result = caseImageCRSPropertyType(imageCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.IMAGE_CRS_TYPE:
-			{
+			case GMLPackage.IMAGE_CRS_TYPE: {
 				ImageCRSType imageCRSType = (ImageCRSType)theEObject;
 				T result = caseImageCRSType(imageCRSType);
 				if (result == null) result = caseAbstractCRSType(imageCRSType);
@@ -1624,15 +1435,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.IMAGE_DATUM_PROPERTY_TYPE:
-			{
+			case GMLPackage.IMAGE_DATUM_PROPERTY_TYPE: {
 				ImageDatumPropertyType imageDatumPropertyType = (ImageDatumPropertyType)theEObject;
 				T result = caseImageDatumPropertyType(imageDatumPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.IMAGE_DATUM_TYPE:
-			{
+			case GMLPackage.IMAGE_DATUM_TYPE: {
 				ImageDatumType imageDatumType = (ImageDatumType)theEObject;
 				T result = caseImageDatumType(imageDatumType);
 				if (result == null) result = caseAbstractDatumType(imageDatumType);
@@ -1643,51 +1452,44 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.INDIRECT_ENTRY_TYPE:
-			{
+			case GMLPackage.INDIRECT_ENTRY_TYPE: {
 				IndirectEntryType indirectEntryType = (IndirectEntryType)theEObject;
 				T result = caseIndirectEntryType(indirectEntryType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.INLINE_PROPERTY_TYPE:
-			{
+			case GMLPackage.INLINE_PROPERTY_TYPE: {
 				InlinePropertyType inlinePropertyType = (InlinePropertyType)theEObject;
 				T result = caseInlinePropertyType(inlinePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.KNOT_PROPERTY_TYPE:
-			{
+			case GMLPackage.KNOT_PROPERTY_TYPE: {
 				KnotPropertyType knotPropertyType = (KnotPropertyType)theEObject;
 				T result = caseKnotPropertyType(knotPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.KNOT_TYPE:
-			{
+			case GMLPackage.KNOT_TYPE: {
 				KnotType knotType = (KnotType)theEObject;
 				T result = caseKnotType(knotType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.LENGTH_TYPE:
-			{
+			case GMLPackage.LENGTH_TYPE: {
 				LengthType lengthType = (LengthType)theEObject;
 				T result = caseLengthType(lengthType);
 				if (result == null) result = caseMeasureType(lengthType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.LINEAR_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.LINEAR_CS_PROPERTY_TYPE: {
 				LinearCSPropertyType linearCSPropertyType = (LinearCSPropertyType)theEObject;
 				T result = caseLinearCSPropertyType(linearCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.LINEAR_CS_TYPE:
-			{
+			case GMLPackage.LINEAR_CS_TYPE: {
 				LinearCSType linearCSType = (LinearCSType)theEObject;
 				T result = caseLinearCSType(linearCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(linearCSType);
@@ -1698,38 +1500,33 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.LINEAR_RING_PROPERTY_TYPE:
-			{
+			case GMLPackage.LINEAR_RING_PROPERTY_TYPE: {
 				LinearRingPropertyType linearRingPropertyType = (LinearRingPropertyType)theEObject;
 				T result = caseLinearRingPropertyType(linearRingPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.LINEAR_RING_TYPE:
-			{
+			case GMLPackage.LINEAR_RING_TYPE: {
 				LinearRingType linearRingType = (LinearRingType)theEObject;
 				T result = caseLinearRingType(linearRingType);
 				if (result == null) result = caseAbstractRingType(linearRingType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.LINE_STRING_SEGMENT_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.LINE_STRING_SEGMENT_ARRAY_PROPERTY_TYPE: {
 				LineStringSegmentArrayPropertyType lineStringSegmentArrayPropertyType = (LineStringSegmentArrayPropertyType)theEObject;
 				T result = caseLineStringSegmentArrayPropertyType(lineStringSegmentArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.LINE_STRING_SEGMENT_TYPE:
-			{
+			case GMLPackage.LINE_STRING_SEGMENT_TYPE: {
 				LineStringSegmentType lineStringSegmentType = (LineStringSegmentType)theEObject;
 				T result = caseLineStringSegmentType(lineStringSegmentType);
 				if (result == null) result = caseAbstractCurveSegmentType(lineStringSegmentType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.LINE_STRING_TYPE:
-			{
+			case GMLPackage.LINE_STRING_TYPE: {
 				LineStringType lineStringType = (LineStringType)theEObject;
 				T result = caseLineStringType(lineStringType);
 				if (result == null) result = caseAbstractCurveType(lineStringType);
@@ -1739,50 +1536,43 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.LOCATION_PROPERTY_TYPE:
-			{
+			case GMLPackage.LOCATION_PROPERTY_TYPE: {
 				LocationPropertyType locationPropertyType = (LocationPropertyType)theEObject;
 				T result = caseLocationPropertyType(locationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MAPPING_RULE_TYPE:
-			{
+			case GMLPackage.MAPPING_RULE_TYPE: {
 				MappingRuleType mappingRuleType = (MappingRuleType)theEObject;
 				T result = caseMappingRuleType(mappingRuleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MEASURE_LIST_TYPE:
-			{
+			case GMLPackage.MEASURE_LIST_TYPE: {
 				MeasureListType measureListType = (MeasureListType)theEObject;
 				T result = caseMeasureListType(measureListType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MEASURE_OR_NIL_REASON_LIST_TYPE:
-			{
+			case GMLPackage.MEASURE_OR_NIL_REASON_LIST_TYPE: {
 				MeasureOrNilReasonListType measureOrNilReasonListType = (MeasureOrNilReasonListType)theEObject;
 				T result = caseMeasureOrNilReasonListType(measureOrNilReasonListType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MEASURE_TYPE:
-			{
+			case GMLPackage.MEASURE_TYPE: {
 				MeasureType measureType = (MeasureType)theEObject;
 				T result = caseMeasureType(measureType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.META_DATA_PROPERTY_TYPE:
-			{
+			case GMLPackage.META_DATA_PROPERTY_TYPE: {
 				MetaDataPropertyType metaDataPropertyType = (MetaDataPropertyType)theEObject;
 				T result = caseMetaDataPropertyType(metaDataPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MOVING_OBJECT_STATUS_TYPE:
-			{
+			case GMLPackage.MOVING_OBJECT_STATUS_TYPE: {
 				MovingObjectStatusType movingObjectStatusType = (MovingObjectStatusType)theEObject;
 				T result = caseMovingObjectStatusType(movingObjectStatusType);
 				if (result == null) result = caseAbstractTimeSliceType(movingObjectStatusType);
@@ -1790,15 +1580,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_CURVE_PROPERTY_TYPE:
-			{
+			case GMLPackage.MULTI_CURVE_PROPERTY_TYPE: {
 				MultiCurvePropertyType multiCurvePropertyType = (MultiCurvePropertyType)theEObject;
 				T result = caseMultiCurvePropertyType(multiCurvePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_CURVE_TYPE:
-			{
+			case GMLPackage.MULTI_CURVE_TYPE: {
 				MultiCurveType multiCurveType = (MultiCurveType)theEObject;
 				T result = caseMultiCurveType(multiCurveType);
 				if (result == null) result = caseAbstractGeometricAggregateType(multiCurveType);
@@ -1807,15 +1595,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_GEOMETRY_PROPERTY_TYPE:
-			{
+			case GMLPackage.MULTI_GEOMETRY_PROPERTY_TYPE: {
 				MultiGeometryPropertyType multiGeometryPropertyType = (MultiGeometryPropertyType)theEObject;
 				T result = caseMultiGeometryPropertyType(multiGeometryPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_GEOMETRY_TYPE:
-			{
+			case GMLPackage.MULTI_GEOMETRY_TYPE: {
 				MultiGeometryType multiGeometryType = (MultiGeometryType)theEObject;
 				T result = caseMultiGeometryType(multiGeometryType);
 				if (result == null) result = caseAbstractGeometricAggregateType(multiGeometryType);
@@ -1824,15 +1610,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_POINT_PROPERTY_TYPE:
-			{
+			case GMLPackage.MULTI_POINT_PROPERTY_TYPE: {
 				MultiPointPropertyType multiPointPropertyType = (MultiPointPropertyType)theEObject;
 				T result = caseMultiPointPropertyType(multiPointPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_POINT_TYPE:
-			{
+			case GMLPackage.MULTI_POINT_TYPE: {
 				MultiPointType multiPointType = (MultiPointType)theEObject;
 				T result = caseMultiPointType(multiPointType);
 				if (result == null) result = caseAbstractGeometricAggregateType(multiPointType);
@@ -1841,15 +1625,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_SOLID_PROPERTY_TYPE:
-			{
+			case GMLPackage.MULTI_SOLID_PROPERTY_TYPE: {
 				MultiSolidPropertyType multiSolidPropertyType = (MultiSolidPropertyType)theEObject;
 				T result = caseMultiSolidPropertyType(multiSolidPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_SOLID_TYPE:
-			{
+			case GMLPackage.MULTI_SOLID_TYPE: {
 				MultiSolidType multiSolidType = (MultiSolidType)theEObject;
 				T result = caseMultiSolidType(multiSolidType);
 				if (result == null) result = caseAbstractGeometricAggregateType(multiSolidType);
@@ -1858,15 +1640,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_SURFACE_PROPERTY_TYPE:
-			{
+			case GMLPackage.MULTI_SURFACE_PROPERTY_TYPE: {
 				MultiSurfacePropertyType multiSurfacePropertyType = (MultiSurfacePropertyType)theEObject;
 				T result = caseMultiSurfacePropertyType(multiSurfacePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.MULTI_SURFACE_TYPE:
-			{
+			case GMLPackage.MULTI_SURFACE_TYPE: {
 				MultiSurfaceType multiSurfaceType = (MultiSurfaceType)theEObject;
 				T result = caseMultiSurfaceType(multiSurfaceType);
 				if (result == null) result = caseAbstractGeometricAggregateType(multiSurfaceType);
@@ -1875,22 +1655,19 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.NODE_OR_EDGE_PROPERTY_TYPE:
-			{
+			case GMLPackage.NODE_OR_EDGE_PROPERTY_TYPE: {
 				NodeOrEdgePropertyType nodeOrEdgePropertyType = (NodeOrEdgePropertyType)theEObject;
 				T result = caseNodeOrEdgePropertyType(nodeOrEdgePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.NODE_PROPERTY_TYPE:
-			{
+			case GMLPackage.NODE_PROPERTY_TYPE: {
 				NodePropertyType nodePropertyType = (NodePropertyType)theEObject;
 				T result = caseNodePropertyType(nodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.NODE_TYPE:
-			{
+			case GMLPackage.NODE_TYPE: {
 				NodeType nodeType = (NodeType)theEObject;
 				T result = caseNodeType(nodeType);
 				if (result == null) result = caseAbstractTopoPrimitiveType(nodeType);
@@ -1899,15 +1676,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OBLIQUE_CARTESIAN_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.OBLIQUE_CARTESIAN_CS_PROPERTY_TYPE: {
 				ObliqueCartesianCSPropertyType obliqueCartesianCSPropertyType = (ObliqueCartesianCSPropertyType)theEObject;
 				T result = caseObliqueCartesianCSPropertyType(obliqueCartesianCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OBLIQUE_CARTESIAN_CS_TYPE:
-			{
+			case GMLPackage.OBLIQUE_CARTESIAN_CS_TYPE: {
 				ObliqueCartesianCSType obliqueCartesianCSType = (ObliqueCartesianCSType)theEObject;
 				T result = caseObliqueCartesianCSType(obliqueCartesianCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(obliqueCartesianCSType);
@@ -1918,8 +1693,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OBSERVATION_TYPE:
-			{
+			case GMLPackage.OBSERVATION_TYPE: {
 				ObservationType observationType = (ObservationType)theEObject;
 				T result = caseObservationType(observationType);
 				if (result == null) result = caseAbstractFeatureType(observationType);
@@ -1927,23 +1701,20 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OFFSET_CURVE_TYPE:
-			{
+			case GMLPackage.OFFSET_CURVE_TYPE: {
 				OffsetCurveType offsetCurveType = (OffsetCurveType)theEObject;
 				T result = caseOffsetCurveType(offsetCurveType);
 				if (result == null) result = caseAbstractCurveSegmentType(offsetCurveType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OPERATION_METHOD_PROPERTY_TYPE:
-			{
+			case GMLPackage.OPERATION_METHOD_PROPERTY_TYPE: {
 				OperationMethodPropertyType operationMethodPropertyType = (OperationMethodPropertyType)theEObject;
 				T result = caseOperationMethodPropertyType(operationMethodPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OPERATION_METHOD_TYPE:
-			{
+			case GMLPackage.OPERATION_METHOD_TYPE: {
 				OperationMethodType operationMethodType = (OperationMethodType)theEObject;
 				T result = caseOperationMethodType(operationMethodType);
 				if (result == null) result = caseIdentifiedObjectType(operationMethodType);
@@ -1953,15 +1724,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OPERATION_PARAMETER_GROUP_PROPERTY_TYPE:
-			{
+			case GMLPackage.OPERATION_PARAMETER_GROUP_PROPERTY_TYPE: {
 				OperationParameterGroupPropertyType operationParameterGroupPropertyType = (OperationParameterGroupPropertyType)theEObject;
 				T result = caseOperationParameterGroupPropertyType(operationParameterGroupPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OPERATION_PARAMETER_GROUP_TYPE:
-			{
+			case GMLPackage.OPERATION_PARAMETER_GROUP_TYPE: {
 				OperationParameterGroupType operationParameterGroupType = (OperationParameterGroupType)theEObject;
 				T result = caseOperationParameterGroupType(operationParameterGroupType);
 				if (result == null) result = caseAbstractGeneralOperationParameterType(operationParameterGroupType);
@@ -1972,15 +1741,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OPERATION_PARAMETER_PROPERTY_TYPE:
-			{
+			case GMLPackage.OPERATION_PARAMETER_PROPERTY_TYPE: {
 				OperationParameterPropertyType operationParameterPropertyType = (OperationParameterPropertyType)theEObject;
 				T result = caseOperationParameterPropertyType(operationParameterPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OPERATION_PARAMETER_TYPE:
-			{
+			case GMLPackage.OPERATION_PARAMETER_TYPE: {
 				OperationParameterType operationParameterType = (OperationParameterType)theEObject;
 				T result = caseOperationParameterType(operationParameterType);
 				if (result == null) result = caseAbstractGeneralOperationParameterType(operationParameterType);
@@ -1991,15 +1758,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.OPERATION_PROPERTY_TYPE:
-			{
+			case GMLPackage.OPERATION_PROPERTY_TYPE: {
 				OperationPropertyType operationPropertyType = (OperationPropertyType)theEObject;
 				T result = caseOperationPropertyType(operationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ORIENTABLE_CURVE_TYPE:
-			{
+			case GMLPackage.ORIENTABLE_CURVE_TYPE: {
 				OrientableCurveType orientableCurveType = (OrientableCurveType)theEObject;
 				T result = caseOrientableCurveType(orientableCurveType);
 				if (result == null) result = caseAbstractCurveType(orientableCurveType);
@@ -2009,8 +1774,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ORIENTABLE_SURFACE_TYPE:
-			{
+			case GMLPackage.ORIENTABLE_SURFACE_TYPE: {
 				OrientableSurfaceType orientableSurfaceType = (OrientableSurfaceType)theEObject;
 				T result = caseOrientableSurfaceType(orientableSurfaceType);
 				if (result == null) result = caseAbstractSurfaceType(orientableSurfaceType);
@@ -2020,31 +1784,27 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE:
-			{
+			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE: {
 				ParameterValueGroupType parameterValueGroupType = (ParameterValueGroupType)theEObject;
 				T result = caseParameterValueGroupType(parameterValueGroupType);
 				if (result == null) result = caseAbstractGeneralParameterValueType(parameterValueGroupType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PARAMETER_VALUE_TYPE:
-			{
+			case GMLPackage.PARAMETER_VALUE_TYPE: {
 				ParameterValueType parameterValueType = (ParameterValueType)theEObject;
 				T result = caseParameterValueType(parameterValueType);
 				if (result == null) result = caseAbstractGeneralParameterValueType(parameterValueType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PASS_THROUGH_OPERATION_PROPERTY_TYPE:
-			{
+			case GMLPackage.PASS_THROUGH_OPERATION_PROPERTY_TYPE: {
 				PassThroughOperationPropertyType passThroughOperationPropertyType = (PassThroughOperationPropertyType)theEObject;
 				T result = casePassThroughOperationPropertyType(passThroughOperationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PASS_THROUGH_OPERATION_TYPE:
-			{
+			case GMLPackage.PASS_THROUGH_OPERATION_TYPE: {
 				PassThroughOperationType passThroughOperationType = (PassThroughOperationType)theEObject;
 				T result = casePassThroughOperationType(passThroughOperationType);
 				if (result == null) result = caseAbstractCoordinateOperationType(passThroughOperationType);
@@ -2055,22 +1815,19 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.POINT_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.POINT_ARRAY_PROPERTY_TYPE: {
 				PointArrayPropertyType pointArrayPropertyType = (PointArrayPropertyType)theEObject;
 				T result = casePointArrayPropertyType(pointArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.POINT_PROPERTY_TYPE:
-			{
+			case GMLPackage.POINT_PROPERTY_TYPE: {
 				PointPropertyType pointPropertyType = (PointPropertyType)theEObject;
 				T result = casePointPropertyType(pointPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.POINT_TYPE:
-			{
+			case GMLPackage.POINT_TYPE: {
 				PointType pointType = (PointType)theEObject;
 				T result = casePointType(pointType);
 				if (result == null) result = caseAbstractGeometricPrimitiveType(pointType);
@@ -2079,15 +1836,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.POLAR_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.POLAR_CS_PROPERTY_TYPE: {
 				PolarCSPropertyType polarCSPropertyType = (PolarCSPropertyType)theEObject;
 				T result = casePolarCSPropertyType(polarCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.POLAR_CS_TYPE:
-			{
+			case GMLPackage.POLAR_CS_TYPE: {
 				PolarCSType polarCSType = (PolarCSType)theEObject;
 				T result = casePolarCSType(polarCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(polarCSType);
@@ -2098,16 +1853,14 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.POLYGON_PATCH_TYPE:
-			{
+			case GMLPackage.POLYGON_PATCH_TYPE: {
 				PolygonPatchType polygonPatchType = (PolygonPatchType)theEObject;
 				T result = casePolygonPatchType(polygonPatchType);
 				if (result == null) result = caseAbstractSurfacePatchType(polygonPatchType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.POLYGON_TYPE:
-			{
+			case GMLPackage.POLYGON_TYPE: {
 				PolygonType polygonType = (PolygonType)theEObject;
 				T result = casePolygonType(polygonType);
 				if (result == null) result = caseAbstractSurfaceType(polygonType);
@@ -2117,15 +1870,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PRIME_MERIDIAN_PROPERTY_TYPE:
-			{
+			case GMLPackage.PRIME_MERIDIAN_PROPERTY_TYPE: {
 				PrimeMeridianPropertyType primeMeridianPropertyType = (PrimeMeridianPropertyType)theEObject;
 				T result = casePrimeMeridianPropertyType(primeMeridianPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PRIME_MERIDIAN_TYPE:
-			{
+			case GMLPackage.PRIME_MERIDIAN_TYPE: {
 				PrimeMeridianType primeMeridianType = (PrimeMeridianType)theEObject;
 				T result = casePrimeMeridianType(primeMeridianType);
 				if (result == null) result = caseIdentifiedObjectType(primeMeridianType);
@@ -2135,30 +1886,26 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PRIORITY_LOCATION_PROPERTY_TYPE:
-			{
+			case GMLPackage.PRIORITY_LOCATION_PROPERTY_TYPE: {
 				PriorityLocationPropertyType priorityLocationPropertyType = (PriorityLocationPropertyType)theEObject;
 				T result = casePriorityLocationPropertyType(priorityLocationPropertyType);
 				if (result == null) result = caseLocationPropertyType(priorityLocationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PROCEDURE_PROPERTY_TYPE:
-			{
+			case GMLPackage.PROCEDURE_PROPERTY_TYPE: {
 				ProcedurePropertyType procedurePropertyType = (ProcedurePropertyType)theEObject;
 				T result = caseProcedurePropertyType(procedurePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PROJECTED_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.PROJECTED_CRS_PROPERTY_TYPE: {
 				ProjectedCRSPropertyType projectedCRSPropertyType = (ProjectedCRSPropertyType)theEObject;
 				T result = caseProjectedCRSPropertyType(projectedCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.PROJECTED_CRS_TYPE:
-			{
+			case GMLPackage.PROJECTED_CRS_TYPE: {
 				ProjectedCRSType projectedCRSType = (ProjectedCRSType)theEObject;
 				T result = caseProjectedCRSType(projectedCRSType);
 				if (result == null) result = caseAbstractGeneralDerivedCRSType(projectedCRSType);
@@ -2170,46 +1917,40 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.QUANTITY_EXTENT_TYPE:
-			{
+			case GMLPackage.QUANTITY_EXTENT_TYPE: {
 				QuantityExtentType quantityExtentType = (QuantityExtentType)theEObject;
 				T result = caseQuantityExtentType(quantityExtentType);
 				if (result == null) result = caseMeasureOrNilReasonListType(quantityExtentType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.QUANTITY_PROPERTY_TYPE:
-			{
+			case GMLPackage.QUANTITY_PROPERTY_TYPE: {
 				QuantityPropertyType quantityPropertyType = (QuantityPropertyType)theEObject;
 				T result = caseQuantityPropertyType(quantityPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.QUANTITY_TYPE:
-			{
+			case GMLPackage.QUANTITY_TYPE: {
 				QuantityType quantityType = (QuantityType)theEObject;
 				T result = caseQuantityType(quantityType);
 				if (result == null) result = caseMeasureType(quantityType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.RANGE_SET_TYPE:
-			{
+			case GMLPackage.RANGE_SET_TYPE: {
 				RangeSetType rangeSetType = (RangeSetType)theEObject;
 				T result = caseRangeSetType(rangeSetType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.RECTANGLE_TYPE:
-			{
+			case GMLPackage.RECTANGLE_TYPE: {
 				RectangleType rectangleType = (RectangleType)theEObject;
 				T result = caseRectangleType(rectangleType);
 				if (result == null) result = caseAbstractSurfacePatchType(rectangleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.RECTIFIED_GRID_TYPE:
-			{
+			case GMLPackage.RECTIFIED_GRID_TYPE: {
 				RectifiedGridType rectifiedGridType = (RectifiedGridType)theEObject;
 				T result = caseRectifiedGridType(rectifiedGridType);
 				if (result == null) result = caseGridType(rectifiedGridType);
@@ -2218,137 +1959,118 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.REFERENCE_TYPE:
-			{
+			case GMLPackage.REFERENCE_TYPE: {
 				ReferenceType referenceType = (ReferenceType)theEObject;
 				T result = caseReferenceType(referenceType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.REF_LOCATION_TYPE:
-			{
+			case GMLPackage.REF_LOCATION_TYPE: {
 				RefLocationType refLocationType = (RefLocationType)theEObject;
 				T result = caseRefLocationType(refLocationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.RELATED_TIME_TYPE:
-			{
+			case GMLPackage.RELATED_TIME_TYPE: {
 				RelatedTimeType relatedTimeType = (RelatedTimeType)theEObject;
 				T result = caseRelatedTimeType(relatedTimeType);
 				if (result == null) result = caseTimePrimitivePropertyType(relatedTimeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.RESULT_TYPE:
-			{
+			case GMLPackage.RESULT_TYPE: {
 				ResultType resultType = (ResultType)theEObject;
 				T result = caseResultType(resultType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.RING_PROPERTY_TYPE:
-			{
+			case GMLPackage.RING_PROPERTY_TYPE: {
 				RingPropertyType ringPropertyType = (RingPropertyType)theEObject;
 				T result = caseRingPropertyType(ringPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.RING_TYPE:
-			{
+			case GMLPackage.RING_TYPE: {
 				RingType ringType = (RingType)theEObject;
 				T result = caseRingType(ringType);
 				if (result == null) result = caseAbstractRingType(ringType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ROWS_TYPE:
-			{
+			case GMLPackage.ROWS_TYPE: {
 				RowsType rowsType = (RowsType)theEObject;
 				T result = caseRowsType(rowsType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.ROW_TYPE:
-			{
+			case GMLPackage.ROW_TYPE: {
 				RowType rowType = (RowType)theEObject;
 				T result = caseRowType(rowType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SCALE_TYPE:
-			{
+			case GMLPackage.SCALE_TYPE: {
 				ScaleType scaleType = (ScaleType)theEObject;
 				T result = caseScaleType(scaleType);
 				if (result == null) result = caseMeasureType(scaleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE:
-			{
+			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE: {
 				SecondDefiningParameterType secondDefiningParameterType = (SecondDefiningParameterType)theEObject;
 				T result = caseSecondDefiningParameterType(secondDefiningParameterType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE1:
-			{
+			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE1: {
 				SecondDefiningParameterType1 secondDefiningParameterType1 = (SecondDefiningParameterType1)theEObject;
 				T result = caseSecondDefiningParameterType1(secondDefiningParameterType1);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SEQUENCE_RULE_TYPE:
-			{
+			case GMLPackage.SEQUENCE_RULE_TYPE: {
 				SequenceRuleType sequenceRuleType = (SequenceRuleType)theEObject;
 				T result = caseSequenceRuleType(sequenceRuleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SHELL_PROPERTY_TYPE:
-			{
+			case GMLPackage.SHELL_PROPERTY_TYPE: {
 				ShellPropertyType shellPropertyType = (ShellPropertyType)theEObject;
 				T result = caseShellPropertyType(shellPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SHELL_TYPE:
-			{
+			case GMLPackage.SHELL_TYPE: {
 				ShellType shellType = (ShellType)theEObject;
 				T result = caseShellType(shellType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SINGLE_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.SINGLE_CRS_PROPERTY_TYPE: {
 				SingleCRSPropertyType singleCRSPropertyType = (SingleCRSPropertyType)theEObject;
 				T result = caseSingleCRSPropertyType(singleCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SINGLE_OPERATION_PROPERTY_TYPE:
-			{
+			case GMLPackage.SINGLE_OPERATION_PROPERTY_TYPE: {
 				SingleOperationPropertyType singleOperationPropertyType = (SingleOperationPropertyType)theEObject;
 				T result = caseSingleOperationPropertyType(singleOperationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SOLID_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.SOLID_ARRAY_PROPERTY_TYPE: {
 				SolidArrayPropertyType solidArrayPropertyType = (SolidArrayPropertyType)theEObject;
 				T result = caseSolidArrayPropertyType(solidArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SOLID_PROPERTY_TYPE:
-			{
+			case GMLPackage.SOLID_PROPERTY_TYPE: {
 				SolidPropertyType solidPropertyType = (SolidPropertyType)theEObject;
 				T result = caseSolidPropertyType(solidPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SOLID_TYPE:
-			{
+			case GMLPackage.SOLID_TYPE: {
 				SolidType solidType = (SolidType)theEObject;
 				T result = caseSolidType(solidType);
 				if (result == null) result = caseAbstractSolidType(solidType);
@@ -2358,16 +2080,14 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SPEED_TYPE:
-			{
+			case GMLPackage.SPEED_TYPE: {
 				SpeedType speedType = (SpeedType)theEObject;
 				T result = caseSpeedType(speedType);
 				if (result == null) result = caseMeasureType(speedType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SPHERE_TYPE:
-			{
+			case GMLPackage.SPHERE_TYPE: {
 				SphereType sphereType = (SphereType)theEObject;
 				T result = caseSphereType(sphereType);
 				if (result == null) result = caseAbstractGriddedSurfaceType(sphereType);
@@ -2376,15 +2096,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SPHERICAL_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.SPHERICAL_CS_PROPERTY_TYPE: {
 				SphericalCSPropertyType sphericalCSPropertyType = (SphericalCSPropertyType)theEObject;
 				T result = caseSphericalCSPropertyType(sphericalCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SPHERICAL_CS_TYPE:
-			{
+			case GMLPackage.SPHERICAL_CS_TYPE: {
 				SphericalCSType sphericalCSType = (SphericalCSType)theEObject;
 				T result = caseSphericalCSType(sphericalCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(sphericalCSType);
@@ -2395,36 +2113,31 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.STRING_OR_REF_TYPE:
-			{
+			case GMLPackage.STRING_OR_REF_TYPE: {
 				StringOrRefType stringOrRefType = (StringOrRefType)theEObject;
 				T result = caseStringOrRefType(stringOrRefType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SURFACE_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.SURFACE_ARRAY_PROPERTY_TYPE: {
 				SurfaceArrayPropertyType surfaceArrayPropertyType = (SurfaceArrayPropertyType)theEObject;
 				T result = caseSurfaceArrayPropertyType(surfaceArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SURFACE_PATCH_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.SURFACE_PATCH_ARRAY_PROPERTY_TYPE: {
 				SurfacePatchArrayPropertyType surfacePatchArrayPropertyType = (SurfacePatchArrayPropertyType)theEObject;
 				T result = caseSurfacePatchArrayPropertyType(surfacePatchArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SURFACE_PROPERTY_TYPE:
-			{
+			case GMLPackage.SURFACE_PROPERTY_TYPE: {
 				SurfacePropertyType surfacePropertyType = (SurfacePropertyType)theEObject;
 				T result = caseSurfacePropertyType(surfacePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.SURFACE_TYPE:
-			{
+			case GMLPackage.SURFACE_TYPE: {
 				SurfaceType surfaceType = (SurfaceType)theEObject;
 				T result = caseSurfaceType(surfaceType);
 				if (result == null) result = caseAbstractSurfaceType(surfaceType);
@@ -2434,22 +2147,19 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TARGET_PROPERTY_TYPE:
-			{
+			case GMLPackage.TARGET_PROPERTY_TYPE: {
 				TargetPropertyType targetPropertyType = (TargetPropertyType)theEObject;
 				T result = caseTargetPropertyType(targetPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TEMPORAL_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.TEMPORAL_CRS_PROPERTY_TYPE: {
 				TemporalCRSPropertyType temporalCRSPropertyType = (TemporalCRSPropertyType)theEObject;
 				T result = caseTemporalCRSPropertyType(temporalCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TEMPORAL_CRS_TYPE:
-			{
+			case GMLPackage.TEMPORAL_CRS_TYPE: {
 				TemporalCRSType temporalCRSType = (TemporalCRSType)theEObject;
 				T result = caseTemporalCRSType(temporalCRSType);
 				if (result == null) result = caseAbstractCRSType(temporalCRSType);
@@ -2460,15 +2170,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TEMPORAL_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.TEMPORAL_CS_PROPERTY_TYPE: {
 				TemporalCSPropertyType temporalCSPropertyType = (TemporalCSPropertyType)theEObject;
 				T result = caseTemporalCSPropertyType(temporalCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TEMPORAL_CS_TYPE:
-			{
+			case GMLPackage.TEMPORAL_CS_TYPE: {
 				TemporalCSType temporalCSType = (TemporalCSType)theEObject;
 				T result = caseTemporalCSType(temporalCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(temporalCSType);
@@ -2479,8 +2187,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TEMPORAL_DATUM_BASE_TYPE:
-			{
+			case GMLPackage.TEMPORAL_DATUM_BASE_TYPE: {
 				TemporalDatumBaseType temporalDatumBaseType = (TemporalDatumBaseType)theEObject;
 				T result = caseTemporalDatumBaseType(temporalDatumBaseType);
 				if (result == null) result = caseAbstractDatumType(temporalDatumBaseType);
@@ -2491,15 +2198,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TEMPORAL_DATUM_PROPERTY_TYPE:
-			{
+			case GMLPackage.TEMPORAL_DATUM_PROPERTY_TYPE: {
 				TemporalDatumPropertyType temporalDatumPropertyType = (TemporalDatumPropertyType)theEObject;
 				T result = caseTemporalDatumPropertyType(temporalDatumPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TEMPORAL_DATUM_TYPE:
-			{
+			case GMLPackage.TEMPORAL_DATUM_TYPE: {
 				TemporalDatumType temporalDatumType = (TemporalDatumType)theEObject;
 				T result = caseTemporalDatumType(temporalDatumType);
 				if (result == null) result = caseTemporalDatumBaseType(temporalDatumType);
@@ -2511,15 +2216,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_CALENDAR_ERA_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_CALENDAR_ERA_PROPERTY_TYPE: {
 				TimeCalendarEraPropertyType timeCalendarEraPropertyType = (TimeCalendarEraPropertyType)theEObject;
 				T result = caseTimeCalendarEraPropertyType(timeCalendarEraPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_CALENDAR_ERA_TYPE:
-			{
+			case GMLPackage.TIME_CALENDAR_ERA_TYPE: {
 				TimeCalendarEraType timeCalendarEraType = (TimeCalendarEraType)theEObject;
 				T result = caseTimeCalendarEraType(timeCalendarEraType);
 				if (result == null) result = caseDefinitionType(timeCalendarEraType);
@@ -2528,15 +2231,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_CALENDAR_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_CALENDAR_PROPERTY_TYPE: {
 				TimeCalendarPropertyType timeCalendarPropertyType = (TimeCalendarPropertyType)theEObject;
 				T result = caseTimeCalendarPropertyType(timeCalendarPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_CALENDAR_TYPE:
-			{
+			case GMLPackage.TIME_CALENDAR_TYPE: {
 				TimeCalendarType timeCalendarType = (TimeCalendarType)theEObject;
 				T result = caseTimeCalendarType(timeCalendarType);
 				if (result == null) result = caseTimeReferenceSystemType(timeCalendarType);
@@ -2546,15 +2247,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_CLOCK_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_CLOCK_PROPERTY_TYPE: {
 				TimeClockPropertyType timeClockPropertyType = (TimeClockPropertyType)theEObject;
 				T result = caseTimeClockPropertyType(timeClockPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_CLOCK_TYPE:
-			{
+			case GMLPackage.TIME_CLOCK_TYPE: {
 				TimeClockType timeClockType = (TimeClockType)theEObject;
 				T result = caseTimeClockType(timeClockType);
 				if (result == null) result = caseTimeReferenceSystemType(timeClockType);
@@ -2564,8 +2263,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE:
-			{
+			case GMLPackage.TIME_COORDINATE_SYSTEM_TYPE: {
 				TimeCoordinateSystemType timeCoordinateSystemType = (TimeCoordinateSystemType)theEObject;
 				T result = caseTimeCoordinateSystemType(timeCoordinateSystemType);
 				if (result == null) result = caseTimeReferenceSystemType(timeCoordinateSystemType);
@@ -2575,15 +2273,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_CS_PROPERTY_TYPE: {
 				TimeCSPropertyType timeCSPropertyType = (TimeCSPropertyType)theEObject;
 				T result = caseTimeCSPropertyType(timeCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_CS_TYPE:
-			{
+			case GMLPackage.TIME_CS_TYPE: {
 				TimeCSType timeCSType = (TimeCSType)theEObject;
 				T result = caseTimeCSType(timeCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(timeCSType);
@@ -2594,15 +2290,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_EDGE_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_EDGE_PROPERTY_TYPE: {
 				TimeEdgePropertyType timeEdgePropertyType = (TimeEdgePropertyType)theEObject;
 				T result = caseTimeEdgePropertyType(timeEdgePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_EDGE_TYPE:
-			{
+			case GMLPackage.TIME_EDGE_TYPE: {
 				TimeEdgeType timeEdgeType = (TimeEdgeType)theEObject;
 				T result = caseTimeEdgeType(timeEdgeType);
 				if (result == null) result = caseAbstractTimeTopologyPrimitiveType(timeEdgeType);
@@ -2612,15 +2306,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_INSTANT_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_INSTANT_PROPERTY_TYPE: {
 				TimeInstantPropertyType timeInstantPropertyType = (TimeInstantPropertyType)theEObject;
 				T result = caseTimeInstantPropertyType(timeInstantPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_INSTANT_TYPE:
-			{
+			case GMLPackage.TIME_INSTANT_TYPE: {
 				TimeInstantType timeInstantType = (TimeInstantType)theEObject;
 				T result = caseTimeInstantType(timeInstantType);
 				if (result == null) result = caseAbstractTimeGeometricPrimitiveType(timeInstantType);
@@ -2630,22 +2322,19 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_INTERVAL_LENGTH_TYPE:
-			{
+			case GMLPackage.TIME_INTERVAL_LENGTH_TYPE: {
 				TimeIntervalLengthType timeIntervalLengthType = (TimeIntervalLengthType)theEObject;
 				T result = caseTimeIntervalLengthType(timeIntervalLengthType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_NODE_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_NODE_PROPERTY_TYPE: {
 				TimeNodePropertyType timeNodePropertyType = (TimeNodePropertyType)theEObject;
 				T result = caseTimeNodePropertyType(timeNodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_NODE_TYPE:
-			{
+			case GMLPackage.TIME_NODE_TYPE: {
 				TimeNodeType timeNodeType = (TimeNodeType)theEObject;
 				T result = caseTimeNodeType(timeNodeType);
 				if (result == null) result = caseAbstractTimeTopologyPrimitiveType(timeNodeType);
@@ -2655,15 +2344,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_ORDINAL_ERA_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_ORDINAL_ERA_PROPERTY_TYPE: {
 				TimeOrdinalEraPropertyType timeOrdinalEraPropertyType = (TimeOrdinalEraPropertyType)theEObject;
 				T result = caseTimeOrdinalEraPropertyType(timeOrdinalEraPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_ORDINAL_ERA_TYPE:
-			{
+			case GMLPackage.TIME_ORDINAL_ERA_TYPE: {
 				TimeOrdinalEraType timeOrdinalEraType = (TimeOrdinalEraType)theEObject;
 				T result = caseTimeOrdinalEraType(timeOrdinalEraType);
 				if (result == null) result = caseDefinitionType(timeOrdinalEraType);
@@ -2672,8 +2359,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_ORDINAL_REFERENCE_SYSTEM_TYPE:
-			{
+			case GMLPackage.TIME_ORDINAL_REFERENCE_SYSTEM_TYPE: {
 				TimeOrdinalReferenceSystemType timeOrdinalReferenceSystemType = (TimeOrdinalReferenceSystemType)theEObject;
 				T result = caseTimeOrdinalReferenceSystemType(timeOrdinalReferenceSystemType);
 				if (result == null) result = caseTimeReferenceSystemType(timeOrdinalReferenceSystemType);
@@ -2683,15 +2369,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_PERIOD_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_PERIOD_PROPERTY_TYPE: {
 				TimePeriodPropertyType timePeriodPropertyType = (TimePeriodPropertyType)theEObject;
 				T result = caseTimePeriodPropertyType(timePeriodPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_PERIOD_TYPE:
-			{
+			case GMLPackage.TIME_PERIOD_TYPE: {
 				TimePeriodType timePeriodType = (TimePeriodType)theEObject;
 				T result = caseTimePeriodType(timePeriodType);
 				if (result == null) result = caseAbstractTimeGeometricPrimitiveType(timePeriodType);
@@ -2701,22 +2385,19 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_POSITION_TYPE:
-			{
+			case GMLPackage.TIME_POSITION_TYPE: {
 				TimePositionType timePositionType = (TimePositionType)theEObject;
 				T result = caseTimePositionType(timePositionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_PRIMITIVE_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_PRIMITIVE_PROPERTY_TYPE: {
 				TimePrimitivePropertyType timePrimitivePropertyType = (TimePrimitivePropertyType)theEObject;
 				T result = caseTimePrimitivePropertyType(timePrimitivePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_REFERENCE_SYSTEM_TYPE:
-			{
+			case GMLPackage.TIME_REFERENCE_SYSTEM_TYPE: {
 				TimeReferenceSystemType timeReferenceSystemType = (TimeReferenceSystemType)theEObject;
 				T result = caseTimeReferenceSystemType(timeReferenceSystemType);
 				if (result == null) result = caseDefinitionType(timeReferenceSystemType);
@@ -2725,15 +2406,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_TOPOLOGY_COMPLEX_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_TOPOLOGY_COMPLEX_PROPERTY_TYPE: {
 				TimeTopologyComplexPropertyType timeTopologyComplexPropertyType = (TimeTopologyComplexPropertyType)theEObject;
 				T result = caseTimeTopologyComplexPropertyType(timeTopologyComplexPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_TOPOLOGY_COMPLEX_TYPE:
-			{
+			case GMLPackage.TIME_TOPOLOGY_COMPLEX_TYPE: {
 				TimeTopologyComplexType timeTopologyComplexType = (TimeTopologyComplexType)theEObject;
 				T result = caseTimeTopologyComplexType(timeTopologyComplexType);
 				if (result == null) result = caseAbstractTimeComplexType(timeTopologyComplexType);
@@ -2742,23 +2421,20 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_TOPOLOGY_PRIMITIVE_PROPERTY_TYPE:
-			{
+			case GMLPackage.TIME_TOPOLOGY_PRIMITIVE_PROPERTY_TYPE: {
 				TimeTopologyPrimitivePropertyType timeTopologyPrimitivePropertyType = (TimeTopologyPrimitivePropertyType)theEObject;
 				T result = caseTimeTopologyPrimitivePropertyType(timeTopologyPrimitivePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIME_TYPE:
-			{
+			case GMLPackage.TIME_TYPE: {
 				TimeType timeType = (TimeType)theEObject;
 				T result = caseTimeType(timeType);
 				if (result == null) result = caseMeasureType(timeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TIN_TYPE:
-			{
+			case GMLPackage.TIN_TYPE: {
 				TinType tinType = (TinType)theEObject;
 				T result = caseTinType(tinType);
 				if (result == null) result = caseSurfaceType(tinType);
@@ -2769,15 +2445,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_COMPLEX_PROPERTY_TYPE:
-			{
+			case GMLPackage.TOPO_COMPLEX_PROPERTY_TYPE: {
 				TopoComplexPropertyType topoComplexPropertyType = (TopoComplexPropertyType)theEObject;
 				T result = caseTopoComplexPropertyType(topoComplexPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_COMPLEX_TYPE:
-			{
+			case GMLPackage.TOPO_COMPLEX_TYPE: {
 				TopoComplexType topoComplexType = (TopoComplexType)theEObject;
 				T result = caseTopoComplexType(topoComplexType);
 				if (result == null) result = caseAbstractTopologyType(topoComplexType);
@@ -2785,15 +2459,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_CURVE_PROPERTY_TYPE:
-			{
+			case GMLPackage.TOPO_CURVE_PROPERTY_TYPE: {
 				TopoCurvePropertyType topoCurvePropertyType = (TopoCurvePropertyType)theEObject;
 				T result = caseTopoCurvePropertyType(topoCurvePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_CURVE_TYPE:
-			{
+			case GMLPackage.TOPO_CURVE_TYPE: {
 				TopoCurveType topoCurveType = (TopoCurveType)theEObject;
 				T result = caseTopoCurveType(topoCurveType);
 				if (result == null) result = caseAbstractTopologyType(topoCurveType);
@@ -2801,15 +2473,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_POINT_PROPERTY_TYPE:
-			{
+			case GMLPackage.TOPO_POINT_PROPERTY_TYPE: {
 				TopoPointPropertyType topoPointPropertyType = (TopoPointPropertyType)theEObject;
 				T result = caseTopoPointPropertyType(topoPointPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_POINT_TYPE:
-			{
+			case GMLPackage.TOPO_POINT_TYPE: {
 				TopoPointType topoPointType = (TopoPointType)theEObject;
 				T result = caseTopoPointType(topoPointType);
 				if (result == null) result = caseAbstractTopologyType(topoPointType);
@@ -2817,29 +2487,25 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_PRIMITIVE_ARRAY_ASSOCIATION_TYPE:
-			{
+			case GMLPackage.TOPO_PRIMITIVE_ARRAY_ASSOCIATION_TYPE: {
 				TopoPrimitiveArrayAssociationType topoPrimitiveArrayAssociationType = (TopoPrimitiveArrayAssociationType)theEObject;
 				T result = caseTopoPrimitiveArrayAssociationType(topoPrimitiveArrayAssociationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_PRIMITIVE_MEMBER_TYPE:
-			{
+			case GMLPackage.TOPO_PRIMITIVE_MEMBER_TYPE: {
 				TopoPrimitiveMemberType topoPrimitiveMemberType = (TopoPrimitiveMemberType)theEObject;
 				T result = caseTopoPrimitiveMemberType(topoPrimitiveMemberType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_SOLID_PROPERTY_TYPE:
-			{
+			case GMLPackage.TOPO_SOLID_PROPERTY_TYPE: {
 				TopoSolidPropertyType topoSolidPropertyType = (TopoSolidPropertyType)theEObject;
 				T result = caseTopoSolidPropertyType(topoSolidPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_SOLID_TYPE:
-			{
+			case GMLPackage.TOPO_SOLID_TYPE: {
 				TopoSolidType topoSolidType = (TopoSolidType)theEObject;
 				T result = caseTopoSolidType(topoSolidType);
 				if (result == null) result = caseAbstractTopoPrimitiveType(topoSolidType);
@@ -2848,15 +2514,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_SURFACE_PROPERTY_TYPE:
-			{
+			case GMLPackage.TOPO_SURFACE_PROPERTY_TYPE: {
 				TopoSurfacePropertyType topoSurfacePropertyType = (TopoSurfacePropertyType)theEObject;
 				T result = caseTopoSurfacePropertyType(topoSurfacePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_SURFACE_TYPE:
-			{
+			case GMLPackage.TOPO_SURFACE_TYPE: {
 				TopoSurfaceType topoSurfaceType = (TopoSurfaceType)theEObject;
 				T result = caseTopoSurfaceType(topoSurfaceType);
 				if (result == null) result = caseAbstractTopologyType(topoSurfaceType);
@@ -2864,15 +2528,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_VOLUME_PROPERTY_TYPE:
-			{
+			case GMLPackage.TOPO_VOLUME_PROPERTY_TYPE: {
 				TopoVolumePropertyType topoVolumePropertyType = (TopoVolumePropertyType)theEObject;
 				T result = caseTopoVolumePropertyType(topoVolumePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TOPO_VOLUME_TYPE:
-			{
+			case GMLPackage.TOPO_VOLUME_TYPE: {
 				TopoVolumeType topoVolumeType = (TopoVolumeType)theEObject;
 				T result = caseTopoVolumeType(topoVolumeType);
 				if (result == null) result = caseAbstractTopologyType(topoVolumeType);
@@ -2880,15 +2542,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TRANSFORMATION_PROPERTY_TYPE:
-			{
+			case GMLPackage.TRANSFORMATION_PROPERTY_TYPE: {
 				TransformationPropertyType transformationPropertyType = (TransformationPropertyType)theEObject;
 				T result = caseTransformationPropertyType(transformationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TRANSFORMATION_TYPE:
-			{
+			case GMLPackage.TRANSFORMATION_TYPE: {
 				TransformationType transformationType = (TransformationType)theEObject;
 				T result = caseTransformationType(transformationType);
 				if (result == null) result = caseAbstractGeneralTransformationType(transformationType);
@@ -2900,16 +2560,14 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.TRIANGLE_TYPE:
-			{
+			case GMLPackage.TRIANGLE_TYPE: {
 				TriangleType triangleType = (TriangleType)theEObject;
 				T result = caseTriangleType(triangleType);
 				if (result == null) result = caseAbstractSurfacePatchType(triangleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.UNIT_DEFINITION_TYPE:
-			{
+			case GMLPackage.UNIT_DEFINITION_TYPE: {
 				UnitDefinitionType unitDefinitionType = (UnitDefinitionType)theEObject;
 				T result = caseUnitDefinitionType(unitDefinitionType);
 				if (result == null) result = caseDefinitionType(unitDefinitionType);
@@ -2918,22 +2576,19 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.UNIT_OF_MEASURE_TYPE:
-			{
+			case GMLPackage.UNIT_OF_MEASURE_TYPE: {
 				UnitOfMeasureType unitOfMeasureType = (UnitOfMeasureType)theEObject;
 				T result = caseUnitOfMeasureType(unitOfMeasureType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.USER_DEFINED_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.USER_DEFINED_CS_PROPERTY_TYPE: {
 				UserDefinedCSPropertyType userDefinedCSPropertyType = (UserDefinedCSPropertyType)theEObject;
 				T result = caseUserDefinedCSPropertyType(userDefinedCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.USER_DEFINED_CS_TYPE:
-			{
+			case GMLPackage.USER_DEFINED_CS_TYPE: {
 				UserDefinedCSType userDefinedCSType = (UserDefinedCSType)theEObject;
 				T result = caseUserDefinedCSType(userDefinedCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(userDefinedCSType);
@@ -2944,15 +2599,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VALUE_ARRAY_PROPERTY_TYPE:
-			{
+			case GMLPackage.VALUE_ARRAY_PROPERTY_TYPE: {
 				ValueArrayPropertyType valueArrayPropertyType = (ValueArrayPropertyType)theEObject;
 				T result = caseValueArrayPropertyType(valueArrayPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VALUE_ARRAY_TYPE:
-			{
+			case GMLPackage.VALUE_ARRAY_TYPE: {
 				ValueArrayType valueArrayType = (ValueArrayType)theEObject;
 				T result = caseValueArrayType(valueArrayType);
 				if (result == null) result = caseCompositeValueType(valueArrayType);
@@ -2960,30 +2613,26 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VALUE_PROPERTY_TYPE:
-			{
+			case GMLPackage.VALUE_PROPERTY_TYPE: {
 				ValuePropertyType valuePropertyType = (ValuePropertyType)theEObject;
 				T result = caseValuePropertyType(valuePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VECTOR_TYPE:
-			{
+			case GMLPackage.VECTOR_TYPE: {
 				VectorType vectorType = (VectorType)theEObject;
 				T result = caseVectorType(vectorType);
 				if (result == null) result = caseDirectPositionType(vectorType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VERTICAL_CRS_PROPERTY_TYPE:
-			{
+			case GMLPackage.VERTICAL_CRS_PROPERTY_TYPE: {
 				VerticalCRSPropertyType verticalCRSPropertyType = (VerticalCRSPropertyType)theEObject;
 				T result = caseVerticalCRSPropertyType(verticalCRSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VERTICAL_CRS_TYPE:
-			{
+			case GMLPackage.VERTICAL_CRS_TYPE: {
 				VerticalCRSType verticalCRSType = (VerticalCRSType)theEObject;
 				T result = caseVerticalCRSType(verticalCRSType);
 				if (result == null) result = caseAbstractCRSType(verticalCRSType);
@@ -2994,15 +2643,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VERTICAL_CS_PROPERTY_TYPE:
-			{
+			case GMLPackage.VERTICAL_CS_PROPERTY_TYPE: {
 				VerticalCSPropertyType verticalCSPropertyType = (VerticalCSPropertyType)theEObject;
 				T result = caseVerticalCSPropertyType(verticalCSPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VERTICAL_CS_TYPE:
-			{
+			case GMLPackage.VERTICAL_CS_TYPE: {
 				VerticalCSType verticalCSType = (VerticalCSType)theEObject;
 				T result = caseVerticalCSType(verticalCSType);
 				if (result == null) result = caseAbstractCoordinateSystemType(verticalCSType);
@@ -3013,15 +2660,13 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VERTICAL_DATUM_PROPERTY_TYPE:
-			{
+			case GMLPackage.VERTICAL_DATUM_PROPERTY_TYPE: {
 				VerticalDatumPropertyType verticalDatumPropertyType = (VerticalDatumPropertyType)theEObject;
 				T result = caseVerticalDatumPropertyType(verticalDatumPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VERTICAL_DATUM_TYPE:
-			{
+			case GMLPackage.VERTICAL_DATUM_TYPE: {
 				VerticalDatumType verticalDatumType = (VerticalDatumType)theEObject;
 				T result = caseVerticalDatumType(verticalDatumType);
 				if (result == null) result = caseAbstractDatumType(verticalDatumType);
@@ -3032,8 +2677,7 @@ public class GMLSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMLPackage.VOLUME_TYPE:
-			{
+			case GMLPackage.VOLUME_TYPE: {
 				VolumeType volumeType = (VolumeType)theEObject;
 				T result = caseVolumeType(volumeType);
 				if (result == null) result = caseMeasureType(volumeType);
@@ -3055,8 +2699,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractContinuousCoverageType(AbstractContinuousCoverageType object)
-	{
+	public T caseAbstractContinuousCoverageType(AbstractContinuousCoverageType object) {
 		return null;
 	}
 
@@ -3071,8 +2714,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractCoordinateOperationType(AbstractCoordinateOperationType object)
-	{
+	public T caseAbstractCoordinateOperationType(AbstractCoordinateOperationType object) {
 		return null;
 	}
 
@@ -3087,8 +2729,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractCoordinateSystemType(AbstractCoordinateSystemType object)
-	{
+	public T caseAbstractCoordinateSystemType(AbstractCoordinateSystemType object) {
 		return null;
 	}
 
@@ -3103,8 +2744,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractCoverageType(AbstractCoverageType object)
-	{
+	public T caseAbstractCoverageType(AbstractCoverageType object) {
 		return null;
 	}
 
@@ -3119,8 +2759,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractCRSType(AbstractCRSType object)
-	{
+	public T caseAbstractCRSType(AbstractCRSType object) {
 		return null;
 	}
 
@@ -3135,8 +2774,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractCurveSegmentType(AbstractCurveSegmentType object)
-	{
+	public T caseAbstractCurveSegmentType(AbstractCurveSegmentType object) {
 		return null;
 	}
 
@@ -3151,8 +2789,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractCurveType(AbstractCurveType object)
-	{
+	public T caseAbstractCurveType(AbstractCurveType object) {
 		return null;
 	}
 
@@ -3167,8 +2804,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractDatumType(AbstractDatumType object)
-	{
+	public T caseAbstractDatumType(AbstractDatumType object) {
 		return null;
 	}
 
@@ -3183,8 +2819,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractFeatureCollectionType(AbstractFeatureCollectionType object)
-	{
+	public T caseAbstractFeatureCollectionType(AbstractFeatureCollectionType object) {
 		return null;
 	}
 
@@ -3199,8 +2834,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractFeatureMemberType(AbstractFeatureMemberType object)
-	{
+	public T caseAbstractFeatureMemberType(AbstractFeatureMemberType object) {
 		return null;
 	}
 
@@ -3215,8 +2849,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractFeatureType(AbstractFeatureType object)
-	{
+	public T caseAbstractFeatureType(AbstractFeatureType object) {
 		return null;
 	}
 
@@ -3231,8 +2864,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeneralConversionType(AbstractGeneralConversionType object)
-	{
+	public T caseAbstractGeneralConversionType(AbstractGeneralConversionType object) {
 		return null;
 	}
 
@@ -3247,8 +2879,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeneralDerivedCRSType(AbstractGeneralDerivedCRSType object)
-	{
+	public T caseAbstractGeneralDerivedCRSType(AbstractGeneralDerivedCRSType object) {
 		return null;
 	}
 
@@ -3263,8 +2894,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeneralOperationParameterPropertyType(AbstractGeneralOperationParameterPropertyType object)
-	{
+	public T caseAbstractGeneralOperationParameterPropertyType(AbstractGeneralOperationParameterPropertyType object) {
 		return null;
 	}
 
@@ -3279,8 +2909,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeneralOperationParameterType(AbstractGeneralOperationParameterType object)
-	{
+	public T caseAbstractGeneralOperationParameterType(AbstractGeneralOperationParameterType object) {
 		return null;
 	}
 
@@ -3295,8 +2924,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeneralParameterValuePropertyType(AbstractGeneralParameterValuePropertyType object)
-	{
+	public T caseAbstractGeneralParameterValuePropertyType(AbstractGeneralParameterValuePropertyType object) {
 		return null;
 	}
 
@@ -3311,8 +2939,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeneralParameterValueType(AbstractGeneralParameterValueType object)
-	{
+	public T caseAbstractGeneralParameterValueType(AbstractGeneralParameterValueType object) {
 		return null;
 	}
 
@@ -3327,8 +2954,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeneralTransformationType(AbstractGeneralTransformationType object)
-	{
+	public T caseAbstractGeneralTransformationType(AbstractGeneralTransformationType object) {
 		return null;
 	}
 
@@ -3343,8 +2969,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeometricAggregateType(AbstractGeometricAggregateType object)
-	{
+	public T caseAbstractGeometricAggregateType(AbstractGeometricAggregateType object) {
 		return null;
 	}
 
@@ -3359,8 +2984,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeometricPrimitiveType(AbstractGeometricPrimitiveType object)
-	{
+	public T caseAbstractGeometricPrimitiveType(AbstractGeometricPrimitiveType object) {
 		return null;
 	}
 
@@ -3375,8 +2999,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGeometryType(AbstractGeometryType object)
-	{
+	public T caseAbstractGeometryType(AbstractGeometryType object) {
 		return null;
 	}
 
@@ -3391,8 +3014,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGMLType(AbstractGMLType object)
-	{
+	public T caseAbstractGMLType(AbstractGMLType object) {
 		return null;
 	}
 
@@ -3407,8 +3029,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractGriddedSurfaceType(AbstractGriddedSurfaceType object)
-	{
+	public T caseAbstractGriddedSurfaceType(AbstractGriddedSurfaceType object) {
 		return null;
 	}
 
@@ -3423,8 +3044,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractMemberType(AbstractMemberType object)
-	{
+	public T caseAbstractMemberType(AbstractMemberType object) {
 		return null;
 	}
 
@@ -3439,8 +3059,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractMetadataPropertyType(AbstractMetadataPropertyType object)
-	{
+	public T caseAbstractMetadataPropertyType(AbstractMetadataPropertyType object) {
 		return null;
 	}
 
@@ -3455,8 +3074,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractMetaDataType(AbstractMetaDataType object)
-	{
+	public T caseAbstractMetaDataType(AbstractMetaDataType object) {
 		return null;
 	}
 
@@ -3471,8 +3089,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractParametricCurveSurfaceType(AbstractParametricCurveSurfaceType object)
-	{
+	public T caseAbstractParametricCurveSurfaceType(AbstractParametricCurveSurfaceType object) {
 		return null;
 	}
 
@@ -3487,8 +3104,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractRingPropertyType(AbstractRingPropertyType object)
-	{
+	public T caseAbstractRingPropertyType(AbstractRingPropertyType object) {
 		return null;
 	}
 
@@ -3503,8 +3119,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractRingType(AbstractRingType object)
-	{
+	public T caseAbstractRingType(AbstractRingType object) {
 		return null;
 	}
 
@@ -3519,8 +3134,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractSolidType(AbstractSolidType object)
-	{
+	public T caseAbstractSolidType(AbstractSolidType object) {
 		return null;
 	}
 
@@ -3535,8 +3149,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractSurfacePatchType(AbstractSurfacePatchType object)
-	{
+	public T caseAbstractSurfacePatchType(AbstractSurfacePatchType object) {
 		return null;
 	}
 
@@ -3551,8 +3164,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractSurfaceType(AbstractSurfaceType object)
-	{
+	public T caseAbstractSurfaceType(AbstractSurfaceType object) {
 		return null;
 	}
 
@@ -3567,8 +3179,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractTimeComplexType(AbstractTimeComplexType object)
-	{
+	public T caseAbstractTimeComplexType(AbstractTimeComplexType object) {
 		return null;
 	}
 
@@ -3583,8 +3194,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractTimeGeometricPrimitiveType(AbstractTimeGeometricPrimitiveType object)
-	{
+	public T caseAbstractTimeGeometricPrimitiveType(AbstractTimeGeometricPrimitiveType object) {
 		return null;
 	}
 
@@ -3599,8 +3209,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractTimeObjectType(AbstractTimeObjectType object)
-	{
+	public T caseAbstractTimeObjectType(AbstractTimeObjectType object) {
 		return null;
 	}
 
@@ -3615,8 +3224,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractTimePrimitiveType(AbstractTimePrimitiveType object)
-	{
+	public T caseAbstractTimePrimitiveType(AbstractTimePrimitiveType object) {
 		return null;
 	}
 
@@ -3631,8 +3239,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractTimeSliceType(AbstractTimeSliceType object)
-	{
+	public T caseAbstractTimeSliceType(AbstractTimeSliceType object) {
 		return null;
 	}
 
@@ -3647,8 +3254,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractTimeTopologyPrimitiveType(AbstractTimeTopologyPrimitiveType object)
-	{
+	public T caseAbstractTimeTopologyPrimitiveType(AbstractTimeTopologyPrimitiveType object) {
 		return null;
 	}
 
@@ -3663,8 +3269,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractTopologyType(AbstractTopologyType object)
-	{
+	public T caseAbstractTopologyType(AbstractTopologyType object) {
 		return null;
 	}
 
@@ -3679,8 +3284,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractTopoPrimitiveType(AbstractTopoPrimitiveType object)
-	{
+	public T caseAbstractTopoPrimitiveType(AbstractTopoPrimitiveType object) {
 		return null;
 	}
 
@@ -3695,8 +3299,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAffineCSPropertyType(AffineCSPropertyType object)
-	{
+	public T caseAffineCSPropertyType(AffineCSPropertyType object) {
 		return null;
 	}
 
@@ -3711,8 +3314,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAffineCSType(AffineCSType object)
-	{
+	public T caseAffineCSType(AffineCSType object) {
 		return null;
 	}
 
@@ -3727,8 +3329,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAffinePlacementType(AffinePlacementType object)
-	{
+	public T caseAffinePlacementType(AffinePlacementType object) {
 		return null;
 	}
 
@@ -3743,8 +3344,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAngleChoiceType(AngleChoiceType object)
-	{
+	public T caseAngleChoiceType(AngleChoiceType object) {
 		return null;
 	}
 
@@ -3759,8 +3359,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAngleType(AngleType object)
-	{
+	public T caseAngleType(AngleType object) {
 		return null;
 	}
 
@@ -3775,8 +3374,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArcByBulgeType(ArcByBulgeType object)
-	{
+	public T caseArcByBulgeType(ArcByBulgeType object) {
 		return null;
 	}
 
@@ -3791,8 +3389,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArcByCenterPointType(ArcByCenterPointType object)
-	{
+	public T caseArcByCenterPointType(ArcByCenterPointType object) {
 		return null;
 	}
 
@@ -3807,8 +3404,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArcStringByBulgeType(ArcStringByBulgeType object)
-	{
+	public T caseArcStringByBulgeType(ArcStringByBulgeType object) {
 		return null;
 	}
 
@@ -3823,8 +3419,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArcStringType(ArcStringType object)
-	{
+	public T caseArcStringType(ArcStringType object) {
 		return null;
 	}
 
@@ -3839,8 +3434,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArcType(ArcType object)
-	{
+	public T caseArcType(ArcType object) {
 		return null;
 	}
 
@@ -3855,8 +3449,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAreaType(AreaType object)
-	{
+	public T caseAreaType(AreaType object) {
 		return null;
 	}
 
@@ -3871,8 +3464,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArrayAssociationType(ArrayAssociationType object)
-	{
+	public T caseArrayAssociationType(ArrayAssociationType object) {
 		return null;
 	}
 
@@ -3887,8 +3479,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArrayType(ArrayType object)
-	{
+	public T caseArrayType(ArrayType object) {
 		return null;
 	}
 
@@ -3903,8 +3494,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAssociationRoleType(AssociationRoleType object)
-	{
+	public T caseAssociationRoleType(AssociationRoleType object) {
 		return null;
 	}
 
@@ -3919,8 +3509,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBagType(BagType object)
-	{
+	public T caseBagType(BagType object) {
 		return null;
 	}
 
@@ -3935,8 +3524,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBaseUnitType(BaseUnitType object)
-	{
+	public T caseBaseUnitType(BaseUnitType object) {
 		return null;
 	}
 
@@ -3951,8 +3539,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBezierType(BezierType object)
-	{
+	public T caseBezierType(BezierType object) {
 		return null;
 	}
 
@@ -3967,8 +3554,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBooleanPropertyType(BooleanPropertyType object)
-	{
+	public T caseBooleanPropertyType(BooleanPropertyType object) {
 		return null;
 	}
 
@@ -3983,8 +3569,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBooleanType(BooleanType object)
-	{
+	public T caseBooleanType(BooleanType object) {
 		return null;
 	}
 
@@ -3999,8 +3584,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBoundedFeatureType(BoundedFeatureType object)
-	{
+	public T caseBoundedFeatureType(BoundedFeatureType object) {
 		return null;
 	}
 
@@ -4015,8 +3599,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBoundingShapeType(BoundingShapeType object)
-	{
+	public T caseBoundingShapeType(BoundingShapeType object) {
 		return null;
 	}
 
@@ -4031,8 +3614,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBSplineType(BSplineType object)
-	{
+	public T caseBSplineType(BSplineType object) {
 		return null;
 	}
 
@@ -4047,8 +3629,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCartesianCSPropertyType(CartesianCSPropertyType object)
-	{
+	public T caseCartesianCSPropertyType(CartesianCSPropertyType object) {
 		return null;
 	}
 
@@ -4063,8 +3644,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCartesianCSType(CartesianCSType object)
-	{
+	public T caseCartesianCSType(CartesianCSType object) {
 		return null;
 	}
 
@@ -4079,8 +3659,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCategoryExtentType(CategoryExtentType object)
-	{
+	public T caseCategoryExtentType(CategoryExtentType object) {
 		return null;
 	}
 
@@ -4095,8 +3674,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCategoryPropertyType(CategoryPropertyType object)
-	{
+	public T caseCategoryPropertyType(CategoryPropertyType object) {
 		return null;
 	}
 
@@ -4111,8 +3689,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCategoryType(CategoryType object)
-	{
+	public T caseCategoryType(CategoryType object) {
 		return null;
 	}
 
@@ -4127,8 +3704,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCircleByCenterPointType(CircleByCenterPointType object)
-	{
+	public T caseCircleByCenterPointType(CircleByCenterPointType object) {
 		return null;
 	}
 
@@ -4143,8 +3719,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCircleType(CircleType object)
-	{
+	public T caseCircleType(CircleType object) {
 		return null;
 	}
 
@@ -4159,8 +3734,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClothoidType(ClothoidType object)
-	{
+	public T caseClothoidType(ClothoidType object) {
 		return null;
 	}
 
@@ -4175,8 +3749,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCodeListType(CodeListType object)
-	{
+	public T caseCodeListType(CodeListType object) {
 		return null;
 	}
 
@@ -4191,8 +3764,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCodeOrNilReasonListType(CodeOrNilReasonListType object)
-	{
+	public T caseCodeOrNilReasonListType(CodeOrNilReasonListType object) {
 		return null;
 	}
 
@@ -4207,8 +3779,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCodeType(CodeType object)
-	{
+	public T caseCodeType(CodeType object) {
 		return null;
 	}
 
@@ -4223,8 +3794,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCodeWithAuthorityType(CodeWithAuthorityType object)
-	{
+	public T caseCodeWithAuthorityType(CodeWithAuthorityType object) {
 		return null;
 	}
 
@@ -4239,8 +3809,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCompositeCurveType(CompositeCurveType object)
-	{
+	public T caseCompositeCurveType(CompositeCurveType object) {
 		return null;
 	}
 
@@ -4255,8 +3824,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCompositeSolidType(CompositeSolidType object)
-	{
+	public T caseCompositeSolidType(CompositeSolidType object) {
 		return null;
 	}
 
@@ -4271,8 +3839,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCompositeSurfaceType(CompositeSurfaceType object)
-	{
+	public T caseCompositeSurfaceType(CompositeSurfaceType object) {
 		return null;
 	}
 
@@ -4287,8 +3854,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCompositeValueType(CompositeValueType object)
-	{
+	public T caseCompositeValueType(CompositeValueType object) {
 		return null;
 	}
 
@@ -4303,8 +3869,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCompoundCRSPropertyType(CompoundCRSPropertyType object)
-	{
+	public T caseCompoundCRSPropertyType(CompoundCRSPropertyType object) {
 		return null;
 	}
 
@@ -4319,8 +3884,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCompoundCRSType(CompoundCRSType object)
-	{
+	public T caseCompoundCRSType(CompoundCRSType object) {
 		return null;
 	}
 
@@ -4335,8 +3899,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConcatenatedOperationPropertyType(ConcatenatedOperationPropertyType object)
-	{
+	public T caseConcatenatedOperationPropertyType(ConcatenatedOperationPropertyType object) {
 		return null;
 	}
 
@@ -4351,8 +3914,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConcatenatedOperationType(ConcatenatedOperationType object)
-	{
+	public T caseConcatenatedOperationType(ConcatenatedOperationType object) {
 		return null;
 	}
 
@@ -4367,8 +3929,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConeType(ConeType object)
-	{
+	public T caseConeType(ConeType object) {
 		return null;
 	}
 
@@ -4383,8 +3944,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseControlPointType(ControlPointType object)
-	{
+	public T caseControlPointType(ControlPointType object) {
 		return null;
 	}
 
@@ -4399,8 +3959,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConventionalUnitType(ConventionalUnitType object)
-	{
+	public T caseConventionalUnitType(ConventionalUnitType object) {
 		return null;
 	}
 
@@ -4415,8 +3974,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConversionPropertyType(ConversionPropertyType object)
-	{
+	public T caseConversionPropertyType(ConversionPropertyType object) {
 		return null;
 	}
 
@@ -4431,8 +3989,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConversionToPreferredUnitType(ConversionToPreferredUnitType object)
-	{
+	public T caseConversionToPreferredUnitType(ConversionToPreferredUnitType object) {
 		return null;
 	}
 
@@ -4447,8 +4004,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConversionType(ConversionType object)
-	{
+	public T caseConversionType(ConversionType object) {
 		return null;
 	}
 
@@ -4463,8 +4019,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCoordinateOperationAccuracyType(CoordinateOperationAccuracyType object)
-	{
+	public T caseCoordinateOperationAccuracyType(CoordinateOperationAccuracyType object) {
 		return null;
 	}
 
@@ -4479,8 +4034,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCoordinateOperationPropertyType(CoordinateOperationPropertyType object)
-	{
+	public T caseCoordinateOperationPropertyType(CoordinateOperationPropertyType object) {
 		return null;
 	}
 
@@ -4495,8 +4049,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCoordinatesType(CoordinatesType object)
-	{
+	public T caseCoordinatesType(CoordinatesType object) {
 		return null;
 	}
 
@@ -4511,8 +4064,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCoordinateSystemAxisPropertyType(CoordinateSystemAxisPropertyType object)
-	{
+	public T caseCoordinateSystemAxisPropertyType(CoordinateSystemAxisPropertyType object) {
 		return null;
 	}
 
@@ -4527,8 +4079,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCoordinateSystemAxisType(CoordinateSystemAxisType object)
-	{
+	public T caseCoordinateSystemAxisType(CoordinateSystemAxisType object) {
 		return null;
 	}
 
@@ -4543,8 +4094,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCoordinateSystemPropertyType(CoordinateSystemPropertyType object)
-	{
+	public T caseCoordinateSystemPropertyType(CoordinateSystemPropertyType object) {
 		return null;
 	}
 
@@ -4559,8 +4109,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCountPropertyType(CountPropertyType object)
-	{
+	public T caseCountPropertyType(CountPropertyType object) {
 		return null;
 	}
 
@@ -4575,8 +4124,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCountType(CountType object)
-	{
+	public T caseCountType(CountType object) {
 		return null;
 	}
 
@@ -4591,8 +4139,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCoverageFunctionType(CoverageFunctionType object)
-	{
+	public T caseCoverageFunctionType(CoverageFunctionType object) {
 		return null;
 	}
 
@@ -4607,8 +4154,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCRSPropertyType(CRSPropertyType object)
-	{
+	public T caseCRSPropertyType(CRSPropertyType object) {
 		return null;
 	}
 
@@ -4623,8 +4169,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCubicSplineType(CubicSplineType object)
-	{
+	public T caseCubicSplineType(CubicSplineType object) {
 		return null;
 	}
 
@@ -4639,8 +4184,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCurveArrayPropertyType(CurveArrayPropertyType object)
-	{
+	public T caseCurveArrayPropertyType(CurveArrayPropertyType object) {
 		return null;
 	}
 
@@ -4655,8 +4199,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCurvePropertyType(CurvePropertyType object)
-	{
+	public T caseCurvePropertyType(CurvePropertyType object) {
 		return null;
 	}
 
@@ -4671,8 +4214,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCurveSegmentArrayPropertyType(CurveSegmentArrayPropertyType object)
-	{
+	public T caseCurveSegmentArrayPropertyType(CurveSegmentArrayPropertyType object) {
 		return null;
 	}
 
@@ -4687,8 +4229,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCurveType(CurveType object)
-	{
+	public T caseCurveType(CurveType object) {
 		return null;
 	}
 
@@ -4703,8 +4244,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCylinderType(CylinderType object)
-	{
+	public T caseCylinderType(CylinderType object) {
 		return null;
 	}
 
@@ -4719,8 +4259,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCylindricalCSPropertyType(CylindricalCSPropertyType object)
-	{
+	public T caseCylindricalCSPropertyType(CylindricalCSPropertyType object) {
 		return null;
 	}
 
@@ -4735,8 +4274,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCylindricalCSType(CylindricalCSType object)
-	{
+	public T caseCylindricalCSType(CylindricalCSType object) {
 		return null;
 	}
 
@@ -4751,8 +4289,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDataBlockType(DataBlockType object)
-	{
+	public T caseDataBlockType(DataBlockType object) {
 		return null;
 	}
 
@@ -4767,8 +4304,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDatumPropertyType(DatumPropertyType object)
-	{
+	public T caseDatumPropertyType(DatumPropertyType object) {
 		return null;
 	}
 
@@ -4783,8 +4319,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDefinitionBaseType(DefinitionBaseType object)
-	{
+	public T caseDefinitionBaseType(DefinitionBaseType object) {
 		return null;
 	}
 
@@ -4799,8 +4334,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDefinitionProxyType(DefinitionProxyType object)
-	{
+	public T caseDefinitionProxyType(DefinitionProxyType object) {
 		return null;
 	}
 
@@ -4815,8 +4349,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDefinitionType(DefinitionType object)
-	{
+	public T caseDefinitionType(DefinitionType object) {
 		return null;
 	}
 
@@ -4831,8 +4364,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDegreesType(DegreesType object)
-	{
+	public T caseDegreesType(DegreesType object) {
 		return null;
 	}
 
@@ -4847,8 +4379,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDerivationUnitTermType(DerivationUnitTermType object)
-	{
+	public T caseDerivationUnitTermType(DerivationUnitTermType object) {
 		return null;
 	}
 
@@ -4863,8 +4394,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDerivedCRSPropertyType(DerivedCRSPropertyType object)
-	{
+	public T caseDerivedCRSPropertyType(DerivedCRSPropertyType object) {
 		return null;
 	}
 
@@ -4879,8 +4409,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDerivedCRSType(DerivedCRSType object)
-	{
+	public T caseDerivedCRSType(DerivedCRSType object) {
 		return null;
 	}
 
@@ -4895,8 +4424,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDerivedUnitType(DerivedUnitType object)
-	{
+	public T caseDerivedUnitType(DerivedUnitType object) {
 		return null;
 	}
 
@@ -4911,8 +4439,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDictionaryEntryType(DictionaryEntryType object)
-	{
+	public T caseDictionaryEntryType(DictionaryEntryType object) {
 		return null;
 	}
 
@@ -4927,8 +4454,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDictionaryType(DictionaryType object)
-	{
+	public T caseDictionaryType(DictionaryType object) {
 		return null;
 	}
 
@@ -4943,8 +4469,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectedEdgePropertyType(DirectedEdgePropertyType object)
-	{
+	public T caseDirectedEdgePropertyType(DirectedEdgePropertyType object) {
 		return null;
 	}
 
@@ -4959,8 +4484,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectedFacePropertyType(DirectedFacePropertyType object)
-	{
+	public T caseDirectedFacePropertyType(DirectedFacePropertyType object) {
 		return null;
 	}
 
@@ -4975,8 +4499,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectedNodePropertyType(DirectedNodePropertyType object)
-	{
+	public T caseDirectedNodePropertyType(DirectedNodePropertyType object) {
 		return null;
 	}
 
@@ -4991,8 +4514,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectedObservationAtDistanceType(DirectedObservationAtDistanceType object)
-	{
+	public T caseDirectedObservationAtDistanceType(DirectedObservationAtDistanceType object) {
 		return null;
 	}
 
@@ -5007,8 +4529,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectedObservationType(DirectedObservationType object)
-	{
+	public T caseDirectedObservationType(DirectedObservationType object) {
 		return null;
 	}
 
@@ -5023,8 +4544,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectedTopoSolidPropertyType(DirectedTopoSolidPropertyType object)
-	{
+	public T caseDirectedTopoSolidPropertyType(DirectedTopoSolidPropertyType object) {
 		return null;
 	}
 
@@ -5039,8 +4559,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectionDescriptionType(DirectionDescriptionType object)
-	{
+	public T caseDirectionDescriptionType(DirectionDescriptionType object) {
 		return null;
 	}
 
@@ -5055,8 +4574,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectionPropertyType(DirectionPropertyType object)
-	{
+	public T caseDirectionPropertyType(DirectionPropertyType object) {
 		return null;
 	}
 
@@ -5071,8 +4589,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectionVectorType(DirectionVectorType object)
-	{
+	public T caseDirectionVectorType(DirectionVectorType object) {
 		return null;
 	}
 
@@ -5087,8 +4604,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectPositionListType(DirectPositionListType object)
-	{
+	public T caseDirectPositionListType(DirectPositionListType object) {
 		return null;
 	}
 
@@ -5103,8 +4619,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDirectPositionType(DirectPositionType object)
-	{
+	public T caseDirectPositionType(DirectPositionType object) {
 		return null;
 	}
 
@@ -5119,8 +4634,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDiscreteCoverageType(DiscreteCoverageType object)
-	{
+	public T caseDiscreteCoverageType(DiscreteCoverageType object) {
 		return null;
 	}
 
@@ -5135,8 +4649,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDMSAngleType(DMSAngleType object)
-	{
+	public T caseDMSAngleType(DMSAngleType object) {
 		return null;
 	}
 
@@ -5151,8 +4664,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDocumentRoot(DocumentRoot object)
-	{
+	public T caseDocumentRoot(DocumentRoot object) {
 		return null;
 	}
 
@@ -5167,8 +4679,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDomainOfValidityType(DomainOfValidityType object)
-	{
+	public T caseDomainOfValidityType(DomainOfValidityType object) {
 		return null;
 	}
 
@@ -5183,8 +4694,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDomainSetType(DomainSetType object)
-	{
+	public T caseDomainSetType(DomainSetType object) {
 		return null;
 	}
 
@@ -5199,8 +4709,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDynamicFeatureCollectionType(DynamicFeatureCollectionType object)
-	{
+	public T caseDynamicFeatureCollectionType(DynamicFeatureCollectionType object) {
 		return null;
 	}
 
@@ -5215,8 +4724,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDynamicFeatureMemberType(DynamicFeatureMemberType object)
-	{
+	public T caseDynamicFeatureMemberType(DynamicFeatureMemberType object) {
 		return null;
 	}
 
@@ -5231,8 +4739,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDynamicFeatureType(DynamicFeatureType object)
-	{
+	public T caseDynamicFeatureType(DynamicFeatureType object) {
 		return null;
 	}
 
@@ -5247,8 +4754,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEdgeType(EdgeType object)
-	{
+	public T caseEdgeType(EdgeType object) {
 		return null;
 	}
 
@@ -5263,8 +4769,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEllipsoidalCSPropertyType(EllipsoidalCSPropertyType object)
-	{
+	public T caseEllipsoidalCSPropertyType(EllipsoidalCSPropertyType object) {
 		return null;
 	}
 
@@ -5279,8 +4784,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEllipsoidalCSType(EllipsoidalCSType object)
-	{
+	public T caseEllipsoidalCSType(EllipsoidalCSType object) {
 		return null;
 	}
 
@@ -5295,8 +4799,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEllipsoidPropertyType(EllipsoidPropertyType object)
-	{
+	public T caseEllipsoidPropertyType(EllipsoidPropertyType object) {
 		return null;
 	}
 
@@ -5311,8 +4814,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEllipsoidType(EllipsoidType object)
-	{
+	public T caseEllipsoidType(EllipsoidType object) {
 		return null;
 	}
 
@@ -5327,8 +4829,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEngineeringCRSPropertyType(EngineeringCRSPropertyType object)
-	{
+	public T caseEngineeringCRSPropertyType(EngineeringCRSPropertyType object) {
 		return null;
 	}
 
@@ -5343,8 +4844,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEngineeringCRSType(EngineeringCRSType object)
-	{
+	public T caseEngineeringCRSType(EngineeringCRSType object) {
 		return null;
 	}
 
@@ -5359,8 +4859,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEngineeringDatumPropertyType(EngineeringDatumPropertyType object)
-	{
+	public T caseEngineeringDatumPropertyType(EngineeringDatumPropertyType object) {
 		return null;
 	}
 
@@ -5375,8 +4874,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEngineeringDatumType(EngineeringDatumType object)
-	{
+	public T caseEngineeringDatumType(EngineeringDatumType object) {
 		return null;
 	}
 
@@ -5391,8 +4889,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEnvelopeType(EnvelopeType object)
-	{
+	public T caseEnvelopeType(EnvelopeType object) {
 		return null;
 	}
 
@@ -5407,8 +4904,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEnvelopeWithTimePeriodType(EnvelopeWithTimePeriodType object)
-	{
+	public T caseEnvelopeWithTimePeriodType(EnvelopeWithTimePeriodType object) {
 		return null;
 	}
 
@@ -5423,8 +4919,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFaceOrTopoSolidPropertyType(FaceOrTopoSolidPropertyType object)
-	{
+	public T caseFaceOrTopoSolidPropertyType(FaceOrTopoSolidPropertyType object) {
 		return null;
 	}
 
@@ -5439,8 +4934,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFaceType(FaceType object)
-	{
+	public T caseFaceType(FaceType object) {
 		return null;
 	}
 
@@ -5455,8 +4949,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFeatureArrayPropertyType(FeatureArrayPropertyType object)
-	{
+	public T caseFeatureArrayPropertyType(FeatureArrayPropertyType object) {
 		return null;
 	}
 
@@ -5471,8 +4964,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFeatureCollectionType(FeatureCollectionType object)
-	{
+	public T caseFeatureCollectionType(FeatureCollectionType object) {
 		return null;
 	}
 
@@ -5487,8 +4979,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFeaturePropertyType(FeaturePropertyType object)
-	{
+	public T caseFeaturePropertyType(FeaturePropertyType object) {
 		return null;
 	}
 
@@ -5503,8 +4994,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFileType(FileType object)
-	{
+	public T caseFileType(FileType object) {
 		return null;
 	}
 
@@ -5519,8 +5009,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFormulaCitationType(FormulaCitationType object)
-	{
+	public T caseFormulaCitationType(FormulaCitationType object) {
 		return null;
 	}
 
@@ -5535,8 +5024,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFormulaType(FormulaType object)
-	{
+	public T caseFormulaType(FormulaType object) {
 		return null;
 	}
 
@@ -5551,8 +5039,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeneralConversionPropertyType(GeneralConversionPropertyType object)
-	{
+	public T caseGeneralConversionPropertyType(GeneralConversionPropertyType object) {
 		return null;
 	}
 
@@ -5567,8 +5054,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeneralTransformationPropertyType(GeneralTransformationPropertyType object)
-	{
+	public T caseGeneralTransformationPropertyType(GeneralTransformationPropertyType object) {
 		return null;
 	}
 
@@ -5583,8 +5069,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGenericMetaDataType(GenericMetaDataType object)
-	{
+	public T caseGenericMetaDataType(GenericMetaDataType object) {
 		return null;
 	}
 
@@ -5599,8 +5084,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeocentricCRSPropertyType(GeocentricCRSPropertyType object)
-	{
+	public T caseGeocentricCRSPropertyType(GeocentricCRSPropertyType object) {
 		return null;
 	}
 
@@ -5615,8 +5099,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeocentricCRSType(GeocentricCRSType object)
-	{
+	public T caseGeocentricCRSType(GeocentricCRSType object) {
 		return null;
 	}
 
@@ -5631,8 +5114,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeodesicStringType(GeodesicStringType object)
-	{
+	public T caseGeodesicStringType(GeodesicStringType object) {
 		return null;
 	}
 
@@ -5647,8 +5129,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeodesicType(GeodesicType object)
-	{
+	public T caseGeodesicType(GeodesicType object) {
 		return null;
 	}
 
@@ -5663,8 +5144,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeodeticCRSPropertyType(GeodeticCRSPropertyType object)
-	{
+	public T caseGeodeticCRSPropertyType(GeodeticCRSPropertyType object) {
 		return null;
 	}
 
@@ -5679,8 +5159,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeodeticCRSType(GeodeticCRSType object)
-	{
+	public T caseGeodeticCRSType(GeodeticCRSType object) {
 		return null;
 	}
 
@@ -5695,8 +5174,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeodeticDatumPropertyType(GeodeticDatumPropertyType object)
-	{
+	public T caseGeodeticDatumPropertyType(GeodeticDatumPropertyType object) {
 		return null;
 	}
 
@@ -5711,8 +5189,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeodeticDatumType(GeodeticDatumType object)
-	{
+	public T caseGeodeticDatumType(GeodeticDatumType object) {
 		return null;
 	}
 
@@ -5727,8 +5204,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeographicCRSPropertyType(GeographicCRSPropertyType object)
-	{
+	public T caseGeographicCRSPropertyType(GeographicCRSPropertyType object) {
 		return null;
 	}
 
@@ -5743,8 +5219,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeographicCRSType(GeographicCRSType object)
-	{
+	public T caseGeographicCRSType(GeographicCRSType object) {
 		return null;
 	}
 
@@ -5759,8 +5234,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeometricComplexPropertyType(GeometricComplexPropertyType object)
-	{
+	public T caseGeometricComplexPropertyType(GeometricComplexPropertyType object) {
 		return null;
 	}
 
@@ -5775,8 +5249,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeometricComplexType(GeometricComplexType object)
-	{
+	public T caseGeometricComplexType(GeometricComplexType object) {
 		return null;
 	}
 
@@ -5791,8 +5264,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeometricPrimitivePropertyType(GeometricPrimitivePropertyType object)
-	{
+	public T caseGeometricPrimitivePropertyType(GeometricPrimitivePropertyType object) {
 		return null;
 	}
 
@@ -5807,8 +5279,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeometryArrayPropertyType(GeometryArrayPropertyType object)
-	{
+	public T caseGeometryArrayPropertyType(GeometryArrayPropertyType object) {
 		return null;
 	}
 
@@ -5823,8 +5294,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeometryPropertyType(GeometryPropertyType object)
-	{
+	public T caseGeometryPropertyType(GeometryPropertyType object) {
 		return null;
 	}
 
@@ -5839,8 +5309,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGridEnvelopeType(GridEnvelopeType object)
-	{
+	public T caseGridEnvelopeType(GridEnvelopeType object) {
 		return null;
 	}
 
@@ -5855,8 +5324,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGridFunctionType(GridFunctionType object)
-	{
+	public T caseGridFunctionType(GridFunctionType object) {
 		return null;
 	}
 
@@ -5871,8 +5339,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGridLengthType(GridLengthType object)
-	{
+	public T caseGridLengthType(GridLengthType object) {
 		return null;
 	}
 
@@ -5887,8 +5354,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGridLimitsType(GridLimitsType object)
-	{
+	public T caseGridLimitsType(GridLimitsType object) {
 		return null;
 	}
 
@@ -5903,8 +5369,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGridType(GridType object)
-	{
+	public T caseGridType(GridType object) {
 		return null;
 	}
 
@@ -5919,8 +5384,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseHistoryPropertyType(HistoryPropertyType object)
-	{
+	public T caseHistoryPropertyType(HistoryPropertyType object) {
 		return null;
 	}
 
@@ -5935,8 +5399,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIdentifiedObjectType(IdentifiedObjectType object)
-	{
+	public T caseIdentifiedObjectType(IdentifiedObjectType object) {
 		return null;
 	}
 
@@ -5951,8 +5414,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImageCRSPropertyType(ImageCRSPropertyType object)
-	{
+	public T caseImageCRSPropertyType(ImageCRSPropertyType object) {
 		return null;
 	}
 
@@ -5967,8 +5429,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImageCRSType(ImageCRSType object)
-	{
+	public T caseImageCRSType(ImageCRSType object) {
 		return null;
 	}
 
@@ -5983,8 +5444,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImageDatumPropertyType(ImageDatumPropertyType object)
-	{
+	public T caseImageDatumPropertyType(ImageDatumPropertyType object) {
 		return null;
 	}
 
@@ -5999,8 +5459,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImageDatumType(ImageDatumType object)
-	{
+	public T caseImageDatumType(ImageDatumType object) {
 		return null;
 	}
 
@@ -6015,8 +5474,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIndirectEntryType(IndirectEntryType object)
-	{
+	public T caseIndirectEntryType(IndirectEntryType object) {
 		return null;
 	}
 
@@ -6031,8 +5489,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInlinePropertyType(InlinePropertyType object)
-	{
+	public T caseInlinePropertyType(InlinePropertyType object) {
 		return null;
 	}
 
@@ -6047,8 +5504,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseKnotPropertyType(KnotPropertyType object)
-	{
+	public T caseKnotPropertyType(KnotPropertyType object) {
 		return null;
 	}
 
@@ -6063,8 +5519,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseKnotType(KnotType object)
-	{
+	public T caseKnotType(KnotType object) {
 		return null;
 	}
 
@@ -6079,8 +5534,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLengthType(LengthType object)
-	{
+	public T caseLengthType(LengthType object) {
 		return null;
 	}
 
@@ -6095,8 +5549,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLinearCSPropertyType(LinearCSPropertyType object)
-	{
+	public T caseLinearCSPropertyType(LinearCSPropertyType object) {
 		return null;
 	}
 
@@ -6111,8 +5564,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLinearCSType(LinearCSType object)
-	{
+	public T caseLinearCSType(LinearCSType object) {
 		return null;
 	}
 
@@ -6127,8 +5579,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLinearRingPropertyType(LinearRingPropertyType object)
-	{
+	public T caseLinearRingPropertyType(LinearRingPropertyType object) {
 		return null;
 	}
 
@@ -6143,8 +5594,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLinearRingType(LinearRingType object)
-	{
+	public T caseLinearRingType(LinearRingType object) {
 		return null;
 	}
 
@@ -6159,8 +5609,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLineStringSegmentArrayPropertyType(LineStringSegmentArrayPropertyType object)
-	{
+	public T caseLineStringSegmentArrayPropertyType(LineStringSegmentArrayPropertyType object) {
 		return null;
 	}
 
@@ -6175,8 +5624,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLineStringSegmentType(LineStringSegmentType object)
-	{
+	public T caseLineStringSegmentType(LineStringSegmentType object) {
 		return null;
 	}
 
@@ -6191,8 +5639,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLineStringType(LineStringType object)
-	{
+	public T caseLineStringType(LineStringType object) {
 		return null;
 	}
 
@@ -6207,8 +5654,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLocationPropertyType(LocationPropertyType object)
-	{
+	public T caseLocationPropertyType(LocationPropertyType object) {
 		return null;
 	}
 
@@ -6223,8 +5669,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMappingRuleType(MappingRuleType object)
-	{
+	public T caseMappingRuleType(MappingRuleType object) {
 		return null;
 	}
 
@@ -6239,8 +5684,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMeasureListType(MeasureListType object)
-	{
+	public T caseMeasureListType(MeasureListType object) {
 		return null;
 	}
 
@@ -6255,8 +5699,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMeasureOrNilReasonListType(MeasureOrNilReasonListType object)
-	{
+	public T caseMeasureOrNilReasonListType(MeasureOrNilReasonListType object) {
 		return null;
 	}
 
@@ -6271,8 +5714,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMeasureType(MeasureType object)
-	{
+	public T caseMeasureType(MeasureType object) {
 		return null;
 	}
 
@@ -6287,8 +5729,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMetaDataPropertyType(MetaDataPropertyType object)
-	{
+	public T caseMetaDataPropertyType(MetaDataPropertyType object) {
 		return null;
 	}
 
@@ -6303,8 +5744,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMovingObjectStatusType(MovingObjectStatusType object)
-	{
+	public T caseMovingObjectStatusType(MovingObjectStatusType object) {
 		return null;
 	}
 
@@ -6319,8 +5759,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiCurvePropertyType(MultiCurvePropertyType object)
-	{
+	public T caseMultiCurvePropertyType(MultiCurvePropertyType object) {
 		return null;
 	}
 
@@ -6335,8 +5774,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiCurveType(MultiCurveType object)
-	{
+	public T caseMultiCurveType(MultiCurveType object) {
 		return null;
 	}
 
@@ -6351,8 +5789,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiGeometryPropertyType(MultiGeometryPropertyType object)
-	{
+	public T caseMultiGeometryPropertyType(MultiGeometryPropertyType object) {
 		return null;
 	}
 
@@ -6367,8 +5804,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiGeometryType(MultiGeometryType object)
-	{
+	public T caseMultiGeometryType(MultiGeometryType object) {
 		return null;
 	}
 
@@ -6383,8 +5819,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiPointPropertyType(MultiPointPropertyType object)
-	{
+	public T caseMultiPointPropertyType(MultiPointPropertyType object) {
 		return null;
 	}
 
@@ -6399,8 +5834,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiPointType(MultiPointType object)
-	{
+	public T caseMultiPointType(MultiPointType object) {
 		return null;
 	}
 
@@ -6415,8 +5849,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiSolidPropertyType(MultiSolidPropertyType object)
-	{
+	public T caseMultiSolidPropertyType(MultiSolidPropertyType object) {
 		return null;
 	}
 
@@ -6431,8 +5864,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiSolidType(MultiSolidType object)
-	{
+	public T caseMultiSolidType(MultiSolidType object) {
 		return null;
 	}
 
@@ -6447,8 +5879,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiSurfacePropertyType(MultiSurfacePropertyType object)
-	{
+	public T caseMultiSurfacePropertyType(MultiSurfacePropertyType object) {
 		return null;
 	}
 
@@ -6463,8 +5894,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMultiSurfaceType(MultiSurfaceType object)
-	{
+	public T caseMultiSurfaceType(MultiSurfaceType object) {
 		return null;
 	}
 
@@ -6479,8 +5909,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNodeOrEdgePropertyType(NodeOrEdgePropertyType object)
-	{
+	public T caseNodeOrEdgePropertyType(NodeOrEdgePropertyType object) {
 		return null;
 	}
 
@@ -6495,8 +5924,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNodePropertyType(NodePropertyType object)
-	{
+	public T caseNodePropertyType(NodePropertyType object) {
 		return null;
 	}
 
@@ -6511,8 +5939,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNodeType(NodeType object)
-	{
+	public T caseNodeType(NodeType object) {
 		return null;
 	}
 
@@ -6527,8 +5954,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObliqueCartesianCSPropertyType(ObliqueCartesianCSPropertyType object)
-	{
+	public T caseObliqueCartesianCSPropertyType(ObliqueCartesianCSPropertyType object) {
 		return null;
 	}
 
@@ -6543,8 +5969,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObliqueCartesianCSType(ObliqueCartesianCSType object)
-	{
+	public T caseObliqueCartesianCSType(ObliqueCartesianCSType object) {
 		return null;
 	}
 
@@ -6559,8 +5984,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObservationType(ObservationType object)
-	{
+	public T caseObservationType(ObservationType object) {
 		return null;
 	}
 
@@ -6575,8 +5999,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOffsetCurveType(OffsetCurveType object)
-	{
+	public T caseOffsetCurveType(OffsetCurveType object) {
 		return null;
 	}
 
@@ -6591,8 +6014,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOperationMethodPropertyType(OperationMethodPropertyType object)
-	{
+	public T caseOperationMethodPropertyType(OperationMethodPropertyType object) {
 		return null;
 	}
 
@@ -6607,8 +6029,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOperationMethodType(OperationMethodType object)
-	{
+	public T caseOperationMethodType(OperationMethodType object) {
 		return null;
 	}
 
@@ -6623,8 +6044,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOperationParameterGroupPropertyType(OperationParameterGroupPropertyType object)
-	{
+	public T caseOperationParameterGroupPropertyType(OperationParameterGroupPropertyType object) {
 		return null;
 	}
 
@@ -6639,8 +6059,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOperationParameterGroupType(OperationParameterGroupType object)
-	{
+	public T caseOperationParameterGroupType(OperationParameterGroupType object) {
 		return null;
 	}
 
@@ -6655,8 +6074,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOperationParameterPropertyType(OperationParameterPropertyType object)
-	{
+	public T caseOperationParameterPropertyType(OperationParameterPropertyType object) {
 		return null;
 	}
 
@@ -6671,8 +6089,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOperationParameterType(OperationParameterType object)
-	{
+	public T caseOperationParameterType(OperationParameterType object) {
 		return null;
 	}
 
@@ -6687,8 +6104,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOperationPropertyType(OperationPropertyType object)
-	{
+	public T caseOperationPropertyType(OperationPropertyType object) {
 		return null;
 	}
 
@@ -6703,8 +6119,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOrientableCurveType(OrientableCurveType object)
-	{
+	public T caseOrientableCurveType(OrientableCurveType object) {
 		return null;
 	}
 
@@ -6719,8 +6134,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOrientableSurfaceType(OrientableSurfaceType object)
-	{
+	public T caseOrientableSurfaceType(OrientableSurfaceType object) {
 		return null;
 	}
 
@@ -6735,8 +6149,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParameterValueGroupType(ParameterValueGroupType object)
-	{
+	public T caseParameterValueGroupType(ParameterValueGroupType object) {
 		return null;
 	}
 
@@ -6751,8 +6164,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParameterValueType(ParameterValueType object)
-	{
+	public T caseParameterValueType(ParameterValueType object) {
 		return null;
 	}
 
@@ -6767,8 +6179,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePassThroughOperationPropertyType(PassThroughOperationPropertyType object)
-	{
+	public T casePassThroughOperationPropertyType(PassThroughOperationPropertyType object) {
 		return null;
 	}
 
@@ -6783,8 +6194,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePassThroughOperationType(PassThroughOperationType object)
-	{
+	public T casePassThroughOperationType(PassThroughOperationType object) {
 		return null;
 	}
 
@@ -6799,8 +6209,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePointArrayPropertyType(PointArrayPropertyType object)
-	{
+	public T casePointArrayPropertyType(PointArrayPropertyType object) {
 		return null;
 	}
 
@@ -6815,8 +6224,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePointPropertyType(PointPropertyType object)
-	{
+	public T casePointPropertyType(PointPropertyType object) {
 		return null;
 	}
 
@@ -6831,8 +6239,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePointType(PointType object)
-	{
+	public T casePointType(PointType object) {
 		return null;
 	}
 
@@ -6847,8 +6254,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePolarCSPropertyType(PolarCSPropertyType object)
-	{
+	public T casePolarCSPropertyType(PolarCSPropertyType object) {
 		return null;
 	}
 
@@ -6863,8 +6269,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePolarCSType(PolarCSType object)
-	{
+	public T casePolarCSType(PolarCSType object) {
 		return null;
 	}
 
@@ -6879,8 +6284,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePolygonPatchType(PolygonPatchType object)
-	{
+	public T casePolygonPatchType(PolygonPatchType object) {
 		return null;
 	}
 
@@ -6895,8 +6299,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePolygonType(PolygonType object)
-	{
+	public T casePolygonType(PolygonType object) {
 		return null;
 	}
 
@@ -6911,8 +6314,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePrimeMeridianPropertyType(PrimeMeridianPropertyType object)
-	{
+	public T casePrimeMeridianPropertyType(PrimeMeridianPropertyType object) {
 		return null;
 	}
 
@@ -6927,8 +6329,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePrimeMeridianType(PrimeMeridianType object)
-	{
+	public T casePrimeMeridianType(PrimeMeridianType object) {
 		return null;
 	}
 
@@ -6943,8 +6344,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePriorityLocationPropertyType(PriorityLocationPropertyType object)
-	{
+	public T casePriorityLocationPropertyType(PriorityLocationPropertyType object) {
 		return null;
 	}
 
@@ -6959,8 +6359,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProcedurePropertyType(ProcedurePropertyType object)
-	{
+	public T caseProcedurePropertyType(ProcedurePropertyType object) {
 		return null;
 	}
 
@@ -6975,8 +6374,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProjectedCRSPropertyType(ProjectedCRSPropertyType object)
-	{
+	public T caseProjectedCRSPropertyType(ProjectedCRSPropertyType object) {
 		return null;
 	}
 
@@ -6991,8 +6389,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProjectedCRSType(ProjectedCRSType object)
-	{
+	public T caseProjectedCRSType(ProjectedCRSType object) {
 		return null;
 	}
 
@@ -7007,8 +6404,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseQuantityExtentType(QuantityExtentType object)
-	{
+	public T caseQuantityExtentType(QuantityExtentType object) {
 		return null;
 	}
 
@@ -7023,8 +6419,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseQuantityPropertyType(QuantityPropertyType object)
-	{
+	public T caseQuantityPropertyType(QuantityPropertyType object) {
 		return null;
 	}
 
@@ -7039,8 +6434,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseQuantityType(QuantityType object)
-	{
+	public T caseQuantityType(QuantityType object) {
 		return null;
 	}
 
@@ -7055,8 +6449,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRangeSetType(RangeSetType object)
-	{
+	public T caseRangeSetType(RangeSetType object) {
 		return null;
 	}
 
@@ -7071,8 +6464,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRectangleType(RectangleType object)
-	{
+	public T caseRectangleType(RectangleType object) {
 		return null;
 	}
 
@@ -7087,8 +6479,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRectifiedGridType(RectifiedGridType object)
-	{
+	public T caseRectifiedGridType(RectifiedGridType object) {
 		return null;
 	}
 
@@ -7103,8 +6494,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseReferenceType(ReferenceType object)
-	{
+	public T caseReferenceType(ReferenceType object) {
 		return null;
 	}
 
@@ -7119,8 +6509,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRefLocationType(RefLocationType object)
-	{
+	public T caseRefLocationType(RefLocationType object) {
 		return null;
 	}
 
@@ -7135,8 +6524,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRelatedTimeType(RelatedTimeType object)
-	{
+	public T caseRelatedTimeType(RelatedTimeType object) {
 		return null;
 	}
 
@@ -7151,8 +6539,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseResultType(ResultType object)
-	{
+	public T caseResultType(ResultType object) {
 		return null;
 	}
 
@@ -7167,8 +6554,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRingPropertyType(RingPropertyType object)
-	{
+	public T caseRingPropertyType(RingPropertyType object) {
 		return null;
 	}
 
@@ -7183,8 +6569,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRingType(RingType object)
-	{
+	public T caseRingType(RingType object) {
 		return null;
 	}
 
@@ -7199,8 +6584,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRowsType(RowsType object)
-	{
+	public T caseRowsType(RowsType object) {
 		return null;
 	}
 
@@ -7215,8 +6599,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRowType(RowType object)
-	{
+	public T caseRowType(RowType object) {
 		return null;
 	}
 
@@ -7231,8 +6614,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseScaleType(ScaleType object)
-	{
+	public T caseScaleType(ScaleType object) {
 		return null;
 	}
 
@@ -7247,8 +6629,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSecondDefiningParameterType(SecondDefiningParameterType object)
-	{
+	public T caseSecondDefiningParameterType(SecondDefiningParameterType object) {
 		return null;
 	}
 
@@ -7263,8 +6644,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSecondDefiningParameterType1(SecondDefiningParameterType1 object)
-	{
+	public T caseSecondDefiningParameterType1(SecondDefiningParameterType1 object) {
 		return null;
 	}
 
@@ -7279,8 +6659,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSequenceRuleType(SequenceRuleType object)
-	{
+	public T caseSequenceRuleType(SequenceRuleType object) {
 		return null;
 	}
 
@@ -7295,8 +6674,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseShellPropertyType(ShellPropertyType object)
-	{
+	public T caseShellPropertyType(ShellPropertyType object) {
 		return null;
 	}
 
@@ -7311,8 +6689,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseShellType(ShellType object)
-	{
+	public T caseShellType(ShellType object) {
 		return null;
 	}
 
@@ -7327,8 +6704,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSingleCRSPropertyType(SingleCRSPropertyType object)
-	{
+	public T caseSingleCRSPropertyType(SingleCRSPropertyType object) {
 		return null;
 	}
 
@@ -7343,8 +6719,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSingleOperationPropertyType(SingleOperationPropertyType object)
-	{
+	public T caseSingleOperationPropertyType(SingleOperationPropertyType object) {
 		return null;
 	}
 
@@ -7359,8 +6734,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSolidArrayPropertyType(SolidArrayPropertyType object)
-	{
+	public T caseSolidArrayPropertyType(SolidArrayPropertyType object) {
 		return null;
 	}
 
@@ -7375,8 +6749,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSolidPropertyType(SolidPropertyType object)
-	{
+	public T caseSolidPropertyType(SolidPropertyType object) {
 		return null;
 	}
 
@@ -7391,8 +6764,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSolidType(SolidType object)
-	{
+	public T caseSolidType(SolidType object) {
 		return null;
 	}
 
@@ -7407,8 +6779,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSpeedType(SpeedType object)
-	{
+	public T caseSpeedType(SpeedType object) {
 		return null;
 	}
 
@@ -7423,8 +6794,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSphereType(SphereType object)
-	{
+	public T caseSphereType(SphereType object) {
 		return null;
 	}
 
@@ -7439,8 +6809,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSphericalCSPropertyType(SphericalCSPropertyType object)
-	{
+	public T caseSphericalCSPropertyType(SphericalCSPropertyType object) {
 		return null;
 	}
 
@@ -7455,8 +6824,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSphericalCSType(SphericalCSType object)
-	{
+	public T caseSphericalCSType(SphericalCSType object) {
 		return null;
 	}
 
@@ -7471,8 +6839,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseStringOrRefType(StringOrRefType object)
-	{
+	public T caseStringOrRefType(StringOrRefType object) {
 		return null;
 	}
 
@@ -7487,8 +6854,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSurfaceArrayPropertyType(SurfaceArrayPropertyType object)
-	{
+	public T caseSurfaceArrayPropertyType(SurfaceArrayPropertyType object) {
 		return null;
 	}
 
@@ -7503,8 +6869,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSurfacePatchArrayPropertyType(SurfacePatchArrayPropertyType object)
-	{
+	public T caseSurfacePatchArrayPropertyType(SurfacePatchArrayPropertyType object) {
 		return null;
 	}
 
@@ -7519,8 +6884,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSurfacePropertyType(SurfacePropertyType object)
-	{
+	public T caseSurfacePropertyType(SurfacePropertyType object) {
 		return null;
 	}
 
@@ -7535,8 +6899,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSurfaceType(SurfaceType object)
-	{
+	public T caseSurfaceType(SurfaceType object) {
 		return null;
 	}
 
@@ -7551,8 +6914,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTargetPropertyType(TargetPropertyType object)
-	{
+	public T caseTargetPropertyType(TargetPropertyType object) {
 		return null;
 	}
 
@@ -7567,8 +6929,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTemporalCRSPropertyType(TemporalCRSPropertyType object)
-	{
+	public T caseTemporalCRSPropertyType(TemporalCRSPropertyType object) {
 		return null;
 	}
 
@@ -7583,8 +6944,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTemporalCRSType(TemporalCRSType object)
-	{
+	public T caseTemporalCRSType(TemporalCRSType object) {
 		return null;
 	}
 
@@ -7599,8 +6959,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTemporalCSPropertyType(TemporalCSPropertyType object)
-	{
+	public T caseTemporalCSPropertyType(TemporalCSPropertyType object) {
 		return null;
 	}
 
@@ -7615,8 +6974,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTemporalCSType(TemporalCSType object)
-	{
+	public T caseTemporalCSType(TemporalCSType object) {
 		return null;
 	}
 
@@ -7631,8 +6989,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTemporalDatumBaseType(TemporalDatumBaseType object)
-	{
+	public T caseTemporalDatumBaseType(TemporalDatumBaseType object) {
 		return null;
 	}
 
@@ -7647,8 +7004,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTemporalDatumPropertyType(TemporalDatumPropertyType object)
-	{
+	public T caseTemporalDatumPropertyType(TemporalDatumPropertyType object) {
 		return null;
 	}
 
@@ -7663,8 +7019,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTemporalDatumType(TemporalDatumType object)
-	{
+	public T caseTemporalDatumType(TemporalDatumType object) {
 		return null;
 	}
 
@@ -7679,8 +7034,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeCalendarEraPropertyType(TimeCalendarEraPropertyType object)
-	{
+	public T caseTimeCalendarEraPropertyType(TimeCalendarEraPropertyType object) {
 		return null;
 	}
 
@@ -7695,8 +7049,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeCalendarEraType(TimeCalendarEraType object)
-	{
+	public T caseTimeCalendarEraType(TimeCalendarEraType object) {
 		return null;
 	}
 
@@ -7711,8 +7064,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeCalendarPropertyType(TimeCalendarPropertyType object)
-	{
+	public T caseTimeCalendarPropertyType(TimeCalendarPropertyType object) {
 		return null;
 	}
 
@@ -7727,8 +7079,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeCalendarType(TimeCalendarType object)
-	{
+	public T caseTimeCalendarType(TimeCalendarType object) {
 		return null;
 	}
 
@@ -7743,8 +7094,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeClockPropertyType(TimeClockPropertyType object)
-	{
+	public T caseTimeClockPropertyType(TimeClockPropertyType object) {
 		return null;
 	}
 
@@ -7759,8 +7109,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeClockType(TimeClockType object)
-	{
+	public T caseTimeClockType(TimeClockType object) {
 		return null;
 	}
 
@@ -7775,8 +7124,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeCoordinateSystemType(TimeCoordinateSystemType object)
-	{
+	public T caseTimeCoordinateSystemType(TimeCoordinateSystemType object) {
 		return null;
 	}
 
@@ -7791,8 +7139,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeCSPropertyType(TimeCSPropertyType object)
-	{
+	public T caseTimeCSPropertyType(TimeCSPropertyType object) {
 		return null;
 	}
 
@@ -7807,8 +7154,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeCSType(TimeCSType object)
-	{
+	public T caseTimeCSType(TimeCSType object) {
 		return null;
 	}
 
@@ -7823,8 +7169,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeEdgePropertyType(TimeEdgePropertyType object)
-	{
+	public T caseTimeEdgePropertyType(TimeEdgePropertyType object) {
 		return null;
 	}
 
@@ -7839,8 +7184,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeEdgeType(TimeEdgeType object)
-	{
+	public T caseTimeEdgeType(TimeEdgeType object) {
 		return null;
 	}
 
@@ -7855,8 +7199,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeInstantPropertyType(TimeInstantPropertyType object)
-	{
+	public T caseTimeInstantPropertyType(TimeInstantPropertyType object) {
 		return null;
 	}
 
@@ -7871,8 +7214,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeInstantType(TimeInstantType object)
-	{
+	public T caseTimeInstantType(TimeInstantType object) {
 		return null;
 	}
 
@@ -7887,8 +7229,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeIntervalLengthType(TimeIntervalLengthType object)
-	{
+	public T caseTimeIntervalLengthType(TimeIntervalLengthType object) {
 		return null;
 	}
 
@@ -7903,8 +7244,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeNodePropertyType(TimeNodePropertyType object)
-	{
+	public T caseTimeNodePropertyType(TimeNodePropertyType object) {
 		return null;
 	}
 
@@ -7919,8 +7259,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeNodeType(TimeNodeType object)
-	{
+	public T caseTimeNodeType(TimeNodeType object) {
 		return null;
 	}
 
@@ -7935,8 +7274,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeOrdinalEraPropertyType(TimeOrdinalEraPropertyType object)
-	{
+	public T caseTimeOrdinalEraPropertyType(TimeOrdinalEraPropertyType object) {
 		return null;
 	}
 
@@ -7951,8 +7289,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeOrdinalEraType(TimeOrdinalEraType object)
-	{
+	public T caseTimeOrdinalEraType(TimeOrdinalEraType object) {
 		return null;
 	}
 
@@ -7967,8 +7304,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeOrdinalReferenceSystemType(TimeOrdinalReferenceSystemType object)
-	{
+	public T caseTimeOrdinalReferenceSystemType(TimeOrdinalReferenceSystemType object) {
 		return null;
 	}
 
@@ -7983,8 +7319,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimePeriodPropertyType(TimePeriodPropertyType object)
-	{
+	public T caseTimePeriodPropertyType(TimePeriodPropertyType object) {
 		return null;
 	}
 
@@ -7999,8 +7334,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimePeriodType(TimePeriodType object)
-	{
+	public T caseTimePeriodType(TimePeriodType object) {
 		return null;
 	}
 
@@ -8015,8 +7349,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimePositionType(TimePositionType object)
-	{
+	public T caseTimePositionType(TimePositionType object) {
 		return null;
 	}
 
@@ -8031,8 +7364,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimePrimitivePropertyType(TimePrimitivePropertyType object)
-	{
+	public T caseTimePrimitivePropertyType(TimePrimitivePropertyType object) {
 		return null;
 	}
 
@@ -8047,8 +7379,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeReferenceSystemType(TimeReferenceSystemType object)
-	{
+	public T caseTimeReferenceSystemType(TimeReferenceSystemType object) {
 		return null;
 	}
 
@@ -8063,8 +7394,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeTopologyComplexPropertyType(TimeTopologyComplexPropertyType object)
-	{
+	public T caseTimeTopologyComplexPropertyType(TimeTopologyComplexPropertyType object) {
 		return null;
 	}
 
@@ -8079,8 +7409,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeTopologyComplexType(TimeTopologyComplexType object)
-	{
+	public T caseTimeTopologyComplexType(TimeTopologyComplexType object) {
 		return null;
 	}
 
@@ -8095,8 +7424,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeTopologyPrimitivePropertyType(TimeTopologyPrimitivePropertyType object)
-	{
+	public T caseTimeTopologyPrimitivePropertyType(TimeTopologyPrimitivePropertyType object) {
 		return null;
 	}
 
@@ -8111,8 +7439,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTimeType(TimeType object)
-	{
+	public T caseTimeType(TimeType object) {
 		return null;
 	}
 
@@ -8127,8 +7454,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTinType(TinType object)
-	{
+	public T caseTinType(TinType object) {
 		return null;
 	}
 
@@ -8143,8 +7469,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoComplexPropertyType(TopoComplexPropertyType object)
-	{
+	public T caseTopoComplexPropertyType(TopoComplexPropertyType object) {
 		return null;
 	}
 
@@ -8159,8 +7484,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoComplexType(TopoComplexType object)
-	{
+	public T caseTopoComplexType(TopoComplexType object) {
 		return null;
 	}
 
@@ -8175,8 +7499,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoCurvePropertyType(TopoCurvePropertyType object)
-	{
+	public T caseTopoCurvePropertyType(TopoCurvePropertyType object) {
 		return null;
 	}
 
@@ -8191,8 +7514,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoCurveType(TopoCurveType object)
-	{
+	public T caseTopoCurveType(TopoCurveType object) {
 		return null;
 	}
 
@@ -8207,8 +7529,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoPointPropertyType(TopoPointPropertyType object)
-	{
+	public T caseTopoPointPropertyType(TopoPointPropertyType object) {
 		return null;
 	}
 
@@ -8223,8 +7544,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoPointType(TopoPointType object)
-	{
+	public T caseTopoPointType(TopoPointType object) {
 		return null;
 	}
 
@@ -8239,8 +7559,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoPrimitiveArrayAssociationType(TopoPrimitiveArrayAssociationType object)
-	{
+	public T caseTopoPrimitiveArrayAssociationType(TopoPrimitiveArrayAssociationType object) {
 		return null;
 	}
 
@@ -8255,8 +7574,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoPrimitiveMemberType(TopoPrimitiveMemberType object)
-	{
+	public T caseTopoPrimitiveMemberType(TopoPrimitiveMemberType object) {
 		return null;
 	}
 
@@ -8271,8 +7589,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoSolidPropertyType(TopoSolidPropertyType object)
-	{
+	public T caseTopoSolidPropertyType(TopoSolidPropertyType object) {
 		return null;
 	}
 
@@ -8287,8 +7604,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoSolidType(TopoSolidType object)
-	{
+	public T caseTopoSolidType(TopoSolidType object) {
 		return null;
 	}
 
@@ -8303,8 +7619,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoSurfacePropertyType(TopoSurfacePropertyType object)
-	{
+	public T caseTopoSurfacePropertyType(TopoSurfacePropertyType object) {
 		return null;
 	}
 
@@ -8319,8 +7634,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoSurfaceType(TopoSurfaceType object)
-	{
+	public T caseTopoSurfaceType(TopoSurfaceType object) {
 		return null;
 	}
 
@@ -8335,8 +7649,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoVolumePropertyType(TopoVolumePropertyType object)
-	{
+	public T caseTopoVolumePropertyType(TopoVolumePropertyType object) {
 		return null;
 	}
 
@@ -8351,8 +7664,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTopoVolumeType(TopoVolumeType object)
-	{
+	public T caseTopoVolumeType(TopoVolumeType object) {
 		return null;
 	}
 
@@ -8367,8 +7679,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTransformationPropertyType(TransformationPropertyType object)
-	{
+	public T caseTransformationPropertyType(TransformationPropertyType object) {
 		return null;
 	}
 
@@ -8383,8 +7694,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTransformationType(TransformationType object)
-	{
+	public T caseTransformationType(TransformationType object) {
 		return null;
 	}
 
@@ -8399,8 +7709,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTriangleType(TriangleType object)
-	{
+	public T caseTriangleType(TriangleType object) {
 		return null;
 	}
 
@@ -8415,8 +7724,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUnitDefinitionType(UnitDefinitionType object)
-	{
+	public T caseUnitDefinitionType(UnitDefinitionType object) {
 		return null;
 	}
 
@@ -8431,8 +7739,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUnitOfMeasureType(UnitOfMeasureType object)
-	{
+	public T caseUnitOfMeasureType(UnitOfMeasureType object) {
 		return null;
 	}
 
@@ -8447,8 +7754,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUserDefinedCSPropertyType(UserDefinedCSPropertyType object)
-	{
+	public T caseUserDefinedCSPropertyType(UserDefinedCSPropertyType object) {
 		return null;
 	}
 
@@ -8463,8 +7769,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUserDefinedCSType(UserDefinedCSType object)
-	{
+	public T caseUserDefinedCSType(UserDefinedCSType object) {
 		return null;
 	}
 
@@ -8479,8 +7784,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseValueArrayPropertyType(ValueArrayPropertyType object)
-	{
+	public T caseValueArrayPropertyType(ValueArrayPropertyType object) {
 		return null;
 	}
 
@@ -8495,8 +7799,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseValueArrayType(ValueArrayType object)
-	{
+	public T caseValueArrayType(ValueArrayType object) {
 		return null;
 	}
 
@@ -8511,8 +7814,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseValuePropertyType(ValuePropertyType object)
-	{
+	public T caseValuePropertyType(ValuePropertyType object) {
 		return null;
 	}
 
@@ -8527,8 +7829,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVectorType(VectorType object)
-	{
+	public T caseVectorType(VectorType object) {
 		return null;
 	}
 
@@ -8543,8 +7844,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVerticalCRSPropertyType(VerticalCRSPropertyType object)
-	{
+	public T caseVerticalCRSPropertyType(VerticalCRSPropertyType object) {
 		return null;
 	}
 
@@ -8559,8 +7859,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVerticalCRSType(VerticalCRSType object)
-	{
+	public T caseVerticalCRSType(VerticalCRSType object) {
 		return null;
 	}
 
@@ -8575,8 +7874,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVerticalCSPropertyType(VerticalCSPropertyType object)
-	{
+	public T caseVerticalCSPropertyType(VerticalCSPropertyType object) {
 		return null;
 	}
 
@@ -8591,8 +7889,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVerticalCSType(VerticalCSType object)
-	{
+	public T caseVerticalCSType(VerticalCSType object) {
 		return null;
 	}
 
@@ -8607,8 +7904,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVerticalDatumPropertyType(VerticalDatumPropertyType object)
-	{
+	public T caseVerticalDatumPropertyType(VerticalDatumPropertyType object) {
 		return null;
 	}
 
@@ -8623,8 +7919,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVerticalDatumType(VerticalDatumType object)
-	{
+	public T caseVerticalDatumType(VerticalDatumType object) {
 		return null;
 	}
 
@@ -8639,8 +7934,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVolumeType(VolumeType object)
-	{
+	public T caseVolumeType(VolumeType object) {
 		return null;
 	}
 
@@ -8656,8 +7950,7 @@ public class GMLSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object)
-	{
+	public T defaultCase(EObject object) {
 		return null;
 	}
 

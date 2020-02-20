@@ -47,8 +47,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container implements UomAnglePropertyType
-{
+public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container implements UomAnglePropertyType {
 	/**
 	 * The cached value of the '{@link #getUnitDefinitionGroup() <em>Unit Definition Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -271,8 +270,7 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UomAnglePropertyTypeImpl()
-	{
+	protected UomAnglePropertyTypeImpl() {
 		super();
 	}
 
@@ -282,8 +280,7 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.UOM_ANGLE_PROPERTY_TYPE;
 	}
 
@@ -292,10 +289,9 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getUnitDefinitionGroup()
-	{
-		if (unitDefinitionGroup == null)
-		{
+	@Override
+	public FeatureMap getUnitDefinitionGroup() {
+		if (unitDefinitionGroup == null) {
 			unitDefinitionGroup = new BasicFeatureMap(this, GCOPackage.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION_GROUP);
 		}
 		return unitDefinitionGroup;
@@ -306,8 +302,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitDefinitionType getUnitDefinition()
-	{
+	@Override
+	public UnitDefinitionType getUnitDefinition() {
 		return (UnitDefinitionType)getUnitDefinitionGroup().get(GCOPackage.Literals.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION, true);
 	}
 
@@ -316,8 +312,7 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUnitDefinition(UnitDefinitionType newUnitDefinition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUnitDefinition(UnitDefinitionType newUnitDefinition, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getUnitDefinitionGroup()).basicAdd(GCOPackage.Literals.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION, newUnitDefinition, msgs);
 	}
 
@@ -326,8 +321,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUnitDefinition(UnitDefinitionType newUnitDefinition)
-	{
+	@Override
+	public void setUnitDefinition(UnitDefinitionType newUnitDefinition) {
 		((FeatureMap.Internal)getUnitDefinitionGroup()).set(GCOPackage.Literals.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION, newUnitDefinition);
 	}
 
@@ -336,8 +331,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -346,8 +341,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -361,8 +356,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -376,8 +371,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -386,8 +381,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -396,8 +391,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -409,8 +404,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -419,8 +414,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -432,8 +427,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -442,8 +437,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -455,8 +450,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -465,8 +460,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -478,8 +473,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -488,8 +483,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -503,8 +498,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -518,8 +513,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -528,8 +523,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -538,8 +533,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -551,8 +546,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -561,8 +556,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -576,8 +571,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -591,8 +586,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -601,8 +596,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUuidref()
-	{
+	@Override
+	public String getUuidref() {
 		return uuidref;
 	}
 
@@ -611,8 +606,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUuidref(String newUuidref)
-	{
+	@Override
+	public void setUuidref(String newUuidref) {
 		String oldUuidref = uuidref;
 		uuidref = newUuidref;
 		if (eNotificationRequired())
@@ -625,10 +620,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION_GROUP:
 				return ((InternalEList<?>)getUnitDefinitionGroup()).basicRemove(otherEnd, msgs);
 			case GCOPackage.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION:
@@ -643,10 +636,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION_GROUP:
 				if (coreType) return getUnitDefinitionGroup();
 				return ((FeatureMap.Internal)getUnitDefinitionGroup()).getWrapper();
@@ -680,10 +671,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION_GROUP:
 				((FeatureMap.Internal)getUnitDefinitionGroup()).set(newValue);
 				return;
@@ -727,10 +716,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION_GROUP:
 				getUnitDefinitionGroup().clear();
 				return;
@@ -774,10 +761,8 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION_GROUP:
 				return unitDefinitionGroup != null && !unitDefinitionGroup.isEmpty();
 			case GCOPackage.UOM_ANGLE_PROPERTY_TYPE__UNIT_DEFINITION:
@@ -810,11 +795,10 @@ public class UomAnglePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (unitDefinitionGroup: ");
 		result.append(unitDefinitionGroup);
 		result.append(", actuate: ");

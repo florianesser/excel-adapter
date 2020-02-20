@@ -44,8 +44,7 @@ import org.isotc211.iso19139.gmd.LISourcePropertyType;
  *
  * @generated
  */
-public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIProcessStepType
-{
+public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIProcessStepType {
 	/**
 	 * The cached value of the '{@link #getDescription() <em>Description</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -101,8 +100,7 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LIProcessStepTypeImpl()
-	{
+	protected LIProcessStepTypeImpl() {
 		super();
 	}
 
@@ -112,8 +110,7 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getLIProcessStepType();
 	}
 
@@ -122,8 +119,8 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getDescription() {
 		return description;
 	}
 
@@ -132,12 +129,10 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldDescription = description;
 		description = newDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.LI_PROCESS_STEP_TYPE__DESCRIPTION, oldDescription, newDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -149,10 +144,9 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescription(CharacterStringPropertyType newDescription)
-	{
-		if (newDescription != description)
-		{
+	@Override
+	public void setDescription(CharacterStringPropertyType newDescription) {
+		if (newDescription != description) {
 			NotificationChain msgs = null;
 			if (description != null)
 				msgs = ((InternalEObject)description).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.LI_PROCESS_STEP_TYPE__DESCRIPTION, null, msgs);
@@ -170,8 +164,8 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getRationale()
-	{
+	@Override
+	public CharacterStringPropertyType getRationale() {
 		return rationale;
 	}
 
@@ -180,12 +174,10 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRationale(CharacterStringPropertyType newRationale, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRationale(CharacterStringPropertyType newRationale, NotificationChain msgs) {
 		CharacterStringPropertyType oldRationale = rationale;
 		rationale = newRationale;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.LI_PROCESS_STEP_TYPE__RATIONALE, oldRationale, newRationale);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -197,10 +189,9 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRationale(CharacterStringPropertyType newRationale)
-	{
-		if (newRationale != rationale)
-		{
+	@Override
+	public void setRationale(CharacterStringPropertyType newRationale) {
+		if (newRationale != rationale) {
 			NotificationChain msgs = null;
 			if (rationale != null)
 				msgs = ((InternalEObject)rationale).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.LI_PROCESS_STEP_TYPE__RATIONALE, null, msgs);
@@ -218,8 +209,8 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DateTimePropertyType getDateTime()
-	{
+	@Override
+	public DateTimePropertyType getDateTime() {
 		return dateTime;
 	}
 
@@ -228,12 +219,10 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDateTime(DateTimePropertyType newDateTime, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDateTime(DateTimePropertyType newDateTime, NotificationChain msgs) {
 		DateTimePropertyType oldDateTime = dateTime;
 		dateTime = newDateTime;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.LI_PROCESS_STEP_TYPE__DATE_TIME, oldDateTime, newDateTime);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -245,10 +234,9 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDateTime(DateTimePropertyType newDateTime)
-	{
-		if (newDateTime != dateTime)
-		{
+	@Override
+	public void setDateTime(DateTimePropertyType newDateTime) {
+		if (newDateTime != dateTime) {
 			NotificationChain msgs = null;
 			if (dateTime != null)
 				msgs = ((InternalEObject)dateTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.LI_PROCESS_STEP_TYPE__DATE_TIME, null, msgs);
@@ -266,10 +254,9 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIResponsiblePartyPropertyType> getProcessor()
-	{
-		if (processor == null)
-		{
+	@Override
+	public EList<CIResponsiblePartyPropertyType> getProcessor() {
+		if (processor == null) {
 			processor = new EObjectContainmentEList<CIResponsiblePartyPropertyType>(CIResponsiblePartyPropertyType.class, this, GMDPackage.LI_PROCESS_STEP_TYPE__PROCESSOR);
 		}
 		return processor;
@@ -280,10 +267,9 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LISourcePropertyType> getSource()
-	{
-		if (source == null)
-		{
+	@Override
+	public EList<LISourcePropertyType> getSource() {
+		if (source == null) {
 			source = new EObjectContainmentEList<LISourcePropertyType>(LISourcePropertyType.class, this, GMDPackage.LI_PROCESS_STEP_TYPE__SOURCE);
 		}
 		return source;
@@ -295,10 +281,8 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.LI_PROCESS_STEP_TYPE__DESCRIPTION:
 				return basicSetDescription(null, msgs);
 			case GMDPackage.LI_PROCESS_STEP_TYPE__RATIONALE:
@@ -319,10 +303,8 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.LI_PROCESS_STEP_TYPE__DESCRIPTION:
 				return getDescription();
 			case GMDPackage.LI_PROCESS_STEP_TYPE__RATIONALE:
@@ -344,10 +326,8 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.LI_PROCESS_STEP_TYPE__DESCRIPTION:
 				setDescription((CharacterStringPropertyType)newValue);
 				return;
@@ -375,10 +355,8 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LI_PROCESS_STEP_TYPE__DESCRIPTION:
 				setDescription((CharacterStringPropertyType)null);
 				return;
@@ -404,10 +382,8 @@ public class LIProcessStepTypeImpl extends AbstractObjectTypeImpl implements LIP
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LI_PROCESS_STEP_TYPE__DESCRIPTION:
 				return description != null;
 			case GMDPackage.LI_PROCESS_STEP_TYPE__RATIONALE:

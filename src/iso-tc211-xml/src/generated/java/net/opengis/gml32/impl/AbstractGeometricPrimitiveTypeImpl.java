@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class AbstractGeometricPrimitiveTypeImpl extends AbstractGeometryTypeImpl implements AbstractGeometricPrimitiveType
-{
+public abstract class AbstractGeometricPrimitiveTypeImpl extends AbstractGeometryTypeImpl implements AbstractGeometricPrimitiveType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGeometricPrimitiveTypeImpl()
-	{
+	protected AbstractGeometricPrimitiveTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class AbstractGeometricPrimitiveTypeImpl extends AbstractGeometr
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGeometricPrimitiveType();
 	}
 

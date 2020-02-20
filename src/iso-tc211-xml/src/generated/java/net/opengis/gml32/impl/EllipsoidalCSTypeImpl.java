@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class EllipsoidalCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements EllipsoidalCSType
-{
+public class EllipsoidalCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements EllipsoidalCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EllipsoidalCSTypeImpl()
-	{
+	protected EllipsoidalCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class EllipsoidalCSTypeImpl extends AbstractCoordinateSystemTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getEllipsoidalCSType();
 	}
 

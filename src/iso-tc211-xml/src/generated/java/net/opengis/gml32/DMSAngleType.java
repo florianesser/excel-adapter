@@ -26,15 +26,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='DMSAngleType' kind='elementOnly'"
  * @generated
  */
-public interface DMSAngleType extends EObject
-{
+public interface DMSAngleType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Degrees</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Degrees</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Degrees</em>' containment reference.
 	 * @see #setDegrees(DegreesType)
@@ -58,10 +53,6 @@ public interface DMSAngleType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Decimal Minutes</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Decimal Minutes</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Decimal Minutes</em>' attribute.
 	 * @see #setDecimalMinutes(BigDecimal)
@@ -85,10 +76,6 @@ public interface DMSAngleType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Minutes</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Minutes</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Minutes</em>' attribute.
 	 * @see #setMinutes(BigInteger)
@@ -112,10 +99,6 @@ public interface DMSAngleType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Seconds</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Seconds</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Seconds</em>' attribute.
 	 * @see #setSeconds(BigDecimal)

@@ -22,15 +22,10 @@ import org.isotc211.iso19139.gco.DatePropertyType;
  * @model extendedMetaData="name='CI_Date_Type' kind='elementOnly'"
  * @generated
  */
-public interface CIDateType extends AbstractObjectType
-{
+public interface CIDateType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Date</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date</em>' containment reference.
 	 * @see #setDate(DatePropertyType)
@@ -54,10 +49,6 @@ public interface CIDateType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Date Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date Type</em>' containment reference.
 	 * @see #setDateType(CIDateTypeCodePropertyType)

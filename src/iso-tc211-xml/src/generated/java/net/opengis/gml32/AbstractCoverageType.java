@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *        extendedMetaData="name='AbstractCoverageType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractCoverageType extends AbstractFeatureType
-{
+public interface AbstractCoverageType extends AbstractFeatureType {
 	/**
 	 * Returns the value of the '<em><b>Domain Set Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.

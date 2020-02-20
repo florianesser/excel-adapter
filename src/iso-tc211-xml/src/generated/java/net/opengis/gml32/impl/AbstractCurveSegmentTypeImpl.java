@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Container implements AbstractCurveSegmentType
-{
+public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Container implements AbstractCurveSegmentType {
 	/**
 	 * The default value of the '{@link #getNumDerivativeInterior() <em>Num Derivative Interior</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -123,8 +122,7 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractCurveSegmentTypeImpl()
-	{
+	protected AbstractCurveSegmentTypeImpl() {
 		super();
 	}
 
@@ -134,8 +132,7 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractCurveSegmentType();
 	}
 
@@ -144,8 +141,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getNumDerivativeInterior()
-	{
+	@Override
+	public BigInteger getNumDerivativeInterior() {
 		return numDerivativeInterior;
 	}
 
@@ -154,8 +151,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNumDerivativeInterior(BigInteger newNumDerivativeInterior)
-	{
+	@Override
+	public void setNumDerivativeInterior(BigInteger newNumDerivativeInterior) {
 		BigInteger oldNumDerivativeInterior = numDerivativeInterior;
 		numDerivativeInterior = newNumDerivativeInterior;
 		boolean oldNumDerivativeInteriorESet = numDerivativeInteriorESet;
@@ -169,8 +166,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetNumDerivativeInterior()
-	{
+	@Override
+	public void unsetNumDerivativeInterior() {
 		BigInteger oldNumDerivativeInterior = numDerivativeInterior;
 		boolean oldNumDerivativeInteriorESet = numDerivativeInteriorESet;
 		numDerivativeInterior = NUM_DERIVATIVE_INTERIOR_EDEFAULT;
@@ -184,8 +181,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetNumDerivativeInterior()
-	{
+	@Override
+	public boolean isSetNumDerivativeInterior() {
 		return numDerivativeInteriorESet;
 	}
 
@@ -194,8 +191,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getNumDerivativesAtEnd()
-	{
+	@Override
+	public BigInteger getNumDerivativesAtEnd() {
 		return numDerivativesAtEnd;
 	}
 
@@ -204,8 +201,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNumDerivativesAtEnd(BigInteger newNumDerivativesAtEnd)
-	{
+	@Override
+	public void setNumDerivativesAtEnd(BigInteger newNumDerivativesAtEnd) {
 		BigInteger oldNumDerivativesAtEnd = numDerivativesAtEnd;
 		numDerivativesAtEnd = newNumDerivativesAtEnd;
 		boolean oldNumDerivativesAtEndESet = numDerivativesAtEndESet;
@@ -219,8 +216,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetNumDerivativesAtEnd()
-	{
+	@Override
+	public void unsetNumDerivativesAtEnd() {
 		BigInteger oldNumDerivativesAtEnd = numDerivativesAtEnd;
 		boolean oldNumDerivativesAtEndESet = numDerivativesAtEndESet;
 		numDerivativesAtEnd = NUM_DERIVATIVES_AT_END_EDEFAULT;
@@ -234,8 +231,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetNumDerivativesAtEnd()
-	{
+	@Override
+	public boolean isSetNumDerivativesAtEnd() {
 		return numDerivativesAtEndESet;
 	}
 
@@ -244,8 +241,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getNumDerivativesAtStart()
-	{
+	@Override
+	public BigInteger getNumDerivativesAtStart() {
 		return numDerivativesAtStart;
 	}
 
@@ -254,8 +251,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNumDerivativesAtStart(BigInteger newNumDerivativesAtStart)
-	{
+	@Override
+	public void setNumDerivativesAtStart(BigInteger newNumDerivativesAtStart) {
 		BigInteger oldNumDerivativesAtStart = numDerivativesAtStart;
 		numDerivativesAtStart = newNumDerivativesAtStart;
 		boolean oldNumDerivativesAtStartESet = numDerivativesAtStartESet;
@@ -269,8 +266,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetNumDerivativesAtStart()
-	{
+	@Override
+	public void unsetNumDerivativesAtStart() {
 		BigInteger oldNumDerivativesAtStart = numDerivativesAtStart;
 		boolean oldNumDerivativesAtStartESet = numDerivativesAtStartESet;
 		numDerivativesAtStart = NUM_DERIVATIVES_AT_START_EDEFAULT;
@@ -284,8 +281,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetNumDerivativesAtStart()
-	{
+	@Override
+	public boolean isSetNumDerivativesAtStart() {
 		return numDerivativesAtStartESet;
 	}
 
@@ -295,10 +292,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_CURVE_SEGMENT_TYPE__NUM_DERIVATIVE_INTERIOR:
 				return getNumDerivativeInterior();
 			case GMLPackage.ABSTRACT_CURVE_SEGMENT_TYPE__NUM_DERIVATIVES_AT_END:
@@ -315,10 +310,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_CURVE_SEGMENT_TYPE__NUM_DERIVATIVE_INTERIOR:
 				setNumDerivativeInterior((BigInteger)newValue);
 				return;
@@ -338,10 +331,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_CURVE_SEGMENT_TYPE__NUM_DERIVATIVE_INTERIOR:
 				unsetNumDerivativeInterior();
 				return;
@@ -361,10 +352,8 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_CURVE_SEGMENT_TYPE__NUM_DERIVATIVE_INTERIOR:
 				return isSetNumDerivativeInterior();
 			case GMLPackage.ABSTRACT_CURVE_SEGMENT_TYPE__NUM_DERIVATIVES_AT_END:
@@ -381,11 +370,10 @@ public abstract class AbstractCurveSegmentTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (numDerivativeInterior: ");
 		if (numDerivativeInteriorESet) result.append(numDerivativeInterior); else result.append("<unset>");
 		result.append(", numDerivativesAtEnd: ");

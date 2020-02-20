@@ -34,8 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implements AbstractFeatureType
-{
+public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implements AbstractFeatureType {
 	/**
 	 * The cached value of the '{@link #getBoundedBy() <em>Bounded By</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -70,8 +69,7 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractFeatureTypeImpl()
-	{
+	protected AbstractFeatureTypeImpl() {
 		super();
 	}
 
@@ -81,8 +79,7 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractFeatureType();
 	}
 
@@ -91,8 +88,8 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BoundingShapeType getBoundedBy()
-	{
+	@Override
+	public BoundingShapeType getBoundedBy() {
 		return boundedBy;
 	}
 
@@ -101,14 +98,12 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBoundedBy(BoundingShapeType newBoundedBy, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBoundedBy(BoundingShapeType newBoundedBy, NotificationChain msgs) {
 		BoundingShapeType oldBoundedBy = boundedBy;
 		boundedBy = newBoundedBy;
 		boolean oldBoundedByESet = boundedByESet;
 		boundedByESet = true;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_FEATURE_TYPE__BOUNDED_BY, oldBoundedBy, newBoundedBy, !oldBoundedByESet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -120,10 +115,9 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBoundedBy(BoundingShapeType newBoundedBy)
-	{
-		if (newBoundedBy != boundedBy)
-		{
+	@Override
+	public void setBoundedBy(BoundingShapeType newBoundedBy) {
+		if (newBoundedBy != boundedBy) {
 			NotificationChain msgs = null;
 			if (boundedBy != null)
 				msgs = ((InternalEObject)boundedBy).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_FEATURE_TYPE__BOUNDED_BY, null, msgs);
@@ -132,8 +126,7 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 			msgs = basicSetBoundedBy(newBoundedBy, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
-		else
-		{
+		else {
 			boolean oldBoundedByESet = boundedByESet;
 			boundedByESet = true;
 			if (eNotificationRequired())
@@ -146,14 +139,12 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicUnsetBoundedBy(NotificationChain msgs)
-	{
+	public NotificationChain basicUnsetBoundedBy(NotificationChain msgs) {
 		BoundingShapeType oldBoundedBy = boundedBy;
 		boundedBy = null;
 		boolean oldBoundedByESet = boundedByESet;
 		boundedByESet = false;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.UNSET, GMLPackage.ABSTRACT_FEATURE_TYPE__BOUNDED_BY, oldBoundedBy, null, oldBoundedByESet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -165,17 +156,15 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetBoundedBy()
-	{
-		if (boundedBy != null)
-		{
+	@Override
+	public void unsetBoundedBy() {
+		if (boundedBy != null) {
 			NotificationChain msgs = null;
 			msgs = ((InternalEObject)boundedBy).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_FEATURE_TYPE__BOUNDED_BY, null, msgs);
 			msgs = basicUnsetBoundedBy(msgs);
 			if (msgs != null) msgs.dispatch();
 		}
-		else
-		{
+		else {
 			boolean oldBoundedByESet = boundedByESet;
 			boundedByESet = false;
 			if (eNotificationRequired())
@@ -188,8 +177,8 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetBoundedBy()
-	{
+	@Override
+	public boolean isSetBoundedBy() {
 		return boundedByESet;
 	}
 
@@ -198,10 +187,9 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getLocationGroup()
-	{
-		if (locationGroup == null)
-		{
+	@Override
+	public FeatureMap getLocationGroup() {
+		if (locationGroup == null) {
 			locationGroup = new BasicFeatureMap(this, GMLPackage.ABSTRACT_FEATURE_TYPE__LOCATION_GROUP);
 		}
 		return locationGroup;
@@ -212,8 +200,8 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LocationPropertyType getLocation()
-	{
+	@Override
+	public LocationPropertyType getLocation() {
 		return (LocationPropertyType)getLocationGroup().get(GMLPackage.eINSTANCE.getAbstractFeatureType_Location(), true);
 	}
 
@@ -222,8 +210,7 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocation(LocationPropertyType newLocation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocation(LocationPropertyType newLocation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getLocationGroup()).basicAdd(GMLPackage.eINSTANCE.getAbstractFeatureType_Location(), newLocation, msgs);
 	}
 
@@ -232,8 +219,8 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocation(LocationPropertyType newLocation)
-	{
+	@Override
+	public void setLocation(LocationPropertyType newLocation) {
 		((FeatureMap.Internal)getLocationGroup()).set(GMLPackage.eINSTANCE.getAbstractFeatureType_Location(), newLocation);
 	}
 
@@ -243,10 +230,8 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_TYPE__BOUNDED_BY:
 				return basicUnsetBoundedBy(msgs);
 			case GMLPackage.ABSTRACT_FEATURE_TYPE__LOCATION_GROUP:
@@ -263,10 +248,8 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_TYPE__BOUNDED_BY:
 				return getBoundedBy();
 			case GMLPackage.ABSTRACT_FEATURE_TYPE__LOCATION_GROUP:
@@ -284,10 +267,8 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_TYPE__BOUNDED_BY:
 				setBoundedBy((BoundingShapeType)newValue);
 				return;
@@ -307,10 +288,8 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_TYPE__BOUNDED_BY:
 				unsetBoundedBy();
 				return;
@@ -330,10 +309,8 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_TYPE__BOUNDED_BY:
 				return isSetBoundedBy();
 			case GMLPackage.ABSTRACT_FEATURE_TYPE__LOCATION_GROUP:
@@ -350,11 +327,10 @@ public abstract class AbstractFeatureTypeImpl extends AbstractGMLTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (locationGroup: ");
 		result.append(locationGroup);
 		result.append(')');

@@ -31,15 +31,10 @@ import org.isotc211.iso19139.gco.RealPropertyType;
  * @model extendedMetaData="name='MD_DigitalTransferOptions_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDDigitalTransferOptionsType extends AbstractObjectType
-{
+public interface MDDigitalTransferOptionsType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Units Of Distribution</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Units Of Distribution</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Units Of Distribution</em>' containment reference.
 	 * @see #setUnitsOfDistribution(CharacterStringPropertyType)
@@ -63,10 +58,6 @@ public interface MDDigitalTransferOptionsType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Transfer Size</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Transfer Size</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Transfer Size</em>' containment reference.
 	 * @see #setTransferSize(RealPropertyType)
@@ -91,10 +82,6 @@ public interface MDDigitalTransferOptionsType extends AbstractObjectType
 	 * Returns the value of the '<em><b>On Line</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIOnlineResourcePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>On Line</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>On Line</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDigitalTransferOptionsType_OnLine()
@@ -107,10 +94,6 @@ public interface MDDigitalTransferOptionsType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Off Line</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Off Line</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Off Line</em>' containment reference.
 	 * @see #setOffLine(MDMediumPropertyType)

@@ -17,6 +17,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='CodeWithAuthorityType' kind='simple'"
  * @generated
  */
-public interface CodeWithAuthorityType extends CodeType
-{
+public interface CodeWithAuthorityType extends CodeType {
 } // CodeWithAuthorityType

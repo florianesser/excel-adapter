@@ -16,15 +16,13 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public abstract class AbstractRingTypeImpl extends MinimalEObjectImpl.Container implements AbstractRingType
-{
+public abstract class AbstractRingTypeImpl extends MinimalEObjectImpl.Container implements AbstractRingType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractRingTypeImpl()
-	{
+	protected AbstractRingTypeImpl() {
 		super();
 	}
 
@@ -34,8 +32,7 @@ public abstract class AbstractRingTypeImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractRingType();
 	}
 

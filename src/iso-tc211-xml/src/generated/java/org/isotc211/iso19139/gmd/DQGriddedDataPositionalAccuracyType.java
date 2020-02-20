@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_GriddedDataPositionalAccuracy_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQGriddedDataPositionalAccuracyType extends AbstractDQPositionalAccuracyType
-{
+public interface DQGriddedDataPositionalAccuracyType extends AbstractDQPositionalAccuracyType {
 } // DQGriddedDataPositionalAccuracyType

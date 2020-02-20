@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTypeImpl implements TimeTopologyComplexType
-{
+public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTypeImpl implements TimeTopologyComplexType {
 	/**
 	 * The cached value of the '{@link #getPrimitive() <em>Primitive</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeTopologyComplexTypeImpl()
-	{
+	protected TimeTopologyComplexTypeImpl() {
 		super();
 	}
 
@@ -59,8 +57,7 @@ public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTyp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeTopologyComplexType();
 	}
 
@@ -69,10 +66,9 @@ public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TimeTopologyPrimitivePropertyType> getPrimitive()
-	{
-		if (primitive == null)
-		{
+	@Override
+	public EList<TimeTopologyPrimitivePropertyType> getPrimitive() {
+		if (primitive == null) {
 			primitive = new EObjectContainmentEList<TimeTopologyPrimitivePropertyType>(TimeTopologyPrimitivePropertyType.class, this, GMLPackage.TIME_TOPOLOGY_COMPLEX_TYPE__PRIMITIVE);
 		}
 		return primitive;
@@ -84,10 +80,8 @@ public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTyp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_TOPOLOGY_COMPLEX_TYPE__PRIMITIVE:
 				return ((InternalEList<?>)getPrimitive()).basicRemove(otherEnd, msgs);
 		}
@@ -100,10 +94,8 @@ public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTyp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_TOPOLOGY_COMPLEX_TYPE__PRIMITIVE:
 				return getPrimitive();
 		}
@@ -117,10 +109,8 @@ public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTyp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_TOPOLOGY_COMPLEX_TYPE__PRIMITIVE:
 				getPrimitive().clear();
 				getPrimitive().addAll((Collection<? extends TimeTopologyPrimitivePropertyType>)newValue);
@@ -135,10 +125,8 @@ public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTyp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_TOPOLOGY_COMPLEX_TYPE__PRIMITIVE:
 				getPrimitive().clear();
 				return;
@@ -152,10 +140,8 @@ public abstract class TimeTopologyComplexTypeImpl extends AbstractTimeComplexTyp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_TOPOLOGY_COMPLEX_TYPE__PRIMITIVE:
 				return primitive != null && !primitive.isEmpty();
 		}

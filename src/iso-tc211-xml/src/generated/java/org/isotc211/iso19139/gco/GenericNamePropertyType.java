@@ -26,16 +26,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='GenericName_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface GenericNamePropertyType extends EObject
-{
+public interface GenericNamePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Abstract Generic Name Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract Generic Name Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract Generic Name Group</em>' attribute list.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getGenericNamePropertyType_AbstractGenericNameGroup()
@@ -48,10 +43,6 @@ public interface GenericNamePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract Generic Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract Generic Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract Generic Name</em>' containment reference.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getGenericNamePropertyType_AbstractGenericName()
@@ -64,10 +55,6 @@ public interface GenericNamePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
-{
+public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType {
 	/**
 	 * The cached value of the '{@link #getSegments() <em>Segments</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CurveTypeImpl()
-	{
+	protected CurveTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCurveType();
 	}
 
@@ -65,8 +62,8 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveSegmentArrayPropertyType getSegments()
-	{
+	@Override
+	public CurveSegmentArrayPropertyType getSegments() {
 		return segments;
 	}
 
@@ -75,12 +72,10 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSegments(CurveSegmentArrayPropertyType newSegments, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSegments(CurveSegmentArrayPropertyType newSegments, NotificationChain msgs) {
 		CurveSegmentArrayPropertyType oldSegments = segments;
 		segments = newSegments;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CURVE_TYPE__SEGMENTS, oldSegments, newSegments);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSegments(CurveSegmentArrayPropertyType newSegments)
-	{
-		if (newSegments != segments)
-		{
+	@Override
+	public void setSegments(CurveSegmentArrayPropertyType newSegments) {
+		if (newSegments != segments) {
 			NotificationChain msgs = null;
 			if (segments != null)
 				msgs = ((InternalEObject)segments).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CURVE_TYPE__SEGMENTS, null, msgs);
@@ -114,10 +108,8 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.CURVE_TYPE__SEGMENTS:
 				return basicSetSegments(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CURVE_TYPE__SEGMENTS:
 				return getSegments();
 		}
@@ -146,10 +136,8 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CURVE_TYPE__SEGMENTS:
 				setSegments((CurveSegmentArrayPropertyType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CURVE_TYPE__SEGMENTS:
 				setSegments((CurveSegmentArrayPropertyType)null);
 				return;
@@ -180,10 +166,8 @@ public class CurveTypeImpl extends AbstractCurveTypeImpl implements CurveType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CURVE_TYPE__SEGMENTS:
 				return segments != null;
 		}

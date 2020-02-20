@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class FeatureCollectionTypeImpl extends AbstractFeatureCollectionTypeImpl implements FeatureCollectionType
-{
+public class FeatureCollectionTypeImpl extends AbstractFeatureCollectionTypeImpl implements FeatureCollectionType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FeatureCollectionTypeImpl()
-	{
+	protected FeatureCollectionTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class FeatureCollectionTypeImpl extends AbstractFeatureCollectionTypeImpl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getFeatureCollectionType();
 	}
 

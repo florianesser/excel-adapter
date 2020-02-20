@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='QuantityExtentType' kind='simple'"
  * @generated
  */
-public interface QuantityExtentType extends MeasureOrNilReasonListType
-{
+public interface QuantityExtentType extends MeasureOrNilReasonListType {
 } // QuantityExtentType

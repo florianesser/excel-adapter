@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public abstract class AbstractDQTemporalAccuracyTypeImpl extends AbstractDQElementTypeImpl implements AbstractDQTemporalAccuracyType
-{
+public abstract class AbstractDQTemporalAccuracyTypeImpl extends AbstractDQElementTypeImpl implements AbstractDQTemporalAccuracyType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractDQTemporalAccuracyTypeImpl()
-	{
+	protected AbstractDQTemporalAccuracyTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class AbstractDQTemporalAccuracyTypeImpl extends AbstractDQEleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractDQTemporalAccuracyType();
 	}
 

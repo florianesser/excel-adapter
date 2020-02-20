@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='OperationMethodType' kind='elementOnly'"
  * @generated
  */
-public interface OperationMethodType extends IdentifiedObjectType
-{
+public interface OperationMethodType extends IdentifiedObjectType {
 	/**
 	 * Returns the value of the '<em><b>Formula Citation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

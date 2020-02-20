@@ -495,8 +495,7 @@ import org.eclipse.emf.ecore.EReference;
  *        annotation="urn:x-ogc:specification:gml:schema-xsd:geometryBasic2d:3.2.1 appinfo='geometryBasic2d.xsd'"
  * @generated
  */
-public interface GSRPackage extends EPackage
-{
+public interface GSRPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -810,8 +809,7 @@ public interface GSRPackage extends EPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	interface Literals
-	{
+	interface Literals {
 		/**
 		 * The meta object literal for the '{@link org.isotc211.iso19139.gsr.impl.SCCRSPropertyTypeImpl <em>SCCRS Property Type</em>}' class.
 		 * <!-- begin-user-doc -->

@@ -21,15 +21,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='TimeEdgeType' kind='elementOnly'"
  * @generated
  */
-public interface TimeEdgeType extends AbstractTimeTopologyPrimitiveType
-{
+public interface TimeEdgeType extends AbstractTimeTopologyPrimitiveType {
 	/**
 	 * Returns the value of the '<em><b>Start</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Start</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Start</em>' containment reference.
 	 * @see #setStart(TimeNodePropertyType)
@@ -53,10 +48,6 @@ public interface TimeEdgeType extends AbstractTimeTopologyPrimitiveType
 	/**
 	 * Returns the value of the '<em><b>End</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>End</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>End</em>' containment reference.
 	 * @see #setEnd(TimeNodePropertyType)
@@ -80,10 +71,6 @@ public interface TimeEdgeType extends AbstractTimeTopologyPrimitiveType
 	/**
 	 * Returns the value of the '<em><b>Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extent</em>' containment reference.
 	 * @see #setExtent(TimePeriodPropertyType)

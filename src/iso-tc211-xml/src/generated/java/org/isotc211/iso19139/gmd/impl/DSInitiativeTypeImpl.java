@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSInitiativeTypeImpl extends AbstractDSAggregateTypeImpl implements DSInitiativeType
-{
+public class DSInitiativeTypeImpl extends AbstractDSAggregateTypeImpl implements DSInitiativeType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSInitiativeTypeImpl()
-	{
+	protected DSInitiativeTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DSInitiativeTypeImpl extends AbstractDSAggregateTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSInitiativeType();
 	}
 

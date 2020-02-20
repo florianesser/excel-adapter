@@ -16,15 +16,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public abstract class AbstractMDSpatialRepresentationTypeImpl extends AbstractObjectTypeImpl implements AbstractMDSpatialRepresentationType
-{
+public abstract class AbstractMDSpatialRepresentationTypeImpl extends AbstractObjectTypeImpl implements AbstractMDSpatialRepresentationType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractMDSpatialRepresentationTypeImpl()
-	{
+	protected AbstractMDSpatialRepresentationTypeImpl() {
 		super();
 	}
 
@@ -34,8 +32,7 @@ public abstract class AbstractMDSpatialRepresentationTypeImpl extends AbstractOb
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractMDSpatialRepresentationType();
 	}
 

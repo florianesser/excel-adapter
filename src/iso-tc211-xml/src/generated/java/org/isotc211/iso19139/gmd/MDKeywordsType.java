@@ -29,16 +29,11 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='MD_Keywords_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDKeywordsType extends AbstractObjectType
-{
+public interface MDKeywordsType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Keyword</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Keyword</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Keyword</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDKeywordsType_Keyword()
@@ -51,10 +46,6 @@ public interface MDKeywordsType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' containment reference.
 	 * @see #setType(MDKeywordTypeCodePropertyType)
@@ -78,10 +69,6 @@ public interface MDKeywordsType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Thesaurus Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Thesaurus Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Thesaurus Name</em>' containment reference.
 	 * @see #setThesaurusName(CICitationPropertyType)

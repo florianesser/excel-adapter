@@ -12,8 +12,7 @@ import org.eclipse.emf.ecore.EFactory;
  * @see org.isotc211.iso19139.gmd.GMDPackage
  * @generated
  */
-public interface GMDFactory extends EFactory
-{
+public interface GMDFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->

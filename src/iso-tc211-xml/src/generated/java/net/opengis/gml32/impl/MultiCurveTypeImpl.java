@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiCurveType
-{
+public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiCurveType {
 	/**
 	 * The cached value of the '{@link #getCurveMember() <em>Curve Member</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MultiCurveTypeImpl()
-	{
+	protected MultiCurveTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMultiCurveType();
 	}
 
@@ -84,10 +81,9 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CurvePropertyType> getCurveMember()
-	{
-		if (curveMember == null)
-		{
+	@Override
+	public EList<CurvePropertyType> getCurveMember() {
+		if (curveMember == null) {
 			curveMember = new EObjectContainmentEList<CurvePropertyType>(CurvePropertyType.class, this, GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBER);
 		}
 		return curveMember;
@@ -98,8 +94,8 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveArrayPropertyType getCurveMembers()
-	{
+	@Override
+	public CurveArrayPropertyType getCurveMembers() {
 		return curveMembers;
 	}
 
@@ -108,12 +104,10 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCurveMembers(CurveArrayPropertyType newCurveMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCurveMembers(CurveArrayPropertyType newCurveMembers, NotificationChain msgs) {
 		CurveArrayPropertyType oldCurveMembers = curveMembers;
 		curveMembers = newCurveMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBERS, oldCurveMembers, newCurveMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +119,9 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCurveMembers(CurveArrayPropertyType newCurveMembers)
-	{
-		if (newCurveMembers != curveMembers)
-		{
+	@Override
+	public void setCurveMembers(CurveArrayPropertyType newCurveMembers) {
+		if (newCurveMembers != curveMembers) {
 			NotificationChain msgs = null;
 			if (curveMembers != null)
 				msgs = ((InternalEObject)curveMembers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBERS, null, msgs);
@@ -147,10 +140,8 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBER:
 				return ((InternalEList<?>)getCurveMember()).basicRemove(otherEnd, msgs);
 			case GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBERS:
@@ -165,10 +156,8 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBER:
 				return getCurveMember();
 			case GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBERS:
@@ -184,10 +173,8 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBER:
 				getCurveMember().clear();
 				getCurveMember().addAll((Collection<? extends CurvePropertyType>)newValue);
@@ -205,10 +192,8 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBER:
 				getCurveMember().clear();
 				return;
@@ -225,10 +210,8 @@ public class MultiCurveTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBER:
 				return curveMember != null && !curveMember.isEmpty();
 			case GMLPackage.MULTI_CURVE_TYPE__CURVE_MEMBERS:

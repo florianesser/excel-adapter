@@ -22,26 +22,21 @@ import org.w3.xlink.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
-{
+public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static XLinkFactory init()
-	{
-		try
-		{
+	public static XLinkFactory init() {
+		try {
 			XLinkFactory theXLinkFactory = (XLinkFactory)EPackage.Registry.INSTANCE.getEFactory(XLinkPackage.eNS_URI);
-			if (theXLinkFactory != null)
-			{
+			if (theXLinkFactory != null) {
 				return theXLinkFactory;
 			}
 		}
-		catch (Exception exception)
-		{
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new XLinkFactoryImpl();
@@ -53,8 +48,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XLinkFactoryImpl()
-	{
+	public XLinkFactoryImpl() {
 		super();
 	}
 
@@ -64,10 +58,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass)
-	{
-		switch (eClass.getClassifierID())
-		{
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
 			case XLinkPackage.ARC_TYPE: return createArcType();
 			case XLinkPackage.EXTENDED: return createExtended();
 			case XLinkPackage.LOCATOR_TYPE: return createLocatorType();
@@ -86,10 +78,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * @generated
 	 */
 	@Override
-	public Object createFromString(EDataType eDataType, String initialValue)
-	{
-		switch (eDataType.getClassifierID())
-		{
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
 			case XLinkPackage.ACTUATE_TYPE:
 				return createActuateTypeFromString(eDataType, initialValue);
 			case XLinkPackage.SHOW_TYPE:
@@ -127,10 +117,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * @generated
 	 */
 	@Override
-	public String convertToString(EDataType eDataType, Object instanceValue)
-	{
-		switch (eDataType.getClassifierID())
-		{
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
 			case XLinkPackage.ACTUATE_TYPE:
 				return convertActuateTypeToString(eDataType, instanceValue);
 			case XLinkPackage.SHOW_TYPE:
@@ -167,8 +155,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArcType createArcType()
-	{
+	@Override
+	public ArcType createArcType() {
 		ArcTypeImpl arcType = new ArcTypeImpl();
 		return arcType;
 	}
@@ -178,8 +166,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Extended createExtended()
-	{
+	@Override
+	public Extended createExtended() {
 		ExtendedImpl extended = new ExtendedImpl();
 		return extended;
 	}
@@ -189,8 +177,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LocatorType createLocatorType()
-	{
+	@Override
+	public LocatorType createLocatorType() {
 		LocatorTypeImpl locatorType = new LocatorTypeImpl();
 		return locatorType;
 	}
@@ -200,8 +188,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResourceType createResourceType()
-	{
+	@Override
+	public ResourceType createResourceType() {
 		ResourceTypeImpl resourceType = new ResourceTypeImpl();
 		return resourceType;
 	}
@@ -211,8 +199,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Simple createSimple()
-	{
+	@Override
+	public Simple createSimple() {
 		SimpleImpl simple = new SimpleImpl();
 		return simple;
 	}
@@ -222,8 +210,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TitleEltType createTitleEltType()
-	{
+	@Override
+	public TitleEltType createTitleEltType() {
 		TitleEltTypeImpl titleEltType = new TitleEltTypeImpl();
 		return titleEltType;
 	}
@@ -233,8 +221,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DocumentRoot createDocumentRoot()
-	{
+	@Override
+	public DocumentRoot createDocumentRoot() {
 		DocumentRootImpl documentRoot = new DocumentRootImpl();
 		return documentRoot;
 	}
@@ -244,8 +232,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType createActuateTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public ActuateType createActuateTypeFromString(EDataType eDataType, String initialValue) {
 		ActuateType result = ActuateType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -256,8 +243,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertActuateTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertActuateTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -266,8 +252,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType createShowTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public ShowType createShowTypeFromString(EDataType eDataType, String initialValue) {
 		ShowType result = ShowType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -278,8 +263,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertShowTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertShowTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -288,8 +272,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType createTypeTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public TypeType createTypeTypeFromString(EDataType eDataType, String initialValue) {
 		TypeType result = TypeType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -300,8 +283,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTypeTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTypeTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -310,8 +292,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType createActuateTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public ActuateType createActuateTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createActuateTypeFromString(XLinkPackage.Literals.ACTUATE_TYPE, initialValue);
 	}
 
@@ -320,8 +301,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertActuateTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertActuateTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertActuateTypeToString(XLinkPackage.Literals.ACTUATE_TYPE, instanceValue);
 	}
 
@@ -330,8 +310,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createArcroleTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public String createArcroleTypeFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
 	}
 
@@ -340,8 +319,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertArcroleTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertArcroleTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 	}
 
@@ -350,8 +328,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createFromTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public String createFromTypeFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.NC_NAME, initialValue);
 	}
 
@@ -360,8 +337,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertFromTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertFromTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.NC_NAME, instanceValue);
 	}
 
@@ -370,8 +346,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createHrefTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public String createHrefTypeFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
 	}
 
@@ -380,8 +355,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertHrefTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertHrefTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 	}
 
@@ -390,8 +364,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createLabelTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public String createLabelTypeFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.NC_NAME, initialValue);
 	}
 
@@ -400,8 +373,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertLabelTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertLabelTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.NC_NAME, instanceValue);
 	}
 
@@ -410,8 +382,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createRoleTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public String createRoleTypeFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.ANY_URI, initialValue);
 	}
 
@@ -420,8 +391,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertRoleTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertRoleTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.ANY_URI, instanceValue);
 	}
 
@@ -430,8 +400,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType createShowTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public ShowType createShowTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createShowTypeFromString(XLinkPackage.Literals.SHOW_TYPE, initialValue);
 	}
 
@@ -440,8 +409,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertShowTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertShowTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertShowTypeToString(XLinkPackage.Literals.SHOW_TYPE, instanceValue);
 	}
 
@@ -450,8 +418,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createTitleAttrTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public String createTitleAttrTypeFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, initialValue);
 	}
 
@@ -460,8 +427,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTitleAttrTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTitleAttrTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
 	}
 
@@ -470,8 +436,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createToTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public String createToTypeFromString(EDataType eDataType, String initialValue) {
 		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.NC_NAME, initialValue);
 	}
 
@@ -480,8 +445,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertToTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertToTypeToString(EDataType eDataType, Object instanceValue) {
 		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.NC_NAME, instanceValue);
 	}
 
@@ -490,8 +454,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType createTypeTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public TypeType createTypeTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createTypeTypeFromString(XLinkPackage.Literals.TYPE_TYPE, initialValue);
 	}
 
@@ -500,8 +463,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTypeTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertTypeTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertTypeTypeToString(XLinkPackage.Literals.TYPE_TYPE, instanceValue);
 	}
 
@@ -510,8 +472,8 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XLinkPackage getXLinkPackage()
-	{
+	@Override
+	public XLinkPackage getXLinkPackage() {
 		return (XLinkPackage)getEPackage();
 	}
 
@@ -522,8 +484,7 @@ public class XLinkFactoryImpl extends EFactoryImpl implements XLinkFactory
 	 * @generated
 	 */
 	@Deprecated
-	public static XLinkPackage getPackage()
-	{
+	public static XLinkPackage getPackage() {
 		return XLinkPackage.eINSTANCE;
 	}
 

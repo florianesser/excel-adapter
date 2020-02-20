@@ -24,15 +24,10 @@ import java.math.BigDecimal;
  * @model extendedMetaData="name='ClothoidType' kind='elementOnly'"
  * @generated
  */
-public interface ClothoidType extends AbstractCurveSegmentType
-{
+public interface ClothoidType extends AbstractCurveSegmentType {
 	/**
 	 * Returns the value of the '<em><b>Ref Location</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ref Location</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ref Location</em>' containment reference.
 	 * @see #setRefLocation(RefLocationType)
@@ -56,10 +51,6 @@ public interface ClothoidType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Scale Factor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Scale Factor</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scale Factor</em>' attribute.
 	 * @see #setScaleFactor(BigDecimal)
@@ -83,10 +74,6 @@ public interface ClothoidType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Start Parameter</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Start Parameter</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Start Parameter</em>' attribute.
 	 * @see #isSetStartParameter()
@@ -137,10 +124,6 @@ public interface ClothoidType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>End Parameter</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>End Parameter</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>End Parameter</em>' attribute.
 	 * @see #isSetEndParameter()
@@ -193,10 +176,6 @@ public interface ClothoidType extends AbstractCurveSegmentType
 	 * The default value is <code>"clothoid"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.CurveInterpolationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interpolation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Interpolation</em>' attribute.
 	 * @see net.opengis.gml32.CurveInterpolationType

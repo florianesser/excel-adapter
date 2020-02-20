@@ -22,15 +22,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='SecondDefiningParameter_._type' kind='elementOnly'"
  * @generated
  */
-public interface SecondDefiningParameterType extends EObject
-{
+public interface SecondDefiningParameterType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Inverse Flattening</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inverse Flattening</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Inverse Flattening</em>' containment reference.
 	 * @see #setInverseFlattening(MeasureType)
@@ -54,10 +49,6 @@ public interface SecondDefiningParameterType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Semi Minor Axis</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Semi Minor Axis</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Semi Minor Axis</em>' containment reference.
 	 * @see #setSemiMinorAxis(LengthType)
@@ -82,10 +73,6 @@ public interface SecondDefiningParameterType extends EObject
 	 * Returns the value of the '<em><b>Is Sphere</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Sphere</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Sphere</em>' attribute.
 	 * @see #isSetIsSphere()

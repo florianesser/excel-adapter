@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='CircleByCenterPointType' kind='elementOnly'"
  * @generated
  */
-public interface CircleByCenterPointType extends ArcByCenterPointType
-{
+public interface CircleByCenterPointType extends ArcByCenterPointType {
 } // CircleByCenterPointType

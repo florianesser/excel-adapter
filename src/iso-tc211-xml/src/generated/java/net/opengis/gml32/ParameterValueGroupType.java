@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='ParameterValueGroupType' kind='elementOnly'"
  * @generated
  */
-public interface ParameterValueGroupType extends AbstractGeneralParameterValueType
-{
+public interface ParameterValueGroupType extends AbstractGeneralParameterValueType {
 	/**
 	 * Returns the value of the '<em><b>Parameter Value</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.AbstractGeneralParameterValuePropertyType}.

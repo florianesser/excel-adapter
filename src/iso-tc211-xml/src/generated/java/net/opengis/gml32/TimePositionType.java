@@ -33,15 +33,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='TimePositionType' kind='simple'"
  * @generated
  */
-public interface TimePositionType extends EObject
-{
+public interface TimePositionType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(Object)
@@ -65,10 +60,6 @@ public interface TimePositionType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Calendar Era Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Calendar Era Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Calendar Era Name</em>' attribute.
 	 * @see #setCalendarEraName(String)
@@ -93,10 +84,6 @@ public interface TimePositionType extends EObject
 	 * Returns the value of the '<em><b>Frame</b></em>' attribute.
 	 * The default value is <code>"#ISO-8601"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Frame</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Frame</em>' attribute.
 	 * @see #isSetFrame()
@@ -148,10 +135,6 @@ public interface TimePositionType extends EObject
 	 * Returns the value of the '<em><b>Indeterminate Position</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.TimeIndeterminateValueType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Indeterminate Position</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Indeterminate Position</em>' attribute.
 	 * @see net.opengis.gml32.TimeIndeterminateValueType

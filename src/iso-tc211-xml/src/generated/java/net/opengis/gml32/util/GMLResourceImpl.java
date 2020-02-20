@@ -13,8 +13,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
  * @see net.opengis.gml32.util.GMLResourceFactoryImpl
  * @generated
  */
-public class GMLResourceImpl extends XMLResourceImpl
-{
+public class GMLResourceImpl extends XMLResourceImpl {
 	/**
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->
@@ -22,8 +21,7 @@ public class GMLResourceImpl extends XMLResourceImpl
 	 * @param uri the URI of the new resource.
 	 * @generated
 	 */
-	public GMLResourceImpl(URI uri)
-	{
+	public GMLResourceImpl(URI uri) {
 		super(uri);
 	}
 

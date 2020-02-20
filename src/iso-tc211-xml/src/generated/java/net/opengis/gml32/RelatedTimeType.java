@@ -23,16 +23,11 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='RelatedTimeType' kind='elementOnly'"
  * @generated
  */
-public interface RelatedTimeType extends TimePrimitivePropertyType
-{
+public interface RelatedTimeType extends TimePrimitivePropertyType {
 	/**
 	 * Returns the value of the '<em><b>Relative Position</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.RelativePositionType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Relative Position</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Relative Position</em>' attribute.
 	 * @see net.opengis.gml32.RelativePositionType

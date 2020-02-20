@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container implements LinearRingPropertyType
-{
+public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container implements LinearRingPropertyType {
 	/**
 	 * The cached value of the '{@link #getLinearRing() <em>Linear Ring</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -45,8 +44,7 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LinearRingPropertyTypeImpl()
-	{
+	protected LinearRingPropertyTypeImpl() {
 		super();
 	}
 
@@ -56,8 +54,7 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getLinearRingPropertyType();
 	}
 
@@ -66,8 +63,8 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LinearRingType getLinearRing()
-	{
+	@Override
+	public LinearRingType getLinearRing() {
 		return linearRing;
 	}
 
@@ -76,12 +73,10 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLinearRing(LinearRingType newLinearRing, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLinearRing(LinearRingType newLinearRing, NotificationChain msgs) {
 		LinearRingType oldLinearRing = linearRing;
 		linearRing = newLinearRing;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.LINEAR_RING_PROPERTY_TYPE__LINEAR_RING, oldLinearRing, newLinearRing);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -93,10 +88,9 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLinearRing(LinearRingType newLinearRing)
-	{
-		if (newLinearRing != linearRing)
-		{
+	@Override
+	public void setLinearRing(LinearRingType newLinearRing) {
+		if (newLinearRing != linearRing) {
 			NotificationChain msgs = null;
 			if (linearRing != null)
 				msgs = ((InternalEObject)linearRing).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.LINEAR_RING_PROPERTY_TYPE__LINEAR_RING, null, msgs);
@@ -115,10 +109,8 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.LINEAR_RING_PROPERTY_TYPE__LINEAR_RING:
 				return basicSetLinearRing(null, msgs);
 		}
@@ -131,10 +123,8 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.LINEAR_RING_PROPERTY_TYPE__LINEAR_RING:
 				return getLinearRing();
 		}
@@ -147,10 +137,8 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.LINEAR_RING_PROPERTY_TYPE__LINEAR_RING:
 				setLinearRing((LinearRingType)newValue);
 				return;
@@ -164,10 +152,8 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.LINEAR_RING_PROPERTY_TYPE__LINEAR_RING:
 				setLinearRing((LinearRingType)null);
 				return;
@@ -181,10 +167,8 @@ public class LinearRingPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.LINEAR_RING_PROPERTY_TYPE__LINEAR_RING:
 				return linearRing != null;
 		}

@@ -27,15 +27,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='AffinePlacementType' kind='elementOnly'"
  * @generated
  */
-public interface AffinePlacementType extends EObject
-{
+public interface AffinePlacementType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Location</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Location</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location</em>' containment reference.
 	 * @see #setLocation(DirectPositionType)
@@ -60,10 +55,6 @@ public interface AffinePlacementType extends EObject
 	 * Returns the value of the '<em><b>Ref Direction</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.VectorType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ref Direction</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ref Direction</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getAffinePlacementType_RefDirection()
@@ -76,10 +67,6 @@ public interface AffinePlacementType extends EObject
 	/**
 	 * Returns the value of the '<em><b>In Dimension</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>In Dimension</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>In Dimension</em>' attribute.
 	 * @see #setInDimension(BigInteger)
@@ -103,10 +90,6 @@ public interface AffinePlacementType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Out Dimension</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Out Dimension</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Out Dimension</em>' attribute.
 	 * @see #setOutDimension(BigInteger)

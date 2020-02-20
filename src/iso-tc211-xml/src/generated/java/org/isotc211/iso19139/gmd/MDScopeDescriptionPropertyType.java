@@ -21,15 +21,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='MD_ScopeDescription_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface MDScopeDescriptionPropertyType extends EObject
-{
+public interface MDScopeDescriptionPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>MD Scope Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>MD Scope Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MD Scope Description</em>' containment reference.
 	 * @see #setMDScopeDescription(MDScopeDescriptionType)
@@ -53,10 +48,6 @@ public interface MDScopeDescriptionPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

@@ -37,8 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implements PolygonPatchType
-{
+public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implements PolygonPatchType {
 	/**
 	 * The cached value of the '{@link #getExterior() <em>Exterior</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -93,8 +92,7 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PolygonPatchTypeImpl()
-	{
+	protected PolygonPatchTypeImpl() {
 		super();
 	}
 
@@ -104,8 +102,7 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getPolygonPatchType();
 	}
 
@@ -114,8 +111,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractRingPropertyType getExterior()
-	{
+	@Override
+	public AbstractRingPropertyType getExterior() {
 		return exterior;
 	}
 
@@ -124,12 +121,10 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExterior(AbstractRingPropertyType newExterior, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExterior(AbstractRingPropertyType newExterior, NotificationChain msgs) {
 		AbstractRingPropertyType oldExterior = exterior;
 		exterior = newExterior;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.POLYGON_PATCH_TYPE__EXTERIOR, oldExterior, newExterior);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -141,10 +136,9 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExterior(AbstractRingPropertyType newExterior)
-	{
-		if (newExterior != exterior)
-		{
+	@Override
+	public void setExterior(AbstractRingPropertyType newExterior) {
+		if (newExterior != exterior) {
 			NotificationChain msgs = null;
 			if (exterior != null)
 				msgs = ((InternalEObject)exterior).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.POLYGON_PATCH_TYPE__EXTERIOR, null, msgs);
@@ -162,10 +156,9 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractRingPropertyType> getInterior()
-	{
-		if (interior == null)
-		{
+	@Override
+	public EList<AbstractRingPropertyType> getInterior() {
+		if (interior == null) {
 			interior = new EObjectContainmentEList<AbstractRingPropertyType>(AbstractRingPropertyType.class, this, GMLPackage.POLYGON_PATCH_TYPE__INTERIOR);
 		}
 		return interior;
@@ -176,8 +169,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceInterpolationType getInterpolation()
-	{
+	@Override
+	public SurfaceInterpolationType getInterpolation() {
 		return interpolation;
 	}
 
@@ -186,8 +179,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInterpolation(SurfaceInterpolationType newInterpolation)
-	{
+	@Override
+	public void setInterpolation(SurfaceInterpolationType newInterpolation) {
 		SurfaceInterpolationType oldInterpolation = interpolation;
 		interpolation = newInterpolation == null ? INTERPOLATION_EDEFAULT : newInterpolation;
 		boolean oldInterpolationESet = interpolationESet;
@@ -201,8 +194,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetInterpolation()
-	{
+	@Override
+	public void unsetInterpolation() {
 		SurfaceInterpolationType oldInterpolation = interpolation;
 		boolean oldInterpolationESet = interpolationESet;
 		interpolation = INTERPOLATION_EDEFAULT;
@@ -216,8 +209,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetInterpolation()
-	{
+	@Override
+	public boolean isSetInterpolation() {
 		return interpolationESet;
 	}
 
@@ -227,10 +220,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.POLYGON_PATCH_TYPE__EXTERIOR:
 				return basicSetExterior(null, msgs);
 			case GMLPackage.POLYGON_PATCH_TYPE__INTERIOR:
@@ -245,10 +236,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.POLYGON_PATCH_TYPE__EXTERIOR:
 				return getExterior();
 			case GMLPackage.POLYGON_PATCH_TYPE__INTERIOR:
@@ -266,10 +255,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.POLYGON_PATCH_TYPE__EXTERIOR:
 				setExterior((AbstractRingPropertyType)newValue);
 				return;
@@ -290,10 +277,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.POLYGON_PATCH_TYPE__EXTERIOR:
 				setExterior((AbstractRingPropertyType)null);
 				return;
@@ -313,10 +298,8 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.POLYGON_PATCH_TYPE__EXTERIOR:
 				return exterior != null;
 			case GMLPackage.POLYGON_PATCH_TYPE__INTERIOR:
@@ -333,11 +316,10 @@ public class PolygonPatchTypeImpl extends AbstractSurfacePatchTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (interpolation: ");
 		if (interpolationESet) result.append(interpolation); else result.append("<unset>");
 		result.append(')');

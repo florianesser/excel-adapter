@@ -298,8 +298,7 @@ import org.eclipse.emf.ecore.EReference;
  *        annotation="urn:x-ogc:specification:gml:schema-xsd:basicTypes:3.2.1 appinfo='basicTypes.xsd'"
  * @generated
  */
-public interface GMLPackage extends EPackage
-{
+public interface GMLPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -70176,6 +70175,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.String <em>Axis Direction</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * The value of a gml:AxisDirection indicates the incrementation order to be used on an axis of the grid.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Axis Direction</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
@@ -70188,6 +70190,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>Axis Direction List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * The different values in a gml:AxisDirectionList indicate the incrementation order to be used on all axes of the grid. Each axis shall be mentioned once and only once.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Axis Direction List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70200,6 +70205,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>Boolean List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Boolean List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70212,6 +70220,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.Object <em>Boolean Or Nil Reason</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * Extension to the respective XML Schema built-in simple type to allow a choice of either a value of the built-in simple type or a reason for a nil value.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Boolean Or Nil Reason</em>'.
 	 * @see java.lang.Object
 	 * @model instanceClass="java.lang.Object"
@@ -70224,6 +70235,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>Boolean Or Nil Reason List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Boolean Or Nil Reason List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70320,6 +70334,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>Double List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Double List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70332,6 +70349,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.Object <em>Double Or Nil Reason</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * Extension to the respective XML Schema built-in simple type to allow a choice of either a value of the built-in simple type or a reason for a nil value.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Double Or Nil Reason</em>'.
 	 * @see java.lang.Object
 	 * @model instanceClass="java.lang.Object"
@@ -70344,6 +70364,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>Double Or Nil Reason List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Double Or Nil Reason List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70368,6 +70391,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>Integer List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Integer List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70380,6 +70406,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.Object <em>Integer Or Nil Reason</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * Extension to the respective XML Schema built-in simple type to allow a choice of either a value of the built-in simple type or a reason for a nil value.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Integer Or Nil Reason</em>'.
 	 * @see java.lang.Object
 	 * @model instanceClass="java.lang.Object"
@@ -70392,6 +70421,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>Integer Or Nil Reason List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Integer Or Nil Reason List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70416,6 +70448,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>Name List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Name List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70428,6 +70463,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.Object <em>Name Or Nil Reason</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * Extension to the respective XML Schema built-in simple type to allow a choice of either a value of the built-in simple type or a reason for a nil value.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Name Or Nil Reason</em>'.
 	 * @see java.lang.Object
 	 * @model instanceClass="java.lang.Object"
@@ -70440,6 +70478,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>Name Or Nil Reason List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Name Or Nil Reason List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70452,6 +70493,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>NC Name List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>NC Name List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70500,6 +70544,20 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.Object <em>Nil Reason Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * gml:NilReasonType defines a content model that allows recording of an explanation for a void value or other exception.
+     * gml:NilReasonType is a union of the following enumerated values:
+     * -	inapplicable there is no value
+     * -	missing the correct value is not readily available to the sender of this data. Furthermore, a correct value may not exist
+     * -	template the value will be available later
+     * -	unknown the correct value is not known to, and not computable by, the sender of this data. However, a correct value probably exists
+     * -	withheld the value is not divulged
+     * -	other:text other brief explanation, where text is a string of two or more characters with no included spaces
+     * and
+     * -	anyURI which should refer to a resource which describes the reason for the exception
+     * A particular community may choose to assign more detailed semantics to the standard values provided. Alternatively, the URI method enables a specific or more complete explanation for the absence of a value to be provided elsewhere and indicated by-reference in an instance document.
+     * gml:NilReasonType is used as a member of a union in a number of simple content types where it is necessary to permit a value from the NilReasonType union as an alternative to the primary type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Nil Reason Type</em>'.
 	 * @see java.lang.Object
 	 * @model instanceClass="java.lang.Object"
@@ -70512,6 +70570,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.util.List <em>QName List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * A type for a list of values of the respective simple type.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>QName List</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
@@ -70560,6 +70621,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.Object <em>String Or Nil Reason</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * Extension to the respective XML Schema built-in simple type to allow a choice of either a value of the built-in simple type or a reason for a nil value.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>String Or Nil Reason</em>'.
 	 * @see java.lang.Object
 	 * @model instanceClass="java.lang.Object"
@@ -70608,6 +70672,11 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.Object <em>Time Position Union</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * The simple type gml:TimePositionUnion is a union of XML Schema simple types which instantiate the subtypes for temporal position described in ISO 19108.
+     *  An ordinal era may be referenced via URI.  A decimal value may be used to indicate the distance from the scale origin .  time is used for a position that recurs daily (see ISO 19108:2002 5.4.4.2).
+     *  Finally, calendar and clock forms that support the representation of time in systems based on years, months, days, hours, minutes and seconds, in a notation following ISO 8601, are assembled by gml:CalDate
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Time Position Union</em>'.
 	 * @see java.lang.Object
 	 * @model instanceClass="java.lang.Object"
@@ -70656,6 +70725,9 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.String <em>Uom Identifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * The simple type gml:UomIdentifer defines the syntax and value space of the unit of measure identifier.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Uom Identifier</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
@@ -70668,6 +70740,10 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.String <em>Uom Symbol</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * This type specifies a character string of length at least one, and restricted such that it must not contain any of the following characters: ":" (colon), " " (space), (newline), (carriage return), (tab). This allows values corresponding to familiar abbreviations, such as "kg", "m/s", etc. 
+     * It is recommended that the symbol be an identifier for a unit of measure as specified in the "Unified Code of Units of Measure" (UCUM) (http://aurora.regenstrief.org/UCUM). This provides a set of symbols and a grammar for constructing identifiers for units of measure that are unique, and may be easily entered with a keyboard supporting the limited character set known as 7-bit ASCII. ISO 2955 formerly provided a specification with this scope, but was withdrawn in 2001. UCUM largely follows ISO 2955 with modifications to remove ambiguities and other problems.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Uom Symbol</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
@@ -70680,6 +70756,13 @@ public interface GMLPackage extends EPackage
 	 * Returns the meta object for data type '{@link java.lang.String <em>Uom URI</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+     * <!-- begin-model-doc -->
+     * This type specifies a URI, restricted such that it must start with one of the following sequences: "#", "./", "../", or a string of characters followed by a ":". These patterns ensure that the most common URI forms are supported, including absolute and relative URIs and URIs that are simple fragment identifiers, but prohibits certain forms of relative URI that could be mistaken for unit of measure symbol . 
+     * NOTE	It is possible to re-write such a relative URI to conform to the restriction (e.g. "./m/s").
+     * In an instance document, on elements of type gml:MeasureType the mandatory uom attribute shall carry a value corresponding to either 
+     * -	a conventional unit of measure symbol,
+     * -	a link to a definition of a unit of measure that does not have a conventional symbol, or when it is desired to indicate a precise or variant definition.
+     * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Uom URI</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"

@@ -22,15 +22,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='LocalisedCharacterString_Type' kind='simple'"
  * @generated
  */
-public interface LocalisedCharacterStringType extends EObject
-{
+public interface LocalisedCharacterStringType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(String)
@@ -54,10 +49,6 @@ public interface LocalisedCharacterStringType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(String)
@@ -81,10 +72,6 @@ public interface LocalisedCharacterStringType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Locale</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Locale</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Locale</em>' attribute.
 	 * @see #setLocale(String)

@@ -25,8 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometryTypeImpl implements AbstractGeometricAggregateType
-{
+public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometryTypeImpl implements AbstractGeometricAggregateType {
 	/**
 	 * The default value of the '{@link #getAggregationType() <em>Aggregation Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -61,8 +60,7 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGeometricAggregateTypeImpl()
-	{
+	protected AbstractGeometricAggregateTypeImpl() {
 		super();
 	}
 
@@ -72,8 +70,7 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGeometricAggregateType();
 	}
 
@@ -82,8 +79,8 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -92,8 +89,8 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -107,8 +104,8 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -122,8 +119,8 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -133,10 +130,8 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GEOMETRIC_AGGREGATE_TYPE__AGGREGATION_TYPE:
 				return getAggregationType();
 		}
@@ -149,10 +144,8 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GEOMETRIC_AGGREGATE_TYPE__AGGREGATION_TYPE:
 				setAggregationType((AggregationType)newValue);
 				return;
@@ -166,10 +159,8 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GEOMETRIC_AGGREGATE_TYPE__AGGREGATION_TYPE:
 				unsetAggregationType();
 				return;
@@ -183,10 +174,8 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GEOMETRIC_AGGREGATE_TYPE__AGGREGATION_TYPE:
 				return isSetAggregationType();
 		}
@@ -199,11 +188,10 @@ public abstract class AbstractGeometricAggregateTypeImpl extends AbstractGeometr
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (aggregationType: ");
 		if (aggregationTypeESet) result.append(aggregationType); else result.append("<unset>");
 		result.append(')');

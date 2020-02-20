@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='SequenceRuleEnumeration'"
  * @generated
  */
-public enum SequenceRuleEnumeration implements Enumerator
-{
+public enum SequenceRuleEnumeration implements Enumerator {
 	/**
 	 * The '<em><b>Linear</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -82,10 +81,6 @@ public enum SequenceRuleEnumeration implements Enumerator
 	/**
 	 * The '<em><b>Linear</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Linear</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #LINEAR
 	 * @model name="Linear"
@@ -97,10 +92,6 @@ public enum SequenceRuleEnumeration implements Enumerator
 	/**
 	 * The '<em><b>Boustrophedonic</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Boustrophedonic</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #BOUSTROPHEDONIC
 	 * @model name="Boustrophedonic"
@@ -112,10 +103,6 @@ public enum SequenceRuleEnumeration implements Enumerator
 	/**
 	 * The '<em><b>Cantor Diagonal</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Cantor Diagonal</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CANTOR_DIAGONAL
 	 * @model name="CantorDiagonal" literal="Cantor-diagonal"
@@ -127,10 +114,6 @@ public enum SequenceRuleEnumeration implements Enumerator
 	/**
 	 * The '<em><b>Spiral</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Spiral</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SPIRAL
 	 * @model name="Spiral"
@@ -142,10 +125,6 @@ public enum SequenceRuleEnumeration implements Enumerator
 	/**
 	 * The '<em><b>Morton</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Morton</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #MORTON
 	 * @model name="Morton"
@@ -157,10 +136,6 @@ public enum SequenceRuleEnumeration implements Enumerator
 	/**
 	 * The '<em><b>Hilbert</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Hilbert</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #HILBERT
 	 * @model name="Hilbert"
@@ -176,8 +151,7 @@ public enum SequenceRuleEnumeration implements Enumerator
 	 * @generated
 	 */
 	private static final SequenceRuleEnumeration[] VALUES_ARRAY =
-		new SequenceRuleEnumeration[]
-		{
+		new SequenceRuleEnumeration[] {
 			LINEAR,
 			BOUSTROPHEDONIC,
 			CANTOR_DIAGONAL,
@@ -202,13 +176,10 @@ public enum SequenceRuleEnumeration implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SequenceRuleEnumeration get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static SequenceRuleEnumeration get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			SequenceRuleEnumeration result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -223,13 +194,10 @@ public enum SequenceRuleEnumeration implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SequenceRuleEnumeration getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static SequenceRuleEnumeration getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			SequenceRuleEnumeration result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -244,10 +212,8 @@ public enum SequenceRuleEnumeration implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SequenceRuleEnumeration get(int value)
-	{
-		switch (value)
-		{
+	public static SequenceRuleEnumeration get(int value) {
+		switch (value) {
 			case LINEAR_VALUE: return LINEAR;
 			case BOUSTROPHEDONIC_VALUE: return BOUSTROPHEDONIC;
 			case CANTOR_DIAGONAL_VALUE: return CANTOR_DIAGONAL;
@@ -285,8 +251,7 @@ public enum SequenceRuleEnumeration implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private SequenceRuleEnumeration(int value, String name, String literal)
-	{
+	private SequenceRuleEnumeration(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -297,8 +262,8 @@ public enum SequenceRuleEnumeration implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -307,8 +272,8 @@ public enum SequenceRuleEnumeration implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -317,8 +282,8 @@ public enum SequenceRuleEnumeration implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -329,8 +294,7 @@ public enum SequenceRuleEnumeration implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

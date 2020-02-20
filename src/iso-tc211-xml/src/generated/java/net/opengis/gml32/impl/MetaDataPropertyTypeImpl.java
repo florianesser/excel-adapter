@@ -47,8 +47,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container implements MetaDataPropertyType
-{
+public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container implements MetaDataPropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractMetaDataGroup() <em>Abstract Meta Data Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -291,8 +290,7 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MetaDataPropertyTypeImpl()
-	{
+	protected MetaDataPropertyTypeImpl() {
 		super();
 	}
 
@@ -302,8 +300,7 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMetaDataPropertyType();
 	}
 
@@ -312,10 +309,9 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractMetaDataGroup()
-	{
-		if (abstractMetaDataGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractMetaDataGroup() {
+		if (abstractMetaDataGroup == null) {
 			abstractMetaDataGroup = new BasicFeatureMap(this, GMLPackage.META_DATA_PROPERTY_TYPE__ABSTRACT_META_DATA_GROUP);
 		}
 		return abstractMetaDataGroup;
@@ -326,8 +322,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractMetaDataType getAbstractMetaData()
-	{
+	@Override
+	public AbstractMetaDataType getAbstractMetaData() {
 		return (AbstractMetaDataType)getAbstractMetaDataGroup().get(GMLPackage.eINSTANCE.getMetaDataPropertyType_AbstractMetaData(), true);
 	}
 
@@ -336,8 +332,7 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractMetaData(AbstractMetaDataType newAbstractMetaData, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractMetaData(AbstractMetaDataType newAbstractMetaData, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractMetaDataGroup()).basicAdd(GMLPackage.eINSTANCE.getMetaDataPropertyType_AbstractMetaData(), newAbstractMetaData, msgs);
 	}
 
@@ -346,8 +341,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getAbout()
-	{
+	@Override
+	public String getAbout() {
 		return about;
 	}
 
@@ -356,8 +351,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAbout(String newAbout)
-	{
+	@Override
+	public void setAbout(String newAbout) {
 		String oldAbout = about;
 		about = newAbout;
 		if (eNotificationRequired())
@@ -369,8 +364,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -379,8 +374,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -394,8 +389,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -409,8 +404,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -419,8 +414,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -429,8 +424,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -442,8 +437,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -452,8 +447,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -465,8 +460,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -475,8 +470,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -488,8 +483,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -498,8 +493,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -511,8 +506,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -521,8 +516,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -534,8 +529,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -544,8 +539,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -559,8 +554,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -574,8 +569,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -584,8 +579,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -594,8 +589,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -607,8 +602,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -617,8 +612,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -632,8 +627,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -647,8 +642,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -658,10 +653,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.META_DATA_PROPERTY_TYPE__ABSTRACT_META_DATA_GROUP:
 				return ((InternalEList<?>)getAbstractMetaDataGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.META_DATA_PROPERTY_TYPE__ABSTRACT_META_DATA:
@@ -676,10 +669,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.META_DATA_PROPERTY_TYPE__ABSTRACT_META_DATA_GROUP:
 				if (coreType) return getAbstractMetaDataGroup();
 				return ((FeatureMap.Internal)getAbstractMetaDataGroup()).getWrapper();
@@ -715,10 +706,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.META_DATA_PROPERTY_TYPE__ABSTRACT_META_DATA_GROUP:
 				((FeatureMap.Internal)getAbstractMetaDataGroup()).set(newValue);
 				return;
@@ -762,10 +751,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.META_DATA_PROPERTY_TYPE__ABSTRACT_META_DATA_GROUP:
 				getAbstractMetaDataGroup().clear();
 				return;
@@ -809,10 +796,8 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.META_DATA_PROPERTY_TYPE__ABSTRACT_META_DATA_GROUP:
 				return abstractMetaDataGroup != null && !abstractMetaDataGroup.isEmpty();
 			case GMLPackage.META_DATA_PROPERTY_TYPE__ABSTRACT_META_DATA:
@@ -847,11 +832,10 @@ public class MetaDataPropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractMetaDataGroup: ");
 		result.append(abstractMetaDataGroup);
 		result.append(", about: ");

@@ -22,8 +22,7 @@ import org.w3.xlink.*;
  * @see org.w3.xlink.XLinkPackage
  * @generated
  */
-public class XLinkValidator extends EObjectValidator
-{
+public class XLinkValidator extends EObjectValidator {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -72,8 +71,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XLinkValidator()
-	{
+	public XLinkValidator() {
 		super();
 		xmlTypeValidator = XMLTypeValidator.INSTANCE;
 	}
@@ -85,8 +83,7 @@ public class XLinkValidator extends EObjectValidator
 	 * @generated
 	 */
 	@Override
-	protected EPackage getEPackage()
-	{
+	protected EPackage getEPackage() {
 	  return XLinkPackage.eINSTANCE;
 	}
 
@@ -97,10 +94,8 @@ public class XLinkValidator extends EObjectValidator
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
-		switch (classifierID)
-		{
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		switch (classifierID) {
 			case XLinkPackage.ARC_TYPE:
 				return validateArcType((ArcType)value, diagnostics, context);
 			case XLinkPackage.EXTENDED:
@@ -151,8 +146,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcType(ArcType arcType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcType(ArcType arcType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arcType, diagnostics, context);
 	}
 
@@ -161,8 +155,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExtended(Extended extended, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateExtended(Extended extended, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(extended, diagnostics, context);
 	}
 
@@ -171,8 +164,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLocatorType(LocatorType locatorType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLocatorType(LocatorType locatorType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(locatorType, diagnostics, context);
 	}
 
@@ -181,8 +173,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResourceType(ResourceType resourceType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateResourceType(ResourceType resourceType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(resourceType, diagnostics, context);
 	}
 
@@ -191,8 +182,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSimple(Simple simple, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateSimple(Simple simple, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(simple, diagnostics, context);
 	}
 
@@ -201,8 +191,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTitleEltType(TitleEltType titleEltType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTitleEltType(TitleEltType titleEltType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(titleEltType, diagnostics, context);
 	}
 
@@ -211,8 +200,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDocumentRoot(DocumentRoot documentRoot, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateDocumentRoot(DocumentRoot documentRoot, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(documentRoot, diagnostics, context);
 	}
 
@@ -221,8 +209,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateActuateType(ActuateType actuateType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateActuateType(ActuateType actuateType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -231,8 +218,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateShowType(ShowType showType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateShowType(ShowType showType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -241,8 +227,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTypeType(TypeType typeType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTypeType(TypeType typeType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -251,8 +236,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateActuateTypeObject(ActuateType actuateTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateActuateTypeObject(ActuateType actuateTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -261,8 +245,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcroleType(String arcroleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcroleType(String arcroleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateArcroleType_MinLength(arcroleType, diagnostics, context);
 		return result;
 	}
@@ -273,8 +256,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcroleType_MinLength(String arcroleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateArcroleType_MinLength(String arcroleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		int length = arcroleType.length();
 		boolean result = length >= 1;
 		if (!result && diagnostics != null)
@@ -287,8 +269,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFromType(String fromType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateFromType(String fromType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = xmlTypeValidator.validateNCName_Pattern(fromType, diagnostics, context);
 		return result;
 	}
@@ -298,8 +279,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHrefType(String hrefType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateHrefType(String hrefType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -308,8 +288,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLabelType(String labelType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateLabelType(String labelType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = xmlTypeValidator.validateNCName_Pattern(labelType, diagnostics, context);
 		return result;
 	}
@@ -319,8 +298,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRoleType(String roleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRoleType(String roleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = validateRoleType_MinLength(roleType, diagnostics, context);
 		return result;
 	}
@@ -331,8 +309,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRoleType_MinLength(String roleType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateRoleType_MinLength(String roleType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		int length = roleType.length();
 		boolean result = length >= 1;
 		if (!result && diagnostics != null)
@@ -345,8 +322,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateShowTypeObject(ShowType showTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateShowTypeObject(ShowType showTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -355,8 +331,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTitleAttrType(String titleAttrType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTitleAttrType(String titleAttrType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -365,8 +340,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateToType(String toType, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateToType(String toType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = xmlTypeValidator.validateNCName_Pattern(toType, diagnostics, context);
 		return result;
 	}
@@ -376,8 +350,7 @@ public class XLinkValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTypeTypeObject(TypeType typeTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context)
-	{
+	public boolean validateTypeTypeObject(TypeType typeTypeObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -388,8 +361,7 @@ public class XLinkValidator extends EObjectValidator
 	 * @generated
 	 */
 	@Override
-	public ResourceLocator getResourceLocator()
-	{
+	public ResourceLocator getResourceLocator() {
 		// TODO
 		// Specialize this to return a resource locator for messages specific to this validator.
 		// Ensure that you remove @generated or mark it @generated NOT

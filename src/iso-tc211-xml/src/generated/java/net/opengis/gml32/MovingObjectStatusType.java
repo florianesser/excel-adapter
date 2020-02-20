@@ -31,15 +31,10 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='MovingObjectStatusType' kind='elementOnly'"
  * @generated
  */
-public interface MovingObjectStatusType extends AbstractTimeSliceType
-{
+public interface MovingObjectStatusType extends AbstractTimeSliceType {
 	/**
 	 * Returns the value of the '<em><b>Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Position</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position</em>' containment reference.
 	 * @see #setPosition(GeometryPropertyType)
@@ -63,10 +58,6 @@ public interface MovingObjectStatusType extends AbstractTimeSliceType
 	/**
 	 * Returns the value of the '<em><b>Pos</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos</em>' containment reference.
 	 * @see #setPos(DirectPositionType)
@@ -143,10 +134,6 @@ public interface MovingObjectStatusType extends AbstractTimeSliceType
 	 * Returns the value of the '<em><b>Location Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Location Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location Group</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getMovingObjectStatusType_LocationGroup()
@@ -159,10 +146,6 @@ public interface MovingObjectStatusType extends AbstractTimeSliceType
 	/**
 	 * Returns the value of the '<em><b>Location</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Location</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location</em>' containment reference.
 	 * @see #setLocation(LocationPropertyType)
@@ -186,10 +169,6 @@ public interface MovingObjectStatusType extends AbstractTimeSliceType
 	/**
 	 * Returns the value of the '<em><b>Speed</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Speed</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Speed</em>' containment reference.
 	 * @see #setSpeed(MeasureType)
@@ -213,10 +192,6 @@ public interface MovingObjectStatusType extends AbstractTimeSliceType
 	/**
 	 * Returns the value of the '<em><b>Bearing</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Bearing</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Bearing</em>' containment reference.
 	 * @see #setBearing(DirectionPropertyType)
@@ -240,10 +215,6 @@ public interface MovingObjectStatusType extends AbstractTimeSliceType
 	/**
 	 * Returns the value of the '<em><b>Acceleration</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Acceleration</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Acceleration</em>' containment reference.
 	 * @see #setAcceleration(MeasureType)
@@ -267,10 +238,6 @@ public interface MovingObjectStatusType extends AbstractTimeSliceType
 	/**
 	 * Returns the value of the '<em><b>Elevation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Elevation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Elevation</em>' containment reference.
 	 * @see #setElevation(MeasureType)
@@ -294,10 +261,6 @@ public interface MovingObjectStatusType extends AbstractTimeSliceType
 	/**
 	 * Returns the value of the '<em><b>Status</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Status</em>' containment reference.
 	 * @see #setStatus(StringOrRefType)
@@ -321,10 +284,6 @@ public interface MovingObjectStatusType extends AbstractTimeSliceType
 	/**
 	 * Returns the value of the '<em><b>Status Reference</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Reference</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Status Reference</em>' containment reference.
 	 * @see #setStatusReference(ReferenceType)

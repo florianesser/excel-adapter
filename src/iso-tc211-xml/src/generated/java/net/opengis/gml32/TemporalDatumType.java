@@ -20,8 +20,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * @model extendedMetaData="name='TemporalDatumType' kind='elementOnly'"
  * @generated
  */
-public interface TemporalDatumType extends TemporalDatumBaseType
-{
+public interface TemporalDatumType extends TemporalDatumBaseType {
 	/**
 	 * Returns the value of the '<em><b>Origin</b></em>' attribute.
 	 * <!-- begin-user-doc -->

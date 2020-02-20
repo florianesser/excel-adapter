@@ -24,8 +24,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='CoordinateSystemAxisType' kind='elementOnly'"
  * @generated
  */
-public interface CoordinateSystemAxisType extends IdentifiedObjectType
-{
+public interface CoordinateSystemAxisType extends IdentifiedObjectType {
 	/**
 	 * Returns the value of the '<em><b>Axis Abbrev</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

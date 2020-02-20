@@ -25,8 +25,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='BoundingShapeType' kind='elementOnly'"
  * @generated
  */
-public interface BoundingShapeType extends EObject
-{
+public interface BoundingShapeType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Envelope Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
@@ -74,10 +73,6 @@ public interface BoundingShapeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Null</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Null</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Null</em>' attribute.
 	 * @see #setNull(Object)
@@ -101,10 +96,6 @@ public interface BoundingShapeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container implements DirectionDescriptionType
-{
+public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container implements DirectionDescriptionType {
 	/**
 	 * The default value of the '{@link #getCompassPoint() <em>Compass Point</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,8 +108,7 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DirectionDescriptionTypeImpl()
-	{
+	protected DirectionDescriptionTypeImpl() {
 		super();
 	}
 
@@ -120,8 +118,7 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDirectionDescriptionType();
 	}
 
@@ -130,8 +127,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompassPointEnumeration getCompassPoint()
-	{
+	@Override
+	public CompassPointEnumeration getCompassPoint() {
 		return compassPoint;
 	}
 
@@ -140,8 +137,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompassPoint(CompassPointEnumeration newCompassPoint)
-	{
+	@Override
+	public void setCompassPoint(CompassPointEnumeration newCompassPoint) {
 		CompassPointEnumeration oldCompassPoint = compassPoint;
 		compassPoint = newCompassPoint == null ? COMPASS_POINT_EDEFAULT : newCompassPoint;
 		boolean oldCompassPointESet = compassPointESet;
@@ -155,8 +152,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetCompassPoint()
-	{
+	@Override
+	public void unsetCompassPoint() {
 		CompassPointEnumeration oldCompassPoint = compassPoint;
 		boolean oldCompassPointESet = compassPointESet;
 		compassPoint = COMPASS_POINT_EDEFAULT;
@@ -170,8 +167,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetCompassPoint()
-	{
+	@Override
+	public boolean isSetCompassPoint() {
 		return compassPointESet;
 	}
 
@@ -180,8 +177,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getKeyword()
-	{
+	@Override
+	public CodeType getKeyword() {
 		return keyword;
 	}
 
@@ -190,12 +187,10 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetKeyword(CodeType newKeyword, NotificationChain msgs)
-	{
+	public NotificationChain basicSetKeyword(CodeType newKeyword, NotificationChain msgs) {
 		CodeType oldKeyword = keyword;
 		keyword = newKeyword;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DIRECTION_DESCRIPTION_TYPE__KEYWORD, oldKeyword, newKeyword);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -207,10 +202,9 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setKeyword(CodeType newKeyword)
-	{
-		if (newKeyword != keyword)
-		{
+	@Override
+	public void setKeyword(CodeType newKeyword) {
+		if (newKeyword != keyword) {
 			NotificationChain msgs = null;
 			if (keyword != null)
 				msgs = ((InternalEObject)keyword).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DIRECTION_DESCRIPTION_TYPE__KEYWORD, null, msgs);
@@ -228,8 +222,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDescription()
-	{
+	@Override
+	public String getDescription() {
 		return description;
 	}
 
@@ -238,8 +232,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescription(String newDescription)
-	{
+	@Override
+	public void setDescription(String newDescription) {
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
@@ -251,8 +245,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getReference()
-	{
+	@Override
+	public ReferenceType getReference() {
 		return reference;
 	}
 
@@ -261,12 +255,10 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetReference(ReferenceType newReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetReference(ReferenceType newReference, NotificationChain msgs) {
 		ReferenceType oldReference = reference;
 		reference = newReference;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DIRECTION_DESCRIPTION_TYPE__REFERENCE, oldReference, newReference);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -278,10 +270,9 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReference(ReferenceType newReference)
-	{
-		if (newReference != reference)
-		{
+	@Override
+	public void setReference(ReferenceType newReference) {
+		if (newReference != reference) {
 			NotificationChain msgs = null;
 			if (reference != null)
 				msgs = ((InternalEObject)reference).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DIRECTION_DESCRIPTION_TYPE__REFERENCE, null, msgs);
@@ -300,10 +291,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_DESCRIPTION_TYPE__KEYWORD:
 				return basicSetKeyword(null, msgs);
 			case GMLPackage.DIRECTION_DESCRIPTION_TYPE__REFERENCE:
@@ -318,10 +307,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_DESCRIPTION_TYPE__COMPASS_POINT:
 				return getCompassPoint();
 			case GMLPackage.DIRECTION_DESCRIPTION_TYPE__KEYWORD:
@@ -340,10 +327,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_DESCRIPTION_TYPE__COMPASS_POINT:
 				setCompassPoint((CompassPointEnumeration)newValue);
 				return;
@@ -366,10 +351,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_DESCRIPTION_TYPE__COMPASS_POINT:
 				unsetCompassPoint();
 				return;
@@ -392,10 +375,8 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_DESCRIPTION_TYPE__COMPASS_POINT:
 				return isSetCompassPoint();
 			case GMLPackage.DIRECTION_DESCRIPTION_TYPE__KEYWORD:
@@ -414,11 +395,10 @@ public class DirectionDescriptionTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (compassPoint: ");
 		if (compassPointESet) result.append(compassPoint); else result.append("<unset>");
 		result.append(", description: ");

@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements TopoVolumeType
-{
+public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements TopoVolumeType {
 	/**
 	 * The cached value of the '{@link #getDirectedTopoSolid() <em>Directed Topo Solid</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -82,8 +81,7 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TopoVolumeTypeImpl()
-	{
+	protected TopoVolumeTypeImpl() {
 		super();
 	}
 
@@ -93,8 +91,7 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTopoVolumeType();
 	}
 
@@ -103,10 +100,9 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectedTopoSolidPropertyType> getDirectedTopoSolid()
-	{
-		if (directedTopoSolid == null)
-		{
+	@Override
+	public EList<DirectedTopoSolidPropertyType> getDirectedTopoSolid() {
+		if (directedTopoSolid == null) {
 			directedTopoSolid = new EObjectContainmentEList<DirectedTopoSolidPropertyType>(DirectedTopoSolidPropertyType.class, this, GMLPackage.TOPO_VOLUME_TYPE__DIRECTED_TOPO_SOLID);
 		}
 		return directedTopoSolid;
@@ -117,8 +113,8 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -127,8 +123,8 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -142,8 +138,8 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -157,8 +153,8 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -168,10 +164,8 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TOPO_VOLUME_TYPE__DIRECTED_TOPO_SOLID:
 				return ((InternalEList<?>)getDirectedTopoSolid()).basicRemove(otherEnd, msgs);
 		}
@@ -184,10 +178,8 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TOPO_VOLUME_TYPE__DIRECTED_TOPO_SOLID:
 				return getDirectedTopoSolid();
 			case GMLPackage.TOPO_VOLUME_TYPE__AGGREGATION_TYPE:
@@ -203,10 +195,8 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TOPO_VOLUME_TYPE__DIRECTED_TOPO_SOLID:
 				getDirectedTopoSolid().clear();
 				getDirectedTopoSolid().addAll((Collection<? extends DirectedTopoSolidPropertyType>)newValue);
@@ -224,10 +214,8 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_VOLUME_TYPE__DIRECTED_TOPO_SOLID:
 				getDirectedTopoSolid().clear();
 				return;
@@ -244,10 +232,8 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TOPO_VOLUME_TYPE__DIRECTED_TOPO_SOLID:
 				return directedTopoSolid != null && !directedTopoSolid.isEmpty();
 			case GMLPackage.TOPO_VOLUME_TYPE__AGGREGATION_TYPE:
@@ -262,11 +248,10 @@ public class TopoVolumeTypeImpl extends AbstractTopologyTypeImpl implements Topo
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (aggregationType: ");
 		if (aggregationTypeESet) result.append(aggregationType); else result.append("<unset>");
 		result.append(')');

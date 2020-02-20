@@ -35,8 +35,7 @@ import org.isotc211.iso19139.gco.MeasurePropertyType;
  *
  * @generated
  */
-public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implements MeasurePropertyType
-{
+public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implements MeasurePropertyType {
 	/**
 	 * The cached value of the '{@link #getMeasureGroup() <em>Measure Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -72,8 +71,7 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MeasurePropertyTypeImpl()
-	{
+	protected MeasurePropertyTypeImpl() {
 		super();
 	}
 
@@ -83,8 +81,7 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.MEASURE_PROPERTY_TYPE;
 	}
 
@@ -93,10 +90,9 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getMeasureGroup()
-	{
-		if (measureGroup == null)
-		{
+	@Override
+	public FeatureMap getMeasureGroup() {
+		if (measureGroup == null) {
 			measureGroup = new BasicFeatureMap(this, GCOPackage.MEASURE_PROPERTY_TYPE__MEASURE_GROUP);
 		}
 		return measureGroup;
@@ -107,8 +103,8 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getMeasure()
-	{
+	@Override
+	public MeasureType getMeasure() {
 		return (MeasureType)getMeasureGroup().get(GCOPackage.Literals.MEASURE_PROPERTY_TYPE__MEASURE, true);
 	}
 
@@ -117,8 +113,7 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMeasure(MeasureType newMeasure, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMeasure(MeasureType newMeasure, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMeasureGroup()).basicAdd(GCOPackage.Literals.MEASURE_PROPERTY_TYPE__MEASURE, newMeasure, msgs);
 	}
 
@@ -127,8 +122,8 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMeasure(MeasureType newMeasure)
-	{
+	@Override
+	public void setMeasure(MeasureType newMeasure) {
 		((FeatureMap.Internal)getMeasureGroup()).set(GCOPackage.Literals.MEASURE_PROPERTY_TYPE__MEASURE, newMeasure);
 	}
 
@@ -137,8 +132,8 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -147,8 +142,8 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -161,10 +156,8 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.MEASURE_PROPERTY_TYPE__MEASURE_GROUP:
 				return ((InternalEList<?>)getMeasureGroup()).basicRemove(otherEnd, msgs);
 			case GCOPackage.MEASURE_PROPERTY_TYPE__MEASURE:
@@ -179,10 +172,8 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.MEASURE_PROPERTY_TYPE__MEASURE_GROUP:
 				if (coreType) return getMeasureGroup();
 				return ((FeatureMap.Internal)getMeasureGroup()).getWrapper();
@@ -200,10 +191,8 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.MEASURE_PROPERTY_TYPE__MEASURE_GROUP:
 				((FeatureMap.Internal)getMeasureGroup()).set(newValue);
 				return;
@@ -223,10 +212,8 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.MEASURE_PROPERTY_TYPE__MEASURE_GROUP:
 				getMeasureGroup().clear();
 				return;
@@ -246,10 +233,8 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.MEASURE_PROPERTY_TYPE__MEASURE_GROUP:
 				return measureGroup != null && !measureGroup.isEmpty();
 			case GCOPackage.MEASURE_PROPERTY_TYPE__MEASURE:
@@ -266,11 +251,10 @@ public class MeasurePropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (measureGroup: ");
 		result.append(measureGroup);
 		result.append(", nilReason: ");

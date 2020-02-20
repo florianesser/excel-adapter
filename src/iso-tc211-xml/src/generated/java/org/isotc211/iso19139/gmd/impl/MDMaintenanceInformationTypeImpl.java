@@ -50,8 +50,7 @@ import org.isotc211.iso19139.gts.TMPeriodDurationPropertyType;
  *
  * @generated
  */
-public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl implements MDMaintenanceInformationType
-{
+public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl implements MDMaintenanceInformationType {
 	/**
 	 * The cached value of the '{@link #getMaintenanceAndUpdateFrequency() <em>Maintenance And Update Frequency</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -127,8 +126,7 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDMaintenanceInformationTypeImpl()
-	{
+	protected MDMaintenanceInformationTypeImpl() {
 		super();
 	}
 
@@ -138,8 +136,7 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDMaintenanceInformationType();
 	}
 
@@ -148,8 +145,8 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMaintenanceFrequencyCodePropertyType getMaintenanceAndUpdateFrequency()
-	{
+	@Override
+	public MDMaintenanceFrequencyCodePropertyType getMaintenanceAndUpdateFrequency() {
 		return maintenanceAndUpdateFrequency;
 	}
 
@@ -158,12 +155,10 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMaintenanceAndUpdateFrequency(MDMaintenanceFrequencyCodePropertyType newMaintenanceAndUpdateFrequency, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMaintenanceAndUpdateFrequency(MDMaintenanceFrequencyCodePropertyType newMaintenanceAndUpdateFrequency, NotificationChain msgs) {
 		MDMaintenanceFrequencyCodePropertyType oldMaintenanceAndUpdateFrequency = maintenanceAndUpdateFrequency;
 		maintenanceAndUpdateFrequency = newMaintenanceAndUpdateFrequency;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__MAINTENANCE_AND_UPDATE_FREQUENCY, oldMaintenanceAndUpdateFrequency, newMaintenanceAndUpdateFrequency);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -175,10 +170,9 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaintenanceAndUpdateFrequency(MDMaintenanceFrequencyCodePropertyType newMaintenanceAndUpdateFrequency)
-	{
-		if (newMaintenanceAndUpdateFrequency != maintenanceAndUpdateFrequency)
-		{
+	@Override
+	public void setMaintenanceAndUpdateFrequency(MDMaintenanceFrequencyCodePropertyType newMaintenanceAndUpdateFrequency) {
+		if (newMaintenanceAndUpdateFrequency != maintenanceAndUpdateFrequency) {
 			NotificationChain msgs = null;
 			if (maintenanceAndUpdateFrequency != null)
 				msgs = ((InternalEObject)maintenanceAndUpdateFrequency).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__MAINTENANCE_AND_UPDATE_FREQUENCY, null, msgs);
@@ -196,8 +190,8 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DatePropertyType getDateOfNextUpdate()
-	{
+	@Override
+	public DatePropertyType getDateOfNextUpdate() {
 		return dateOfNextUpdate;
 	}
 
@@ -206,12 +200,10 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDateOfNextUpdate(DatePropertyType newDateOfNextUpdate, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDateOfNextUpdate(DatePropertyType newDateOfNextUpdate, NotificationChain msgs) {
 		DatePropertyType oldDateOfNextUpdate = dateOfNextUpdate;
 		dateOfNextUpdate = newDateOfNextUpdate;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__DATE_OF_NEXT_UPDATE, oldDateOfNextUpdate, newDateOfNextUpdate);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -223,10 +215,9 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDateOfNextUpdate(DatePropertyType newDateOfNextUpdate)
-	{
-		if (newDateOfNextUpdate != dateOfNextUpdate)
-		{
+	@Override
+	public void setDateOfNextUpdate(DatePropertyType newDateOfNextUpdate) {
+		if (newDateOfNextUpdate != dateOfNextUpdate) {
 			NotificationChain msgs = null;
 			if (dateOfNextUpdate != null)
 				msgs = ((InternalEObject)dateOfNextUpdate).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__DATE_OF_NEXT_UPDATE, null, msgs);
@@ -244,8 +235,8 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TMPeriodDurationPropertyType getUserDefinedMaintenanceFrequency()
-	{
+	@Override
+	public TMPeriodDurationPropertyType getUserDefinedMaintenanceFrequency() {
 		return userDefinedMaintenanceFrequency;
 	}
 
@@ -254,12 +245,10 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUserDefinedMaintenanceFrequency(TMPeriodDurationPropertyType newUserDefinedMaintenanceFrequency, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUserDefinedMaintenanceFrequency(TMPeriodDurationPropertyType newUserDefinedMaintenanceFrequency, NotificationChain msgs) {
 		TMPeriodDurationPropertyType oldUserDefinedMaintenanceFrequency = userDefinedMaintenanceFrequency;
 		userDefinedMaintenanceFrequency = newUserDefinedMaintenanceFrequency;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__USER_DEFINED_MAINTENANCE_FREQUENCY, oldUserDefinedMaintenanceFrequency, newUserDefinedMaintenanceFrequency);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -271,10 +260,9 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUserDefinedMaintenanceFrequency(TMPeriodDurationPropertyType newUserDefinedMaintenanceFrequency)
-	{
-		if (newUserDefinedMaintenanceFrequency != userDefinedMaintenanceFrequency)
-		{
+	@Override
+	public void setUserDefinedMaintenanceFrequency(TMPeriodDurationPropertyType newUserDefinedMaintenanceFrequency) {
+		if (newUserDefinedMaintenanceFrequency != userDefinedMaintenanceFrequency) {
 			NotificationChain msgs = null;
 			if (userDefinedMaintenanceFrequency != null)
 				msgs = ((InternalEObject)userDefinedMaintenanceFrequency).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__USER_DEFINED_MAINTENANCE_FREQUENCY, null, msgs);
@@ -292,10 +280,9 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDScopeCodePropertyType> getUpdateScope()
-	{
-		if (updateScope == null)
-		{
+	@Override
+	public EList<MDScopeCodePropertyType> getUpdateScope() {
+		if (updateScope == null) {
 			updateScope = new EObjectContainmentEList<MDScopeCodePropertyType>(MDScopeCodePropertyType.class, this, GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__UPDATE_SCOPE);
 		}
 		return updateScope;
@@ -306,10 +293,9 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDScopeDescriptionPropertyType> getUpdateScopeDescription()
-	{
-		if (updateScopeDescription == null)
-		{
+	@Override
+	public EList<MDScopeDescriptionPropertyType> getUpdateScopeDescription() {
+		if (updateScopeDescription == null) {
 			updateScopeDescription = new EObjectContainmentEList<MDScopeDescriptionPropertyType>(MDScopeDescriptionPropertyType.class, this, GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__UPDATE_SCOPE_DESCRIPTION);
 		}
 		return updateScopeDescription;
@@ -320,10 +306,9 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getMaintenanceNote()
-	{
-		if (maintenanceNote == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getMaintenanceNote() {
+		if (maintenanceNote == null) {
 			maintenanceNote = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__MAINTENANCE_NOTE);
 		}
 		return maintenanceNote;
@@ -334,10 +319,9 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIResponsiblePartyPropertyType> getContact()
-	{
-		if (contact == null)
-		{
+	@Override
+	public EList<CIResponsiblePartyPropertyType> getContact() {
+		if (contact == null) {
 			contact = new EObjectContainmentEList<CIResponsiblePartyPropertyType>(CIResponsiblePartyPropertyType.class, this, GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__CONTACT);
 		}
 		return contact;
@@ -349,10 +333,8 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__MAINTENANCE_AND_UPDATE_FREQUENCY:
 				return basicSetMaintenanceAndUpdateFrequency(null, msgs);
 			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__DATE_OF_NEXT_UPDATE:
@@ -377,10 +359,8 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__MAINTENANCE_AND_UPDATE_FREQUENCY:
 				return getMaintenanceAndUpdateFrequency();
 			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__DATE_OF_NEXT_UPDATE:
@@ -406,10 +386,8 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__MAINTENANCE_AND_UPDATE_FREQUENCY:
 				setMaintenanceAndUpdateFrequency((MDMaintenanceFrequencyCodePropertyType)newValue);
 				return;
@@ -445,10 +423,8 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__MAINTENANCE_AND_UPDATE_FREQUENCY:
 				setMaintenanceAndUpdateFrequency((MDMaintenanceFrequencyCodePropertyType)null);
 				return;
@@ -480,10 +456,8 @@ public class MDMaintenanceInformationTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__MAINTENANCE_AND_UPDATE_FREQUENCY:
 				return maintenanceAndUpdateFrequency != null;
 			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE__DATE_OF_NEXT_UPDATE:

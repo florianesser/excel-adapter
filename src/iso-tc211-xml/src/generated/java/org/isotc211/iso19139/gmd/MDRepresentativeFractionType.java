@@ -21,15 +21,10 @@ import org.isotc211.iso19139.gco.IntegerPropertyType;
  * @model extendedMetaData="name='MD_RepresentativeFraction_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDRepresentativeFractionType extends AbstractObjectType
-{
+public interface MDRepresentativeFractionType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Denominator</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Denominator</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Denominator</em>' containment reference.
 	 * @see #setDenominator(IntegerPropertyType)

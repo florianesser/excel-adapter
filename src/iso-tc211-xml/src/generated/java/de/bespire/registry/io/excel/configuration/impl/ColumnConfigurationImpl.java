@@ -6,13 +6,16 @@ import de.bespire.registry.io.excel.configuration.ColumnConfiguration;
 import de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage;
 
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
@@ -207,6 +210,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getJavaProperty() {
 		return javaProperty;
 	}
@@ -216,6 +220,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setJavaProperty(String newJavaProperty) {
 		String oldJavaProperty = javaProperty;
 		javaProperty = newJavaProperty;
@@ -228,6 +233,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getJavaPropertyExport() {
 		return javaPropertyExport;
 	}
@@ -237,6 +243,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setJavaPropertyExport(String newJavaPropertyExport) {
 		String oldJavaPropertyExport = javaPropertyExport;
 		javaPropertyExport = newJavaPropertyExport;
@@ -249,6 +256,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isMultiple() {
 		return multiple;
 	}
@@ -258,6 +266,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMultiple(boolean newMultiple) {
 		boolean oldMultiple = multiple;
 		multiple = newMultiple;
@@ -272,6 +281,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void unsetMultiple() {
 		boolean oldMultiple = multiple;
 		boolean oldMultipleESet = multipleESet;
@@ -286,6 +296,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isSetMultiple() {
 		return multipleESet;
 	}
@@ -295,6 +306,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<String> getReferences() {
 		if (references == null) {
 			references = new EDataTypeUniqueEList<String>(String.class, this, ExcelAdapterConfigurationPackage.COLUMN_CONFIGURATION__REFERENCES);
@@ -307,6 +319,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getColumnName() {
 		return columnName;
 	}
@@ -316,6 +329,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setColumnName(String newColumnName) {
 		String oldColumnName = columnName;
 		columnName = newColumnName;
@@ -328,6 +342,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getSeparatorChar() {
 		return separatorChar;
 	}
@@ -337,6 +352,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSeparatorChar(String newSeparatorChar) {
 		String oldSeparatorChar = separatorChar;
 		separatorChar = newSeparatorChar;
@@ -351,6 +367,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void unsetSeparatorChar() {
 		String oldSeparatorChar = separatorChar;
 		boolean oldSeparatorCharESet = separatorCharESet;
@@ -365,6 +382,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isSetSeparatorChar() {
 		return separatorCharESet;
 	}
@@ -374,6 +392,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getValueMapper() {
 		return valueMapper;
 	}
@@ -383,6 +402,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValueMapper(String newValueMapper) {
 		String oldValueMapper = valueMapper;
 		valueMapper = newValueMapper;
@@ -519,7 +539,7 @@ public class ColumnConfigurationImpl extends MinimalEObjectImpl.Container implem
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (javaProperty: ");
 		result.append(javaProperty);
 		result.append(", javaPropertyExport: ");

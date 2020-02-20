@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='LinearCSType' kind='elementOnly'"
  * @generated
  */
-public interface LinearCSType extends AbstractCoordinateSystemType
-{
+public interface LinearCSType extends AbstractCoordinateSystemType {
 } // LinearCSType

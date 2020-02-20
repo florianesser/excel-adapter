@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDDimensionNameTypeCodePropertyType;
  *
  * @generated
  */
-public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDDimensionNameTypeCodePropertyType
-{
+public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDDimensionNameTypeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDDimensionNameTypeCode() <em>MD Dimension Name Type Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDDimensionNameTypeCodePropertyTypeImpl()
-	{
+	protected MDDimensionNameTypeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDDimensionNameTypeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDDimensionNameTypeCode()
-	{
+	@Override
+	public CodeListValueType getMDDimensionNameTypeCode() {
 		return mDDimensionNameTypeCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDDimensionNameTypeCode(CodeListValueType newMDDimensionNameTypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDDimensionNameTypeCode(CodeListValueType newMDDimensionNameTypeCode, NotificationChain msgs) {
 		CodeListValueType oldMDDimensionNameTypeCode = mDDimensionNameTypeCode;
 		mDDimensionNameTypeCode = newMDDimensionNameTypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE__MD_DIMENSION_NAME_TYPE_CODE, oldMDDimensionNameTypeCode, newMDDimensionNameTypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDDimensionNameTypeCode(CodeListValueType newMDDimensionNameTypeCode)
-	{
-		if (newMDDimensionNameTypeCode != mDDimensionNameTypeCode)
-		{
+	@Override
+	public void setMDDimensionNameTypeCode(CodeListValueType newMDDimensionNameTypeCode) {
+		if (newMDDimensionNameTypeCode != mDDimensionNameTypeCode) {
 			NotificationChain msgs = null;
 			if (mDDimensionNameTypeCode != null)
 				msgs = ((InternalEObject)mDDimensionNameTypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE__MD_DIMENSION_NAME_TYPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE__MD_DIMENSION_NAME_TYPE_CODE:
 				return basicSetMDDimensionNameTypeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE__MD_DIMENSION_NAME_TYPE_CODE:
 				return getMDDimensionNameTypeCode();
 			case GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE__MD_DIMENSION_NAME_TYPE_CODE:
 				setMDDimensionNameTypeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE__MD_DIMENSION_NAME_TYPE_CODE:
 				setMDDimensionNameTypeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE__MD_DIMENSION_NAME_TYPE_CODE:
 				return mDDimensionNameTypeCode != null;
 			case GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDDimensionNameTypeCodePropertyTypeImpl extends MinimalEObjectImpl.
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

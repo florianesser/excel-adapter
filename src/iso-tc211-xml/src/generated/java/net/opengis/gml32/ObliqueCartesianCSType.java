@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='ObliqueCartesianCSType' kind='elementOnly'"
  * @generated
  */
-public interface ObliqueCartesianCSType extends AbstractCoordinateSystemType
-{
+public interface ObliqueCartesianCSType extends AbstractCoordinateSystemType {
 } // ObliqueCartesianCSType

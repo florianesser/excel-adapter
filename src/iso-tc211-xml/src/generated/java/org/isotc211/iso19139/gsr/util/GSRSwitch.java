@@ -22,8 +22,7 @@ import org.isotc211.iso19139.gsr.*;
  * @see org.isotc211.iso19139.gsr.GSRPackage
  * @generated
  */
-public class GSRSwitch<T> extends Switch<T>
-{
+public class GSRSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -38,10 +37,8 @@ public class GSRSwitch<T> extends Switch<T>
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSRSwitch()
-	{
-		if (modelPackage == null)
-		{
+	public GSRSwitch() {
+		if (modelPackage == null) {
 			modelPackage = GSRPackage.eINSTANCE;
 		}
 	}
@@ -55,8 +52,7 @@ public class GSRSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage)
-	{
+	protected boolean isSwitchFor(EPackage ePackage) {
 		return ePackage == modelPackage;
 	}
 
@@ -68,12 +64,9 @@ public class GSRSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject)
-	{
-		switch (classifierID)
-		{
-			case GSRPackage.SCCRS_PROPERTY_TYPE:
-			{
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case GSRPackage.SCCRS_PROPERTY_TYPE: {
 				SCCRSPropertyType sccrsPropertyType = (SCCRSPropertyType)theEObject;
 				T result = caseSCCRSPropertyType(sccrsPropertyType);
 				if (result == null) result = defaultCase(theEObject);
@@ -94,8 +87,7 @@ public class GSRSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSCCRSPropertyType(SCCRSPropertyType object)
-	{
+	public T caseSCCRSPropertyType(SCCRSPropertyType object) {
 		return null;
 	}
 
@@ -111,8 +103,7 @@ public class GSRSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object)
-	{
+	public T defaultCase(EObject object) {
 		return null;
 	}
 

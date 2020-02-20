@@ -23,15 +23,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='LocalName_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface LocalNamePropertyType extends EObject
-{
+public interface LocalNamePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Local Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Local Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Local Name</em>' containment reference.
 	 * @see #setLocalName(CodeType)
@@ -55,10 +50,6 @@ public interface LocalNamePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

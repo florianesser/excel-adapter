@@ -49,8 +49,7 @@ import org.w3.xlink.XLinkPackage;
  *
  * @generated
  */
-public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extended
-{
+public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extended {
 	/**
 	 * The cached value of the '{@link #getExtendedModel() <em>Extended Model</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -135,8 +134,7 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ExtendedImpl()
-	{
+	protected ExtendedImpl() {
 		super();
 	}
 
@@ -146,8 +144,7 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return XLinkPackage.Literals.EXTENDED;
 	}
 
@@ -156,10 +153,9 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getExtendedModel()
-	{
-		if (extendedModel == null)
-		{
+	@Override
+	public FeatureMap getExtendedModel() {
+		if (extendedModel == null) {
 			extendedModel = new BasicFeatureMap(this, XLinkPackage.EXTENDED__EXTENDED_MODEL);
 		}
 		return extendedModel;
@@ -170,8 +166,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getTitleGroup()
-	{
+	@Override
+	public FeatureMap getTitleGroup() {
 		return (FeatureMap)getExtendedModel().<FeatureMap.Entry>list(XLinkPackage.Literals.EXTENDED__TITLE_GROUP);
 	}
 
@@ -180,8 +176,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TitleEltType> getTitle()
-	{
+	@Override
+	public EList<TitleEltType> getTitle() {
 		return getTitleGroup().list(XLinkPackage.Literals.EXTENDED__TITLE);
 	}
 
@@ -190,8 +186,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getResourceGroup()
-	{
+	@Override
+	public FeatureMap getResourceGroup() {
 		return (FeatureMap)getExtendedModel().<FeatureMap.Entry>list(XLinkPackage.Literals.EXTENDED__RESOURCE_GROUP);
 	}
 
@@ -200,8 +196,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ResourceType> getResource()
-	{
+	@Override
+	public EList<ResourceType> getResource() {
 		return getResourceGroup().list(XLinkPackage.Literals.EXTENDED__RESOURCE);
 	}
 
@@ -210,8 +206,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getLocatorGroup()
-	{
+	@Override
+	public FeatureMap getLocatorGroup() {
 		return (FeatureMap)getExtendedModel().<FeatureMap.Entry>list(XLinkPackage.Literals.EXTENDED__LOCATOR_GROUP);
 	}
 
@@ -220,8 +216,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LocatorType> getLocator()
-	{
+	@Override
+	public EList<LocatorType> getLocator() {
 		return getLocatorGroup().list(XLinkPackage.Literals.EXTENDED__LOCATOR);
 	}
 
@@ -230,8 +226,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getArcGroup()
-	{
+	@Override
+	public FeatureMap getArcGroup() {
 		return (FeatureMap)getExtendedModel().<FeatureMap.Entry>list(XLinkPackage.Literals.EXTENDED__ARC_GROUP);
 	}
 
@@ -240,8 +236,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ArcType> getArc()
-	{
+	@Override
+	public EList<ArcType> getArc() {
 		return getArcGroup().list(XLinkPackage.Literals.EXTENDED__ARC);
 	}
 
@@ -250,8 +246,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -260,8 +256,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -273,8 +269,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle1()
-	{
+	@Override
+	public String getTitle1() {
 		return title1;
 	}
 
@@ -283,8 +279,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle1(String newTitle1)
-	{
+	@Override
+	public void setTitle1(String newTitle1) {
 		String oldTitle1 = title1;
 		title1 = newTitle1;
 		if (eNotificationRequired())
@@ -296,8 +292,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -306,8 +302,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -321,8 +317,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -336,8 +332,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -347,10 +343,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case XLinkPackage.EXTENDED__EXTENDED_MODEL:
 				return ((InternalEList<?>)getExtendedModel()).basicRemove(otherEnd, msgs);
 			case XLinkPackage.EXTENDED__TITLE_GROUP:
@@ -379,10 +373,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case XLinkPackage.EXTENDED__EXTENDED_MODEL:
 				if (coreType) return getExtendedModel();
 				return ((FeatureMap.Internal)getExtendedModel()).getWrapper();
@@ -422,10 +414,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case XLinkPackage.EXTENDED__EXTENDED_MODEL:
 				((FeatureMap.Internal)getExtendedModel()).set(newValue);
 				return;
@@ -460,10 +450,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.EXTENDED__EXTENDED_MODEL:
 				getExtendedModel().clear();
 				return;
@@ -498,10 +486,8 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.EXTENDED__EXTENDED_MODEL:
 				return extendedModel != null && !extendedModel.isEmpty();
 			case XLinkPackage.EXTENDED__TITLE_GROUP:
@@ -536,11 +522,10 @@ public class ExtendedImpl extends MinimalEObjectImpl.Container implements Extend
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (extendedModel: ");
 		result.append(extendedModel);
 		result.append(", role: ");

@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implements CountryPropertyType
-{
+public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implements CountryPropertyType {
 	/**
 	 * The cached value of the '{@link #getCountry() <em>Country</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CountryPropertyTypeImpl()
-	{
+	protected CountryPropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCountryPropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getCountry()
-	{
+	@Override
+	public CodeListValueType getCountry() {
 		return country;
 	}
 
@@ -98,12 +95,10 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCountry(CodeListValueType newCountry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCountry(CodeListValueType newCountry, NotificationChain msgs) {
 		CodeListValueType oldCountry = country;
 		country = newCountry;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.COUNTRY_PROPERTY_TYPE__COUNTRY, oldCountry, newCountry);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCountry(CodeListValueType newCountry)
-	{
-		if (newCountry != country)
-		{
+	@Override
+	public void setCountry(CodeListValueType newCountry) {
+		if (newCountry != country) {
 			NotificationChain msgs = null;
 			if (country != null)
 				msgs = ((InternalEObject)country).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.COUNTRY_PROPERTY_TYPE__COUNTRY, null, msgs);
@@ -136,8 +130,8 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.COUNTRY_PROPERTY_TYPE__COUNTRY:
 				return basicSetCountry(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.COUNTRY_PROPERTY_TYPE__COUNTRY:
 				return getCountry();
 			case GMDPackage.COUNTRY_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.COUNTRY_PROPERTY_TYPE__COUNTRY:
 				setCountry((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.COUNTRY_PROPERTY_TYPE__COUNTRY:
 				setCountry((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.COUNTRY_PROPERTY_TYPE__COUNTRY:
 				return country != null;
 			case GMDPackage.COUNTRY_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class CountryPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

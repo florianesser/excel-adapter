@@ -35,8 +35,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeCalendarEraType
-{
+public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeCalendarEraType {
 	/**
 	 * The cached value of the '{@link #getReferenceEvent() <em>Reference Event</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -102,8 +101,7 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeCalendarEraTypeImpl()
-	{
+	protected TimeCalendarEraTypeImpl() {
 		super();
 	}
 
@@ -113,8 +111,7 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeCalendarEraType();
 	}
 
@@ -123,8 +120,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getReferenceEvent()
-	{
+	@Override
+	public StringOrRefType getReferenceEvent() {
 		return referenceEvent;
 	}
 
@@ -133,12 +130,10 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetReferenceEvent(StringOrRefType newReferenceEvent, NotificationChain msgs)
-	{
+	public NotificationChain basicSetReferenceEvent(StringOrRefType newReferenceEvent, NotificationChain msgs) {
 		StringOrRefType oldReferenceEvent = referenceEvent;
 		referenceEvent = newReferenceEvent;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_CALENDAR_ERA_TYPE__REFERENCE_EVENT, oldReferenceEvent, newReferenceEvent);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -150,10 +145,9 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReferenceEvent(StringOrRefType newReferenceEvent)
-	{
-		if (newReferenceEvent != referenceEvent)
-		{
+	@Override
+	public void setReferenceEvent(StringOrRefType newReferenceEvent) {
+		if (newReferenceEvent != referenceEvent) {
 			NotificationChain msgs = null;
 			if (referenceEvent != null)
 				msgs = ((InternalEObject)referenceEvent).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_CALENDAR_ERA_TYPE__REFERENCE_EVENT, null, msgs);
@@ -171,8 +165,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getReferenceDate()
-	{
+	@Override
+	public XMLGregorianCalendar getReferenceDate() {
 		return referenceDate;
 	}
 
@@ -181,8 +175,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReferenceDate(XMLGregorianCalendar newReferenceDate)
-	{
+	@Override
+	public void setReferenceDate(XMLGregorianCalendar newReferenceDate) {
 		XMLGregorianCalendar oldReferenceDate = referenceDate;
 		referenceDate = newReferenceDate;
 		if (eNotificationRequired())
@@ -194,8 +188,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal getJulianReference()
-	{
+	@Override
+	public BigDecimal getJulianReference() {
 		return julianReference;
 	}
 
@@ -204,8 +198,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setJulianReference(BigDecimal newJulianReference)
-	{
+	@Override
+	public void setJulianReference(BigDecimal newJulianReference) {
 		BigDecimal oldJulianReference = julianReference;
 		julianReference = newJulianReference;
 		if (eNotificationRequired())
@@ -217,8 +211,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePeriodPropertyType getEpochOfUse()
-	{
+	@Override
+	public TimePeriodPropertyType getEpochOfUse() {
 		return epochOfUse;
 	}
 
@@ -227,12 +221,10 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEpochOfUse(TimePeriodPropertyType newEpochOfUse, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEpochOfUse(TimePeriodPropertyType newEpochOfUse, NotificationChain msgs) {
 		TimePeriodPropertyType oldEpochOfUse = epochOfUse;
 		epochOfUse = newEpochOfUse;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_CALENDAR_ERA_TYPE__EPOCH_OF_USE, oldEpochOfUse, newEpochOfUse);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -244,10 +236,9 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEpochOfUse(TimePeriodPropertyType newEpochOfUse)
-	{
-		if (newEpochOfUse != epochOfUse)
-		{
+	@Override
+	public void setEpochOfUse(TimePeriodPropertyType newEpochOfUse) {
+		if (newEpochOfUse != epochOfUse) {
 			NotificationChain msgs = null;
 			if (epochOfUse != null)
 				msgs = ((InternalEObject)epochOfUse).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_CALENDAR_ERA_TYPE__EPOCH_OF_USE, null, msgs);
@@ -266,10 +257,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_ERA_TYPE__REFERENCE_EVENT:
 				return basicSetReferenceEvent(null, msgs);
 			case GMLPackage.TIME_CALENDAR_ERA_TYPE__EPOCH_OF_USE:
@@ -284,10 +273,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_ERA_TYPE__REFERENCE_EVENT:
 				return getReferenceEvent();
 			case GMLPackage.TIME_CALENDAR_ERA_TYPE__REFERENCE_DATE:
@@ -306,10 +293,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_ERA_TYPE__REFERENCE_EVENT:
 				setReferenceEvent((StringOrRefType)newValue);
 				return;
@@ -332,10 +317,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_ERA_TYPE__REFERENCE_EVENT:
 				setReferenceEvent((StringOrRefType)null);
 				return;
@@ -358,10 +341,8 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_CALENDAR_ERA_TYPE__REFERENCE_EVENT:
 				return referenceEvent != null;
 			case GMLPackage.TIME_CALENDAR_ERA_TYPE__REFERENCE_DATE:
@@ -380,11 +361,10 @@ public class TimeCalendarEraTypeImpl extends DefinitionTypeImpl implements TimeC
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (referenceDate: ");
 		result.append(referenceDate);
 		result.append(", julianReference: ");

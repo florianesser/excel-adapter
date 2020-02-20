@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='SpeedType' kind='simple'"
  * @generated
  */
-public interface SpeedType extends MeasureType
-{
+public interface SpeedType extends MeasureType {
 } // SpeedType

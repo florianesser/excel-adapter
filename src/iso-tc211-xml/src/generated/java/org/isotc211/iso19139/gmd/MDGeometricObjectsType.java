@@ -22,15 +22,10 @@ import org.isotc211.iso19139.gco.IntegerPropertyType;
  * @model extendedMetaData="name='MD_GeometricObjects_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDGeometricObjectsType extends AbstractObjectType
-{
+public interface MDGeometricObjectsType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Geometric Object Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geometric Object Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geometric Object Type</em>' containment reference.
 	 * @see #setGeometricObjectType(MDGeometricObjectTypeCodePropertyType)
@@ -54,10 +49,6 @@ public interface MDGeometricObjectsType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Geometric Object Count</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geometric Object Count</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geometric Object Count</em>' containment reference.
 	 * @see #setGeometricObjectCount(IntegerPropertyType)

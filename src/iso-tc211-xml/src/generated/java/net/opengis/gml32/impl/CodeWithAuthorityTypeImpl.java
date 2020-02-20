@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CodeWithAuthorityTypeImpl extends CodeTypeImpl implements CodeWithAuthorityType
-{
+public class CodeWithAuthorityTypeImpl extends CodeTypeImpl implements CodeWithAuthorityType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CodeWithAuthorityTypeImpl()
-	{
+	protected CodeWithAuthorityTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class CodeWithAuthorityTypeImpl extends CodeTypeImpl implements CodeWithA
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCodeWithAuthorityType();
 	}
 

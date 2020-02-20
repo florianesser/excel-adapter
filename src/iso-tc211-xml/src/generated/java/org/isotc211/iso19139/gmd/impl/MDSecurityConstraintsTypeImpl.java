@@ -32,8 +32,7 @@ import org.isotc211.iso19139.gmd.MDSecurityConstraintsType;
  *
  * @generated
  */
-public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl implements MDSecurityConstraintsType
-{
+public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl implements MDSecurityConstraintsType {
 	/**
 	 * The cached value of the '{@link #getClassification() <em>Classification</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -79,8 +78,7 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDSecurityConstraintsTypeImpl()
-	{
+	protected MDSecurityConstraintsTypeImpl() {
 		super();
 	}
 
@@ -90,8 +88,7 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDSecurityConstraintsType();
 	}
 
@@ -100,8 +97,8 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDClassificationCodePropertyType getClassification()
-	{
+	@Override
+	public MDClassificationCodePropertyType getClassification() {
 		return classification;
 	}
 
@@ -110,12 +107,10 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetClassification(MDClassificationCodePropertyType newClassification, NotificationChain msgs)
-	{
+	public NotificationChain basicSetClassification(MDClassificationCodePropertyType newClassification, NotificationChain msgs) {
 		MDClassificationCodePropertyType oldClassification = classification;
 		classification = newClassification;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__CLASSIFICATION, oldClassification, newClassification);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -127,10 +122,9 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setClassification(MDClassificationCodePropertyType newClassification)
-	{
-		if (newClassification != classification)
-		{
+	@Override
+	public void setClassification(MDClassificationCodePropertyType newClassification) {
+		if (newClassification != classification) {
 			NotificationChain msgs = null;
 			if (classification != null)
 				msgs = ((InternalEObject)classification).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__CLASSIFICATION, null, msgs);
@@ -148,8 +142,8 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getUserNote()
-	{
+	@Override
+	public CharacterStringPropertyType getUserNote() {
 		return userNote;
 	}
 
@@ -158,12 +152,10 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUserNote(CharacterStringPropertyType newUserNote, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUserNote(CharacterStringPropertyType newUserNote, NotificationChain msgs) {
 		CharacterStringPropertyType oldUserNote = userNote;
 		userNote = newUserNote;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__USER_NOTE, oldUserNote, newUserNote);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -175,10 +167,9 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUserNote(CharacterStringPropertyType newUserNote)
-	{
-		if (newUserNote != userNote)
-		{
+	@Override
+	public void setUserNote(CharacterStringPropertyType newUserNote) {
+		if (newUserNote != userNote) {
 			NotificationChain msgs = null;
 			if (userNote != null)
 				msgs = ((InternalEObject)userNote).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__USER_NOTE, null, msgs);
@@ -196,8 +187,8 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getClassificationSystem()
-	{
+	@Override
+	public CharacterStringPropertyType getClassificationSystem() {
 		return classificationSystem;
 	}
 
@@ -206,12 +197,10 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetClassificationSystem(CharacterStringPropertyType newClassificationSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetClassificationSystem(CharacterStringPropertyType newClassificationSystem, NotificationChain msgs) {
 		CharacterStringPropertyType oldClassificationSystem = classificationSystem;
 		classificationSystem = newClassificationSystem;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__CLASSIFICATION_SYSTEM, oldClassificationSystem, newClassificationSystem);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -223,10 +212,9 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setClassificationSystem(CharacterStringPropertyType newClassificationSystem)
-	{
-		if (newClassificationSystem != classificationSystem)
-		{
+	@Override
+	public void setClassificationSystem(CharacterStringPropertyType newClassificationSystem) {
+		if (newClassificationSystem != classificationSystem) {
 			NotificationChain msgs = null;
 			if (classificationSystem != null)
 				msgs = ((InternalEObject)classificationSystem).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__CLASSIFICATION_SYSTEM, null, msgs);
@@ -244,8 +232,8 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getHandlingDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getHandlingDescription() {
 		return handlingDescription;
 	}
 
@@ -254,12 +242,10 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetHandlingDescription(CharacterStringPropertyType newHandlingDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetHandlingDescription(CharacterStringPropertyType newHandlingDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldHandlingDescription = handlingDescription;
 		handlingDescription = newHandlingDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__HANDLING_DESCRIPTION, oldHandlingDescription, newHandlingDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -271,10 +257,9 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHandlingDescription(CharacterStringPropertyType newHandlingDescription)
-	{
-		if (newHandlingDescription != handlingDescription)
-		{
+	@Override
+	public void setHandlingDescription(CharacterStringPropertyType newHandlingDescription) {
+		if (newHandlingDescription != handlingDescription) {
 			NotificationChain msgs = null;
 			if (handlingDescription != null)
 				msgs = ((InternalEObject)handlingDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__HANDLING_DESCRIPTION, null, msgs);
@@ -293,10 +278,8 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__CLASSIFICATION:
 				return basicSetClassification(null, msgs);
 			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__USER_NOTE:
@@ -315,10 +298,8 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__CLASSIFICATION:
 				return getClassification();
 			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__USER_NOTE:
@@ -337,10 +318,8 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__CLASSIFICATION:
 				setClassification((MDClassificationCodePropertyType)newValue);
 				return;
@@ -363,10 +342,8 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__CLASSIFICATION:
 				setClassification((MDClassificationCodePropertyType)null);
 				return;
@@ -389,10 +366,8 @@ public class MDSecurityConstraintsTypeImpl extends MDConstraintsTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__CLASSIFICATION:
 				return classification != null;
 			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE__USER_NOTE:

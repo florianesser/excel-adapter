@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDMaintenanceFrequencyCodePropertyType;
  *
  * @generated
  */
-public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDMaintenanceFrequencyCodePropertyType
-{
+public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDMaintenanceFrequencyCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDMaintenanceFrequencyCode() <em>MD Maintenance Frequency Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDMaintenanceFrequencyCodePropertyTypeImpl()
-	{
+	protected MDMaintenanceFrequencyCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDMaintenanceFrequencyCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDMaintenanceFrequencyCode()
-	{
+	@Override
+	public CodeListValueType getMDMaintenanceFrequencyCode() {
 		return mDMaintenanceFrequencyCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDMaintenanceFrequencyCode(CodeListValueType newMDMaintenanceFrequencyCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDMaintenanceFrequencyCode(CodeListValueType newMDMaintenanceFrequencyCode, NotificationChain msgs) {
 		CodeListValueType oldMDMaintenanceFrequencyCode = mDMaintenanceFrequencyCode;
 		mDMaintenanceFrequencyCode = newMDMaintenanceFrequencyCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE__MD_MAINTENANCE_FREQUENCY_CODE, oldMDMaintenanceFrequencyCode, newMDMaintenanceFrequencyCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDMaintenanceFrequencyCode(CodeListValueType newMDMaintenanceFrequencyCode)
-	{
-		if (newMDMaintenanceFrequencyCode != mDMaintenanceFrequencyCode)
-		{
+	@Override
+	public void setMDMaintenanceFrequencyCode(CodeListValueType newMDMaintenanceFrequencyCode) {
+		if (newMDMaintenanceFrequencyCode != mDMaintenanceFrequencyCode) {
 			NotificationChain msgs = null;
 			if (mDMaintenanceFrequencyCode != null)
 				msgs = ((InternalEObject)mDMaintenanceFrequencyCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE__MD_MAINTENANCE_FREQUENCY_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE__MD_MAINTENANCE_FREQUENCY_CODE:
 				return basicSetMDMaintenanceFrequencyCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE__MD_MAINTENANCE_FREQUENCY_CODE:
 				return getMDMaintenanceFrequencyCode();
 			case GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE__MD_MAINTENANCE_FREQUENCY_CODE:
 				setMDMaintenanceFrequencyCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE__MD_MAINTENANCE_FREQUENCY_CODE:
 				setMDMaintenanceFrequencyCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE__MD_MAINTENANCE_FREQUENCY_CODE:
 				return mDMaintenanceFrequencyCode != null;
 			case GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDMaintenanceFrequencyCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

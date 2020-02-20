@@ -22,8 +22,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='ConventionalUnitType' kind='elementOnly'"
  * @generated
  */
-public interface ConventionalUnitType extends UnitDefinitionType
-{
+public interface ConventionalUnitType extends UnitDefinitionType {
 	/**
 	 * Returns the value of the '<em><b>Conversion To Preferred Unit</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

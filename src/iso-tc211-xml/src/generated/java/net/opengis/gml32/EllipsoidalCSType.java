@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='EllipsoidalCSType' kind='elementOnly'"
  * @generated
  */
-public interface EllipsoidalCSType extends AbstractCoordinateSystemType
-{
+public interface EllipsoidalCSType extends AbstractCoordinateSystemType {
 } // EllipsoidalCSType

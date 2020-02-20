@@ -35,8 +35,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITelephoneType
-{
+public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITelephoneType {
 	/**
 	 * The cached value of the '{@link #getVoice() <em>Voice</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -62,8 +61,7 @@ public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITel
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CITelephoneTypeImpl()
-	{
+	protected CITelephoneTypeImpl() {
 		super();
 	}
 
@@ -73,8 +71,7 @@ public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITel
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCITelephoneType();
 	}
 
@@ -83,10 +80,9 @@ public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITel
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getVoice()
-	{
-		if (voice == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getVoice() {
+		if (voice == null) {
 			voice = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.CI_TELEPHONE_TYPE__VOICE);
 		}
 		return voice;
@@ -97,10 +93,9 @@ public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITel
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getFacsimile()
-	{
-		if (facsimile == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getFacsimile() {
+		if (facsimile == null) {
 			facsimile = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.CI_TELEPHONE_TYPE__FACSIMILE);
 		}
 		return facsimile;
@@ -112,10 +107,8 @@ public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITel
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_TELEPHONE_TYPE__VOICE:
 				return ((InternalEList<?>)getVoice()).basicRemove(otherEnd, msgs);
 			case GMDPackage.CI_TELEPHONE_TYPE__FACSIMILE:
@@ -130,10 +123,8 @@ public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITel
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_TELEPHONE_TYPE__VOICE:
 				return getVoice();
 			case GMDPackage.CI_TELEPHONE_TYPE__FACSIMILE:
@@ -149,10 +140,8 @@ public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITel
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_TELEPHONE_TYPE__VOICE:
 				getVoice().clear();
 				getVoice().addAll((Collection<? extends CharacterStringPropertyType>)newValue);
@@ -171,10 +160,8 @@ public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITel
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_TELEPHONE_TYPE__VOICE:
 				getVoice().clear();
 				return;
@@ -191,10 +178,8 @@ public class CITelephoneTypeImpl extends AbstractObjectTypeImpl implements CITel
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_TELEPHONE_TYPE__VOICE:
 				return voice != null && !voice.isEmpty();
 			case GMDPackage.CI_TELEPHONE_TYPE__FACSIMILE:

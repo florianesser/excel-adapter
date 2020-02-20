@@ -19,15 +19,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='BaseUnitType' kind='elementOnly'"
  * @generated
  */
-public interface BaseUnitType extends UnitDefinitionType
-{
+public interface BaseUnitType extends UnitDefinitionType {
 	/**
 	 * Returns the value of the '<em><b>Units System</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Units System</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Units System</em>' containment reference.
 	 * @see #setUnitsSystem(ReferenceType)

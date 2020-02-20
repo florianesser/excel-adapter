@@ -21,8 +21,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='MultiSurfaceType' kind='elementOnly'"
  * @generated
  */
-public interface MultiSurfaceType extends AbstractGeometricAggregateType
-{
+public interface MultiSurfaceType extends AbstractGeometricAggregateType {
 	/**
 	 * Returns the value of the '<em><b>Surface Member</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.SurfacePropertyType}.

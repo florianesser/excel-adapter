@@ -25,15 +25,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='GridFunctionType' kind='elementOnly'"
  * @generated
  */
-public interface GridFunctionType extends EObject
-{
+public interface GridFunctionType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Sequence Rule</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sequence Rule</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sequence Rule</em>' containment reference.
 	 * @see #setSequenceRule(SequenceRuleType)
@@ -57,10 +52,6 @@ public interface GridFunctionType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Start Point</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Start Point</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Start Point</em>' attribute.
 	 * @see #setStartPoint(List)

@@ -37,8 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl implements TimeNodeType
-{
+public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl implements TimeNodeType {
 	/**
 	 * The cached value of the '{@link #getPreviousEdge() <em>Previous Edge</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -74,8 +73,7 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeNodeTypeImpl()
-	{
+	protected TimeNodeTypeImpl() {
 		super();
 	}
 
@@ -85,8 +83,7 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeNodeType();
 	}
 
@@ -95,10 +92,9 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TimeEdgePropertyType> getPreviousEdge()
-	{
-		if (previousEdge == null)
-		{
+	@Override
+	public EList<TimeEdgePropertyType> getPreviousEdge() {
+		if (previousEdge == null) {
 			previousEdge = new EObjectContainmentEList<TimeEdgePropertyType>(TimeEdgePropertyType.class, this, GMLPackage.TIME_NODE_TYPE__PREVIOUS_EDGE);
 		}
 		return previousEdge;
@@ -109,10 +105,9 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TimeEdgePropertyType> getNextEdge()
-	{
-		if (nextEdge == null)
-		{
+	@Override
+	public EList<TimeEdgePropertyType> getNextEdge() {
+		if (nextEdge == null) {
 			nextEdge = new EObjectContainmentEList<TimeEdgePropertyType>(TimeEdgePropertyType.class, this, GMLPackage.TIME_NODE_TYPE__NEXT_EDGE);
 		}
 		return nextEdge;
@@ -123,8 +118,8 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeInstantPropertyType getPosition()
-	{
+	@Override
+	public TimeInstantPropertyType getPosition() {
 		return position;
 	}
 
@@ -133,12 +128,10 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPosition(TimeInstantPropertyType newPosition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPosition(TimeInstantPropertyType newPosition, NotificationChain msgs) {
 		TimeInstantPropertyType oldPosition = position;
 		position = newPosition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_NODE_TYPE__POSITION, oldPosition, newPosition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -150,10 +143,9 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPosition(TimeInstantPropertyType newPosition)
-	{
-		if (newPosition != position)
-		{
+	@Override
+	public void setPosition(TimeInstantPropertyType newPosition) {
+		if (newPosition != position) {
 			NotificationChain msgs = null;
 			if (position != null)
 				msgs = ((InternalEObject)position).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_NODE_TYPE__POSITION, null, msgs);
@@ -172,10 +164,8 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_NODE_TYPE__PREVIOUS_EDGE:
 				return ((InternalEList<?>)getPreviousEdge()).basicRemove(otherEnd, msgs);
 			case GMLPackage.TIME_NODE_TYPE__NEXT_EDGE:
@@ -192,10 +182,8 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_NODE_TYPE__PREVIOUS_EDGE:
 				return getPreviousEdge();
 			case GMLPackage.TIME_NODE_TYPE__NEXT_EDGE:
@@ -213,10 +201,8 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_NODE_TYPE__PREVIOUS_EDGE:
 				getPreviousEdge().clear();
 				getPreviousEdge().addAll((Collection<? extends TimeEdgePropertyType>)newValue);
@@ -238,10 +224,8 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_NODE_TYPE__PREVIOUS_EDGE:
 				getPreviousEdge().clear();
 				return;
@@ -261,10 +245,8 @@ public class TimeNodeTypeImpl extends AbstractTimeTopologyPrimitiveTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_NODE_TYPE__PREVIOUS_EDGE:
 				return previousEdge != null && !previousEdge.isEmpty();
 			case GMLPackage.TIME_NODE_TYPE__NEXT_EDGE:

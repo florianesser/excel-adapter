@@ -12,8 +12,7 @@ import org.eclipse.emf.ecore.EFactory;
  * @see org.isotc211.iso19139.gsr.GSRPackage
  * @generated
  */
-public interface GSRFactory extends EFactory
-{
+public interface GSRFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->

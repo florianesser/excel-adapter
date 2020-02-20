@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDatumType
-{
+public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDatumType {
 	/**
 	 * The cached value of the '{@link #getPixelInCell() <em>Pixel In Cell</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ImageDatumTypeImpl()
-	{
+	protected ImageDatumTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getImageDatumType();
 	}
 
@@ -65,8 +62,8 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getPixelInCell()
-	{
+	@Override
+	public CodeWithAuthorityType getPixelInCell() {
 		return pixelInCell;
 	}
 
@@ -75,12 +72,10 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPixelInCell(CodeWithAuthorityType newPixelInCell, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPixelInCell(CodeWithAuthorityType newPixelInCell, NotificationChain msgs) {
 		CodeWithAuthorityType oldPixelInCell = pixelInCell;
 		pixelInCell = newPixelInCell;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.IMAGE_DATUM_TYPE__PIXEL_IN_CELL, oldPixelInCell, newPixelInCell);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPixelInCell(CodeWithAuthorityType newPixelInCell)
-	{
-		if (newPixelInCell != pixelInCell)
-		{
+	@Override
+	public void setPixelInCell(CodeWithAuthorityType newPixelInCell) {
+		if (newPixelInCell != pixelInCell) {
 			NotificationChain msgs = null;
 			if (pixelInCell != null)
 				msgs = ((InternalEObject)pixelInCell).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.IMAGE_DATUM_TYPE__PIXEL_IN_CELL, null, msgs);
@@ -114,10 +108,8 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_DATUM_TYPE__PIXEL_IN_CELL:
 				return basicSetPixelInCell(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_DATUM_TYPE__PIXEL_IN_CELL:
 				return getPixelInCell();
 		}
@@ -146,10 +136,8 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_DATUM_TYPE__PIXEL_IN_CELL:
 				setPixelInCell((CodeWithAuthorityType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_DATUM_TYPE__PIXEL_IN_CELL:
 				setPixelInCell((CodeWithAuthorityType)null);
 				return;
@@ -180,10 +166,8 @@ public class ImageDatumTypeImpl extends AbstractDatumTypeImpl implements ImageDa
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.IMAGE_DATUM_TYPE__PIXEL_IN_CELL:
 				return pixelInCell != null;
 		}

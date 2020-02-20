@@ -26,16 +26,11 @@ import org.isotc211.iso19139.gss.GMObjectPropertyType;
  * @model extendedMetaData="name='EX_BoundingPolygon_Type' kind='elementOnly'"
  * @generated
  */
-public interface EXBoundingPolygonType extends AbstractEXGeographicExtentType
-{
+public interface EXBoundingPolygonType extends AbstractEXGeographicExtentType {
 	/**
 	 * Returns the value of the '<em><b>Polygon</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gss.GMObjectPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Polygon</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Polygon</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getEXBoundingPolygonType_Polygon()

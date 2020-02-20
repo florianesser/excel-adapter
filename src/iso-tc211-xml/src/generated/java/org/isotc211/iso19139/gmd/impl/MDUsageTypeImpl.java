@@ -42,8 +42,7 @@ import org.isotc211.iso19139.gmd.MDUsageType;
  *
  * @generated
  */
-public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageType
-{
+public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageType {
 	/**
 	 * The cached value of the '{@link #getSpecificUsage() <em>Specific Usage</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -89,8 +88,7 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDUsageTypeImpl()
-	{
+	protected MDUsageTypeImpl() {
 		super();
 	}
 
@@ -100,8 +98,7 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDUsageType();
 	}
 
@@ -110,8 +107,8 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getSpecificUsage()
-	{
+	@Override
+	public CharacterStringPropertyType getSpecificUsage() {
 		return specificUsage;
 	}
 
@@ -120,12 +117,10 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSpecificUsage(CharacterStringPropertyType newSpecificUsage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSpecificUsage(CharacterStringPropertyType newSpecificUsage, NotificationChain msgs) {
 		CharacterStringPropertyType oldSpecificUsage = specificUsage;
 		specificUsage = newSpecificUsage;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_USAGE_TYPE__SPECIFIC_USAGE, oldSpecificUsage, newSpecificUsage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -137,10 +132,9 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSpecificUsage(CharacterStringPropertyType newSpecificUsage)
-	{
-		if (newSpecificUsage != specificUsage)
-		{
+	@Override
+	public void setSpecificUsage(CharacterStringPropertyType newSpecificUsage) {
+		if (newSpecificUsage != specificUsage) {
 			NotificationChain msgs = null;
 			if (specificUsage != null)
 				msgs = ((InternalEObject)specificUsage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_USAGE_TYPE__SPECIFIC_USAGE, null, msgs);
@@ -158,8 +152,8 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DateTimePropertyType getUsageDateTime()
-	{
+	@Override
+	public DateTimePropertyType getUsageDateTime() {
 		return usageDateTime;
 	}
 
@@ -168,12 +162,10 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUsageDateTime(DateTimePropertyType newUsageDateTime, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUsageDateTime(DateTimePropertyType newUsageDateTime, NotificationChain msgs) {
 		DateTimePropertyType oldUsageDateTime = usageDateTime;
 		usageDateTime = newUsageDateTime;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_USAGE_TYPE__USAGE_DATE_TIME, oldUsageDateTime, newUsageDateTime);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -185,10 +177,9 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsageDateTime(DateTimePropertyType newUsageDateTime)
-	{
-		if (newUsageDateTime != usageDateTime)
-		{
+	@Override
+	public void setUsageDateTime(DateTimePropertyType newUsageDateTime) {
+		if (newUsageDateTime != usageDateTime) {
 			NotificationChain msgs = null;
 			if (usageDateTime != null)
 				msgs = ((InternalEObject)usageDateTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_USAGE_TYPE__USAGE_DATE_TIME, null, msgs);
@@ -206,8 +197,8 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getUserDeterminedLimitations()
-	{
+	@Override
+	public CharacterStringPropertyType getUserDeterminedLimitations() {
 		return userDeterminedLimitations;
 	}
 
@@ -216,12 +207,10 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUserDeterminedLimitations(CharacterStringPropertyType newUserDeterminedLimitations, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUserDeterminedLimitations(CharacterStringPropertyType newUserDeterminedLimitations, NotificationChain msgs) {
 		CharacterStringPropertyType oldUserDeterminedLimitations = userDeterminedLimitations;
 		userDeterminedLimitations = newUserDeterminedLimitations;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_USAGE_TYPE__USER_DETERMINED_LIMITATIONS, oldUserDeterminedLimitations, newUserDeterminedLimitations);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -233,10 +222,9 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUserDeterminedLimitations(CharacterStringPropertyType newUserDeterminedLimitations)
-	{
-		if (newUserDeterminedLimitations != userDeterminedLimitations)
-		{
+	@Override
+	public void setUserDeterminedLimitations(CharacterStringPropertyType newUserDeterminedLimitations) {
+		if (newUserDeterminedLimitations != userDeterminedLimitations) {
 			NotificationChain msgs = null;
 			if (userDeterminedLimitations != null)
 				msgs = ((InternalEObject)userDeterminedLimitations).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_USAGE_TYPE__USER_DETERMINED_LIMITATIONS, null, msgs);
@@ -254,10 +242,9 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIResponsiblePartyPropertyType> getUserContactInfo()
-	{
-		if (userContactInfo == null)
-		{
+	@Override
+	public EList<CIResponsiblePartyPropertyType> getUserContactInfo() {
+		if (userContactInfo == null) {
 			userContactInfo = new EObjectContainmentEList<CIResponsiblePartyPropertyType>(CIResponsiblePartyPropertyType.class, this, GMDPackage.MD_USAGE_TYPE__USER_CONTACT_INFO);
 		}
 		return userContactInfo;
@@ -269,10 +256,8 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_USAGE_TYPE__SPECIFIC_USAGE:
 				return basicSetSpecificUsage(null, msgs);
 			case GMDPackage.MD_USAGE_TYPE__USAGE_DATE_TIME:
@@ -291,10 +276,8 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_USAGE_TYPE__SPECIFIC_USAGE:
 				return getSpecificUsage();
 			case GMDPackage.MD_USAGE_TYPE__USAGE_DATE_TIME:
@@ -314,10 +297,8 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_USAGE_TYPE__SPECIFIC_USAGE:
 				setSpecificUsage((CharacterStringPropertyType)newValue);
 				return;
@@ -341,10 +322,8 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_USAGE_TYPE__SPECIFIC_USAGE:
 				setSpecificUsage((CharacterStringPropertyType)null);
 				return;
@@ -367,10 +346,8 @@ public class MDUsageTypeImpl extends AbstractObjectTypeImpl implements MDUsageTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_USAGE_TYPE__SPECIFIC_USAGE:
 				return specificUsage != null;
 			case GMDPackage.MD_USAGE_TYPE__USAGE_DATE_TIME:

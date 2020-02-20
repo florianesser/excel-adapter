@@ -45,16 +45,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='extended' kind='elementOnly'"
  * @generated
  */
-public interface Extended extends EObject
-{
+public interface Extended extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Extended Model</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Extended Model</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extended Model</em>' attribute list.
 	 * @see org.w3.xlink.XLinkPackage#getExtended_ExtendedModel()
@@ -68,10 +63,6 @@ public interface Extended extends EObject
 	 * Returns the value of the '<em><b>Title Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title Group</em>' attribute list.
 	 * @see org.w3.xlink.XLinkPackage#getExtended_TitleGroup()
@@ -85,10 +76,6 @@ public interface Extended extends EObject
 	 * Returns the value of the '<em><b>Title</b></em>' containment reference list.
 	 * The list contents are of type {@link org.w3.xlink.TitleEltType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' containment reference list.
 	 * @see org.w3.xlink.XLinkPackage#getExtended_Title()
@@ -102,10 +89,6 @@ public interface Extended extends EObject
 	 * Returns the value of the '<em><b>Resource Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resource Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resource Group</em>' attribute list.
 	 * @see org.w3.xlink.XLinkPackage#getExtended_ResourceGroup()
@@ -119,10 +102,6 @@ public interface Extended extends EObject
 	 * Returns the value of the '<em><b>Resource</b></em>' containment reference list.
 	 * The list contents are of type {@link org.w3.xlink.ResourceType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resource</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resource</em>' containment reference list.
 	 * @see org.w3.xlink.XLinkPackage#getExtended_Resource()
@@ -136,10 +115,6 @@ public interface Extended extends EObject
 	 * Returns the value of the '<em><b>Locator Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Locator Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Locator Group</em>' attribute list.
 	 * @see org.w3.xlink.XLinkPackage#getExtended_LocatorGroup()
@@ -153,10 +128,6 @@ public interface Extended extends EObject
 	 * Returns the value of the '<em><b>Locator</b></em>' containment reference list.
 	 * The list contents are of type {@link org.w3.xlink.LocatorType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Locator</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Locator</em>' containment reference list.
 	 * @see org.w3.xlink.XLinkPackage#getExtended_Locator()
@@ -170,10 +141,6 @@ public interface Extended extends EObject
 	 * Returns the value of the '<em><b>Arc Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Arc Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Arc Group</em>' attribute list.
 	 * @see org.w3.xlink.XLinkPackage#getExtended_ArcGroup()
@@ -187,10 +154,6 @@ public interface Extended extends EObject
 	 * Returns the value of the '<em><b>Arc</b></em>' containment reference list.
 	 * The list contents are of type {@link org.w3.xlink.ArcType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Arc</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Arc</em>' containment reference list.
 	 * @see org.w3.xlink.XLinkPackage#getExtended_Arc()
@@ -203,10 +166,6 @@ public interface Extended extends EObject
 	/**
 	 * Returns the value of the '<em><b>Role</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Role</em>' attribute.
 	 * @see #setRole(String)
@@ -230,10 +189,6 @@ public interface Extended extends EObject
 	/**
 	 * Returns the value of the '<em><b>Title1</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title1</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title1</em>' attribute.
 	 * @see #setTitle1(String)
@@ -259,10 +214,6 @@ public interface Extended extends EObject
 	 * The default value is <code>"extended"</code>.
 	 * The literals are from the enumeration {@link org.w3.xlink.TypeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see org.w3.xlink.TypeType

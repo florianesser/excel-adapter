@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImpl implements TransformationType
-{
+public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImpl implements TransformationType {
 	/**
 	 * The cached value of the '{@link #getMethodGroup() <em>Method Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TransformationTypeImpl()
-	{
+	protected TransformationTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTransformationType();
 	}
 
@@ -84,10 +81,9 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getMethodGroup()
-	{
-		if (methodGroup == null)
-		{
+	@Override
+	public FeatureMap getMethodGroup() {
+		if (methodGroup == null) {
 			methodGroup = new BasicFeatureMap(this, GMLPackage.TRANSFORMATION_TYPE__METHOD_GROUP);
 		}
 		return methodGroup;
@@ -98,8 +94,8 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationMethodPropertyType getMethod()
-	{
+	@Override
+	public OperationMethodPropertyType getMethod() {
 		return (OperationMethodPropertyType)getMethodGroup().get(GMLPackage.eINSTANCE.getTransformationType_Method(), true);
 	}
 
@@ -108,8 +104,7 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMethod(OperationMethodPropertyType newMethod, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMethod(OperationMethodPropertyType newMethod, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMethodGroup()).basicAdd(GMLPackage.eINSTANCE.getTransformationType_Method(), newMethod, msgs);
 	}
 
@@ -118,8 +113,8 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMethod(OperationMethodPropertyType newMethod)
-	{
+	@Override
+	public void setMethod(OperationMethodPropertyType newMethod) {
 		((FeatureMap.Internal)getMethodGroup()).set(GMLPackage.eINSTANCE.getTransformationType_Method(), newMethod);
 	}
 
@@ -128,10 +123,9 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractGeneralParameterValuePropertyType> getParameterValue()
-	{
-		if (parameterValue == null)
-		{
+	@Override
+	public EList<AbstractGeneralParameterValuePropertyType> getParameterValue() {
+		if (parameterValue == null) {
 			parameterValue = new EObjectContainmentEList<AbstractGeneralParameterValuePropertyType>(AbstractGeneralParameterValuePropertyType.class, this, GMLPackage.TRANSFORMATION_TYPE__PARAMETER_VALUE);
 		}
 		return parameterValue;
@@ -143,10 +137,8 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TRANSFORMATION_TYPE__METHOD_GROUP:
 				return ((InternalEList<?>)getMethodGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.TRANSFORMATION_TYPE__METHOD:
@@ -163,10 +155,8 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TRANSFORMATION_TYPE__METHOD_GROUP:
 				if (coreType) return getMethodGroup();
 				return ((FeatureMap.Internal)getMethodGroup()).getWrapper();
@@ -185,10 +175,8 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TRANSFORMATION_TYPE__METHOD_GROUP:
 				((FeatureMap.Internal)getMethodGroup()).set(newValue);
 				return;
@@ -209,10 +197,8 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TRANSFORMATION_TYPE__METHOD_GROUP:
 				getMethodGroup().clear();
 				return;
@@ -232,10 +218,8 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TRANSFORMATION_TYPE__METHOD_GROUP:
 				return methodGroup != null && !methodGroup.isEmpty();
 			case GMLPackage.TRANSFORMATION_TYPE__METHOD:
@@ -252,11 +236,10 @@ public class TransformationTypeImpl extends AbstractGeneralTransformationTypeImp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (methodGroup: ");
 		result.append(methodGroup);
 		result.append(')');

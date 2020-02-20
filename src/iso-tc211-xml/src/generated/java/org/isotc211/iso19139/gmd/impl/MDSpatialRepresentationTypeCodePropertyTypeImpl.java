@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDSpatialRepresentationTypeCodePropertyType;
  *
  * @generated
  */
-public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDSpatialRepresentationTypeCodePropertyType
-{
+public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDSpatialRepresentationTypeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDSpatialRepresentationTypeCode() <em>MD Spatial Representation Type Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDSpatialRepresentationTypeCodePropertyTypeImpl()
-	{
+	protected MDSpatialRepresentationTypeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDSpatialRepresentationTypeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDSpatialRepresentationTypeCode()
-	{
+	@Override
+	public CodeListValueType getMDSpatialRepresentationTypeCode() {
 		return mDSpatialRepresentationTypeCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDSpatialRepresentationTypeCode(CodeListValueType newMDSpatialRepresentationTypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDSpatialRepresentationTypeCode(CodeListValueType newMDSpatialRepresentationTypeCode, NotificationChain msgs) {
 		CodeListValueType oldMDSpatialRepresentationTypeCode = mDSpatialRepresentationTypeCode;
 		mDSpatialRepresentationTypeCode = newMDSpatialRepresentationTypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE__MD_SPATIAL_REPRESENTATION_TYPE_CODE, oldMDSpatialRepresentationTypeCode, newMDSpatialRepresentationTypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDSpatialRepresentationTypeCode(CodeListValueType newMDSpatialRepresentationTypeCode)
-	{
-		if (newMDSpatialRepresentationTypeCode != mDSpatialRepresentationTypeCode)
-		{
+	@Override
+	public void setMDSpatialRepresentationTypeCode(CodeListValueType newMDSpatialRepresentationTypeCode) {
+		if (newMDSpatialRepresentationTypeCode != mDSpatialRepresentationTypeCode) {
 			NotificationChain msgs = null;
 			if (mDSpatialRepresentationTypeCode != null)
 				msgs = ((InternalEObject)mDSpatialRepresentationTypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE__MD_SPATIAL_REPRESENTATION_TYPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE__MD_SPATIAL_REPRESENTATION_TYPE_CODE:
 				return basicSetMDSpatialRepresentationTypeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE__MD_SPATIAL_REPRESENTATION_TYPE_CODE:
 				return getMDSpatialRepresentationTypeCode();
 			case GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE__MD_SPATIAL_REPRESENTATION_TYPE_CODE:
 				setMDSpatialRepresentationTypeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE__MD_SPATIAL_REPRESENTATION_TYPE_CODE:
 				setMDSpatialRepresentationTypeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE__MD_SPATIAL_REPRESENTATION_TYPE_CODE:
 				return mDSpatialRepresentationTypeCode != null;
 			case GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDSpatialRepresentationTypeCodePropertyTypeImpl extends MinimalEObj
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

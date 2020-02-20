@@ -28,15 +28,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='LI_Source_Type' kind='elementOnly'"
  * @generated
  */
-public interface LISourceType extends AbstractObjectType
-{
+public interface LISourceType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(CharacterStringPropertyType)
@@ -60,10 +55,6 @@ public interface LISourceType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Scale Denominator</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Scale Denominator</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scale Denominator</em>' containment reference.
 	 * @see #setScaleDenominator(MDRepresentativeFractionPropertyType)
@@ -87,10 +78,6 @@ public interface LISourceType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Source Reference System</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Source Reference System</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Reference System</em>' containment reference.
 	 * @see #setSourceReferenceSystem(MDReferenceSystemPropertyType)
@@ -114,10 +101,6 @@ public interface LISourceType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Source Citation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Source Citation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Citation</em>' containment reference.
 	 * @see #setSourceCitation(CICitationPropertyType)
@@ -142,10 +125,6 @@ public interface LISourceType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Source Extent</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.EXExtentPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Source Extent</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Extent</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getLISourceType_SourceExtent()
@@ -159,10 +138,6 @@ public interface LISourceType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Source Step</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.LIProcessStepPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Source Step</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Step</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getLISourceType_SourceStep()

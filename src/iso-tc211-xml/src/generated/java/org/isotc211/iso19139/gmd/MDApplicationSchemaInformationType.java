@@ -32,15 +32,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='MD_ApplicationSchemaInformation_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDApplicationSchemaInformationType extends AbstractObjectType
-{
+public interface MDApplicationSchemaInformationType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(CICitationPropertyType)
@@ -64,10 +59,6 @@ public interface MDApplicationSchemaInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Schema Language</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Schema Language</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Schema Language</em>' containment reference.
 	 * @see #setSchemaLanguage(CharacterStringPropertyType)
@@ -91,10 +82,6 @@ public interface MDApplicationSchemaInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Constraint Language</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Constraint Language</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Constraint Language</em>' containment reference.
 	 * @see #setConstraintLanguage(CharacterStringPropertyType)
@@ -118,10 +105,6 @@ public interface MDApplicationSchemaInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Schema Ascii</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Schema Ascii</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Schema Ascii</em>' containment reference.
 	 * @see #setSchemaAscii(CharacterStringPropertyType)
@@ -145,10 +128,6 @@ public interface MDApplicationSchemaInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Graphics File</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Graphics File</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Graphics File</em>' containment reference.
 	 * @see #setGraphicsFile(BinaryPropertyType)
@@ -172,10 +151,6 @@ public interface MDApplicationSchemaInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Software Development File</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Software Development File</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Software Development File</em>' containment reference.
 	 * @see #setSoftwareDevelopmentFile(BinaryPropertyType)
@@ -199,10 +174,6 @@ public interface MDApplicationSchemaInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Software Development File Format</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Software Development File Format</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Software Development File Format</em>' containment reference.
 	 * @see #setSoftwareDevelopmentFileFormat(CharacterStringPropertyType)

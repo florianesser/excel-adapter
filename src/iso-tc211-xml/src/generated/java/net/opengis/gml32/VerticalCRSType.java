@@ -23,8 +23,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='VerticalCRSType' kind='elementOnly'"
  * @generated
  */
-public interface VerticalCRSType extends AbstractCRSType
-{
+public interface VerticalCRSType extends AbstractCRSType {
 	/**
 	 * Returns the value of the '<em><b>Vertical CS Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.

@@ -46,8 +46,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements EnvelopeType
-{
+public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements EnvelopeType {
 	/**
 	 * The cached value of the '{@link #getLowerCorner() <em>Lower Corner</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -173,8 +172,7 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EnvelopeTypeImpl()
-	{
+	protected EnvelopeTypeImpl() {
 		super();
 	}
 
@@ -184,8 +182,7 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getEnvelopeType();
 	}
 
@@ -194,8 +191,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionType getLowerCorner()
-	{
+	@Override
+	public DirectPositionType getLowerCorner() {
 		return lowerCorner;
 	}
 
@@ -204,12 +201,10 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLowerCorner(DirectPositionType newLowerCorner, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLowerCorner(DirectPositionType newLowerCorner, NotificationChain msgs) {
 		DirectPositionType oldLowerCorner = lowerCorner;
 		lowerCorner = newLowerCorner;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ENVELOPE_TYPE__LOWER_CORNER, oldLowerCorner, newLowerCorner);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -221,10 +216,9 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLowerCorner(DirectPositionType newLowerCorner)
-	{
-		if (newLowerCorner != lowerCorner)
-		{
+	@Override
+	public void setLowerCorner(DirectPositionType newLowerCorner) {
+		if (newLowerCorner != lowerCorner) {
 			NotificationChain msgs = null;
 			if (lowerCorner != null)
 				msgs = ((InternalEObject)lowerCorner).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ENVELOPE_TYPE__LOWER_CORNER, null, msgs);
@@ -242,8 +236,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionType getUpperCorner()
-	{
+	@Override
+	public DirectPositionType getUpperCorner() {
 		return upperCorner;
 	}
 
@@ -252,12 +246,10 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUpperCorner(DirectPositionType newUpperCorner, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUpperCorner(DirectPositionType newUpperCorner, NotificationChain msgs) {
 		DirectPositionType oldUpperCorner = upperCorner;
 		upperCorner = newUpperCorner;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ENVELOPE_TYPE__UPPER_CORNER, oldUpperCorner, newUpperCorner);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -269,10 +261,9 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUpperCorner(DirectPositionType newUpperCorner)
-	{
-		if (newUpperCorner != upperCorner)
-		{
+	@Override
+	public void setUpperCorner(DirectPositionType newUpperCorner) {
+		if (newUpperCorner != upperCorner) {
 			NotificationChain msgs = null;
 			if (upperCorner != null)
 				msgs = ((InternalEObject)upperCorner).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ENVELOPE_TYPE__UPPER_CORNER, null, msgs);
@@ -290,10 +281,9 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectPositionType> getPos()
-	{
-		if (pos == null)
-		{
+	@Override
+	public EList<DirectPositionType> getPos() {
+		if (pos == null) {
 			pos = new EObjectContainmentEList<DirectPositionType>(DirectPositionType.class, this, GMLPackage.ENVELOPE_TYPE__POS);
 		}
 		return pos;
@@ -304,8 +294,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinatesType getCoordinates()
-	{
+	@Override
+	public CoordinatesType getCoordinates() {
 		return coordinates;
 	}
 
@@ -314,12 +304,10 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs) {
 		CoordinatesType oldCoordinates = coordinates;
 		coordinates = newCoordinates;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ENVELOPE_TYPE__COORDINATES, oldCoordinates, newCoordinates);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -331,10 +319,9 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinates(CoordinatesType newCoordinates)
-	{
-		if (newCoordinates != coordinates)
-		{
+	@Override
+	public void setCoordinates(CoordinatesType newCoordinates) {
+		if (newCoordinates != coordinates) {
 			NotificationChain msgs = null;
 			if (coordinates != null)
 				msgs = ((InternalEObject)coordinates).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ENVELOPE_TYPE__COORDINATES, null, msgs);
@@ -352,8 +339,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> getAxisLabels()
-	{
+	@Override
+	public List<String> getAxisLabels() {
 		return axisLabels;
 	}
 
@@ -362,8 +349,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisLabels(List<String> newAxisLabels)
-	{
+	@Override
+	public void setAxisLabels(List<String> newAxisLabels) {
 		List<String> oldAxisLabels = axisLabels;
 		axisLabels = newAxisLabels;
 		if (eNotificationRequired())
@@ -375,8 +362,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getSrsDimension()
-	{
+	@Override
+	public BigInteger getSrsDimension() {
 		return srsDimension;
 	}
 
@@ -385,8 +372,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSrsDimension(BigInteger newSrsDimension)
-	{
+	@Override
+	public void setSrsDimension(BigInteger newSrsDimension) {
 		BigInteger oldSrsDimension = srsDimension;
 		srsDimension = newSrsDimension;
 		if (eNotificationRequired())
@@ -398,8 +385,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getSrsName()
-	{
+	@Override
+	public String getSrsName() {
 		return srsName;
 	}
 
@@ -408,8 +395,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSrsName(String newSrsName)
-	{
+	@Override
+	public void setSrsName(String newSrsName) {
 		String oldSrsName = srsName;
 		srsName = newSrsName;
 		if (eNotificationRequired())
@@ -421,8 +408,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> getUomLabels()
-	{
+	@Override
+	public List<String> getUomLabels() {
 		return uomLabels;
 	}
 
@@ -431,8 +418,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUomLabels(List<String> newUomLabels)
-	{
+	@Override
+	public void setUomLabels(List<String> newUomLabels) {
 		List<String> oldUomLabels = uomLabels;
 		uomLabels = newUomLabels;
 		if (eNotificationRequired())
@@ -445,10 +432,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_TYPE__LOWER_CORNER:
 				return basicSetLowerCorner(null, msgs);
 			case GMLPackage.ENVELOPE_TYPE__UPPER_CORNER:
@@ -467,10 +452,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_TYPE__LOWER_CORNER:
 				return getLowerCorner();
 			case GMLPackage.ENVELOPE_TYPE__UPPER_CORNER:
@@ -498,10 +481,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_TYPE__LOWER_CORNER:
 				setLowerCorner((DirectPositionType)newValue);
 				return;
@@ -537,10 +518,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_TYPE__LOWER_CORNER:
 				setLowerCorner((DirectPositionType)null);
 				return;
@@ -575,10 +554,8 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_TYPE__LOWER_CORNER:
 				return lowerCorner != null;
 			case GMLPackage.ENVELOPE_TYPE__UPPER_CORNER:
@@ -605,11 +582,10 @@ public class EnvelopeTypeImpl extends MinimalEObjectImpl.Container implements En
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (axisLabels: ");
 		result.append(axisLabels);
 		result.append(", srsDimension: ");

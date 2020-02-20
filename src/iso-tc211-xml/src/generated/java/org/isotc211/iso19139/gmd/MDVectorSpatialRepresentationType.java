@@ -25,15 +25,10 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='MD_VectorSpatialRepresentation_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDVectorSpatialRepresentationType extends AbstractMDSpatialRepresentationType
-{
+public interface MDVectorSpatialRepresentationType extends AbstractMDSpatialRepresentationType {
 	/**
 	 * Returns the value of the '<em><b>Topology Level</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Topology Level</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Topology Level</em>' containment reference.
 	 * @see #setTopologyLevel(MDTopologyLevelCodePropertyType)
@@ -58,10 +53,6 @@ public interface MDVectorSpatialRepresentationType extends AbstractMDSpatialRepr
 	 * Returns the value of the '<em><b>Geometric Objects</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDGeometricObjectsPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geometric Objects</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geometric Objects</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDVectorSpatialRepresentationType_GeometricObjects()

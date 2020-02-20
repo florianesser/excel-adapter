@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements MappingRuleType
-{
+public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements MappingRuleType {
 	/**
 	 * The default value of the '{@link #getRuleDefinition() <em>Rule Definition</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -66,8 +65,7 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MappingRuleTypeImpl()
-	{
+	protected MappingRuleTypeImpl() {
 		super();
 	}
 
@@ -77,8 +75,7 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMappingRuleType();
 	}
 
@@ -87,8 +84,8 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRuleDefinition()
-	{
+	@Override
+	public String getRuleDefinition() {
 		return ruleDefinition;
 	}
 
@@ -97,8 +94,8 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRuleDefinition(String newRuleDefinition)
-	{
+	@Override
+	public void setRuleDefinition(String newRuleDefinition) {
 		String oldRuleDefinition = ruleDefinition;
 		ruleDefinition = newRuleDefinition;
 		if (eNotificationRequired())
@@ -110,8 +107,8 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getRuleReference()
-	{
+	@Override
+	public ReferenceType getRuleReference() {
 		return ruleReference;
 	}
 
@@ -120,12 +117,10 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRuleReference(ReferenceType newRuleReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRuleReference(ReferenceType newRuleReference, NotificationChain msgs) {
 		ReferenceType oldRuleReference = ruleReference;
 		ruleReference = newRuleReference;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MAPPING_RULE_TYPE__RULE_REFERENCE, oldRuleReference, newRuleReference);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -137,10 +132,9 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRuleReference(ReferenceType newRuleReference)
-	{
-		if (newRuleReference != ruleReference)
-		{
+	@Override
+	public void setRuleReference(ReferenceType newRuleReference) {
+		if (newRuleReference != ruleReference) {
 			NotificationChain msgs = null;
 			if (ruleReference != null)
 				msgs = ((InternalEObject)ruleReference).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MAPPING_RULE_TYPE__RULE_REFERENCE, null, msgs);
@@ -159,10 +153,8 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.MAPPING_RULE_TYPE__RULE_REFERENCE:
 				return basicSetRuleReference(null, msgs);
 		}
@@ -175,10 +167,8 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.MAPPING_RULE_TYPE__RULE_DEFINITION:
 				return getRuleDefinition();
 			case GMLPackage.MAPPING_RULE_TYPE__RULE_REFERENCE:
@@ -193,10 +183,8 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.MAPPING_RULE_TYPE__RULE_DEFINITION:
 				setRuleDefinition((String)newValue);
 				return;
@@ -213,10 +201,8 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MAPPING_RULE_TYPE__RULE_DEFINITION:
 				setRuleDefinition(RULE_DEFINITION_EDEFAULT);
 				return;
@@ -233,10 +219,8 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MAPPING_RULE_TYPE__RULE_DEFINITION:
 				return RULE_DEFINITION_EDEFAULT == null ? ruleDefinition != null : !RULE_DEFINITION_EDEFAULT.equals(ruleDefinition);
 			case GMLPackage.MAPPING_RULE_TYPE__RULE_REFERENCE:
@@ -251,11 +235,10 @@ public class MappingRuleTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (ruleDefinition: ");
 		result.append(ruleDefinition);
 		result.append(')');

@@ -48,8 +48,7 @@ import org.w3.xlink.impl.XLinkPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GSSPackageImpl extends EPackageImpl implements GSSPackage
-{
+public class GSSPackageImpl extends EPackageImpl implements GSSPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -79,8 +78,7 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * @see #init()
 	 * @generated
 	 */
-	private GSSPackageImpl()
-	{
+	private GSSPackageImpl() {
 		super(eNS_URI, GSSFactory.eINSTANCE);
 	}
 
@@ -93,7 +91,7 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link GSSPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -103,12 +101,12 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static GSSPackage init()
-	{
+	public static GSSPackage init() {
 		if (isInited) return (GSSPackage)EPackage.Registry.INSTANCE.getEPackage(GSSPackage.eNS_URI);
 
 		// Obtain or create and register package
-		GSSPackageImpl theGSSPackage = (GSSPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof GSSPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new GSSPackageImpl());
+		Object registeredGSSPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		GSSPackageImpl theGSSPackage = registeredGSSPackage instanceof GSSPackageImpl ? (GSSPackageImpl)registeredGSSPackage : new GSSPackageImpl();
 
 		isInited = true;
 
@@ -117,12 +115,18 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 		XMLTypePackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		GMLPackageImpl theGMLPackage = (GMLPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GMLPackage.eNS_URI) instanceof GMLPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GMLPackage.eNS_URI) : GMLPackage.eINSTANCE);
-		XLinkPackageImpl theXLinkPackage = (XLinkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(XLinkPackage.eNS_URI) instanceof XLinkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(XLinkPackage.eNS_URI) : XLinkPackage.eINSTANCE);
-		GMDPackageImpl theGMDPackage = (GMDPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GMDPackage.eNS_URI) instanceof GMDPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GMDPackage.eNS_URI) : GMDPackage.eINSTANCE);
-		GCOPackageImpl theGCOPackage = (GCOPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GCOPackage.eNS_URI) instanceof GCOPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GCOPackage.eNS_URI) : GCOPackage.eINSTANCE);
-		GTSPackageImpl theGTSPackage = (GTSPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GTSPackage.eNS_URI) instanceof GTSPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GTSPackage.eNS_URI) : GTSPackage.eINSTANCE);
-		GSRPackageImpl theGSRPackage = (GSRPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GSRPackage.eNS_URI) instanceof GSRPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GSRPackage.eNS_URI) : GSRPackage.eINSTANCE);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GMLPackage.eNS_URI);
+		GMLPackageImpl theGMLPackage = (GMLPackageImpl)(registeredPackage instanceof GMLPackageImpl ? registeredPackage : GMLPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(XLinkPackage.eNS_URI);
+		XLinkPackageImpl theXLinkPackage = (XLinkPackageImpl)(registeredPackage instanceof XLinkPackageImpl ? registeredPackage : XLinkPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GMDPackage.eNS_URI);
+		GMDPackageImpl theGMDPackage = (GMDPackageImpl)(registeredPackage instanceof GMDPackageImpl ? registeredPackage : GMDPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GCOPackage.eNS_URI);
+		GCOPackageImpl theGCOPackage = (GCOPackageImpl)(registeredPackage instanceof GCOPackageImpl ? registeredPackage : GCOPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GTSPackage.eNS_URI);
+		GTSPackageImpl theGTSPackage = (GTSPackageImpl)(registeredPackage instanceof GTSPackageImpl ? registeredPackage : GTSPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GSRPackage.eNS_URI);
+		GSRPackageImpl theGSRPackage = (GSRPackageImpl)(registeredPackage instanceof GSRPackageImpl ? registeredPackage : GSRPackage.eINSTANCE);
 
 		// Load packages
 		theGMLPackage.loadPackage();
@@ -149,7 +153,6 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 		// Mark meta-data to indicate it can't be changed
 		theGSSPackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(GSSPackage.eNS_URI, theGSSPackage);
 		return theGSSPackage;
@@ -160,8 +163,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getGMObjectPropertyType()
-	{
+	@Override
+	public EClass getGMObjectPropertyType() {
 		return gmObjectPropertyTypeEClass;
 	}
 
@@ -170,8 +173,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_AbstractGeometryGroup()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_AbstractGeometryGroup() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -180,8 +183,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getGMObjectPropertyType_AbstractGeometry()
-	{
+	@Override
+	public EReference getGMObjectPropertyType_AbstractGeometry() {
 		return (EReference)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -190,8 +193,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_Actuate() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -200,8 +203,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_Arcrole() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -210,8 +213,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_Href()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_Href() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -220,8 +223,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_NilReason() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -230,8 +233,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_Role()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_Role() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -240,8 +243,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_Show()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_Show() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -250,8 +253,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_Title()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_Title() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -260,8 +263,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_Type()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_Type() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -270,8 +273,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMObjectPropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getGMObjectPropertyType_Uuidref() {
 		return (EAttribute)gmObjectPropertyTypeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -280,8 +283,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getGMPointPropertyType()
-	{
+	@Override
+	public EClass getGMPointPropertyType() {
 		return gmPointPropertyTypeEClass;
 	}
 
@@ -290,8 +293,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getGMPointPropertyType_Point()
-	{
+	@Override
+	public EReference getGMPointPropertyType_Point() {
 		return (EReference)gmPointPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -300,8 +303,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMPointPropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getGMPointPropertyType_Actuate() {
 		return (EAttribute)gmPointPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -310,8 +313,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMPointPropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getGMPointPropertyType_Arcrole() {
 		return (EAttribute)gmPointPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -320,8 +323,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMPointPropertyType_Href()
-	{
+	@Override
+	public EAttribute getGMPointPropertyType_Href() {
 		return (EAttribute)gmPointPropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -330,8 +333,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMPointPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getGMPointPropertyType_NilReason() {
 		return (EAttribute)gmPointPropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -340,8 +343,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMPointPropertyType_Role()
-	{
+	@Override
+	public EAttribute getGMPointPropertyType_Role() {
 		return (EAttribute)gmPointPropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -350,8 +353,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMPointPropertyType_Show()
-	{
+	@Override
+	public EAttribute getGMPointPropertyType_Show() {
 		return (EAttribute)gmPointPropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -360,8 +363,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMPointPropertyType_Title()
-	{
+	@Override
+	public EAttribute getGMPointPropertyType_Title() {
 		return (EAttribute)gmPointPropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -370,8 +373,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMPointPropertyType_Type()
-	{
+	@Override
+	public EAttribute getGMPointPropertyType_Type() {
 		return (EAttribute)gmPointPropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -380,8 +383,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGMPointPropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getGMPointPropertyType_Uuidref() {
 		return (EAttribute)gmPointPropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -390,8 +393,8 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSSFactory getGSSFactory()
-	{
+	@Override
+	public GSSFactory getGSSFactory() {
 		return (GSSFactory)getEFactoryInstance();
 	}
 
@@ -409,8 +412,7 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void createPackageContents()
-	{
+	public void createPackageContents() {
 		if (isCreated) return;
 		isCreated = true;
 
@@ -455,8 +457,7 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void initializePackageContents()
-	{
+	public void initializePackageContents() {
 		if (isInitialized) return;
 		isInitialized = true;
 
@@ -572,15 +573,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdbasicTypes3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:basicTypes:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdbasicTypes3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:basicTypes:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "basicTypes.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "basicTypes.xsd"
 		   });
 	}
 
@@ -590,15 +589,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgml3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:gml:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgml3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:gml:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "gml.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "gml.xsd"
 		   });
 	}
 
@@ -608,15 +605,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsddynamicFeature3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:dynamicFeature:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsddynamicFeature3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:dynamicFeature:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "dynamicFeature.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "dynamicFeature.xsd"
 		   });
 	}
 
@@ -626,15 +621,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdtopology3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:topology:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdtopology3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:topology:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "topology.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "topology.xsd"
 		   });
 	}
 
@@ -644,15 +637,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdcoverage3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:coverage:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdcoverage3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:coverage:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "coverage.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "coverage.xsd"
 		   });
 	}
 
@@ -662,15 +653,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdcoordinateReferenceSystems3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateReferenceSystems:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdcoordinateReferenceSystems3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateReferenceSystems:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "coordinateReferenceSystems.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "coordinateReferenceSystems.xsd"
 		   });
 	}
 
@@ -680,15 +669,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdobservation3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:observation:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdobservation3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:observation:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "observation.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "observation.xsd"
 		   });
 	}
 
@@ -698,15 +685,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdtemporalReferenceSystems3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:temporalReferenceSystems:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdtemporalReferenceSystems3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:temporalReferenceSystems:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "temporalReferenceSystems.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "temporalReferenceSystems.xsd"
 		   });
 	}
 
@@ -716,15 +701,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsddeprecatedTypes3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:deprecatedTypes:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsddeprecatedTypes3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:deprecatedTypes:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "deprecatedTypes.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "deprecatedTypes.xsd"
 		   });
 	}
 
@@ -734,15 +717,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdtemporalTopology3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:temporalTopology:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdtemporalTopology3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:temporalTopology:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "temporalTopology.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "temporalTopology.xsd"
 		   });
 	}
 
@@ -752,15 +733,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnopengisspecificationgmlschemaxsddictionaryv3Annotations()
-	{
-		String source = "urn:opengis:specification:gml:schema-xsd:dictionary:v3.2.1";	
+	protected void createUrnopengisspecificationgmlschemaxsddictionaryv3Annotations() {
+		String source = "urn:opengis:specification:gml:schema-xsd:dictionary:v3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "dictionary.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "dictionary.xsd"
 		   });
 	}
 
@@ -770,15 +749,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgmlBase3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:gmlBase:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgmlBase3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:gmlBase:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "gmlBase.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "gmlBase.xsd"
 		   });
 	}
 
@@ -788,15 +765,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdtemporal3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:temporal:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdtemporal3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:temporal:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "temporal.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "temporal.xsd"
 		   });
 	}
 
@@ -806,15 +781,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdfeature3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:feature:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdfeature3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:feature:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "feature.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "feature.xsd"
 		   });
 	}
 
@@ -824,15 +797,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsddirection3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:direction:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsddirection3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:direction:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "direction.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "direction.xsd"
 		   });
 	}
 
@@ -842,15 +813,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdvalueObjects3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:valueObjects:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdvalueObjects3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:valueObjects:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "valueObjects.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "valueObjects.xsd"
 		   });
 	}
 
@@ -860,15 +829,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryBasic0d1d3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryBasic0d1d:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryBasic0d1d3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryBasic0d1d:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryBasic0d1d.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryBasic0d1d.xsd"
 		   });
 	}
 
@@ -878,15 +845,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdcoordinateSystems3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateSystems:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdcoordinateSystems3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateSystems:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "coordinateSystems.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "coordinateSystems.xsd"
 		   });
 	}
 
@@ -896,15 +861,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsddatums3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:datums:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsddatums3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:datums:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "datums.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "datums.xsd"
 		   });
 	}
 
@@ -914,15 +877,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdcoordinateOperations3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateOperations:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdcoordinateOperations3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateOperations:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "coordinateOperations.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "coordinateOperations.xsd"
 		   });
 	}
 
@@ -932,15 +893,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdreferenceSystems3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:referenceSystems:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdreferenceSystems3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:referenceSystems:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "referenceSystems.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "referenceSystems.xsd"
 		   });
 	}
 
@@ -950,15 +909,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdmeasures3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:measures:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdmeasures3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:measures:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "measures.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "measures.xsd"
 		   });
 	}
 
@@ -968,15 +925,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdunits3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:units:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdunits3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:units:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "units.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "units.xsd"
 		   });
 	}
 
@@ -986,15 +941,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgrids3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:grids:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgrids3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:grids:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "grids.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "grids.xsd"
 		   });
 	}
 
@@ -1004,15 +957,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryAggregates3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryAggregates:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryAggregates3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryAggregates:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryAggregates.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryAggregates.xsd"
 		   });
 	}
 
@@ -1022,15 +973,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryPrimitives3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryPrimitives:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryPrimitives3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryPrimitives:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryPrimitives.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryPrimitives.xsd"
 		   });
 	}
 
@@ -1040,15 +989,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryComplexes3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryComplexes:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryComplexes3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryComplexes:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryComplexes.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryComplexes.xsd"
 		   });
 	}
 
@@ -1058,15 +1005,13 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryBasic2d3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryBasic2d:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryBasic2d3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryBasic2d:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryBasic2d.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryBasic2d.xsd"
 		   });
 	}
 
@@ -1076,212 +1021,188 @@ public class GSSPackageImpl extends EPackageImpl implements GSSPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createExtendedMetaDataAnnotations()
-	{
-		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
+	protected void createExtendedMetaDataAnnotations() {
+		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";
 		addAnnotation
-		  (gmObjectPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "GM_Object_PropertyType",
-			 "kind", "elementOnly"
-		   });	
+		  (gmObjectPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "GM_Object_PropertyType",
+			   "kind", "elementOnly"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_AbstractGeometryGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "AbstractGeometry:group",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
+		  (getGMObjectPropertyType_AbstractGeometryGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "AbstractGeometry:group",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_AbstractGeometry(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "AbstractGeometry",
-			 "namespace", "http://www.opengis.net/gml/3.2",
-			 "group", "http://www.opengis.net/gml/3.2#AbstractGeometry:group"
-		   });	
+		  (getGMObjectPropertyType_AbstractGeometry(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "AbstractGeometry",
+			   "namespace", "http://www.opengis.net/gml/3.2",
+			   "group", "http://www.opengis.net/gml/3.2#AbstractGeometry:group"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMObjectPropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMObjectPropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMObjectPropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "http://www.isotc211.org/2005/gco"
-		   });	
+		  (getGMObjectPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "http://www.isotc211.org/2005/gco"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMObjectPropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMObjectPropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMObjectPropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMObjectPropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMObjectPropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
+		  (getGMObjectPropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
 		addAnnotation
-		  (gmPointPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "GM_Point_PropertyType",
-			 "kind", "elementOnly"
-		   });	
+		  (gmPointPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "GM_Point_PropertyType",
+			   "kind", "elementOnly"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_Point(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Point",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
+		  (getGMPointPropertyType_Point(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Point",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMPointPropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMPointPropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMPointPropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "http://www.isotc211.org/2005/gco"
-		   });	
+		  (getGMPointPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "http://www.isotc211.org/2005/gco"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMPointPropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMPointPropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMPointPropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
+		  (getGMPointPropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
 		addAnnotation
-		  (getGMPointPropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
+		  (getGMPointPropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
 		   });
 	}
 

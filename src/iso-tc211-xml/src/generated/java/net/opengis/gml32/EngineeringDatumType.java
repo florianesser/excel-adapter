@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='EngineeringDatumType' kind='elementOnly'"
  * @generated
  */
-public interface EngineeringDatumType extends AbstractDatumType
-{
+public interface EngineeringDatumType extends AbstractDatumType {
 } // EngineeringDatumType

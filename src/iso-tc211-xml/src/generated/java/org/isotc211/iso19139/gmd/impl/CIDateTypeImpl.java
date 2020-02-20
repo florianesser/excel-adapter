@@ -32,8 +32,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
-{
+public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType {
 	/**
 	 * The cached value of the '{@link #getDate() <em>Date</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -59,8 +58,7 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CIDateTypeImpl()
-	{
+	protected CIDateTypeImpl() {
 		super();
 	}
 
@@ -70,8 +68,7 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCIDateType();
 	}
 
@@ -80,8 +77,8 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DatePropertyType getDate()
-	{
+	@Override
+	public DatePropertyType getDate() {
 		return date;
 	}
 
@@ -90,12 +87,10 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDate(DatePropertyType newDate, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDate(DatePropertyType newDate, NotificationChain msgs) {
 		DatePropertyType oldDate = date;
 		date = newDate;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_DATE_TYPE__DATE, oldDate, newDate);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -107,10 +102,9 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDate(DatePropertyType newDate)
-	{
-		if (newDate != date)
-		{
+	@Override
+	public void setDate(DatePropertyType newDate) {
+		if (newDate != date) {
 			NotificationChain msgs = null;
 			if (date != null)
 				msgs = ((InternalEObject)date).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_DATE_TYPE__DATE, null, msgs);
@@ -128,8 +122,8 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIDateTypeCodePropertyType getDateType()
-	{
+	@Override
+	public CIDateTypeCodePropertyType getDateType() {
 		return dateType;
 	}
 
@@ -138,12 +132,10 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDateType(CIDateTypeCodePropertyType newDateType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDateType(CIDateTypeCodePropertyType newDateType, NotificationChain msgs) {
 		CIDateTypeCodePropertyType oldDateType = dateType;
 		dateType = newDateType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_DATE_TYPE__DATE_TYPE, oldDateType, newDateType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -155,10 +147,9 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDateType(CIDateTypeCodePropertyType newDateType)
-	{
-		if (newDateType != dateType)
-		{
+	@Override
+	public void setDateType(CIDateTypeCodePropertyType newDateType) {
+		if (newDateType != dateType) {
 			NotificationChain msgs = null;
 			if (dateType != null)
 				msgs = ((InternalEObject)dateType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_DATE_TYPE__DATE_TYPE, null, msgs);
@@ -177,10 +168,8 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE__DATE:
 				return basicSetDate(null, msgs);
 			case GMDPackage.CI_DATE_TYPE__DATE_TYPE:
@@ -195,10 +184,8 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE__DATE:
 				return getDate();
 			case GMDPackage.CI_DATE_TYPE__DATE_TYPE:
@@ -213,10 +200,8 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE__DATE:
 				setDate((DatePropertyType)newValue);
 				return;
@@ -233,10 +218,8 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE__DATE:
 				setDate((DatePropertyType)null);
 				return;
@@ -253,10 +236,8 @@ public class CIDateTypeImpl extends AbstractObjectTypeImpl implements CIDateType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_DATE_TYPE__DATE:
 				return date != null;
 			case GMDPackage.CI_DATE_TYPE__DATE_TYPE:

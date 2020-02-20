@@ -16,15 +16,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSAssociationTypeImpl extends AbstractObjectTypeImpl implements DSAssociationType
-{
+public class DSAssociationTypeImpl extends AbstractObjectTypeImpl implements DSAssociationType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSAssociationTypeImpl()
-	{
+	protected DSAssociationTypeImpl() {
 		super();
 	}
 
@@ -34,8 +32,7 @@ public class DSAssociationTypeImpl extends AbstractObjectTypeImpl implements DSA
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSAssociationType();
 	}
 

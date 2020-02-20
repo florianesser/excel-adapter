@@ -23,15 +23,10 @@ import org.isotc211.iso19139.gco.CodeListValueType;
  * @model extendedMetaData="name='DS_InitiativeTypeCode_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface DSInitiativeTypeCodePropertyType extends EObject
-{
+public interface DSInitiativeTypeCodePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>DS Initiative Type Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>DS Initiative Type Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DS Initiative Type Code</em>' containment reference.
 	 * @see #setDSInitiativeTypeCode(CodeListValueType)
@@ -55,10 +50,6 @@ public interface DSInitiativeTypeCodePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

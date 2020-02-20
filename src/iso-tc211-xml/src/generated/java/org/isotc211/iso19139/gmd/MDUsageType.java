@@ -31,15 +31,10 @@ import org.isotc211.iso19139.gco.DateTimePropertyType;
  * @model extendedMetaData="name='MD_Usage_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDUsageType extends AbstractObjectType
-{
+public interface MDUsageType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Specific Usage</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Specific Usage</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Specific Usage</em>' containment reference.
 	 * @see #setSpecificUsage(CharacterStringPropertyType)
@@ -63,10 +58,6 @@ public interface MDUsageType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Usage Date Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Usage Date Time</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Usage Date Time</em>' containment reference.
 	 * @see #setUsageDateTime(DateTimePropertyType)
@@ -90,10 +81,6 @@ public interface MDUsageType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>User Determined Limitations</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Determined Limitations</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Determined Limitations</em>' containment reference.
 	 * @see #setUserDeterminedLimitations(CharacterStringPropertyType)
@@ -118,10 +105,6 @@ public interface MDUsageType extends AbstractObjectType
 	 * Returns the value of the '<em><b>User Contact Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIResponsiblePartyPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Contact Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Contact Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDUsageType_UserContactInfo()

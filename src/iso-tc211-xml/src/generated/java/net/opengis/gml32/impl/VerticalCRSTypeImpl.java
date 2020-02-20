@@ -32,8 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements VerticalCRSType
-{
+public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements VerticalCRSType {
 	/**
 	 * The cached value of the '{@link #getVerticalCSGroup() <em>Vertical CS Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -59,8 +58,7 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected VerticalCRSTypeImpl()
-	{
+	protected VerticalCRSTypeImpl() {
 		super();
 	}
 
@@ -70,8 +68,7 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getVerticalCRSType();
 	}
 
@@ -80,10 +77,9 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getVerticalCSGroup()
-	{
-		if (verticalCSGroup == null)
-		{
+	@Override
+	public FeatureMap getVerticalCSGroup() {
+		if (verticalCSGroup == null) {
 			verticalCSGroup = new BasicFeatureMap(this, GMLPackage.VERTICAL_CRS_TYPE__VERTICAL_CS_GROUP);
 		}
 		return verticalCSGroup;
@@ -94,8 +90,8 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalCSPropertyType getVerticalCS()
-	{
+	@Override
+	public VerticalCSPropertyType getVerticalCS() {
 		return (VerticalCSPropertyType)getVerticalCSGroup().get(GMLPackage.eINSTANCE.getVerticalCRSType_VerticalCS(), true);
 	}
 
@@ -104,8 +100,7 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalCS(VerticalCSPropertyType newVerticalCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalCS(VerticalCSPropertyType newVerticalCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getVerticalCSGroup()).basicAdd(GMLPackage.eINSTANCE.getVerticalCRSType_VerticalCS(), newVerticalCS, msgs);
 	}
 
@@ -114,8 +109,8 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalCS(VerticalCSPropertyType newVerticalCS)
-	{
+	@Override
+	public void setVerticalCS(VerticalCSPropertyType newVerticalCS) {
 		((FeatureMap.Internal)getVerticalCSGroup()).set(GMLPackage.eINSTANCE.getVerticalCRSType_VerticalCS(), newVerticalCS);
 	}
 
@@ -124,10 +119,9 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getVerticalDatumGroup()
-	{
-		if (verticalDatumGroup == null)
-		{
+	@Override
+	public FeatureMap getVerticalDatumGroup() {
+		if (verticalDatumGroup == null) {
 			verticalDatumGroup = new BasicFeatureMap(this, GMLPackage.VERTICAL_CRS_TYPE__VERTICAL_DATUM_GROUP);
 		}
 		return verticalDatumGroup;
@@ -138,8 +132,8 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VerticalDatumPropertyType getVerticalDatum()
-	{
+	@Override
+	public VerticalDatumPropertyType getVerticalDatum() {
 		return (VerticalDatumPropertyType)getVerticalDatumGroup().get(GMLPackage.eINSTANCE.getVerticalCRSType_VerticalDatum(), true);
 	}
 
@@ -148,8 +142,7 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVerticalDatum(VerticalDatumPropertyType newVerticalDatum, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVerticalDatum(VerticalDatumPropertyType newVerticalDatum, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getVerticalDatumGroup()).basicAdd(GMLPackage.eINSTANCE.getVerticalCRSType_VerticalDatum(), newVerticalDatum, msgs);
 	}
 
@@ -158,8 +151,8 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalDatum(VerticalDatumPropertyType newVerticalDatum)
-	{
+	@Override
+	public void setVerticalDatum(VerticalDatumPropertyType newVerticalDatum) {
 		((FeatureMap.Internal)getVerticalDatumGroup()).set(GMLPackage.eINSTANCE.getVerticalCRSType_VerticalDatum(), newVerticalDatum);
 	}
 
@@ -169,10 +162,8 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.VERTICAL_CRS_TYPE__VERTICAL_CS_GROUP:
 				return ((InternalEList<?>)getVerticalCSGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.VERTICAL_CRS_TYPE__VERTICAL_CS:
@@ -191,10 +182,8 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.VERTICAL_CRS_TYPE__VERTICAL_CS_GROUP:
 				if (coreType) return getVerticalCSGroup();
 				return ((FeatureMap.Internal)getVerticalCSGroup()).getWrapper();
@@ -215,10 +204,8 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.VERTICAL_CRS_TYPE__VERTICAL_CS_GROUP:
 				((FeatureMap.Internal)getVerticalCSGroup()).set(newValue);
 				return;
@@ -241,10 +228,8 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.VERTICAL_CRS_TYPE__VERTICAL_CS_GROUP:
 				getVerticalCSGroup().clear();
 				return;
@@ -267,10 +252,8 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.VERTICAL_CRS_TYPE__VERTICAL_CS_GROUP:
 				return verticalCSGroup != null && !verticalCSGroup.isEmpty();
 			case GMLPackage.VERTICAL_CRS_TYPE__VERTICAL_CS:
@@ -289,11 +272,10 @@ public class VerticalCRSTypeImpl extends AbstractCRSTypeImpl implements Vertical
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (verticalCSGroup: ");
 		result.append(verticalCSGroup);
 		result.append(", verticalDatumGroup: ");

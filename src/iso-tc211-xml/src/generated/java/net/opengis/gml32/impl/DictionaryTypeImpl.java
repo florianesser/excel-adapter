@@ -41,8 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class DictionaryTypeImpl extends DefinitionTypeImpl implements DictionaryType
-{
+public class DictionaryTypeImpl extends DefinitionTypeImpl implements DictionaryType {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -87,8 +86,7 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DictionaryTypeImpl()
-	{
+	protected DictionaryTypeImpl() {
 		super();
 	}
 
@@ -98,8 +96,7 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDictionaryType();
 	}
 
@@ -108,10 +105,9 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getGroup()
-	{
-		if (group == null)
-		{
+	@Override
+	public FeatureMap getGroup() {
+		if (group == null) {
 			group = new BasicFeatureMap(this, GMLPackage.DICTIONARY_TYPE__GROUP);
 		}
 		return group;
@@ -122,8 +118,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getDictionaryEntryGroup()
-	{
+	@Override
+	public FeatureMap getDictionaryEntryGroup() {
 		return (FeatureMap)getGroup().<FeatureMap.Entry>list(GMLPackage.eINSTANCE.getDictionaryType_DictionaryEntryGroup());
 	}
 
@@ -132,8 +128,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DictionaryEntryType> getDictionaryEntry()
-	{
+	@Override
+	public EList<DictionaryEntryType> getDictionaryEntry() {
 		return getDictionaryEntryGroup().list(GMLPackage.eINSTANCE.getDictionaryType_DictionaryEntry());
 	}
 
@@ -142,8 +138,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<IndirectEntryType> getIndirectEntry()
-	{
+	@Override
+	public EList<IndirectEntryType> getIndirectEntry() {
 		return getGroup().list(GMLPackage.eINSTANCE.getDictionaryType_IndirectEntry());
 	}
 
@@ -152,8 +148,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -162,8 +158,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -177,8 +173,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -192,8 +188,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -203,10 +199,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DICTIONARY_TYPE__GROUP:
 				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.DICTIONARY_TYPE__DICTIONARY_ENTRY_GROUP:
@@ -225,10 +219,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DICTIONARY_TYPE__GROUP:
 				if (coreType) return getGroup();
 				return ((FeatureMap.Internal)getGroup()).getWrapper();
@@ -252,10 +244,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DICTIONARY_TYPE__GROUP:
 				((FeatureMap.Internal)getGroup()).set(newValue);
 				return;
@@ -283,10 +273,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DICTIONARY_TYPE__GROUP:
 				getGroup().clear();
 				return;
@@ -312,10 +300,8 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DICTIONARY_TYPE__GROUP:
 				return group != null && !group.isEmpty();
 			case GMLPackage.DICTIONARY_TYPE__DICTIONARY_ENTRY_GROUP:
@@ -336,11 +322,10 @@ public class DictionaryTypeImpl extends DefinitionTypeImpl implements Dictionary
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (group: ");
 		result.append(group);
 		result.append(", aggregationType: ");

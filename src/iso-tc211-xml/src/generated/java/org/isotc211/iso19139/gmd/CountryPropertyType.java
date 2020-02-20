@@ -23,15 +23,10 @@ import org.isotc211.iso19139.gco.CodeListValueType;
  * @model extendedMetaData="name='Country_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface CountryPropertyType extends EObject
-{
+public interface CountryPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Country</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Country</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Country</em>' containment reference.
 	 * @see #setCountry(CodeListValueType)
@@ -55,10 +50,6 @@ public interface CountryPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

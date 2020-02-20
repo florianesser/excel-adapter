@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='IncrementOrder'"
  * @generated
  */
-public enum IncrementOrder implements Enumerator
-{
+public enum IncrementOrder implements Enumerator {
 	/**
 	 * The '<em><b>XY</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -62,10 +61,6 @@ public enum IncrementOrder implements Enumerator
 	/**
 	 * The '<em><b>XY</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>XY</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #XY
 	 * @model name="xY" literal="+x+y"
@@ -77,10 +72,6 @@ public enum IncrementOrder implements Enumerator
 	/**
 	 * The '<em><b>YX</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>YX</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #YX
 	 * @model name="yX" literal="+y+x"
@@ -92,10 +83,6 @@ public enum IncrementOrder implements Enumerator
 	/**
 	 * The '<em><b>XY1</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>XY1</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #XY1
 	 * @model name="xY1" literal="+x-y"
@@ -107,10 +94,6 @@ public enum IncrementOrder implements Enumerator
 	/**
 	 * The '<em><b>XY2</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>XY2</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #XY2
 	 * @model name="xY2" literal="-x-y"
@@ -126,8 +109,7 @@ public enum IncrementOrder implements Enumerator
 	 * @generated
 	 */
 	private static final IncrementOrder[] VALUES_ARRAY =
-		new IncrementOrder[]
-		{
+		new IncrementOrder[] {
 			XY,
 			YX,
 			XY1,
@@ -150,13 +132,10 @@ public enum IncrementOrder implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static IncrementOrder get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static IncrementOrder get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			IncrementOrder result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -171,13 +150,10 @@ public enum IncrementOrder implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static IncrementOrder getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static IncrementOrder getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			IncrementOrder result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -192,10 +168,8 @@ public enum IncrementOrder implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static IncrementOrder get(int value)
-	{
-		switch (value)
-		{
+	public static IncrementOrder get(int value) {
+		switch (value) {
 			case XY_VALUE: return XY;
 			case YX_VALUE: return YX;
 			case XY1_VALUE: return XY1;
@@ -231,8 +205,7 @@ public enum IncrementOrder implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private IncrementOrder(int value, String name, String literal)
-	{
+	private IncrementOrder(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -243,8 +216,8 @@ public enum IncrementOrder implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -253,8 +226,8 @@ public enum IncrementOrder implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -263,8 +236,8 @@ public enum IncrementOrder implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -275,8 +248,7 @@ public enum IncrementOrder implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

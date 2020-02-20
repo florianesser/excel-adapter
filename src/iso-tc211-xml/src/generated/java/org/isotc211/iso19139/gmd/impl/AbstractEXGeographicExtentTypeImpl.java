@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectTypeImpl implements AbstractEXGeographicExtentType
-{
+public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectTypeImpl implements AbstractEXGeographicExtentType {
 	/**
 	 * The cached value of the '{@link #getExtentTypeCode() <em>Extent Type Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -47,8 +46,7 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractEXGeographicExtentTypeImpl()
-	{
+	protected AbstractEXGeographicExtentTypeImpl() {
 		super();
 	}
 
@@ -58,8 +56,7 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractEXGeographicExtentType();
 	}
 
@@ -68,8 +65,8 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getExtentTypeCode()
-	{
+	@Override
+	public BooleanPropertyType getExtentTypeCode() {
 		return extentTypeCode;
 	}
 
@@ -78,12 +75,10 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExtentTypeCode(BooleanPropertyType newExtentTypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExtentTypeCode(BooleanPropertyType newExtentTypeCode, NotificationChain msgs) {
 		BooleanPropertyType oldExtentTypeCode = extentTypeCode;
 		extentTypeCode = newExtentTypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_EX_GEOGRAPHIC_EXTENT_TYPE__EXTENT_TYPE_CODE, oldExtentTypeCode, newExtentTypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -95,10 +90,9 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExtentTypeCode(BooleanPropertyType newExtentTypeCode)
-	{
-		if (newExtentTypeCode != extentTypeCode)
-		{
+	@Override
+	public void setExtentTypeCode(BooleanPropertyType newExtentTypeCode) {
+		if (newExtentTypeCode != extentTypeCode) {
 			NotificationChain msgs = null;
 			if (extentTypeCode != null)
 				msgs = ((InternalEObject)extentTypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_EX_GEOGRAPHIC_EXTENT_TYPE__EXTENT_TYPE_CODE, null, msgs);
@@ -117,10 +111,8 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_EX_GEOGRAPHIC_EXTENT_TYPE__EXTENT_TYPE_CODE:
 				return basicSetExtentTypeCode(null, msgs);
 		}
@@ -133,10 +125,8 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_EX_GEOGRAPHIC_EXTENT_TYPE__EXTENT_TYPE_CODE:
 				return getExtentTypeCode();
 		}
@@ -149,10 +139,8 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_EX_GEOGRAPHIC_EXTENT_TYPE__EXTENT_TYPE_CODE:
 				setExtentTypeCode((BooleanPropertyType)newValue);
 				return;
@@ -166,10 +154,8 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_EX_GEOGRAPHIC_EXTENT_TYPE__EXTENT_TYPE_CODE:
 				setExtentTypeCode((BooleanPropertyType)null);
 				return;
@@ -183,10 +169,8 @@ public abstract class AbstractEXGeographicExtentTypeImpl extends AbstractObjectT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_EX_GEOGRAPHIC_EXTENT_TYPE__EXTENT_TYPE_CODE:
 				return extentTypeCode != null;
 		}

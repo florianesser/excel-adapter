@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSSeriesTypeImpl extends AbstractDSAggregateTypeImpl implements DSSeriesType
-{
+public class DSSeriesTypeImpl extends AbstractDSAggregateTypeImpl implements DSSeriesType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSSeriesTypeImpl()
-	{
+	protected DSSeriesTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DSSeriesTypeImpl extends AbstractDSAggregateTypeImpl implements DSS
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSSeriesType();
 	}
 

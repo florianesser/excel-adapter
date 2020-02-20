@@ -43,8 +43,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceType
-{
+public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceType {
 	/**
 	 * The cached value of the '{@link #getIsolated() <em>Isolated</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -148,8 +147,7 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FaceTypeImpl()
-	{
+	protected FaceTypeImpl() {
 		super();
 	}
 
@@ -159,8 +157,7 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getFaceType();
 	}
 
@@ -169,10 +166,9 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NodePropertyType> getIsolated()
-	{
-		if (isolated == null)
-		{
+	@Override
+	public EList<NodePropertyType> getIsolated() {
+		if (isolated == null) {
 			isolated = new EObjectContainmentEList<NodePropertyType>(NodePropertyType.class, this, GMLPackage.FACE_TYPE__ISOLATED);
 		}
 		return isolated;
@@ -183,10 +179,9 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectedEdgePropertyType> getDirectedEdge()
-	{
-		if (directedEdge == null)
-		{
+	@Override
+	public EList<DirectedEdgePropertyType> getDirectedEdge() {
+		if (directedEdge == null) {
 			directedEdge = new EObjectContainmentEList<DirectedEdgePropertyType>(DirectedEdgePropertyType.class, this, GMLPackage.FACE_TYPE__DIRECTED_EDGE);
 		}
 		return directedEdge;
@@ -197,10 +192,9 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectedTopoSolidPropertyType> getDirectedTopoSolid()
-	{
-		if (directedTopoSolid == null)
-		{
+	@Override
+	public EList<DirectedTopoSolidPropertyType> getDirectedTopoSolid() {
+		if (directedTopoSolid == null) {
 			directedTopoSolid = new EObjectContainmentEList<DirectedTopoSolidPropertyType>(DirectedTopoSolidPropertyType.class, this, GMLPackage.FACE_TYPE__DIRECTED_TOPO_SOLID);
 		}
 		return directedTopoSolid;
@@ -211,8 +205,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePropertyType getSurfaceProperty()
-	{
+	@Override
+	public SurfacePropertyType getSurfaceProperty() {
 		return surfaceProperty;
 	}
 
@@ -221,12 +215,10 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSurfaceProperty(SurfacePropertyType newSurfaceProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSurfaceProperty(SurfacePropertyType newSurfaceProperty, NotificationChain msgs) {
 		SurfacePropertyType oldSurfaceProperty = surfaceProperty;
 		surfaceProperty = newSurfaceProperty;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.FACE_TYPE__SURFACE_PROPERTY, oldSurfaceProperty, newSurfaceProperty);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -238,10 +230,9 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSurfaceProperty(SurfacePropertyType newSurfaceProperty)
-	{
-		if (newSurfaceProperty != surfaceProperty)
-		{
+	@Override
+	public void setSurfaceProperty(SurfacePropertyType newSurfaceProperty) {
+		if (newSurfaceProperty != surfaceProperty) {
 			NotificationChain msgs = null;
 			if (surfaceProperty != null)
 				msgs = ((InternalEObject)surfaceProperty).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.FACE_TYPE__SURFACE_PROPERTY, null, msgs);
@@ -259,8 +250,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -269,8 +260,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -284,8 +275,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -299,8 +290,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -309,8 +300,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isUniversal()
-	{
+	@Override
+	public boolean isUniversal() {
 		return universal;
 	}
 
@@ -319,8 +310,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUniversal(boolean newUniversal)
-	{
+	@Override
+	public void setUniversal(boolean newUniversal) {
 		boolean oldUniversal = universal;
 		universal = newUniversal;
 		boolean oldUniversalESet = universalESet;
@@ -334,8 +325,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetUniversal()
-	{
+	@Override
+	public void unsetUniversal() {
 		boolean oldUniversal = universal;
 		boolean oldUniversalESet = universalESet;
 		universal = UNIVERSAL_EDEFAULT;
@@ -349,8 +340,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetUniversal()
-	{
+	@Override
+	public boolean isSetUniversal() {
 		return universalESet;
 	}
 
@@ -360,10 +351,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.FACE_TYPE__ISOLATED:
 				return ((InternalEList<?>)getIsolated()).basicRemove(otherEnd, msgs);
 			case GMLPackage.FACE_TYPE__DIRECTED_EDGE:
@@ -382,10 +371,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.FACE_TYPE__ISOLATED:
 				return getIsolated();
 			case GMLPackage.FACE_TYPE__DIRECTED_EDGE:
@@ -409,10 +396,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.FACE_TYPE__ISOLATED:
 				getIsolated().clear();
 				getIsolated().addAll((Collection<? extends NodePropertyType>)newValue);
@@ -444,10 +429,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.FACE_TYPE__ISOLATED:
 				getIsolated().clear();
 				return;
@@ -476,10 +459,8 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.FACE_TYPE__ISOLATED:
 				return isolated != null && !isolated.isEmpty();
 			case GMLPackage.FACE_TYPE__DIRECTED_EDGE:
@@ -502,11 +483,10 @@ public class FaceTypeImpl extends AbstractTopoPrimitiveTypeImpl implements FaceT
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (aggregationType: ");
 		if (aggregationTypeESet) result.append(aggregationType); else result.append("<unset>");
 		result.append(", universal: ");

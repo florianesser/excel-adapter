@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements TimeReferenceSystemType
-{
+public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements TimeReferenceSystemType {
 	/**
 	 * The default value of the '{@link #getDomainOfValidity() <em>Domain Of Validity</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -51,8 +50,7 @@ public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeReferenceSystemTypeImpl()
-	{
+	protected TimeReferenceSystemTypeImpl() {
 		super();
 	}
 
@@ -62,8 +60,7 @@ public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements T
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeReferenceSystemType();
 	}
 
@@ -72,8 +69,8 @@ public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDomainOfValidity()
-	{
+	@Override
+	public String getDomainOfValidity() {
 		return domainOfValidity;
 	}
 
@@ -82,8 +79,8 @@ public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDomainOfValidity(String newDomainOfValidity)
-	{
+	@Override
+	public void setDomainOfValidity(String newDomainOfValidity) {
 		String oldDomainOfValidity = domainOfValidity;
 		domainOfValidity = newDomainOfValidity;
 		if (eNotificationRequired())
@@ -96,10 +93,8 @@ public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements T
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_REFERENCE_SYSTEM_TYPE__DOMAIN_OF_VALIDITY:
 				return getDomainOfValidity();
 		}
@@ -112,10 +107,8 @@ public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements T
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_REFERENCE_SYSTEM_TYPE__DOMAIN_OF_VALIDITY:
 				setDomainOfValidity((String)newValue);
 				return;
@@ -129,10 +122,8 @@ public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements T
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_REFERENCE_SYSTEM_TYPE__DOMAIN_OF_VALIDITY:
 				setDomainOfValidity(DOMAIN_OF_VALIDITY_EDEFAULT);
 				return;
@@ -146,10 +137,8 @@ public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements T
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_REFERENCE_SYSTEM_TYPE__DOMAIN_OF_VALIDITY:
 				return DOMAIN_OF_VALIDITY_EDEFAULT == null ? domainOfValidity != null : !DOMAIN_OF_VALIDITY_EDEFAULT.equals(domainOfValidity);
 		}
@@ -162,11 +151,10 @@ public class TimeReferenceSystemTypeImpl extends DefinitionTypeImpl implements T
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (domainOfValidity: ");
 		result.append(domainOfValidity);
 		result.append(')');

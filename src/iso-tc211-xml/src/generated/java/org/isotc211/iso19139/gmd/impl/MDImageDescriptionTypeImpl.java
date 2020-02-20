@@ -43,8 +43,7 @@ import org.isotc211.iso19139.gmd.MDImagingConditionCodePropertyType;
  *
  * @generated
  */
-public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl implements MDImageDescriptionType
-{
+public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl implements MDImageDescriptionType {
 	/**
 	 * The cached value of the '{@link #getIlluminationElevationAngle() <em>Illumination Elevation Angle</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -170,8 +169,7 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDImageDescriptionTypeImpl()
-	{
+	protected MDImageDescriptionTypeImpl() {
 		super();
 	}
 
@@ -181,8 +179,7 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDImageDescriptionType();
 	}
 
@@ -191,8 +188,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getIlluminationElevationAngle()
-	{
+	@Override
+	public RealPropertyType getIlluminationElevationAngle() {
 		return illuminationElevationAngle;
 	}
 
@@ -201,12 +198,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIlluminationElevationAngle(RealPropertyType newIlluminationElevationAngle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetIlluminationElevationAngle(RealPropertyType newIlluminationElevationAngle, NotificationChain msgs) {
 		RealPropertyType oldIlluminationElevationAngle = illuminationElevationAngle;
 		illuminationElevationAngle = newIlluminationElevationAngle;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_ELEVATION_ANGLE, oldIlluminationElevationAngle, newIlluminationElevationAngle);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -218,10 +213,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIlluminationElevationAngle(RealPropertyType newIlluminationElevationAngle)
-	{
-		if (newIlluminationElevationAngle != illuminationElevationAngle)
-		{
+	@Override
+	public void setIlluminationElevationAngle(RealPropertyType newIlluminationElevationAngle) {
+		if (newIlluminationElevationAngle != illuminationElevationAngle) {
 			NotificationChain msgs = null;
 			if (illuminationElevationAngle != null)
 				msgs = ((InternalEObject)illuminationElevationAngle).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_ELEVATION_ANGLE, null, msgs);
@@ -239,8 +233,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getIlluminationAzimuthAngle()
-	{
+	@Override
+	public RealPropertyType getIlluminationAzimuthAngle() {
 		return illuminationAzimuthAngle;
 	}
 
@@ -249,12 +243,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIlluminationAzimuthAngle(RealPropertyType newIlluminationAzimuthAngle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetIlluminationAzimuthAngle(RealPropertyType newIlluminationAzimuthAngle, NotificationChain msgs) {
 		RealPropertyType oldIlluminationAzimuthAngle = illuminationAzimuthAngle;
 		illuminationAzimuthAngle = newIlluminationAzimuthAngle;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_AZIMUTH_ANGLE, oldIlluminationAzimuthAngle, newIlluminationAzimuthAngle);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -266,10 +258,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIlluminationAzimuthAngle(RealPropertyType newIlluminationAzimuthAngle)
-	{
-		if (newIlluminationAzimuthAngle != illuminationAzimuthAngle)
-		{
+	@Override
+	public void setIlluminationAzimuthAngle(RealPropertyType newIlluminationAzimuthAngle) {
+		if (newIlluminationAzimuthAngle != illuminationAzimuthAngle) {
 			NotificationChain msgs = null;
 			if (illuminationAzimuthAngle != null)
 				msgs = ((InternalEObject)illuminationAzimuthAngle).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_AZIMUTH_ANGLE, null, msgs);
@@ -287,8 +278,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDImagingConditionCodePropertyType getImagingCondition()
-	{
+	@Override
+	public MDImagingConditionCodePropertyType getImagingCondition() {
 		return imagingCondition;
 	}
 
@@ -297,12 +288,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetImagingCondition(MDImagingConditionCodePropertyType newImagingCondition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetImagingCondition(MDImagingConditionCodePropertyType newImagingCondition, NotificationChain msgs) {
 		MDImagingConditionCodePropertyType oldImagingCondition = imagingCondition;
 		imagingCondition = newImagingCondition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__IMAGING_CONDITION, oldImagingCondition, newImagingCondition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -314,10 +303,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImagingCondition(MDImagingConditionCodePropertyType newImagingCondition)
-	{
-		if (newImagingCondition != imagingCondition)
-		{
+	@Override
+	public void setImagingCondition(MDImagingConditionCodePropertyType newImagingCondition) {
+		if (newImagingCondition != imagingCondition) {
 			NotificationChain msgs = null;
 			if (imagingCondition != null)
 				msgs = ((InternalEObject)imagingCondition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__IMAGING_CONDITION, null, msgs);
@@ -335,8 +323,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDIdentifierPropertyType getImageQualityCode()
-	{
+	@Override
+	public MDIdentifierPropertyType getImageQualityCode() {
 		return imageQualityCode;
 	}
 
@@ -345,12 +333,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetImageQualityCode(MDIdentifierPropertyType newImageQualityCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetImageQualityCode(MDIdentifierPropertyType newImageQualityCode, NotificationChain msgs) {
 		MDIdentifierPropertyType oldImageQualityCode = imageQualityCode;
 		imageQualityCode = newImageQualityCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__IMAGE_QUALITY_CODE, oldImageQualityCode, newImageQualityCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -362,10 +348,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImageQualityCode(MDIdentifierPropertyType newImageQualityCode)
-	{
-		if (newImageQualityCode != imageQualityCode)
-		{
+	@Override
+	public void setImageQualityCode(MDIdentifierPropertyType newImageQualityCode) {
+		if (newImageQualityCode != imageQualityCode) {
 			NotificationChain msgs = null;
 			if (imageQualityCode != null)
 				msgs = ((InternalEObject)imageQualityCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__IMAGE_QUALITY_CODE, null, msgs);
@@ -383,8 +368,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getCloudCoverPercentage()
-	{
+	@Override
+	public RealPropertyType getCloudCoverPercentage() {
 		return cloudCoverPercentage;
 	}
 
@@ -393,12 +378,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCloudCoverPercentage(RealPropertyType newCloudCoverPercentage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCloudCoverPercentage(RealPropertyType newCloudCoverPercentage, NotificationChain msgs) {
 		RealPropertyType oldCloudCoverPercentage = cloudCoverPercentage;
 		cloudCoverPercentage = newCloudCoverPercentage;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__CLOUD_COVER_PERCENTAGE, oldCloudCoverPercentage, newCloudCoverPercentage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -410,10 +393,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCloudCoverPercentage(RealPropertyType newCloudCoverPercentage)
-	{
-		if (newCloudCoverPercentage != cloudCoverPercentage)
-		{
+	@Override
+	public void setCloudCoverPercentage(RealPropertyType newCloudCoverPercentage) {
+		if (newCloudCoverPercentage != cloudCoverPercentage) {
 			NotificationChain msgs = null;
 			if (cloudCoverPercentage != null)
 				msgs = ((InternalEObject)cloudCoverPercentage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__CLOUD_COVER_PERCENTAGE, null, msgs);
@@ -431,8 +413,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDIdentifierPropertyType getProcessingLevelCode()
-	{
+	@Override
+	public MDIdentifierPropertyType getProcessingLevelCode() {
 		return processingLevelCode;
 	}
 
@@ -441,12 +423,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetProcessingLevelCode(MDIdentifierPropertyType newProcessingLevelCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetProcessingLevelCode(MDIdentifierPropertyType newProcessingLevelCode, NotificationChain msgs) {
 		MDIdentifierPropertyType oldProcessingLevelCode = processingLevelCode;
 		processingLevelCode = newProcessingLevelCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__PROCESSING_LEVEL_CODE, oldProcessingLevelCode, newProcessingLevelCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -458,10 +438,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProcessingLevelCode(MDIdentifierPropertyType newProcessingLevelCode)
-	{
-		if (newProcessingLevelCode != processingLevelCode)
-		{
+	@Override
+	public void setProcessingLevelCode(MDIdentifierPropertyType newProcessingLevelCode) {
+		if (newProcessingLevelCode != processingLevelCode) {
 			NotificationChain msgs = null;
 			if (processingLevelCode != null)
 				msgs = ((InternalEObject)processingLevelCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__PROCESSING_LEVEL_CODE, null, msgs);
@@ -479,8 +458,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType getCompressionGenerationQuantity()
-	{
+	@Override
+	public IntegerPropertyType getCompressionGenerationQuantity() {
 		return compressionGenerationQuantity;
 	}
 
@@ -489,12 +468,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompressionGenerationQuantity(IntegerPropertyType newCompressionGenerationQuantity, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompressionGenerationQuantity(IntegerPropertyType newCompressionGenerationQuantity, NotificationChain msgs) {
 		IntegerPropertyType oldCompressionGenerationQuantity = compressionGenerationQuantity;
 		compressionGenerationQuantity = newCompressionGenerationQuantity;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__COMPRESSION_GENERATION_QUANTITY, oldCompressionGenerationQuantity, newCompressionGenerationQuantity);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -506,10 +483,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompressionGenerationQuantity(IntegerPropertyType newCompressionGenerationQuantity)
-	{
-		if (newCompressionGenerationQuantity != compressionGenerationQuantity)
-		{
+	@Override
+	public void setCompressionGenerationQuantity(IntegerPropertyType newCompressionGenerationQuantity) {
+		if (newCompressionGenerationQuantity != compressionGenerationQuantity) {
 			NotificationChain msgs = null;
 			if (compressionGenerationQuantity != null)
 				msgs = ((InternalEObject)compressionGenerationQuantity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__COMPRESSION_GENERATION_QUANTITY, null, msgs);
@@ -527,8 +503,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getTriangulationIndicator()
-	{
+	@Override
+	public BooleanPropertyType getTriangulationIndicator() {
 		return triangulationIndicator;
 	}
 
@@ -537,12 +513,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTriangulationIndicator(BooleanPropertyType newTriangulationIndicator, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTriangulationIndicator(BooleanPropertyType newTriangulationIndicator, NotificationChain msgs) {
 		BooleanPropertyType oldTriangulationIndicator = triangulationIndicator;
 		triangulationIndicator = newTriangulationIndicator;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__TRIANGULATION_INDICATOR, oldTriangulationIndicator, newTriangulationIndicator);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -554,10 +528,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTriangulationIndicator(BooleanPropertyType newTriangulationIndicator)
-	{
-		if (newTriangulationIndicator != triangulationIndicator)
-		{
+	@Override
+	public void setTriangulationIndicator(BooleanPropertyType newTriangulationIndicator) {
+		if (newTriangulationIndicator != triangulationIndicator) {
 			NotificationChain msgs = null;
 			if (triangulationIndicator != null)
 				msgs = ((InternalEObject)triangulationIndicator).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__TRIANGULATION_INDICATOR, null, msgs);
@@ -575,8 +548,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getRadiometricCalibrationDataAvailability()
-	{
+	@Override
+	public BooleanPropertyType getRadiometricCalibrationDataAvailability() {
 		return radiometricCalibrationDataAvailability;
 	}
 
@@ -585,12 +558,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRadiometricCalibrationDataAvailability(BooleanPropertyType newRadiometricCalibrationDataAvailability, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRadiometricCalibrationDataAvailability(BooleanPropertyType newRadiometricCalibrationDataAvailability, NotificationChain msgs) {
 		BooleanPropertyType oldRadiometricCalibrationDataAvailability = radiometricCalibrationDataAvailability;
 		radiometricCalibrationDataAvailability = newRadiometricCalibrationDataAvailability;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__RADIOMETRIC_CALIBRATION_DATA_AVAILABILITY, oldRadiometricCalibrationDataAvailability, newRadiometricCalibrationDataAvailability);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -602,10 +573,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRadiometricCalibrationDataAvailability(BooleanPropertyType newRadiometricCalibrationDataAvailability)
-	{
-		if (newRadiometricCalibrationDataAvailability != radiometricCalibrationDataAvailability)
-		{
+	@Override
+	public void setRadiometricCalibrationDataAvailability(BooleanPropertyType newRadiometricCalibrationDataAvailability) {
+		if (newRadiometricCalibrationDataAvailability != radiometricCalibrationDataAvailability) {
 			NotificationChain msgs = null;
 			if (radiometricCalibrationDataAvailability != null)
 				msgs = ((InternalEObject)radiometricCalibrationDataAvailability).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__RADIOMETRIC_CALIBRATION_DATA_AVAILABILITY, null, msgs);
@@ -623,8 +593,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getCameraCalibrationInformationAvailability()
-	{
+	@Override
+	public BooleanPropertyType getCameraCalibrationInformationAvailability() {
 		return cameraCalibrationInformationAvailability;
 	}
 
@@ -633,12 +603,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCameraCalibrationInformationAvailability(BooleanPropertyType newCameraCalibrationInformationAvailability, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCameraCalibrationInformationAvailability(BooleanPropertyType newCameraCalibrationInformationAvailability, NotificationChain msgs) {
 		BooleanPropertyType oldCameraCalibrationInformationAvailability = cameraCalibrationInformationAvailability;
 		cameraCalibrationInformationAvailability = newCameraCalibrationInformationAvailability;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__CAMERA_CALIBRATION_INFORMATION_AVAILABILITY, oldCameraCalibrationInformationAvailability, newCameraCalibrationInformationAvailability);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -650,10 +618,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCameraCalibrationInformationAvailability(BooleanPropertyType newCameraCalibrationInformationAvailability)
-	{
-		if (newCameraCalibrationInformationAvailability != cameraCalibrationInformationAvailability)
-		{
+	@Override
+	public void setCameraCalibrationInformationAvailability(BooleanPropertyType newCameraCalibrationInformationAvailability) {
+		if (newCameraCalibrationInformationAvailability != cameraCalibrationInformationAvailability) {
 			NotificationChain msgs = null;
 			if (cameraCalibrationInformationAvailability != null)
 				msgs = ((InternalEObject)cameraCalibrationInformationAvailability).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__CAMERA_CALIBRATION_INFORMATION_AVAILABILITY, null, msgs);
@@ -671,8 +638,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getFilmDistortionInformationAvailability()
-	{
+	@Override
+	public BooleanPropertyType getFilmDistortionInformationAvailability() {
 		return filmDistortionInformationAvailability;
 	}
 
@@ -681,12 +648,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFilmDistortionInformationAvailability(BooleanPropertyType newFilmDistortionInformationAvailability, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFilmDistortionInformationAvailability(BooleanPropertyType newFilmDistortionInformationAvailability, NotificationChain msgs) {
 		BooleanPropertyType oldFilmDistortionInformationAvailability = filmDistortionInformationAvailability;
 		filmDistortionInformationAvailability = newFilmDistortionInformationAvailability;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__FILM_DISTORTION_INFORMATION_AVAILABILITY, oldFilmDistortionInformationAvailability, newFilmDistortionInformationAvailability);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -698,10 +663,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFilmDistortionInformationAvailability(BooleanPropertyType newFilmDistortionInformationAvailability)
-	{
-		if (newFilmDistortionInformationAvailability != filmDistortionInformationAvailability)
-		{
+	@Override
+	public void setFilmDistortionInformationAvailability(BooleanPropertyType newFilmDistortionInformationAvailability) {
+		if (newFilmDistortionInformationAvailability != filmDistortionInformationAvailability) {
 			NotificationChain msgs = null;
 			if (filmDistortionInformationAvailability != null)
 				msgs = ((InternalEObject)filmDistortionInformationAvailability).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__FILM_DISTORTION_INFORMATION_AVAILABILITY, null, msgs);
@@ -719,8 +683,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getLensDistortionInformationAvailability()
-	{
+	@Override
+	public BooleanPropertyType getLensDistortionInformationAvailability() {
 		return lensDistortionInformationAvailability;
 	}
 
@@ -729,12 +693,10 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLensDistortionInformationAvailability(BooleanPropertyType newLensDistortionInformationAvailability, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLensDistortionInformationAvailability(BooleanPropertyType newLensDistortionInformationAvailability, NotificationChain msgs) {
 		BooleanPropertyType oldLensDistortionInformationAvailability = lensDistortionInformationAvailability;
 		lensDistortionInformationAvailability = newLensDistortionInformationAvailability;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__LENS_DISTORTION_INFORMATION_AVAILABILITY, oldLensDistortionInformationAvailability, newLensDistortionInformationAvailability);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -746,10 +708,9 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLensDistortionInformationAvailability(BooleanPropertyType newLensDistortionInformationAvailability)
-	{
-		if (newLensDistortionInformationAvailability != lensDistortionInformationAvailability)
-		{
+	@Override
+	public void setLensDistortionInformationAvailability(BooleanPropertyType newLensDistortionInformationAvailability) {
+		if (newLensDistortionInformationAvailability != lensDistortionInformationAvailability) {
 			NotificationChain msgs = null;
 			if (lensDistortionInformationAvailability != null)
 				msgs = ((InternalEObject)lensDistortionInformationAvailability).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__LENS_DISTORTION_INFORMATION_AVAILABILITY, null, msgs);
@@ -768,10 +729,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_ELEVATION_ANGLE:
 				return basicSetIlluminationElevationAngle(null, msgs);
 			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_AZIMUTH_ANGLE:
@@ -806,10 +765,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_ELEVATION_ANGLE:
 				return getIlluminationElevationAngle();
 			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_AZIMUTH_ANGLE:
@@ -844,10 +801,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_ELEVATION_ANGLE:
 				setIlluminationElevationAngle((RealPropertyType)newValue);
 				return;
@@ -894,10 +849,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_ELEVATION_ANGLE:
 				setIlluminationElevationAngle((RealPropertyType)null);
 				return;
@@ -944,10 +897,8 @@ public class MDImageDescriptionTypeImpl extends MDCoverageDescriptionTypeImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_ELEVATION_ANGLE:
 				return illuminationElevationAngle != null;
 			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE__ILLUMINATION_AZIMUTH_ANGLE:

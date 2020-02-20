@@ -39,8 +39,7 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  *
  * @generated
  */
-public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
-{
+public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType {
 	/**
 	 * The cached value of the '{@link #getLimits() <em>Limits</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -106,8 +105,7 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GridTypeImpl()
-	{
+	protected GridTypeImpl() {
 		super();
 	}
 
@@ -117,8 +115,7 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGridType();
 	}
 
@@ -127,8 +124,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GridLimitsType getLimits()
-	{
+	@Override
+	public GridLimitsType getLimits() {
 		return limits;
 	}
 
@@ -137,12 +134,10 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLimits(GridLimitsType newLimits, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLimits(GridLimitsType newLimits, NotificationChain msgs) {
 		GridLimitsType oldLimits = limits;
 		limits = newLimits;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GRID_TYPE__LIMITS, oldLimits, newLimits);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -154,10 +149,9 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLimits(GridLimitsType newLimits)
-	{
-		if (newLimits != limits)
-		{
+	@Override
+	public void setLimits(GridLimitsType newLimits) {
+		if (newLimits != limits) {
 			NotificationChain msgs = null;
 			if (limits != null)
 				msgs = ((InternalEObject)limits).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GRID_TYPE__LIMITS, null, msgs);
@@ -175,8 +169,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<String> getAxisLabels1()
-	{
+	@Override
+	public List<String> getAxisLabels1() {
 		return axisLabels1;
 	}
 
@@ -185,8 +179,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisLabels1(List<String> newAxisLabels1)
-	{
+	@Override
+	public void setAxisLabels1(List<String> newAxisLabels1) {
 		List<String> oldAxisLabels1 = axisLabels1;
 		axisLabels1 = newAxisLabels1;
 		if (eNotificationRequired())
@@ -198,10 +192,9 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getAxisName()
-	{
-		if (axisName == null)
-		{
+	@Override
+	public EList<String> getAxisName() {
+		if (axisName == null) {
 			axisName = new EDataTypeEList<String>(String.class, this, GMLPackage.GRID_TYPE__AXIS_NAME);
 		}
 		return axisName;
@@ -212,8 +205,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getDimension()
-	{
+	@Override
+	public BigInteger getDimension() {
 		return dimension;
 	}
 
@@ -222,8 +215,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDimension(BigInteger newDimension)
-	{
+	@Override
+	public void setDimension(BigInteger newDimension) {
 		BigInteger oldDimension = dimension;
 		dimension = newDimension;
 		if (eNotificationRequired())
@@ -236,10 +229,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GRID_TYPE__LIMITS:
 				return basicSetLimits(null, msgs);
 		}
@@ -252,10 +243,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GRID_TYPE__LIMITS:
 				return getLimits();
 			case GMLPackage.GRID_TYPE__AXIS_LABELS1:
@@ -275,10 +264,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GRID_TYPE__LIMITS:
 				setLimits((GridLimitsType)newValue);
 				return;
@@ -302,10 +289,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GRID_TYPE__LIMITS:
 				setLimits((GridLimitsType)null);
 				return;
@@ -328,10 +313,8 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GRID_TYPE__LIMITS:
 				return limits != null;
 			case GMLPackage.GRID_TYPE__AXIS_LABELS1:
@@ -350,11 +333,10 @@ public class GridTypeImpl extends AbstractGeometryTypeImpl implements GridType
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (axisLabels1: ");
 		result.append(axisLabels1);
 		result.append(", axisName: ");

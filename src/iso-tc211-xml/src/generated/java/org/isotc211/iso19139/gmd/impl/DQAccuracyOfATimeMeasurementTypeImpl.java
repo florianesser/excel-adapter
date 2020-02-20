@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQAccuracyOfATimeMeasurementTypeImpl extends AbstractDQTemporalAccuracyTypeImpl implements DQAccuracyOfATimeMeasurementType
-{
+public class DQAccuracyOfATimeMeasurementTypeImpl extends AbstractDQTemporalAccuracyTypeImpl implements DQAccuracyOfATimeMeasurementType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQAccuracyOfATimeMeasurementTypeImpl()
-	{
+	protected DQAccuracyOfATimeMeasurementTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQAccuracyOfATimeMeasurementTypeImpl extends AbstractDQTemporalAccu
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQAccuracyOfATimeMeasurementType();
 	}
 

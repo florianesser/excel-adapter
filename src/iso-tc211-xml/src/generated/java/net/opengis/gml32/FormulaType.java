@@ -23,15 +23,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='FormulaType' kind='elementOnly'"
  * @generated
  */
-public interface FormulaType extends EObject
-{
+public interface FormulaType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>A</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>A</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>A</em>' attribute.
 	 * @see #isSetA()
@@ -82,10 +77,6 @@ public interface FormulaType extends EObject
 	/**
 	 * Returns the value of the '<em><b>B</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>B</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>B</em>' attribute.
 	 * @see #isSetB()
@@ -136,10 +127,6 @@ public interface FormulaType extends EObject
 	/**
 	 * Returns the value of the '<em><b>C</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>C</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>C</em>' attribute.
 	 * @see #isSetC()
@@ -190,10 +177,6 @@ public interface FormulaType extends EObject
 	/**
 	 * Returns the value of the '<em><b>D</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>D</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>D</em>' attribute.
 	 * @see #isSetD()

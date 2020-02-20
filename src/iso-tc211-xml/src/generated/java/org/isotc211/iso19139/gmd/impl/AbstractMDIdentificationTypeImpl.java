@@ -59,8 +59,7 @@ import org.isotc211.iso19139.gmd.MDUsagePropertyType;
  *
  * @generated
  */
-public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTypeImpl implements AbstractMDIdentificationType
-{
+public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTypeImpl implements AbstractMDIdentificationType {
 	/**
 	 * The cached value of the '{@link #getCitation() <em>Citation</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -196,8 +195,7 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractMDIdentificationTypeImpl()
-	{
+	protected AbstractMDIdentificationTypeImpl() {
 		super();
 	}
 
@@ -207,8 +205,7 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractMDIdentificationType();
 	}
 
@@ -217,8 +214,8 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationPropertyType getCitation()
-	{
+	@Override
+	public CICitationPropertyType getCitation() {
 		return citation;
 	}
 
@@ -227,12 +224,10 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCitation(CICitationPropertyType newCitation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCitation(CICitationPropertyType newCitation, NotificationChain msgs) {
 		CICitationPropertyType oldCitation = citation;
 		citation = newCitation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__CITATION, oldCitation, newCitation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -244,10 +239,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCitation(CICitationPropertyType newCitation)
-	{
-		if (newCitation != citation)
-		{
+	@Override
+	public void setCitation(CICitationPropertyType newCitation) {
+		if (newCitation != citation) {
 			NotificationChain msgs = null;
 			if (citation != null)
 				msgs = ((InternalEObject)citation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__CITATION, null, msgs);
@@ -265,8 +259,8 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getAbstract()
-	{
+	@Override
+	public CharacterStringPropertyType getAbstract() {
 		return abstract_;
 	}
 
@@ -275,12 +269,10 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstract(CharacterStringPropertyType newAbstract, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstract(CharacterStringPropertyType newAbstract, NotificationChain msgs) {
 		CharacterStringPropertyType oldAbstract = abstract_;
 		abstract_ = newAbstract;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__ABSTRACT, oldAbstract, newAbstract);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -292,10 +284,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAbstract(CharacterStringPropertyType newAbstract)
-	{
-		if (newAbstract != abstract_)
-		{
+	@Override
+	public void setAbstract(CharacterStringPropertyType newAbstract) {
+		if (newAbstract != abstract_) {
 			NotificationChain msgs = null;
 			if (abstract_ != null)
 				msgs = ((InternalEObject)abstract_).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__ABSTRACT, null, msgs);
@@ -313,8 +304,8 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getPurpose()
-	{
+	@Override
+	public CharacterStringPropertyType getPurpose() {
 		return purpose;
 	}
 
@@ -323,12 +314,10 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPurpose(CharacterStringPropertyType newPurpose, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPurpose(CharacterStringPropertyType newPurpose, NotificationChain msgs) {
 		CharacterStringPropertyType oldPurpose = purpose;
 		purpose = newPurpose;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__PURPOSE, oldPurpose, newPurpose);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -340,10 +329,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPurpose(CharacterStringPropertyType newPurpose)
-	{
-		if (newPurpose != purpose)
-		{
+	@Override
+	public void setPurpose(CharacterStringPropertyType newPurpose) {
+		if (newPurpose != purpose) {
 			NotificationChain msgs = null;
 			if (purpose != null)
 				msgs = ((InternalEObject)purpose).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__PURPOSE, null, msgs);
@@ -361,10 +349,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getCredit()
-	{
-		if (credit == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getCredit() {
+		if (credit == null) {
 			credit = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__CREDIT);
 		}
 		return credit;
@@ -375,10 +362,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDProgressCodePropertyType> getStatus()
-	{
-		if (status == null)
-		{
+	@Override
+	public EList<MDProgressCodePropertyType> getStatus() {
+		if (status == null) {
 			status = new EObjectContainmentEList<MDProgressCodePropertyType>(MDProgressCodePropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__STATUS);
 		}
 		return status;
@@ -389,10 +375,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIResponsiblePartyPropertyType> getPointOfContact()
-	{
-		if (pointOfContact == null)
-		{
+	@Override
+	public EList<CIResponsiblePartyPropertyType> getPointOfContact() {
+		if (pointOfContact == null) {
 			pointOfContact = new EObjectContainmentEList<CIResponsiblePartyPropertyType>(CIResponsiblePartyPropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__POINT_OF_CONTACT);
 		}
 		return pointOfContact;
@@ -403,10 +388,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDMaintenanceInformationPropertyType> getResourceMaintenance()
-	{
-		if (resourceMaintenance == null)
-		{
+	@Override
+	public EList<MDMaintenanceInformationPropertyType> getResourceMaintenance() {
+		if (resourceMaintenance == null) {
 			resourceMaintenance = new EObjectContainmentEList<MDMaintenanceInformationPropertyType>(MDMaintenanceInformationPropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__RESOURCE_MAINTENANCE);
 		}
 		return resourceMaintenance;
@@ -417,10 +401,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDBrowseGraphicPropertyType> getGraphicOverview()
-	{
-		if (graphicOverview == null)
-		{
+	@Override
+	public EList<MDBrowseGraphicPropertyType> getGraphicOverview() {
+		if (graphicOverview == null) {
 			graphicOverview = new EObjectContainmentEList<MDBrowseGraphicPropertyType>(MDBrowseGraphicPropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__GRAPHIC_OVERVIEW);
 		}
 		return graphicOverview;
@@ -431,10 +414,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDFormatPropertyType> getResourceFormat()
-	{
-		if (resourceFormat == null)
-		{
+	@Override
+	public EList<MDFormatPropertyType> getResourceFormat() {
+		if (resourceFormat == null) {
 			resourceFormat = new EObjectContainmentEList<MDFormatPropertyType>(MDFormatPropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__RESOURCE_FORMAT);
 		}
 		return resourceFormat;
@@ -445,10 +427,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDKeywordsPropertyType> getDescriptiveKeywords()
-	{
-		if (descriptiveKeywords == null)
-		{
+	@Override
+	public EList<MDKeywordsPropertyType> getDescriptiveKeywords() {
+		if (descriptiveKeywords == null) {
 			descriptiveKeywords = new EObjectContainmentEList<MDKeywordsPropertyType>(MDKeywordsPropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__DESCRIPTIVE_KEYWORDS);
 		}
 		return descriptiveKeywords;
@@ -459,10 +440,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDUsagePropertyType> getResourceSpecificUsage()
-	{
-		if (resourceSpecificUsage == null)
-		{
+	@Override
+	public EList<MDUsagePropertyType> getResourceSpecificUsage() {
+		if (resourceSpecificUsage == null) {
 			resourceSpecificUsage = new EObjectContainmentEList<MDUsagePropertyType>(MDUsagePropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__RESOURCE_SPECIFIC_USAGE);
 		}
 		return resourceSpecificUsage;
@@ -473,10 +453,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDConstraintsPropertyType> getResourceConstraints()
-	{
-		if (resourceConstraints == null)
-		{
+	@Override
+	public EList<MDConstraintsPropertyType> getResourceConstraints() {
+		if (resourceConstraints == null) {
 			resourceConstraints = new EObjectContainmentEList<MDConstraintsPropertyType>(MDConstraintsPropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__RESOURCE_CONSTRAINTS);
 		}
 		return resourceConstraints;
@@ -487,10 +466,9 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDAggregateInformationPropertyType> getAggregationInfo()
-	{
-		if (aggregationInfo == null)
-		{
+	@Override
+	public EList<MDAggregateInformationPropertyType> getAggregationInfo() {
+		if (aggregationInfo == null) {
 			aggregationInfo = new EObjectContainmentEList<MDAggregateInformationPropertyType>(MDAggregateInformationPropertyType.class, this, GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__AGGREGATION_INFO);
 		}
 		return aggregationInfo;
@@ -502,10 +480,8 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__CITATION:
 				return basicSetCitation(null, msgs);
 			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__ABSTRACT:
@@ -542,10 +518,8 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__CITATION:
 				return getCitation();
 			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__ABSTRACT:
@@ -583,10 +557,8 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__CITATION:
 				setCitation((CICitationPropertyType)newValue);
 				return;
@@ -646,10 +618,8 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__CITATION:
 				setCitation((CICitationPropertyType)null);
 				return;
@@ -699,10 +669,8 @@ public abstract class AbstractMDIdentificationTypeImpl extends AbstractObjectTyp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__CITATION:
 				return citation != null;
 			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE__ABSTRACT:

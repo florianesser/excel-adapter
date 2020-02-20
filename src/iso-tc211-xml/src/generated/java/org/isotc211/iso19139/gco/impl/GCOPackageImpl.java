@@ -95,8 +95,7 @@ import org.w3.xlink.impl.XLinkPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GCOPackageImpl extends EPackageImpl implements GCOPackage
-{
+public class GCOPackageImpl extends EPackageImpl implements GCOPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -420,8 +419,7 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * @see #init()
 	 * @generated
 	 */
-	private GCOPackageImpl()
-	{
+	private GCOPackageImpl() {
 		super(eNS_URI, GCOFactory.eINSTANCE);
 	}
 
@@ -434,7 +432,7 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link GCOPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -444,12 +442,12 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static GCOPackage init()
-	{
+	public static GCOPackage init() {
 		if (isInited) return (GCOPackage)EPackage.Registry.INSTANCE.getEPackage(GCOPackage.eNS_URI);
 
 		// Obtain or create and register package
-		GCOPackageImpl theGCOPackage = (GCOPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof GCOPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new GCOPackageImpl());
+		Object registeredGCOPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		GCOPackageImpl theGCOPackage = registeredGCOPackage instanceof GCOPackageImpl ? (GCOPackageImpl)registeredGCOPackage : new GCOPackageImpl();
 
 		isInited = true;
 
@@ -458,12 +456,18 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 		XMLTypePackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		GMLPackageImpl theGMLPackage = (GMLPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GMLPackage.eNS_URI) instanceof GMLPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GMLPackage.eNS_URI) : GMLPackage.eINSTANCE);
-		XLinkPackageImpl theXLinkPackage = (XLinkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(XLinkPackage.eNS_URI) instanceof XLinkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(XLinkPackage.eNS_URI) : XLinkPackage.eINSTANCE);
-		GMDPackageImpl theGMDPackage = (GMDPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GMDPackage.eNS_URI) instanceof GMDPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GMDPackage.eNS_URI) : GMDPackage.eINSTANCE);
-		GSSPackageImpl theGSSPackage = (GSSPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GSSPackage.eNS_URI) instanceof GSSPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GSSPackage.eNS_URI) : GSSPackage.eINSTANCE);
-		GTSPackageImpl theGTSPackage = (GTSPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GTSPackage.eNS_URI) instanceof GTSPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GTSPackage.eNS_URI) : GTSPackage.eINSTANCE);
-		GSRPackageImpl theGSRPackage = (GSRPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GSRPackage.eNS_URI) instanceof GSRPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GSRPackage.eNS_URI) : GSRPackage.eINSTANCE);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GMLPackage.eNS_URI);
+		GMLPackageImpl theGMLPackage = (GMLPackageImpl)(registeredPackage instanceof GMLPackageImpl ? registeredPackage : GMLPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(XLinkPackage.eNS_URI);
+		XLinkPackageImpl theXLinkPackage = (XLinkPackageImpl)(registeredPackage instanceof XLinkPackageImpl ? registeredPackage : XLinkPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GMDPackage.eNS_URI);
+		GMDPackageImpl theGMDPackage = (GMDPackageImpl)(registeredPackage instanceof GMDPackageImpl ? registeredPackage : GMDPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GSSPackage.eNS_URI);
+		GSSPackageImpl theGSSPackage = (GSSPackageImpl)(registeredPackage instanceof GSSPackageImpl ? registeredPackage : GSSPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GTSPackage.eNS_URI);
+		GTSPackageImpl theGTSPackage = (GTSPackageImpl)(registeredPackage instanceof GTSPackageImpl ? registeredPackage : GTSPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GSRPackage.eNS_URI);
+		GSRPackageImpl theGSRPackage = (GSRPackageImpl)(registeredPackage instanceof GSRPackageImpl ? registeredPackage : GSRPackage.eINSTANCE);
 
 		// Load packages
 		theGMLPackage.loadPackage();
@@ -489,11 +493,10 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put
-			(theGCOPackage, 
-			 new EValidator.Descriptor()
-			 {
-				 public EValidator getEValidator()
-				 {
+			(theGCOPackage,
+			 new EValidator.Descriptor() {
+				 @Override
+				 public EValidator getEValidator() {
 					 return GCOValidator.INSTANCE;
 				 }
 			 });
@@ -501,7 +504,6 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 		// Mark meta-data to indicate it can't be changed
 		theGCOPackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(GCOPackage.eNS_URI, theGCOPackage);
 		return theGCOPackage;
@@ -512,8 +514,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getAbstractObjectType()
-	{
+	@Override
+	public EClass getAbstractObjectType() {
 		return abstractObjectTypeEClass;
 	}
 
@@ -522,8 +524,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAbstractObjectType_Id()
-	{
+	@Override
+	public EAttribute getAbstractObjectType_Id() {
 		return (EAttribute)abstractObjectTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -532,8 +534,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAbstractObjectType_Uuid()
-	{
+	@Override
+	public EAttribute getAbstractObjectType_Uuid() {
 		return (EAttribute)abstractObjectTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -542,8 +544,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getAnglePropertyType()
-	{
+	@Override
+	public EClass getAnglePropertyType() {
 		return anglePropertyTypeEClass;
 	}
 
@@ -552,8 +554,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getAnglePropertyType_Angle()
-	{
+	@Override
+	public EReference getAnglePropertyType_Angle() {
 		return (EReference)anglePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -562,8 +564,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAnglePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getAnglePropertyType_NilReason() {
 		return (EAttribute)anglePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -572,8 +574,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getBinaryPropertyType()
-	{
+	@Override
+	public EClass getBinaryPropertyType() {
 		return binaryPropertyTypeEClass;
 	}
 
@@ -582,8 +584,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getBinaryPropertyType_Binary()
-	{
+	@Override
+	public EReference getBinaryPropertyType_Binary() {
 		return (EReference)binaryPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -592,8 +594,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBinaryPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getBinaryPropertyType_NilReason() {
 		return (EAttribute)binaryPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -602,8 +604,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getBinaryType()
-	{
+	@Override
+	public EClass getBinaryType() {
 		return binaryTypeEClass;
 	}
 
@@ -612,8 +614,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBinaryType_Value()
-	{
+	@Override
+	public EAttribute getBinaryType_Value() {
 		return (EAttribute)binaryTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -622,8 +624,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBinaryType_Src()
-	{
+	@Override
+	public EAttribute getBinaryType_Src() {
 		return (EAttribute)binaryTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -632,8 +634,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getBooleanPropertyType()
-	{
+	@Override
+	public EClass getBooleanPropertyType() {
 		return booleanPropertyTypeEClass;
 	}
 
@@ -642,8 +644,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBooleanPropertyType_Boolean()
-	{
+	@Override
+	public EAttribute getBooleanPropertyType_Boolean() {
 		return (EAttribute)booleanPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -652,8 +654,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBooleanPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getBooleanPropertyType_NilReason() {
 		return (EAttribute)booleanPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -662,8 +664,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCharacterStringPropertyType()
-	{
+	@Override
+	public EClass getCharacterStringPropertyType() {
 		return characterStringPropertyTypeEClass;
 	}
 
@@ -672,8 +674,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCharacterStringPropertyType_CharacterStringGroup()
-	{
+	@Override
+	public EAttribute getCharacterStringPropertyType_CharacterStringGroup() {
 		return (EAttribute)characterStringPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -682,8 +684,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCharacterStringPropertyType_CharacterString()
-	{
+	@Override
+	public EAttribute getCharacterStringPropertyType_CharacterString() {
 		return (EAttribute)characterStringPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -692,8 +694,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCharacterStringPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getCharacterStringPropertyType_NilReason() {
 		return (EAttribute)characterStringPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -702,8 +704,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCodeListValueType()
-	{
+	@Override
+	public EClass getCodeListValueType() {
 		return codeListValueTypeEClass;
 	}
 
@@ -712,8 +714,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCodeListValueType_Value()
-	{
+	@Override
+	public EAttribute getCodeListValueType_Value() {
 		return (EAttribute)codeListValueTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -722,8 +724,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCodeListValueType_CodeList()
-	{
+	@Override
+	public EAttribute getCodeListValueType_CodeList() {
 		return (EAttribute)codeListValueTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -732,8 +734,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCodeListValueType_CodeListValue()
-	{
+	@Override
+	public EAttribute getCodeListValueType_CodeListValue() {
 		return (EAttribute)codeListValueTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -742,8 +744,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCodeListValueType_CodeSpace()
-	{
+	@Override
+	public EAttribute getCodeListValueType_CodeSpace() {
 		return (EAttribute)codeListValueTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -752,8 +754,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDatePropertyType()
-	{
+	@Override
+	public EClass getDatePropertyType() {
 		return datePropertyTypeEClass;
 	}
 
@@ -762,8 +764,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDatePropertyType_Date()
-	{
+	@Override
+	public EAttribute getDatePropertyType_Date() {
 		return (EAttribute)datePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -772,8 +774,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDatePropertyType_DateTime()
-	{
+	@Override
+	public EAttribute getDatePropertyType_DateTime() {
 		return (EAttribute)datePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -782,8 +784,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDatePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getDatePropertyType_NilReason() {
 		return (EAttribute)datePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -792,8 +794,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDateTimePropertyType()
-	{
+	@Override
+	public EClass getDateTimePropertyType() {
 		return dateTimePropertyTypeEClass;
 	}
 
@@ -802,8 +804,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDateTimePropertyType_DateTime()
-	{
+	@Override
+	public EAttribute getDateTimePropertyType_DateTime() {
 		return (EAttribute)dateTimePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -812,8 +814,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDateTimePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getDateTimePropertyType_NilReason() {
 		return (EAttribute)dateTimePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -822,8 +824,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDecimalPropertyType()
-	{
+	@Override
+	public EClass getDecimalPropertyType() {
 		return decimalPropertyTypeEClass;
 	}
 
@@ -832,8 +834,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDecimalPropertyType_Decimal()
-	{
+	@Override
+	public EAttribute getDecimalPropertyType_Decimal() {
 		return (EAttribute)decimalPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -842,8 +844,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDecimalPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getDecimalPropertyType_NilReason() {
 		return (EAttribute)decimalPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -852,8 +854,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDistancePropertyType()
-	{
+	@Override
+	public EClass getDistancePropertyType() {
 		return distancePropertyTypeEClass;
 	}
 
@@ -862,8 +864,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDistancePropertyType_Distance()
-	{
+	@Override
+	public EReference getDistancePropertyType_Distance() {
 		return (EReference)distancePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -872,8 +874,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDistancePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getDistancePropertyType_NilReason() {
 		return (EAttribute)distancePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -882,8 +884,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getGenericNamePropertyType()
-	{
+	@Override
+	public EClass getGenericNamePropertyType() {
 		return genericNamePropertyTypeEClass;
 	}
 
@@ -892,8 +894,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenericNamePropertyType_AbstractGenericNameGroup()
-	{
+	@Override
+	public EAttribute getGenericNamePropertyType_AbstractGenericNameGroup() {
 		return (EAttribute)genericNamePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -902,8 +904,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getGenericNamePropertyType_AbstractGenericName()
-	{
+	@Override
+	public EReference getGenericNamePropertyType_AbstractGenericName() {
 		return (EReference)genericNamePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -912,8 +914,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenericNamePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getGenericNamePropertyType_NilReason() {
 		return (EAttribute)genericNamePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -922,8 +924,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getIntegerPropertyType()
-	{
+	@Override
+	public EClass getIntegerPropertyType() {
 		return integerPropertyTypeEClass;
 	}
 
@@ -932,8 +934,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getIntegerPropertyType_Integer()
-	{
+	@Override
+	public EAttribute getIntegerPropertyType_Integer() {
 		return (EAttribute)integerPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -942,8 +944,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getIntegerPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getIntegerPropertyType_NilReason() {
 		return (EAttribute)integerPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -952,8 +954,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getLengthPropertyType()
-	{
+	@Override
+	public EClass getLengthPropertyType() {
 		return lengthPropertyTypeEClass;
 	}
 
@@ -962,8 +964,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLengthPropertyType_LengthGroup()
-	{
+	@Override
+	public EAttribute getLengthPropertyType_LengthGroup() {
 		return (EAttribute)lengthPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -972,8 +974,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getLengthPropertyType_Length()
-	{
+	@Override
+	public EReference getLengthPropertyType_Length() {
 		return (EReference)lengthPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -982,8 +984,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLengthPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getLengthPropertyType_NilReason() {
 		return (EAttribute)lengthPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -992,8 +994,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getLocalNamePropertyType()
-	{
+	@Override
+	public EClass getLocalNamePropertyType() {
 		return localNamePropertyTypeEClass;
 	}
 
@@ -1002,8 +1004,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getLocalNamePropertyType_LocalName()
-	{
+	@Override
+	public EReference getLocalNamePropertyType_LocalName() {
 		return (EReference)localNamePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1012,8 +1014,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLocalNamePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getLocalNamePropertyType_NilReason() {
 		return (EAttribute)localNamePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1022,8 +1024,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getMultiplicityPropertyType()
-	{
+	@Override
+	public EClass getMultiplicityPropertyType() {
 		return multiplicityPropertyTypeEClass;
 	}
 
@@ -1032,8 +1034,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMultiplicityPropertyType_Multiplicity()
-	{
+	@Override
+	public EReference getMultiplicityPropertyType_Multiplicity() {
 		return (EReference)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1042,8 +1044,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityPropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getMultiplicityPropertyType_Actuate() {
 		return (EAttribute)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1052,8 +1054,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityPropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getMultiplicityPropertyType_Arcrole() {
 		return (EAttribute)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1062,8 +1064,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityPropertyType_Href()
-	{
+	@Override
+	public EAttribute getMultiplicityPropertyType_Href() {
 		return (EAttribute)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1072,8 +1074,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getMultiplicityPropertyType_NilReason() {
 		return (EAttribute)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1082,8 +1084,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityPropertyType_Role()
-	{
+	@Override
+	public EAttribute getMultiplicityPropertyType_Role() {
 		return (EAttribute)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1092,8 +1094,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityPropertyType_Show()
-	{
+	@Override
+	public EAttribute getMultiplicityPropertyType_Show() {
 		return (EAttribute)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1102,8 +1104,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityPropertyType_Title()
-	{
+	@Override
+	public EAttribute getMultiplicityPropertyType_Title() {
 		return (EAttribute)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -1112,8 +1114,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityPropertyType_Type()
-	{
+	@Override
+	public EAttribute getMultiplicityPropertyType_Type() {
 		return (EAttribute)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1122,8 +1124,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityPropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getMultiplicityPropertyType_Uuidref() {
 		return (EAttribute)multiplicityPropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -1132,8 +1134,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getMultiplicityRangePropertyType()
-	{
+	@Override
+	public EClass getMultiplicityRangePropertyType() {
 		return multiplicityRangePropertyTypeEClass;
 	}
 
@@ -1142,8 +1144,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMultiplicityRangePropertyType_MultiplicityRange()
-	{
+	@Override
+	public EReference getMultiplicityRangePropertyType_MultiplicityRange() {
 		return (EReference)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1152,8 +1154,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityRangePropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getMultiplicityRangePropertyType_Actuate() {
 		return (EAttribute)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1162,8 +1164,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityRangePropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getMultiplicityRangePropertyType_Arcrole() {
 		return (EAttribute)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1172,8 +1174,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityRangePropertyType_Href()
-	{
+	@Override
+	public EAttribute getMultiplicityRangePropertyType_Href() {
 		return (EAttribute)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1182,8 +1184,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityRangePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getMultiplicityRangePropertyType_NilReason() {
 		return (EAttribute)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1192,8 +1194,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityRangePropertyType_Role()
-	{
+	@Override
+	public EAttribute getMultiplicityRangePropertyType_Role() {
 		return (EAttribute)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1202,8 +1204,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityRangePropertyType_Show()
-	{
+	@Override
+	public EAttribute getMultiplicityRangePropertyType_Show() {
 		return (EAttribute)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1212,8 +1214,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityRangePropertyType_Title()
-	{
+	@Override
+	public EAttribute getMultiplicityRangePropertyType_Title() {
 		return (EAttribute)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -1222,8 +1224,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityRangePropertyType_Type()
-	{
+	@Override
+	public EAttribute getMultiplicityRangePropertyType_Type() {
 		return (EAttribute)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1232,8 +1234,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultiplicityRangePropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getMultiplicityRangePropertyType_Uuidref() {
 		return (EAttribute)multiplicityRangePropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -1242,8 +1244,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getObjectReferencePropertyType()
-	{
+	@Override
+	public EClass getObjectReferencePropertyType() {
 		return objectReferencePropertyTypeEClass;
 	}
 
@@ -1252,8 +1254,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectReferencePropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getObjectReferencePropertyType_Actuate() {
 		return (EAttribute)objectReferencePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1262,8 +1264,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectReferencePropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getObjectReferencePropertyType_Arcrole() {
 		return (EAttribute)objectReferencePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1272,8 +1274,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectReferencePropertyType_Href()
-	{
+	@Override
+	public EAttribute getObjectReferencePropertyType_Href() {
 		return (EAttribute)objectReferencePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1282,8 +1284,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectReferencePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getObjectReferencePropertyType_NilReason() {
 		return (EAttribute)objectReferencePropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1292,8 +1294,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectReferencePropertyType_Role()
-	{
+	@Override
+	public EAttribute getObjectReferencePropertyType_Role() {
 		return (EAttribute)objectReferencePropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1302,8 +1304,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectReferencePropertyType_Show()
-	{
+	@Override
+	public EAttribute getObjectReferencePropertyType_Show() {
 		return (EAttribute)objectReferencePropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1312,8 +1314,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectReferencePropertyType_Title()
-	{
+	@Override
+	public EAttribute getObjectReferencePropertyType_Title() {
 		return (EAttribute)objectReferencePropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1322,8 +1324,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectReferencePropertyType_Type()
-	{
+	@Override
+	public EAttribute getObjectReferencePropertyType_Type() {
 		return (EAttribute)objectReferencePropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -1332,8 +1334,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectReferencePropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getObjectReferencePropertyType_Uuidref() {
 		return (EAttribute)objectReferencePropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1342,8 +1344,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRealPropertyType()
-	{
+	@Override
+	public EClass getRealPropertyType() {
 		return realPropertyTypeEClass;
 	}
 
@@ -1352,8 +1354,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRealPropertyType_Real()
-	{
+	@Override
+	public EAttribute getRealPropertyType_Real() {
 		return (EAttribute)realPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1362,8 +1364,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRealPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getRealPropertyType_NilReason() {
 		return (EAttribute)realPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1372,8 +1374,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDocumentRoot()
-	{
+	@Override
+	public EClass getDocumentRoot() {
 		return documentRootEClass;
 	}
 
@@ -1382,8 +1384,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Mixed()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Mixed() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1392,8 +1394,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_XMLNSPrefixMap()
-	{
+	@Override
+	public EReference getDocumentRoot_XMLNSPrefixMap() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1402,8 +1404,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_XSISchemaLocation()
-	{
+	@Override
+	public EReference getDocumentRoot_XSISchemaLocation() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1412,8 +1414,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_AbstractGenericName()
-	{
+	@Override
+	public EReference getDocumentRoot_AbstractGenericName() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1422,8 +1424,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_AbstractObject()
-	{
+	@Override
+	public EReference getDocumentRoot_AbstractObject() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1432,8 +1434,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Angle()
-	{
+	@Override
+	public EReference getDocumentRoot_Angle() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1442,8 +1444,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Measure()
-	{
+	@Override
+	public EReference getDocumentRoot_Measure() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1452,8 +1454,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Binary()
-	{
+	@Override
+	public EReference getDocumentRoot_Binary() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -1462,8 +1464,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Boolean()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Boolean() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1472,8 +1474,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_CharacterString()
-	{
+	@Override
+	public EAttribute getDocumentRoot_CharacterString() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -1482,8 +1484,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Date()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Date() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -1492,8 +1494,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_DateTime()
-	{
+	@Override
+	public EAttribute getDocumentRoot_DateTime() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -1502,8 +1504,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Decimal()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Decimal() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(12);
 	}
 
@@ -1512,8 +1514,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Distance()
-	{
+	@Override
+	public EReference getDocumentRoot_Distance() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -1522,8 +1524,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Length()
-	{
+	@Override
+	public EReference getDocumentRoot_Length() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(14);
 	}
 
@@ -1532,8 +1534,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Integer()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Integer() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -1542,8 +1544,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_LocalName()
-	{
+	@Override
+	public EReference getDocumentRoot_LocalName() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(16);
 	}
 
@@ -1552,8 +1554,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_MemberName()
-	{
+	@Override
+	public EReference getDocumentRoot_MemberName() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(17);
 	}
 
@@ -1562,8 +1564,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Multiplicity()
-	{
+	@Override
+	public EReference getDocumentRoot_Multiplicity() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(18);
 	}
 
@@ -1572,8 +1574,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_MultiplicityRange()
-	{
+	@Override
+	public EReference getDocumentRoot_MultiplicityRange() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(19);
 	}
 
@@ -1582,8 +1584,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Real()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Real() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(20);
 	}
 
@@ -1592,8 +1594,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Record()
-	{
+	@Override
+	public EReference getDocumentRoot_Record() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(21);
 	}
 
@@ -1602,8 +1604,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_RecordType()
-	{
+	@Override
+	public EReference getDocumentRoot_RecordType() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(22);
 	}
 
@@ -1612,8 +1614,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Scale()
-	{
+	@Override
+	public EReference getDocumentRoot_Scale() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(23);
 	}
 
@@ -1622,8 +1624,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_ScopedName()
-	{
+	@Override
+	public EReference getDocumentRoot_ScopedName() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(24);
 	}
 
@@ -1632,8 +1634,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_TypeName()
-	{
+	@Override
+	public EReference getDocumentRoot_TypeName() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(25);
 	}
 
@@ -1642,8 +1644,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_UnlimitedInteger()
-	{
+	@Override
+	public EReference getDocumentRoot_UnlimitedInteger() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(26);
 	}
 
@@ -1652,8 +1654,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_IsoType()
-	{
+	@Override
+	public EAttribute getDocumentRoot_IsoType() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(27);
 	}
 
@@ -1662,8 +1664,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_NilReason()
-	{
+	@Override
+	public EAttribute getDocumentRoot_NilReason() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(28);
 	}
 
@@ -1672,8 +1674,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getMeasurePropertyType()
-	{
+	@Override
+	public EClass getMeasurePropertyType() {
 		return measurePropertyTypeEClass;
 	}
 
@@ -1682,8 +1684,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeasurePropertyType_MeasureGroup()
-	{
+	@Override
+	public EAttribute getMeasurePropertyType_MeasureGroup() {
 		return (EAttribute)measurePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1692,8 +1694,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMeasurePropertyType_Measure()
-	{
+	@Override
+	public EReference getMeasurePropertyType_Measure() {
 		return (EReference)measurePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1702,8 +1704,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeasurePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getMeasurePropertyType_NilReason() {
 		return (EAttribute)measurePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1712,8 +1714,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getMemberNamePropertyType()
-	{
+	@Override
+	public EClass getMemberNamePropertyType() {
 		return memberNamePropertyTypeEClass;
 	}
 
@@ -1722,8 +1724,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMemberNamePropertyType_MemberName()
-	{
+	@Override
+	public EReference getMemberNamePropertyType_MemberName() {
 		return (EReference)memberNamePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1732,8 +1734,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMemberNamePropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getMemberNamePropertyType_Actuate() {
 		return (EAttribute)memberNamePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1742,8 +1744,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMemberNamePropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getMemberNamePropertyType_Arcrole() {
 		return (EAttribute)memberNamePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1752,8 +1754,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMemberNamePropertyType_Href()
-	{
+	@Override
+	public EAttribute getMemberNamePropertyType_Href() {
 		return (EAttribute)memberNamePropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1762,8 +1764,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMemberNamePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getMemberNamePropertyType_NilReason() {
 		return (EAttribute)memberNamePropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1772,8 +1774,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMemberNamePropertyType_Role()
-	{
+	@Override
+	public EAttribute getMemberNamePropertyType_Role() {
 		return (EAttribute)memberNamePropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1782,8 +1784,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMemberNamePropertyType_Show()
-	{
+	@Override
+	public EAttribute getMemberNamePropertyType_Show() {
 		return (EAttribute)memberNamePropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1792,8 +1794,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMemberNamePropertyType_Title()
-	{
+	@Override
+	public EAttribute getMemberNamePropertyType_Title() {
 		return (EAttribute)memberNamePropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -1802,8 +1804,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMemberNamePropertyType_Type()
-	{
+	@Override
+	public EAttribute getMemberNamePropertyType_Type() {
 		return (EAttribute)memberNamePropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1812,8 +1814,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMemberNamePropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getMemberNamePropertyType_Uuidref() {
 		return (EAttribute)memberNamePropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -1822,8 +1824,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getMemberNameType()
-	{
+	@Override
+	public EClass getMemberNameType() {
 		return memberNameTypeEClass;
 	}
 
@@ -1832,8 +1834,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMemberNameType_AName()
-	{
+	@Override
+	public EReference getMemberNameType_AName() {
 		return (EReference)memberNameTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1842,8 +1844,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMemberNameType_AttributeType()
-	{
+	@Override
+	public EReference getMemberNameType_AttributeType() {
 		return (EReference)memberNameTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1852,8 +1854,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getMultiplicityRangeType()
-	{
+	@Override
+	public EClass getMultiplicityRangeType() {
 		return multiplicityRangeTypeEClass;
 	}
 
@@ -1862,8 +1864,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMultiplicityRangeType_Lower()
-	{
+	@Override
+	public EReference getMultiplicityRangeType_Lower() {
 		return (EReference)multiplicityRangeTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1872,8 +1874,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMultiplicityRangeType_Upper()
-	{
+	@Override
+	public EReference getMultiplicityRangeType_Upper() {
 		return (EReference)multiplicityRangeTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1882,8 +1884,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getMultiplicityType()
-	{
+	@Override
+	public EClass getMultiplicityType() {
 		return multiplicityTypeEClass;
 	}
 
@@ -1892,8 +1894,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMultiplicityType_Range()
-	{
+	@Override
+	public EReference getMultiplicityType_Range() {
 		return (EReference)multiplicityTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1902,8 +1904,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getNumberPropertyType()
-	{
+	@Override
+	public EClass getNumberPropertyType() {
 		return numberPropertyTypeEClass;
 	}
 
@@ -1912,8 +1914,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNumberPropertyType_Real()
-	{
+	@Override
+	public EAttribute getNumberPropertyType_Real() {
 		return (EAttribute)numberPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1922,8 +1924,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNumberPropertyType_Decimal()
-	{
+	@Override
+	public EAttribute getNumberPropertyType_Decimal() {
 		return (EAttribute)numberPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1932,8 +1934,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNumberPropertyType_Integer()
-	{
+	@Override
+	public EAttribute getNumberPropertyType_Integer() {
 		return (EAttribute)numberPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1942,8 +1944,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNumberPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getNumberPropertyType_NilReason() {
 		return (EAttribute)numberPropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1952,8 +1954,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRecordPropertyType()
-	{
+	@Override
+	public EClass getRecordPropertyType() {
 		return recordPropertyTypeEClass;
 	}
 
@@ -1962,8 +1964,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getRecordPropertyType_Record()
-	{
+	@Override
+	public EReference getRecordPropertyType_Record() {
 		return (EReference)recordPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1972,8 +1974,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordPropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getRecordPropertyType_Actuate() {
 		return (EAttribute)recordPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1982,8 +1984,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordPropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getRecordPropertyType_Arcrole() {
 		return (EAttribute)recordPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1992,8 +1994,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordPropertyType_Href()
-	{
+	@Override
+	public EAttribute getRecordPropertyType_Href() {
 		return (EAttribute)recordPropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2002,8 +2004,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getRecordPropertyType_NilReason() {
 		return (EAttribute)recordPropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -2012,8 +2014,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordPropertyType_Role()
-	{
+	@Override
+	public EAttribute getRecordPropertyType_Role() {
 		return (EAttribute)recordPropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -2022,8 +2024,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordPropertyType_Show()
-	{
+	@Override
+	public EAttribute getRecordPropertyType_Show() {
 		return (EAttribute)recordPropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -2032,8 +2034,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordPropertyType_Title()
-	{
+	@Override
+	public EAttribute getRecordPropertyType_Title() {
 		return (EAttribute)recordPropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -2042,8 +2044,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordPropertyType_Type()
-	{
+	@Override
+	public EAttribute getRecordPropertyType_Type() {
 		return (EAttribute)recordPropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -2052,8 +2054,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordPropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getRecordPropertyType_Uuidref() {
 		return (EAttribute)recordPropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -2062,8 +2064,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRecordTypePropertyType()
-	{
+	@Override
+	public EClass getRecordTypePropertyType() {
 		return recordTypePropertyTypeEClass;
 	}
 
@@ -2072,8 +2074,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getRecordTypePropertyType_RecordType()
-	{
+	@Override
+	public EReference getRecordTypePropertyType_RecordType() {
 		return (EReference)recordTypePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2082,8 +2084,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordTypePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getRecordTypePropertyType_NilReason() {
 		return (EAttribute)recordTypePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2092,8 +2094,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRecordTypeType()
-	{
+	@Override
+	public EClass getRecordTypeType() {
 		return recordTypeTypeEClass;
 	}
 
@@ -2102,8 +2104,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordTypeType_Value()
-	{
+	@Override
+	public EAttribute getRecordTypeType_Value() {
 		return (EAttribute)recordTypeTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2112,8 +2114,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordTypeType_Actuate()
-	{
+	@Override
+	public EAttribute getRecordTypeType_Actuate() {
 		return (EAttribute)recordTypeTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2122,8 +2124,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordTypeType_Arcrole()
-	{
+	@Override
+	public EAttribute getRecordTypeType_Arcrole() {
 		return (EAttribute)recordTypeTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -2132,8 +2134,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordTypeType_Href()
-	{
+	@Override
+	public EAttribute getRecordTypeType_Href() {
 		return (EAttribute)recordTypeTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2142,8 +2144,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordTypeType_Role()
-	{
+	@Override
+	public EAttribute getRecordTypeType_Role() {
 		return (EAttribute)recordTypeTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -2152,8 +2154,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordTypeType_Show()
-	{
+	@Override
+	public EAttribute getRecordTypeType_Show() {
 		return (EAttribute)recordTypeTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -2162,8 +2164,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordTypeType_Title()
-	{
+	@Override
+	public EAttribute getRecordTypeType_Title() {
 		return (EAttribute)recordTypeTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -2172,8 +2174,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecordTypeType_Type()
-	{
+	@Override
+	public EAttribute getRecordTypeType_Type() {
 		return (EAttribute)recordTypeTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -2182,8 +2184,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getScalePropertyType()
-	{
+	@Override
+	public EClass getScalePropertyType() {
 		return scalePropertyTypeEClass;
 	}
 
@@ -2192,8 +2194,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getScalePropertyType_Scale()
-	{
+	@Override
+	public EReference getScalePropertyType_Scale() {
 		return (EReference)scalePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2202,8 +2204,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getScalePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getScalePropertyType_NilReason() {
 		return (EAttribute)scalePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2212,8 +2214,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getScopedNamePropertyType()
-	{
+	@Override
+	public EClass getScopedNamePropertyType() {
 		return scopedNamePropertyTypeEClass;
 	}
 
@@ -2222,8 +2224,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getScopedNamePropertyType_ScopedName()
-	{
+	@Override
+	public EReference getScopedNamePropertyType_ScopedName() {
 		return (EReference)scopedNamePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2232,8 +2234,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getScopedNamePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getScopedNamePropertyType_NilReason() {
 		return (EAttribute)scopedNamePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2242,8 +2244,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTypeNamePropertyType()
-	{
+	@Override
+	public EClass getTypeNamePropertyType() {
 		return typeNamePropertyTypeEClass;
 	}
 
@@ -2252,8 +2254,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getTypeNamePropertyType_TypeName()
-	{
+	@Override
+	public EReference getTypeNamePropertyType_TypeName() {
 		return (EReference)typeNamePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2262,8 +2264,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTypeNamePropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getTypeNamePropertyType_Actuate() {
 		return (EAttribute)typeNamePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2272,8 +2274,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTypeNamePropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getTypeNamePropertyType_Arcrole() {
 		return (EAttribute)typeNamePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -2282,8 +2284,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTypeNamePropertyType_Href()
-	{
+	@Override
+	public EAttribute getTypeNamePropertyType_Href() {
 		return (EAttribute)typeNamePropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2292,8 +2294,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTypeNamePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getTypeNamePropertyType_NilReason() {
 		return (EAttribute)typeNamePropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -2302,8 +2304,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTypeNamePropertyType_Role()
-	{
+	@Override
+	public EAttribute getTypeNamePropertyType_Role() {
 		return (EAttribute)typeNamePropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -2312,8 +2314,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTypeNamePropertyType_Show()
-	{
+	@Override
+	public EAttribute getTypeNamePropertyType_Show() {
 		return (EAttribute)typeNamePropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -2322,8 +2324,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTypeNamePropertyType_Title()
-	{
+	@Override
+	public EAttribute getTypeNamePropertyType_Title() {
 		return (EAttribute)typeNamePropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -2332,8 +2334,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTypeNamePropertyType_Type()
-	{
+	@Override
+	public EAttribute getTypeNamePropertyType_Type() {
 		return (EAttribute)typeNamePropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -2342,8 +2344,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTypeNamePropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getTypeNamePropertyType_Uuidref() {
 		return (EAttribute)typeNamePropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -2352,8 +2354,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTypeNameType()
-	{
+	@Override
+	public EClass getTypeNameType() {
 		return typeNameTypeEClass;
 	}
 
@@ -2362,8 +2364,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getTypeNameType_AName()
-	{
+	@Override
+	public EReference getTypeNameType_AName() {
 		return (EReference)typeNameTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2372,8 +2374,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUnitOfMeasurePropertyType()
-	{
+	@Override
+	public EClass getUnitOfMeasurePropertyType() {
 		return unitOfMeasurePropertyTypeEClass;
 	}
 
@@ -2382,8 +2384,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_UnitDefinitionGroup()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_UnitDefinitionGroup() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2392,8 +2394,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUnitOfMeasurePropertyType_UnitDefinition()
-	{
+	@Override
+	public EReference getUnitOfMeasurePropertyType_UnitDefinition() {
 		return (EReference)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2402,8 +2404,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_Actuate() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -2412,8 +2414,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_Arcrole() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2422,8 +2424,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_Href()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_Href() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -2432,8 +2434,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_NilReason() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -2442,8 +2444,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_Role()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_Role() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -2452,8 +2454,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_Show()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_Show() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -2462,8 +2464,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_Title()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_Title() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -2472,8 +2474,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_Type()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_Type() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -2482,8 +2484,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnitOfMeasurePropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getUnitOfMeasurePropertyType_Uuidref() {
 		return (EAttribute)unitOfMeasurePropertyTypeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -2492,8 +2494,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUnlimitedIntegerPropertyType()
-	{
+	@Override
+	public EClass getUnlimitedIntegerPropertyType() {
 		return unlimitedIntegerPropertyTypeEClass;
 	}
 
@@ -2502,8 +2504,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUnlimitedIntegerPropertyType_UnlimitedInteger()
-	{
+	@Override
+	public EReference getUnlimitedIntegerPropertyType_UnlimitedInteger() {
 		return (EReference)unlimitedIntegerPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2512,8 +2514,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnlimitedIntegerPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getUnlimitedIntegerPropertyType_NilReason() {
 		return (EAttribute)unlimitedIntegerPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2522,8 +2524,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUnlimitedIntegerType()
-	{
+	@Override
+	public EClass getUnlimitedIntegerType() {
 		return unlimitedIntegerTypeEClass;
 	}
 
@@ -2532,8 +2534,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnlimitedIntegerType_Value()
-	{
+	@Override
+	public EAttribute getUnlimitedIntegerType_Value() {
 		return (EAttribute)unlimitedIntegerTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2542,8 +2544,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnlimitedIntegerType_IsInfinite()
-	{
+	@Override
+	public EAttribute getUnlimitedIntegerType_IsInfinite() {
 		return (EAttribute)unlimitedIntegerTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2552,8 +2554,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUomAnglePropertyType()
-	{
+	@Override
+	public EClass getUomAnglePropertyType() {
 		return uomAnglePropertyTypeEClass;
 	}
 
@@ -2562,8 +2564,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_UnitDefinitionGroup()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_UnitDefinitionGroup() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2572,8 +2574,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUomAnglePropertyType_UnitDefinition()
-	{
+	@Override
+	public EReference getUomAnglePropertyType_UnitDefinition() {
 		return (EReference)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2582,8 +2584,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_Actuate() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -2592,8 +2594,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_Arcrole() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2602,8 +2604,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_Href()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_Href() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -2612,8 +2614,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_NilReason() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -2622,8 +2624,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_Role()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_Role() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -2632,8 +2634,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_Show()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_Show() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -2642,8 +2644,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_Title()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_Title() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -2652,8 +2654,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_Type()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_Type() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -2662,8 +2664,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAnglePropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getUomAnglePropertyType_Uuidref() {
 		return (EAttribute)uomAnglePropertyTypeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -2672,8 +2674,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUomAreaPropertyType()
-	{
+	@Override
+	public EClass getUomAreaPropertyType() {
 		return uomAreaPropertyTypeEClass;
 	}
 
@@ -2682,8 +2684,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_UnitDefinitionGroup()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_UnitDefinitionGroup() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2692,8 +2694,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUomAreaPropertyType_UnitDefinition()
-	{
+	@Override
+	public EReference getUomAreaPropertyType_UnitDefinition() {
 		return (EReference)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2702,8 +2704,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_Actuate() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -2712,8 +2714,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_Arcrole() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2722,8 +2724,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_Href()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_Href() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -2732,8 +2734,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_NilReason() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -2742,8 +2744,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_Role()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_Role() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -2752,8 +2754,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_Show()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_Show() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -2762,8 +2764,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_Title()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_Title() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -2772,8 +2774,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_Type()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_Type() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -2782,8 +2784,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomAreaPropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getUomAreaPropertyType_Uuidref() {
 		return (EAttribute)uomAreaPropertyTypeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -2792,8 +2794,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUomLengthPropertyType()
-	{
+	@Override
+	public EClass getUomLengthPropertyType() {
 		return uomLengthPropertyTypeEClass;
 	}
 
@@ -2802,8 +2804,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_UnitDefinitionGroup()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_UnitDefinitionGroup() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2812,8 +2814,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUomLengthPropertyType_UnitDefinition()
-	{
+	@Override
+	public EReference getUomLengthPropertyType_UnitDefinition() {
 		return (EReference)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2822,8 +2824,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_Actuate() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -2832,8 +2834,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_Arcrole() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2842,8 +2844,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_Href()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_Href() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -2852,8 +2854,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_NilReason() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -2862,8 +2864,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_Role()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_Role() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -2872,8 +2874,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_Show()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_Show() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -2882,8 +2884,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_Title()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_Title() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -2892,8 +2894,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_Type()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_Type() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -2902,8 +2904,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomLengthPropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getUomLengthPropertyType_Uuidref() {
 		return (EAttribute)uomLengthPropertyTypeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -2912,8 +2914,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUomScalePropertyType()
-	{
+	@Override
+	public EClass getUomScalePropertyType() {
 		return uomScalePropertyTypeEClass;
 	}
 
@@ -2922,8 +2924,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_UnitDefinitionGroup()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_UnitDefinitionGroup() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2932,8 +2934,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUomScalePropertyType_UnitDefinition()
-	{
+	@Override
+	public EReference getUomScalePropertyType_UnitDefinition() {
 		return (EReference)uomScalePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2942,8 +2944,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_Actuate() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -2952,8 +2954,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_Arcrole() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2962,8 +2964,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_Href()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_Href() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -2972,8 +2974,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_NilReason() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -2982,8 +2984,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_Role()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_Role() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -2992,8 +2994,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_Show()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_Show() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -3002,8 +3004,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_Title()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_Title() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -3012,8 +3014,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_Type()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_Type() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -3022,8 +3024,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomScalePropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getUomScalePropertyType_Uuidref() {
 		return (EAttribute)uomScalePropertyTypeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -3032,8 +3034,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUomTimePropertyType()
-	{
+	@Override
+	public EClass getUomTimePropertyType() {
 		return uomTimePropertyTypeEClass;
 	}
 
@@ -3042,8 +3044,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_UnitDefinitionGroup()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_UnitDefinitionGroup() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -3052,8 +3054,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUomTimePropertyType_UnitDefinition()
-	{
+	@Override
+	public EReference getUomTimePropertyType_UnitDefinition() {
 		return (EReference)uomTimePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -3062,8 +3064,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_Actuate() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -3072,8 +3074,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_Arcrole() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -3082,8 +3084,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_Href()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_Href() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -3092,8 +3094,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_NilReason() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -3102,8 +3104,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_Role()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_Role() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -3112,8 +3114,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_Show()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_Show() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -3122,8 +3124,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_Title()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_Title() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -3132,8 +3134,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_Type()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_Type() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -3142,8 +3144,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomTimePropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getUomTimePropertyType_Uuidref() {
 		return (EAttribute)uomTimePropertyTypeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -3152,8 +3154,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUomVelocityPropertyType()
-	{
+	@Override
+	public EClass getUomVelocityPropertyType() {
 		return uomVelocityPropertyTypeEClass;
 	}
 
@@ -3162,8 +3164,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_UnitDefinitionGroup()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_UnitDefinitionGroup() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -3172,8 +3174,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUomVelocityPropertyType_UnitDefinition()
-	{
+	@Override
+	public EReference getUomVelocityPropertyType_UnitDefinition() {
 		return (EReference)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -3182,8 +3184,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_Actuate() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -3192,8 +3194,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_Arcrole() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -3202,8 +3204,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_Href()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_Href() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -3212,8 +3214,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_NilReason() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -3222,8 +3224,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_Role()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_Role() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -3232,8 +3234,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_Show()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_Show() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -3242,8 +3244,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_Title()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_Title() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -3252,8 +3254,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_Type()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_Type() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -3262,8 +3264,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVelocityPropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getUomVelocityPropertyType_Uuidref() {
 		return (EAttribute)uomVelocityPropertyTypeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -3272,8 +3274,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUomVolumePropertyType()
-	{
+	@Override
+	public EClass getUomVolumePropertyType() {
 		return uomVolumePropertyTypeEClass;
 	}
 
@@ -3282,8 +3284,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_UnitDefinitionGroup()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_UnitDefinitionGroup() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -3292,8 +3294,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getUomVolumePropertyType_UnitDefinition()
-	{
+	@Override
+	public EReference getUomVolumePropertyType_UnitDefinition() {
 		return (EReference)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -3302,8 +3304,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_Actuate()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_Actuate() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -3312,8 +3314,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_Arcrole()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_Arcrole() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -3322,8 +3324,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_Href()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_Href() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -3332,8 +3334,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_NilReason()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_NilReason() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -3342,8 +3344,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_Role()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_Role() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -3352,8 +3354,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_Show()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_Show() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -3362,8 +3364,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_Title()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_Title() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -3372,8 +3374,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_Type()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_Type() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -3382,8 +3384,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUomVolumePropertyType_Uuidref()
-	{
+	@Override
+	public EAttribute getUomVolumePropertyType_Uuidref() {
 		return (EAttribute)uomVolumePropertyTypeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -3392,8 +3394,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getDateType()
-	{
+	@Override
+	public EDataType getDateType() {
 		return dateTypeEDataType;
 	}
 
@@ -3402,8 +3404,8 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GCOFactory getGCOFactory()
-	{
+	@Override
+	public GCOFactory getGCOFactory() {
 		return (GCOFactory)getEFactoryInstance();
 	}
 
@@ -3421,8 +3423,7 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void createPackageContents()
-	{
+	public void createPackageContents() {
 		if (isCreated) return;
 		isCreated = true;
 
@@ -3776,8 +3777,7 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void initializePackageContents()
-	{
+	public void initializePackageContents() {
 		if (isInitialized) return;
 		isInitialized = true;
 
@@ -4206,15 +4206,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdbasicTypes3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:basicTypes:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdbasicTypes3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:basicTypes:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "basicTypes.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "basicTypes.xsd"
 		   });
 	}
 
@@ -4224,15 +4222,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgml3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:gml:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgml3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:gml:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "gml.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "gml.xsd"
 		   });
 	}
 
@@ -4242,15 +4238,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsddynamicFeature3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:dynamicFeature:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsddynamicFeature3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:dynamicFeature:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "dynamicFeature.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "dynamicFeature.xsd"
 		   });
 	}
 
@@ -4260,15 +4254,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdtopology3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:topology:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdtopology3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:topology:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "topology.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "topology.xsd"
 		   });
 	}
 
@@ -4278,15 +4270,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdcoverage3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:coverage:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdcoverage3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:coverage:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "coverage.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "coverage.xsd"
 		   });
 	}
 
@@ -4296,15 +4286,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdcoordinateReferenceSystems3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateReferenceSystems:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdcoordinateReferenceSystems3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateReferenceSystems:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "coordinateReferenceSystems.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "coordinateReferenceSystems.xsd"
 		   });
 	}
 
@@ -4314,15 +4302,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdobservation3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:observation:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdobservation3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:observation:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "observation.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "observation.xsd"
 		   });
 	}
 
@@ -4332,15 +4318,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdtemporalReferenceSystems3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:temporalReferenceSystems:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdtemporalReferenceSystems3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:temporalReferenceSystems:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "temporalReferenceSystems.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "temporalReferenceSystems.xsd"
 		   });
 	}
 
@@ -4350,15 +4334,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsddeprecatedTypes3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:deprecatedTypes:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsddeprecatedTypes3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:deprecatedTypes:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "deprecatedTypes.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "deprecatedTypes.xsd"
 		   });
 	}
 
@@ -4368,15 +4350,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdtemporalTopology3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:temporalTopology:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdtemporalTopology3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:temporalTopology:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "temporalTopology.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "temporalTopology.xsd"
 		   });
 	}
 
@@ -4386,15 +4366,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnopengisspecificationgmlschemaxsddictionaryv3Annotations()
-	{
-		String source = "urn:opengis:specification:gml:schema-xsd:dictionary:v3.2.1";	
+	protected void createUrnopengisspecificationgmlschemaxsddictionaryv3Annotations() {
+		String source = "urn:opengis:specification:gml:schema-xsd:dictionary:v3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "dictionary.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "dictionary.xsd"
 		   });
 	}
 
@@ -4404,15 +4382,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgmlBase3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:gmlBase:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgmlBase3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:gmlBase:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "gmlBase.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "gmlBase.xsd"
 		   });
 	}
 
@@ -4422,15 +4398,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdtemporal3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:temporal:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdtemporal3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:temporal:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "temporal.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "temporal.xsd"
 		   });
 	}
 
@@ -4440,15 +4414,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdfeature3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:feature:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdfeature3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:feature:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "feature.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "feature.xsd"
 		   });
 	}
 
@@ -4458,15 +4430,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsddirection3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:direction:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsddirection3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:direction:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "direction.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "direction.xsd"
 		   });
 	}
 
@@ -4476,15 +4446,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdvalueObjects3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:valueObjects:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdvalueObjects3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:valueObjects:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "valueObjects.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "valueObjects.xsd"
 		   });
 	}
 
@@ -4494,15 +4462,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryBasic0d1d3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryBasic0d1d:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryBasic0d1d3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryBasic0d1d:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryBasic0d1d.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryBasic0d1d.xsd"
 		   });
 	}
 
@@ -4512,15 +4478,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdcoordinateSystems3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateSystems:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdcoordinateSystems3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateSystems:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "coordinateSystems.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "coordinateSystems.xsd"
 		   });
 	}
 
@@ -4530,15 +4494,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsddatums3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:datums:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsddatums3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:datums:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "datums.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "datums.xsd"
 		   });
 	}
 
@@ -4548,15 +4510,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdcoordinateOperations3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateOperations:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdcoordinateOperations3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:coordinateOperations:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "coordinateOperations.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "coordinateOperations.xsd"
 		   });
 	}
 
@@ -4566,15 +4526,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdreferenceSystems3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:referenceSystems:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdreferenceSystems3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:referenceSystems:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "referenceSystems.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "referenceSystems.xsd"
 		   });
 	}
 
@@ -4584,15 +4542,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdmeasures3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:measures:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdmeasures3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:measures:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "measures.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "measures.xsd"
 		   });
 	}
 
@@ -4602,15 +4558,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdunits3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:units:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdunits3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:units:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "units.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "units.xsd"
 		   });
 	}
 
@@ -4620,15 +4574,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgrids3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:grids:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgrids3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:grids:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "grids.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "grids.xsd"
 		   });
 	}
 
@@ -4638,15 +4590,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryAggregates3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryAggregates:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryAggregates3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryAggregates:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryAggregates.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryAggregates.xsd"
 		   });
 	}
 
@@ -4656,15 +4606,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryPrimitives3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryPrimitives:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryPrimitives3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryPrimitives:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryPrimitives.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryPrimitives.xsd"
 		   });
 	}
 
@@ -4674,15 +4622,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryComplexes3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryComplexes:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryComplexes3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryComplexes:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryComplexes.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryComplexes.xsd"
 		   });
 	}
 
@@ -4692,15 +4638,13 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createUrnxogcspecificationgmlschemaxsdgeometryBasic2d3Annotations()
-	{
-		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryBasic2d:3.2.1";	
+	protected void createUrnxogcspecificationgmlschemaxsdgeometryBasic2d3Annotations() {
+		String source = "urn:x-ogc:specification:gml:schema-xsd:geometryBasic2d:3.2.1";
 		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] 
-		   {
-			 "appinfo", "geometryBasic2d.xsd"
+		  (this,
+		   source,
+		   new String[] {
+			   "appinfo", "geometryBasic2d.xsd"
 		   });
 	}
 
@@ -4710,2555 +4654,2265 @@ public class GCOPackageImpl extends EPackageImpl implements GCOPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createExtendedMetaDataAnnotations()
-	{
-		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
-		addAnnotation
-		  (abstractObjectTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "AbstractObject_Type",
-			 "kind", "empty"
-		   });	
-		addAnnotation
-		  (getAbstractObjectType_Id(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "id"
-		   });	
-		addAnnotation
-		  (getAbstractObjectType_Uuid(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuid"
-		   });	
-		addAnnotation
-		  (anglePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Angle_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getAnglePropertyType_Angle(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Angle",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getAnglePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (binaryPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Binary_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getBinaryPropertyType_Binary(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Binary",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getBinaryPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (binaryTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Binary_Type",
-			 "kind", "simple"
-		   });	
-		addAnnotation
-		  (getBinaryType_Value(), 
-		   source, 
-		   new String[] 
-		   {
-			 "name", ":0",
-			 "kind", "simple"
-		   });	
-		addAnnotation
-		  (getBinaryType_Src(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "src"
-		   });	
-		addAnnotation
-		  (booleanPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Boolean_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getBooleanPropertyType_Boolean(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Boolean",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getBooleanPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (characterStringPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "CharacterString_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getCharacterStringPropertyType_CharacterStringGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "CharacterString:group",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getCharacterStringPropertyType_CharacterString(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "CharacterString",
-			 "namespace", "##targetNamespace",
-			 "group", "CharacterString:group"
-		   });	
-		addAnnotation
-		  (getCharacterStringPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (codeListValueTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "CodeListValue_Type",
-			 "kind", "simple"
-		   });	
-		addAnnotation
-		  (getCodeListValueType_Value(), 
-		   source, 
-		   new String[] 
-		   {
-			 "name", ":0",
-			 "kind", "simple"
-		   });	
-		addAnnotation
-		  (getCodeListValueType_CodeList(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "codeList"
-		   });	
-		addAnnotation
-		  (getCodeListValueType_CodeListValue(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "codeListValue"
-		   });	
-		addAnnotation
-		  (getCodeListValueType_CodeSpace(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "codeSpace"
-		   });	
-		addAnnotation
-		  (datePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Date_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getDatePropertyType_Date(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Date",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDatePropertyType_DateTime(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "DateTime",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDatePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (dateTimePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "DateTime_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getDateTimePropertyType_DateTime(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "DateTime",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDateTimePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (dateTypeEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Date_Type",
-			 "memberTypes", "http://www.eclipse.org/emf/2003/XMLType#date http://www.eclipse.org/emf/2003/XMLType#gYearMonth http://www.eclipse.org/emf/2003/XMLType#gYear"
-		   });	
-		addAnnotation
-		  (decimalPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Decimal_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getDecimalPropertyType_Decimal(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Decimal",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDecimalPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (distancePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Distance_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getDistancePropertyType_Distance(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Distance",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDistancePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (genericNamePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "GenericName_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getGenericNamePropertyType_AbstractGenericNameGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "AbstractGenericName:group",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getGenericNamePropertyType_AbstractGenericName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "AbstractGenericName",
-			 "namespace", "##targetNamespace",
-			 "group", "AbstractGenericName:group"
-		   });	
-		addAnnotation
-		  (getGenericNamePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (integerPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Integer_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getIntegerPropertyType_Integer(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Integer",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getIntegerPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (lengthPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Length_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getLengthPropertyType_LengthGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "Length:group",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getLengthPropertyType_Length(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Length",
-			 "namespace", "##targetNamespace",
-			 "group", "Length:group"
-		   });	
-		addAnnotation
-		  (getLengthPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (localNamePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "LocalName_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getLocalNamePropertyType_LocalName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "LocalName",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getLocalNamePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (multiplicityPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Multiplicity_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_Multiplicity(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Multiplicity",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityPropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (multiplicityRangePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "MultiplicityRange_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_MultiplicityRange(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "MultiplicityRange",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangePropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (objectReferencePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "ObjectReference_PropertyType",
-			 "kind", "empty"
-		   });	
-		addAnnotation
-		  (getObjectReferencePropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getObjectReferencePropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getObjectReferencePropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getObjectReferencePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getObjectReferencePropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getObjectReferencePropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getObjectReferencePropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getObjectReferencePropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getObjectReferencePropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (realPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Real_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getRealPropertyType_Real(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Real",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getRealPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (documentRootEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "",
-			 "kind", "mixed"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Mixed(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "elementWildcard",
-			 "name", ":mixed"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_XMLNSPrefixMap(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "xmlns:prefix"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_XSISchemaLocation(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "xsi:schemaLocation"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_AbstractGenericName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "AbstractGenericName",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_AbstractObject(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "AbstractObject",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Angle(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Angle",
-			 "namespace", "##targetNamespace",
-			 "affiliation", "Measure"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Measure(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Measure",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Binary(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Binary",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Boolean(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Boolean",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_CharacterString(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "CharacterString",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Date(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Date",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_DateTime(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "DateTime",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Decimal(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Decimal",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Distance(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Distance",
-			 "namespace", "##targetNamespace",
-			 "affiliation", "Length"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Length(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Length",
-			 "namespace", "##targetNamespace",
-			 "affiliation", "Measure"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Integer(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Integer",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_LocalName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "LocalName",
-			 "namespace", "##targetNamespace",
-			 "affiliation", "AbstractGenericName"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_MemberName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "MemberName",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Multiplicity(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Multiplicity",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_MultiplicityRange(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "MultiplicityRange",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Real(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Real",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Record(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Record",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_RecordType(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "RecordType",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Scale(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Scale",
-			 "namespace", "##targetNamespace",
-			 "affiliation", "Measure"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_ScopedName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "ScopedName",
-			 "namespace", "##targetNamespace",
-			 "affiliation", "AbstractGenericName"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_TypeName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "TypeName",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_UnlimitedInteger(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnlimitedInteger",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_IsoType(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "isoType",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (measurePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Measure_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getMeasurePropertyType_MeasureGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "Measure:group",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getMeasurePropertyType_Measure(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Measure",
-			 "namespace", "##targetNamespace",
-			 "group", "Measure:group"
-		   });	
-		addAnnotation
-		  (getMeasurePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (memberNamePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "MemberName_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_MemberName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "MemberName",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getMemberNamePropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (memberNameTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "MemberName_Type",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getMemberNameType_AName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "aName",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getMemberNameType_AttributeType(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "attributeType",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (multiplicityRangeTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "MultiplicityRange_Type",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangeType_Lower(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "lower",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getMultiplicityRangeType_Upper(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "upper",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (multiplicityTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Multiplicity_Type",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getMultiplicityType_Range(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "range",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (numberPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Number_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getNumberPropertyType_Real(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Real",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getNumberPropertyType_Decimal(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Decimal",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getNumberPropertyType_Integer(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Integer",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getNumberPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (recordPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Record_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_Record(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Record",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordPropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (recordTypePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "RecordType_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getRecordTypePropertyType_RecordType(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "RecordType",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getRecordTypePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (recordTypeTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "RecordType_Type",
-			 "kind", "simple"
-		   });	
-		addAnnotation
-		  (getRecordTypeType_Value(), 
-		   source, 
-		   new String[] 
-		   {
-			 "name", ":0",
-			 "kind", "simple"
-		   });	
-		addAnnotation
-		  (getRecordTypeType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordTypeType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordTypeType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordTypeType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordTypeType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordTypeType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getRecordTypeType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (scalePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "Scale_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getScalePropertyType_Scale(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "Scale",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getScalePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (scopedNamePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "ScopedName_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getScopedNamePropertyType_ScopedName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "ScopedName",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getScopedNamePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (typeNamePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "TypeName_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_TypeName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "TypeName",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getTypeNamePropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (typeNameTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "TypeName_Type",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getTypeNameType_AName(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "aName",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (unitOfMeasurePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UnitOfMeasure_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_UnitDefinitionGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "UnitDefinition:group",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_UnitDefinition(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnitDefinition",
-			 "namespace", "http://www.opengis.net/gml/3.2",
-			 "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUnitOfMeasurePropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (unlimitedIntegerPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UnlimitedInteger_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getUnlimitedIntegerPropertyType_UnlimitedInteger(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnlimitedInteger",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getUnlimitedIntegerPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (unlimitedIntegerTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UnlimitedInteger_Type",
-			 "kind", "simple"
-		   });	
-		addAnnotation
-		  (getUnlimitedIntegerType_Value(), 
-		   source, 
-		   new String[] 
-		   {
-			 "name", ":0",
-			 "kind", "simple"
-		   });	
-		addAnnotation
-		  (getUnlimitedIntegerType_IsInfinite(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "isInfinite"
-		   });	
-		addAnnotation
-		  (uomAnglePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UomAngle_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_UnitDefinitionGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "UnitDefinition:group",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_UnitDefinition(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnitDefinition",
-			 "namespace", "http://www.opengis.net/gml/3.2",
-			 "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAnglePropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (uomAreaPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UomArea_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_UnitDefinitionGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "UnitDefinition:group",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_UnitDefinition(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnitDefinition",
-			 "namespace", "http://www.opengis.net/gml/3.2",
-			 "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomAreaPropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (uomLengthPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UomLength_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_UnitDefinitionGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "UnitDefinition:group",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_UnitDefinition(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnitDefinition",
-			 "namespace", "http://www.opengis.net/gml/3.2",
-			 "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomLengthPropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (uomScalePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UomScale_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_UnitDefinitionGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "UnitDefinition:group",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_UnitDefinition(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnitDefinition",
-			 "namespace", "http://www.opengis.net/gml/3.2",
-			 "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomScalePropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (uomTimePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UomTime_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_UnitDefinitionGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "UnitDefinition:group",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_UnitDefinition(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnitDefinition",
-			 "namespace", "http://www.opengis.net/gml/3.2",
-			 "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomTimePropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (uomVelocityPropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UomVelocity_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_UnitDefinitionGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "UnitDefinition:group",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_UnitDefinition(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnitDefinition",
-			 "namespace", "http://www.opengis.net/gml/3.2",
-			 "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVelocityPropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
-		   });	
-		addAnnotation
-		  (uomVolumePropertyTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "UomVolume_PropertyType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_UnitDefinitionGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "UnitDefinition:group",
-			 "namespace", "http://www.opengis.net/gml/3.2"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_UnitDefinition(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "UnitDefinition",
-			 "namespace", "http://www.opengis.net/gml/3.2",
-			 "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_NilReason(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "nilReason",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "http://www.w3.org/1999/xlink"
-		   });	
-		addAnnotation
-		  (getUomVolumePropertyType_Uuidref(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "uuidref"
+	protected void createExtendedMetaDataAnnotations() {
+		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";
+		addAnnotation
+		  (abstractObjectTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "AbstractObject_Type",
+			   "kind", "empty"
+		   });
+		addAnnotation
+		  (getAbstractObjectType_Id(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "id"
+		   });
+		addAnnotation
+		  (getAbstractObjectType_Uuid(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuid"
+		   });
+		addAnnotation
+		  (anglePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Angle_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getAnglePropertyType_Angle(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Angle",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getAnglePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (binaryPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Binary_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getBinaryPropertyType_Binary(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Binary",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getBinaryPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (binaryTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Binary_Type",
+			   "kind", "simple"
+		   });
+		addAnnotation
+		  (getBinaryType_Value(),
+		   source,
+		   new String[] {
+			   "name", ":0",
+			   "kind", "simple"
+		   });
+		addAnnotation
+		  (getBinaryType_Src(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "src"
+		   });
+		addAnnotation
+		  (booleanPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Boolean_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getBooleanPropertyType_Boolean(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Boolean",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getBooleanPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (characterStringPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "CharacterString_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getCharacterStringPropertyType_CharacterStringGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "CharacterString:group",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getCharacterStringPropertyType_CharacterString(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "CharacterString",
+			   "namespace", "##targetNamespace",
+			   "group", "CharacterString:group"
+		   });
+		addAnnotation
+		  (getCharacterStringPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (codeListValueTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "CodeListValue_Type",
+			   "kind", "simple"
+		   });
+		addAnnotation
+		  (getCodeListValueType_Value(),
+		   source,
+		   new String[] {
+			   "name", ":0",
+			   "kind", "simple"
+		   });
+		addAnnotation
+		  (getCodeListValueType_CodeList(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "codeList"
+		   });
+		addAnnotation
+		  (getCodeListValueType_CodeListValue(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "codeListValue"
+		   });
+		addAnnotation
+		  (getCodeListValueType_CodeSpace(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "codeSpace"
+		   });
+		addAnnotation
+		  (datePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Date_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getDatePropertyType_Date(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Date",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDatePropertyType_DateTime(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "DateTime",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDatePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (dateTimePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "DateTime_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getDateTimePropertyType_DateTime(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "DateTime",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDateTimePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (dateTypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "Date_Type",
+			   "memberTypes", "http://www.eclipse.org/emf/2003/XMLType#date http://www.eclipse.org/emf/2003/XMLType#gYearMonth http://www.eclipse.org/emf/2003/XMLType#gYear"
+		   });
+		addAnnotation
+		  (decimalPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Decimal_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getDecimalPropertyType_Decimal(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Decimal",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDecimalPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (distancePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Distance_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getDistancePropertyType_Distance(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Distance",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDistancePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (genericNamePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "GenericName_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getGenericNamePropertyType_AbstractGenericNameGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "AbstractGenericName:group",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getGenericNamePropertyType_AbstractGenericName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "AbstractGenericName",
+			   "namespace", "##targetNamespace",
+			   "group", "AbstractGenericName:group"
+		   });
+		addAnnotation
+		  (getGenericNamePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (integerPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Integer_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getIntegerPropertyType_Integer(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Integer",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getIntegerPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (lengthPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Length_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getLengthPropertyType_LengthGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "Length:group",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getLengthPropertyType_Length(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Length",
+			   "namespace", "##targetNamespace",
+			   "group", "Length:group"
+		   });
+		addAnnotation
+		  (getLengthPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (localNamePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "LocalName_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getLocalNamePropertyType_LocalName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "LocalName",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getLocalNamePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (multiplicityPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Multiplicity_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_Multiplicity(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Multiplicity",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityPropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (multiplicityRangePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "MultiplicityRange_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_MultiplicityRange(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "MultiplicityRange",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMultiplicityRangePropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (objectReferencePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "ObjectReference_PropertyType",
+			   "kind", "empty"
+		   });
+		addAnnotation
+		  (getObjectReferencePropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getObjectReferencePropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getObjectReferencePropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getObjectReferencePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getObjectReferencePropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getObjectReferencePropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getObjectReferencePropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getObjectReferencePropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getObjectReferencePropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (realPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Real_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getRealPropertyType_Real(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Real",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getRealPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (documentRootEClass,
+		   source,
+		   new String[] {
+			   "name", "",
+			   "kind", "mixed"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Mixed(),
+		   source,
+		   new String[] {
+			   "kind", "elementWildcard",
+			   "name", ":mixed"
+		   });
+		addAnnotation
+		  (getDocumentRoot_XMLNSPrefixMap(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "xmlns:prefix"
+		   });
+		addAnnotation
+		  (getDocumentRoot_XSISchemaLocation(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "xsi:schemaLocation"
+		   });
+		addAnnotation
+		  (getDocumentRoot_AbstractGenericName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "AbstractGenericName",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_AbstractObject(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "AbstractObject",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Angle(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Angle",
+			   "namespace", "##targetNamespace",
+			   "affiliation", "Measure"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Measure(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Measure",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Binary(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Binary",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Boolean(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Boolean",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_CharacterString(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "CharacterString",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Date(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Date",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_DateTime(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "DateTime",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Decimal(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Decimal",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Distance(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Distance",
+			   "namespace", "##targetNamespace",
+			   "affiliation", "Length"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Length(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Length",
+			   "namespace", "##targetNamespace",
+			   "affiliation", "Measure"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Integer(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Integer",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_LocalName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "LocalName",
+			   "namespace", "##targetNamespace",
+			   "affiliation", "AbstractGenericName"
+		   });
+		addAnnotation
+		  (getDocumentRoot_MemberName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "MemberName",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Multiplicity(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Multiplicity",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_MultiplicityRange(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "MultiplicityRange",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Real(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Real",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Record(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Record",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_RecordType(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "RecordType",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Scale(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Scale",
+			   "namespace", "##targetNamespace",
+			   "affiliation", "Measure"
+		   });
+		addAnnotation
+		  (getDocumentRoot_ScopedName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "ScopedName",
+			   "namespace", "##targetNamespace",
+			   "affiliation", "AbstractGenericName"
+		   });
+		addAnnotation
+		  (getDocumentRoot_TypeName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "TypeName",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_UnlimitedInteger(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnlimitedInteger",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_IsoType(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "isoType",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (measurePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Measure_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getMeasurePropertyType_MeasureGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "Measure:group",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getMeasurePropertyType_Measure(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Measure",
+			   "namespace", "##targetNamespace",
+			   "group", "Measure:group"
+		   });
+		addAnnotation
+		  (getMeasurePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (memberNamePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "MemberName_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_MemberName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "MemberName",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getMemberNamePropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (memberNameTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "MemberName_Type",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getMemberNameType_AName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "aName",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getMemberNameType_AttributeType(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "attributeType",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (multiplicityRangeTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "MultiplicityRange_Type",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getMultiplicityRangeType_Lower(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "lower",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getMultiplicityRangeType_Upper(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "upper",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (multiplicityTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Multiplicity_Type",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getMultiplicityType_Range(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "range",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (numberPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Number_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getNumberPropertyType_Real(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Real",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getNumberPropertyType_Decimal(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Decimal",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getNumberPropertyType_Integer(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Integer",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getNumberPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (recordPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Record_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_Record(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Record",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordPropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (recordTypePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "RecordType_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getRecordTypePropertyType_RecordType(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "RecordType",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getRecordTypePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (recordTypeTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "RecordType_Type",
+			   "kind", "simple"
+		   });
+		addAnnotation
+		  (getRecordTypeType_Value(),
+		   source,
+		   new String[] {
+			   "name", ":0",
+			   "kind", "simple"
+		   });
+		addAnnotation
+		  (getRecordTypeType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordTypeType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordTypeType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordTypeType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordTypeType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordTypeType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getRecordTypeType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (scalePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "Scale_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getScalePropertyType_Scale(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Scale",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getScalePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (scopedNamePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "ScopedName_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getScopedNamePropertyType_ScopedName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "ScopedName",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getScopedNamePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (typeNamePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "TypeName_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_TypeName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "TypeName",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getTypeNamePropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (typeNameTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "TypeName_Type",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getTypeNameType_AName(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "aName",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (unitOfMeasurePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UnitOfMeasure_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_UnitDefinitionGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "UnitDefinition:group",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_UnitDefinition(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnitDefinition",
+			   "namespace", "http://www.opengis.net/gml/3.2",
+			   "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUnitOfMeasurePropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (unlimitedIntegerPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UnlimitedInteger_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUnlimitedIntegerPropertyType_UnlimitedInteger(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnlimitedInteger",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getUnlimitedIntegerPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (unlimitedIntegerTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UnlimitedInteger_Type",
+			   "kind", "simple"
+		   });
+		addAnnotation
+		  (getUnlimitedIntegerType_Value(),
+		   source,
+		   new String[] {
+			   "name", ":0",
+			   "kind", "simple"
+		   });
+		addAnnotation
+		  (getUnlimitedIntegerType_IsInfinite(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "isInfinite"
+		   });
+		addAnnotation
+		  (uomAnglePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UomAngle_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_UnitDefinitionGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "UnitDefinition:group",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_UnitDefinition(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnitDefinition",
+			   "namespace", "http://www.opengis.net/gml/3.2",
+			   "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAnglePropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (uomAreaPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UomArea_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_UnitDefinitionGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "UnitDefinition:group",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_UnitDefinition(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnitDefinition",
+			   "namespace", "http://www.opengis.net/gml/3.2",
+			   "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomAreaPropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (uomLengthPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UomLength_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_UnitDefinitionGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "UnitDefinition:group",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_UnitDefinition(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnitDefinition",
+			   "namespace", "http://www.opengis.net/gml/3.2",
+			   "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomLengthPropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (uomScalePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UomScale_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_UnitDefinitionGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "UnitDefinition:group",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_UnitDefinition(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnitDefinition",
+			   "namespace", "http://www.opengis.net/gml/3.2",
+			   "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomScalePropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (uomTimePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UomTime_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_UnitDefinitionGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "UnitDefinition:group",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_UnitDefinition(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnitDefinition",
+			   "namespace", "http://www.opengis.net/gml/3.2",
+			   "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomTimePropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (uomVelocityPropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UomVelocity_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_UnitDefinitionGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "UnitDefinition:group",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_UnitDefinition(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnitDefinition",
+			   "namespace", "http://www.opengis.net/gml/3.2",
+			   "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVelocityPropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
+		   });
+		addAnnotation
+		  (uomVolumePropertyTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "UomVolume_PropertyType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_UnitDefinitionGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "UnitDefinition:group",
+			   "namespace", "http://www.opengis.net/gml/3.2"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_UnitDefinition(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "UnitDefinition",
+			   "namespace", "http://www.opengis.net/gml/3.2",
+			   "group", "http://www.opengis.net/gml/3.2#UnitDefinition:group"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_NilReason(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "nilReason",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "http://www.w3.org/1999/xlink"
+		   });
+		addAnnotation
+		  (getUomVolumePropertyType_Uuidref(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "uuidref"
 		   });
 	}
 

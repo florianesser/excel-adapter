@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gts.TMPrimitivePropertyType;
  *
  * @generated
  */
-public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements EXTemporalExtentType
-{
+public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements EXTemporalExtentType {
 	/**
 	 * The cached value of the '{@link #getExtent() <em>Extent</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -47,8 +46,7 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EXTemporalExtentTypeImpl()
-	{
+	protected EXTemporalExtentTypeImpl() {
 		super();
 	}
 
@@ -58,8 +56,7 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getEXTemporalExtentType();
 	}
 
@@ -68,8 +65,8 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TMPrimitivePropertyType getExtent()
-	{
+	@Override
+	public TMPrimitivePropertyType getExtent() {
 		return extent;
 	}
 
@@ -78,12 +75,10 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExtent(TMPrimitivePropertyType newExtent, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExtent(TMPrimitivePropertyType newExtent, NotificationChain msgs) {
 		TMPrimitivePropertyType oldExtent = extent;
 		extent = newExtent;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_TEMPORAL_EXTENT_TYPE__EXTENT, oldExtent, newExtent);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -95,10 +90,9 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExtent(TMPrimitivePropertyType newExtent)
-	{
-		if (newExtent != extent)
-		{
+	@Override
+	public void setExtent(TMPrimitivePropertyType newExtent) {
+		if (newExtent != extent) {
 			NotificationChain msgs = null;
 			if (extent != null)
 				msgs = ((InternalEObject)extent).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_TEMPORAL_EXTENT_TYPE__EXTENT, null, msgs);
@@ -117,10 +111,8 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.EX_TEMPORAL_EXTENT_TYPE__EXTENT:
 				return basicSetExtent(null, msgs);
 		}
@@ -133,10 +125,8 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.EX_TEMPORAL_EXTENT_TYPE__EXTENT:
 				return getExtent();
 		}
@@ -149,10 +139,8 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.EX_TEMPORAL_EXTENT_TYPE__EXTENT:
 				setExtent((TMPrimitivePropertyType)newValue);
 				return;
@@ -166,10 +154,8 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_TEMPORAL_EXTENT_TYPE__EXTENT:
 				setExtent((TMPrimitivePropertyType)null);
 				return;
@@ -183,10 +169,8 @@ public class EXTemporalExtentTypeImpl extends AbstractObjectTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_TEMPORAL_EXTENT_TYPE__EXTENT:
 				return extent != null;
 		}

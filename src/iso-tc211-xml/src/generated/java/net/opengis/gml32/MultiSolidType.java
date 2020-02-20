@@ -21,8 +21,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='MultiSolidType' kind='elementOnly'"
  * @generated
  */
-public interface MultiSolidType extends AbstractGeometricAggregateType
-{
+public interface MultiSolidType extends AbstractGeometricAggregateType {
 	/**
 	 * Returns the value of the '<em><b>Solid Member</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.SolidPropertyType}.

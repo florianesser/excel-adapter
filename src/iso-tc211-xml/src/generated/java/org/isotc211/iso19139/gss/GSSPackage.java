@@ -495,8 +495,7 @@ import org.eclipse.emf.ecore.EReference;
  *        annotation="urn:x-ogc:specification:gml:schema-xsd:geometryBasic2d:3.2.1 appinfo='geometryBasic2d.xsd'"
  * @generated
  */
-public interface GSSPackage extends EPackage
-{
+public interface GSSPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -1048,8 +1047,7 @@ public interface GSSPackage extends EPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	interface Literals
-	{
+	interface Literals {
 		/**
 		 * The meta object literal for the '{@link org.isotc211.iso19139.gss.impl.GMObjectPropertyTypeImpl <em>GM Object Property Type</em>}' class.
 		 * <!-- begin-user-doc -->

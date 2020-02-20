@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDCellGeometryCodePropertyType;
  *
  * @generated
  */
-public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDCellGeometryCodePropertyType
-{
+public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDCellGeometryCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDCellGeometryCode() <em>MD Cell Geometry Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDCellGeometryCodePropertyTypeImpl()
-	{
+	protected MDCellGeometryCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDCellGeometryCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDCellGeometryCode()
-	{
+	@Override
+	public CodeListValueType getMDCellGeometryCode() {
 		return mDCellGeometryCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDCellGeometryCode(CodeListValueType newMDCellGeometryCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDCellGeometryCode(CodeListValueType newMDCellGeometryCode, NotificationChain msgs) {
 		CodeListValueType oldMDCellGeometryCode = mDCellGeometryCode;
 		mDCellGeometryCode = newMDCellGeometryCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE__MD_CELL_GEOMETRY_CODE, oldMDCellGeometryCode, newMDCellGeometryCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDCellGeometryCode(CodeListValueType newMDCellGeometryCode)
-	{
-		if (newMDCellGeometryCode != mDCellGeometryCode)
-		{
+	@Override
+	public void setMDCellGeometryCode(CodeListValueType newMDCellGeometryCode) {
+		if (newMDCellGeometryCode != mDCellGeometryCode) {
 			NotificationChain msgs = null;
 			if (mDCellGeometryCode != null)
 				msgs = ((InternalEObject)mDCellGeometryCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE__MD_CELL_GEOMETRY_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE__MD_CELL_GEOMETRY_CODE:
 				return basicSetMDCellGeometryCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE__MD_CELL_GEOMETRY_CODE:
 				return getMDCellGeometryCode();
 			case GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE__MD_CELL_GEOMETRY_CODE:
 				setMDCellGeometryCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE__MD_CELL_GEOMETRY_CODE:
 				setMDCellGeometryCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE__MD_CELL_GEOMETRY_CODE:
 				return mDCellGeometryCode != null;
 			case GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDCellGeometryCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

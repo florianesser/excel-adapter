@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CircleTypeImpl extends ArcTypeImpl implements CircleType
-{
+public class CircleTypeImpl extends ArcTypeImpl implements CircleType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CircleTypeImpl()
-	{
+	protected CircleTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class CircleTypeImpl extends ArcTypeImpl implements CircleType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCircleType();
 	}
 

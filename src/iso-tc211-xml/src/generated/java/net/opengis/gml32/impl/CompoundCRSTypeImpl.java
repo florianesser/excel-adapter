@@ -38,8 +38,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements CompoundCRSType
-{
+public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements CompoundCRSType {
 	/**
 	 * The cached value of the '{@link #getComponentReferenceSystemGroup() <em>Component Reference System Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -84,8 +83,7 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CompoundCRSTypeImpl()
-	{
+	protected CompoundCRSTypeImpl() {
 		super();
 	}
 
@@ -95,8 +93,7 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCompoundCRSType();
 	}
 
@@ -105,10 +102,9 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getComponentReferenceSystemGroup()
-	{
-		if (componentReferenceSystemGroup == null)
-		{
+	@Override
+	public FeatureMap getComponentReferenceSystemGroup() {
+		if (componentReferenceSystemGroup == null) {
 			componentReferenceSystemGroup = new BasicFeatureMap(this, GMLPackage.COMPOUND_CRS_TYPE__COMPONENT_REFERENCE_SYSTEM_GROUP);
 		}
 		return componentReferenceSystemGroup;
@@ -119,8 +115,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SingleCRSPropertyType> getComponentReferenceSystem()
-	{
+	@Override
+	public EList<SingleCRSPropertyType> getComponentReferenceSystem() {
 		return getComponentReferenceSystemGroup().list(GMLPackage.eINSTANCE.getCompoundCRSType_ComponentReferenceSystem());
 	}
 
@@ -129,8 +125,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -139,8 +135,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -154,8 +150,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -169,8 +165,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -180,10 +176,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.COMPOUND_CRS_TYPE__COMPONENT_REFERENCE_SYSTEM_GROUP:
 				return ((InternalEList<?>)getComponentReferenceSystemGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.COMPOUND_CRS_TYPE__COMPONENT_REFERENCE_SYSTEM:
@@ -198,10 +192,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.COMPOUND_CRS_TYPE__COMPONENT_REFERENCE_SYSTEM_GROUP:
 				if (coreType) return getComponentReferenceSystemGroup();
 				return ((FeatureMap.Internal)getComponentReferenceSystemGroup()).getWrapper();
@@ -220,10 +212,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.COMPOUND_CRS_TYPE__COMPONENT_REFERENCE_SYSTEM_GROUP:
 				((FeatureMap.Internal)getComponentReferenceSystemGroup()).set(newValue);
 				return;
@@ -244,10 +234,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COMPOUND_CRS_TYPE__COMPONENT_REFERENCE_SYSTEM_GROUP:
 				getComponentReferenceSystemGroup().clear();
 				return;
@@ -267,10 +255,8 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COMPOUND_CRS_TYPE__COMPONENT_REFERENCE_SYSTEM_GROUP:
 				return componentReferenceSystemGroup != null && !componentReferenceSystemGroup.isEmpty();
 			case GMLPackage.COMPOUND_CRS_TYPE__COMPONENT_REFERENCE_SYSTEM:
@@ -287,11 +273,10 @@ public class CompoundCRSTypeImpl extends AbstractCRSTypeImpl implements Compound
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (componentReferenceSystemGroup: ");
 		result.append(componentReferenceSystemGroup);
 		result.append(", aggregationType: ");

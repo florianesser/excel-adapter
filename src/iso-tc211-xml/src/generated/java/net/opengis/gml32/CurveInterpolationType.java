@@ -20,8 +20,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='CurveInterpolationType'"
  * @generated
  */
-public enum CurveInterpolationType implements Enumerator
-{
+public enum CurveInterpolationType implements Enumerator {
 	/**
 	 * The '<em><b>Linear</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -135,10 +134,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Linear</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Linear</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #LINEAR
 	 * @model name="linear"
@@ -150,10 +145,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Geodesic</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Geodesic</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #GEODESIC
 	 * @model name="geodesic"
@@ -165,10 +156,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Circular Arc3 Points</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Circular Arc3 Points</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CIRCULAR_ARC3_POINTS
 	 * @model name="circularArc3Points"
@@ -180,10 +167,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Circular Arc2 Point With Bulge</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Circular Arc2 Point With Bulge</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CIRCULAR_ARC2_POINT_WITH_BULGE
 	 * @model name="circularArc2PointWithBulge"
@@ -195,10 +178,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Circular Arc Center Point With Radius</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Circular Arc Center Point With Radius</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CIRCULAR_ARC_CENTER_POINT_WITH_RADIUS
 	 * @model name="circularArcCenterPointWithRadius"
@@ -210,10 +189,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Elliptical</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Elliptical</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ELLIPTICAL
 	 * @model name="elliptical"
@@ -225,10 +200,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Clothoid</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Clothoid</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CLOTHOID
 	 * @model name="clothoid"
@@ -240,10 +211,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Conic</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Conic</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CONIC
 	 * @model name="conic"
@@ -255,10 +222,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Polynomial Spline</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Polynomial Spline</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #POLYNOMIAL_SPLINE
 	 * @model name="polynomialSpline"
@@ -270,10 +233,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Cubic Spline</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Cubic Spline</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CUBIC_SPLINE
 	 * @model name="cubicSpline"
@@ -285,10 +244,6 @@ public enum CurveInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Rational Spline</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Rational Spline</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #RATIONAL_SPLINE
 	 * @model name="rationalSpline"
@@ -304,8 +259,7 @@ public enum CurveInterpolationType implements Enumerator
 	 * @generated
 	 */
 	private static final CurveInterpolationType[] VALUES_ARRAY =
-		new CurveInterpolationType[]
-		{
+		new CurveInterpolationType[] {
 			LINEAR,
 			GEODESIC,
 			CIRCULAR_ARC3_POINTS,
@@ -335,13 +289,10 @@ public enum CurveInterpolationType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static CurveInterpolationType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static CurveInterpolationType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			CurveInterpolationType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -356,13 +307,10 @@ public enum CurveInterpolationType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static CurveInterpolationType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static CurveInterpolationType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			CurveInterpolationType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -377,10 +325,8 @@ public enum CurveInterpolationType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static CurveInterpolationType get(int value)
-	{
-		switch (value)
-		{
+	public static CurveInterpolationType get(int value) {
+		switch (value) {
 			case LINEAR_VALUE: return LINEAR;
 			case GEODESIC_VALUE: return GEODESIC;
 			case CIRCULAR_ARC3_POINTS_VALUE: return CIRCULAR_ARC3_POINTS;
@@ -423,8 +369,7 @@ public enum CurveInterpolationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private CurveInterpolationType(int value, String name, String literal)
-	{
+	private CurveInterpolationType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -435,8 +380,8 @@ public enum CurveInterpolationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -445,8 +390,8 @@ public enum CurveInterpolationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -455,8 +400,8 @@ public enum CurveInterpolationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -467,8 +412,7 @@ public enum CurveInterpolationType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

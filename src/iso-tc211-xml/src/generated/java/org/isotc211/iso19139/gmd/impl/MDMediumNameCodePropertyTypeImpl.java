@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDMediumNameCodePropertyType;
  *
  * @generated
  */
-public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDMediumNameCodePropertyType
-{
+public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDMediumNameCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDMediumNameCode() <em>MD Medium Name Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDMediumNameCodePropertyTypeImpl()
-	{
+	protected MDMediumNameCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDMediumNameCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDMediumNameCode()
-	{
+	@Override
+	public CodeListValueType getMDMediumNameCode() {
 		return mDMediumNameCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDMediumNameCode(CodeListValueType newMDMediumNameCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDMediumNameCode(CodeListValueType newMDMediumNameCode, NotificationChain msgs) {
 		CodeListValueType oldMDMediumNameCode = mDMediumNameCode;
 		mDMediumNameCode = newMDMediumNameCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE__MD_MEDIUM_NAME_CODE, oldMDMediumNameCode, newMDMediumNameCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDMediumNameCode(CodeListValueType newMDMediumNameCode)
-	{
-		if (newMDMediumNameCode != mDMediumNameCode)
-		{
+	@Override
+	public void setMDMediumNameCode(CodeListValueType newMDMediumNameCode) {
+		if (newMDMediumNameCode != mDMediumNameCode) {
 			NotificationChain msgs = null;
 			if (mDMediumNameCode != null)
 				msgs = ((InternalEObject)mDMediumNameCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE__MD_MEDIUM_NAME_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE__MD_MEDIUM_NAME_CODE:
 				return basicSetMDMediumNameCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE__MD_MEDIUM_NAME_CODE:
 				return getMDMediumNameCode();
 			case GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE__MD_MEDIUM_NAME_CODE:
 				setMDMediumNameCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE__MD_MEDIUM_NAME_CODE:
 				setMDMediumNameCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE__MD_MEDIUM_NAME_CODE:
 				return mDMediumNameCode != null;
 			case GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDMediumNameCodePropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

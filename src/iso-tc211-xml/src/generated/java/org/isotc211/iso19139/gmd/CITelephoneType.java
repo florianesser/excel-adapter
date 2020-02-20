@@ -28,16 +28,11 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='CI_Telephone_Type' kind='elementOnly'"
  * @generated
  */
-public interface CITelephoneType extends AbstractObjectType
-{
+public interface CITelephoneType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Voice</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Voice</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Voice</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getCITelephoneType_Voice()
@@ -51,10 +46,6 @@ public interface CITelephoneType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Facsimile</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facsimile</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Facsimile</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getCITelephoneType_Facsimile()

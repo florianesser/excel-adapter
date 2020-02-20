@@ -18,26 +18,21 @@ import org.isotc211.iso19139.gts.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GTSFactoryImpl extends EFactoryImpl implements GTSFactory
-{
+public class GTSFactoryImpl extends EFactoryImpl implements GTSFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static GTSFactory init()
-	{
-		try
-		{
+	public static GTSFactory init() {
+		try {
 			GTSFactory theGTSFactory = (GTSFactory)EPackage.Registry.INSTANCE.getEFactory(GTSPackage.eNS_URI);
-			if (theGTSFactory != null)
-			{
+			if (theGTSFactory != null) {
 				return theGTSFactory;
 			}
 		}
-		catch (Exception exception)
-		{
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new GTSFactoryImpl();
@@ -49,8 +44,7 @@ public class GTSFactoryImpl extends EFactoryImpl implements GTSFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GTSFactoryImpl()
-	{
+	public GTSFactoryImpl() {
 		super();
 	}
 
@@ -60,10 +54,8 @@ public class GTSFactoryImpl extends EFactoryImpl implements GTSFactory
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass)
-	{
-		switch (eClass.getClassifierID())
-		{
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
 			case GTSPackage.TM_PERIOD_DURATION_PROPERTY_TYPE: return createTMPeriodDurationPropertyType();
 			case GTSPackage.TM_PRIMITIVE_PROPERTY_TYPE: return createTMPrimitivePropertyType();
 			case GTSPackage.DOCUMENT_ROOT: return createDocumentRoot();
@@ -77,8 +69,8 @@ public class GTSFactoryImpl extends EFactoryImpl implements GTSFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TMPeriodDurationPropertyType createTMPeriodDurationPropertyType()
-	{
+	@Override
+	public TMPeriodDurationPropertyType createTMPeriodDurationPropertyType() {
 		TMPeriodDurationPropertyTypeImpl tmPeriodDurationPropertyType = new TMPeriodDurationPropertyTypeImpl();
 		return tmPeriodDurationPropertyType;
 	}
@@ -88,8 +80,8 @@ public class GTSFactoryImpl extends EFactoryImpl implements GTSFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TMPrimitivePropertyType createTMPrimitivePropertyType()
-	{
+	@Override
+	public TMPrimitivePropertyType createTMPrimitivePropertyType() {
 		TMPrimitivePropertyTypeImpl tmPrimitivePropertyType = new TMPrimitivePropertyTypeImpl();
 		return tmPrimitivePropertyType;
 	}
@@ -99,8 +91,8 @@ public class GTSFactoryImpl extends EFactoryImpl implements GTSFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DocumentRoot createDocumentRoot()
-	{
+	@Override
+	public DocumentRoot createDocumentRoot() {
 		DocumentRootImpl documentRoot = new DocumentRootImpl();
 		return documentRoot;
 	}
@@ -110,8 +102,8 @@ public class GTSFactoryImpl extends EFactoryImpl implements GTSFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GTSPackage getGTSPackage()
-	{
+	@Override
+	public GTSPackage getGTSPackage() {
 		return (GTSPackage)getEPackage();
 	}
 
@@ -122,8 +114,7 @@ public class GTSFactoryImpl extends EFactoryImpl implements GTSFactory
 	 * @generated
 	 */
 	@Deprecated
-	public static GTSPackage getPackage()
-	{
+	public static GTSPackage getPackage() {
 		return GTSPackage.eINSTANCE;
 	}
 

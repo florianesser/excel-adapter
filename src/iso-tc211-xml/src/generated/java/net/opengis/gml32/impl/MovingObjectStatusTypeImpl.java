@@ -49,8 +49,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implements MovingObjectStatusType
-{
+public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implements MovingObjectStatusType {
 	/**
 	 * The cached value of the '{@link #getPosition() <em>Position</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -166,8 +165,7 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MovingObjectStatusTypeImpl()
-	{
+	protected MovingObjectStatusTypeImpl() {
 		super();
 	}
 
@@ -177,8 +175,7 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMovingObjectStatusType();
 	}
 
@@ -187,8 +184,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometryPropertyType getPosition()
-	{
+	@Override
+	public GeometryPropertyType getPosition() {
 		return position;
 	}
 
@@ -197,12 +194,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPosition(GeometryPropertyType newPosition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPosition(GeometryPropertyType newPosition, NotificationChain msgs) {
 		GeometryPropertyType oldPosition = position;
 		position = newPosition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__POSITION, oldPosition, newPosition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -214,10 +209,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPosition(GeometryPropertyType newPosition)
-	{
-		if (newPosition != position)
-		{
+	@Override
+	public void setPosition(GeometryPropertyType newPosition) {
+		if (newPosition != position) {
 			NotificationChain msgs = null;
 			if (position != null)
 				msgs = ((InternalEObject)position).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__POSITION, null, msgs);
@@ -235,8 +229,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionType getPos()
-	{
+	@Override
+	public DirectPositionType getPos() {
 		return pos;
 	}
 
@@ -245,12 +239,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPos(DirectPositionType newPos, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPos(DirectPositionType newPos, NotificationChain msgs) {
 		DirectPositionType oldPos = pos;
 		pos = newPos;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__POS, oldPos, newPos);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -262,10 +254,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPos(DirectPositionType newPos)
-	{
-		if (newPos != pos)
-		{
+	@Override
+	public void setPos(DirectPositionType newPos) {
+		if (newPos != pos) {
 			NotificationChain msgs = null;
 			if (pos != null)
 				msgs = ((InternalEObject)pos).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__POS, null, msgs);
@@ -283,8 +274,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getLocationName()
-	{
+	@Override
+	public CodeType getLocationName() {
 		return locationName;
 	}
 
@@ -293,12 +284,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocationName(CodeType newLocationName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocationName(CodeType newLocationName, NotificationChain msgs) {
 		CodeType oldLocationName = locationName;
 		locationName = newLocationName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__LOCATION_NAME, oldLocationName, newLocationName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -310,10 +299,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocationName(CodeType newLocationName)
-	{
-		if (newLocationName != locationName)
-		{
+	@Override
+	public void setLocationName(CodeType newLocationName) {
+		if (newLocationName != locationName) {
 			NotificationChain msgs = null;
 			if (locationName != null)
 				msgs = ((InternalEObject)locationName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__LOCATION_NAME, null, msgs);
@@ -331,8 +319,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getLocationReference()
-	{
+	@Override
+	public ReferenceType getLocationReference() {
 		return locationReference;
 	}
 
@@ -341,12 +329,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocationReference(ReferenceType newLocationReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocationReference(ReferenceType newLocationReference, NotificationChain msgs) {
 		ReferenceType oldLocationReference = locationReference;
 		locationReference = newLocationReference;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__LOCATION_REFERENCE, oldLocationReference, newLocationReference);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -358,10 +344,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocationReference(ReferenceType newLocationReference)
-	{
-		if (newLocationReference != locationReference)
-		{
+	@Override
+	public void setLocationReference(ReferenceType newLocationReference) {
+		if (newLocationReference != locationReference) {
 			NotificationChain msgs = null;
 			if (locationReference != null)
 				msgs = ((InternalEObject)locationReference).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__LOCATION_REFERENCE, null, msgs);
@@ -379,10 +364,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getLocationGroup()
-	{
-		if (locationGroup == null)
-		{
+	@Override
+	public FeatureMap getLocationGroup() {
+		if (locationGroup == null) {
 			locationGroup = new BasicFeatureMap(this, GMLPackage.MOVING_OBJECT_STATUS_TYPE__LOCATION_GROUP);
 		}
 		return locationGroup;
@@ -393,8 +377,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LocationPropertyType getLocation()
-	{
+	@Override
+	public LocationPropertyType getLocation() {
 		return (LocationPropertyType)getLocationGroup().get(GMLPackage.eINSTANCE.getMovingObjectStatusType_Location(), true);
 	}
 
@@ -403,8 +387,7 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocation(LocationPropertyType newLocation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocation(LocationPropertyType newLocation, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getLocationGroup()).basicAdd(GMLPackage.eINSTANCE.getMovingObjectStatusType_Location(), newLocation, msgs);
 	}
 
@@ -413,8 +396,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocation(LocationPropertyType newLocation)
-	{
+	@Override
+	public void setLocation(LocationPropertyType newLocation) {
 		((FeatureMap.Internal)getLocationGroup()).set(GMLPackage.eINSTANCE.getMovingObjectStatusType_Location(), newLocation);
 	}
 
@@ -423,8 +406,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getSpeed()
-	{
+	@Override
+	public MeasureType getSpeed() {
 		return speed;
 	}
 
@@ -433,12 +416,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSpeed(MeasureType newSpeed, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSpeed(MeasureType newSpeed, NotificationChain msgs) {
 		MeasureType oldSpeed = speed;
 		speed = newSpeed;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__SPEED, oldSpeed, newSpeed);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -450,10 +431,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSpeed(MeasureType newSpeed)
-	{
-		if (newSpeed != speed)
-		{
+	@Override
+	public void setSpeed(MeasureType newSpeed) {
+		if (newSpeed != speed) {
 			NotificationChain msgs = null;
 			if (speed != null)
 				msgs = ((InternalEObject)speed).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__SPEED, null, msgs);
@@ -471,8 +451,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionPropertyType getBearing()
-	{
+	@Override
+	public DirectionPropertyType getBearing() {
 		return bearing;
 	}
 
@@ -481,12 +461,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBearing(DirectionPropertyType newBearing, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBearing(DirectionPropertyType newBearing, NotificationChain msgs) {
 		DirectionPropertyType oldBearing = bearing;
 		bearing = newBearing;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__BEARING, oldBearing, newBearing);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -498,10 +476,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBearing(DirectionPropertyType newBearing)
-	{
-		if (newBearing != bearing)
-		{
+	@Override
+	public void setBearing(DirectionPropertyType newBearing) {
+		if (newBearing != bearing) {
 			NotificationChain msgs = null;
 			if (bearing != null)
 				msgs = ((InternalEObject)bearing).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__BEARING, null, msgs);
@@ -519,8 +496,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getAcceleration()
-	{
+	@Override
+	public MeasureType getAcceleration() {
 		return acceleration;
 	}
 
@@ -529,12 +506,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAcceleration(MeasureType newAcceleration, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAcceleration(MeasureType newAcceleration, NotificationChain msgs) {
 		MeasureType oldAcceleration = acceleration;
 		acceleration = newAcceleration;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__ACCELERATION, oldAcceleration, newAcceleration);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -546,10 +521,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAcceleration(MeasureType newAcceleration)
-	{
-		if (newAcceleration != acceleration)
-		{
+	@Override
+	public void setAcceleration(MeasureType newAcceleration) {
+		if (newAcceleration != acceleration) {
 			NotificationChain msgs = null;
 			if (acceleration != null)
 				msgs = ((InternalEObject)acceleration).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__ACCELERATION, null, msgs);
@@ -567,8 +541,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getElevation()
-	{
+	@Override
+	public MeasureType getElevation() {
 		return elevation;
 	}
 
@@ -577,12 +551,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetElevation(MeasureType newElevation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetElevation(MeasureType newElevation, NotificationChain msgs) {
 		MeasureType oldElevation = elevation;
 		elevation = newElevation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__ELEVATION, oldElevation, newElevation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -594,10 +566,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setElevation(MeasureType newElevation)
-	{
-		if (newElevation != elevation)
-		{
+	@Override
+	public void setElevation(MeasureType newElevation) {
+		if (newElevation != elevation) {
 			NotificationChain msgs = null;
 			if (elevation != null)
 				msgs = ((InternalEObject)elevation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__ELEVATION, null, msgs);
@@ -615,8 +586,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getStatus()
-	{
+	@Override
+	public StringOrRefType getStatus() {
 		return status;
 	}
 
@@ -625,12 +596,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetStatus(StringOrRefType newStatus, NotificationChain msgs)
-	{
+	public NotificationChain basicSetStatus(StringOrRefType newStatus, NotificationChain msgs) {
 		StringOrRefType oldStatus = status;
 		status = newStatus;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__STATUS, oldStatus, newStatus);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -642,10 +611,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStatus(StringOrRefType newStatus)
-	{
-		if (newStatus != status)
-		{
+	@Override
+	public void setStatus(StringOrRefType newStatus) {
+		if (newStatus != status) {
 			NotificationChain msgs = null;
 			if (status != null)
 				msgs = ((InternalEObject)status).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__STATUS, null, msgs);
@@ -663,8 +631,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getStatusReference()
-	{
+	@Override
+	public ReferenceType getStatusReference() {
 		return statusReference;
 	}
 
@@ -673,12 +641,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetStatusReference(ReferenceType newStatusReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetStatusReference(ReferenceType newStatusReference, NotificationChain msgs) {
 		ReferenceType oldStatusReference = statusReference;
 		statusReference = newStatusReference;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MOVING_OBJECT_STATUS_TYPE__STATUS_REFERENCE, oldStatusReference, newStatusReference);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -690,10 +656,9 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStatusReference(ReferenceType newStatusReference)
-	{
-		if (newStatusReference != statusReference)
-		{
+	@Override
+	public void setStatusReference(ReferenceType newStatusReference) {
+		if (newStatusReference != statusReference) {
 			NotificationChain msgs = null;
 			if (statusReference != null)
 				msgs = ((InternalEObject)statusReference).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MOVING_OBJECT_STATUS_TYPE__STATUS_REFERENCE, null, msgs);
@@ -712,10 +677,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.MOVING_OBJECT_STATUS_TYPE__POSITION:
 				return basicSetPosition(null, msgs);
 			case GMLPackage.MOVING_OBJECT_STATUS_TYPE__POS:
@@ -750,10 +713,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.MOVING_OBJECT_STATUS_TYPE__POSITION:
 				return getPosition();
 			case GMLPackage.MOVING_OBJECT_STATUS_TYPE__POS:
@@ -789,10 +750,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.MOVING_OBJECT_STATUS_TYPE__POSITION:
 				setPosition((GeometryPropertyType)newValue);
 				return;
@@ -839,10 +798,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MOVING_OBJECT_STATUS_TYPE__POSITION:
 				setPosition((GeometryPropertyType)null);
 				return;
@@ -889,10 +846,8 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MOVING_OBJECT_STATUS_TYPE__POSITION:
 				return position != null;
 			case GMLPackage.MOVING_OBJECT_STATUS_TYPE__POS:
@@ -927,11 +882,10 @@ public class MovingObjectStatusTypeImpl extends AbstractTimeSliceTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (locationGroup: ");
 		result.append(locationGroup);
 		result.append(')');

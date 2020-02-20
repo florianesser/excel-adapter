@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQTemporalValidityTypeImpl extends AbstractDQTemporalAccuracyTypeImpl implements DQTemporalValidityType
-{
+public class DQTemporalValidityTypeImpl extends AbstractDQTemporalAccuracyTypeImpl implements DQTemporalValidityType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQTemporalValidityTypeImpl()
-	{
+	protected DQTemporalValidityTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQTemporalValidityTypeImpl extends AbstractDQTemporalAccuracyTypeIm
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQTemporalValidityType();
 	}
 

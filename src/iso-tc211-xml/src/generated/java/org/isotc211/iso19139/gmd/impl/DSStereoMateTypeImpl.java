@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSStereoMateTypeImpl extends DSOtherAggregateTypeImpl implements DSStereoMateType
-{
+public class DSStereoMateTypeImpl extends DSOtherAggregateTypeImpl implements DSStereoMateType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSStereoMateTypeImpl()
-	{
+	protected DSStereoMateTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DSStereoMateTypeImpl extends DSOtherAggregateTypeImpl implements DS
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSStereoMateType();
 	}
 

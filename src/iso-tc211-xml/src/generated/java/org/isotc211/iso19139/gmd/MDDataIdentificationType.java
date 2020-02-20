@@ -29,16 +29,11 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='MD_DataIdentification_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDDataIdentificationType extends AbstractMDIdentificationType
-{
+public interface MDDataIdentificationType extends AbstractMDIdentificationType {
 	/**
 	 * Returns the value of the '<em><b>Spatial Representation Type</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDSpatialRepresentationTypeCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Spatial Representation Type</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Spatial Representation Type</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDataIdentificationType_SpatialRepresentationType()
@@ -52,10 +47,6 @@ public interface MDDataIdentificationType extends AbstractMDIdentificationType
 	 * Returns the value of the '<em><b>Spatial Resolution</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDResolutionPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Spatial Resolution</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Spatial Resolution</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDataIdentificationType_SpatialResolution()
@@ -69,10 +60,6 @@ public interface MDDataIdentificationType extends AbstractMDIdentificationType
 	 * Returns the value of the '<em><b>Language</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Language</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Language</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDataIdentificationType_Language()
@@ -86,10 +73,6 @@ public interface MDDataIdentificationType extends AbstractMDIdentificationType
 	 * Returns the value of the '<em><b>Character Set</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDCharacterSetCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Character Set</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Character Set</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDataIdentificationType_CharacterSet()
@@ -103,10 +86,6 @@ public interface MDDataIdentificationType extends AbstractMDIdentificationType
 	 * Returns the value of the '<em><b>Topic Category</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDTopicCategoryCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Topic Category</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Topic Category</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDataIdentificationType_TopicCategory()
@@ -119,10 +98,6 @@ public interface MDDataIdentificationType extends AbstractMDIdentificationType
 	/**
 	 * Returns the value of the '<em><b>Environment Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Environment Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Environment Description</em>' containment reference.
 	 * @see #setEnvironmentDescription(CharacterStringPropertyType)
@@ -147,10 +122,6 @@ public interface MDDataIdentificationType extends AbstractMDIdentificationType
 	 * Returns the value of the '<em><b>Extent</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.EXExtentPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Extent</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extent</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDDataIdentificationType_Extent()
@@ -163,10 +134,6 @@ public interface MDDataIdentificationType extends AbstractMDIdentificationType
 	/**
 	 * Returns the value of the '<em><b>Supplemental Information</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Supplemental Information</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Supplemental Information</em>' containment reference.
 	 * @see #setSupplementalInformation(CharacterStringPropertyType)

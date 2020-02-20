@@ -38,8 +38,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements CompositeValueType
-{
+public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements CompositeValueType {
 	/**
 	 * The cached value of the '{@link #getValueComponent() <em>Value Component</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -94,8 +93,7 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CompositeValueTypeImpl()
-	{
+	protected CompositeValueTypeImpl() {
 		super();
 	}
 
@@ -105,8 +103,7 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCompositeValueType();
 	}
 
@@ -115,10 +112,9 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ValuePropertyType> getValueComponent()
-	{
-		if (valueComponent == null)
-		{
+	@Override
+	public EList<ValuePropertyType> getValueComponent() {
+		if (valueComponent == null) {
 			valueComponent = new EObjectContainmentEList<ValuePropertyType>(ValuePropertyType.class, this, GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENT);
 		}
 		return valueComponent;
@@ -129,8 +125,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ValueArrayPropertyType getValueComponents()
-	{
+	@Override
+	public ValueArrayPropertyType getValueComponents() {
 		return valueComponents;
 	}
 
@@ -139,12 +135,10 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueComponents(ValueArrayPropertyType newValueComponents, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueComponents(ValueArrayPropertyType newValueComponents, NotificationChain msgs) {
 		ValueArrayPropertyType oldValueComponents = valueComponents;
 		valueComponents = newValueComponents;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENTS, oldValueComponents, newValueComponents);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -156,10 +150,9 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueComponents(ValueArrayPropertyType newValueComponents)
-	{
-		if (newValueComponents != valueComponents)
-		{
+	@Override
+	public void setValueComponents(ValueArrayPropertyType newValueComponents) {
+		if (newValueComponents != valueComponents) {
 			NotificationChain msgs = null;
 			if (valueComponents != null)
 				msgs = ((InternalEObject)valueComponents).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENTS, null, msgs);
@@ -177,8 +170,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -187,8 +180,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -202,8 +195,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -217,8 +210,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -228,10 +221,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENT:
 				return ((InternalEList<?>)getValueComponent()).basicRemove(otherEnd, msgs);
 			case GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENTS:
@@ -246,10 +237,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENT:
 				return getValueComponent();
 			case GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENTS:
@@ -267,10 +256,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENT:
 				getValueComponent().clear();
 				getValueComponent().addAll((Collection<? extends ValuePropertyType>)newValue);
@@ -291,10 +278,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENT:
 				getValueComponent().clear();
 				return;
@@ -314,10 +299,8 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENT:
 				return valueComponent != null && !valueComponent.isEmpty();
 			case GMLPackage.COMPOSITE_VALUE_TYPE__VALUE_COMPONENTS:
@@ -334,11 +317,10 @@ public class CompositeValueTypeImpl extends AbstractGMLTypeImpl implements Compo
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (aggregationType: ");
 		if (aggregationTypeESet) result.append(aggregationType); else result.append("<unset>");
 		result.append(')');

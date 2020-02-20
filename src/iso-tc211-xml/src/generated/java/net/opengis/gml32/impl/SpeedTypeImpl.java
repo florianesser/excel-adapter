@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class SpeedTypeImpl extends MeasureTypeImpl implements SpeedType
-{
+public class SpeedTypeImpl extends MeasureTypeImpl implements SpeedType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SpeedTypeImpl()
-	{
+	protected SpeedTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class SpeedTypeImpl extends MeasureTypeImpl implements SpeedType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getSpeedType();
 	}
 

@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeImpl implements AbstractGeneralDerivedCRSType
-{
+public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeImpl implements AbstractGeneralDerivedCRSType {
 	/**
 	 * The cached value of the '{@link #getConversion() <em>Conversion</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGeneralDerivedCRSTypeImpl()
-	{
+	protected AbstractGeneralDerivedCRSTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGeneralDerivedCRSType();
 	}
 
@@ -65,8 +62,8 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeneralConversionPropertyType getConversion()
-	{
+	@Override
+	public GeneralConversionPropertyType getConversion() {
 		return conversion;
 	}
 
@@ -75,12 +72,10 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConversion(GeneralConversionPropertyType newConversion, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConversion(GeneralConversionPropertyType newConversion, NotificationChain msgs) {
 		GeneralConversionPropertyType oldConversion = conversion;
 		conversion = newConversion;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_GENERAL_DERIVED_CRS_TYPE__CONVERSION, oldConversion, newConversion);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConversion(GeneralConversionPropertyType newConversion)
-	{
-		if (newConversion != conversion)
-		{
+	@Override
+	public void setConversion(GeneralConversionPropertyType newConversion) {
+		if (newConversion != conversion) {
 			NotificationChain msgs = null;
 			if (conversion != null)
 				msgs = ((InternalEObject)conversion).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_GENERAL_DERIVED_CRS_TYPE__CONVERSION, null, msgs);
@@ -114,10 +108,8 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_DERIVED_CRS_TYPE__CONVERSION:
 				return basicSetConversion(null, msgs);
 		}
@@ -130,10 +122,8 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_DERIVED_CRS_TYPE__CONVERSION:
 				return getConversion();
 		}
@@ -146,10 +136,8 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_DERIVED_CRS_TYPE__CONVERSION:
 				setConversion((GeneralConversionPropertyType)newValue);
 				return;
@@ -163,10 +151,8 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_DERIVED_CRS_TYPE__CONVERSION:
 				setConversion((GeneralConversionPropertyType)null);
 				return;
@@ -180,10 +166,8 @@ public abstract class AbstractGeneralDerivedCRSTypeImpl extends AbstractCRSTypeI
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_DERIVED_CRS_TYPE__CONVERSION:
 				return conversion != null;
 		}

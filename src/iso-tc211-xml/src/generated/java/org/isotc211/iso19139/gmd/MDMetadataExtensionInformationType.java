@@ -27,15 +27,10 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  * @model extendedMetaData="name='MD_MetadataExtensionInformation_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDMetadataExtensionInformationType extends AbstractObjectType
-{
+public interface MDMetadataExtensionInformationType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Extension On Line Resource</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Extension On Line Resource</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extension On Line Resource</em>' containment reference.
 	 * @see #setExtensionOnLineResource(CIOnlineResourcePropertyType)
@@ -60,10 +55,6 @@ public interface MDMetadataExtensionInformationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Extended Element Information</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDExtendedElementInformationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Extended Element Information</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extended Element Information</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMetadataExtensionInformationType_ExtendedElementInformation()

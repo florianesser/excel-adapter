@@ -16,15 +16,13 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public abstract class AbstractGeneralParameterValueTypeImpl extends MinimalEObjectImpl.Container implements AbstractGeneralParameterValueType
-{
+public abstract class AbstractGeneralParameterValueTypeImpl extends MinimalEObjectImpl.Container implements AbstractGeneralParameterValueType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGeneralParameterValueTypeImpl()
-	{
+	protected AbstractGeneralParameterValueTypeImpl() {
 		super();
 	}
 
@@ -34,8 +32,7 @@ public abstract class AbstractGeneralParameterValueTypeImpl extends MinimalEObje
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGeneralParameterValueType();
 	}
 

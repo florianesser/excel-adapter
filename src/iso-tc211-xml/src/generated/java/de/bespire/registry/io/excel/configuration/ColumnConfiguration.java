@@ -3,6 +3,7 @@
 package de.bespire.registry.io.excel.configuration;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -31,10 +32,6 @@ public interface ColumnConfiguration extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Java Property</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Java Property</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Java Property</em>' attribute.
 	 * @see #setJavaProperty(String)
@@ -58,10 +55,6 @@ public interface ColumnConfiguration extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Java Property Export</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Java Property Export</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Java Property Export</em>' attribute.
 	 * @see #setJavaPropertyExport(String)
@@ -86,10 +79,6 @@ public interface ColumnConfiguration extends EObject {
 	 * Returns the value of the '<em><b>Multiple</b></em>' attribute.
 	 * The default value is <code>"false"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multiple</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multiple</em>' attribute.
 	 * @see #isSetMultiple()
@@ -141,10 +130,6 @@ public interface ColumnConfiguration extends EObject {
 	 * Returns the value of the '<em><b>References</b></em>' attribute list.
 	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>References</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>References</em>' attribute list.
 	 * @see de.bespire.registry.io.excel.configuration.ExcelAdapterConfigurationPackage#getColumnConfiguration_References()
@@ -157,10 +142,6 @@ public interface ColumnConfiguration extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Column Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Column Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Column Name</em>' attribute.
 	 * @see #setColumnName(String)
@@ -185,10 +166,6 @@ public interface ColumnConfiguration extends EObject {
 	 * Returns the value of the '<em><b>Separator Char</b></em>' attribute.
 	 * The default value is <code>";"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Separator Char</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Separator Char</em>' attribute.
 	 * @see #isSetSeparatorChar()
@@ -239,10 +216,6 @@ public interface ColumnConfiguration extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value Mapper</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value Mapper</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value Mapper</em>' attribute.
 	 * @see #setValueMapper(String)

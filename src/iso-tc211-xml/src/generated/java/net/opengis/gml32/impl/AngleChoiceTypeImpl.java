@@ -30,8 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements AngleChoiceType
-{
+public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements AngleChoiceType {
 	/**
 	 * The cached value of the '{@link #getAngle() <em>Angle</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -57,8 +56,7 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AngleChoiceTypeImpl()
-	{
+	protected AngleChoiceTypeImpl() {
 		super();
 	}
 
@@ -68,8 +66,7 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAngleChoiceType();
 	}
 
@@ -78,8 +75,8 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AngleType getAngle()
-	{
+	@Override
+	public AngleType getAngle() {
 		return angle;
 	}
 
@@ -88,12 +85,10 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngle(AngleType newAngle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAngle(AngleType newAngle, NotificationChain msgs) {
 		AngleType oldAngle = angle;
 		angle = newAngle;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ANGLE_CHOICE_TYPE__ANGLE, oldAngle, newAngle);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -105,10 +100,9 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAngle(AngleType newAngle)
-	{
-		if (newAngle != angle)
-		{
+	@Override
+	public void setAngle(AngleType newAngle) {
+		if (newAngle != angle) {
 			NotificationChain msgs = null;
 			if (angle != null)
 				msgs = ((InternalEObject)angle).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ANGLE_CHOICE_TYPE__ANGLE, null, msgs);
@@ -126,8 +120,8 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DMSAngleType getDmsAngle()
-	{
+	@Override
+	public DMSAngleType getDmsAngle() {
 		return dmsAngle;
 	}
 
@@ -136,12 +130,10 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDmsAngle(DMSAngleType newDmsAngle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDmsAngle(DMSAngleType newDmsAngle, NotificationChain msgs) {
 		DMSAngleType oldDmsAngle = dmsAngle;
 		dmsAngle = newDmsAngle;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ANGLE_CHOICE_TYPE__DMS_ANGLE, oldDmsAngle, newDmsAngle);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -153,10 +145,9 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDmsAngle(DMSAngleType newDmsAngle)
-	{
-		if (newDmsAngle != dmsAngle)
-		{
+	@Override
+	public void setDmsAngle(DMSAngleType newDmsAngle) {
+		if (newDmsAngle != dmsAngle) {
 			NotificationChain msgs = null;
 			if (dmsAngle != null)
 				msgs = ((InternalEObject)dmsAngle).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ANGLE_CHOICE_TYPE__DMS_ANGLE, null, msgs);
@@ -175,10 +166,8 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ANGLE_CHOICE_TYPE__ANGLE:
 				return basicSetAngle(null, msgs);
 			case GMLPackage.ANGLE_CHOICE_TYPE__DMS_ANGLE:
@@ -193,10 +182,8 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ANGLE_CHOICE_TYPE__ANGLE:
 				return getAngle();
 			case GMLPackage.ANGLE_CHOICE_TYPE__DMS_ANGLE:
@@ -211,10 +198,8 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ANGLE_CHOICE_TYPE__ANGLE:
 				setAngle((AngleType)newValue);
 				return;
@@ -231,10 +216,8 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ANGLE_CHOICE_TYPE__ANGLE:
 				setAngle((AngleType)null);
 				return;
@@ -251,10 +234,8 @@ public class AngleChoiceTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ANGLE_CHOICE_TYPE__ANGLE:
 				return angle != null;
 			case GMLPackage.ANGLE_CHOICE_TYPE__DMS_ANGLE:

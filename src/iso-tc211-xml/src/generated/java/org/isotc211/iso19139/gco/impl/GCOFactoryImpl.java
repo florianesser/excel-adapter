@@ -26,26 +26,21 @@ import org.isotc211.iso19139.gco.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
-{
+public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static GCOFactory init()
-	{
-		try
-		{
+	public static GCOFactory init() {
+		try {
 			GCOFactory theGCOFactory = (GCOFactory)EPackage.Registry.INSTANCE.getEFactory(GCOPackage.eNS_URI);
-			if (theGCOFactory != null)
-			{
+			if (theGCOFactory != null) {
 				return theGCOFactory;
 			}
 		}
-		catch (Exception exception)
-		{
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new GCOFactoryImpl();
@@ -57,8 +52,7 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GCOFactoryImpl()
-	{
+	public GCOFactoryImpl() {
 		super();
 	}
 
@@ -68,10 +62,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass)
-	{
-		switch (eClass.getClassifierID())
-		{
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
 			case GCOPackage.ANGLE_PROPERTY_TYPE: return createAnglePropertyType();
 			case GCOPackage.BINARY_PROPERTY_TYPE: return createBinaryPropertyType();
 			case GCOPackage.BINARY_TYPE: return createBinaryType();
@@ -125,10 +117,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * @generated
 	 */
 	@Override
-	public Object createFromString(EDataType eDataType, String initialValue)
-	{
-		switch (eDataType.getClassifierID())
-		{
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
 			case GCOPackage.DATE_TYPE:
 				return createDateTypeFromString(eDataType, initialValue);
 			default:
@@ -142,10 +132,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * @generated
 	 */
 	@Override
-	public String convertToString(EDataType eDataType, Object instanceValue)
-	{
-		switch (eDataType.getClassifierID())
-		{
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
 			case GCOPackage.DATE_TYPE:
 				return convertDateTypeToString(eDataType, instanceValue);
 			default:
@@ -158,8 +146,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnglePropertyType createAnglePropertyType()
-	{
+	@Override
+	public AnglePropertyType createAnglePropertyType() {
 		AnglePropertyTypeImpl anglePropertyType = new AnglePropertyTypeImpl();
 		return anglePropertyType;
 	}
@@ -169,8 +157,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BinaryPropertyType createBinaryPropertyType()
-	{
+	@Override
+	public BinaryPropertyType createBinaryPropertyType() {
 		BinaryPropertyTypeImpl binaryPropertyType = new BinaryPropertyTypeImpl();
 		return binaryPropertyType;
 	}
@@ -180,8 +168,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BinaryType createBinaryType()
-	{
+	@Override
+	public BinaryType createBinaryType() {
 		BinaryTypeImpl binaryType = new BinaryTypeImpl();
 		return binaryType;
 	}
@@ -191,8 +179,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType createBooleanPropertyType()
-	{
+	@Override
+	public BooleanPropertyType createBooleanPropertyType() {
 		BooleanPropertyTypeImpl booleanPropertyType = new BooleanPropertyTypeImpl();
 		return booleanPropertyType;
 	}
@@ -202,8 +190,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType createCharacterStringPropertyType()
-	{
+	@Override
+	public CharacterStringPropertyType createCharacterStringPropertyType() {
 		CharacterStringPropertyTypeImpl characterStringPropertyType = new CharacterStringPropertyTypeImpl();
 		return characterStringPropertyType;
 	}
@@ -213,8 +201,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType createCodeListValueType()
-	{
+	@Override
+	public CodeListValueType createCodeListValueType() {
 		CodeListValueTypeImpl codeListValueType = new CodeListValueTypeImpl();
 		return codeListValueType;
 	}
@@ -224,8 +212,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DatePropertyType createDatePropertyType()
-	{
+	@Override
+	public DatePropertyType createDatePropertyType() {
 		DatePropertyTypeImpl datePropertyType = new DatePropertyTypeImpl();
 		return datePropertyType;
 	}
@@ -235,8 +223,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DateTimePropertyType createDateTimePropertyType()
-	{
+	@Override
+	public DateTimePropertyType createDateTimePropertyType() {
 		DateTimePropertyTypeImpl dateTimePropertyType = new DateTimePropertyTypeImpl();
 		return dateTimePropertyType;
 	}
@@ -246,8 +234,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DecimalPropertyType createDecimalPropertyType()
-	{
+	@Override
+	public DecimalPropertyType createDecimalPropertyType() {
 		DecimalPropertyTypeImpl decimalPropertyType = new DecimalPropertyTypeImpl();
 		return decimalPropertyType;
 	}
@@ -257,8 +245,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DistancePropertyType createDistancePropertyType()
-	{
+	@Override
+	public DistancePropertyType createDistancePropertyType() {
 		DistancePropertyTypeImpl distancePropertyType = new DistancePropertyTypeImpl();
 		return distancePropertyType;
 	}
@@ -268,8 +256,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GenericNamePropertyType createGenericNamePropertyType()
-	{
+	@Override
+	public GenericNamePropertyType createGenericNamePropertyType() {
 		GenericNamePropertyTypeImpl genericNamePropertyType = new GenericNamePropertyTypeImpl();
 		return genericNamePropertyType;
 	}
@@ -279,8 +267,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType createIntegerPropertyType()
-	{
+	@Override
+	public IntegerPropertyType createIntegerPropertyType() {
 		IntegerPropertyTypeImpl integerPropertyType = new IntegerPropertyTypeImpl();
 		return integerPropertyType;
 	}
@@ -290,8 +278,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LengthPropertyType createLengthPropertyType()
-	{
+	@Override
+	public LengthPropertyType createLengthPropertyType() {
 		LengthPropertyTypeImpl lengthPropertyType = new LengthPropertyTypeImpl();
 		return lengthPropertyType;
 	}
@@ -301,8 +289,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LocalNamePropertyType createLocalNamePropertyType()
-	{
+	@Override
+	public LocalNamePropertyType createLocalNamePropertyType() {
 		LocalNamePropertyTypeImpl localNamePropertyType = new LocalNamePropertyTypeImpl();
 		return localNamePropertyType;
 	}
@@ -312,8 +300,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiplicityPropertyType createMultiplicityPropertyType()
-	{
+	@Override
+	public MultiplicityPropertyType createMultiplicityPropertyType() {
 		MultiplicityPropertyTypeImpl multiplicityPropertyType = new MultiplicityPropertyTypeImpl();
 		return multiplicityPropertyType;
 	}
@@ -323,8 +311,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiplicityRangePropertyType createMultiplicityRangePropertyType()
-	{
+	@Override
+	public MultiplicityRangePropertyType createMultiplicityRangePropertyType() {
 		MultiplicityRangePropertyTypeImpl multiplicityRangePropertyType = new MultiplicityRangePropertyTypeImpl();
 		return multiplicityRangePropertyType;
 	}
@@ -334,8 +322,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ObjectReferencePropertyType createObjectReferencePropertyType()
-	{
+	@Override
+	public ObjectReferencePropertyType createObjectReferencePropertyType() {
 		ObjectReferencePropertyTypeImpl objectReferencePropertyType = new ObjectReferencePropertyTypeImpl();
 		return objectReferencePropertyType;
 	}
@@ -345,8 +333,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType createRealPropertyType()
-	{
+	@Override
+	public RealPropertyType createRealPropertyType() {
 		RealPropertyTypeImpl realPropertyType = new RealPropertyTypeImpl();
 		return realPropertyType;
 	}
@@ -356,8 +344,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DocumentRoot createDocumentRoot()
-	{
+	@Override
+	public DocumentRoot createDocumentRoot() {
 		DocumentRootImpl documentRoot = new DocumentRootImpl();
 		return documentRoot;
 	}
@@ -367,8 +355,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasurePropertyType createMeasurePropertyType()
-	{
+	@Override
+	public MeasurePropertyType createMeasurePropertyType() {
 		MeasurePropertyTypeImpl measurePropertyType = new MeasurePropertyTypeImpl();
 		return measurePropertyType;
 	}
@@ -378,8 +366,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MemberNamePropertyType createMemberNamePropertyType()
-	{
+	@Override
+	public MemberNamePropertyType createMemberNamePropertyType() {
 		MemberNamePropertyTypeImpl memberNamePropertyType = new MemberNamePropertyTypeImpl();
 		return memberNamePropertyType;
 	}
@@ -389,8 +377,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MemberNameType createMemberNameType()
-	{
+	@Override
+	public MemberNameType createMemberNameType() {
 		MemberNameTypeImpl memberNameType = new MemberNameTypeImpl();
 		return memberNameType;
 	}
@@ -400,8 +388,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiplicityRangeType createMultiplicityRangeType()
-	{
+	@Override
+	public MultiplicityRangeType createMultiplicityRangeType() {
 		MultiplicityRangeTypeImpl multiplicityRangeType = new MultiplicityRangeTypeImpl();
 		return multiplicityRangeType;
 	}
@@ -411,8 +399,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiplicityType createMultiplicityType()
-	{
+	@Override
+	public MultiplicityType createMultiplicityType() {
 		MultiplicityTypeImpl multiplicityType = new MultiplicityTypeImpl();
 		return multiplicityType;
 	}
@@ -422,8 +410,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NumberPropertyType createNumberPropertyType()
-	{
+	@Override
+	public NumberPropertyType createNumberPropertyType() {
 		NumberPropertyTypeImpl numberPropertyType = new NumberPropertyTypeImpl();
 		return numberPropertyType;
 	}
@@ -433,8 +421,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RecordPropertyType createRecordPropertyType()
-	{
+	@Override
+	public RecordPropertyType createRecordPropertyType() {
 		RecordPropertyTypeImpl recordPropertyType = new RecordPropertyTypeImpl();
 		return recordPropertyType;
 	}
@@ -444,8 +432,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RecordTypePropertyType createRecordTypePropertyType()
-	{
+	@Override
+	public RecordTypePropertyType createRecordTypePropertyType() {
 		RecordTypePropertyTypeImpl recordTypePropertyType = new RecordTypePropertyTypeImpl();
 		return recordTypePropertyType;
 	}
@@ -455,8 +443,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RecordTypeType createRecordTypeType()
-	{
+	@Override
+	public RecordTypeType createRecordTypeType() {
 		RecordTypeTypeImpl recordTypeType = new RecordTypeTypeImpl();
 		return recordTypeType;
 	}
@@ -466,8 +454,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ScalePropertyType createScalePropertyType()
-	{
+	@Override
+	public ScalePropertyType createScalePropertyType() {
 		ScalePropertyTypeImpl scalePropertyType = new ScalePropertyTypeImpl();
 		return scalePropertyType;
 	}
@@ -477,8 +465,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ScopedNamePropertyType createScopedNamePropertyType()
-	{
+	@Override
+	public ScopedNamePropertyType createScopedNamePropertyType() {
 		ScopedNamePropertyTypeImpl scopedNamePropertyType = new ScopedNamePropertyTypeImpl();
 		return scopedNamePropertyType;
 	}
@@ -488,8 +476,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeNamePropertyType createTypeNamePropertyType()
-	{
+	@Override
+	public TypeNamePropertyType createTypeNamePropertyType() {
 		TypeNamePropertyTypeImpl typeNamePropertyType = new TypeNamePropertyTypeImpl();
 		return typeNamePropertyType;
 	}
@@ -499,8 +487,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeNameType createTypeNameType()
-	{
+	@Override
+	public TypeNameType createTypeNameType() {
 		TypeNameTypeImpl typeNameType = new TypeNameTypeImpl();
 		return typeNameType;
 	}
@@ -510,8 +498,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitOfMeasurePropertyType createUnitOfMeasurePropertyType()
-	{
+	@Override
+	public UnitOfMeasurePropertyType createUnitOfMeasurePropertyType() {
 		UnitOfMeasurePropertyTypeImpl unitOfMeasurePropertyType = new UnitOfMeasurePropertyTypeImpl();
 		return unitOfMeasurePropertyType;
 	}
@@ -521,8 +509,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnlimitedIntegerPropertyType createUnlimitedIntegerPropertyType()
-	{
+	@Override
+	public UnlimitedIntegerPropertyType createUnlimitedIntegerPropertyType() {
 		UnlimitedIntegerPropertyTypeImpl unlimitedIntegerPropertyType = new UnlimitedIntegerPropertyTypeImpl();
 		return unlimitedIntegerPropertyType;
 	}
@@ -532,8 +520,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnlimitedIntegerType createUnlimitedIntegerType()
-	{
+	@Override
+	public UnlimitedIntegerType createUnlimitedIntegerType() {
 		UnlimitedIntegerTypeImpl unlimitedIntegerType = new UnlimitedIntegerTypeImpl();
 		return unlimitedIntegerType;
 	}
@@ -543,8 +531,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UomAnglePropertyType createUomAnglePropertyType()
-	{
+	@Override
+	public UomAnglePropertyType createUomAnglePropertyType() {
 		UomAnglePropertyTypeImpl uomAnglePropertyType = new UomAnglePropertyTypeImpl();
 		return uomAnglePropertyType;
 	}
@@ -554,8 +542,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UomAreaPropertyType createUomAreaPropertyType()
-	{
+	@Override
+	public UomAreaPropertyType createUomAreaPropertyType() {
 		UomAreaPropertyTypeImpl uomAreaPropertyType = new UomAreaPropertyTypeImpl();
 		return uomAreaPropertyType;
 	}
@@ -565,8 +553,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UomLengthPropertyType createUomLengthPropertyType()
-	{
+	@Override
+	public UomLengthPropertyType createUomLengthPropertyType() {
 		UomLengthPropertyTypeImpl uomLengthPropertyType = new UomLengthPropertyTypeImpl();
 		return uomLengthPropertyType;
 	}
@@ -576,8 +564,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UomScalePropertyType createUomScalePropertyType()
-	{
+	@Override
+	public UomScalePropertyType createUomScalePropertyType() {
 		UomScalePropertyTypeImpl uomScalePropertyType = new UomScalePropertyTypeImpl();
 		return uomScalePropertyType;
 	}
@@ -587,8 +575,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UomTimePropertyType createUomTimePropertyType()
-	{
+	@Override
+	public UomTimePropertyType createUomTimePropertyType() {
 		UomTimePropertyTypeImpl uomTimePropertyType = new UomTimePropertyTypeImpl();
 		return uomTimePropertyType;
 	}
@@ -598,8 +586,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UomVelocityPropertyType createUomVelocityPropertyType()
-	{
+	@Override
+	public UomVelocityPropertyType createUomVelocityPropertyType() {
 		UomVelocityPropertyTypeImpl uomVelocityPropertyType = new UomVelocityPropertyTypeImpl();
 		return uomVelocityPropertyType;
 	}
@@ -609,8 +597,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UomVolumePropertyType createUomVolumePropertyType()
-	{
+	@Override
+	public UomVolumePropertyType createUomVolumePropertyType() {
 		UomVolumePropertyTypeImpl uomVolumePropertyType = new UomVolumePropertyTypeImpl();
 		return uomVolumePropertyType;
 	}
@@ -620,45 +608,35 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar createDateTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public XMLGregorianCalendar createDateTypeFromString(EDataType eDataType, String initialValue) {
 		if (initialValue == null) return null;
 		XMLGregorianCalendar result = null;
 		RuntimeException exception = null;
-		try
-		{
+		try {
 			result = (XMLGregorianCalendar)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DATE, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = (XMLGregorianCalendar)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.GYEAR_MONTH, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
-		try
-		{
+		try {
 			result = (XMLGregorianCalendar)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.GYEAR, initialValue);
-			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
-			{
+			if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
 				return result;
 			}
 		}
-		catch (RuntimeException e)
-		{
+		catch (RuntimeException e) {
 			exception = e;
 		}
 		if (result != null || exception == null) return result;
@@ -671,42 +649,32 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDateTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertDateTypeToString(EDataType eDataType, Object instanceValue) {
 		if (instanceValue == null) return null;
-		if (XMLTypePackage.Literals.DATE.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.DATE.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DATE, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.GYEAR_MONTH.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.GYEAR_MONTH, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
-		if (XMLTypePackage.Literals.GYEAR.isInstance(instanceValue))
-		{
-			try
-			{
+		if (XMLTypePackage.Literals.GYEAR.isInstance(instanceValue)) {
+			try {
 				String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.GYEAR, instanceValue);
 				if (value != null) return value;
 			}
-			catch (Exception e)
-			{
+			catch (Exception e) {
 				// Keep trying other member types until all have failed.
 			}
 		}
@@ -718,8 +686,8 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GCOPackage getGCOPackage()
-	{
+	@Override
+	public GCOPackage getGCOPackage() {
 		return (GCOPackage)getEPackage();
 	}
 
@@ -730,8 +698,7 @@ public class GCOFactoryImpl extends EFactoryImpl implements GCOFactory
 	 * @generated
 	 */
 	@Deprecated
-	public static GCOPackage getPackage()
-	{
+	public static GCOPackage getPackage() {
 		return GCOPackage.eINSTANCE;
 	}
 

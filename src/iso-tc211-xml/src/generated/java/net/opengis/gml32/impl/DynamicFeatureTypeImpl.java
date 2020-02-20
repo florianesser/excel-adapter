@@ -38,8 +38,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements DynamicFeatureType
-{
+public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements DynamicFeatureType {
 	/**
 	 * The cached value of the '{@link #getValidTime() <em>Valid Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -85,8 +84,7 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DynamicFeatureTypeImpl()
-	{
+	protected DynamicFeatureTypeImpl() {
 		super();
 	}
 
@@ -96,8 +94,7 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDynamicFeatureType();
 	}
 
@@ -106,8 +103,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePrimitivePropertyType getValidTime()
-	{
+	@Override
+	public TimePrimitivePropertyType getValidTime() {
 		return validTime;
 	}
 
@@ -116,12 +113,10 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValidTime(TimePrimitivePropertyType newValidTime, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValidTime(TimePrimitivePropertyType newValidTime, NotificationChain msgs) {
 		TimePrimitivePropertyType oldValidTime = validTime;
 		validTime = newValidTime;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DYNAMIC_FEATURE_TYPE__VALID_TIME, oldValidTime, newValidTime);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -133,10 +128,9 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValidTime(TimePrimitivePropertyType newValidTime)
-	{
-		if (newValidTime != validTime)
-		{
+	@Override
+	public void setValidTime(TimePrimitivePropertyType newValidTime) {
+		if (newValidTime != validTime) {
 			NotificationChain msgs = null;
 			if (validTime != null)
 				msgs = ((InternalEObject)validTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DYNAMIC_FEATURE_TYPE__VALID_TIME, null, msgs);
@@ -154,10 +148,9 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getHistoryGroup()
-	{
-		if (historyGroup == null)
-		{
+	@Override
+	public FeatureMap getHistoryGroup() {
+		if (historyGroup == null) {
 			historyGroup = new BasicFeatureMap(this, GMLPackage.DYNAMIC_FEATURE_TYPE__HISTORY_GROUP);
 		}
 		return historyGroup;
@@ -168,8 +161,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryPropertyType getHistory()
-	{
+	@Override
+	public HistoryPropertyType getHistory() {
 		return (HistoryPropertyType)getHistoryGroup().get(GMLPackage.eINSTANCE.getDynamicFeatureType_History(), true);
 	}
 
@@ -178,8 +171,7 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetHistory(HistoryPropertyType newHistory, NotificationChain msgs)
-	{
+	public NotificationChain basicSetHistory(HistoryPropertyType newHistory, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getHistoryGroup()).basicAdd(GMLPackage.eINSTANCE.getDynamicFeatureType_History(), newHistory, msgs);
 	}
 
@@ -188,8 +180,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHistory(HistoryPropertyType newHistory)
-	{
+	@Override
+	public void setHistory(HistoryPropertyType newHistory) {
 		((FeatureMap.Internal)getHistoryGroup()).set(GMLPackage.eINSTANCE.getDynamicFeatureType_History(), newHistory);
 	}
 
@@ -198,8 +190,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getDataSource()
-	{
+	@Override
+	public StringOrRefType getDataSource() {
 		return dataSource;
 	}
 
@@ -208,12 +200,10 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataSource(StringOrRefType newDataSource, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataSource(StringOrRefType newDataSource, NotificationChain msgs) {
 		StringOrRefType oldDataSource = dataSource;
 		dataSource = newDataSource;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DYNAMIC_FEATURE_TYPE__DATA_SOURCE, oldDataSource, newDataSource);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -225,10 +215,9 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataSource(StringOrRefType newDataSource)
-	{
-		if (newDataSource != dataSource)
-		{
+	@Override
+	public void setDataSource(StringOrRefType newDataSource) {
+		if (newDataSource != dataSource) {
 			NotificationChain msgs = null;
 			if (dataSource != null)
 				msgs = ((InternalEObject)dataSource).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DYNAMIC_FEATURE_TYPE__DATA_SOURCE, null, msgs);
@@ -246,8 +235,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getDataSourceReference()
-	{
+	@Override
+	public ReferenceType getDataSourceReference() {
 		return dataSourceReference;
 	}
 
@@ -256,12 +245,10 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataSourceReference(ReferenceType newDataSourceReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataSourceReference(ReferenceType newDataSourceReference, NotificationChain msgs) {
 		ReferenceType oldDataSourceReference = dataSourceReference;
 		dataSourceReference = newDataSourceReference;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DYNAMIC_FEATURE_TYPE__DATA_SOURCE_REFERENCE, oldDataSourceReference, newDataSourceReference);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -273,10 +260,9 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataSourceReference(ReferenceType newDataSourceReference)
-	{
-		if (newDataSourceReference != dataSourceReference)
-		{
+	@Override
+	public void setDataSourceReference(ReferenceType newDataSourceReference) {
+		if (newDataSourceReference != dataSourceReference) {
 			NotificationChain msgs = null;
 			if (dataSourceReference != null)
 				msgs = ((InternalEObject)dataSourceReference).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DYNAMIC_FEATURE_TYPE__DATA_SOURCE_REFERENCE, null, msgs);
@@ -295,10 +281,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_TYPE__VALID_TIME:
 				return basicSetValidTime(null, msgs);
 			case GMLPackage.DYNAMIC_FEATURE_TYPE__HISTORY_GROUP:
@@ -319,10 +303,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_TYPE__VALID_TIME:
 				return getValidTime();
 			case GMLPackage.DYNAMIC_FEATURE_TYPE__HISTORY_GROUP:
@@ -344,10 +326,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_TYPE__VALID_TIME:
 				setValidTime((TimePrimitivePropertyType)newValue);
 				return;
@@ -373,10 +353,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_TYPE__VALID_TIME:
 				setValidTime((TimePrimitivePropertyType)null);
 				return;
@@ -402,10 +380,8 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DYNAMIC_FEATURE_TYPE__VALID_TIME:
 				return validTime != null;
 			case GMLPackage.DYNAMIC_FEATURE_TYPE__HISTORY_GROUP:
@@ -426,11 +402,10 @@ public class DynamicFeatureTypeImpl extends AbstractFeatureTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (historyGroup: ");
 		result.append(historyGroup);
 		result.append(')');

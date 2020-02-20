@@ -42,8 +42,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl implements GeodesicStringType
-{
+public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl implements GeodesicStringType {
 	/**
 	 * The cached value of the '{@link #getPosList() <em>Pos List</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -98,8 +97,7 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeodesicStringTypeImpl()
-	{
+	protected GeodesicStringTypeImpl() {
 		super();
 	}
 
@@ -109,8 +107,7 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeodesicStringType();
 	}
 
@@ -119,8 +116,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionListType getPosList()
-	{
+	@Override
+	public DirectPositionListType getPosList() {
 		return posList;
 	}
 
@@ -129,12 +126,10 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPosList(DirectPositionListType newPosList, NotificationChain msgs) {
 		DirectPositionListType oldPosList = posList;
 		posList = newPosList;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEODESIC_STRING_TYPE__POS_LIST, oldPosList, newPosList);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -146,10 +141,9 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPosList(DirectPositionListType newPosList)
-	{
-		if (newPosList != posList)
-		{
+	@Override
+	public void setPosList(DirectPositionListType newPosList) {
+		if (newPosList != posList) {
 			NotificationChain msgs = null;
 			if (posList != null)
 				msgs = ((InternalEObject)posList).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEODESIC_STRING_TYPE__POS_LIST, null, msgs);
@@ -167,10 +161,9 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getGeometricPositionGroup()
-	{
-		if (geometricPositionGroup == null)
-		{
+	@Override
+	public FeatureMap getGeometricPositionGroup() {
+		if (geometricPositionGroup == null) {
 			geometricPositionGroup = new BasicFeatureMap(this, GMLPackage.GEODESIC_STRING_TYPE__GEOMETRIC_POSITION_GROUP);
 		}
 		return geometricPositionGroup;
@@ -181,8 +174,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectPositionType> getPos()
-	{
+	@Override
+	public EList<DirectPositionType> getPos() {
 		return getGeometricPositionGroup().list(GMLPackage.eINSTANCE.getGeodesicStringType_Pos());
 	}
 
@@ -191,8 +184,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PointPropertyType> getPointProperty()
-	{
+	@Override
+	public EList<PointPropertyType> getPointProperty() {
 		return getGeometricPositionGroup().list(GMLPackage.eINSTANCE.getGeodesicStringType_PointProperty());
 	}
 
@@ -201,8 +194,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveInterpolationType getInterpolation()
-	{
+	@Override
+	public CurveInterpolationType getInterpolation() {
 		return interpolation;
 	}
 
@@ -211,8 +204,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInterpolation(CurveInterpolationType newInterpolation)
-	{
+	@Override
+	public void setInterpolation(CurveInterpolationType newInterpolation) {
 		CurveInterpolationType oldInterpolation = interpolation;
 		interpolation = newInterpolation == null ? INTERPOLATION_EDEFAULT : newInterpolation;
 		boolean oldInterpolationESet = interpolationESet;
@@ -226,8 +219,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetInterpolation()
-	{
+	@Override
+	public void unsetInterpolation() {
 		CurveInterpolationType oldInterpolation = interpolation;
 		boolean oldInterpolationESet = interpolationESet;
 		interpolation = INTERPOLATION_EDEFAULT;
@@ -241,8 +234,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetInterpolation()
-	{
+	@Override
+	public boolean isSetInterpolation() {
 		return interpolationESet;
 	}
 
@@ -252,10 +245,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GEODESIC_STRING_TYPE__POS_LIST:
 				return basicSetPosList(null, msgs);
 			case GMLPackage.GEODESIC_STRING_TYPE__GEOMETRIC_POSITION_GROUP:
@@ -274,10 +265,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GEODESIC_STRING_TYPE__POS_LIST:
 				return getPosList();
 			case GMLPackage.GEODESIC_STRING_TYPE__GEOMETRIC_POSITION_GROUP:
@@ -300,10 +289,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GEODESIC_STRING_TYPE__POS_LIST:
 				setPosList((DirectPositionListType)newValue);
 				return;
@@ -331,10 +318,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEODESIC_STRING_TYPE__POS_LIST:
 				setPosList((DirectPositionListType)null);
 				return;
@@ -360,10 +345,8 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEODESIC_STRING_TYPE__POS_LIST:
 				return posList != null;
 			case GMLPackage.GEODESIC_STRING_TYPE__GEOMETRIC_POSITION_GROUP:
@@ -384,11 +367,10 @@ public class GeodesicStringTypeImpl extends AbstractCurveSegmentTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (geometricPositionGroup: ");
 		result.append(geometricPositionGroup);
 		result.append(", interpolation: ");

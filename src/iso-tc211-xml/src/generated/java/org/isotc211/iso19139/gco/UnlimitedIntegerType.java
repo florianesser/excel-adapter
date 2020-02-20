@@ -23,15 +23,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='UnlimitedInteger_Type' kind='simple'"
  * @generated
  */
-public interface UnlimitedIntegerType extends EObject
-{
+public interface UnlimitedIntegerType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(BigInteger)
@@ -55,10 +50,6 @@ public interface UnlimitedIntegerType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Is Infinite</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Infinite</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Infinite</em>' attribute.
 	 * @see #isSetIsInfinite()

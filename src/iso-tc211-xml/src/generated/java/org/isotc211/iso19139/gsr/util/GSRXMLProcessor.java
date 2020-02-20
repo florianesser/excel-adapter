@@ -18,8 +18,7 @@ import org.isotc211.iso19139.gsr.GSRPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GSRXMLProcessor extends XMLProcessor
-{
+public class GSRXMLProcessor extends XMLProcessor {
 
 	/**
 	 * Public constructor to instantiate the helper.
@@ -27,8 +26,7 @@ public class GSRXMLProcessor extends XMLProcessor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSRXMLProcessor()
-	{
+	public GSRXMLProcessor() {
 		super((EPackage.Registry.INSTANCE));
 		GSRPackage.eINSTANCE.eClass();
 	}
@@ -40,10 +38,8 @@ public class GSRXMLProcessor extends XMLProcessor
 	 * @generated
 	 */
 	@Override
-	protected Map<String, Resource.Factory> getRegistrations()
-	{
-		if (registrations == null)
-		{
+	protected Map<String, Resource.Factory> getRegistrations() {
+		if (registrations == null) {
 			super.getRegistrations();
 			registrations.put(XML_EXTENSION, new GSRResourceFactoryImpl());
 			registrations.put(STAR_EXTENSION, new GSRResourceFactoryImpl());

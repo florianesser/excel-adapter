@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='direction_._type'"
  * @generated
  */
-public enum DirectionType implements Enumerator
-{
+public enum DirectionType implements Enumerator {
 	/**
 	 * The '<em><b>N</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -63,11 +62,11 @@ public enum DirectionType implements Enumerator
 	 * The '<em><b></b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #__VALUE
+	 * @see #___VALUE
 	 * @generated
 	 * @ordered
 	 */
-	_(4, "_", "+"),
+	__(4, "__", "+"),
 
 	/**
 	 * The '<em><b>1</b></em>' literal object.
@@ -82,10 +81,6 @@ public enum DirectionType implements Enumerator
 	/**
 	 * The '<em><b>N</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>N</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #N
 	 * @model
@@ -97,10 +92,6 @@ public enum DirectionType implements Enumerator
 	/**
 	 * The '<em><b>E</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>E</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #E
 	 * @model
@@ -112,10 +103,6 @@ public enum DirectionType implements Enumerator
 	/**
 	 * The '<em><b>S</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>S</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #S
 	 * @model
@@ -127,10 +114,6 @@ public enum DirectionType implements Enumerator
 	/**
 	 * The '<em><b>W</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>W</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #W
 	 * @model
@@ -142,25 +125,17 @@ public enum DirectionType implements Enumerator
 	/**
 	 * The '<em><b></b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b></b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #_
+	 * @see #__
 	 * @model literal="+"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int __VALUE = 4;
+	public static final int ___VALUE = 4;
 
 	/**
 	 * The '<em><b>1</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>1</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #_1
 	 * @model literal="-"
@@ -176,13 +151,12 @@ public enum DirectionType implements Enumerator
 	 * @generated
 	 */
 	private static final DirectionType[] VALUES_ARRAY =
-		new DirectionType[]
-		{
+		new DirectionType[] {
 			N,
 			E,
 			S,
 			W,
-			_,
+			__,
 			_1,
 		};
 
@@ -202,13 +176,10 @@ public enum DirectionType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static DirectionType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static DirectionType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			DirectionType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -223,13 +194,10 @@ public enum DirectionType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static DirectionType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static DirectionType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			DirectionType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -244,15 +212,13 @@ public enum DirectionType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static DirectionType get(int value)
-	{
-		switch (value)
-		{
+	public static DirectionType get(int value) {
+		switch (value) {
 			case N_VALUE: return N;
 			case E_VALUE: return E;
 			case S_VALUE: return S;
 			case W_VALUE: return W;
-			case __VALUE: return _;
+			case ___VALUE: return __;
 			case _1_VALUE: return _1;
 		}
 		return null;
@@ -285,8 +251,7 @@ public enum DirectionType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private DirectionType(int value, String name, String literal)
-	{
+	private DirectionType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -297,8 +262,8 @@ public enum DirectionType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -307,8 +272,8 @@ public enum DirectionType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -317,8 +282,8 @@ public enum DirectionType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -329,8 +294,7 @@ public enum DirectionType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

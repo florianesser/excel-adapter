@@ -13,8 +13,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
  * @see org.isotc211.iso19139.gts.util.GTSResourceFactoryImpl
  * @generated
  */
-public class GTSResourceImpl extends XMLResourceImpl
-{
+public class GTSResourceImpl extends XMLResourceImpl {
 	/**
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->
@@ -22,8 +21,7 @@ public class GTSResourceImpl extends XMLResourceImpl
 	 * @param uri the URI of the new resource.
 	 * @generated
 	 */
-	public GTSResourceImpl(URI uri)
-	{
+	public GTSResourceImpl(URI uri) {
 		super(uri);
 	}
 

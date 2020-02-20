@@ -47,8 +47,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Container implements CoordinateOperationAccuracyType
-{
+public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Container implements CoordinateOperationAccuracyType {
 	/**
 	 * The cached value of the '{@link #getAbstractDQPositionalAccuracyGroup() <em>Abstract DQ Positional Accuracy Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -271,8 +270,7 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CoordinateOperationAccuracyTypeImpl()
-	{
+	protected CoordinateOperationAccuracyTypeImpl() {
 		super();
 	}
 
@@ -282,8 +280,7 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCoordinateOperationAccuracyType();
 	}
 
@@ -292,10 +289,9 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractDQPositionalAccuracyGroup()
-	{
-		if (abstractDQPositionalAccuracyGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractDQPositionalAccuracyGroup() {
+		if (abstractDQPositionalAccuracyGroup == null) {
 			abstractDQPositionalAccuracyGroup = new BasicFeatureMap(this, GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE__ABSTRACT_DQ_POSITIONAL_ACCURACY_GROUP);
 		}
 		return abstractDQPositionalAccuracyGroup;
@@ -306,8 +302,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractDQPositionalAccuracyType getAbstractDQPositionalAccuracy()
-	{
+	@Override
+	public AbstractDQPositionalAccuracyType getAbstractDQPositionalAccuracy() {
 		return (AbstractDQPositionalAccuracyType)getAbstractDQPositionalAccuracyGroup().get(GMLPackage.eINSTANCE.getCoordinateOperationAccuracyType_AbstractDQPositionalAccuracy(), true);
 	}
 
@@ -316,8 +312,7 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractDQPositionalAccuracy(AbstractDQPositionalAccuracyType newAbstractDQPositionalAccuracy, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractDQPositionalAccuracy(AbstractDQPositionalAccuracyType newAbstractDQPositionalAccuracy, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractDQPositionalAccuracyGroup()).basicAdd(GMLPackage.eINSTANCE.getCoordinateOperationAccuracyType_AbstractDQPositionalAccuracy(), newAbstractDQPositionalAccuracy, msgs);
 	}
 
@@ -326,8 +321,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -336,8 +331,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -351,8 +346,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -366,8 +361,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -376,8 +371,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -386,8 +381,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -399,8 +394,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -409,8 +404,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -422,8 +417,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -432,8 +427,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -445,8 +440,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -455,8 +450,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -468,8 +463,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -478,8 +473,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -491,8 +486,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -501,8 +496,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -516,8 +511,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -531,8 +526,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -541,8 +536,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -551,8 +546,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -564,8 +559,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -574,8 +569,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -589,8 +584,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -604,8 +599,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -615,10 +610,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE__ABSTRACT_DQ_POSITIONAL_ACCURACY_GROUP:
 				return ((InternalEList<?>)getAbstractDQPositionalAccuracyGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE__ABSTRACT_DQ_POSITIONAL_ACCURACY:
@@ -633,10 +626,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE__ABSTRACT_DQ_POSITIONAL_ACCURACY_GROUP:
 				if (coreType) return getAbstractDQPositionalAccuracyGroup();
 				return ((FeatureMap.Internal)getAbstractDQPositionalAccuracyGroup()).getWrapper();
@@ -670,10 +661,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE__ABSTRACT_DQ_POSITIONAL_ACCURACY_GROUP:
 				((FeatureMap.Internal)getAbstractDQPositionalAccuracyGroup()).set(newValue);
 				return;
@@ -714,10 +703,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE__ABSTRACT_DQ_POSITIONAL_ACCURACY_GROUP:
 				getAbstractDQPositionalAccuracyGroup().clear();
 				return;
@@ -758,10 +745,8 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE__ABSTRACT_DQ_POSITIONAL_ACCURACY_GROUP:
 				return abstractDQPositionalAccuracyGroup != null && !abstractDQPositionalAccuracyGroup.isEmpty();
 			case GMLPackage.COORDINATE_OPERATION_ACCURACY_TYPE__ABSTRACT_DQ_POSITIONAL_ACCURACY:
@@ -794,11 +779,10 @@ public class CoordinateOperationAccuracyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractDQPositionalAccuracyGroup: ");
 		result.append(abstractDQPositionalAccuracyGroup);
 		result.append(", actuate: ");

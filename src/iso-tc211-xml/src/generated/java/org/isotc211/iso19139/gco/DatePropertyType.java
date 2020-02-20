@@ -24,15 +24,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='Date_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface DatePropertyType extends EObject
-{
+public interface DatePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date</em>' attribute.
 	 * @see #isSetDate()
@@ -83,10 +78,6 @@ public interface DatePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Date Time</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date Time</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date Time</em>' attribute.
 	 * @see #setDateTime(XMLGregorianCalendar)
@@ -110,10 +101,6 @@ public interface DatePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

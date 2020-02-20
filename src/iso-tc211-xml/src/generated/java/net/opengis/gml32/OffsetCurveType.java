@@ -21,15 +21,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='OffsetCurveType' kind='elementOnly'"
  * @generated
  */
-public interface OffsetCurveType extends AbstractCurveSegmentType
-{
+public interface OffsetCurveType extends AbstractCurveSegmentType {
 	/**
 	 * Returns the value of the '<em><b>Offset Base</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Offset Base</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Offset Base</em>' containment reference.
 	 * @see #setOffsetBase(CurvePropertyType)
@@ -53,10 +48,6 @@ public interface OffsetCurveType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Distance</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distance</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distance</em>' containment reference.
 	 * @see #setDistance(LengthType)
@@ -80,10 +71,6 @@ public interface OffsetCurveType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Ref Direction</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ref Direction</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ref Direction</em>' containment reference.
 	 * @see #setRefDirection(VectorType)

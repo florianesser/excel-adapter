@@ -33,8 +33,7 @@ import org.isotc211.iso19139.gmd.PTFreeTextType;
  *
  * @generated
  */
-public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFreeTextType
-{
+public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFreeTextType {
 	/**
 	 * The cached value of the '{@link #getTextGroup() <em>Text Group</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -50,8 +49,7 @@ public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFree
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PTFreeTextTypeImpl()
-	{
+	protected PTFreeTextTypeImpl() {
 		super();
 	}
 
@@ -61,8 +59,7 @@ public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFree
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getPTFreeTextType();
 	}
 
@@ -71,10 +68,9 @@ public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFree
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LocalisedCharacterStringPropertyType> getTextGroup()
-	{
-		if (textGroup == null)
-		{
+	@Override
+	public EList<LocalisedCharacterStringPropertyType> getTextGroup() {
+		if (textGroup == null) {
 			textGroup = new EObjectContainmentEList<LocalisedCharacterStringPropertyType>(LocalisedCharacterStringPropertyType.class, this, GMDPackage.PT_FREE_TEXT_TYPE__TEXT_GROUP);
 		}
 		return textGroup;
@@ -86,10 +82,8 @@ public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFree
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_TYPE__TEXT_GROUP:
 				return ((InternalEList<?>)getTextGroup()).basicRemove(otherEnd, msgs);
 		}
@@ -102,10 +96,8 @@ public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFree
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_TYPE__TEXT_GROUP:
 				return getTextGroup();
 		}
@@ -119,10 +111,8 @@ public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFree
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_TYPE__TEXT_GROUP:
 				getTextGroup().clear();
 				getTextGroup().addAll((Collection<? extends LocalisedCharacterStringPropertyType>)newValue);
@@ -137,10 +127,8 @@ public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFree
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_TYPE__TEXT_GROUP:
 				getTextGroup().clear();
 				return;
@@ -154,10 +142,8 @@ public class PTFreeTextTypeImpl extends AbstractObjectTypeImpl implements PTFree
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_TYPE__TEXT_GROUP:
 				return textGroup != null && !textGroup.isEmpty();
 		}

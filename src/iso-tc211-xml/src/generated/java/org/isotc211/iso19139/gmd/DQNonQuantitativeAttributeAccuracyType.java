@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_NonQuantitativeAttributeAccuracy_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQNonQuantitativeAttributeAccuracyType extends AbstractDQThematicAccuracyType
-{
+public interface DQNonQuantitativeAttributeAccuracyType extends AbstractDQThematicAccuracyType {
 } // DQNonQuantitativeAttributeAccuracyType

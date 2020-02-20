@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements MeasureListType
-{
+public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements MeasureListType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MeasureListTypeImpl()
-	{
+	protected MeasureListTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMeasureListType();
 	}
 
@@ -96,8 +93,8 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Double> getValue()
-	{
+	@Override
+	public List<Double> getValue() {
 		return value;
 	}
 
@@ -106,8 +103,8 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(List<Double> newValue)
-	{
+	@Override
+	public void setValue(List<Double> newValue) {
 		List<Double> oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -119,8 +116,8 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUom()
-	{
+	@Override
+	public String getUom() {
 		return uom;
 	}
 
@@ -129,8 +126,8 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUom(String newUom)
-	{
+	@Override
+	public void setUom(String newUom) {
 		String oldUom = uom;
 		uom = newUom;
 		if (eNotificationRequired())
@@ -143,10 +140,8 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.MEASURE_LIST_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.MEASURE_LIST_TYPE__UOM:
@@ -162,10 +157,8 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.MEASURE_LIST_TYPE__VALUE:
 				setValue((List<Double>)newValue);
 				return;
@@ -182,10 +175,8 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MEASURE_LIST_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -202,10 +193,8 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MEASURE_LIST_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GMLPackage.MEASURE_LIST_TYPE__UOM:
@@ -220,11 +209,10 @@ public class MeasureListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", uom: ");

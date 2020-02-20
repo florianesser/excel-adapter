@@ -25,8 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueArrayType
-{
+public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueArrayType {
 	/**
 	 * The default value of the '{@link #getCodeSpace() <em>Code Space</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -72,8 +71,7 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ValueArrayTypeImpl()
-	{
+	protected ValueArrayTypeImpl() {
 		super();
 	}
 
@@ -83,8 +81,7 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getValueArrayType();
 	}
 
@@ -93,8 +90,8 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCodeSpace()
-	{
+	@Override
+	public String getCodeSpace() {
 		return codeSpace;
 	}
 
@@ -103,8 +100,8 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCodeSpace(String newCodeSpace)
-	{
+	@Override
+	public void setCodeSpace(String newCodeSpace) {
 		String oldCodeSpace = codeSpace;
 		codeSpace = newCodeSpace;
 		if (eNotificationRequired())
@@ -116,8 +113,8 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUom()
-	{
+	@Override
+	public String getUom() {
 		return uom;
 	}
 
@@ -126,8 +123,8 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUom(String newUom)
-	{
+	@Override
+	public void setUom(String newUom) {
 		String oldUom = uom;
 		uom = newUom;
 		if (eNotificationRequired())
@@ -140,10 +137,8 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.VALUE_ARRAY_TYPE__CODE_SPACE:
 				return getCodeSpace();
 			case GMLPackage.VALUE_ARRAY_TYPE__UOM:
@@ -158,10 +153,8 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.VALUE_ARRAY_TYPE__CODE_SPACE:
 				setCodeSpace((String)newValue);
 				return;
@@ -178,10 +171,8 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.VALUE_ARRAY_TYPE__CODE_SPACE:
 				setCodeSpace(CODE_SPACE_EDEFAULT);
 				return;
@@ -198,10 +189,8 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.VALUE_ARRAY_TYPE__CODE_SPACE:
 				return CODE_SPACE_EDEFAULT == null ? codeSpace != null : !CODE_SPACE_EDEFAULT.equals(codeSpace);
 			case GMLPackage.VALUE_ARRAY_TYPE__UOM:
@@ -216,11 +205,10 @@ public class ValueArrayTypeImpl extends CompositeValueTypeImpl implements ValueA
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (codeSpace: ");
 		result.append(codeSpace);
 		result.append(", uom: ");

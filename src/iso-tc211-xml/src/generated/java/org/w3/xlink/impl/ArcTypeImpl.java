@@ -45,8 +45,7 @@ import org.w3.xlink.XLinkPackage;
  *
  * @generated
  */
-public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
-{
+public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType {
 	/**
 	 * The cached value of the '{@link #getTitleGroup() <em>Title Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -229,8 +228,7 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArcTypeImpl()
-	{
+	protected ArcTypeImpl() {
 		super();
 	}
 
@@ -240,8 +238,7 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return XLinkPackage.Literals.ARC_TYPE;
 	}
 
@@ -250,10 +247,9 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getTitleGroup()
-	{
-		if (titleGroup == null)
-		{
+	@Override
+	public FeatureMap getTitleGroup() {
+		if (titleGroup == null) {
 			titleGroup = new BasicFeatureMap(this, XLinkPackage.ARC_TYPE__TITLE_GROUP);
 		}
 		return titleGroup;
@@ -264,8 +260,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TitleEltType> getTitle()
-	{
+	@Override
+	public EList<TitleEltType> getTitle() {
 		return getTitleGroup().list(XLinkPackage.Literals.ARC_TYPE__TITLE);
 	}
 
@@ -274,8 +270,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -284,8 +280,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -299,8 +295,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -314,8 +310,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -324,8 +320,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -334,8 +330,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -347,8 +343,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getFrom()
-	{
+	@Override
+	public String getFrom() {
 		return from;
 	}
 
@@ -357,8 +353,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFrom(String newFrom)
-	{
+	@Override
+	public void setFrom(String newFrom) {
 		String oldFrom = from;
 		from = newFrom;
 		if (eNotificationRequired())
@@ -370,8 +366,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -380,8 +376,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -395,8 +391,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -410,8 +406,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -420,8 +416,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle1()
-	{
+	@Override
+	public String getTitle1() {
 		return title1;
 	}
 
@@ -430,8 +426,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle1(String newTitle1)
-	{
+	@Override
+	public void setTitle1(String newTitle1) {
 		String oldTitle1 = title1;
 		title1 = newTitle1;
 		if (eNotificationRequired())
@@ -443,8 +439,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTo()
-	{
+	@Override
+	public String getTo() {
 		return to;
 	}
 
@@ -453,8 +449,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTo(String newTo)
-	{
+	@Override
+	public void setTo(String newTo) {
 		String oldTo = to;
 		to = newTo;
 		if (eNotificationRequired())
@@ -466,8 +462,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -476,8 +472,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -491,8 +487,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -506,8 +502,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -517,10 +513,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case XLinkPackage.ARC_TYPE__TITLE_GROUP:
 				return ((InternalEList<?>)getTitleGroup()).basicRemove(otherEnd, msgs);
 			case XLinkPackage.ARC_TYPE__TITLE:
@@ -535,10 +529,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case XLinkPackage.ARC_TYPE__TITLE_GROUP:
 				if (coreType) return getTitleGroup();
 				return ((FeatureMap.Internal)getTitleGroup()).getWrapper();
@@ -568,10 +560,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case XLinkPackage.ARC_TYPE__TITLE_GROUP:
 				((FeatureMap.Internal)getTitleGroup()).set(newValue);
 				return;
@@ -606,10 +596,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.ARC_TYPE__TITLE_GROUP:
 				getTitleGroup().clear();
 				return;
@@ -644,10 +632,8 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case XLinkPackage.ARC_TYPE__TITLE_GROUP:
 				return titleGroup != null && !titleGroup.isEmpty();
 			case XLinkPackage.ARC_TYPE__TITLE:
@@ -676,11 +662,10 @@ public class ArcTypeImpl extends MinimalEObjectImpl.Container implements ArcType
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (titleGroup: ");
 		result.append(titleGroup);
 		result.append(", actuate: ");

@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQTopologicalConsistencyTypeImpl extends AbstractDQLogicalConsistencyTypeImpl implements DQTopologicalConsistencyType
-{
+public class DQTopologicalConsistencyTypeImpl extends AbstractDQLogicalConsistencyTypeImpl implements DQTopologicalConsistencyType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQTopologicalConsistencyTypeImpl()
-	{
+	protected DQTopologicalConsistencyTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQTopologicalConsistencyTypeImpl extends AbstractDQLogicalConsisten
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQTopologicalConsistencyType();
 	}
 

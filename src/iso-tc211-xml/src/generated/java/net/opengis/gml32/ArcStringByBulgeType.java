@@ -33,16 +33,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='ArcStringByBulgeType' kind='elementOnly'"
  * @generated
  */
-public interface ArcStringByBulgeType extends AbstractCurveSegmentType
-{
+public interface ArcStringByBulgeType extends AbstractCurveSegmentType {
 	/**
 	 * Returns the value of the '<em><b>Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Group</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getArcStringByBulgeType_Group()
@@ -56,10 +51,6 @@ public interface ArcStringByBulgeType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Pos</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.DirectPositionType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getArcStringByBulgeType_Pos()
@@ -89,10 +80,6 @@ public interface ArcStringByBulgeType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Point Rep</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.PointPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Point Rep</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Point Rep</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getArcStringByBulgeType_PointRep()
@@ -105,10 +92,6 @@ public interface ArcStringByBulgeType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Pos List</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos List</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos List</em>' containment reference.
 	 * @see #setPosList(DirectPositionListType)
@@ -132,10 +115,6 @@ public interface ArcStringByBulgeType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Coordinates</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Coordinates</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coordinates</em>' containment reference.
 	 * @see #setCoordinates(CoordinatesType)
@@ -160,10 +139,6 @@ public interface ArcStringByBulgeType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Bulge</b></em>' attribute list.
 	 * The list contents are of type {@link java.lang.Double}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Bulge</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Bulge</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getArcStringByBulgeType_Bulge()
@@ -177,10 +152,6 @@ public interface ArcStringByBulgeType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Normal</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.VectorType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Normal</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Normal</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getArcStringByBulgeType_Normal()
@@ -195,10 +166,6 @@ public interface ArcStringByBulgeType extends AbstractCurveSegmentType
 	 * The default value is <code>"circularArc2PointWithBulge"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.CurveInterpolationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interpolation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Interpolation</em>' attribute.
 	 * @see net.opengis.gml32.CurveInterpolationType
@@ -251,10 +218,6 @@ public interface ArcStringByBulgeType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Num Arc</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Num Arc</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Num Arc</em>' attribute.
 	 * @see #setNumArc(BigInteger)

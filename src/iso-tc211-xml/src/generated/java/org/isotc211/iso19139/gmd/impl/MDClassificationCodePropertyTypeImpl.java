@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDClassificationCodePropertyType;
  *
  * @generated
  */
-public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDClassificationCodePropertyType
-{
+public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDClassificationCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDClassificationCode() <em>MD Classification Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDClassificationCodePropertyTypeImpl()
-	{
+	protected MDClassificationCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDClassificationCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDClassificationCode()
-	{
+	@Override
+	public CodeListValueType getMDClassificationCode() {
 		return mDClassificationCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDClassificationCode(CodeListValueType newMDClassificationCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDClassificationCode(CodeListValueType newMDClassificationCode, NotificationChain msgs) {
 		CodeListValueType oldMDClassificationCode = mDClassificationCode;
 		mDClassificationCode = newMDClassificationCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE__MD_CLASSIFICATION_CODE, oldMDClassificationCode, newMDClassificationCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDClassificationCode(CodeListValueType newMDClassificationCode)
-	{
-		if (newMDClassificationCode != mDClassificationCode)
-		{
+	@Override
+	public void setMDClassificationCode(CodeListValueType newMDClassificationCode) {
+		if (newMDClassificationCode != mDClassificationCode) {
 			NotificationChain msgs = null;
 			if (mDClassificationCode != null)
 				msgs = ((InternalEObject)mDClassificationCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE__MD_CLASSIFICATION_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE__MD_CLASSIFICATION_CODE:
 				return basicSetMDClassificationCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE__MD_CLASSIFICATION_CODE:
 				return getMDClassificationCode();
 			case GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE__MD_CLASSIFICATION_CODE:
 				setMDClassificationCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE__MD_CLASSIFICATION_CODE:
 				setMDClassificationCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE__MD_CLASSIFICATION_CODE:
 				return mDClassificationCode != null;
 			case GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDClassificationCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

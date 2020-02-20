@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDMediumFormatCodePropertyType;
  *
  * @generated
  */
-public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDMediumFormatCodePropertyType
-{
+public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDMediumFormatCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDMediumFormatCode() <em>MD Medium Format Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDMediumFormatCodePropertyTypeImpl()
-	{
+	protected MDMediumFormatCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDMediumFormatCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDMediumFormatCode()
-	{
+	@Override
+	public CodeListValueType getMDMediumFormatCode() {
 		return mDMediumFormatCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDMediumFormatCode(CodeListValueType newMDMediumFormatCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDMediumFormatCode(CodeListValueType newMDMediumFormatCode, NotificationChain msgs) {
 		CodeListValueType oldMDMediumFormatCode = mDMediumFormatCode;
 		mDMediumFormatCode = newMDMediumFormatCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE__MD_MEDIUM_FORMAT_CODE, oldMDMediumFormatCode, newMDMediumFormatCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDMediumFormatCode(CodeListValueType newMDMediumFormatCode)
-	{
-		if (newMDMediumFormatCode != mDMediumFormatCode)
-		{
+	@Override
+	public void setMDMediumFormatCode(CodeListValueType newMDMediumFormatCode) {
+		if (newMDMediumFormatCode != mDMediumFormatCode) {
 			NotificationChain msgs = null;
 			if (mDMediumFormatCode != null)
 				msgs = ((InternalEObject)mDMediumFormatCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE__MD_MEDIUM_FORMAT_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE__MD_MEDIUM_FORMAT_CODE:
 				return basicSetMDMediumFormatCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE__MD_MEDIUM_FORMAT_CODE:
 				return getMDMediumFormatCode();
 			case GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE__MD_MEDIUM_FORMAT_CODE:
 				setMDMediumFormatCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE__MD_MEDIUM_FORMAT_CODE:
 				setMDMediumFormatCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE__MD_MEDIUM_FORMAT_CODE:
 				return mDMediumFormatCode != null;
 			case GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDMediumFormatCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

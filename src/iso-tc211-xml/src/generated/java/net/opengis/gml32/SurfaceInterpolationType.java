@@ -20,8 +20,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='SurfaceInterpolationType'"
  * @generated
  */
-public enum SurfaceInterpolationType implements Enumerator
-{
+public enum SurfaceInterpolationType implements Enumerator {
 	/**
 	 * The '<em><b>None</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -125,10 +124,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>None</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>None</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NONE
 	 * @model name="none"
@@ -140,10 +135,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Planar</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Planar</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #PLANAR
 	 * @model name="planar"
@@ -155,10 +146,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Spherical</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Spherical</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SPHERICAL
 	 * @model name="spherical"
@@ -170,10 +157,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Elliptical</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Elliptical</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ELLIPTICAL
 	 * @model name="elliptical"
@@ -185,10 +168,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Conic</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Conic</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CONIC
 	 * @model name="conic"
@@ -200,10 +179,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Tin</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Tin</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #TIN
 	 * @model name="tin"
@@ -215,10 +190,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Parametric Curve</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Parametric Curve</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #PARAMETRIC_CURVE
 	 * @model name="parametricCurve"
@@ -230,10 +201,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Polynomial Spline</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Polynomial Spline</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #POLYNOMIAL_SPLINE
 	 * @model name="polynomialSpline"
@@ -245,10 +212,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Rational Spline</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Rational Spline</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #RATIONAL_SPLINE
 	 * @model name="rationalSpline"
@@ -260,10 +223,6 @@ public enum SurfaceInterpolationType implements Enumerator
 	/**
 	 * The '<em><b>Triangulated Spline</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Triangulated Spline</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #TRIANGULATED_SPLINE
 	 * @model name="triangulatedSpline"
@@ -279,8 +238,7 @@ public enum SurfaceInterpolationType implements Enumerator
 	 * @generated
 	 */
 	private static final SurfaceInterpolationType[] VALUES_ARRAY =
-		new SurfaceInterpolationType[]
-		{
+		new SurfaceInterpolationType[] {
 			NONE,
 			PLANAR,
 			SPHERICAL,
@@ -309,13 +267,10 @@ public enum SurfaceInterpolationType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SurfaceInterpolationType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static SurfaceInterpolationType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			SurfaceInterpolationType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -330,13 +285,10 @@ public enum SurfaceInterpolationType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SurfaceInterpolationType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static SurfaceInterpolationType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			SurfaceInterpolationType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -351,10 +303,8 @@ public enum SurfaceInterpolationType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SurfaceInterpolationType get(int value)
-	{
-		switch (value)
-		{
+	public static SurfaceInterpolationType get(int value) {
+		switch (value) {
 			case NONE_VALUE: return NONE;
 			case PLANAR_VALUE: return PLANAR;
 			case SPHERICAL_VALUE: return SPHERICAL;
@@ -396,8 +346,7 @@ public enum SurfaceInterpolationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private SurfaceInterpolationType(int value, String name, String literal)
-	{
+	private SurfaceInterpolationType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -408,8 +357,8 @@ public enum SurfaceInterpolationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -418,8 +367,8 @@ public enum SurfaceInterpolationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -428,8 +377,8 @@ public enum SurfaceInterpolationType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -440,8 +389,7 @@ public enum SurfaceInterpolationType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

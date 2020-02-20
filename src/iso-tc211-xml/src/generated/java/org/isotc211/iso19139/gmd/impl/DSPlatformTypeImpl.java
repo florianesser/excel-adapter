@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSPlatformTypeImpl extends DSSeriesTypeImpl implements DSPlatformType
-{
+public class DSPlatformTypeImpl extends DSSeriesTypeImpl implements DSPlatformType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSPlatformTypeImpl()
-	{
+	protected DSPlatformTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DSPlatformTypeImpl extends DSSeriesTypeImpl implements DSPlatformTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSPlatformType();
 	}
 

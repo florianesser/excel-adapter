@@ -20,17 +20,12 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='SphereType' kind='elementOnly'"
  * @generated
  */
-public interface SphereType extends AbstractGriddedSurfaceType
-{
+public interface SphereType extends AbstractGriddedSurfaceType {
 	/**
 	 * Returns the value of the '<em><b>Horizontal Curve Type</b></em>' attribute.
 	 * The default value is <code>"circularArc3Points"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.CurveInterpolationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Horizontal Curve Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Horizontal Curve Type</em>' attribute.
 	 * @see net.opengis.gml32.CurveInterpolationType
@@ -85,10 +80,6 @@ public interface SphereType extends AbstractGriddedSurfaceType
 	 * The default value is <code>"circularArc3Points"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.CurveInterpolationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vertical Curve Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vertical Curve Type</em>' attribute.
 	 * @see net.opengis.gml32.CurveInterpolationType

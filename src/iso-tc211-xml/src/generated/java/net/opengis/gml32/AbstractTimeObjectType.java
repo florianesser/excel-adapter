@@ -14,6 +14,5 @@ package net.opengis.gml32;
  *        extendedMetaData="name='AbstractTimeObjectType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractTimeObjectType extends AbstractGMLType
-{
+public interface AbstractTimeObjectType extends AbstractGMLType {
 } // AbstractTimeObjectType

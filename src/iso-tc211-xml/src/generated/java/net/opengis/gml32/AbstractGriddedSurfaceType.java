@@ -23,15 +23,10 @@ import java.math.BigInteger;
  *        extendedMetaData="name='AbstractGriddedSurfaceType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractGriddedSurfaceType extends AbstractParametricCurveSurfaceType
-{
+public interface AbstractGriddedSurfaceType extends AbstractParametricCurveSurfaceType {
 	/**
 	 * Returns the value of the '<em><b>Rows</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rows</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Rows</em>' containment reference.
 	 * @see #setRows(RowsType)
@@ -55,10 +50,6 @@ public interface AbstractGriddedSurfaceType extends AbstractParametricCurveSurfa
 	/**
 	 * Returns the value of the '<em><b>Columns</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Columns</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Columns</em>' attribute.
 	 * @see #setColumns(BigInteger)
@@ -82,10 +73,6 @@ public interface AbstractGriddedSurfaceType extends AbstractParametricCurveSurfa
 	/**
 	 * Returns the value of the '<em><b>Rows1</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rows1</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Rows1</em>' attribute.
 	 * @see #setRows1(BigInteger)

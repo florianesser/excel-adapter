@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeImpl implements TimeOrdinalReferenceSystemType
-{
+public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeImpl implements TimeOrdinalReferenceSystemType {
 	/**
 	 * The cached value of the '{@link #getComponent() <em>Component</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeOrdinalReferenceSystemTypeImpl()
-	{
+	protected TimeOrdinalReferenceSystemTypeImpl() {
 		super();
 	}
 
@@ -59,8 +57,7 @@ public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeI
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeOrdinalReferenceSystemType();
 	}
 
@@ -69,10 +66,9 @@ public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TimeOrdinalEraPropertyType> getComponent()
-	{
-		if (component == null)
-		{
+	@Override
+	public EList<TimeOrdinalEraPropertyType> getComponent() {
+		if (component == null) {
 			component = new EObjectContainmentEList<TimeOrdinalEraPropertyType>(TimeOrdinalEraPropertyType.class, this, GMLPackage.TIME_ORDINAL_REFERENCE_SYSTEM_TYPE__COMPONENT);
 		}
 		return component;
@@ -84,10 +80,8 @@ public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeI
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_REFERENCE_SYSTEM_TYPE__COMPONENT:
 				return ((InternalEList<?>)getComponent()).basicRemove(otherEnd, msgs);
 		}
@@ -100,10 +94,8 @@ public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeI
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_REFERENCE_SYSTEM_TYPE__COMPONENT:
 				return getComponent();
 		}
@@ -117,10 +109,8 @@ public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeI
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_REFERENCE_SYSTEM_TYPE__COMPONENT:
 				getComponent().clear();
 				getComponent().addAll((Collection<? extends TimeOrdinalEraPropertyType>)newValue);
@@ -135,10 +125,8 @@ public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeI
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_REFERENCE_SYSTEM_TYPE__COMPONENT:
 				getComponent().clear();
 				return;
@@ -152,10 +140,8 @@ public class TimeOrdinalReferenceSystemTypeImpl extends TimeReferenceSystemTypeI
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_REFERENCE_SYSTEM_TYPE__COMPONENT:
 				return component != null && !component.isEmpty();
 		}

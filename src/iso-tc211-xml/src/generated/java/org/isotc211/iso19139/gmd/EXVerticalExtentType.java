@@ -29,15 +29,10 @@ import org.isotc211.iso19139.gsr.SCCRSPropertyType;
  * @model extendedMetaData="name='EX_VerticalExtent_Type' kind='elementOnly'"
  * @generated
  */
-public interface EXVerticalExtentType extends AbstractObjectType
-{
+public interface EXVerticalExtentType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Minimum Value</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Minimum Value</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Minimum Value</em>' containment reference.
 	 * @see #setMinimumValue(RealPropertyType)
@@ -61,10 +56,6 @@ public interface EXVerticalExtentType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Maximum Value</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Maximum Value</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maximum Value</em>' containment reference.
 	 * @see #setMaximumValue(RealPropertyType)
@@ -88,10 +79,6 @@ public interface EXVerticalExtentType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Vertical CRS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vertical CRS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vertical CRS</em>' containment reference.
 	 * @see #setVerticalCRS(SCCRSPropertyType)

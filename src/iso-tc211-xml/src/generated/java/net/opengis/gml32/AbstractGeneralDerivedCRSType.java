@@ -20,8 +20,7 @@ package net.opengis.gml32;
  *        extendedMetaData="name='AbstractGeneralDerivedCRSType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractGeneralDerivedCRSType extends AbstractCRSType
-{
+public interface AbstractGeneralDerivedCRSType extends AbstractCRSType {
 	/**
 	 * Returns the value of the '<em><b>Conversion</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

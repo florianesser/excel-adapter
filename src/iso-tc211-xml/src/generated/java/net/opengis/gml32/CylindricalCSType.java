@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='CylindricalCSType' kind='elementOnly'"
  * @generated
  */
-public interface CylindricalCSType extends AbstractCoordinateSystemType
-{
+public interface CylindricalCSType extends AbstractCoordinateSystemType {
 } // CylindricalCSType

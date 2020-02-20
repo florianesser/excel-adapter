@@ -19,26 +19,21 @@ import org.isotc211.iso19139.gmd.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
-{
+public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static GMDFactory init()
-	{
-		try
-		{
+	public static GMDFactory init() {
+		try {
 			GMDFactory theGMDFactory = (GMDFactory)EPackage.Registry.INSTANCE.getEFactory(GMDPackage.eNS_URI);
-			if (theGMDFactory != null)
-			{
+			if (theGMDFactory != null) {
 				return theGMDFactory;
 			}
 		}
-		catch (Exception exception)
-		{
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new GMDFactoryImpl();
@@ -50,8 +45,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMDFactoryImpl()
-	{
+	public GMDFactoryImpl() {
 		super();
 	}
 
@@ -61,10 +55,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass)
-	{
-		switch (eClass.getClassifierID())
-		{
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
 			case GMDPackage.CI_ADDRESS_PROPERTY_TYPE: return createCIAddressPropertyType();
 			case GMDPackage.CI_ADDRESS_TYPE: return createCIAddressType();
 			case GMDPackage.CI_CITATION_PROPERTY_TYPE: return createCICitationPropertyType();
@@ -297,10 +289,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * @generated
 	 */
 	@Override
-	public Object createFromString(EDataType eDataType, String initialValue)
-	{
-		switch (eDataType.getClassifierID())
-		{
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
 			case GMDPackage.MD_OBLIGATION_CODE_TYPE:
 				return createMDObligationCodeTypeFromString(eDataType, initialValue);
 			case GMDPackage.MD_PIXEL_ORIENTATION_CODE_TYPE:
@@ -324,10 +314,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * @generated
 	 */
 	@Override
-	public String convertToString(EDataType eDataType, Object instanceValue)
-	{
-		switch (eDataType.getClassifierID())
-		{
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
 			case GMDPackage.MD_OBLIGATION_CODE_TYPE:
 				return convertMDObligationCodeTypeToString(eDataType, instanceValue);
 			case GMDPackage.MD_PIXEL_ORIENTATION_CODE_TYPE:
@@ -350,8 +338,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIAddressPropertyType createCIAddressPropertyType()
-	{
+	@Override
+	public CIAddressPropertyType createCIAddressPropertyType() {
 		CIAddressPropertyTypeImpl ciAddressPropertyType = new CIAddressPropertyTypeImpl();
 		return ciAddressPropertyType;
 	}
@@ -361,8 +349,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIAddressType createCIAddressType()
-	{
+	@Override
+	public CIAddressType createCIAddressType() {
 		CIAddressTypeImpl ciAddressType = new CIAddressTypeImpl();
 		return ciAddressType;
 	}
@@ -372,8 +360,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationPropertyType createCICitationPropertyType()
-	{
+	@Override
+	public CICitationPropertyType createCICitationPropertyType() {
 		CICitationPropertyTypeImpl ciCitationPropertyType = new CICitationPropertyTypeImpl();
 		return ciCitationPropertyType;
 	}
@@ -383,8 +371,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationType createCICitationType()
-	{
+	@Override
+	public CICitationType createCICitationType() {
 		CICitationTypeImpl ciCitationType = new CICitationTypeImpl();
 		return ciCitationType;
 	}
@@ -394,8 +382,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIContactPropertyType createCIContactPropertyType()
-	{
+	@Override
+	public CIContactPropertyType createCIContactPropertyType() {
 		CIContactPropertyTypeImpl ciContactPropertyType = new CIContactPropertyTypeImpl();
 		return ciContactPropertyType;
 	}
@@ -405,8 +393,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIContactType createCIContactType()
-	{
+	@Override
+	public CIContactType createCIContactType() {
 		CIContactTypeImpl ciContactType = new CIContactTypeImpl();
 		return ciContactType;
 	}
@@ -416,8 +404,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIDatePropertyType createCIDatePropertyType()
-	{
+	@Override
+	public CIDatePropertyType createCIDatePropertyType() {
 		CIDatePropertyTypeImpl ciDatePropertyType = new CIDatePropertyTypeImpl();
 		return ciDatePropertyType;
 	}
@@ -427,8 +415,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIDateType createCIDateType()
-	{
+	@Override
+	public CIDateType createCIDateType() {
 		CIDateTypeImpl ciDateType = new CIDateTypeImpl();
 		return ciDateType;
 	}
@@ -438,8 +426,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIDateTypeCodePropertyType createCIDateTypeCodePropertyType()
-	{
+	@Override
+	public CIDateTypeCodePropertyType createCIDateTypeCodePropertyType() {
 		CIDateTypeCodePropertyTypeImpl ciDateTypeCodePropertyType = new CIDateTypeCodePropertyTypeImpl();
 		return ciDateTypeCodePropertyType;
 	}
@@ -449,8 +437,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIOnLineFunctionCodePropertyType createCIOnLineFunctionCodePropertyType()
-	{
+	@Override
+	public CIOnLineFunctionCodePropertyType createCIOnLineFunctionCodePropertyType() {
 		CIOnLineFunctionCodePropertyTypeImpl ciOnLineFunctionCodePropertyType = new CIOnLineFunctionCodePropertyTypeImpl();
 		return ciOnLineFunctionCodePropertyType;
 	}
@@ -460,8 +448,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIOnlineResourcePropertyType createCIOnlineResourcePropertyType()
-	{
+	@Override
+	public CIOnlineResourcePropertyType createCIOnlineResourcePropertyType() {
 		CIOnlineResourcePropertyTypeImpl ciOnlineResourcePropertyType = new CIOnlineResourcePropertyTypeImpl();
 		return ciOnlineResourcePropertyType;
 	}
@@ -471,8 +459,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIOnlineResourceType createCIOnlineResourceType()
-	{
+	@Override
+	public CIOnlineResourceType createCIOnlineResourceType() {
 		CIOnlineResourceTypeImpl ciOnlineResourceType = new CIOnlineResourceTypeImpl();
 		return ciOnlineResourceType;
 	}
@@ -482,8 +470,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIPresentationFormCodePropertyType createCIPresentationFormCodePropertyType()
-	{
+	@Override
+	public CIPresentationFormCodePropertyType createCIPresentationFormCodePropertyType() {
 		CIPresentationFormCodePropertyTypeImpl ciPresentationFormCodePropertyType = new CIPresentationFormCodePropertyTypeImpl();
 		return ciPresentationFormCodePropertyType;
 	}
@@ -493,8 +481,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIResponsiblePartyPropertyType createCIResponsiblePartyPropertyType()
-	{
+	@Override
+	public CIResponsiblePartyPropertyType createCIResponsiblePartyPropertyType() {
 		CIResponsiblePartyPropertyTypeImpl ciResponsiblePartyPropertyType = new CIResponsiblePartyPropertyTypeImpl();
 		return ciResponsiblePartyPropertyType;
 	}
@@ -504,8 +492,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIResponsiblePartyType createCIResponsiblePartyType()
-	{
+	@Override
+	public CIResponsiblePartyType createCIResponsiblePartyType() {
 		CIResponsiblePartyTypeImpl ciResponsiblePartyType = new CIResponsiblePartyTypeImpl();
 		return ciResponsiblePartyType;
 	}
@@ -515,8 +503,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIRoleCodePropertyType createCIRoleCodePropertyType()
-	{
+	@Override
+	public CIRoleCodePropertyType createCIRoleCodePropertyType() {
 		CIRoleCodePropertyTypeImpl ciRoleCodePropertyType = new CIRoleCodePropertyTypeImpl();
 		return ciRoleCodePropertyType;
 	}
@@ -526,8 +514,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CISeriesPropertyType createCISeriesPropertyType()
-	{
+	@Override
+	public CISeriesPropertyType createCISeriesPropertyType() {
 		CISeriesPropertyTypeImpl ciSeriesPropertyType = new CISeriesPropertyTypeImpl();
 		return ciSeriesPropertyType;
 	}
@@ -537,8 +525,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CISeriesType createCISeriesType()
-	{
+	@Override
+	public CISeriesType createCISeriesType() {
 		CISeriesTypeImpl ciSeriesType = new CISeriesTypeImpl();
 		return ciSeriesType;
 	}
@@ -548,8 +536,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CITelephonePropertyType createCITelephonePropertyType()
-	{
+	@Override
+	public CITelephonePropertyType createCITelephonePropertyType() {
 		CITelephonePropertyTypeImpl ciTelephonePropertyType = new CITelephonePropertyTypeImpl();
 		return ciTelephonePropertyType;
 	}
@@ -559,8 +547,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CITelephoneType createCITelephoneType()
-	{
+	@Override
+	public CITelephoneType createCITelephoneType() {
 		CITelephoneTypeImpl ciTelephoneType = new CITelephoneTypeImpl();
 		return ciTelephoneType;
 	}
@@ -570,8 +558,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CountryPropertyType createCountryPropertyType()
-	{
+	@Override
+	public CountryPropertyType createCountryPropertyType() {
 		CountryPropertyTypeImpl countryPropertyType = new CountryPropertyTypeImpl();
 		return countryPropertyType;
 	}
@@ -581,8 +569,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQAbsoluteExternalPositionalAccuracyPropertyType createDQAbsoluteExternalPositionalAccuracyPropertyType()
-	{
+	@Override
+	public DQAbsoluteExternalPositionalAccuracyPropertyType createDQAbsoluteExternalPositionalAccuracyPropertyType() {
 		DQAbsoluteExternalPositionalAccuracyPropertyTypeImpl dqAbsoluteExternalPositionalAccuracyPropertyType = new DQAbsoluteExternalPositionalAccuracyPropertyTypeImpl();
 		return dqAbsoluteExternalPositionalAccuracyPropertyType;
 	}
@@ -592,8 +580,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQAbsoluteExternalPositionalAccuracyType createDQAbsoluteExternalPositionalAccuracyType()
-	{
+	@Override
+	public DQAbsoluteExternalPositionalAccuracyType createDQAbsoluteExternalPositionalAccuracyType() {
 		DQAbsoluteExternalPositionalAccuracyTypeImpl dqAbsoluteExternalPositionalAccuracyType = new DQAbsoluteExternalPositionalAccuracyTypeImpl();
 		return dqAbsoluteExternalPositionalAccuracyType;
 	}
@@ -603,8 +591,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQAccuracyOfATimeMeasurementPropertyType createDQAccuracyOfATimeMeasurementPropertyType()
-	{
+	@Override
+	public DQAccuracyOfATimeMeasurementPropertyType createDQAccuracyOfATimeMeasurementPropertyType() {
 		DQAccuracyOfATimeMeasurementPropertyTypeImpl dqAccuracyOfATimeMeasurementPropertyType = new DQAccuracyOfATimeMeasurementPropertyTypeImpl();
 		return dqAccuracyOfATimeMeasurementPropertyType;
 	}
@@ -614,8 +602,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQAccuracyOfATimeMeasurementType createDQAccuracyOfATimeMeasurementType()
-	{
+	@Override
+	public DQAccuracyOfATimeMeasurementType createDQAccuracyOfATimeMeasurementType() {
 		DQAccuracyOfATimeMeasurementTypeImpl dqAccuracyOfATimeMeasurementType = new DQAccuracyOfATimeMeasurementTypeImpl();
 		return dqAccuracyOfATimeMeasurementType;
 	}
@@ -625,8 +613,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQCompletenessCommissionPropertyType createDQCompletenessCommissionPropertyType()
-	{
+	@Override
+	public DQCompletenessCommissionPropertyType createDQCompletenessCommissionPropertyType() {
 		DQCompletenessCommissionPropertyTypeImpl dqCompletenessCommissionPropertyType = new DQCompletenessCommissionPropertyTypeImpl();
 		return dqCompletenessCommissionPropertyType;
 	}
@@ -636,8 +624,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQCompletenessCommissionType createDQCompletenessCommissionType()
-	{
+	@Override
+	public DQCompletenessCommissionType createDQCompletenessCommissionType() {
 		DQCompletenessCommissionTypeImpl dqCompletenessCommissionType = new DQCompletenessCommissionTypeImpl();
 		return dqCompletenessCommissionType;
 	}
@@ -647,8 +635,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQCompletenessOmissionPropertyType createDQCompletenessOmissionPropertyType()
-	{
+	@Override
+	public DQCompletenessOmissionPropertyType createDQCompletenessOmissionPropertyType() {
 		DQCompletenessOmissionPropertyTypeImpl dqCompletenessOmissionPropertyType = new DQCompletenessOmissionPropertyTypeImpl();
 		return dqCompletenessOmissionPropertyType;
 	}
@@ -658,8 +646,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQCompletenessOmissionType createDQCompletenessOmissionType()
-	{
+	@Override
+	public DQCompletenessOmissionType createDQCompletenessOmissionType() {
 		DQCompletenessOmissionTypeImpl dqCompletenessOmissionType = new DQCompletenessOmissionTypeImpl();
 		return dqCompletenessOmissionType;
 	}
@@ -669,8 +657,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQCompletenessPropertyType createDQCompletenessPropertyType()
-	{
+	@Override
+	public DQCompletenessPropertyType createDQCompletenessPropertyType() {
 		DQCompletenessPropertyTypeImpl dqCompletenessPropertyType = new DQCompletenessPropertyTypeImpl();
 		return dqCompletenessPropertyType;
 	}
@@ -680,8 +668,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQConceptualConsistencyPropertyType createDQConceptualConsistencyPropertyType()
-	{
+	@Override
+	public DQConceptualConsistencyPropertyType createDQConceptualConsistencyPropertyType() {
 		DQConceptualConsistencyPropertyTypeImpl dqConceptualConsistencyPropertyType = new DQConceptualConsistencyPropertyTypeImpl();
 		return dqConceptualConsistencyPropertyType;
 	}
@@ -691,8 +679,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQConceptualConsistencyType createDQConceptualConsistencyType()
-	{
+	@Override
+	public DQConceptualConsistencyType createDQConceptualConsistencyType() {
 		DQConceptualConsistencyTypeImpl dqConceptualConsistencyType = new DQConceptualConsistencyTypeImpl();
 		return dqConceptualConsistencyType;
 	}
@@ -702,8 +690,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQConformanceResultPropertyType createDQConformanceResultPropertyType()
-	{
+	@Override
+	public DQConformanceResultPropertyType createDQConformanceResultPropertyType() {
 		DQConformanceResultPropertyTypeImpl dqConformanceResultPropertyType = new DQConformanceResultPropertyTypeImpl();
 		return dqConformanceResultPropertyType;
 	}
@@ -713,8 +701,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQConformanceResultType createDQConformanceResultType()
-	{
+	@Override
+	public DQConformanceResultType createDQConformanceResultType() {
 		DQConformanceResultTypeImpl dqConformanceResultType = new DQConformanceResultTypeImpl();
 		return dqConformanceResultType;
 	}
@@ -724,8 +712,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQDataQualityPropertyType createDQDataQualityPropertyType()
-	{
+	@Override
+	public DQDataQualityPropertyType createDQDataQualityPropertyType() {
 		DQDataQualityPropertyTypeImpl dqDataQualityPropertyType = new DQDataQualityPropertyTypeImpl();
 		return dqDataQualityPropertyType;
 	}
@@ -735,8 +723,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQDataQualityType createDQDataQualityType()
-	{
+	@Override
+	public DQDataQualityType createDQDataQualityType() {
 		DQDataQualityTypeImpl dqDataQualityType = new DQDataQualityTypeImpl();
 		return dqDataQualityType;
 	}
@@ -746,8 +734,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQDomainConsistencyPropertyType createDQDomainConsistencyPropertyType()
-	{
+	@Override
+	public DQDomainConsistencyPropertyType createDQDomainConsistencyPropertyType() {
 		DQDomainConsistencyPropertyTypeImpl dqDomainConsistencyPropertyType = new DQDomainConsistencyPropertyTypeImpl();
 		return dqDomainConsistencyPropertyType;
 	}
@@ -757,8 +745,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQDomainConsistencyType createDQDomainConsistencyType()
-	{
+	@Override
+	public DQDomainConsistencyType createDQDomainConsistencyType() {
 		DQDomainConsistencyTypeImpl dqDomainConsistencyType = new DQDomainConsistencyTypeImpl();
 		return dqDomainConsistencyType;
 	}
@@ -768,8 +756,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQElementPropertyType createDQElementPropertyType()
-	{
+	@Override
+	public DQElementPropertyType createDQElementPropertyType() {
 		DQElementPropertyTypeImpl dqElementPropertyType = new DQElementPropertyTypeImpl();
 		return dqElementPropertyType;
 	}
@@ -779,8 +767,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQEvaluationMethodTypeCodePropertyType createDQEvaluationMethodTypeCodePropertyType()
-	{
+	@Override
+	public DQEvaluationMethodTypeCodePropertyType createDQEvaluationMethodTypeCodePropertyType() {
 		DQEvaluationMethodTypeCodePropertyTypeImpl dqEvaluationMethodTypeCodePropertyType = new DQEvaluationMethodTypeCodePropertyTypeImpl();
 		return dqEvaluationMethodTypeCodePropertyType;
 	}
@@ -790,8 +778,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQFormatConsistencyPropertyType createDQFormatConsistencyPropertyType()
-	{
+	@Override
+	public DQFormatConsistencyPropertyType createDQFormatConsistencyPropertyType() {
 		DQFormatConsistencyPropertyTypeImpl dqFormatConsistencyPropertyType = new DQFormatConsistencyPropertyTypeImpl();
 		return dqFormatConsistencyPropertyType;
 	}
@@ -801,8 +789,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQFormatConsistencyType createDQFormatConsistencyType()
-	{
+	@Override
+	public DQFormatConsistencyType createDQFormatConsistencyType() {
 		DQFormatConsistencyTypeImpl dqFormatConsistencyType = new DQFormatConsistencyTypeImpl();
 		return dqFormatConsistencyType;
 	}
@@ -812,8 +800,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQGriddedDataPositionalAccuracyPropertyType createDQGriddedDataPositionalAccuracyPropertyType()
-	{
+	@Override
+	public DQGriddedDataPositionalAccuracyPropertyType createDQGriddedDataPositionalAccuracyPropertyType() {
 		DQGriddedDataPositionalAccuracyPropertyTypeImpl dqGriddedDataPositionalAccuracyPropertyType = new DQGriddedDataPositionalAccuracyPropertyTypeImpl();
 		return dqGriddedDataPositionalAccuracyPropertyType;
 	}
@@ -823,8 +811,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQGriddedDataPositionalAccuracyType createDQGriddedDataPositionalAccuracyType()
-	{
+	@Override
+	public DQGriddedDataPositionalAccuracyType createDQGriddedDataPositionalAccuracyType() {
 		DQGriddedDataPositionalAccuracyTypeImpl dqGriddedDataPositionalAccuracyType = new DQGriddedDataPositionalAccuracyTypeImpl();
 		return dqGriddedDataPositionalAccuracyType;
 	}
@@ -834,8 +822,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQLogicalConsistencyPropertyType createDQLogicalConsistencyPropertyType()
-	{
+	@Override
+	public DQLogicalConsistencyPropertyType createDQLogicalConsistencyPropertyType() {
 		DQLogicalConsistencyPropertyTypeImpl dqLogicalConsistencyPropertyType = new DQLogicalConsistencyPropertyTypeImpl();
 		return dqLogicalConsistencyPropertyType;
 	}
@@ -845,8 +833,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQNonQuantitativeAttributeAccuracyPropertyType createDQNonQuantitativeAttributeAccuracyPropertyType()
-	{
+	@Override
+	public DQNonQuantitativeAttributeAccuracyPropertyType createDQNonQuantitativeAttributeAccuracyPropertyType() {
 		DQNonQuantitativeAttributeAccuracyPropertyTypeImpl dqNonQuantitativeAttributeAccuracyPropertyType = new DQNonQuantitativeAttributeAccuracyPropertyTypeImpl();
 		return dqNonQuantitativeAttributeAccuracyPropertyType;
 	}
@@ -856,8 +844,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQNonQuantitativeAttributeAccuracyType createDQNonQuantitativeAttributeAccuracyType()
-	{
+	@Override
+	public DQNonQuantitativeAttributeAccuracyType createDQNonQuantitativeAttributeAccuracyType() {
 		DQNonQuantitativeAttributeAccuracyTypeImpl dqNonQuantitativeAttributeAccuracyType = new DQNonQuantitativeAttributeAccuracyTypeImpl();
 		return dqNonQuantitativeAttributeAccuracyType;
 	}
@@ -867,8 +855,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQPositionalAccuracyPropertyType createDQPositionalAccuracyPropertyType()
-	{
+	@Override
+	public DQPositionalAccuracyPropertyType createDQPositionalAccuracyPropertyType() {
 		DQPositionalAccuracyPropertyTypeImpl dqPositionalAccuracyPropertyType = new DQPositionalAccuracyPropertyTypeImpl();
 		return dqPositionalAccuracyPropertyType;
 	}
@@ -878,8 +866,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQQuantitativeAttributeAccuracyPropertyType createDQQuantitativeAttributeAccuracyPropertyType()
-	{
+	@Override
+	public DQQuantitativeAttributeAccuracyPropertyType createDQQuantitativeAttributeAccuracyPropertyType() {
 		DQQuantitativeAttributeAccuracyPropertyTypeImpl dqQuantitativeAttributeAccuracyPropertyType = new DQQuantitativeAttributeAccuracyPropertyTypeImpl();
 		return dqQuantitativeAttributeAccuracyPropertyType;
 	}
@@ -889,8 +877,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQQuantitativeAttributeAccuracyType createDQQuantitativeAttributeAccuracyType()
-	{
+	@Override
+	public DQQuantitativeAttributeAccuracyType createDQQuantitativeAttributeAccuracyType() {
 		DQQuantitativeAttributeAccuracyTypeImpl dqQuantitativeAttributeAccuracyType = new DQQuantitativeAttributeAccuracyTypeImpl();
 		return dqQuantitativeAttributeAccuracyType;
 	}
@@ -900,8 +888,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQQuantitativeResultPropertyType createDQQuantitativeResultPropertyType()
-	{
+	@Override
+	public DQQuantitativeResultPropertyType createDQQuantitativeResultPropertyType() {
 		DQQuantitativeResultPropertyTypeImpl dqQuantitativeResultPropertyType = new DQQuantitativeResultPropertyTypeImpl();
 		return dqQuantitativeResultPropertyType;
 	}
@@ -911,8 +899,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQQuantitativeResultType createDQQuantitativeResultType()
-	{
+	@Override
+	public DQQuantitativeResultType createDQQuantitativeResultType() {
 		DQQuantitativeResultTypeImpl dqQuantitativeResultType = new DQQuantitativeResultTypeImpl();
 		return dqQuantitativeResultType;
 	}
@@ -922,8 +910,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQRelativeInternalPositionalAccuracyPropertyType createDQRelativeInternalPositionalAccuracyPropertyType()
-	{
+	@Override
+	public DQRelativeInternalPositionalAccuracyPropertyType createDQRelativeInternalPositionalAccuracyPropertyType() {
 		DQRelativeInternalPositionalAccuracyPropertyTypeImpl dqRelativeInternalPositionalAccuracyPropertyType = new DQRelativeInternalPositionalAccuracyPropertyTypeImpl();
 		return dqRelativeInternalPositionalAccuracyPropertyType;
 	}
@@ -933,8 +921,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQRelativeInternalPositionalAccuracyType createDQRelativeInternalPositionalAccuracyType()
-	{
+	@Override
+	public DQRelativeInternalPositionalAccuracyType createDQRelativeInternalPositionalAccuracyType() {
 		DQRelativeInternalPositionalAccuracyTypeImpl dqRelativeInternalPositionalAccuracyType = new DQRelativeInternalPositionalAccuracyTypeImpl();
 		return dqRelativeInternalPositionalAccuracyType;
 	}
@@ -944,8 +932,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQResultPropertyType createDQResultPropertyType()
-	{
+	@Override
+	public DQResultPropertyType createDQResultPropertyType() {
 		DQResultPropertyTypeImpl dqResultPropertyType = new DQResultPropertyTypeImpl();
 		return dqResultPropertyType;
 	}
@@ -955,8 +943,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQScopePropertyType createDQScopePropertyType()
-	{
+	@Override
+	public DQScopePropertyType createDQScopePropertyType() {
 		DQScopePropertyTypeImpl dqScopePropertyType = new DQScopePropertyTypeImpl();
 		return dqScopePropertyType;
 	}
@@ -966,8 +954,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQScopeType createDQScopeType()
-	{
+	@Override
+	public DQScopeType createDQScopeType() {
 		DQScopeTypeImpl dqScopeType = new DQScopeTypeImpl();
 		return dqScopeType;
 	}
@@ -977,8 +965,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQTemporalAccuracyPropertyType createDQTemporalAccuracyPropertyType()
-	{
+	@Override
+	public DQTemporalAccuracyPropertyType createDQTemporalAccuracyPropertyType() {
 		DQTemporalAccuracyPropertyTypeImpl dqTemporalAccuracyPropertyType = new DQTemporalAccuracyPropertyTypeImpl();
 		return dqTemporalAccuracyPropertyType;
 	}
@@ -988,8 +976,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQTemporalConsistencyPropertyType createDQTemporalConsistencyPropertyType()
-	{
+	@Override
+	public DQTemporalConsistencyPropertyType createDQTemporalConsistencyPropertyType() {
 		DQTemporalConsistencyPropertyTypeImpl dqTemporalConsistencyPropertyType = new DQTemporalConsistencyPropertyTypeImpl();
 		return dqTemporalConsistencyPropertyType;
 	}
@@ -999,8 +987,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQTemporalConsistencyType createDQTemporalConsistencyType()
-	{
+	@Override
+	public DQTemporalConsistencyType createDQTemporalConsistencyType() {
 		DQTemporalConsistencyTypeImpl dqTemporalConsistencyType = new DQTemporalConsistencyTypeImpl();
 		return dqTemporalConsistencyType;
 	}
@@ -1010,8 +998,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQTemporalValidityPropertyType createDQTemporalValidityPropertyType()
-	{
+	@Override
+	public DQTemporalValidityPropertyType createDQTemporalValidityPropertyType() {
 		DQTemporalValidityPropertyTypeImpl dqTemporalValidityPropertyType = new DQTemporalValidityPropertyTypeImpl();
 		return dqTemporalValidityPropertyType;
 	}
@@ -1021,8 +1009,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQTemporalValidityType createDQTemporalValidityType()
-	{
+	@Override
+	public DQTemporalValidityType createDQTemporalValidityType() {
 		DQTemporalValidityTypeImpl dqTemporalValidityType = new DQTemporalValidityTypeImpl();
 		return dqTemporalValidityType;
 	}
@@ -1032,8 +1020,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQThematicAccuracyPropertyType createDQThematicAccuracyPropertyType()
-	{
+	@Override
+	public DQThematicAccuracyPropertyType createDQThematicAccuracyPropertyType() {
 		DQThematicAccuracyPropertyTypeImpl dqThematicAccuracyPropertyType = new DQThematicAccuracyPropertyTypeImpl();
 		return dqThematicAccuracyPropertyType;
 	}
@@ -1043,8 +1031,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQThematicClassificationCorrectnessPropertyType createDQThematicClassificationCorrectnessPropertyType()
-	{
+	@Override
+	public DQThematicClassificationCorrectnessPropertyType createDQThematicClassificationCorrectnessPropertyType() {
 		DQThematicClassificationCorrectnessPropertyTypeImpl dqThematicClassificationCorrectnessPropertyType = new DQThematicClassificationCorrectnessPropertyTypeImpl();
 		return dqThematicClassificationCorrectnessPropertyType;
 	}
@@ -1054,8 +1042,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQThematicClassificationCorrectnessType createDQThematicClassificationCorrectnessType()
-	{
+	@Override
+	public DQThematicClassificationCorrectnessType createDQThematicClassificationCorrectnessType() {
 		DQThematicClassificationCorrectnessTypeImpl dqThematicClassificationCorrectnessType = new DQThematicClassificationCorrectnessTypeImpl();
 		return dqThematicClassificationCorrectnessType;
 	}
@@ -1065,8 +1053,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQTopologicalConsistencyPropertyType createDQTopologicalConsistencyPropertyType()
-	{
+	@Override
+	public DQTopologicalConsistencyPropertyType createDQTopologicalConsistencyPropertyType() {
 		DQTopologicalConsistencyPropertyTypeImpl dqTopologicalConsistencyPropertyType = new DQTopologicalConsistencyPropertyTypeImpl();
 		return dqTopologicalConsistencyPropertyType;
 	}
@@ -1076,8 +1064,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQTopologicalConsistencyType createDQTopologicalConsistencyType()
-	{
+	@Override
+	public DQTopologicalConsistencyType createDQTopologicalConsistencyType() {
 		DQTopologicalConsistencyTypeImpl dqTopologicalConsistencyType = new DQTopologicalConsistencyTypeImpl();
 		return dqTopologicalConsistencyType;
 	}
@@ -1087,8 +1075,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSAggregatePropertyType createDSAggregatePropertyType()
-	{
+	@Override
+	public DSAggregatePropertyType createDSAggregatePropertyType() {
 		DSAggregatePropertyTypeImpl dsAggregatePropertyType = new DSAggregatePropertyTypeImpl();
 		return dsAggregatePropertyType;
 	}
@@ -1098,8 +1086,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSAssociationPropertyType createDSAssociationPropertyType()
-	{
+	@Override
+	public DSAssociationPropertyType createDSAssociationPropertyType() {
 		DSAssociationPropertyTypeImpl dsAssociationPropertyType = new DSAssociationPropertyTypeImpl();
 		return dsAssociationPropertyType;
 	}
@@ -1109,8 +1097,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSAssociationType createDSAssociationType()
-	{
+	@Override
+	public DSAssociationType createDSAssociationType() {
 		DSAssociationTypeImpl dsAssociationType = new DSAssociationTypeImpl();
 		return dsAssociationType;
 	}
@@ -1120,8 +1108,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSAssociationTypeCodePropertyType createDSAssociationTypeCodePropertyType()
-	{
+	@Override
+	public DSAssociationTypeCodePropertyType createDSAssociationTypeCodePropertyType() {
 		DSAssociationTypeCodePropertyTypeImpl dsAssociationTypeCodePropertyType = new DSAssociationTypeCodePropertyTypeImpl();
 		return dsAssociationTypeCodePropertyType;
 	}
@@ -1131,8 +1119,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSDataSetPropertyType createDSDataSetPropertyType()
-	{
+	@Override
+	public DSDataSetPropertyType createDSDataSetPropertyType() {
 		DSDataSetPropertyTypeImpl dsDataSetPropertyType = new DSDataSetPropertyTypeImpl();
 		return dsDataSetPropertyType;
 	}
@@ -1142,8 +1130,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSDataSetType createDSDataSetType()
-	{
+	@Override
+	public DSDataSetType createDSDataSetType() {
 		DSDataSetTypeImpl dsDataSetType = new DSDataSetTypeImpl();
 		return dsDataSetType;
 	}
@@ -1153,8 +1141,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSInitiativePropertyType createDSInitiativePropertyType()
-	{
+	@Override
+	public DSInitiativePropertyType createDSInitiativePropertyType() {
 		DSInitiativePropertyTypeImpl dsInitiativePropertyType = new DSInitiativePropertyTypeImpl();
 		return dsInitiativePropertyType;
 	}
@@ -1164,8 +1152,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSInitiativeType createDSInitiativeType()
-	{
+	@Override
+	public DSInitiativeType createDSInitiativeType() {
 		DSInitiativeTypeImpl dsInitiativeType = new DSInitiativeTypeImpl();
 		return dsInitiativeType;
 	}
@@ -1175,8 +1163,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSInitiativeTypeCodePropertyType createDSInitiativeTypeCodePropertyType()
-	{
+	@Override
+	public DSInitiativeTypeCodePropertyType createDSInitiativeTypeCodePropertyType() {
 		DSInitiativeTypeCodePropertyTypeImpl dsInitiativeTypeCodePropertyType = new DSInitiativeTypeCodePropertyTypeImpl();
 		return dsInitiativeTypeCodePropertyType;
 	}
@@ -1186,8 +1174,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSOtherAggregatePropertyType createDSOtherAggregatePropertyType()
-	{
+	@Override
+	public DSOtherAggregatePropertyType createDSOtherAggregatePropertyType() {
 		DSOtherAggregatePropertyTypeImpl dsOtherAggregatePropertyType = new DSOtherAggregatePropertyTypeImpl();
 		return dsOtherAggregatePropertyType;
 	}
@@ -1197,8 +1185,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSOtherAggregateType createDSOtherAggregateType()
-	{
+	@Override
+	public DSOtherAggregateType createDSOtherAggregateType() {
 		DSOtherAggregateTypeImpl dsOtherAggregateType = new DSOtherAggregateTypeImpl();
 		return dsOtherAggregateType;
 	}
@@ -1208,8 +1196,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSPlatformPropertyType createDSPlatformPropertyType()
-	{
+	@Override
+	public DSPlatformPropertyType createDSPlatformPropertyType() {
 		DSPlatformPropertyTypeImpl dsPlatformPropertyType = new DSPlatformPropertyTypeImpl();
 		return dsPlatformPropertyType;
 	}
@@ -1219,8 +1207,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSPlatformType createDSPlatformType()
-	{
+	@Override
+	public DSPlatformType createDSPlatformType() {
 		DSPlatformTypeImpl dsPlatformType = new DSPlatformTypeImpl();
 		return dsPlatformType;
 	}
@@ -1230,8 +1218,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSProductionSeriesPropertyType createDSProductionSeriesPropertyType()
-	{
+	@Override
+	public DSProductionSeriesPropertyType createDSProductionSeriesPropertyType() {
 		DSProductionSeriesPropertyTypeImpl dsProductionSeriesPropertyType = new DSProductionSeriesPropertyTypeImpl();
 		return dsProductionSeriesPropertyType;
 	}
@@ -1241,8 +1229,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSProductionSeriesType createDSProductionSeriesType()
-	{
+	@Override
+	public DSProductionSeriesType createDSProductionSeriesType() {
 		DSProductionSeriesTypeImpl dsProductionSeriesType = new DSProductionSeriesTypeImpl();
 		return dsProductionSeriesType;
 	}
@@ -1252,8 +1240,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSSensorPropertyType createDSSensorPropertyType()
-	{
+	@Override
+	public DSSensorPropertyType createDSSensorPropertyType() {
 		DSSensorPropertyTypeImpl dsSensorPropertyType = new DSSensorPropertyTypeImpl();
 		return dsSensorPropertyType;
 	}
@@ -1263,8 +1251,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSSensorType createDSSensorType()
-	{
+	@Override
+	public DSSensorType createDSSensorType() {
 		DSSensorTypeImpl dsSensorType = new DSSensorTypeImpl();
 		return dsSensorType;
 	}
@@ -1274,8 +1262,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSSeriesPropertyType createDSSeriesPropertyType()
-	{
+	@Override
+	public DSSeriesPropertyType createDSSeriesPropertyType() {
 		DSSeriesPropertyTypeImpl dsSeriesPropertyType = new DSSeriesPropertyTypeImpl();
 		return dsSeriesPropertyType;
 	}
@@ -1285,8 +1273,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSSeriesType createDSSeriesType()
-	{
+	@Override
+	public DSSeriesType createDSSeriesType() {
 		DSSeriesTypeImpl dsSeriesType = new DSSeriesTypeImpl();
 		return dsSeriesType;
 	}
@@ -1296,8 +1284,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSStereoMatePropertyType createDSStereoMatePropertyType()
-	{
+	@Override
+	public DSStereoMatePropertyType createDSStereoMatePropertyType() {
 		DSStereoMatePropertyTypeImpl dsStereoMatePropertyType = new DSStereoMatePropertyTypeImpl();
 		return dsStereoMatePropertyType;
 	}
@@ -1307,8 +1295,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DSStereoMateType createDSStereoMateType()
-	{
+	@Override
+	public DSStereoMateType createDSStereoMateType() {
 		DSStereoMateTypeImpl dsStereoMateType = new DSStereoMateTypeImpl();
 		return dsStereoMateType;
 	}
@@ -1318,8 +1306,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXBoundingPolygonPropertyType createEXBoundingPolygonPropertyType()
-	{
+	@Override
+	public EXBoundingPolygonPropertyType createEXBoundingPolygonPropertyType() {
 		EXBoundingPolygonPropertyTypeImpl exBoundingPolygonPropertyType = new EXBoundingPolygonPropertyTypeImpl();
 		return exBoundingPolygonPropertyType;
 	}
@@ -1329,8 +1317,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXBoundingPolygonType createEXBoundingPolygonType()
-	{
+	@Override
+	public EXBoundingPolygonType createEXBoundingPolygonType() {
 		EXBoundingPolygonTypeImpl exBoundingPolygonType = new EXBoundingPolygonTypeImpl();
 		return exBoundingPolygonType;
 	}
@@ -1340,8 +1328,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXExtentPropertyType createEXExtentPropertyType()
-	{
+	@Override
+	public EXExtentPropertyType createEXExtentPropertyType() {
 		EXExtentPropertyTypeImpl exExtentPropertyType = new EXExtentPropertyTypeImpl();
 		return exExtentPropertyType;
 	}
@@ -1351,8 +1339,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXExtentType createEXExtentType()
-	{
+	@Override
+	public EXExtentType createEXExtentType() {
 		EXExtentTypeImpl exExtentType = new EXExtentTypeImpl();
 		return exExtentType;
 	}
@@ -1362,8 +1350,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXGeographicBoundingBoxPropertyType createEXGeographicBoundingBoxPropertyType()
-	{
+	@Override
+	public EXGeographicBoundingBoxPropertyType createEXGeographicBoundingBoxPropertyType() {
 		EXGeographicBoundingBoxPropertyTypeImpl exGeographicBoundingBoxPropertyType = new EXGeographicBoundingBoxPropertyTypeImpl();
 		return exGeographicBoundingBoxPropertyType;
 	}
@@ -1373,8 +1361,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXGeographicBoundingBoxType createEXGeographicBoundingBoxType()
-	{
+	@Override
+	public EXGeographicBoundingBoxType createEXGeographicBoundingBoxType() {
 		EXGeographicBoundingBoxTypeImpl exGeographicBoundingBoxType = new EXGeographicBoundingBoxTypeImpl();
 		return exGeographicBoundingBoxType;
 	}
@@ -1384,8 +1372,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXGeographicDescriptionPropertyType createEXGeographicDescriptionPropertyType()
-	{
+	@Override
+	public EXGeographicDescriptionPropertyType createEXGeographicDescriptionPropertyType() {
 		EXGeographicDescriptionPropertyTypeImpl exGeographicDescriptionPropertyType = new EXGeographicDescriptionPropertyTypeImpl();
 		return exGeographicDescriptionPropertyType;
 	}
@@ -1395,8 +1383,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXGeographicDescriptionType createEXGeographicDescriptionType()
-	{
+	@Override
+	public EXGeographicDescriptionType createEXGeographicDescriptionType() {
 		EXGeographicDescriptionTypeImpl exGeographicDescriptionType = new EXGeographicDescriptionTypeImpl();
 		return exGeographicDescriptionType;
 	}
@@ -1406,8 +1394,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXGeographicExtentPropertyType createEXGeographicExtentPropertyType()
-	{
+	@Override
+	public EXGeographicExtentPropertyType createEXGeographicExtentPropertyType() {
 		EXGeographicExtentPropertyTypeImpl exGeographicExtentPropertyType = new EXGeographicExtentPropertyTypeImpl();
 		return exGeographicExtentPropertyType;
 	}
@@ -1417,8 +1405,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXSpatialTemporalExtentPropertyType createEXSpatialTemporalExtentPropertyType()
-	{
+	@Override
+	public EXSpatialTemporalExtentPropertyType createEXSpatialTemporalExtentPropertyType() {
 		EXSpatialTemporalExtentPropertyTypeImpl exSpatialTemporalExtentPropertyType = new EXSpatialTemporalExtentPropertyTypeImpl();
 		return exSpatialTemporalExtentPropertyType;
 	}
@@ -1428,8 +1416,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXSpatialTemporalExtentType createEXSpatialTemporalExtentType()
-	{
+	@Override
+	public EXSpatialTemporalExtentType createEXSpatialTemporalExtentType() {
 		EXSpatialTemporalExtentTypeImpl exSpatialTemporalExtentType = new EXSpatialTemporalExtentTypeImpl();
 		return exSpatialTemporalExtentType;
 	}
@@ -1439,8 +1427,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXTemporalExtentPropertyType createEXTemporalExtentPropertyType()
-	{
+	@Override
+	public EXTemporalExtentPropertyType createEXTemporalExtentPropertyType() {
 		EXTemporalExtentPropertyTypeImpl exTemporalExtentPropertyType = new EXTemporalExtentPropertyTypeImpl();
 		return exTemporalExtentPropertyType;
 	}
@@ -1450,8 +1438,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXTemporalExtentType createEXTemporalExtentType()
-	{
+	@Override
+	public EXTemporalExtentType createEXTemporalExtentType() {
 		EXTemporalExtentTypeImpl exTemporalExtentType = new EXTemporalExtentTypeImpl();
 		return exTemporalExtentType;
 	}
@@ -1461,8 +1449,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXVerticalExtentPropertyType createEXVerticalExtentPropertyType()
-	{
+	@Override
+	public EXVerticalExtentPropertyType createEXVerticalExtentPropertyType() {
 		EXVerticalExtentPropertyTypeImpl exVerticalExtentPropertyType = new EXVerticalExtentPropertyTypeImpl();
 		return exVerticalExtentPropertyType;
 	}
@@ -1472,8 +1460,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EXVerticalExtentType createEXVerticalExtentType()
-	{
+	@Override
+	public EXVerticalExtentType createEXVerticalExtentType() {
 		EXVerticalExtentTypeImpl exVerticalExtentType = new EXVerticalExtentTypeImpl();
 		return exVerticalExtentType;
 	}
@@ -1483,8 +1471,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LanguageCodePropertyType createLanguageCodePropertyType()
-	{
+	@Override
+	public LanguageCodePropertyType createLanguageCodePropertyType() {
 		LanguageCodePropertyTypeImpl languageCodePropertyType = new LanguageCodePropertyTypeImpl();
 		return languageCodePropertyType;
 	}
@@ -1494,8 +1482,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LILineagePropertyType createLILineagePropertyType()
-	{
+	@Override
+	public LILineagePropertyType createLILineagePropertyType() {
 		LILineagePropertyTypeImpl liLineagePropertyType = new LILineagePropertyTypeImpl();
 		return liLineagePropertyType;
 	}
@@ -1505,8 +1493,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LILineageType createLILineageType()
-	{
+	@Override
+	public LILineageType createLILineageType() {
 		LILineageTypeImpl liLineageType = new LILineageTypeImpl();
 		return liLineageType;
 	}
@@ -1516,8 +1504,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LIProcessStepPropertyType createLIProcessStepPropertyType()
-	{
+	@Override
+	public LIProcessStepPropertyType createLIProcessStepPropertyType() {
 		LIProcessStepPropertyTypeImpl liProcessStepPropertyType = new LIProcessStepPropertyTypeImpl();
 		return liProcessStepPropertyType;
 	}
@@ -1527,8 +1515,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LIProcessStepType createLIProcessStepType()
-	{
+	@Override
+	public LIProcessStepType createLIProcessStepType() {
 		LIProcessStepTypeImpl liProcessStepType = new LIProcessStepTypeImpl();
 		return liProcessStepType;
 	}
@@ -1538,8 +1526,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LISourcePropertyType createLISourcePropertyType()
-	{
+	@Override
+	public LISourcePropertyType createLISourcePropertyType() {
 		LISourcePropertyTypeImpl liSourcePropertyType = new LISourcePropertyTypeImpl();
 		return liSourcePropertyType;
 	}
@@ -1549,8 +1537,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LISourceType createLISourceType()
-	{
+	@Override
+	public LISourceType createLISourceType() {
 		LISourceTypeImpl liSourceType = new LISourceTypeImpl();
 		return liSourceType;
 	}
@@ -1560,8 +1548,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LocalisedCharacterStringPropertyType createLocalisedCharacterStringPropertyType()
-	{
+	@Override
+	public LocalisedCharacterStringPropertyType createLocalisedCharacterStringPropertyType() {
 		LocalisedCharacterStringPropertyTypeImpl localisedCharacterStringPropertyType = new LocalisedCharacterStringPropertyTypeImpl();
 		return localisedCharacterStringPropertyType;
 	}
@@ -1571,8 +1559,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LocalisedCharacterStringType createLocalisedCharacterStringType()
-	{
+	@Override
+	public LocalisedCharacterStringType createLocalisedCharacterStringType() {
 		LocalisedCharacterStringTypeImpl localisedCharacterStringType = new LocalisedCharacterStringTypeImpl();
 		return localisedCharacterStringType;
 	}
@@ -1582,8 +1570,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDAggregateInformationPropertyType createMDAggregateInformationPropertyType()
-	{
+	@Override
+	public MDAggregateInformationPropertyType createMDAggregateInformationPropertyType() {
 		MDAggregateInformationPropertyTypeImpl mdAggregateInformationPropertyType = new MDAggregateInformationPropertyTypeImpl();
 		return mdAggregateInformationPropertyType;
 	}
@@ -1593,8 +1581,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDAggregateInformationType createMDAggregateInformationType()
-	{
+	@Override
+	public MDAggregateInformationType createMDAggregateInformationType() {
 		MDAggregateInformationTypeImpl mdAggregateInformationType = new MDAggregateInformationTypeImpl();
 		return mdAggregateInformationType;
 	}
@@ -1604,8 +1592,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDApplicationSchemaInformationPropertyType createMDApplicationSchemaInformationPropertyType()
-	{
+	@Override
+	public MDApplicationSchemaInformationPropertyType createMDApplicationSchemaInformationPropertyType() {
 		MDApplicationSchemaInformationPropertyTypeImpl mdApplicationSchemaInformationPropertyType = new MDApplicationSchemaInformationPropertyTypeImpl();
 		return mdApplicationSchemaInformationPropertyType;
 	}
@@ -1615,8 +1603,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDApplicationSchemaInformationType createMDApplicationSchemaInformationType()
-	{
+	@Override
+	public MDApplicationSchemaInformationType createMDApplicationSchemaInformationType() {
 		MDApplicationSchemaInformationTypeImpl mdApplicationSchemaInformationType = new MDApplicationSchemaInformationTypeImpl();
 		return mdApplicationSchemaInformationType;
 	}
@@ -1626,8 +1614,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDBandPropertyType createMDBandPropertyType()
-	{
+	@Override
+	public MDBandPropertyType createMDBandPropertyType() {
 		MDBandPropertyTypeImpl mdBandPropertyType = new MDBandPropertyTypeImpl();
 		return mdBandPropertyType;
 	}
@@ -1637,8 +1625,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDBandType createMDBandType()
-	{
+	@Override
+	public MDBandType createMDBandType() {
 		MDBandTypeImpl mdBandType = new MDBandTypeImpl();
 		return mdBandType;
 	}
@@ -1648,8 +1636,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDBrowseGraphicPropertyType createMDBrowseGraphicPropertyType()
-	{
+	@Override
+	public MDBrowseGraphicPropertyType createMDBrowseGraphicPropertyType() {
 		MDBrowseGraphicPropertyTypeImpl mdBrowseGraphicPropertyType = new MDBrowseGraphicPropertyTypeImpl();
 		return mdBrowseGraphicPropertyType;
 	}
@@ -1659,8 +1647,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDBrowseGraphicType createMDBrowseGraphicType()
-	{
+	@Override
+	public MDBrowseGraphicType createMDBrowseGraphicType() {
 		MDBrowseGraphicTypeImpl mdBrowseGraphicType = new MDBrowseGraphicTypeImpl();
 		return mdBrowseGraphicType;
 	}
@@ -1670,8 +1658,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDCellGeometryCodePropertyType createMDCellGeometryCodePropertyType()
-	{
+	@Override
+	public MDCellGeometryCodePropertyType createMDCellGeometryCodePropertyType() {
 		MDCellGeometryCodePropertyTypeImpl mdCellGeometryCodePropertyType = new MDCellGeometryCodePropertyTypeImpl();
 		return mdCellGeometryCodePropertyType;
 	}
@@ -1681,8 +1669,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDCharacterSetCodePropertyType createMDCharacterSetCodePropertyType()
-	{
+	@Override
+	public MDCharacterSetCodePropertyType createMDCharacterSetCodePropertyType() {
 		MDCharacterSetCodePropertyTypeImpl mdCharacterSetCodePropertyType = new MDCharacterSetCodePropertyTypeImpl();
 		return mdCharacterSetCodePropertyType;
 	}
@@ -1692,8 +1680,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDClassificationCodePropertyType createMDClassificationCodePropertyType()
-	{
+	@Override
+	public MDClassificationCodePropertyType createMDClassificationCodePropertyType() {
 		MDClassificationCodePropertyTypeImpl mdClassificationCodePropertyType = new MDClassificationCodePropertyTypeImpl();
 		return mdClassificationCodePropertyType;
 	}
@@ -1703,8 +1691,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDConstraintsPropertyType createMDConstraintsPropertyType()
-	{
+	@Override
+	public MDConstraintsPropertyType createMDConstraintsPropertyType() {
 		MDConstraintsPropertyTypeImpl mdConstraintsPropertyType = new MDConstraintsPropertyTypeImpl();
 		return mdConstraintsPropertyType;
 	}
@@ -1714,8 +1702,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDConstraintsType createMDConstraintsType()
-	{
+	@Override
+	public MDConstraintsType createMDConstraintsType() {
 		MDConstraintsTypeImpl mdConstraintsType = new MDConstraintsTypeImpl();
 		return mdConstraintsType;
 	}
@@ -1725,8 +1713,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDContentInformationPropertyType createMDContentInformationPropertyType()
-	{
+	@Override
+	public MDContentInformationPropertyType createMDContentInformationPropertyType() {
 		MDContentInformationPropertyTypeImpl mdContentInformationPropertyType = new MDContentInformationPropertyTypeImpl();
 		return mdContentInformationPropertyType;
 	}
@@ -1736,8 +1724,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDCoverageContentTypeCodePropertyType createMDCoverageContentTypeCodePropertyType()
-	{
+	@Override
+	public MDCoverageContentTypeCodePropertyType createMDCoverageContentTypeCodePropertyType() {
 		MDCoverageContentTypeCodePropertyTypeImpl mdCoverageContentTypeCodePropertyType = new MDCoverageContentTypeCodePropertyTypeImpl();
 		return mdCoverageContentTypeCodePropertyType;
 	}
@@ -1747,8 +1735,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDCoverageDescriptionPropertyType createMDCoverageDescriptionPropertyType()
-	{
+	@Override
+	public MDCoverageDescriptionPropertyType createMDCoverageDescriptionPropertyType() {
 		MDCoverageDescriptionPropertyTypeImpl mdCoverageDescriptionPropertyType = new MDCoverageDescriptionPropertyTypeImpl();
 		return mdCoverageDescriptionPropertyType;
 	}
@@ -1758,8 +1746,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDCoverageDescriptionType createMDCoverageDescriptionType()
-	{
+	@Override
+	public MDCoverageDescriptionType createMDCoverageDescriptionType() {
 		MDCoverageDescriptionTypeImpl mdCoverageDescriptionType = new MDCoverageDescriptionTypeImpl();
 		return mdCoverageDescriptionType;
 	}
@@ -1769,8 +1757,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDataIdentificationPropertyType createMDDataIdentificationPropertyType()
-	{
+	@Override
+	public MDDataIdentificationPropertyType createMDDataIdentificationPropertyType() {
 		MDDataIdentificationPropertyTypeImpl mdDataIdentificationPropertyType = new MDDataIdentificationPropertyTypeImpl();
 		return mdDataIdentificationPropertyType;
 	}
@@ -1780,8 +1768,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDataIdentificationType createMDDataIdentificationType()
-	{
+	@Override
+	public MDDataIdentificationType createMDDataIdentificationType() {
 		MDDataIdentificationTypeImpl mdDataIdentificationType = new MDDataIdentificationTypeImpl();
 		return mdDataIdentificationType;
 	}
@@ -1791,8 +1779,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDatatypeCodePropertyType createMDDatatypeCodePropertyType()
-	{
+	@Override
+	public MDDatatypeCodePropertyType createMDDatatypeCodePropertyType() {
 		MDDatatypeCodePropertyTypeImpl mdDatatypeCodePropertyType = new MDDatatypeCodePropertyTypeImpl();
 		return mdDatatypeCodePropertyType;
 	}
@@ -1802,8 +1790,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDigitalTransferOptionsPropertyType createMDDigitalTransferOptionsPropertyType()
-	{
+	@Override
+	public MDDigitalTransferOptionsPropertyType createMDDigitalTransferOptionsPropertyType() {
 		MDDigitalTransferOptionsPropertyTypeImpl mdDigitalTransferOptionsPropertyType = new MDDigitalTransferOptionsPropertyTypeImpl();
 		return mdDigitalTransferOptionsPropertyType;
 	}
@@ -1813,8 +1801,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDigitalTransferOptionsType createMDDigitalTransferOptionsType()
-	{
+	@Override
+	public MDDigitalTransferOptionsType createMDDigitalTransferOptionsType() {
 		MDDigitalTransferOptionsTypeImpl mdDigitalTransferOptionsType = new MDDigitalTransferOptionsTypeImpl();
 		return mdDigitalTransferOptionsType;
 	}
@@ -1824,8 +1812,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDimensionNameTypeCodePropertyType createMDDimensionNameTypeCodePropertyType()
-	{
+	@Override
+	public MDDimensionNameTypeCodePropertyType createMDDimensionNameTypeCodePropertyType() {
 		MDDimensionNameTypeCodePropertyTypeImpl mdDimensionNameTypeCodePropertyType = new MDDimensionNameTypeCodePropertyTypeImpl();
 		return mdDimensionNameTypeCodePropertyType;
 	}
@@ -1835,8 +1823,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDimensionPropertyType createMDDimensionPropertyType()
-	{
+	@Override
+	public MDDimensionPropertyType createMDDimensionPropertyType() {
 		MDDimensionPropertyTypeImpl mdDimensionPropertyType = new MDDimensionPropertyTypeImpl();
 		return mdDimensionPropertyType;
 	}
@@ -1846,8 +1834,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDimensionType createMDDimensionType()
-	{
+	@Override
+	public MDDimensionType createMDDimensionType() {
 		MDDimensionTypeImpl mdDimensionType = new MDDimensionTypeImpl();
 		return mdDimensionType;
 	}
@@ -1857,8 +1845,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDistributionPropertyType createMDDistributionPropertyType()
-	{
+	@Override
+	public MDDistributionPropertyType createMDDistributionPropertyType() {
 		MDDistributionPropertyTypeImpl mdDistributionPropertyType = new MDDistributionPropertyTypeImpl();
 		return mdDistributionPropertyType;
 	}
@@ -1868,8 +1856,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDistributionType createMDDistributionType()
-	{
+	@Override
+	public MDDistributionType createMDDistributionType() {
 		MDDistributionTypeImpl mdDistributionType = new MDDistributionTypeImpl();
 		return mdDistributionType;
 	}
@@ -1879,8 +1867,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDistributionUnitsPropertyType createMDDistributionUnitsPropertyType()
-	{
+	@Override
+	public MDDistributionUnitsPropertyType createMDDistributionUnitsPropertyType() {
 		MDDistributionUnitsPropertyTypeImpl mdDistributionUnitsPropertyType = new MDDistributionUnitsPropertyTypeImpl();
 		return mdDistributionUnitsPropertyType;
 	}
@@ -1890,8 +1878,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDistributorPropertyType createMDDistributorPropertyType()
-	{
+	@Override
+	public MDDistributorPropertyType createMDDistributorPropertyType() {
 		MDDistributorPropertyTypeImpl mdDistributorPropertyType = new MDDistributorPropertyTypeImpl();
 		return mdDistributorPropertyType;
 	}
@@ -1901,8 +1889,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDistributorType createMDDistributorType()
-	{
+	@Override
+	public MDDistributorType createMDDistributorType() {
 		MDDistributorTypeImpl mdDistributorType = new MDDistributorTypeImpl();
 		return mdDistributorType;
 	}
@@ -1912,8 +1900,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDExtendedElementInformationPropertyType createMDExtendedElementInformationPropertyType()
-	{
+	@Override
+	public MDExtendedElementInformationPropertyType createMDExtendedElementInformationPropertyType() {
 		MDExtendedElementInformationPropertyTypeImpl mdExtendedElementInformationPropertyType = new MDExtendedElementInformationPropertyTypeImpl();
 		return mdExtendedElementInformationPropertyType;
 	}
@@ -1923,8 +1911,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDExtendedElementInformationType createMDExtendedElementInformationType()
-	{
+	@Override
+	public MDExtendedElementInformationType createMDExtendedElementInformationType() {
 		MDExtendedElementInformationTypeImpl mdExtendedElementInformationType = new MDExtendedElementInformationTypeImpl();
 		return mdExtendedElementInformationType;
 	}
@@ -1934,8 +1922,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDFeatureCatalogueDescriptionPropertyType createMDFeatureCatalogueDescriptionPropertyType()
-	{
+	@Override
+	public MDFeatureCatalogueDescriptionPropertyType createMDFeatureCatalogueDescriptionPropertyType() {
 		MDFeatureCatalogueDescriptionPropertyTypeImpl mdFeatureCatalogueDescriptionPropertyType = new MDFeatureCatalogueDescriptionPropertyTypeImpl();
 		return mdFeatureCatalogueDescriptionPropertyType;
 	}
@@ -1945,8 +1933,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDFeatureCatalogueDescriptionType createMDFeatureCatalogueDescriptionType()
-	{
+	@Override
+	public MDFeatureCatalogueDescriptionType createMDFeatureCatalogueDescriptionType() {
 		MDFeatureCatalogueDescriptionTypeImpl mdFeatureCatalogueDescriptionType = new MDFeatureCatalogueDescriptionTypeImpl();
 		return mdFeatureCatalogueDescriptionType;
 	}
@@ -1956,8 +1944,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDFormatPropertyType createMDFormatPropertyType()
-	{
+	@Override
+	public MDFormatPropertyType createMDFormatPropertyType() {
 		MDFormatPropertyTypeImpl mdFormatPropertyType = new MDFormatPropertyTypeImpl();
 		return mdFormatPropertyType;
 	}
@@ -1967,8 +1955,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDFormatType createMDFormatType()
-	{
+	@Override
+	public MDFormatType createMDFormatType() {
 		MDFormatTypeImpl mdFormatType = new MDFormatTypeImpl();
 		return mdFormatType;
 	}
@@ -1978,8 +1966,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGeometricObjectsPropertyType createMDGeometricObjectsPropertyType()
-	{
+	@Override
+	public MDGeometricObjectsPropertyType createMDGeometricObjectsPropertyType() {
 		MDGeometricObjectsPropertyTypeImpl mdGeometricObjectsPropertyType = new MDGeometricObjectsPropertyTypeImpl();
 		return mdGeometricObjectsPropertyType;
 	}
@@ -1989,8 +1977,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGeometricObjectsType createMDGeometricObjectsType()
-	{
+	@Override
+	public MDGeometricObjectsType createMDGeometricObjectsType() {
 		MDGeometricObjectsTypeImpl mdGeometricObjectsType = new MDGeometricObjectsTypeImpl();
 		return mdGeometricObjectsType;
 	}
@@ -2000,8 +1988,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGeometricObjectTypeCodePropertyType createMDGeometricObjectTypeCodePropertyType()
-	{
+	@Override
+	public MDGeometricObjectTypeCodePropertyType createMDGeometricObjectTypeCodePropertyType() {
 		MDGeometricObjectTypeCodePropertyTypeImpl mdGeometricObjectTypeCodePropertyType = new MDGeometricObjectTypeCodePropertyTypeImpl();
 		return mdGeometricObjectTypeCodePropertyType;
 	}
@@ -2011,8 +1999,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGeorectifiedPropertyType createMDGeorectifiedPropertyType()
-	{
+	@Override
+	public MDGeorectifiedPropertyType createMDGeorectifiedPropertyType() {
 		MDGeorectifiedPropertyTypeImpl mdGeorectifiedPropertyType = new MDGeorectifiedPropertyTypeImpl();
 		return mdGeorectifiedPropertyType;
 	}
@@ -2022,8 +2010,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGeorectifiedType createMDGeorectifiedType()
-	{
+	@Override
+	public MDGeorectifiedType createMDGeorectifiedType() {
 		MDGeorectifiedTypeImpl mdGeorectifiedType = new MDGeorectifiedTypeImpl();
 		return mdGeorectifiedType;
 	}
@@ -2033,8 +2021,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGeoreferenceablePropertyType createMDGeoreferenceablePropertyType()
-	{
+	@Override
+	public MDGeoreferenceablePropertyType createMDGeoreferenceablePropertyType() {
 		MDGeoreferenceablePropertyTypeImpl mdGeoreferenceablePropertyType = new MDGeoreferenceablePropertyTypeImpl();
 		return mdGeoreferenceablePropertyType;
 	}
@@ -2044,8 +2032,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGeoreferenceableType createMDGeoreferenceableType()
-	{
+	@Override
+	public MDGeoreferenceableType createMDGeoreferenceableType() {
 		MDGeoreferenceableTypeImpl mdGeoreferenceableType = new MDGeoreferenceableTypeImpl();
 		return mdGeoreferenceableType;
 	}
@@ -2055,8 +2043,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGridSpatialRepresentationPropertyType createMDGridSpatialRepresentationPropertyType()
-	{
+	@Override
+	public MDGridSpatialRepresentationPropertyType createMDGridSpatialRepresentationPropertyType() {
 		MDGridSpatialRepresentationPropertyTypeImpl mdGridSpatialRepresentationPropertyType = new MDGridSpatialRepresentationPropertyTypeImpl();
 		return mdGridSpatialRepresentationPropertyType;
 	}
@@ -2066,8 +2054,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDGridSpatialRepresentationType createMDGridSpatialRepresentationType()
-	{
+	@Override
+	public MDGridSpatialRepresentationType createMDGridSpatialRepresentationType() {
 		MDGridSpatialRepresentationTypeImpl mdGridSpatialRepresentationType = new MDGridSpatialRepresentationTypeImpl();
 		return mdGridSpatialRepresentationType;
 	}
@@ -2077,8 +2065,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDIdentificationPropertyType createMDIdentificationPropertyType()
-	{
+	@Override
+	public MDIdentificationPropertyType createMDIdentificationPropertyType() {
 		MDIdentificationPropertyTypeImpl mdIdentificationPropertyType = new MDIdentificationPropertyTypeImpl();
 		return mdIdentificationPropertyType;
 	}
@@ -2088,8 +2076,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDIdentifierPropertyType createMDIdentifierPropertyType()
-	{
+	@Override
+	public MDIdentifierPropertyType createMDIdentifierPropertyType() {
 		MDIdentifierPropertyTypeImpl mdIdentifierPropertyType = new MDIdentifierPropertyTypeImpl();
 		return mdIdentifierPropertyType;
 	}
@@ -2099,8 +2087,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDIdentifierType createMDIdentifierType()
-	{
+	@Override
+	public MDIdentifierType createMDIdentifierType() {
 		MDIdentifierTypeImpl mdIdentifierType = new MDIdentifierTypeImpl();
 		return mdIdentifierType;
 	}
@@ -2110,8 +2098,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDImageDescriptionPropertyType createMDImageDescriptionPropertyType()
-	{
+	@Override
+	public MDImageDescriptionPropertyType createMDImageDescriptionPropertyType() {
 		MDImageDescriptionPropertyTypeImpl mdImageDescriptionPropertyType = new MDImageDescriptionPropertyTypeImpl();
 		return mdImageDescriptionPropertyType;
 	}
@@ -2121,8 +2109,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDImageDescriptionType createMDImageDescriptionType()
-	{
+	@Override
+	public MDImageDescriptionType createMDImageDescriptionType() {
 		MDImageDescriptionTypeImpl mdImageDescriptionType = new MDImageDescriptionTypeImpl();
 		return mdImageDescriptionType;
 	}
@@ -2132,8 +2120,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDImagingConditionCodePropertyType createMDImagingConditionCodePropertyType()
-	{
+	@Override
+	public MDImagingConditionCodePropertyType createMDImagingConditionCodePropertyType() {
 		MDImagingConditionCodePropertyTypeImpl mdImagingConditionCodePropertyType = new MDImagingConditionCodePropertyTypeImpl();
 		return mdImagingConditionCodePropertyType;
 	}
@@ -2143,8 +2131,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDKeywordsPropertyType createMDKeywordsPropertyType()
-	{
+	@Override
+	public MDKeywordsPropertyType createMDKeywordsPropertyType() {
 		MDKeywordsPropertyTypeImpl mdKeywordsPropertyType = new MDKeywordsPropertyTypeImpl();
 		return mdKeywordsPropertyType;
 	}
@@ -2154,8 +2142,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDKeywordsType createMDKeywordsType()
-	{
+	@Override
+	public MDKeywordsType createMDKeywordsType() {
 		MDKeywordsTypeImpl mdKeywordsType = new MDKeywordsTypeImpl();
 		return mdKeywordsType;
 	}
@@ -2165,8 +2153,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDKeywordTypeCodePropertyType createMDKeywordTypeCodePropertyType()
-	{
+	@Override
+	public MDKeywordTypeCodePropertyType createMDKeywordTypeCodePropertyType() {
 		MDKeywordTypeCodePropertyTypeImpl mdKeywordTypeCodePropertyType = new MDKeywordTypeCodePropertyTypeImpl();
 		return mdKeywordTypeCodePropertyType;
 	}
@@ -2176,8 +2164,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDLegalConstraintsPropertyType createMDLegalConstraintsPropertyType()
-	{
+	@Override
+	public MDLegalConstraintsPropertyType createMDLegalConstraintsPropertyType() {
 		MDLegalConstraintsPropertyTypeImpl mdLegalConstraintsPropertyType = new MDLegalConstraintsPropertyTypeImpl();
 		return mdLegalConstraintsPropertyType;
 	}
@@ -2187,8 +2175,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDLegalConstraintsType createMDLegalConstraintsType()
-	{
+	@Override
+	public MDLegalConstraintsType createMDLegalConstraintsType() {
 		MDLegalConstraintsTypeImpl mdLegalConstraintsType = new MDLegalConstraintsTypeImpl();
 		return mdLegalConstraintsType;
 	}
@@ -2198,8 +2186,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMaintenanceFrequencyCodePropertyType createMDMaintenanceFrequencyCodePropertyType()
-	{
+	@Override
+	public MDMaintenanceFrequencyCodePropertyType createMDMaintenanceFrequencyCodePropertyType() {
 		MDMaintenanceFrequencyCodePropertyTypeImpl mdMaintenanceFrequencyCodePropertyType = new MDMaintenanceFrequencyCodePropertyTypeImpl();
 		return mdMaintenanceFrequencyCodePropertyType;
 	}
@@ -2209,8 +2197,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMaintenanceInformationPropertyType createMDMaintenanceInformationPropertyType()
-	{
+	@Override
+	public MDMaintenanceInformationPropertyType createMDMaintenanceInformationPropertyType() {
 		MDMaintenanceInformationPropertyTypeImpl mdMaintenanceInformationPropertyType = new MDMaintenanceInformationPropertyTypeImpl();
 		return mdMaintenanceInformationPropertyType;
 	}
@@ -2220,8 +2208,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMaintenanceInformationType createMDMaintenanceInformationType()
-	{
+	@Override
+	public MDMaintenanceInformationType createMDMaintenanceInformationType() {
 		MDMaintenanceInformationTypeImpl mdMaintenanceInformationType = new MDMaintenanceInformationTypeImpl();
 		return mdMaintenanceInformationType;
 	}
@@ -2231,8 +2219,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMediumFormatCodePropertyType createMDMediumFormatCodePropertyType()
-	{
+	@Override
+	public MDMediumFormatCodePropertyType createMDMediumFormatCodePropertyType() {
 		MDMediumFormatCodePropertyTypeImpl mdMediumFormatCodePropertyType = new MDMediumFormatCodePropertyTypeImpl();
 		return mdMediumFormatCodePropertyType;
 	}
@@ -2242,8 +2230,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMediumNameCodePropertyType createMDMediumNameCodePropertyType()
-	{
+	@Override
+	public MDMediumNameCodePropertyType createMDMediumNameCodePropertyType() {
 		MDMediumNameCodePropertyTypeImpl mdMediumNameCodePropertyType = new MDMediumNameCodePropertyTypeImpl();
 		return mdMediumNameCodePropertyType;
 	}
@@ -2253,8 +2241,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMediumPropertyType createMDMediumPropertyType()
-	{
+	@Override
+	public MDMediumPropertyType createMDMediumPropertyType() {
 		MDMediumPropertyTypeImpl mdMediumPropertyType = new MDMediumPropertyTypeImpl();
 		return mdMediumPropertyType;
 	}
@@ -2264,8 +2252,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMediumType createMDMediumType()
-	{
+	@Override
+	public MDMediumType createMDMediumType() {
 		MDMediumTypeImpl mdMediumType = new MDMediumTypeImpl();
 		return mdMediumType;
 	}
@@ -2275,8 +2263,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMetadataExtensionInformationPropertyType createMDMetadataExtensionInformationPropertyType()
-	{
+	@Override
+	public MDMetadataExtensionInformationPropertyType createMDMetadataExtensionInformationPropertyType() {
 		MDMetadataExtensionInformationPropertyTypeImpl mdMetadataExtensionInformationPropertyType = new MDMetadataExtensionInformationPropertyTypeImpl();
 		return mdMetadataExtensionInformationPropertyType;
 	}
@@ -2286,8 +2274,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMetadataExtensionInformationType createMDMetadataExtensionInformationType()
-	{
+	@Override
+	public MDMetadataExtensionInformationType createMDMetadataExtensionInformationType() {
 		MDMetadataExtensionInformationTypeImpl mdMetadataExtensionInformationType = new MDMetadataExtensionInformationTypeImpl();
 		return mdMetadataExtensionInformationType;
 	}
@@ -2297,8 +2285,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMetadataPropertyType createMDMetadataPropertyType()
-	{
+	@Override
+	public MDMetadataPropertyType createMDMetadataPropertyType() {
 		MDMetadataPropertyTypeImpl mdMetadataPropertyType = new MDMetadataPropertyTypeImpl();
 		return mdMetadataPropertyType;
 	}
@@ -2308,8 +2296,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMetadataType createMDMetadataType()
-	{
+	@Override
+	public MDMetadataType createMDMetadataType() {
 		MDMetadataTypeImpl mdMetadataType = new MDMetadataTypeImpl();
 		return mdMetadataType;
 	}
@@ -2319,8 +2307,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDObligationCodePropertyType createMDObligationCodePropertyType()
-	{
+	@Override
+	public MDObligationCodePropertyType createMDObligationCodePropertyType() {
 		MDObligationCodePropertyTypeImpl mdObligationCodePropertyType = new MDObligationCodePropertyTypeImpl();
 		return mdObligationCodePropertyType;
 	}
@@ -2330,8 +2318,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDPixelOrientationCodePropertyType createMDPixelOrientationCodePropertyType()
-	{
+	@Override
+	public MDPixelOrientationCodePropertyType createMDPixelOrientationCodePropertyType() {
 		MDPixelOrientationCodePropertyTypeImpl mdPixelOrientationCodePropertyType = new MDPixelOrientationCodePropertyTypeImpl();
 		return mdPixelOrientationCodePropertyType;
 	}
@@ -2341,8 +2329,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDPortrayalCatalogueReferencePropertyType createMDPortrayalCatalogueReferencePropertyType()
-	{
+	@Override
+	public MDPortrayalCatalogueReferencePropertyType createMDPortrayalCatalogueReferencePropertyType() {
 		MDPortrayalCatalogueReferencePropertyTypeImpl mdPortrayalCatalogueReferencePropertyType = new MDPortrayalCatalogueReferencePropertyTypeImpl();
 		return mdPortrayalCatalogueReferencePropertyType;
 	}
@@ -2352,8 +2340,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDPortrayalCatalogueReferenceType createMDPortrayalCatalogueReferenceType()
-	{
+	@Override
+	public MDPortrayalCatalogueReferenceType createMDPortrayalCatalogueReferenceType() {
 		MDPortrayalCatalogueReferenceTypeImpl mdPortrayalCatalogueReferenceType = new MDPortrayalCatalogueReferenceTypeImpl();
 		return mdPortrayalCatalogueReferenceType;
 	}
@@ -2363,8 +2351,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDProgressCodePropertyType createMDProgressCodePropertyType()
-	{
+	@Override
+	public MDProgressCodePropertyType createMDProgressCodePropertyType() {
 		MDProgressCodePropertyTypeImpl mdProgressCodePropertyType = new MDProgressCodePropertyTypeImpl();
 		return mdProgressCodePropertyType;
 	}
@@ -2374,8 +2362,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDRangeDimensionPropertyType createMDRangeDimensionPropertyType()
-	{
+	@Override
+	public MDRangeDimensionPropertyType createMDRangeDimensionPropertyType() {
 		MDRangeDimensionPropertyTypeImpl mdRangeDimensionPropertyType = new MDRangeDimensionPropertyTypeImpl();
 		return mdRangeDimensionPropertyType;
 	}
@@ -2385,8 +2373,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDRangeDimensionType createMDRangeDimensionType()
-	{
+	@Override
+	public MDRangeDimensionType createMDRangeDimensionType() {
 		MDRangeDimensionTypeImpl mdRangeDimensionType = new MDRangeDimensionTypeImpl();
 		return mdRangeDimensionType;
 	}
@@ -2396,8 +2384,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDReferenceSystemPropertyType createMDReferenceSystemPropertyType()
-	{
+	@Override
+	public MDReferenceSystemPropertyType createMDReferenceSystemPropertyType() {
 		MDReferenceSystemPropertyTypeImpl mdReferenceSystemPropertyType = new MDReferenceSystemPropertyTypeImpl();
 		return mdReferenceSystemPropertyType;
 	}
@@ -2407,8 +2395,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDReferenceSystemType createMDReferenceSystemType()
-	{
+	@Override
+	public MDReferenceSystemType createMDReferenceSystemType() {
 		MDReferenceSystemTypeImpl mdReferenceSystemType = new MDReferenceSystemTypeImpl();
 		return mdReferenceSystemType;
 	}
@@ -2418,8 +2406,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDRepresentativeFractionPropertyType createMDRepresentativeFractionPropertyType()
-	{
+	@Override
+	public MDRepresentativeFractionPropertyType createMDRepresentativeFractionPropertyType() {
 		MDRepresentativeFractionPropertyTypeImpl mdRepresentativeFractionPropertyType = new MDRepresentativeFractionPropertyTypeImpl();
 		return mdRepresentativeFractionPropertyType;
 	}
@@ -2429,8 +2417,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDRepresentativeFractionType createMDRepresentativeFractionType()
-	{
+	@Override
+	public MDRepresentativeFractionType createMDRepresentativeFractionType() {
 		MDRepresentativeFractionTypeImpl mdRepresentativeFractionType = new MDRepresentativeFractionTypeImpl();
 		return mdRepresentativeFractionType;
 	}
@@ -2440,8 +2428,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDResolutionPropertyType createMDResolutionPropertyType()
-	{
+	@Override
+	public MDResolutionPropertyType createMDResolutionPropertyType() {
 		MDResolutionPropertyTypeImpl mdResolutionPropertyType = new MDResolutionPropertyTypeImpl();
 		return mdResolutionPropertyType;
 	}
@@ -2451,8 +2439,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDResolutionType createMDResolutionType()
-	{
+	@Override
+	public MDResolutionType createMDResolutionType() {
 		MDResolutionTypeImpl mdResolutionType = new MDResolutionTypeImpl();
 		return mdResolutionType;
 	}
@@ -2462,8 +2450,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDRestrictionCodePropertyType createMDRestrictionCodePropertyType()
-	{
+	@Override
+	public MDRestrictionCodePropertyType createMDRestrictionCodePropertyType() {
 		MDRestrictionCodePropertyTypeImpl mdRestrictionCodePropertyType = new MDRestrictionCodePropertyTypeImpl();
 		return mdRestrictionCodePropertyType;
 	}
@@ -2473,8 +2461,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDScopeCodePropertyType createMDScopeCodePropertyType()
-	{
+	@Override
+	public MDScopeCodePropertyType createMDScopeCodePropertyType() {
 		MDScopeCodePropertyTypeImpl mdScopeCodePropertyType = new MDScopeCodePropertyTypeImpl();
 		return mdScopeCodePropertyType;
 	}
@@ -2484,8 +2472,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDScopeDescriptionPropertyType createMDScopeDescriptionPropertyType()
-	{
+	@Override
+	public MDScopeDescriptionPropertyType createMDScopeDescriptionPropertyType() {
 		MDScopeDescriptionPropertyTypeImpl mdScopeDescriptionPropertyType = new MDScopeDescriptionPropertyTypeImpl();
 		return mdScopeDescriptionPropertyType;
 	}
@@ -2495,8 +2483,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDScopeDescriptionType createMDScopeDescriptionType()
-	{
+	@Override
+	public MDScopeDescriptionType createMDScopeDescriptionType() {
 		MDScopeDescriptionTypeImpl mdScopeDescriptionType = new MDScopeDescriptionTypeImpl();
 		return mdScopeDescriptionType;
 	}
@@ -2506,8 +2494,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDSecurityConstraintsPropertyType createMDSecurityConstraintsPropertyType()
-	{
+	@Override
+	public MDSecurityConstraintsPropertyType createMDSecurityConstraintsPropertyType() {
 		MDSecurityConstraintsPropertyTypeImpl mdSecurityConstraintsPropertyType = new MDSecurityConstraintsPropertyTypeImpl();
 		return mdSecurityConstraintsPropertyType;
 	}
@@ -2517,8 +2505,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDSecurityConstraintsType createMDSecurityConstraintsType()
-	{
+	@Override
+	public MDSecurityConstraintsType createMDSecurityConstraintsType() {
 		MDSecurityConstraintsTypeImpl mdSecurityConstraintsType = new MDSecurityConstraintsTypeImpl();
 		return mdSecurityConstraintsType;
 	}
@@ -2528,8 +2516,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDServiceIdentificationPropertyType createMDServiceIdentificationPropertyType()
-	{
+	@Override
+	public MDServiceIdentificationPropertyType createMDServiceIdentificationPropertyType() {
 		MDServiceIdentificationPropertyTypeImpl mdServiceIdentificationPropertyType = new MDServiceIdentificationPropertyTypeImpl();
 		return mdServiceIdentificationPropertyType;
 	}
@@ -2539,8 +2527,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDServiceIdentificationType createMDServiceIdentificationType()
-	{
+	@Override
+	public MDServiceIdentificationType createMDServiceIdentificationType() {
 		MDServiceIdentificationTypeImpl mdServiceIdentificationType = new MDServiceIdentificationTypeImpl();
 		return mdServiceIdentificationType;
 	}
@@ -2550,8 +2538,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDSpatialRepresentationPropertyType createMDSpatialRepresentationPropertyType()
-	{
+	@Override
+	public MDSpatialRepresentationPropertyType createMDSpatialRepresentationPropertyType() {
 		MDSpatialRepresentationPropertyTypeImpl mdSpatialRepresentationPropertyType = new MDSpatialRepresentationPropertyTypeImpl();
 		return mdSpatialRepresentationPropertyType;
 	}
@@ -2561,8 +2549,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDSpatialRepresentationTypeCodePropertyType createMDSpatialRepresentationTypeCodePropertyType()
-	{
+	@Override
+	public MDSpatialRepresentationTypeCodePropertyType createMDSpatialRepresentationTypeCodePropertyType() {
 		MDSpatialRepresentationTypeCodePropertyTypeImpl mdSpatialRepresentationTypeCodePropertyType = new MDSpatialRepresentationTypeCodePropertyTypeImpl();
 		return mdSpatialRepresentationTypeCodePropertyType;
 	}
@@ -2572,8 +2560,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDStandardOrderProcessPropertyType createMDStandardOrderProcessPropertyType()
-	{
+	@Override
+	public MDStandardOrderProcessPropertyType createMDStandardOrderProcessPropertyType() {
 		MDStandardOrderProcessPropertyTypeImpl mdStandardOrderProcessPropertyType = new MDStandardOrderProcessPropertyTypeImpl();
 		return mdStandardOrderProcessPropertyType;
 	}
@@ -2583,8 +2571,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDStandardOrderProcessType createMDStandardOrderProcessType()
-	{
+	@Override
+	public MDStandardOrderProcessType createMDStandardOrderProcessType() {
 		MDStandardOrderProcessTypeImpl mdStandardOrderProcessType = new MDStandardOrderProcessTypeImpl();
 		return mdStandardOrderProcessType;
 	}
@@ -2594,8 +2582,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDTopicCategoryCodePropertyType createMDTopicCategoryCodePropertyType()
-	{
+	@Override
+	public MDTopicCategoryCodePropertyType createMDTopicCategoryCodePropertyType() {
 		MDTopicCategoryCodePropertyTypeImpl mdTopicCategoryCodePropertyType = new MDTopicCategoryCodePropertyTypeImpl();
 		return mdTopicCategoryCodePropertyType;
 	}
@@ -2605,8 +2593,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDTopologyLevelCodePropertyType createMDTopologyLevelCodePropertyType()
-	{
+	@Override
+	public MDTopologyLevelCodePropertyType createMDTopologyLevelCodePropertyType() {
 		MDTopologyLevelCodePropertyTypeImpl mdTopologyLevelCodePropertyType = new MDTopologyLevelCodePropertyTypeImpl();
 		return mdTopologyLevelCodePropertyType;
 	}
@@ -2616,8 +2604,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDUsagePropertyType createMDUsagePropertyType()
-	{
+	@Override
+	public MDUsagePropertyType createMDUsagePropertyType() {
 		MDUsagePropertyTypeImpl mdUsagePropertyType = new MDUsagePropertyTypeImpl();
 		return mdUsagePropertyType;
 	}
@@ -2627,8 +2615,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDUsageType createMDUsageType()
-	{
+	@Override
+	public MDUsageType createMDUsageType() {
 		MDUsageTypeImpl mdUsageType = new MDUsageTypeImpl();
 		return mdUsageType;
 	}
@@ -2638,8 +2626,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDVectorSpatialRepresentationPropertyType createMDVectorSpatialRepresentationPropertyType()
-	{
+	@Override
+	public MDVectorSpatialRepresentationPropertyType createMDVectorSpatialRepresentationPropertyType() {
 		MDVectorSpatialRepresentationPropertyTypeImpl mdVectorSpatialRepresentationPropertyType = new MDVectorSpatialRepresentationPropertyTypeImpl();
 		return mdVectorSpatialRepresentationPropertyType;
 	}
@@ -2649,8 +2637,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDVectorSpatialRepresentationType createMDVectorSpatialRepresentationType()
-	{
+	@Override
+	public MDVectorSpatialRepresentationType createMDVectorSpatialRepresentationType() {
 		MDVectorSpatialRepresentationTypeImpl mdVectorSpatialRepresentationType = new MDVectorSpatialRepresentationTypeImpl();
 		return mdVectorSpatialRepresentationType;
 	}
@@ -2660,8 +2648,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PTFreeTextPropertyType createPTFreeTextPropertyType()
-	{
+	@Override
+	public PTFreeTextPropertyType createPTFreeTextPropertyType() {
 		PTFreeTextPropertyTypeImpl ptFreeTextPropertyType = new PTFreeTextPropertyTypeImpl();
 		return ptFreeTextPropertyType;
 	}
@@ -2671,8 +2659,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PTFreeTextType createPTFreeTextType()
-	{
+	@Override
+	public PTFreeTextType createPTFreeTextType() {
 		PTFreeTextTypeImpl ptFreeTextType = new PTFreeTextTypeImpl();
 		return ptFreeTextType;
 	}
@@ -2682,8 +2670,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PTLocaleContainerPropertyType createPTLocaleContainerPropertyType()
-	{
+	@Override
+	public PTLocaleContainerPropertyType createPTLocaleContainerPropertyType() {
 		PTLocaleContainerPropertyTypeImpl ptLocaleContainerPropertyType = new PTLocaleContainerPropertyTypeImpl();
 		return ptLocaleContainerPropertyType;
 	}
@@ -2693,8 +2681,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PTLocaleContainerType createPTLocaleContainerType()
-	{
+	@Override
+	public PTLocaleContainerType createPTLocaleContainerType() {
 		PTLocaleContainerTypeImpl ptLocaleContainerType = new PTLocaleContainerTypeImpl();
 		return ptLocaleContainerType;
 	}
@@ -2704,8 +2692,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PTLocalePropertyType createPTLocalePropertyType()
-	{
+	@Override
+	public PTLocalePropertyType createPTLocalePropertyType() {
 		PTLocalePropertyTypeImpl ptLocalePropertyType = new PTLocalePropertyTypeImpl();
 		return ptLocalePropertyType;
 	}
@@ -2715,8 +2703,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PTLocaleType createPTLocaleType()
-	{
+	@Override
+	public PTLocaleType createPTLocaleType() {
 		PTLocaleTypeImpl ptLocaleType = new PTLocaleTypeImpl();
 		return ptLocaleType;
 	}
@@ -2726,8 +2714,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RSIdentifierPropertyType createRSIdentifierPropertyType()
-	{
+	@Override
+	public RSIdentifierPropertyType createRSIdentifierPropertyType() {
 		RSIdentifierPropertyTypeImpl rsIdentifierPropertyType = new RSIdentifierPropertyTypeImpl();
 		return rsIdentifierPropertyType;
 	}
@@ -2737,8 +2725,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RSIdentifierType createRSIdentifierType()
-	{
+	@Override
+	public RSIdentifierType createRSIdentifierType() {
 		RSIdentifierTypeImpl rsIdentifierType = new RSIdentifierTypeImpl();
 		return rsIdentifierType;
 	}
@@ -2748,8 +2736,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RSReferenceSystemPropertyType createRSReferenceSystemPropertyType()
-	{
+	@Override
+	public RSReferenceSystemPropertyType createRSReferenceSystemPropertyType() {
 		RSReferenceSystemPropertyTypeImpl rsReferenceSystemPropertyType = new RSReferenceSystemPropertyTypeImpl();
 		return rsReferenceSystemPropertyType;
 	}
@@ -2759,8 +2747,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public URLPropertyType createURLPropertyType()
-	{
+	@Override
+	public URLPropertyType createURLPropertyType() {
 		URLPropertyTypeImpl urlPropertyType = new URLPropertyTypeImpl();
 		return urlPropertyType;
 	}
@@ -2770,8 +2758,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DocumentRoot createDocumentRoot()
-	{
+	@Override
+	public DocumentRoot createDocumentRoot() {
 		DocumentRootImpl documentRoot = new DocumentRootImpl();
 		return documentRoot;
 	}
@@ -2781,8 +2769,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDObligationCodeType createMDObligationCodeTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public MDObligationCodeType createMDObligationCodeTypeFromString(EDataType eDataType, String initialValue) {
 		MDObligationCodeType result = MDObligationCodeType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -2793,8 +2780,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMDObligationCodeTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertMDObligationCodeTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -2803,8 +2789,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDPixelOrientationCodeType createMDPixelOrientationCodeTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public MDPixelOrientationCodeType createMDPixelOrientationCodeTypeFromString(EDataType eDataType, String initialValue) {
 		MDPixelOrientationCodeType result = MDPixelOrientationCodeType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -2815,8 +2800,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMDPixelOrientationCodeTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertMDPixelOrientationCodeTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -2825,8 +2809,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDTopicCategoryCodeType createMDTopicCategoryCodeTypeFromString(EDataType eDataType, String initialValue)
-	{
+	public MDTopicCategoryCodeType createMDTopicCategoryCodeTypeFromString(EDataType eDataType, String initialValue) {
 		MDTopicCategoryCodeType result = MDTopicCategoryCodeType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
@@ -2837,8 +2820,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMDTopicCategoryCodeTypeToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertMDTopicCategoryCodeTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -2847,8 +2829,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDObligationCodeType createMDObligationCodeTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public MDObligationCodeType createMDObligationCodeTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createMDObligationCodeTypeFromString(GMDPackage.eINSTANCE.getMDObligationCodeType(), initialValue);
 	}
 
@@ -2857,8 +2838,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMDObligationCodeTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertMDObligationCodeTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertMDObligationCodeTypeToString(GMDPackage.eINSTANCE.getMDObligationCodeType(), instanceValue);
 	}
 
@@ -2867,8 +2847,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDPixelOrientationCodeType createMDPixelOrientationCodeTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public MDPixelOrientationCodeType createMDPixelOrientationCodeTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createMDPixelOrientationCodeTypeFromString(GMDPackage.eINSTANCE.getMDPixelOrientationCodeType(), initialValue);
 	}
 
@@ -2877,8 +2856,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMDPixelOrientationCodeTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertMDPixelOrientationCodeTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertMDPixelOrientationCodeTypeToString(GMDPackage.eINSTANCE.getMDPixelOrientationCodeType(), instanceValue);
 	}
 
@@ -2887,8 +2865,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDTopicCategoryCodeType createMDTopicCategoryCodeTypeObjectFromString(EDataType eDataType, String initialValue)
-	{
+	public MDTopicCategoryCodeType createMDTopicCategoryCodeTypeObjectFromString(EDataType eDataType, String initialValue) {
 		return createMDTopicCategoryCodeTypeFromString(GMDPackage.eINSTANCE.getMDTopicCategoryCodeType(), initialValue);
 	}
 
@@ -2897,8 +2874,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMDTopicCategoryCodeTypeObjectToString(EDataType eDataType, Object instanceValue)
-	{
+	public String convertMDTopicCategoryCodeTypeObjectToString(EDataType eDataType, Object instanceValue) {
 		return convertMDTopicCategoryCodeTypeToString(GMDPackage.eINSTANCE.getMDTopicCategoryCodeType(), instanceValue);
 	}
 
@@ -2907,8 +2883,8 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMDPackage getGMDPackage()
-	{
+	@Override
+	public GMDPackage getGMDPackage() {
 		return (GMDPackage)getEPackage();
 	}
 
@@ -2919,8 +2895,7 @@ public class GMDFactoryImpl extends EFactoryImpl implements GMDFactory
 	 * @generated
 	 */
 	@Deprecated
-	public static GMDPackage getPackage()
-	{
+	public static GMDPackage getPackage() {
 		return GMDPackage.eINSTANCE;
 	}
 

@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiSolidType
-{
+public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiSolidType {
 	/**
 	 * The cached value of the '{@link #getSolidMember() <em>Solid Member</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MultiSolidTypeImpl()
-	{
+	protected MultiSolidTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMultiSolidType();
 	}
 
@@ -84,10 +81,9 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SolidPropertyType> getSolidMember()
-	{
-		if (solidMember == null)
-		{
+	@Override
+	public EList<SolidPropertyType> getSolidMember() {
+		if (solidMember == null) {
 			solidMember = new EObjectContainmentEList<SolidPropertyType>(SolidPropertyType.class, this, GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBER);
 		}
 		return solidMember;
@@ -98,8 +94,8 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolidArrayPropertyType getSolidMembers()
-	{
+	@Override
+	public SolidArrayPropertyType getSolidMembers() {
 		return solidMembers;
 	}
 
@@ -108,12 +104,10 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSolidMembers(SolidArrayPropertyType newSolidMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSolidMembers(SolidArrayPropertyType newSolidMembers, NotificationChain msgs) {
 		SolidArrayPropertyType oldSolidMembers = solidMembers;
 		solidMembers = newSolidMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBERS, oldSolidMembers, newSolidMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +119,9 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSolidMembers(SolidArrayPropertyType newSolidMembers)
-	{
-		if (newSolidMembers != solidMembers)
-		{
+	@Override
+	public void setSolidMembers(SolidArrayPropertyType newSolidMembers) {
+		if (newSolidMembers != solidMembers) {
 			NotificationChain msgs = null;
 			if (solidMembers != null)
 				msgs = ((InternalEObject)solidMembers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBERS, null, msgs);
@@ -147,10 +140,8 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBER:
 				return ((InternalEList<?>)getSolidMember()).basicRemove(otherEnd, msgs);
 			case GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBERS:
@@ -165,10 +156,8 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBER:
 				return getSolidMember();
 			case GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBERS:
@@ -184,10 +173,8 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBER:
 				getSolidMember().clear();
 				getSolidMember().addAll((Collection<? extends SolidPropertyType>)newValue);
@@ -205,10 +192,8 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBER:
 				getSolidMember().clear();
 				return;
@@ -225,10 +210,8 @@ public class MultiSolidTypeImpl extends AbstractGeometricAggregateTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBER:
 				return solidMember != null && !solidMember.isEmpty();
 			case GMLPackage.MULTI_SOLID_TYPE__SOLID_MEMBERS:

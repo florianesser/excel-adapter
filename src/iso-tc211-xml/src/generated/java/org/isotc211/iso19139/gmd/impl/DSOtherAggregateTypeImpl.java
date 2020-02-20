@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DSOtherAggregateTypeImpl extends AbstractDSAggregateTypeImpl implements DSOtherAggregateType
-{
+public class DSOtherAggregateTypeImpl extends AbstractDSAggregateTypeImpl implements DSOtherAggregateType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSOtherAggregateTypeImpl()
-	{
+	protected DSOtherAggregateTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DSOtherAggregateTypeImpl extends AbstractDSAggregateTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSOtherAggregateType();
 	}
 

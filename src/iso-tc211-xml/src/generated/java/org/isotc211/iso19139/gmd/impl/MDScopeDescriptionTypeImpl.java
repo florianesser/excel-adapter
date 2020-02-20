@@ -42,8 +42,7 @@ import org.isotc211.iso19139.gmd.MDScopeDescriptionType;
  *
  * @generated
  */
-public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container implements MDScopeDescriptionType
-{
+public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container implements MDScopeDescriptionType {
 	/**
 	 * The cached value of the '{@link #getAttributes() <em>Attributes</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -109,8 +108,7 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDScopeDescriptionTypeImpl()
-	{
+	protected MDScopeDescriptionTypeImpl() {
 		super();
 	}
 
@@ -120,8 +118,7 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDScopeDescriptionType();
 	}
 
@@ -130,10 +127,9 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ObjectReferencePropertyType> getAttributes()
-	{
-		if (attributes == null)
-		{
+	@Override
+	public EList<ObjectReferencePropertyType> getAttributes() {
+		if (attributes == null) {
 			attributes = new EObjectContainmentEList<ObjectReferencePropertyType>(ObjectReferencePropertyType.class, this, GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__ATTRIBUTES);
 		}
 		return attributes;
@@ -144,10 +140,9 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ObjectReferencePropertyType> getFeatures()
-	{
-		if (features == null)
-		{
+	@Override
+	public EList<ObjectReferencePropertyType> getFeatures() {
+		if (features == null) {
 			features = new EObjectContainmentEList<ObjectReferencePropertyType>(ObjectReferencePropertyType.class, this, GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__FEATURES);
 		}
 		return features;
@@ -158,10 +153,9 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ObjectReferencePropertyType> getFeatureInstances()
-	{
-		if (featureInstances == null)
-		{
+	@Override
+	public EList<ObjectReferencePropertyType> getFeatureInstances() {
+		if (featureInstances == null) {
 			featureInstances = new EObjectContainmentEList<ObjectReferencePropertyType>(ObjectReferencePropertyType.class, this, GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__FEATURE_INSTANCES);
 		}
 		return featureInstances;
@@ -172,10 +166,9 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ObjectReferencePropertyType> getAttributeInstances()
-	{
-		if (attributeInstances == null)
-		{
+	@Override
+	public EList<ObjectReferencePropertyType> getAttributeInstances() {
+		if (attributeInstances == null) {
 			attributeInstances = new EObjectContainmentEList<ObjectReferencePropertyType>(ObjectReferencePropertyType.class, this, GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__ATTRIBUTE_INSTANCES);
 		}
 		return attributeInstances;
@@ -186,8 +179,8 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDataset()
-	{
+	@Override
+	public CharacterStringPropertyType getDataset() {
 		return dataset;
 	}
 
@@ -196,12 +189,10 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataset(CharacterStringPropertyType newDataset, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataset(CharacterStringPropertyType newDataset, NotificationChain msgs) {
 		CharacterStringPropertyType oldDataset = dataset;
 		dataset = newDataset;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__DATASET, oldDataset, newDataset);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -213,10 +204,9 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataset(CharacterStringPropertyType newDataset)
-	{
-		if (newDataset != dataset)
-		{
+	@Override
+	public void setDataset(CharacterStringPropertyType newDataset) {
+		if (newDataset != dataset) {
 			NotificationChain msgs = null;
 			if (dataset != null)
 				msgs = ((InternalEObject)dataset).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__DATASET, null, msgs);
@@ -234,8 +224,8 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getOther()
-	{
+	@Override
+	public CharacterStringPropertyType getOther() {
 		return other;
 	}
 
@@ -244,12 +234,10 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOther(CharacterStringPropertyType newOther, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOther(CharacterStringPropertyType newOther, NotificationChain msgs) {
 		CharacterStringPropertyType oldOther = other;
 		other = newOther;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__OTHER, oldOther, newOther);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -261,10 +249,9 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOther(CharacterStringPropertyType newOther)
-	{
-		if (newOther != other)
-		{
+	@Override
+	public void setOther(CharacterStringPropertyType newOther) {
+		if (newOther != other) {
 			NotificationChain msgs = null;
 			if (other != null)
 				msgs = ((InternalEObject)other).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__OTHER, null, msgs);
@@ -283,10 +270,8 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__ATTRIBUTES:
 				return ((InternalEList<?>)getAttributes()).basicRemove(otherEnd, msgs);
 			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__FEATURES:
@@ -309,10 +294,8 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__ATTRIBUTES:
 				return getAttributes();
 			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__FEATURES:
@@ -336,10 +319,8 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__ATTRIBUTES:
 				getAttributes().clear();
 				getAttributes().addAll((Collection<? extends ObjectReferencePropertyType>)newValue);
@@ -372,10 +353,8 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__ATTRIBUTES:
 				getAttributes().clear();
 				return;
@@ -404,10 +383,8 @@ public class MDScopeDescriptionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__ATTRIBUTES:
 				return attributes != null && !attributes.isEmpty();
 			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE__FEATURES:

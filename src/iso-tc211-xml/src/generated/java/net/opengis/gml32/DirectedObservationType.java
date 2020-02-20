@@ -19,8 +19,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='DirectedObservationType' kind='elementOnly'"
  * @generated
  */
-public interface DirectedObservationType extends ObservationType
-{
+public interface DirectedObservationType extends ObservationType {
 	/**
 	 * Returns the value of the '<em><b>Direction</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

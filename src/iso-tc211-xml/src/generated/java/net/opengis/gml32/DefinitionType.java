@@ -19,15 +19,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='DefinitionType' kind='elementOnly'"
  * @generated
  */
-public interface DefinitionType extends DefinitionBaseType
-{
+public interface DefinitionType extends DefinitionBaseType {
 	/**
 	 * Returns the value of the '<em><b>Remarks</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Remarks</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Remarks</em>' attribute.
 	 * @see #setRemarks(String)

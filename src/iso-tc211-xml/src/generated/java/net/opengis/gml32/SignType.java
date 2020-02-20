@@ -20,17 +20,16 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='SignType'"
  * @generated
  */
-public enum SignType implements Enumerator
-{
+public enum SignType implements Enumerator {
 	/**
 	 * The '<em><b></b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #__VALUE
+	 * @see #___VALUE
 	 * @generated
 	 * @ordered
 	 */
-	_(0, "_", "-"),
+	__(0, "__", "-"),
 
 	/**
 	 * The '<em><b>1</b></em>' literal object.
@@ -45,25 +44,17 @@ public enum SignType implements Enumerator
 	/**
 	 * The '<em><b></b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b></b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #_
+	 * @see #__
 	 * @model literal="-"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int __VALUE = 0;
+	public static final int ___VALUE = 0;
 
 	/**
 	 * The '<em><b>1</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>1</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #_1
 	 * @model literal="+"
@@ -79,9 +70,8 @@ public enum SignType implements Enumerator
 	 * @generated
 	 */
 	private static final SignType[] VALUES_ARRAY =
-		new SignType[]
-		{
-			_,
+		new SignType[] {
+			__,
 			_1,
 		};
 
@@ -101,13 +91,10 @@ public enum SignType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SignType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static SignType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			SignType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -122,13 +109,10 @@ public enum SignType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SignType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static SignType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			SignType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -143,11 +127,9 @@ public enum SignType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SignType get(int value)
-	{
-		switch (value)
-		{
-			case __VALUE: return _;
+	public static SignType get(int value) {
+		switch (value) {
+			case ___VALUE: return __;
 			case _1_VALUE: return _1;
 		}
 		return null;
@@ -180,8 +162,7 @@ public enum SignType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private SignType(int value, String name, String literal)
-	{
+	private SignType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -192,8 +173,8 @@ public enum SignType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -202,8 +183,8 @@ public enum SignType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -212,8 +193,8 @@ public enum SignType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -224,8 +205,7 @@ public enum SignType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

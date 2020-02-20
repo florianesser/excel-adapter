@@ -17,16 +17,14 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
  * @see org.isotc211.iso19139.gts.util.GTSResourceImpl
  * @generated
  */
-public class GTSResourceFactoryImpl extends ResourceFactoryImpl
-{
+public class GTSResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GTSResourceFactoryImpl()
-	{
+	public GTSResourceFactoryImpl() {
 		super();
 	}
 
@@ -37,8 +35,7 @@ public class GTSResourceFactoryImpl extends ResourceFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Resource createResource(URI uri)
-	{
+	public Resource createResource(URI uri) {
 		XMLResource result = new GTSResourceImpl(uri);
 		result.getDefaultSaveOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);
 		result.getDefaultLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);

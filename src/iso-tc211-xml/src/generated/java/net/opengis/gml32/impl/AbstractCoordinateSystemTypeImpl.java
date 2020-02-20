@@ -38,8 +38,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectTypeImpl implements AbstractCoordinateSystemType
-{
+public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectTypeImpl implements AbstractCoordinateSystemType {
 	/**
 	 * The cached value of the '{@link #getAxisGroup() <em>Axis Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -84,8 +83,7 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractCoordinateSystemTypeImpl()
-	{
+	protected AbstractCoordinateSystemTypeImpl() {
 		super();
 	}
 
@@ -95,8 +93,7 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractCoordinateSystemType();
 	}
 
@@ -105,10 +102,9 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAxisGroup()
-	{
-		if (axisGroup == null)
-		{
+	@Override
+	public FeatureMap getAxisGroup() {
+		if (axisGroup == null) {
 			axisGroup = new BasicFeatureMap(this, GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE__AXIS_GROUP);
 		}
 		return axisGroup;
@@ -119,8 +115,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CoordinateSystemAxisPropertyType> getAxis()
-	{
+	@Override
+	public EList<CoordinateSystemAxisPropertyType> getAxis() {
 		return getAxisGroup().list(GMLPackage.eINSTANCE.getAbstractCoordinateSystemType_Axis());
 	}
 
@@ -129,8 +125,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -139,8 +135,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -154,8 +150,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -169,8 +165,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -180,10 +176,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE__AXIS_GROUP:
 				return ((InternalEList<?>)getAxisGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE__AXIS:
@@ -198,10 +192,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE__AXIS_GROUP:
 				if (coreType) return getAxisGroup();
 				return ((FeatureMap.Internal)getAxisGroup()).getWrapper();
@@ -220,10 +212,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE__AXIS_GROUP:
 				((FeatureMap.Internal)getAxisGroup()).set(newValue);
 				return;
@@ -244,10 +234,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE__AXIS_GROUP:
 				getAxisGroup().clear();
 				return;
@@ -267,10 +255,8 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE__AXIS_GROUP:
 				return axisGroup != null && !axisGroup.isEmpty();
 			case GMLPackage.ABSTRACT_COORDINATE_SYSTEM_TYPE__AXIS:
@@ -287,11 +273,10 @@ public abstract class AbstractCoordinateSystemTypeImpl extends IdentifiedObjectT
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (axisGroup: ");
 		result.append(axisGroup);
 		result.append(", aggregationType: ");

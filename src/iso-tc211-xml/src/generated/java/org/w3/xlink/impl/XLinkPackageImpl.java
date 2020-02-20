@@ -59,8 +59,7 @@ import org.w3.xlink.util.XLinkValidator;
  * <!-- end-user-doc -->
  * @generated
  */
-public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
-{
+public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -216,8 +215,7 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * @see #init()
 	 * @generated
 	 */
-	private XLinkPackageImpl()
-	{
+	private XLinkPackageImpl() {
 		super(eNS_URI, XLinkFactory.eINSTANCE);
 	}
 
@@ -230,7 +228,7 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link XLinkPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -240,12 +238,12 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static XLinkPackage init()
-	{
+	public static XLinkPackage init() {
 		if (isInited) return (XLinkPackage)EPackage.Registry.INSTANCE.getEPackage(XLinkPackage.eNS_URI);
 
 		// Obtain or create and register package
-		XLinkPackageImpl theXLinkPackage = (XLinkPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof XLinkPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new XLinkPackageImpl());
+		Object registeredXLinkPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		XLinkPackageImpl theXLinkPackage = registeredXLinkPackage instanceof XLinkPackageImpl ? (XLinkPackageImpl)registeredXLinkPackage : new XLinkPackageImpl();
 
 		isInited = true;
 
@@ -253,12 +251,18 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 		XMLNamespacePackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		GMLPackageImpl theGMLPackage = (GMLPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GMLPackage.eNS_URI) instanceof GMLPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GMLPackage.eNS_URI) : GMLPackage.eINSTANCE);
-		GMDPackageImpl theGMDPackage = (GMDPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GMDPackage.eNS_URI) instanceof GMDPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GMDPackage.eNS_URI) : GMDPackage.eINSTANCE);
-		GCOPackageImpl theGCOPackage = (GCOPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GCOPackage.eNS_URI) instanceof GCOPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GCOPackage.eNS_URI) : GCOPackage.eINSTANCE);
-		GSSPackageImpl theGSSPackage = (GSSPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GSSPackage.eNS_URI) instanceof GSSPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GSSPackage.eNS_URI) : GSSPackage.eINSTANCE);
-		GTSPackageImpl theGTSPackage = (GTSPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GTSPackage.eNS_URI) instanceof GTSPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GTSPackage.eNS_URI) : GTSPackage.eINSTANCE);
-		GSRPackageImpl theGSRPackage = (GSRPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(GSRPackage.eNS_URI) instanceof GSRPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(GSRPackage.eNS_URI) : GSRPackage.eINSTANCE);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GMLPackage.eNS_URI);
+		GMLPackageImpl theGMLPackage = (GMLPackageImpl)(registeredPackage instanceof GMLPackageImpl ? registeredPackage : GMLPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GMDPackage.eNS_URI);
+		GMDPackageImpl theGMDPackage = (GMDPackageImpl)(registeredPackage instanceof GMDPackageImpl ? registeredPackage : GMDPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GCOPackage.eNS_URI);
+		GCOPackageImpl theGCOPackage = (GCOPackageImpl)(registeredPackage instanceof GCOPackageImpl ? registeredPackage : GCOPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GSSPackage.eNS_URI);
+		GSSPackageImpl theGSSPackage = (GSSPackageImpl)(registeredPackage instanceof GSSPackageImpl ? registeredPackage : GSSPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GTSPackage.eNS_URI);
+		GTSPackageImpl theGTSPackage = (GTSPackageImpl)(registeredPackage instanceof GTSPackageImpl ? registeredPackage : GTSPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GSRPackage.eNS_URI);
+		GSRPackageImpl theGSRPackage = (GSRPackageImpl)(registeredPackage instanceof GSRPackageImpl ? registeredPackage : GSRPackage.eINSTANCE);
 
 		// Load packages
 		theGMLPackage.loadPackage();
@@ -284,11 +288,10 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put
-			(theXLinkPackage, 
-			 new EValidator.Descriptor()
-			 {
-				 public EValidator getEValidator()
-				 {
+			(theXLinkPackage,
+			 new EValidator.Descriptor() {
+				 @Override
+				 public EValidator getEValidator() {
 					 return XLinkValidator.INSTANCE;
 				 }
 			 });
@@ -296,7 +299,6 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 		// Mark meta-data to indicate it can't be changed
 		theXLinkPackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(XLinkPackage.eNS_URI, theXLinkPackage);
 		return theXLinkPackage;
@@ -307,8 +309,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getArcType()
-	{
+	@Override
+	public EClass getArcType() {
 		return arcTypeEClass;
 	}
 
@@ -317,8 +319,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getArcType_TitleGroup()
-	{
+	@Override
+	public EAttribute getArcType_TitleGroup() {
 		return (EAttribute)arcTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -327,8 +329,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getArcType_Title()
-	{
+	@Override
+	public EReference getArcType_Title() {
 		return (EReference)arcTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -337,8 +339,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getArcType_Actuate()
-	{
+	@Override
+	public EAttribute getArcType_Actuate() {
 		return (EAttribute)arcTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -347,8 +349,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getArcType_Arcrole()
-	{
+	@Override
+	public EAttribute getArcType_Arcrole() {
 		return (EAttribute)arcTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -357,8 +359,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getArcType_From()
-	{
+	@Override
+	public EAttribute getArcType_From() {
 		return (EAttribute)arcTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -367,8 +369,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getArcType_Show()
-	{
+	@Override
+	public EAttribute getArcType_Show() {
 		return (EAttribute)arcTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -377,8 +379,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getArcType_Title1()
-	{
+	@Override
+	public EAttribute getArcType_Title1() {
 		return (EAttribute)arcTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -387,8 +389,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getArcType_To()
-	{
+	@Override
+	public EAttribute getArcType_To() {
 		return (EAttribute)arcTypeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -397,8 +399,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getArcType_Type()
-	{
+	@Override
+	public EAttribute getArcType_Type() {
 		return (EAttribute)arcTypeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -407,8 +409,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getExtended()
-	{
+	@Override
+	public EClass getExtended() {
 		return extendedEClass;
 	}
 
@@ -417,8 +419,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getExtended_ExtendedModel()
-	{
+	@Override
+	public EAttribute getExtended_ExtendedModel() {
 		return (EAttribute)extendedEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -427,8 +429,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getExtended_TitleGroup()
-	{
+	@Override
+	public EAttribute getExtended_TitleGroup() {
 		return (EAttribute)extendedEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -437,8 +439,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getExtended_Title()
-	{
+	@Override
+	public EReference getExtended_Title() {
 		return (EReference)extendedEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -447,8 +449,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getExtended_ResourceGroup()
-	{
+	@Override
+	public EAttribute getExtended_ResourceGroup() {
 		return (EAttribute)extendedEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -457,8 +459,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getExtended_Resource()
-	{
+	@Override
+	public EReference getExtended_Resource() {
 		return (EReference)extendedEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -467,8 +469,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getExtended_LocatorGroup()
-	{
+	@Override
+	public EAttribute getExtended_LocatorGroup() {
 		return (EAttribute)extendedEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -477,8 +479,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getExtended_Locator()
-	{
+	@Override
+	public EReference getExtended_Locator() {
 		return (EReference)extendedEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -487,8 +489,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getExtended_ArcGroup()
-	{
+	@Override
+	public EAttribute getExtended_ArcGroup() {
 		return (EAttribute)extendedEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -497,8 +499,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getExtended_Arc()
-	{
+	@Override
+	public EReference getExtended_Arc() {
 		return (EReference)extendedEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -507,8 +509,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getExtended_Role()
-	{
+	@Override
+	public EAttribute getExtended_Role() {
 		return (EAttribute)extendedEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -517,8 +519,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getExtended_Title1()
-	{
+	@Override
+	public EAttribute getExtended_Title1() {
 		return (EAttribute)extendedEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -527,8 +529,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getExtended_Type()
-	{
+	@Override
+	public EAttribute getExtended_Type() {
 		return (EAttribute)extendedEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -537,8 +539,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getLocatorType()
-	{
+	@Override
+	public EClass getLocatorType() {
 		return locatorTypeEClass;
 	}
 
@@ -547,8 +549,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLocatorType_TitleGroup()
-	{
+	@Override
+	public EAttribute getLocatorType_TitleGroup() {
 		return (EAttribute)locatorTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -557,8 +559,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getLocatorType_Title()
-	{
+	@Override
+	public EReference getLocatorType_Title() {
 		return (EReference)locatorTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -567,8 +569,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLocatorType_Href()
-	{
+	@Override
+	public EAttribute getLocatorType_Href() {
 		return (EAttribute)locatorTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -577,8 +579,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLocatorType_Label()
-	{
+	@Override
+	public EAttribute getLocatorType_Label() {
 		return (EAttribute)locatorTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -587,8 +589,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLocatorType_Role()
-	{
+	@Override
+	public EAttribute getLocatorType_Role() {
 		return (EAttribute)locatorTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -597,8 +599,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLocatorType_Title1()
-	{
+	@Override
+	public EAttribute getLocatorType_Title1() {
 		return (EAttribute)locatorTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -607,8 +609,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLocatorType_Type()
-	{
+	@Override
+	public EAttribute getLocatorType_Type() {
 		return (EAttribute)locatorTypeEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -617,8 +619,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getResourceType()
-	{
+	@Override
+	public EClass getResourceType() {
 		return resourceTypeEClass;
 	}
 
@@ -627,8 +629,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResourceType_Mixed()
-	{
+	@Override
+	public EAttribute getResourceType_Mixed() {
 		return (EAttribute)resourceTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -637,8 +639,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResourceType_Any()
-	{
+	@Override
+	public EAttribute getResourceType_Any() {
 		return (EAttribute)resourceTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -647,8 +649,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResourceType_Label()
-	{
+	@Override
+	public EAttribute getResourceType_Label() {
 		return (EAttribute)resourceTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -657,8 +659,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResourceType_Role()
-	{
+	@Override
+	public EAttribute getResourceType_Role() {
 		return (EAttribute)resourceTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -667,8 +669,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResourceType_Title()
-	{
+	@Override
+	public EAttribute getResourceType_Title() {
 		return (EAttribute)resourceTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -677,8 +679,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResourceType_Type()
-	{
+	@Override
+	public EAttribute getResourceType_Type() {
 		return (EAttribute)resourceTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -687,8 +689,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSimple()
-	{
+	@Override
+	public EClass getSimple() {
 		return simpleEClass;
 	}
 
@@ -697,8 +699,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSimple_Mixed()
-	{
+	@Override
+	public EAttribute getSimple_Mixed() {
 		return (EAttribute)simpleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -707,8 +709,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSimple_Any()
-	{
+	@Override
+	public EAttribute getSimple_Any() {
 		return (EAttribute)simpleEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -717,8 +719,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSimple_Actuate()
-	{
+	@Override
+	public EAttribute getSimple_Actuate() {
 		return (EAttribute)simpleEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -727,8 +729,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSimple_Arcrole()
-	{
+	@Override
+	public EAttribute getSimple_Arcrole() {
 		return (EAttribute)simpleEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -737,8 +739,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSimple_Href()
-	{
+	@Override
+	public EAttribute getSimple_Href() {
 		return (EAttribute)simpleEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -747,8 +749,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSimple_Role()
-	{
+	@Override
+	public EAttribute getSimple_Role() {
 		return (EAttribute)simpleEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -757,8 +759,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSimple_Show()
-	{
+	@Override
+	public EAttribute getSimple_Show() {
 		return (EAttribute)simpleEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -767,8 +769,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSimple_Title()
-	{
+	@Override
+	public EAttribute getSimple_Title() {
 		return (EAttribute)simpleEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -777,8 +779,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSimple_Type()
-	{
+	@Override
+	public EAttribute getSimple_Type() {
 		return (EAttribute)simpleEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -787,8 +789,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTitleEltType()
-	{
+	@Override
+	public EClass getTitleEltType() {
 		return titleEltTypeEClass;
 	}
 
@@ -797,8 +799,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTitleEltType_Mixed()
-	{
+	@Override
+	public EAttribute getTitleEltType_Mixed() {
 		return (EAttribute)titleEltTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -807,8 +809,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTitleEltType_Any()
-	{
+	@Override
+	public EAttribute getTitleEltType_Any() {
 		return (EAttribute)titleEltTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -817,8 +819,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTitleEltType_Lang()
-	{
+	@Override
+	public EAttribute getTitleEltType_Lang() {
 		return (EAttribute)titleEltTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -827,8 +829,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTitleEltType_Type()
-	{
+	@Override
+	public EAttribute getTitleEltType_Type() {
 		return (EAttribute)titleEltTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -837,8 +839,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDocumentRoot()
-	{
+	@Override
+	public EClass getDocumentRoot() {
 		return documentRootEClass;
 	}
 
@@ -847,8 +849,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Mixed()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Mixed() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -857,8 +859,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_XMLNSPrefixMap()
-	{
+	@Override
+	public EReference getDocumentRoot_XMLNSPrefixMap() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -867,8 +869,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_XSISchemaLocation()
-	{
+	@Override
+	public EReference getDocumentRoot_XSISchemaLocation() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -877,8 +879,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Arc()
-	{
+	@Override
+	public EReference getDocumentRoot_Arc() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -887,8 +889,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Locator()
-	{
+	@Override
+	public EReference getDocumentRoot_Locator() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -897,8 +899,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Resource()
-	{
+	@Override
+	public EReference getDocumentRoot_Resource() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -907,8 +909,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDocumentRoot_Title()
-	{
+	@Override
+	public EReference getDocumentRoot_Title() {
 		return (EReference)documentRootEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -917,8 +919,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Actuate()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Actuate() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -927,8 +929,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Arcrole()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Arcrole() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -937,8 +939,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_From()
-	{
+	@Override
+	public EAttribute getDocumentRoot_From() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -947,8 +949,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Href()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Href() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -957,8 +959,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Label()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Label() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -967,8 +969,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Role()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Role() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(12);
 	}
 
@@ -977,8 +979,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Show()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Show() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -987,8 +989,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Title1()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Title1() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(14);
 	}
 
@@ -997,8 +999,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_To()
-	{
+	@Override
+	public EAttribute getDocumentRoot_To() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -1007,8 +1009,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDocumentRoot_Type()
-	{
+	@Override
+	public EAttribute getDocumentRoot_Type() {
 		return (EAttribute)documentRootEClass.getEStructuralFeatures().get(16);
 	}
 
@@ -1017,8 +1019,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getActuateType()
-	{
+	@Override
+	public EEnum getActuateType() {
 		return actuateTypeEEnum;
 	}
 
@@ -1027,8 +1029,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getShowType()
-	{
+	@Override
+	public EEnum getShowType() {
 		return showTypeEEnum;
 	}
 
@@ -1037,8 +1039,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getTypeType()
-	{
+	@Override
+	public EEnum getTypeType() {
 		return typeTypeEEnum;
 	}
 
@@ -1047,8 +1049,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getActuateTypeObject()
-	{
+	@Override
+	public EDataType getActuateTypeObject() {
 		return actuateTypeObjectEDataType;
 	}
 
@@ -1057,8 +1059,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getArcroleType()
-	{
+	@Override
+	public EDataType getArcroleType() {
 		return arcroleTypeEDataType;
 	}
 
@@ -1067,8 +1069,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getFromType()
-	{
+	@Override
+	public EDataType getFromType() {
 		return fromTypeEDataType;
 	}
 
@@ -1077,8 +1079,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getHrefType()
-	{
+	@Override
+	public EDataType getHrefType() {
 		return hrefTypeEDataType;
 	}
 
@@ -1087,8 +1089,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getLabelType()
-	{
+	@Override
+	public EDataType getLabelType() {
 		return labelTypeEDataType;
 	}
 
@@ -1097,8 +1099,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getRoleType()
-	{
+	@Override
+	public EDataType getRoleType() {
 		return roleTypeEDataType;
 	}
 
@@ -1107,8 +1109,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getShowTypeObject()
-	{
+	@Override
+	public EDataType getShowTypeObject() {
 		return showTypeObjectEDataType;
 	}
 
@@ -1117,8 +1119,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getTitleAttrType()
-	{
+	@Override
+	public EDataType getTitleAttrType() {
 		return titleAttrTypeEDataType;
 	}
 
@@ -1127,8 +1129,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getToType()
-	{
+	@Override
+	public EDataType getToType() {
 		return toTypeEDataType;
 	}
 
@@ -1137,8 +1139,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getTypeTypeObject()
-	{
+	@Override
+	public EDataType getTypeTypeObject() {
 		return typeTypeObjectEDataType;
 	}
 
@@ -1147,8 +1149,8 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XLinkFactory getXLinkFactory()
-	{
+	@Override
+	public XLinkFactory getXLinkFactory() {
 		return (XLinkFactory)getEFactoryInstance();
 	}
 
@@ -1166,8 +1168,7 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void createPackageContents()
-	{
+	public void createPackageContents() {
 		if (isCreated) return;
 		isCreated = true;
 
@@ -1282,8 +1283,7 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void initializePackageContents()
-	{
+	public void initializePackageContents() {
 		if (isInitialized) return;
 		isInitialized = true;
 
@@ -1428,749 +1428,664 @@ public class XLinkPackageImpl extends EPackageImpl implements XLinkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createExtendedMetaDataAnnotations()
-	{
-		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
-		addAnnotation
-		  (actuateTypeEEnum, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "actuateType"
-		   });	
-		addAnnotation
-		  (actuateTypeObjectEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "actuateType:Object",
-			 "baseType", "actuateType"
-		   });	
-		addAnnotation
-		  (arcroleTypeEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "arcroleType",
-			 "baseType", "http://www.eclipse.org/emf/2003/XMLType#anyURI",
-			 "minLength", "1"
-		   });	
-		addAnnotation
-		  (arcTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "arcType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getArcType_TitleGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "title:group",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getArcType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "title",
-			 "namespace", "##targetNamespace",
-			 "group", "title:group"
-		   });	
-		addAnnotation
-		  (getArcType_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getArcType_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getArcType_From(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "from",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getArcType_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getArcType_Title1(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getArcType_To(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "to",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getArcType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (extendedEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "extended",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getExtended_ExtendedModel(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "ExtendedModel:0"
-		   });	
-		addAnnotation
-		  (getExtended_TitleGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "title:group",
-			 "namespace", "##targetNamespace",
-			 "group", "#ExtendedModel:0"
-		   });	
-		addAnnotation
-		  (getExtended_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "title",
-			 "namespace", "##targetNamespace",
-			 "group", "title:group"
-		   });	
-		addAnnotation
-		  (getExtended_ResourceGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "resource:group",
-			 "namespace", "##targetNamespace",
-			 "group", "#ExtendedModel:0"
-		   });	
-		addAnnotation
-		  (getExtended_Resource(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "resource",
-			 "namespace", "##targetNamespace",
-			 "group", "resource:group"
-		   });	
-		addAnnotation
-		  (getExtended_LocatorGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "locator:group",
-			 "namespace", "##targetNamespace",
-			 "group", "#ExtendedModel:0"
-		   });	
-		addAnnotation
-		  (getExtended_Locator(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "locator",
-			 "namespace", "##targetNamespace",
-			 "group", "locator:group"
-		   });	
-		addAnnotation
-		  (getExtended_ArcGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "arc:group",
-			 "namespace", "##targetNamespace",
-			 "group", "#ExtendedModel:0"
-		   });	
-		addAnnotation
-		  (getExtended_Arc(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "arc",
-			 "namespace", "##targetNamespace",
-			 "group", "arc:group"
-		   });	
-		addAnnotation
-		  (getExtended_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getExtended_Title1(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getExtended_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (fromTypeEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "fromType",
-			 "baseType", "http://www.eclipse.org/emf/2003/XMLType#NCName"
-		   });	
-		addAnnotation
-		  (hrefTypeEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "hrefType",
-			 "baseType", "http://www.eclipse.org/emf/2003/XMLType#anyURI"
-		   });	
-		addAnnotation
-		  (labelTypeEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "labelType",
-			 "baseType", "http://www.eclipse.org/emf/2003/XMLType#NCName"
-		   });	
-		addAnnotation
-		  (locatorTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "locatorType",
-			 "kind", "elementOnly"
-		   });	
-		addAnnotation
-		  (getLocatorType_TitleGroup(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "group",
-			 "name", "title:group",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getLocatorType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "title",
-			 "namespace", "##targetNamespace",
-			 "group", "title:group"
-		   });	
-		addAnnotation
-		  (getLocatorType_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getLocatorType_Label(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "label",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getLocatorType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getLocatorType_Title1(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getLocatorType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (resourceTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "resourceType",
-			 "kind", "mixed"
-		   });	
-		addAnnotation
-		  (getResourceType_Mixed(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "elementWildcard",
-			 "name", ":mixed"
-		   });	
-		addAnnotation
-		  (getResourceType_Any(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "elementWildcard",
-			 "wildcards", "##any",
-			 "name", ":1",
-			 "processing", "lax"
-		   });	
-		addAnnotation
-		  (getResourceType_Label(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "label",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getResourceType_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getResourceType_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getResourceType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (roleTypeEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "roleType",
-			 "baseType", "http://www.eclipse.org/emf/2003/XMLType#anyURI",
-			 "minLength", "1"
-		   });	
-		addAnnotation
-		  (showTypeEEnum, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "showType"
-		   });	
-		addAnnotation
-		  (showTypeObjectEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "showType:Object",
-			 "baseType", "showType"
-		   });	
-		addAnnotation
-		  (simpleEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "simple",
-			 "kind", "mixed"
-		   });	
-		addAnnotation
-		  (getSimple_Mixed(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "elementWildcard",
-			 "name", ":mixed"
-		   });	
-		addAnnotation
-		  (getSimple_Any(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "elementWildcard",
-			 "wildcards", "##any",
-			 "name", ":1",
-			 "processing", "lax"
-		   });	
-		addAnnotation
-		  (getSimple_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getSimple_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getSimple_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getSimple_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getSimple_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getSimple_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getSimple_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (titleAttrTypeEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "titleAttrType",
-			 "baseType", "http://www.eclipse.org/emf/2003/XMLType#string"
-		   });	
-		addAnnotation
-		  (titleEltTypeEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "titleEltType",
-			 "kind", "mixed"
-		   });	
-		addAnnotation
-		  (getTitleEltType_Mixed(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "elementWildcard",
-			 "name", ":mixed"
-		   });	
-		addAnnotation
-		  (getTitleEltType_Any(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "elementWildcard",
-			 "wildcards", "##any",
-			 "name", ":1",
-			 "processing", "lax"
-		   });	
-		addAnnotation
-		  (getTitleEltType_Lang(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "lang",
-			 "namespace", "http://www.w3.org/XML/1998/namespace"
-		   });	
-		addAnnotation
-		  (getTitleEltType_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (toTypeEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "toType",
-			 "baseType", "http://www.eclipse.org/emf/2003/XMLType#NCName"
-		   });	
-		addAnnotation
-		  (typeTypeEEnum, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "typeType"
-		   });	
-		addAnnotation
-		  (typeTypeObjectEDataType, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "typeType:Object",
-			 "baseType", "typeType"
-		   });	
-		addAnnotation
-		  (documentRootEClass, 
-		   source, 
-		   new String[] 
-		   {
-			 "name", "",
-			 "kind", "mixed"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Mixed(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "elementWildcard",
-			 "name", ":mixed"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_XMLNSPrefixMap(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "xmlns:prefix"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_XSISchemaLocation(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "xsi:schemaLocation"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Arc(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "arc",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Locator(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "locator",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Resource(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "resource",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Title(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "element",
-			 "name", "title",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Actuate(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "actuate",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Arcrole(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "arcrole",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_From(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "from",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Href(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "href",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Label(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "label",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Role(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "role",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Show(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "show",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Title1(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "title",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_To(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "to",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getDocumentRoot_Type(), 
-		   source, 
-		   new String[] 
-		   {
-			 "kind", "attribute",
-			 "name", "type",
-			 "namespace", "##targetNamespace"
+	protected void createExtendedMetaDataAnnotations() {
+		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";
+		addAnnotation
+		  (actuateTypeEEnum,
+		   source,
+		   new String[] {
+			   "name", "actuateType"
+		   });
+		addAnnotation
+		  (actuateTypeObjectEDataType,
+		   source,
+		   new String[] {
+			   "name", "actuateType:Object",
+			   "baseType", "actuateType"
+		   });
+		addAnnotation
+		  (arcroleTypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "arcroleType",
+			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#anyURI",
+			   "minLength", "1"
+		   });
+		addAnnotation
+		  (arcTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "arcType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getArcType_TitleGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "title:group",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getArcType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "title",
+			   "namespace", "##targetNamespace",
+			   "group", "title:group"
+		   });
+		addAnnotation
+		  (getArcType_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getArcType_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getArcType_From(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "from",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getArcType_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getArcType_Title1(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getArcType_To(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "to",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getArcType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (extendedEClass,
+		   source,
+		   new String[] {
+			   "name", "extended",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getExtended_ExtendedModel(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "ExtendedModel:0"
+		   });
+		addAnnotation
+		  (getExtended_TitleGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "title:group",
+			   "namespace", "##targetNamespace",
+			   "group", "#ExtendedModel:0"
+		   });
+		addAnnotation
+		  (getExtended_Title(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "title",
+			   "namespace", "##targetNamespace",
+			   "group", "title:group"
+		   });
+		addAnnotation
+		  (getExtended_ResourceGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "resource:group",
+			   "namespace", "##targetNamespace",
+			   "group", "#ExtendedModel:0"
+		   });
+		addAnnotation
+		  (getExtended_Resource(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "resource",
+			   "namespace", "##targetNamespace",
+			   "group", "resource:group"
+		   });
+		addAnnotation
+		  (getExtended_LocatorGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "locator:group",
+			   "namespace", "##targetNamespace",
+			   "group", "#ExtendedModel:0"
+		   });
+		addAnnotation
+		  (getExtended_Locator(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "locator",
+			   "namespace", "##targetNamespace",
+			   "group", "locator:group"
+		   });
+		addAnnotation
+		  (getExtended_ArcGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "arc:group",
+			   "namespace", "##targetNamespace",
+			   "group", "#ExtendedModel:0"
+		   });
+		addAnnotation
+		  (getExtended_Arc(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "arc",
+			   "namespace", "##targetNamespace",
+			   "group", "arc:group"
+		   });
+		addAnnotation
+		  (getExtended_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getExtended_Title1(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getExtended_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (fromTypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "fromType",
+			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#NCName"
+		   });
+		addAnnotation
+		  (hrefTypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "hrefType",
+			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#anyURI"
+		   });
+		addAnnotation
+		  (labelTypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "labelType",
+			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#NCName"
+		   });
+		addAnnotation
+		  (locatorTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "locatorType",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getLocatorType_TitleGroup(),
+		   source,
+		   new String[] {
+			   "kind", "group",
+			   "name", "title:group",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getLocatorType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "title",
+			   "namespace", "##targetNamespace",
+			   "group", "title:group"
+		   });
+		addAnnotation
+		  (getLocatorType_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getLocatorType_Label(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "label",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getLocatorType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getLocatorType_Title1(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getLocatorType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (resourceTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "resourceType",
+			   "kind", "mixed"
+		   });
+		addAnnotation
+		  (getResourceType_Mixed(),
+		   source,
+		   new String[] {
+			   "kind", "elementWildcard",
+			   "name", ":mixed"
+		   });
+		addAnnotation
+		  (getResourceType_Any(),
+		   source,
+		   new String[] {
+			   "kind", "elementWildcard",
+			   "wildcards", "##any",
+			   "name", ":1",
+			   "processing", "lax"
+		   });
+		addAnnotation
+		  (getResourceType_Label(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "label",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getResourceType_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getResourceType_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getResourceType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (roleTypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "roleType",
+			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#anyURI",
+			   "minLength", "1"
+		   });
+		addAnnotation
+		  (showTypeEEnum,
+		   source,
+		   new String[] {
+			   "name", "showType"
+		   });
+		addAnnotation
+		  (showTypeObjectEDataType,
+		   source,
+		   new String[] {
+			   "name", "showType:Object",
+			   "baseType", "showType"
+		   });
+		addAnnotation
+		  (simpleEClass,
+		   source,
+		   new String[] {
+			   "name", "simple",
+			   "kind", "mixed"
+		   });
+		addAnnotation
+		  (getSimple_Mixed(),
+		   source,
+		   new String[] {
+			   "kind", "elementWildcard",
+			   "name", ":mixed"
+		   });
+		addAnnotation
+		  (getSimple_Any(),
+		   source,
+		   new String[] {
+			   "kind", "elementWildcard",
+			   "wildcards", "##any",
+			   "name", ":1",
+			   "processing", "lax"
+		   });
+		addAnnotation
+		  (getSimple_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getSimple_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getSimple_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getSimple_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getSimple_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getSimple_Title(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getSimple_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (titleAttrTypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "titleAttrType",
+			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#string"
+		   });
+		addAnnotation
+		  (titleEltTypeEClass,
+		   source,
+		   new String[] {
+			   "name", "titleEltType",
+			   "kind", "mixed"
+		   });
+		addAnnotation
+		  (getTitleEltType_Mixed(),
+		   source,
+		   new String[] {
+			   "kind", "elementWildcard",
+			   "name", ":mixed"
+		   });
+		addAnnotation
+		  (getTitleEltType_Any(),
+		   source,
+		   new String[] {
+			   "kind", "elementWildcard",
+			   "wildcards", "##any",
+			   "name", ":1",
+			   "processing", "lax"
+		   });
+		addAnnotation
+		  (getTitleEltType_Lang(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "lang",
+			   "namespace", "http://www.w3.org/XML/1998/namespace"
+		   });
+		addAnnotation
+		  (getTitleEltType_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (toTypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "toType",
+			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#NCName"
+		   });
+		addAnnotation
+		  (typeTypeEEnum,
+		   source,
+		   new String[] {
+			   "name", "typeType"
+		   });
+		addAnnotation
+		  (typeTypeObjectEDataType,
+		   source,
+		   new String[] {
+			   "name", "typeType:Object",
+			   "baseType", "typeType"
+		   });
+		addAnnotation
+		  (documentRootEClass,
+		   source,
+		   new String[] {
+			   "name", "",
+			   "kind", "mixed"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Mixed(),
+		   source,
+		   new String[] {
+			   "kind", "elementWildcard",
+			   "name", ":mixed"
+		   });
+		addAnnotation
+		  (getDocumentRoot_XMLNSPrefixMap(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "xmlns:prefix"
+		   });
+		addAnnotation
+		  (getDocumentRoot_XSISchemaLocation(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "xsi:schemaLocation"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Arc(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "arc",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Locator(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "locator",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Resource(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "resource",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Title(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "title",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Actuate(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "actuate",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Arcrole(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "arcrole",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_From(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "from",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Href(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "href",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Label(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "label",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Role(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "role",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Show(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "show",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Title1(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "title",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_To(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "to",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDocumentRoot_Type(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "type",
+			   "namespace", "##targetNamespace"
 		   });
 	}
 

@@ -14,6 +14,5 @@ package org.isotc211.iso19139.gmd;
  *        extendedMetaData="name='AbstractDQ_ThematicAccuracy_Type' kind='elementOnly'"
  * @generated
  */
-public interface AbstractDQThematicAccuracyType extends AbstractDQElementType
-{
+public interface AbstractDQThematicAccuracyType extends AbstractDQElementType {
 } // AbstractDQThematicAccuracyType

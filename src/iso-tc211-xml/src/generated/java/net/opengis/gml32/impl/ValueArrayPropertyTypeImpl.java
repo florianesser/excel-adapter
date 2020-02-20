@@ -46,8 +46,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container implements ValueArrayPropertyType
-{
+public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container implements ValueArrayPropertyType {
 	/**
 	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -92,8 +91,7 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ValueArrayPropertyTypeImpl()
-	{
+	protected ValueArrayPropertyTypeImpl() {
 		super();
 	}
 
@@ -103,8 +101,7 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getValueArrayPropertyType();
 	}
 
@@ -113,10 +110,9 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getValue()
-	{
-		if (value == null)
-		{
+	@Override
+	public FeatureMap getValue() {
+		if (value == null) {
 			value = new BasicFeatureMap(this, GMLPackage.VALUE_ARRAY_PROPERTY_TYPE__VALUE);
 		}
 		return value;
@@ -127,8 +123,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractValueGroup()
-	{
+	@Override
+	public FeatureMap getAbstractValueGroup() {
 		return (FeatureMap)getValue().<FeatureMap.Entry>list(GMLPackage.eINSTANCE.getValueArrayPropertyType_AbstractValueGroup());
 	}
 
@@ -137,8 +133,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EObject> getAbstractValue()
-	{
+	@Override
+	public EList<EObject> getAbstractValue() {
 		return getAbstractValueGroup().list(GMLPackage.eINSTANCE.getValueArrayPropertyType_AbstractValue());
 	}
 
@@ -147,8 +143,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractGeometryGroup()
-	{
+	@Override
+	public FeatureMap getAbstractGeometryGroup() {
 		return (FeatureMap)getValue().<FeatureMap.Entry>list(GMLPackage.eINSTANCE.getValueArrayPropertyType_AbstractGeometryGroup());
 	}
 
@@ -157,8 +153,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractGeometryType> getAbstractGeometry()
-	{
+	@Override
+	public EList<AbstractGeometryType> getAbstractGeometry() {
 		return getAbstractGeometryGroup().list(GMLPackage.eINSTANCE.getValueArrayPropertyType_AbstractGeometry());
 	}
 
@@ -167,8 +163,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractTimeObjectGroup()
-	{
+	@Override
+	public FeatureMap getAbstractTimeObjectGroup() {
 		return (FeatureMap)getValue().<FeatureMap.Entry>list(GMLPackage.eINSTANCE.getValueArrayPropertyType_AbstractTimeObjectGroup());
 	}
 
@@ -177,8 +173,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractTimeObjectType> getAbstractTimeObject()
-	{
+	@Override
+	public EList<AbstractTimeObjectType> getAbstractTimeObject() {
 		return getAbstractTimeObjectGroup().list(GMLPackage.eINSTANCE.getValueArrayPropertyType_AbstractTimeObject());
 	}
 
@@ -187,8 +183,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Object> getNull()
-	{
+	@Override
+	public EList<Object> getNull() {
 		return getValue().list(GMLPackage.eINSTANCE.getValueArrayPropertyType_Null());
 	}
 
@@ -197,8 +193,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -207,8 +203,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -222,8 +218,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -237,8 +233,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -248,10 +244,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.VALUE_ARRAY_PROPERTY_TYPE__VALUE:
 				return ((InternalEList<?>)getValue()).basicRemove(otherEnd, msgs);
 			case GMLPackage.VALUE_ARRAY_PROPERTY_TYPE__ABSTRACT_VALUE_GROUP:
@@ -276,10 +270,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.VALUE_ARRAY_PROPERTY_TYPE__VALUE:
 				if (coreType) return getValue();
 				return ((FeatureMap.Internal)getValue()).getWrapper();
@@ -313,10 +305,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.VALUE_ARRAY_PROPERTY_TYPE__VALUE:
 				((FeatureMap.Internal)getValue()).set(newValue);
 				return;
@@ -346,10 +336,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.VALUE_ARRAY_PROPERTY_TYPE__VALUE:
 				getValue().clear();
 				return;
@@ -378,10 +366,8 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.VALUE_ARRAY_PROPERTY_TYPE__VALUE:
 				return value != null && !value.isEmpty();
 			case GMLPackage.VALUE_ARRAY_PROPERTY_TYPE__ABSTRACT_VALUE_GROUP:
@@ -410,11 +396,10 @@ public class ValueArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", owns: ");

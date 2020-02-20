@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CircleByCenterPointTypeImpl extends ArcByCenterPointTypeImpl implements CircleByCenterPointType
-{
+public class CircleByCenterPointTypeImpl extends ArcByCenterPointTypeImpl implements CircleByCenterPointType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CircleByCenterPointTypeImpl()
-	{
+	protected CircleByCenterPointTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class CircleByCenterPointTypeImpl extends ArcByCenterPointTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCircleByCenterPointType();
 	}
 

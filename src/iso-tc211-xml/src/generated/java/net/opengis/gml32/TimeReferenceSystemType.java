@@ -19,15 +19,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='TimeReferenceSystemType' kind='elementOnly'"
  * @generated
  */
-public interface TimeReferenceSystemType extends DefinitionType
-{
+public interface TimeReferenceSystemType extends DefinitionType {
 	/**
 	 * Returns the value of the '<em><b>Domain Of Validity</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Domain Of Validity</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Domain Of Validity</em>' attribute.
 	 * @see #setDomainOfValidity(String)

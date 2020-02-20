@@ -41,8 +41,7 @@ import org.isotc211.iso19139.gmd.LISourcePropertyType;
  *
  * @generated
  */
-public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILineageType
-{
+public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILineageType {
 	/**
 	 * The cached value of the '{@link #getStatement() <em>Statement</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -78,8 +77,7 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LILineageTypeImpl()
-	{
+	protected LILineageTypeImpl() {
 		super();
 	}
 
@@ -89,8 +87,7 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getLILineageType();
 	}
 
@@ -99,8 +96,8 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getStatement()
-	{
+	@Override
+	public CharacterStringPropertyType getStatement() {
 		return statement;
 	}
 
@@ -109,12 +106,10 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetStatement(CharacterStringPropertyType newStatement, NotificationChain msgs)
-	{
+	public NotificationChain basicSetStatement(CharacterStringPropertyType newStatement, NotificationChain msgs) {
 		CharacterStringPropertyType oldStatement = statement;
 		statement = newStatement;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.LI_LINEAGE_TYPE__STATEMENT, oldStatement, newStatement);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -126,10 +121,9 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStatement(CharacterStringPropertyType newStatement)
-	{
-		if (newStatement != statement)
-		{
+	@Override
+	public void setStatement(CharacterStringPropertyType newStatement) {
+		if (newStatement != statement) {
 			NotificationChain msgs = null;
 			if (statement != null)
 				msgs = ((InternalEObject)statement).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.LI_LINEAGE_TYPE__STATEMENT, null, msgs);
@@ -147,10 +141,9 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LIProcessStepPropertyType> getProcessStep()
-	{
-		if (processStep == null)
-		{
+	@Override
+	public EList<LIProcessStepPropertyType> getProcessStep() {
+		if (processStep == null) {
 			processStep = new EObjectContainmentEList<LIProcessStepPropertyType>(LIProcessStepPropertyType.class, this, GMDPackage.LI_LINEAGE_TYPE__PROCESS_STEP);
 		}
 		return processStep;
@@ -161,10 +154,9 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LISourcePropertyType> getSource()
-	{
-		if (source == null)
-		{
+	@Override
+	public EList<LISourcePropertyType> getSource() {
+		if (source == null) {
 			source = new EObjectContainmentEList<LISourcePropertyType>(LISourcePropertyType.class, this, GMDPackage.LI_LINEAGE_TYPE__SOURCE);
 		}
 		return source;
@@ -176,10 +168,8 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.LI_LINEAGE_TYPE__STATEMENT:
 				return basicSetStatement(null, msgs);
 			case GMDPackage.LI_LINEAGE_TYPE__PROCESS_STEP:
@@ -196,10 +186,8 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.LI_LINEAGE_TYPE__STATEMENT:
 				return getStatement();
 			case GMDPackage.LI_LINEAGE_TYPE__PROCESS_STEP:
@@ -217,10 +205,8 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.LI_LINEAGE_TYPE__STATEMENT:
 				setStatement((CharacterStringPropertyType)newValue);
 				return;
@@ -242,10 +228,8 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LI_LINEAGE_TYPE__STATEMENT:
 				setStatement((CharacterStringPropertyType)null);
 				return;
@@ -265,10 +249,8 @@ public class LILineageTypeImpl extends AbstractObjectTypeImpl implements LILinea
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LI_LINEAGE_TYPE__STATEMENT:
 				return statement != null;
 			case GMDPackage.LI_LINEAGE_TYPE__PROCESS_STEP:

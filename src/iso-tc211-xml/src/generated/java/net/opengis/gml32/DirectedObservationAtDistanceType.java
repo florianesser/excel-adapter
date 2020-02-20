@@ -19,15 +19,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='DirectedObservationAtDistanceType' kind='elementOnly'"
  * @generated
  */
-public interface DirectedObservationAtDistanceType extends DirectedObservationType
-{
+public interface DirectedObservationAtDistanceType extends DirectedObservationType {
 	/**
 	 * Returns the value of the '<em><b>Distance</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distance</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distance</em>' containment reference.
 	 * @see #setDistance(MeasureType)

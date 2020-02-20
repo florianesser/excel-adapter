@@ -38,8 +38,7 @@ import org.isotc211.iso19139.gmd.MDApplicationSchemaInformationType;
  *
  * @generated
  */
-public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeImpl implements MDApplicationSchemaInformationType
-{
+public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeImpl implements MDApplicationSchemaInformationType {
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -115,8 +114,7 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDApplicationSchemaInformationTypeImpl()
-	{
+	protected MDApplicationSchemaInformationTypeImpl() {
 		super();
 	}
 
@@ -126,8 +124,7 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDApplicationSchemaInformationType();
 	}
 
@@ -136,8 +133,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationPropertyType getName()
-	{
+	@Override
+	public CICitationPropertyType getName() {
 		return name;
 	}
 
@@ -146,12 +143,10 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetName(CICitationPropertyType newName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetName(CICitationPropertyType newName, NotificationChain msgs) {
 		CICitationPropertyType oldName = name;
 		name = newName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__NAME, oldName, newName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -163,10 +158,9 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(CICitationPropertyType newName)
-	{
-		if (newName != name)
-		{
+	@Override
+	public void setName(CICitationPropertyType newName) {
+		if (newName != name) {
 			NotificationChain msgs = null;
 			if (name != null)
 				msgs = ((InternalEObject)name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__NAME, null, msgs);
@@ -184,8 +178,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getSchemaLanguage()
-	{
+	@Override
+	public CharacterStringPropertyType getSchemaLanguage() {
 		return schemaLanguage;
 	}
 
@@ -194,12 +188,10 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSchemaLanguage(CharacterStringPropertyType newSchemaLanguage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSchemaLanguage(CharacterStringPropertyType newSchemaLanguage, NotificationChain msgs) {
 		CharacterStringPropertyType oldSchemaLanguage = schemaLanguage;
 		schemaLanguage = newSchemaLanguage;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SCHEMA_LANGUAGE, oldSchemaLanguage, newSchemaLanguage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -211,10 +203,9 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSchemaLanguage(CharacterStringPropertyType newSchemaLanguage)
-	{
-		if (newSchemaLanguage != schemaLanguage)
-		{
+	@Override
+	public void setSchemaLanguage(CharacterStringPropertyType newSchemaLanguage) {
+		if (newSchemaLanguage != schemaLanguage) {
 			NotificationChain msgs = null;
 			if (schemaLanguage != null)
 				msgs = ((InternalEObject)schemaLanguage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SCHEMA_LANGUAGE, null, msgs);
@@ -232,8 +223,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getConstraintLanguage()
-	{
+	@Override
+	public CharacterStringPropertyType getConstraintLanguage() {
 		return constraintLanguage;
 	}
 
@@ -242,12 +233,10 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConstraintLanguage(CharacterStringPropertyType newConstraintLanguage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConstraintLanguage(CharacterStringPropertyType newConstraintLanguage, NotificationChain msgs) {
 		CharacterStringPropertyType oldConstraintLanguage = constraintLanguage;
 		constraintLanguage = newConstraintLanguage;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__CONSTRAINT_LANGUAGE, oldConstraintLanguage, newConstraintLanguage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -259,10 +248,9 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConstraintLanguage(CharacterStringPropertyType newConstraintLanguage)
-	{
-		if (newConstraintLanguage != constraintLanguage)
-		{
+	@Override
+	public void setConstraintLanguage(CharacterStringPropertyType newConstraintLanguage) {
+		if (newConstraintLanguage != constraintLanguage) {
 			NotificationChain msgs = null;
 			if (constraintLanguage != null)
 				msgs = ((InternalEObject)constraintLanguage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__CONSTRAINT_LANGUAGE, null, msgs);
@@ -280,8 +268,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getSchemaAscii()
-	{
+	@Override
+	public CharacterStringPropertyType getSchemaAscii() {
 		return schemaAscii;
 	}
 
@@ -290,12 +278,10 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSchemaAscii(CharacterStringPropertyType newSchemaAscii, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSchemaAscii(CharacterStringPropertyType newSchemaAscii, NotificationChain msgs) {
 		CharacterStringPropertyType oldSchemaAscii = schemaAscii;
 		schemaAscii = newSchemaAscii;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SCHEMA_ASCII, oldSchemaAscii, newSchemaAscii);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -307,10 +293,9 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSchemaAscii(CharacterStringPropertyType newSchemaAscii)
-	{
-		if (newSchemaAscii != schemaAscii)
-		{
+	@Override
+	public void setSchemaAscii(CharacterStringPropertyType newSchemaAscii) {
+		if (newSchemaAscii != schemaAscii) {
 			NotificationChain msgs = null;
 			if (schemaAscii != null)
 				msgs = ((InternalEObject)schemaAscii).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SCHEMA_ASCII, null, msgs);
@@ -328,8 +313,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BinaryPropertyType getGraphicsFile()
-	{
+	@Override
+	public BinaryPropertyType getGraphicsFile() {
 		return graphicsFile;
 	}
 
@@ -338,12 +323,10 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGraphicsFile(BinaryPropertyType newGraphicsFile, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGraphicsFile(BinaryPropertyType newGraphicsFile, NotificationChain msgs) {
 		BinaryPropertyType oldGraphicsFile = graphicsFile;
 		graphicsFile = newGraphicsFile;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__GRAPHICS_FILE, oldGraphicsFile, newGraphicsFile);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -355,10 +338,9 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGraphicsFile(BinaryPropertyType newGraphicsFile)
-	{
-		if (newGraphicsFile != graphicsFile)
-		{
+	@Override
+	public void setGraphicsFile(BinaryPropertyType newGraphicsFile) {
+		if (newGraphicsFile != graphicsFile) {
 			NotificationChain msgs = null;
 			if (graphicsFile != null)
 				msgs = ((InternalEObject)graphicsFile).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__GRAPHICS_FILE, null, msgs);
@@ -376,8 +358,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BinaryPropertyType getSoftwareDevelopmentFile()
-	{
+	@Override
+	public BinaryPropertyType getSoftwareDevelopmentFile() {
 		return softwareDevelopmentFile;
 	}
 
@@ -386,12 +368,10 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSoftwareDevelopmentFile(BinaryPropertyType newSoftwareDevelopmentFile, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSoftwareDevelopmentFile(BinaryPropertyType newSoftwareDevelopmentFile, NotificationChain msgs) {
 		BinaryPropertyType oldSoftwareDevelopmentFile = softwareDevelopmentFile;
 		softwareDevelopmentFile = newSoftwareDevelopmentFile;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SOFTWARE_DEVELOPMENT_FILE, oldSoftwareDevelopmentFile, newSoftwareDevelopmentFile);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -403,10 +383,9 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSoftwareDevelopmentFile(BinaryPropertyType newSoftwareDevelopmentFile)
-	{
-		if (newSoftwareDevelopmentFile != softwareDevelopmentFile)
-		{
+	@Override
+	public void setSoftwareDevelopmentFile(BinaryPropertyType newSoftwareDevelopmentFile) {
+		if (newSoftwareDevelopmentFile != softwareDevelopmentFile) {
 			NotificationChain msgs = null;
 			if (softwareDevelopmentFile != null)
 				msgs = ((InternalEObject)softwareDevelopmentFile).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SOFTWARE_DEVELOPMENT_FILE, null, msgs);
@@ -424,8 +403,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getSoftwareDevelopmentFileFormat()
-	{
+	@Override
+	public CharacterStringPropertyType getSoftwareDevelopmentFileFormat() {
 		return softwareDevelopmentFileFormat;
 	}
 
@@ -434,12 +413,10 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSoftwareDevelopmentFileFormat(CharacterStringPropertyType newSoftwareDevelopmentFileFormat, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSoftwareDevelopmentFileFormat(CharacterStringPropertyType newSoftwareDevelopmentFileFormat, NotificationChain msgs) {
 		CharacterStringPropertyType oldSoftwareDevelopmentFileFormat = softwareDevelopmentFileFormat;
 		softwareDevelopmentFileFormat = newSoftwareDevelopmentFileFormat;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SOFTWARE_DEVELOPMENT_FILE_FORMAT, oldSoftwareDevelopmentFileFormat, newSoftwareDevelopmentFileFormat);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -451,10 +428,9 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSoftwareDevelopmentFileFormat(CharacterStringPropertyType newSoftwareDevelopmentFileFormat)
-	{
-		if (newSoftwareDevelopmentFileFormat != softwareDevelopmentFileFormat)
-		{
+	@Override
+	public void setSoftwareDevelopmentFileFormat(CharacterStringPropertyType newSoftwareDevelopmentFileFormat) {
+		if (newSoftwareDevelopmentFileFormat != softwareDevelopmentFileFormat) {
 			NotificationChain msgs = null;
 			if (softwareDevelopmentFileFormat != null)
 				msgs = ((InternalEObject)softwareDevelopmentFileFormat).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SOFTWARE_DEVELOPMENT_FILE_FORMAT, null, msgs);
@@ -473,10 +449,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__NAME:
 				return basicSetName(null, msgs);
 			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SCHEMA_LANGUAGE:
@@ -501,10 +475,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__NAME:
 				return getName();
 			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SCHEMA_LANGUAGE:
@@ -529,10 +501,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__NAME:
 				setName((CICitationPropertyType)newValue);
 				return;
@@ -564,10 +534,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__NAME:
 				setName((CICitationPropertyType)null);
 				return;
@@ -599,10 +567,8 @@ public class MDApplicationSchemaInformationTypeImpl extends AbstractObjectTypeIm
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__NAME:
 				return name != null;
 			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE__SCHEMA_LANGUAGE:

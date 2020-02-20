@@ -26,8 +26,7 @@ import org.isotc211.iso19139.gmd.URLPropertyType;
  *
  * @generated
  */
-public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements URLPropertyType
-{
+public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements URLPropertyType {
 	/**
 	 * The default value of the '{@link #getURL() <em>URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -73,8 +72,7 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected URLPropertyTypeImpl()
-	{
+	protected URLPropertyTypeImpl() {
 		super();
 	}
 
@@ -84,8 +82,7 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getURLPropertyType();
 	}
 
@@ -94,8 +91,8 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getURL()
-	{
+	@Override
+	public String getURL() {
 		return uRL;
 	}
 
@@ -104,8 +101,8 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setURL(String newURL)
-	{
+	@Override
+	public void setURL(String newURL) {
 		String oldURL = uRL;
 		uRL = newURL;
 		if (eNotificationRequired())
@@ -117,8 +114,8 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -127,8 +124,8 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -141,10 +138,8 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.URL_PROPERTY_TYPE__URL:
 				return getURL();
 			case GMDPackage.URL_PROPERTY_TYPE__NIL_REASON:
@@ -159,10 +154,8 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.URL_PROPERTY_TYPE__URL:
 				setURL((String)newValue);
 				return;
@@ -179,10 +172,8 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.URL_PROPERTY_TYPE__URL:
 				setURL(URL_EDEFAULT);
 				return;
@@ -199,10 +190,8 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.URL_PROPERTY_TYPE__URL:
 				return URL_EDEFAULT == null ? uRL != null : !URL_EDEFAULT.equals(uRL);
 			case GMDPackage.URL_PROPERTY_TYPE__NIL_REASON:
@@ -217,11 +206,10 @@ public class URLPropertyTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (uRL: ");
 		result.append(uRL);
 		result.append(", nilReason: ");

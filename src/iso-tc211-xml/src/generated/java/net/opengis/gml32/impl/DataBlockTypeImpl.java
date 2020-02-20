@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements DataBlockType
-{
+public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements DataBlockType {
 	/**
 	 * The cached value of the '{@link #getRangeParameters() <em>Range Parameters</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -80,8 +79,7 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DataBlockTypeImpl()
-	{
+	protected DataBlockTypeImpl() {
 		super();
 	}
 
@@ -91,8 +89,7 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDataBlockType();
 	}
 
@@ -101,8 +98,8 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssociationRoleType getRangeParameters()
-	{
+	@Override
+	public AssociationRoleType getRangeParameters() {
 		return rangeParameters;
 	}
 
@@ -111,12 +108,10 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRangeParameters(AssociationRoleType newRangeParameters, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRangeParameters(AssociationRoleType newRangeParameters, NotificationChain msgs) {
 		AssociationRoleType oldRangeParameters = rangeParameters;
 		rangeParameters = newRangeParameters;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DATA_BLOCK_TYPE__RANGE_PARAMETERS, oldRangeParameters, newRangeParameters);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -128,10 +123,9 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRangeParameters(AssociationRoleType newRangeParameters)
-	{
-		if (newRangeParameters != rangeParameters)
-		{
+	@Override
+	public void setRangeParameters(AssociationRoleType newRangeParameters) {
+		if (newRangeParameters != rangeParameters) {
 			NotificationChain msgs = null;
 			if (rangeParameters != null)
 				msgs = ((InternalEObject)rangeParameters).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DATA_BLOCK_TYPE__RANGE_PARAMETERS, null, msgs);
@@ -149,8 +143,8 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinatesType getTupleList()
-	{
+	@Override
+	public CoordinatesType getTupleList() {
 		return tupleList;
 	}
 
@@ -159,12 +153,10 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTupleList(CoordinatesType newTupleList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTupleList(CoordinatesType newTupleList, NotificationChain msgs) {
 		CoordinatesType oldTupleList = tupleList;
 		tupleList = newTupleList;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DATA_BLOCK_TYPE__TUPLE_LIST, oldTupleList, newTupleList);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -176,10 +168,9 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTupleList(CoordinatesType newTupleList)
-	{
-		if (newTupleList != tupleList)
-		{
+	@Override
+	public void setTupleList(CoordinatesType newTupleList) {
+		if (newTupleList != tupleList) {
 			NotificationChain msgs = null;
 			if (tupleList != null)
 				msgs = ((InternalEObject)tupleList).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DATA_BLOCK_TYPE__TUPLE_LIST, null, msgs);
@@ -197,8 +188,8 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Object> getDoubleOrNilReasonTupleList()
-	{
+	@Override
+	public List<Object> getDoubleOrNilReasonTupleList() {
 		return doubleOrNilReasonTupleList;
 	}
 
@@ -207,8 +198,8 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDoubleOrNilReasonTupleList(List<Object> newDoubleOrNilReasonTupleList)
-	{
+	@Override
+	public void setDoubleOrNilReasonTupleList(List<Object> newDoubleOrNilReasonTupleList) {
 		List<Object> oldDoubleOrNilReasonTupleList = doubleOrNilReasonTupleList;
 		doubleOrNilReasonTupleList = newDoubleOrNilReasonTupleList;
 		if (eNotificationRequired())
@@ -221,10 +212,8 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DATA_BLOCK_TYPE__RANGE_PARAMETERS:
 				return basicSetRangeParameters(null, msgs);
 			case GMLPackage.DATA_BLOCK_TYPE__TUPLE_LIST:
@@ -239,10 +228,8 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DATA_BLOCK_TYPE__RANGE_PARAMETERS:
 				return getRangeParameters();
 			case GMLPackage.DATA_BLOCK_TYPE__TUPLE_LIST:
@@ -260,10 +247,8 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DATA_BLOCK_TYPE__RANGE_PARAMETERS:
 				setRangeParameters((AssociationRoleType)newValue);
 				return;
@@ -283,10 +268,8 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DATA_BLOCK_TYPE__RANGE_PARAMETERS:
 				setRangeParameters((AssociationRoleType)null);
 				return;
@@ -306,10 +289,8 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DATA_BLOCK_TYPE__RANGE_PARAMETERS:
 				return rangeParameters != null;
 			case GMLPackage.DATA_BLOCK_TYPE__TUPLE_LIST:
@@ -326,11 +307,10 @@ public class DataBlockTypeImpl extends MinimalEObjectImpl.Container implements D
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (doubleOrNilReasonTupleList: ");
 		result.append(doubleOrNilReasonTupleList);
 		result.append(')');

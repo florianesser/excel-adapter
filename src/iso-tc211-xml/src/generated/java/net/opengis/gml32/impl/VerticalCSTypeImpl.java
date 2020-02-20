@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class VerticalCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements VerticalCSType
-{
+public class VerticalCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements VerticalCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected VerticalCSTypeImpl()
-	{
+	protected VerticalCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class VerticalCSTypeImpl extends AbstractCoordinateSystemTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getVerticalCSType();
 	}
 

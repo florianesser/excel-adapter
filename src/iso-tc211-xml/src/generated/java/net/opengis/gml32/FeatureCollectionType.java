@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='FeatureCollectionType' kind='elementOnly'"
  * @generated
  */
-public interface FeatureCollectionType extends AbstractFeatureCollectionType
-{
+public interface FeatureCollectionType extends AbstractFeatureCollectionType {
 } // FeatureCollectionType

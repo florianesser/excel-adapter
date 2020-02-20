@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDRepresentativeFractionType;
  *
  * @generated
  */
-public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl implements MDRepresentativeFractionType
-{
+public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl implements MDRepresentativeFractionType {
 	/**
 	 * The cached value of the '{@link #getDenominator() <em>Denominator</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -47,8 +46,7 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDRepresentativeFractionTypeImpl()
-	{
+	protected MDRepresentativeFractionTypeImpl() {
 		super();
 	}
 
@@ -58,8 +56,7 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDRepresentativeFractionType();
 	}
 
@@ -68,8 +65,8 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType getDenominator()
-	{
+	@Override
+	public IntegerPropertyType getDenominator() {
 		return denominator;
 	}
 
@@ -78,12 +75,10 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDenominator(IntegerPropertyType newDenominator, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDenominator(IntegerPropertyType newDenominator, NotificationChain msgs) {
 		IntegerPropertyType oldDenominator = denominator;
 		denominator = newDenominator;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_REPRESENTATIVE_FRACTION_TYPE__DENOMINATOR, oldDenominator, newDenominator);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -95,10 +90,9 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDenominator(IntegerPropertyType newDenominator)
-	{
-		if (newDenominator != denominator)
-		{
+	@Override
+	public void setDenominator(IntegerPropertyType newDenominator) {
+		if (newDenominator != denominator) {
 			NotificationChain msgs = null;
 			if (denominator != null)
 				msgs = ((InternalEObject)denominator).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_REPRESENTATIVE_FRACTION_TYPE__DENOMINATOR, null, msgs);
@@ -117,10 +111,8 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_REPRESENTATIVE_FRACTION_TYPE__DENOMINATOR:
 				return basicSetDenominator(null, msgs);
 		}
@@ -133,10 +125,8 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_REPRESENTATIVE_FRACTION_TYPE__DENOMINATOR:
 				return getDenominator();
 		}
@@ -149,10 +139,8 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_REPRESENTATIVE_FRACTION_TYPE__DENOMINATOR:
 				setDenominator((IntegerPropertyType)newValue);
 				return;
@@ -166,10 +154,8 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_REPRESENTATIVE_FRACTION_TYPE__DENOMINATOR:
 				setDenominator((IntegerPropertyType)null);
 				return;
@@ -183,10 +169,8 @@ public class MDRepresentativeFractionTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_REPRESENTATIVE_FRACTION_TYPE__DENOMINATOR:
 				return denominator != null;
 		}

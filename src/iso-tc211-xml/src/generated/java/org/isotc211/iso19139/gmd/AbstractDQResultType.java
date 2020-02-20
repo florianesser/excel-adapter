@@ -15,6 +15,5 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  *        extendedMetaData="name='AbstractDQ_Result_Type' kind='empty'"
  * @generated
  */
-public interface AbstractDQResultType extends AbstractObjectType
-{
+public interface AbstractDQResultType extends AbstractObjectType {
 } // AbstractDQResultType

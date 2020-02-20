@@ -40,8 +40,7 @@ import org.isotc211.iso19139.gmd.LILineagePropertyType;
  *
  * @generated
  */
-public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQDataQualityType
-{
+public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQDataQualityType {
 	/**
 	 * The cached value of the '{@link #getScope() <em>Scope</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -77,8 +76,7 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQDataQualityTypeImpl()
-	{
+	protected DQDataQualityTypeImpl() {
 		super();
 	}
 
@@ -88,8 +86,7 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQDataQualityType();
 	}
 
@@ -98,8 +95,8 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DQScopePropertyType getScope()
-	{
+	@Override
+	public DQScopePropertyType getScope() {
 		return scope;
 	}
 
@@ -108,12 +105,10 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetScope(DQScopePropertyType newScope, NotificationChain msgs)
-	{
+	public NotificationChain basicSetScope(DQScopePropertyType newScope, NotificationChain msgs) {
 		DQScopePropertyType oldScope = scope;
 		scope = newScope;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_DATA_QUALITY_TYPE__SCOPE, oldScope, newScope);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +120,9 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setScope(DQScopePropertyType newScope)
-	{
-		if (newScope != scope)
-		{
+	@Override
+	public void setScope(DQScopePropertyType newScope) {
+		if (newScope != scope) {
 			NotificationChain msgs = null;
 			if (scope != null)
 				msgs = ((InternalEObject)scope).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_DATA_QUALITY_TYPE__SCOPE, null, msgs);
@@ -146,10 +140,9 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DQElementPropertyType> getReport()
-	{
-		if (report == null)
-		{
+	@Override
+	public EList<DQElementPropertyType> getReport() {
+		if (report == null) {
 			report = new EObjectContainmentEList<DQElementPropertyType>(DQElementPropertyType.class, this, GMDPackage.DQ_DATA_QUALITY_TYPE__REPORT);
 		}
 		return report;
@@ -160,8 +153,8 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LILineagePropertyType getLineage()
-	{
+	@Override
+	public LILineagePropertyType getLineage() {
 		return lineage;
 	}
 
@@ -170,12 +163,10 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLineage(LILineagePropertyType newLineage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLineage(LILineagePropertyType newLineage, NotificationChain msgs) {
 		LILineagePropertyType oldLineage = lineage;
 		lineage = newLineage;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_DATA_QUALITY_TYPE__LINEAGE, oldLineage, newLineage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -187,10 +178,9 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLineage(LILineagePropertyType newLineage)
-	{
-		if (newLineage != lineage)
-		{
+	@Override
+	public void setLineage(LILineagePropertyType newLineage) {
+		if (newLineage != lineage) {
 			NotificationChain msgs = null;
 			if (lineage != null)
 				msgs = ((InternalEObject)lineage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_DATA_QUALITY_TYPE__LINEAGE, null, msgs);
@@ -209,10 +199,8 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.DQ_DATA_QUALITY_TYPE__SCOPE:
 				return basicSetScope(null, msgs);
 			case GMDPackage.DQ_DATA_QUALITY_TYPE__REPORT:
@@ -229,10 +217,8 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.DQ_DATA_QUALITY_TYPE__SCOPE:
 				return getScope();
 			case GMDPackage.DQ_DATA_QUALITY_TYPE__REPORT:
@@ -250,10 +236,8 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.DQ_DATA_QUALITY_TYPE__SCOPE:
 				setScope((DQScopePropertyType)newValue);
 				return;
@@ -274,10 +258,8 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_DATA_QUALITY_TYPE__SCOPE:
 				setScope((DQScopePropertyType)null);
 				return;
@@ -297,10 +279,8 @@ public class DQDataQualityTypeImpl extends AbstractObjectTypeImpl implements DQD
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_DATA_QUALITY_TYPE__SCOPE:
 				return scope != null;
 			case GMDPackage.DQ_DATA_QUALITY_TYPE__REPORT:

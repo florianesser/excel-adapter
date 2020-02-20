@@ -22,16 +22,11 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='TimeNodeType' kind='elementOnly'"
  * @generated
  */
-public interface TimeNodeType extends AbstractTimeTopologyPrimitiveType
-{
+public interface TimeNodeType extends AbstractTimeTopologyPrimitiveType {
 	/**
 	 * Returns the value of the '<em><b>Previous Edge</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.TimeEdgePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Previous Edge</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Previous Edge</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTimeNodeType_PreviousEdge()
@@ -45,10 +40,6 @@ public interface TimeNodeType extends AbstractTimeTopologyPrimitiveType
 	 * Returns the value of the '<em><b>Next Edge</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.TimeEdgePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Next Edge</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Next Edge</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTimeNodeType_NextEdge()
@@ -61,10 +52,6 @@ public interface TimeNodeType extends AbstractTimeTopologyPrimitiveType
 	/**
 	 * Returns the value of the '<em><b>Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Position</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position</em>' containment reference.
 	 * @see #setPosition(TimeInstantPropertyType)

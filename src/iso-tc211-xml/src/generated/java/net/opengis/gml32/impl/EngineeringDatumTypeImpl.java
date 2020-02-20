@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class EngineeringDatumTypeImpl extends AbstractDatumTypeImpl implements EngineeringDatumType
-{
+public class EngineeringDatumTypeImpl extends AbstractDatumTypeImpl implements EngineeringDatumType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EngineeringDatumTypeImpl()
-	{
+	protected EngineeringDatumTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class EngineeringDatumTypeImpl extends AbstractDatumTypeImpl implements E
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getEngineeringDatumType();
 	}
 

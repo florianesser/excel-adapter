@@ -29,15 +29,10 @@ import org.isotc211.iso19139.gco.DateTimePropertyType;
  * @model extendedMetaData="name='MD_StandardOrderProcess_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDStandardOrderProcessType extends AbstractObjectType
-{
+public interface MDStandardOrderProcessType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Fees</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fees</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fees</em>' containment reference.
 	 * @see #setFees(CharacterStringPropertyType)
@@ -61,10 +56,6 @@ public interface MDStandardOrderProcessType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Planned Available Date Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Planned Available Date Time</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Planned Available Date Time</em>' containment reference.
 	 * @see #setPlannedAvailableDateTime(DateTimePropertyType)
@@ -88,10 +79,6 @@ public interface MDStandardOrderProcessType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Ordering Instructions</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ordering Instructions</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ordering Instructions</em>' containment reference.
 	 * @see #setOrderingInstructions(CharacterStringPropertyType)
@@ -115,10 +102,6 @@ public interface MDStandardOrderProcessType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Turnaround</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Turnaround</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Turnaround</em>' containment reference.
 	 * @see #setTurnaround(CharacterStringPropertyType)

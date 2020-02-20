@@ -33,15 +33,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='EnvelopeType' kind='elementOnly'"
  * @generated
  */
-public interface EnvelopeType extends EObject
-{
+public interface EnvelopeType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Lower Corner</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Lower Corner</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Lower Corner</em>' containment reference.
 	 * @see #setLowerCorner(DirectPositionType)
@@ -65,10 +60,6 @@ public interface EnvelopeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Upper Corner</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Upper Corner</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Upper Corner</em>' containment reference.
 	 * @see #setUpperCorner(DirectPositionType)
@@ -93,10 +84,6 @@ public interface EnvelopeType extends EObject
 	 * Returns the value of the '<em><b>Pos</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.DirectPositionType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getEnvelopeType_Pos()
@@ -109,10 +96,6 @@ public interface EnvelopeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Coordinates</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Coordinates</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coordinates</em>' containment reference.
 	 * @see #setCoordinates(CoordinatesType)
@@ -136,10 +119,6 @@ public interface EnvelopeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Axis Labels</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Axis Labels</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Axis Labels</em>' attribute.
 	 * @see #setAxisLabels(List)
@@ -163,10 +142,6 @@ public interface EnvelopeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Srs Dimension</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Srs Dimension</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Srs Dimension</em>' attribute.
 	 * @see #setSrsDimension(BigInteger)
@@ -190,10 +165,6 @@ public interface EnvelopeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Srs Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Srs Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Srs Name</em>' attribute.
 	 * @see #setSrsName(String)
@@ -217,10 +188,6 @@ public interface EnvelopeType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Uom Labels</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Labels</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uom Labels</em>' attribute.
 	 * @see #setUomLabels(List)

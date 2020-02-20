@@ -29,15 +29,10 @@ import org.isotc211.iso19139.gco.UomLengthPropertyType;
  * @model extendedMetaData="name='MD_Band_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDBandType extends MDRangeDimensionType
-{
+public interface MDBandType extends MDRangeDimensionType {
 	/**
 	 * Returns the value of the '<em><b>Max Value</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Max Value</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Value</em>' containment reference.
 	 * @see #setMaxValue(RealPropertyType)
@@ -61,10 +56,6 @@ public interface MDBandType extends MDRangeDimensionType
 	/**
 	 * Returns the value of the '<em><b>Min Value</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Min Value</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Value</em>' containment reference.
 	 * @see #setMinValue(RealPropertyType)
@@ -88,10 +79,6 @@ public interface MDBandType extends MDRangeDimensionType
 	/**
 	 * Returns the value of the '<em><b>Units</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Units</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Units</em>' containment reference.
 	 * @see #setUnits(UomLengthPropertyType)
@@ -115,10 +102,6 @@ public interface MDBandType extends MDRangeDimensionType
 	/**
 	 * Returns the value of the '<em><b>Peak Response</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Peak Response</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Peak Response</em>' containment reference.
 	 * @see #setPeakResponse(RealPropertyType)
@@ -142,10 +125,6 @@ public interface MDBandType extends MDRangeDimensionType
 	/**
 	 * Returns the value of the '<em><b>Bits Per Value</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Bits Per Value</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Bits Per Value</em>' containment reference.
 	 * @see #setBitsPerValue(IntegerPropertyType)
@@ -169,10 +148,6 @@ public interface MDBandType extends MDRangeDimensionType
 	/**
 	 * Returns the value of the '<em><b>Tone Gradation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tone Gradation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tone Gradation</em>' containment reference.
 	 * @see #setToneGradation(IntegerPropertyType)
@@ -196,10 +171,6 @@ public interface MDBandType extends MDRangeDimensionType
 	/**
 	 * Returns the value of the '<em><b>Scale Factor</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Scale Factor</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scale Factor</em>' containment reference.
 	 * @see #setScaleFactor(RealPropertyType)
@@ -223,10 +194,6 @@ public interface MDBandType extends MDRangeDimensionType
 	/**
 	 * Returns the value of the '<em><b>Offset</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Offset</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Offset</em>' containment reference.
 	 * @see #setOffset(RealPropertyType)

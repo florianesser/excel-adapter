@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class VolumeTypeImpl extends MeasureTypeImpl implements VolumeType
-{
+public class VolumeTypeImpl extends MeasureTypeImpl implements VolumeType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected VolumeTypeImpl()
-	{
+	protected VolumeTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class VolumeTypeImpl extends MeasureTypeImpl implements VolumeType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getVolumeType();
 	}
 

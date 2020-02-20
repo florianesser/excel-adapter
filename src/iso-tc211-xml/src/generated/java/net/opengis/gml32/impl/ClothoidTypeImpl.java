@@ -34,8 +34,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements ClothoidType
-{
+public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements ClothoidType {
 	/**
 	 * The cached value of the '{@link #getRefLocation() <em>Ref Location</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -158,8 +157,7 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ClothoidTypeImpl()
-	{
+	protected ClothoidTypeImpl() {
 		super();
 	}
 
@@ -169,8 +167,7 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getClothoidType();
 	}
 
@@ -179,8 +176,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RefLocationType getRefLocation()
-	{
+	@Override
+	public RefLocationType getRefLocation() {
 		return refLocation;
 	}
 
@@ -189,12 +186,10 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRefLocation(RefLocationType newRefLocation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRefLocation(RefLocationType newRefLocation, NotificationChain msgs) {
 		RefLocationType oldRefLocation = refLocation;
 		refLocation = newRefLocation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CLOTHOID_TYPE__REF_LOCATION, oldRefLocation, newRefLocation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -206,10 +201,9 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRefLocation(RefLocationType newRefLocation)
-	{
-		if (newRefLocation != refLocation)
-		{
+	@Override
+	public void setRefLocation(RefLocationType newRefLocation) {
+		if (newRefLocation != refLocation) {
 			NotificationChain msgs = null;
 			if (refLocation != null)
 				msgs = ((InternalEObject)refLocation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CLOTHOID_TYPE__REF_LOCATION, null, msgs);
@@ -227,8 +221,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigDecimal getScaleFactor()
-	{
+	@Override
+	public BigDecimal getScaleFactor() {
 		return scaleFactor;
 	}
 
@@ -237,8 +231,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setScaleFactor(BigDecimal newScaleFactor)
-	{
+	@Override
+	public void setScaleFactor(BigDecimal newScaleFactor) {
 		BigDecimal oldScaleFactor = scaleFactor;
 		scaleFactor = newScaleFactor;
 		if (eNotificationRequired())
@@ -250,8 +244,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getStartParameter()
-	{
+	@Override
+	public double getStartParameter() {
 		return startParameter;
 	}
 
@@ -260,8 +254,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStartParameter(double newStartParameter)
-	{
+	@Override
+	public void setStartParameter(double newStartParameter) {
 		double oldStartParameter = startParameter;
 		startParameter = newStartParameter;
 		boolean oldStartParameterESet = startParameterESet;
@@ -275,8 +269,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetStartParameter()
-	{
+	@Override
+	public void unsetStartParameter() {
 		double oldStartParameter = startParameter;
 		boolean oldStartParameterESet = startParameterESet;
 		startParameter = START_PARAMETER_EDEFAULT;
@@ -290,8 +284,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetStartParameter()
-	{
+	@Override
+	public boolean isSetStartParameter() {
 		return startParameterESet;
 	}
 
@@ -300,8 +294,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getEndParameter()
-	{
+	@Override
+	public double getEndParameter() {
 		return endParameter;
 	}
 
@@ -310,8 +304,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEndParameter(double newEndParameter)
-	{
+	@Override
+	public void setEndParameter(double newEndParameter) {
 		double oldEndParameter = endParameter;
 		endParameter = newEndParameter;
 		boolean oldEndParameterESet = endParameterESet;
@@ -325,8 +319,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetEndParameter()
-	{
+	@Override
+	public void unsetEndParameter() {
 		double oldEndParameter = endParameter;
 		boolean oldEndParameterESet = endParameterESet;
 		endParameter = END_PARAMETER_EDEFAULT;
@@ -340,8 +334,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetEndParameter()
-	{
+	@Override
+	public boolean isSetEndParameter() {
 		return endParameterESet;
 	}
 
@@ -350,8 +344,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurveInterpolationType getInterpolation()
-	{
+	@Override
+	public CurveInterpolationType getInterpolation() {
 		return interpolation;
 	}
 
@@ -360,8 +354,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInterpolation(CurveInterpolationType newInterpolation)
-	{
+	@Override
+	public void setInterpolation(CurveInterpolationType newInterpolation) {
 		CurveInterpolationType oldInterpolation = interpolation;
 		interpolation = newInterpolation == null ? INTERPOLATION_EDEFAULT : newInterpolation;
 		boolean oldInterpolationESet = interpolationESet;
@@ -375,8 +369,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetInterpolation()
-	{
+	@Override
+	public void unsetInterpolation() {
 		CurveInterpolationType oldInterpolation = interpolation;
 		boolean oldInterpolationESet = interpolationESet;
 		interpolation = INTERPOLATION_EDEFAULT;
@@ -390,8 +384,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetInterpolation()
-	{
+	@Override
+	public boolean isSetInterpolation() {
 		return interpolationESet;
 	}
 
@@ -401,10 +395,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.CLOTHOID_TYPE__REF_LOCATION:
 				return basicSetRefLocation(null, msgs);
 		}
@@ -417,10 +409,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CLOTHOID_TYPE__REF_LOCATION:
 				return getRefLocation();
 			case GMLPackage.CLOTHOID_TYPE__SCALE_FACTOR:
@@ -441,10 +431,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CLOTHOID_TYPE__REF_LOCATION:
 				setRefLocation((RefLocationType)newValue);
 				return;
@@ -470,10 +458,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CLOTHOID_TYPE__REF_LOCATION:
 				setRefLocation((RefLocationType)null);
 				return;
@@ -499,10 +485,8 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CLOTHOID_TYPE__REF_LOCATION:
 				return refLocation != null;
 			case GMLPackage.CLOTHOID_TYPE__SCALE_FACTOR:
@@ -523,11 +507,10 @@ public class ClothoidTypeImpl extends AbstractCurveSegmentTypeImpl implements Cl
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (scaleFactor: ");
 		result.append(scaleFactor);
 		result.append(", startParameter: ");

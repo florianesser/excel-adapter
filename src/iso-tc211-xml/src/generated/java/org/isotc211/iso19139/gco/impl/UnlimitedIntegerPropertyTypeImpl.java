@@ -29,8 +29,7 @@ import org.isotc211.iso19139.gco.UnlimitedIntegerType;
  *
  * @generated
  */
-public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implements UnlimitedIntegerPropertyType
-{
+public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Container implements UnlimitedIntegerPropertyType {
 	/**
 	 * The cached value of the '{@link #getUnlimitedInteger() <em>Unlimited Integer</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UnlimitedIntegerPropertyTypeImpl()
-	{
+	protected UnlimitedIntegerPropertyTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.UNLIMITED_INTEGER_PROPERTY_TYPE;
 	}
 
@@ -96,8 +93,8 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnlimitedIntegerType getUnlimitedInteger()
-	{
+	@Override
+	public UnlimitedIntegerType getUnlimitedInteger() {
 		return unlimitedInteger;
 	}
 
@@ -106,14 +103,12 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUnlimitedInteger(UnlimitedIntegerType newUnlimitedInteger, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUnlimitedInteger(UnlimitedIntegerType newUnlimitedInteger, NotificationChain msgs) {
 		UnlimitedIntegerType oldUnlimitedInteger = unlimitedInteger;
 		unlimitedInteger = newUnlimitedInteger;
 		boolean oldUnlimitedIntegerESet = unlimitedIntegerESet;
 		unlimitedIntegerESet = true;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__UNLIMITED_INTEGER, oldUnlimitedInteger, newUnlimitedInteger, !oldUnlimitedIntegerESet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +120,9 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUnlimitedInteger(UnlimitedIntegerType newUnlimitedInteger)
-	{
-		if (newUnlimitedInteger != unlimitedInteger)
-		{
+	@Override
+	public void setUnlimitedInteger(UnlimitedIntegerType newUnlimitedInteger) {
+		if (newUnlimitedInteger != unlimitedInteger) {
 			NotificationChain msgs = null;
 			if (unlimitedInteger != null)
 				msgs = ((InternalEObject)unlimitedInteger).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__UNLIMITED_INTEGER, null, msgs);
@@ -137,8 +131,7 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 			msgs = basicSetUnlimitedInteger(newUnlimitedInteger, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
-		else
-		{
+		else {
 			boolean oldUnlimitedIntegerESet = unlimitedIntegerESet;
 			unlimitedIntegerESet = true;
 			if (eNotificationRequired())
@@ -151,14 +144,12 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicUnsetUnlimitedInteger(NotificationChain msgs)
-	{
+	public NotificationChain basicUnsetUnlimitedInteger(NotificationChain msgs) {
 		UnlimitedIntegerType oldUnlimitedInteger = unlimitedInteger;
 		unlimitedInteger = null;
 		boolean oldUnlimitedIntegerESet = unlimitedIntegerESet;
 		unlimitedIntegerESet = false;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.UNSET, GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__UNLIMITED_INTEGER, oldUnlimitedInteger, null, oldUnlimitedIntegerESet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -170,17 +161,15 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetUnlimitedInteger()
-	{
-		if (unlimitedInteger != null)
-		{
+	@Override
+	public void unsetUnlimitedInteger() {
+		if (unlimitedInteger != null) {
 			NotificationChain msgs = null;
 			msgs = ((InternalEObject)unlimitedInteger).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__UNLIMITED_INTEGER, null, msgs);
 			msgs = basicUnsetUnlimitedInteger(msgs);
 			if (msgs != null) msgs.dispatch();
 		}
-		else
-		{
+		else {
 			boolean oldUnlimitedIntegerESet = unlimitedIntegerESet;
 			unlimitedIntegerESet = false;
 			if (eNotificationRequired())
@@ -193,8 +182,8 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetUnlimitedInteger()
-	{
+	@Override
+	public boolean isSetUnlimitedInteger() {
 		return unlimitedIntegerESet;
 	}
 
@@ -203,8 +192,8 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -213,8 +202,8 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -227,10 +216,8 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__UNLIMITED_INTEGER:
 				return basicUnsetUnlimitedInteger(msgs);
 		}
@@ -243,10 +230,8 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__UNLIMITED_INTEGER:
 				return getUnlimitedInteger();
 			case GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__NIL_REASON:
@@ -261,10 +246,8 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__UNLIMITED_INTEGER:
 				setUnlimitedInteger((UnlimitedIntegerType)newValue);
 				return;
@@ -281,10 +264,8 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__UNLIMITED_INTEGER:
 				unsetUnlimitedInteger();
 				return;
@@ -301,10 +282,8 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__UNLIMITED_INTEGER:
 				return isSetUnlimitedInteger();
 			case GCOPackage.UNLIMITED_INTEGER_PROPERTY_TYPE__NIL_REASON:
@@ -319,11 +298,10 @@ public class UnlimitedIntegerPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

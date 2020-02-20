@@ -43,8 +43,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtentType
-{
+public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtentType {
 	/**
 	 * The cached value of the '{@link #getDescription() <em>Description</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -90,8 +89,7 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EXExtentTypeImpl()
-	{
+	protected EXExtentTypeImpl() {
 		super();
 	}
 
@@ -101,8 +99,7 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getEXExtentType();
 	}
 
@@ -111,8 +108,8 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getDescription() {
 		return description;
 	}
 
@@ -121,12 +118,10 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldDescription = description;
 		description = newDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_EXTENT_TYPE__DESCRIPTION, oldDescription, newDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -138,10 +133,9 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescription(CharacterStringPropertyType newDescription)
-	{
-		if (newDescription != description)
-		{
+	@Override
+	public void setDescription(CharacterStringPropertyType newDescription) {
+		if (newDescription != description) {
 			NotificationChain msgs = null;
 			if (description != null)
 				msgs = ((InternalEObject)description).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_EXTENT_TYPE__DESCRIPTION, null, msgs);
@@ -159,10 +153,9 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EXGeographicExtentPropertyType> getGeographicElement()
-	{
-		if (geographicElement == null)
-		{
+	@Override
+	public EList<EXGeographicExtentPropertyType> getGeographicElement() {
+		if (geographicElement == null) {
 			geographicElement = new EObjectContainmentEList<EXGeographicExtentPropertyType>(EXGeographicExtentPropertyType.class, this, GMDPackage.EX_EXTENT_TYPE__GEOGRAPHIC_ELEMENT);
 		}
 		return geographicElement;
@@ -173,10 +166,9 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EXTemporalExtentPropertyType> getTemporalElement()
-	{
-		if (temporalElement == null)
-		{
+	@Override
+	public EList<EXTemporalExtentPropertyType> getTemporalElement() {
+		if (temporalElement == null) {
 			temporalElement = new EObjectContainmentEList<EXTemporalExtentPropertyType>(EXTemporalExtentPropertyType.class, this, GMDPackage.EX_EXTENT_TYPE__TEMPORAL_ELEMENT);
 		}
 		return temporalElement;
@@ -187,10 +179,9 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EXVerticalExtentPropertyType> getVerticalElement()
-	{
-		if (verticalElement == null)
-		{
+	@Override
+	public EList<EXVerticalExtentPropertyType> getVerticalElement() {
+		if (verticalElement == null) {
 			verticalElement = new EObjectContainmentEList<EXVerticalExtentPropertyType>(EXVerticalExtentPropertyType.class, this, GMDPackage.EX_EXTENT_TYPE__VERTICAL_ELEMENT);
 		}
 		return verticalElement;
@@ -202,10 +193,8 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.EX_EXTENT_TYPE__DESCRIPTION:
 				return basicSetDescription(null, msgs);
 			case GMDPackage.EX_EXTENT_TYPE__GEOGRAPHIC_ELEMENT:
@@ -224,10 +213,8 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.EX_EXTENT_TYPE__DESCRIPTION:
 				return getDescription();
 			case GMDPackage.EX_EXTENT_TYPE__GEOGRAPHIC_ELEMENT:
@@ -247,10 +234,8 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.EX_EXTENT_TYPE__DESCRIPTION:
 				setDescription((CharacterStringPropertyType)newValue);
 				return;
@@ -276,10 +261,8 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_EXTENT_TYPE__DESCRIPTION:
 				setDescription((CharacterStringPropertyType)null);
 				return;
@@ -302,10 +285,8 @@ public class EXExtentTypeImpl extends AbstractObjectTypeImpl implements EXExtent
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_EXTENT_TYPE__DESCRIPTION:
 				return description != null;
 			case GMDPackage.EX_EXTENT_TYPE__GEOGRAPHIC_ELEMENT:

@@ -48,8 +48,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Container implements GeometricComplexPropertyType
-{
+public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Container implements GeometricComplexPropertyType {
 	/**
 	 * The cached value of the '{@link #getGeometricComplex() <em>Geometric Complex</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -331,8 +330,7 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeometricComplexPropertyTypeImpl()
-	{
+	protected GeometricComplexPropertyTypeImpl() {
 		super();
 	}
 
@@ -342,8 +340,7 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeometricComplexPropertyType();
 	}
 
@@ -352,8 +349,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeometricComplexType getGeometricComplex()
-	{
+	@Override
+	public GeometricComplexType getGeometricComplex() {
 		return geometricComplex;
 	}
 
@@ -362,12 +359,10 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeometricComplex(GeometricComplexType newGeometricComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeometricComplex(GeometricComplexType newGeometricComplex, NotificationChain msgs) {
 		GeometricComplexType oldGeometricComplex = geometricComplex;
 		geometricComplex = newGeometricComplex;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__GEOMETRIC_COMPLEX, oldGeometricComplex, newGeometricComplex);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -379,10 +374,9 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeometricComplex(GeometricComplexType newGeometricComplex)
-	{
-		if (newGeometricComplex != geometricComplex)
-		{
+	@Override
+	public void setGeometricComplex(GeometricComplexType newGeometricComplex) {
+		if (newGeometricComplex != geometricComplex) {
 			NotificationChain msgs = null;
 			if (geometricComplex != null)
 				msgs = ((InternalEObject)geometricComplex).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__GEOMETRIC_COMPLEX, null, msgs);
@@ -400,8 +394,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeCurveType getCompositeCurve()
-	{
+	@Override
+	public CompositeCurveType getCompositeCurve() {
 		return compositeCurve;
 	}
 
@@ -410,12 +404,10 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompositeCurve(CompositeCurveType newCompositeCurve, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompositeCurve(CompositeCurveType newCompositeCurve, NotificationChain msgs) {
 		CompositeCurveType oldCompositeCurve = compositeCurve;
 		compositeCurve = newCompositeCurve;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__COMPOSITE_CURVE, oldCompositeCurve, newCompositeCurve);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -427,10 +419,9 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompositeCurve(CompositeCurveType newCompositeCurve)
-	{
-		if (newCompositeCurve != compositeCurve)
-		{
+	@Override
+	public void setCompositeCurve(CompositeCurveType newCompositeCurve) {
+		if (newCompositeCurve != compositeCurve) {
 			NotificationChain msgs = null;
 			if (compositeCurve != null)
 				msgs = ((InternalEObject)compositeCurve).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__COMPOSITE_CURVE, null, msgs);
@@ -448,8 +439,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeSurfaceType getCompositeSurface()
-	{
+	@Override
+	public CompositeSurfaceType getCompositeSurface() {
 		return compositeSurface;
 	}
 
@@ -458,12 +449,10 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompositeSurface(CompositeSurfaceType newCompositeSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompositeSurface(CompositeSurfaceType newCompositeSurface, NotificationChain msgs) {
 		CompositeSurfaceType oldCompositeSurface = compositeSurface;
 		compositeSurface = newCompositeSurface;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__COMPOSITE_SURFACE, oldCompositeSurface, newCompositeSurface);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -475,10 +464,9 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompositeSurface(CompositeSurfaceType newCompositeSurface)
-	{
-		if (newCompositeSurface != compositeSurface)
-		{
+	@Override
+	public void setCompositeSurface(CompositeSurfaceType newCompositeSurface) {
+		if (newCompositeSurface != compositeSurface) {
 			NotificationChain msgs = null;
 			if (compositeSurface != null)
 				msgs = ((InternalEObject)compositeSurface).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__COMPOSITE_SURFACE, null, msgs);
@@ -496,8 +484,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompositeSolidType getCompositeSolid()
-	{
+	@Override
+	public CompositeSolidType getCompositeSolid() {
 		return compositeSolid;
 	}
 
@@ -506,12 +494,10 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCompositeSolid(CompositeSolidType newCompositeSolid, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCompositeSolid(CompositeSolidType newCompositeSolid, NotificationChain msgs) {
 		CompositeSolidType oldCompositeSolid = compositeSolid;
 		compositeSolid = newCompositeSolid;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__COMPOSITE_SOLID, oldCompositeSolid, newCompositeSolid);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -523,10 +509,9 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompositeSolid(CompositeSolidType newCompositeSolid)
-	{
-		if (newCompositeSolid != compositeSolid)
-		{
+	@Override
+	public void setCompositeSolid(CompositeSolidType newCompositeSolid) {
+		if (newCompositeSolid != compositeSolid) {
 			NotificationChain msgs = null;
 			if (compositeSolid != null)
 				msgs = ((InternalEObject)compositeSolid).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__COMPOSITE_SOLID, null, msgs);
@@ -544,8 +529,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -554,8 +539,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -569,8 +554,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -584,8 +569,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -594,8 +579,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -604,8 +589,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -617,8 +602,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -627,8 +612,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -640,8 +625,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -650,8 +635,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -663,8 +648,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -673,8 +658,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -688,8 +673,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -703,8 +688,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -713,8 +698,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -723,8 +708,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -736,8 +721,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -746,8 +731,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -759,8 +744,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -769,8 +754,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -784,8 +769,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -799,8 +784,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -809,8 +794,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -819,8 +804,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -832,8 +817,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -842,8 +827,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -857,8 +842,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -872,8 +857,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -883,10 +868,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__GEOMETRIC_COMPLEX:
 				return basicSetGeometricComplex(null, msgs);
 			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__COMPOSITE_CURVE:
@@ -905,10 +888,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__GEOMETRIC_COMPLEX:
 				return getGeometricComplex();
 			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__COMPOSITE_CURVE:
@@ -947,10 +928,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__GEOMETRIC_COMPLEX:
 				setGeometricComplex((GeometricComplexType)newValue);
 				return;
@@ -1003,10 +982,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__GEOMETRIC_COMPLEX:
 				setGeometricComplex((GeometricComplexType)null);
 				return;
@@ -1059,10 +1036,8 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__GEOMETRIC_COMPLEX:
 				return geometricComplex != null;
 			case GMLPackage.GEOMETRIC_COMPLEX_PROPERTY_TYPE__COMPOSITE_CURVE:
@@ -1101,11 +1076,10 @@ public class GeometricComplexPropertyTypeImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (actuate: ");
 		if (actuateESet) result.append(actuate); else result.append("<unset>");
 		result.append(", arcrole: ");

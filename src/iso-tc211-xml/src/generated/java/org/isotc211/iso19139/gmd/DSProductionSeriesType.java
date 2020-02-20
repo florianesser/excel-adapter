@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DS_ProductionSeries_Type' kind='elementOnly'"
  * @generated
  */
-public interface DSProductionSeriesType extends DSSeriesType
-{
+public interface DSProductionSeriesType extends DSSeriesType {
 } // DSProductionSeriesType

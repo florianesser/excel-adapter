@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *        extendedMetaData="name='AbstractDatumType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractDatumType extends IdentifiedObjectType
-{
+public interface AbstractDatumType extends IdentifiedObjectType {
 	/**
 	 * Returns the value of the '<em><b>Domain Of Validity</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

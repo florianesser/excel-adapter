@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='KnotPropertyType' kind='elementOnly'"
  * @generated
  */
-public interface KnotPropertyType extends EObject
-{
+public interface KnotPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Knot</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

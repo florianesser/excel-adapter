@@ -38,8 +38,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTypeImpl implements ConcatenatedOperationType
-{
+public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTypeImpl implements ConcatenatedOperationType {
 	/**
 	 * The cached value of the '{@link #getCoordOperationGroup() <em>Coord Operation Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -84,8 +83,7 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ConcatenatedOperationTypeImpl()
-	{
+	protected ConcatenatedOperationTypeImpl() {
 		super();
 	}
 
@@ -95,8 +93,7 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getConcatenatedOperationType();
 	}
 
@@ -105,10 +102,9 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getCoordOperationGroup()
-	{
-		if (coordOperationGroup == null)
-		{
+	@Override
+	public FeatureMap getCoordOperationGroup() {
+		if (coordOperationGroup == null) {
 			coordOperationGroup = new BasicFeatureMap(this, GMLPackage.CONCATENATED_OPERATION_TYPE__COORD_OPERATION_GROUP);
 		}
 		return coordOperationGroup;
@@ -119,8 +115,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CoordinateOperationPropertyType> getCoordOperation()
-	{
+	@Override
+	public EList<CoordinateOperationPropertyType> getCoordOperation() {
 		return getCoordOperationGroup().list(GMLPackage.eINSTANCE.getConcatenatedOperationType_CoordOperation());
 	}
 
@@ -129,8 +125,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -139,8 +135,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -154,8 +150,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -169,8 +165,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -180,10 +176,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.CONCATENATED_OPERATION_TYPE__COORD_OPERATION_GROUP:
 				return ((InternalEList<?>)getCoordOperationGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.CONCATENATED_OPERATION_TYPE__COORD_OPERATION:
@@ -198,10 +192,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CONCATENATED_OPERATION_TYPE__COORD_OPERATION_GROUP:
 				if (coreType) return getCoordOperationGroup();
 				return ((FeatureMap.Internal)getCoordOperationGroup()).getWrapper();
@@ -220,10 +212,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CONCATENATED_OPERATION_TYPE__COORD_OPERATION_GROUP:
 				((FeatureMap.Internal)getCoordOperationGroup()).set(newValue);
 				return;
@@ -244,10 +234,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CONCATENATED_OPERATION_TYPE__COORD_OPERATION_GROUP:
 				getCoordOperationGroup().clear();
 				return;
@@ -267,10 +255,8 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CONCATENATED_OPERATION_TYPE__COORD_OPERATION_GROUP:
 				return coordOperationGroup != null && !coordOperationGroup.isEmpty();
 			case GMLPackage.CONCATENATED_OPERATION_TYPE__COORD_OPERATION:
@@ -287,11 +273,10 @@ public class ConcatenatedOperationTypeImpl extends AbstractCoordinateOperationTy
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (coordOperationGroup: ");
 		result.append(coordOperationGroup);
 		result.append(", aggregationType: ");

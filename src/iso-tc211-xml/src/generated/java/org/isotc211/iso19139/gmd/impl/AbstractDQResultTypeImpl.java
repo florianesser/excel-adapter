@@ -16,15 +16,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public abstract class AbstractDQResultTypeImpl extends AbstractObjectTypeImpl implements AbstractDQResultType
-{
+public abstract class AbstractDQResultTypeImpl extends AbstractObjectTypeImpl implements AbstractDQResultType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractDQResultTypeImpl()
-	{
+	protected AbstractDQResultTypeImpl() {
 		super();
 	}
 
@@ -34,8 +32,7 @@ public abstract class AbstractDQResultTypeImpl extends AbstractObjectTypeImpl im
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractDQResultType();
 	}
 

@@ -44,8 +44,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container implements AbstractGMLType
-{
+public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container implements AbstractGMLType {
 	/**
 	 * The cached value of the '{@link #getMetaDataProperty() <em>Meta Data Property</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -121,8 +120,7 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGMLTypeImpl()
-	{
+	protected AbstractGMLTypeImpl() {
 		super();
 	}
 
@@ -132,8 +130,7 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGMLType();
 	}
 
@@ -142,10 +139,9 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MetaDataPropertyType> getMetaDataProperty()
-	{
-		if (metaDataProperty == null)
-		{
+	@Override
+	public EList<MetaDataPropertyType> getMetaDataProperty() {
+		if (metaDataProperty == null) {
 			metaDataProperty = new EObjectContainmentEList<MetaDataPropertyType>(MetaDataPropertyType.class, this, GMLPackage.ABSTRACT_GML_TYPE__META_DATA_PROPERTY);
 		}
 		return metaDataProperty;
@@ -156,8 +152,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getDescription()
-	{
+	@Override
+	public StringOrRefType getDescription() {
 		return description;
 	}
 
@@ -166,12 +162,10 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescription(StringOrRefType newDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescription(StringOrRefType newDescription, NotificationChain msgs) {
 		StringOrRefType oldDescription = description;
 		description = newDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_GML_TYPE__DESCRIPTION, oldDescription, newDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -183,10 +177,9 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescription(StringOrRefType newDescription)
-	{
-		if (newDescription != description)
-		{
+	@Override
+	public void setDescription(StringOrRefType newDescription) {
+		if (newDescription != description) {
 			NotificationChain msgs = null;
 			if (description != null)
 				msgs = ((InternalEObject)description).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_GML_TYPE__DESCRIPTION, null, msgs);
@@ -204,8 +197,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getDescriptionReference()
-	{
+	@Override
+	public ReferenceType getDescriptionReference() {
 		return descriptionReference;
 	}
 
@@ -214,12 +207,10 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescriptionReference(ReferenceType newDescriptionReference, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescriptionReference(ReferenceType newDescriptionReference, NotificationChain msgs) {
 		ReferenceType oldDescriptionReference = descriptionReference;
 		descriptionReference = newDescriptionReference;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_GML_TYPE__DESCRIPTION_REFERENCE, oldDescriptionReference, newDescriptionReference);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -231,10 +222,9 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescriptionReference(ReferenceType newDescriptionReference)
-	{
-		if (newDescriptionReference != descriptionReference)
-		{
+	@Override
+	public void setDescriptionReference(ReferenceType newDescriptionReference) {
+		if (newDescriptionReference != descriptionReference) {
 			NotificationChain msgs = null;
 			if (descriptionReference != null)
 				msgs = ((InternalEObject)descriptionReference).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_GML_TYPE__DESCRIPTION_REFERENCE, null, msgs);
@@ -252,8 +242,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeWithAuthorityType getIdentifier()
-	{
+	@Override
+	public CodeWithAuthorityType getIdentifier() {
 		return identifier;
 	}
 
@@ -262,12 +252,10 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIdentifier(CodeWithAuthorityType newIdentifier, NotificationChain msgs)
-	{
+	public NotificationChain basicSetIdentifier(CodeWithAuthorityType newIdentifier, NotificationChain msgs) {
 		CodeWithAuthorityType oldIdentifier = identifier;
 		identifier = newIdentifier;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_GML_TYPE__IDENTIFIER, oldIdentifier, newIdentifier);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -279,10 +267,9 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIdentifier(CodeWithAuthorityType newIdentifier)
-	{
-		if (newIdentifier != identifier)
-		{
+	@Override
+	public void setIdentifier(CodeWithAuthorityType newIdentifier) {
+		if (newIdentifier != identifier) {
 			NotificationChain msgs = null;
 			if (identifier != null)
 				msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_GML_TYPE__IDENTIFIER, null, msgs);
@@ -300,10 +287,9 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CodeType> getName()
-	{
-		if (name == null)
-		{
+	@Override
+	public EList<CodeType> getName() {
+		if (name == null) {
 			name = new EObjectContainmentEList<CodeType>(CodeType.class, this, GMLPackage.ABSTRACT_GML_TYPE__NAME);
 		}
 		return name;
@@ -314,8 +300,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getId()
-	{
+	@Override
+	public String getId() {
 		return id;
 	}
 
@@ -324,8 +310,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setId(String newId)
-	{
+	@Override
+	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
@@ -338,10 +324,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GML_TYPE__META_DATA_PROPERTY:
 				return ((InternalEList<?>)getMetaDataProperty()).basicRemove(otherEnd, msgs);
 			case GMLPackage.ABSTRACT_GML_TYPE__DESCRIPTION:
@@ -362,10 +346,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GML_TYPE__META_DATA_PROPERTY:
 				return getMetaDataProperty();
 			case GMLPackage.ABSTRACT_GML_TYPE__DESCRIPTION:
@@ -389,10 +371,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GML_TYPE__META_DATA_PROPERTY:
 				getMetaDataProperty().clear();
 				getMetaDataProperty().addAll((Collection<? extends MetaDataPropertyType>)newValue);
@@ -423,10 +403,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GML_TYPE__META_DATA_PROPERTY:
 				getMetaDataProperty().clear();
 				return;
@@ -455,10 +433,8 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GML_TYPE__META_DATA_PROPERTY:
 				return metaDataProperty != null && !metaDataProperty.isEmpty();
 			case GMLPackage.ABSTRACT_GML_TYPE__DESCRIPTION:
@@ -481,11 +457,10 @@ public abstract class AbstractGMLTypeImpl extends MinimalEObjectImpl.Container i
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (id: ");
 		result.append(id);
 		result.append(')');

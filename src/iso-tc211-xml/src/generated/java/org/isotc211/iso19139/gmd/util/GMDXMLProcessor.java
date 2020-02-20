@@ -18,8 +18,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GMDXMLProcessor extends XMLProcessor
-{
+public class GMDXMLProcessor extends XMLProcessor {
 
 	/**
 	 * Public constructor to instantiate the helper.
@@ -27,8 +26,7 @@ public class GMDXMLProcessor extends XMLProcessor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMDXMLProcessor()
-	{
+	public GMDXMLProcessor() {
 		super((EPackage.Registry.INSTANCE));
 		GMDPackage.eINSTANCE.eClass();
 	}
@@ -40,10 +38,8 @@ public class GMDXMLProcessor extends XMLProcessor
 	 * @generated
 	 */
 	@Override
-	protected Map<String, Resource.Factory> getRegistrations()
-	{
-		if (registrations == null)
-		{
+	protected Map<String, Resource.Factory> getRegistrations() {
+		if (registrations == null) {
 			super.getRegistrations();
 			registrations.put(XML_EXTENSION, new GMDResourceFactoryImpl());
 			registrations.put(STAR_EXTENSION, new GMDResourceFactoryImpl());

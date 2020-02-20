@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Container implements SecondDefiningParameterType
-{
+public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Container implements SecondDefiningParameterType {
 	/**
 	 * The cached value of the '{@link #getInverseFlattening() <em>Inverse Flattening</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -87,8 +86,7 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SecondDefiningParameterTypeImpl()
-	{
+	protected SecondDefiningParameterTypeImpl() {
 		super();
 	}
 
@@ -98,8 +96,7 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getSecondDefiningParameterType();
 	}
 
@@ -108,8 +105,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getInverseFlattening()
-	{
+	@Override
+	public MeasureType getInverseFlattening() {
 		return inverseFlattening;
 	}
 
@@ -118,12 +115,10 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetInverseFlattening(MeasureType newInverseFlattening, NotificationChain msgs)
-	{
+	public NotificationChain basicSetInverseFlattening(MeasureType newInverseFlattening, NotificationChain msgs) {
 		MeasureType oldInverseFlattening = inverseFlattening;
 		inverseFlattening = newInverseFlattening;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__INVERSE_FLATTENING, oldInverseFlattening, newInverseFlattening);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -135,10 +130,9 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInverseFlattening(MeasureType newInverseFlattening)
-	{
-		if (newInverseFlattening != inverseFlattening)
-		{
+	@Override
+	public void setInverseFlattening(MeasureType newInverseFlattening) {
+		if (newInverseFlattening != inverseFlattening) {
 			NotificationChain msgs = null;
 			if (inverseFlattening != null)
 				msgs = ((InternalEObject)inverseFlattening).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__INVERSE_FLATTENING, null, msgs);
@@ -156,8 +150,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LengthType getSemiMinorAxis()
-	{
+	@Override
+	public LengthType getSemiMinorAxis() {
 		return semiMinorAxis;
 	}
 
@@ -166,12 +160,10 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSemiMinorAxis(LengthType newSemiMinorAxis, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSemiMinorAxis(LengthType newSemiMinorAxis, NotificationChain msgs) {
 		LengthType oldSemiMinorAxis = semiMinorAxis;
 		semiMinorAxis = newSemiMinorAxis;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__SEMI_MINOR_AXIS, oldSemiMinorAxis, newSemiMinorAxis);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -183,10 +175,9 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSemiMinorAxis(LengthType newSemiMinorAxis)
-	{
-		if (newSemiMinorAxis != semiMinorAxis)
-		{
+	@Override
+	public void setSemiMinorAxis(LengthType newSemiMinorAxis) {
+		if (newSemiMinorAxis != semiMinorAxis) {
 			NotificationChain msgs = null;
 			if (semiMinorAxis != null)
 				msgs = ((InternalEObject)semiMinorAxis).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__SEMI_MINOR_AXIS, null, msgs);
@@ -204,8 +195,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isIsSphere()
-	{
+	@Override
+	public boolean isIsSphere() {
 		return isSphere;
 	}
 
@@ -214,8 +205,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIsSphere(boolean newIsSphere)
-	{
+	@Override
+	public void setIsSphere(boolean newIsSphere) {
 		boolean oldIsSphere = isSphere;
 		isSphere = newIsSphere;
 		boolean oldIsSphereESet = isSphereESet;
@@ -229,8 +220,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetIsSphere()
-	{
+	@Override
+	public void unsetIsSphere() {
 		boolean oldIsSphere = isSphere;
 		boolean oldIsSphereESet = isSphereESet;
 		isSphere = IS_SPHERE_EDEFAULT;
@@ -244,8 +235,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetIsSphere()
-	{
+	@Override
+	public boolean isSetIsSphere() {
 		return isSphereESet;
 	}
 
@@ -255,10 +246,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__INVERSE_FLATTENING:
 				return basicSetInverseFlattening(null, msgs);
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__SEMI_MINOR_AXIS:
@@ -273,10 +262,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__INVERSE_FLATTENING:
 				return getInverseFlattening();
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__SEMI_MINOR_AXIS:
@@ -293,10 +280,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__INVERSE_FLATTENING:
 				setInverseFlattening((MeasureType)newValue);
 				return;
@@ -316,10 +301,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__INVERSE_FLATTENING:
 				setInverseFlattening((MeasureType)null);
 				return;
@@ -339,10 +322,8 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__INVERSE_FLATTENING:
 				return inverseFlattening != null;
 			case GMLPackage.SECOND_DEFINING_PARAMETER_TYPE__SEMI_MINOR_AXIS:
@@ -359,11 +340,10 @@ public class SecondDefiningParameterTypeImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (isSphere: ");
 		if (isSphereESet) result.append(isSphere); else result.append("<unset>");
 		result.append(')');

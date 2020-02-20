@@ -21,8 +21,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='CompositeSurfaceType' kind='elementOnly'"
  * @generated
  */
-public interface CompositeSurfaceType extends AbstractSurfaceType
-{
+public interface CompositeSurfaceType extends AbstractSurfaceType {
 	/**
 	 * Returns the value of the '<em><b>Surface Member</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.SurfacePropertyType}.
@@ -43,10 +42,6 @@ public interface CompositeSurfaceType extends AbstractSurfaceType
 	 * Returns the value of the '<em><b>Aggregation Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.AggregationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Type</em>' attribute.
 	 * @see net.opengis.gml32.AggregationType

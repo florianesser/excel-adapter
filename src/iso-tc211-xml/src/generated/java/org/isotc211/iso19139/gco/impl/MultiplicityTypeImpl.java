@@ -31,8 +31,7 @@ import org.isotc211.iso19139.gco.MultiplicityType;
  *
  * @generated
  */
-public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements MultiplicityType
-{
+public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements MultiplicityType {
 	/**
 	 * The cached value of the '{@link #getRange() <em>Range</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements Mult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MultiplicityTypeImpl()
-	{
+	protected MultiplicityTypeImpl() {
 		super();
 	}
 
@@ -59,8 +57,7 @@ public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements Mult
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.MULTIPLICITY_TYPE;
 	}
 
@@ -69,10 +66,9 @@ public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements Mult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MultiplicityRangePropertyType> getRange()
-	{
-		if (range == null)
-		{
+	@Override
+	public EList<MultiplicityRangePropertyType> getRange() {
+		if (range == null) {
 			range = new EObjectContainmentEList<MultiplicityRangePropertyType>(MultiplicityRangePropertyType.class, this, GCOPackage.MULTIPLICITY_TYPE__RANGE);
 		}
 		return range;
@@ -84,10 +80,8 @@ public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements Mult
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_TYPE__RANGE:
 				return ((InternalEList<?>)getRange()).basicRemove(otherEnd, msgs);
 		}
@@ -100,10 +94,8 @@ public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements Mult
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_TYPE__RANGE:
 				return getRange();
 		}
@@ -117,10 +109,8 @@ public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements Mult
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_TYPE__RANGE:
 				getRange().clear();
 				getRange().addAll((Collection<? extends MultiplicityRangePropertyType>)newValue);
@@ -135,10 +125,8 @@ public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements Mult
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_TYPE__RANGE:
 				getRange().clear();
 				return;
@@ -152,10 +140,8 @@ public class MultiplicityTypeImpl extends AbstractObjectTypeImpl implements Mult
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.MULTIPLICITY_TYPE__RANGE:
 				return range != null && !range.isEmpty();
 		}

@@ -34,8 +34,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileType
-{
+public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileType {
 	/**
 	 * The cached value of the '{@link #getRangeParameters() <em>Range Parameters</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -141,8 +140,7 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FileTypeImpl()
-	{
+	protected FileTypeImpl() {
 		super();
 	}
 
@@ -152,8 +150,7 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getFileType();
 	}
 
@@ -162,8 +159,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssociationRoleType getRangeParameters()
-	{
+	@Override
+	public AssociationRoleType getRangeParameters() {
 		return rangeParameters;
 	}
 
@@ -172,12 +169,10 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRangeParameters(AssociationRoleType newRangeParameters, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRangeParameters(AssociationRoleType newRangeParameters, NotificationChain msgs) {
 		AssociationRoleType oldRangeParameters = rangeParameters;
 		rangeParameters = newRangeParameters;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.FILE_TYPE__RANGE_PARAMETERS, oldRangeParameters, newRangeParameters);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -189,10 +184,9 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRangeParameters(AssociationRoleType newRangeParameters)
-	{
-		if (newRangeParameters != rangeParameters)
-		{
+	@Override
+	public void setRangeParameters(AssociationRoleType newRangeParameters) {
+		if (newRangeParameters != rangeParameters) {
 			NotificationChain msgs = null;
 			if (rangeParameters != null)
 				msgs = ((InternalEObject)rangeParameters).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.FILE_TYPE__RANGE_PARAMETERS, null, msgs);
@@ -210,8 +204,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getFileName()
-	{
+	@Override
+	public String getFileName() {
 		return fileName;
 	}
 
@@ -220,8 +214,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFileName(String newFileName)
-	{
+	@Override
+	public void setFileName(String newFileName) {
 		String oldFileName = fileName;
 		fileName = newFileName;
 		if (eNotificationRequired())
@@ -233,8 +227,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getFileReference()
-	{
+	@Override
+	public String getFileReference() {
 		return fileReference;
 	}
 
@@ -243,8 +237,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFileReference(String newFileReference)
-	{
+	@Override
+	public void setFileReference(String newFileReference) {
 		String oldFileReference = fileReference;
 		fileReference = newFileReference;
 		if (eNotificationRequired())
@@ -256,8 +250,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getFileStructure()
-	{
+	@Override
+	public CodeType getFileStructure() {
 		return fileStructure;
 	}
 
@@ -266,12 +260,10 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFileStructure(CodeType newFileStructure, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFileStructure(CodeType newFileStructure, NotificationChain msgs) {
 		CodeType oldFileStructure = fileStructure;
 		fileStructure = newFileStructure;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.FILE_TYPE__FILE_STRUCTURE, oldFileStructure, newFileStructure);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -283,10 +275,9 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFileStructure(CodeType newFileStructure)
-	{
-		if (newFileStructure != fileStructure)
-		{
+	@Override
+	public void setFileStructure(CodeType newFileStructure) {
+		if (newFileStructure != fileStructure) {
 			NotificationChain msgs = null;
 			if (fileStructure != null)
 				msgs = ((InternalEObject)fileStructure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.FILE_TYPE__FILE_STRUCTURE, null, msgs);
@@ -304,8 +295,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getMimeType()
-	{
+	@Override
+	public String getMimeType() {
 		return mimeType;
 	}
 
@@ -314,8 +305,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMimeType(String newMimeType)
-	{
+	@Override
+	public void setMimeType(String newMimeType) {
 		String oldMimeType = mimeType;
 		mimeType = newMimeType;
 		if (eNotificationRequired())
@@ -327,8 +318,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCompression()
-	{
+	@Override
+	public String getCompression() {
 		return compression;
 	}
 
@@ -337,8 +328,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompression(String newCompression)
-	{
+	@Override
+	public void setCompression(String newCompression) {
 		String oldCompression = compression;
 		compression = newCompression;
 		if (eNotificationRequired())
@@ -351,10 +342,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.FILE_TYPE__RANGE_PARAMETERS:
 				return basicSetRangeParameters(null, msgs);
 			case GMLPackage.FILE_TYPE__FILE_STRUCTURE:
@@ -369,10 +358,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.FILE_TYPE__RANGE_PARAMETERS:
 				return getRangeParameters();
 			case GMLPackage.FILE_TYPE__FILE_NAME:
@@ -395,10 +382,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.FILE_TYPE__RANGE_PARAMETERS:
 				setRangeParameters((AssociationRoleType)newValue);
 				return;
@@ -427,10 +412,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.FILE_TYPE__RANGE_PARAMETERS:
 				setRangeParameters((AssociationRoleType)null);
 				return;
@@ -459,10 +442,8 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.FILE_TYPE__RANGE_PARAMETERS:
 				return rangeParameters != null;
 			case GMLPackage.FILE_TYPE__FILE_NAME:
@@ -485,11 +466,10 @@ public class FileTypeImpl extends MinimalEObjectImpl.Container implements FileTy
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (fileName: ");
 		result.append(fileName);
 		result.append(", fileReference: ");

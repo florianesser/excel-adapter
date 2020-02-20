@@ -42,8 +42,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeType
-{
+public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeType {
 	/**
 	 * The cached value of the '{@link #getContainer() <em>Container</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -118,8 +117,7 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EdgeTypeImpl()
-	{
+	protected EdgeTypeImpl() {
 		super();
 	}
 
@@ -129,8 +127,7 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getEdgeType();
 	}
 
@@ -139,8 +136,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TopoSolidPropertyType getContainer()
-	{
+	@Override
+	public TopoSolidPropertyType getContainer() {
 		return container;
 	}
 
@@ -149,12 +146,10 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContainer(TopoSolidPropertyType newContainer, NotificationChain msgs)
-	{
+	public NotificationChain basicSetContainer(TopoSolidPropertyType newContainer, NotificationChain msgs) {
 		TopoSolidPropertyType oldContainer = container;
 		container = newContainer;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.EDGE_TYPE__CONTAINER, oldContainer, newContainer);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -166,10 +161,9 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setContainer(TopoSolidPropertyType newContainer)
-	{
-		if (newContainer != container)
-		{
+	@Override
+	public void setContainer(TopoSolidPropertyType newContainer) {
+		if (newContainer != container) {
 			NotificationChain msgs = null;
 			if (container != null)
 				msgs = ((InternalEObject)container).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.EDGE_TYPE__CONTAINER, null, msgs);
@@ -187,10 +181,9 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectedNodePropertyType> getDirectedNode()
-	{
-		if (directedNode == null)
-		{
+	@Override
+	public EList<DirectedNodePropertyType> getDirectedNode() {
+		if (directedNode == null) {
 			directedNode = new EObjectContainmentEList<DirectedNodePropertyType>(DirectedNodePropertyType.class, this, GMLPackage.EDGE_TYPE__DIRECTED_NODE);
 		}
 		return directedNode;
@@ -201,10 +194,9 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DirectedFacePropertyType> getDirectedFace()
-	{
-		if (directedFace == null)
-		{
+	@Override
+	public EList<DirectedFacePropertyType> getDirectedFace() {
+		if (directedFace == null) {
 			directedFace = new EObjectContainmentEList<DirectedFacePropertyType>(DirectedFacePropertyType.class, this, GMLPackage.EDGE_TYPE__DIRECTED_FACE);
 		}
 		return directedFace;
@@ -215,8 +207,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CurvePropertyType getCurveProperty()
-	{
+	@Override
+	public CurvePropertyType getCurveProperty() {
 		return curveProperty;
 	}
 
@@ -225,12 +217,10 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCurveProperty(CurvePropertyType newCurveProperty, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCurveProperty(CurvePropertyType newCurveProperty, NotificationChain msgs) {
 		CurvePropertyType oldCurveProperty = curveProperty;
 		curveProperty = newCurveProperty;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.EDGE_TYPE__CURVE_PROPERTY, oldCurveProperty, newCurveProperty);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -242,10 +232,9 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCurveProperty(CurvePropertyType newCurveProperty)
-	{
-		if (newCurveProperty != curveProperty)
-		{
+	@Override
+	public void setCurveProperty(CurvePropertyType newCurveProperty) {
+		if (newCurveProperty != curveProperty) {
 			NotificationChain msgs = null;
 			if (curveProperty != null)
 				msgs = ((InternalEObject)curveProperty).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.EDGE_TYPE__CURVE_PROPERTY, null, msgs);
@@ -263,8 +252,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AggregationType getAggregationType()
-	{
+	@Override
+	public AggregationType getAggregationType() {
 		return aggregationType;
 	}
 
@@ -273,8 +262,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAggregationType(AggregationType newAggregationType)
-	{
+	@Override
+	public void setAggregationType(AggregationType newAggregationType) {
 		AggregationType oldAggregationType = aggregationType;
 		aggregationType = newAggregationType == null ? AGGREGATION_TYPE_EDEFAULT : newAggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
@@ -288,8 +277,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetAggregationType()
-	{
+	@Override
+	public void unsetAggregationType() {
 		AggregationType oldAggregationType = aggregationType;
 		boolean oldAggregationTypeESet = aggregationTypeESet;
 		aggregationType = AGGREGATION_TYPE_EDEFAULT;
@@ -303,8 +292,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetAggregationType()
-	{
+	@Override
+	public boolean isSetAggregationType() {
 		return aggregationTypeESet;
 	}
 
@@ -314,10 +303,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.EDGE_TYPE__CONTAINER:
 				return basicSetContainer(null, msgs);
 			case GMLPackage.EDGE_TYPE__DIRECTED_NODE:
@@ -336,10 +323,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.EDGE_TYPE__CONTAINER:
 				return getContainer();
 			case GMLPackage.EDGE_TYPE__DIRECTED_NODE:
@@ -361,10 +346,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.EDGE_TYPE__CONTAINER:
 				setContainer((TopoSolidPropertyType)newValue);
 				return;
@@ -392,10 +375,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.EDGE_TYPE__CONTAINER:
 				setContainer((TopoSolidPropertyType)null);
 				return;
@@ -421,10 +402,8 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.EDGE_TYPE__CONTAINER:
 				return container != null;
 			case GMLPackage.EDGE_TYPE__DIRECTED_NODE:
@@ -445,11 +424,10 @@ public class EdgeTypeImpl extends AbstractTopoPrimitiveTypeImpl implements EdgeT
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (aggregationType: ");
 		if (aggregationTypeESet) result.append(aggregationType); else result.append("<unset>");
 		result.append(')');

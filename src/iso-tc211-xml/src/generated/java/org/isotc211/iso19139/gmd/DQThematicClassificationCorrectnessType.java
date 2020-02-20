@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_ThematicClassificationCorrectness_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQThematicClassificationCorrectnessType extends AbstractDQThematicAccuracyType
-{
+public interface DQThematicClassificationCorrectnessType extends AbstractDQThematicAccuracyType {
 } // DQThematicClassificationCorrectnessType

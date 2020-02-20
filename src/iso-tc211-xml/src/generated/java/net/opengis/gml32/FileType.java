@@ -25,15 +25,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='FileType' kind='elementOnly'"
  * @generated
  */
-public interface FileType extends EObject
-{
+public interface FileType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Range Parameters</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Range Parameters</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Range Parameters</em>' containment reference.
 	 * @see #setRangeParameters(AssociationRoleType)
@@ -57,10 +52,6 @@ public interface FileType extends EObject
 	/**
 	 * Returns the value of the '<em><b>File Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>File Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>File Name</em>' attribute.
 	 * @see #setFileName(String)
@@ -84,10 +75,6 @@ public interface FileType extends EObject
 	/**
 	 * Returns the value of the '<em><b>File Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>File Reference</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>File Reference</em>' attribute.
 	 * @see #setFileReference(String)
@@ -111,10 +98,6 @@ public interface FileType extends EObject
 	/**
 	 * Returns the value of the '<em><b>File Structure</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>File Structure</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>File Structure</em>' containment reference.
 	 * @see #setFileStructure(CodeType)
@@ -138,10 +121,6 @@ public interface FileType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Mime Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mime Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mime Type</em>' attribute.
 	 * @see #setMimeType(String)
@@ -165,10 +144,6 @@ public interface FileType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Compression</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Compression</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compression</em>' attribute.
 	 * @see #setCompression(String)

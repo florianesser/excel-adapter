@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class AbstractGeneralConversionTypeImpl extends AbstractCoordinateOperationTypeImpl implements AbstractGeneralConversionType
-{
+public abstract class AbstractGeneralConversionTypeImpl extends AbstractCoordinateOperationTypeImpl implements AbstractGeneralConversionType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGeneralConversionTypeImpl()
-	{
+	protected AbstractGeneralConversionTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class AbstractGeneralConversionTypeImpl extends AbstractCoordina
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGeneralConversionType();
 	}
 

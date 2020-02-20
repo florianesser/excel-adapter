@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class AffineCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements AffineCSType
-{
+public class AffineCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements AffineCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AffineCSTypeImpl()
-	{
+	protected AffineCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class AffineCSTypeImpl extends AbstractCoordinateSystemTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAffineCSType();
 	}
 

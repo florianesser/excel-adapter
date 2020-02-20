@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='EngineeringCRSType' kind='elementOnly'"
  * @generated
  */
-public interface EngineeringCRSType extends AbstractCRSType
-{
+public interface EngineeringCRSType extends AbstractCRSType {
 	/**
 	 * Returns the value of the '<em><b>Affine CS Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.

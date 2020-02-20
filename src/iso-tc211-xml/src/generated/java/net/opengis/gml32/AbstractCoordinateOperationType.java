@@ -26,8 +26,7 @@ import org.eclipse.emf.common.util.EList;
  *        extendedMetaData="name='AbstractCoordinateOperationType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractCoordinateOperationType extends IdentifiedObjectType
-{
+public interface AbstractCoordinateOperationType extends IdentifiedObjectType {
 	/**
 	 * Returns the value of the '<em><b>Domain Of Validity</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

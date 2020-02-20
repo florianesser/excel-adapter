@@ -33,8 +33,7 @@ import org.isotc211.iso19139.gmd.MDPortrayalCatalogueReferenceType;
  *
  * @generated
  */
-public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImpl implements MDPortrayalCatalogueReferenceType
-{
+public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImpl implements MDPortrayalCatalogueReferenceType {
 	/**
 	 * The cached value of the '{@link #getPortrayalCatalogueCitation() <em>Portrayal Catalogue Citation</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -50,8 +49,7 @@ public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDPortrayalCatalogueReferenceTypeImpl()
-	{
+	protected MDPortrayalCatalogueReferenceTypeImpl() {
 		super();
 	}
 
@@ -61,8 +59,7 @@ public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDPortrayalCatalogueReferenceType();
 	}
 
@@ -71,10 +68,9 @@ public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CICitationPropertyType> getPortrayalCatalogueCitation()
-	{
-		if (portrayalCatalogueCitation == null)
-		{
+	@Override
+	public EList<CICitationPropertyType> getPortrayalCatalogueCitation() {
+		if (portrayalCatalogueCitation == null) {
 			portrayalCatalogueCitation = new EObjectContainmentEList<CICitationPropertyType>(CICitationPropertyType.class, this, GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_TYPE__PORTRAYAL_CATALOGUE_CITATION);
 		}
 		return portrayalCatalogueCitation;
@@ -86,10 +82,8 @@ public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_TYPE__PORTRAYAL_CATALOGUE_CITATION:
 				return ((InternalEList<?>)getPortrayalCatalogueCitation()).basicRemove(otherEnd, msgs);
 		}
@@ -102,10 +96,8 @@ public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_TYPE__PORTRAYAL_CATALOGUE_CITATION:
 				return getPortrayalCatalogueCitation();
 		}
@@ -119,10 +111,8 @@ public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_TYPE__PORTRAYAL_CATALOGUE_CITATION:
 				getPortrayalCatalogueCitation().clear();
 				getPortrayalCatalogueCitation().addAll((Collection<? extends CICitationPropertyType>)newValue);
@@ -137,10 +127,8 @@ public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_TYPE__PORTRAYAL_CATALOGUE_CITATION:
 				getPortrayalCatalogueCitation().clear();
 				return;
@@ -154,10 +142,8 @@ public class MDPortrayalCatalogueReferenceTypeImpl extends AbstractObjectTypeImp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_TYPE__PORTRAYAL_CATALOGUE_CITATION:
 				return portrayalCatalogueCitation != null && !portrayalCatalogueCitation.isEmpty();
 		}

@@ -28,15 +28,10 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  *        extendedMetaData="name='AbstractRS_ReferenceSystem_Type' kind='elementOnly'"
  * @generated
  */
-public interface AbstractRSReferenceSystemType extends AbstractObjectType
-{
+public interface AbstractRSReferenceSystemType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(RSIdentifierPropertyType)
@@ -61,10 +56,6 @@ public interface AbstractRSReferenceSystemType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Domain Of Validity</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.EXExtentPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Domain Of Validity</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Domain Of Validity</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractRSReferenceSystemType_DomainOfValidity()

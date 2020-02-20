@@ -29,16 +29,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='LineStringSegmentArrayPropertyType' kind='elementOnly'"
  * @generated
  */
-public interface LineStringSegmentArrayPropertyType extends EObject
-{
+public interface LineStringSegmentArrayPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Group</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getLineStringSegmentArrayPropertyType_Group()

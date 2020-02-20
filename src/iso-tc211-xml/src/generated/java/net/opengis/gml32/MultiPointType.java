@@ -21,8 +21,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='MultiPointType' kind='elementOnly'"
  * @generated
  */
-public interface MultiPointType extends AbstractGeometricAggregateType
-{
+public interface MultiPointType extends AbstractGeometricAggregateType {
 	/**
 	 * Returns the value of the '<em><b>Point Member</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.PointPropertyType}.

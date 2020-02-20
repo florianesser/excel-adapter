@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class BoundedFeatureTypeImpl extends AbstractFeatureTypeImpl implements BoundedFeatureType
-{
+public abstract class BoundedFeatureTypeImpl extends AbstractFeatureTypeImpl implements BoundedFeatureType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BoundedFeatureTypeImpl()
-	{
+	protected BoundedFeatureTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class BoundedFeatureTypeImpl extends AbstractFeatureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getBoundedFeatureType();
 	}
 

@@ -47,8 +47,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implements SCCRSPropertyType
-{
+public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implements SCCRSPropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractCRSGroup() <em>Abstract CRS Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -271,8 +270,7 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SCCRSPropertyTypeImpl()
-	{
+	protected SCCRSPropertyTypeImpl() {
 		super();
 	}
 
@@ -282,8 +280,7 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GSRPackage.Literals.SCCRS_PROPERTY_TYPE;
 	}
 
@@ -292,10 +289,9 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractCRSGroup()
-	{
-		if (abstractCRSGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractCRSGroup() {
+		if (abstractCRSGroup == null) {
 			abstractCRSGroup = new BasicFeatureMap(this, GSRPackage.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS_GROUP);
 		}
 		return abstractCRSGroup;
@@ -306,8 +302,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractCRSType getAbstractCRS()
-	{
+	@Override
+	public AbstractCRSType getAbstractCRS() {
 		return (AbstractCRSType)getAbstractCRSGroup().get(GSRPackage.Literals.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS, true);
 	}
 
@@ -316,8 +312,7 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractCRS(AbstractCRSType newAbstractCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractCRS(AbstractCRSType newAbstractCRS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractCRSGroup()).basicAdd(GSRPackage.Literals.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS, newAbstractCRS, msgs);
 	}
 
@@ -326,8 +321,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -336,8 +331,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -351,8 +346,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -366,8 +361,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -376,8 +371,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -386,8 +381,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -399,8 +394,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -409,8 +404,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -422,8 +417,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -432,8 +427,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -445,8 +440,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -455,8 +450,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -468,8 +463,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -478,8 +473,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -493,8 +488,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -508,8 +503,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -518,8 +513,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -528,8 +523,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -541,8 +536,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -551,8 +546,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -566,8 +561,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -581,8 +576,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -591,8 +586,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUuidref()
-	{
+	@Override
+	public String getUuidref() {
 		return uuidref;
 	}
 
@@ -601,8 +596,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUuidref(String newUuidref)
-	{
+	@Override
+	public void setUuidref(String newUuidref) {
 		String oldUuidref = uuidref;
 		uuidref = newUuidref;
 		if (eNotificationRequired())
@@ -615,10 +610,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GSRPackage.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS_GROUP:
 				return ((InternalEList<?>)getAbstractCRSGroup()).basicRemove(otherEnd, msgs);
 			case GSRPackage.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS:
@@ -633,10 +626,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GSRPackage.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS_GROUP:
 				if (coreType) return getAbstractCRSGroup();
 				return ((FeatureMap.Internal)getAbstractCRSGroup()).getWrapper();
@@ -670,10 +661,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GSRPackage.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS_GROUP:
 				((FeatureMap.Internal)getAbstractCRSGroup()).set(newValue);
 				return;
@@ -714,10 +703,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GSRPackage.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS_GROUP:
 				getAbstractCRSGroup().clear();
 				return;
@@ -758,10 +745,8 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GSRPackage.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS_GROUP:
 				return abstractCRSGroup != null && !abstractCRSGroup.isEmpty();
 			case GSRPackage.SCCRS_PROPERTY_TYPE__ABSTRACT_CRS:
@@ -794,11 +779,10 @@ public class SCCRSPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractCRSGroup: ");
 		result.append(abstractCRSGroup);
 		result.append(", actuate: ");

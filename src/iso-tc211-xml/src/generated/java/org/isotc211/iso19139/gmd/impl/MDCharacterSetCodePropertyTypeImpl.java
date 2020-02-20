@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDCharacterSetCodePropertyType;
  *
  * @generated
  */
-public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDCharacterSetCodePropertyType
-{
+public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDCharacterSetCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDCharacterSetCode() <em>MD Character Set Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDCharacterSetCodePropertyTypeImpl()
-	{
+	protected MDCharacterSetCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDCharacterSetCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDCharacterSetCode()
-	{
+	@Override
+	public CodeListValueType getMDCharacterSetCode() {
 		return mDCharacterSetCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDCharacterSetCode(CodeListValueType newMDCharacterSetCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDCharacterSetCode(CodeListValueType newMDCharacterSetCode, NotificationChain msgs) {
 		CodeListValueType oldMDCharacterSetCode = mDCharacterSetCode;
 		mDCharacterSetCode = newMDCharacterSetCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE__MD_CHARACTER_SET_CODE, oldMDCharacterSetCode, newMDCharacterSetCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDCharacterSetCode(CodeListValueType newMDCharacterSetCode)
-	{
-		if (newMDCharacterSetCode != mDCharacterSetCode)
-		{
+	@Override
+	public void setMDCharacterSetCode(CodeListValueType newMDCharacterSetCode) {
+		if (newMDCharacterSetCode != mDCharacterSetCode) {
 			NotificationChain msgs = null;
 			if (mDCharacterSetCode != null)
 				msgs = ((InternalEObject)mDCharacterSetCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE__MD_CHARACTER_SET_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE__MD_CHARACTER_SET_CODE:
 				return basicSetMDCharacterSetCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE__MD_CHARACTER_SET_CODE:
 				return getMDCharacterSetCode();
 			case GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE__MD_CHARACTER_SET_CODE:
 				setMDCharacterSetCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE__MD_CHARACTER_SET_CODE:
 				setMDCharacterSetCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE__MD_CHARACTER_SET_CODE:
 				return mDCharacterSetCode != null;
 			case GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDCharacterSetCodePropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

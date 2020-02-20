@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements DefinitionType
-{
+public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements DefinitionType {
 	/**
 	 * The default value of the '{@link #getRemarks() <em>Remarks</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -51,8 +50,7 @@ public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements Defini
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DefinitionTypeImpl()
-	{
+	protected DefinitionTypeImpl() {
 		super();
 	}
 
@@ -62,8 +60,7 @@ public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements Defini
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDefinitionType();
 	}
 
@@ -72,8 +69,8 @@ public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements Defini
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemarks()
-	{
+	@Override
+	public String getRemarks() {
 		return remarks;
 	}
 
@@ -82,8 +79,8 @@ public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements Defini
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemarks(String newRemarks)
-	{
+	@Override
+	public void setRemarks(String newRemarks) {
 		String oldRemarks = remarks;
 		remarks = newRemarks;
 		if (eNotificationRequired())
@@ -96,10 +93,8 @@ public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements Defini
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DEFINITION_TYPE__REMARKS:
 				return getRemarks();
 		}
@@ -112,10 +107,8 @@ public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements Defini
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DEFINITION_TYPE__REMARKS:
 				setRemarks((String)newValue);
 				return;
@@ -129,10 +122,8 @@ public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements Defini
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DEFINITION_TYPE__REMARKS:
 				setRemarks(REMARKS_EDEFAULT);
 				return;
@@ -146,10 +137,8 @@ public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements Defini
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DEFINITION_TYPE__REMARKS:
 				return REMARKS_EDEFAULT == null ? remarks != null : !REMARKS_EDEFAULT.equals(remarks);
 		}
@@ -162,11 +151,10 @@ public class DefinitionTypeImpl extends DefinitionBaseTypeImpl implements Defini
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (remarks: ");
 		result.append(remarks);
 		result.append(')');

@@ -16,15 +16,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public abstract class AbstractMDContentInformationTypeImpl extends AbstractObjectTypeImpl implements AbstractMDContentInformationType
-{
+public abstract class AbstractMDContentInformationTypeImpl extends AbstractObjectTypeImpl implements AbstractMDContentInformationType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractMDContentInformationTypeImpl()
-	{
+	protected AbstractMDContentInformationTypeImpl() {
 		super();
 	}
 
@@ -34,8 +32,7 @@ public abstract class AbstractMDContentInformationTypeImpl extends AbstractObjec
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getAbstractMDContentInformationType();
 	}
 

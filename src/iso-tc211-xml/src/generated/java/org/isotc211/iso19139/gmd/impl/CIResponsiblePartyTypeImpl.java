@@ -36,8 +36,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implements CIResponsiblePartyType
-{
+public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implements CIResponsiblePartyType {
 	/**
 	 * The cached value of the '{@link #getIndividualName() <em>Individual Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -93,8 +92,7 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CIResponsiblePartyTypeImpl()
-	{
+	protected CIResponsiblePartyTypeImpl() {
 		super();
 	}
 
@@ -104,8 +102,7 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCIResponsiblePartyType();
 	}
 
@@ -114,8 +111,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getIndividualName()
-	{
+	@Override
+	public CharacterStringPropertyType getIndividualName() {
 		return individualName;
 	}
 
@@ -124,12 +121,10 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIndividualName(CharacterStringPropertyType newIndividualName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetIndividualName(CharacterStringPropertyType newIndividualName, NotificationChain msgs) {
 		CharacterStringPropertyType oldIndividualName = individualName;
 		individualName = newIndividualName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__INDIVIDUAL_NAME, oldIndividualName, newIndividualName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -141,10 +136,9 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIndividualName(CharacterStringPropertyType newIndividualName)
-	{
-		if (newIndividualName != individualName)
-		{
+	@Override
+	public void setIndividualName(CharacterStringPropertyType newIndividualName) {
+		if (newIndividualName != individualName) {
 			NotificationChain msgs = null;
 			if (individualName != null)
 				msgs = ((InternalEObject)individualName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__INDIVIDUAL_NAME, null, msgs);
@@ -162,8 +156,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getOrganisationName()
-	{
+	@Override
+	public CharacterStringPropertyType getOrganisationName() {
 		return organisationName;
 	}
 
@@ -172,12 +166,10 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrganisationName(CharacterStringPropertyType newOrganisationName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOrganisationName(CharacterStringPropertyType newOrganisationName, NotificationChain msgs) {
 		CharacterStringPropertyType oldOrganisationName = organisationName;
 		organisationName = newOrganisationName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__ORGANISATION_NAME, oldOrganisationName, newOrganisationName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -189,10 +181,9 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrganisationName(CharacterStringPropertyType newOrganisationName)
-	{
-		if (newOrganisationName != organisationName)
-		{
+	@Override
+	public void setOrganisationName(CharacterStringPropertyType newOrganisationName) {
+		if (newOrganisationName != organisationName) {
 			NotificationChain msgs = null;
 			if (organisationName != null)
 				msgs = ((InternalEObject)organisationName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__ORGANISATION_NAME, null, msgs);
@@ -210,8 +201,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getPositionName()
-	{
+	@Override
+	public CharacterStringPropertyType getPositionName() {
 		return positionName;
 	}
 
@@ -220,12 +211,10 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPositionName(CharacterStringPropertyType newPositionName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPositionName(CharacterStringPropertyType newPositionName, NotificationChain msgs) {
 		CharacterStringPropertyType oldPositionName = positionName;
 		positionName = newPositionName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__POSITION_NAME, oldPositionName, newPositionName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -237,10 +226,9 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPositionName(CharacterStringPropertyType newPositionName)
-	{
-		if (newPositionName != positionName)
-		{
+	@Override
+	public void setPositionName(CharacterStringPropertyType newPositionName) {
+		if (newPositionName != positionName) {
 			NotificationChain msgs = null;
 			if (positionName != null)
 				msgs = ((InternalEObject)positionName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__POSITION_NAME, null, msgs);
@@ -258,8 +246,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIContactPropertyType getContactInfo()
-	{
+	@Override
+	public CIContactPropertyType getContactInfo() {
 		return contactInfo;
 	}
 
@@ -268,12 +256,10 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContactInfo(CIContactPropertyType newContactInfo, NotificationChain msgs)
-	{
+	public NotificationChain basicSetContactInfo(CIContactPropertyType newContactInfo, NotificationChain msgs) {
 		CIContactPropertyType oldContactInfo = contactInfo;
 		contactInfo = newContactInfo;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__CONTACT_INFO, oldContactInfo, newContactInfo);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -285,10 +271,9 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setContactInfo(CIContactPropertyType newContactInfo)
-	{
-		if (newContactInfo != contactInfo)
-		{
+	@Override
+	public void setContactInfo(CIContactPropertyType newContactInfo) {
+		if (newContactInfo != contactInfo) {
 			NotificationChain msgs = null;
 			if (contactInfo != null)
 				msgs = ((InternalEObject)contactInfo).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__CONTACT_INFO, null, msgs);
@@ -306,8 +291,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIRoleCodePropertyType getRole()
-	{
+	@Override
+	public CIRoleCodePropertyType getRole() {
 		return role;
 	}
 
@@ -316,12 +301,10 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRole(CIRoleCodePropertyType newRole, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRole(CIRoleCodePropertyType newRole, NotificationChain msgs) {
 		CIRoleCodePropertyType oldRole = role;
 		role = newRole;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__ROLE, oldRole, newRole);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -333,10 +316,9 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(CIRoleCodePropertyType newRole)
-	{
-		if (newRole != role)
-		{
+	@Override
+	public void setRole(CIRoleCodePropertyType newRole) {
+		if (newRole != role) {
 			NotificationChain msgs = null;
 			if (role != null)
 				msgs = ((InternalEObject)role).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__ROLE, null, msgs);
@@ -355,10 +337,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__INDIVIDUAL_NAME:
 				return basicSetIndividualName(null, msgs);
 			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__ORGANISATION_NAME:
@@ -379,10 +359,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__INDIVIDUAL_NAME:
 				return getIndividualName();
 			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__ORGANISATION_NAME:
@@ -403,10 +381,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__INDIVIDUAL_NAME:
 				setIndividualName((CharacterStringPropertyType)newValue);
 				return;
@@ -432,10 +408,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__INDIVIDUAL_NAME:
 				setIndividualName((CharacterStringPropertyType)null);
 				return;
@@ -461,10 +435,8 @@ public class CIResponsiblePartyTypeImpl extends AbstractObjectTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__INDIVIDUAL_NAME:
 				return individualName != null;
 			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE__ORGANISATION_NAME:

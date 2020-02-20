@@ -20,15 +20,10 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='GeographicCRSType' kind='elementOnly'"
  * @generated
  */
-public interface GeographicCRSType extends AbstractCRSType
-{
+public interface GeographicCRSType extends AbstractCRSType {
 	/**
 	 * Returns the value of the '<em><b>Uses Ellipsoidal CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Ellipsoidal CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Ellipsoidal CS</em>' containment reference.
 	 * @see #setUsesEllipsoidalCS(EllipsoidalCSPropertyType)
@@ -52,10 +47,6 @@ public interface GeographicCRSType extends AbstractCRSType
 	/**
 	 * Returns the value of the '<em><b>Uses Geodetic Datum</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Geodetic Datum</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Geodetic Datum</em>' containment reference.
 	 * @see #setUsesGeodeticDatum(GeodeticDatumPropertyType)

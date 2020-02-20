@@ -18,6 +18,5 @@ package net.opengis.gml32;
  *        extendedMetaData="name='AbstractSurfaceType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractSurfaceType extends AbstractGeometricPrimitiveType
-{
+public interface AbstractSurfaceType extends AbstractGeometricPrimitiveType {
 } // AbstractSurfaceType

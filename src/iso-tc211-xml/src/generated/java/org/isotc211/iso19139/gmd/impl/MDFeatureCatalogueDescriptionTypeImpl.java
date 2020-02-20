@@ -42,8 +42,7 @@ import org.isotc211.iso19139.gmd.MDFeatureCatalogueDescriptionType;
  *
  * @generated
  */
-public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInformationTypeImpl implements MDFeatureCatalogueDescriptionType
-{
+public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInformationTypeImpl implements MDFeatureCatalogueDescriptionType {
 	/**
 	 * The cached value of the '{@link #getComplianceCode() <em>Compliance Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -99,8 +98,7 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDFeatureCatalogueDescriptionTypeImpl()
-	{
+	protected MDFeatureCatalogueDescriptionTypeImpl() {
 		super();
 	}
 
@@ -110,8 +108,7 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDFeatureCatalogueDescriptionType();
 	}
 
@@ -120,8 +117,8 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getComplianceCode()
-	{
+	@Override
+	public BooleanPropertyType getComplianceCode() {
 		return complianceCode;
 	}
 
@@ -130,12 +127,10 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetComplianceCode(BooleanPropertyType newComplianceCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetComplianceCode(BooleanPropertyType newComplianceCode, NotificationChain msgs) {
 		BooleanPropertyType oldComplianceCode = complianceCode;
 		complianceCode = newComplianceCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__COMPLIANCE_CODE, oldComplianceCode, newComplianceCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -147,10 +142,9 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setComplianceCode(BooleanPropertyType newComplianceCode)
-	{
-		if (newComplianceCode != complianceCode)
-		{
+	@Override
+	public void setComplianceCode(BooleanPropertyType newComplianceCode) {
+		if (newComplianceCode != complianceCode) {
 			NotificationChain msgs = null;
 			if (complianceCode != null)
 				msgs = ((InternalEObject)complianceCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__COMPLIANCE_CODE, null, msgs);
@@ -168,10 +162,9 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getLanguage()
-	{
-		if (language == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getLanguage() {
+		if (language == null) {
 			language = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__LANGUAGE);
 		}
 		return language;
@@ -182,8 +175,8 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BooleanPropertyType getIncludedWithDataset()
-	{
+	@Override
+	public BooleanPropertyType getIncludedWithDataset() {
 		return includedWithDataset;
 	}
 
@@ -192,12 +185,10 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIncludedWithDataset(BooleanPropertyType newIncludedWithDataset, NotificationChain msgs)
-	{
+	public NotificationChain basicSetIncludedWithDataset(BooleanPropertyType newIncludedWithDataset, NotificationChain msgs) {
 		BooleanPropertyType oldIncludedWithDataset = includedWithDataset;
 		includedWithDataset = newIncludedWithDataset;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__INCLUDED_WITH_DATASET, oldIncludedWithDataset, newIncludedWithDataset);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -209,10 +200,9 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIncludedWithDataset(BooleanPropertyType newIncludedWithDataset)
-	{
-		if (newIncludedWithDataset != includedWithDataset)
-		{
+	@Override
+	public void setIncludedWithDataset(BooleanPropertyType newIncludedWithDataset) {
+		if (newIncludedWithDataset != includedWithDataset) {
 			NotificationChain msgs = null;
 			if (includedWithDataset != null)
 				msgs = ((InternalEObject)includedWithDataset).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__INCLUDED_WITH_DATASET, null, msgs);
@@ -230,10 +220,9 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<GenericNamePropertyType> getFeatureTypes()
-	{
-		if (featureTypes == null)
-		{
+	@Override
+	public EList<GenericNamePropertyType> getFeatureTypes() {
+		if (featureTypes == null) {
 			featureTypes = new EObjectContainmentEList<GenericNamePropertyType>(GenericNamePropertyType.class, this, GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__FEATURE_TYPES);
 		}
 		return featureTypes;
@@ -244,10 +233,9 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CICitationPropertyType> getFeatureCatalogueCitation()
-	{
-		if (featureCatalogueCitation == null)
-		{
+	@Override
+	public EList<CICitationPropertyType> getFeatureCatalogueCitation() {
+		if (featureCatalogueCitation == null) {
 			featureCatalogueCitation = new EObjectContainmentEList<CICitationPropertyType>(CICitationPropertyType.class, this, GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__FEATURE_CATALOGUE_CITATION);
 		}
 		return featureCatalogueCitation;
@@ -259,10 +247,8 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__COMPLIANCE_CODE:
 				return basicSetComplianceCode(null, msgs);
 			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__LANGUAGE:
@@ -283,10 +269,8 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__COMPLIANCE_CODE:
 				return getComplianceCode();
 			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__LANGUAGE:
@@ -308,10 +292,8 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__COMPLIANCE_CODE:
 				setComplianceCode((BooleanPropertyType)newValue);
 				return;
@@ -340,10 +322,8 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__COMPLIANCE_CODE:
 				setComplianceCode((BooleanPropertyType)null);
 				return;
@@ -369,10 +349,8 @@ public class MDFeatureCatalogueDescriptionTypeImpl extends AbstractMDContentInfo
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__COMPLIANCE_CODE:
 				return complianceCode != null;
 			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE__LANGUAGE:

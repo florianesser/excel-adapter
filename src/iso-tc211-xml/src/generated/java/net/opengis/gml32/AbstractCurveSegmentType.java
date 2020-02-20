@@ -25,16 +25,11 @@ import org.eclipse.emf.ecore.EObject;
  *        extendedMetaData="name='AbstractCurveSegmentType' kind='empty'"
  * @generated
  */
-public interface AbstractCurveSegmentType extends EObject
-{
+public interface AbstractCurveSegmentType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Num Derivative Interior</b></em>' attribute.
 	 * The default value is <code>"0"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Num Derivative Interior</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Num Derivative Interior</em>' attribute.
 	 * @see #isSetNumDerivativeInterior()
@@ -86,10 +81,6 @@ public interface AbstractCurveSegmentType extends EObject
 	 * Returns the value of the '<em><b>Num Derivatives At End</b></em>' attribute.
 	 * The default value is <code>"0"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Num Derivatives At End</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Num Derivatives At End</em>' attribute.
 	 * @see #isSetNumDerivativesAtEnd()
@@ -141,10 +132,6 @@ public interface AbstractCurveSegmentType extends EObject
 	 * Returns the value of the '<em><b>Num Derivatives At Start</b></em>' attribute.
 	 * The default value is <code>"0"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Num Derivatives At Start</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Num Derivatives At Start</em>' attribute.
 	 * @see #isSetNumDerivativesAtStart()

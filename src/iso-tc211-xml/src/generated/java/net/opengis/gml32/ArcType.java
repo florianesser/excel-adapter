@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='ArcType' kind='elementOnly'"
  * @generated
  */
-public interface ArcType extends ArcStringType
-{
+public interface ArcType extends ArcStringType {
 } // ArcType

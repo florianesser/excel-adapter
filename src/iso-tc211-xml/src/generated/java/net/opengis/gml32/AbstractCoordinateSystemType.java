@@ -25,8 +25,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *        extendedMetaData="name='AbstractCoordinateSystemType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractCoordinateSystemType extends IdentifiedObjectType
-{
+public interface AbstractCoordinateSystemType extends IdentifiedObjectType {
 	/**
 	 * Returns the value of the '<em><b>Axis Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
@@ -63,10 +62,6 @@ public interface AbstractCoordinateSystemType extends IdentifiedObjectType
 	 * Returns the value of the '<em><b>Aggregation Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.AggregationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Type</em>' attribute.
 	 * @see net.opengis.gml32.AggregationType

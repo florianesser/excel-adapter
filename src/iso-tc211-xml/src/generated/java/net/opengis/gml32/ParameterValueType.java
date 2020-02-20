@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='ParameterValueType' kind='elementOnly'"
  * @generated
  */
-public interface ParameterValueType extends AbstractGeneralParameterValueType
-{
+public interface ParameterValueType extends AbstractGeneralParameterValueType {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -64,10 +63,6 @@ public interface ParameterValueType extends AbstractGeneralParameterValueType
 	/**
 	 * Returns the value of the '<em><b>Dms Angle Value</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dms Angle Value</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dms Angle Value</em>' containment reference.
 	 * @see #setDmsAngleValue(DMSAngleType)

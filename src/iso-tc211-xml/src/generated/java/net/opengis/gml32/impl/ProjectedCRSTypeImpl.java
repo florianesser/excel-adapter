@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implements ProjectedCRSType
-{
+public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl implements ProjectedCRSType {
 	/**
 	 * The cached value of the '{@link #getBaseGeodeticCRS() <em>Base Geodetic CRS</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -73,8 +72,7 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ProjectedCRSTypeImpl()
-	{
+	protected ProjectedCRSTypeImpl() {
 		super();
 	}
 
@@ -84,8 +82,7 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getProjectedCRSType();
 	}
 
@@ -94,8 +91,8 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeodeticCRSPropertyType getBaseGeodeticCRS()
-	{
+	@Override
+	public GeodeticCRSPropertyType getBaseGeodeticCRS() {
 		return baseGeodeticCRS;
 	}
 
@@ -104,12 +101,10 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseGeodeticCRS(GeodeticCRSPropertyType newBaseGeodeticCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseGeodeticCRS(GeodeticCRSPropertyType newBaseGeodeticCRS, NotificationChain msgs) {
 		GeodeticCRSPropertyType oldBaseGeodeticCRS = baseGeodeticCRS;
 		baseGeodeticCRS = newBaseGeodeticCRS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.PROJECTED_CRS_TYPE__BASE_GEODETIC_CRS, oldBaseGeodeticCRS, newBaseGeodeticCRS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -121,10 +116,9 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseGeodeticCRS(GeodeticCRSPropertyType newBaseGeodeticCRS)
-	{
-		if (newBaseGeodeticCRS != baseGeodeticCRS)
-		{
+	@Override
+	public void setBaseGeodeticCRS(GeodeticCRSPropertyType newBaseGeodeticCRS) {
+		if (newBaseGeodeticCRS != baseGeodeticCRS) {
 			NotificationChain msgs = null;
 			if (baseGeodeticCRS != null)
 				msgs = ((InternalEObject)baseGeodeticCRS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.PROJECTED_CRS_TYPE__BASE_GEODETIC_CRS, null, msgs);
@@ -142,8 +136,8 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeographicCRSPropertyType getBaseGeographicCRS()
-	{
+	@Override
+	public GeographicCRSPropertyType getBaseGeographicCRS() {
 		return baseGeographicCRS;
 	}
 
@@ -152,12 +146,10 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseGeographicCRS(GeographicCRSPropertyType newBaseGeographicCRS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseGeographicCRS(GeographicCRSPropertyType newBaseGeographicCRS, NotificationChain msgs) {
 		GeographicCRSPropertyType oldBaseGeographicCRS = baseGeographicCRS;
 		baseGeographicCRS = newBaseGeographicCRS;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.PROJECTED_CRS_TYPE__BASE_GEOGRAPHIC_CRS, oldBaseGeographicCRS, newBaseGeographicCRS);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -169,10 +161,9 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseGeographicCRS(GeographicCRSPropertyType newBaseGeographicCRS)
-	{
-		if (newBaseGeographicCRS != baseGeographicCRS)
-		{
+	@Override
+	public void setBaseGeographicCRS(GeographicCRSPropertyType newBaseGeographicCRS) {
+		if (newBaseGeographicCRS != baseGeographicCRS) {
 			NotificationChain msgs = null;
 			if (baseGeographicCRS != null)
 				msgs = ((InternalEObject)baseGeographicCRS).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.PROJECTED_CRS_TYPE__BASE_GEOGRAPHIC_CRS, null, msgs);
@@ -190,10 +181,9 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getCartesianCSGroup()
-	{
-		if (cartesianCSGroup == null)
-		{
+	@Override
+	public FeatureMap getCartesianCSGroup() {
+		if (cartesianCSGroup == null) {
 			cartesianCSGroup = new BasicFeatureMap(this, GMLPackage.PROJECTED_CRS_TYPE__CARTESIAN_CS_GROUP);
 		}
 		return cartesianCSGroup;
@@ -204,8 +194,8 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CartesianCSPropertyType getCartesianCS()
-	{
+	@Override
+	public CartesianCSPropertyType getCartesianCS() {
 		return (CartesianCSPropertyType)getCartesianCSGroup().get(GMLPackage.eINSTANCE.getProjectedCRSType_CartesianCS(), true);
 	}
 
@@ -214,8 +204,7 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCartesianCS(CartesianCSPropertyType newCartesianCS, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getCartesianCSGroup()).basicAdd(GMLPackage.eINSTANCE.getProjectedCRSType_CartesianCS(), newCartesianCS, msgs);
 	}
 
@@ -224,8 +213,8 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCartesianCS(CartesianCSPropertyType newCartesianCS)
-	{
+	@Override
+	public void setCartesianCS(CartesianCSPropertyType newCartesianCS) {
 		((FeatureMap.Internal)getCartesianCSGroup()).set(GMLPackage.eINSTANCE.getProjectedCRSType_CartesianCS(), newCartesianCS);
 	}
 
@@ -235,10 +224,8 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.PROJECTED_CRS_TYPE__BASE_GEODETIC_CRS:
 				return basicSetBaseGeodeticCRS(null, msgs);
 			case GMLPackage.PROJECTED_CRS_TYPE__BASE_GEOGRAPHIC_CRS:
@@ -257,10 +244,8 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.PROJECTED_CRS_TYPE__BASE_GEODETIC_CRS:
 				return getBaseGeodeticCRS();
 			case GMLPackage.PROJECTED_CRS_TYPE__BASE_GEOGRAPHIC_CRS:
@@ -280,10 +265,8 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.PROJECTED_CRS_TYPE__BASE_GEODETIC_CRS:
 				setBaseGeodeticCRS((GeodeticCRSPropertyType)newValue);
 				return;
@@ -306,10 +289,8 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PROJECTED_CRS_TYPE__BASE_GEODETIC_CRS:
 				setBaseGeodeticCRS((GeodeticCRSPropertyType)null);
 				return;
@@ -332,10 +313,8 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PROJECTED_CRS_TYPE__BASE_GEODETIC_CRS:
 				return baseGeodeticCRS != null;
 			case GMLPackage.PROJECTED_CRS_TYPE__BASE_GEOGRAPHIC_CRS:
@@ -354,11 +333,10 @@ public class ProjectedCRSTypeImpl extends AbstractGeneralDerivedCRSTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (cartesianCSGroup: ");
 		result.append(cartesianCSGroup);
 		result.append(')');

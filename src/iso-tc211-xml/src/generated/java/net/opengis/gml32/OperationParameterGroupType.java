@@ -23,8 +23,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='OperationParameterGroupType' kind='elementOnly'"
  * @generated
  */
-public interface OperationParameterGroupType extends AbstractGeneralOperationParameterType
-{
+public interface OperationParameterGroupType extends AbstractGeneralOperationParameterType {
 	/**
 	 * Returns the value of the '<em><b>Maximum Occurs</b></em>' attribute.
 	 * <!-- begin-user-doc -->

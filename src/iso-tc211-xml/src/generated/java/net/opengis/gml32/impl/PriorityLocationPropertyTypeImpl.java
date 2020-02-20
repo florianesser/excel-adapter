@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl implements PriorityLocationPropertyType
-{
+public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl implements PriorityLocationPropertyType {
 	/**
 	 * The default value of the '{@link #getPriority() <em>Priority</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -51,8 +50,7 @@ public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PriorityLocationPropertyTypeImpl()
-	{
+	protected PriorityLocationPropertyTypeImpl() {
 		super();
 	}
 
@@ -62,8 +60,7 @@ public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl i
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getPriorityLocationPropertyType();
 	}
 
@@ -72,8 +69,8 @@ public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPriority()
-	{
+	@Override
+	public String getPriority() {
 		return priority;
 	}
 
@@ -82,8 +79,8 @@ public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPriority(String newPriority)
-	{
+	@Override
+	public void setPriority(String newPriority) {
 		String oldPriority = priority;
 		priority = newPriority;
 		if (eNotificationRequired())
@@ -96,10 +93,8 @@ public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.PRIORITY_LOCATION_PROPERTY_TYPE__PRIORITY:
 				return getPriority();
 		}
@@ -112,10 +107,8 @@ public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.PRIORITY_LOCATION_PROPERTY_TYPE__PRIORITY:
 				setPriority((String)newValue);
 				return;
@@ -129,10 +122,8 @@ public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PRIORITY_LOCATION_PROPERTY_TYPE__PRIORITY:
 				setPriority(PRIORITY_EDEFAULT);
 				return;
@@ -146,10 +137,8 @@ public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PRIORITY_LOCATION_PROPERTY_TYPE__PRIORITY:
 				return PRIORITY_EDEFAULT == null ? priority != null : !PRIORITY_EDEFAULT.equals(priority);
 		}
@@ -162,11 +151,10 @@ public class PriorityLocationPropertyTypeImpl extends LocationPropertyTypeImpl i
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (priority: ");
 		result.append(priority);
 		result.append(')');

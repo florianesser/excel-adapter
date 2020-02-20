@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsType
-{
+public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsType {
 	/**
 	 * The cached value of the '{@link #getRow() <em>Row</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -50,8 +49,7 @@ public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RowsTypeImpl()
-	{
+	protected RowsTypeImpl() {
 		super();
 	}
 
@@ -61,8 +59,7 @@ public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getRowsType();
 	}
 
@@ -71,10 +68,9 @@ public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RowType> getRow()
-	{
-		if (row == null)
-		{
+	@Override
+	public EList<RowType> getRow() {
+		if (row == null) {
 			row = new EObjectContainmentEList<RowType>(RowType.class, this, GMLPackage.ROWS_TYPE__ROW);
 		}
 		return row;
@@ -86,10 +82,8 @@ public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ROWS_TYPE__ROW:
 				return ((InternalEList<?>)getRow()).basicRemove(otherEnd, msgs);
 		}
@@ -102,10 +96,8 @@ public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ROWS_TYPE__ROW:
 				return getRow();
 		}
@@ -119,10 +111,8 @@ public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsTy
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ROWS_TYPE__ROW:
 				getRow().clear();
 				getRow().addAll((Collection<? extends RowType>)newValue);
@@ -137,10 +127,8 @@ public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ROWS_TYPE__ROW:
 				getRow().clear();
 				return;
@@ -154,10 +142,8 @@ public class RowsTypeImpl extends MinimalEObjectImpl.Container implements RowsTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ROWS_TYPE__ROW:
 				return row != null && !row.isEmpty();
 		}

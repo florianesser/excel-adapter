@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class TemporalDatumBaseTypeImpl extends AbstractDatumTypeImpl implements TemporalDatumBaseType
-{
+public abstract class TemporalDatumBaseTypeImpl extends AbstractDatumTypeImpl implements TemporalDatumBaseType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TemporalDatumBaseTypeImpl()
-	{
+	protected TemporalDatumBaseTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class TemporalDatumBaseTypeImpl extends AbstractDatumTypeImpl im
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTemporalDatumBaseType();
 	}
 

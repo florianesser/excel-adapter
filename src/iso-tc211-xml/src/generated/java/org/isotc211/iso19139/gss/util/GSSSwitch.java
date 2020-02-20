@@ -22,8 +22,7 @@ import org.isotc211.iso19139.gss.*;
  * @see org.isotc211.iso19139.gss.GSSPackage
  * @generated
  */
-public class GSSSwitch<T> extends Switch<T>
-{
+public class GSSSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -38,10 +37,8 @@ public class GSSSwitch<T> extends Switch<T>
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GSSSwitch()
-	{
-		if (modelPackage == null)
-		{
+	public GSSSwitch() {
+		if (modelPackage == null) {
 			modelPackage = GSSPackage.eINSTANCE;
 		}
 	}
@@ -55,8 +52,7 @@ public class GSSSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage)
-	{
+	protected boolean isSwitchFor(EPackage ePackage) {
 		return ePackage == modelPackage;
 	}
 
@@ -68,19 +64,15 @@ public class GSSSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject)
-	{
-		switch (classifierID)
-		{
-			case GSSPackage.GM_OBJECT_PROPERTY_TYPE:
-			{
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case GSSPackage.GM_OBJECT_PROPERTY_TYPE: {
 				GMObjectPropertyType gmObjectPropertyType = (GMObjectPropertyType)theEObject;
 				T result = caseGMObjectPropertyType(gmObjectPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GSSPackage.GM_POINT_PROPERTY_TYPE:
-			{
+			case GSSPackage.GM_POINT_PROPERTY_TYPE: {
 				GMPointPropertyType gmPointPropertyType = (GMPointPropertyType)theEObject;
 				T result = caseGMPointPropertyType(gmPointPropertyType);
 				if (result == null) result = defaultCase(theEObject);
@@ -101,8 +93,7 @@ public class GSSSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGMObjectPropertyType(GMObjectPropertyType object)
-	{
+	public T caseGMObjectPropertyType(GMObjectPropertyType object) {
 		return null;
 	}
 
@@ -117,8 +108,7 @@ public class GSSSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGMPointPropertyType(GMPointPropertyType object)
-	{
+	public T caseGMPointPropertyType(GMPointPropertyType object) {
 		return null;
 	}
 
@@ -134,8 +124,7 @@ public class GSSSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object)
-	{
+	public T defaultCase(EObject object) {
 		return null;
 	}
 

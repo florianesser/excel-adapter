@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQAbsoluteExternalPositionalAccuracyTypeImpl extends AbstractDQPositionalAccuracyTypeImpl implements DQAbsoluteExternalPositionalAccuracyType
-{
+public class DQAbsoluteExternalPositionalAccuracyTypeImpl extends AbstractDQPositionalAccuracyTypeImpl implements DQAbsoluteExternalPositionalAccuracyType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQAbsoluteExternalPositionalAccuracyTypeImpl()
-	{
+	protected DQAbsoluteExternalPositionalAccuracyTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DQAbsoluteExternalPositionalAccuracyTypeImpl extends AbstractDQPosi
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQAbsoluteExternalPositionalAccuracyType();
 	}
 

@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements PointType
-{
+public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements PointType {
 	/**
 	 * The cached value of the '{@link #getPos() <em>Pos</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -56,8 +55,7 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PointTypeImpl()
-	{
+	protected PointTypeImpl() {
 		super();
 	}
 
@@ -67,8 +65,7 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getPointType();
 	}
 
@@ -77,8 +74,8 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionType getPos()
-	{
+	@Override
+	public DirectPositionType getPos() {
 		return pos;
 	}
 
@@ -87,12 +84,10 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPos(DirectPositionType newPos, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPos(DirectPositionType newPos, NotificationChain msgs) {
 		DirectPositionType oldPos = pos;
 		pos = newPos;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.POINT_TYPE__POS, oldPos, newPos);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -104,10 +99,9 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPos(DirectPositionType newPos)
-	{
-		if (newPos != pos)
-		{
+	@Override
+	public void setPos(DirectPositionType newPos) {
+		if (newPos != pos) {
 			NotificationChain msgs = null;
 			if (pos != null)
 				msgs = ((InternalEObject)pos).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.POINT_TYPE__POS, null, msgs);
@@ -125,8 +119,8 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoordinatesType getCoordinates()
-	{
+	@Override
+	public CoordinatesType getCoordinates() {
 		return coordinates;
 	}
 
@@ -135,12 +129,10 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCoordinates(CoordinatesType newCoordinates, NotificationChain msgs) {
 		CoordinatesType oldCoordinates = coordinates;
 		coordinates = newCoordinates;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.POINT_TYPE__COORDINATES, oldCoordinates, newCoordinates);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -152,10 +144,9 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCoordinates(CoordinatesType newCoordinates)
-	{
-		if (newCoordinates != coordinates)
-		{
+	@Override
+	public void setCoordinates(CoordinatesType newCoordinates) {
+		if (newCoordinates != coordinates) {
 			NotificationChain msgs = null;
 			if (coordinates != null)
 				msgs = ((InternalEObject)coordinates).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.POINT_TYPE__COORDINATES, null, msgs);
@@ -174,10 +165,8 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.POINT_TYPE__POS:
 				return basicSetPos(null, msgs);
 			case GMLPackage.POINT_TYPE__COORDINATES:
@@ -192,10 +181,8 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.POINT_TYPE__POS:
 				return getPos();
 			case GMLPackage.POINT_TYPE__COORDINATES:
@@ -210,10 +197,8 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.POINT_TYPE__POS:
 				setPos((DirectPositionType)newValue);
 				return;
@@ -230,10 +215,8 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.POINT_TYPE__POS:
 				setPos((DirectPositionType)null);
 				return;
@@ -250,10 +233,8 @@ public class PointTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.POINT_TYPE__POS:
 				return pos != null;
 			case GMLPackage.POINT_TYPE__COORDINATES:

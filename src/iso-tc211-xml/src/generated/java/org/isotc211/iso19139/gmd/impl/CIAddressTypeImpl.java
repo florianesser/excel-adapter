@@ -42,8 +42,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddressType
-{
+public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddressType {
 	/**
 	 * The cached value of the '{@link #getDeliveryPoint() <em>Delivery Point</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -109,8 +108,7 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CIAddressTypeImpl()
-	{
+	protected CIAddressTypeImpl() {
 		super();
 	}
 
@@ -120,8 +118,7 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCIAddressType();
 	}
 
@@ -130,10 +127,9 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getDeliveryPoint()
-	{
-		if (deliveryPoint == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getDeliveryPoint() {
+		if (deliveryPoint == null) {
 			deliveryPoint = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.CI_ADDRESS_TYPE__DELIVERY_POINT);
 		}
 		return deliveryPoint;
@@ -144,8 +140,8 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getCity()
-	{
+	@Override
+	public CharacterStringPropertyType getCity() {
 		return city;
 	}
 
@@ -154,12 +150,10 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCity(CharacterStringPropertyType newCity, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCity(CharacterStringPropertyType newCity, NotificationChain msgs) {
 		CharacterStringPropertyType oldCity = city;
 		city = newCity;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ADDRESS_TYPE__CITY, oldCity, newCity);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -171,10 +165,9 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCity(CharacterStringPropertyType newCity)
-	{
-		if (newCity != city)
-		{
+	@Override
+	public void setCity(CharacterStringPropertyType newCity) {
+		if (newCity != city) {
 			NotificationChain msgs = null;
 			if (city != null)
 				msgs = ((InternalEObject)city).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ADDRESS_TYPE__CITY, null, msgs);
@@ -192,8 +185,8 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getAdministrativeArea()
-	{
+	@Override
+	public CharacterStringPropertyType getAdministrativeArea() {
 		return administrativeArea;
 	}
 
@@ -202,12 +195,10 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAdministrativeArea(CharacterStringPropertyType newAdministrativeArea, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAdministrativeArea(CharacterStringPropertyType newAdministrativeArea, NotificationChain msgs) {
 		CharacterStringPropertyType oldAdministrativeArea = administrativeArea;
 		administrativeArea = newAdministrativeArea;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ADDRESS_TYPE__ADMINISTRATIVE_AREA, oldAdministrativeArea, newAdministrativeArea);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -219,10 +210,9 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAdministrativeArea(CharacterStringPropertyType newAdministrativeArea)
-	{
-		if (newAdministrativeArea != administrativeArea)
-		{
+	@Override
+	public void setAdministrativeArea(CharacterStringPropertyType newAdministrativeArea) {
+		if (newAdministrativeArea != administrativeArea) {
 			NotificationChain msgs = null;
 			if (administrativeArea != null)
 				msgs = ((InternalEObject)administrativeArea).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ADDRESS_TYPE__ADMINISTRATIVE_AREA, null, msgs);
@@ -240,8 +230,8 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getPostalCode()
-	{
+	@Override
+	public CharacterStringPropertyType getPostalCode() {
 		return postalCode;
 	}
 
@@ -250,12 +240,10 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPostalCode(CharacterStringPropertyType newPostalCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPostalCode(CharacterStringPropertyType newPostalCode, NotificationChain msgs) {
 		CharacterStringPropertyType oldPostalCode = postalCode;
 		postalCode = newPostalCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ADDRESS_TYPE__POSTAL_CODE, oldPostalCode, newPostalCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -267,10 +255,9 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPostalCode(CharacterStringPropertyType newPostalCode)
-	{
-		if (newPostalCode != postalCode)
-		{
+	@Override
+	public void setPostalCode(CharacterStringPropertyType newPostalCode) {
+		if (newPostalCode != postalCode) {
 			NotificationChain msgs = null;
 			if (postalCode != null)
 				msgs = ((InternalEObject)postalCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ADDRESS_TYPE__POSTAL_CODE, null, msgs);
@@ -288,8 +275,8 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getCountry()
-	{
+	@Override
+	public CharacterStringPropertyType getCountry() {
 		return country;
 	}
 
@@ -298,12 +285,10 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCountry(CharacterStringPropertyType newCountry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCountry(CharacterStringPropertyType newCountry, NotificationChain msgs) {
 		CharacterStringPropertyType oldCountry = country;
 		country = newCountry;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ADDRESS_TYPE__COUNTRY, oldCountry, newCountry);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -315,10 +300,9 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCountry(CharacterStringPropertyType newCountry)
-	{
-		if (newCountry != country)
-		{
+	@Override
+	public void setCountry(CharacterStringPropertyType newCountry) {
+		if (newCountry != country) {
 			NotificationChain msgs = null;
 			if (country != null)
 				msgs = ((InternalEObject)country).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ADDRESS_TYPE__COUNTRY, null, msgs);
@@ -336,10 +320,9 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getElectronicMailAddress()
-	{
-		if (electronicMailAddress == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getElectronicMailAddress() {
+		if (electronicMailAddress == null) {
 			electronicMailAddress = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.CI_ADDRESS_TYPE__ELECTRONIC_MAIL_ADDRESS);
 		}
 		return electronicMailAddress;
@@ -351,10 +334,8 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_ADDRESS_TYPE__DELIVERY_POINT:
 				return ((InternalEList<?>)getDeliveryPoint()).basicRemove(otherEnd, msgs);
 			case GMDPackage.CI_ADDRESS_TYPE__CITY:
@@ -377,10 +358,8 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_ADDRESS_TYPE__DELIVERY_POINT:
 				return getDeliveryPoint();
 			case GMDPackage.CI_ADDRESS_TYPE__CITY:
@@ -404,10 +383,8 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_ADDRESS_TYPE__DELIVERY_POINT:
 				getDeliveryPoint().clear();
 				getDeliveryPoint().addAll((Collection<? extends CharacterStringPropertyType>)newValue);
@@ -438,10 +415,8 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_ADDRESS_TYPE__DELIVERY_POINT:
 				getDeliveryPoint().clear();
 				return;
@@ -470,10 +445,8 @@ public class CIAddressTypeImpl extends AbstractObjectTypeImpl implements CIAddre
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_ADDRESS_TYPE__DELIVERY_POINT:
 				return deliveryPoint != null && !deliveryPoint.isEmpty();
 			case GMDPackage.CI_ADDRESS_TYPE__CITY:

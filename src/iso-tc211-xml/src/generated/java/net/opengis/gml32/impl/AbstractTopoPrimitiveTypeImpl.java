@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class AbstractTopoPrimitiveTypeImpl extends AbstractTopologyTypeImpl implements AbstractTopoPrimitiveType
-{
+public abstract class AbstractTopoPrimitiveTypeImpl extends AbstractTopologyTypeImpl implements AbstractTopoPrimitiveType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractTopoPrimitiveTypeImpl()
-	{
+	protected AbstractTopoPrimitiveTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class AbstractTopoPrimitiveTypeImpl extends AbstractTopologyType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractTopoPrimitiveType();
 	}
 

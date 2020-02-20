@@ -30,15 +30,10 @@ import org.isotc211.iso19139.gco.IntegerPropertyType;
  * @model extendedMetaData="name='MD_GridSpatialRepresentation_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDGridSpatialRepresentationType extends AbstractMDSpatialRepresentationType
-{
+public interface MDGridSpatialRepresentationType extends AbstractMDSpatialRepresentationType {
 	/**
 	 * Returns the value of the '<em><b>Number Of Dimensions</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Number Of Dimensions</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Number Of Dimensions</em>' containment reference.
 	 * @see #setNumberOfDimensions(IntegerPropertyType)
@@ -63,10 +58,6 @@ public interface MDGridSpatialRepresentationType extends AbstractMDSpatialRepres
 	 * Returns the value of the '<em><b>Axis Dimension Properties</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDDimensionPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Axis Dimension Properties</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Axis Dimension Properties</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDGridSpatialRepresentationType_AxisDimensionProperties()
@@ -79,10 +70,6 @@ public interface MDGridSpatialRepresentationType extends AbstractMDSpatialRepres
 	/**
 	 * Returns the value of the '<em><b>Cell Geometry</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cell Geometry</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cell Geometry</em>' containment reference.
 	 * @see #setCellGeometry(MDCellGeometryCodePropertyType)
@@ -106,10 +93,6 @@ public interface MDGridSpatialRepresentationType extends AbstractMDSpatialRepres
 	/**
 	 * Returns the value of the '<em><b>Transformation Parameter Availability</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Transformation Parameter Availability</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Transformation Parameter Availability</em>' containment reference.
 	 * @see #setTransformationParameterAvailability(BooleanPropertyType)

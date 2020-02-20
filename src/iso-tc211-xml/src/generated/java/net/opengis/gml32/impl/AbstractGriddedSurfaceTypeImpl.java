@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricCurveSurfaceTypeImpl implements AbstractGriddedSurfaceType
-{
+public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricCurveSurfaceTypeImpl implements AbstractGriddedSurfaceType {
 	/**
 	 * The cached value of the '{@link #getRows() <em>Rows</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -88,8 +87,7 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGriddedSurfaceTypeImpl()
-	{
+	protected AbstractGriddedSurfaceTypeImpl() {
 		super();
 	}
 
@@ -99,8 +97,7 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGriddedSurfaceType();
 	}
 
@@ -109,8 +106,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RowsType getRows()
-	{
+	@Override
+	public RowsType getRows() {
 		return rows;
 	}
 
@@ -119,12 +116,10 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRows(RowsType newRows, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRows(RowsType newRows, NotificationChain msgs) {
 		RowsType oldRows = rows;
 		rows = newRows;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE__ROWS, oldRows, newRows);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -136,10 +131,9 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRows(RowsType newRows)
-	{
-		if (newRows != rows)
-		{
+	@Override
+	public void setRows(RowsType newRows) {
+		if (newRows != rows) {
 			NotificationChain msgs = null;
 			if (rows != null)
 				msgs = ((InternalEObject)rows).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE__ROWS, null, msgs);
@@ -157,8 +151,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getColumns()
-	{
+	@Override
+	public BigInteger getColumns() {
 		return columns;
 	}
 
@@ -167,8 +161,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setColumns(BigInteger newColumns)
-	{
+	@Override
+	public void setColumns(BigInteger newColumns) {
 		BigInteger oldColumns = columns;
 		columns = newColumns;
 		if (eNotificationRequired())
@@ -180,8 +174,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getRows1()
-	{
+	@Override
+	public BigInteger getRows1() {
 		return rows1;
 	}
 
@@ -190,8 +184,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRows1(BigInteger newRows1)
-	{
+	@Override
+	public void setRows1(BigInteger newRows1) {
 		BigInteger oldRows1 = rows1;
 		rows1 = newRows1;
 		if (eNotificationRequired())
@@ -204,10 +198,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE__ROWS:
 				return basicSetRows(null, msgs);
 		}
@@ -220,10 +212,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE__ROWS:
 				return getRows();
 			case GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE__COLUMNS:
@@ -240,10 +230,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE__ROWS:
 				setRows((RowsType)newValue);
 				return;
@@ -263,10 +251,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE__ROWS:
 				setRows((RowsType)null);
 				return;
@@ -286,10 +272,8 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE__ROWS:
 				return rows != null;
 			case GMLPackage.ABSTRACT_GRIDDED_SURFACE_TYPE__COLUMNS:
@@ -306,11 +290,10 @@ public abstract class AbstractGriddedSurfaceTypeImpl extends AbstractParametricC
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (columns: ");
 		result.append(columns);
 		result.append(", rows1: ");

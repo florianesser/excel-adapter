@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDScopeCodePropertyType;
  *
  * @generated
  */
-public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDScopeCodePropertyType
-{
+public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDScopeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDScopeCode() <em>MD Scope Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDScopeCodePropertyTypeImpl()
-	{
+	protected MDScopeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDScopeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDScopeCode()
-	{
+	@Override
+	public CodeListValueType getMDScopeCode() {
 		return mDScopeCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDScopeCode(CodeListValueType newMDScopeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDScopeCode(CodeListValueType newMDScopeCode, NotificationChain msgs) {
 		CodeListValueType oldMDScopeCode = mDScopeCode;
 		mDScopeCode = newMDScopeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE__MD_SCOPE_CODE, oldMDScopeCode, newMDScopeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDScopeCode(CodeListValueType newMDScopeCode)
-	{
-		if (newMDScopeCode != mDScopeCode)
-		{
+	@Override
+	public void setMDScopeCode(CodeListValueType newMDScopeCode) {
+		if (newMDScopeCode != mDScopeCode) {
 			NotificationChain msgs = null;
 			if (mDScopeCode != null)
 				msgs = ((InternalEObject)mDScopeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE__MD_SCOPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE__MD_SCOPE_CODE:
 				return basicSetMDScopeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE__MD_SCOPE_CODE:
 				return getMDScopeCode();
 			case GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE__MD_SCOPE_CODE:
 				setMDScopeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE__MD_SCOPE_CODE:
 				setMDScopeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE__MD_SCOPE_CODE:
 				return mDScopeCode != null;
 			case GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDScopeCodePropertyTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

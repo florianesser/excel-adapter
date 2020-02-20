@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
-{
+public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType {
 	/**
 	 * The cached value of the '{@link #getMember() <em>Member</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BagTypeImpl()
-	{
+	protected BagTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getBagType();
 	}
 
@@ -84,10 +81,9 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AssociationRoleType> getMember()
-	{
-		if (member == null)
-		{
+	@Override
+	public EList<AssociationRoleType> getMember() {
+		if (member == null) {
 			member = new EObjectContainmentEList<AssociationRoleType>(AssociationRoleType.class, this, GMLPackage.BAG_TYPE__MEMBER);
 		}
 		return member;
@@ -98,8 +94,8 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArrayAssociationType getMembers()
-	{
+	@Override
+	public ArrayAssociationType getMembers() {
 		return members;
 	}
 
@@ -108,12 +104,10 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMembers(ArrayAssociationType newMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMembers(ArrayAssociationType newMembers, NotificationChain msgs) {
 		ArrayAssociationType oldMembers = members;
 		members = newMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.BAG_TYPE__MEMBERS, oldMembers, newMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +119,9 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMembers(ArrayAssociationType newMembers)
-	{
-		if (newMembers != members)
-		{
+	@Override
+	public void setMembers(ArrayAssociationType newMembers) {
+		if (newMembers != members) {
 			NotificationChain msgs = null;
 			if (members != null)
 				msgs = ((InternalEObject)members).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.BAG_TYPE__MEMBERS, null, msgs);
@@ -147,10 +140,8 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.BAG_TYPE__MEMBER:
 				return ((InternalEList<?>)getMember()).basicRemove(otherEnd, msgs);
 			case GMLPackage.BAG_TYPE__MEMBERS:
@@ -165,10 +156,8 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.BAG_TYPE__MEMBER:
 				return getMember();
 			case GMLPackage.BAG_TYPE__MEMBERS:
@@ -184,10 +173,8 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.BAG_TYPE__MEMBER:
 				getMember().clear();
 				getMember().addAll((Collection<? extends AssociationRoleType>)newValue);
@@ -205,10 +192,8 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.BAG_TYPE__MEMBER:
 				getMember().clear();
 				return;
@@ -225,10 +210,8 @@ public class BagTypeImpl extends AbstractGMLTypeImpl implements BagType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.BAG_TYPE__MEMBER:
 				return member != null && !member.isEmpty();
 			case GMLPackage.BAG_TYPE__MEMBERS:

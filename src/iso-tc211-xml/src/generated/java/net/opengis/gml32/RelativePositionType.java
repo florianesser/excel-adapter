@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='relativePosition_._type'"
  * @generated
  */
-public enum RelativePositionType implements Enumerator
-{
+public enum RelativePositionType implements Enumerator {
 	/**
 	 * The '<em><b>Before</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -152,10 +151,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Before</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Before</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #BEFORE
 	 * @model name="Before"
@@ -167,10 +162,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>After</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>After</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #AFTER
 	 * @model name="After"
@@ -182,10 +173,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Begins</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Begins</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #BEGINS
 	 * @model name="Begins"
@@ -197,10 +184,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Ends</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Ends</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ENDS
 	 * @model name="Ends"
@@ -212,10 +195,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>During</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>During</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #DURING
 	 * @model name="During"
@@ -227,10 +206,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Equals</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Equals</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #EQUALS
 	 * @model name="Equals"
@@ -242,10 +217,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Contains</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Contains</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CONTAINS
 	 * @model name="Contains"
@@ -257,10 +228,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Overlaps</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Overlaps</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #OVERLAPS
 	 * @model name="Overlaps"
@@ -272,10 +239,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Meets</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Meets</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #MEETS
 	 * @model name="Meets"
@@ -287,10 +250,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Overlapped By</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Overlapped By</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #OVERLAPPED_BY
 	 * @model name="OverlappedBy"
@@ -302,10 +261,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Met By</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Met By</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #MET_BY
 	 * @model name="MetBy"
@@ -317,10 +272,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Begun By</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Begun By</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #BEGUN_BY
 	 * @model name="BegunBy"
@@ -332,10 +283,6 @@ public enum RelativePositionType implements Enumerator
 	/**
 	 * The '<em><b>Ended By</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Ended By</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ENDED_BY
 	 * @model name="EndedBy"
@@ -351,8 +298,7 @@ public enum RelativePositionType implements Enumerator
 	 * @generated
 	 */
 	private static final RelativePositionType[] VALUES_ARRAY =
-		new RelativePositionType[]
-		{
+		new RelativePositionType[] {
 			BEFORE,
 			AFTER,
 			BEGINS,
@@ -384,13 +330,10 @@ public enum RelativePositionType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static RelativePositionType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static RelativePositionType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			RelativePositionType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -405,13 +348,10 @@ public enum RelativePositionType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static RelativePositionType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static RelativePositionType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			RelativePositionType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -426,10 +366,8 @@ public enum RelativePositionType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static RelativePositionType get(int value)
-	{
-		switch (value)
-		{
+	public static RelativePositionType get(int value) {
+		switch (value) {
 			case BEFORE_VALUE: return BEFORE;
 			case AFTER_VALUE: return AFTER;
 			case BEGINS_VALUE: return BEGINS;
@@ -474,8 +412,7 @@ public enum RelativePositionType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private RelativePositionType(int value, String name, String literal)
-	{
+	private RelativePositionType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -486,8 +423,8 @@ public enum RelativePositionType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -496,8 +433,8 @@ public enum RelativePositionType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -506,8 +443,8 @@ public enum RelativePositionType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -518,8 +455,7 @@ public enum RelativePositionType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

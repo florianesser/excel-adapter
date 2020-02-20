@@ -19,8 +19,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='ImageDatumType' kind='elementOnly'"
  * @generated
  */
-public interface ImageDatumType extends AbstractDatumType
-{
+public interface ImageDatumType extends AbstractDatumType {
 	/**
 	 * Returns the value of the '<em><b>Pixel In Cell</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

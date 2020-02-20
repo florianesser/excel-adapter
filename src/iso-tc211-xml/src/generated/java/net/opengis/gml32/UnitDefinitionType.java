@@ -21,8 +21,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='UnitDefinitionType' kind='elementOnly'"
  * @generated
  */
-public interface UnitDefinitionType extends DefinitionType
-{
+public interface UnitDefinitionType extends DefinitionType {
 	/**
 	 * Returns the value of the '<em><b>Quantity Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

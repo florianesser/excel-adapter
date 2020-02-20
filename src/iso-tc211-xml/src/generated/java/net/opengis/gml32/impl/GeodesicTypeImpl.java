@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class GeodesicTypeImpl extends GeodesicStringTypeImpl implements GeodesicType
-{
+public class GeodesicTypeImpl extends GeodesicStringTypeImpl implements GeodesicType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeodesicTypeImpl()
-	{
+	protected GeodesicTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class GeodesicTypeImpl extends GeodesicStringTypeImpl implements Geodesic
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGeodesicType();
 	}
 

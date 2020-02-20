@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='AbstractRingPropertyType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractRingPropertyType extends EObject
-{
+public interface AbstractRingPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Abstract Ring Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.

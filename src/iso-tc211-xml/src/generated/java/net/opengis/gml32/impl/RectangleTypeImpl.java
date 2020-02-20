@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements RectangleType
-{
+public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements RectangleType {
 	/**
 	 * The cached value of the '{@link #getExterior() <em>Exterior</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RectangleTypeImpl()
-	{
+	protected RectangleTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getRectangleType();
 	}
 
@@ -96,8 +93,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractRingPropertyType getExterior()
-	{
+	@Override
+	public AbstractRingPropertyType getExterior() {
 		return exterior;
 	}
 
@@ -106,12 +103,10 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExterior(AbstractRingPropertyType newExterior, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExterior(AbstractRingPropertyType newExterior, NotificationChain msgs) {
 		AbstractRingPropertyType oldExterior = exterior;
 		exterior = newExterior;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.RECTANGLE_TYPE__EXTERIOR, oldExterior, newExterior);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -123,10 +118,9 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExterior(AbstractRingPropertyType newExterior)
-	{
-		if (newExterior != exterior)
-		{
+	@Override
+	public void setExterior(AbstractRingPropertyType newExterior) {
+		if (newExterior != exterior) {
 			NotificationChain msgs = null;
 			if (exterior != null)
 				msgs = ((InternalEObject)exterior).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.RECTANGLE_TYPE__EXTERIOR, null, msgs);
@@ -144,8 +138,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceInterpolationType getInterpolation()
-	{
+	@Override
+	public SurfaceInterpolationType getInterpolation() {
 		return interpolation;
 	}
 
@@ -154,8 +148,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInterpolation(SurfaceInterpolationType newInterpolation)
-	{
+	@Override
+	public void setInterpolation(SurfaceInterpolationType newInterpolation) {
 		SurfaceInterpolationType oldInterpolation = interpolation;
 		interpolation = newInterpolation == null ? INTERPOLATION_EDEFAULT : newInterpolation;
 		boolean oldInterpolationESet = interpolationESet;
@@ -169,8 +163,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetInterpolation()
-	{
+	@Override
+	public void unsetInterpolation() {
 		SurfaceInterpolationType oldInterpolation = interpolation;
 		boolean oldInterpolationESet = interpolationESet;
 		interpolation = INTERPOLATION_EDEFAULT;
@@ -184,8 +178,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetInterpolation()
-	{
+	@Override
+	public boolean isSetInterpolation() {
 		return interpolationESet;
 	}
 
@@ -195,10 +189,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.RECTANGLE_TYPE__EXTERIOR:
 				return basicSetExterior(null, msgs);
 		}
@@ -211,10 +203,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.RECTANGLE_TYPE__EXTERIOR:
 				return getExterior();
 			case GMLPackage.RECTANGLE_TYPE__INTERPOLATION:
@@ -229,10 +219,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.RECTANGLE_TYPE__EXTERIOR:
 				setExterior((AbstractRingPropertyType)newValue);
 				return;
@@ -249,10 +237,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.RECTANGLE_TYPE__EXTERIOR:
 				setExterior((AbstractRingPropertyType)null);
 				return;
@@ -269,10 +255,8 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.RECTANGLE_TYPE__EXTERIOR:
 				return exterior != null;
 			case GMLPackage.RECTANGLE_TYPE__INTERPOLATION:
@@ -287,11 +271,10 @@ public class RectangleTypeImpl extends AbstractSurfacePatchTypeImpl implements R
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (interpolation: ");
 		if (interpolationESet) result.append(interpolation); else result.append("<unset>");
 		result.append(')');

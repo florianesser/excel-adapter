@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implements KnotPropertyType
-{
+public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implements KnotPropertyType {
 	/**
 	 * The cached value of the '{@link #getKnot() <em>Knot</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -45,8 +44,7 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected KnotPropertyTypeImpl()
-	{
+	protected KnotPropertyTypeImpl() {
 		super();
 	}
 
@@ -56,8 +54,7 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getKnotPropertyType();
 	}
 
@@ -66,8 +63,8 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public KnotType getKnot()
-	{
+	@Override
+	public KnotType getKnot() {
 		return knot;
 	}
 
@@ -76,12 +73,10 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetKnot(KnotType newKnot, NotificationChain msgs)
-	{
+	public NotificationChain basicSetKnot(KnotType newKnot, NotificationChain msgs) {
 		KnotType oldKnot = knot;
 		knot = newKnot;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.KNOT_PROPERTY_TYPE__KNOT, oldKnot, newKnot);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -93,10 +88,9 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setKnot(KnotType newKnot)
-	{
-		if (newKnot != knot)
-		{
+	@Override
+	public void setKnot(KnotType newKnot) {
+		if (newKnot != knot) {
 			NotificationChain msgs = null;
 			if (knot != null)
 				msgs = ((InternalEObject)knot).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.KNOT_PROPERTY_TYPE__KNOT, null, msgs);
@@ -115,10 +109,8 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.KNOT_PROPERTY_TYPE__KNOT:
 				return basicSetKnot(null, msgs);
 		}
@@ -131,10 +123,8 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.KNOT_PROPERTY_TYPE__KNOT:
 				return getKnot();
 		}
@@ -147,10 +137,8 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.KNOT_PROPERTY_TYPE__KNOT:
 				setKnot((KnotType)newValue);
 				return;
@@ -164,10 +152,8 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.KNOT_PROPERTY_TYPE__KNOT:
 				setKnot((KnotType)null);
 				return;
@@ -181,10 +167,8 @@ public class KnotPropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.KNOT_PROPERTY_TYPE__KNOT:
 				return knot != null;
 		}

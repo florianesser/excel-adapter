@@ -43,8 +43,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOrdinalEraType
-{
+public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOrdinalEraType {
 	/**
 	 * The cached value of the '{@link #getRelatedTime() <em>Related Time</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -110,8 +109,7 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeOrdinalEraTypeImpl()
-	{
+	protected TimeOrdinalEraTypeImpl() {
 		super();
 	}
 
@@ -121,8 +119,7 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeOrdinalEraType();
 	}
 
@@ -131,10 +128,9 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RelatedTimeType> getRelatedTime()
-	{
-		if (relatedTime == null)
-		{
+	@Override
+	public EList<RelatedTimeType> getRelatedTime() {
+		if (relatedTime == null) {
 			relatedTime = new EObjectContainmentEList<RelatedTimeType>(RelatedTimeType.class, this, GMLPackage.TIME_ORDINAL_ERA_TYPE__RELATED_TIME);
 		}
 		return relatedTime;
@@ -145,8 +141,8 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeNodePropertyType getStart()
-	{
+	@Override
+	public TimeNodePropertyType getStart() {
 		return start;
 	}
 
@@ -155,12 +151,10 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetStart(TimeNodePropertyType newStart, NotificationChain msgs)
-	{
+	public NotificationChain basicSetStart(TimeNodePropertyType newStart, NotificationChain msgs) {
 		TimeNodePropertyType oldStart = start;
 		start = newStart;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_ORDINAL_ERA_TYPE__START, oldStart, newStart);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -172,10 +166,9 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStart(TimeNodePropertyType newStart)
-	{
-		if (newStart != start)
-		{
+	@Override
+	public void setStart(TimeNodePropertyType newStart) {
+		if (newStart != start) {
 			NotificationChain msgs = null;
 			if (start != null)
 				msgs = ((InternalEObject)start).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_ORDINAL_ERA_TYPE__START, null, msgs);
@@ -193,8 +186,8 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeNodePropertyType getEnd()
-	{
+	@Override
+	public TimeNodePropertyType getEnd() {
 		return end;
 	}
 
@@ -203,12 +196,10 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEnd(TimeNodePropertyType newEnd, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEnd(TimeNodePropertyType newEnd, NotificationChain msgs) {
 		TimeNodePropertyType oldEnd = end;
 		end = newEnd;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_ORDINAL_ERA_TYPE__END, oldEnd, newEnd);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -220,10 +211,9 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEnd(TimeNodePropertyType newEnd)
-	{
-		if (newEnd != end)
-		{
+	@Override
+	public void setEnd(TimeNodePropertyType newEnd) {
+		if (newEnd != end) {
 			NotificationChain msgs = null;
 			if (end != null)
 				msgs = ((InternalEObject)end).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_ORDINAL_ERA_TYPE__END, null, msgs);
@@ -241,8 +231,8 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePeriodPropertyType getExtent()
-	{
+	@Override
+	public TimePeriodPropertyType getExtent() {
 		return extent;
 	}
 
@@ -251,12 +241,10 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExtent(TimePeriodPropertyType newExtent, NotificationChain msgs)
-	{
+	public NotificationChain basicSetExtent(TimePeriodPropertyType newExtent, NotificationChain msgs) {
 		TimePeriodPropertyType oldExtent = extent;
 		extent = newExtent;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_ORDINAL_ERA_TYPE__EXTENT, oldExtent, newExtent);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -268,10 +256,9 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExtent(TimePeriodPropertyType newExtent)
-	{
-		if (newExtent != extent)
-		{
+	@Override
+	public void setExtent(TimePeriodPropertyType newExtent) {
+		if (newExtent != extent) {
 			NotificationChain msgs = null;
 			if (extent != null)
 				msgs = ((InternalEObject)extent).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_ORDINAL_ERA_TYPE__EXTENT, null, msgs);
@@ -289,10 +276,9 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TimeOrdinalEraPropertyType> getMember()
-	{
-		if (member == null)
-		{
+	@Override
+	public EList<TimeOrdinalEraPropertyType> getMember() {
+		if (member == null) {
 			member = new EObjectContainmentEList<TimeOrdinalEraPropertyType>(TimeOrdinalEraPropertyType.class, this, GMLPackage.TIME_ORDINAL_ERA_TYPE__MEMBER);
 		}
 		return member;
@@ -303,8 +289,8 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getGroup()
-	{
+	@Override
+	public ReferenceType getGroup() {
 		return group;
 	}
 
@@ -313,12 +299,10 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGroup(ReferenceType newGroup, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGroup(ReferenceType newGroup, NotificationChain msgs) {
 		ReferenceType oldGroup = group;
 		group = newGroup;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIME_ORDINAL_ERA_TYPE__GROUP, oldGroup, newGroup);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -330,10 +314,9 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGroup(ReferenceType newGroup)
-	{
-		if (newGroup != group)
-		{
+	@Override
+	public void setGroup(ReferenceType newGroup) {
+		if (newGroup != group) {
 			NotificationChain msgs = null;
 			if (group != null)
 				msgs = ((InternalEObject)group).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIME_ORDINAL_ERA_TYPE__GROUP, null, msgs);
@@ -352,10 +335,8 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_ERA_TYPE__RELATED_TIME:
 				return ((InternalEList<?>)getRelatedTime()).basicRemove(otherEnd, msgs);
 			case GMLPackage.TIME_ORDINAL_ERA_TYPE__START:
@@ -378,10 +359,8 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_ERA_TYPE__RELATED_TIME:
 				return getRelatedTime();
 			case GMLPackage.TIME_ORDINAL_ERA_TYPE__START:
@@ -405,10 +384,8 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_ERA_TYPE__RELATED_TIME:
 				getRelatedTime().clear();
 				getRelatedTime().addAll((Collection<? extends RelatedTimeType>)newValue);
@@ -439,10 +416,8 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_ERA_TYPE__RELATED_TIME:
 				getRelatedTime().clear();
 				return;
@@ -471,10 +446,8 @@ public class TimeOrdinalEraTypeImpl extends DefinitionTypeImpl implements TimeOr
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_ORDINAL_ERA_TYPE__RELATED_TIME:
 				return relatedTime != null && !relatedTime.isEmpty();
 			case GMLPackage.TIME_ORDINAL_ERA_TYPE__START:

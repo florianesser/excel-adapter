@@ -19,8 +19,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='PrimeMeridianType' kind='elementOnly'"
  * @generated
  */
-public interface PrimeMeridianType extends IdentifiedObjectType
-{
+public interface PrimeMeridianType extends IdentifiedObjectType {
 	/**
 	 * Returns the value of the '<em><b>Greenwich Longitude</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

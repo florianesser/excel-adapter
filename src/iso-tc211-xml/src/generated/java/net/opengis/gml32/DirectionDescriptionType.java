@@ -31,16 +31,11 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='DirectionDescriptionType' kind='elementOnly'"
  * @generated
  */
-public interface DirectionDescriptionType extends EObject
-{
+public interface DirectionDescriptionType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Compass Point</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.CompassPointEnumeration}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Compass Point</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compass Point</em>' attribute.
 	 * @see net.opengis.gml32.CompassPointEnumeration
@@ -93,10 +88,6 @@ public interface DirectionDescriptionType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Keyword</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Keyword</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Keyword</em>' containment reference.
 	 * @see #setKeyword(CodeType)
@@ -120,10 +111,6 @@ public interface DirectionDescriptionType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
@@ -147,10 +134,6 @@ public interface DirectionDescriptionType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Reference</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reference</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference</em>' containment reference.
 	 * @see #setReference(ReferenceType)

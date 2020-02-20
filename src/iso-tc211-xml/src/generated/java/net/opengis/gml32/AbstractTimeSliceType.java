@@ -21,8 +21,7 @@ package net.opengis.gml32;
  *        extendedMetaData="name='AbstractTimeSliceType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractTimeSliceType extends AbstractGMLType
-{
+public interface AbstractTimeSliceType extends AbstractGMLType {
 	/**
 	 * Returns the value of the '<em><b>Valid Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

@@ -43,8 +43,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl implements AbstractDatumType
-{
+public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl implements AbstractDatumType {
 	/**
 	 * The cached value of the '{@link #getDomainOfValidity() <em>Domain Of Validity</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -100,8 +99,7 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractDatumTypeImpl()
-	{
+	protected AbstractDatumTypeImpl() {
 		super();
 	}
 
@@ -111,8 +109,7 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractDatumType();
 	}
 
@@ -121,8 +118,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainOfValidityType getDomainOfValidity()
-	{
+	@Override
+	public DomainOfValidityType getDomainOfValidity() {
 		return domainOfValidity;
 	}
 
@@ -131,12 +128,10 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDomainOfValidity(DomainOfValidityType newDomainOfValidity, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDomainOfValidity(DomainOfValidityType newDomainOfValidity, NotificationChain msgs) {
 		DomainOfValidityType oldDomainOfValidity = domainOfValidity;
 		domainOfValidity = newDomainOfValidity;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_DATUM_TYPE__DOMAIN_OF_VALIDITY, oldDomainOfValidity, newDomainOfValidity);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -148,10 +143,9 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDomainOfValidity(DomainOfValidityType newDomainOfValidity)
-	{
-		if (newDomainOfValidity != domainOfValidity)
-		{
+	@Override
+	public void setDomainOfValidity(DomainOfValidityType newDomainOfValidity) {
+		if (newDomainOfValidity != domainOfValidity) {
 			NotificationChain msgs = null;
 			if (domainOfValidity != null)
 				msgs = ((InternalEObject)domainOfValidity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_DATUM_TYPE__DOMAIN_OF_VALIDITY, null, msgs);
@@ -169,10 +163,9 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getScope()
-	{
-		if (scope == null)
-		{
+	@Override
+	public EList<String> getScope() {
+		if (scope == null) {
 			scope = new EDataTypeEList<String>(String.class, this, GMLPackage.ABSTRACT_DATUM_TYPE__SCOPE);
 		}
 		return scope;
@@ -183,10 +176,9 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAnchorDefinitionGroup()
-	{
-		if (anchorDefinitionGroup == null)
-		{
+	@Override
+	public FeatureMap getAnchorDefinitionGroup() {
+		if (anchorDefinitionGroup == null) {
 			anchorDefinitionGroup = new BasicFeatureMap(this, GMLPackage.ABSTRACT_DATUM_TYPE__ANCHOR_DEFINITION_GROUP);
 		}
 		return anchorDefinitionGroup;
@@ -197,8 +189,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getAnchorDefinition()
-	{
+	@Override
+	public CodeType getAnchorDefinition() {
 		return (CodeType)getAnchorDefinitionGroup().get(GMLPackage.eINSTANCE.getAbstractDatumType_AnchorDefinition(), true);
 	}
 
@@ -207,8 +199,7 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnchorDefinition(CodeType newAnchorDefinition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAnchorDefinition(CodeType newAnchorDefinition, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAnchorDefinitionGroup()).basicAdd(GMLPackage.eINSTANCE.getAbstractDatumType_AnchorDefinition(), newAnchorDefinition, msgs);
 	}
 
@@ -217,8 +208,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnchorDefinition(CodeType newAnchorDefinition)
-	{
+	@Override
+	public void setAnchorDefinition(CodeType newAnchorDefinition) {
 		((FeatureMap.Internal)getAnchorDefinitionGroup()).set(GMLPackage.eINSTANCE.getAbstractDatumType_AnchorDefinition(), newAnchorDefinition);
 	}
 
@@ -227,8 +218,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getRealizationEpoch()
-	{
+	@Override
+	public XMLGregorianCalendar getRealizationEpoch() {
 		return realizationEpoch;
 	}
 
@@ -237,8 +228,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRealizationEpoch(XMLGregorianCalendar newRealizationEpoch)
-	{
+	@Override
+	public void setRealizationEpoch(XMLGregorianCalendar newRealizationEpoch) {
 		XMLGregorianCalendar oldRealizationEpoch = realizationEpoch;
 		realizationEpoch = newRealizationEpoch;
 		if (eNotificationRequired())
@@ -251,10 +242,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_DATUM_TYPE__DOMAIN_OF_VALIDITY:
 				return basicSetDomainOfValidity(null, msgs);
 			case GMLPackage.ABSTRACT_DATUM_TYPE__ANCHOR_DEFINITION_GROUP:
@@ -271,10 +260,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_DATUM_TYPE__DOMAIN_OF_VALIDITY:
 				return getDomainOfValidity();
 			case GMLPackage.ABSTRACT_DATUM_TYPE__SCOPE:
@@ -297,10 +284,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_DATUM_TYPE__DOMAIN_OF_VALIDITY:
 				setDomainOfValidity((DomainOfValidityType)newValue);
 				return;
@@ -327,10 +312,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_DATUM_TYPE__DOMAIN_OF_VALIDITY:
 				setDomainOfValidity((DomainOfValidityType)null);
 				return;
@@ -356,10 +339,8 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_DATUM_TYPE__DOMAIN_OF_VALIDITY:
 				return domainOfValidity != null;
 			case GMLPackage.ABSTRACT_DATUM_TYPE__SCOPE:
@@ -380,11 +361,10 @@ public abstract class AbstractDatumTypeImpl extends IdentifiedObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (scope: ");
 		result.append(scope);
 		result.append(", anchorDefinitionGroup: ");

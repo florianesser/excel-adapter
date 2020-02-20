@@ -21,8 +21,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='MultiGeometryType' kind='elementOnly'"
  * @generated
  */
-public interface MultiGeometryType extends AbstractGeometricAggregateType
-{
+public interface MultiGeometryType extends AbstractGeometricAggregateType {
 	/**
 	 * Returns the value of the '<em><b>Geometry Member</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.GeometryPropertyType}.

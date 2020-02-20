@@ -14,15 +14,13 @@ import org.isotc211.iso19139.gmd.MDServiceIdentificationType;
  *
  * @generated
  */
-public class MDServiceIdentificationTypeImpl extends AbstractMDIdentificationTypeImpl implements MDServiceIdentificationType
-{
+public class MDServiceIdentificationTypeImpl extends AbstractMDIdentificationTypeImpl implements MDServiceIdentificationType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDServiceIdentificationTypeImpl()
-	{
+	protected MDServiceIdentificationTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class MDServiceIdentificationTypeImpl extends AbstractMDIdentificationTyp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDServiceIdentificationType();
 	}
 

@@ -37,8 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationParameterTypeImpl implements OperationParameterGroupType
-{
+public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationParameterTypeImpl implements OperationParameterGroupType {
 	/**
 	 * The default value of the '{@link #getMaximumOccurs() <em>Maximum Occurs</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -74,8 +73,7 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected OperationParameterGroupTypeImpl()
-	{
+	protected OperationParameterGroupTypeImpl() {
 		super();
 	}
 
@@ -85,8 +83,7 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getOperationParameterGroupType();
 	}
 
@@ -95,8 +92,8 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getMaximumOccurs()
-	{
+	@Override
+	public BigInteger getMaximumOccurs() {
 		return maximumOccurs;
 	}
 
@@ -105,8 +102,8 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaximumOccurs(BigInteger newMaximumOccurs)
-	{
+	@Override
+	public void setMaximumOccurs(BigInteger newMaximumOccurs) {
 		BigInteger oldMaximumOccurs = maximumOccurs;
 		maximumOccurs = newMaximumOccurs;
 		if (eNotificationRequired())
@@ -118,10 +115,9 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractGeneralOperationParameterPropertyType> getParameter()
-	{
-		if (parameter == null)
-		{
+	@Override
+	public EList<AbstractGeneralOperationParameterPropertyType> getParameter() {
+		if (parameter == null) {
 			parameter = new EObjectContainmentEList<AbstractGeneralOperationParameterPropertyType>(AbstractGeneralOperationParameterPropertyType.class, this, GMLPackage.OPERATION_PARAMETER_GROUP_TYPE__PARAMETER);
 		}
 		return parameter;
@@ -133,10 +129,8 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_PARAMETER_GROUP_TYPE__PARAMETER:
 				return ((InternalEList<?>)getParameter()).basicRemove(otherEnd, msgs);
 		}
@@ -149,10 +143,8 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_PARAMETER_GROUP_TYPE__MAXIMUM_OCCURS:
 				return getMaximumOccurs();
 			case GMLPackage.OPERATION_PARAMETER_GROUP_TYPE__PARAMETER:
@@ -168,10 +160,8 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_PARAMETER_GROUP_TYPE__MAXIMUM_OCCURS:
 				setMaximumOccurs((BigInteger)newValue);
 				return;
@@ -189,10 +179,8 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_PARAMETER_GROUP_TYPE__MAXIMUM_OCCURS:
 				setMaximumOccurs(MAXIMUM_OCCURS_EDEFAULT);
 				return;
@@ -209,10 +197,8 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.OPERATION_PARAMETER_GROUP_TYPE__MAXIMUM_OCCURS:
 				return MAXIMUM_OCCURS_EDEFAULT == null ? maximumOccurs != null : !MAXIMUM_OCCURS_EDEFAULT.equals(maximumOccurs);
 			case GMLPackage.OPERATION_PARAMETER_GROUP_TYPE__PARAMETER:
@@ -227,11 +213,10 @@ public class OperationParameterGroupTypeImpl extends AbstractGeneralOperationPar
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (maximumOccurs: ");
 		result.append(maximumOccurs);
 		result.append(')');

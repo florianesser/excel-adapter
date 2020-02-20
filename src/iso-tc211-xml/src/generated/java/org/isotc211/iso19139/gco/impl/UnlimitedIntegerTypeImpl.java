@@ -28,8 +28,7 @@ import org.isotc211.iso19139.gco.UnlimitedIntegerType;
  *
  * @generated
  */
-public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container implements UnlimitedIntegerType
-{
+public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container implements UnlimitedIntegerType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -84,8 +83,7 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UnlimitedIntegerTypeImpl()
-	{
+	protected UnlimitedIntegerTypeImpl() {
 		super();
 	}
 
@@ -95,8 +93,7 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.UNLIMITED_INTEGER_TYPE;
 	}
 
@@ -105,8 +102,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getValue()
-	{
+	@Override
+	public BigInteger getValue() {
 		return value;
 	}
 
@@ -115,8 +112,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(BigInteger newValue)
-	{
+	@Override
+	public void setValue(BigInteger newValue) {
 		BigInteger oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -128,8 +125,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isIsInfinite()
-	{
+	@Override
+	public boolean isIsInfinite() {
 		return isInfinite;
 	}
 
@@ -138,8 +135,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIsInfinite(boolean newIsInfinite)
-	{
+	@Override
+	public void setIsInfinite(boolean newIsInfinite) {
 		boolean oldIsInfinite = isInfinite;
 		isInfinite = newIsInfinite;
 		boolean oldIsInfiniteESet = isInfiniteESet;
@@ -153,8 +150,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetIsInfinite()
-	{
+	@Override
+	public void unsetIsInfinite() {
 		boolean oldIsInfinite = isInfinite;
 		boolean oldIsInfiniteESet = isInfiniteESet;
 		isInfinite = IS_INFINITE_EDEFAULT;
@@ -168,8 +165,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetIsInfinite()
-	{
+	@Override
+	public boolean isSetIsInfinite() {
 		return isInfiniteESet;
 	}
 
@@ -179,10 +176,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.UNLIMITED_INTEGER_TYPE__VALUE:
 				return getValue();
 			case GCOPackage.UNLIMITED_INTEGER_TYPE__IS_INFINITE:
@@ -197,10 +192,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.UNLIMITED_INTEGER_TYPE__VALUE:
 				setValue((BigInteger)newValue);
 				return;
@@ -217,10 +210,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.UNLIMITED_INTEGER_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -237,10 +228,8 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.UNLIMITED_INTEGER_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GCOPackage.UNLIMITED_INTEGER_TYPE__IS_INFINITE:
@@ -255,11 +244,10 @@ public class UnlimitedIntegerTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", isInfinite: ");

@@ -17,16 +17,14 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
  * @see net.opengis.gml32.util.GMLResourceImpl
  * @generated
  */
-public class GMLResourceFactoryImpl extends ResourceFactoryImpl
-{
+public class GMLResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMLResourceFactoryImpl()
-	{
+	public GMLResourceFactoryImpl() {
 		super();
 	}
 
@@ -37,8 +35,7 @@ public class GMLResourceFactoryImpl extends ResourceFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Resource createResource(URI uri)
-	{
+	public Resource createResource(URI uri) {
 		XMLResource result = new GMLResourceImpl(uri);
 		result.getDefaultSaveOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);
 		result.getDefaultLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);

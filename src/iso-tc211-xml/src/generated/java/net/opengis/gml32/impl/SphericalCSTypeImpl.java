@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class SphericalCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements SphericalCSType
-{
+public class SphericalCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements SphericalCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SphericalCSTypeImpl()
-	{
+	protected SphericalCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class SphericalCSTypeImpl extends AbstractCoordinateSystemTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getSphericalCSType();
 	}
 

@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ArcTypeImpl extends ArcStringTypeImpl implements ArcType
-{
+public class ArcTypeImpl extends ArcStringTypeImpl implements ArcType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ArcTypeImpl()
-	{
+	protected ArcTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class ArcTypeImpl extends ArcStringTypeImpl implements ArcType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getArcType();
 	}
 

@@ -27,16 +27,11 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='MD_Constraints_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDConstraintsType extends AbstractObjectType
-{
+public interface MDConstraintsType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Use Limitation</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Use Limitation</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Use Limitation</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDConstraintsType_UseLimitation()

@@ -16,15 +16,13 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public abstract class AbstractSurfacePatchTypeImpl extends MinimalEObjectImpl.Container implements AbstractSurfacePatchType
-{
+public abstract class AbstractSurfacePatchTypeImpl extends MinimalEObjectImpl.Container implements AbstractSurfacePatchType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractSurfacePatchTypeImpl()
-	{
+	protected AbstractSurfacePatchTypeImpl() {
 		super();
 	}
 
@@ -34,8 +32,7 @@ public abstract class AbstractSurfacePatchTypeImpl extends MinimalEObjectImpl.Co
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractSurfacePatchType();
 	}
 

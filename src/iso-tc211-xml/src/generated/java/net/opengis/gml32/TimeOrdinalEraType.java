@@ -25,16 +25,11 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='TimeOrdinalEraType' kind='elementOnly'"
  * @generated
  */
-public interface TimeOrdinalEraType extends DefinitionType
-{
+public interface TimeOrdinalEraType extends DefinitionType {
 	/**
 	 * Returns the value of the '<em><b>Related Time</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.RelatedTimeType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Related Time</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Related Time</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTimeOrdinalEraType_RelatedTime()
@@ -47,10 +42,6 @@ public interface TimeOrdinalEraType extends DefinitionType
 	/**
 	 * Returns the value of the '<em><b>Start</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Start</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Start</em>' containment reference.
 	 * @see #setStart(TimeNodePropertyType)
@@ -74,10 +65,6 @@ public interface TimeOrdinalEraType extends DefinitionType
 	/**
 	 * Returns the value of the '<em><b>End</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>End</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>End</em>' containment reference.
 	 * @see #setEnd(TimeNodePropertyType)
@@ -101,10 +88,6 @@ public interface TimeOrdinalEraType extends DefinitionType
 	/**
 	 * Returns the value of the '<em><b>Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extent</em>' containment reference.
 	 * @see #setExtent(TimePeriodPropertyType)
@@ -129,10 +112,6 @@ public interface TimeOrdinalEraType extends DefinitionType
 	 * Returns the value of the '<em><b>Member</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.TimeOrdinalEraPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Member</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Member</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getTimeOrdinalEraType_Member()
@@ -145,10 +124,6 @@ public interface TimeOrdinalEraType extends DefinitionType
 	/**
 	 * Returns the value of the '<em><b>Group</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Group</em>' containment reference.
 	 * @see #setGroup(ReferenceType)

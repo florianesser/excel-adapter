@@ -26,15 +26,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='Number_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface NumberPropertyType extends EObject
-{
+public interface NumberPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Real</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Real</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Real</em>' attribute.
 	 * @see #isSetReal()
@@ -85,10 +80,6 @@ public interface NumberPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Decimal</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Decimal</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Decimal</em>' attribute.
 	 * @see #setDecimal(BigDecimal)
@@ -112,10 +103,6 @@ public interface NumberPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Integer</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Integer</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Integer</em>' attribute.
 	 * @see #setInteger(BigInteger)
@@ -139,10 +126,6 @@ public interface NumberPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

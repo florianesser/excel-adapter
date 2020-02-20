@@ -21,15 +21,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='UnlimitedInteger_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface UnlimitedIntegerPropertyType extends EObject
-{
+public interface UnlimitedIntegerPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Unlimited Integer</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Unlimited Integer</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Unlimited Integer</em>' containment reference.
 	 * @see #isSetUnlimitedInteger()
@@ -80,10 +75,6 @@ public interface UnlimitedIntegerPropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

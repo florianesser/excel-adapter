@@ -32,8 +32,7 @@ import org.isotc211.iso19139.gmd.MDIdentifierType;
  *
  * @generated
  */
-public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDIdentifierType
-{
+public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDIdentifierType {
 	/**
 	 * The cached value of the '{@link #getAuthority() <em>Authority</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -59,8 +58,7 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDIdentifierTypeImpl()
-	{
+	protected MDIdentifierTypeImpl() {
 		super();
 	}
 
@@ -70,8 +68,7 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDIdentifierType();
 	}
 
@@ -80,8 +77,8 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationPropertyType getAuthority()
-	{
+	@Override
+	public CICitationPropertyType getAuthority() {
 		return authority;
 	}
 
@@ -90,12 +87,10 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAuthority(CICitationPropertyType newAuthority, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAuthority(CICitationPropertyType newAuthority, NotificationChain msgs) {
 		CICitationPropertyType oldAuthority = authority;
 		authority = newAuthority;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IDENTIFIER_TYPE__AUTHORITY, oldAuthority, newAuthority);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -107,10 +102,9 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAuthority(CICitationPropertyType newAuthority)
-	{
-		if (newAuthority != authority)
-		{
+	@Override
+	public void setAuthority(CICitationPropertyType newAuthority) {
+		if (newAuthority != authority) {
 			NotificationChain msgs = null;
 			if (authority != null)
 				msgs = ((InternalEObject)authority).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IDENTIFIER_TYPE__AUTHORITY, null, msgs);
@@ -128,8 +122,8 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getCode()
-	{
+	@Override
+	public CharacterStringPropertyType getCode() {
 		return code;
 	}
 
@@ -138,12 +132,10 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCode(CharacterStringPropertyType newCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCode(CharacterStringPropertyType newCode, NotificationChain msgs) {
 		CharacterStringPropertyType oldCode = code;
 		code = newCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IDENTIFIER_TYPE__CODE, oldCode, newCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -155,10 +147,9 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCode(CharacterStringPropertyType newCode)
-	{
-		if (newCode != code)
-		{
+	@Override
+	public void setCode(CharacterStringPropertyType newCode) {
+		if (newCode != code) {
 			NotificationChain msgs = null;
 			if (code != null)
 				msgs = ((InternalEObject)code).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IDENTIFIER_TYPE__CODE, null, msgs);
@@ -177,10 +168,8 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_IDENTIFIER_TYPE__AUTHORITY:
 				return basicSetAuthority(null, msgs);
 			case GMDPackage.MD_IDENTIFIER_TYPE__CODE:
@@ -195,10 +184,8 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_IDENTIFIER_TYPE__AUTHORITY:
 				return getAuthority();
 			case GMDPackage.MD_IDENTIFIER_TYPE__CODE:
@@ -213,10 +200,8 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_IDENTIFIER_TYPE__AUTHORITY:
 				setAuthority((CICitationPropertyType)newValue);
 				return;
@@ -233,10 +218,8 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_IDENTIFIER_TYPE__AUTHORITY:
 				setAuthority((CICitationPropertyType)null);
 				return;
@@ -253,10 +236,8 @@ public class MDIdentifierTypeImpl extends AbstractObjectTypeImpl implements MDId
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_IDENTIFIER_TYPE__AUTHORITY:
 				return authority != null;
 			case GMDPackage.MD_IDENTIFIER_TYPE__CODE:

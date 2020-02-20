@@ -26,8 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class AbstractGeneralOperationParameterTypeImpl extends IdentifiedObjectTypeImpl implements AbstractGeneralOperationParameterType
-{
+public abstract class AbstractGeneralOperationParameterTypeImpl extends IdentifiedObjectTypeImpl implements AbstractGeneralOperationParameterType {
 	/**
 	 * The default value of the '{@link #getMinimumOccurs() <em>Minimum Occurs</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -53,8 +52,7 @@ public abstract class AbstractGeneralOperationParameterTypeImpl extends Identifi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGeneralOperationParameterTypeImpl()
-	{
+	protected AbstractGeneralOperationParameterTypeImpl() {
 		super();
 	}
 
@@ -64,8 +62,7 @@ public abstract class AbstractGeneralOperationParameterTypeImpl extends Identifi
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGeneralOperationParameterType();
 	}
 
@@ -74,8 +71,8 @@ public abstract class AbstractGeneralOperationParameterTypeImpl extends Identifi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getMinimumOccurs()
-	{
+	@Override
+	public BigInteger getMinimumOccurs() {
 		return minimumOccurs;
 	}
 
@@ -84,8 +81,8 @@ public abstract class AbstractGeneralOperationParameterTypeImpl extends Identifi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMinimumOccurs(BigInteger newMinimumOccurs)
-	{
+	@Override
+	public void setMinimumOccurs(BigInteger newMinimumOccurs) {
 		BigInteger oldMinimumOccurs = minimumOccurs;
 		minimumOccurs = newMinimumOccurs;
 		if (eNotificationRequired())
@@ -98,10 +95,8 @@ public abstract class AbstractGeneralOperationParameterTypeImpl extends Identifi
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_OPERATION_PARAMETER_TYPE__MINIMUM_OCCURS:
 				return getMinimumOccurs();
 		}
@@ -114,10 +109,8 @@ public abstract class AbstractGeneralOperationParameterTypeImpl extends Identifi
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_OPERATION_PARAMETER_TYPE__MINIMUM_OCCURS:
 				setMinimumOccurs((BigInteger)newValue);
 				return;
@@ -131,10 +124,8 @@ public abstract class AbstractGeneralOperationParameterTypeImpl extends Identifi
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_OPERATION_PARAMETER_TYPE__MINIMUM_OCCURS:
 				setMinimumOccurs(MINIMUM_OCCURS_EDEFAULT);
 				return;
@@ -148,10 +139,8 @@ public abstract class AbstractGeneralOperationParameterTypeImpl extends Identifi
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_OPERATION_PARAMETER_TYPE__MINIMUM_OCCURS:
 				return MINIMUM_OCCURS_EDEFAULT == null ? minimumOccurs != null : !MINIMUM_OCCURS_EDEFAULT.equals(minimumOccurs);
 		}
@@ -164,11 +153,10 @@ public abstract class AbstractGeneralOperationParameterTypeImpl extends Identifi
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (minimumOccurs: ");
 		result.append(minimumOccurs);
 		result.append(')');

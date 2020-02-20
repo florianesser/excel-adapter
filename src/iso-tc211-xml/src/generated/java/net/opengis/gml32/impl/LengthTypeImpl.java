@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class LengthTypeImpl extends MeasureTypeImpl implements LengthType
-{
+public class LengthTypeImpl extends MeasureTypeImpl implements LengthType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LengthTypeImpl()
-	{
+	protected LengthTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class LengthTypeImpl extends MeasureTypeImpl implements LengthType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getLengthType();
 	}
 

@@ -24,16 +24,11 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='EX_SpatialTemporalExtent_Type' kind='elementOnly'"
  * @generated
  */
-public interface EXSpatialTemporalExtentType extends EXTemporalExtentType
-{
+public interface EXSpatialTemporalExtentType extends EXTemporalExtentType {
 	/**
 	 * Returns the value of the '<em><b>Spatial Extent</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.EXGeographicExtentPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Spatial Extent</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Spatial Extent</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getEXSpatialTemporalExtentType_SpatialExtent()

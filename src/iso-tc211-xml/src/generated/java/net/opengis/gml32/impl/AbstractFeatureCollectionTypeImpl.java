@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureTypeImpl implements AbstractFeatureCollectionType
-{
+public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureTypeImpl implements AbstractFeatureCollectionType {
 	/**
 	 * The cached value of the '{@link #getFeatureMember() <em>Feature Member</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractFeatureCollectionTypeImpl()
-	{
+	protected AbstractFeatureCollectionTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractFeatureCollectionType();
 	}
 
@@ -84,10 +81,9 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FeaturePropertyType> getFeatureMember()
-	{
-		if (featureMember == null)
-		{
+	@Override
+	public EList<FeaturePropertyType> getFeatureMember() {
+		if (featureMember == null) {
 			featureMember = new EObjectContainmentEList<FeaturePropertyType>(FeaturePropertyType.class, this, GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBER);
 		}
 		return featureMember;
@@ -98,8 +94,8 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureArrayPropertyType getFeatureMembers()
-	{
+	@Override
+	public FeatureArrayPropertyType getFeatureMembers() {
 		return featureMembers;
 	}
 
@@ -108,12 +104,10 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFeatureMembers(FeatureArrayPropertyType newFeatureMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFeatureMembers(FeatureArrayPropertyType newFeatureMembers, NotificationChain msgs) {
 		FeatureArrayPropertyType oldFeatureMembers = featureMembers;
 		featureMembers = newFeatureMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBERS, oldFeatureMembers, newFeatureMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +119,9 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFeatureMembers(FeatureArrayPropertyType newFeatureMembers)
-	{
-		if (newFeatureMembers != featureMembers)
-		{
+	@Override
+	public void setFeatureMembers(FeatureArrayPropertyType newFeatureMembers) {
+		if (newFeatureMembers != featureMembers) {
 			NotificationChain msgs = null;
 			if (featureMembers != null)
 				msgs = ((InternalEObject)featureMembers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBERS, null, msgs);
@@ -147,10 +140,8 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBER:
 				return ((InternalEList<?>)getFeatureMember()).basicRemove(otherEnd, msgs);
 			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBERS:
@@ -165,10 +156,8 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBER:
 				return getFeatureMember();
 			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBERS:
@@ -184,10 +173,8 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBER:
 				getFeatureMember().clear();
 				getFeatureMember().addAll((Collection<? extends FeaturePropertyType>)newValue);
@@ -205,10 +192,8 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBER:
 				getFeatureMember().clear();
 				return;
@@ -225,10 +210,8 @@ public abstract class AbstractFeatureCollectionTypeImpl extends AbstractFeatureT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBER:
 				return featureMember != null && !featureMember.isEmpty();
 			case GMLPackage.ABSTRACT_FEATURE_COLLECTION_TYPE__FEATURE_MEMBERS:

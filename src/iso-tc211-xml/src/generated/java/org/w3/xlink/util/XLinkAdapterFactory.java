@@ -19,8 +19,7 @@ import org.w3.xlink.*;
  * @see org.w3.xlink.XLinkPackage
  * @generated
  */
-public class XLinkAdapterFactory extends AdapterFactoryImpl
-{
+public class XLinkAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
@@ -35,10 +34,8 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XLinkAdapterFactory()
-	{
-		if (modelPackage == null)
-		{
+	public XLinkAdapterFactory() {
+		if (modelPackage == null) {
 			modelPackage = XLinkPackage.eINSTANCE;
 		}
 	}
@@ -52,14 +49,11 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean isFactoryForType(Object object)
-	{
-		if (object == modelPackage)
-		{
+	public boolean isFactoryForType(Object object) {
+		if (object == modelPackage) {
 			return true;
 		}
-		if (object instanceof EObject)
-		{
+		if (object instanceof EObject) {
 			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
@@ -72,46 +66,37 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	protected XLinkSwitch<Adapter> modelSwitch =
-		new XLinkSwitch<Adapter>()
-		{
+		new XLinkSwitch<Adapter>() {
 			@Override
-			public Adapter caseArcType(ArcType object)
-			{
+			public Adapter caseArcType(ArcType object) {
 				return createArcTypeAdapter();
 			}
 			@Override
-			public Adapter caseExtended(Extended object)
-			{
+			public Adapter caseExtended(Extended object) {
 				return createExtendedAdapter();
 			}
 			@Override
-			public Adapter caseLocatorType(LocatorType object)
-			{
+			public Adapter caseLocatorType(LocatorType object) {
 				return createLocatorTypeAdapter();
 			}
 			@Override
-			public Adapter caseResourceType(ResourceType object)
-			{
+			public Adapter caseResourceType(ResourceType object) {
 				return createResourceTypeAdapter();
 			}
 			@Override
-			public Adapter caseSimple(Simple object)
-			{
+			public Adapter caseSimple(Simple object) {
 				return createSimpleAdapter();
 			}
 			@Override
-			public Adapter caseTitleEltType(TitleEltType object)
-			{
+			public Adapter caseTitleEltType(TitleEltType object) {
 				return createTitleEltTypeAdapter();
 			}
 			@Override
-			public Adapter caseDocumentRoot(DocumentRoot object)
-			{
+			public Adapter caseDocumentRoot(DocumentRoot object) {
 				return createDocumentRootAdapter();
 			}
 			@Override
-			public Adapter defaultCase(EObject object)
-			{
+			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
 		};
@@ -125,8 +110,7 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdapter(Notifier target)
-	{
+	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
@@ -141,8 +125,7 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @see org.w3.xlink.ArcType
 	 * @generated
 	 */
-	public Adapter createArcTypeAdapter()
-	{
+	public Adapter createArcTypeAdapter() {
 		return null;
 	}
 
@@ -156,8 +139,7 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @see org.w3.xlink.Extended
 	 * @generated
 	 */
-	public Adapter createExtendedAdapter()
-	{
+	public Adapter createExtendedAdapter() {
 		return null;
 	}
 
@@ -171,8 +153,7 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @see org.w3.xlink.LocatorType
 	 * @generated
 	 */
-	public Adapter createLocatorTypeAdapter()
-	{
+	public Adapter createLocatorTypeAdapter() {
 		return null;
 	}
 
@@ -186,8 +167,7 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @see org.w3.xlink.ResourceType
 	 * @generated
 	 */
-	public Adapter createResourceTypeAdapter()
-	{
+	public Adapter createResourceTypeAdapter() {
 		return null;
 	}
 
@@ -201,8 +181,7 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @see org.w3.xlink.Simple
 	 * @generated
 	 */
-	public Adapter createSimpleAdapter()
-	{
+	public Adapter createSimpleAdapter() {
 		return null;
 	}
 
@@ -216,8 +195,7 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @see org.w3.xlink.TitleEltType
 	 * @generated
 	 */
-	public Adapter createTitleEltTypeAdapter()
-	{
+	public Adapter createTitleEltTypeAdapter() {
 		return null;
 	}
 
@@ -231,8 +209,7 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @see org.w3.xlink.DocumentRoot
 	 * @generated
 	 */
-	public Adapter createDocumentRootAdapter()
-	{
+	public Adapter createDocumentRootAdapter() {
 		return null;
 	}
 
@@ -244,8 +221,7 @@ public class XLinkAdapterFactory extends AdapterFactoryImpl
 	 * @return the new adapter.
 	 * @generated
 	 */
-	public Adapter createEObjectAdapter()
-	{
+	public Adapter createEObjectAdapter() {
 		return null;
 	}
 

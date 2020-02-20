@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='AbstractGeneralParameterValuePropertyType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractGeneralParameterValuePropertyType extends EObject
-{
+public interface AbstractGeneralParameterValuePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Abstract General Parameter Value Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.

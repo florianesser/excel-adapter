@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ScaleTypeImpl extends MeasureTypeImpl implements ScaleType
-{
+public class ScaleTypeImpl extends MeasureTypeImpl implements ScaleType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ScaleTypeImpl()
-	{
+	protected ScaleTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class ScaleTypeImpl extends MeasureTypeImpl implements ScaleType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getScaleType();
 	}
 

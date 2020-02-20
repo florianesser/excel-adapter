@@ -26,16 +26,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='Measure_PropertyType' kind='elementOnly'"
  * @generated
  */
-public interface MeasurePropertyType extends EObject
-{
+public interface MeasurePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Measure Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Measure Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Measure Group</em>' attribute list.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getMeasurePropertyType_MeasureGroup()
@@ -48,10 +43,6 @@ public interface MeasurePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Measure</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Measure</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Measure</em>' containment reference.
 	 * @see #setMeasure(MeasureType)
@@ -75,10 +66,6 @@ public interface MeasurePropertyType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

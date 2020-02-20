@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container implements CodeOrNilReasonListType
-{
+public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container implements CodeOrNilReasonListType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CodeOrNilReasonListTypeImpl()
-	{
+	protected CodeOrNilReasonListTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getCodeOrNilReasonListType();
 	}
 
@@ -96,8 +93,8 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<Object> getValue()
-	{
+	@Override
+	public List<Object> getValue() {
 		return value;
 	}
 
@@ -106,8 +103,8 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(List<Object> newValue)
-	{
+	@Override
+	public void setValue(List<Object> newValue) {
 		List<Object> oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -119,8 +116,8 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCodeSpace()
-	{
+	@Override
+	public String getCodeSpace() {
 		return codeSpace;
 	}
 
@@ -129,8 +126,8 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCodeSpace(String newCodeSpace)
-	{
+	@Override
+	public void setCodeSpace(String newCodeSpace) {
 		String oldCodeSpace = codeSpace;
 		codeSpace = newCodeSpace;
 		if (eNotificationRequired())
@@ -143,10 +140,8 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CODE_OR_NIL_REASON_LIST_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.CODE_OR_NIL_REASON_LIST_TYPE__CODE_SPACE:
@@ -162,10 +157,8 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CODE_OR_NIL_REASON_LIST_TYPE__VALUE:
 				setValue((List<Object>)newValue);
 				return;
@@ -182,10 +175,8 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CODE_OR_NIL_REASON_LIST_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -202,10 +193,8 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CODE_OR_NIL_REASON_LIST_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GMLPackage.CODE_OR_NIL_REASON_LIST_TYPE__CODE_SPACE:
@@ -220,11 +209,10 @@ public class CodeOrNilReasonListTypeImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", codeSpace: ");

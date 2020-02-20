@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implements ShellPropertyType
-{
+public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implements ShellPropertyType {
 	/**
 	 * The cached value of the '{@link #getShell() <em>Shell</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -45,8 +44,7 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ShellPropertyTypeImpl()
-	{
+	protected ShellPropertyTypeImpl() {
 		super();
 	}
 
@@ -56,8 +54,7 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getShellPropertyType();
 	}
 
@@ -66,8 +63,8 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShellType getShell()
-	{
+	@Override
+	public ShellType getShell() {
 		return shell;
 	}
 
@@ -76,12 +73,10 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetShell(ShellType newShell, NotificationChain msgs)
-	{
+	public NotificationChain basicSetShell(ShellType newShell, NotificationChain msgs) {
 		ShellType oldShell = shell;
 		shell = newShell;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.SHELL_PROPERTY_TYPE__SHELL, oldShell, newShell);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -93,10 +88,9 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShell(ShellType newShell)
-	{
-		if (newShell != shell)
-		{
+	@Override
+	public void setShell(ShellType newShell) {
+		if (newShell != shell) {
 			NotificationChain msgs = null;
 			if (shell != null)
 				msgs = ((InternalEObject)shell).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.SHELL_PROPERTY_TYPE__SHELL, null, msgs);
@@ -115,10 +109,8 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.SHELL_PROPERTY_TYPE__SHELL:
 				return basicSetShell(null, msgs);
 		}
@@ -131,10 +123,8 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.SHELL_PROPERTY_TYPE__SHELL:
 				return getShell();
 		}
@@ -147,10 +137,8 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.SHELL_PROPERTY_TYPE__SHELL:
 				setShell((ShellType)newValue);
 				return;
@@ -164,10 +152,8 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SHELL_PROPERTY_TYPE__SHELL:
 				setShell((ShellType)null);
 				return;
@@ -181,10 +167,8 @@ public class ShellPropertyTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SHELL_PROPERTY_TYPE__SHELL:
 				return shell != null;
 		}

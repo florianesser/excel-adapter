@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl implements ConversionToPreferredUnitType
-{
+public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl implements ConversionToPreferredUnitType {
 	/**
 	 * The default value of the '{@link #getFactor() <em>Factor</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -74,8 +73,7 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ConversionToPreferredUnitTypeImpl()
-	{
+	protected ConversionToPreferredUnitTypeImpl() {
 		super();
 	}
 
@@ -85,8 +83,7 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getConversionToPreferredUnitType();
 	}
 
@@ -95,8 +92,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getFactor()
-	{
+	@Override
+	public double getFactor() {
 		return factor;
 	}
 
@@ -105,8 +102,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFactor(double newFactor)
-	{
+	@Override
+	public void setFactor(double newFactor) {
 		double oldFactor = factor;
 		factor = newFactor;
 		boolean oldFactorESet = factorESet;
@@ -120,8 +117,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetFactor()
-	{
+	@Override
+	public void unsetFactor() {
 		double oldFactor = factor;
 		boolean oldFactorESet = factorESet;
 		factor = FACTOR_EDEFAULT;
@@ -135,8 +132,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetFactor()
-	{
+	@Override
+	public boolean isSetFactor() {
 		return factorESet;
 	}
 
@@ -145,8 +142,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormulaType getFormula()
-	{
+	@Override
+	public FormulaType getFormula() {
 		return formula;
 	}
 
@@ -155,12 +152,10 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFormula(FormulaType newFormula, NotificationChain msgs)
-	{
+	public NotificationChain basicSetFormula(FormulaType newFormula, NotificationChain msgs) {
 		FormulaType oldFormula = formula;
 		formula = newFormula;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE__FORMULA, oldFormula, newFormula);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -172,10 +167,9 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFormula(FormulaType newFormula)
-	{
-		if (newFormula != formula)
-		{
+	@Override
+	public void setFormula(FormulaType newFormula) {
+		if (newFormula != formula) {
 			NotificationChain msgs = null;
 			if (formula != null)
 				msgs = ((InternalEObject)formula).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE__FORMULA, null, msgs);
@@ -194,10 +188,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE__FORMULA:
 				return basicSetFormula(null, msgs);
 		}
@@ -210,10 +202,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE__FACTOR:
 				return getFactor();
 			case GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE__FORMULA:
@@ -228,10 +218,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE__FACTOR:
 				setFactor((Double)newValue);
 				return;
@@ -248,10 +236,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE__FACTOR:
 				unsetFactor();
 				return;
@@ -268,10 +254,8 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE__FACTOR:
 				return isSetFactor();
 			case GMLPackage.CONVERSION_TO_PREFERRED_UNIT_TYPE__FORMULA:
@@ -286,11 +270,10 @@ public class ConversionToPreferredUnitTypeImpl extends UnitOfMeasureTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (factor: ");
 		if (factorESet) result.append(factor); else result.append("<unset>");
 		result.append(')');

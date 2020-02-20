@@ -63,16 +63,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='' kind='mixed'"
  * @generated
  */
-public interface DocumentRoot extends EObject
-{
+public interface DocumentRoot extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Mixed</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mixed</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mixed</em>' attribute list.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getDocumentRoot_Mixed()
@@ -87,14 +82,10 @@ public interface DocumentRoot extends EObject
 	 * The key is of type {@link java.lang.String},
 	 * and the value is of type {@link java.lang.String},
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>XMLNS Prefix Map</em>' map isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>XMLNS Prefix Map</em>' map.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getDocumentRoot_XMLNSPrefixMap()
-	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry<org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString>" transient="true"
+	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;" transient="true"
 	 *        extendedMetaData="kind='attribute' name='xmlns:prefix'"
 	 * @generated
 	 */
@@ -105,14 +96,10 @@ public interface DocumentRoot extends EObject
 	 * The key is of type {@link java.lang.String},
 	 * and the value is of type {@link java.lang.String},
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>XSI Schema Location</em>' map isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>XSI Schema Location</em>' map.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getDocumentRoot_XSISchemaLocation()
-	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry<org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString>" transient="true"
+	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;" transient="true"
 	 *        extendedMetaData="kind='attribute' name='xsi:schemaLocation'"
 	 * @generated
 	 */
@@ -121,10 +108,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract Generic Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract Generic Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract Generic Name</em>' containment reference.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getDocumentRoot_AbstractGenericName()
@@ -137,10 +120,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Abstract Object</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract Object</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract Object</em>' containment reference.
 	 * @see org.isotc211.iso19139.gco.GCOPackage#getDocumentRoot_AbstractObject()
@@ -153,10 +132,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Angle</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Angle</em>' containment reference.
 	 * @see #setAngle(AngleType)
@@ -180,10 +155,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Measure</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Measure</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Measure</em>' containment reference.
 	 * @see #setMeasure(MeasureType)
@@ -207,10 +178,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Binary</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Binary</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Binary</em>' containment reference.
 	 * @see #setBinary(BinaryType)
@@ -234,10 +201,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Boolean</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Boolean</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Boolean</em>' attribute.
 	 * @see #setBoolean(boolean)
@@ -261,10 +224,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Character String</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Character String</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Character String</em>' attribute.
 	 * @see #setCharacterString(String)
@@ -288,10 +247,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date</em>' attribute.
 	 * @see #setDate(XMLGregorianCalendar)
@@ -315,10 +270,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Date Time</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date Time</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date Time</em>' attribute.
 	 * @see #setDateTime(XMLGregorianCalendar)
@@ -342,10 +293,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Decimal</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Decimal</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Decimal</em>' attribute.
 	 * @see #setDecimal(BigDecimal)
@@ -369,10 +316,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Distance</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Distance</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distance</em>' containment reference.
 	 * @see #setDistance(LengthType)
@@ -396,10 +339,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Length</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Length</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Length</em>' containment reference.
 	 * @see #setLength(LengthType)
@@ -423,10 +362,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Integer</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Integer</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Integer</em>' attribute.
 	 * @see #setInteger(BigInteger)
@@ -450,10 +385,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Local Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Local Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Local Name</em>' containment reference.
 	 * @see #setLocalName(CodeType)
@@ -477,10 +408,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Member Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Member Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Member Name</em>' containment reference.
 	 * @see #setMemberName(MemberNameType)
@@ -504,10 +431,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multiplicity</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multiplicity</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multiplicity</em>' containment reference.
 	 * @see #setMultiplicity(MultiplicityType)
@@ -531,10 +454,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Multiplicity Range</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Multiplicity Range</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multiplicity Range</em>' containment reference.
 	 * @see #setMultiplicityRange(MultiplicityRangeType)
@@ -558,10 +477,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Real</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Real</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Real</em>' attribute.
 	 * @see #setReal(double)
@@ -585,10 +500,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Record</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Record</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Record</em>' containment reference.
 	 * @see #setRecord(EObject)
@@ -612,10 +523,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Record Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Record Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Record Type</em>' containment reference.
 	 * @see #setRecordType(RecordTypeType)
@@ -639,10 +546,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Scale</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Scale</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scale</em>' containment reference.
 	 * @see #setScale(ScaleType)
@@ -666,10 +569,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Scoped Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Scoped Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scoped Name</em>' containment reference.
 	 * @see #setScopedName(CodeType)
@@ -693,10 +592,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Type Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Name</em>' containment reference.
 	 * @see #setTypeName(TypeNameType)
@@ -720,10 +615,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Unlimited Integer</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Unlimited Integer</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Unlimited Integer</em>' containment reference.
 	 * @see #setUnlimitedInteger(UnlimitedIntegerType)
@@ -747,10 +638,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Iso Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Iso Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Iso Type</em>' attribute.
 	 * @see #setIsoType(String)
@@ -774,10 +661,6 @@ public interface DocumentRoot extends EObject
 	/**
 	 * Returns the value of the '<em><b>Nil Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nil Reason</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nil Reason</em>' attribute.
 	 * @see #setNilReason(Object)

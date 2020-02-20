@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnitType
-{
+public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnitType {
 	/**
 	 * The cached value of the '{@link #getUnitsSystem() <em>Units System</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BaseUnitTypeImpl()
-	{
+	protected BaseUnitTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getBaseUnitType();
 	}
 
@@ -65,8 +62,8 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getUnitsSystem()
-	{
+	@Override
+	public ReferenceType getUnitsSystem() {
 		return unitsSystem;
 	}
 
@@ -75,12 +72,10 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUnitsSystem(ReferenceType newUnitsSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUnitsSystem(ReferenceType newUnitsSystem, NotificationChain msgs) {
 		ReferenceType oldUnitsSystem = unitsSystem;
 		unitsSystem = newUnitsSystem;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.BASE_UNIT_TYPE__UNITS_SYSTEM, oldUnitsSystem, newUnitsSystem);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUnitsSystem(ReferenceType newUnitsSystem)
-	{
-		if (newUnitsSystem != unitsSystem)
-		{
+	@Override
+	public void setUnitsSystem(ReferenceType newUnitsSystem) {
+		if (newUnitsSystem != unitsSystem) {
 			NotificationChain msgs = null;
 			if (unitsSystem != null)
 				msgs = ((InternalEObject)unitsSystem).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.BASE_UNIT_TYPE__UNITS_SYSTEM, null, msgs);
@@ -114,10 +108,8 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.BASE_UNIT_TYPE__UNITS_SYSTEM:
 				return basicSetUnitsSystem(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.BASE_UNIT_TYPE__UNITS_SYSTEM:
 				return getUnitsSystem();
 		}
@@ -146,10 +136,8 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.BASE_UNIT_TYPE__UNITS_SYSTEM:
 				setUnitsSystem((ReferenceType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.BASE_UNIT_TYPE__UNITS_SYSTEM:
 				setUnitsSystem((ReferenceType)null);
 				return;
@@ -180,10 +166,8 @@ public class BaseUnitTypeImpl extends UnitDefinitionTypeImpl implements BaseUnit
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.BASE_UNIT_TYPE__UNITS_SYSTEM:
 				return unitsSystem != null;
 		}

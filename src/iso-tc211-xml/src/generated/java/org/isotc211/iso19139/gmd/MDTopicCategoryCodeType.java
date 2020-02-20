@@ -20,8 +20,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='MD_TopicCategoryCode_Type'"
  * @generated
  */
-public enum MDTopicCategoryCodeType implements Enumerator
-{
+public enum MDTopicCategoryCodeType implements Enumerator {
 	/**
 	 * The '<em><b>Farming</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -215,10 +214,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Farming</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Farming</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #FARMING
 	 * @model name="farming"
@@ -230,10 +225,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Biota</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Biota</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #BIOTA
 	 * @model name="biota"
@@ -245,10 +236,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Boundaries</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Boundaries</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #BOUNDARIES
 	 * @model name="boundaries"
@@ -260,10 +247,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Climatology Meteorology Atmosphere</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Climatology Meteorology Atmosphere</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CLIMATOLOGY_METEOROLOGY_ATMOSPHERE
 	 * @model name="climatologyMeteorologyAtmosphere"
@@ -275,10 +258,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Economy</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Economy</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ECONOMY
 	 * @model name="economy"
@@ -290,10 +269,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Elevation</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Elevation</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ELEVATION
 	 * @model name="elevation"
@@ -305,10 +280,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Environment</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Environment</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ENVIRONMENT
 	 * @model name="environment"
@@ -320,10 +291,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Geoscientific Information</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Geoscientific Information</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #GEOSCIENTIFIC_INFORMATION
 	 * @model name="geoscientificInformation"
@@ -335,10 +302,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Health</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Health</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #HEALTH
 	 * @model name="health"
@@ -350,10 +313,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Imagery Base Maps Earth Cover</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Imagery Base Maps Earth Cover</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #IMAGERY_BASE_MAPS_EARTH_COVER
 	 * @model name="imageryBaseMapsEarthCover"
@@ -365,10 +324,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Intelligence Military</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Intelligence Military</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #INTELLIGENCE_MILITARY
 	 * @model name="intelligenceMilitary"
@@ -380,10 +335,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Inland Waters</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Inland Waters</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #INLAND_WATERS
 	 * @model name="inlandWaters"
@@ -395,10 +346,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Location</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Location</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #LOCATION
 	 * @model name="location"
@@ -410,10 +357,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Oceans</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Oceans</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #OCEANS
 	 * @model name="oceans"
@@ -425,10 +368,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Planning Cadastre</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Planning Cadastre</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #PLANNING_CADASTRE
 	 * @model name="planningCadastre"
@@ -440,10 +379,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Society</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Society</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SOCIETY
 	 * @model name="society"
@@ -455,10 +390,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Structure</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Structure</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #STRUCTURE
 	 * @model name="structure"
@@ -470,10 +401,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Transportation</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Transportation</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #TRANSPORTATION
 	 * @model name="transportation"
@@ -485,10 +412,6 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	/**
 	 * The '<em><b>Utilities Communication</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Utilities Communication</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #UTILITIES_COMMUNICATION
 	 * @model name="utilitiesCommunication"
@@ -504,8 +427,7 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	 * @generated
 	 */
 	private static final MDTopicCategoryCodeType[] VALUES_ARRAY =
-		new MDTopicCategoryCodeType[]
-		{
+		new MDTopicCategoryCodeType[] {
 			FARMING,
 			BIOTA,
 			BOUNDARIES,
@@ -543,13 +465,10 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static MDTopicCategoryCodeType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static MDTopicCategoryCodeType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			MDTopicCategoryCodeType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -564,13 +483,10 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static MDTopicCategoryCodeType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static MDTopicCategoryCodeType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			MDTopicCategoryCodeType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -585,10 +501,8 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static MDTopicCategoryCodeType get(int value)
-	{
-		switch (value)
-		{
+	public static MDTopicCategoryCodeType get(int value) {
+		switch (value) {
 			case FARMING_VALUE: return FARMING;
 			case BIOTA_VALUE: return BIOTA;
 			case BOUNDARIES_VALUE: return BOUNDARIES;
@@ -639,8 +553,7 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private MDTopicCategoryCodeType(int value, String name, String literal)
-	{
+	private MDTopicCategoryCodeType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -651,8 +564,8 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -661,8 +574,8 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -671,8 +584,8 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -683,8 +596,7 @@ public enum MDTopicCategoryCodeType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

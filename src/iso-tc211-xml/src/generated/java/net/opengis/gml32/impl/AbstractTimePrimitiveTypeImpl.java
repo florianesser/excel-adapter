@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTypeImpl implements AbstractTimePrimitiveType
-{
+public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTypeImpl implements AbstractTimePrimitiveType {
 	/**
 	 * The cached value of the '{@link #getRelatedTime() <em>Related Time</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractTimePrimitiveTypeImpl()
-	{
+	protected AbstractTimePrimitiveTypeImpl() {
 		super();
 	}
 
@@ -59,8 +57,7 @@ public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractTimePrimitiveType();
 	}
 
@@ -69,10 +66,9 @@ public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RelatedTimeType> getRelatedTime()
-	{
-		if (relatedTime == null)
-		{
+	@Override
+	public EList<RelatedTimeType> getRelatedTime() {
+		if (relatedTime == null) {
 			relatedTime = new EObjectContainmentEList<RelatedTimeType>(RelatedTimeType.class, this, GMLPackage.ABSTRACT_TIME_PRIMITIVE_TYPE__RELATED_TIME);
 		}
 		return relatedTime;
@@ -84,10 +80,8 @@ public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_PRIMITIVE_TYPE__RELATED_TIME:
 				return ((InternalEList<?>)getRelatedTime()).basicRemove(otherEnd, msgs);
 		}
@@ -100,10 +94,8 @@ public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_PRIMITIVE_TYPE__RELATED_TIME:
 				return getRelatedTime();
 		}
@@ -117,10 +109,8 @@ public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTy
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_PRIMITIVE_TYPE__RELATED_TIME:
 				getRelatedTime().clear();
 				getRelatedTime().addAll((Collection<? extends RelatedTimeType>)newValue);
@@ -135,10 +125,8 @@ public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_PRIMITIVE_TYPE__RELATED_TIME:
 				getRelatedTime().clear();
 				return;
@@ -152,10 +140,8 @@ public abstract class AbstractTimePrimitiveTypeImpl extends AbstractTimeObjectTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_PRIMITIVE_TYPE__RELATED_TIME:
 				return relatedTime != null && !relatedTime.isEmpty();
 		}

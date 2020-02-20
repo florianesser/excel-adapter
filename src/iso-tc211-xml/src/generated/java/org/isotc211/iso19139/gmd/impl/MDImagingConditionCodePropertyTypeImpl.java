@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDImagingConditionCodePropertyType;
  *
  * @generated
  */
-public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDImagingConditionCodePropertyType
-{
+public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDImagingConditionCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDImagingConditionCode() <em>MD Imaging Condition Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDImagingConditionCodePropertyTypeImpl()
-	{
+	protected MDImagingConditionCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDImagingConditionCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDImagingConditionCode()
-	{
+	@Override
+	public CodeListValueType getMDImagingConditionCode() {
 		return mDImagingConditionCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDImagingConditionCode(CodeListValueType newMDImagingConditionCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDImagingConditionCode(CodeListValueType newMDImagingConditionCode, NotificationChain msgs) {
 		CodeListValueType oldMDImagingConditionCode = mDImagingConditionCode;
 		mDImagingConditionCode = newMDImagingConditionCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE__MD_IMAGING_CONDITION_CODE, oldMDImagingConditionCode, newMDImagingConditionCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDImagingConditionCode(CodeListValueType newMDImagingConditionCode)
-	{
-		if (newMDImagingConditionCode != mDImagingConditionCode)
-		{
+	@Override
+	public void setMDImagingConditionCode(CodeListValueType newMDImagingConditionCode) {
+		if (newMDImagingConditionCode != mDImagingConditionCode) {
 			NotificationChain msgs = null;
 			if (mDImagingConditionCode != null)
 				msgs = ((InternalEObject)mDImagingConditionCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE__MD_IMAGING_CONDITION_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE__MD_IMAGING_CONDITION_CODE:
 				return basicSetMDImagingConditionCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE__MD_IMAGING_CONDITION_CODE:
 				return getMDImagingConditionCode();
 			case GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE__MD_IMAGING_CONDITION_CODE:
 				setMDImagingConditionCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE__MD_IMAGING_CONDITION_CODE:
 				setMDImagingConditionCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE__MD_IMAGING_CONDITION_CODE:
 				return mDImagingConditionCode != null;
 			case GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDImagingConditionCodePropertyTypeImpl extends MinimalEObjectImpl.C
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

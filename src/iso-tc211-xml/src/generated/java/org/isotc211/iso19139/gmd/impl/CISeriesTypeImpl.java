@@ -32,8 +32,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeriesType
-{
+public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeriesType {
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -69,8 +68,7 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CISeriesTypeImpl()
-	{
+	protected CISeriesTypeImpl() {
 		super();
 	}
 
@@ -80,8 +78,7 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCISeriesType();
 	}
 
@@ -90,8 +87,8 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getName()
-	{
+	@Override
+	public CharacterStringPropertyType getName() {
 		return name;
 	}
 
@@ -100,12 +97,10 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetName(CharacterStringPropertyType newName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetName(CharacterStringPropertyType newName, NotificationChain msgs) {
 		CharacterStringPropertyType oldName = name;
 		name = newName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_SERIES_TYPE__NAME, oldName, newName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -117,10 +112,9 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(CharacterStringPropertyType newName)
-	{
-		if (newName != name)
-		{
+	@Override
+	public void setName(CharacterStringPropertyType newName) {
+		if (newName != name) {
 			NotificationChain msgs = null;
 			if (name != null)
 				msgs = ((InternalEObject)name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_SERIES_TYPE__NAME, null, msgs);
@@ -138,8 +132,8 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getIssueIdentification()
-	{
+	@Override
+	public CharacterStringPropertyType getIssueIdentification() {
 		return issueIdentification;
 	}
 
@@ -148,12 +142,10 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIssueIdentification(CharacterStringPropertyType newIssueIdentification, NotificationChain msgs)
-	{
+	public NotificationChain basicSetIssueIdentification(CharacterStringPropertyType newIssueIdentification, NotificationChain msgs) {
 		CharacterStringPropertyType oldIssueIdentification = issueIdentification;
 		issueIdentification = newIssueIdentification;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_SERIES_TYPE__ISSUE_IDENTIFICATION, oldIssueIdentification, newIssueIdentification);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -165,10 +157,9 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIssueIdentification(CharacterStringPropertyType newIssueIdentification)
-	{
-		if (newIssueIdentification != issueIdentification)
-		{
+	@Override
+	public void setIssueIdentification(CharacterStringPropertyType newIssueIdentification) {
+		if (newIssueIdentification != issueIdentification) {
 			NotificationChain msgs = null;
 			if (issueIdentification != null)
 				msgs = ((InternalEObject)issueIdentification).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_SERIES_TYPE__ISSUE_IDENTIFICATION, null, msgs);
@@ -186,8 +177,8 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getPage()
-	{
+	@Override
+	public CharacterStringPropertyType getPage() {
 		return page;
 	}
 
@@ -196,12 +187,10 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPage(CharacterStringPropertyType newPage, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPage(CharacterStringPropertyType newPage, NotificationChain msgs) {
 		CharacterStringPropertyType oldPage = page;
 		page = newPage;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_SERIES_TYPE__PAGE, oldPage, newPage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -213,10 +202,9 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPage(CharacterStringPropertyType newPage)
-	{
-		if (newPage != page)
-		{
+	@Override
+	public void setPage(CharacterStringPropertyType newPage) {
+		if (newPage != page) {
 			NotificationChain msgs = null;
 			if (page != null)
 				msgs = ((InternalEObject)page).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_SERIES_TYPE__PAGE, null, msgs);
@@ -235,10 +223,8 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_SERIES_TYPE__NAME:
 				return basicSetName(null, msgs);
 			case GMDPackage.CI_SERIES_TYPE__ISSUE_IDENTIFICATION:
@@ -255,10 +241,8 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_SERIES_TYPE__NAME:
 				return getName();
 			case GMDPackage.CI_SERIES_TYPE__ISSUE_IDENTIFICATION:
@@ -275,10 +259,8 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_SERIES_TYPE__NAME:
 				setName((CharacterStringPropertyType)newValue);
 				return;
@@ -298,10 +280,8 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_SERIES_TYPE__NAME:
 				setName((CharacterStringPropertyType)null);
 				return;
@@ -321,10 +301,8 @@ public class CISeriesTypeImpl extends AbstractObjectTypeImpl implements CISeries
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_SERIES_TYPE__NAME:
 				return name != null;
 			case GMDPackage.CI_SERIES_TYPE__ISSUE_IDENTIFICATION:

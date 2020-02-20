@@ -27,15 +27,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='CodeListType' kind='simple'"
  * @generated
  */
-public interface CodeListType extends EObject
-{
+public interface CodeListType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(List)
@@ -59,10 +54,6 @@ public interface CodeListType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Code Space</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Code Space</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Code Space</em>' attribute.
 	 * @see #setCodeSpace(String)

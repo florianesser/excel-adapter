@@ -34,15 +34,10 @@ import org.isotc211.iso19139.gco.RealPropertyType;
  * @model extendedMetaData="name='MD_Medium_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDMediumType extends AbstractObjectType
-{
+public interface MDMediumType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(MDMediumNameCodePropertyType)
@@ -67,10 +62,6 @@ public interface MDMediumType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Density</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.RealPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Density</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Density</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMediumType_Density()
@@ -83,10 +74,6 @@ public interface MDMediumType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Density Units</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Density Units</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Density Units</em>' containment reference.
 	 * @see #setDensityUnits(CharacterStringPropertyType)
@@ -110,10 +97,6 @@ public interface MDMediumType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Volumes</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Volumes</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Volumes</em>' containment reference.
 	 * @see #setVolumes(IntegerPropertyType)
@@ -138,10 +121,6 @@ public interface MDMediumType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Medium Format</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDMediumFormatCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Medium Format</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Medium Format</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMediumType_MediumFormat()
@@ -154,10 +133,6 @@ public interface MDMediumType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Medium Note</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Medium Note</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Medium Note</em>' containment reference.
 	 * @see #setMediumNote(CharacterStringPropertyType)

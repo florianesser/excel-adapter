@@ -522,8 +522,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *        annotation="urn:x-ogc:specification:gml:schema-xsd:geometryBasic2d:3.2.1 appinfo='geometryBasic2d.xsd'"
  * @generated
  */
-public interface GMDPackage extends EPackage
-{
+public interface GMDPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->

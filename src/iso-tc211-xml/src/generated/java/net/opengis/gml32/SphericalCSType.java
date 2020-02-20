@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='SphericalCSType' kind='elementOnly'"
  * @generated
  */
-public interface SphericalCSType extends AbstractCoordinateSystemType
-{
+public interface SphericalCSType extends AbstractCoordinateSystemType {
 } // SphericalCSType

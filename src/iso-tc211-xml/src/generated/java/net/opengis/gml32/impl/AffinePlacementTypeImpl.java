@@ -41,8 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implements AffinePlacementType
-{
+public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implements AffinePlacementType {
 	/**
 	 * The cached value of the '{@link #getLocation() <em>Location</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -108,8 +107,7 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AffinePlacementTypeImpl()
-	{
+	protected AffinePlacementTypeImpl() {
 		super();
 	}
 
@@ -119,8 +117,7 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAffinePlacementType();
 	}
 
@@ -129,8 +126,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectPositionType getLocation()
-	{
+	@Override
+	public DirectPositionType getLocation() {
 		return location;
 	}
 
@@ -139,12 +136,10 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocation(DirectPositionType newLocation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocation(DirectPositionType newLocation, NotificationChain msgs) {
 		DirectPositionType oldLocation = location;
 		location = newLocation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.AFFINE_PLACEMENT_TYPE__LOCATION, oldLocation, newLocation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -156,10 +151,9 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocation(DirectPositionType newLocation)
-	{
-		if (newLocation != location)
-		{
+	@Override
+	public void setLocation(DirectPositionType newLocation) {
+		if (newLocation != location) {
 			NotificationChain msgs = null;
 			if (location != null)
 				msgs = ((InternalEObject)location).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.AFFINE_PLACEMENT_TYPE__LOCATION, null, msgs);
@@ -177,10 +171,9 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<VectorType> getRefDirection()
-	{
-		if (refDirection == null)
-		{
+	@Override
+	public EList<VectorType> getRefDirection() {
+		if (refDirection == null) {
 			refDirection = new EObjectContainmentEList<VectorType>(VectorType.class, this, GMLPackage.AFFINE_PLACEMENT_TYPE__REF_DIRECTION);
 		}
 		return refDirection;
@@ -191,8 +184,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getInDimension()
-	{
+	@Override
+	public BigInteger getInDimension() {
 		return inDimension;
 	}
 
@@ -201,8 +194,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setInDimension(BigInteger newInDimension)
-	{
+	@Override
+	public void setInDimension(BigInteger newInDimension) {
 		BigInteger oldInDimension = inDimension;
 		inDimension = newInDimension;
 		if (eNotificationRequired())
@@ -214,8 +207,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getOutDimension()
-	{
+	@Override
+	public BigInteger getOutDimension() {
 		return outDimension;
 	}
 
@@ -224,8 +217,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOutDimension(BigInteger newOutDimension)
-	{
+	@Override
+	public void setOutDimension(BigInteger newOutDimension) {
 		BigInteger oldOutDimension = outDimension;
 		outDimension = newOutDimension;
 		if (eNotificationRequired())
@@ -238,10 +231,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.AFFINE_PLACEMENT_TYPE__LOCATION:
 				return basicSetLocation(null, msgs);
 			case GMLPackage.AFFINE_PLACEMENT_TYPE__REF_DIRECTION:
@@ -256,10 +247,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.AFFINE_PLACEMENT_TYPE__LOCATION:
 				return getLocation();
 			case GMLPackage.AFFINE_PLACEMENT_TYPE__REF_DIRECTION:
@@ -279,10 +268,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.AFFINE_PLACEMENT_TYPE__LOCATION:
 				setLocation((DirectPositionType)newValue);
 				return;
@@ -306,10 +293,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.AFFINE_PLACEMENT_TYPE__LOCATION:
 				setLocation((DirectPositionType)null);
 				return;
@@ -332,10 +317,8 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.AFFINE_PLACEMENT_TYPE__LOCATION:
 				return location != null;
 			case GMLPackage.AFFINE_PLACEMENT_TYPE__REF_DIRECTION:
@@ -354,11 +337,10 @@ public class AffinePlacementTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (inDimension: ");
 		result.append(inDimension);
 		result.append(", outDimension: ");

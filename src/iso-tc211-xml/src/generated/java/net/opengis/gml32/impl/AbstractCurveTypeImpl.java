@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class AbstractCurveTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements AbstractCurveType
-{
+public abstract class AbstractCurveTypeImpl extends AbstractGeometricPrimitiveTypeImpl implements AbstractCurveType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractCurveTypeImpl()
-	{
+	protected AbstractCurveTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class AbstractCurveTypeImpl extends AbstractGeometricPrimitiveTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractCurveType();
 	}
 

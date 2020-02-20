@@ -24,15 +24,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='DataBlockType' kind='elementOnly'"
  * @generated
  */
-public interface DataBlockType extends EObject
-{
+public interface DataBlockType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Range Parameters</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Range Parameters</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Range Parameters</em>' containment reference.
 	 * @see #setRangeParameters(AssociationRoleType)

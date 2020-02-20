@@ -30,15 +30,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='EX_Extent_Type' kind='elementOnly'"
  * @generated
  */
-public interface EXExtentType extends AbstractObjectType
-{
+public interface EXExtentType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(CharacterStringPropertyType)
@@ -63,10 +58,6 @@ public interface EXExtentType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Geographic Element</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.EXGeographicExtentPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geographic Element</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geographic Element</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getEXExtentType_GeographicElement()
@@ -80,10 +71,6 @@ public interface EXExtentType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Temporal Element</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.EXTemporalExtentPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Temporal Element</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Temporal Element</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getEXExtentType_TemporalElement()
@@ -97,10 +84,6 @@ public interface EXExtentType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Vertical Element</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.EXVerticalExtentPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vertical Element</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vertical Element</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getEXExtentType_VerticalElement()

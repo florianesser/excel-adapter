@@ -29,8 +29,7 @@ import org.isotc211.iso19139.gmd.MDScopeDescriptionType;
  *
  * @generated
  */
-public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Container implements MDScopeDescriptionPropertyType
-{
+public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Container implements MDScopeDescriptionPropertyType {
 	/**
 	 * The cached value of the '{@link #getMDScopeDescription() <em>MD Scope Description</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -66,8 +65,7 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDScopeDescriptionPropertyTypeImpl()
-	{
+	protected MDScopeDescriptionPropertyTypeImpl() {
 		super();
 	}
 
@@ -77,8 +75,7 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDScopeDescriptionPropertyType();
 	}
 
@@ -87,8 +84,8 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDScopeDescriptionType getMDScopeDescription()
-	{
+	@Override
+	public MDScopeDescriptionType getMDScopeDescription() {
 		return mDScopeDescription;
 	}
 
@@ -97,12 +94,10 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDScopeDescription(MDScopeDescriptionType newMDScopeDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDScopeDescription(MDScopeDescriptionType newMDScopeDescription, NotificationChain msgs) {
 		MDScopeDescriptionType oldMDScopeDescription = mDScopeDescription;
 		mDScopeDescription = newMDScopeDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE__MD_SCOPE_DESCRIPTION, oldMDScopeDescription, newMDScopeDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -114,10 +109,9 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDScopeDescription(MDScopeDescriptionType newMDScopeDescription)
-	{
-		if (newMDScopeDescription != mDScopeDescription)
-		{
+	@Override
+	public void setMDScopeDescription(MDScopeDescriptionType newMDScopeDescription) {
+		if (newMDScopeDescription != mDScopeDescription) {
 			NotificationChain msgs = null;
 			if (mDScopeDescription != null)
 				msgs = ((InternalEObject)mDScopeDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE__MD_SCOPE_DESCRIPTION, null, msgs);
@@ -135,8 +129,8 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -145,8 +139,8 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -159,10 +153,8 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE__MD_SCOPE_DESCRIPTION:
 				return basicSetMDScopeDescription(null, msgs);
 		}
@@ -175,10 +167,8 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE__MD_SCOPE_DESCRIPTION:
 				return getMDScopeDescription();
 			case GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE__NIL_REASON:
@@ -193,10 +183,8 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE__MD_SCOPE_DESCRIPTION:
 				setMDScopeDescription((MDScopeDescriptionType)newValue);
 				return;
@@ -213,10 +201,8 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE__MD_SCOPE_DESCRIPTION:
 				setMDScopeDescription((MDScopeDescriptionType)null);
 				return;
@@ -233,10 +219,8 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE__MD_SCOPE_DESCRIPTION:
 				return mDScopeDescription != null;
 			case GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE__NIL_REASON:
@@ -251,11 +235,10 @@ public class MDScopeDescriptionPropertyTypeImpl extends MinimalEObjectImpl.Conta
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

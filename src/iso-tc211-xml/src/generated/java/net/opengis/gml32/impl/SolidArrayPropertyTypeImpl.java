@@ -37,8 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container implements SolidArrayPropertyType
-{
+public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container implements SolidArrayPropertyType {
 	/**
 	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -83,8 +82,7 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SolidArrayPropertyTypeImpl()
-	{
+	protected SolidArrayPropertyTypeImpl() {
 		super();
 	}
 
@@ -94,8 +92,7 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getSolidArrayPropertyType();
 	}
 
@@ -104,10 +101,9 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getGroup()
-	{
-		if (group == null)
-		{
+	@Override
+	public FeatureMap getGroup() {
+		if (group == null) {
 			group = new BasicFeatureMap(this, GMLPackage.SOLID_ARRAY_PROPERTY_TYPE__GROUP);
 		}
 		return group;
@@ -118,8 +114,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractSolidGroup()
-	{
+	@Override
+	public FeatureMap getAbstractSolidGroup() {
 		return (FeatureMap)getGroup().<FeatureMap.Entry>list(GMLPackage.eINSTANCE.getSolidArrayPropertyType_AbstractSolidGroup());
 	}
 
@@ -128,8 +124,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractSolidType> getAbstractSolid()
-	{
+	@Override
+	public EList<AbstractSolidType> getAbstractSolid() {
 		return getAbstractSolidGroup().list(GMLPackage.eINSTANCE.getSolidArrayPropertyType_AbstractSolid());
 	}
 
@@ -138,8 +134,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -148,8 +144,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -163,8 +159,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -178,8 +174,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -189,10 +185,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.SOLID_ARRAY_PROPERTY_TYPE__GROUP:
 				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.SOLID_ARRAY_PROPERTY_TYPE__ABSTRACT_SOLID_GROUP:
@@ -209,10 +203,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.SOLID_ARRAY_PROPERTY_TYPE__GROUP:
 				if (coreType) return getGroup();
 				return ((FeatureMap.Internal)getGroup()).getWrapper();
@@ -233,10 +225,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.SOLID_ARRAY_PROPERTY_TYPE__GROUP:
 				((FeatureMap.Internal)getGroup()).set(newValue);
 				return;
@@ -256,10 +246,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SOLID_ARRAY_PROPERTY_TYPE__GROUP:
 				getGroup().clear();
 				return;
@@ -279,10 +267,8 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.SOLID_ARRAY_PROPERTY_TYPE__GROUP:
 				return group != null && !group.isEmpty();
 			case GMLPackage.SOLID_ARRAY_PROPERTY_TYPE__ABSTRACT_SOLID_GROUP:
@@ -301,11 +287,10 @@ public class SolidArrayPropertyTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (group: ");
 		result.append(group);
 		result.append(", owns: ");

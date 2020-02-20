@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implements TimePositionType
-{
+public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implements TimePositionType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -134,8 +133,7 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimePositionTypeImpl()
-	{
+	protected TimePositionTypeImpl() {
 		super();
 	}
 
@@ -145,8 +143,7 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimePositionType();
 	}
 
@@ -155,8 +152,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getValue()
-	{
+	@Override
+	public Object getValue() {
 		return value;
 	}
 
@@ -165,8 +162,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(Object newValue)
-	{
+	@Override
+	public void setValue(Object newValue) {
 		Object oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
@@ -178,8 +175,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCalendarEraName()
-	{
+	@Override
+	public String getCalendarEraName() {
 		return calendarEraName;
 	}
 
@@ -188,8 +185,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCalendarEraName(String newCalendarEraName)
-	{
+	@Override
+	public void setCalendarEraName(String newCalendarEraName) {
 		String oldCalendarEraName = calendarEraName;
 		calendarEraName = newCalendarEraName;
 		if (eNotificationRequired())
@@ -201,8 +198,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getFrame()
-	{
+	@Override
+	public String getFrame() {
 		return frame;
 	}
 
@@ -211,8 +208,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFrame(String newFrame)
-	{
+	@Override
+	public void setFrame(String newFrame) {
 		String oldFrame = frame;
 		frame = newFrame;
 		boolean oldFrameESet = frameESet;
@@ -226,8 +223,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetFrame()
-	{
+	@Override
+	public void unsetFrame() {
 		String oldFrame = frame;
 		boolean oldFrameESet = frameESet;
 		frame = FRAME_EDEFAULT;
@@ -241,8 +238,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetFrame()
-	{
+	@Override
+	public boolean isSetFrame() {
 		return frameESet;
 	}
 
@@ -251,8 +248,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeIndeterminateValueType getIndeterminatePosition()
-	{
+	@Override
+	public TimeIndeterminateValueType getIndeterminatePosition() {
 		return indeterminatePosition;
 	}
 
@@ -261,8 +258,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIndeterminatePosition(TimeIndeterminateValueType newIndeterminatePosition)
-	{
+	@Override
+	public void setIndeterminatePosition(TimeIndeterminateValueType newIndeterminatePosition) {
 		TimeIndeterminateValueType oldIndeterminatePosition = indeterminatePosition;
 		indeterminatePosition = newIndeterminatePosition == null ? INDETERMINATE_POSITION_EDEFAULT : newIndeterminatePosition;
 		boolean oldIndeterminatePositionESet = indeterminatePositionESet;
@@ -276,8 +273,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetIndeterminatePosition()
-	{
+	@Override
+	public void unsetIndeterminatePosition() {
 		TimeIndeterminateValueType oldIndeterminatePosition = indeterminatePosition;
 		boolean oldIndeterminatePositionESet = indeterminatePositionESet;
 		indeterminatePosition = INDETERMINATE_POSITION_EDEFAULT;
@@ -291,8 +288,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetIndeterminatePosition()
-	{
+	@Override
+	public boolean isSetIndeterminatePosition() {
 		return indeterminatePositionESet;
 	}
 
@@ -302,10 +299,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIME_POSITION_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.TIME_POSITION_TYPE__CALENDAR_ERA_NAME:
@@ -324,10 +319,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIME_POSITION_TYPE__VALUE:
 				setValue(newValue);
 				return;
@@ -350,10 +343,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_POSITION_TYPE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
@@ -376,10 +367,8 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIME_POSITION_TYPE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case GMLPackage.TIME_POSITION_TYPE__CALENDAR_ERA_NAME:
@@ -398,11 +387,10 @@ public class TimePositionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		result.append(value);
 		result.append(", calendarEraName: ");

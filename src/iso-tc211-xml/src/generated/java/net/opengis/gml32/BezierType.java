@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='BezierType' kind='elementOnly'"
  * @generated
  */
-public interface BezierType extends BSplineType
-{
+public interface BezierType extends BSplineType {
 } // BezierType

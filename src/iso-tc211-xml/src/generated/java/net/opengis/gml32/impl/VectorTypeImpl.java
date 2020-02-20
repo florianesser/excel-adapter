@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class VectorTypeImpl extends DirectPositionTypeImpl implements VectorType
-{
+public class VectorTypeImpl extends DirectPositionTypeImpl implements VectorType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected VectorTypeImpl()
-	{
+	protected VectorTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class VectorTypeImpl extends DirectPositionTypeImpl implements VectorType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getVectorType();
 	}
 

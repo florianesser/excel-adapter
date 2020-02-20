@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='CategoryExtentType' kind='simple'"
  * @generated
  */
-public interface CategoryExtentType extends CodeOrNilReasonListType
-{
+public interface CategoryExtentType extends CodeOrNilReasonListType {
 } // CategoryExtentType

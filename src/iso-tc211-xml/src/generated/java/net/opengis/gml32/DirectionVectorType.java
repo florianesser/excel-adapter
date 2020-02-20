@@ -26,15 +26,10 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='DirectionVectorType' kind='elementOnly'"
  * @generated
  */
-public interface DirectionVectorType extends EObject
-{
+public interface DirectionVectorType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Vector</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vector</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vector</em>' containment reference.
 	 * @see #setVector(VectorType)
@@ -58,10 +53,6 @@ public interface DirectionVectorType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Horizontal Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Horizontal Angle</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Horizontal Angle</em>' containment reference.
 	 * @see #setHorizontalAngle(AngleType)
@@ -85,10 +76,6 @@ public interface DirectionVectorType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Vertical Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vertical Angle</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vertical Angle</em>' containment reference.
 	 * @see #setVerticalAngle(AngleType)

@@ -37,15 +37,10 @@ import org.isotc211.iso19139.gco.RealPropertyType;
  * @model extendedMetaData="name='MD_ImageDescription_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDImageDescriptionType extends MDCoverageDescriptionType
-{
+public interface MDImageDescriptionType extends MDCoverageDescriptionType {
 	/**
 	 * Returns the value of the '<em><b>Illumination Elevation Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Illumination Elevation Angle</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Illumination Elevation Angle</em>' containment reference.
 	 * @see #setIlluminationElevationAngle(RealPropertyType)
@@ -69,10 +64,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Illumination Azimuth Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Illumination Azimuth Angle</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Illumination Azimuth Angle</em>' containment reference.
 	 * @see #setIlluminationAzimuthAngle(RealPropertyType)
@@ -96,10 +87,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Imaging Condition</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Imaging Condition</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Imaging Condition</em>' containment reference.
 	 * @see #setImagingCondition(MDImagingConditionCodePropertyType)
@@ -123,10 +110,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Image Quality Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Image Quality Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Image Quality Code</em>' containment reference.
 	 * @see #setImageQualityCode(MDIdentifierPropertyType)
@@ -150,10 +133,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Cloud Cover Percentage</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cloud Cover Percentage</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cloud Cover Percentage</em>' containment reference.
 	 * @see #setCloudCoverPercentage(RealPropertyType)
@@ -177,10 +156,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Processing Level Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Processing Level Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Processing Level Code</em>' containment reference.
 	 * @see #setProcessingLevelCode(MDIdentifierPropertyType)
@@ -204,10 +179,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Compression Generation Quantity</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Compression Generation Quantity</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compression Generation Quantity</em>' containment reference.
 	 * @see #setCompressionGenerationQuantity(IntegerPropertyType)
@@ -231,10 +202,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Triangulation Indicator</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Triangulation Indicator</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Triangulation Indicator</em>' containment reference.
 	 * @see #setTriangulationIndicator(BooleanPropertyType)
@@ -258,10 +225,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Radiometric Calibration Data Availability</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Radiometric Calibration Data Availability</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Radiometric Calibration Data Availability</em>' containment reference.
 	 * @see #setRadiometricCalibrationDataAvailability(BooleanPropertyType)
@@ -285,10 +248,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Camera Calibration Information Availability</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Camera Calibration Information Availability</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Camera Calibration Information Availability</em>' containment reference.
 	 * @see #setCameraCalibrationInformationAvailability(BooleanPropertyType)
@@ -312,10 +271,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Film Distortion Information Availability</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Film Distortion Information Availability</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Film Distortion Information Availability</em>' containment reference.
 	 * @see #setFilmDistortionInformationAvailability(BooleanPropertyType)
@@ -339,10 +294,6 @@ public interface MDImageDescriptionType extends MDCoverageDescriptionType
 	/**
 	 * Returns the value of the '<em><b>Lens Distortion Information Availability</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Lens Distortion Information Availability</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Lens Distortion Information Availability</em>' containment reference.
 	 * @see #setLensDistortionInformationAvailability(BooleanPropertyType)

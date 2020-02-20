@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_CompletenessCommission_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQCompletenessCommissionType extends AbstractDQCompletenessType
-{
+public interface DQCompletenessCommissionType extends AbstractDQCompletenessType {
 } // DQCompletenessCommissionType

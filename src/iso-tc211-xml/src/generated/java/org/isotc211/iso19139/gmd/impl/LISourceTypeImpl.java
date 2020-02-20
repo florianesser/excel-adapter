@@ -47,8 +47,7 @@ import org.isotc211.iso19139.gmd.MDRepresentativeFractionPropertyType;
  *
  * @generated
  */
-public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISourceType
-{
+public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISourceType {
 	/**
 	 * The cached value of the '{@link #getDescription() <em>Description</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -114,8 +113,7 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LISourceTypeImpl()
-	{
+	protected LISourceTypeImpl() {
 		super();
 	}
 
@@ -125,8 +123,7 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getLISourceType();
 	}
 
@@ -135,8 +132,8 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getDescription() {
 		return description;
 	}
 
@@ -145,12 +142,10 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldDescription = description;
 		description = newDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.LI_SOURCE_TYPE__DESCRIPTION, oldDescription, newDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -162,10 +157,9 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescription(CharacterStringPropertyType newDescription)
-	{
-		if (newDescription != description)
-		{
+	@Override
+	public void setDescription(CharacterStringPropertyType newDescription) {
+		if (newDescription != description) {
 			NotificationChain msgs = null;
 			if (description != null)
 				msgs = ((InternalEObject)description).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.LI_SOURCE_TYPE__DESCRIPTION, null, msgs);
@@ -183,8 +177,8 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDRepresentativeFractionPropertyType getScaleDenominator()
-	{
+	@Override
+	public MDRepresentativeFractionPropertyType getScaleDenominator() {
 		return scaleDenominator;
 	}
 
@@ -193,12 +187,10 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetScaleDenominator(MDRepresentativeFractionPropertyType newScaleDenominator, NotificationChain msgs)
-	{
+	public NotificationChain basicSetScaleDenominator(MDRepresentativeFractionPropertyType newScaleDenominator, NotificationChain msgs) {
 		MDRepresentativeFractionPropertyType oldScaleDenominator = scaleDenominator;
 		scaleDenominator = newScaleDenominator;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.LI_SOURCE_TYPE__SCALE_DENOMINATOR, oldScaleDenominator, newScaleDenominator);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -210,10 +202,9 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setScaleDenominator(MDRepresentativeFractionPropertyType newScaleDenominator)
-	{
-		if (newScaleDenominator != scaleDenominator)
-		{
+	@Override
+	public void setScaleDenominator(MDRepresentativeFractionPropertyType newScaleDenominator) {
+		if (newScaleDenominator != scaleDenominator) {
 			NotificationChain msgs = null;
 			if (scaleDenominator != null)
 				msgs = ((InternalEObject)scaleDenominator).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.LI_SOURCE_TYPE__SCALE_DENOMINATOR, null, msgs);
@@ -231,8 +222,8 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDReferenceSystemPropertyType getSourceReferenceSystem()
-	{
+	@Override
+	public MDReferenceSystemPropertyType getSourceReferenceSystem() {
 		return sourceReferenceSystem;
 	}
 
@@ -241,12 +232,10 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSourceReferenceSystem(MDReferenceSystemPropertyType newSourceReferenceSystem, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSourceReferenceSystem(MDReferenceSystemPropertyType newSourceReferenceSystem, NotificationChain msgs) {
 		MDReferenceSystemPropertyType oldSourceReferenceSystem = sourceReferenceSystem;
 		sourceReferenceSystem = newSourceReferenceSystem;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.LI_SOURCE_TYPE__SOURCE_REFERENCE_SYSTEM, oldSourceReferenceSystem, newSourceReferenceSystem);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -258,10 +247,9 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceReferenceSystem(MDReferenceSystemPropertyType newSourceReferenceSystem)
-	{
-		if (newSourceReferenceSystem != sourceReferenceSystem)
-		{
+	@Override
+	public void setSourceReferenceSystem(MDReferenceSystemPropertyType newSourceReferenceSystem) {
+		if (newSourceReferenceSystem != sourceReferenceSystem) {
 			NotificationChain msgs = null;
 			if (sourceReferenceSystem != null)
 				msgs = ((InternalEObject)sourceReferenceSystem).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.LI_SOURCE_TYPE__SOURCE_REFERENCE_SYSTEM, null, msgs);
@@ -279,8 +267,8 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CICitationPropertyType getSourceCitation()
-	{
+	@Override
+	public CICitationPropertyType getSourceCitation() {
 		return sourceCitation;
 	}
 
@@ -289,12 +277,10 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSourceCitation(CICitationPropertyType newSourceCitation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSourceCitation(CICitationPropertyType newSourceCitation, NotificationChain msgs) {
 		CICitationPropertyType oldSourceCitation = sourceCitation;
 		sourceCitation = newSourceCitation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.LI_SOURCE_TYPE__SOURCE_CITATION, oldSourceCitation, newSourceCitation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -306,10 +292,9 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceCitation(CICitationPropertyType newSourceCitation)
-	{
-		if (newSourceCitation != sourceCitation)
-		{
+	@Override
+	public void setSourceCitation(CICitationPropertyType newSourceCitation) {
+		if (newSourceCitation != sourceCitation) {
 			NotificationChain msgs = null;
 			if (sourceCitation != null)
 				msgs = ((InternalEObject)sourceCitation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.LI_SOURCE_TYPE__SOURCE_CITATION, null, msgs);
@@ -327,10 +312,9 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EXExtentPropertyType> getSourceExtent()
-	{
-		if (sourceExtent == null)
-		{
+	@Override
+	public EList<EXExtentPropertyType> getSourceExtent() {
+		if (sourceExtent == null) {
 			sourceExtent = new EObjectContainmentEList<EXExtentPropertyType>(EXExtentPropertyType.class, this, GMDPackage.LI_SOURCE_TYPE__SOURCE_EXTENT);
 		}
 		return sourceExtent;
@@ -341,10 +325,9 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LIProcessStepPropertyType> getSourceStep()
-	{
-		if (sourceStep == null)
-		{
+	@Override
+	public EList<LIProcessStepPropertyType> getSourceStep() {
+		if (sourceStep == null) {
 			sourceStep = new EObjectContainmentEList<LIProcessStepPropertyType>(LIProcessStepPropertyType.class, this, GMDPackage.LI_SOURCE_TYPE__SOURCE_STEP);
 		}
 		return sourceStep;
@@ -356,10 +339,8 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.LI_SOURCE_TYPE__DESCRIPTION:
 				return basicSetDescription(null, msgs);
 			case GMDPackage.LI_SOURCE_TYPE__SCALE_DENOMINATOR:
@@ -382,10 +363,8 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.LI_SOURCE_TYPE__DESCRIPTION:
 				return getDescription();
 			case GMDPackage.LI_SOURCE_TYPE__SCALE_DENOMINATOR:
@@ -409,10 +388,8 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.LI_SOURCE_TYPE__DESCRIPTION:
 				setDescription((CharacterStringPropertyType)newValue);
 				return;
@@ -443,10 +420,8 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LI_SOURCE_TYPE__DESCRIPTION:
 				setDescription((CharacterStringPropertyType)null);
 				return;
@@ -475,10 +450,8 @@ public class LISourceTypeImpl extends AbstractObjectTypeImpl implements LISource
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.LI_SOURCE_TYPE__DESCRIPTION:
 				return description != null;
 			case GMDPackage.LI_SOURCE_TYPE__SCALE_DENOMINATOR:

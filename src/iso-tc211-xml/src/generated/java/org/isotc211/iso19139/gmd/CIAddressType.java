@@ -32,16 +32,11 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='CI_Address_Type' kind='elementOnly'"
  * @generated
  */
-public interface CIAddressType extends AbstractObjectType
-{
+public interface CIAddressType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Delivery Point</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Delivery Point</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Delivery Point</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getCIAddressType_DeliveryPoint()
@@ -54,10 +49,6 @@ public interface CIAddressType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>City</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>City</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>City</em>' containment reference.
 	 * @see #setCity(CharacterStringPropertyType)
@@ -81,10 +72,6 @@ public interface CIAddressType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Administrative Area</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Administrative Area</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Administrative Area</em>' containment reference.
 	 * @see #setAdministrativeArea(CharacterStringPropertyType)
@@ -108,10 +95,6 @@ public interface CIAddressType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Postal Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Postal Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Postal Code</em>' containment reference.
 	 * @see #setPostalCode(CharacterStringPropertyType)
@@ -135,10 +118,6 @@ public interface CIAddressType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Country</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Country</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Country</em>' containment reference.
 	 * @see #setCountry(CharacterStringPropertyType)
@@ -163,10 +142,6 @@ public interface CIAddressType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Electronic Mail Address</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Electronic Mail Address</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Electronic Mail Address</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getCIAddressType_ElectronicMailAddress()

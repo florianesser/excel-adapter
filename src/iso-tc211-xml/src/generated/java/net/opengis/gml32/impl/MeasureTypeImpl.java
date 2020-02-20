@@ -26,8 +26,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements MeasureType
-{
+public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements MeasureType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,8 +81,7 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MeasureTypeImpl()
-	{
+	protected MeasureTypeImpl() {
 		super();
 	}
 
@@ -93,8 +91,7 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMeasureType();
 	}
 
@@ -103,8 +100,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public double getValue()
-	{
+	@Override
+	public double getValue() {
 		return value;
 	}
 
@@ -113,8 +110,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(double newValue)
-	{
+	@Override
+	public void setValue(double newValue) {
 		double oldValue = value;
 		value = newValue;
 		boolean oldValueESet = valueESet;
@@ -128,8 +125,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetValue()
-	{
+	@Override
+	public void unsetValue() {
 		double oldValue = value;
 		boolean oldValueESet = valueESet;
 		value = VALUE_EDEFAULT;
@@ -143,8 +140,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetValue()
-	{
+	@Override
+	public boolean isSetValue() {
 		return valueESet;
 	}
 
@@ -153,8 +150,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUom()
-	{
+	@Override
+	public String getUom() {
 		return uom;
 	}
 
@@ -163,8 +160,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUom(String newUom)
-	{
+	@Override
+	public void setUom(String newUom) {
 		String oldUom = uom;
 		uom = newUom;
 		if (eNotificationRequired())
@@ -177,10 +174,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.MEASURE_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.MEASURE_TYPE__UOM:
@@ -195,10 +190,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.MEASURE_TYPE__VALUE:
 				setValue((Double)newValue);
 				return;
@@ -215,10 +208,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MEASURE_TYPE__VALUE:
 				unsetValue();
 				return;
@@ -235,10 +226,8 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MEASURE_TYPE__VALUE:
 				return isSetValue();
 			case GMLPackage.MEASURE_TYPE__UOM:
@@ -253,11 +242,10 @@ public class MeasureTypeImpl extends MinimalEObjectImpl.Container implements Mea
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (value: ");
 		if (valueESet) result.append(value); else result.append("<unset>");
 		result.append(", uom: ");

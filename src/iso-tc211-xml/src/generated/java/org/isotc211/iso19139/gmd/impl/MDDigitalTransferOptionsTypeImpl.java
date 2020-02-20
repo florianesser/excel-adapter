@@ -43,8 +43,7 @@ import org.isotc211.iso19139.gmd.MDMediumPropertyType;
  *
  * @generated
  */
-public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl implements MDDigitalTransferOptionsType
-{
+public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl implements MDDigitalTransferOptionsType {
 	/**
 	 * The cached value of the '{@link #getUnitsOfDistribution() <em>Units Of Distribution</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -90,8 +89,7 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDDigitalTransferOptionsTypeImpl()
-	{
+	protected MDDigitalTransferOptionsTypeImpl() {
 		super();
 	}
 
@@ -101,8 +99,7 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDDigitalTransferOptionsType();
 	}
 
@@ -111,8 +108,8 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getUnitsOfDistribution()
-	{
+	@Override
+	public CharacterStringPropertyType getUnitsOfDistribution() {
 		return unitsOfDistribution;
 	}
 
@@ -121,12 +118,10 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUnitsOfDistribution(CharacterStringPropertyType newUnitsOfDistribution, NotificationChain msgs)
-	{
+	public NotificationChain basicSetUnitsOfDistribution(CharacterStringPropertyType newUnitsOfDistribution, NotificationChain msgs) {
 		CharacterStringPropertyType oldUnitsOfDistribution = unitsOfDistribution;
 		unitsOfDistribution = newUnitsOfDistribution;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__UNITS_OF_DISTRIBUTION, oldUnitsOfDistribution, newUnitsOfDistribution);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -138,10 +133,9 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUnitsOfDistribution(CharacterStringPropertyType newUnitsOfDistribution)
-	{
-		if (newUnitsOfDistribution != unitsOfDistribution)
-		{
+	@Override
+	public void setUnitsOfDistribution(CharacterStringPropertyType newUnitsOfDistribution) {
+		if (newUnitsOfDistribution != unitsOfDistribution) {
 			NotificationChain msgs = null;
 			if (unitsOfDistribution != null)
 				msgs = ((InternalEObject)unitsOfDistribution).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__UNITS_OF_DISTRIBUTION, null, msgs);
@@ -159,8 +153,8 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RealPropertyType getTransferSize()
-	{
+	@Override
+	public RealPropertyType getTransferSize() {
 		return transferSize;
 	}
 
@@ -169,12 +163,10 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTransferSize(RealPropertyType newTransferSize, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTransferSize(RealPropertyType newTransferSize, NotificationChain msgs) {
 		RealPropertyType oldTransferSize = transferSize;
 		transferSize = newTransferSize;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__TRANSFER_SIZE, oldTransferSize, newTransferSize);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -186,10 +178,9 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTransferSize(RealPropertyType newTransferSize)
-	{
-		if (newTransferSize != transferSize)
-		{
+	@Override
+	public void setTransferSize(RealPropertyType newTransferSize) {
+		if (newTransferSize != transferSize) {
 			NotificationChain msgs = null;
 			if (transferSize != null)
 				msgs = ((InternalEObject)transferSize).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__TRANSFER_SIZE, null, msgs);
@@ -207,10 +198,9 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIOnlineResourcePropertyType> getOnLine()
-	{
-		if (onLine == null)
-		{
+	@Override
+	public EList<CIOnlineResourcePropertyType> getOnLine() {
+		if (onLine == null) {
 			onLine = new EObjectContainmentEList<CIOnlineResourcePropertyType>(CIOnlineResourcePropertyType.class, this, GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__ON_LINE);
 		}
 		return onLine;
@@ -221,8 +211,8 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDMediumPropertyType getOffLine()
-	{
+	@Override
+	public MDMediumPropertyType getOffLine() {
 		return offLine;
 	}
 
@@ -231,12 +221,10 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOffLine(MDMediumPropertyType newOffLine, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOffLine(MDMediumPropertyType newOffLine, NotificationChain msgs) {
 		MDMediumPropertyType oldOffLine = offLine;
 		offLine = newOffLine;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__OFF_LINE, oldOffLine, newOffLine);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -248,10 +236,9 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOffLine(MDMediumPropertyType newOffLine)
-	{
-		if (newOffLine != offLine)
-		{
+	@Override
+	public void setOffLine(MDMediumPropertyType newOffLine) {
+		if (newOffLine != offLine) {
 			NotificationChain msgs = null;
 			if (offLine != null)
 				msgs = ((InternalEObject)offLine).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__OFF_LINE, null, msgs);
@@ -270,10 +257,8 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__UNITS_OF_DISTRIBUTION:
 				return basicSetUnitsOfDistribution(null, msgs);
 			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__TRANSFER_SIZE:
@@ -292,10 +277,8 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__UNITS_OF_DISTRIBUTION:
 				return getUnitsOfDistribution();
 			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__TRANSFER_SIZE:
@@ -315,10 +298,8 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__UNITS_OF_DISTRIBUTION:
 				setUnitsOfDistribution((CharacterStringPropertyType)newValue);
 				return;
@@ -342,10 +323,8 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__UNITS_OF_DISTRIBUTION:
 				setUnitsOfDistribution((CharacterStringPropertyType)null);
 				return;
@@ -368,10 +347,8 @@ public class MDDigitalTransferOptionsTypeImpl extends AbstractObjectTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__UNITS_OF_DISTRIBUTION:
 				return unitsOfDistribution != null;
 			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE__TRANSFER_SIZE:

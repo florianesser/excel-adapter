@@ -37,8 +37,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIContactType
-{
+public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIContactType {
 	/**
 	 * The cached value of the '{@link #getPhone() <em>Phone</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -94,8 +93,7 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CIContactTypeImpl()
-	{
+	protected CIContactTypeImpl() {
 		super();
 	}
 
@@ -105,8 +103,7 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCIContactType();
 	}
 
@@ -115,8 +112,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CITelephonePropertyType getPhone()
-	{
+	@Override
+	public CITelephonePropertyType getPhone() {
 		return phone;
 	}
 
@@ -125,12 +122,10 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPhone(CITelephonePropertyType newPhone, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPhone(CITelephonePropertyType newPhone, NotificationChain msgs) {
 		CITelephonePropertyType oldPhone = phone;
 		phone = newPhone;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CONTACT_TYPE__PHONE, oldPhone, newPhone);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -142,10 +137,9 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPhone(CITelephonePropertyType newPhone)
-	{
-		if (newPhone != phone)
-		{
+	@Override
+	public void setPhone(CITelephonePropertyType newPhone) {
+		if (newPhone != phone) {
 			NotificationChain msgs = null;
 			if (phone != null)
 				msgs = ((InternalEObject)phone).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CONTACT_TYPE__PHONE, null, msgs);
@@ -163,8 +157,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIAddressPropertyType getAddress()
-	{
+	@Override
+	public CIAddressPropertyType getAddress() {
 		return address;
 	}
 
@@ -173,12 +167,10 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAddress(CIAddressPropertyType newAddress, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAddress(CIAddressPropertyType newAddress, NotificationChain msgs) {
 		CIAddressPropertyType oldAddress = address;
 		address = newAddress;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CONTACT_TYPE__ADDRESS, oldAddress, newAddress);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -190,10 +182,9 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAddress(CIAddressPropertyType newAddress)
-	{
-		if (newAddress != address)
-		{
+	@Override
+	public void setAddress(CIAddressPropertyType newAddress) {
+		if (newAddress != address) {
 			NotificationChain msgs = null;
 			if (address != null)
 				msgs = ((InternalEObject)address).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CONTACT_TYPE__ADDRESS, null, msgs);
@@ -211,8 +202,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CIOnlineResourcePropertyType getOnlineResource()
-	{
+	@Override
+	public CIOnlineResourcePropertyType getOnlineResource() {
 		return onlineResource;
 	}
 
@@ -221,12 +212,10 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOnlineResource(CIOnlineResourcePropertyType newOnlineResource, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOnlineResource(CIOnlineResourcePropertyType newOnlineResource, NotificationChain msgs) {
 		CIOnlineResourcePropertyType oldOnlineResource = onlineResource;
 		onlineResource = newOnlineResource;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CONTACT_TYPE__ONLINE_RESOURCE, oldOnlineResource, newOnlineResource);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -238,10 +227,9 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOnlineResource(CIOnlineResourcePropertyType newOnlineResource)
-	{
-		if (newOnlineResource != onlineResource)
-		{
+	@Override
+	public void setOnlineResource(CIOnlineResourcePropertyType newOnlineResource) {
+		if (newOnlineResource != onlineResource) {
 			NotificationChain msgs = null;
 			if (onlineResource != null)
 				msgs = ((InternalEObject)onlineResource).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CONTACT_TYPE__ONLINE_RESOURCE, null, msgs);
@@ -259,8 +247,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getHoursOfService()
-	{
+	@Override
+	public CharacterStringPropertyType getHoursOfService() {
 		return hoursOfService;
 	}
 
@@ -269,12 +257,10 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetHoursOfService(CharacterStringPropertyType newHoursOfService, NotificationChain msgs)
-	{
+	public NotificationChain basicSetHoursOfService(CharacterStringPropertyType newHoursOfService, NotificationChain msgs) {
 		CharacterStringPropertyType oldHoursOfService = hoursOfService;
 		hoursOfService = newHoursOfService;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CONTACT_TYPE__HOURS_OF_SERVICE, oldHoursOfService, newHoursOfService);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -286,10 +272,9 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHoursOfService(CharacterStringPropertyType newHoursOfService)
-	{
-		if (newHoursOfService != hoursOfService)
-		{
+	@Override
+	public void setHoursOfService(CharacterStringPropertyType newHoursOfService) {
+		if (newHoursOfService != hoursOfService) {
 			NotificationChain msgs = null;
 			if (hoursOfService != null)
 				msgs = ((InternalEObject)hoursOfService).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CONTACT_TYPE__HOURS_OF_SERVICE, null, msgs);
@@ -307,8 +292,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getContactInstructions()
-	{
+	@Override
+	public CharacterStringPropertyType getContactInstructions() {
 		return contactInstructions;
 	}
 
@@ -317,12 +302,10 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContactInstructions(CharacterStringPropertyType newContactInstructions, NotificationChain msgs)
-	{
+	public NotificationChain basicSetContactInstructions(CharacterStringPropertyType newContactInstructions, NotificationChain msgs) {
 		CharacterStringPropertyType oldContactInstructions = contactInstructions;
 		contactInstructions = newContactInstructions;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CONTACT_TYPE__CONTACT_INSTRUCTIONS, oldContactInstructions, newContactInstructions);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -334,10 +317,9 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setContactInstructions(CharacterStringPropertyType newContactInstructions)
-	{
-		if (newContactInstructions != contactInstructions)
-		{
+	@Override
+	public void setContactInstructions(CharacterStringPropertyType newContactInstructions) {
+		if (newContactInstructions != contactInstructions) {
 			NotificationChain msgs = null;
 			if (contactInstructions != null)
 				msgs = ((InternalEObject)contactInstructions).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CONTACT_TYPE__CONTACT_INSTRUCTIONS, null, msgs);
@@ -356,10 +338,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_CONTACT_TYPE__PHONE:
 				return basicSetPhone(null, msgs);
 			case GMDPackage.CI_CONTACT_TYPE__ADDRESS:
@@ -380,10 +360,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_CONTACT_TYPE__PHONE:
 				return getPhone();
 			case GMDPackage.CI_CONTACT_TYPE__ADDRESS:
@@ -404,10 +382,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_CONTACT_TYPE__PHONE:
 				setPhone((CITelephonePropertyType)newValue);
 				return;
@@ -433,10 +409,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_CONTACT_TYPE__PHONE:
 				setPhone((CITelephonePropertyType)null);
 				return;
@@ -462,10 +436,8 @@ public class CIContactTypeImpl extends AbstractObjectTypeImpl implements CIConta
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_CONTACT_TYPE__PHONE:
 				return phone != null;
 			case GMDPackage.CI_CONTACT_TYPE__ADDRESS:

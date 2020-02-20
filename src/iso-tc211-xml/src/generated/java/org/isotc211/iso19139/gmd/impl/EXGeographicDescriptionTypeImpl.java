@@ -27,8 +27,7 @@ import org.isotc211.iso19139.gmd.MDIdentifierPropertyType;
  *
  * @generated
  */
-public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentTypeImpl implements EXGeographicDescriptionType
-{
+public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentTypeImpl implements EXGeographicDescriptionType {
 	/**
 	 * The cached value of the '{@link #getGeographicIdentifier() <em>Geographic Identifier</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EXGeographicDescriptionTypeImpl()
-	{
+	protected EXGeographicDescriptionTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getEXGeographicDescriptionType();
 	}
 
@@ -65,8 +62,8 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDIdentifierPropertyType getGeographicIdentifier()
-	{
+	@Override
+	public MDIdentifierPropertyType getGeographicIdentifier() {
 		return geographicIdentifier;
 	}
 
@@ -75,12 +72,10 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGeographicIdentifier(MDIdentifierPropertyType newGeographicIdentifier, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGeographicIdentifier(MDIdentifierPropertyType newGeographicIdentifier, NotificationChain msgs) {
 		MDIdentifierPropertyType oldGeographicIdentifier = geographicIdentifier;
 		geographicIdentifier = newGeographicIdentifier;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_TYPE__GEOGRAPHIC_IDENTIFIER, oldGeographicIdentifier, newGeographicIdentifier);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGeographicIdentifier(MDIdentifierPropertyType newGeographicIdentifier)
-	{
-		if (newGeographicIdentifier != geographicIdentifier)
-		{
+	@Override
+	public void setGeographicIdentifier(MDIdentifierPropertyType newGeographicIdentifier) {
+		if (newGeographicIdentifier != geographicIdentifier) {
 			NotificationChain msgs = null;
 			if (geographicIdentifier != null)
 				msgs = ((InternalEObject)geographicIdentifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_TYPE__GEOGRAPHIC_IDENTIFIER, null, msgs);
@@ -114,10 +108,8 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_TYPE__GEOGRAPHIC_IDENTIFIER:
 				return basicSetGeographicIdentifier(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_TYPE__GEOGRAPHIC_IDENTIFIER:
 				return getGeographicIdentifier();
 		}
@@ -146,10 +136,8 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_TYPE__GEOGRAPHIC_IDENTIFIER:
 				setGeographicIdentifier((MDIdentifierPropertyType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_TYPE__GEOGRAPHIC_IDENTIFIER:
 				setGeographicIdentifier((MDIdentifierPropertyType)null);
 				return;
@@ -180,10 +166,8 @@ public class EXGeographicDescriptionTypeImpl extends AbstractEXGeographicExtentT
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_TYPE__GEOGRAPHIC_IDENTIFIER:
 				return geographicIdentifier != null;
 		}

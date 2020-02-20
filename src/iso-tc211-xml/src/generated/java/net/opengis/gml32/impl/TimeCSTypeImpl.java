@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class TimeCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements TimeCSType
-{
+public class TimeCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements TimeCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TimeCSTypeImpl()
-	{
+	protected TimeCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class TimeCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTimeCSType();
 	}
 

@@ -18,6 +18,5 @@ package net.opengis.gml32;
  *        extendedMetaData="name='TemporalDatumBaseType' kind='elementOnly'"
  * @generated
  */
-public interface TemporalDatumBaseType extends AbstractDatumType
-{
+public interface TemporalDatumBaseType extends AbstractDatumType {
 } // TemporalDatumBaseType

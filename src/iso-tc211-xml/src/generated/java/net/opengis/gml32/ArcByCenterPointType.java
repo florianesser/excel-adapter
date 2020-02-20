@@ -29,15 +29,10 @@ import java.math.BigInteger;
  * @model extendedMetaData="name='ArcByCenterPointType' kind='elementOnly'"
  * @generated
  */
-public interface ArcByCenterPointType extends AbstractCurveSegmentType
-{
+public interface ArcByCenterPointType extends AbstractCurveSegmentType {
 	/**
 	 * Returns the value of the '<em><b>Pos</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos</em>' containment reference.
 	 * @see #setPos(DirectPositionType)
@@ -87,10 +82,6 @@ public interface ArcByCenterPointType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Point Rep</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Point Rep</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Point Rep</em>' containment reference.
 	 * @see #setPointRep(PointPropertyType)
@@ -114,10 +105,6 @@ public interface ArcByCenterPointType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Pos List</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pos List</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pos List</em>' containment reference.
 	 * @see #setPosList(DirectPositionListType)
@@ -141,10 +128,6 @@ public interface ArcByCenterPointType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Coordinates</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Coordinates</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coordinates</em>' containment reference.
 	 * @see #setCoordinates(CoordinatesType)
@@ -168,10 +151,6 @@ public interface ArcByCenterPointType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Radius</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Radius</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Radius</em>' containment reference.
 	 * @see #setRadius(LengthType)
@@ -195,10 +174,6 @@ public interface ArcByCenterPointType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>Start Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Start Angle</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Start Angle</em>' containment reference.
 	 * @see #setStartAngle(AngleType)
@@ -222,10 +197,6 @@ public interface ArcByCenterPointType extends AbstractCurveSegmentType
 	/**
 	 * Returns the value of the '<em><b>End Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>End Angle</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>End Angle</em>' containment reference.
 	 * @see #setEndAngle(AngleType)
@@ -251,10 +222,6 @@ public interface ArcByCenterPointType extends AbstractCurveSegmentType
 	 * The default value is <code>"circularArcCenterPointWithRadius"</code>.
 	 * The literals are from the enumeration {@link net.opengis.gml32.CurveInterpolationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interpolation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Interpolation</em>' attribute.
 	 * @see net.opengis.gml32.CurveInterpolationType
@@ -308,10 +275,6 @@ public interface ArcByCenterPointType extends AbstractCurveSegmentType
 	 * Returns the value of the '<em><b>Num Arc</b></em>' attribute.
 	 * The default value is <code>"1"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Num Arc</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Num Arc</em>' attribute.
 	 * @see #isSetNumArc()

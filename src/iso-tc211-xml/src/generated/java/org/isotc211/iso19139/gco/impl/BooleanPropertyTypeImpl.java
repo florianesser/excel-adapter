@@ -26,8 +26,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implements BooleanPropertyType
-{
+public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implements BooleanPropertyType {
 	/**
 	 * The default value of the '{@link #isBoolean() <em>Boolean</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,8 +81,7 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BooleanPropertyTypeImpl()
-	{
+	protected BooleanPropertyTypeImpl() {
 		super();
 	}
 
@@ -93,8 +91,7 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.BOOLEAN_PROPERTY_TYPE;
 	}
 
@@ -103,8 +100,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isBoolean()
-	{
+	@Override
+	public boolean isBoolean() {
 		return boolean_;
 	}
 
@@ -113,8 +110,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBoolean(boolean newBoolean)
-	{
+	@Override
+	public void setBoolean(boolean newBoolean) {
 		boolean oldBoolean = boolean_;
 		boolean_ = newBoolean;
 		boolean oldBooleanESet = booleanESet;
@@ -128,8 +125,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetBoolean()
-	{
+	@Override
+	public void unsetBoolean() {
 		boolean oldBoolean = boolean_;
 		boolean oldBooleanESet = booleanESet;
 		boolean_ = BOOLEAN_EDEFAULT;
@@ -143,8 +140,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetBoolean()
-	{
+	@Override
+	public boolean isSetBoolean() {
 		return booleanESet;
 	}
 
@@ -153,8 +150,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -163,8 +160,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -177,10 +174,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.BOOLEAN_PROPERTY_TYPE__BOOLEAN:
 				return isBoolean();
 			case GCOPackage.BOOLEAN_PROPERTY_TYPE__NIL_REASON:
@@ -195,10 +190,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.BOOLEAN_PROPERTY_TYPE__BOOLEAN:
 				setBoolean((Boolean)newValue);
 				return;
@@ -215,10 +208,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.BOOLEAN_PROPERTY_TYPE__BOOLEAN:
 				unsetBoolean();
 				return;
@@ -235,10 +226,8 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.BOOLEAN_PROPERTY_TYPE__BOOLEAN:
 				return isSetBoolean();
 			case GCOPackage.BOOLEAN_PROPERTY_TYPE__NIL_REASON:
@@ -253,11 +242,10 @@ public class BooleanPropertyTypeImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (boolean: ");
 		if (booleanESet) result.append(boolean_); else result.append("<unset>");
 		result.append(", nilReason: ");

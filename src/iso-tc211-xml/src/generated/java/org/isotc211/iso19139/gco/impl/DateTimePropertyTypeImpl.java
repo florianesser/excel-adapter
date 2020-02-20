@@ -28,8 +28,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container implements DateTimePropertyType
-{
+public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container implements DateTimePropertyType {
 	/**
 	 * The default value of the '{@link #getDateTime() <em>Date Time</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DateTimePropertyTypeImpl()
-	{
+	protected DateTimePropertyTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.DATE_TIME_PROPERTY_TYPE;
 	}
 
@@ -96,8 +93,8 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getDateTime()
-	{
+	@Override
+	public XMLGregorianCalendar getDateTime() {
 		return dateTime;
 	}
 
@@ -106,8 +103,8 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDateTime(XMLGregorianCalendar newDateTime)
-	{
+	@Override
+	public void setDateTime(XMLGregorianCalendar newDateTime) {
 		XMLGregorianCalendar oldDateTime = dateTime;
 		dateTime = newDateTime;
 		if (eNotificationRequired())
@@ -119,8 +116,8 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -129,8 +126,8 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -143,10 +140,8 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.DATE_TIME_PROPERTY_TYPE__DATE_TIME:
 				return getDateTime();
 			case GCOPackage.DATE_TIME_PROPERTY_TYPE__NIL_REASON:
@@ -161,10 +156,8 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.DATE_TIME_PROPERTY_TYPE__DATE_TIME:
 				setDateTime((XMLGregorianCalendar)newValue);
 				return;
@@ -181,10 +174,8 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.DATE_TIME_PROPERTY_TYPE__DATE_TIME:
 				setDateTime(DATE_TIME_EDEFAULT);
 				return;
@@ -201,10 +192,8 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.DATE_TIME_PROPERTY_TYPE__DATE_TIME:
 				return DATE_TIME_EDEFAULT == null ? dateTime != null : !DATE_TIME_EDEFAULT.equals(dateTime);
 			case GCOPackage.DATE_TIME_PROPERTY_TYPE__NIL_REASON:
@@ -219,11 +208,10 @@ public class DateTimePropertyTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (dateTime: ");
 		result.append(dateTime);
 		result.append(", nilReason: ");

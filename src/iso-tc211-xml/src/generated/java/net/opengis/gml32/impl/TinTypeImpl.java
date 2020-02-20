@@ -39,8 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class TinTypeImpl extends SurfaceTypeImpl implements TinType
-{
+public class TinTypeImpl extends SurfaceTypeImpl implements TinType {
 	/**
 	 * The cached value of the '{@link #getStopLines() <em>Stop Lines</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -86,8 +85,7 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TinTypeImpl()
-	{
+	protected TinTypeImpl() {
 		super();
 	}
 
@@ -97,8 +95,7 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTinType();
 	}
 
@@ -107,10 +104,9 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LineStringSegmentArrayPropertyType> getStopLines()
-	{
-		if (stopLines == null)
-		{
+	@Override
+	public EList<LineStringSegmentArrayPropertyType> getStopLines() {
+		if (stopLines == null) {
 			stopLines = new EObjectContainmentEList<LineStringSegmentArrayPropertyType>(LineStringSegmentArrayPropertyType.class, this, GMLPackage.TIN_TYPE__STOP_LINES);
 		}
 		return stopLines;
@@ -121,10 +117,9 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LineStringSegmentArrayPropertyType> getBreakLines()
-	{
-		if (breakLines == null)
-		{
+	@Override
+	public EList<LineStringSegmentArrayPropertyType> getBreakLines() {
+		if (breakLines == null) {
 			breakLines = new EObjectContainmentEList<LineStringSegmentArrayPropertyType>(LineStringSegmentArrayPropertyType.class, this, GMLPackage.TIN_TYPE__BREAK_LINES);
 		}
 		return breakLines;
@@ -135,8 +130,8 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LengthType getMaxLength()
-	{
+	@Override
+	public LengthType getMaxLength() {
 		return maxLength;
 	}
 
@@ -145,12 +140,10 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMaxLength(LengthType newMaxLength, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMaxLength(LengthType newMaxLength, NotificationChain msgs) {
 		LengthType oldMaxLength = maxLength;
 		maxLength = newMaxLength;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIN_TYPE__MAX_LENGTH, oldMaxLength, newMaxLength);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -162,10 +155,9 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaxLength(LengthType newMaxLength)
-	{
-		if (newMaxLength != maxLength)
-		{
+	@Override
+	public void setMaxLength(LengthType newMaxLength) {
+		if (newMaxLength != maxLength) {
 			NotificationChain msgs = null;
 			if (maxLength != null)
 				msgs = ((InternalEObject)maxLength).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIN_TYPE__MAX_LENGTH, null, msgs);
@@ -183,8 +175,8 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ControlPointType getControlPoint()
-	{
+	@Override
+	public ControlPointType getControlPoint() {
 		return controlPoint;
 	}
 
@@ -193,12 +185,10 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetControlPoint(ControlPointType newControlPoint, NotificationChain msgs)
-	{
+	public NotificationChain basicSetControlPoint(ControlPointType newControlPoint, NotificationChain msgs) {
 		ControlPointType oldControlPoint = controlPoint;
 		controlPoint = newControlPoint;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.TIN_TYPE__CONTROL_POINT, oldControlPoint, newControlPoint);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -210,10 +200,9 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setControlPoint(ControlPointType newControlPoint)
-	{
-		if (newControlPoint != controlPoint)
-		{
+	@Override
+	public void setControlPoint(ControlPointType newControlPoint) {
+		if (newControlPoint != controlPoint) {
 			NotificationChain msgs = null;
 			if (controlPoint != null)
 				msgs = ((InternalEObject)controlPoint).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.TIN_TYPE__CONTROL_POINT, null, msgs);
@@ -232,10 +221,8 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TIN_TYPE__STOP_LINES:
 				return ((InternalEList<?>)getStopLines()).basicRemove(otherEnd, msgs);
 			case GMLPackage.TIN_TYPE__BREAK_LINES:
@@ -254,10 +241,8 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TIN_TYPE__STOP_LINES:
 				return getStopLines();
 			case GMLPackage.TIN_TYPE__BREAK_LINES:
@@ -277,10 +262,8 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TIN_TYPE__STOP_LINES:
 				getStopLines().clear();
 				getStopLines().addAll((Collection<? extends LineStringSegmentArrayPropertyType>)newValue);
@@ -305,10 +288,8 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIN_TYPE__STOP_LINES:
 				getStopLines().clear();
 				return;
@@ -331,10 +312,8 @@ public class TinTypeImpl extends SurfaceTypeImpl implements TinType
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TIN_TYPE__STOP_LINES:
 				return stopLines != null && !stopLines.isEmpty();
 			case GMLPackage.TIN_TYPE__BREAK_LINES:

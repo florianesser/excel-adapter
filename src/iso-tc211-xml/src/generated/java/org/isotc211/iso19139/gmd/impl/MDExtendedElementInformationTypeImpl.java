@@ -53,8 +53,7 @@ import org.isotc211.iso19139.gmd.MDObligationCodePropertyType;
  *
  * @generated
  */
-public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl implements MDExtendedElementInformationType
-{
+public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl implements MDExtendedElementInformationType {
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -190,8 +189,7 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDExtendedElementInformationTypeImpl()
-	{
+	protected MDExtendedElementInformationTypeImpl() {
 		super();
 	}
 
@@ -201,8 +199,7 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDExtendedElementInformationType();
 	}
 
@@ -211,8 +208,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getName()
-	{
+	@Override
+	public CharacterStringPropertyType getName() {
 		return name;
 	}
 
@@ -221,12 +218,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetName(CharacterStringPropertyType newName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetName(CharacterStringPropertyType newName, NotificationChain msgs) {
 		CharacterStringPropertyType oldName = name;
 		name = newName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__NAME, oldName, newName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -238,10 +233,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(CharacterStringPropertyType newName)
-	{
-		if (newName != name)
-		{
+	@Override
+	public void setName(CharacterStringPropertyType newName) {
+		if (newName != name) {
 			NotificationChain msgs = null;
 			if (name != null)
 				msgs = ((InternalEObject)name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__NAME, null, msgs);
@@ -259,8 +253,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getShortName()
-	{
+	@Override
+	public CharacterStringPropertyType getShortName() {
 		return shortName;
 	}
 
@@ -269,12 +263,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetShortName(CharacterStringPropertyType newShortName, NotificationChain msgs)
-	{
+	public NotificationChain basicSetShortName(CharacterStringPropertyType newShortName, NotificationChain msgs) {
 		CharacterStringPropertyType oldShortName = shortName;
 		shortName = newShortName;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__SHORT_NAME, oldShortName, newShortName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -286,10 +278,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShortName(CharacterStringPropertyType newShortName)
-	{
-		if (newShortName != shortName)
-		{
+	@Override
+	public void setShortName(CharacterStringPropertyType newShortName) {
+		if (newShortName != shortName) {
 			NotificationChain msgs = null;
 			if (shortName != null)
 				msgs = ((InternalEObject)shortName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__SHORT_NAME, null, msgs);
@@ -307,8 +298,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegerPropertyType getDomainCode()
-	{
+	@Override
+	public IntegerPropertyType getDomainCode() {
 		return domainCode;
 	}
 
@@ -317,12 +308,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDomainCode(IntegerPropertyType newDomainCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDomainCode(IntegerPropertyType newDomainCode, NotificationChain msgs) {
 		IntegerPropertyType oldDomainCode = domainCode;
 		domainCode = newDomainCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__DOMAIN_CODE, oldDomainCode, newDomainCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -334,10 +323,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDomainCode(IntegerPropertyType newDomainCode)
-	{
-		if (newDomainCode != domainCode)
-		{
+	@Override
+	public void setDomainCode(IntegerPropertyType newDomainCode) {
+		if (newDomainCode != domainCode) {
 			NotificationChain msgs = null;
 			if (domainCode != null)
 				msgs = ((InternalEObject)domainCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__DOMAIN_CODE, null, msgs);
@@ -355,8 +343,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDefinition()
-	{
+	@Override
+	public CharacterStringPropertyType getDefinition() {
 		return definition;
 	}
 
@@ -365,12 +353,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDefinition(CharacterStringPropertyType newDefinition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDefinition(CharacterStringPropertyType newDefinition, NotificationChain msgs) {
 		CharacterStringPropertyType oldDefinition = definition;
 		definition = newDefinition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__DEFINITION, oldDefinition, newDefinition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -382,10 +368,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDefinition(CharacterStringPropertyType newDefinition)
-	{
-		if (newDefinition != definition)
-		{
+	@Override
+	public void setDefinition(CharacterStringPropertyType newDefinition) {
+		if (newDefinition != definition) {
 			NotificationChain msgs = null;
 			if (definition != null)
 				msgs = ((InternalEObject)definition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__DEFINITION, null, msgs);
@@ -403,8 +388,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDObligationCodePropertyType getObligation()
-	{
+	@Override
+	public MDObligationCodePropertyType getObligation() {
 		return obligation;
 	}
 
@@ -413,12 +398,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetObligation(MDObligationCodePropertyType newObligation, NotificationChain msgs)
-	{
+	public NotificationChain basicSetObligation(MDObligationCodePropertyType newObligation, NotificationChain msgs) {
 		MDObligationCodePropertyType oldObligation = obligation;
 		obligation = newObligation;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__OBLIGATION, oldObligation, newObligation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -430,10 +413,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setObligation(MDObligationCodePropertyType newObligation)
-	{
-		if (newObligation != obligation)
-		{
+	@Override
+	public void setObligation(MDObligationCodePropertyType newObligation) {
+		if (newObligation != obligation) {
 			NotificationChain msgs = null;
 			if (obligation != null)
 				msgs = ((InternalEObject)obligation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__OBLIGATION, null, msgs);
@@ -451,8 +433,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getCondition()
-	{
+	@Override
+	public CharacterStringPropertyType getCondition() {
 		return condition;
 	}
 
@@ -461,12 +443,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCondition(CharacterStringPropertyType newCondition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCondition(CharacterStringPropertyType newCondition, NotificationChain msgs) {
 		CharacterStringPropertyType oldCondition = condition;
 		condition = newCondition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__CONDITION, oldCondition, newCondition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -478,10 +458,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCondition(CharacterStringPropertyType newCondition)
-	{
-		if (newCondition != condition)
-		{
+	@Override
+	public void setCondition(CharacterStringPropertyType newCondition) {
+		if (newCondition != condition) {
 			NotificationChain msgs = null;
 			if (condition != null)
 				msgs = ((InternalEObject)condition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__CONDITION, null, msgs);
@@ -499,8 +478,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDDatatypeCodePropertyType getDataType()
-	{
+	@Override
+	public MDDatatypeCodePropertyType getDataType() {
 		return dataType;
 	}
 
@@ -509,12 +488,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataType(MDDatatypeCodePropertyType newDataType, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataType(MDDatatypeCodePropertyType newDataType, NotificationChain msgs) {
 		MDDatatypeCodePropertyType oldDataType = dataType;
 		dataType = newDataType;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__DATA_TYPE, oldDataType, newDataType);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -526,10 +503,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataType(MDDatatypeCodePropertyType newDataType)
-	{
-		if (newDataType != dataType)
-		{
+	@Override
+	public void setDataType(MDDatatypeCodePropertyType newDataType) {
+		if (newDataType != dataType) {
 			NotificationChain msgs = null;
 			if (dataType != null)
 				msgs = ((InternalEObject)dataType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__DATA_TYPE, null, msgs);
@@ -547,8 +523,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getMaximumOccurrence()
-	{
+	@Override
+	public CharacterStringPropertyType getMaximumOccurrence() {
 		return maximumOccurrence;
 	}
 
@@ -557,12 +533,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMaximumOccurrence(CharacterStringPropertyType newMaximumOccurrence, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMaximumOccurrence(CharacterStringPropertyType newMaximumOccurrence, NotificationChain msgs) {
 		CharacterStringPropertyType oldMaximumOccurrence = maximumOccurrence;
 		maximumOccurrence = newMaximumOccurrence;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__MAXIMUM_OCCURRENCE, oldMaximumOccurrence, newMaximumOccurrence);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -574,10 +548,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaximumOccurrence(CharacterStringPropertyType newMaximumOccurrence)
-	{
-		if (newMaximumOccurrence != maximumOccurrence)
-		{
+	@Override
+	public void setMaximumOccurrence(CharacterStringPropertyType newMaximumOccurrence) {
+		if (newMaximumOccurrence != maximumOccurrence) {
 			NotificationChain msgs = null;
 			if (maximumOccurrence != null)
 				msgs = ((InternalEObject)maximumOccurrence).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__MAXIMUM_OCCURRENCE, null, msgs);
@@ -595,8 +568,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDomainValue()
-	{
+	@Override
+	public CharacterStringPropertyType getDomainValue() {
 		return domainValue;
 	}
 
@@ -605,12 +578,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDomainValue(CharacterStringPropertyType newDomainValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDomainValue(CharacterStringPropertyType newDomainValue, NotificationChain msgs) {
 		CharacterStringPropertyType oldDomainValue = domainValue;
 		domainValue = newDomainValue;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__DOMAIN_VALUE, oldDomainValue, newDomainValue);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -622,10 +593,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDomainValue(CharacterStringPropertyType newDomainValue)
-	{
-		if (newDomainValue != domainValue)
-		{
+	@Override
+	public void setDomainValue(CharacterStringPropertyType newDomainValue) {
+		if (newDomainValue != domainValue) {
 			NotificationChain msgs = null;
 			if (domainValue != null)
 				msgs = ((InternalEObject)domainValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__DOMAIN_VALUE, null, msgs);
@@ -643,10 +613,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getParentEntity()
-	{
-		if (parentEntity == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getParentEntity() {
+		if (parentEntity == null) {
 			parentEntity = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__PARENT_ENTITY);
 		}
 		return parentEntity;
@@ -657,8 +626,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getRule()
-	{
+	@Override
+	public CharacterStringPropertyType getRule() {
 		return rule;
 	}
 
@@ -667,12 +636,10 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRule(CharacterStringPropertyType newRule, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRule(CharacterStringPropertyType newRule, NotificationChain msgs) {
 		CharacterStringPropertyType oldRule = rule;
 		rule = newRule;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__RULE, oldRule, newRule);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -684,10 +651,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRule(CharacterStringPropertyType newRule)
-	{
-		if (newRule != rule)
-		{
+	@Override
+	public void setRule(CharacterStringPropertyType newRule) {
+		if (newRule != rule) {
 			NotificationChain msgs = null;
 			if (rule != null)
 				msgs = ((InternalEObject)rule).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__RULE, null, msgs);
@@ -705,10 +671,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getRationale()
-	{
-		if (rationale == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getRationale() {
+		if (rationale == null) {
 			rationale = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__RATIONALE);
 		}
 		return rationale;
@@ -719,10 +684,9 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIResponsiblePartyPropertyType> getSource()
-	{
-		if (source == null)
-		{
+	@Override
+	public EList<CIResponsiblePartyPropertyType> getSource() {
+		if (source == null) {
 			source = new EObjectContainmentEList<CIResponsiblePartyPropertyType>(CIResponsiblePartyPropertyType.class, this, GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__SOURCE);
 		}
 		return source;
@@ -734,10 +698,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__NAME:
 				return basicSetName(null, msgs);
 			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__SHORT_NAME:
@@ -774,10 +736,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__NAME:
 				return getName();
 			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__SHORT_NAME:
@@ -815,10 +775,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__NAME:
 				setName((CharacterStringPropertyType)newValue);
 				return;
@@ -871,10 +829,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__NAME:
 				setName((CharacterStringPropertyType)null);
 				return;
@@ -924,10 +880,8 @@ public class MDExtendedElementInformationTypeImpl extends AbstractObjectTypeImpl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__NAME:
 				return name != null;
 			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE__SHORT_NAME:

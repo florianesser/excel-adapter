@@ -31,8 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjectImpl.Container implements AbstractGeneralParameterValuePropertyType
-{
+public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjectImpl.Container implements AbstractGeneralParameterValuePropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractGeneralParameterValueGroup() <em>Abstract General Parameter Value Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGeneralParameterValuePropertyTypeImpl()
-	{
+	protected AbstractGeneralParameterValuePropertyTypeImpl() {
 		super();
 	}
 
@@ -59,8 +57,7 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractGeneralParameterValuePropertyType();
 	}
 
@@ -69,10 +66,9 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractGeneralParameterValueGroup()
-	{
-		if (abstractGeneralParameterValueGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractGeneralParameterValueGroup() {
+		if (abstractGeneralParameterValueGroup == null) {
 			abstractGeneralParameterValueGroup = new BasicFeatureMap(this, GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE__ABSTRACT_GENERAL_PARAMETER_VALUE_GROUP);
 		}
 		return abstractGeneralParameterValueGroup;
@@ -83,8 +79,8 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeneralParameterValueType getAbstractGeneralParameterValue()
-	{
+	@Override
+	public AbstractGeneralParameterValueType getAbstractGeneralParameterValue() {
 		return (AbstractGeneralParameterValueType)getAbstractGeneralParameterValueGroup().get(GMLPackage.eINSTANCE.getAbstractGeneralParameterValuePropertyType_AbstractGeneralParameterValue(), true);
 	}
 
@@ -93,8 +89,7 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeneralParameterValue(AbstractGeneralParameterValueType newAbstractGeneralParameterValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeneralParameterValue(AbstractGeneralParameterValueType newAbstractGeneralParameterValue, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractGeneralParameterValueGroup()).basicAdd(GMLPackage.eINSTANCE.getAbstractGeneralParameterValuePropertyType_AbstractGeneralParameterValue(), newAbstractGeneralParameterValue, msgs);
 	}
 
@@ -104,10 +99,8 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE__ABSTRACT_GENERAL_PARAMETER_VALUE_GROUP:
 				return ((InternalEList<?>)getAbstractGeneralParameterValueGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE__ABSTRACT_GENERAL_PARAMETER_VALUE:
@@ -122,10 +115,8 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE__ABSTRACT_GENERAL_PARAMETER_VALUE_GROUP:
 				if (coreType) return getAbstractGeneralParameterValueGroup();
 				return ((FeatureMap.Internal)getAbstractGeneralParameterValueGroup()).getWrapper();
@@ -141,10 +132,8 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE__ABSTRACT_GENERAL_PARAMETER_VALUE_GROUP:
 				((FeatureMap.Internal)getAbstractGeneralParameterValueGroup()).set(newValue);
 				return;
@@ -158,10 +147,8 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE__ABSTRACT_GENERAL_PARAMETER_VALUE_GROUP:
 				getAbstractGeneralParameterValueGroup().clear();
 				return;
@@ -175,10 +162,8 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE__ABSTRACT_GENERAL_PARAMETER_VALUE_GROUP:
 				return abstractGeneralParameterValueGroup != null && !abstractGeneralParameterValueGroup.isEmpty();
 			case GMLPackage.ABSTRACT_GENERAL_PARAMETER_VALUE_PROPERTY_TYPE__ABSTRACT_GENERAL_PARAMETER_VALUE:
@@ -193,11 +178,10 @@ public class AbstractGeneralParameterValuePropertyTypeImpl extends MinimalEObjec
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractGeneralParameterValueGroup: ");
 		result.append(abstractGeneralParameterValueGroup);
 		result.append(')');

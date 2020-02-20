@@ -28,16 +28,11 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='MD_LegalConstraints_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDLegalConstraintsType extends MDConstraintsType
-{
+public interface MDLegalConstraintsType extends MDConstraintsType {
 	/**
 	 * Returns the value of the '<em><b>Access Constraints</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDRestrictionCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Access Constraints</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Access Constraints</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDLegalConstraintsType_AccessConstraints()
@@ -51,10 +46,6 @@ public interface MDLegalConstraintsType extends MDConstraintsType
 	 * Returns the value of the '<em><b>Use Constraints</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDRestrictionCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Use Constraints</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Use Constraints</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDLegalConstraintsType_UseConstraints()
@@ -68,10 +59,6 @@ public interface MDLegalConstraintsType extends MDConstraintsType
 	 * Returns the value of the '<em><b>Other Constraints</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Other Constraints</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Constraints</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDLegalConstraintsType_OtherConstraints()

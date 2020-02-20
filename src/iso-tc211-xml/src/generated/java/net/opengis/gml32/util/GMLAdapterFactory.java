@@ -19,8 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * @see net.opengis.gml32.GMLPackage
  * @generated
  */
-public class GMLAdapterFactory extends AdapterFactoryImpl
-{
+public class GMLAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
@@ -35,10 +34,8 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMLAdapterFactory()
-	{
-		if (modelPackage == null)
-		{
+	public GMLAdapterFactory() {
+		if (modelPackage == null) {
 			modelPackage = GMLPackage.eINSTANCE;
 		}
 	}
@@ -52,14 +49,11 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean isFactoryForType(Object object)
-	{
-		if (object == modelPackage)
-		{
+	public boolean isFactoryForType(Object object) {
+		if (object == modelPackage) {
 			return true;
 		}
-		if (object instanceof EObject)
-		{
+		if (object instanceof EObject) {
 			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
@@ -72,1761 +66,1409 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	protected GMLSwitch<Adapter> modelSwitch =
-		new GMLSwitch<Adapter>()
-		{
+		new GMLSwitch<Adapter>() {
 			@Override
-			public Adapter caseAbstractContinuousCoverageType(AbstractContinuousCoverageType object)
-			{
+			public Adapter caseAbstractContinuousCoverageType(AbstractContinuousCoverageType object) {
 				return createAbstractContinuousCoverageTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractCoordinateOperationType(AbstractCoordinateOperationType object)
-			{
+			public Adapter caseAbstractCoordinateOperationType(AbstractCoordinateOperationType object) {
 				return createAbstractCoordinateOperationTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractCoordinateSystemType(AbstractCoordinateSystemType object)
-			{
+			public Adapter caseAbstractCoordinateSystemType(AbstractCoordinateSystemType object) {
 				return createAbstractCoordinateSystemTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractCoverageType(AbstractCoverageType object)
-			{
+			public Adapter caseAbstractCoverageType(AbstractCoverageType object) {
 				return createAbstractCoverageTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractCRSType(AbstractCRSType object)
-			{
+			public Adapter caseAbstractCRSType(AbstractCRSType object) {
 				return createAbstractCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractCurveSegmentType(AbstractCurveSegmentType object)
-			{
+			public Adapter caseAbstractCurveSegmentType(AbstractCurveSegmentType object) {
 				return createAbstractCurveSegmentTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractCurveType(AbstractCurveType object)
-			{
+			public Adapter caseAbstractCurveType(AbstractCurveType object) {
 				return createAbstractCurveTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractDatumType(AbstractDatumType object)
-			{
+			public Adapter caseAbstractDatumType(AbstractDatumType object) {
 				return createAbstractDatumTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractFeatureCollectionType(AbstractFeatureCollectionType object)
-			{
+			public Adapter caseAbstractFeatureCollectionType(AbstractFeatureCollectionType object) {
 				return createAbstractFeatureCollectionTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractFeatureMemberType(AbstractFeatureMemberType object)
-			{
+			public Adapter caseAbstractFeatureMemberType(AbstractFeatureMemberType object) {
 				return createAbstractFeatureMemberTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractFeatureType(AbstractFeatureType object)
-			{
+			public Adapter caseAbstractFeatureType(AbstractFeatureType object) {
 				return createAbstractFeatureTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeneralConversionType(AbstractGeneralConversionType object)
-			{
+			public Adapter caseAbstractGeneralConversionType(AbstractGeneralConversionType object) {
 				return createAbstractGeneralConversionTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeneralDerivedCRSType(AbstractGeneralDerivedCRSType object)
-			{
+			public Adapter caseAbstractGeneralDerivedCRSType(AbstractGeneralDerivedCRSType object) {
 				return createAbstractGeneralDerivedCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeneralOperationParameterPropertyType(AbstractGeneralOperationParameterPropertyType object)
-			{
+			public Adapter caseAbstractGeneralOperationParameterPropertyType(AbstractGeneralOperationParameterPropertyType object) {
 				return createAbstractGeneralOperationParameterPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeneralOperationParameterType(AbstractGeneralOperationParameterType object)
-			{
+			public Adapter caseAbstractGeneralOperationParameterType(AbstractGeneralOperationParameterType object) {
 				return createAbstractGeneralOperationParameterTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeneralParameterValuePropertyType(AbstractGeneralParameterValuePropertyType object)
-			{
+			public Adapter caseAbstractGeneralParameterValuePropertyType(AbstractGeneralParameterValuePropertyType object) {
 				return createAbstractGeneralParameterValuePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeneralParameterValueType(AbstractGeneralParameterValueType object)
-			{
+			public Adapter caseAbstractGeneralParameterValueType(AbstractGeneralParameterValueType object) {
 				return createAbstractGeneralParameterValueTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeneralTransformationType(AbstractGeneralTransformationType object)
-			{
+			public Adapter caseAbstractGeneralTransformationType(AbstractGeneralTransformationType object) {
 				return createAbstractGeneralTransformationTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeometricAggregateType(AbstractGeometricAggregateType object)
-			{
+			public Adapter caseAbstractGeometricAggregateType(AbstractGeometricAggregateType object) {
 				return createAbstractGeometricAggregateTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeometricPrimitiveType(AbstractGeometricPrimitiveType object)
-			{
+			public Adapter caseAbstractGeometricPrimitiveType(AbstractGeometricPrimitiveType object) {
 				return createAbstractGeometricPrimitiveTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGeometryType(AbstractGeometryType object)
-			{
+			public Adapter caseAbstractGeometryType(AbstractGeometryType object) {
 				return createAbstractGeometryTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGMLType(AbstractGMLType object)
-			{
+			public Adapter caseAbstractGMLType(AbstractGMLType object) {
 				return createAbstractGMLTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractGriddedSurfaceType(AbstractGriddedSurfaceType object)
-			{
+			public Adapter caseAbstractGriddedSurfaceType(AbstractGriddedSurfaceType object) {
 				return createAbstractGriddedSurfaceTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractMemberType(AbstractMemberType object)
-			{
+			public Adapter caseAbstractMemberType(AbstractMemberType object) {
 				return createAbstractMemberTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractMetadataPropertyType(AbstractMetadataPropertyType object)
-			{
+			public Adapter caseAbstractMetadataPropertyType(AbstractMetadataPropertyType object) {
 				return createAbstractMetadataPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractMetaDataType(AbstractMetaDataType object)
-			{
+			public Adapter caseAbstractMetaDataType(AbstractMetaDataType object) {
 				return createAbstractMetaDataTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractParametricCurveSurfaceType(AbstractParametricCurveSurfaceType object)
-			{
+			public Adapter caseAbstractParametricCurveSurfaceType(AbstractParametricCurveSurfaceType object) {
 				return createAbstractParametricCurveSurfaceTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractRingPropertyType(AbstractRingPropertyType object)
-			{
+			public Adapter caseAbstractRingPropertyType(AbstractRingPropertyType object) {
 				return createAbstractRingPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractRingType(AbstractRingType object)
-			{
+			public Adapter caseAbstractRingType(AbstractRingType object) {
 				return createAbstractRingTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractSolidType(AbstractSolidType object)
-			{
+			public Adapter caseAbstractSolidType(AbstractSolidType object) {
 				return createAbstractSolidTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractSurfacePatchType(AbstractSurfacePatchType object)
-			{
+			public Adapter caseAbstractSurfacePatchType(AbstractSurfacePatchType object) {
 				return createAbstractSurfacePatchTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractSurfaceType(AbstractSurfaceType object)
-			{
+			public Adapter caseAbstractSurfaceType(AbstractSurfaceType object) {
 				return createAbstractSurfaceTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractTimeComplexType(AbstractTimeComplexType object)
-			{
+			public Adapter caseAbstractTimeComplexType(AbstractTimeComplexType object) {
 				return createAbstractTimeComplexTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractTimeGeometricPrimitiveType(AbstractTimeGeometricPrimitiveType object)
-			{
+			public Adapter caseAbstractTimeGeometricPrimitiveType(AbstractTimeGeometricPrimitiveType object) {
 				return createAbstractTimeGeometricPrimitiveTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractTimeObjectType(AbstractTimeObjectType object)
-			{
+			public Adapter caseAbstractTimeObjectType(AbstractTimeObjectType object) {
 				return createAbstractTimeObjectTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractTimePrimitiveType(AbstractTimePrimitiveType object)
-			{
+			public Adapter caseAbstractTimePrimitiveType(AbstractTimePrimitiveType object) {
 				return createAbstractTimePrimitiveTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractTimeSliceType(AbstractTimeSliceType object)
-			{
+			public Adapter caseAbstractTimeSliceType(AbstractTimeSliceType object) {
 				return createAbstractTimeSliceTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractTimeTopologyPrimitiveType(AbstractTimeTopologyPrimitiveType object)
-			{
+			public Adapter caseAbstractTimeTopologyPrimitiveType(AbstractTimeTopologyPrimitiveType object) {
 				return createAbstractTimeTopologyPrimitiveTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractTopologyType(AbstractTopologyType object)
-			{
+			public Adapter caseAbstractTopologyType(AbstractTopologyType object) {
 				return createAbstractTopologyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAbstractTopoPrimitiveType(AbstractTopoPrimitiveType object)
-			{
+			public Adapter caseAbstractTopoPrimitiveType(AbstractTopoPrimitiveType object) {
 				return createAbstractTopoPrimitiveTypeAdapter();
 			}
 			@Override
-			public Adapter caseAffineCSPropertyType(AffineCSPropertyType object)
-			{
+			public Adapter caseAffineCSPropertyType(AffineCSPropertyType object) {
 				return createAffineCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseAffineCSType(AffineCSType object)
-			{
+			public Adapter caseAffineCSType(AffineCSType object) {
 				return createAffineCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseAffinePlacementType(AffinePlacementType object)
-			{
+			public Adapter caseAffinePlacementType(AffinePlacementType object) {
 				return createAffinePlacementTypeAdapter();
 			}
 			@Override
-			public Adapter caseAngleChoiceType(AngleChoiceType object)
-			{
+			public Adapter caseAngleChoiceType(AngleChoiceType object) {
 				return createAngleChoiceTypeAdapter();
 			}
 			@Override
-			public Adapter caseAngleType(AngleType object)
-			{
+			public Adapter caseAngleType(AngleType object) {
 				return createAngleTypeAdapter();
 			}
 			@Override
-			public Adapter caseArcByBulgeType(ArcByBulgeType object)
-			{
+			public Adapter caseArcByBulgeType(ArcByBulgeType object) {
 				return createArcByBulgeTypeAdapter();
 			}
 			@Override
-			public Adapter caseArcByCenterPointType(ArcByCenterPointType object)
-			{
+			public Adapter caseArcByCenterPointType(ArcByCenterPointType object) {
 				return createArcByCenterPointTypeAdapter();
 			}
 			@Override
-			public Adapter caseArcStringByBulgeType(ArcStringByBulgeType object)
-			{
+			public Adapter caseArcStringByBulgeType(ArcStringByBulgeType object) {
 				return createArcStringByBulgeTypeAdapter();
 			}
 			@Override
-			public Adapter caseArcStringType(ArcStringType object)
-			{
+			public Adapter caseArcStringType(ArcStringType object) {
 				return createArcStringTypeAdapter();
 			}
 			@Override
-			public Adapter caseArcType(ArcType object)
-			{
+			public Adapter caseArcType(ArcType object) {
 				return createArcTypeAdapter();
 			}
 			@Override
-			public Adapter caseAreaType(AreaType object)
-			{
+			public Adapter caseAreaType(AreaType object) {
 				return createAreaTypeAdapter();
 			}
 			@Override
-			public Adapter caseArrayAssociationType(ArrayAssociationType object)
-			{
+			public Adapter caseArrayAssociationType(ArrayAssociationType object) {
 				return createArrayAssociationTypeAdapter();
 			}
 			@Override
-			public Adapter caseArrayType(ArrayType object)
-			{
+			public Adapter caseArrayType(ArrayType object) {
 				return createArrayTypeAdapter();
 			}
 			@Override
-			public Adapter caseAssociationRoleType(AssociationRoleType object)
-			{
+			public Adapter caseAssociationRoleType(AssociationRoleType object) {
 				return createAssociationRoleTypeAdapter();
 			}
 			@Override
-			public Adapter caseBagType(BagType object)
-			{
+			public Adapter caseBagType(BagType object) {
 				return createBagTypeAdapter();
 			}
 			@Override
-			public Adapter caseBaseUnitType(BaseUnitType object)
-			{
+			public Adapter caseBaseUnitType(BaseUnitType object) {
 				return createBaseUnitTypeAdapter();
 			}
 			@Override
-			public Adapter caseBezierType(BezierType object)
-			{
+			public Adapter caseBezierType(BezierType object) {
 				return createBezierTypeAdapter();
 			}
 			@Override
-			public Adapter caseBooleanPropertyType(BooleanPropertyType object)
-			{
+			public Adapter caseBooleanPropertyType(BooleanPropertyType object) {
 				return createBooleanPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseBooleanType(BooleanType object)
-			{
+			public Adapter caseBooleanType(BooleanType object) {
 				return createBooleanTypeAdapter();
 			}
 			@Override
-			public Adapter caseBoundedFeatureType(BoundedFeatureType object)
-			{
+			public Adapter caseBoundedFeatureType(BoundedFeatureType object) {
 				return createBoundedFeatureTypeAdapter();
 			}
 			@Override
-			public Adapter caseBoundingShapeType(BoundingShapeType object)
-			{
+			public Adapter caseBoundingShapeType(BoundingShapeType object) {
 				return createBoundingShapeTypeAdapter();
 			}
 			@Override
-			public Adapter caseBSplineType(BSplineType object)
-			{
+			public Adapter caseBSplineType(BSplineType object) {
 				return createBSplineTypeAdapter();
 			}
 			@Override
-			public Adapter caseCartesianCSPropertyType(CartesianCSPropertyType object)
-			{
+			public Adapter caseCartesianCSPropertyType(CartesianCSPropertyType object) {
 				return createCartesianCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCartesianCSType(CartesianCSType object)
-			{
+			public Adapter caseCartesianCSType(CartesianCSType object) {
 				return createCartesianCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseCategoryExtentType(CategoryExtentType object)
-			{
+			public Adapter caseCategoryExtentType(CategoryExtentType object) {
 				return createCategoryExtentTypeAdapter();
 			}
 			@Override
-			public Adapter caseCategoryPropertyType(CategoryPropertyType object)
-			{
+			public Adapter caseCategoryPropertyType(CategoryPropertyType object) {
 				return createCategoryPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCategoryType(CategoryType object)
-			{
+			public Adapter caseCategoryType(CategoryType object) {
 				return createCategoryTypeAdapter();
 			}
 			@Override
-			public Adapter caseCircleByCenterPointType(CircleByCenterPointType object)
-			{
+			public Adapter caseCircleByCenterPointType(CircleByCenterPointType object) {
 				return createCircleByCenterPointTypeAdapter();
 			}
 			@Override
-			public Adapter caseCircleType(CircleType object)
-			{
+			public Adapter caseCircleType(CircleType object) {
 				return createCircleTypeAdapter();
 			}
 			@Override
-			public Adapter caseClothoidType(ClothoidType object)
-			{
+			public Adapter caseClothoidType(ClothoidType object) {
 				return createClothoidTypeAdapter();
 			}
 			@Override
-			public Adapter caseCodeListType(CodeListType object)
-			{
+			public Adapter caseCodeListType(CodeListType object) {
 				return createCodeListTypeAdapter();
 			}
 			@Override
-			public Adapter caseCodeOrNilReasonListType(CodeOrNilReasonListType object)
-			{
+			public Adapter caseCodeOrNilReasonListType(CodeOrNilReasonListType object) {
 				return createCodeOrNilReasonListTypeAdapter();
 			}
 			@Override
-			public Adapter caseCodeType(CodeType object)
-			{
+			public Adapter caseCodeType(CodeType object) {
 				return createCodeTypeAdapter();
 			}
 			@Override
-			public Adapter caseCodeWithAuthorityType(CodeWithAuthorityType object)
-			{
+			public Adapter caseCodeWithAuthorityType(CodeWithAuthorityType object) {
 				return createCodeWithAuthorityTypeAdapter();
 			}
 			@Override
-			public Adapter caseCompositeCurveType(CompositeCurveType object)
-			{
+			public Adapter caseCompositeCurveType(CompositeCurveType object) {
 				return createCompositeCurveTypeAdapter();
 			}
 			@Override
-			public Adapter caseCompositeSolidType(CompositeSolidType object)
-			{
+			public Adapter caseCompositeSolidType(CompositeSolidType object) {
 				return createCompositeSolidTypeAdapter();
 			}
 			@Override
-			public Adapter caseCompositeSurfaceType(CompositeSurfaceType object)
-			{
+			public Adapter caseCompositeSurfaceType(CompositeSurfaceType object) {
 				return createCompositeSurfaceTypeAdapter();
 			}
 			@Override
-			public Adapter caseCompositeValueType(CompositeValueType object)
-			{
+			public Adapter caseCompositeValueType(CompositeValueType object) {
 				return createCompositeValueTypeAdapter();
 			}
 			@Override
-			public Adapter caseCompoundCRSPropertyType(CompoundCRSPropertyType object)
-			{
+			public Adapter caseCompoundCRSPropertyType(CompoundCRSPropertyType object) {
 				return createCompoundCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCompoundCRSType(CompoundCRSType object)
-			{
+			public Adapter caseCompoundCRSType(CompoundCRSType object) {
 				return createCompoundCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseConcatenatedOperationPropertyType(ConcatenatedOperationPropertyType object)
-			{
+			public Adapter caseConcatenatedOperationPropertyType(ConcatenatedOperationPropertyType object) {
 				return createConcatenatedOperationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseConcatenatedOperationType(ConcatenatedOperationType object)
-			{
+			public Adapter caseConcatenatedOperationType(ConcatenatedOperationType object) {
 				return createConcatenatedOperationTypeAdapter();
 			}
 			@Override
-			public Adapter caseConeType(ConeType object)
-			{
+			public Adapter caseConeType(ConeType object) {
 				return createConeTypeAdapter();
 			}
 			@Override
-			public Adapter caseControlPointType(ControlPointType object)
-			{
+			public Adapter caseControlPointType(ControlPointType object) {
 				return createControlPointTypeAdapter();
 			}
 			@Override
-			public Adapter caseConventionalUnitType(ConventionalUnitType object)
-			{
+			public Adapter caseConventionalUnitType(ConventionalUnitType object) {
 				return createConventionalUnitTypeAdapter();
 			}
 			@Override
-			public Adapter caseConversionPropertyType(ConversionPropertyType object)
-			{
+			public Adapter caseConversionPropertyType(ConversionPropertyType object) {
 				return createConversionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseConversionToPreferredUnitType(ConversionToPreferredUnitType object)
-			{
+			public Adapter caseConversionToPreferredUnitType(ConversionToPreferredUnitType object) {
 				return createConversionToPreferredUnitTypeAdapter();
 			}
 			@Override
-			public Adapter caseConversionType(ConversionType object)
-			{
+			public Adapter caseConversionType(ConversionType object) {
 				return createConversionTypeAdapter();
 			}
 			@Override
-			public Adapter caseCoordinateOperationAccuracyType(CoordinateOperationAccuracyType object)
-			{
+			public Adapter caseCoordinateOperationAccuracyType(CoordinateOperationAccuracyType object) {
 				return createCoordinateOperationAccuracyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCoordinateOperationPropertyType(CoordinateOperationPropertyType object)
-			{
+			public Adapter caseCoordinateOperationPropertyType(CoordinateOperationPropertyType object) {
 				return createCoordinateOperationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCoordinatesType(CoordinatesType object)
-			{
+			public Adapter caseCoordinatesType(CoordinatesType object) {
 				return createCoordinatesTypeAdapter();
 			}
 			@Override
-			public Adapter caseCoordinateSystemAxisPropertyType(CoordinateSystemAxisPropertyType object)
-			{
+			public Adapter caseCoordinateSystemAxisPropertyType(CoordinateSystemAxisPropertyType object) {
 				return createCoordinateSystemAxisPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCoordinateSystemAxisType(CoordinateSystemAxisType object)
-			{
+			public Adapter caseCoordinateSystemAxisType(CoordinateSystemAxisType object) {
 				return createCoordinateSystemAxisTypeAdapter();
 			}
 			@Override
-			public Adapter caseCoordinateSystemPropertyType(CoordinateSystemPropertyType object)
-			{
+			public Adapter caseCoordinateSystemPropertyType(CoordinateSystemPropertyType object) {
 				return createCoordinateSystemPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCountPropertyType(CountPropertyType object)
-			{
+			public Adapter caseCountPropertyType(CountPropertyType object) {
 				return createCountPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCountType(CountType object)
-			{
+			public Adapter caseCountType(CountType object) {
 				return createCountTypeAdapter();
 			}
 			@Override
-			public Adapter caseCoverageFunctionType(CoverageFunctionType object)
-			{
+			public Adapter caseCoverageFunctionType(CoverageFunctionType object) {
 				return createCoverageFunctionTypeAdapter();
 			}
 			@Override
-			public Adapter caseCRSPropertyType(CRSPropertyType object)
-			{
+			public Adapter caseCRSPropertyType(CRSPropertyType object) {
 				return createCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCubicSplineType(CubicSplineType object)
-			{
+			public Adapter caseCubicSplineType(CubicSplineType object) {
 				return createCubicSplineTypeAdapter();
 			}
 			@Override
-			public Adapter caseCurveArrayPropertyType(CurveArrayPropertyType object)
-			{
+			public Adapter caseCurveArrayPropertyType(CurveArrayPropertyType object) {
 				return createCurveArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCurvePropertyType(CurvePropertyType object)
-			{
+			public Adapter caseCurvePropertyType(CurvePropertyType object) {
 				return createCurvePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCurveSegmentArrayPropertyType(CurveSegmentArrayPropertyType object)
-			{
+			public Adapter caseCurveSegmentArrayPropertyType(CurveSegmentArrayPropertyType object) {
 				return createCurveSegmentArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCurveType(CurveType object)
-			{
+			public Adapter caseCurveType(CurveType object) {
 				return createCurveTypeAdapter();
 			}
 			@Override
-			public Adapter caseCylinderType(CylinderType object)
-			{
+			public Adapter caseCylinderType(CylinderType object) {
 				return createCylinderTypeAdapter();
 			}
 			@Override
-			public Adapter caseCylindricalCSPropertyType(CylindricalCSPropertyType object)
-			{
+			public Adapter caseCylindricalCSPropertyType(CylindricalCSPropertyType object) {
 				return createCylindricalCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseCylindricalCSType(CylindricalCSType object)
-			{
+			public Adapter caseCylindricalCSType(CylindricalCSType object) {
 				return createCylindricalCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseDataBlockType(DataBlockType object)
-			{
+			public Adapter caseDataBlockType(DataBlockType object) {
 				return createDataBlockTypeAdapter();
 			}
 			@Override
-			public Adapter caseDatumPropertyType(DatumPropertyType object)
-			{
+			public Adapter caseDatumPropertyType(DatumPropertyType object) {
 				return createDatumPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDefinitionBaseType(DefinitionBaseType object)
-			{
+			public Adapter caseDefinitionBaseType(DefinitionBaseType object) {
 				return createDefinitionBaseTypeAdapter();
 			}
 			@Override
-			public Adapter caseDefinitionProxyType(DefinitionProxyType object)
-			{
+			public Adapter caseDefinitionProxyType(DefinitionProxyType object) {
 				return createDefinitionProxyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDefinitionType(DefinitionType object)
-			{
+			public Adapter caseDefinitionType(DefinitionType object) {
 				return createDefinitionTypeAdapter();
 			}
 			@Override
-			public Adapter caseDegreesType(DegreesType object)
-			{
+			public Adapter caseDegreesType(DegreesType object) {
 				return createDegreesTypeAdapter();
 			}
 			@Override
-			public Adapter caseDerivationUnitTermType(DerivationUnitTermType object)
-			{
+			public Adapter caseDerivationUnitTermType(DerivationUnitTermType object) {
 				return createDerivationUnitTermTypeAdapter();
 			}
 			@Override
-			public Adapter caseDerivedCRSPropertyType(DerivedCRSPropertyType object)
-			{
+			public Adapter caseDerivedCRSPropertyType(DerivedCRSPropertyType object) {
 				return createDerivedCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDerivedCRSType(DerivedCRSType object)
-			{
+			public Adapter caseDerivedCRSType(DerivedCRSType object) {
 				return createDerivedCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseDerivedUnitType(DerivedUnitType object)
-			{
+			public Adapter caseDerivedUnitType(DerivedUnitType object) {
 				return createDerivedUnitTypeAdapter();
 			}
 			@Override
-			public Adapter caseDictionaryEntryType(DictionaryEntryType object)
-			{
+			public Adapter caseDictionaryEntryType(DictionaryEntryType object) {
 				return createDictionaryEntryTypeAdapter();
 			}
 			@Override
-			public Adapter caseDictionaryType(DictionaryType object)
-			{
+			public Adapter caseDictionaryType(DictionaryType object) {
 				return createDictionaryTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectedEdgePropertyType(DirectedEdgePropertyType object)
-			{
+			public Adapter caseDirectedEdgePropertyType(DirectedEdgePropertyType object) {
 				return createDirectedEdgePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectedFacePropertyType(DirectedFacePropertyType object)
-			{
+			public Adapter caseDirectedFacePropertyType(DirectedFacePropertyType object) {
 				return createDirectedFacePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectedNodePropertyType(DirectedNodePropertyType object)
-			{
+			public Adapter caseDirectedNodePropertyType(DirectedNodePropertyType object) {
 				return createDirectedNodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectedObservationAtDistanceType(DirectedObservationAtDistanceType object)
-			{
+			public Adapter caseDirectedObservationAtDistanceType(DirectedObservationAtDistanceType object) {
 				return createDirectedObservationAtDistanceTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectedObservationType(DirectedObservationType object)
-			{
+			public Adapter caseDirectedObservationType(DirectedObservationType object) {
 				return createDirectedObservationTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectedTopoSolidPropertyType(DirectedTopoSolidPropertyType object)
-			{
+			public Adapter caseDirectedTopoSolidPropertyType(DirectedTopoSolidPropertyType object) {
 				return createDirectedTopoSolidPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectionDescriptionType(DirectionDescriptionType object)
-			{
+			public Adapter caseDirectionDescriptionType(DirectionDescriptionType object) {
 				return createDirectionDescriptionTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectionPropertyType(DirectionPropertyType object)
-			{
+			public Adapter caseDirectionPropertyType(DirectionPropertyType object) {
 				return createDirectionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectionVectorType(DirectionVectorType object)
-			{
+			public Adapter caseDirectionVectorType(DirectionVectorType object) {
 				return createDirectionVectorTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectPositionListType(DirectPositionListType object)
-			{
+			public Adapter caseDirectPositionListType(DirectPositionListType object) {
 				return createDirectPositionListTypeAdapter();
 			}
 			@Override
-			public Adapter caseDirectPositionType(DirectPositionType object)
-			{
+			public Adapter caseDirectPositionType(DirectPositionType object) {
 				return createDirectPositionTypeAdapter();
 			}
 			@Override
-			public Adapter caseDiscreteCoverageType(DiscreteCoverageType object)
-			{
+			public Adapter caseDiscreteCoverageType(DiscreteCoverageType object) {
 				return createDiscreteCoverageTypeAdapter();
 			}
 			@Override
-			public Adapter caseDMSAngleType(DMSAngleType object)
-			{
+			public Adapter caseDMSAngleType(DMSAngleType object) {
 				return createDMSAngleTypeAdapter();
 			}
 			@Override
-			public Adapter caseDocumentRoot(DocumentRoot object)
-			{
+			public Adapter caseDocumentRoot(DocumentRoot object) {
 				return createDocumentRootAdapter();
 			}
 			@Override
-			public Adapter caseDomainOfValidityType(DomainOfValidityType object)
-			{
+			public Adapter caseDomainOfValidityType(DomainOfValidityType object) {
 				return createDomainOfValidityTypeAdapter();
 			}
 			@Override
-			public Adapter caseDomainSetType(DomainSetType object)
-			{
+			public Adapter caseDomainSetType(DomainSetType object) {
 				return createDomainSetTypeAdapter();
 			}
 			@Override
-			public Adapter caseDynamicFeatureCollectionType(DynamicFeatureCollectionType object)
-			{
+			public Adapter caseDynamicFeatureCollectionType(DynamicFeatureCollectionType object) {
 				return createDynamicFeatureCollectionTypeAdapter();
 			}
 			@Override
-			public Adapter caseDynamicFeatureMemberType(DynamicFeatureMemberType object)
-			{
+			public Adapter caseDynamicFeatureMemberType(DynamicFeatureMemberType object) {
 				return createDynamicFeatureMemberTypeAdapter();
 			}
 			@Override
-			public Adapter caseDynamicFeatureType(DynamicFeatureType object)
-			{
+			public Adapter caseDynamicFeatureType(DynamicFeatureType object) {
 				return createDynamicFeatureTypeAdapter();
 			}
 			@Override
-			public Adapter caseEdgeType(EdgeType object)
-			{
+			public Adapter caseEdgeType(EdgeType object) {
 				return createEdgeTypeAdapter();
 			}
 			@Override
-			public Adapter caseEllipsoidalCSPropertyType(EllipsoidalCSPropertyType object)
-			{
+			public Adapter caseEllipsoidalCSPropertyType(EllipsoidalCSPropertyType object) {
 				return createEllipsoidalCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEllipsoidalCSType(EllipsoidalCSType object)
-			{
+			public Adapter caseEllipsoidalCSType(EllipsoidalCSType object) {
 				return createEllipsoidalCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseEllipsoidPropertyType(EllipsoidPropertyType object)
-			{
+			public Adapter caseEllipsoidPropertyType(EllipsoidPropertyType object) {
 				return createEllipsoidPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEllipsoidType(EllipsoidType object)
-			{
+			public Adapter caseEllipsoidType(EllipsoidType object) {
 				return createEllipsoidTypeAdapter();
 			}
 			@Override
-			public Adapter caseEngineeringCRSPropertyType(EngineeringCRSPropertyType object)
-			{
+			public Adapter caseEngineeringCRSPropertyType(EngineeringCRSPropertyType object) {
 				return createEngineeringCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEngineeringCRSType(EngineeringCRSType object)
-			{
+			public Adapter caseEngineeringCRSType(EngineeringCRSType object) {
 				return createEngineeringCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseEngineeringDatumPropertyType(EngineeringDatumPropertyType object)
-			{
+			public Adapter caseEngineeringDatumPropertyType(EngineeringDatumPropertyType object) {
 				return createEngineeringDatumPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseEngineeringDatumType(EngineeringDatumType object)
-			{
+			public Adapter caseEngineeringDatumType(EngineeringDatumType object) {
 				return createEngineeringDatumTypeAdapter();
 			}
 			@Override
-			public Adapter caseEnvelopeType(EnvelopeType object)
-			{
+			public Adapter caseEnvelopeType(EnvelopeType object) {
 				return createEnvelopeTypeAdapter();
 			}
 			@Override
-			public Adapter caseEnvelopeWithTimePeriodType(EnvelopeWithTimePeriodType object)
-			{
+			public Adapter caseEnvelopeWithTimePeriodType(EnvelopeWithTimePeriodType object) {
 				return createEnvelopeWithTimePeriodTypeAdapter();
 			}
 			@Override
-			public Adapter caseFaceOrTopoSolidPropertyType(FaceOrTopoSolidPropertyType object)
-			{
+			public Adapter caseFaceOrTopoSolidPropertyType(FaceOrTopoSolidPropertyType object) {
 				return createFaceOrTopoSolidPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseFaceType(FaceType object)
-			{
+			public Adapter caseFaceType(FaceType object) {
 				return createFaceTypeAdapter();
 			}
 			@Override
-			public Adapter caseFeatureArrayPropertyType(FeatureArrayPropertyType object)
-			{
+			public Adapter caseFeatureArrayPropertyType(FeatureArrayPropertyType object) {
 				return createFeatureArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseFeatureCollectionType(FeatureCollectionType object)
-			{
+			public Adapter caseFeatureCollectionType(FeatureCollectionType object) {
 				return createFeatureCollectionTypeAdapter();
 			}
 			@Override
-			public Adapter caseFeaturePropertyType(FeaturePropertyType object)
-			{
+			public Adapter caseFeaturePropertyType(FeaturePropertyType object) {
 				return createFeaturePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseFileType(FileType object)
-			{
+			public Adapter caseFileType(FileType object) {
 				return createFileTypeAdapter();
 			}
 			@Override
-			public Adapter caseFormulaCitationType(FormulaCitationType object)
-			{
+			public Adapter caseFormulaCitationType(FormulaCitationType object) {
 				return createFormulaCitationTypeAdapter();
 			}
 			@Override
-			public Adapter caseFormulaType(FormulaType object)
-			{
+			public Adapter caseFormulaType(FormulaType object) {
 				return createFormulaTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeneralConversionPropertyType(GeneralConversionPropertyType object)
-			{
+			public Adapter caseGeneralConversionPropertyType(GeneralConversionPropertyType object) {
 				return createGeneralConversionPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeneralTransformationPropertyType(GeneralTransformationPropertyType object)
-			{
+			public Adapter caseGeneralTransformationPropertyType(GeneralTransformationPropertyType object) {
 				return createGeneralTransformationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGenericMetaDataType(GenericMetaDataType object)
-			{
+			public Adapter caseGenericMetaDataType(GenericMetaDataType object) {
 				return createGenericMetaDataTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeocentricCRSPropertyType(GeocentricCRSPropertyType object)
-			{
+			public Adapter caseGeocentricCRSPropertyType(GeocentricCRSPropertyType object) {
 				return createGeocentricCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeocentricCRSType(GeocentricCRSType object)
-			{
+			public Adapter caseGeocentricCRSType(GeocentricCRSType object) {
 				return createGeocentricCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeodesicStringType(GeodesicStringType object)
-			{
+			public Adapter caseGeodesicStringType(GeodesicStringType object) {
 				return createGeodesicStringTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeodesicType(GeodesicType object)
-			{
+			public Adapter caseGeodesicType(GeodesicType object) {
 				return createGeodesicTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeodeticCRSPropertyType(GeodeticCRSPropertyType object)
-			{
+			public Adapter caseGeodeticCRSPropertyType(GeodeticCRSPropertyType object) {
 				return createGeodeticCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeodeticCRSType(GeodeticCRSType object)
-			{
+			public Adapter caseGeodeticCRSType(GeodeticCRSType object) {
 				return createGeodeticCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeodeticDatumPropertyType(GeodeticDatumPropertyType object)
-			{
+			public Adapter caseGeodeticDatumPropertyType(GeodeticDatumPropertyType object) {
 				return createGeodeticDatumPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeodeticDatumType(GeodeticDatumType object)
-			{
+			public Adapter caseGeodeticDatumType(GeodeticDatumType object) {
 				return createGeodeticDatumTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeographicCRSPropertyType(GeographicCRSPropertyType object)
-			{
+			public Adapter caseGeographicCRSPropertyType(GeographicCRSPropertyType object) {
 				return createGeographicCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeographicCRSType(GeographicCRSType object)
-			{
+			public Adapter caseGeographicCRSType(GeographicCRSType object) {
 				return createGeographicCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeometricComplexPropertyType(GeometricComplexPropertyType object)
-			{
+			public Adapter caseGeometricComplexPropertyType(GeometricComplexPropertyType object) {
 				return createGeometricComplexPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeometricComplexType(GeometricComplexType object)
-			{
+			public Adapter caseGeometricComplexType(GeometricComplexType object) {
 				return createGeometricComplexTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeometricPrimitivePropertyType(GeometricPrimitivePropertyType object)
-			{
+			public Adapter caseGeometricPrimitivePropertyType(GeometricPrimitivePropertyType object) {
 				return createGeometricPrimitivePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeometryArrayPropertyType(GeometryArrayPropertyType object)
-			{
+			public Adapter caseGeometryArrayPropertyType(GeometryArrayPropertyType object) {
 				return createGeometryArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGeometryPropertyType(GeometryPropertyType object)
-			{
+			public Adapter caseGeometryPropertyType(GeometryPropertyType object) {
 				return createGeometryPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseGridEnvelopeType(GridEnvelopeType object)
-			{
+			public Adapter caseGridEnvelopeType(GridEnvelopeType object) {
 				return createGridEnvelopeTypeAdapter();
 			}
 			@Override
-			public Adapter caseGridFunctionType(GridFunctionType object)
-			{
+			public Adapter caseGridFunctionType(GridFunctionType object) {
 				return createGridFunctionTypeAdapter();
 			}
 			@Override
-			public Adapter caseGridLengthType(GridLengthType object)
-			{
+			public Adapter caseGridLengthType(GridLengthType object) {
 				return createGridLengthTypeAdapter();
 			}
 			@Override
-			public Adapter caseGridLimitsType(GridLimitsType object)
-			{
+			public Adapter caseGridLimitsType(GridLimitsType object) {
 				return createGridLimitsTypeAdapter();
 			}
 			@Override
-			public Adapter caseGridType(GridType object)
-			{
+			public Adapter caseGridType(GridType object) {
 				return createGridTypeAdapter();
 			}
 			@Override
-			public Adapter caseHistoryPropertyType(HistoryPropertyType object)
-			{
+			public Adapter caseHistoryPropertyType(HistoryPropertyType object) {
 				return createHistoryPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseIdentifiedObjectType(IdentifiedObjectType object)
-			{
+			public Adapter caseIdentifiedObjectType(IdentifiedObjectType object) {
 				return createIdentifiedObjectTypeAdapter();
 			}
 			@Override
-			public Adapter caseImageCRSPropertyType(ImageCRSPropertyType object)
-			{
+			public Adapter caseImageCRSPropertyType(ImageCRSPropertyType object) {
 				return createImageCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseImageCRSType(ImageCRSType object)
-			{
+			public Adapter caseImageCRSType(ImageCRSType object) {
 				return createImageCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseImageDatumPropertyType(ImageDatumPropertyType object)
-			{
+			public Adapter caseImageDatumPropertyType(ImageDatumPropertyType object) {
 				return createImageDatumPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseImageDatumType(ImageDatumType object)
-			{
+			public Adapter caseImageDatumType(ImageDatumType object) {
 				return createImageDatumTypeAdapter();
 			}
 			@Override
-			public Adapter caseIndirectEntryType(IndirectEntryType object)
-			{
+			public Adapter caseIndirectEntryType(IndirectEntryType object) {
 				return createIndirectEntryTypeAdapter();
 			}
 			@Override
-			public Adapter caseInlinePropertyType(InlinePropertyType object)
-			{
+			public Adapter caseInlinePropertyType(InlinePropertyType object) {
 				return createInlinePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseKnotPropertyType(KnotPropertyType object)
-			{
+			public Adapter caseKnotPropertyType(KnotPropertyType object) {
 				return createKnotPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseKnotType(KnotType object)
-			{
+			public Adapter caseKnotType(KnotType object) {
 				return createKnotTypeAdapter();
 			}
 			@Override
-			public Adapter caseLengthType(LengthType object)
-			{
+			public Adapter caseLengthType(LengthType object) {
 				return createLengthTypeAdapter();
 			}
 			@Override
-			public Adapter caseLinearCSPropertyType(LinearCSPropertyType object)
-			{
+			public Adapter caseLinearCSPropertyType(LinearCSPropertyType object) {
 				return createLinearCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLinearCSType(LinearCSType object)
-			{
+			public Adapter caseLinearCSType(LinearCSType object) {
 				return createLinearCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseLinearRingPropertyType(LinearRingPropertyType object)
-			{
+			public Adapter caseLinearRingPropertyType(LinearRingPropertyType object) {
 				return createLinearRingPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLinearRingType(LinearRingType object)
-			{
+			public Adapter caseLinearRingType(LinearRingType object) {
 				return createLinearRingTypeAdapter();
 			}
 			@Override
-			public Adapter caseLineStringSegmentArrayPropertyType(LineStringSegmentArrayPropertyType object)
-			{
+			public Adapter caseLineStringSegmentArrayPropertyType(LineStringSegmentArrayPropertyType object) {
 				return createLineStringSegmentArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseLineStringSegmentType(LineStringSegmentType object)
-			{
+			public Adapter caseLineStringSegmentType(LineStringSegmentType object) {
 				return createLineStringSegmentTypeAdapter();
 			}
 			@Override
-			public Adapter caseLineStringType(LineStringType object)
-			{
+			public Adapter caseLineStringType(LineStringType object) {
 				return createLineStringTypeAdapter();
 			}
 			@Override
-			public Adapter caseLocationPropertyType(LocationPropertyType object)
-			{
+			public Adapter caseLocationPropertyType(LocationPropertyType object) {
 				return createLocationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMappingRuleType(MappingRuleType object)
-			{
+			public Adapter caseMappingRuleType(MappingRuleType object) {
 				return createMappingRuleTypeAdapter();
 			}
 			@Override
-			public Adapter caseMeasureListType(MeasureListType object)
-			{
+			public Adapter caseMeasureListType(MeasureListType object) {
 				return createMeasureListTypeAdapter();
 			}
 			@Override
-			public Adapter caseMeasureOrNilReasonListType(MeasureOrNilReasonListType object)
-			{
+			public Adapter caseMeasureOrNilReasonListType(MeasureOrNilReasonListType object) {
 				return createMeasureOrNilReasonListTypeAdapter();
 			}
 			@Override
-			public Adapter caseMeasureType(MeasureType object)
-			{
+			public Adapter caseMeasureType(MeasureType object) {
 				return createMeasureTypeAdapter();
 			}
 			@Override
-			public Adapter caseMetaDataPropertyType(MetaDataPropertyType object)
-			{
+			public Adapter caseMetaDataPropertyType(MetaDataPropertyType object) {
 				return createMetaDataPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMovingObjectStatusType(MovingObjectStatusType object)
-			{
+			public Adapter caseMovingObjectStatusType(MovingObjectStatusType object) {
 				return createMovingObjectStatusTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiCurvePropertyType(MultiCurvePropertyType object)
-			{
+			public Adapter caseMultiCurvePropertyType(MultiCurvePropertyType object) {
 				return createMultiCurvePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiCurveType(MultiCurveType object)
-			{
+			public Adapter caseMultiCurveType(MultiCurveType object) {
 				return createMultiCurveTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiGeometryPropertyType(MultiGeometryPropertyType object)
-			{
+			public Adapter caseMultiGeometryPropertyType(MultiGeometryPropertyType object) {
 				return createMultiGeometryPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiGeometryType(MultiGeometryType object)
-			{
+			public Adapter caseMultiGeometryType(MultiGeometryType object) {
 				return createMultiGeometryTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiPointPropertyType(MultiPointPropertyType object)
-			{
+			public Adapter caseMultiPointPropertyType(MultiPointPropertyType object) {
 				return createMultiPointPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiPointType(MultiPointType object)
-			{
+			public Adapter caseMultiPointType(MultiPointType object) {
 				return createMultiPointTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiSolidPropertyType(MultiSolidPropertyType object)
-			{
+			public Adapter caseMultiSolidPropertyType(MultiSolidPropertyType object) {
 				return createMultiSolidPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiSolidType(MultiSolidType object)
-			{
+			public Adapter caseMultiSolidType(MultiSolidType object) {
 				return createMultiSolidTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiSurfacePropertyType(MultiSurfacePropertyType object)
-			{
+			public Adapter caseMultiSurfacePropertyType(MultiSurfacePropertyType object) {
 				return createMultiSurfacePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseMultiSurfaceType(MultiSurfaceType object)
-			{
+			public Adapter caseMultiSurfaceType(MultiSurfaceType object) {
 				return createMultiSurfaceTypeAdapter();
 			}
 			@Override
-			public Adapter caseNodeOrEdgePropertyType(NodeOrEdgePropertyType object)
-			{
+			public Adapter caseNodeOrEdgePropertyType(NodeOrEdgePropertyType object) {
 				return createNodeOrEdgePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseNodePropertyType(NodePropertyType object)
-			{
+			public Adapter caseNodePropertyType(NodePropertyType object) {
 				return createNodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseNodeType(NodeType object)
-			{
+			public Adapter caseNodeType(NodeType object) {
 				return createNodeTypeAdapter();
 			}
 			@Override
-			public Adapter caseObliqueCartesianCSPropertyType(ObliqueCartesianCSPropertyType object)
-			{
+			public Adapter caseObliqueCartesianCSPropertyType(ObliqueCartesianCSPropertyType object) {
 				return createObliqueCartesianCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseObliqueCartesianCSType(ObliqueCartesianCSType object)
-			{
+			public Adapter caseObliqueCartesianCSType(ObliqueCartesianCSType object) {
 				return createObliqueCartesianCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseObservationType(ObservationType object)
-			{
+			public Adapter caseObservationType(ObservationType object) {
 				return createObservationTypeAdapter();
 			}
 			@Override
-			public Adapter caseOffsetCurveType(OffsetCurveType object)
-			{
+			public Adapter caseOffsetCurveType(OffsetCurveType object) {
 				return createOffsetCurveTypeAdapter();
 			}
 			@Override
-			public Adapter caseOperationMethodPropertyType(OperationMethodPropertyType object)
-			{
+			public Adapter caseOperationMethodPropertyType(OperationMethodPropertyType object) {
 				return createOperationMethodPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseOperationMethodType(OperationMethodType object)
-			{
+			public Adapter caseOperationMethodType(OperationMethodType object) {
 				return createOperationMethodTypeAdapter();
 			}
 			@Override
-			public Adapter caseOperationParameterGroupPropertyType(OperationParameterGroupPropertyType object)
-			{
+			public Adapter caseOperationParameterGroupPropertyType(OperationParameterGroupPropertyType object) {
 				return createOperationParameterGroupPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseOperationParameterGroupType(OperationParameterGroupType object)
-			{
+			public Adapter caseOperationParameterGroupType(OperationParameterGroupType object) {
 				return createOperationParameterGroupTypeAdapter();
 			}
 			@Override
-			public Adapter caseOperationParameterPropertyType(OperationParameterPropertyType object)
-			{
+			public Adapter caseOperationParameterPropertyType(OperationParameterPropertyType object) {
 				return createOperationParameterPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseOperationParameterType(OperationParameterType object)
-			{
+			public Adapter caseOperationParameterType(OperationParameterType object) {
 				return createOperationParameterTypeAdapter();
 			}
 			@Override
-			public Adapter caseOperationPropertyType(OperationPropertyType object)
-			{
+			public Adapter caseOperationPropertyType(OperationPropertyType object) {
 				return createOperationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseOrientableCurveType(OrientableCurveType object)
-			{
+			public Adapter caseOrientableCurveType(OrientableCurveType object) {
 				return createOrientableCurveTypeAdapter();
 			}
 			@Override
-			public Adapter caseOrientableSurfaceType(OrientableSurfaceType object)
-			{
+			public Adapter caseOrientableSurfaceType(OrientableSurfaceType object) {
 				return createOrientableSurfaceTypeAdapter();
 			}
 			@Override
-			public Adapter caseParameterValueGroupType(ParameterValueGroupType object)
-			{
+			public Adapter caseParameterValueGroupType(ParameterValueGroupType object) {
 				return createParameterValueGroupTypeAdapter();
 			}
 			@Override
-			public Adapter caseParameterValueType(ParameterValueType object)
-			{
+			public Adapter caseParameterValueType(ParameterValueType object) {
 				return createParameterValueTypeAdapter();
 			}
 			@Override
-			public Adapter casePassThroughOperationPropertyType(PassThroughOperationPropertyType object)
-			{
+			public Adapter casePassThroughOperationPropertyType(PassThroughOperationPropertyType object) {
 				return createPassThroughOperationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter casePassThroughOperationType(PassThroughOperationType object)
-			{
+			public Adapter casePassThroughOperationType(PassThroughOperationType object) {
 				return createPassThroughOperationTypeAdapter();
 			}
 			@Override
-			public Adapter casePointArrayPropertyType(PointArrayPropertyType object)
-			{
+			public Adapter casePointArrayPropertyType(PointArrayPropertyType object) {
 				return createPointArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter casePointPropertyType(PointPropertyType object)
-			{
+			public Adapter casePointPropertyType(PointPropertyType object) {
 				return createPointPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter casePointType(PointType object)
-			{
+			public Adapter casePointType(PointType object) {
 				return createPointTypeAdapter();
 			}
 			@Override
-			public Adapter casePolarCSPropertyType(PolarCSPropertyType object)
-			{
+			public Adapter casePolarCSPropertyType(PolarCSPropertyType object) {
 				return createPolarCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter casePolarCSType(PolarCSType object)
-			{
+			public Adapter casePolarCSType(PolarCSType object) {
 				return createPolarCSTypeAdapter();
 			}
 			@Override
-			public Adapter casePolygonPatchType(PolygonPatchType object)
-			{
+			public Adapter casePolygonPatchType(PolygonPatchType object) {
 				return createPolygonPatchTypeAdapter();
 			}
 			@Override
-			public Adapter casePolygonType(PolygonType object)
-			{
+			public Adapter casePolygonType(PolygonType object) {
 				return createPolygonTypeAdapter();
 			}
 			@Override
-			public Adapter casePrimeMeridianPropertyType(PrimeMeridianPropertyType object)
-			{
+			public Adapter casePrimeMeridianPropertyType(PrimeMeridianPropertyType object) {
 				return createPrimeMeridianPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter casePrimeMeridianType(PrimeMeridianType object)
-			{
+			public Adapter casePrimeMeridianType(PrimeMeridianType object) {
 				return createPrimeMeridianTypeAdapter();
 			}
 			@Override
-			public Adapter casePriorityLocationPropertyType(PriorityLocationPropertyType object)
-			{
+			public Adapter casePriorityLocationPropertyType(PriorityLocationPropertyType object) {
 				return createPriorityLocationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseProcedurePropertyType(ProcedurePropertyType object)
-			{
+			public Adapter caseProcedurePropertyType(ProcedurePropertyType object) {
 				return createProcedurePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseProjectedCRSPropertyType(ProjectedCRSPropertyType object)
-			{
+			public Adapter caseProjectedCRSPropertyType(ProjectedCRSPropertyType object) {
 				return createProjectedCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseProjectedCRSType(ProjectedCRSType object)
-			{
+			public Adapter caseProjectedCRSType(ProjectedCRSType object) {
 				return createProjectedCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseQuantityExtentType(QuantityExtentType object)
-			{
+			public Adapter caseQuantityExtentType(QuantityExtentType object) {
 				return createQuantityExtentTypeAdapter();
 			}
 			@Override
-			public Adapter caseQuantityPropertyType(QuantityPropertyType object)
-			{
+			public Adapter caseQuantityPropertyType(QuantityPropertyType object) {
 				return createQuantityPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseQuantityType(QuantityType object)
-			{
+			public Adapter caseQuantityType(QuantityType object) {
 				return createQuantityTypeAdapter();
 			}
 			@Override
-			public Adapter caseRangeSetType(RangeSetType object)
-			{
+			public Adapter caseRangeSetType(RangeSetType object) {
 				return createRangeSetTypeAdapter();
 			}
 			@Override
-			public Adapter caseRectangleType(RectangleType object)
-			{
+			public Adapter caseRectangleType(RectangleType object) {
 				return createRectangleTypeAdapter();
 			}
 			@Override
-			public Adapter caseRectifiedGridType(RectifiedGridType object)
-			{
+			public Adapter caseRectifiedGridType(RectifiedGridType object) {
 				return createRectifiedGridTypeAdapter();
 			}
 			@Override
-			public Adapter caseReferenceType(ReferenceType object)
-			{
+			public Adapter caseReferenceType(ReferenceType object) {
 				return createReferenceTypeAdapter();
 			}
 			@Override
-			public Adapter caseRefLocationType(RefLocationType object)
-			{
+			public Adapter caseRefLocationType(RefLocationType object) {
 				return createRefLocationTypeAdapter();
 			}
 			@Override
-			public Adapter caseRelatedTimeType(RelatedTimeType object)
-			{
+			public Adapter caseRelatedTimeType(RelatedTimeType object) {
 				return createRelatedTimeTypeAdapter();
 			}
 			@Override
-			public Adapter caseResultType(ResultType object)
-			{
+			public Adapter caseResultType(ResultType object) {
 				return createResultTypeAdapter();
 			}
 			@Override
-			public Adapter caseRingPropertyType(RingPropertyType object)
-			{
+			public Adapter caseRingPropertyType(RingPropertyType object) {
 				return createRingPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseRingType(RingType object)
-			{
+			public Adapter caseRingType(RingType object) {
 				return createRingTypeAdapter();
 			}
 			@Override
-			public Adapter caseRowsType(RowsType object)
-			{
+			public Adapter caseRowsType(RowsType object) {
 				return createRowsTypeAdapter();
 			}
 			@Override
-			public Adapter caseRowType(RowType object)
-			{
+			public Adapter caseRowType(RowType object) {
 				return createRowTypeAdapter();
 			}
 			@Override
-			public Adapter caseScaleType(ScaleType object)
-			{
+			public Adapter caseScaleType(ScaleType object) {
 				return createScaleTypeAdapter();
 			}
 			@Override
-			public Adapter caseSecondDefiningParameterType(SecondDefiningParameterType object)
-			{
+			public Adapter caseSecondDefiningParameterType(SecondDefiningParameterType object) {
 				return createSecondDefiningParameterTypeAdapter();
 			}
 			@Override
-			public Adapter caseSecondDefiningParameterType1(SecondDefiningParameterType1 object)
-			{
+			public Adapter caseSecondDefiningParameterType1(SecondDefiningParameterType1 object) {
 				return createSecondDefiningParameterType1Adapter();
 			}
 			@Override
-			public Adapter caseSequenceRuleType(SequenceRuleType object)
-			{
+			public Adapter caseSequenceRuleType(SequenceRuleType object) {
 				return createSequenceRuleTypeAdapter();
 			}
 			@Override
-			public Adapter caseShellPropertyType(ShellPropertyType object)
-			{
+			public Adapter caseShellPropertyType(ShellPropertyType object) {
 				return createShellPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseShellType(ShellType object)
-			{
+			public Adapter caseShellType(ShellType object) {
 				return createShellTypeAdapter();
 			}
 			@Override
-			public Adapter caseSingleCRSPropertyType(SingleCRSPropertyType object)
-			{
+			public Adapter caseSingleCRSPropertyType(SingleCRSPropertyType object) {
 				return createSingleCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseSingleOperationPropertyType(SingleOperationPropertyType object)
-			{
+			public Adapter caseSingleOperationPropertyType(SingleOperationPropertyType object) {
 				return createSingleOperationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseSolidArrayPropertyType(SolidArrayPropertyType object)
-			{
+			public Adapter caseSolidArrayPropertyType(SolidArrayPropertyType object) {
 				return createSolidArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseSolidPropertyType(SolidPropertyType object)
-			{
+			public Adapter caseSolidPropertyType(SolidPropertyType object) {
 				return createSolidPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseSolidType(SolidType object)
-			{
+			public Adapter caseSolidType(SolidType object) {
 				return createSolidTypeAdapter();
 			}
 			@Override
-			public Adapter caseSpeedType(SpeedType object)
-			{
+			public Adapter caseSpeedType(SpeedType object) {
 				return createSpeedTypeAdapter();
 			}
 			@Override
-			public Adapter caseSphereType(SphereType object)
-			{
+			public Adapter caseSphereType(SphereType object) {
 				return createSphereTypeAdapter();
 			}
 			@Override
-			public Adapter caseSphericalCSPropertyType(SphericalCSPropertyType object)
-			{
+			public Adapter caseSphericalCSPropertyType(SphericalCSPropertyType object) {
 				return createSphericalCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseSphericalCSType(SphericalCSType object)
-			{
+			public Adapter caseSphericalCSType(SphericalCSType object) {
 				return createSphericalCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseStringOrRefType(StringOrRefType object)
-			{
+			public Adapter caseStringOrRefType(StringOrRefType object) {
 				return createStringOrRefTypeAdapter();
 			}
 			@Override
-			public Adapter caseSurfaceArrayPropertyType(SurfaceArrayPropertyType object)
-			{
+			public Adapter caseSurfaceArrayPropertyType(SurfaceArrayPropertyType object) {
 				return createSurfaceArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseSurfacePatchArrayPropertyType(SurfacePatchArrayPropertyType object)
-			{
+			public Adapter caseSurfacePatchArrayPropertyType(SurfacePatchArrayPropertyType object) {
 				return createSurfacePatchArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseSurfacePropertyType(SurfacePropertyType object)
-			{
+			public Adapter caseSurfacePropertyType(SurfacePropertyType object) {
 				return createSurfacePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseSurfaceType(SurfaceType object)
-			{
+			public Adapter caseSurfaceType(SurfaceType object) {
 				return createSurfaceTypeAdapter();
 			}
 			@Override
-			public Adapter caseTargetPropertyType(TargetPropertyType object)
-			{
+			public Adapter caseTargetPropertyType(TargetPropertyType object) {
 				return createTargetPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTemporalCRSPropertyType(TemporalCRSPropertyType object)
-			{
+			public Adapter caseTemporalCRSPropertyType(TemporalCRSPropertyType object) {
 				return createTemporalCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTemporalCRSType(TemporalCRSType object)
-			{
+			public Adapter caseTemporalCRSType(TemporalCRSType object) {
 				return createTemporalCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseTemporalCSPropertyType(TemporalCSPropertyType object)
-			{
+			public Adapter caseTemporalCSPropertyType(TemporalCSPropertyType object) {
 				return createTemporalCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTemporalCSType(TemporalCSType object)
-			{
+			public Adapter caseTemporalCSType(TemporalCSType object) {
 				return createTemporalCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseTemporalDatumBaseType(TemporalDatumBaseType object)
-			{
+			public Adapter caseTemporalDatumBaseType(TemporalDatumBaseType object) {
 				return createTemporalDatumBaseTypeAdapter();
 			}
 			@Override
-			public Adapter caseTemporalDatumPropertyType(TemporalDatumPropertyType object)
-			{
+			public Adapter caseTemporalDatumPropertyType(TemporalDatumPropertyType object) {
 				return createTemporalDatumPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTemporalDatumType(TemporalDatumType object)
-			{
+			public Adapter caseTemporalDatumType(TemporalDatumType object) {
 				return createTemporalDatumTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeCalendarEraPropertyType(TimeCalendarEraPropertyType object)
-			{
+			public Adapter caseTimeCalendarEraPropertyType(TimeCalendarEraPropertyType object) {
 				return createTimeCalendarEraPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeCalendarEraType(TimeCalendarEraType object)
-			{
+			public Adapter caseTimeCalendarEraType(TimeCalendarEraType object) {
 				return createTimeCalendarEraTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeCalendarPropertyType(TimeCalendarPropertyType object)
-			{
+			public Adapter caseTimeCalendarPropertyType(TimeCalendarPropertyType object) {
 				return createTimeCalendarPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeCalendarType(TimeCalendarType object)
-			{
+			public Adapter caseTimeCalendarType(TimeCalendarType object) {
 				return createTimeCalendarTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeClockPropertyType(TimeClockPropertyType object)
-			{
+			public Adapter caseTimeClockPropertyType(TimeClockPropertyType object) {
 				return createTimeClockPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeClockType(TimeClockType object)
-			{
+			public Adapter caseTimeClockType(TimeClockType object) {
 				return createTimeClockTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeCoordinateSystemType(TimeCoordinateSystemType object)
-			{
+			public Adapter caseTimeCoordinateSystemType(TimeCoordinateSystemType object) {
 				return createTimeCoordinateSystemTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeCSPropertyType(TimeCSPropertyType object)
-			{
+			public Adapter caseTimeCSPropertyType(TimeCSPropertyType object) {
 				return createTimeCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeCSType(TimeCSType object)
-			{
+			public Adapter caseTimeCSType(TimeCSType object) {
 				return createTimeCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeEdgePropertyType(TimeEdgePropertyType object)
-			{
+			public Adapter caseTimeEdgePropertyType(TimeEdgePropertyType object) {
 				return createTimeEdgePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeEdgeType(TimeEdgeType object)
-			{
+			public Adapter caseTimeEdgeType(TimeEdgeType object) {
 				return createTimeEdgeTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeInstantPropertyType(TimeInstantPropertyType object)
-			{
+			public Adapter caseTimeInstantPropertyType(TimeInstantPropertyType object) {
 				return createTimeInstantPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeInstantType(TimeInstantType object)
-			{
+			public Adapter caseTimeInstantType(TimeInstantType object) {
 				return createTimeInstantTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeIntervalLengthType(TimeIntervalLengthType object)
-			{
+			public Adapter caseTimeIntervalLengthType(TimeIntervalLengthType object) {
 				return createTimeIntervalLengthTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeNodePropertyType(TimeNodePropertyType object)
-			{
+			public Adapter caseTimeNodePropertyType(TimeNodePropertyType object) {
 				return createTimeNodePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeNodeType(TimeNodeType object)
-			{
+			public Adapter caseTimeNodeType(TimeNodeType object) {
 				return createTimeNodeTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeOrdinalEraPropertyType(TimeOrdinalEraPropertyType object)
-			{
+			public Adapter caseTimeOrdinalEraPropertyType(TimeOrdinalEraPropertyType object) {
 				return createTimeOrdinalEraPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeOrdinalEraType(TimeOrdinalEraType object)
-			{
+			public Adapter caseTimeOrdinalEraType(TimeOrdinalEraType object) {
 				return createTimeOrdinalEraTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeOrdinalReferenceSystemType(TimeOrdinalReferenceSystemType object)
-			{
+			public Adapter caseTimeOrdinalReferenceSystemType(TimeOrdinalReferenceSystemType object) {
 				return createTimeOrdinalReferenceSystemTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimePeriodPropertyType(TimePeriodPropertyType object)
-			{
+			public Adapter caseTimePeriodPropertyType(TimePeriodPropertyType object) {
 				return createTimePeriodPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimePeriodType(TimePeriodType object)
-			{
+			public Adapter caseTimePeriodType(TimePeriodType object) {
 				return createTimePeriodTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimePositionType(TimePositionType object)
-			{
+			public Adapter caseTimePositionType(TimePositionType object) {
 				return createTimePositionTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimePrimitivePropertyType(TimePrimitivePropertyType object)
-			{
+			public Adapter caseTimePrimitivePropertyType(TimePrimitivePropertyType object) {
 				return createTimePrimitivePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeReferenceSystemType(TimeReferenceSystemType object)
-			{
+			public Adapter caseTimeReferenceSystemType(TimeReferenceSystemType object) {
 				return createTimeReferenceSystemTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeTopologyComplexPropertyType(TimeTopologyComplexPropertyType object)
-			{
+			public Adapter caseTimeTopologyComplexPropertyType(TimeTopologyComplexPropertyType object) {
 				return createTimeTopologyComplexPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeTopologyComplexType(TimeTopologyComplexType object)
-			{
+			public Adapter caseTimeTopologyComplexType(TimeTopologyComplexType object) {
 				return createTimeTopologyComplexTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeTopologyPrimitivePropertyType(TimeTopologyPrimitivePropertyType object)
-			{
+			public Adapter caseTimeTopologyPrimitivePropertyType(TimeTopologyPrimitivePropertyType object) {
 				return createTimeTopologyPrimitivePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTimeType(TimeType object)
-			{
+			public Adapter caseTimeType(TimeType object) {
 				return createTimeTypeAdapter();
 			}
 			@Override
-			public Adapter caseTinType(TinType object)
-			{
+			public Adapter caseTinType(TinType object) {
 				return createTinTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoComplexPropertyType(TopoComplexPropertyType object)
-			{
+			public Adapter caseTopoComplexPropertyType(TopoComplexPropertyType object) {
 				return createTopoComplexPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoComplexType(TopoComplexType object)
-			{
+			public Adapter caseTopoComplexType(TopoComplexType object) {
 				return createTopoComplexTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoCurvePropertyType(TopoCurvePropertyType object)
-			{
+			public Adapter caseTopoCurvePropertyType(TopoCurvePropertyType object) {
 				return createTopoCurvePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoCurveType(TopoCurveType object)
-			{
+			public Adapter caseTopoCurveType(TopoCurveType object) {
 				return createTopoCurveTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoPointPropertyType(TopoPointPropertyType object)
-			{
+			public Adapter caseTopoPointPropertyType(TopoPointPropertyType object) {
 				return createTopoPointPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoPointType(TopoPointType object)
-			{
+			public Adapter caseTopoPointType(TopoPointType object) {
 				return createTopoPointTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoPrimitiveArrayAssociationType(TopoPrimitiveArrayAssociationType object)
-			{
+			public Adapter caseTopoPrimitiveArrayAssociationType(TopoPrimitiveArrayAssociationType object) {
 				return createTopoPrimitiveArrayAssociationTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoPrimitiveMemberType(TopoPrimitiveMemberType object)
-			{
+			public Adapter caseTopoPrimitiveMemberType(TopoPrimitiveMemberType object) {
 				return createTopoPrimitiveMemberTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoSolidPropertyType(TopoSolidPropertyType object)
-			{
+			public Adapter caseTopoSolidPropertyType(TopoSolidPropertyType object) {
 				return createTopoSolidPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoSolidType(TopoSolidType object)
-			{
+			public Adapter caseTopoSolidType(TopoSolidType object) {
 				return createTopoSolidTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoSurfacePropertyType(TopoSurfacePropertyType object)
-			{
+			public Adapter caseTopoSurfacePropertyType(TopoSurfacePropertyType object) {
 				return createTopoSurfacePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoSurfaceType(TopoSurfaceType object)
-			{
+			public Adapter caseTopoSurfaceType(TopoSurfaceType object) {
 				return createTopoSurfaceTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoVolumePropertyType(TopoVolumePropertyType object)
-			{
+			public Adapter caseTopoVolumePropertyType(TopoVolumePropertyType object) {
 				return createTopoVolumePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTopoVolumeType(TopoVolumeType object)
-			{
+			public Adapter caseTopoVolumeType(TopoVolumeType object) {
 				return createTopoVolumeTypeAdapter();
 			}
 			@Override
-			public Adapter caseTransformationPropertyType(TransformationPropertyType object)
-			{
+			public Adapter caseTransformationPropertyType(TransformationPropertyType object) {
 				return createTransformationPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseTransformationType(TransformationType object)
-			{
+			public Adapter caseTransformationType(TransformationType object) {
 				return createTransformationTypeAdapter();
 			}
 			@Override
-			public Adapter caseTriangleType(TriangleType object)
-			{
+			public Adapter caseTriangleType(TriangleType object) {
 				return createTriangleTypeAdapter();
 			}
 			@Override
-			public Adapter caseUnitDefinitionType(UnitDefinitionType object)
-			{
+			public Adapter caseUnitDefinitionType(UnitDefinitionType object) {
 				return createUnitDefinitionTypeAdapter();
 			}
 			@Override
-			public Adapter caseUnitOfMeasureType(UnitOfMeasureType object)
-			{
+			public Adapter caseUnitOfMeasureType(UnitOfMeasureType object) {
 				return createUnitOfMeasureTypeAdapter();
 			}
 			@Override
-			public Adapter caseUserDefinedCSPropertyType(UserDefinedCSPropertyType object)
-			{
+			public Adapter caseUserDefinedCSPropertyType(UserDefinedCSPropertyType object) {
 				return createUserDefinedCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseUserDefinedCSType(UserDefinedCSType object)
-			{
+			public Adapter caseUserDefinedCSType(UserDefinedCSType object) {
 				return createUserDefinedCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseValueArrayPropertyType(ValueArrayPropertyType object)
-			{
+			public Adapter caseValueArrayPropertyType(ValueArrayPropertyType object) {
 				return createValueArrayPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseValueArrayType(ValueArrayType object)
-			{
+			public Adapter caseValueArrayType(ValueArrayType object) {
 				return createValueArrayTypeAdapter();
 			}
 			@Override
-			public Adapter caseValuePropertyType(ValuePropertyType object)
-			{
+			public Adapter caseValuePropertyType(ValuePropertyType object) {
 				return createValuePropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseVectorType(VectorType object)
-			{
+			public Adapter caseVectorType(VectorType object) {
 				return createVectorTypeAdapter();
 			}
 			@Override
-			public Adapter caseVerticalCRSPropertyType(VerticalCRSPropertyType object)
-			{
+			public Adapter caseVerticalCRSPropertyType(VerticalCRSPropertyType object) {
 				return createVerticalCRSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseVerticalCRSType(VerticalCRSType object)
-			{
+			public Adapter caseVerticalCRSType(VerticalCRSType object) {
 				return createVerticalCRSTypeAdapter();
 			}
 			@Override
-			public Adapter caseVerticalCSPropertyType(VerticalCSPropertyType object)
-			{
+			public Adapter caseVerticalCSPropertyType(VerticalCSPropertyType object) {
 				return createVerticalCSPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseVerticalCSType(VerticalCSType object)
-			{
+			public Adapter caseVerticalCSType(VerticalCSType object) {
 				return createVerticalCSTypeAdapter();
 			}
 			@Override
-			public Adapter caseVerticalDatumPropertyType(VerticalDatumPropertyType object)
-			{
+			public Adapter caseVerticalDatumPropertyType(VerticalDatumPropertyType object) {
 				return createVerticalDatumPropertyTypeAdapter();
 			}
 			@Override
-			public Adapter caseVerticalDatumType(VerticalDatumType object)
-			{
+			public Adapter caseVerticalDatumType(VerticalDatumType object) {
 				return createVerticalDatumTypeAdapter();
 			}
 			@Override
-			public Adapter caseVolumeType(VolumeType object)
-			{
+			public Adapter caseVolumeType(VolumeType object) {
 				return createVolumeTypeAdapter();
 			}
 			@Override
-			public Adapter defaultCase(EObject object)
-			{
+			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
 		};
@@ -1840,8 +1482,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdapter(Notifier target)
-	{
+	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
@@ -1856,8 +1497,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractContinuousCoverageType
 	 * @generated
 	 */
-	public Adapter createAbstractContinuousCoverageTypeAdapter()
-	{
+	public Adapter createAbstractContinuousCoverageTypeAdapter() {
 		return null;
 	}
 
@@ -1871,8 +1511,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractCoordinateOperationType
 	 * @generated
 	 */
-	public Adapter createAbstractCoordinateOperationTypeAdapter()
-	{
+	public Adapter createAbstractCoordinateOperationTypeAdapter() {
 		return null;
 	}
 
@@ -1886,8 +1525,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractCoordinateSystemType
 	 * @generated
 	 */
-	public Adapter createAbstractCoordinateSystemTypeAdapter()
-	{
+	public Adapter createAbstractCoordinateSystemTypeAdapter() {
 		return null;
 	}
 
@@ -1901,8 +1539,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractCoverageType
 	 * @generated
 	 */
-	public Adapter createAbstractCoverageTypeAdapter()
-	{
+	public Adapter createAbstractCoverageTypeAdapter() {
 		return null;
 	}
 
@@ -1916,8 +1553,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractCRSType
 	 * @generated
 	 */
-	public Adapter createAbstractCRSTypeAdapter()
-	{
+	public Adapter createAbstractCRSTypeAdapter() {
 		return null;
 	}
 
@@ -1931,8 +1567,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractCurveSegmentType
 	 * @generated
 	 */
-	public Adapter createAbstractCurveSegmentTypeAdapter()
-	{
+	public Adapter createAbstractCurveSegmentTypeAdapter() {
 		return null;
 	}
 
@@ -1946,8 +1581,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractCurveType
 	 * @generated
 	 */
-	public Adapter createAbstractCurveTypeAdapter()
-	{
+	public Adapter createAbstractCurveTypeAdapter() {
 		return null;
 	}
 
@@ -1961,8 +1595,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractDatumType
 	 * @generated
 	 */
-	public Adapter createAbstractDatumTypeAdapter()
-	{
+	public Adapter createAbstractDatumTypeAdapter() {
 		return null;
 	}
 
@@ -1976,8 +1609,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractFeatureCollectionType
 	 * @generated
 	 */
-	public Adapter createAbstractFeatureCollectionTypeAdapter()
-	{
+	public Adapter createAbstractFeatureCollectionTypeAdapter() {
 		return null;
 	}
 
@@ -1991,8 +1623,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractFeatureMemberType
 	 * @generated
 	 */
-	public Adapter createAbstractFeatureMemberTypeAdapter()
-	{
+	public Adapter createAbstractFeatureMemberTypeAdapter() {
 		return null;
 	}
 
@@ -2006,8 +1637,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractFeatureType
 	 * @generated
 	 */
-	public Adapter createAbstractFeatureTypeAdapter()
-	{
+	public Adapter createAbstractFeatureTypeAdapter() {
 		return null;
 	}
 
@@ -2021,8 +1651,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeneralConversionType
 	 * @generated
 	 */
-	public Adapter createAbstractGeneralConversionTypeAdapter()
-	{
+	public Adapter createAbstractGeneralConversionTypeAdapter() {
 		return null;
 	}
 
@@ -2036,8 +1665,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeneralDerivedCRSType
 	 * @generated
 	 */
-	public Adapter createAbstractGeneralDerivedCRSTypeAdapter()
-	{
+	public Adapter createAbstractGeneralDerivedCRSTypeAdapter() {
 		return null;
 	}
 
@@ -2051,8 +1679,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeneralOperationParameterPropertyType
 	 * @generated
 	 */
-	public Adapter createAbstractGeneralOperationParameterPropertyTypeAdapter()
-	{
+	public Adapter createAbstractGeneralOperationParameterPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2066,8 +1693,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeneralOperationParameterType
 	 * @generated
 	 */
-	public Adapter createAbstractGeneralOperationParameterTypeAdapter()
-	{
+	public Adapter createAbstractGeneralOperationParameterTypeAdapter() {
 		return null;
 	}
 
@@ -2081,8 +1707,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeneralParameterValuePropertyType
 	 * @generated
 	 */
-	public Adapter createAbstractGeneralParameterValuePropertyTypeAdapter()
-	{
+	public Adapter createAbstractGeneralParameterValuePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2096,8 +1721,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeneralParameterValueType
 	 * @generated
 	 */
-	public Adapter createAbstractGeneralParameterValueTypeAdapter()
-	{
+	public Adapter createAbstractGeneralParameterValueTypeAdapter() {
 		return null;
 	}
 
@@ -2111,8 +1735,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeneralTransformationType
 	 * @generated
 	 */
-	public Adapter createAbstractGeneralTransformationTypeAdapter()
-	{
+	public Adapter createAbstractGeneralTransformationTypeAdapter() {
 		return null;
 	}
 
@@ -2126,8 +1749,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeometricAggregateType
 	 * @generated
 	 */
-	public Adapter createAbstractGeometricAggregateTypeAdapter()
-	{
+	public Adapter createAbstractGeometricAggregateTypeAdapter() {
 		return null;
 	}
 
@@ -2141,8 +1763,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeometricPrimitiveType
 	 * @generated
 	 */
-	public Adapter createAbstractGeometricPrimitiveTypeAdapter()
-	{
+	public Adapter createAbstractGeometricPrimitiveTypeAdapter() {
 		return null;
 	}
 
@@ -2156,8 +1777,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGeometryType
 	 * @generated
 	 */
-	public Adapter createAbstractGeometryTypeAdapter()
-	{
+	public Adapter createAbstractGeometryTypeAdapter() {
 		return null;
 	}
 
@@ -2171,8 +1791,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGMLType
 	 * @generated
 	 */
-	public Adapter createAbstractGMLTypeAdapter()
-	{
+	public Adapter createAbstractGMLTypeAdapter() {
 		return null;
 	}
 
@@ -2186,8 +1805,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractGriddedSurfaceType
 	 * @generated
 	 */
-	public Adapter createAbstractGriddedSurfaceTypeAdapter()
-	{
+	public Adapter createAbstractGriddedSurfaceTypeAdapter() {
 		return null;
 	}
 
@@ -2201,8 +1819,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractMemberType
 	 * @generated
 	 */
-	public Adapter createAbstractMemberTypeAdapter()
-	{
+	public Adapter createAbstractMemberTypeAdapter() {
 		return null;
 	}
 
@@ -2216,8 +1833,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractMetadataPropertyType
 	 * @generated
 	 */
-	public Adapter createAbstractMetadataPropertyTypeAdapter()
-	{
+	public Adapter createAbstractMetadataPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2231,8 +1847,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractMetaDataType
 	 * @generated
 	 */
-	public Adapter createAbstractMetaDataTypeAdapter()
-	{
+	public Adapter createAbstractMetaDataTypeAdapter() {
 		return null;
 	}
 
@@ -2246,8 +1861,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractParametricCurveSurfaceType
 	 * @generated
 	 */
-	public Adapter createAbstractParametricCurveSurfaceTypeAdapter()
-	{
+	public Adapter createAbstractParametricCurveSurfaceTypeAdapter() {
 		return null;
 	}
 
@@ -2261,8 +1875,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractRingPropertyType
 	 * @generated
 	 */
-	public Adapter createAbstractRingPropertyTypeAdapter()
-	{
+	public Adapter createAbstractRingPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2276,8 +1889,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractRingType
 	 * @generated
 	 */
-	public Adapter createAbstractRingTypeAdapter()
-	{
+	public Adapter createAbstractRingTypeAdapter() {
 		return null;
 	}
 
@@ -2291,8 +1903,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractSolidType
 	 * @generated
 	 */
-	public Adapter createAbstractSolidTypeAdapter()
-	{
+	public Adapter createAbstractSolidTypeAdapter() {
 		return null;
 	}
 
@@ -2306,8 +1917,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractSurfacePatchType
 	 * @generated
 	 */
-	public Adapter createAbstractSurfacePatchTypeAdapter()
-	{
+	public Adapter createAbstractSurfacePatchTypeAdapter() {
 		return null;
 	}
 
@@ -2321,8 +1931,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractSurfaceType
 	 * @generated
 	 */
-	public Adapter createAbstractSurfaceTypeAdapter()
-	{
+	public Adapter createAbstractSurfaceTypeAdapter() {
 		return null;
 	}
 
@@ -2336,8 +1945,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractTimeComplexType
 	 * @generated
 	 */
-	public Adapter createAbstractTimeComplexTypeAdapter()
-	{
+	public Adapter createAbstractTimeComplexTypeAdapter() {
 		return null;
 	}
 
@@ -2351,8 +1959,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractTimeGeometricPrimitiveType
 	 * @generated
 	 */
-	public Adapter createAbstractTimeGeometricPrimitiveTypeAdapter()
-	{
+	public Adapter createAbstractTimeGeometricPrimitiveTypeAdapter() {
 		return null;
 	}
 
@@ -2366,8 +1973,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractTimeObjectType
 	 * @generated
 	 */
-	public Adapter createAbstractTimeObjectTypeAdapter()
-	{
+	public Adapter createAbstractTimeObjectTypeAdapter() {
 		return null;
 	}
 
@@ -2381,8 +1987,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractTimePrimitiveType
 	 * @generated
 	 */
-	public Adapter createAbstractTimePrimitiveTypeAdapter()
-	{
+	public Adapter createAbstractTimePrimitiveTypeAdapter() {
 		return null;
 	}
 
@@ -2396,8 +2001,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractTimeSliceType
 	 * @generated
 	 */
-	public Adapter createAbstractTimeSliceTypeAdapter()
-	{
+	public Adapter createAbstractTimeSliceTypeAdapter() {
 		return null;
 	}
 
@@ -2411,8 +2015,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractTimeTopologyPrimitiveType
 	 * @generated
 	 */
-	public Adapter createAbstractTimeTopologyPrimitiveTypeAdapter()
-	{
+	public Adapter createAbstractTimeTopologyPrimitiveTypeAdapter() {
 		return null;
 	}
 
@@ -2426,8 +2029,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractTopologyType
 	 * @generated
 	 */
-	public Adapter createAbstractTopologyTypeAdapter()
-	{
+	public Adapter createAbstractTopologyTypeAdapter() {
 		return null;
 	}
 
@@ -2441,8 +2043,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AbstractTopoPrimitiveType
 	 * @generated
 	 */
-	public Adapter createAbstractTopoPrimitiveTypeAdapter()
-	{
+	public Adapter createAbstractTopoPrimitiveTypeAdapter() {
 		return null;
 	}
 
@@ -2456,8 +2057,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AffineCSPropertyType
 	 * @generated
 	 */
-	public Adapter createAffineCSPropertyTypeAdapter()
-	{
+	public Adapter createAffineCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2471,8 +2071,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AffineCSType
 	 * @generated
 	 */
-	public Adapter createAffineCSTypeAdapter()
-	{
+	public Adapter createAffineCSTypeAdapter() {
 		return null;
 	}
 
@@ -2486,8 +2085,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AffinePlacementType
 	 * @generated
 	 */
-	public Adapter createAffinePlacementTypeAdapter()
-	{
+	public Adapter createAffinePlacementTypeAdapter() {
 		return null;
 	}
 
@@ -2501,8 +2099,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AngleChoiceType
 	 * @generated
 	 */
-	public Adapter createAngleChoiceTypeAdapter()
-	{
+	public Adapter createAngleChoiceTypeAdapter() {
 		return null;
 	}
 
@@ -2516,8 +2113,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AngleType
 	 * @generated
 	 */
-	public Adapter createAngleTypeAdapter()
-	{
+	public Adapter createAngleTypeAdapter() {
 		return null;
 	}
 
@@ -2531,8 +2127,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ArcByBulgeType
 	 * @generated
 	 */
-	public Adapter createArcByBulgeTypeAdapter()
-	{
+	public Adapter createArcByBulgeTypeAdapter() {
 		return null;
 	}
 
@@ -2546,8 +2141,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ArcByCenterPointType
 	 * @generated
 	 */
-	public Adapter createArcByCenterPointTypeAdapter()
-	{
+	public Adapter createArcByCenterPointTypeAdapter() {
 		return null;
 	}
 
@@ -2561,8 +2155,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ArcStringByBulgeType
 	 * @generated
 	 */
-	public Adapter createArcStringByBulgeTypeAdapter()
-	{
+	public Adapter createArcStringByBulgeTypeAdapter() {
 		return null;
 	}
 
@@ -2576,8 +2169,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ArcStringType
 	 * @generated
 	 */
-	public Adapter createArcStringTypeAdapter()
-	{
+	public Adapter createArcStringTypeAdapter() {
 		return null;
 	}
 
@@ -2591,8 +2183,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ArcType
 	 * @generated
 	 */
-	public Adapter createArcTypeAdapter()
-	{
+	public Adapter createArcTypeAdapter() {
 		return null;
 	}
 
@@ -2606,8 +2197,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AreaType
 	 * @generated
 	 */
-	public Adapter createAreaTypeAdapter()
-	{
+	public Adapter createAreaTypeAdapter() {
 		return null;
 	}
 
@@ -2621,8 +2211,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ArrayAssociationType
 	 * @generated
 	 */
-	public Adapter createArrayAssociationTypeAdapter()
-	{
+	public Adapter createArrayAssociationTypeAdapter() {
 		return null;
 	}
 
@@ -2636,8 +2225,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ArrayType
 	 * @generated
 	 */
-	public Adapter createArrayTypeAdapter()
-	{
+	public Adapter createArrayTypeAdapter() {
 		return null;
 	}
 
@@ -2651,8 +2239,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.AssociationRoleType
 	 * @generated
 	 */
-	public Adapter createAssociationRoleTypeAdapter()
-	{
+	public Adapter createAssociationRoleTypeAdapter() {
 		return null;
 	}
 
@@ -2666,8 +2253,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.BagType
 	 * @generated
 	 */
-	public Adapter createBagTypeAdapter()
-	{
+	public Adapter createBagTypeAdapter() {
 		return null;
 	}
 
@@ -2681,8 +2267,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.BaseUnitType
 	 * @generated
 	 */
-	public Adapter createBaseUnitTypeAdapter()
-	{
+	public Adapter createBaseUnitTypeAdapter() {
 		return null;
 	}
 
@@ -2696,8 +2281,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.BezierType
 	 * @generated
 	 */
-	public Adapter createBezierTypeAdapter()
-	{
+	public Adapter createBezierTypeAdapter() {
 		return null;
 	}
 
@@ -2711,8 +2295,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.BooleanPropertyType
 	 * @generated
 	 */
-	public Adapter createBooleanPropertyTypeAdapter()
-	{
+	public Adapter createBooleanPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2726,8 +2309,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.BooleanType
 	 * @generated
 	 */
-	public Adapter createBooleanTypeAdapter()
-	{
+	public Adapter createBooleanTypeAdapter() {
 		return null;
 	}
 
@@ -2741,8 +2323,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.BoundedFeatureType
 	 * @generated
 	 */
-	public Adapter createBoundedFeatureTypeAdapter()
-	{
+	public Adapter createBoundedFeatureTypeAdapter() {
 		return null;
 	}
 
@@ -2756,8 +2337,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.BoundingShapeType
 	 * @generated
 	 */
-	public Adapter createBoundingShapeTypeAdapter()
-	{
+	public Adapter createBoundingShapeTypeAdapter() {
 		return null;
 	}
 
@@ -2771,8 +2351,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.BSplineType
 	 * @generated
 	 */
-	public Adapter createBSplineTypeAdapter()
-	{
+	public Adapter createBSplineTypeAdapter() {
 		return null;
 	}
 
@@ -2786,8 +2365,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CartesianCSPropertyType
 	 * @generated
 	 */
-	public Adapter createCartesianCSPropertyTypeAdapter()
-	{
+	public Adapter createCartesianCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2801,8 +2379,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CartesianCSType
 	 * @generated
 	 */
-	public Adapter createCartesianCSTypeAdapter()
-	{
+	public Adapter createCartesianCSTypeAdapter() {
 		return null;
 	}
 
@@ -2816,8 +2393,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CategoryExtentType
 	 * @generated
 	 */
-	public Adapter createCategoryExtentTypeAdapter()
-	{
+	public Adapter createCategoryExtentTypeAdapter() {
 		return null;
 	}
 
@@ -2831,8 +2407,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CategoryPropertyType
 	 * @generated
 	 */
-	public Adapter createCategoryPropertyTypeAdapter()
-	{
+	public Adapter createCategoryPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -2846,8 +2421,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CategoryType
 	 * @generated
 	 */
-	public Adapter createCategoryTypeAdapter()
-	{
+	public Adapter createCategoryTypeAdapter() {
 		return null;
 	}
 
@@ -2861,8 +2435,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CircleByCenterPointType
 	 * @generated
 	 */
-	public Adapter createCircleByCenterPointTypeAdapter()
-	{
+	public Adapter createCircleByCenterPointTypeAdapter() {
 		return null;
 	}
 
@@ -2876,8 +2449,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CircleType
 	 * @generated
 	 */
-	public Adapter createCircleTypeAdapter()
-	{
+	public Adapter createCircleTypeAdapter() {
 		return null;
 	}
 
@@ -2891,8 +2463,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ClothoidType
 	 * @generated
 	 */
-	public Adapter createClothoidTypeAdapter()
-	{
+	public Adapter createClothoidTypeAdapter() {
 		return null;
 	}
 
@@ -2906,8 +2477,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CodeListType
 	 * @generated
 	 */
-	public Adapter createCodeListTypeAdapter()
-	{
+	public Adapter createCodeListTypeAdapter() {
 		return null;
 	}
 
@@ -2921,8 +2491,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CodeOrNilReasonListType
 	 * @generated
 	 */
-	public Adapter createCodeOrNilReasonListTypeAdapter()
-	{
+	public Adapter createCodeOrNilReasonListTypeAdapter() {
 		return null;
 	}
 
@@ -2936,8 +2505,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CodeType
 	 * @generated
 	 */
-	public Adapter createCodeTypeAdapter()
-	{
+	public Adapter createCodeTypeAdapter() {
 		return null;
 	}
 
@@ -2951,8 +2519,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CodeWithAuthorityType
 	 * @generated
 	 */
-	public Adapter createCodeWithAuthorityTypeAdapter()
-	{
+	public Adapter createCodeWithAuthorityTypeAdapter() {
 		return null;
 	}
 
@@ -2966,8 +2533,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CompositeCurveType
 	 * @generated
 	 */
-	public Adapter createCompositeCurveTypeAdapter()
-	{
+	public Adapter createCompositeCurveTypeAdapter() {
 		return null;
 	}
 
@@ -2981,8 +2547,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CompositeSolidType
 	 * @generated
 	 */
-	public Adapter createCompositeSolidTypeAdapter()
-	{
+	public Adapter createCompositeSolidTypeAdapter() {
 		return null;
 	}
 
@@ -2996,8 +2561,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CompositeSurfaceType
 	 * @generated
 	 */
-	public Adapter createCompositeSurfaceTypeAdapter()
-	{
+	public Adapter createCompositeSurfaceTypeAdapter() {
 		return null;
 	}
 
@@ -3011,8 +2575,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CompositeValueType
 	 * @generated
 	 */
-	public Adapter createCompositeValueTypeAdapter()
-	{
+	public Adapter createCompositeValueTypeAdapter() {
 		return null;
 	}
 
@@ -3026,8 +2589,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CompoundCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createCompoundCRSPropertyTypeAdapter()
-	{
+	public Adapter createCompoundCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3041,8 +2603,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CompoundCRSType
 	 * @generated
 	 */
-	public Adapter createCompoundCRSTypeAdapter()
-	{
+	public Adapter createCompoundCRSTypeAdapter() {
 		return null;
 	}
 
@@ -3056,8 +2617,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ConcatenatedOperationPropertyType
 	 * @generated
 	 */
-	public Adapter createConcatenatedOperationPropertyTypeAdapter()
-	{
+	public Adapter createConcatenatedOperationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3071,8 +2631,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ConcatenatedOperationType
 	 * @generated
 	 */
-	public Adapter createConcatenatedOperationTypeAdapter()
-	{
+	public Adapter createConcatenatedOperationTypeAdapter() {
 		return null;
 	}
 
@@ -3086,8 +2645,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ConeType
 	 * @generated
 	 */
-	public Adapter createConeTypeAdapter()
-	{
+	public Adapter createConeTypeAdapter() {
 		return null;
 	}
 
@@ -3101,8 +2659,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ControlPointType
 	 * @generated
 	 */
-	public Adapter createControlPointTypeAdapter()
-	{
+	public Adapter createControlPointTypeAdapter() {
 		return null;
 	}
 
@@ -3116,8 +2673,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ConventionalUnitType
 	 * @generated
 	 */
-	public Adapter createConventionalUnitTypeAdapter()
-	{
+	public Adapter createConventionalUnitTypeAdapter() {
 		return null;
 	}
 
@@ -3131,8 +2687,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ConversionPropertyType
 	 * @generated
 	 */
-	public Adapter createConversionPropertyTypeAdapter()
-	{
+	public Adapter createConversionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3146,8 +2701,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ConversionToPreferredUnitType
 	 * @generated
 	 */
-	public Adapter createConversionToPreferredUnitTypeAdapter()
-	{
+	public Adapter createConversionToPreferredUnitTypeAdapter() {
 		return null;
 	}
 
@@ -3161,8 +2715,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ConversionType
 	 * @generated
 	 */
-	public Adapter createConversionTypeAdapter()
-	{
+	public Adapter createConversionTypeAdapter() {
 		return null;
 	}
 
@@ -3176,8 +2729,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CoordinateOperationAccuracyType
 	 * @generated
 	 */
-	public Adapter createCoordinateOperationAccuracyTypeAdapter()
-	{
+	public Adapter createCoordinateOperationAccuracyTypeAdapter() {
 		return null;
 	}
 
@@ -3191,8 +2743,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CoordinateOperationPropertyType
 	 * @generated
 	 */
-	public Adapter createCoordinateOperationPropertyTypeAdapter()
-	{
+	public Adapter createCoordinateOperationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3206,8 +2757,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CoordinatesType
 	 * @generated
 	 */
-	public Adapter createCoordinatesTypeAdapter()
-	{
+	public Adapter createCoordinatesTypeAdapter() {
 		return null;
 	}
 
@@ -3221,8 +2771,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CoordinateSystemAxisPropertyType
 	 * @generated
 	 */
-	public Adapter createCoordinateSystemAxisPropertyTypeAdapter()
-	{
+	public Adapter createCoordinateSystemAxisPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3236,8 +2785,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CoordinateSystemAxisType
 	 * @generated
 	 */
-	public Adapter createCoordinateSystemAxisTypeAdapter()
-	{
+	public Adapter createCoordinateSystemAxisTypeAdapter() {
 		return null;
 	}
 
@@ -3251,8 +2799,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CoordinateSystemPropertyType
 	 * @generated
 	 */
-	public Adapter createCoordinateSystemPropertyTypeAdapter()
-	{
+	public Adapter createCoordinateSystemPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3266,8 +2813,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CountPropertyType
 	 * @generated
 	 */
-	public Adapter createCountPropertyTypeAdapter()
-	{
+	public Adapter createCountPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3281,8 +2827,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CountType
 	 * @generated
 	 */
-	public Adapter createCountTypeAdapter()
-	{
+	public Adapter createCountTypeAdapter() {
 		return null;
 	}
 
@@ -3296,8 +2841,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CoverageFunctionType
 	 * @generated
 	 */
-	public Adapter createCoverageFunctionTypeAdapter()
-	{
+	public Adapter createCoverageFunctionTypeAdapter() {
 		return null;
 	}
 
@@ -3311,8 +2855,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CRSPropertyType
 	 * @generated
 	 */
-	public Adapter createCRSPropertyTypeAdapter()
-	{
+	public Adapter createCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3326,8 +2869,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CubicSplineType
 	 * @generated
 	 */
-	public Adapter createCubicSplineTypeAdapter()
-	{
+	public Adapter createCubicSplineTypeAdapter() {
 		return null;
 	}
 
@@ -3341,8 +2883,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CurveArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createCurveArrayPropertyTypeAdapter()
-	{
+	public Adapter createCurveArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3356,8 +2897,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CurvePropertyType
 	 * @generated
 	 */
-	public Adapter createCurvePropertyTypeAdapter()
-	{
+	public Adapter createCurvePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3371,8 +2911,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CurveSegmentArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createCurveSegmentArrayPropertyTypeAdapter()
-	{
+	public Adapter createCurveSegmentArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3386,8 +2925,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CurveType
 	 * @generated
 	 */
-	public Adapter createCurveTypeAdapter()
-	{
+	public Adapter createCurveTypeAdapter() {
 		return null;
 	}
 
@@ -3401,8 +2939,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CylinderType
 	 * @generated
 	 */
-	public Adapter createCylinderTypeAdapter()
-	{
+	public Adapter createCylinderTypeAdapter() {
 		return null;
 	}
 
@@ -3416,8 +2953,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CylindricalCSPropertyType
 	 * @generated
 	 */
-	public Adapter createCylindricalCSPropertyTypeAdapter()
-	{
+	public Adapter createCylindricalCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3431,8 +2967,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.CylindricalCSType
 	 * @generated
 	 */
-	public Adapter createCylindricalCSTypeAdapter()
-	{
+	public Adapter createCylindricalCSTypeAdapter() {
 		return null;
 	}
 
@@ -3446,8 +2981,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DataBlockType
 	 * @generated
 	 */
-	public Adapter createDataBlockTypeAdapter()
-	{
+	public Adapter createDataBlockTypeAdapter() {
 		return null;
 	}
 
@@ -3461,8 +2995,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DatumPropertyType
 	 * @generated
 	 */
-	public Adapter createDatumPropertyTypeAdapter()
-	{
+	public Adapter createDatumPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3476,8 +3009,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DefinitionBaseType
 	 * @generated
 	 */
-	public Adapter createDefinitionBaseTypeAdapter()
-	{
+	public Adapter createDefinitionBaseTypeAdapter() {
 		return null;
 	}
 
@@ -3491,8 +3023,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DefinitionProxyType
 	 * @generated
 	 */
-	public Adapter createDefinitionProxyTypeAdapter()
-	{
+	public Adapter createDefinitionProxyTypeAdapter() {
 		return null;
 	}
 
@@ -3506,8 +3037,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DefinitionType
 	 * @generated
 	 */
-	public Adapter createDefinitionTypeAdapter()
-	{
+	public Adapter createDefinitionTypeAdapter() {
 		return null;
 	}
 
@@ -3521,8 +3051,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DegreesType
 	 * @generated
 	 */
-	public Adapter createDegreesTypeAdapter()
-	{
+	public Adapter createDegreesTypeAdapter() {
 		return null;
 	}
 
@@ -3536,8 +3065,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DerivationUnitTermType
 	 * @generated
 	 */
-	public Adapter createDerivationUnitTermTypeAdapter()
-	{
+	public Adapter createDerivationUnitTermTypeAdapter() {
 		return null;
 	}
 
@@ -3551,8 +3079,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DerivedCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createDerivedCRSPropertyTypeAdapter()
-	{
+	public Adapter createDerivedCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3566,8 +3093,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DerivedCRSType
 	 * @generated
 	 */
-	public Adapter createDerivedCRSTypeAdapter()
-	{
+	public Adapter createDerivedCRSTypeAdapter() {
 		return null;
 	}
 
@@ -3581,8 +3107,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DerivedUnitType
 	 * @generated
 	 */
-	public Adapter createDerivedUnitTypeAdapter()
-	{
+	public Adapter createDerivedUnitTypeAdapter() {
 		return null;
 	}
 
@@ -3596,8 +3121,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DictionaryEntryType
 	 * @generated
 	 */
-	public Adapter createDictionaryEntryTypeAdapter()
-	{
+	public Adapter createDictionaryEntryTypeAdapter() {
 		return null;
 	}
 
@@ -3611,8 +3135,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DictionaryType
 	 * @generated
 	 */
-	public Adapter createDictionaryTypeAdapter()
-	{
+	public Adapter createDictionaryTypeAdapter() {
 		return null;
 	}
 
@@ -3626,8 +3149,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectedEdgePropertyType
 	 * @generated
 	 */
-	public Adapter createDirectedEdgePropertyTypeAdapter()
-	{
+	public Adapter createDirectedEdgePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3641,8 +3163,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectedFacePropertyType
 	 * @generated
 	 */
-	public Adapter createDirectedFacePropertyTypeAdapter()
-	{
+	public Adapter createDirectedFacePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3656,8 +3177,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectedNodePropertyType
 	 * @generated
 	 */
-	public Adapter createDirectedNodePropertyTypeAdapter()
-	{
+	public Adapter createDirectedNodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3671,8 +3191,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectedObservationAtDistanceType
 	 * @generated
 	 */
-	public Adapter createDirectedObservationAtDistanceTypeAdapter()
-	{
+	public Adapter createDirectedObservationAtDistanceTypeAdapter() {
 		return null;
 	}
 
@@ -3686,8 +3205,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectedObservationType
 	 * @generated
 	 */
-	public Adapter createDirectedObservationTypeAdapter()
-	{
+	public Adapter createDirectedObservationTypeAdapter() {
 		return null;
 	}
 
@@ -3701,8 +3219,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectedTopoSolidPropertyType
 	 * @generated
 	 */
-	public Adapter createDirectedTopoSolidPropertyTypeAdapter()
-	{
+	public Adapter createDirectedTopoSolidPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3716,8 +3233,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectionDescriptionType
 	 * @generated
 	 */
-	public Adapter createDirectionDescriptionTypeAdapter()
-	{
+	public Adapter createDirectionDescriptionTypeAdapter() {
 		return null;
 	}
 
@@ -3731,8 +3247,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectionPropertyType
 	 * @generated
 	 */
-	public Adapter createDirectionPropertyTypeAdapter()
-	{
+	public Adapter createDirectionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3746,8 +3261,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectionVectorType
 	 * @generated
 	 */
-	public Adapter createDirectionVectorTypeAdapter()
-	{
+	public Adapter createDirectionVectorTypeAdapter() {
 		return null;
 	}
 
@@ -3761,8 +3275,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectPositionListType
 	 * @generated
 	 */
-	public Adapter createDirectPositionListTypeAdapter()
-	{
+	public Adapter createDirectPositionListTypeAdapter() {
 		return null;
 	}
 
@@ -3776,8 +3289,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DirectPositionType
 	 * @generated
 	 */
-	public Adapter createDirectPositionTypeAdapter()
-	{
+	public Adapter createDirectPositionTypeAdapter() {
 		return null;
 	}
 
@@ -3791,8 +3303,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DiscreteCoverageType
 	 * @generated
 	 */
-	public Adapter createDiscreteCoverageTypeAdapter()
-	{
+	public Adapter createDiscreteCoverageTypeAdapter() {
 		return null;
 	}
 
@@ -3806,8 +3317,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DMSAngleType
 	 * @generated
 	 */
-	public Adapter createDMSAngleTypeAdapter()
-	{
+	public Adapter createDMSAngleTypeAdapter() {
 		return null;
 	}
 
@@ -3821,8 +3331,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DocumentRoot
 	 * @generated
 	 */
-	public Adapter createDocumentRootAdapter()
-	{
+	public Adapter createDocumentRootAdapter() {
 		return null;
 	}
 
@@ -3836,8 +3345,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DomainOfValidityType
 	 * @generated
 	 */
-	public Adapter createDomainOfValidityTypeAdapter()
-	{
+	public Adapter createDomainOfValidityTypeAdapter() {
 		return null;
 	}
 
@@ -3851,8 +3359,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DomainSetType
 	 * @generated
 	 */
-	public Adapter createDomainSetTypeAdapter()
-	{
+	public Adapter createDomainSetTypeAdapter() {
 		return null;
 	}
 
@@ -3866,8 +3373,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DynamicFeatureCollectionType
 	 * @generated
 	 */
-	public Adapter createDynamicFeatureCollectionTypeAdapter()
-	{
+	public Adapter createDynamicFeatureCollectionTypeAdapter() {
 		return null;
 	}
 
@@ -3881,8 +3387,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DynamicFeatureMemberType
 	 * @generated
 	 */
-	public Adapter createDynamicFeatureMemberTypeAdapter()
-	{
+	public Adapter createDynamicFeatureMemberTypeAdapter() {
 		return null;
 	}
 
@@ -3896,8 +3401,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.DynamicFeatureType
 	 * @generated
 	 */
-	public Adapter createDynamicFeatureTypeAdapter()
-	{
+	public Adapter createDynamicFeatureTypeAdapter() {
 		return null;
 	}
 
@@ -3911,8 +3415,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EdgeType
 	 * @generated
 	 */
-	public Adapter createEdgeTypeAdapter()
-	{
+	public Adapter createEdgeTypeAdapter() {
 		return null;
 	}
 
@@ -3926,8 +3429,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EllipsoidalCSPropertyType
 	 * @generated
 	 */
-	public Adapter createEllipsoidalCSPropertyTypeAdapter()
-	{
+	public Adapter createEllipsoidalCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3941,8 +3443,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EllipsoidalCSType
 	 * @generated
 	 */
-	public Adapter createEllipsoidalCSTypeAdapter()
-	{
+	public Adapter createEllipsoidalCSTypeAdapter() {
 		return null;
 	}
 
@@ -3956,8 +3457,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EllipsoidPropertyType
 	 * @generated
 	 */
-	public Adapter createEllipsoidPropertyTypeAdapter()
-	{
+	public Adapter createEllipsoidPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -3971,8 +3471,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EllipsoidType
 	 * @generated
 	 */
-	public Adapter createEllipsoidTypeAdapter()
-	{
+	public Adapter createEllipsoidTypeAdapter() {
 		return null;
 	}
 
@@ -3986,8 +3485,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EngineeringCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createEngineeringCRSPropertyTypeAdapter()
-	{
+	public Adapter createEngineeringCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4001,8 +3499,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EngineeringCRSType
 	 * @generated
 	 */
-	public Adapter createEngineeringCRSTypeAdapter()
-	{
+	public Adapter createEngineeringCRSTypeAdapter() {
 		return null;
 	}
 
@@ -4016,8 +3513,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EngineeringDatumPropertyType
 	 * @generated
 	 */
-	public Adapter createEngineeringDatumPropertyTypeAdapter()
-	{
+	public Adapter createEngineeringDatumPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4031,8 +3527,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EngineeringDatumType
 	 * @generated
 	 */
-	public Adapter createEngineeringDatumTypeAdapter()
-	{
+	public Adapter createEngineeringDatumTypeAdapter() {
 		return null;
 	}
 
@@ -4046,8 +3541,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EnvelopeType
 	 * @generated
 	 */
-	public Adapter createEnvelopeTypeAdapter()
-	{
+	public Adapter createEnvelopeTypeAdapter() {
 		return null;
 	}
 
@@ -4061,8 +3555,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.EnvelopeWithTimePeriodType
 	 * @generated
 	 */
-	public Adapter createEnvelopeWithTimePeriodTypeAdapter()
-	{
+	public Adapter createEnvelopeWithTimePeriodTypeAdapter() {
 		return null;
 	}
 
@@ -4076,8 +3569,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.FaceOrTopoSolidPropertyType
 	 * @generated
 	 */
-	public Adapter createFaceOrTopoSolidPropertyTypeAdapter()
-	{
+	public Adapter createFaceOrTopoSolidPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4091,8 +3583,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.FaceType
 	 * @generated
 	 */
-	public Adapter createFaceTypeAdapter()
-	{
+	public Adapter createFaceTypeAdapter() {
 		return null;
 	}
 
@@ -4106,8 +3597,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.FeatureArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createFeatureArrayPropertyTypeAdapter()
-	{
+	public Adapter createFeatureArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4121,8 +3611,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.FeatureCollectionType
 	 * @generated
 	 */
-	public Adapter createFeatureCollectionTypeAdapter()
-	{
+	public Adapter createFeatureCollectionTypeAdapter() {
 		return null;
 	}
 
@@ -4136,8 +3625,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.FeaturePropertyType
 	 * @generated
 	 */
-	public Adapter createFeaturePropertyTypeAdapter()
-	{
+	public Adapter createFeaturePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4151,8 +3639,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.FileType
 	 * @generated
 	 */
-	public Adapter createFileTypeAdapter()
-	{
+	public Adapter createFileTypeAdapter() {
 		return null;
 	}
 
@@ -4166,8 +3653,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.FormulaCitationType
 	 * @generated
 	 */
-	public Adapter createFormulaCitationTypeAdapter()
-	{
+	public Adapter createFormulaCitationTypeAdapter() {
 		return null;
 	}
 
@@ -4181,8 +3667,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.FormulaType
 	 * @generated
 	 */
-	public Adapter createFormulaTypeAdapter()
-	{
+	public Adapter createFormulaTypeAdapter() {
 		return null;
 	}
 
@@ -4196,8 +3681,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeneralConversionPropertyType
 	 * @generated
 	 */
-	public Adapter createGeneralConversionPropertyTypeAdapter()
-	{
+	public Adapter createGeneralConversionPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4211,8 +3695,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeneralTransformationPropertyType
 	 * @generated
 	 */
-	public Adapter createGeneralTransformationPropertyTypeAdapter()
-	{
+	public Adapter createGeneralTransformationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4226,8 +3709,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GenericMetaDataType
 	 * @generated
 	 */
-	public Adapter createGenericMetaDataTypeAdapter()
-	{
+	public Adapter createGenericMetaDataTypeAdapter() {
 		return null;
 	}
 
@@ -4241,8 +3723,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeocentricCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createGeocentricCRSPropertyTypeAdapter()
-	{
+	public Adapter createGeocentricCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4256,8 +3737,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeocentricCRSType
 	 * @generated
 	 */
-	public Adapter createGeocentricCRSTypeAdapter()
-	{
+	public Adapter createGeocentricCRSTypeAdapter() {
 		return null;
 	}
 
@@ -4271,8 +3751,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeodesicStringType
 	 * @generated
 	 */
-	public Adapter createGeodesicStringTypeAdapter()
-	{
+	public Adapter createGeodesicStringTypeAdapter() {
 		return null;
 	}
 
@@ -4286,8 +3765,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeodesicType
 	 * @generated
 	 */
-	public Adapter createGeodesicTypeAdapter()
-	{
+	public Adapter createGeodesicTypeAdapter() {
 		return null;
 	}
 
@@ -4301,8 +3779,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeodeticCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createGeodeticCRSPropertyTypeAdapter()
-	{
+	public Adapter createGeodeticCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4316,8 +3793,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeodeticCRSType
 	 * @generated
 	 */
-	public Adapter createGeodeticCRSTypeAdapter()
-	{
+	public Adapter createGeodeticCRSTypeAdapter() {
 		return null;
 	}
 
@@ -4331,8 +3807,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeodeticDatumPropertyType
 	 * @generated
 	 */
-	public Adapter createGeodeticDatumPropertyTypeAdapter()
-	{
+	public Adapter createGeodeticDatumPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4346,8 +3821,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeodeticDatumType
 	 * @generated
 	 */
-	public Adapter createGeodeticDatumTypeAdapter()
-	{
+	public Adapter createGeodeticDatumTypeAdapter() {
 		return null;
 	}
 
@@ -4361,8 +3835,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeographicCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createGeographicCRSPropertyTypeAdapter()
-	{
+	public Adapter createGeographicCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4376,8 +3849,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeographicCRSType
 	 * @generated
 	 */
-	public Adapter createGeographicCRSTypeAdapter()
-	{
+	public Adapter createGeographicCRSTypeAdapter() {
 		return null;
 	}
 
@@ -4391,8 +3863,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeometricComplexPropertyType
 	 * @generated
 	 */
-	public Adapter createGeometricComplexPropertyTypeAdapter()
-	{
+	public Adapter createGeometricComplexPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4406,8 +3877,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeometricComplexType
 	 * @generated
 	 */
-	public Adapter createGeometricComplexTypeAdapter()
-	{
+	public Adapter createGeometricComplexTypeAdapter() {
 		return null;
 	}
 
@@ -4421,8 +3891,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeometricPrimitivePropertyType
 	 * @generated
 	 */
-	public Adapter createGeometricPrimitivePropertyTypeAdapter()
-	{
+	public Adapter createGeometricPrimitivePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4436,8 +3905,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeometryArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createGeometryArrayPropertyTypeAdapter()
-	{
+	public Adapter createGeometryArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4451,8 +3919,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GeometryPropertyType
 	 * @generated
 	 */
-	public Adapter createGeometryPropertyTypeAdapter()
-	{
+	public Adapter createGeometryPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4466,8 +3933,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GridEnvelopeType
 	 * @generated
 	 */
-	public Adapter createGridEnvelopeTypeAdapter()
-	{
+	public Adapter createGridEnvelopeTypeAdapter() {
 		return null;
 	}
 
@@ -4481,8 +3947,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GridFunctionType
 	 * @generated
 	 */
-	public Adapter createGridFunctionTypeAdapter()
-	{
+	public Adapter createGridFunctionTypeAdapter() {
 		return null;
 	}
 
@@ -4496,8 +3961,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GridLengthType
 	 * @generated
 	 */
-	public Adapter createGridLengthTypeAdapter()
-	{
+	public Adapter createGridLengthTypeAdapter() {
 		return null;
 	}
 
@@ -4511,8 +3975,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GridLimitsType
 	 * @generated
 	 */
-	public Adapter createGridLimitsTypeAdapter()
-	{
+	public Adapter createGridLimitsTypeAdapter() {
 		return null;
 	}
 
@@ -4526,8 +3989,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.GridType
 	 * @generated
 	 */
-	public Adapter createGridTypeAdapter()
-	{
+	public Adapter createGridTypeAdapter() {
 		return null;
 	}
 
@@ -4541,8 +4003,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.HistoryPropertyType
 	 * @generated
 	 */
-	public Adapter createHistoryPropertyTypeAdapter()
-	{
+	public Adapter createHistoryPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4556,8 +4017,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.IdentifiedObjectType
 	 * @generated
 	 */
-	public Adapter createIdentifiedObjectTypeAdapter()
-	{
+	public Adapter createIdentifiedObjectTypeAdapter() {
 		return null;
 	}
 
@@ -4571,8 +4031,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ImageCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createImageCRSPropertyTypeAdapter()
-	{
+	public Adapter createImageCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4586,8 +4045,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ImageCRSType
 	 * @generated
 	 */
-	public Adapter createImageCRSTypeAdapter()
-	{
+	public Adapter createImageCRSTypeAdapter() {
 		return null;
 	}
 
@@ -4601,8 +4059,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ImageDatumPropertyType
 	 * @generated
 	 */
-	public Adapter createImageDatumPropertyTypeAdapter()
-	{
+	public Adapter createImageDatumPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4616,8 +4073,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ImageDatumType
 	 * @generated
 	 */
-	public Adapter createImageDatumTypeAdapter()
-	{
+	public Adapter createImageDatumTypeAdapter() {
 		return null;
 	}
 
@@ -4631,8 +4087,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.IndirectEntryType
 	 * @generated
 	 */
-	public Adapter createIndirectEntryTypeAdapter()
-	{
+	public Adapter createIndirectEntryTypeAdapter() {
 		return null;
 	}
 
@@ -4646,8 +4101,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.InlinePropertyType
 	 * @generated
 	 */
-	public Adapter createInlinePropertyTypeAdapter()
-	{
+	public Adapter createInlinePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4661,8 +4115,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.KnotPropertyType
 	 * @generated
 	 */
-	public Adapter createKnotPropertyTypeAdapter()
-	{
+	public Adapter createKnotPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4676,8 +4129,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.KnotType
 	 * @generated
 	 */
-	public Adapter createKnotTypeAdapter()
-	{
+	public Adapter createKnotTypeAdapter() {
 		return null;
 	}
 
@@ -4691,8 +4143,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.LengthType
 	 * @generated
 	 */
-	public Adapter createLengthTypeAdapter()
-	{
+	public Adapter createLengthTypeAdapter() {
 		return null;
 	}
 
@@ -4706,8 +4157,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.LinearCSPropertyType
 	 * @generated
 	 */
-	public Adapter createLinearCSPropertyTypeAdapter()
-	{
+	public Adapter createLinearCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4721,8 +4171,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.LinearCSType
 	 * @generated
 	 */
-	public Adapter createLinearCSTypeAdapter()
-	{
+	public Adapter createLinearCSTypeAdapter() {
 		return null;
 	}
 
@@ -4736,8 +4185,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.LinearRingPropertyType
 	 * @generated
 	 */
-	public Adapter createLinearRingPropertyTypeAdapter()
-	{
+	public Adapter createLinearRingPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4751,8 +4199,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.LinearRingType
 	 * @generated
 	 */
-	public Adapter createLinearRingTypeAdapter()
-	{
+	public Adapter createLinearRingTypeAdapter() {
 		return null;
 	}
 
@@ -4766,8 +4213,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.LineStringSegmentArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createLineStringSegmentArrayPropertyTypeAdapter()
-	{
+	public Adapter createLineStringSegmentArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4781,8 +4227,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.LineStringSegmentType
 	 * @generated
 	 */
-	public Adapter createLineStringSegmentTypeAdapter()
-	{
+	public Adapter createLineStringSegmentTypeAdapter() {
 		return null;
 	}
 
@@ -4796,8 +4241,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.LineStringType
 	 * @generated
 	 */
-	public Adapter createLineStringTypeAdapter()
-	{
+	public Adapter createLineStringTypeAdapter() {
 		return null;
 	}
 
@@ -4811,8 +4255,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.LocationPropertyType
 	 * @generated
 	 */
-	public Adapter createLocationPropertyTypeAdapter()
-	{
+	public Adapter createLocationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4826,8 +4269,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MappingRuleType
 	 * @generated
 	 */
-	public Adapter createMappingRuleTypeAdapter()
-	{
+	public Adapter createMappingRuleTypeAdapter() {
 		return null;
 	}
 
@@ -4841,8 +4283,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MeasureListType
 	 * @generated
 	 */
-	public Adapter createMeasureListTypeAdapter()
-	{
+	public Adapter createMeasureListTypeAdapter() {
 		return null;
 	}
 
@@ -4856,8 +4297,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MeasureOrNilReasonListType
 	 * @generated
 	 */
-	public Adapter createMeasureOrNilReasonListTypeAdapter()
-	{
+	public Adapter createMeasureOrNilReasonListTypeAdapter() {
 		return null;
 	}
 
@@ -4871,8 +4311,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MeasureType
 	 * @generated
 	 */
-	public Adapter createMeasureTypeAdapter()
-	{
+	public Adapter createMeasureTypeAdapter() {
 		return null;
 	}
 
@@ -4886,8 +4325,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MetaDataPropertyType
 	 * @generated
 	 */
-	public Adapter createMetaDataPropertyTypeAdapter()
-	{
+	public Adapter createMetaDataPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4901,8 +4339,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MovingObjectStatusType
 	 * @generated
 	 */
-	public Adapter createMovingObjectStatusTypeAdapter()
-	{
+	public Adapter createMovingObjectStatusTypeAdapter() {
 		return null;
 	}
 
@@ -4916,8 +4353,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiCurvePropertyType
 	 * @generated
 	 */
-	public Adapter createMultiCurvePropertyTypeAdapter()
-	{
+	public Adapter createMultiCurvePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4931,8 +4367,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiCurveType
 	 * @generated
 	 */
-	public Adapter createMultiCurveTypeAdapter()
-	{
+	public Adapter createMultiCurveTypeAdapter() {
 		return null;
 	}
 
@@ -4946,8 +4381,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiGeometryPropertyType
 	 * @generated
 	 */
-	public Adapter createMultiGeometryPropertyTypeAdapter()
-	{
+	public Adapter createMultiGeometryPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4961,8 +4395,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiGeometryType
 	 * @generated
 	 */
-	public Adapter createMultiGeometryTypeAdapter()
-	{
+	public Adapter createMultiGeometryTypeAdapter() {
 		return null;
 	}
 
@@ -4976,8 +4409,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiPointPropertyType
 	 * @generated
 	 */
-	public Adapter createMultiPointPropertyTypeAdapter()
-	{
+	public Adapter createMultiPointPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -4991,8 +4423,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiPointType
 	 * @generated
 	 */
-	public Adapter createMultiPointTypeAdapter()
-	{
+	public Adapter createMultiPointTypeAdapter() {
 		return null;
 	}
 
@@ -5006,8 +4437,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiSolidPropertyType
 	 * @generated
 	 */
-	public Adapter createMultiSolidPropertyTypeAdapter()
-	{
+	public Adapter createMultiSolidPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5021,8 +4451,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiSolidType
 	 * @generated
 	 */
-	public Adapter createMultiSolidTypeAdapter()
-	{
+	public Adapter createMultiSolidTypeAdapter() {
 		return null;
 	}
 
@@ -5036,8 +4465,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiSurfacePropertyType
 	 * @generated
 	 */
-	public Adapter createMultiSurfacePropertyTypeAdapter()
-	{
+	public Adapter createMultiSurfacePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5051,8 +4479,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.MultiSurfaceType
 	 * @generated
 	 */
-	public Adapter createMultiSurfaceTypeAdapter()
-	{
+	public Adapter createMultiSurfaceTypeAdapter() {
 		return null;
 	}
 
@@ -5066,8 +4493,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.NodeOrEdgePropertyType
 	 * @generated
 	 */
-	public Adapter createNodeOrEdgePropertyTypeAdapter()
-	{
+	public Adapter createNodeOrEdgePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5081,8 +4507,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.NodePropertyType
 	 * @generated
 	 */
-	public Adapter createNodePropertyTypeAdapter()
-	{
+	public Adapter createNodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5096,8 +4521,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.NodeType
 	 * @generated
 	 */
-	public Adapter createNodeTypeAdapter()
-	{
+	public Adapter createNodeTypeAdapter() {
 		return null;
 	}
 
@@ -5111,8 +4535,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ObliqueCartesianCSPropertyType
 	 * @generated
 	 */
-	public Adapter createObliqueCartesianCSPropertyTypeAdapter()
-	{
+	public Adapter createObliqueCartesianCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5126,8 +4549,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ObliqueCartesianCSType
 	 * @generated
 	 */
-	public Adapter createObliqueCartesianCSTypeAdapter()
-	{
+	public Adapter createObliqueCartesianCSTypeAdapter() {
 		return null;
 	}
 
@@ -5141,8 +4563,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ObservationType
 	 * @generated
 	 */
-	public Adapter createObservationTypeAdapter()
-	{
+	public Adapter createObservationTypeAdapter() {
 		return null;
 	}
 
@@ -5156,8 +4577,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OffsetCurveType
 	 * @generated
 	 */
-	public Adapter createOffsetCurveTypeAdapter()
-	{
+	public Adapter createOffsetCurveTypeAdapter() {
 		return null;
 	}
 
@@ -5171,8 +4591,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OperationMethodPropertyType
 	 * @generated
 	 */
-	public Adapter createOperationMethodPropertyTypeAdapter()
-	{
+	public Adapter createOperationMethodPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5186,8 +4605,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OperationMethodType
 	 * @generated
 	 */
-	public Adapter createOperationMethodTypeAdapter()
-	{
+	public Adapter createOperationMethodTypeAdapter() {
 		return null;
 	}
 
@@ -5201,8 +4619,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OperationParameterGroupPropertyType
 	 * @generated
 	 */
-	public Adapter createOperationParameterGroupPropertyTypeAdapter()
-	{
+	public Adapter createOperationParameterGroupPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5216,8 +4633,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OperationParameterGroupType
 	 * @generated
 	 */
-	public Adapter createOperationParameterGroupTypeAdapter()
-	{
+	public Adapter createOperationParameterGroupTypeAdapter() {
 		return null;
 	}
 
@@ -5231,8 +4647,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OperationParameterPropertyType
 	 * @generated
 	 */
-	public Adapter createOperationParameterPropertyTypeAdapter()
-	{
+	public Adapter createOperationParameterPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5246,8 +4661,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OperationParameterType
 	 * @generated
 	 */
-	public Adapter createOperationParameterTypeAdapter()
-	{
+	public Adapter createOperationParameterTypeAdapter() {
 		return null;
 	}
 
@@ -5261,8 +4675,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OperationPropertyType
 	 * @generated
 	 */
-	public Adapter createOperationPropertyTypeAdapter()
-	{
+	public Adapter createOperationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5276,8 +4689,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OrientableCurveType
 	 * @generated
 	 */
-	public Adapter createOrientableCurveTypeAdapter()
-	{
+	public Adapter createOrientableCurveTypeAdapter() {
 		return null;
 	}
 
@@ -5291,8 +4703,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.OrientableSurfaceType
 	 * @generated
 	 */
-	public Adapter createOrientableSurfaceTypeAdapter()
-	{
+	public Adapter createOrientableSurfaceTypeAdapter() {
 		return null;
 	}
 
@@ -5306,8 +4717,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ParameterValueGroupType
 	 * @generated
 	 */
-	public Adapter createParameterValueGroupTypeAdapter()
-	{
+	public Adapter createParameterValueGroupTypeAdapter() {
 		return null;
 	}
 
@@ -5321,8 +4731,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ParameterValueType
 	 * @generated
 	 */
-	public Adapter createParameterValueTypeAdapter()
-	{
+	public Adapter createParameterValueTypeAdapter() {
 		return null;
 	}
 
@@ -5336,8 +4745,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PassThroughOperationPropertyType
 	 * @generated
 	 */
-	public Adapter createPassThroughOperationPropertyTypeAdapter()
-	{
+	public Adapter createPassThroughOperationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5351,8 +4759,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PassThroughOperationType
 	 * @generated
 	 */
-	public Adapter createPassThroughOperationTypeAdapter()
-	{
+	public Adapter createPassThroughOperationTypeAdapter() {
 		return null;
 	}
 
@@ -5366,8 +4773,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PointArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createPointArrayPropertyTypeAdapter()
-	{
+	public Adapter createPointArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5381,8 +4787,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PointPropertyType
 	 * @generated
 	 */
-	public Adapter createPointPropertyTypeAdapter()
-	{
+	public Adapter createPointPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5396,8 +4801,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PointType
 	 * @generated
 	 */
-	public Adapter createPointTypeAdapter()
-	{
+	public Adapter createPointTypeAdapter() {
 		return null;
 	}
 
@@ -5411,8 +4815,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PolarCSPropertyType
 	 * @generated
 	 */
-	public Adapter createPolarCSPropertyTypeAdapter()
-	{
+	public Adapter createPolarCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5426,8 +4829,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PolarCSType
 	 * @generated
 	 */
-	public Adapter createPolarCSTypeAdapter()
-	{
+	public Adapter createPolarCSTypeAdapter() {
 		return null;
 	}
 
@@ -5441,8 +4843,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PolygonPatchType
 	 * @generated
 	 */
-	public Adapter createPolygonPatchTypeAdapter()
-	{
+	public Adapter createPolygonPatchTypeAdapter() {
 		return null;
 	}
 
@@ -5456,8 +4857,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PolygonType
 	 * @generated
 	 */
-	public Adapter createPolygonTypeAdapter()
-	{
+	public Adapter createPolygonTypeAdapter() {
 		return null;
 	}
 
@@ -5471,8 +4871,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PrimeMeridianPropertyType
 	 * @generated
 	 */
-	public Adapter createPrimeMeridianPropertyTypeAdapter()
-	{
+	public Adapter createPrimeMeridianPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5486,8 +4885,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PrimeMeridianType
 	 * @generated
 	 */
-	public Adapter createPrimeMeridianTypeAdapter()
-	{
+	public Adapter createPrimeMeridianTypeAdapter() {
 		return null;
 	}
 
@@ -5501,8 +4899,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.PriorityLocationPropertyType
 	 * @generated
 	 */
-	public Adapter createPriorityLocationPropertyTypeAdapter()
-	{
+	public Adapter createPriorityLocationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5516,8 +4913,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ProcedurePropertyType
 	 * @generated
 	 */
-	public Adapter createProcedurePropertyTypeAdapter()
-	{
+	public Adapter createProcedurePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5531,8 +4927,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ProjectedCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createProjectedCRSPropertyTypeAdapter()
-	{
+	public Adapter createProjectedCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5546,8 +4941,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ProjectedCRSType
 	 * @generated
 	 */
-	public Adapter createProjectedCRSTypeAdapter()
-	{
+	public Adapter createProjectedCRSTypeAdapter() {
 		return null;
 	}
 
@@ -5561,8 +4955,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.QuantityExtentType
 	 * @generated
 	 */
-	public Adapter createQuantityExtentTypeAdapter()
-	{
+	public Adapter createQuantityExtentTypeAdapter() {
 		return null;
 	}
 
@@ -5576,8 +4969,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.QuantityPropertyType
 	 * @generated
 	 */
-	public Adapter createQuantityPropertyTypeAdapter()
-	{
+	public Adapter createQuantityPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5591,8 +4983,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.QuantityType
 	 * @generated
 	 */
-	public Adapter createQuantityTypeAdapter()
-	{
+	public Adapter createQuantityTypeAdapter() {
 		return null;
 	}
 
@@ -5606,8 +4997,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.RangeSetType
 	 * @generated
 	 */
-	public Adapter createRangeSetTypeAdapter()
-	{
+	public Adapter createRangeSetTypeAdapter() {
 		return null;
 	}
 
@@ -5621,8 +5011,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.RectangleType
 	 * @generated
 	 */
-	public Adapter createRectangleTypeAdapter()
-	{
+	public Adapter createRectangleTypeAdapter() {
 		return null;
 	}
 
@@ -5636,8 +5025,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.RectifiedGridType
 	 * @generated
 	 */
-	public Adapter createRectifiedGridTypeAdapter()
-	{
+	public Adapter createRectifiedGridTypeAdapter() {
 		return null;
 	}
 
@@ -5651,8 +5039,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ReferenceType
 	 * @generated
 	 */
-	public Adapter createReferenceTypeAdapter()
-	{
+	public Adapter createReferenceTypeAdapter() {
 		return null;
 	}
 
@@ -5666,8 +5053,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.RefLocationType
 	 * @generated
 	 */
-	public Adapter createRefLocationTypeAdapter()
-	{
+	public Adapter createRefLocationTypeAdapter() {
 		return null;
 	}
 
@@ -5681,8 +5067,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.RelatedTimeType
 	 * @generated
 	 */
-	public Adapter createRelatedTimeTypeAdapter()
-	{
+	public Adapter createRelatedTimeTypeAdapter() {
 		return null;
 	}
 
@@ -5696,8 +5081,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ResultType
 	 * @generated
 	 */
-	public Adapter createResultTypeAdapter()
-	{
+	public Adapter createResultTypeAdapter() {
 		return null;
 	}
 
@@ -5711,8 +5095,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.RingPropertyType
 	 * @generated
 	 */
-	public Adapter createRingPropertyTypeAdapter()
-	{
+	public Adapter createRingPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5726,8 +5109,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.RingType
 	 * @generated
 	 */
-	public Adapter createRingTypeAdapter()
-	{
+	public Adapter createRingTypeAdapter() {
 		return null;
 	}
 
@@ -5741,8 +5123,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.RowsType
 	 * @generated
 	 */
-	public Adapter createRowsTypeAdapter()
-	{
+	public Adapter createRowsTypeAdapter() {
 		return null;
 	}
 
@@ -5756,8 +5137,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.RowType
 	 * @generated
 	 */
-	public Adapter createRowTypeAdapter()
-	{
+	public Adapter createRowTypeAdapter() {
 		return null;
 	}
 
@@ -5771,8 +5151,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ScaleType
 	 * @generated
 	 */
-	public Adapter createScaleTypeAdapter()
-	{
+	public Adapter createScaleTypeAdapter() {
 		return null;
 	}
 
@@ -5786,8 +5165,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SecondDefiningParameterType
 	 * @generated
 	 */
-	public Adapter createSecondDefiningParameterTypeAdapter()
-	{
+	public Adapter createSecondDefiningParameterTypeAdapter() {
 		return null;
 	}
 
@@ -5801,8 +5179,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SecondDefiningParameterType1
 	 * @generated
 	 */
-	public Adapter createSecondDefiningParameterType1Adapter()
-	{
+	public Adapter createSecondDefiningParameterType1Adapter() {
 		return null;
 	}
 
@@ -5816,8 +5193,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SequenceRuleType
 	 * @generated
 	 */
-	public Adapter createSequenceRuleTypeAdapter()
-	{
+	public Adapter createSequenceRuleTypeAdapter() {
 		return null;
 	}
 
@@ -5831,8 +5207,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ShellPropertyType
 	 * @generated
 	 */
-	public Adapter createShellPropertyTypeAdapter()
-	{
+	public Adapter createShellPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5846,8 +5221,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ShellType
 	 * @generated
 	 */
-	public Adapter createShellTypeAdapter()
-	{
+	public Adapter createShellTypeAdapter() {
 		return null;
 	}
 
@@ -5861,8 +5235,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SingleCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createSingleCRSPropertyTypeAdapter()
-	{
+	public Adapter createSingleCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5876,8 +5249,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SingleOperationPropertyType
 	 * @generated
 	 */
-	public Adapter createSingleOperationPropertyTypeAdapter()
-	{
+	public Adapter createSingleOperationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5891,8 +5263,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SolidArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createSolidArrayPropertyTypeAdapter()
-	{
+	public Adapter createSolidArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5906,8 +5277,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SolidPropertyType
 	 * @generated
 	 */
-	public Adapter createSolidPropertyTypeAdapter()
-	{
+	public Adapter createSolidPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5921,8 +5291,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SolidType
 	 * @generated
 	 */
-	public Adapter createSolidTypeAdapter()
-	{
+	public Adapter createSolidTypeAdapter() {
 		return null;
 	}
 
@@ -5936,8 +5305,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SpeedType
 	 * @generated
 	 */
-	public Adapter createSpeedTypeAdapter()
-	{
+	public Adapter createSpeedTypeAdapter() {
 		return null;
 	}
 
@@ -5951,8 +5319,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SphereType
 	 * @generated
 	 */
-	public Adapter createSphereTypeAdapter()
-	{
+	public Adapter createSphereTypeAdapter() {
 		return null;
 	}
 
@@ -5966,8 +5333,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SphericalCSPropertyType
 	 * @generated
 	 */
-	public Adapter createSphericalCSPropertyTypeAdapter()
-	{
+	public Adapter createSphericalCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -5981,8 +5347,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SphericalCSType
 	 * @generated
 	 */
-	public Adapter createSphericalCSTypeAdapter()
-	{
+	public Adapter createSphericalCSTypeAdapter() {
 		return null;
 	}
 
@@ -5996,8 +5361,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.StringOrRefType
 	 * @generated
 	 */
-	public Adapter createStringOrRefTypeAdapter()
-	{
+	public Adapter createStringOrRefTypeAdapter() {
 		return null;
 	}
 
@@ -6011,8 +5375,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SurfaceArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createSurfaceArrayPropertyTypeAdapter()
-	{
+	public Adapter createSurfaceArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6026,8 +5389,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SurfacePatchArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createSurfacePatchArrayPropertyTypeAdapter()
-	{
+	public Adapter createSurfacePatchArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6041,8 +5403,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SurfacePropertyType
 	 * @generated
 	 */
-	public Adapter createSurfacePropertyTypeAdapter()
-	{
+	public Adapter createSurfacePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6056,8 +5417,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.SurfaceType
 	 * @generated
 	 */
-	public Adapter createSurfaceTypeAdapter()
-	{
+	public Adapter createSurfaceTypeAdapter() {
 		return null;
 	}
 
@@ -6071,8 +5431,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TargetPropertyType
 	 * @generated
 	 */
-	public Adapter createTargetPropertyTypeAdapter()
-	{
+	public Adapter createTargetPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6086,8 +5445,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TemporalCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createTemporalCRSPropertyTypeAdapter()
-	{
+	public Adapter createTemporalCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6101,8 +5459,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TemporalCRSType
 	 * @generated
 	 */
-	public Adapter createTemporalCRSTypeAdapter()
-	{
+	public Adapter createTemporalCRSTypeAdapter() {
 		return null;
 	}
 
@@ -6116,8 +5473,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TemporalCSPropertyType
 	 * @generated
 	 */
-	public Adapter createTemporalCSPropertyTypeAdapter()
-	{
+	public Adapter createTemporalCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6131,8 +5487,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TemporalCSType
 	 * @generated
 	 */
-	public Adapter createTemporalCSTypeAdapter()
-	{
+	public Adapter createTemporalCSTypeAdapter() {
 		return null;
 	}
 
@@ -6146,8 +5501,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TemporalDatumBaseType
 	 * @generated
 	 */
-	public Adapter createTemporalDatumBaseTypeAdapter()
-	{
+	public Adapter createTemporalDatumBaseTypeAdapter() {
 		return null;
 	}
 
@@ -6161,8 +5515,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TemporalDatumPropertyType
 	 * @generated
 	 */
-	public Adapter createTemporalDatumPropertyTypeAdapter()
-	{
+	public Adapter createTemporalDatumPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6176,8 +5529,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TemporalDatumType
 	 * @generated
 	 */
-	public Adapter createTemporalDatumTypeAdapter()
-	{
+	public Adapter createTemporalDatumTypeAdapter() {
 		return null;
 	}
 
@@ -6191,8 +5543,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeCalendarEraPropertyType
 	 * @generated
 	 */
-	public Adapter createTimeCalendarEraPropertyTypeAdapter()
-	{
+	public Adapter createTimeCalendarEraPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6206,8 +5557,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeCalendarEraType
 	 * @generated
 	 */
-	public Adapter createTimeCalendarEraTypeAdapter()
-	{
+	public Adapter createTimeCalendarEraTypeAdapter() {
 		return null;
 	}
 
@@ -6221,8 +5571,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeCalendarPropertyType
 	 * @generated
 	 */
-	public Adapter createTimeCalendarPropertyTypeAdapter()
-	{
+	public Adapter createTimeCalendarPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6236,8 +5585,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeCalendarType
 	 * @generated
 	 */
-	public Adapter createTimeCalendarTypeAdapter()
-	{
+	public Adapter createTimeCalendarTypeAdapter() {
 		return null;
 	}
 
@@ -6251,8 +5599,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeClockPropertyType
 	 * @generated
 	 */
-	public Adapter createTimeClockPropertyTypeAdapter()
-	{
+	public Adapter createTimeClockPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6266,8 +5613,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeClockType
 	 * @generated
 	 */
-	public Adapter createTimeClockTypeAdapter()
-	{
+	public Adapter createTimeClockTypeAdapter() {
 		return null;
 	}
 
@@ -6281,8 +5627,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeCoordinateSystemType
 	 * @generated
 	 */
-	public Adapter createTimeCoordinateSystemTypeAdapter()
-	{
+	public Adapter createTimeCoordinateSystemTypeAdapter() {
 		return null;
 	}
 
@@ -6296,8 +5641,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeCSPropertyType
 	 * @generated
 	 */
-	public Adapter createTimeCSPropertyTypeAdapter()
-	{
+	public Adapter createTimeCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6311,8 +5655,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeCSType
 	 * @generated
 	 */
-	public Adapter createTimeCSTypeAdapter()
-	{
+	public Adapter createTimeCSTypeAdapter() {
 		return null;
 	}
 
@@ -6326,8 +5669,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeEdgePropertyType
 	 * @generated
 	 */
-	public Adapter createTimeEdgePropertyTypeAdapter()
-	{
+	public Adapter createTimeEdgePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6341,8 +5683,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeEdgeType
 	 * @generated
 	 */
-	public Adapter createTimeEdgeTypeAdapter()
-	{
+	public Adapter createTimeEdgeTypeAdapter() {
 		return null;
 	}
 
@@ -6356,8 +5697,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeInstantPropertyType
 	 * @generated
 	 */
-	public Adapter createTimeInstantPropertyTypeAdapter()
-	{
+	public Adapter createTimeInstantPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6371,8 +5711,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeInstantType
 	 * @generated
 	 */
-	public Adapter createTimeInstantTypeAdapter()
-	{
+	public Adapter createTimeInstantTypeAdapter() {
 		return null;
 	}
 
@@ -6386,8 +5725,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeIntervalLengthType
 	 * @generated
 	 */
-	public Adapter createTimeIntervalLengthTypeAdapter()
-	{
+	public Adapter createTimeIntervalLengthTypeAdapter() {
 		return null;
 	}
 
@@ -6401,8 +5739,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeNodePropertyType
 	 * @generated
 	 */
-	public Adapter createTimeNodePropertyTypeAdapter()
-	{
+	public Adapter createTimeNodePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6416,8 +5753,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeNodeType
 	 * @generated
 	 */
-	public Adapter createTimeNodeTypeAdapter()
-	{
+	public Adapter createTimeNodeTypeAdapter() {
 		return null;
 	}
 
@@ -6431,8 +5767,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeOrdinalEraPropertyType
 	 * @generated
 	 */
-	public Adapter createTimeOrdinalEraPropertyTypeAdapter()
-	{
+	public Adapter createTimeOrdinalEraPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6446,8 +5781,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeOrdinalEraType
 	 * @generated
 	 */
-	public Adapter createTimeOrdinalEraTypeAdapter()
-	{
+	public Adapter createTimeOrdinalEraTypeAdapter() {
 		return null;
 	}
 
@@ -6461,8 +5795,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeOrdinalReferenceSystemType
 	 * @generated
 	 */
-	public Adapter createTimeOrdinalReferenceSystemTypeAdapter()
-	{
+	public Adapter createTimeOrdinalReferenceSystemTypeAdapter() {
 		return null;
 	}
 
@@ -6476,8 +5809,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimePeriodPropertyType
 	 * @generated
 	 */
-	public Adapter createTimePeriodPropertyTypeAdapter()
-	{
+	public Adapter createTimePeriodPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6491,8 +5823,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimePeriodType
 	 * @generated
 	 */
-	public Adapter createTimePeriodTypeAdapter()
-	{
+	public Adapter createTimePeriodTypeAdapter() {
 		return null;
 	}
 
@@ -6506,8 +5837,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimePositionType
 	 * @generated
 	 */
-	public Adapter createTimePositionTypeAdapter()
-	{
+	public Adapter createTimePositionTypeAdapter() {
 		return null;
 	}
 
@@ -6521,8 +5851,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimePrimitivePropertyType
 	 * @generated
 	 */
-	public Adapter createTimePrimitivePropertyTypeAdapter()
-	{
+	public Adapter createTimePrimitivePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6536,8 +5865,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeReferenceSystemType
 	 * @generated
 	 */
-	public Adapter createTimeReferenceSystemTypeAdapter()
-	{
+	public Adapter createTimeReferenceSystemTypeAdapter() {
 		return null;
 	}
 
@@ -6551,8 +5879,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeTopologyComplexPropertyType
 	 * @generated
 	 */
-	public Adapter createTimeTopologyComplexPropertyTypeAdapter()
-	{
+	public Adapter createTimeTopologyComplexPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6566,8 +5893,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeTopologyComplexType
 	 * @generated
 	 */
-	public Adapter createTimeTopologyComplexTypeAdapter()
-	{
+	public Adapter createTimeTopologyComplexTypeAdapter() {
 		return null;
 	}
 
@@ -6581,8 +5907,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeTopologyPrimitivePropertyType
 	 * @generated
 	 */
-	public Adapter createTimeTopologyPrimitivePropertyTypeAdapter()
-	{
+	public Adapter createTimeTopologyPrimitivePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6596,8 +5921,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TimeType
 	 * @generated
 	 */
-	public Adapter createTimeTypeAdapter()
-	{
+	public Adapter createTimeTypeAdapter() {
 		return null;
 	}
 
@@ -6611,8 +5935,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TinType
 	 * @generated
 	 */
-	public Adapter createTinTypeAdapter()
-	{
+	public Adapter createTinTypeAdapter() {
 		return null;
 	}
 
@@ -6626,8 +5949,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoComplexPropertyType
 	 * @generated
 	 */
-	public Adapter createTopoComplexPropertyTypeAdapter()
-	{
+	public Adapter createTopoComplexPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6641,8 +5963,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoComplexType
 	 * @generated
 	 */
-	public Adapter createTopoComplexTypeAdapter()
-	{
+	public Adapter createTopoComplexTypeAdapter() {
 		return null;
 	}
 
@@ -6656,8 +5977,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoCurvePropertyType
 	 * @generated
 	 */
-	public Adapter createTopoCurvePropertyTypeAdapter()
-	{
+	public Adapter createTopoCurvePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6671,8 +5991,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoCurveType
 	 * @generated
 	 */
-	public Adapter createTopoCurveTypeAdapter()
-	{
+	public Adapter createTopoCurveTypeAdapter() {
 		return null;
 	}
 
@@ -6686,8 +6005,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoPointPropertyType
 	 * @generated
 	 */
-	public Adapter createTopoPointPropertyTypeAdapter()
-	{
+	public Adapter createTopoPointPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6701,8 +6019,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoPointType
 	 * @generated
 	 */
-	public Adapter createTopoPointTypeAdapter()
-	{
+	public Adapter createTopoPointTypeAdapter() {
 		return null;
 	}
 
@@ -6716,8 +6033,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoPrimitiveArrayAssociationType
 	 * @generated
 	 */
-	public Adapter createTopoPrimitiveArrayAssociationTypeAdapter()
-	{
+	public Adapter createTopoPrimitiveArrayAssociationTypeAdapter() {
 		return null;
 	}
 
@@ -6731,8 +6047,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoPrimitiveMemberType
 	 * @generated
 	 */
-	public Adapter createTopoPrimitiveMemberTypeAdapter()
-	{
+	public Adapter createTopoPrimitiveMemberTypeAdapter() {
 		return null;
 	}
 
@@ -6746,8 +6061,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoSolidPropertyType
 	 * @generated
 	 */
-	public Adapter createTopoSolidPropertyTypeAdapter()
-	{
+	public Adapter createTopoSolidPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6761,8 +6075,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoSolidType
 	 * @generated
 	 */
-	public Adapter createTopoSolidTypeAdapter()
-	{
+	public Adapter createTopoSolidTypeAdapter() {
 		return null;
 	}
 
@@ -6776,8 +6089,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoSurfacePropertyType
 	 * @generated
 	 */
-	public Adapter createTopoSurfacePropertyTypeAdapter()
-	{
+	public Adapter createTopoSurfacePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6791,8 +6103,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoSurfaceType
 	 * @generated
 	 */
-	public Adapter createTopoSurfaceTypeAdapter()
-	{
+	public Adapter createTopoSurfaceTypeAdapter() {
 		return null;
 	}
 
@@ -6806,8 +6117,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoVolumePropertyType
 	 * @generated
 	 */
-	public Adapter createTopoVolumePropertyTypeAdapter()
-	{
+	public Adapter createTopoVolumePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6821,8 +6131,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TopoVolumeType
 	 * @generated
 	 */
-	public Adapter createTopoVolumeTypeAdapter()
-	{
+	public Adapter createTopoVolumeTypeAdapter() {
 		return null;
 	}
 
@@ -6836,8 +6145,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TransformationPropertyType
 	 * @generated
 	 */
-	public Adapter createTransformationPropertyTypeAdapter()
-	{
+	public Adapter createTransformationPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6851,8 +6159,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TransformationType
 	 * @generated
 	 */
-	public Adapter createTransformationTypeAdapter()
-	{
+	public Adapter createTransformationTypeAdapter() {
 		return null;
 	}
 
@@ -6866,8 +6173,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.TriangleType
 	 * @generated
 	 */
-	public Adapter createTriangleTypeAdapter()
-	{
+	public Adapter createTriangleTypeAdapter() {
 		return null;
 	}
 
@@ -6881,8 +6187,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.UnitDefinitionType
 	 * @generated
 	 */
-	public Adapter createUnitDefinitionTypeAdapter()
-	{
+	public Adapter createUnitDefinitionTypeAdapter() {
 		return null;
 	}
 
@@ -6896,8 +6201,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.UnitOfMeasureType
 	 * @generated
 	 */
-	public Adapter createUnitOfMeasureTypeAdapter()
-	{
+	public Adapter createUnitOfMeasureTypeAdapter() {
 		return null;
 	}
 
@@ -6911,8 +6215,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.UserDefinedCSPropertyType
 	 * @generated
 	 */
-	public Adapter createUserDefinedCSPropertyTypeAdapter()
-	{
+	public Adapter createUserDefinedCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6926,8 +6229,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.UserDefinedCSType
 	 * @generated
 	 */
-	public Adapter createUserDefinedCSTypeAdapter()
-	{
+	public Adapter createUserDefinedCSTypeAdapter() {
 		return null;
 	}
 
@@ -6941,8 +6243,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ValueArrayPropertyType
 	 * @generated
 	 */
-	public Adapter createValueArrayPropertyTypeAdapter()
-	{
+	public Adapter createValueArrayPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6956,8 +6257,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ValueArrayType
 	 * @generated
 	 */
-	public Adapter createValueArrayTypeAdapter()
-	{
+	public Adapter createValueArrayTypeAdapter() {
 		return null;
 	}
 
@@ -6971,8 +6271,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.ValuePropertyType
 	 * @generated
 	 */
-	public Adapter createValuePropertyTypeAdapter()
-	{
+	public Adapter createValuePropertyTypeAdapter() {
 		return null;
 	}
 
@@ -6986,8 +6285,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.VectorType
 	 * @generated
 	 */
-	public Adapter createVectorTypeAdapter()
-	{
+	public Adapter createVectorTypeAdapter() {
 		return null;
 	}
 
@@ -7001,8 +6299,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.VerticalCRSPropertyType
 	 * @generated
 	 */
-	public Adapter createVerticalCRSPropertyTypeAdapter()
-	{
+	public Adapter createVerticalCRSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -7016,8 +6313,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.VerticalCRSType
 	 * @generated
 	 */
-	public Adapter createVerticalCRSTypeAdapter()
-	{
+	public Adapter createVerticalCRSTypeAdapter() {
 		return null;
 	}
 
@@ -7031,8 +6327,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.VerticalCSPropertyType
 	 * @generated
 	 */
-	public Adapter createVerticalCSPropertyTypeAdapter()
-	{
+	public Adapter createVerticalCSPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -7046,8 +6341,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.VerticalCSType
 	 * @generated
 	 */
-	public Adapter createVerticalCSTypeAdapter()
-	{
+	public Adapter createVerticalCSTypeAdapter() {
 		return null;
 	}
 
@@ -7061,8 +6355,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.VerticalDatumPropertyType
 	 * @generated
 	 */
-	public Adapter createVerticalDatumPropertyTypeAdapter()
-	{
+	public Adapter createVerticalDatumPropertyTypeAdapter() {
 		return null;
 	}
 
@@ -7076,8 +6369,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.VerticalDatumType
 	 * @generated
 	 */
-	public Adapter createVerticalDatumTypeAdapter()
-	{
+	public Adapter createVerticalDatumTypeAdapter() {
 		return null;
 	}
 
@@ -7091,8 +6383,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @see net.opengis.gml32.VolumeType
 	 * @generated
 	 */
-	public Adapter createVolumeTypeAdapter()
-	{
+	public Adapter createVolumeTypeAdapter() {
 		return null;
 	}
 
@@ -7104,8 +6395,7 @@ public class GMLAdapterFactory extends AdapterFactoryImpl
 	 * @return the new adapter.
 	 * @generated
 	 */
-	public Adapter createEObjectAdapter()
-	{
+	public Adapter createEObjectAdapter() {
 		return null;
 	}
 

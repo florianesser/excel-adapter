@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.MDTopologyLevelCodePropertyType;
  *
  * @generated
  */
-public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDTopologyLevelCodePropertyType
-{
+public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements MDTopologyLevelCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getMDTopologyLevelCode() <em>MD Topology Level Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDTopologyLevelCodePropertyTypeImpl()
-	{
+	protected MDTopologyLevelCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDTopologyLevelCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getMDTopologyLevelCode()
-	{
+	@Override
+	public CodeListValueType getMDTopologyLevelCode() {
 		return mDTopologyLevelCode;
 	}
 
@@ -98,12 +95,10 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMDTopologyLevelCode(CodeListValueType newMDTopologyLevelCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetMDTopologyLevelCode(CodeListValueType newMDTopologyLevelCode, NotificationChain msgs) {
 		CodeListValueType oldMDTopologyLevelCode = mDTopologyLevelCode;
 		mDTopologyLevelCode = newMDTopologyLevelCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE__MD_TOPOLOGY_LEVEL_CODE, oldMDTopologyLevelCode, newMDTopologyLevelCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDTopologyLevelCode(CodeListValueType newMDTopologyLevelCode)
-	{
-		if (newMDTopologyLevelCode != mDTopologyLevelCode)
-		{
+	@Override
+	public void setMDTopologyLevelCode(CodeListValueType newMDTopologyLevelCode) {
+		if (newMDTopologyLevelCode != mDTopologyLevelCode) {
 			NotificationChain msgs = null;
 			if (mDTopologyLevelCode != null)
 				msgs = ((InternalEObject)mDTopologyLevelCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE__MD_TOPOLOGY_LEVEL_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE__MD_TOPOLOGY_LEVEL_CODE:
 				return basicSetMDTopologyLevelCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE__MD_TOPOLOGY_LEVEL_CODE:
 				return getMDTopologyLevelCode();
 			case GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE__MD_TOPOLOGY_LEVEL_CODE:
 				setMDTopologyLevelCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE__MD_TOPOLOGY_LEVEL_CODE:
 				setMDTopologyLevelCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE__MD_TOPOLOGY_LEVEL_CODE:
 				return mDTopologyLevelCode != null;
 			case GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class MDTopologyLevelCodePropertyTypeImpl extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

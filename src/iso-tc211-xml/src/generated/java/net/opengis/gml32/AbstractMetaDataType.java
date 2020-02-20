@@ -24,16 +24,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *        extendedMetaData="name='AbstractMetaDataType' kind='mixed'"
  * @generated
  */
-public interface AbstractMetaDataType extends EObject
-{
+public interface AbstractMetaDataType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Mixed</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mixed</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mixed</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getAbstractMetaDataType_Mixed()

@@ -29,15 +29,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  * @model extendedMetaData="name='CI_ResponsibleParty_Type' kind='elementOnly'"
  * @generated
  */
-public interface CIResponsiblePartyType extends AbstractObjectType
-{
+public interface CIResponsiblePartyType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Individual Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Individual Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Individual Name</em>' containment reference.
 	 * @see #setIndividualName(CharacterStringPropertyType)
@@ -61,10 +56,6 @@ public interface CIResponsiblePartyType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Organisation Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Organisation Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Organisation Name</em>' containment reference.
 	 * @see #setOrganisationName(CharacterStringPropertyType)
@@ -88,10 +79,6 @@ public interface CIResponsiblePartyType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Position Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Position Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position Name</em>' containment reference.
 	 * @see #setPositionName(CharacterStringPropertyType)
@@ -115,10 +102,6 @@ public interface CIResponsiblePartyType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Contact Info</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Info</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Contact Info</em>' containment reference.
 	 * @see #setContactInfo(CIContactPropertyType)
@@ -142,10 +125,6 @@ public interface CIResponsiblePartyType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Role</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Role</em>' containment reference.
 	 * @see #setRole(CIRoleCodePropertyType)

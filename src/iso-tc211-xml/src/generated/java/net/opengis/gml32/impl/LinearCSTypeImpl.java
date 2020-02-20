@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class LinearCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements LinearCSType
-{
+public class LinearCSTypeImpl extends AbstractCoordinateSystemTypeImpl implements LinearCSType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LinearCSTypeImpl()
-	{
+	protected LinearCSTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class LinearCSTypeImpl extends AbstractCoordinateSystemTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getLinearCSType();
 	}
 

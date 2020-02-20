@@ -50,8 +50,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container implements TargetPropertyType
-{
+public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container implements TargetPropertyType {
 	/**
 	 * The cached value of the '{@link #getAbstractFeatureGroup() <em>Abstract Feature Group</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -313,8 +312,7 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TargetPropertyTypeImpl()
-	{
+	protected TargetPropertyTypeImpl() {
 		super();
 	}
 
@@ -324,8 +322,7 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getTargetPropertyType();
 	}
 
@@ -334,10 +331,9 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractFeatureGroup()
-	{
-		if (abstractFeatureGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractFeatureGroup() {
+		if (abstractFeatureGroup == null) {
 			abstractFeatureGroup = new BasicFeatureMap(this, GMLPackage.TARGET_PROPERTY_TYPE__ABSTRACT_FEATURE_GROUP);
 		}
 		return abstractFeatureGroup;
@@ -348,8 +344,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractFeatureType getAbstractFeature()
-	{
+	@Override
+	public AbstractFeatureType getAbstractFeature() {
 		return (AbstractFeatureType)getAbstractFeatureGroup().get(GMLPackage.eINSTANCE.getTargetPropertyType_AbstractFeature(), true);
 	}
 
@@ -358,8 +354,7 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractFeature(AbstractFeatureType newAbstractFeature, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractFeature(AbstractFeatureType newAbstractFeature, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractFeatureGroup()).basicAdd(GMLPackage.eINSTANCE.getTargetPropertyType_AbstractFeature(), newAbstractFeature, msgs);
 	}
 
@@ -368,10 +363,9 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getAbstractGeometryGroup()
-	{
-		if (abstractGeometryGroup == null)
-		{
+	@Override
+	public FeatureMap getAbstractGeometryGroup() {
+		if (abstractGeometryGroup == null) {
 			abstractGeometryGroup = new BasicFeatureMap(this, GMLPackage.TARGET_PROPERTY_TYPE__ABSTRACT_GEOMETRY_GROUP);
 		}
 		return abstractGeometryGroup;
@@ -382,8 +376,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractGeometryType getAbstractGeometry()
-	{
+	@Override
+	public AbstractGeometryType getAbstractGeometry() {
 		return (AbstractGeometryType)getAbstractGeometryGroup().get(GMLPackage.eINSTANCE.getTargetPropertyType_AbstractGeometry(), true);
 	}
 
@@ -392,8 +386,7 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAbstractGeometry(AbstractGeometryType newAbstractGeometry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetAbstractGeometry(AbstractGeometryType newAbstractGeometry, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getAbstractGeometryGroup()).basicAdd(GMLPackage.eINSTANCE.getTargetPropertyType_AbstractGeometry(), newAbstractGeometry, msgs);
 	}
 
@@ -402,8 +395,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -412,8 +405,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -427,8 +420,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -442,8 +435,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -452,8 +445,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -462,8 +455,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -475,8 +468,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -485,8 +478,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -498,8 +491,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -508,8 +501,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -521,8 +514,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -531,8 +524,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -546,8 +539,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -561,8 +554,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -571,8 +564,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -581,8 +574,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -594,8 +587,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -604,8 +597,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -617,8 +610,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -627,8 +620,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -642,8 +635,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -657,8 +650,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -667,8 +660,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -677,8 +670,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -690,8 +683,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -700,8 +693,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -715,8 +708,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -730,8 +723,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -741,10 +734,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.TARGET_PROPERTY_TYPE__ABSTRACT_FEATURE_GROUP:
 				return ((InternalEList<?>)getAbstractFeatureGroup()).basicRemove(otherEnd, msgs);
 			case GMLPackage.TARGET_PROPERTY_TYPE__ABSTRACT_FEATURE:
@@ -763,10 +754,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.TARGET_PROPERTY_TYPE__ABSTRACT_FEATURE_GROUP:
 				if (coreType) return getAbstractFeatureGroup();
 				return ((FeatureMap.Internal)getAbstractFeatureGroup()).getWrapper();
@@ -807,10 +796,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.TARGET_PROPERTY_TYPE__ABSTRACT_FEATURE_GROUP:
 				((FeatureMap.Internal)getAbstractFeatureGroup()).set(newValue);
 				return;
@@ -857,10 +844,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TARGET_PROPERTY_TYPE__ABSTRACT_FEATURE_GROUP:
 				getAbstractFeatureGroup().clear();
 				return;
@@ -907,10 +892,8 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.TARGET_PROPERTY_TYPE__ABSTRACT_FEATURE_GROUP:
 				return abstractFeatureGroup != null && !abstractFeatureGroup.isEmpty();
 			case GMLPackage.TARGET_PROPERTY_TYPE__ABSTRACT_FEATURE:
@@ -949,11 +932,10 @@ public class TargetPropertyTypeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (abstractFeatureGroup: ");
 		result.append(abstractFeatureGroup);
 		result.append(", abstractGeometryGroup: ");

@@ -26,16 +26,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='DictionaryType' kind='elementOnly'"
  * @generated
  */
-public interface DictionaryType extends DefinitionType
-{
+public interface DictionaryType extends DefinitionType {
 	/**
 	 * Returns the value of the '<em><b>Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Group</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getDictionaryType_Group()
@@ -85,10 +80,6 @@ public interface DictionaryType extends DefinitionType
 	 * Returns the value of the '<em><b>Indirect Entry</b></em>' containment reference list.
 	 * The list contents are of type {@link net.opengis.gml32.IndirectEntryType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Indirect Entry</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Indirect Entry</em>' containment reference list.
 	 * @see net.opengis.gml32.GMLPackage#getDictionaryType_IndirectEntry()
@@ -102,10 +93,6 @@ public interface DictionaryType extends DefinitionType
 	 * Returns the value of the '<em><b>Aggregation Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link net.opengis.gml32.AggregationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Type</em>' attribute.
 	 * @see net.opengis.gml32.AggregationType

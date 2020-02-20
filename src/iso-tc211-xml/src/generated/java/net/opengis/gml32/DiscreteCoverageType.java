@@ -19,8 +19,7 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='DiscreteCoverageType' kind='elementOnly'"
  * @generated
  */
-public interface DiscreteCoverageType extends AbstractCoverageType
-{
+public interface DiscreteCoverageType extends AbstractCoverageType {
 	/**
 	 * Returns the value of the '<em><b>Coverage Function</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

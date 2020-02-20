@@ -33,15 +33,10 @@ import java.util.List;
  *        extendedMetaData="name='AbstractGeometryType' kind='elementOnly'"
  * @generated
  */
-public interface AbstractGeometryType extends AbstractGMLType
-{
+public interface AbstractGeometryType extends AbstractGMLType {
 	/**
 	 * Returns the value of the '<em><b>Axis Labels</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Axis Labels</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Axis Labels</em>' attribute.
 	 * @see #setAxisLabels(List)
@@ -65,10 +60,6 @@ public interface AbstractGeometryType extends AbstractGMLType
 	/**
 	 * Returns the value of the '<em><b>Srs Dimension</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Srs Dimension</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Srs Dimension</em>' attribute.
 	 * @see #setSrsDimension(BigInteger)
@@ -92,10 +83,6 @@ public interface AbstractGeometryType extends AbstractGMLType
 	/**
 	 * Returns the value of the '<em><b>Srs Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Srs Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Srs Name</em>' attribute.
 	 * @see #setSrsName(String)
@@ -119,10 +106,6 @@ public interface AbstractGeometryType extends AbstractGMLType
 	/**
 	 * Returns the value of the '<em><b>Uom Labels</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Labels</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uom Labels</em>' attribute.
 	 * @see #setUomLabels(List)

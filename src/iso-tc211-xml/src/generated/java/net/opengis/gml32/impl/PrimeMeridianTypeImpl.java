@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements PrimeMeridianType
-{
+public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements PrimeMeridianType {
 	/**
 	 * The cached value of the '{@link #getGreenwichLongitude() <em>Greenwich Longitude</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PrimeMeridianTypeImpl()
-	{
+	protected PrimeMeridianTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getPrimeMeridianType();
 	}
 
@@ -65,8 +62,8 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AngleType getGreenwichLongitude()
-	{
+	@Override
+	public AngleType getGreenwichLongitude() {
 		return greenwichLongitude;
 	}
 
@@ -75,12 +72,10 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGreenwichLongitude(AngleType newGreenwichLongitude, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGreenwichLongitude(AngleType newGreenwichLongitude, NotificationChain msgs) {
 		AngleType oldGreenwichLongitude = greenwichLongitude;
 		greenwichLongitude = newGreenwichLongitude;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.PRIME_MERIDIAN_TYPE__GREENWICH_LONGITUDE, oldGreenwichLongitude, newGreenwichLongitude);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGreenwichLongitude(AngleType newGreenwichLongitude)
-	{
-		if (newGreenwichLongitude != greenwichLongitude)
-		{
+	@Override
+	public void setGreenwichLongitude(AngleType newGreenwichLongitude) {
+		if (newGreenwichLongitude != greenwichLongitude) {
 			NotificationChain msgs = null;
 			if (greenwichLongitude != null)
 				msgs = ((InternalEObject)greenwichLongitude).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.PRIME_MERIDIAN_TYPE__GREENWICH_LONGITUDE, null, msgs);
@@ -114,10 +108,8 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.PRIME_MERIDIAN_TYPE__GREENWICH_LONGITUDE:
 				return basicSetGreenwichLongitude(null, msgs);
 		}
@@ -130,10 +122,8 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.PRIME_MERIDIAN_TYPE__GREENWICH_LONGITUDE:
 				return getGreenwichLongitude();
 		}
@@ -146,10 +136,8 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.PRIME_MERIDIAN_TYPE__GREENWICH_LONGITUDE:
 				setGreenwichLongitude((AngleType)newValue);
 				return;
@@ -163,10 +151,8 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PRIME_MERIDIAN_TYPE__GREENWICH_LONGITUDE:
 				setGreenwichLongitude((AngleType)null);
 				return;
@@ -180,10 +166,8 @@ public class PrimeMeridianTypeImpl extends IdentifiedObjectTypeImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PRIME_MERIDIAN_TYPE__GREENWICH_LONGITUDE:
 				return greenwichLongitude != null;
 		}

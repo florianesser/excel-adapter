@@ -55,8 +55,7 @@ import org.isotc211.iso19139.gmd.MDIdentifierPropertyType;
  *
  * @generated
  */
-public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICitationType
-{
+public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICitationType {
 	/**
 	 * The cached value of the '{@link #getTitle() <em>Title</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -192,8 +191,7 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CICitationTypeImpl()
-	{
+	protected CICitationTypeImpl() {
 		super();
 	}
 
@@ -203,8 +201,7 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCICitationType();
 	}
 
@@ -213,8 +210,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getTitle()
-	{
+	@Override
+	public CharacterStringPropertyType getTitle() {
 		return title;
 	}
 
@@ -223,12 +220,10 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTitle(CharacterStringPropertyType newTitle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetTitle(CharacterStringPropertyType newTitle, NotificationChain msgs) {
 		CharacterStringPropertyType oldTitle = title;
 		title = newTitle;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CITATION_TYPE__TITLE, oldTitle, newTitle);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -240,10 +235,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(CharacterStringPropertyType newTitle)
-	{
-		if (newTitle != title)
-		{
+	@Override
+	public void setTitle(CharacterStringPropertyType newTitle) {
+		if (newTitle != title) {
 			NotificationChain msgs = null;
 			if (title != null)
 				msgs = ((InternalEObject)title).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CITATION_TYPE__TITLE, null, msgs);
@@ -261,10 +255,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getAlternateTitle()
-	{
-		if (alternateTitle == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getAlternateTitle() {
+		if (alternateTitle == null) {
 			alternateTitle = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.CI_CITATION_TYPE__ALTERNATE_TITLE);
 		}
 		return alternateTitle;
@@ -275,10 +268,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIDatePropertyType> getDate()
-	{
-		if (date == null)
-		{
+	@Override
+	public EList<CIDatePropertyType> getDate() {
+		if (date == null) {
 			date = new EObjectContainmentEList<CIDatePropertyType>(CIDatePropertyType.class, this, GMDPackage.CI_CITATION_TYPE__DATE);
 		}
 		return date;
@@ -289,8 +281,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getEdition()
-	{
+	@Override
+	public CharacterStringPropertyType getEdition() {
 		return edition;
 	}
 
@@ -299,12 +291,10 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEdition(CharacterStringPropertyType newEdition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEdition(CharacterStringPropertyType newEdition, NotificationChain msgs) {
 		CharacterStringPropertyType oldEdition = edition;
 		edition = newEdition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CITATION_TYPE__EDITION, oldEdition, newEdition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -316,10 +306,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEdition(CharacterStringPropertyType newEdition)
-	{
-		if (newEdition != edition)
-		{
+	@Override
+	public void setEdition(CharacterStringPropertyType newEdition) {
+		if (newEdition != edition) {
 			NotificationChain msgs = null;
 			if (edition != null)
 				msgs = ((InternalEObject)edition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CITATION_TYPE__EDITION, null, msgs);
@@ -337,8 +326,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DatePropertyType getEditionDate()
-	{
+	@Override
+	public DatePropertyType getEditionDate() {
 		return editionDate;
 	}
 
@@ -347,12 +336,10 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEditionDate(DatePropertyType newEditionDate, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEditionDate(DatePropertyType newEditionDate, NotificationChain msgs) {
 		DatePropertyType oldEditionDate = editionDate;
 		editionDate = newEditionDate;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CITATION_TYPE__EDITION_DATE, oldEditionDate, newEditionDate);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -364,10 +351,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEditionDate(DatePropertyType newEditionDate)
-	{
-		if (newEditionDate != editionDate)
-		{
+	@Override
+	public void setEditionDate(DatePropertyType newEditionDate) {
+		if (newEditionDate != editionDate) {
 			NotificationChain msgs = null;
 			if (editionDate != null)
 				msgs = ((InternalEObject)editionDate).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CITATION_TYPE__EDITION_DATE, null, msgs);
@@ -385,10 +371,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDIdentifierPropertyType> getIdentifier()
-	{
-		if (identifier == null)
-		{
+	@Override
+	public EList<MDIdentifierPropertyType> getIdentifier() {
+		if (identifier == null) {
 			identifier = new EObjectContainmentEList<MDIdentifierPropertyType>(MDIdentifierPropertyType.class, this, GMDPackage.CI_CITATION_TYPE__IDENTIFIER);
 		}
 		return identifier;
@@ -399,10 +384,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIResponsiblePartyPropertyType> getCitedResponsibleParty()
-	{
-		if (citedResponsibleParty == null)
-		{
+	@Override
+	public EList<CIResponsiblePartyPropertyType> getCitedResponsibleParty() {
+		if (citedResponsibleParty == null) {
 			citedResponsibleParty = new EObjectContainmentEList<CIResponsiblePartyPropertyType>(CIResponsiblePartyPropertyType.class, this, GMDPackage.CI_CITATION_TYPE__CITED_RESPONSIBLE_PARTY);
 		}
 		return citedResponsibleParty;
@@ -413,10 +397,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIPresentationFormCodePropertyType> getPresentationForm()
-	{
-		if (presentationForm == null)
-		{
+	@Override
+	public EList<CIPresentationFormCodePropertyType> getPresentationForm() {
+		if (presentationForm == null) {
 			presentationForm = new EObjectContainmentEList<CIPresentationFormCodePropertyType>(CIPresentationFormCodePropertyType.class, this, GMDPackage.CI_CITATION_TYPE__PRESENTATION_FORM);
 		}
 		return presentationForm;
@@ -427,8 +410,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CISeriesPropertyType getSeries()
-	{
+	@Override
+	public CISeriesPropertyType getSeries() {
 		return series;
 	}
 
@@ -437,12 +420,10 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSeries(CISeriesPropertyType newSeries, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSeries(CISeriesPropertyType newSeries, NotificationChain msgs) {
 		CISeriesPropertyType oldSeries = series;
 		series = newSeries;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CITATION_TYPE__SERIES, oldSeries, newSeries);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -454,10 +435,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSeries(CISeriesPropertyType newSeries)
-	{
-		if (newSeries != series)
-		{
+	@Override
+	public void setSeries(CISeriesPropertyType newSeries) {
+		if (newSeries != series) {
 			NotificationChain msgs = null;
 			if (series != null)
 				msgs = ((InternalEObject)series).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CITATION_TYPE__SERIES, null, msgs);
@@ -475,8 +455,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getOtherCitationDetails()
-	{
+	@Override
+	public CharacterStringPropertyType getOtherCitationDetails() {
 		return otherCitationDetails;
 	}
 
@@ -485,12 +465,10 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOtherCitationDetails(CharacterStringPropertyType newOtherCitationDetails, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOtherCitationDetails(CharacterStringPropertyType newOtherCitationDetails, NotificationChain msgs) {
 		CharacterStringPropertyType oldOtherCitationDetails = otherCitationDetails;
 		otherCitationDetails = newOtherCitationDetails;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CITATION_TYPE__OTHER_CITATION_DETAILS, oldOtherCitationDetails, newOtherCitationDetails);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -502,10 +480,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOtherCitationDetails(CharacterStringPropertyType newOtherCitationDetails)
-	{
-		if (newOtherCitationDetails != otherCitationDetails)
-		{
+	@Override
+	public void setOtherCitationDetails(CharacterStringPropertyType newOtherCitationDetails) {
+		if (newOtherCitationDetails != otherCitationDetails) {
 			NotificationChain msgs = null;
 			if (otherCitationDetails != null)
 				msgs = ((InternalEObject)otherCitationDetails).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CITATION_TYPE__OTHER_CITATION_DETAILS, null, msgs);
@@ -523,8 +500,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getCollectiveTitle()
-	{
+	@Override
+	public CharacterStringPropertyType getCollectiveTitle() {
 		return collectiveTitle;
 	}
 
@@ -533,12 +510,10 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCollectiveTitle(CharacterStringPropertyType newCollectiveTitle, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCollectiveTitle(CharacterStringPropertyType newCollectiveTitle, NotificationChain msgs) {
 		CharacterStringPropertyType oldCollectiveTitle = collectiveTitle;
 		collectiveTitle = newCollectiveTitle;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CITATION_TYPE__COLLECTIVE_TITLE, oldCollectiveTitle, newCollectiveTitle);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -550,10 +525,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCollectiveTitle(CharacterStringPropertyType newCollectiveTitle)
-	{
-		if (newCollectiveTitle != collectiveTitle)
-		{
+	@Override
+	public void setCollectiveTitle(CharacterStringPropertyType newCollectiveTitle) {
+		if (newCollectiveTitle != collectiveTitle) {
 			NotificationChain msgs = null;
 			if (collectiveTitle != null)
 				msgs = ((InternalEObject)collectiveTitle).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CITATION_TYPE__COLLECTIVE_TITLE, null, msgs);
@@ -571,8 +545,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getISBN()
-	{
+	@Override
+	public CharacterStringPropertyType getISBN() {
 		return iSBN;
 	}
 
@@ -581,12 +555,10 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetISBN(CharacterStringPropertyType newISBN, NotificationChain msgs)
-	{
+	public NotificationChain basicSetISBN(CharacterStringPropertyType newISBN, NotificationChain msgs) {
 		CharacterStringPropertyType oldISBN = iSBN;
 		iSBN = newISBN;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CITATION_TYPE__ISBN, oldISBN, newISBN);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -598,10 +570,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setISBN(CharacterStringPropertyType newISBN)
-	{
-		if (newISBN != iSBN)
-		{
+	@Override
+	public void setISBN(CharacterStringPropertyType newISBN) {
+		if (newISBN != iSBN) {
 			NotificationChain msgs = null;
 			if (iSBN != null)
 				msgs = ((InternalEObject)iSBN).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CITATION_TYPE__ISBN, null, msgs);
@@ -619,8 +590,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getISSN()
-	{
+	@Override
+	public CharacterStringPropertyType getISSN() {
 		return iSSN;
 	}
 
@@ -629,12 +600,10 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetISSN(CharacterStringPropertyType newISSN, NotificationChain msgs)
-	{
+	public NotificationChain basicSetISSN(CharacterStringPropertyType newISSN, NotificationChain msgs) {
 		CharacterStringPropertyType oldISSN = iSSN;
 		iSSN = newISSN;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_CITATION_TYPE__ISSN, oldISSN, newISSN);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -646,10 +615,9 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setISSN(CharacterStringPropertyType newISSN)
-	{
-		if (newISSN != iSSN)
-		{
+	@Override
+	public void setISSN(CharacterStringPropertyType newISSN) {
+		if (newISSN != iSSN) {
 			NotificationChain msgs = null;
 			if (iSSN != null)
 				msgs = ((InternalEObject)iSSN).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_CITATION_TYPE__ISSN, null, msgs);
@@ -668,10 +636,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_CITATION_TYPE__TITLE:
 				return basicSetTitle(null, msgs);
 			case GMDPackage.CI_CITATION_TYPE__ALTERNATE_TITLE:
@@ -708,10 +674,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_CITATION_TYPE__TITLE:
 				return getTitle();
 			case GMDPackage.CI_CITATION_TYPE__ALTERNATE_TITLE:
@@ -749,10 +713,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_CITATION_TYPE__TITLE:
 				setTitle((CharacterStringPropertyType)newValue);
 				return;
@@ -807,10 +769,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_CITATION_TYPE__TITLE:
 				setTitle((CharacterStringPropertyType)null);
 				return;
@@ -860,10 +820,8 @@ public class CICitationTypeImpl extends AbstractObjectTypeImpl implements CICita
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_CITATION_TYPE__TITLE:
 				return title != null;
 			case GMDPackage.CI_CITATION_TYPE__ALTERNATE_TITLE:

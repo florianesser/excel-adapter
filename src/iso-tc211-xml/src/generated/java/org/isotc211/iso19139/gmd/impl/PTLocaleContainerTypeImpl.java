@@ -44,8 +44,7 @@ import org.isotc211.iso19139.gmd.PTLocalePropertyType;
  *
  * @generated
  */
-public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container implements PTLocaleContainerType
-{
+public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container implements PTLocaleContainerType {
 	/**
 	 * The cached value of the '{@link #getDescription() <em>Description</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -101,8 +100,7 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PTLocaleContainerTypeImpl()
-	{
+	protected PTLocaleContainerTypeImpl() {
 		super();
 	}
 
@@ -112,8 +110,7 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getPTLocaleContainerType();
 	}
 
@@ -122,8 +119,8 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getDescription()
-	{
+	@Override
+	public CharacterStringPropertyType getDescription() {
 		return description;
 	}
 
@@ -132,12 +129,10 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDescription(CharacterStringPropertyType newDescription, NotificationChain msgs) {
 		CharacterStringPropertyType oldDescription = description;
 		description = newDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.PT_LOCALE_CONTAINER_TYPE__DESCRIPTION, oldDescription, newDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -149,10 +144,9 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescription(CharacterStringPropertyType newDescription)
-	{
-		if (newDescription != description)
-		{
+	@Override
+	public void setDescription(CharacterStringPropertyType newDescription) {
+		if (newDescription != description) {
 			NotificationChain msgs = null;
 			if (description != null)
 				msgs = ((InternalEObject)description).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.PT_LOCALE_CONTAINER_TYPE__DESCRIPTION, null, msgs);
@@ -170,8 +164,8 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PTLocalePropertyType getLocale()
-	{
+	@Override
+	public PTLocalePropertyType getLocale() {
 		return locale;
 	}
 
@@ -180,12 +174,10 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocale(PTLocalePropertyType newLocale, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLocale(PTLocalePropertyType newLocale, NotificationChain msgs) {
 		PTLocalePropertyType oldLocale = locale;
 		locale = newLocale;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.PT_LOCALE_CONTAINER_TYPE__LOCALE, oldLocale, newLocale);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -197,10 +189,9 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocale(PTLocalePropertyType newLocale)
-	{
-		if (newLocale != locale)
-		{
+	@Override
+	public void setLocale(PTLocalePropertyType newLocale) {
+		if (newLocale != locale) {
 			NotificationChain msgs = null;
 			if (locale != null)
 				msgs = ((InternalEObject)locale).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.PT_LOCALE_CONTAINER_TYPE__LOCALE, null, msgs);
@@ -218,10 +209,9 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIDatePropertyType> getDate()
-	{
-		if (date == null)
-		{
+	@Override
+	public EList<CIDatePropertyType> getDate() {
+		if (date == null) {
 			date = new EObjectContainmentEList<CIDatePropertyType>(CIDatePropertyType.class, this, GMDPackage.PT_LOCALE_CONTAINER_TYPE__DATE);
 		}
 		return date;
@@ -232,10 +222,9 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CIResponsiblePartyPropertyType> getResponsibleParty()
-	{
-		if (responsibleParty == null)
-		{
+	@Override
+	public EList<CIResponsiblePartyPropertyType> getResponsibleParty() {
+		if (responsibleParty == null) {
 			responsibleParty = new EObjectContainmentEList<CIResponsiblePartyPropertyType>(CIResponsiblePartyPropertyType.class, this, GMDPackage.PT_LOCALE_CONTAINER_TYPE__RESPONSIBLE_PARTY);
 		}
 		return responsibleParty;
@@ -246,10 +235,9 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LocalisedCharacterStringPropertyType> getLocalisedString()
-	{
-		if (localisedString == null)
-		{
+	@Override
+	public EList<LocalisedCharacterStringPropertyType> getLocalisedString() {
+		if (localisedString == null) {
 			localisedString = new EObjectContainmentEList<LocalisedCharacterStringPropertyType>(LocalisedCharacterStringPropertyType.class, this, GMDPackage.PT_LOCALE_CONTAINER_TYPE__LOCALISED_STRING);
 		}
 		return localisedString;
@@ -261,10 +249,8 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_CONTAINER_TYPE__DESCRIPTION:
 				return basicSetDescription(null, msgs);
 			case GMDPackage.PT_LOCALE_CONTAINER_TYPE__LOCALE:
@@ -285,10 +271,8 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_CONTAINER_TYPE__DESCRIPTION:
 				return getDescription();
 			case GMDPackage.PT_LOCALE_CONTAINER_TYPE__LOCALE:
@@ -310,10 +294,8 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_CONTAINER_TYPE__DESCRIPTION:
 				setDescription((CharacterStringPropertyType)newValue);
 				return;
@@ -342,10 +324,8 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_CONTAINER_TYPE__DESCRIPTION:
 				setDescription((CharacterStringPropertyType)null);
 				return;
@@ -371,10 +351,8 @@ public class PTLocaleContainerTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_CONTAINER_TYPE__DESCRIPTION:
 				return description != null;
 			case GMDPackage.PT_LOCALE_CONTAINER_TYPE__LOCALE:

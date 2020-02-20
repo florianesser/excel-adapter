@@ -17,6 +17,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='MD_ServiceIdentification_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDServiceIdentificationType extends AbstractMDIdentificationType
-{
+public interface MDServiceIdentificationType extends AbstractMDIdentificationType {
 } // MDServiceIdentificationType

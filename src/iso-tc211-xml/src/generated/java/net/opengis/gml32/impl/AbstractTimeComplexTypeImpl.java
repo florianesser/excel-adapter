@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class AbstractTimeComplexTypeImpl extends AbstractTimeObjectTypeImpl implements AbstractTimeComplexType
-{
+public abstract class AbstractTimeComplexTypeImpl extends AbstractTimeObjectTypeImpl implements AbstractTimeComplexType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractTimeComplexTypeImpl()
-	{
+	protected AbstractTimeComplexTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public abstract class AbstractTimeComplexTypeImpl extends AbstractTimeObjectType
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractTimeComplexType();
 	}
 

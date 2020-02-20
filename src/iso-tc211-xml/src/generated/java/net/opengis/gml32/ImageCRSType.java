@@ -26,8 +26,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='ImageCRSType' kind='elementOnly'"
  * @generated
  */
-public interface ImageCRSType extends AbstractCRSType
-{
+public interface ImageCRSType extends AbstractCRSType {
 	/**
 	 * Returns the value of the '<em><b>Cartesian CS Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
@@ -115,10 +114,6 @@ public interface ImageCRSType extends AbstractCRSType
 	/**
 	 * Returns the value of the '<em><b>Uses Oblique Cartesian CS</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uses Oblique Cartesian CS</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses Oblique Cartesian CS</em>' containment reference.
 	 * @see #setUsesObliqueCartesianCS(ObliqueCartesianCSPropertyType)

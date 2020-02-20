@@ -37,8 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements ConventionalUnitType
-{
+public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements ConventionalUnitType {
 	/**
 	 * The cached value of the '{@link #getConversionToPreferredUnit() <em>Conversion To Preferred Unit</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -74,8 +73,7 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ConventionalUnitTypeImpl()
-	{
+	protected ConventionalUnitTypeImpl() {
 		super();
 	}
 
@@ -85,8 +83,7 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getConventionalUnitType();
 	}
 
@@ -95,8 +92,8 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConversionToPreferredUnitType getConversionToPreferredUnit()
-	{
+	@Override
+	public ConversionToPreferredUnitType getConversionToPreferredUnit() {
 		return conversionToPreferredUnit;
 	}
 
@@ -105,12 +102,10 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConversionToPreferredUnit(ConversionToPreferredUnitType newConversionToPreferredUnit, NotificationChain msgs)
-	{
+	public NotificationChain basicSetConversionToPreferredUnit(ConversionToPreferredUnitType newConversionToPreferredUnit, NotificationChain msgs) {
 		ConversionToPreferredUnitType oldConversionToPreferredUnit = conversionToPreferredUnit;
 		conversionToPreferredUnit = newConversionToPreferredUnit;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CONVENTIONAL_UNIT_TYPE__CONVERSION_TO_PREFERRED_UNIT, oldConversionToPreferredUnit, newConversionToPreferredUnit);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -122,10 +117,9 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConversionToPreferredUnit(ConversionToPreferredUnitType newConversionToPreferredUnit)
-	{
-		if (newConversionToPreferredUnit != conversionToPreferredUnit)
-		{
+	@Override
+	public void setConversionToPreferredUnit(ConversionToPreferredUnitType newConversionToPreferredUnit) {
+		if (newConversionToPreferredUnit != conversionToPreferredUnit) {
 			NotificationChain msgs = null;
 			if (conversionToPreferredUnit != null)
 				msgs = ((InternalEObject)conversionToPreferredUnit).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CONVENTIONAL_UNIT_TYPE__CONVERSION_TO_PREFERRED_UNIT, null, msgs);
@@ -143,8 +137,8 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConversionToPreferredUnitType getRoughConversionToPreferredUnit()
-	{
+	@Override
+	public ConversionToPreferredUnitType getRoughConversionToPreferredUnit() {
 		return roughConversionToPreferredUnit;
 	}
 
@@ -153,12 +147,10 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRoughConversionToPreferredUnit(ConversionToPreferredUnitType newRoughConversionToPreferredUnit, NotificationChain msgs)
-	{
+	public NotificationChain basicSetRoughConversionToPreferredUnit(ConversionToPreferredUnitType newRoughConversionToPreferredUnit, NotificationChain msgs) {
 		ConversionToPreferredUnitType oldRoughConversionToPreferredUnit = roughConversionToPreferredUnit;
 		roughConversionToPreferredUnit = newRoughConversionToPreferredUnit;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.CONVENTIONAL_UNIT_TYPE__ROUGH_CONVERSION_TO_PREFERRED_UNIT, oldRoughConversionToPreferredUnit, newRoughConversionToPreferredUnit);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -170,10 +162,9 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRoughConversionToPreferredUnit(ConversionToPreferredUnitType newRoughConversionToPreferredUnit)
-	{
-		if (newRoughConversionToPreferredUnit != roughConversionToPreferredUnit)
-		{
+	@Override
+	public void setRoughConversionToPreferredUnit(ConversionToPreferredUnitType newRoughConversionToPreferredUnit) {
+		if (newRoughConversionToPreferredUnit != roughConversionToPreferredUnit) {
 			NotificationChain msgs = null;
 			if (roughConversionToPreferredUnit != null)
 				msgs = ((InternalEObject)roughConversionToPreferredUnit).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.CONVENTIONAL_UNIT_TYPE__ROUGH_CONVERSION_TO_PREFERRED_UNIT, null, msgs);
@@ -191,10 +182,9 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DerivationUnitTermType> getDerivationUnitTerm()
-	{
-		if (derivationUnitTerm == null)
-		{
+	@Override
+	public EList<DerivationUnitTermType> getDerivationUnitTerm() {
+		if (derivationUnitTerm == null) {
 			derivationUnitTerm = new EObjectContainmentEList<DerivationUnitTermType>(DerivationUnitTermType.class, this, GMLPackage.CONVENTIONAL_UNIT_TYPE__DERIVATION_UNIT_TERM);
 		}
 		return derivationUnitTerm;
@@ -206,10 +196,8 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.CONVENTIONAL_UNIT_TYPE__CONVERSION_TO_PREFERRED_UNIT:
 				return basicSetConversionToPreferredUnit(null, msgs);
 			case GMLPackage.CONVENTIONAL_UNIT_TYPE__ROUGH_CONVERSION_TO_PREFERRED_UNIT:
@@ -226,10 +214,8 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.CONVENTIONAL_UNIT_TYPE__CONVERSION_TO_PREFERRED_UNIT:
 				return getConversionToPreferredUnit();
 			case GMLPackage.CONVENTIONAL_UNIT_TYPE__ROUGH_CONVERSION_TO_PREFERRED_UNIT:
@@ -247,10 +233,8 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.CONVENTIONAL_UNIT_TYPE__CONVERSION_TO_PREFERRED_UNIT:
 				setConversionToPreferredUnit((ConversionToPreferredUnitType)newValue);
 				return;
@@ -271,10 +255,8 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CONVENTIONAL_UNIT_TYPE__CONVERSION_TO_PREFERRED_UNIT:
 				setConversionToPreferredUnit((ConversionToPreferredUnitType)null);
 				return;
@@ -294,10 +276,8 @@ public class ConventionalUnitTypeImpl extends UnitDefinitionTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.CONVENTIONAL_UNIT_TYPE__CONVERSION_TO_PREFERRED_UNIT:
 				return conversionToPreferredUnit != null;
 			case GMLPackage.CONVENTIONAL_UNIT_TYPE__ROUGH_CONVERSION_TO_PREFERRED_UNIT:

@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='actuateType'"
  * @generated
  */
-public enum ActuateType implements Enumerator
-{
+public enum ActuateType implements Enumerator {
 	/**
 	 * The '<em><b>On Load</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -62,10 +61,6 @@ public enum ActuateType implements Enumerator
 	/**
 	 * The '<em><b>On Load</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>On Load</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ON_LOAD
 	 * @model name="onLoad"
@@ -77,10 +72,6 @@ public enum ActuateType implements Enumerator
 	/**
 	 * The '<em><b>On Request</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>On Request</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ON_REQUEST
 	 * @model name="onRequest"
@@ -92,10 +83,6 @@ public enum ActuateType implements Enumerator
 	/**
 	 * The '<em><b>Other</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Other</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #OTHER
 	 * @model name="other"
@@ -107,10 +94,6 @@ public enum ActuateType implements Enumerator
 	/**
 	 * The '<em><b>None</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>None</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NONE
 	 * @model name="none"
@@ -126,8 +109,7 @@ public enum ActuateType implements Enumerator
 	 * @generated
 	 */
 	private static final ActuateType[] VALUES_ARRAY =
-		new ActuateType[]
-		{
+		new ActuateType[] {
 			ON_LOAD,
 			ON_REQUEST,
 			OTHER,
@@ -150,13 +132,10 @@ public enum ActuateType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static ActuateType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static ActuateType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			ActuateType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -171,13 +150,10 @@ public enum ActuateType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static ActuateType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static ActuateType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			ActuateType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -192,10 +168,8 @@ public enum ActuateType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static ActuateType get(int value)
-	{
-		switch (value)
-		{
+	public static ActuateType get(int value) {
+		switch (value) {
 			case ON_LOAD_VALUE: return ON_LOAD;
 			case ON_REQUEST_VALUE: return ON_REQUEST;
 			case OTHER_VALUE: return OTHER;
@@ -231,8 +205,7 @@ public enum ActuateType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private ActuateType(int value, String name, String literal)
-	{
+	private ActuateType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -243,8 +216,8 @@ public enum ActuateType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -253,8 +226,8 @@ public enum ActuateType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -263,8 +236,8 @@ public enum ActuateType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -275,8 +248,7 @@ public enum ActuateType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

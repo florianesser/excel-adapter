@@ -24,15 +24,10 @@ import org.isotc211.iso19139.gco.AbstractObjectType;
  * @model extendedMetaData="name='DQ_Scope_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQScopeType extends AbstractObjectType
-{
+public interface DQScopeType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Level</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Level</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Level</em>' containment reference.
 	 * @see #setLevel(MDScopeCodePropertyType)
@@ -56,10 +51,6 @@ public interface DQScopeType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Extent</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Extent</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extent</em>' containment reference.
 	 * @see #setExtent(EXExtentPropertyType)
@@ -84,10 +75,6 @@ public interface DQScopeType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Level Description</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDScopeDescriptionPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Level Description</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Level Description</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getDQScopeType_LevelDescription()

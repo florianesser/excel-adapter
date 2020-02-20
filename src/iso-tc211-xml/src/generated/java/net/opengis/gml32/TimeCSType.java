@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='TimeCSType' kind='elementOnly'"
  * @generated
  */
-public interface TimeCSType extends AbstractCoordinateSystemType
-{
+public interface TimeCSType extends AbstractCoordinateSystemType {
 } // TimeCSType

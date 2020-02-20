@@ -13,6 +13,5 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='DQ_TopologicalConsistency_Type' kind='elementOnly'"
  * @generated
  */
-public interface DQTopologicalConsistencyType extends AbstractDQLogicalConsistencyType
-{
+public interface DQTopologicalConsistencyType extends AbstractDQLogicalConsistencyType {
 } // DQTopologicalConsistencyType

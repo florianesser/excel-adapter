@@ -24,15 +24,10 @@ import org.isotc211.iso19139.gco.MeasurePropertyType;
  * @model extendedMetaData="name='MD_Dimension_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDDimensionType extends AbstractObjectType
-{
+public interface MDDimensionType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Dimension Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dimension Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dimension Name</em>' containment reference.
 	 * @see #setDimensionName(MDDimensionNameTypeCodePropertyType)
@@ -56,10 +51,6 @@ public interface MDDimensionType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Dimension Size</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dimension Size</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dimension Size</em>' containment reference.
 	 * @see #setDimensionSize(IntegerPropertyType)
@@ -83,10 +74,6 @@ public interface MDDimensionType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Resolution</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resolution</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resolution</em>' containment reference.
 	 * @see #setResolution(MeasurePropertyType)

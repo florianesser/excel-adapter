@@ -36,15 +36,10 @@ import org.isotc211.iso19139.gts.TMPeriodDurationPropertyType;
  * @model extendedMetaData="name='MD_MaintenanceInformation_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDMaintenanceInformationType extends AbstractObjectType
-{
+public interface MDMaintenanceInformationType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Maintenance And Update Frequency</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Maintenance And Update Frequency</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maintenance And Update Frequency</em>' containment reference.
 	 * @see #setMaintenanceAndUpdateFrequency(MDMaintenanceFrequencyCodePropertyType)
@@ -68,10 +63,6 @@ public interface MDMaintenanceInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Date Of Next Update</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date Of Next Update</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date Of Next Update</em>' containment reference.
 	 * @see #setDateOfNextUpdate(DatePropertyType)
@@ -95,10 +86,6 @@ public interface MDMaintenanceInformationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>User Defined Maintenance Frequency</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Defined Maintenance Frequency</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Defined Maintenance Frequency</em>' containment reference.
 	 * @see #setUserDefinedMaintenanceFrequency(TMPeriodDurationPropertyType)
@@ -123,10 +110,6 @@ public interface MDMaintenanceInformationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Update Scope</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDScopeCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Update Scope</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Update Scope</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMaintenanceInformationType_UpdateScope()
@@ -140,10 +123,6 @@ public interface MDMaintenanceInformationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Update Scope Description</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDScopeDescriptionPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Update Scope Description</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Update Scope Description</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMaintenanceInformationType_UpdateScopeDescription()
@@ -157,10 +136,6 @@ public interface MDMaintenanceInformationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Maintenance Note</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Maintenance Note</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maintenance Note</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMaintenanceInformationType_MaintenanceNote()
@@ -174,10 +149,6 @@ public interface MDMaintenanceInformationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Contact</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIResponsiblePartyPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Contact</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDMaintenanceInformationType_Contact()

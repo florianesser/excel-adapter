@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements DQEvaluationMethodTypeCodePropertyType
-{
+public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements DQEvaluationMethodTypeCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getDQEvaluationMethodTypeCode() <em>DQ Evaluation Method Type Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DQEvaluationMethodTypeCodePropertyTypeImpl()
-	{
+	protected DQEvaluationMethodTypeCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDQEvaluationMethodTypeCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getDQEvaluationMethodTypeCode()
-	{
+	@Override
+	public CodeListValueType getDQEvaluationMethodTypeCode() {
 		return dQEvaluationMethodTypeCode;
 	}
 
@@ -98,12 +95,10 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDQEvaluationMethodTypeCode(CodeListValueType newDQEvaluationMethodTypeCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDQEvaluationMethodTypeCode(CodeListValueType newDQEvaluationMethodTypeCode, NotificationChain msgs) {
 		CodeListValueType oldDQEvaluationMethodTypeCode = dQEvaluationMethodTypeCode;
 		dQEvaluationMethodTypeCode = newDQEvaluationMethodTypeCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE__DQ_EVALUATION_METHOD_TYPE_CODE, oldDQEvaluationMethodTypeCode, newDQEvaluationMethodTypeCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDQEvaluationMethodTypeCode(CodeListValueType newDQEvaluationMethodTypeCode)
-	{
-		if (newDQEvaluationMethodTypeCode != dQEvaluationMethodTypeCode)
-		{
+	@Override
+	public void setDQEvaluationMethodTypeCode(CodeListValueType newDQEvaluationMethodTypeCode) {
+		if (newDQEvaluationMethodTypeCode != dQEvaluationMethodTypeCode) {
 			NotificationChain msgs = null;
 			if (dQEvaluationMethodTypeCode != null)
 				msgs = ((InternalEObject)dQEvaluationMethodTypeCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE__DQ_EVALUATION_METHOD_TYPE_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE__DQ_EVALUATION_METHOD_TYPE_CODE:
 				return basicSetDQEvaluationMethodTypeCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE__DQ_EVALUATION_METHOD_TYPE_CODE:
 				return getDQEvaluationMethodTypeCode();
 			case GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE__DQ_EVALUATION_METHOD_TYPE_CODE:
 				setDQEvaluationMethodTypeCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE__DQ_EVALUATION_METHOD_TYPE_CODE:
 				setDQEvaluationMethodTypeCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE__DQ_EVALUATION_METHOD_TYPE_CODE:
 				return dQEvaluationMethodTypeCode != null;
 			case GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class DQEvaluationMethodTypeCodePropertyTypeImpl extends MinimalEObjectIm
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

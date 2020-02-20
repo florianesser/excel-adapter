@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class DefinitionBaseTypeImpl extends AbstractGMLTypeImpl implements DefinitionBaseType
-{
+public class DefinitionBaseTypeImpl extends AbstractGMLTypeImpl implements DefinitionBaseType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DefinitionBaseTypeImpl()
-	{
+	protected DefinitionBaseTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class DefinitionBaseTypeImpl extends AbstractGMLTypeImpl implements Defin
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDefinitionBaseType();
 	}
 

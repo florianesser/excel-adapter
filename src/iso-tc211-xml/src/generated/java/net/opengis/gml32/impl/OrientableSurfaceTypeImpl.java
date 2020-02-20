@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implements OrientableSurfaceType
-{
+public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implements OrientableSurfaceType {
 	/**
 	 * The cached value of the '{@link #getBaseSurface() <em>Base Surface</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -75,8 +74,7 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected OrientableSurfaceTypeImpl()
-	{
+	protected OrientableSurfaceTypeImpl() {
 		super();
 	}
 
@@ -86,8 +84,7 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getOrientableSurfaceType();
 	}
 
@@ -96,8 +93,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfacePropertyType getBaseSurface()
-	{
+	@Override
+	public SurfacePropertyType getBaseSurface() {
 		return baseSurface;
 	}
 
@@ -106,12 +103,10 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBaseSurface(SurfacePropertyType newBaseSurface, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBaseSurface(SurfacePropertyType newBaseSurface, NotificationChain msgs) {
 		SurfacePropertyType oldBaseSurface = baseSurface;
 		baseSurface = newBaseSurface;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ORIENTABLE_SURFACE_TYPE__BASE_SURFACE, oldBaseSurface, newBaseSurface);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -123,10 +118,9 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBaseSurface(SurfacePropertyType newBaseSurface)
-	{
-		if (newBaseSurface != baseSurface)
-		{
+	@Override
+	public void setBaseSurface(SurfacePropertyType newBaseSurface) {
+		if (newBaseSurface != baseSurface) {
 			NotificationChain msgs = null;
 			if (baseSurface != null)
 				msgs = ((InternalEObject)baseSurface).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ORIENTABLE_SURFACE_TYPE__BASE_SURFACE, null, msgs);
@@ -144,8 +138,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SignType getOrientation()
-	{
+	@Override
+	public SignType getOrientation() {
 		return orientation;
 	}
 
@@ -154,8 +148,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrientation(SignType newOrientation)
-	{
+	@Override
+	public void setOrientation(SignType newOrientation) {
 		SignType oldOrientation = orientation;
 		orientation = newOrientation == null ? ORIENTATION_EDEFAULT : newOrientation;
 		boolean oldOrientationESet = orientationESet;
@@ -169,8 +163,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOrientation()
-	{
+	@Override
+	public void unsetOrientation() {
 		SignType oldOrientation = orientation;
 		boolean oldOrientationESet = orientationESet;
 		orientation = ORIENTATION_EDEFAULT;
@@ -184,8 +178,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOrientation()
-	{
+	@Override
+	public boolean isSetOrientation() {
 		return orientationESet;
 	}
 
@@ -195,10 +189,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_SURFACE_TYPE__BASE_SURFACE:
 				return basicSetBaseSurface(null, msgs);
 		}
@@ -211,10 +203,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_SURFACE_TYPE__BASE_SURFACE:
 				return getBaseSurface();
 			case GMLPackage.ORIENTABLE_SURFACE_TYPE__ORIENTATION:
@@ -229,10 +219,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_SURFACE_TYPE__BASE_SURFACE:
 				setBaseSurface((SurfacePropertyType)newValue);
 				return;
@@ -249,10 +237,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_SURFACE_TYPE__BASE_SURFACE:
 				setBaseSurface((SurfacePropertyType)null);
 				return;
@@ -269,10 +255,8 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ORIENTABLE_SURFACE_TYPE__BASE_SURFACE:
 				return baseSurface != null;
 			case GMLPackage.ORIENTABLE_SURFACE_TYPE__ORIENTATION:
@@ -287,11 +271,10 @@ public class OrientableSurfaceTypeImpl extends AbstractSurfaceTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (orientation: ");
 		if (orientationESet) result.append(orientation); else result.append("<unset>");
 		result.append(')');

@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='typeType'"
  * @generated
  */
-public enum TypeType implements Enumerator
-{
+public enum TypeType implements Enumerator {
 	/**
 	 * The '<em><b>Simple</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -82,10 +81,6 @@ public enum TypeType implements Enumerator
 	/**
 	 * The '<em><b>Simple</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Simple</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SIMPLE
 	 * @model name="simple"
@@ -97,10 +92,6 @@ public enum TypeType implements Enumerator
 	/**
 	 * The '<em><b>Extended</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Extended</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #EXTENDED
 	 * @model name="extended"
@@ -112,10 +103,6 @@ public enum TypeType implements Enumerator
 	/**
 	 * The '<em><b>Title</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Title</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #TITLE
 	 * @model name="title"
@@ -127,10 +114,6 @@ public enum TypeType implements Enumerator
 	/**
 	 * The '<em><b>Resource</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Resource</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #RESOURCE
 	 * @model name="resource"
@@ -142,10 +125,6 @@ public enum TypeType implements Enumerator
 	/**
 	 * The '<em><b>Locator</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Locator</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #LOCATOR
 	 * @model name="locator"
@@ -157,10 +136,6 @@ public enum TypeType implements Enumerator
 	/**
 	 * The '<em><b>Arc</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Arc</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ARC
 	 * @model name="arc"
@@ -176,8 +151,7 @@ public enum TypeType implements Enumerator
 	 * @generated
 	 */
 	private static final TypeType[] VALUES_ARRAY =
-		new TypeType[]
-		{
+		new TypeType[] {
 			SIMPLE,
 			EXTENDED,
 			TITLE,
@@ -202,13 +176,10 @@ public enum TypeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static TypeType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static TypeType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			TypeType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -223,13 +194,10 @@ public enum TypeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static TypeType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static TypeType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			TypeType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -244,10 +212,8 @@ public enum TypeType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static TypeType get(int value)
-	{
-		switch (value)
-		{
+	public static TypeType get(int value) {
+		switch (value) {
 			case SIMPLE_VALUE: return SIMPLE;
 			case EXTENDED_VALUE: return EXTENDED;
 			case TITLE_VALUE: return TITLE;
@@ -285,8 +251,7 @@ public enum TypeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private TypeType(int value, String name, String literal)
-	{
+	private TypeType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -297,8 +262,8 @@ public enum TypeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -307,8 +272,8 @@ public enum TypeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -317,8 +282,8 @@ public enum TypeType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -329,8 +294,7 @@ public enum TypeType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

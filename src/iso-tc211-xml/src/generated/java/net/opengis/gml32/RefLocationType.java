@@ -20,8 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='refLocation_._type' kind='elementOnly'"
  * @generated
  */
-public interface RefLocationType extends EObject
-{
+public interface RefLocationType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Affine Placement</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

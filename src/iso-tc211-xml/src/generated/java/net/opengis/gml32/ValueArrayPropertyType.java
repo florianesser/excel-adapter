@@ -32,16 +32,11 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='ValueArrayPropertyType' kind='elementOnly'"
  * @generated
  */
-public interface ValueArrayPropertyType extends EObject
-{
+public interface ValueArrayPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getValueArrayPropertyType_Value()
@@ -153,10 +148,6 @@ public interface ValueArrayPropertyType extends EObject
 	 * Returns the value of the '<em><b>Null</b></em>' attribute list.
 	 * The list contents are of type {@link java.lang.Object}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Null</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Null</em>' attribute list.
 	 * @see net.opengis.gml32.GMLPackage#getValueArrayPropertyType_Null()
@@ -170,10 +161,6 @@ public interface ValueArrayPropertyType extends EObject
 	 * Returns the value of the '<em><b>Owns</b></em>' attribute.
 	 * The default value is <code>"false"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Owns</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Owns</em>' attribute.
 	 * @see #isSetOwns()

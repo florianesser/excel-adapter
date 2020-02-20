@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTimePrimitiveTypeImpl implements AbstractTimeTopologyPrimitiveType
-{
+public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTimePrimitiveTypeImpl implements AbstractTimeTopologyPrimitiveType {
 	/**
 	 * The cached value of the '{@link #getComplex() <em>Complex</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,8 +43,7 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractTimeTopologyPrimitiveTypeImpl()
-	{
+	protected AbstractTimeTopologyPrimitiveTypeImpl() {
 		super();
 	}
 
@@ -55,8 +53,7 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractTimeTopologyPrimitiveType();
 	}
 
@@ -65,8 +62,8 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferenceType getComplex()
-	{
+	@Override
+	public ReferenceType getComplex() {
 		return complex;
 	}
 
@@ -75,12 +72,10 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetComplex(ReferenceType newComplex, NotificationChain msgs)
-	{
+	public NotificationChain basicSetComplex(ReferenceType newComplex, NotificationChain msgs) {
 		ReferenceType oldComplex = complex;
 		complex = newComplex;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_TIME_TOPOLOGY_PRIMITIVE_TYPE__COMPLEX, oldComplex, newComplex);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -92,10 +87,9 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setComplex(ReferenceType newComplex)
-	{
-		if (newComplex != complex)
-		{
+	@Override
+	public void setComplex(ReferenceType newComplex) {
+		if (newComplex != complex) {
 			NotificationChain msgs = null;
 			if (complex != null)
 				msgs = ((InternalEObject)complex).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_TIME_TOPOLOGY_PRIMITIVE_TYPE__COMPLEX, null, msgs);
@@ -114,10 +108,8 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_TOPOLOGY_PRIMITIVE_TYPE__COMPLEX:
 				return basicSetComplex(null, msgs);
 		}
@@ -130,10 +122,8 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_TOPOLOGY_PRIMITIVE_TYPE__COMPLEX:
 				return getComplex();
 		}
@@ -146,10 +136,8 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_TOPOLOGY_PRIMITIVE_TYPE__COMPLEX:
 				setComplex((ReferenceType)newValue);
 				return;
@@ -163,10 +151,8 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_TOPOLOGY_PRIMITIVE_TYPE__COMPLEX:
 				setComplex((ReferenceType)null);
 				return;
@@ -180,10 +166,8 @@ public abstract class AbstractTimeTopologyPrimitiveTypeImpl extends AbstractTime
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_TOPOLOGY_PRIMITIVE_TYPE__COMPLEX:
 				return complex != null;
 		}

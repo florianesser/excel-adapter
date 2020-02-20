@@ -50,8 +50,7 @@ import org.w3.xlink.TypeType;
  *
  * @generated
  */
-public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container implements DirectionPropertyType
-{
+public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container implements DirectionPropertyType {
 	/**
 	 * The cached value of the '{@link #getDirectionVector() <em>Direction Vector</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -362,8 +361,7 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DirectionPropertyTypeImpl()
-	{
+	protected DirectionPropertyTypeImpl() {
 		super();
 	}
 
@@ -373,8 +371,7 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getDirectionPropertyType();
 	}
 
@@ -383,8 +380,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionVectorType getDirectionVector()
-	{
+	@Override
+	public DirectionVectorType getDirectionVector() {
 		return directionVector;
 	}
 
@@ -393,12 +390,10 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectionVector(DirectionVectorType newDirectionVector, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectionVector(DirectionVectorType newDirectionVector, NotificationChain msgs) {
 		DirectionVectorType oldDirectionVector = directionVector;
 		directionVector = newDirectionVector;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_VECTOR, oldDirectionVector, newDirectionVector);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -410,10 +405,9 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectionVector(DirectionVectorType newDirectionVector)
-	{
-		if (newDirectionVector != directionVector)
-		{
+	@Override
+	public void setDirectionVector(DirectionVectorType newDirectionVector) {
+		if (newDirectionVector != directionVector) {
 			NotificationChain msgs = null;
 			if (directionVector != null)
 				msgs = ((InternalEObject)directionVector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_VECTOR, null, msgs);
@@ -431,8 +425,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DirectionDescriptionType getDirectionDescription()
-	{
+	@Override
+	public DirectionDescriptionType getDirectionDescription() {
 		return directionDescription;
 	}
 
@@ -441,12 +435,10 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectionDescription(DirectionDescriptionType newDirectionDescription, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectionDescription(DirectionDescriptionType newDirectionDescription, NotificationChain msgs) {
 		DirectionDescriptionType oldDirectionDescription = directionDescription;
 		directionDescription = newDirectionDescription;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_DESCRIPTION, oldDirectionDescription, newDirectionDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -458,10 +450,9 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectionDescription(DirectionDescriptionType newDirectionDescription)
-	{
-		if (newDirectionDescription != directionDescription)
-		{
+	@Override
+	public void setDirectionDescription(DirectionDescriptionType newDirectionDescription) {
+		if (newDirectionDescription != directionDescription) {
 			NotificationChain msgs = null;
 			if (directionDescription != null)
 				msgs = ((InternalEObject)directionDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_DESCRIPTION, null, msgs);
@@ -479,8 +470,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CompassPointEnumeration getCompassPoint()
-	{
+	@Override
+	public CompassPointEnumeration getCompassPoint() {
 		return compassPoint;
 	}
 
@@ -489,8 +480,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCompassPoint(CompassPointEnumeration newCompassPoint)
-	{
+	@Override
+	public void setCompassPoint(CompassPointEnumeration newCompassPoint) {
 		CompassPointEnumeration oldCompassPoint = compassPoint;
 		compassPoint = newCompassPoint == null ? COMPASS_POINT_EDEFAULT : newCompassPoint;
 		boolean oldCompassPointESet = compassPointESet;
@@ -504,8 +495,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetCompassPoint()
-	{
+	@Override
+	public void unsetCompassPoint() {
 		CompassPointEnumeration oldCompassPoint = compassPoint;
 		boolean oldCompassPointESet = compassPointESet;
 		compassPoint = COMPASS_POINT_EDEFAULT;
@@ -519,8 +510,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetCompassPoint()
-	{
+	@Override
+	public boolean isSetCompassPoint() {
 		return compassPointESet;
 	}
 
@@ -529,8 +520,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeType getDirectionKeyword()
-	{
+	@Override
+	public CodeType getDirectionKeyword() {
 		return directionKeyword;
 	}
 
@@ -539,12 +530,10 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectionKeyword(CodeType newDirectionKeyword, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectionKeyword(CodeType newDirectionKeyword, NotificationChain msgs) {
 		CodeType oldDirectionKeyword = directionKeyword;
 		directionKeyword = newDirectionKeyword;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_KEYWORD, oldDirectionKeyword, newDirectionKeyword);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -556,10 +545,9 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectionKeyword(CodeType newDirectionKeyword)
-	{
-		if (newDirectionKeyword != directionKeyword)
-		{
+	@Override
+	public void setDirectionKeyword(CodeType newDirectionKeyword) {
+		if (newDirectionKeyword != directionKeyword) {
 			NotificationChain msgs = null;
 			if (directionKeyword != null)
 				msgs = ((InternalEObject)directionKeyword).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_KEYWORD, null, msgs);
@@ -577,8 +565,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getDirectionString()
-	{
+	@Override
+	public StringOrRefType getDirectionString() {
 		return directionString;
 	}
 
@@ -587,12 +575,10 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDirectionString(StringOrRefType newDirectionString, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDirectionString(StringOrRefType newDirectionString, NotificationChain msgs) {
 		StringOrRefType oldDirectionString = directionString;
 		directionString = newDirectionString;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_STRING, oldDirectionString, newDirectionString);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -604,10 +590,9 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDirectionString(StringOrRefType newDirectionString)
-	{
-		if (newDirectionString != directionString)
-		{
+	@Override
+	public void setDirectionString(StringOrRefType newDirectionString) {
+		if (newDirectionString != directionString) {
 			NotificationChain msgs = null;
 			if (directionString != null)
 				msgs = ((InternalEObject)directionString).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_STRING, null, msgs);
@@ -625,8 +610,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActuateType getActuate()
-	{
+	@Override
+	public ActuateType getActuate() {
 		return actuate;
 	}
 
@@ -635,8 +620,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setActuate(ActuateType newActuate)
-	{
+	@Override
+	public void setActuate(ActuateType newActuate) {
 		ActuateType oldActuate = actuate;
 		actuate = newActuate == null ? ACTUATE_EDEFAULT : newActuate;
 		boolean oldActuateESet = actuateESet;
@@ -650,8 +635,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetActuate()
-	{
+	@Override
+	public void unsetActuate() {
 		ActuateType oldActuate = actuate;
 		boolean oldActuateESet = actuateESet;
 		actuate = ACTUATE_EDEFAULT;
@@ -665,8 +650,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetActuate()
-	{
+	@Override
+	public boolean isSetActuate() {
 		return actuateESet;
 	}
 
@@ -675,8 +660,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArcrole()
-	{
+	@Override
+	public String getArcrole() {
 		return arcrole;
 	}
 
@@ -685,8 +670,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArcrole(String newArcrole)
-	{
+	@Override
+	public void setArcrole(String newArcrole) {
 		String oldArcrole = arcrole;
 		arcrole = newArcrole;
 		if (eNotificationRequired())
@@ -698,8 +683,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHref()
-	{
+	@Override
+	public String getHref() {
 		return href;
 	}
 
@@ -708,8 +693,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHref(String newHref)
-	{
+	@Override
+	public void setHref(String newHref) {
 		String oldHref = href;
 		href = newHref;
 		if (eNotificationRequired())
@@ -721,8 +706,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -731,8 +716,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -744,8 +729,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isOwns()
-	{
+	@Override
+	public boolean isOwns() {
 		return owns;
 	}
 
@@ -754,8 +739,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOwns(boolean newOwns)
-	{
+	@Override
+	public void setOwns(boolean newOwns) {
 		boolean oldOwns = owns;
 		owns = newOwns;
 		boolean oldOwnsESet = ownsESet;
@@ -769,8 +754,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetOwns()
-	{
+	@Override
+	public void unsetOwns() {
 		boolean oldOwns = owns;
 		boolean oldOwnsESet = ownsESet;
 		owns = OWNS_EDEFAULT;
@@ -784,8 +769,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetOwns()
-	{
+	@Override
+	public boolean isSetOwns() {
 		return ownsESet;
 	}
 
@@ -794,8 +779,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRemoteSchema()
-	{
+	@Override
+	public String getRemoteSchema() {
 		return remoteSchema;
 	}
 
@@ -804,8 +789,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRemoteSchema(String newRemoteSchema)
-	{
+	@Override
+	public void setRemoteSchema(String newRemoteSchema) {
 		String oldRemoteSchema = remoteSchema;
 		remoteSchema = newRemoteSchema;
 		if (eNotificationRequired())
@@ -817,8 +802,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRole()
-	{
+	@Override
+	public String getRole() {
 		return role;
 	}
 
@@ -827,8 +812,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRole(String newRole)
-	{
+	@Override
+	public void setRole(String newRole) {
 		String oldRole = role;
 		role = newRole;
 		if (eNotificationRequired())
@@ -840,8 +825,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ShowType getShow()
-	{
+	@Override
+	public ShowType getShow() {
 		return show;
 	}
 
@@ -850,8 +835,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setShow(ShowType newShow)
-	{
+	@Override
+	public void setShow(ShowType newShow) {
 		ShowType oldShow = show;
 		show = newShow == null ? SHOW_EDEFAULT : newShow;
 		boolean oldShowESet = showESet;
@@ -865,8 +850,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetShow()
-	{
+	@Override
+	public void unsetShow() {
 		ShowType oldShow = show;
 		boolean oldShowESet = showESet;
 		show = SHOW_EDEFAULT;
@@ -880,8 +865,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetShow()
-	{
+	@Override
+	public boolean isSetShow() {
 		return showESet;
 	}
 
@@ -890,8 +875,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitle()
-	{
+	@Override
+	public String getTitle() {
 		return title;
 	}
 
@@ -900,8 +885,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitle(String newTitle)
-	{
+	@Override
+	public void setTitle(String newTitle) {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
@@ -913,8 +898,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TypeType getType()
-	{
+	@Override
+	public TypeType getType() {
 		return type;
 	}
 
@@ -923,8 +908,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(TypeType newType)
-	{
+	@Override
+	public void setType(TypeType newType) {
 		TypeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
@@ -938,8 +923,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetType()
-	{
+	@Override
+	public void unsetType() {
 		TypeType oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
@@ -953,8 +938,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetType()
-	{
+	@Override
+	public boolean isSetType() {
 		return typeESet;
 	}
 
@@ -964,10 +949,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_VECTOR:
 				return basicSetDirectionVector(null, msgs);
 			case GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_DESCRIPTION:
@@ -986,10 +969,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_VECTOR:
 				return getDirectionVector();
 			case GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_DESCRIPTION:
@@ -1030,10 +1011,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_VECTOR:
 				setDirectionVector((DirectionVectorType)newValue);
 				return;
@@ -1089,10 +1068,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_VECTOR:
 				setDirectionVector((DirectionVectorType)null);
 				return;
@@ -1148,10 +1125,8 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_VECTOR:
 				return directionVector != null;
 			case GMLPackage.DIRECTION_PROPERTY_TYPE__DIRECTION_DESCRIPTION:
@@ -1192,11 +1167,10 @@ public class DirectionPropertyTypeImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (compassPoint: ");
 		if (compassPointESet) result.append(compassPoint); else result.append("<unset>");
 		result.append(", actuate: ");

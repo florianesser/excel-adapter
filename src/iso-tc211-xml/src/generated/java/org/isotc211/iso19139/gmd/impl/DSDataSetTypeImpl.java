@@ -35,8 +35,7 @@ import org.isotc211.iso19139.gmd.MDMetadataPropertyType;
  *
  * @generated
  */
-public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataSetType
-{
+public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataSetType {
 	/**
 	 * The cached value of the '{@link #getHas() <em>Has</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -62,8 +61,7 @@ public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DSDataSetTypeImpl()
-	{
+	protected DSDataSetTypeImpl() {
 		super();
 	}
 
@@ -73,8 +71,7 @@ public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataS
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getDSDataSetType();
 	}
 
@@ -83,10 +80,9 @@ public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MDMetadataPropertyType> getHas()
-	{
-		if (has == null)
-		{
+	@Override
+	public EList<MDMetadataPropertyType> getHas() {
+		if (has == null) {
 			has = new EObjectContainmentEList<MDMetadataPropertyType>(MDMetadataPropertyType.class, this, GMDPackage.DS_DATA_SET_TYPE__HAS);
 		}
 		return has;
@@ -97,10 +93,9 @@ public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DSAggregatePropertyType> getPartOf()
-	{
-		if (partOf == null)
-		{
+	@Override
+	public EList<DSAggregatePropertyType> getPartOf() {
+		if (partOf == null) {
 			partOf = new EObjectContainmentEList<DSAggregatePropertyType>(DSAggregatePropertyType.class, this, GMDPackage.DS_DATA_SET_TYPE__PART_OF);
 		}
 		return partOf;
@@ -112,10 +107,8 @@ public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataS
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.DS_DATA_SET_TYPE__HAS:
 				return ((InternalEList<?>)getHas()).basicRemove(otherEnd, msgs);
 			case GMDPackage.DS_DATA_SET_TYPE__PART_OF:
@@ -130,10 +123,8 @@ public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataS
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.DS_DATA_SET_TYPE__HAS:
 				return getHas();
 			case GMDPackage.DS_DATA_SET_TYPE__PART_OF:
@@ -149,10 +140,8 @@ public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataS
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.DS_DATA_SET_TYPE__HAS:
 				getHas().clear();
 				getHas().addAll((Collection<? extends MDMetadataPropertyType>)newValue);
@@ -171,10 +160,8 @@ public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataS
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DS_DATA_SET_TYPE__HAS:
 				getHas().clear();
 				return;
@@ -191,10 +178,8 @@ public class DSDataSetTypeImpl extends AbstractObjectTypeImpl implements DSDataS
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.DS_DATA_SET_TYPE__HAS:
 				return has != null && !has.isEmpty();
 			case GMDPackage.DS_DATA_SET_TYPE__PART_OF:

@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiSurfaceType
-{
+public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl implements MultiSurfaceType {
 	/**
 	 * The cached value of the '{@link #getSurfaceMember() <em>Surface Member</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MultiSurfaceTypeImpl()
-	{
+	protected MultiSurfaceTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getMultiSurfaceType();
 	}
 
@@ -84,10 +81,9 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SurfacePropertyType> getSurfaceMember()
-	{
-		if (surfaceMember == null)
-		{
+	@Override
+	public EList<SurfacePropertyType> getSurfaceMember() {
+		if (surfaceMember == null) {
 			surfaceMember = new EObjectContainmentEList<SurfacePropertyType>(SurfacePropertyType.class, this, GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBER);
 		}
 		return surfaceMember;
@@ -98,8 +94,8 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SurfaceArrayPropertyType getSurfaceMembers()
-	{
+	@Override
+	public SurfaceArrayPropertyType getSurfaceMembers() {
 		return surfaceMembers;
 	}
 
@@ -108,12 +104,10 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSurfaceMembers(SurfaceArrayPropertyType newSurfaceMembers, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSurfaceMembers(SurfaceArrayPropertyType newSurfaceMembers, NotificationChain msgs) {
 		SurfaceArrayPropertyType oldSurfaceMembers = surfaceMembers;
 		surfaceMembers = newSurfaceMembers;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBERS, oldSurfaceMembers, newSurfaceMembers);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -125,10 +119,9 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSurfaceMembers(SurfaceArrayPropertyType newSurfaceMembers)
-	{
-		if (newSurfaceMembers != surfaceMembers)
-		{
+	@Override
+	public void setSurfaceMembers(SurfaceArrayPropertyType newSurfaceMembers) {
+		if (newSurfaceMembers != surfaceMembers) {
 			NotificationChain msgs = null;
 			if (surfaceMembers != null)
 				msgs = ((InternalEObject)surfaceMembers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBERS, null, msgs);
@@ -147,10 +140,8 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBER:
 				return ((InternalEList<?>)getSurfaceMember()).basicRemove(otherEnd, msgs);
 			case GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBERS:
@@ -165,10 +156,8 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBER:
 				return getSurfaceMember();
 			case GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBERS:
@@ -184,10 +173,8 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBER:
 				getSurfaceMember().clear();
 				getSurfaceMember().addAll((Collection<? extends SurfacePropertyType>)newValue);
@@ -205,10 +192,8 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBER:
 				getSurfaceMember().clear();
 				return;
@@ -225,10 +210,8 @@ public class MultiSurfaceTypeImpl extends AbstractGeometricAggregateTypeImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBER:
 				return surfaceMember != null && !surfaceMember.isEmpty();
 			case GMLPackage.MULTI_SURFACE_TYPE__SURFACE_MEMBERS:

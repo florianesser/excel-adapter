@@ -23,8 +23,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='GeodeticDatumType' kind='elementOnly'"
  * @generated
  */
-public interface GeodeticDatumType extends AbstractDatumType
-{
+public interface GeodeticDatumType extends AbstractDatumType {
 	/**
 	 * Returns the value of the '<em><b>Prime Meridian Group</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.

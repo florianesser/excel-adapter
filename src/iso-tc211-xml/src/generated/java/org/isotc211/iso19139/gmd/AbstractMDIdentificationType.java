@@ -40,15 +40,10 @@ import org.isotc211.iso19139.gco.CharacterStringPropertyType;
  *        extendedMetaData="name='AbstractMD_Identification_Type' kind='elementOnly'"
  * @generated
  */
-public interface AbstractMDIdentificationType extends AbstractObjectType
-{
+public interface AbstractMDIdentificationType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Citation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Citation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Citation</em>' containment reference.
 	 * @see #setCitation(CICitationPropertyType)
@@ -72,10 +67,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Abstract</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Abstract</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstract</em>' containment reference.
 	 * @see #setAbstract(CharacterStringPropertyType)
@@ -99,10 +90,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Purpose</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Purpose</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Purpose</em>' containment reference.
 	 * @see #setPurpose(CharacterStringPropertyType)
@@ -127,10 +114,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Credit</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.CharacterStringPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Credit</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Credit</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_Credit()
@@ -144,10 +127,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Status</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDProgressCodePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Status</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_Status()
@@ -161,10 +140,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Point Of Contact</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.CIResponsiblePartyPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Point Of Contact</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Point Of Contact</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_PointOfContact()
@@ -178,10 +153,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Resource Maintenance</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDMaintenanceInformationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resource Maintenance</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resource Maintenance</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_ResourceMaintenance()
@@ -195,10 +166,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Graphic Overview</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDBrowseGraphicPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Graphic Overview</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Graphic Overview</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_GraphicOverview()
@@ -212,10 +179,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Resource Format</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDFormatPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resource Format</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resource Format</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_ResourceFormat()
@@ -229,10 +192,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Descriptive Keywords</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDKeywordsPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Descriptive Keywords</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Descriptive Keywords</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_DescriptiveKeywords()
@@ -246,10 +205,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Resource Specific Usage</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDUsagePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resource Specific Usage</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resource Specific Usage</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_ResourceSpecificUsage()
@@ -263,10 +218,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Resource Constraints</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDConstraintsPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resource Constraints</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resource Constraints</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_ResourceConstraints()
@@ -280,10 +231,6 @@ public interface AbstractMDIdentificationType extends AbstractObjectType
 	 * Returns the value of the '<em><b>Aggregation Info</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gmd.MDAggregateInformationPropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Aggregation Info</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Aggregation Info</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getAbstractMDIdentificationType_AggregationInfo()

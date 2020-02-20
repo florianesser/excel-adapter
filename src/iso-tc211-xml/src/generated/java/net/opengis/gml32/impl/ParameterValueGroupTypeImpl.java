@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTypeImpl implements ParameterValueGroupType
-{
+public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTypeImpl implements ParameterValueGroupType {
 	/**
 	 * The cached value of the '{@link #getParameterValue() <em>Parameter Value</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ParameterValueGroupTypeImpl()
-	{
+	protected ParameterValueGroupTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getParameterValueGroupType();
 	}
 
@@ -84,10 +81,9 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AbstractGeneralParameterValuePropertyType> getParameterValue()
-	{
-		if (parameterValue == null)
-		{
+	@Override
+	public EList<AbstractGeneralParameterValuePropertyType> getParameterValue() {
+		if (parameterValue == null) {
 			parameterValue = new EObjectContainmentEList<AbstractGeneralParameterValuePropertyType>(AbstractGeneralParameterValuePropertyType.class, this, GMLPackage.PARAMETER_VALUE_GROUP_TYPE__PARAMETER_VALUE);
 		}
 		return parameterValue;
@@ -98,10 +94,9 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getGroupGroup()
-	{
-		if (groupGroup == null)
-		{
+	@Override
+	public FeatureMap getGroupGroup() {
+		if (groupGroup == null) {
 			groupGroup = new BasicFeatureMap(this, GMLPackage.PARAMETER_VALUE_GROUP_TYPE__GROUP_GROUP);
 		}
 		return groupGroup;
@@ -112,8 +107,8 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterGroupPropertyType getGroup()
-	{
+	@Override
+	public OperationParameterGroupPropertyType getGroup() {
 		return (OperationParameterGroupPropertyType)getGroupGroup().get(GMLPackage.eINSTANCE.getParameterValueGroupType_Group(), true);
 	}
 
@@ -122,8 +117,7 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetGroup(OperationParameterGroupPropertyType newGroup, NotificationChain msgs)
-	{
+	public NotificationChain basicSetGroup(OperationParameterGroupPropertyType newGroup, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getGroupGroup()).basicAdd(GMLPackage.eINSTANCE.getParameterValueGroupType_Group(), newGroup, msgs);
 	}
 
@@ -132,8 +126,8 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGroup(OperationParameterGroupPropertyType newGroup)
-	{
+	@Override
+	public void setGroup(OperationParameterGroupPropertyType newGroup) {
 		((FeatureMap.Internal)getGroupGroup()).set(GMLPackage.eINSTANCE.getParameterValueGroupType_Group(), newGroup);
 	}
 
@@ -143,10 +137,8 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE__PARAMETER_VALUE:
 				return ((InternalEList<?>)getParameterValue()).basicRemove(otherEnd, msgs);
 			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE__GROUP_GROUP:
@@ -163,10 +155,8 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE__PARAMETER_VALUE:
 				return getParameterValue();
 			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE__GROUP_GROUP:
@@ -185,10 +175,8 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE__PARAMETER_VALUE:
 				getParameterValue().clear();
 				getParameterValue().addAll((Collection<? extends AbstractGeneralParameterValuePropertyType>)newValue);
@@ -209,10 +197,8 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE__PARAMETER_VALUE:
 				getParameterValue().clear();
 				return;
@@ -232,10 +218,8 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE__PARAMETER_VALUE:
 				return parameterValue != null && !parameterValue.isEmpty();
 			case GMLPackage.PARAMETER_VALUE_GROUP_TYPE__GROUP_GROUP:
@@ -252,11 +236,10 @@ public class ParameterValueGroupTypeImpl extends AbstractGeneralParameterValueTy
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (groupGroup: ");
 		result.append(groupGroup);
 		result.append(')');

@@ -29,8 +29,7 @@ import org.isotc211.iso19139.gco.GCOPackage;
  *
  * @generated
  */
-public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implements DatePropertyType
-{
+public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implements DatePropertyType {
 	/**
 	 * The default value of the '{@link #getDate() <em>Date</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -105,8 +104,7 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DatePropertyTypeImpl()
-	{
+	protected DatePropertyTypeImpl() {
 		super();
 	}
 
@@ -116,8 +114,7 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GCOPackage.Literals.DATE_PROPERTY_TYPE;
 	}
 
@@ -126,8 +123,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getDate()
-	{
+	@Override
+	public XMLGregorianCalendar getDate() {
 		return date;
 	}
 
@@ -136,8 +133,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDate(XMLGregorianCalendar newDate)
-	{
+	@Override
+	public void setDate(XMLGregorianCalendar newDate) {
 		XMLGregorianCalendar oldDate = date;
 		date = newDate;
 		boolean oldDateESet = dateESet;
@@ -151,8 +148,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetDate()
-	{
+	@Override
+	public void unsetDate() {
 		XMLGregorianCalendar oldDate = date;
 		boolean oldDateESet = dateESet;
 		date = DATE_EDEFAULT;
@@ -166,8 +163,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetDate()
-	{
+	@Override
+	public boolean isSetDate() {
 		return dateESet;
 	}
 
@@ -176,8 +173,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLGregorianCalendar getDateTime()
-	{
+	@Override
+	public XMLGregorianCalendar getDateTime() {
 		return dateTime;
 	}
 
@@ -186,8 +183,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDateTime(XMLGregorianCalendar newDateTime)
-	{
+	@Override
+	public void setDateTime(XMLGregorianCalendar newDateTime) {
 		XMLGregorianCalendar oldDateTime = dateTime;
 		dateTime = newDateTime;
 		if (eNotificationRequired())
@@ -199,8 +196,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -209,8 +206,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -223,10 +220,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GCOPackage.DATE_PROPERTY_TYPE__DATE:
 				return getDate();
 			case GCOPackage.DATE_PROPERTY_TYPE__DATE_TIME:
@@ -243,10 +238,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GCOPackage.DATE_PROPERTY_TYPE__DATE:
 				setDate((XMLGregorianCalendar)newValue);
 				return;
@@ -266,10 +259,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GCOPackage.DATE_PROPERTY_TYPE__DATE:
 				unsetDate();
 				return;
@@ -289,10 +280,8 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GCOPackage.DATE_PROPERTY_TYPE__DATE:
 				return isSetDate();
 			case GCOPackage.DATE_PROPERTY_TYPE__DATE_TIME:
@@ -309,11 +298,10 @@ public class DatePropertyTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (date: ");
 		if (dateESet) result.append(date); else result.append("<unset>");
 		result.append(", dateTime: ");

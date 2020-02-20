@@ -27,15 +27,10 @@ import org.isotc211.iso19139.gco.MemberNamePropertyType;
  * @model extendedMetaData="name='MD_RangeDimension_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDRangeDimensionType extends AbstractObjectType
-{
+public interface MDRangeDimensionType extends AbstractObjectType {
 	/**
 	 * Returns the value of the '<em><b>Sequence Identifier</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sequence Identifier</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sequence Identifier</em>' containment reference.
 	 * @see #setSequenceIdentifier(MemberNamePropertyType)
@@ -59,10 +54,6 @@ public interface MDRangeDimensionType extends AbstractObjectType
 	/**
 	 * Returns the value of the '<em><b>Descriptor</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Descriptor</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Descriptor</em>' containment reference.
 	 * @see #setDescriptor(CharacterStringPropertyType)

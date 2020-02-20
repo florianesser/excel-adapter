@@ -27,8 +27,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='TimeIndeterminateValueType'"
  * @generated
  */
-public enum TimeIndeterminateValueType implements Enumerator
-{
+public enum TimeIndeterminateValueType implements Enumerator {
 	/**
 	 * The '<em><b>After</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -72,10 +71,6 @@ public enum TimeIndeterminateValueType implements Enumerator
 	/**
 	 * The '<em><b>After</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>After</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #AFTER
 	 * @model name="after"
@@ -87,10 +82,6 @@ public enum TimeIndeterminateValueType implements Enumerator
 	/**
 	 * The '<em><b>Before</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Before</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #BEFORE
 	 * @model name="before"
@@ -102,10 +93,6 @@ public enum TimeIndeterminateValueType implements Enumerator
 	/**
 	 * The '<em><b>Now</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Now</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NOW
 	 * @model name="now"
@@ -117,10 +104,6 @@ public enum TimeIndeterminateValueType implements Enumerator
 	/**
 	 * The '<em><b>Unknown</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Unknown</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #UNKNOWN
 	 * @model name="unknown"
@@ -136,8 +119,7 @@ public enum TimeIndeterminateValueType implements Enumerator
 	 * @generated
 	 */
 	private static final TimeIndeterminateValueType[] VALUES_ARRAY =
-		new TimeIndeterminateValueType[]
-		{
+		new TimeIndeterminateValueType[] {
 			AFTER,
 			BEFORE,
 			NOW,
@@ -160,13 +142,10 @@ public enum TimeIndeterminateValueType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static TimeIndeterminateValueType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static TimeIndeterminateValueType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			TimeIndeterminateValueType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -181,13 +160,10 @@ public enum TimeIndeterminateValueType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static TimeIndeterminateValueType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static TimeIndeterminateValueType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			TimeIndeterminateValueType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -202,10 +178,8 @@ public enum TimeIndeterminateValueType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static TimeIndeterminateValueType get(int value)
-	{
-		switch (value)
-		{
+	public static TimeIndeterminateValueType get(int value) {
+		switch (value) {
 			case AFTER_VALUE: return AFTER;
 			case BEFORE_VALUE: return BEFORE;
 			case NOW_VALUE: return NOW;
@@ -241,8 +215,7 @@ public enum TimeIndeterminateValueType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private TimeIndeterminateValueType(int value, String name, String literal)
-	{
+	private TimeIndeterminateValueType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -253,8 +226,8 @@ public enum TimeIndeterminateValueType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -263,8 +236,8 @@ public enum TimeIndeterminateValueType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -273,8 +246,8 @@ public enum TimeIndeterminateValueType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -285,8 +258,7 @@ public enum TimeIndeterminateValueType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

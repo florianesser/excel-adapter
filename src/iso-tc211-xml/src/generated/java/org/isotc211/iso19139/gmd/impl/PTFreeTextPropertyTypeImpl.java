@@ -29,8 +29,7 @@ import org.isotc211.iso19139.gmd.PTFreeTextType;
  *
  * @generated
  */
-public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl implements PTFreeTextPropertyType
-{
+public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl implements PTFreeTextPropertyType {
 	/**
 	 * The cached value of the '{@link #getPTFreeText() <em>PT Free Text</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -46,8 +45,7 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PTFreeTextPropertyTypeImpl()
-	{
+	protected PTFreeTextPropertyTypeImpl() {
 		super();
 	}
 
@@ -57,8 +55,7 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getPTFreeTextPropertyType();
 	}
 
@@ -67,8 +64,8 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PTFreeTextType getPTFreeText()
-	{
+	@Override
+	public PTFreeTextType getPTFreeText() {
 		return pTFreeText;
 	}
 
@@ -77,12 +74,10 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPTFreeText(PTFreeTextType newPTFreeText, NotificationChain msgs)
-	{
+	public NotificationChain basicSetPTFreeText(PTFreeTextType newPTFreeText, NotificationChain msgs) {
 		PTFreeTextType oldPTFreeText = pTFreeText;
 		pTFreeText = newPTFreeText;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.PT_FREE_TEXT_PROPERTY_TYPE__PT_FREE_TEXT, oldPTFreeText, newPTFreeText);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -94,10 +89,9 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPTFreeText(PTFreeTextType newPTFreeText)
-	{
-		if (newPTFreeText != pTFreeText)
-		{
+	@Override
+	public void setPTFreeText(PTFreeTextType newPTFreeText) {
+		if (newPTFreeText != pTFreeText) {
 			NotificationChain msgs = null;
 			if (pTFreeText != null)
 				msgs = ((InternalEObject)pTFreeText).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.PT_FREE_TEXT_PROPERTY_TYPE__PT_FREE_TEXT, null, msgs);
@@ -116,10 +110,8 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_PROPERTY_TYPE__PT_FREE_TEXT:
 				return basicSetPTFreeText(null, msgs);
 		}
@@ -132,10 +124,8 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_PROPERTY_TYPE__PT_FREE_TEXT:
 				return getPTFreeText();
 		}
@@ -148,10 +138,8 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_PROPERTY_TYPE__PT_FREE_TEXT:
 				setPTFreeText((PTFreeTextType)newValue);
 				return;
@@ -165,10 +153,8 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_PROPERTY_TYPE__PT_FREE_TEXT:
 				setPTFreeText((PTFreeTextType)null);
 				return;
@@ -182,10 +168,8 @@ public class PTFreeTextPropertyTypeImpl extends CharacterStringPropertyTypeImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.PT_FREE_TEXT_PROPERTY_TYPE__PT_FREE_TEXT:
 				return pTFreeText != null;
 		}

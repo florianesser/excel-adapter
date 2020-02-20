@@ -26,8 +26,7 @@ import org.isotc211.iso19139.gmd.*;
  * @see org.isotc211.iso19139.gmd.GMDPackage
  * @generated
  */
-public class GMDSwitch<T> extends Switch<T>
-{
+public class GMDSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -42,10 +41,8 @@ public class GMDSwitch<T> extends Switch<T>
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GMDSwitch()
-	{
-		if (modelPackage == null)
-		{
+	public GMDSwitch() {
+		if (modelPackage == null) {
 			modelPackage = GMDPackage.eINSTANCE;
 		}
 	}
@@ -59,8 +56,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage)
-	{
+	protected boolean isSwitchFor(EPackage ePackage) {
 		return ePackage == modelPackage;
 	}
 
@@ -72,12 +68,9 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject)
-	{
-		switch (classifierID)
-		{
-			case GMDPackage.ABSTRACT_DQ_COMPLETENESS_TYPE:
-			{
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case GMDPackage.ABSTRACT_DQ_COMPLETENESS_TYPE: {
 				AbstractDQCompletenessType abstractDQCompletenessType = (AbstractDQCompletenessType)theEObject;
 				T result = caseAbstractDQCompletenessType(abstractDQCompletenessType);
 				if (result == null) result = caseAbstractDQElementType(abstractDQCompletenessType);
@@ -85,16 +78,14 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE:
-			{
+			case GMDPackage.ABSTRACT_DQ_ELEMENT_TYPE: {
 				AbstractDQElementType abstractDQElementType = (AbstractDQElementType)theEObject;
 				T result = caseAbstractDQElementType(abstractDQElementType);
 				if (result == null) result = caseAbstractObjectType(abstractDQElementType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_DQ_LOGICAL_CONSISTENCY_TYPE:
-			{
+			case GMDPackage.ABSTRACT_DQ_LOGICAL_CONSISTENCY_TYPE: {
 				AbstractDQLogicalConsistencyType abstractDQLogicalConsistencyType = (AbstractDQLogicalConsistencyType)theEObject;
 				T result = caseAbstractDQLogicalConsistencyType(abstractDQLogicalConsistencyType);
 				if (result == null) result = caseAbstractDQElementType(abstractDQLogicalConsistencyType);
@@ -102,8 +93,7 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_DQ_POSITIONAL_ACCURACY_TYPE:
-			{
+			case GMDPackage.ABSTRACT_DQ_POSITIONAL_ACCURACY_TYPE: {
 				AbstractDQPositionalAccuracyType abstractDQPositionalAccuracyType = (AbstractDQPositionalAccuracyType)theEObject;
 				T result = caseAbstractDQPositionalAccuracyType(abstractDQPositionalAccuracyType);
 				if (result == null) result = caseAbstractDQElementType(abstractDQPositionalAccuracyType);
@@ -111,16 +101,14 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_DQ_RESULT_TYPE:
-			{
+			case GMDPackage.ABSTRACT_DQ_RESULT_TYPE: {
 				AbstractDQResultType abstractDQResultType = (AbstractDQResultType)theEObject;
 				T result = caseAbstractDQResultType(abstractDQResultType);
 				if (result == null) result = caseAbstractObjectType(abstractDQResultType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_DQ_TEMPORAL_ACCURACY_TYPE:
-			{
+			case GMDPackage.ABSTRACT_DQ_TEMPORAL_ACCURACY_TYPE: {
 				AbstractDQTemporalAccuracyType abstractDQTemporalAccuracyType = (AbstractDQTemporalAccuracyType)theEObject;
 				T result = caseAbstractDQTemporalAccuracyType(abstractDQTemporalAccuracyType);
 				if (result == null) result = caseAbstractDQElementType(abstractDQTemporalAccuracyType);
@@ -128,8 +116,7 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_DQ_THEMATIC_ACCURACY_TYPE:
-			{
+			case GMDPackage.ABSTRACT_DQ_THEMATIC_ACCURACY_TYPE: {
 				AbstractDQThematicAccuracyType abstractDQThematicAccuracyType = (AbstractDQThematicAccuracyType)theEObject;
 				T result = caseAbstractDQThematicAccuracyType(abstractDQThematicAccuracyType);
 				if (result == null) result = caseAbstractDQElementType(abstractDQThematicAccuracyType);
@@ -137,218 +124,189 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE:
-			{
+			case GMDPackage.ABSTRACT_DS_AGGREGATE_TYPE: {
 				AbstractDSAggregateType abstractDSAggregateType = (AbstractDSAggregateType)theEObject;
 				T result = caseAbstractDSAggregateType(abstractDSAggregateType);
 				if (result == null) result = caseAbstractObjectType(abstractDSAggregateType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_EX_GEOGRAPHIC_EXTENT_TYPE:
-			{
+			case GMDPackage.ABSTRACT_EX_GEOGRAPHIC_EXTENT_TYPE: {
 				AbstractEXGeographicExtentType abstractEXGeographicExtentType = (AbstractEXGeographicExtentType)theEObject;
 				T result = caseAbstractEXGeographicExtentType(abstractEXGeographicExtentType);
 				if (result == null) result = caseAbstractObjectType(abstractEXGeographicExtentType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_MD_CONTENT_INFORMATION_TYPE:
-			{
+			case GMDPackage.ABSTRACT_MD_CONTENT_INFORMATION_TYPE: {
 				AbstractMDContentInformationType abstractMDContentInformationType = (AbstractMDContentInformationType)theEObject;
 				T result = caseAbstractMDContentInformationType(abstractMDContentInformationType);
 				if (result == null) result = caseAbstractObjectType(abstractMDContentInformationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE:
-			{
+			case GMDPackage.ABSTRACT_MD_IDENTIFICATION_TYPE: {
 				AbstractMDIdentificationType abstractMDIdentificationType = (AbstractMDIdentificationType)theEObject;
 				T result = caseAbstractMDIdentificationType(abstractMDIdentificationType);
 				if (result == null) result = caseAbstractObjectType(abstractMDIdentificationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_MD_SPATIAL_REPRESENTATION_TYPE:
-			{
+			case GMDPackage.ABSTRACT_MD_SPATIAL_REPRESENTATION_TYPE: {
 				AbstractMDSpatialRepresentationType abstractMDSpatialRepresentationType = (AbstractMDSpatialRepresentationType)theEObject;
 				T result = caseAbstractMDSpatialRepresentationType(abstractMDSpatialRepresentationType);
 				if (result == null) result = caseAbstractObjectType(abstractMDSpatialRepresentationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE:
-			{
+			case GMDPackage.ABSTRACT_RS_REFERENCE_SYSTEM_TYPE: {
 				AbstractRSReferenceSystemType abstractRSReferenceSystemType = (AbstractRSReferenceSystemType)theEObject;
 				T result = caseAbstractRSReferenceSystemType(abstractRSReferenceSystemType);
 				if (result == null) result = caseAbstractObjectType(abstractRSReferenceSystemType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_ADDRESS_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_ADDRESS_PROPERTY_TYPE: {
 				CIAddressPropertyType ciAddressPropertyType = (CIAddressPropertyType)theEObject;
 				T result = caseCIAddressPropertyType(ciAddressPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_ADDRESS_TYPE:
-			{
+			case GMDPackage.CI_ADDRESS_TYPE: {
 				CIAddressType ciAddressType = (CIAddressType)theEObject;
 				T result = caseCIAddressType(ciAddressType);
 				if (result == null) result = caseAbstractObjectType(ciAddressType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_CITATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_CITATION_PROPERTY_TYPE: {
 				CICitationPropertyType ciCitationPropertyType = (CICitationPropertyType)theEObject;
 				T result = caseCICitationPropertyType(ciCitationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_CITATION_TYPE:
-			{
+			case GMDPackage.CI_CITATION_TYPE: {
 				CICitationType ciCitationType = (CICitationType)theEObject;
 				T result = caseCICitationType(ciCitationType);
 				if (result == null) result = caseAbstractObjectType(ciCitationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_CONTACT_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_CONTACT_PROPERTY_TYPE: {
 				CIContactPropertyType ciContactPropertyType = (CIContactPropertyType)theEObject;
 				T result = caseCIContactPropertyType(ciContactPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_CONTACT_TYPE:
-			{
+			case GMDPackage.CI_CONTACT_TYPE: {
 				CIContactType ciContactType = (CIContactType)theEObject;
 				T result = caseCIContactType(ciContactType);
 				if (result == null) result = caseAbstractObjectType(ciContactType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_DATE_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_DATE_PROPERTY_TYPE: {
 				CIDatePropertyType ciDatePropertyType = (CIDatePropertyType)theEObject;
 				T result = caseCIDatePropertyType(ciDatePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_DATE_TYPE:
-			{
+			case GMDPackage.CI_DATE_TYPE: {
 				CIDateType ciDateType = (CIDateType)theEObject;
 				T result = caseCIDateType(ciDateType);
 				if (result == null) result = caseAbstractObjectType(ciDateType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_DATE_TYPE_CODE_PROPERTY_TYPE: {
 				CIDateTypeCodePropertyType ciDateTypeCodePropertyType = (CIDateTypeCodePropertyType)theEObject;
 				T result = caseCIDateTypeCodePropertyType(ciDateTypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE: {
 				CIOnLineFunctionCodePropertyType ciOnLineFunctionCodePropertyType = (CIOnLineFunctionCodePropertyType)theEObject;
 				T result = caseCIOnLineFunctionCodePropertyType(ciOnLineFunctionCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_ONLINE_RESOURCE_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_ONLINE_RESOURCE_PROPERTY_TYPE: {
 				CIOnlineResourcePropertyType ciOnlineResourcePropertyType = (CIOnlineResourcePropertyType)theEObject;
 				T result = caseCIOnlineResourcePropertyType(ciOnlineResourcePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_ONLINE_RESOURCE_TYPE:
-			{
+			case GMDPackage.CI_ONLINE_RESOURCE_TYPE: {
 				CIOnlineResourceType ciOnlineResourceType = (CIOnlineResourceType)theEObject;
 				T result = caseCIOnlineResourceType(ciOnlineResourceType);
 				if (result == null) result = caseAbstractObjectType(ciOnlineResourceType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_PRESENTATION_FORM_CODE_PROPERTY_TYPE: {
 				CIPresentationFormCodePropertyType ciPresentationFormCodePropertyType = (CIPresentationFormCodePropertyType)theEObject;
 				T result = caseCIPresentationFormCodePropertyType(ciPresentationFormCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_RESPONSIBLE_PARTY_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_RESPONSIBLE_PARTY_PROPERTY_TYPE: {
 				CIResponsiblePartyPropertyType ciResponsiblePartyPropertyType = (CIResponsiblePartyPropertyType)theEObject;
 				T result = caseCIResponsiblePartyPropertyType(ciResponsiblePartyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE:
-			{
+			case GMDPackage.CI_RESPONSIBLE_PARTY_TYPE: {
 				CIResponsiblePartyType ciResponsiblePartyType = (CIResponsiblePartyType)theEObject;
 				T result = caseCIResponsiblePartyType(ciResponsiblePartyType);
 				if (result == null) result = caseAbstractObjectType(ciResponsiblePartyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_ROLE_CODE_PROPERTY_TYPE: {
 				CIRoleCodePropertyType ciRoleCodePropertyType = (CIRoleCodePropertyType)theEObject;
 				T result = caseCIRoleCodePropertyType(ciRoleCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_SERIES_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_SERIES_PROPERTY_TYPE: {
 				CISeriesPropertyType ciSeriesPropertyType = (CISeriesPropertyType)theEObject;
 				T result = caseCISeriesPropertyType(ciSeriesPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_SERIES_TYPE:
-			{
+			case GMDPackage.CI_SERIES_TYPE: {
 				CISeriesType ciSeriesType = (CISeriesType)theEObject;
 				T result = caseCISeriesType(ciSeriesType);
 				if (result == null) result = caseAbstractObjectType(ciSeriesType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_TELEPHONE_PROPERTY_TYPE:
-			{
+			case GMDPackage.CI_TELEPHONE_PROPERTY_TYPE: {
 				CITelephonePropertyType ciTelephonePropertyType = (CITelephonePropertyType)theEObject;
 				T result = caseCITelephonePropertyType(ciTelephonePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.CI_TELEPHONE_TYPE:
-			{
+			case GMDPackage.CI_TELEPHONE_TYPE: {
 				CITelephoneType ciTelephoneType = (CITelephoneType)theEObject;
 				T result = caseCITelephoneType(ciTelephoneType);
 				if (result == null) result = caseAbstractObjectType(ciTelephoneType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.COUNTRY_PROPERTY_TYPE:
-			{
+			case GMDPackage.COUNTRY_PROPERTY_TYPE: {
 				CountryPropertyType countryPropertyType = (CountryPropertyType)theEObject;
 				T result = caseCountryPropertyType(countryPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_ABSOLUTE_EXTERNAL_POSITIONAL_ACCURACY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_ABSOLUTE_EXTERNAL_POSITIONAL_ACCURACY_PROPERTY_TYPE: {
 				DQAbsoluteExternalPositionalAccuracyPropertyType dqAbsoluteExternalPositionalAccuracyPropertyType = (DQAbsoluteExternalPositionalAccuracyPropertyType)theEObject;
 				T result = caseDQAbsoluteExternalPositionalAccuracyPropertyType(dqAbsoluteExternalPositionalAccuracyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_ABSOLUTE_EXTERNAL_POSITIONAL_ACCURACY_TYPE:
-			{
+			case GMDPackage.DQ_ABSOLUTE_EXTERNAL_POSITIONAL_ACCURACY_TYPE: {
 				DQAbsoluteExternalPositionalAccuracyType dqAbsoluteExternalPositionalAccuracyType = (DQAbsoluteExternalPositionalAccuracyType)theEObject;
 				T result = caseDQAbsoluteExternalPositionalAccuracyType(dqAbsoluteExternalPositionalAccuracyType);
 				if (result == null) result = caseAbstractDQPositionalAccuracyType(dqAbsoluteExternalPositionalAccuracyType);
@@ -357,15 +315,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_ACCURACY_OF_ATIME_MEASUREMENT_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_ACCURACY_OF_ATIME_MEASUREMENT_PROPERTY_TYPE: {
 				DQAccuracyOfATimeMeasurementPropertyType dqAccuracyOfATimeMeasurementPropertyType = (DQAccuracyOfATimeMeasurementPropertyType)theEObject;
 				T result = caseDQAccuracyOfATimeMeasurementPropertyType(dqAccuracyOfATimeMeasurementPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_ACCURACY_OF_ATIME_MEASUREMENT_TYPE:
-			{
+			case GMDPackage.DQ_ACCURACY_OF_ATIME_MEASUREMENT_TYPE: {
 				DQAccuracyOfATimeMeasurementType dqAccuracyOfATimeMeasurementType = (DQAccuracyOfATimeMeasurementType)theEObject;
 				T result = caseDQAccuracyOfATimeMeasurementType(dqAccuracyOfATimeMeasurementType);
 				if (result == null) result = caseAbstractDQTemporalAccuracyType(dqAccuracyOfATimeMeasurementType);
@@ -374,15 +330,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_COMPLETENESS_COMMISSION_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_COMPLETENESS_COMMISSION_PROPERTY_TYPE: {
 				DQCompletenessCommissionPropertyType dqCompletenessCommissionPropertyType = (DQCompletenessCommissionPropertyType)theEObject;
 				T result = caseDQCompletenessCommissionPropertyType(dqCompletenessCommissionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_COMPLETENESS_COMMISSION_TYPE:
-			{
+			case GMDPackage.DQ_COMPLETENESS_COMMISSION_TYPE: {
 				DQCompletenessCommissionType dqCompletenessCommissionType = (DQCompletenessCommissionType)theEObject;
 				T result = caseDQCompletenessCommissionType(dqCompletenessCommissionType);
 				if (result == null) result = caseAbstractDQCompletenessType(dqCompletenessCommissionType);
@@ -391,15 +345,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_COMPLETENESS_OMISSION_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_COMPLETENESS_OMISSION_PROPERTY_TYPE: {
 				DQCompletenessOmissionPropertyType dqCompletenessOmissionPropertyType = (DQCompletenessOmissionPropertyType)theEObject;
 				T result = caseDQCompletenessOmissionPropertyType(dqCompletenessOmissionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_COMPLETENESS_OMISSION_TYPE:
-			{
+			case GMDPackage.DQ_COMPLETENESS_OMISSION_TYPE: {
 				DQCompletenessOmissionType dqCompletenessOmissionType = (DQCompletenessOmissionType)theEObject;
 				T result = caseDQCompletenessOmissionType(dqCompletenessOmissionType);
 				if (result == null) result = caseAbstractDQCompletenessType(dqCompletenessOmissionType);
@@ -408,22 +360,19 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_COMPLETENESS_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_COMPLETENESS_PROPERTY_TYPE: {
 				DQCompletenessPropertyType dqCompletenessPropertyType = (DQCompletenessPropertyType)theEObject;
 				T result = caseDQCompletenessPropertyType(dqCompletenessPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_CONCEPTUAL_CONSISTENCY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_CONCEPTUAL_CONSISTENCY_PROPERTY_TYPE: {
 				DQConceptualConsistencyPropertyType dqConceptualConsistencyPropertyType = (DQConceptualConsistencyPropertyType)theEObject;
 				T result = caseDQConceptualConsistencyPropertyType(dqConceptualConsistencyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_CONCEPTUAL_CONSISTENCY_TYPE:
-			{
+			case GMDPackage.DQ_CONCEPTUAL_CONSISTENCY_TYPE: {
 				DQConceptualConsistencyType dqConceptualConsistencyType = (DQConceptualConsistencyType)theEObject;
 				T result = caseDQConceptualConsistencyType(dqConceptualConsistencyType);
 				if (result == null) result = caseAbstractDQLogicalConsistencyType(dqConceptualConsistencyType);
@@ -432,15 +381,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_CONFORMANCE_RESULT_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_CONFORMANCE_RESULT_PROPERTY_TYPE: {
 				DQConformanceResultPropertyType dqConformanceResultPropertyType = (DQConformanceResultPropertyType)theEObject;
 				T result = caseDQConformanceResultPropertyType(dqConformanceResultPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE:
-			{
+			case GMDPackage.DQ_CONFORMANCE_RESULT_TYPE: {
 				DQConformanceResultType dqConformanceResultType = (DQConformanceResultType)theEObject;
 				T result = caseDQConformanceResultType(dqConformanceResultType);
 				if (result == null) result = caseAbstractDQResultType(dqConformanceResultType);
@@ -448,30 +395,26 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_DATA_QUALITY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_DATA_QUALITY_PROPERTY_TYPE: {
 				DQDataQualityPropertyType dqDataQualityPropertyType = (DQDataQualityPropertyType)theEObject;
 				T result = caseDQDataQualityPropertyType(dqDataQualityPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_DATA_QUALITY_TYPE:
-			{
+			case GMDPackage.DQ_DATA_QUALITY_TYPE: {
 				DQDataQualityType dqDataQualityType = (DQDataQualityType)theEObject;
 				T result = caseDQDataQualityType(dqDataQualityType);
 				if (result == null) result = caseAbstractObjectType(dqDataQualityType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_DOMAIN_CONSISTENCY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_DOMAIN_CONSISTENCY_PROPERTY_TYPE: {
 				DQDomainConsistencyPropertyType dqDomainConsistencyPropertyType = (DQDomainConsistencyPropertyType)theEObject;
 				T result = caseDQDomainConsistencyPropertyType(dqDomainConsistencyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_DOMAIN_CONSISTENCY_TYPE:
-			{
+			case GMDPackage.DQ_DOMAIN_CONSISTENCY_TYPE: {
 				DQDomainConsistencyType dqDomainConsistencyType = (DQDomainConsistencyType)theEObject;
 				T result = caseDQDomainConsistencyType(dqDomainConsistencyType);
 				if (result == null) result = caseAbstractDQLogicalConsistencyType(dqDomainConsistencyType);
@@ -480,29 +423,25 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_ELEMENT_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_ELEMENT_PROPERTY_TYPE: {
 				DQElementPropertyType dqElementPropertyType = (DQElementPropertyType)theEObject;
 				T result = caseDQElementPropertyType(dqElementPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_EVALUATION_METHOD_TYPE_CODE_PROPERTY_TYPE: {
 				DQEvaluationMethodTypeCodePropertyType dqEvaluationMethodTypeCodePropertyType = (DQEvaluationMethodTypeCodePropertyType)theEObject;
 				T result = caseDQEvaluationMethodTypeCodePropertyType(dqEvaluationMethodTypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_FORMAT_CONSISTENCY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_FORMAT_CONSISTENCY_PROPERTY_TYPE: {
 				DQFormatConsistencyPropertyType dqFormatConsistencyPropertyType = (DQFormatConsistencyPropertyType)theEObject;
 				T result = caseDQFormatConsistencyPropertyType(dqFormatConsistencyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_FORMAT_CONSISTENCY_TYPE:
-			{
+			case GMDPackage.DQ_FORMAT_CONSISTENCY_TYPE: {
 				DQFormatConsistencyType dqFormatConsistencyType = (DQFormatConsistencyType)theEObject;
 				T result = caseDQFormatConsistencyType(dqFormatConsistencyType);
 				if (result == null) result = caseAbstractDQLogicalConsistencyType(dqFormatConsistencyType);
@@ -511,15 +450,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_GRIDDED_DATA_POSITIONAL_ACCURACY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_GRIDDED_DATA_POSITIONAL_ACCURACY_PROPERTY_TYPE: {
 				DQGriddedDataPositionalAccuracyPropertyType dqGriddedDataPositionalAccuracyPropertyType = (DQGriddedDataPositionalAccuracyPropertyType)theEObject;
 				T result = caseDQGriddedDataPositionalAccuracyPropertyType(dqGriddedDataPositionalAccuracyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_GRIDDED_DATA_POSITIONAL_ACCURACY_TYPE:
-			{
+			case GMDPackage.DQ_GRIDDED_DATA_POSITIONAL_ACCURACY_TYPE: {
 				DQGriddedDataPositionalAccuracyType dqGriddedDataPositionalAccuracyType = (DQGriddedDataPositionalAccuracyType)theEObject;
 				T result = caseDQGriddedDataPositionalAccuracyType(dqGriddedDataPositionalAccuracyType);
 				if (result == null) result = caseAbstractDQPositionalAccuracyType(dqGriddedDataPositionalAccuracyType);
@@ -528,22 +465,19 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_LOGICAL_CONSISTENCY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_LOGICAL_CONSISTENCY_PROPERTY_TYPE: {
 				DQLogicalConsistencyPropertyType dqLogicalConsistencyPropertyType = (DQLogicalConsistencyPropertyType)theEObject;
 				T result = caseDQLogicalConsistencyPropertyType(dqLogicalConsistencyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_NON_QUANTITATIVE_ATTRIBUTE_ACCURACY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_NON_QUANTITATIVE_ATTRIBUTE_ACCURACY_PROPERTY_TYPE: {
 				DQNonQuantitativeAttributeAccuracyPropertyType dqNonQuantitativeAttributeAccuracyPropertyType = (DQNonQuantitativeAttributeAccuracyPropertyType)theEObject;
 				T result = caseDQNonQuantitativeAttributeAccuracyPropertyType(dqNonQuantitativeAttributeAccuracyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_NON_QUANTITATIVE_ATTRIBUTE_ACCURACY_TYPE:
-			{
+			case GMDPackage.DQ_NON_QUANTITATIVE_ATTRIBUTE_ACCURACY_TYPE: {
 				DQNonQuantitativeAttributeAccuracyType dqNonQuantitativeAttributeAccuracyType = (DQNonQuantitativeAttributeAccuracyType)theEObject;
 				T result = caseDQNonQuantitativeAttributeAccuracyType(dqNonQuantitativeAttributeAccuracyType);
 				if (result == null) result = caseAbstractDQThematicAccuracyType(dqNonQuantitativeAttributeAccuracyType);
@@ -552,22 +486,19 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_POSITIONAL_ACCURACY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_POSITIONAL_ACCURACY_PROPERTY_TYPE: {
 				DQPositionalAccuracyPropertyType dqPositionalAccuracyPropertyType = (DQPositionalAccuracyPropertyType)theEObject;
 				T result = caseDQPositionalAccuracyPropertyType(dqPositionalAccuracyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_QUANTITATIVE_ATTRIBUTE_ACCURACY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_QUANTITATIVE_ATTRIBUTE_ACCURACY_PROPERTY_TYPE: {
 				DQQuantitativeAttributeAccuracyPropertyType dqQuantitativeAttributeAccuracyPropertyType = (DQQuantitativeAttributeAccuracyPropertyType)theEObject;
 				T result = caseDQQuantitativeAttributeAccuracyPropertyType(dqQuantitativeAttributeAccuracyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_QUANTITATIVE_ATTRIBUTE_ACCURACY_TYPE:
-			{
+			case GMDPackage.DQ_QUANTITATIVE_ATTRIBUTE_ACCURACY_TYPE: {
 				DQQuantitativeAttributeAccuracyType dqQuantitativeAttributeAccuracyType = (DQQuantitativeAttributeAccuracyType)theEObject;
 				T result = caseDQQuantitativeAttributeAccuracyType(dqQuantitativeAttributeAccuracyType);
 				if (result == null) result = caseAbstractDQThematicAccuracyType(dqQuantitativeAttributeAccuracyType);
@@ -576,15 +507,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_QUANTITATIVE_RESULT_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_QUANTITATIVE_RESULT_PROPERTY_TYPE: {
 				DQQuantitativeResultPropertyType dqQuantitativeResultPropertyType = (DQQuantitativeResultPropertyType)theEObject;
 				T result = caseDQQuantitativeResultPropertyType(dqQuantitativeResultPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE:
-			{
+			case GMDPackage.DQ_QUANTITATIVE_RESULT_TYPE: {
 				DQQuantitativeResultType dqQuantitativeResultType = (DQQuantitativeResultType)theEObject;
 				T result = caseDQQuantitativeResultType(dqQuantitativeResultType);
 				if (result == null) result = caseAbstractDQResultType(dqQuantitativeResultType);
@@ -592,15 +521,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_RELATIVE_INTERNAL_POSITIONAL_ACCURACY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_RELATIVE_INTERNAL_POSITIONAL_ACCURACY_PROPERTY_TYPE: {
 				DQRelativeInternalPositionalAccuracyPropertyType dqRelativeInternalPositionalAccuracyPropertyType = (DQRelativeInternalPositionalAccuracyPropertyType)theEObject;
 				T result = caseDQRelativeInternalPositionalAccuracyPropertyType(dqRelativeInternalPositionalAccuracyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_RELATIVE_INTERNAL_POSITIONAL_ACCURACY_TYPE:
-			{
+			case GMDPackage.DQ_RELATIVE_INTERNAL_POSITIONAL_ACCURACY_TYPE: {
 				DQRelativeInternalPositionalAccuracyType dqRelativeInternalPositionalAccuracyType = (DQRelativeInternalPositionalAccuracyType)theEObject;
 				T result = caseDQRelativeInternalPositionalAccuracyType(dqRelativeInternalPositionalAccuracyType);
 				if (result == null) result = caseAbstractDQPositionalAccuracyType(dqRelativeInternalPositionalAccuracyType);
@@ -609,44 +536,38 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_RESULT_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_RESULT_PROPERTY_TYPE: {
 				DQResultPropertyType dqResultPropertyType = (DQResultPropertyType)theEObject;
 				T result = caseDQResultPropertyType(dqResultPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_SCOPE_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_SCOPE_PROPERTY_TYPE: {
 				DQScopePropertyType dqScopePropertyType = (DQScopePropertyType)theEObject;
 				T result = caseDQScopePropertyType(dqScopePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_SCOPE_TYPE:
-			{
+			case GMDPackage.DQ_SCOPE_TYPE: {
 				DQScopeType dqScopeType = (DQScopeType)theEObject;
 				T result = caseDQScopeType(dqScopeType);
 				if (result == null) result = caseAbstractObjectType(dqScopeType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_TEMPORAL_ACCURACY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_TEMPORAL_ACCURACY_PROPERTY_TYPE: {
 				DQTemporalAccuracyPropertyType dqTemporalAccuracyPropertyType = (DQTemporalAccuracyPropertyType)theEObject;
 				T result = caseDQTemporalAccuracyPropertyType(dqTemporalAccuracyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_TEMPORAL_CONSISTENCY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_TEMPORAL_CONSISTENCY_PROPERTY_TYPE: {
 				DQTemporalConsistencyPropertyType dqTemporalConsistencyPropertyType = (DQTemporalConsistencyPropertyType)theEObject;
 				T result = caseDQTemporalConsistencyPropertyType(dqTemporalConsistencyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_TEMPORAL_CONSISTENCY_TYPE:
-			{
+			case GMDPackage.DQ_TEMPORAL_CONSISTENCY_TYPE: {
 				DQTemporalConsistencyType dqTemporalConsistencyType = (DQTemporalConsistencyType)theEObject;
 				T result = caseDQTemporalConsistencyType(dqTemporalConsistencyType);
 				if (result == null) result = caseAbstractDQTemporalAccuracyType(dqTemporalConsistencyType);
@@ -655,15 +576,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_TEMPORAL_VALIDITY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_TEMPORAL_VALIDITY_PROPERTY_TYPE: {
 				DQTemporalValidityPropertyType dqTemporalValidityPropertyType = (DQTemporalValidityPropertyType)theEObject;
 				T result = caseDQTemporalValidityPropertyType(dqTemporalValidityPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_TEMPORAL_VALIDITY_TYPE:
-			{
+			case GMDPackage.DQ_TEMPORAL_VALIDITY_TYPE: {
 				DQTemporalValidityType dqTemporalValidityType = (DQTemporalValidityType)theEObject;
 				T result = caseDQTemporalValidityType(dqTemporalValidityType);
 				if (result == null) result = caseAbstractDQTemporalAccuracyType(dqTemporalValidityType);
@@ -672,22 +591,19 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_THEMATIC_ACCURACY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_THEMATIC_ACCURACY_PROPERTY_TYPE: {
 				DQThematicAccuracyPropertyType dqThematicAccuracyPropertyType = (DQThematicAccuracyPropertyType)theEObject;
 				T result = caseDQThematicAccuracyPropertyType(dqThematicAccuracyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_THEMATIC_CLASSIFICATION_CORRECTNESS_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_THEMATIC_CLASSIFICATION_CORRECTNESS_PROPERTY_TYPE: {
 				DQThematicClassificationCorrectnessPropertyType dqThematicClassificationCorrectnessPropertyType = (DQThematicClassificationCorrectnessPropertyType)theEObject;
 				T result = caseDQThematicClassificationCorrectnessPropertyType(dqThematicClassificationCorrectnessPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_THEMATIC_CLASSIFICATION_CORRECTNESS_TYPE:
-			{
+			case GMDPackage.DQ_THEMATIC_CLASSIFICATION_CORRECTNESS_TYPE: {
 				DQThematicClassificationCorrectnessType dqThematicClassificationCorrectnessType = (DQThematicClassificationCorrectnessType)theEObject;
 				T result = caseDQThematicClassificationCorrectnessType(dqThematicClassificationCorrectnessType);
 				if (result == null) result = caseAbstractDQThematicAccuracyType(dqThematicClassificationCorrectnessType);
@@ -696,15 +612,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_TOPOLOGICAL_CONSISTENCY_PROPERTY_TYPE:
-			{
+			case GMDPackage.DQ_TOPOLOGICAL_CONSISTENCY_PROPERTY_TYPE: {
 				DQTopologicalConsistencyPropertyType dqTopologicalConsistencyPropertyType = (DQTopologicalConsistencyPropertyType)theEObject;
 				T result = caseDQTopologicalConsistencyPropertyType(dqTopologicalConsistencyPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DQ_TOPOLOGICAL_CONSISTENCY_TYPE:
-			{
+			case GMDPackage.DQ_TOPOLOGICAL_CONSISTENCY_TYPE: {
 				DQTopologicalConsistencyType dqTopologicalConsistencyType = (DQTopologicalConsistencyType)theEObject;
 				T result = caseDQTopologicalConsistencyType(dqTopologicalConsistencyType);
 				if (result == null) result = caseAbstractDQLogicalConsistencyType(dqTopologicalConsistencyType);
@@ -713,59 +627,51 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_AGGREGATE_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_AGGREGATE_PROPERTY_TYPE: {
 				DSAggregatePropertyType dsAggregatePropertyType = (DSAggregatePropertyType)theEObject;
 				T result = caseDSAggregatePropertyType(dsAggregatePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_ASSOCIATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_ASSOCIATION_PROPERTY_TYPE: {
 				DSAssociationPropertyType dsAssociationPropertyType = (DSAssociationPropertyType)theEObject;
 				T result = caseDSAssociationPropertyType(dsAssociationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_ASSOCIATION_TYPE:
-			{
+			case GMDPackage.DS_ASSOCIATION_TYPE: {
 				DSAssociationType dsAssociationType = (DSAssociationType)theEObject;
 				T result = caseDSAssociationType(dsAssociationType);
 				if (result == null) result = caseAbstractObjectType(dsAssociationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_ASSOCIATION_TYPE_CODE_PROPERTY_TYPE: {
 				DSAssociationTypeCodePropertyType dsAssociationTypeCodePropertyType = (DSAssociationTypeCodePropertyType)theEObject;
 				T result = caseDSAssociationTypeCodePropertyType(dsAssociationTypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_DATA_SET_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_DATA_SET_PROPERTY_TYPE: {
 				DSDataSetPropertyType dsDataSetPropertyType = (DSDataSetPropertyType)theEObject;
 				T result = caseDSDataSetPropertyType(dsDataSetPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_DATA_SET_TYPE:
-			{
+			case GMDPackage.DS_DATA_SET_TYPE: {
 				DSDataSetType dsDataSetType = (DSDataSetType)theEObject;
 				T result = caseDSDataSetType(dsDataSetType);
 				if (result == null) result = caseAbstractObjectType(dsDataSetType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_INITIATIVE_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_INITIATIVE_PROPERTY_TYPE: {
 				DSInitiativePropertyType dsInitiativePropertyType = (DSInitiativePropertyType)theEObject;
 				T result = caseDSInitiativePropertyType(dsInitiativePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_INITIATIVE_TYPE:
-			{
+			case GMDPackage.DS_INITIATIVE_TYPE: {
 				DSInitiativeType dsInitiativeType = (DSInitiativeType)theEObject;
 				T result = caseDSInitiativeType(dsInitiativeType);
 				if (result == null) result = caseAbstractDSAggregateType(dsInitiativeType);
@@ -773,22 +679,19 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_INITIATIVE_TYPE_CODE_PROPERTY_TYPE: {
 				DSInitiativeTypeCodePropertyType dsInitiativeTypeCodePropertyType = (DSInitiativeTypeCodePropertyType)theEObject;
 				T result = caseDSInitiativeTypeCodePropertyType(dsInitiativeTypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_OTHER_AGGREGATE_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_OTHER_AGGREGATE_PROPERTY_TYPE: {
 				DSOtherAggregatePropertyType dsOtherAggregatePropertyType = (DSOtherAggregatePropertyType)theEObject;
 				T result = caseDSOtherAggregatePropertyType(dsOtherAggregatePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_OTHER_AGGREGATE_TYPE:
-			{
+			case GMDPackage.DS_OTHER_AGGREGATE_TYPE: {
 				DSOtherAggregateType dsOtherAggregateType = (DSOtherAggregateType)theEObject;
 				T result = caseDSOtherAggregateType(dsOtherAggregateType);
 				if (result == null) result = caseAbstractDSAggregateType(dsOtherAggregateType);
@@ -796,15 +699,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_PLATFORM_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_PLATFORM_PROPERTY_TYPE: {
 				DSPlatformPropertyType dsPlatformPropertyType = (DSPlatformPropertyType)theEObject;
 				T result = caseDSPlatformPropertyType(dsPlatformPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_PLATFORM_TYPE:
-			{
+			case GMDPackage.DS_PLATFORM_TYPE: {
 				DSPlatformType dsPlatformType = (DSPlatformType)theEObject;
 				T result = caseDSPlatformType(dsPlatformType);
 				if (result == null) result = caseDSSeriesType(dsPlatformType);
@@ -813,15 +714,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_PRODUCTION_SERIES_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_PRODUCTION_SERIES_PROPERTY_TYPE: {
 				DSProductionSeriesPropertyType dsProductionSeriesPropertyType = (DSProductionSeriesPropertyType)theEObject;
 				T result = caseDSProductionSeriesPropertyType(dsProductionSeriesPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_PRODUCTION_SERIES_TYPE:
-			{
+			case GMDPackage.DS_PRODUCTION_SERIES_TYPE: {
 				DSProductionSeriesType dsProductionSeriesType = (DSProductionSeriesType)theEObject;
 				T result = caseDSProductionSeriesType(dsProductionSeriesType);
 				if (result == null) result = caseDSSeriesType(dsProductionSeriesType);
@@ -830,15 +729,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_SENSOR_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_SENSOR_PROPERTY_TYPE: {
 				DSSensorPropertyType dsSensorPropertyType = (DSSensorPropertyType)theEObject;
 				T result = caseDSSensorPropertyType(dsSensorPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_SENSOR_TYPE:
-			{
+			case GMDPackage.DS_SENSOR_TYPE: {
 				DSSensorType dsSensorType = (DSSensorType)theEObject;
 				T result = caseDSSensorType(dsSensorType);
 				if (result == null) result = caseDSSeriesType(dsSensorType);
@@ -847,15 +744,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_SERIES_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_SERIES_PROPERTY_TYPE: {
 				DSSeriesPropertyType dsSeriesPropertyType = (DSSeriesPropertyType)theEObject;
 				T result = caseDSSeriesPropertyType(dsSeriesPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_SERIES_TYPE:
-			{
+			case GMDPackage.DS_SERIES_TYPE: {
 				DSSeriesType dsSeriesType = (DSSeriesType)theEObject;
 				T result = caseDSSeriesType(dsSeriesType);
 				if (result == null) result = caseAbstractDSAggregateType(dsSeriesType);
@@ -863,15 +758,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_STEREO_MATE_PROPERTY_TYPE:
-			{
+			case GMDPackage.DS_STEREO_MATE_PROPERTY_TYPE: {
 				DSStereoMatePropertyType dsStereoMatePropertyType = (DSStereoMatePropertyType)theEObject;
 				T result = caseDSStereoMatePropertyType(dsStereoMatePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DS_STEREO_MATE_TYPE:
-			{
+			case GMDPackage.DS_STEREO_MATE_TYPE: {
 				DSStereoMateType dsStereoMateType = (DSStereoMateType)theEObject;
 				T result = caseDSStereoMateType(dsStereoMateType);
 				if (result == null) result = caseDSOtherAggregateType(dsStereoMateType);
@@ -880,15 +773,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_BOUNDING_POLYGON_PROPERTY_TYPE:
-			{
+			case GMDPackage.EX_BOUNDING_POLYGON_PROPERTY_TYPE: {
 				EXBoundingPolygonPropertyType exBoundingPolygonPropertyType = (EXBoundingPolygonPropertyType)theEObject;
 				T result = caseEXBoundingPolygonPropertyType(exBoundingPolygonPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_BOUNDING_POLYGON_TYPE:
-			{
+			case GMDPackage.EX_BOUNDING_POLYGON_TYPE: {
 				EXBoundingPolygonType exBoundingPolygonType = (EXBoundingPolygonType)theEObject;
 				T result = caseEXBoundingPolygonType(exBoundingPolygonType);
 				if (result == null) result = caseAbstractEXGeographicExtentType(exBoundingPolygonType);
@@ -896,30 +787,26 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_EXTENT_PROPERTY_TYPE:
-			{
+			case GMDPackage.EX_EXTENT_PROPERTY_TYPE: {
 				EXExtentPropertyType exExtentPropertyType = (EXExtentPropertyType)theEObject;
 				T result = caseEXExtentPropertyType(exExtentPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_EXTENT_TYPE:
-			{
+			case GMDPackage.EX_EXTENT_TYPE: {
 				EXExtentType exExtentType = (EXExtentType)theEObject;
 				T result = caseEXExtentType(exExtentType);
 				if (result == null) result = caseAbstractObjectType(exExtentType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_PROPERTY_TYPE:
-			{
+			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_PROPERTY_TYPE: {
 				EXGeographicBoundingBoxPropertyType exGeographicBoundingBoxPropertyType = (EXGeographicBoundingBoxPropertyType)theEObject;
 				T result = caseEXGeographicBoundingBoxPropertyType(exGeographicBoundingBoxPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE:
-			{
+			case GMDPackage.EX_GEOGRAPHIC_BOUNDING_BOX_TYPE: {
 				EXGeographicBoundingBoxType exGeographicBoundingBoxType = (EXGeographicBoundingBoxType)theEObject;
 				T result = caseEXGeographicBoundingBoxType(exGeographicBoundingBoxType);
 				if (result == null) result = caseAbstractEXGeographicExtentType(exGeographicBoundingBoxType);
@@ -927,15 +814,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_PROPERTY_TYPE:
-			{
+			case GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_PROPERTY_TYPE: {
 				EXGeographicDescriptionPropertyType exGeographicDescriptionPropertyType = (EXGeographicDescriptionPropertyType)theEObject;
 				T result = caseEXGeographicDescriptionPropertyType(exGeographicDescriptionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_TYPE:
-			{
+			case GMDPackage.EX_GEOGRAPHIC_DESCRIPTION_TYPE: {
 				EXGeographicDescriptionType exGeographicDescriptionType = (EXGeographicDescriptionType)theEObject;
 				T result = caseEXGeographicDescriptionType(exGeographicDescriptionType);
 				if (result == null) result = caseAbstractEXGeographicExtentType(exGeographicDescriptionType);
@@ -943,22 +828,19 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_GEOGRAPHIC_EXTENT_PROPERTY_TYPE:
-			{
+			case GMDPackage.EX_GEOGRAPHIC_EXTENT_PROPERTY_TYPE: {
 				EXGeographicExtentPropertyType exGeographicExtentPropertyType = (EXGeographicExtentPropertyType)theEObject;
 				T result = caseEXGeographicExtentPropertyType(exGeographicExtentPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_PROPERTY_TYPE:
-			{
+			case GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_PROPERTY_TYPE: {
 				EXSpatialTemporalExtentPropertyType exSpatialTemporalExtentPropertyType = (EXSpatialTemporalExtentPropertyType)theEObject;
 				T result = caseEXSpatialTemporalExtentPropertyType(exSpatialTemporalExtentPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_TYPE:
-			{
+			case GMDPackage.EX_SPATIAL_TEMPORAL_EXTENT_TYPE: {
 				EXSpatialTemporalExtentType exSpatialTemporalExtentType = (EXSpatialTemporalExtentType)theEObject;
 				T result = caseEXSpatialTemporalExtentType(exSpatialTemporalExtentType);
 				if (result == null) result = caseEXTemporalExtentType(exSpatialTemporalExtentType);
@@ -966,142 +848,123 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_TEMPORAL_EXTENT_PROPERTY_TYPE:
-			{
+			case GMDPackage.EX_TEMPORAL_EXTENT_PROPERTY_TYPE: {
 				EXTemporalExtentPropertyType exTemporalExtentPropertyType = (EXTemporalExtentPropertyType)theEObject;
 				T result = caseEXTemporalExtentPropertyType(exTemporalExtentPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_TEMPORAL_EXTENT_TYPE:
-			{
+			case GMDPackage.EX_TEMPORAL_EXTENT_TYPE: {
 				EXTemporalExtentType exTemporalExtentType = (EXTemporalExtentType)theEObject;
 				T result = caseEXTemporalExtentType(exTemporalExtentType);
 				if (result == null) result = caseAbstractObjectType(exTemporalExtentType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_VERTICAL_EXTENT_PROPERTY_TYPE:
-			{
+			case GMDPackage.EX_VERTICAL_EXTENT_PROPERTY_TYPE: {
 				EXVerticalExtentPropertyType exVerticalExtentPropertyType = (EXVerticalExtentPropertyType)theEObject;
 				T result = caseEXVerticalExtentPropertyType(exVerticalExtentPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.EX_VERTICAL_EXTENT_TYPE:
-			{
+			case GMDPackage.EX_VERTICAL_EXTENT_TYPE: {
 				EXVerticalExtentType exVerticalExtentType = (EXVerticalExtentType)theEObject;
 				T result = caseEXVerticalExtentType(exVerticalExtentType);
 				if (result == null) result = caseAbstractObjectType(exVerticalExtentType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.LANGUAGE_CODE_PROPERTY_TYPE: {
 				LanguageCodePropertyType languageCodePropertyType = (LanguageCodePropertyType)theEObject;
 				T result = caseLanguageCodePropertyType(languageCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.LI_LINEAGE_PROPERTY_TYPE:
-			{
+			case GMDPackage.LI_LINEAGE_PROPERTY_TYPE: {
 				LILineagePropertyType liLineagePropertyType = (LILineagePropertyType)theEObject;
 				T result = caseLILineagePropertyType(liLineagePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.LI_LINEAGE_TYPE:
-			{
+			case GMDPackage.LI_LINEAGE_TYPE: {
 				LILineageType liLineageType = (LILineageType)theEObject;
 				T result = caseLILineageType(liLineageType);
 				if (result == null) result = caseAbstractObjectType(liLineageType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.LI_PROCESS_STEP_PROPERTY_TYPE:
-			{
+			case GMDPackage.LI_PROCESS_STEP_PROPERTY_TYPE: {
 				LIProcessStepPropertyType liProcessStepPropertyType = (LIProcessStepPropertyType)theEObject;
 				T result = caseLIProcessStepPropertyType(liProcessStepPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.LI_PROCESS_STEP_TYPE:
-			{
+			case GMDPackage.LI_PROCESS_STEP_TYPE: {
 				LIProcessStepType liProcessStepType = (LIProcessStepType)theEObject;
 				T result = caseLIProcessStepType(liProcessStepType);
 				if (result == null) result = caseAbstractObjectType(liProcessStepType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.LI_SOURCE_PROPERTY_TYPE:
-			{
+			case GMDPackage.LI_SOURCE_PROPERTY_TYPE: {
 				LISourcePropertyType liSourcePropertyType = (LISourcePropertyType)theEObject;
 				T result = caseLISourcePropertyType(liSourcePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.LI_SOURCE_TYPE:
-			{
+			case GMDPackage.LI_SOURCE_TYPE: {
 				LISourceType liSourceType = (LISourceType)theEObject;
 				T result = caseLISourceType(liSourceType);
 				if (result == null) result = caseAbstractObjectType(liSourceType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.LOCALISED_CHARACTER_STRING_PROPERTY_TYPE:
-			{
+			case GMDPackage.LOCALISED_CHARACTER_STRING_PROPERTY_TYPE: {
 				LocalisedCharacterStringPropertyType localisedCharacterStringPropertyType = (LocalisedCharacterStringPropertyType)theEObject;
 				T result = caseLocalisedCharacterStringPropertyType(localisedCharacterStringPropertyType);
 				if (result == null) result = caseObjectReferencePropertyType(localisedCharacterStringPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.LOCALISED_CHARACTER_STRING_TYPE:
-			{
+			case GMDPackage.LOCALISED_CHARACTER_STRING_TYPE: {
 				LocalisedCharacterStringType localisedCharacterStringType = (LocalisedCharacterStringType)theEObject;
 				T result = caseLocalisedCharacterStringType(localisedCharacterStringType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_AGGREGATE_INFORMATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_AGGREGATE_INFORMATION_PROPERTY_TYPE: {
 				MDAggregateInformationPropertyType mdAggregateInformationPropertyType = (MDAggregateInformationPropertyType)theEObject;
 				T result = caseMDAggregateInformationPropertyType(mdAggregateInformationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE:
-			{
+			case GMDPackage.MD_AGGREGATE_INFORMATION_TYPE: {
 				MDAggregateInformationType mdAggregateInformationType = (MDAggregateInformationType)theEObject;
 				T result = caseMDAggregateInformationType(mdAggregateInformationType);
 				if (result == null) result = caseAbstractObjectType(mdAggregateInformationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_PROPERTY_TYPE: {
 				MDApplicationSchemaInformationPropertyType mdApplicationSchemaInformationPropertyType = (MDApplicationSchemaInformationPropertyType)theEObject;
 				T result = caseMDApplicationSchemaInformationPropertyType(mdApplicationSchemaInformationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE:
-			{
+			case GMDPackage.MD_APPLICATION_SCHEMA_INFORMATION_TYPE: {
 				MDApplicationSchemaInformationType mdApplicationSchemaInformationType = (MDApplicationSchemaInformationType)theEObject;
 				T result = caseMDApplicationSchemaInformationType(mdApplicationSchemaInformationType);
 				if (result == null) result = caseAbstractObjectType(mdApplicationSchemaInformationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_BAND_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_BAND_PROPERTY_TYPE: {
 				MDBandPropertyType mdBandPropertyType = (MDBandPropertyType)theEObject;
 				T result = caseMDBandPropertyType(mdBandPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_BAND_TYPE:
-			{
+			case GMDPackage.MD_BAND_TYPE: {
 				MDBandType mdBandType = (MDBandType)theEObject;
 				T result = caseMDBandType(mdBandType);
 				if (result == null) result = caseMDRangeDimensionType(mdBandType);
@@ -1109,80 +972,69 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_BROWSE_GRAPHIC_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_BROWSE_GRAPHIC_PROPERTY_TYPE: {
 				MDBrowseGraphicPropertyType mdBrowseGraphicPropertyType = (MDBrowseGraphicPropertyType)theEObject;
 				T result = caseMDBrowseGraphicPropertyType(mdBrowseGraphicPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE:
-			{
+			case GMDPackage.MD_BROWSE_GRAPHIC_TYPE: {
 				MDBrowseGraphicType mdBrowseGraphicType = (MDBrowseGraphicType)theEObject;
 				T result = caseMDBrowseGraphicType(mdBrowseGraphicType);
 				if (result == null) result = caseAbstractObjectType(mdBrowseGraphicType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_CELL_GEOMETRY_CODE_PROPERTY_TYPE: {
 				MDCellGeometryCodePropertyType mdCellGeometryCodePropertyType = (MDCellGeometryCodePropertyType)theEObject;
 				T result = caseMDCellGeometryCodePropertyType(mdCellGeometryCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_CHARACTER_SET_CODE_PROPERTY_TYPE: {
 				MDCharacterSetCodePropertyType mdCharacterSetCodePropertyType = (MDCharacterSetCodePropertyType)theEObject;
 				T result = caseMDCharacterSetCodePropertyType(mdCharacterSetCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_CLASSIFICATION_CODE_PROPERTY_TYPE: {
 				MDClassificationCodePropertyType mdClassificationCodePropertyType = (MDClassificationCodePropertyType)theEObject;
 				T result = caseMDClassificationCodePropertyType(mdClassificationCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_CONSTRAINTS_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_CONSTRAINTS_PROPERTY_TYPE: {
 				MDConstraintsPropertyType mdConstraintsPropertyType = (MDConstraintsPropertyType)theEObject;
 				T result = caseMDConstraintsPropertyType(mdConstraintsPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_CONSTRAINTS_TYPE:
-			{
+			case GMDPackage.MD_CONSTRAINTS_TYPE: {
 				MDConstraintsType mdConstraintsType = (MDConstraintsType)theEObject;
 				T result = caseMDConstraintsType(mdConstraintsType);
 				if (result == null) result = caseAbstractObjectType(mdConstraintsType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_CONTENT_INFORMATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_CONTENT_INFORMATION_PROPERTY_TYPE: {
 				MDContentInformationPropertyType mdContentInformationPropertyType = (MDContentInformationPropertyType)theEObject;
 				T result = caseMDContentInformationPropertyType(mdContentInformationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_COVERAGE_CONTENT_TYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_COVERAGE_CONTENT_TYPE_CODE_PROPERTY_TYPE: {
 				MDCoverageContentTypeCodePropertyType mdCoverageContentTypeCodePropertyType = (MDCoverageContentTypeCodePropertyType)theEObject;
 				T result = caseMDCoverageContentTypeCodePropertyType(mdCoverageContentTypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_COVERAGE_DESCRIPTION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_COVERAGE_DESCRIPTION_PROPERTY_TYPE: {
 				MDCoverageDescriptionPropertyType mdCoverageDescriptionPropertyType = (MDCoverageDescriptionPropertyType)theEObject;
 				T result = caseMDCoverageDescriptionPropertyType(mdCoverageDescriptionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE:
-			{
+			case GMDPackage.MD_COVERAGE_DESCRIPTION_TYPE: {
 				MDCoverageDescriptionType mdCoverageDescriptionType = (MDCoverageDescriptionType)theEObject;
 				T result = caseMDCoverageDescriptionType(mdCoverageDescriptionType);
 				if (result == null) result = caseAbstractMDContentInformationType(mdCoverageDescriptionType);
@@ -1190,15 +1042,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DATA_IDENTIFICATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_DATA_IDENTIFICATION_PROPERTY_TYPE: {
 				MDDataIdentificationPropertyType mdDataIdentificationPropertyType = (MDDataIdentificationPropertyType)theEObject;
 				T result = caseMDDataIdentificationPropertyType(mdDataIdentificationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE:
-			{
+			case GMDPackage.MD_DATA_IDENTIFICATION_TYPE: {
 				MDDataIdentificationType mdDataIdentificationType = (MDDataIdentificationType)theEObject;
 				T result = caseMDDataIdentificationType(mdDataIdentificationType);
 				if (result == null) result = caseAbstractMDIdentificationType(mdDataIdentificationType);
@@ -1206,111 +1056,96 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_DATATYPE_CODE_PROPERTY_TYPE: {
 				MDDatatypeCodePropertyType mdDatatypeCodePropertyType = (MDDatatypeCodePropertyType)theEObject;
 				T result = caseMDDatatypeCodePropertyType(mdDatatypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_PROPERTY_TYPE: {
 				MDDigitalTransferOptionsPropertyType mdDigitalTransferOptionsPropertyType = (MDDigitalTransferOptionsPropertyType)theEObject;
 				T result = caseMDDigitalTransferOptionsPropertyType(mdDigitalTransferOptionsPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE:
-			{
+			case GMDPackage.MD_DIGITAL_TRANSFER_OPTIONS_TYPE: {
 				MDDigitalTransferOptionsType mdDigitalTransferOptionsType = (MDDigitalTransferOptionsType)theEObject;
 				T result = caseMDDigitalTransferOptionsType(mdDigitalTransferOptionsType);
 				if (result == null) result = caseAbstractObjectType(mdDigitalTransferOptionsType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_DIMENSION_NAME_TYPE_CODE_PROPERTY_TYPE: {
 				MDDimensionNameTypeCodePropertyType mdDimensionNameTypeCodePropertyType = (MDDimensionNameTypeCodePropertyType)theEObject;
 				T result = caseMDDimensionNameTypeCodePropertyType(mdDimensionNameTypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DIMENSION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_DIMENSION_PROPERTY_TYPE: {
 				MDDimensionPropertyType mdDimensionPropertyType = (MDDimensionPropertyType)theEObject;
 				T result = caseMDDimensionPropertyType(mdDimensionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DIMENSION_TYPE:
-			{
+			case GMDPackage.MD_DIMENSION_TYPE: {
 				MDDimensionType mdDimensionType = (MDDimensionType)theEObject;
 				T result = caseMDDimensionType(mdDimensionType);
 				if (result == null) result = caseAbstractObjectType(mdDimensionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DISTRIBUTION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_DISTRIBUTION_PROPERTY_TYPE: {
 				MDDistributionPropertyType mdDistributionPropertyType = (MDDistributionPropertyType)theEObject;
 				T result = caseMDDistributionPropertyType(mdDistributionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DISTRIBUTION_TYPE:
-			{
+			case GMDPackage.MD_DISTRIBUTION_TYPE: {
 				MDDistributionType mdDistributionType = (MDDistributionType)theEObject;
 				T result = caseMDDistributionType(mdDistributionType);
 				if (result == null) result = caseAbstractObjectType(mdDistributionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_DISTRIBUTION_UNITS_PROPERTY_TYPE: {
 				MDDistributionUnitsPropertyType mdDistributionUnitsPropertyType = (MDDistributionUnitsPropertyType)theEObject;
 				T result = caseMDDistributionUnitsPropertyType(mdDistributionUnitsPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DISTRIBUTOR_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_DISTRIBUTOR_PROPERTY_TYPE: {
 				MDDistributorPropertyType mdDistributorPropertyType = (MDDistributorPropertyType)theEObject;
 				T result = caseMDDistributorPropertyType(mdDistributorPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_DISTRIBUTOR_TYPE:
-			{
+			case GMDPackage.MD_DISTRIBUTOR_TYPE: {
 				MDDistributorType mdDistributorType = (MDDistributorType)theEObject;
 				T result = caseMDDistributorType(mdDistributorType);
 				if (result == null) result = caseAbstractObjectType(mdDistributorType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_PROPERTY_TYPE: {
 				MDExtendedElementInformationPropertyType mdExtendedElementInformationPropertyType = (MDExtendedElementInformationPropertyType)theEObject;
 				T result = caseMDExtendedElementInformationPropertyType(mdExtendedElementInformationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE:
-			{
+			case GMDPackage.MD_EXTENDED_ELEMENT_INFORMATION_TYPE: {
 				MDExtendedElementInformationType mdExtendedElementInformationType = (MDExtendedElementInformationType)theEObject;
 				T result = caseMDExtendedElementInformationType(mdExtendedElementInformationType);
 				if (result == null) result = caseAbstractObjectType(mdExtendedElementInformationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_PROPERTY_TYPE: {
 				MDFeatureCatalogueDescriptionPropertyType mdFeatureCatalogueDescriptionPropertyType = (MDFeatureCatalogueDescriptionPropertyType)theEObject;
 				T result = caseMDFeatureCatalogueDescriptionPropertyType(mdFeatureCatalogueDescriptionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE:
-			{
+			case GMDPackage.MD_FEATURE_CATALOGUE_DESCRIPTION_TYPE: {
 				MDFeatureCatalogueDescriptionType mdFeatureCatalogueDescriptionType = (MDFeatureCatalogueDescriptionType)theEObject;
 				T result = caseMDFeatureCatalogueDescriptionType(mdFeatureCatalogueDescriptionType);
 				if (result == null) result = caseAbstractMDContentInformationType(mdFeatureCatalogueDescriptionType);
@@ -1318,52 +1153,45 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_FORMAT_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_FORMAT_PROPERTY_TYPE: {
 				MDFormatPropertyType mdFormatPropertyType = (MDFormatPropertyType)theEObject;
 				T result = caseMDFormatPropertyType(mdFormatPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_FORMAT_TYPE:
-			{
+			case GMDPackage.MD_FORMAT_TYPE: {
 				MDFormatType mdFormatType = (MDFormatType)theEObject;
 				T result = caseMDFormatType(mdFormatType);
 				if (result == null) result = caseAbstractObjectType(mdFormatType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_GEOMETRIC_OBJECTS_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_GEOMETRIC_OBJECTS_PROPERTY_TYPE: {
 				MDGeometricObjectsPropertyType mdGeometricObjectsPropertyType = (MDGeometricObjectsPropertyType)theEObject;
 				T result = caseMDGeometricObjectsPropertyType(mdGeometricObjectsPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_GEOMETRIC_OBJECTS_TYPE:
-			{
+			case GMDPackage.MD_GEOMETRIC_OBJECTS_TYPE: {
 				MDGeometricObjectsType mdGeometricObjectsType = (MDGeometricObjectsType)theEObject;
 				T result = caseMDGeometricObjectsType(mdGeometricObjectsType);
 				if (result == null) result = caseAbstractObjectType(mdGeometricObjectsType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_GEOMETRIC_OBJECT_TYPE_CODE_PROPERTY_TYPE: {
 				MDGeometricObjectTypeCodePropertyType mdGeometricObjectTypeCodePropertyType = (MDGeometricObjectTypeCodePropertyType)theEObject;
 				T result = caseMDGeometricObjectTypeCodePropertyType(mdGeometricObjectTypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_GEORECTIFIED_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_GEORECTIFIED_PROPERTY_TYPE: {
 				MDGeorectifiedPropertyType mdGeorectifiedPropertyType = (MDGeorectifiedPropertyType)theEObject;
 				T result = caseMDGeorectifiedPropertyType(mdGeorectifiedPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_GEORECTIFIED_TYPE:
-			{
+			case GMDPackage.MD_GEORECTIFIED_TYPE: {
 				MDGeorectifiedType mdGeorectifiedType = (MDGeorectifiedType)theEObject;
 				T result = caseMDGeorectifiedType(mdGeorectifiedType);
 				if (result == null) result = caseMDGridSpatialRepresentationType(mdGeorectifiedType);
@@ -1372,15 +1200,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_GEOREFERENCEABLE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_GEOREFERENCEABLE_PROPERTY_TYPE: {
 				MDGeoreferenceablePropertyType mdGeoreferenceablePropertyType = (MDGeoreferenceablePropertyType)theEObject;
 				T result = caseMDGeoreferenceablePropertyType(mdGeoreferenceablePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_GEOREFERENCEABLE_TYPE:
-			{
+			case GMDPackage.MD_GEOREFERENCEABLE_TYPE: {
 				MDGeoreferenceableType mdGeoreferenceableType = (MDGeoreferenceableType)theEObject;
 				T result = caseMDGeoreferenceableType(mdGeoreferenceableType);
 				if (result == null) result = caseMDGridSpatialRepresentationType(mdGeoreferenceableType);
@@ -1389,15 +1215,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_PROPERTY_TYPE: {
 				MDGridSpatialRepresentationPropertyType mdGridSpatialRepresentationPropertyType = (MDGridSpatialRepresentationPropertyType)theEObject;
 				T result = caseMDGridSpatialRepresentationPropertyType(mdGridSpatialRepresentationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE:
-			{
+			case GMDPackage.MD_GRID_SPATIAL_REPRESENTATION_TYPE: {
 				MDGridSpatialRepresentationType mdGridSpatialRepresentationType = (MDGridSpatialRepresentationType)theEObject;
 				T result = caseMDGridSpatialRepresentationType(mdGridSpatialRepresentationType);
 				if (result == null) result = caseAbstractMDSpatialRepresentationType(mdGridSpatialRepresentationType);
@@ -1405,37 +1229,32 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_IDENTIFICATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_IDENTIFICATION_PROPERTY_TYPE: {
 				MDIdentificationPropertyType mdIdentificationPropertyType = (MDIdentificationPropertyType)theEObject;
 				T result = caseMDIdentificationPropertyType(mdIdentificationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_IDENTIFIER_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_IDENTIFIER_PROPERTY_TYPE: {
 				MDIdentifierPropertyType mdIdentifierPropertyType = (MDIdentifierPropertyType)theEObject;
 				T result = caseMDIdentifierPropertyType(mdIdentifierPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_IDENTIFIER_TYPE:
-			{
+			case GMDPackage.MD_IDENTIFIER_TYPE: {
 				MDIdentifierType mdIdentifierType = (MDIdentifierType)theEObject;
 				T result = caseMDIdentifierType(mdIdentifierType);
 				if (result == null) result = caseAbstractObjectType(mdIdentifierType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_IMAGE_DESCRIPTION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_IMAGE_DESCRIPTION_PROPERTY_TYPE: {
 				MDImageDescriptionPropertyType mdImageDescriptionPropertyType = (MDImageDescriptionPropertyType)theEObject;
 				T result = caseMDImageDescriptionPropertyType(mdImageDescriptionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE:
-			{
+			case GMDPackage.MD_IMAGE_DESCRIPTION_TYPE: {
 				MDImageDescriptionType mdImageDescriptionType = (MDImageDescriptionType)theEObject;
 				T result = caseMDImageDescriptionType(mdImageDescriptionType);
 				if (result == null) result = caseMDCoverageDescriptionType(mdImageDescriptionType);
@@ -1444,44 +1263,38 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_IMAGING_CONDITION_CODE_PROPERTY_TYPE: {
 				MDImagingConditionCodePropertyType mdImagingConditionCodePropertyType = (MDImagingConditionCodePropertyType)theEObject;
 				T result = caseMDImagingConditionCodePropertyType(mdImagingConditionCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_KEYWORDS_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_KEYWORDS_PROPERTY_TYPE: {
 				MDKeywordsPropertyType mdKeywordsPropertyType = (MDKeywordsPropertyType)theEObject;
 				T result = caseMDKeywordsPropertyType(mdKeywordsPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_KEYWORDS_TYPE:
-			{
+			case GMDPackage.MD_KEYWORDS_TYPE: {
 				MDKeywordsType mdKeywordsType = (MDKeywordsType)theEObject;
 				T result = caseMDKeywordsType(mdKeywordsType);
 				if (result == null) result = caseAbstractObjectType(mdKeywordsType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_KEYWORD_TYPE_CODE_PROPERTY_TYPE: {
 				MDKeywordTypeCodePropertyType mdKeywordTypeCodePropertyType = (MDKeywordTypeCodePropertyType)theEObject;
 				T result = caseMDKeywordTypeCodePropertyType(mdKeywordTypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_LEGAL_CONSTRAINTS_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_LEGAL_CONSTRAINTS_PROPERTY_TYPE: {
 				MDLegalConstraintsPropertyType mdLegalConstraintsPropertyType = (MDLegalConstraintsPropertyType)theEObject;
 				T result = caseMDLegalConstraintsPropertyType(mdLegalConstraintsPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE:
-			{
+			case GMDPackage.MD_LEGAL_CONSTRAINTS_TYPE: {
 				MDLegalConstraintsType mdLegalConstraintsType = (MDLegalConstraintsType)theEObject;
 				T result = caseMDLegalConstraintsType(mdLegalConstraintsType);
 				if (result == null) result = caseMDConstraintsType(mdLegalConstraintsType);
@@ -1489,219 +1302,189 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_MAINTENANCE_FREQUENCY_CODE_PROPERTY_TYPE: {
 				MDMaintenanceFrequencyCodePropertyType mdMaintenanceFrequencyCodePropertyType = (MDMaintenanceFrequencyCodePropertyType)theEObject;
 				T result = caseMDMaintenanceFrequencyCodePropertyType(mdMaintenanceFrequencyCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_MAINTENANCE_INFORMATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_MAINTENANCE_INFORMATION_PROPERTY_TYPE: {
 				MDMaintenanceInformationPropertyType mdMaintenanceInformationPropertyType = (MDMaintenanceInformationPropertyType)theEObject;
 				T result = caseMDMaintenanceInformationPropertyType(mdMaintenanceInformationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE:
-			{
+			case GMDPackage.MD_MAINTENANCE_INFORMATION_TYPE: {
 				MDMaintenanceInformationType mdMaintenanceInformationType = (MDMaintenanceInformationType)theEObject;
 				T result = caseMDMaintenanceInformationType(mdMaintenanceInformationType);
 				if (result == null) result = caseAbstractObjectType(mdMaintenanceInformationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_MEDIUM_FORMAT_CODE_PROPERTY_TYPE: {
 				MDMediumFormatCodePropertyType mdMediumFormatCodePropertyType = (MDMediumFormatCodePropertyType)theEObject;
 				T result = caseMDMediumFormatCodePropertyType(mdMediumFormatCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_MEDIUM_NAME_CODE_PROPERTY_TYPE: {
 				MDMediumNameCodePropertyType mdMediumNameCodePropertyType = (MDMediumNameCodePropertyType)theEObject;
 				T result = caseMDMediumNameCodePropertyType(mdMediumNameCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_MEDIUM_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_MEDIUM_PROPERTY_TYPE: {
 				MDMediumPropertyType mdMediumPropertyType = (MDMediumPropertyType)theEObject;
 				T result = caseMDMediumPropertyType(mdMediumPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_MEDIUM_TYPE:
-			{
+			case GMDPackage.MD_MEDIUM_TYPE: {
 				MDMediumType mdMediumType = (MDMediumType)theEObject;
 				T result = caseMDMediumType(mdMediumType);
 				if (result == null) result = caseAbstractObjectType(mdMediumType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_PROPERTY_TYPE: {
 				MDMetadataExtensionInformationPropertyType mdMetadataExtensionInformationPropertyType = (MDMetadataExtensionInformationPropertyType)theEObject;
 				T result = caseMDMetadataExtensionInformationPropertyType(mdMetadataExtensionInformationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE:
-			{
+			case GMDPackage.MD_METADATA_EXTENSION_INFORMATION_TYPE: {
 				MDMetadataExtensionInformationType mdMetadataExtensionInformationType = (MDMetadataExtensionInformationType)theEObject;
 				T result = caseMDMetadataExtensionInformationType(mdMetadataExtensionInformationType);
 				if (result == null) result = caseAbstractObjectType(mdMetadataExtensionInformationType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_METADATA_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_METADATA_PROPERTY_TYPE: {
 				MDMetadataPropertyType mdMetadataPropertyType = (MDMetadataPropertyType)theEObject;
 				T result = caseMDMetadataPropertyType(mdMetadataPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_METADATA_TYPE:
-			{
+			case GMDPackage.MD_METADATA_TYPE: {
 				MDMetadataType mdMetadataType = (MDMetadataType)theEObject;
 				T result = caseMDMetadataType(mdMetadataType);
 				if (result == null) result = caseAbstractObjectType(mdMetadataType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_OBLIGATION_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_OBLIGATION_CODE_PROPERTY_TYPE: {
 				MDObligationCodePropertyType mdObligationCodePropertyType = (MDObligationCodePropertyType)theEObject;
 				T result = caseMDObligationCodePropertyType(mdObligationCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_PIXEL_ORIENTATION_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_PIXEL_ORIENTATION_CODE_PROPERTY_TYPE: {
 				MDPixelOrientationCodePropertyType mdPixelOrientationCodePropertyType = (MDPixelOrientationCodePropertyType)theEObject;
 				T result = caseMDPixelOrientationCodePropertyType(mdPixelOrientationCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_PROPERTY_TYPE: {
 				MDPortrayalCatalogueReferencePropertyType mdPortrayalCatalogueReferencePropertyType = (MDPortrayalCatalogueReferencePropertyType)theEObject;
 				T result = caseMDPortrayalCatalogueReferencePropertyType(mdPortrayalCatalogueReferencePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_TYPE:
-			{
+			case GMDPackage.MD_PORTRAYAL_CATALOGUE_REFERENCE_TYPE: {
 				MDPortrayalCatalogueReferenceType mdPortrayalCatalogueReferenceType = (MDPortrayalCatalogueReferenceType)theEObject;
 				T result = caseMDPortrayalCatalogueReferenceType(mdPortrayalCatalogueReferenceType);
 				if (result == null) result = caseAbstractObjectType(mdPortrayalCatalogueReferenceType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_PROGRESS_CODE_PROPERTY_TYPE: {
 				MDProgressCodePropertyType mdProgressCodePropertyType = (MDProgressCodePropertyType)theEObject;
 				T result = caseMDProgressCodePropertyType(mdProgressCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_RANGE_DIMENSION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_RANGE_DIMENSION_PROPERTY_TYPE: {
 				MDRangeDimensionPropertyType mdRangeDimensionPropertyType = (MDRangeDimensionPropertyType)theEObject;
 				T result = caseMDRangeDimensionPropertyType(mdRangeDimensionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_RANGE_DIMENSION_TYPE:
-			{
+			case GMDPackage.MD_RANGE_DIMENSION_TYPE: {
 				MDRangeDimensionType mdRangeDimensionType = (MDRangeDimensionType)theEObject;
 				T result = caseMDRangeDimensionType(mdRangeDimensionType);
 				if (result == null) result = caseAbstractObjectType(mdRangeDimensionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_REFERENCE_SYSTEM_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_REFERENCE_SYSTEM_PROPERTY_TYPE: {
 				MDReferenceSystemPropertyType mdReferenceSystemPropertyType = (MDReferenceSystemPropertyType)theEObject;
 				T result = caseMDReferenceSystemPropertyType(mdReferenceSystemPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_REFERENCE_SYSTEM_TYPE:
-			{
+			case GMDPackage.MD_REFERENCE_SYSTEM_TYPE: {
 				MDReferenceSystemType mdReferenceSystemType = (MDReferenceSystemType)theEObject;
 				T result = caseMDReferenceSystemType(mdReferenceSystemType);
 				if (result == null) result = caseAbstractObjectType(mdReferenceSystemType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_REPRESENTATIVE_FRACTION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_REPRESENTATIVE_FRACTION_PROPERTY_TYPE: {
 				MDRepresentativeFractionPropertyType mdRepresentativeFractionPropertyType = (MDRepresentativeFractionPropertyType)theEObject;
 				T result = caseMDRepresentativeFractionPropertyType(mdRepresentativeFractionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_REPRESENTATIVE_FRACTION_TYPE:
-			{
+			case GMDPackage.MD_REPRESENTATIVE_FRACTION_TYPE: {
 				MDRepresentativeFractionType mdRepresentativeFractionType = (MDRepresentativeFractionType)theEObject;
 				T result = caseMDRepresentativeFractionType(mdRepresentativeFractionType);
 				if (result == null) result = caseAbstractObjectType(mdRepresentativeFractionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_RESOLUTION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_RESOLUTION_PROPERTY_TYPE: {
 				MDResolutionPropertyType mdResolutionPropertyType = (MDResolutionPropertyType)theEObject;
 				T result = caseMDResolutionPropertyType(mdResolutionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_RESOLUTION_TYPE:
-			{
+			case GMDPackage.MD_RESOLUTION_TYPE: {
 				MDResolutionType mdResolutionType = (MDResolutionType)theEObject;
 				T result = caseMDResolutionType(mdResolutionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_RESTRICTION_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_RESTRICTION_CODE_PROPERTY_TYPE: {
 				MDRestrictionCodePropertyType mdRestrictionCodePropertyType = (MDRestrictionCodePropertyType)theEObject;
 				T result = caseMDRestrictionCodePropertyType(mdRestrictionCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_SCOPE_CODE_PROPERTY_TYPE: {
 				MDScopeCodePropertyType mdScopeCodePropertyType = (MDScopeCodePropertyType)theEObject;
 				T result = caseMDScopeCodePropertyType(mdScopeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_SCOPE_DESCRIPTION_PROPERTY_TYPE: {
 				MDScopeDescriptionPropertyType mdScopeDescriptionPropertyType = (MDScopeDescriptionPropertyType)theEObject;
 				T result = caseMDScopeDescriptionPropertyType(mdScopeDescriptionPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE:
-			{
+			case GMDPackage.MD_SCOPE_DESCRIPTION_TYPE: {
 				MDScopeDescriptionType mdScopeDescriptionType = (MDScopeDescriptionType)theEObject;
 				T result = caseMDScopeDescriptionType(mdScopeDescriptionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_SECURITY_CONSTRAINTS_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_SECURITY_CONSTRAINTS_PROPERTY_TYPE: {
 				MDSecurityConstraintsPropertyType mdSecurityConstraintsPropertyType = (MDSecurityConstraintsPropertyType)theEObject;
 				T result = caseMDSecurityConstraintsPropertyType(mdSecurityConstraintsPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE:
-			{
+			case GMDPackage.MD_SECURITY_CONSTRAINTS_TYPE: {
 				MDSecurityConstraintsType mdSecurityConstraintsType = (MDSecurityConstraintsType)theEObject;
 				T result = caseMDSecurityConstraintsType(mdSecurityConstraintsType);
 				if (result == null) result = caseMDConstraintsType(mdSecurityConstraintsType);
@@ -1709,15 +1492,13 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_SERVICE_IDENTIFICATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_SERVICE_IDENTIFICATION_PROPERTY_TYPE: {
 				MDServiceIdentificationPropertyType mdServiceIdentificationPropertyType = (MDServiceIdentificationPropertyType)theEObject;
 				T result = caseMDServiceIdentificationPropertyType(mdServiceIdentificationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_SERVICE_IDENTIFICATION_TYPE:
-			{
+			case GMDPackage.MD_SERVICE_IDENTIFICATION_TYPE: {
 				MDServiceIdentificationType mdServiceIdentificationType = (MDServiceIdentificationType)theEObject;
 				T result = caseMDServiceIdentificationType(mdServiceIdentificationType);
 				if (result == null) result = caseAbstractMDIdentificationType(mdServiceIdentificationType);
@@ -1725,73 +1506,63 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_SPATIAL_REPRESENTATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_SPATIAL_REPRESENTATION_PROPERTY_TYPE: {
 				MDSpatialRepresentationPropertyType mdSpatialRepresentationPropertyType = (MDSpatialRepresentationPropertyType)theEObject;
 				T result = caseMDSpatialRepresentationPropertyType(mdSpatialRepresentationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_SPATIAL_REPRESENTATION_TYPE_CODE_PROPERTY_TYPE: {
 				MDSpatialRepresentationTypeCodePropertyType mdSpatialRepresentationTypeCodePropertyType = (MDSpatialRepresentationTypeCodePropertyType)theEObject;
 				T result = caseMDSpatialRepresentationTypeCodePropertyType(mdSpatialRepresentationTypeCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_STANDARD_ORDER_PROCESS_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_STANDARD_ORDER_PROCESS_PROPERTY_TYPE: {
 				MDStandardOrderProcessPropertyType mdStandardOrderProcessPropertyType = (MDStandardOrderProcessPropertyType)theEObject;
 				T result = caseMDStandardOrderProcessPropertyType(mdStandardOrderProcessPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE:
-			{
+			case GMDPackage.MD_STANDARD_ORDER_PROCESS_TYPE: {
 				MDStandardOrderProcessType mdStandardOrderProcessType = (MDStandardOrderProcessType)theEObject;
 				T result = caseMDStandardOrderProcessType(mdStandardOrderProcessType);
 				if (result == null) result = caseAbstractObjectType(mdStandardOrderProcessType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_TOPIC_CATEGORY_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_TOPIC_CATEGORY_CODE_PROPERTY_TYPE: {
 				MDTopicCategoryCodePropertyType mdTopicCategoryCodePropertyType = (MDTopicCategoryCodePropertyType)theEObject;
 				T result = caseMDTopicCategoryCodePropertyType(mdTopicCategoryCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_TOPOLOGY_LEVEL_CODE_PROPERTY_TYPE: {
 				MDTopologyLevelCodePropertyType mdTopologyLevelCodePropertyType = (MDTopologyLevelCodePropertyType)theEObject;
 				T result = caseMDTopologyLevelCodePropertyType(mdTopologyLevelCodePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_USAGE_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_USAGE_PROPERTY_TYPE: {
 				MDUsagePropertyType mdUsagePropertyType = (MDUsagePropertyType)theEObject;
 				T result = caseMDUsagePropertyType(mdUsagePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_USAGE_TYPE:
-			{
+			case GMDPackage.MD_USAGE_TYPE: {
 				MDUsageType mdUsageType = (MDUsageType)theEObject;
 				T result = caseMDUsageType(mdUsageType);
 				if (result == null) result = caseAbstractObjectType(mdUsageType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_PROPERTY_TYPE:
-			{
+			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_PROPERTY_TYPE: {
 				MDVectorSpatialRepresentationPropertyType mdVectorSpatialRepresentationPropertyType = (MDVectorSpatialRepresentationPropertyType)theEObject;
 				T result = caseMDVectorSpatialRepresentationPropertyType(mdVectorSpatialRepresentationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE:
-			{
+			case GMDPackage.MD_VECTOR_SPATIAL_REPRESENTATION_TYPE: {
 				MDVectorSpatialRepresentationType mdVectorSpatialRepresentationType = (MDVectorSpatialRepresentationType)theEObject;
 				T result = caseMDVectorSpatialRepresentationType(mdVectorSpatialRepresentationType);
 				if (result == null) result = caseAbstractMDSpatialRepresentationType(mdVectorSpatialRepresentationType);
@@ -1799,60 +1570,52 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.PT_FREE_TEXT_PROPERTY_TYPE:
-			{
+			case GMDPackage.PT_FREE_TEXT_PROPERTY_TYPE: {
 				PTFreeTextPropertyType ptFreeTextPropertyType = (PTFreeTextPropertyType)theEObject;
 				T result = casePTFreeTextPropertyType(ptFreeTextPropertyType);
 				if (result == null) result = caseCharacterStringPropertyType(ptFreeTextPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.PT_FREE_TEXT_TYPE:
-			{
+			case GMDPackage.PT_FREE_TEXT_TYPE: {
 				PTFreeTextType ptFreeTextType = (PTFreeTextType)theEObject;
 				T result = casePTFreeTextType(ptFreeTextType);
 				if (result == null) result = caseAbstractObjectType(ptFreeTextType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.PT_LOCALE_CONTAINER_PROPERTY_TYPE:
-			{
+			case GMDPackage.PT_LOCALE_CONTAINER_PROPERTY_TYPE: {
 				PTLocaleContainerPropertyType ptLocaleContainerPropertyType = (PTLocaleContainerPropertyType)theEObject;
 				T result = casePTLocaleContainerPropertyType(ptLocaleContainerPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.PT_LOCALE_CONTAINER_TYPE:
-			{
+			case GMDPackage.PT_LOCALE_CONTAINER_TYPE: {
 				PTLocaleContainerType ptLocaleContainerType = (PTLocaleContainerType)theEObject;
 				T result = casePTLocaleContainerType(ptLocaleContainerType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.PT_LOCALE_PROPERTY_TYPE:
-			{
+			case GMDPackage.PT_LOCALE_PROPERTY_TYPE: {
 				PTLocalePropertyType ptLocalePropertyType = (PTLocalePropertyType)theEObject;
 				T result = casePTLocalePropertyType(ptLocalePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.PT_LOCALE_TYPE:
-			{
+			case GMDPackage.PT_LOCALE_TYPE: {
 				PTLocaleType ptLocaleType = (PTLocaleType)theEObject;
 				T result = casePTLocaleType(ptLocaleType);
 				if (result == null) result = caseAbstractObjectType(ptLocaleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.RS_IDENTIFIER_PROPERTY_TYPE:
-			{
+			case GMDPackage.RS_IDENTIFIER_PROPERTY_TYPE: {
 				RSIdentifierPropertyType rsIdentifierPropertyType = (RSIdentifierPropertyType)theEObject;
 				T result = caseRSIdentifierPropertyType(rsIdentifierPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.RS_IDENTIFIER_TYPE:
-			{
+			case GMDPackage.RS_IDENTIFIER_TYPE: {
 				RSIdentifierType rsIdentifierType = (RSIdentifierType)theEObject;
 				T result = caseRSIdentifierType(rsIdentifierType);
 				if (result == null) result = caseMDIdentifierType(rsIdentifierType);
@@ -1860,22 +1623,19 @@ public class GMDSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.RS_REFERENCE_SYSTEM_PROPERTY_TYPE:
-			{
+			case GMDPackage.RS_REFERENCE_SYSTEM_PROPERTY_TYPE: {
 				RSReferenceSystemPropertyType rsReferenceSystemPropertyType = (RSReferenceSystemPropertyType)theEObject;
 				T result = caseRSReferenceSystemPropertyType(rsReferenceSystemPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.URL_PROPERTY_TYPE:
-			{
+			case GMDPackage.URL_PROPERTY_TYPE: {
 				URLPropertyType urlPropertyType = (URLPropertyType)theEObject;
 				T result = caseURLPropertyType(urlPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GMDPackage.DOCUMENT_ROOT:
-			{
+			case GMDPackage.DOCUMENT_ROOT: {
 				DocumentRoot documentRoot = (DocumentRoot)theEObject;
 				T result = caseDocumentRoot(documentRoot);
 				if (result == null) result = defaultCase(theEObject);
@@ -1896,8 +1656,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractDQCompletenessType(AbstractDQCompletenessType object)
-	{
+	public T caseAbstractDQCompletenessType(AbstractDQCompletenessType object) {
 		return null;
 	}
 
@@ -1912,8 +1671,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractDQElementType(AbstractDQElementType object)
-	{
+	public T caseAbstractDQElementType(AbstractDQElementType object) {
 		return null;
 	}
 
@@ -1928,8 +1686,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractDQLogicalConsistencyType(AbstractDQLogicalConsistencyType object)
-	{
+	public T caseAbstractDQLogicalConsistencyType(AbstractDQLogicalConsistencyType object) {
 		return null;
 	}
 
@@ -1944,8 +1701,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractDQPositionalAccuracyType(AbstractDQPositionalAccuracyType object)
-	{
+	public T caseAbstractDQPositionalAccuracyType(AbstractDQPositionalAccuracyType object) {
 		return null;
 	}
 
@@ -1960,8 +1716,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractDQResultType(AbstractDQResultType object)
-	{
+	public T caseAbstractDQResultType(AbstractDQResultType object) {
 		return null;
 	}
 
@@ -1976,8 +1731,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractDQTemporalAccuracyType(AbstractDQTemporalAccuracyType object)
-	{
+	public T caseAbstractDQTemporalAccuracyType(AbstractDQTemporalAccuracyType object) {
 		return null;
 	}
 
@@ -1992,8 +1746,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractDQThematicAccuracyType(AbstractDQThematicAccuracyType object)
-	{
+	public T caseAbstractDQThematicAccuracyType(AbstractDQThematicAccuracyType object) {
 		return null;
 	}
 
@@ -2008,8 +1761,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractDSAggregateType(AbstractDSAggregateType object)
-	{
+	public T caseAbstractDSAggregateType(AbstractDSAggregateType object) {
 		return null;
 	}
 
@@ -2024,8 +1776,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractEXGeographicExtentType(AbstractEXGeographicExtentType object)
-	{
+	public T caseAbstractEXGeographicExtentType(AbstractEXGeographicExtentType object) {
 		return null;
 	}
 
@@ -2040,8 +1791,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractMDContentInformationType(AbstractMDContentInformationType object)
-	{
+	public T caseAbstractMDContentInformationType(AbstractMDContentInformationType object) {
 		return null;
 	}
 
@@ -2056,8 +1806,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractMDIdentificationType(AbstractMDIdentificationType object)
-	{
+	public T caseAbstractMDIdentificationType(AbstractMDIdentificationType object) {
 		return null;
 	}
 
@@ -2072,8 +1821,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractMDSpatialRepresentationType(AbstractMDSpatialRepresentationType object)
-	{
+	public T caseAbstractMDSpatialRepresentationType(AbstractMDSpatialRepresentationType object) {
 		return null;
 	}
 
@@ -2088,8 +1836,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractRSReferenceSystemType(AbstractRSReferenceSystemType object)
-	{
+	public T caseAbstractRSReferenceSystemType(AbstractRSReferenceSystemType object) {
 		return null;
 	}
 
@@ -2104,8 +1851,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIAddressPropertyType(CIAddressPropertyType object)
-	{
+	public T caseCIAddressPropertyType(CIAddressPropertyType object) {
 		return null;
 	}
 
@@ -2120,8 +1866,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIAddressType(CIAddressType object)
-	{
+	public T caseCIAddressType(CIAddressType object) {
 		return null;
 	}
 
@@ -2136,8 +1881,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCICitationPropertyType(CICitationPropertyType object)
-	{
+	public T caseCICitationPropertyType(CICitationPropertyType object) {
 		return null;
 	}
 
@@ -2152,8 +1896,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCICitationType(CICitationType object)
-	{
+	public T caseCICitationType(CICitationType object) {
 		return null;
 	}
 
@@ -2168,8 +1911,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIContactPropertyType(CIContactPropertyType object)
-	{
+	public T caseCIContactPropertyType(CIContactPropertyType object) {
 		return null;
 	}
 
@@ -2184,8 +1926,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIContactType(CIContactType object)
-	{
+	public T caseCIContactType(CIContactType object) {
 		return null;
 	}
 
@@ -2200,8 +1941,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIDatePropertyType(CIDatePropertyType object)
-	{
+	public T caseCIDatePropertyType(CIDatePropertyType object) {
 		return null;
 	}
 
@@ -2216,8 +1956,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIDateType(CIDateType object)
-	{
+	public T caseCIDateType(CIDateType object) {
 		return null;
 	}
 
@@ -2232,8 +1971,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIDateTypeCodePropertyType(CIDateTypeCodePropertyType object)
-	{
+	public T caseCIDateTypeCodePropertyType(CIDateTypeCodePropertyType object) {
 		return null;
 	}
 
@@ -2248,8 +1986,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIOnLineFunctionCodePropertyType(CIOnLineFunctionCodePropertyType object)
-	{
+	public T caseCIOnLineFunctionCodePropertyType(CIOnLineFunctionCodePropertyType object) {
 		return null;
 	}
 
@@ -2264,8 +2001,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIOnlineResourcePropertyType(CIOnlineResourcePropertyType object)
-	{
+	public T caseCIOnlineResourcePropertyType(CIOnlineResourcePropertyType object) {
 		return null;
 	}
 
@@ -2280,8 +2016,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIOnlineResourceType(CIOnlineResourceType object)
-	{
+	public T caseCIOnlineResourceType(CIOnlineResourceType object) {
 		return null;
 	}
 
@@ -2296,8 +2031,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIPresentationFormCodePropertyType(CIPresentationFormCodePropertyType object)
-	{
+	public T caseCIPresentationFormCodePropertyType(CIPresentationFormCodePropertyType object) {
 		return null;
 	}
 
@@ -2312,8 +2046,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIResponsiblePartyPropertyType(CIResponsiblePartyPropertyType object)
-	{
+	public T caseCIResponsiblePartyPropertyType(CIResponsiblePartyPropertyType object) {
 		return null;
 	}
 
@@ -2328,8 +2061,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIResponsiblePartyType(CIResponsiblePartyType object)
-	{
+	public T caseCIResponsiblePartyType(CIResponsiblePartyType object) {
 		return null;
 	}
 
@@ -2344,8 +2076,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCIRoleCodePropertyType(CIRoleCodePropertyType object)
-	{
+	public T caseCIRoleCodePropertyType(CIRoleCodePropertyType object) {
 		return null;
 	}
 
@@ -2360,8 +2091,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCISeriesPropertyType(CISeriesPropertyType object)
-	{
+	public T caseCISeriesPropertyType(CISeriesPropertyType object) {
 		return null;
 	}
 
@@ -2376,8 +2106,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCISeriesType(CISeriesType object)
-	{
+	public T caseCISeriesType(CISeriesType object) {
 		return null;
 	}
 
@@ -2392,8 +2121,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCITelephonePropertyType(CITelephonePropertyType object)
-	{
+	public T caseCITelephonePropertyType(CITelephonePropertyType object) {
 		return null;
 	}
 
@@ -2408,8 +2136,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCITelephoneType(CITelephoneType object)
-	{
+	public T caseCITelephoneType(CITelephoneType object) {
 		return null;
 	}
 
@@ -2424,8 +2151,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCountryPropertyType(CountryPropertyType object)
-	{
+	public T caseCountryPropertyType(CountryPropertyType object) {
 		return null;
 	}
 
@@ -2440,8 +2166,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQAbsoluteExternalPositionalAccuracyPropertyType(DQAbsoluteExternalPositionalAccuracyPropertyType object)
-	{
+	public T caseDQAbsoluteExternalPositionalAccuracyPropertyType(DQAbsoluteExternalPositionalAccuracyPropertyType object) {
 		return null;
 	}
 
@@ -2456,8 +2181,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQAbsoluteExternalPositionalAccuracyType(DQAbsoluteExternalPositionalAccuracyType object)
-	{
+	public T caseDQAbsoluteExternalPositionalAccuracyType(DQAbsoluteExternalPositionalAccuracyType object) {
 		return null;
 	}
 
@@ -2472,8 +2196,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQAccuracyOfATimeMeasurementPropertyType(DQAccuracyOfATimeMeasurementPropertyType object)
-	{
+	public T caseDQAccuracyOfATimeMeasurementPropertyType(DQAccuracyOfATimeMeasurementPropertyType object) {
 		return null;
 	}
 
@@ -2488,8 +2211,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQAccuracyOfATimeMeasurementType(DQAccuracyOfATimeMeasurementType object)
-	{
+	public T caseDQAccuracyOfATimeMeasurementType(DQAccuracyOfATimeMeasurementType object) {
 		return null;
 	}
 
@@ -2504,8 +2226,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQCompletenessCommissionPropertyType(DQCompletenessCommissionPropertyType object)
-	{
+	public T caseDQCompletenessCommissionPropertyType(DQCompletenessCommissionPropertyType object) {
 		return null;
 	}
 
@@ -2520,8 +2241,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQCompletenessCommissionType(DQCompletenessCommissionType object)
-	{
+	public T caseDQCompletenessCommissionType(DQCompletenessCommissionType object) {
 		return null;
 	}
 
@@ -2536,8 +2256,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQCompletenessOmissionPropertyType(DQCompletenessOmissionPropertyType object)
-	{
+	public T caseDQCompletenessOmissionPropertyType(DQCompletenessOmissionPropertyType object) {
 		return null;
 	}
 
@@ -2552,8 +2271,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQCompletenessOmissionType(DQCompletenessOmissionType object)
-	{
+	public T caseDQCompletenessOmissionType(DQCompletenessOmissionType object) {
 		return null;
 	}
 
@@ -2568,8 +2286,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQCompletenessPropertyType(DQCompletenessPropertyType object)
-	{
+	public T caseDQCompletenessPropertyType(DQCompletenessPropertyType object) {
 		return null;
 	}
 
@@ -2584,8 +2301,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQConceptualConsistencyPropertyType(DQConceptualConsistencyPropertyType object)
-	{
+	public T caseDQConceptualConsistencyPropertyType(DQConceptualConsistencyPropertyType object) {
 		return null;
 	}
 
@@ -2600,8 +2316,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQConceptualConsistencyType(DQConceptualConsistencyType object)
-	{
+	public T caseDQConceptualConsistencyType(DQConceptualConsistencyType object) {
 		return null;
 	}
 
@@ -2616,8 +2331,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQConformanceResultPropertyType(DQConformanceResultPropertyType object)
-	{
+	public T caseDQConformanceResultPropertyType(DQConformanceResultPropertyType object) {
 		return null;
 	}
 
@@ -2632,8 +2346,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQConformanceResultType(DQConformanceResultType object)
-	{
+	public T caseDQConformanceResultType(DQConformanceResultType object) {
 		return null;
 	}
 
@@ -2648,8 +2361,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQDataQualityPropertyType(DQDataQualityPropertyType object)
-	{
+	public T caseDQDataQualityPropertyType(DQDataQualityPropertyType object) {
 		return null;
 	}
 
@@ -2664,8 +2376,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQDataQualityType(DQDataQualityType object)
-	{
+	public T caseDQDataQualityType(DQDataQualityType object) {
 		return null;
 	}
 
@@ -2680,8 +2391,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQDomainConsistencyPropertyType(DQDomainConsistencyPropertyType object)
-	{
+	public T caseDQDomainConsistencyPropertyType(DQDomainConsistencyPropertyType object) {
 		return null;
 	}
 
@@ -2696,8 +2406,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQDomainConsistencyType(DQDomainConsistencyType object)
-	{
+	public T caseDQDomainConsistencyType(DQDomainConsistencyType object) {
 		return null;
 	}
 
@@ -2712,8 +2421,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQElementPropertyType(DQElementPropertyType object)
-	{
+	public T caseDQElementPropertyType(DQElementPropertyType object) {
 		return null;
 	}
 
@@ -2728,8 +2436,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQEvaluationMethodTypeCodePropertyType(DQEvaluationMethodTypeCodePropertyType object)
-	{
+	public T caseDQEvaluationMethodTypeCodePropertyType(DQEvaluationMethodTypeCodePropertyType object) {
 		return null;
 	}
 
@@ -2744,8 +2451,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQFormatConsistencyPropertyType(DQFormatConsistencyPropertyType object)
-	{
+	public T caseDQFormatConsistencyPropertyType(DQFormatConsistencyPropertyType object) {
 		return null;
 	}
 
@@ -2760,8 +2466,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQFormatConsistencyType(DQFormatConsistencyType object)
-	{
+	public T caseDQFormatConsistencyType(DQFormatConsistencyType object) {
 		return null;
 	}
 
@@ -2776,8 +2481,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQGriddedDataPositionalAccuracyPropertyType(DQGriddedDataPositionalAccuracyPropertyType object)
-	{
+	public T caseDQGriddedDataPositionalAccuracyPropertyType(DQGriddedDataPositionalAccuracyPropertyType object) {
 		return null;
 	}
 
@@ -2792,8 +2496,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQGriddedDataPositionalAccuracyType(DQGriddedDataPositionalAccuracyType object)
-	{
+	public T caseDQGriddedDataPositionalAccuracyType(DQGriddedDataPositionalAccuracyType object) {
 		return null;
 	}
 
@@ -2808,8 +2511,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQLogicalConsistencyPropertyType(DQLogicalConsistencyPropertyType object)
-	{
+	public T caseDQLogicalConsistencyPropertyType(DQLogicalConsistencyPropertyType object) {
 		return null;
 	}
 
@@ -2824,8 +2526,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQNonQuantitativeAttributeAccuracyPropertyType(DQNonQuantitativeAttributeAccuracyPropertyType object)
-	{
+	public T caseDQNonQuantitativeAttributeAccuracyPropertyType(DQNonQuantitativeAttributeAccuracyPropertyType object) {
 		return null;
 	}
 
@@ -2840,8 +2541,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQNonQuantitativeAttributeAccuracyType(DQNonQuantitativeAttributeAccuracyType object)
-	{
+	public T caseDQNonQuantitativeAttributeAccuracyType(DQNonQuantitativeAttributeAccuracyType object) {
 		return null;
 	}
 
@@ -2856,8 +2556,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQPositionalAccuracyPropertyType(DQPositionalAccuracyPropertyType object)
-	{
+	public T caseDQPositionalAccuracyPropertyType(DQPositionalAccuracyPropertyType object) {
 		return null;
 	}
 
@@ -2872,8 +2571,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQQuantitativeAttributeAccuracyPropertyType(DQQuantitativeAttributeAccuracyPropertyType object)
-	{
+	public T caseDQQuantitativeAttributeAccuracyPropertyType(DQQuantitativeAttributeAccuracyPropertyType object) {
 		return null;
 	}
 
@@ -2888,8 +2586,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQQuantitativeAttributeAccuracyType(DQQuantitativeAttributeAccuracyType object)
-	{
+	public T caseDQQuantitativeAttributeAccuracyType(DQQuantitativeAttributeAccuracyType object) {
 		return null;
 	}
 
@@ -2904,8 +2601,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQQuantitativeResultPropertyType(DQQuantitativeResultPropertyType object)
-	{
+	public T caseDQQuantitativeResultPropertyType(DQQuantitativeResultPropertyType object) {
 		return null;
 	}
 
@@ -2920,8 +2616,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQQuantitativeResultType(DQQuantitativeResultType object)
-	{
+	public T caseDQQuantitativeResultType(DQQuantitativeResultType object) {
 		return null;
 	}
 
@@ -2936,8 +2631,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQRelativeInternalPositionalAccuracyPropertyType(DQRelativeInternalPositionalAccuracyPropertyType object)
-	{
+	public T caseDQRelativeInternalPositionalAccuracyPropertyType(DQRelativeInternalPositionalAccuracyPropertyType object) {
 		return null;
 	}
 
@@ -2952,8 +2646,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQRelativeInternalPositionalAccuracyType(DQRelativeInternalPositionalAccuracyType object)
-	{
+	public T caseDQRelativeInternalPositionalAccuracyType(DQRelativeInternalPositionalAccuracyType object) {
 		return null;
 	}
 
@@ -2968,8 +2661,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQResultPropertyType(DQResultPropertyType object)
-	{
+	public T caseDQResultPropertyType(DQResultPropertyType object) {
 		return null;
 	}
 
@@ -2984,8 +2676,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQScopePropertyType(DQScopePropertyType object)
-	{
+	public T caseDQScopePropertyType(DQScopePropertyType object) {
 		return null;
 	}
 
@@ -3000,8 +2691,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQScopeType(DQScopeType object)
-	{
+	public T caseDQScopeType(DQScopeType object) {
 		return null;
 	}
 
@@ -3016,8 +2706,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQTemporalAccuracyPropertyType(DQTemporalAccuracyPropertyType object)
-	{
+	public T caseDQTemporalAccuracyPropertyType(DQTemporalAccuracyPropertyType object) {
 		return null;
 	}
 
@@ -3032,8 +2721,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQTemporalConsistencyPropertyType(DQTemporalConsistencyPropertyType object)
-	{
+	public T caseDQTemporalConsistencyPropertyType(DQTemporalConsistencyPropertyType object) {
 		return null;
 	}
 
@@ -3048,8 +2736,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQTemporalConsistencyType(DQTemporalConsistencyType object)
-	{
+	public T caseDQTemporalConsistencyType(DQTemporalConsistencyType object) {
 		return null;
 	}
 
@@ -3064,8 +2751,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQTemporalValidityPropertyType(DQTemporalValidityPropertyType object)
-	{
+	public T caseDQTemporalValidityPropertyType(DQTemporalValidityPropertyType object) {
 		return null;
 	}
 
@@ -3080,8 +2766,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQTemporalValidityType(DQTemporalValidityType object)
-	{
+	public T caseDQTemporalValidityType(DQTemporalValidityType object) {
 		return null;
 	}
 
@@ -3096,8 +2781,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQThematicAccuracyPropertyType(DQThematicAccuracyPropertyType object)
-	{
+	public T caseDQThematicAccuracyPropertyType(DQThematicAccuracyPropertyType object) {
 		return null;
 	}
 
@@ -3112,8 +2796,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQThematicClassificationCorrectnessPropertyType(DQThematicClassificationCorrectnessPropertyType object)
-	{
+	public T caseDQThematicClassificationCorrectnessPropertyType(DQThematicClassificationCorrectnessPropertyType object) {
 		return null;
 	}
 
@@ -3128,8 +2811,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQThematicClassificationCorrectnessType(DQThematicClassificationCorrectnessType object)
-	{
+	public T caseDQThematicClassificationCorrectnessType(DQThematicClassificationCorrectnessType object) {
 		return null;
 	}
 
@@ -3144,8 +2826,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQTopologicalConsistencyPropertyType(DQTopologicalConsistencyPropertyType object)
-	{
+	public T caseDQTopologicalConsistencyPropertyType(DQTopologicalConsistencyPropertyType object) {
 		return null;
 	}
 
@@ -3160,8 +2841,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDQTopologicalConsistencyType(DQTopologicalConsistencyType object)
-	{
+	public T caseDQTopologicalConsistencyType(DQTopologicalConsistencyType object) {
 		return null;
 	}
 
@@ -3176,8 +2856,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSAggregatePropertyType(DSAggregatePropertyType object)
-	{
+	public T caseDSAggregatePropertyType(DSAggregatePropertyType object) {
 		return null;
 	}
 
@@ -3192,8 +2871,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSAssociationPropertyType(DSAssociationPropertyType object)
-	{
+	public T caseDSAssociationPropertyType(DSAssociationPropertyType object) {
 		return null;
 	}
 
@@ -3208,8 +2886,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSAssociationType(DSAssociationType object)
-	{
+	public T caseDSAssociationType(DSAssociationType object) {
 		return null;
 	}
 
@@ -3224,8 +2901,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSAssociationTypeCodePropertyType(DSAssociationTypeCodePropertyType object)
-	{
+	public T caseDSAssociationTypeCodePropertyType(DSAssociationTypeCodePropertyType object) {
 		return null;
 	}
 
@@ -3240,8 +2916,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSDataSetPropertyType(DSDataSetPropertyType object)
-	{
+	public T caseDSDataSetPropertyType(DSDataSetPropertyType object) {
 		return null;
 	}
 
@@ -3256,8 +2931,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSDataSetType(DSDataSetType object)
-	{
+	public T caseDSDataSetType(DSDataSetType object) {
 		return null;
 	}
 
@@ -3272,8 +2946,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSInitiativePropertyType(DSInitiativePropertyType object)
-	{
+	public T caseDSInitiativePropertyType(DSInitiativePropertyType object) {
 		return null;
 	}
 
@@ -3288,8 +2961,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSInitiativeType(DSInitiativeType object)
-	{
+	public T caseDSInitiativeType(DSInitiativeType object) {
 		return null;
 	}
 
@@ -3304,8 +2976,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSInitiativeTypeCodePropertyType(DSInitiativeTypeCodePropertyType object)
-	{
+	public T caseDSInitiativeTypeCodePropertyType(DSInitiativeTypeCodePropertyType object) {
 		return null;
 	}
 
@@ -3320,8 +2991,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSOtherAggregatePropertyType(DSOtherAggregatePropertyType object)
-	{
+	public T caseDSOtherAggregatePropertyType(DSOtherAggregatePropertyType object) {
 		return null;
 	}
 
@@ -3336,8 +3006,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSOtherAggregateType(DSOtherAggregateType object)
-	{
+	public T caseDSOtherAggregateType(DSOtherAggregateType object) {
 		return null;
 	}
 
@@ -3352,8 +3021,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSPlatformPropertyType(DSPlatformPropertyType object)
-	{
+	public T caseDSPlatformPropertyType(DSPlatformPropertyType object) {
 		return null;
 	}
 
@@ -3368,8 +3036,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSPlatformType(DSPlatformType object)
-	{
+	public T caseDSPlatformType(DSPlatformType object) {
 		return null;
 	}
 
@@ -3384,8 +3051,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSProductionSeriesPropertyType(DSProductionSeriesPropertyType object)
-	{
+	public T caseDSProductionSeriesPropertyType(DSProductionSeriesPropertyType object) {
 		return null;
 	}
 
@@ -3400,8 +3066,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSProductionSeriesType(DSProductionSeriesType object)
-	{
+	public T caseDSProductionSeriesType(DSProductionSeriesType object) {
 		return null;
 	}
 
@@ -3416,8 +3081,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSSensorPropertyType(DSSensorPropertyType object)
-	{
+	public T caseDSSensorPropertyType(DSSensorPropertyType object) {
 		return null;
 	}
 
@@ -3432,8 +3096,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSSensorType(DSSensorType object)
-	{
+	public T caseDSSensorType(DSSensorType object) {
 		return null;
 	}
 
@@ -3448,8 +3111,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSSeriesPropertyType(DSSeriesPropertyType object)
-	{
+	public T caseDSSeriesPropertyType(DSSeriesPropertyType object) {
 		return null;
 	}
 
@@ -3464,8 +3126,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSSeriesType(DSSeriesType object)
-	{
+	public T caseDSSeriesType(DSSeriesType object) {
 		return null;
 	}
 
@@ -3480,8 +3141,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSStereoMatePropertyType(DSStereoMatePropertyType object)
-	{
+	public T caseDSStereoMatePropertyType(DSStereoMatePropertyType object) {
 		return null;
 	}
 
@@ -3496,8 +3156,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDSStereoMateType(DSStereoMateType object)
-	{
+	public T caseDSStereoMateType(DSStereoMateType object) {
 		return null;
 	}
 
@@ -3512,8 +3171,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXBoundingPolygonPropertyType(EXBoundingPolygonPropertyType object)
-	{
+	public T caseEXBoundingPolygonPropertyType(EXBoundingPolygonPropertyType object) {
 		return null;
 	}
 
@@ -3528,8 +3186,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXBoundingPolygonType(EXBoundingPolygonType object)
-	{
+	public T caseEXBoundingPolygonType(EXBoundingPolygonType object) {
 		return null;
 	}
 
@@ -3544,8 +3201,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXExtentPropertyType(EXExtentPropertyType object)
-	{
+	public T caseEXExtentPropertyType(EXExtentPropertyType object) {
 		return null;
 	}
 
@@ -3560,8 +3216,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXExtentType(EXExtentType object)
-	{
+	public T caseEXExtentType(EXExtentType object) {
 		return null;
 	}
 
@@ -3576,8 +3231,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXGeographicBoundingBoxPropertyType(EXGeographicBoundingBoxPropertyType object)
-	{
+	public T caseEXGeographicBoundingBoxPropertyType(EXGeographicBoundingBoxPropertyType object) {
 		return null;
 	}
 
@@ -3592,8 +3246,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXGeographicBoundingBoxType(EXGeographicBoundingBoxType object)
-	{
+	public T caseEXGeographicBoundingBoxType(EXGeographicBoundingBoxType object) {
 		return null;
 	}
 
@@ -3608,8 +3261,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXGeographicDescriptionPropertyType(EXGeographicDescriptionPropertyType object)
-	{
+	public T caseEXGeographicDescriptionPropertyType(EXGeographicDescriptionPropertyType object) {
 		return null;
 	}
 
@@ -3624,8 +3276,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXGeographicDescriptionType(EXGeographicDescriptionType object)
-	{
+	public T caseEXGeographicDescriptionType(EXGeographicDescriptionType object) {
 		return null;
 	}
 
@@ -3640,8 +3291,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXGeographicExtentPropertyType(EXGeographicExtentPropertyType object)
-	{
+	public T caseEXGeographicExtentPropertyType(EXGeographicExtentPropertyType object) {
 		return null;
 	}
 
@@ -3656,8 +3306,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXSpatialTemporalExtentPropertyType(EXSpatialTemporalExtentPropertyType object)
-	{
+	public T caseEXSpatialTemporalExtentPropertyType(EXSpatialTemporalExtentPropertyType object) {
 		return null;
 	}
 
@@ -3672,8 +3321,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXSpatialTemporalExtentType(EXSpatialTemporalExtentType object)
-	{
+	public T caseEXSpatialTemporalExtentType(EXSpatialTemporalExtentType object) {
 		return null;
 	}
 
@@ -3688,8 +3336,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXTemporalExtentPropertyType(EXTemporalExtentPropertyType object)
-	{
+	public T caseEXTemporalExtentPropertyType(EXTemporalExtentPropertyType object) {
 		return null;
 	}
 
@@ -3704,8 +3351,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXTemporalExtentType(EXTemporalExtentType object)
-	{
+	public T caseEXTemporalExtentType(EXTemporalExtentType object) {
 		return null;
 	}
 
@@ -3720,8 +3366,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXVerticalExtentPropertyType(EXVerticalExtentPropertyType object)
-	{
+	public T caseEXVerticalExtentPropertyType(EXVerticalExtentPropertyType object) {
 		return null;
 	}
 
@@ -3736,8 +3381,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEXVerticalExtentType(EXVerticalExtentType object)
-	{
+	public T caseEXVerticalExtentType(EXVerticalExtentType object) {
 		return null;
 	}
 
@@ -3752,8 +3396,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLanguageCodePropertyType(LanguageCodePropertyType object)
-	{
+	public T caseLanguageCodePropertyType(LanguageCodePropertyType object) {
 		return null;
 	}
 
@@ -3768,8 +3411,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLILineagePropertyType(LILineagePropertyType object)
-	{
+	public T caseLILineagePropertyType(LILineagePropertyType object) {
 		return null;
 	}
 
@@ -3784,8 +3426,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLILineageType(LILineageType object)
-	{
+	public T caseLILineageType(LILineageType object) {
 		return null;
 	}
 
@@ -3800,8 +3441,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLIProcessStepPropertyType(LIProcessStepPropertyType object)
-	{
+	public T caseLIProcessStepPropertyType(LIProcessStepPropertyType object) {
 		return null;
 	}
 
@@ -3816,8 +3456,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLIProcessStepType(LIProcessStepType object)
-	{
+	public T caseLIProcessStepType(LIProcessStepType object) {
 		return null;
 	}
 
@@ -3832,8 +3471,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLISourcePropertyType(LISourcePropertyType object)
-	{
+	public T caseLISourcePropertyType(LISourcePropertyType object) {
 		return null;
 	}
 
@@ -3848,8 +3486,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLISourceType(LISourceType object)
-	{
+	public T caseLISourceType(LISourceType object) {
 		return null;
 	}
 
@@ -3864,8 +3501,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLocalisedCharacterStringPropertyType(LocalisedCharacterStringPropertyType object)
-	{
+	public T caseLocalisedCharacterStringPropertyType(LocalisedCharacterStringPropertyType object) {
 		return null;
 	}
 
@@ -3880,8 +3516,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLocalisedCharacterStringType(LocalisedCharacterStringType object)
-	{
+	public T caseLocalisedCharacterStringType(LocalisedCharacterStringType object) {
 		return null;
 	}
 
@@ -3896,8 +3531,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDAggregateInformationPropertyType(MDAggregateInformationPropertyType object)
-	{
+	public T caseMDAggregateInformationPropertyType(MDAggregateInformationPropertyType object) {
 		return null;
 	}
 
@@ -3912,8 +3546,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDAggregateInformationType(MDAggregateInformationType object)
-	{
+	public T caseMDAggregateInformationType(MDAggregateInformationType object) {
 		return null;
 	}
 
@@ -3928,8 +3561,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDApplicationSchemaInformationPropertyType(MDApplicationSchemaInformationPropertyType object)
-	{
+	public T caseMDApplicationSchemaInformationPropertyType(MDApplicationSchemaInformationPropertyType object) {
 		return null;
 	}
 
@@ -3944,8 +3576,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDApplicationSchemaInformationType(MDApplicationSchemaInformationType object)
-	{
+	public T caseMDApplicationSchemaInformationType(MDApplicationSchemaInformationType object) {
 		return null;
 	}
 
@@ -3960,8 +3591,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDBandPropertyType(MDBandPropertyType object)
-	{
+	public T caseMDBandPropertyType(MDBandPropertyType object) {
 		return null;
 	}
 
@@ -3976,8 +3606,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDBandType(MDBandType object)
-	{
+	public T caseMDBandType(MDBandType object) {
 		return null;
 	}
 
@@ -3992,8 +3621,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDBrowseGraphicPropertyType(MDBrowseGraphicPropertyType object)
-	{
+	public T caseMDBrowseGraphicPropertyType(MDBrowseGraphicPropertyType object) {
 		return null;
 	}
 
@@ -4008,8 +3636,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDBrowseGraphicType(MDBrowseGraphicType object)
-	{
+	public T caseMDBrowseGraphicType(MDBrowseGraphicType object) {
 		return null;
 	}
 
@@ -4024,8 +3651,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDCellGeometryCodePropertyType(MDCellGeometryCodePropertyType object)
-	{
+	public T caseMDCellGeometryCodePropertyType(MDCellGeometryCodePropertyType object) {
 		return null;
 	}
 
@@ -4040,8 +3666,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDCharacterSetCodePropertyType(MDCharacterSetCodePropertyType object)
-	{
+	public T caseMDCharacterSetCodePropertyType(MDCharacterSetCodePropertyType object) {
 		return null;
 	}
 
@@ -4056,8 +3681,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDClassificationCodePropertyType(MDClassificationCodePropertyType object)
-	{
+	public T caseMDClassificationCodePropertyType(MDClassificationCodePropertyType object) {
 		return null;
 	}
 
@@ -4072,8 +3696,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDConstraintsPropertyType(MDConstraintsPropertyType object)
-	{
+	public T caseMDConstraintsPropertyType(MDConstraintsPropertyType object) {
 		return null;
 	}
 
@@ -4088,8 +3711,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDConstraintsType(MDConstraintsType object)
-	{
+	public T caseMDConstraintsType(MDConstraintsType object) {
 		return null;
 	}
 
@@ -4104,8 +3726,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDContentInformationPropertyType(MDContentInformationPropertyType object)
-	{
+	public T caseMDContentInformationPropertyType(MDContentInformationPropertyType object) {
 		return null;
 	}
 
@@ -4120,8 +3741,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDCoverageContentTypeCodePropertyType(MDCoverageContentTypeCodePropertyType object)
-	{
+	public T caseMDCoverageContentTypeCodePropertyType(MDCoverageContentTypeCodePropertyType object) {
 		return null;
 	}
 
@@ -4136,8 +3756,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDCoverageDescriptionPropertyType(MDCoverageDescriptionPropertyType object)
-	{
+	public T caseMDCoverageDescriptionPropertyType(MDCoverageDescriptionPropertyType object) {
 		return null;
 	}
 
@@ -4152,8 +3771,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDCoverageDescriptionType(MDCoverageDescriptionType object)
-	{
+	public T caseMDCoverageDescriptionType(MDCoverageDescriptionType object) {
 		return null;
 	}
 
@@ -4168,8 +3786,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDataIdentificationPropertyType(MDDataIdentificationPropertyType object)
-	{
+	public T caseMDDataIdentificationPropertyType(MDDataIdentificationPropertyType object) {
 		return null;
 	}
 
@@ -4184,8 +3801,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDataIdentificationType(MDDataIdentificationType object)
-	{
+	public T caseMDDataIdentificationType(MDDataIdentificationType object) {
 		return null;
 	}
 
@@ -4200,8 +3816,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDatatypeCodePropertyType(MDDatatypeCodePropertyType object)
-	{
+	public T caseMDDatatypeCodePropertyType(MDDatatypeCodePropertyType object) {
 		return null;
 	}
 
@@ -4216,8 +3831,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDigitalTransferOptionsPropertyType(MDDigitalTransferOptionsPropertyType object)
-	{
+	public T caseMDDigitalTransferOptionsPropertyType(MDDigitalTransferOptionsPropertyType object) {
 		return null;
 	}
 
@@ -4232,8 +3846,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDigitalTransferOptionsType(MDDigitalTransferOptionsType object)
-	{
+	public T caseMDDigitalTransferOptionsType(MDDigitalTransferOptionsType object) {
 		return null;
 	}
 
@@ -4248,8 +3861,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDimensionNameTypeCodePropertyType(MDDimensionNameTypeCodePropertyType object)
-	{
+	public T caseMDDimensionNameTypeCodePropertyType(MDDimensionNameTypeCodePropertyType object) {
 		return null;
 	}
 
@@ -4264,8 +3876,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDimensionPropertyType(MDDimensionPropertyType object)
-	{
+	public T caseMDDimensionPropertyType(MDDimensionPropertyType object) {
 		return null;
 	}
 
@@ -4280,8 +3891,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDimensionType(MDDimensionType object)
-	{
+	public T caseMDDimensionType(MDDimensionType object) {
 		return null;
 	}
 
@@ -4296,8 +3906,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDistributionPropertyType(MDDistributionPropertyType object)
-	{
+	public T caseMDDistributionPropertyType(MDDistributionPropertyType object) {
 		return null;
 	}
 
@@ -4312,8 +3921,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDistributionType(MDDistributionType object)
-	{
+	public T caseMDDistributionType(MDDistributionType object) {
 		return null;
 	}
 
@@ -4328,8 +3936,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDistributionUnitsPropertyType(MDDistributionUnitsPropertyType object)
-	{
+	public T caseMDDistributionUnitsPropertyType(MDDistributionUnitsPropertyType object) {
 		return null;
 	}
 
@@ -4344,8 +3951,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDistributorPropertyType(MDDistributorPropertyType object)
-	{
+	public T caseMDDistributorPropertyType(MDDistributorPropertyType object) {
 		return null;
 	}
 
@@ -4360,8 +3966,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDDistributorType(MDDistributorType object)
-	{
+	public T caseMDDistributorType(MDDistributorType object) {
 		return null;
 	}
 
@@ -4376,8 +3981,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDExtendedElementInformationPropertyType(MDExtendedElementInformationPropertyType object)
-	{
+	public T caseMDExtendedElementInformationPropertyType(MDExtendedElementInformationPropertyType object) {
 		return null;
 	}
 
@@ -4392,8 +3996,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDExtendedElementInformationType(MDExtendedElementInformationType object)
-	{
+	public T caseMDExtendedElementInformationType(MDExtendedElementInformationType object) {
 		return null;
 	}
 
@@ -4408,8 +4011,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDFeatureCatalogueDescriptionPropertyType(MDFeatureCatalogueDescriptionPropertyType object)
-	{
+	public T caseMDFeatureCatalogueDescriptionPropertyType(MDFeatureCatalogueDescriptionPropertyType object) {
 		return null;
 	}
 
@@ -4424,8 +4026,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDFeatureCatalogueDescriptionType(MDFeatureCatalogueDescriptionType object)
-	{
+	public T caseMDFeatureCatalogueDescriptionType(MDFeatureCatalogueDescriptionType object) {
 		return null;
 	}
 
@@ -4440,8 +4041,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDFormatPropertyType(MDFormatPropertyType object)
-	{
+	public T caseMDFormatPropertyType(MDFormatPropertyType object) {
 		return null;
 	}
 
@@ -4456,8 +4056,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDFormatType(MDFormatType object)
-	{
+	public T caseMDFormatType(MDFormatType object) {
 		return null;
 	}
 
@@ -4472,8 +4071,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDGeometricObjectsPropertyType(MDGeometricObjectsPropertyType object)
-	{
+	public T caseMDGeometricObjectsPropertyType(MDGeometricObjectsPropertyType object) {
 		return null;
 	}
 
@@ -4488,8 +4086,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDGeometricObjectsType(MDGeometricObjectsType object)
-	{
+	public T caseMDGeometricObjectsType(MDGeometricObjectsType object) {
 		return null;
 	}
 
@@ -4504,8 +4101,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDGeometricObjectTypeCodePropertyType(MDGeometricObjectTypeCodePropertyType object)
-	{
+	public T caseMDGeometricObjectTypeCodePropertyType(MDGeometricObjectTypeCodePropertyType object) {
 		return null;
 	}
 
@@ -4520,8 +4116,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDGeorectifiedPropertyType(MDGeorectifiedPropertyType object)
-	{
+	public T caseMDGeorectifiedPropertyType(MDGeorectifiedPropertyType object) {
 		return null;
 	}
 
@@ -4536,8 +4131,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDGeorectifiedType(MDGeorectifiedType object)
-	{
+	public T caseMDGeorectifiedType(MDGeorectifiedType object) {
 		return null;
 	}
 
@@ -4552,8 +4146,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDGeoreferenceablePropertyType(MDGeoreferenceablePropertyType object)
-	{
+	public T caseMDGeoreferenceablePropertyType(MDGeoreferenceablePropertyType object) {
 		return null;
 	}
 
@@ -4568,8 +4161,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDGeoreferenceableType(MDGeoreferenceableType object)
-	{
+	public T caseMDGeoreferenceableType(MDGeoreferenceableType object) {
 		return null;
 	}
 
@@ -4584,8 +4176,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDGridSpatialRepresentationPropertyType(MDGridSpatialRepresentationPropertyType object)
-	{
+	public T caseMDGridSpatialRepresentationPropertyType(MDGridSpatialRepresentationPropertyType object) {
 		return null;
 	}
 
@@ -4600,8 +4191,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDGridSpatialRepresentationType(MDGridSpatialRepresentationType object)
-	{
+	public T caseMDGridSpatialRepresentationType(MDGridSpatialRepresentationType object) {
 		return null;
 	}
 
@@ -4616,8 +4206,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDIdentificationPropertyType(MDIdentificationPropertyType object)
-	{
+	public T caseMDIdentificationPropertyType(MDIdentificationPropertyType object) {
 		return null;
 	}
 
@@ -4632,8 +4221,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDIdentifierPropertyType(MDIdentifierPropertyType object)
-	{
+	public T caseMDIdentifierPropertyType(MDIdentifierPropertyType object) {
 		return null;
 	}
 
@@ -4648,8 +4236,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDIdentifierType(MDIdentifierType object)
-	{
+	public T caseMDIdentifierType(MDIdentifierType object) {
 		return null;
 	}
 
@@ -4664,8 +4251,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDImageDescriptionPropertyType(MDImageDescriptionPropertyType object)
-	{
+	public T caseMDImageDescriptionPropertyType(MDImageDescriptionPropertyType object) {
 		return null;
 	}
 
@@ -4680,8 +4266,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDImageDescriptionType(MDImageDescriptionType object)
-	{
+	public T caseMDImageDescriptionType(MDImageDescriptionType object) {
 		return null;
 	}
 
@@ -4696,8 +4281,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDImagingConditionCodePropertyType(MDImagingConditionCodePropertyType object)
-	{
+	public T caseMDImagingConditionCodePropertyType(MDImagingConditionCodePropertyType object) {
 		return null;
 	}
 
@@ -4712,8 +4296,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDKeywordsPropertyType(MDKeywordsPropertyType object)
-	{
+	public T caseMDKeywordsPropertyType(MDKeywordsPropertyType object) {
 		return null;
 	}
 
@@ -4728,8 +4311,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDKeywordsType(MDKeywordsType object)
-	{
+	public T caseMDKeywordsType(MDKeywordsType object) {
 		return null;
 	}
 
@@ -4744,8 +4326,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDKeywordTypeCodePropertyType(MDKeywordTypeCodePropertyType object)
-	{
+	public T caseMDKeywordTypeCodePropertyType(MDKeywordTypeCodePropertyType object) {
 		return null;
 	}
 
@@ -4760,8 +4341,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDLegalConstraintsPropertyType(MDLegalConstraintsPropertyType object)
-	{
+	public T caseMDLegalConstraintsPropertyType(MDLegalConstraintsPropertyType object) {
 		return null;
 	}
 
@@ -4776,8 +4356,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDLegalConstraintsType(MDLegalConstraintsType object)
-	{
+	public T caseMDLegalConstraintsType(MDLegalConstraintsType object) {
 		return null;
 	}
 
@@ -4792,8 +4371,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMaintenanceFrequencyCodePropertyType(MDMaintenanceFrequencyCodePropertyType object)
-	{
+	public T caseMDMaintenanceFrequencyCodePropertyType(MDMaintenanceFrequencyCodePropertyType object) {
 		return null;
 	}
 
@@ -4808,8 +4386,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMaintenanceInformationPropertyType(MDMaintenanceInformationPropertyType object)
-	{
+	public T caseMDMaintenanceInformationPropertyType(MDMaintenanceInformationPropertyType object) {
 		return null;
 	}
 
@@ -4824,8 +4401,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMaintenanceInformationType(MDMaintenanceInformationType object)
-	{
+	public T caseMDMaintenanceInformationType(MDMaintenanceInformationType object) {
 		return null;
 	}
 
@@ -4840,8 +4416,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMediumFormatCodePropertyType(MDMediumFormatCodePropertyType object)
-	{
+	public T caseMDMediumFormatCodePropertyType(MDMediumFormatCodePropertyType object) {
 		return null;
 	}
 
@@ -4856,8 +4431,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMediumNameCodePropertyType(MDMediumNameCodePropertyType object)
-	{
+	public T caseMDMediumNameCodePropertyType(MDMediumNameCodePropertyType object) {
 		return null;
 	}
 
@@ -4872,8 +4446,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMediumPropertyType(MDMediumPropertyType object)
-	{
+	public T caseMDMediumPropertyType(MDMediumPropertyType object) {
 		return null;
 	}
 
@@ -4888,8 +4461,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMediumType(MDMediumType object)
-	{
+	public T caseMDMediumType(MDMediumType object) {
 		return null;
 	}
 
@@ -4904,8 +4476,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMetadataExtensionInformationPropertyType(MDMetadataExtensionInformationPropertyType object)
-	{
+	public T caseMDMetadataExtensionInformationPropertyType(MDMetadataExtensionInformationPropertyType object) {
 		return null;
 	}
 
@@ -4920,8 +4491,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMetadataExtensionInformationType(MDMetadataExtensionInformationType object)
-	{
+	public T caseMDMetadataExtensionInformationType(MDMetadataExtensionInformationType object) {
 		return null;
 	}
 
@@ -4936,8 +4506,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMetadataPropertyType(MDMetadataPropertyType object)
-	{
+	public T caseMDMetadataPropertyType(MDMetadataPropertyType object) {
 		return null;
 	}
 
@@ -4952,8 +4521,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDMetadataType(MDMetadataType object)
-	{
+	public T caseMDMetadataType(MDMetadataType object) {
 		return null;
 	}
 
@@ -4968,8 +4536,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDObligationCodePropertyType(MDObligationCodePropertyType object)
-	{
+	public T caseMDObligationCodePropertyType(MDObligationCodePropertyType object) {
 		return null;
 	}
 
@@ -4984,8 +4551,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDPixelOrientationCodePropertyType(MDPixelOrientationCodePropertyType object)
-	{
+	public T caseMDPixelOrientationCodePropertyType(MDPixelOrientationCodePropertyType object) {
 		return null;
 	}
 
@@ -5000,8 +4566,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDPortrayalCatalogueReferencePropertyType(MDPortrayalCatalogueReferencePropertyType object)
-	{
+	public T caseMDPortrayalCatalogueReferencePropertyType(MDPortrayalCatalogueReferencePropertyType object) {
 		return null;
 	}
 
@@ -5016,8 +4581,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDPortrayalCatalogueReferenceType(MDPortrayalCatalogueReferenceType object)
-	{
+	public T caseMDPortrayalCatalogueReferenceType(MDPortrayalCatalogueReferenceType object) {
 		return null;
 	}
 
@@ -5032,8 +4596,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDProgressCodePropertyType(MDProgressCodePropertyType object)
-	{
+	public T caseMDProgressCodePropertyType(MDProgressCodePropertyType object) {
 		return null;
 	}
 
@@ -5048,8 +4611,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDRangeDimensionPropertyType(MDRangeDimensionPropertyType object)
-	{
+	public T caseMDRangeDimensionPropertyType(MDRangeDimensionPropertyType object) {
 		return null;
 	}
 
@@ -5064,8 +4626,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDRangeDimensionType(MDRangeDimensionType object)
-	{
+	public T caseMDRangeDimensionType(MDRangeDimensionType object) {
 		return null;
 	}
 
@@ -5080,8 +4641,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDReferenceSystemPropertyType(MDReferenceSystemPropertyType object)
-	{
+	public T caseMDReferenceSystemPropertyType(MDReferenceSystemPropertyType object) {
 		return null;
 	}
 
@@ -5096,8 +4656,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDReferenceSystemType(MDReferenceSystemType object)
-	{
+	public T caseMDReferenceSystemType(MDReferenceSystemType object) {
 		return null;
 	}
 
@@ -5112,8 +4671,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDRepresentativeFractionPropertyType(MDRepresentativeFractionPropertyType object)
-	{
+	public T caseMDRepresentativeFractionPropertyType(MDRepresentativeFractionPropertyType object) {
 		return null;
 	}
 
@@ -5128,8 +4686,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDRepresentativeFractionType(MDRepresentativeFractionType object)
-	{
+	public T caseMDRepresentativeFractionType(MDRepresentativeFractionType object) {
 		return null;
 	}
 
@@ -5144,8 +4701,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDResolutionPropertyType(MDResolutionPropertyType object)
-	{
+	public T caseMDResolutionPropertyType(MDResolutionPropertyType object) {
 		return null;
 	}
 
@@ -5160,8 +4716,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDResolutionType(MDResolutionType object)
-	{
+	public T caseMDResolutionType(MDResolutionType object) {
 		return null;
 	}
 
@@ -5176,8 +4731,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDRestrictionCodePropertyType(MDRestrictionCodePropertyType object)
-	{
+	public T caseMDRestrictionCodePropertyType(MDRestrictionCodePropertyType object) {
 		return null;
 	}
 
@@ -5192,8 +4746,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDScopeCodePropertyType(MDScopeCodePropertyType object)
-	{
+	public T caseMDScopeCodePropertyType(MDScopeCodePropertyType object) {
 		return null;
 	}
 
@@ -5208,8 +4761,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDScopeDescriptionPropertyType(MDScopeDescriptionPropertyType object)
-	{
+	public T caseMDScopeDescriptionPropertyType(MDScopeDescriptionPropertyType object) {
 		return null;
 	}
 
@@ -5224,8 +4776,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDScopeDescriptionType(MDScopeDescriptionType object)
-	{
+	public T caseMDScopeDescriptionType(MDScopeDescriptionType object) {
 		return null;
 	}
 
@@ -5240,8 +4791,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDSecurityConstraintsPropertyType(MDSecurityConstraintsPropertyType object)
-	{
+	public T caseMDSecurityConstraintsPropertyType(MDSecurityConstraintsPropertyType object) {
 		return null;
 	}
 
@@ -5256,8 +4806,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDSecurityConstraintsType(MDSecurityConstraintsType object)
-	{
+	public T caseMDSecurityConstraintsType(MDSecurityConstraintsType object) {
 		return null;
 	}
 
@@ -5272,8 +4821,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDServiceIdentificationPropertyType(MDServiceIdentificationPropertyType object)
-	{
+	public T caseMDServiceIdentificationPropertyType(MDServiceIdentificationPropertyType object) {
 		return null;
 	}
 
@@ -5288,8 +4836,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDServiceIdentificationType(MDServiceIdentificationType object)
-	{
+	public T caseMDServiceIdentificationType(MDServiceIdentificationType object) {
 		return null;
 	}
 
@@ -5304,8 +4851,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDSpatialRepresentationPropertyType(MDSpatialRepresentationPropertyType object)
-	{
+	public T caseMDSpatialRepresentationPropertyType(MDSpatialRepresentationPropertyType object) {
 		return null;
 	}
 
@@ -5320,8 +4866,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDSpatialRepresentationTypeCodePropertyType(MDSpatialRepresentationTypeCodePropertyType object)
-	{
+	public T caseMDSpatialRepresentationTypeCodePropertyType(MDSpatialRepresentationTypeCodePropertyType object) {
 		return null;
 	}
 
@@ -5336,8 +4881,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDStandardOrderProcessPropertyType(MDStandardOrderProcessPropertyType object)
-	{
+	public T caseMDStandardOrderProcessPropertyType(MDStandardOrderProcessPropertyType object) {
 		return null;
 	}
 
@@ -5352,8 +4896,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDStandardOrderProcessType(MDStandardOrderProcessType object)
-	{
+	public T caseMDStandardOrderProcessType(MDStandardOrderProcessType object) {
 		return null;
 	}
 
@@ -5368,8 +4911,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDTopicCategoryCodePropertyType(MDTopicCategoryCodePropertyType object)
-	{
+	public T caseMDTopicCategoryCodePropertyType(MDTopicCategoryCodePropertyType object) {
 		return null;
 	}
 
@@ -5384,8 +4926,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDTopologyLevelCodePropertyType(MDTopologyLevelCodePropertyType object)
-	{
+	public T caseMDTopologyLevelCodePropertyType(MDTopologyLevelCodePropertyType object) {
 		return null;
 	}
 
@@ -5400,8 +4941,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDUsagePropertyType(MDUsagePropertyType object)
-	{
+	public T caseMDUsagePropertyType(MDUsagePropertyType object) {
 		return null;
 	}
 
@@ -5416,8 +4956,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDUsageType(MDUsageType object)
-	{
+	public T caseMDUsageType(MDUsageType object) {
 		return null;
 	}
 
@@ -5432,8 +4971,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDVectorSpatialRepresentationPropertyType(MDVectorSpatialRepresentationPropertyType object)
-	{
+	public T caseMDVectorSpatialRepresentationPropertyType(MDVectorSpatialRepresentationPropertyType object) {
 		return null;
 	}
 
@@ -5448,8 +4986,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMDVectorSpatialRepresentationType(MDVectorSpatialRepresentationType object)
-	{
+	public T caseMDVectorSpatialRepresentationType(MDVectorSpatialRepresentationType object) {
 		return null;
 	}
 
@@ -5464,8 +5001,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePTFreeTextPropertyType(PTFreeTextPropertyType object)
-	{
+	public T casePTFreeTextPropertyType(PTFreeTextPropertyType object) {
 		return null;
 	}
 
@@ -5480,8 +5016,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePTFreeTextType(PTFreeTextType object)
-	{
+	public T casePTFreeTextType(PTFreeTextType object) {
 		return null;
 	}
 
@@ -5496,8 +5031,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePTLocaleContainerPropertyType(PTLocaleContainerPropertyType object)
-	{
+	public T casePTLocaleContainerPropertyType(PTLocaleContainerPropertyType object) {
 		return null;
 	}
 
@@ -5512,8 +5046,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePTLocaleContainerType(PTLocaleContainerType object)
-	{
+	public T casePTLocaleContainerType(PTLocaleContainerType object) {
 		return null;
 	}
 
@@ -5528,8 +5061,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePTLocalePropertyType(PTLocalePropertyType object)
-	{
+	public T casePTLocalePropertyType(PTLocalePropertyType object) {
 		return null;
 	}
 
@@ -5544,8 +5076,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePTLocaleType(PTLocaleType object)
-	{
+	public T casePTLocaleType(PTLocaleType object) {
 		return null;
 	}
 
@@ -5560,8 +5091,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRSIdentifierPropertyType(RSIdentifierPropertyType object)
-	{
+	public T caseRSIdentifierPropertyType(RSIdentifierPropertyType object) {
 		return null;
 	}
 
@@ -5576,8 +5106,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRSIdentifierType(RSIdentifierType object)
-	{
+	public T caseRSIdentifierType(RSIdentifierType object) {
 		return null;
 	}
 
@@ -5592,8 +5121,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRSReferenceSystemPropertyType(RSReferenceSystemPropertyType object)
-	{
+	public T caseRSReferenceSystemPropertyType(RSReferenceSystemPropertyType object) {
 		return null;
 	}
 
@@ -5608,8 +5136,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseURLPropertyType(URLPropertyType object)
-	{
+	public T caseURLPropertyType(URLPropertyType object) {
 		return null;
 	}
 
@@ -5624,8 +5151,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDocumentRoot(DocumentRoot object)
-	{
+	public T caseDocumentRoot(DocumentRoot object) {
 		return null;
 	}
 
@@ -5640,8 +5166,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAbstractObjectType(AbstractObjectType object)
-	{
+	public T caseAbstractObjectType(AbstractObjectType object) {
 		return null;
 	}
 
@@ -5656,8 +5181,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObjectReferencePropertyType(ObjectReferencePropertyType object)
-	{
+	public T caseObjectReferencePropertyType(ObjectReferencePropertyType object) {
 		return null;
 	}
 
@@ -5672,8 +5196,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCharacterStringPropertyType(CharacterStringPropertyType object)
-	{
+	public T caseCharacterStringPropertyType(CharacterStringPropertyType object) {
 		return null;
 	}
 
@@ -5689,8 +5212,7 @@ public class GMDSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object)
-	{
+	public T defaultCase(EObject object) {
 		return null;
 	}
 

@@ -36,8 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGridType
-{
+public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGridType {
 	/**
 	 * The cached value of the '{@link #getOrigin() <em>Origin</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -63,8 +62,7 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RectifiedGridTypeImpl()
-	{
+	protected RectifiedGridTypeImpl() {
 		super();
 	}
 
@@ -74,8 +72,7 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getRectifiedGridType();
 	}
 
@@ -84,8 +81,8 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PointPropertyType getOrigin()
-	{
+	@Override
+	public PointPropertyType getOrigin() {
 		return origin;
 	}
 
@@ -94,12 +91,10 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrigin(PointPropertyType newOrigin, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOrigin(PointPropertyType newOrigin, NotificationChain msgs) {
 		PointPropertyType oldOrigin = origin;
 		origin = newOrigin;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.RECTIFIED_GRID_TYPE__ORIGIN, oldOrigin, newOrigin);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -111,10 +106,9 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrigin(PointPropertyType newOrigin)
-	{
-		if (newOrigin != origin)
-		{
+	@Override
+	public void setOrigin(PointPropertyType newOrigin) {
+		if (newOrigin != origin) {
 			NotificationChain msgs = null;
 			if (origin != null)
 				msgs = ((InternalEObject)origin).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.RECTIFIED_GRID_TYPE__ORIGIN, null, msgs);
@@ -132,10 +126,9 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<VectorType> getOffsetVector()
-	{
-		if (offsetVector == null)
-		{
+	@Override
+	public EList<VectorType> getOffsetVector() {
+		if (offsetVector == null) {
 			offsetVector = new EObjectContainmentEList<VectorType>(VectorType.class, this, GMLPackage.RECTIFIED_GRID_TYPE__OFFSET_VECTOR);
 		}
 		return offsetVector;
@@ -147,10 +140,8 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.RECTIFIED_GRID_TYPE__ORIGIN:
 				return basicSetOrigin(null, msgs);
 			case GMLPackage.RECTIFIED_GRID_TYPE__OFFSET_VECTOR:
@@ -165,10 +156,8 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.RECTIFIED_GRID_TYPE__ORIGIN:
 				return getOrigin();
 			case GMLPackage.RECTIFIED_GRID_TYPE__OFFSET_VECTOR:
@@ -184,10 +173,8 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.RECTIFIED_GRID_TYPE__ORIGIN:
 				setOrigin((PointPropertyType)newValue);
 				return;
@@ -205,10 +192,8 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.RECTIFIED_GRID_TYPE__ORIGIN:
 				setOrigin((PointPropertyType)null);
 				return;
@@ -225,10 +210,8 @@ public class RectifiedGridTypeImpl extends GridTypeImpl implements RectifiedGrid
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.RECTIFIED_GRID_TYPE__ORIGIN:
 				return origin != null;
 			case GMLPackage.RECTIFIED_GRID_TYPE__OFFSET_VECTOR:

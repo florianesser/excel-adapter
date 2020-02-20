@@ -47,8 +47,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImpl implements ParameterValueType
-{
+public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImpl implements ParameterValueType {
 	/**
 	 * The cached value of the '{@link #getValue() <em>Value</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -203,8 +202,7 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ParameterValueTypeImpl()
-	{
+	protected ParameterValueTypeImpl() {
 		super();
 	}
 
@@ -214,8 +212,7 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getParameterValueType();
 	}
 
@@ -224,8 +221,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureType getValue()
-	{
+	@Override
+	public MeasureType getValue() {
 		return value;
 	}
 
@@ -234,12 +231,10 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValue(MeasureType newValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValue(MeasureType newValue, NotificationChain msgs) {
 		MeasureType oldValue = value;
 		value = newValue;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.PARAMETER_VALUE_TYPE__VALUE, oldValue, newValue);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -251,10 +246,9 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(MeasureType newValue)
-	{
-		if (newValue != value)
-		{
+	@Override
+	public void setValue(MeasureType newValue) {
+		if (newValue != value) {
 			NotificationChain msgs = null;
 			if (value != null)
 				msgs = ((InternalEObject)value).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.PARAMETER_VALUE_TYPE__VALUE, null, msgs);
@@ -272,8 +266,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DMSAngleType getDmsAngleValue()
-	{
+	@Override
+	public DMSAngleType getDmsAngleValue() {
 		return dmsAngleValue;
 	}
 
@@ -282,12 +276,10 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDmsAngleValue(DMSAngleType newDmsAngleValue, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDmsAngleValue(DMSAngleType newDmsAngleValue, NotificationChain msgs) {
 		DMSAngleType oldDmsAngleValue = dmsAngleValue;
 		dmsAngleValue = newDmsAngleValue;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.PARAMETER_VALUE_TYPE__DMS_ANGLE_VALUE, oldDmsAngleValue, newDmsAngleValue);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -299,10 +291,9 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDmsAngleValue(DMSAngleType newDmsAngleValue)
-	{
-		if (newDmsAngleValue != dmsAngleValue)
-		{
+	@Override
+	public void setDmsAngleValue(DMSAngleType newDmsAngleValue) {
+		if (newDmsAngleValue != dmsAngleValue) {
 			NotificationChain msgs = null;
 			if (dmsAngleValue != null)
 				msgs = ((InternalEObject)dmsAngleValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.PARAMETER_VALUE_TYPE__DMS_ANGLE_VALUE, null, msgs);
@@ -320,8 +311,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getStringValue()
-	{
+	@Override
+	public String getStringValue() {
 		return stringValue;
 	}
 
@@ -330,8 +321,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStringValue(String newStringValue)
-	{
+	@Override
+	public void setStringValue(String newStringValue) {
 		String oldStringValue = stringValue;
 		stringValue = newStringValue;
 		if (eNotificationRequired())
@@ -343,8 +334,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger getIntegerValue()
-	{
+	@Override
+	public BigInteger getIntegerValue() {
 		return integerValue;
 	}
 
@@ -353,8 +344,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIntegerValue(BigInteger newIntegerValue)
-	{
+	@Override
+	public void setIntegerValue(BigInteger newIntegerValue) {
 		BigInteger oldIntegerValue = integerValue;
 		integerValue = newIntegerValue;
 		if (eNotificationRequired())
@@ -366,8 +357,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isBooleanValue()
-	{
+	@Override
+	public boolean isBooleanValue() {
 		return booleanValue;
 	}
 
@@ -376,8 +367,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBooleanValue(boolean newBooleanValue)
-	{
+	@Override
+	public void setBooleanValue(boolean newBooleanValue) {
 		boolean oldBooleanValue = booleanValue;
 		booleanValue = newBooleanValue;
 		boolean oldBooleanValueESet = booleanValueESet;
@@ -391,8 +382,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetBooleanValue()
-	{
+	@Override
+	public void unsetBooleanValue() {
 		boolean oldBooleanValue = booleanValue;
 		boolean oldBooleanValueESet = booleanValueESet;
 		booleanValue = BOOLEAN_VALUE_EDEFAULT;
@@ -406,8 +397,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetBooleanValue()
-	{
+	@Override
+	public boolean isSetBooleanValue() {
 		return booleanValueESet;
 	}
 
@@ -416,8 +407,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MeasureListType getValueList()
-	{
+	@Override
+	public MeasureListType getValueList() {
 		return valueList;
 	}
 
@@ -426,12 +417,10 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValueList(MeasureListType newValueList, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValueList(MeasureListType newValueList, NotificationChain msgs) {
 		MeasureListType oldValueList = valueList;
 		valueList = newValueList;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.PARAMETER_VALUE_TYPE__VALUE_LIST, oldValueList, newValueList);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -443,10 +432,9 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueList(MeasureListType newValueList)
-	{
-		if (newValueList != valueList)
-		{
+	@Override
+	public void setValueList(MeasureListType newValueList) {
+		if (newValueList != valueList) {
 			NotificationChain msgs = null;
 			if (valueList != null)
 				msgs = ((InternalEObject)valueList).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.PARAMETER_VALUE_TYPE__VALUE_LIST, null, msgs);
@@ -464,8 +452,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<BigInteger> getIntegerValueList()
-	{
+	@Override
+	public List<BigInteger> getIntegerValueList() {
 		return integerValueList;
 	}
 
@@ -474,8 +462,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIntegerValueList(List<BigInteger> newIntegerValueList)
-	{
+	@Override
+	public void setIntegerValueList(List<BigInteger> newIntegerValueList) {
 		List<BigInteger> oldIntegerValueList = integerValueList;
 		integerValueList = newIntegerValueList;
 		if (eNotificationRequired())
@@ -487,8 +475,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValueFile()
-	{
+	@Override
+	public String getValueFile() {
 		return valueFile;
 	}
 
@@ -497,8 +485,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValueFile(String newValueFile)
-	{
+	@Override
+	public void setValueFile(String newValueFile) {
 		String oldValueFile = valueFile;
 		valueFile = newValueFile;
 		if (eNotificationRequired())
@@ -510,10 +498,9 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureMap getOperationParameterGroup()
-	{
-		if (operationParameterGroup == null)
-		{
+	@Override
+	public FeatureMap getOperationParameterGroup() {
+		if (operationParameterGroup == null) {
 			operationParameterGroup = new BasicFeatureMap(this, GMLPackage.PARAMETER_VALUE_TYPE__OPERATION_PARAMETER_GROUP);
 		}
 		return operationParameterGroup;
@@ -524,8 +511,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationParameterPropertyType getOperationParameter()
-	{
+	@Override
+	public OperationParameterPropertyType getOperationParameter() {
 		return (OperationParameterPropertyType)getOperationParameterGroup().get(GMLPackage.eINSTANCE.getParameterValueType_OperationParameter(), true);
 	}
 
@@ -534,8 +521,7 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOperationParameter(OperationParameterPropertyType newOperationParameter, NotificationChain msgs)
-	{
+	public NotificationChain basicSetOperationParameter(OperationParameterPropertyType newOperationParameter, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getOperationParameterGroup()).basicAdd(GMLPackage.eINSTANCE.getParameterValueType_OperationParameter(), newOperationParameter, msgs);
 	}
 
@@ -544,8 +530,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOperationParameter(OperationParameterPropertyType newOperationParameter)
-	{
+	@Override
+	public void setOperationParameter(OperationParameterPropertyType newOperationParameter) {
 		((FeatureMap.Internal)getOperationParameterGroup()).set(GMLPackage.eINSTANCE.getParameterValueType_OperationParameter(), newOperationParameter);
 	}
 
@@ -555,10 +541,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_TYPE__VALUE:
 				return basicSetValue(null, msgs);
 			case GMLPackage.PARAMETER_VALUE_TYPE__DMS_ANGLE_VALUE:
@@ -579,10 +563,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_TYPE__VALUE:
 				return getValue();
 			case GMLPackage.PARAMETER_VALUE_TYPE__DMS_ANGLE_VALUE:
@@ -615,10 +597,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_TYPE__VALUE:
 				setValue((MeasureType)newValue);
 				return;
@@ -659,10 +639,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_TYPE__VALUE:
 				setValue((MeasureType)null);
 				return;
@@ -703,10 +681,8 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.PARAMETER_VALUE_TYPE__VALUE:
 				return value != null;
 			case GMLPackage.PARAMETER_VALUE_TYPE__DMS_ANGLE_VALUE:
@@ -737,11 +713,10 @@ public class ParameterValueTypeImpl extends AbstractGeneralParameterValueTypeImp
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (stringValue: ");
 		result.append(stringValue);
 		result.append(", integerValue: ");

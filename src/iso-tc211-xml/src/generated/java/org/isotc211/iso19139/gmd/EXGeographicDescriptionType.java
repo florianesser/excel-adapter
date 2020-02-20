@@ -19,15 +19,10 @@ package org.isotc211.iso19139.gmd;
  * @model extendedMetaData="name='EX_GeographicDescription_Type' kind='elementOnly'"
  * @generated
  */
-public interface EXGeographicDescriptionType extends AbstractEXGeographicExtentType
-{
+public interface EXGeographicDescriptionType extends AbstractEXGeographicExtentType {
 	/**
 	 * Returns the value of the '<em><b>Geographic Identifier</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geographic Identifier</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Geographic Identifier</em>' containment reference.
 	 * @see #setGeographicIdentifier(MDIdentifierPropertyType)

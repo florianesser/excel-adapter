@@ -21,8 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='TopoSurfacePropertyType' kind='elementOnly'"
  * @generated
  */
-public interface TopoSurfacePropertyType extends EObject
-{
+public interface TopoSurfacePropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Topo Surface</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -53,10 +52,6 @@ public interface TopoSurfacePropertyType extends EObject
 	 * Returns the value of the '<em><b>Owns</b></em>' attribute.
 	 * The default value is <code>"false"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Owns</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Owns</em>' attribute.
 	 * @see #isSetOwns()

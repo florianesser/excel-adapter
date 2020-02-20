@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='LinearRingPropertyType' kind='elementOnly'"
  * @generated
  */
-public interface LinearRingPropertyType extends EObject
-{
+public interface LinearRingPropertyType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Linear Ring</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

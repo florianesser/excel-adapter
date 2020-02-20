@@ -33,8 +33,7 @@ import org.isotc211.iso19139.gmd.PTLocaleType;
  *
  * @generated
  */
-public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocaleType
-{
+public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocaleType {
 	/**
 	 * The cached value of the '{@link #getLanguageCode() <em>Language Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -70,8 +69,7 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PTLocaleTypeImpl()
-	{
+	protected PTLocaleTypeImpl() {
 		super();
 	}
 
@@ -81,8 +79,7 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getPTLocaleType();
 	}
 
@@ -91,8 +88,8 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LanguageCodePropertyType getLanguageCode()
-	{
+	@Override
+	public LanguageCodePropertyType getLanguageCode() {
 		return languageCode;
 	}
 
@@ -101,12 +98,10 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLanguageCode(LanguageCodePropertyType newLanguageCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetLanguageCode(LanguageCodePropertyType newLanguageCode, NotificationChain msgs) {
 		LanguageCodePropertyType oldLanguageCode = languageCode;
 		languageCode = newLanguageCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.PT_LOCALE_TYPE__LANGUAGE_CODE, oldLanguageCode, newLanguageCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -118,10 +113,9 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLanguageCode(LanguageCodePropertyType newLanguageCode)
-	{
-		if (newLanguageCode != languageCode)
-		{
+	@Override
+	public void setLanguageCode(LanguageCodePropertyType newLanguageCode) {
+		if (newLanguageCode != languageCode) {
 			NotificationChain msgs = null;
 			if (languageCode != null)
 				msgs = ((InternalEObject)languageCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.PT_LOCALE_TYPE__LANGUAGE_CODE, null, msgs);
@@ -139,8 +133,8 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CountryPropertyType getCountry()
-	{
+	@Override
+	public CountryPropertyType getCountry() {
 		return country;
 	}
 
@@ -149,12 +143,10 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCountry(CountryPropertyType newCountry, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCountry(CountryPropertyType newCountry, NotificationChain msgs) {
 		CountryPropertyType oldCountry = country;
 		country = newCountry;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.PT_LOCALE_TYPE__COUNTRY, oldCountry, newCountry);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -166,10 +158,9 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCountry(CountryPropertyType newCountry)
-	{
-		if (newCountry != country)
-		{
+	@Override
+	public void setCountry(CountryPropertyType newCountry) {
+		if (newCountry != country) {
 			NotificationChain msgs = null;
 			if (country != null)
 				msgs = ((InternalEObject)country).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.PT_LOCALE_TYPE__COUNTRY, null, msgs);
@@ -187,8 +178,8 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDCharacterSetCodePropertyType getCharacterEncoding()
-	{
+	@Override
+	public MDCharacterSetCodePropertyType getCharacterEncoding() {
 		return characterEncoding;
 	}
 
@@ -197,12 +188,10 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCharacterEncoding(MDCharacterSetCodePropertyType newCharacterEncoding, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCharacterEncoding(MDCharacterSetCodePropertyType newCharacterEncoding, NotificationChain msgs) {
 		MDCharacterSetCodePropertyType oldCharacterEncoding = characterEncoding;
 		characterEncoding = newCharacterEncoding;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.PT_LOCALE_TYPE__CHARACTER_ENCODING, oldCharacterEncoding, newCharacterEncoding);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -214,10 +203,9 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCharacterEncoding(MDCharacterSetCodePropertyType newCharacterEncoding)
-	{
-		if (newCharacterEncoding != characterEncoding)
-		{
+	@Override
+	public void setCharacterEncoding(MDCharacterSetCodePropertyType newCharacterEncoding) {
+		if (newCharacterEncoding != characterEncoding) {
 			NotificationChain msgs = null;
 			if (characterEncoding != null)
 				msgs = ((InternalEObject)characterEncoding).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.PT_LOCALE_TYPE__CHARACTER_ENCODING, null, msgs);
@@ -236,10 +224,8 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_TYPE__LANGUAGE_CODE:
 				return basicSetLanguageCode(null, msgs);
 			case GMDPackage.PT_LOCALE_TYPE__COUNTRY:
@@ -256,10 +242,8 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_TYPE__LANGUAGE_CODE:
 				return getLanguageCode();
 			case GMDPackage.PT_LOCALE_TYPE__COUNTRY:
@@ -276,10 +260,8 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_TYPE__LANGUAGE_CODE:
 				setLanguageCode((LanguageCodePropertyType)newValue);
 				return;
@@ -299,10 +281,8 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_TYPE__LANGUAGE_CODE:
 				setLanguageCode((LanguageCodePropertyType)null);
 				return;
@@ -322,10 +302,8 @@ public class PTLocaleTypeImpl extends AbstractObjectTypeImpl implements PTLocale
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.PT_LOCALE_TYPE__LANGUAGE_CODE:
 				return languageCode != null;
 			case GMDPackage.PT_LOCALE_TYPE__COUNTRY:

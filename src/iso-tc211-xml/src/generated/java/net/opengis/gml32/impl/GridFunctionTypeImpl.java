@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implements GridFunctionType
-{
+public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implements GridFunctionType {
 	/**
 	 * The cached value of the '{@link #getSequenceRule() <em>Sequence Rule</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -70,8 +69,7 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GridFunctionTypeImpl()
-	{
+	protected GridFunctionTypeImpl() {
 		super();
 	}
 
@@ -81,8 +79,7 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGridFunctionType();
 	}
 
@@ -91,8 +88,8 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SequenceRuleType getSequenceRule()
-	{
+	@Override
+	public SequenceRuleType getSequenceRule() {
 		return sequenceRule;
 	}
 
@@ -101,12 +98,10 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSequenceRule(SequenceRuleType newSequenceRule, NotificationChain msgs)
-	{
+	public NotificationChain basicSetSequenceRule(SequenceRuleType newSequenceRule, NotificationChain msgs) {
 		SequenceRuleType oldSequenceRule = sequenceRule;
 		sequenceRule = newSequenceRule;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.GRID_FUNCTION_TYPE__SEQUENCE_RULE, oldSequenceRule, newSequenceRule);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -118,10 +113,9 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSequenceRule(SequenceRuleType newSequenceRule)
-	{
-		if (newSequenceRule != sequenceRule)
-		{
+	@Override
+	public void setSequenceRule(SequenceRuleType newSequenceRule) {
+		if (newSequenceRule != sequenceRule) {
 			NotificationChain msgs = null;
 			if (sequenceRule != null)
 				msgs = ((InternalEObject)sequenceRule).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.GRID_FUNCTION_TYPE__SEQUENCE_RULE, null, msgs);
@@ -139,8 +133,8 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List<BigInteger> getStartPoint()
-	{
+	@Override
+	public List<BigInteger> getStartPoint() {
 		return startPoint;
 	}
 
@@ -149,8 +143,8 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStartPoint(List<BigInteger> newStartPoint)
-	{
+	@Override
+	public void setStartPoint(List<BigInteger> newStartPoint) {
 		List<BigInteger> oldStartPoint = startPoint;
 		startPoint = newStartPoint;
 		if (eNotificationRequired())
@@ -163,10 +157,8 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.GRID_FUNCTION_TYPE__SEQUENCE_RULE:
 				return basicSetSequenceRule(null, msgs);
 		}
@@ -179,10 +171,8 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.GRID_FUNCTION_TYPE__SEQUENCE_RULE:
 				return getSequenceRule();
 			case GMLPackage.GRID_FUNCTION_TYPE__START_POINT:
@@ -198,10 +188,8 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.GRID_FUNCTION_TYPE__SEQUENCE_RULE:
 				setSequenceRule((SequenceRuleType)newValue);
 				return;
@@ -218,10 +206,8 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GRID_FUNCTION_TYPE__SEQUENCE_RULE:
 				setSequenceRule((SequenceRuleType)null);
 				return;
@@ -238,10 +224,8 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.GRID_FUNCTION_TYPE__SEQUENCE_RULE:
 				return sequenceRule != null;
 			case GMLPackage.GRID_FUNCTION_TYPE__START_POINT:
@@ -256,11 +240,10 @@ public class GridFunctionTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (startPoint: ");
 		result.append(startPoint);
 		result.append(')');

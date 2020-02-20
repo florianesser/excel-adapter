@@ -14,6 +14,5 @@ package org.isotc211.iso19139.gmd;
  *        extendedMetaData="name='AbstractDQ_PositionalAccuracy_Type' kind='elementOnly'"
  * @generated
  */
-public interface AbstractDQPositionalAccuracyType extends AbstractDQElementType
-{
+public interface AbstractDQPositionalAccuracyType extends AbstractDQElementType {
 } // AbstractDQPositionalAccuracyType

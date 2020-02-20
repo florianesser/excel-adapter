@@ -34,16 +34,11 @@ import org.isotc211.iso19139.gco.ObjectReferencePropertyType;
  * @model extendedMetaData="name='MD_ScopeDescription_Type' kind='elementOnly'"
  * @generated
  */
-public interface MDScopeDescriptionType extends EObject
-{
+public interface MDScopeDescriptionType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Attributes</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.ObjectReferencePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Attributes</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Attributes</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDScopeDescriptionType_Attributes()
@@ -57,10 +52,6 @@ public interface MDScopeDescriptionType extends EObject
 	 * Returns the value of the '<em><b>Features</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.ObjectReferencePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Features</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Features</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDScopeDescriptionType_Features()
@@ -74,10 +65,6 @@ public interface MDScopeDescriptionType extends EObject
 	 * Returns the value of the '<em><b>Feature Instances</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.ObjectReferencePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Instances</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Instances</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDScopeDescriptionType_FeatureInstances()
@@ -91,10 +78,6 @@ public interface MDScopeDescriptionType extends EObject
 	 * Returns the value of the '<em><b>Attribute Instances</b></em>' containment reference list.
 	 * The list contents are of type {@link org.isotc211.iso19139.gco.ObjectReferencePropertyType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Attribute Instances</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Attribute Instances</em>' containment reference list.
 	 * @see org.isotc211.iso19139.gmd.GMDPackage#getMDScopeDescriptionType_AttributeInstances()
@@ -107,10 +90,6 @@ public interface MDScopeDescriptionType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Dataset</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dataset</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dataset</em>' containment reference.
 	 * @see #setDataset(CharacterStringPropertyType)
@@ -134,10 +113,6 @@ public interface MDScopeDescriptionType extends EObject
 	/**
 	 * Returns the value of the '<em><b>Other</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Other</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other</em>' containment reference.
 	 * @see #setOther(CharacterStringPropertyType)

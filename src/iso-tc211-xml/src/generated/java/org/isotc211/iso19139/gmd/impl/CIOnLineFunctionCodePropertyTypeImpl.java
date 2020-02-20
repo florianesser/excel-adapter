@@ -30,8 +30,7 @@ import org.isotc211.iso19139.gmd.GMDPackage;
  *
  * @generated
  */
-public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements CIOnLineFunctionCodePropertyType
-{
+public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Container implements CIOnLineFunctionCodePropertyType {
 	/**
 	 * The cached value of the '{@link #getCIOnLineFunctionCode() <em>CI On Line Function Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -67,8 +66,7 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CIOnLineFunctionCodePropertyTypeImpl()
-	{
+	protected CIOnLineFunctionCodePropertyTypeImpl() {
 		super();
 	}
 
@@ -78,8 +76,7 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getCIOnLineFunctionCodePropertyType();
 	}
 
@@ -88,8 +85,8 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CodeListValueType getCIOnLineFunctionCode()
-	{
+	@Override
+	public CodeListValueType getCIOnLineFunctionCode() {
 		return cIOnLineFunctionCode;
 	}
 
@@ -98,12 +95,10 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCIOnLineFunctionCode(CodeListValueType newCIOnLineFunctionCode, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCIOnLineFunctionCode(CodeListValueType newCIOnLineFunctionCode, NotificationChain msgs) {
 		CodeListValueType oldCIOnLineFunctionCode = cIOnLineFunctionCode;
 		cIOnLineFunctionCode = newCIOnLineFunctionCode;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE__CI_ON_LINE_FUNCTION_CODE, oldCIOnLineFunctionCode, newCIOnLineFunctionCode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -115,10 +110,9 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCIOnLineFunctionCode(CodeListValueType newCIOnLineFunctionCode)
-	{
-		if (newCIOnLineFunctionCode != cIOnLineFunctionCode)
-		{
+	@Override
+	public void setCIOnLineFunctionCode(CodeListValueType newCIOnLineFunctionCode) {
+		if (newCIOnLineFunctionCode != cIOnLineFunctionCode) {
 			NotificationChain msgs = null;
 			if (cIOnLineFunctionCode != null)
 				msgs = ((InternalEObject)cIOnLineFunctionCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE__CI_ON_LINE_FUNCTION_CODE, null, msgs);
@@ -136,8 +130,8 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getNilReason()
-	{
+	@Override
+	public Object getNilReason() {
 		return nilReason;
 	}
 
@@ -146,8 +140,8 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNilReason(Object newNilReason)
-	{
+	@Override
+	public void setNilReason(Object newNilReason) {
 		Object oldNilReason = nilReason;
 		nilReason = newNilReason;
 		if (eNotificationRequired())
@@ -160,10 +154,8 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE__CI_ON_LINE_FUNCTION_CODE:
 				return basicSetCIOnLineFunctionCode(null, msgs);
 		}
@@ -176,10 +168,8 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE__CI_ON_LINE_FUNCTION_CODE:
 				return getCIOnLineFunctionCode();
 			case GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -194,10 +184,8 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE__CI_ON_LINE_FUNCTION_CODE:
 				setCIOnLineFunctionCode((CodeListValueType)newValue);
 				return;
@@ -214,10 +202,8 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE__CI_ON_LINE_FUNCTION_CODE:
 				setCIOnLineFunctionCode((CodeListValueType)null);
 				return;
@@ -234,10 +220,8 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE__CI_ON_LINE_FUNCTION_CODE:
 				return cIOnLineFunctionCode != null;
 			case GMDPackage.CI_ON_LINE_FUNCTION_CODE_PROPERTY_TYPE__NIL_REASON:
@@ -252,11 +236,10 @@ public class CIOnLineFunctionCodePropertyTypeImpl extends MinimalEObjectImpl.Con
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (nilReason: ");
 		result.append(nilReason);
 		result.append(')');

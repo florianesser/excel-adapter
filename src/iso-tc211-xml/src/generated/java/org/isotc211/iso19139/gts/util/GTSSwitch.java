@@ -22,8 +22,7 @@ import org.isotc211.iso19139.gts.*;
  * @see org.isotc211.iso19139.gts.GTSPackage
  * @generated
  */
-public class GTSSwitch<T> extends Switch<T>
-{
+public class GTSSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -38,10 +37,8 @@ public class GTSSwitch<T> extends Switch<T>
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GTSSwitch()
-	{
-		if (modelPackage == null)
-		{
+	public GTSSwitch() {
+		if (modelPackage == null) {
 			modelPackage = GTSPackage.eINSTANCE;
 		}
 	}
@@ -55,8 +52,7 @@ public class GTSSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage)
-	{
+	protected boolean isSwitchFor(EPackage ePackage) {
 		return ePackage == modelPackage;
 	}
 
@@ -68,26 +64,21 @@ public class GTSSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject)
-	{
-		switch (classifierID)
-		{
-			case GTSPackage.TM_PERIOD_DURATION_PROPERTY_TYPE:
-			{
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case GTSPackage.TM_PERIOD_DURATION_PROPERTY_TYPE: {
 				TMPeriodDurationPropertyType tmPeriodDurationPropertyType = (TMPeriodDurationPropertyType)theEObject;
 				T result = caseTMPeriodDurationPropertyType(tmPeriodDurationPropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GTSPackage.TM_PRIMITIVE_PROPERTY_TYPE:
-			{
+			case GTSPackage.TM_PRIMITIVE_PROPERTY_TYPE: {
 				TMPrimitivePropertyType tmPrimitivePropertyType = (TMPrimitivePropertyType)theEObject;
 				T result = caseTMPrimitivePropertyType(tmPrimitivePropertyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GTSPackage.DOCUMENT_ROOT:
-			{
+			case GTSPackage.DOCUMENT_ROOT: {
 				DocumentRoot documentRoot = (DocumentRoot)theEObject;
 				T result = caseDocumentRoot(documentRoot);
 				if (result == null) result = defaultCase(theEObject);
@@ -108,8 +99,7 @@ public class GTSSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTMPeriodDurationPropertyType(TMPeriodDurationPropertyType object)
-	{
+	public T caseTMPeriodDurationPropertyType(TMPeriodDurationPropertyType object) {
 		return null;
 	}
 
@@ -124,8 +114,7 @@ public class GTSSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTMPrimitivePropertyType(TMPrimitivePropertyType object)
-	{
+	public T caseTMPrimitivePropertyType(TMPrimitivePropertyType object) {
 		return null;
 	}
 
@@ -140,8 +129,7 @@ public class GTSSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDocumentRoot(DocumentRoot object)
-	{
+	public T caseDocumentRoot(DocumentRoot object) {
 		return null;
 	}
 
@@ -157,8 +145,7 @@ public class GTSSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object)
-	{
+	public T defaultCase(EObject object) {
 		return null;
 	}
 

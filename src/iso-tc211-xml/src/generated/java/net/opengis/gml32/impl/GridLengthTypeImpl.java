@@ -14,15 +14,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class GridLengthTypeImpl extends MeasureTypeImpl implements GridLengthType
-{
+public class GridLengthTypeImpl extends MeasureTypeImpl implements GridLengthType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GridLengthTypeImpl()
-	{
+	protected GridLengthTypeImpl() {
 		super();
 	}
 
@@ -32,8 +30,7 @@ public class GridLengthTypeImpl extends MeasureTypeImpl implements GridLengthTyp
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getGridLengthType();
 	}
 

@@ -29,8 +29,7 @@ import org.isotc211.iso19139.gmd.RSIdentifierType;
  *
  * @generated
  */
-public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIdentifierType
-{
+public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIdentifierType {
 	/**
 	 * The cached value of the '{@link #getCodeSpace() <em>Code Space</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -56,8 +55,7 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RSIdentifierTypeImpl()
-	{
+	protected RSIdentifierTypeImpl() {
 		super();
 	}
 
@@ -67,8 +65,7 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getRSIdentifierType();
 	}
 
@@ -77,8 +74,8 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getCodeSpace()
-	{
+	@Override
+	public CharacterStringPropertyType getCodeSpace() {
 		return codeSpace;
 	}
 
@@ -87,12 +84,10 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCodeSpace(CharacterStringPropertyType newCodeSpace, NotificationChain msgs)
-	{
+	public NotificationChain basicSetCodeSpace(CharacterStringPropertyType newCodeSpace, NotificationChain msgs) {
 		CharacterStringPropertyType oldCodeSpace = codeSpace;
 		codeSpace = newCodeSpace;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.RS_IDENTIFIER_TYPE__CODE_SPACE, oldCodeSpace, newCodeSpace);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -104,10 +99,9 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCodeSpace(CharacterStringPropertyType newCodeSpace)
-	{
-		if (newCodeSpace != codeSpace)
-		{
+	@Override
+	public void setCodeSpace(CharacterStringPropertyType newCodeSpace) {
+		if (newCodeSpace != codeSpace) {
 			NotificationChain msgs = null;
 			if (codeSpace != null)
 				msgs = ((InternalEObject)codeSpace).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.RS_IDENTIFIER_TYPE__CODE_SPACE, null, msgs);
@@ -125,8 +119,8 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CharacterStringPropertyType getVersion()
-	{
+	@Override
+	public CharacterStringPropertyType getVersion() {
 		return version;
 	}
 
@@ -135,12 +129,10 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVersion(CharacterStringPropertyType newVersion, NotificationChain msgs)
-	{
+	public NotificationChain basicSetVersion(CharacterStringPropertyType newVersion, NotificationChain msgs) {
 		CharacterStringPropertyType oldVersion = version;
 		version = newVersion;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMDPackage.RS_IDENTIFIER_TYPE__VERSION, oldVersion, newVersion);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -152,10 +144,9 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVersion(CharacterStringPropertyType newVersion)
-	{
-		if (newVersion != version)
-		{
+	@Override
+	public void setVersion(CharacterStringPropertyType newVersion) {
+		if (newVersion != version) {
 			NotificationChain msgs = null;
 			if (version != null)
 				msgs = ((InternalEObject)version).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMDPackage.RS_IDENTIFIER_TYPE__VERSION, null, msgs);
@@ -174,10 +165,8 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.RS_IDENTIFIER_TYPE__CODE_SPACE:
 				return basicSetCodeSpace(null, msgs);
 			case GMDPackage.RS_IDENTIFIER_TYPE__VERSION:
@@ -192,10 +181,8 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.RS_IDENTIFIER_TYPE__CODE_SPACE:
 				return getCodeSpace();
 			case GMDPackage.RS_IDENTIFIER_TYPE__VERSION:
@@ -210,10 +197,8 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.RS_IDENTIFIER_TYPE__CODE_SPACE:
 				setCodeSpace((CharacterStringPropertyType)newValue);
 				return;
@@ -230,10 +215,8 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.RS_IDENTIFIER_TYPE__CODE_SPACE:
 				setCodeSpace((CharacterStringPropertyType)null);
 				return;
@@ -250,10 +233,8 @@ public class RSIdentifierTypeImpl extends MDIdentifierTypeImpl implements RSIden
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.RS_IDENTIFIER_TYPE__CODE_SPACE:
 				return codeSpace != null;
 			case GMDPackage.RS_IDENTIFIER_TYPE__VERSION:

@@ -22,8 +22,7 @@ import org.w3.xlink.*;
  * @see org.w3.xlink.XLinkPackage
  * @generated
  */
-public class XLinkSwitch<T> extends Switch<T>
-{
+public class XLinkSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -38,10 +37,8 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XLinkSwitch()
-	{
-		if (modelPackage == null)
-		{
+	public XLinkSwitch() {
+		if (modelPackage == null) {
 			modelPackage = XLinkPackage.eINSTANCE;
 		}
 	}
@@ -55,8 +52,7 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage)
-	{
+	protected boolean isSwitchFor(EPackage ePackage) {
 		return ePackage == modelPackage;
 	}
 
@@ -68,54 +64,45 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject)
-	{
-		switch (classifierID)
-		{
-			case XLinkPackage.ARC_TYPE:
-			{
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case XLinkPackage.ARC_TYPE: {
 				ArcType arcType = (ArcType)theEObject;
 				T result = caseArcType(arcType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XLinkPackage.EXTENDED:
-			{
+			case XLinkPackage.EXTENDED: {
 				Extended extended = (Extended)theEObject;
 				T result = caseExtended(extended);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XLinkPackage.LOCATOR_TYPE:
-			{
+			case XLinkPackage.LOCATOR_TYPE: {
 				LocatorType locatorType = (LocatorType)theEObject;
 				T result = caseLocatorType(locatorType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XLinkPackage.RESOURCE_TYPE:
-			{
+			case XLinkPackage.RESOURCE_TYPE: {
 				ResourceType resourceType = (ResourceType)theEObject;
 				T result = caseResourceType(resourceType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XLinkPackage.SIMPLE:
-			{
+			case XLinkPackage.SIMPLE: {
 				Simple simple = (Simple)theEObject;
 				T result = caseSimple(simple);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XLinkPackage.TITLE_ELT_TYPE:
-			{
+			case XLinkPackage.TITLE_ELT_TYPE: {
 				TitleEltType titleEltType = (TitleEltType)theEObject;
 				T result = caseTitleEltType(titleEltType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XLinkPackage.DOCUMENT_ROOT:
-			{
+			case XLinkPackage.DOCUMENT_ROOT: {
 				DocumentRoot documentRoot = (DocumentRoot)theEObject;
 				T result = caseDocumentRoot(documentRoot);
 				if (result == null) result = defaultCase(theEObject);
@@ -136,8 +123,7 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArcType(ArcType object)
-	{
+	public T caseArcType(ArcType object) {
 		return null;
 	}
 
@@ -152,8 +138,7 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseExtended(Extended object)
-	{
+	public T caseExtended(Extended object) {
 		return null;
 	}
 
@@ -168,8 +153,7 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLocatorType(LocatorType object)
-	{
+	public T caseLocatorType(LocatorType object) {
 		return null;
 	}
 
@@ -184,8 +168,7 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseResourceType(ResourceType object)
-	{
+	public T caseResourceType(ResourceType object) {
 		return null;
 	}
 
@@ -200,8 +183,7 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSimple(Simple object)
-	{
+	public T caseSimple(Simple object) {
 		return null;
 	}
 
@@ -216,8 +198,7 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTitleEltType(TitleEltType object)
-	{
+	public T caseTitleEltType(TitleEltType object) {
 		return null;
 	}
 
@@ -232,8 +213,7 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDocumentRoot(DocumentRoot object)
-	{
+	public T caseDocumentRoot(DocumentRoot object) {
 		return null;
 	}
 
@@ -249,8 +229,7 @@ public class XLinkSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object)
-	{
+	public T defaultCase(EObject object) {
 		return null;
 	}
 

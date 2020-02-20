@@ -17,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='showType'"
  * @generated
  */
-public enum ShowType implements Enumerator
-{
+public enum ShowType implements Enumerator {
 	/**
 	 * The '<em><b>New</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -72,10 +71,6 @@ public enum ShowType implements Enumerator
 	/**
 	 * The '<em><b>New</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>New</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NEW
 	 * @model name="new"
@@ -87,10 +82,6 @@ public enum ShowType implements Enumerator
 	/**
 	 * The '<em><b>Replace</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Replace</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #REPLACE
 	 * @model name="replace"
@@ -102,10 +93,6 @@ public enum ShowType implements Enumerator
 	/**
 	 * The '<em><b>Embed</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Embed</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #EMBED
 	 * @model name="embed"
@@ -117,10 +104,6 @@ public enum ShowType implements Enumerator
 	/**
 	 * The '<em><b>Other</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Other</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #OTHER
 	 * @model name="other"
@@ -132,10 +115,6 @@ public enum ShowType implements Enumerator
 	/**
 	 * The '<em><b>None</b></em>' literal value.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>None</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NONE
 	 * @model name="none"
@@ -151,8 +130,7 @@ public enum ShowType implements Enumerator
 	 * @generated
 	 */
 	private static final ShowType[] VALUES_ARRAY =
-		new ShowType[]
-		{
+		new ShowType[] {
 			NEW,
 			REPLACE,
 			EMBED,
@@ -176,13 +154,10 @@ public enum ShowType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static ShowType get(String literal)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static ShowType get(String literal) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			ShowType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal))
-			{
+			if (result.toString().equals(literal)) {
 				return result;
 			}
 		}
@@ -197,13 +172,10 @@ public enum ShowType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static ShowType getByName(String name)
-	{
-		for (int i = 0; i < VALUES_ARRAY.length; ++i)
-		{
+	public static ShowType getByName(String name) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
 			ShowType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name))
-			{
+			if (result.getName().equals(name)) {
 				return result;
 			}
 		}
@@ -218,10 +190,8 @@ public enum ShowType implements Enumerator
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static ShowType get(int value)
-	{
-		switch (value)
-		{
+	public static ShowType get(int value) {
+		switch (value) {
 			case NEW_VALUE: return NEW;
 			case REPLACE_VALUE: return REPLACE;
 			case EMBED_VALUE: return EMBED;
@@ -258,8 +228,7 @@ public enum ShowType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private ShowType(int value, String name, String literal)
-	{
+	private ShowType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -270,8 +239,8 @@ public enum ShowType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue()
-	{
+	@Override
+	public int getValue() {
 	  return value;
 	}
 
@@ -280,8 +249,8 @@ public enum ShowType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName()
-	{
+	@Override
+	public String getName() {
 	  return name;
 	}
 
@@ -290,8 +259,8 @@ public enum ShowType implements Enumerator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral()
-	{
+	@Override
+	public String getLiteral() {
 	  return literal;
 	}
 
@@ -302,8 +271,7 @@ public enum ShowType implements Enumerator
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return literal;
 	}
 	

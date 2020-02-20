@@ -13,6 +13,5 @@ package net.opengis.gml32;
  * @model extendedMetaData="name='DefinitionBaseType' kind='elementOnly'"
  * @generated
  */
-public interface DefinitionBaseType extends AbstractGMLType
-{
+public interface DefinitionBaseType extends AbstractGMLType {
 } // DefinitionBaseType

@@ -34,8 +34,7 @@ import org.isotc211.iso19139.gmd.MDConstraintsType;
  *
  * @generated
  */
-public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDConstraintsType
-{
+public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDConstraintsType {
 	/**
 	 * The cached value of the '{@link #getUseLimitation() <em>Use Limitation</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -51,8 +50,7 @@ public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MDConstraintsTypeImpl()
-	{
+	protected MDConstraintsTypeImpl() {
 		super();
 	}
 
@@ -62,8 +60,7 @@ public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDC
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMDPackage.eINSTANCE.getMDConstraintsType();
 	}
 
@@ -72,10 +69,9 @@ public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacterStringPropertyType> getUseLimitation()
-	{
-		if (useLimitation == null)
-		{
+	@Override
+	public EList<CharacterStringPropertyType> getUseLimitation() {
+		if (useLimitation == null) {
 			useLimitation = new EObjectContainmentEList<CharacterStringPropertyType>(CharacterStringPropertyType.class, this, GMDPackage.MD_CONSTRAINTS_TYPE__USE_LIMITATION);
 		}
 		return useLimitation;
@@ -87,10 +83,8 @@ public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDC
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMDPackage.MD_CONSTRAINTS_TYPE__USE_LIMITATION:
 				return ((InternalEList<?>)getUseLimitation()).basicRemove(otherEnd, msgs);
 		}
@@ -103,10 +97,8 @@ public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDC
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMDPackage.MD_CONSTRAINTS_TYPE__USE_LIMITATION:
 				return getUseLimitation();
 		}
@@ -120,10 +112,8 @@ public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDC
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMDPackage.MD_CONSTRAINTS_TYPE__USE_LIMITATION:
 				getUseLimitation().clear();
 				getUseLimitation().addAll((Collection<? extends CharacterStringPropertyType>)newValue);
@@ -138,10 +128,8 @@ public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDC
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_CONSTRAINTS_TYPE__USE_LIMITATION:
 				getUseLimitation().clear();
 				return;
@@ -155,10 +143,8 @@ public class MDConstraintsTypeImpl extends AbstractObjectTypeImpl implements MDC
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMDPackage.MD_CONSTRAINTS_TYPE__USE_LIMITATION:
 				return useLimitation != null && !useLimitation.isEmpty();
 		}

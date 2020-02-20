@@ -18,8 +18,7 @@ import org.isotc211.iso19139.gts.GTSPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GTSXMLProcessor extends XMLProcessor
-{
+public class GTSXMLProcessor extends XMLProcessor {
 
 	/**
 	 * Public constructor to instantiate the helper.
@@ -27,8 +26,7 @@ public class GTSXMLProcessor extends XMLProcessor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GTSXMLProcessor()
-	{
+	public GTSXMLProcessor() {
 		super((EPackage.Registry.INSTANCE));
 		GTSPackage.eINSTANCE.eClass();
 	}
@@ -40,10 +38,8 @@ public class GTSXMLProcessor extends XMLProcessor
 	 * @generated
 	 */
 	@Override
-	protected Map<String, Resource.Factory> getRegistrations()
-	{
-		if (registrations == null)
-		{
+	protected Map<String, Resource.Factory> getRegistrations() {
+		if (registrations == null) {
 			super.getRegistrations();
 			registrations.put(XML_EXTENSION, new GTSResourceFactoryImpl());
 			registrations.put(STAR_EXTENSION, new GTSResourceFactoryImpl());

@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements EnvelopeWithTimePeriodType
-{
+public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements EnvelopeWithTimePeriodType {
 	/**
 	 * The cached value of the '{@link #getBeginPosition() <em>Begin Position</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -85,8 +84,7 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EnvelopeWithTimePeriodTypeImpl()
-	{
+	protected EnvelopeWithTimePeriodTypeImpl() {
 		super();
 	}
 
@@ -96,8 +94,7 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getEnvelopeWithTimePeriodType();
 	}
 
@@ -106,8 +103,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePositionType getBeginPosition()
-	{
+	@Override
+	public TimePositionType getBeginPosition() {
 		return beginPosition;
 	}
 
@@ -116,12 +113,10 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetBeginPosition(TimePositionType newBeginPosition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetBeginPosition(TimePositionType newBeginPosition, NotificationChain msgs) {
 		TimePositionType oldBeginPosition = beginPosition;
 		beginPosition = newBeginPosition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__BEGIN_POSITION, oldBeginPosition, newBeginPosition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -133,10 +128,9 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBeginPosition(TimePositionType newBeginPosition)
-	{
-		if (newBeginPosition != beginPosition)
-		{
+	@Override
+	public void setBeginPosition(TimePositionType newBeginPosition) {
+		if (newBeginPosition != beginPosition) {
 			NotificationChain msgs = null;
 			if (beginPosition != null)
 				msgs = ((InternalEObject)beginPosition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__BEGIN_POSITION, null, msgs);
@@ -154,8 +148,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePositionType getEndPosition()
-	{
+	@Override
+	public TimePositionType getEndPosition() {
 		return endPosition;
 	}
 
@@ -164,12 +158,10 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEndPosition(TimePositionType newEndPosition, NotificationChain msgs)
-	{
+	public NotificationChain basicSetEndPosition(TimePositionType newEndPosition, NotificationChain msgs) {
 		TimePositionType oldEndPosition = endPosition;
 		endPosition = newEndPosition;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__END_POSITION, oldEndPosition, newEndPosition);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -181,10 +173,9 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEndPosition(TimePositionType newEndPosition)
-	{
-		if (newEndPosition != endPosition)
-		{
+	@Override
+	public void setEndPosition(TimePositionType newEndPosition) {
+		if (newEndPosition != endPosition) {
 			NotificationChain msgs = null;
 			if (endPosition != null)
 				msgs = ((InternalEObject)endPosition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__END_POSITION, null, msgs);
@@ -202,8 +193,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getFrame()
-	{
+	@Override
+	public String getFrame() {
 		return frame;
 	}
 
@@ -212,8 +203,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFrame(String newFrame)
-	{
+	@Override
+	public void setFrame(String newFrame) {
 		String oldFrame = frame;
 		frame = newFrame;
 		boolean oldFrameESet = frameESet;
@@ -227,8 +218,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void unsetFrame()
-	{
+	@Override
+	public void unsetFrame() {
 		String oldFrame = frame;
 		boolean oldFrameESet = frameESet;
 		frame = FRAME_EDEFAULT;
@@ -242,8 +233,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isSetFrame()
-	{
+	@Override
+	public boolean isSetFrame() {
 		return frameESet;
 	}
 
@@ -253,10 +244,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__BEGIN_POSITION:
 				return basicSetBeginPosition(null, msgs);
 			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__END_POSITION:
@@ -271,10 +260,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__BEGIN_POSITION:
 				return getBeginPosition();
 			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__END_POSITION:
@@ -291,10 +278,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__BEGIN_POSITION:
 				setBeginPosition((TimePositionType)newValue);
 				return;
@@ -314,10 +299,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__BEGIN_POSITION:
 				setBeginPosition((TimePositionType)null);
 				return;
@@ -337,10 +320,8 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__BEGIN_POSITION:
 				return beginPosition != null;
 			case GMLPackage.ENVELOPE_WITH_TIME_PERIOD_TYPE__END_POSITION:
@@ -357,11 +338,10 @@ public class EnvelopeWithTimePeriodTypeImpl extends EnvelopeTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (frame: ");
 		if (frameESet) result.append(frame); else result.append("<unset>");
 		result.append(')');

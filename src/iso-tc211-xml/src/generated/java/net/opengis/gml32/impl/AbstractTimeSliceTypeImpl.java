@@ -29,8 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl implements AbstractTimeSliceType
-{
+public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl implements AbstractTimeSliceType {
 	/**
 	 * The cached value of the '{@link #getValidTime() <em>Valid Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -56,8 +55,7 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractTimeSliceTypeImpl()
-	{
+	protected AbstractTimeSliceTypeImpl() {
 		super();
 	}
 
@@ -67,8 +65,7 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return GMLPackage.eINSTANCE.getAbstractTimeSliceType();
 	}
 
@@ -77,8 +74,8 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimePrimitivePropertyType getValidTime()
-	{
+	@Override
+	public TimePrimitivePropertyType getValidTime() {
 		return validTime;
 	}
 
@@ -87,12 +84,10 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValidTime(TimePrimitivePropertyType newValidTime, NotificationChain msgs)
-	{
+	public NotificationChain basicSetValidTime(TimePrimitivePropertyType newValidTime, NotificationChain msgs) {
 		TimePrimitivePropertyType oldValidTime = validTime;
 		validTime = newValidTime;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_TIME_SLICE_TYPE__VALID_TIME, oldValidTime, newValidTime);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -104,10 +99,9 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValidTime(TimePrimitivePropertyType newValidTime)
-	{
-		if (newValidTime != validTime)
-		{
+	@Override
+	public void setValidTime(TimePrimitivePropertyType newValidTime) {
+		if (newValidTime != validTime) {
 			NotificationChain msgs = null;
 			if (validTime != null)
 				msgs = ((InternalEObject)validTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_TIME_SLICE_TYPE__VALID_TIME, null, msgs);
@@ -125,8 +119,8 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringOrRefType getDataSource()
-	{
+	@Override
+	public StringOrRefType getDataSource() {
 		return dataSource;
 	}
 
@@ -135,12 +129,10 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDataSource(StringOrRefType newDataSource, NotificationChain msgs)
-	{
+	public NotificationChain basicSetDataSource(StringOrRefType newDataSource, NotificationChain msgs) {
 		StringOrRefType oldDataSource = dataSource;
 		dataSource = newDataSource;
-		if (eNotificationRequired())
-		{
+		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GMLPackage.ABSTRACT_TIME_SLICE_TYPE__DATA_SOURCE, oldDataSource, newDataSource);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
@@ -152,10 +144,9 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataSource(StringOrRefType newDataSource)
-	{
-		if (newDataSource != dataSource)
-		{
+	@Override
+	public void setDataSource(StringOrRefType newDataSource) {
+		if (newDataSource != dataSource) {
 			NotificationChain msgs = null;
 			if (dataSource != null)
 				msgs = ((InternalEObject)dataSource).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GMLPackage.ABSTRACT_TIME_SLICE_TYPE__DATA_SOURCE, null, msgs);
@@ -174,10 +165,8 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE__VALID_TIME:
 				return basicSetValidTime(null, msgs);
 			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE__DATA_SOURCE:
@@ -192,10 +181,8 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE__VALID_TIME:
 				return getValidTime();
 			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE__DATA_SOURCE:
@@ -210,10 +197,8 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE__VALID_TIME:
 				setValidTime((TimePrimitivePropertyType)newValue);
 				return;
@@ -230,10 +215,8 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
+	public void eUnset(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE__VALID_TIME:
 				setValidTime((TimePrimitivePropertyType)null);
 				return;
@@ -250,10 +233,8 @@ public abstract class AbstractTimeSliceTypeImpl extends AbstractGMLTypeImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
 			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE__VALID_TIME:
 				return validTime != null;
 			case GMLPackage.ABSTRACT_TIME_SLICE_TYPE__DATA_SOURCE:

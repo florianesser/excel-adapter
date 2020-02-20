@@ -25,15 +25,10 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * @model extendedMetaData="name='TimeCalendarEraType' kind='elementOnly'"
  * @generated
  */
-public interface TimeCalendarEraType extends DefinitionType
-{
+public interface TimeCalendarEraType extends DefinitionType {
 	/**
 	 * Returns the value of the '<em><b>Reference Event</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reference Event</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference Event</em>' containment reference.
 	 * @see #setReferenceEvent(StringOrRefType)
@@ -57,10 +52,6 @@ public interface TimeCalendarEraType extends DefinitionType
 	/**
 	 * Returns the value of the '<em><b>Reference Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reference Date</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference Date</em>' attribute.
 	 * @see #setReferenceDate(XMLGregorianCalendar)
@@ -84,10 +75,6 @@ public interface TimeCalendarEraType extends DefinitionType
 	/**
 	 * Returns the value of the '<em><b>Julian Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Julian Reference</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Julian Reference</em>' attribute.
 	 * @see #setJulianReference(BigDecimal)
@@ -111,10 +98,6 @@ public interface TimeCalendarEraType extends DefinitionType
 	/**
 	 * Returns the value of the '<em><b>Epoch Of Use</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Epoch Of Use</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Epoch Of Use</em>' containment reference.
 	 * @see #setEpochOfUse(TimePeriodPropertyType)
